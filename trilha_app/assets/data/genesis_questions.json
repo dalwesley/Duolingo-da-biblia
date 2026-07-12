@@ -1,0 +1,4983 @@
+{
+  "difficulties": [
+    {
+      "id": "semente",
+      "label": "Semente",
+      "subtitle": "Fundamentos da história",
+      "description": "Ideal para começar — fatos claros do texto.",
+      "xpMultiplier": 1.0,
+      "accent": "#E8B84B",
+      "icon": "🌱"
+    },
+    {
+      "id": "caminhada",
+      "label": "Caminhada",
+      "subtitle": "Compreensão e contexto",
+      "description": "Exige atenção ao texto e às conexões.",
+      "xpMultiplier": 1.5,
+      "accent": "#74B9FF",
+      "icon": "🕯️"
+    },
+    {
+      "id": "profundezas",
+      "label": "Profundezas",
+      "subtitle": "Discernimento e detalhe",
+      "description": "Desafio para quem já conhece a narrativa.",
+      "xpMultiplier": 2.0,
+      "accent": "#A29BFE",
+      "icon": "🌊"
+    }
+  ],
+  "questions": [
+    {
+      "id": "g-semente-criacao-01",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "O que Deus criou no princípio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os céus e a terra"
+        },
+        {
+          "id": "b",
+          "text": "Somente os mares"
+        },
+        {
+          "id": "c",
+          "text": "O jardim do Éden"
+        },
+        {
+          "id": "d",
+          "text": "A arca de Noé"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”.",
+        "c": "Não. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”.",
+        "d": "Não. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”."
+      },
+      "verseRef": "Gênesis 1:1",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-02",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Como a terra é descrita antes das ordens criadoras?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coberta de cidades"
+        },
+        {
+          "id": "b",
+          "text": "Sem forma e vazia"
+        },
+        {
+          "id": "c",
+          "text": "Cheia de animais"
+        },
+        {
+          "id": "d",
+          "text": "Dividida em nações"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:2 sustenta a resposta: “Sem forma e vazia”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:2 sustenta a resposta: “Sem forma e vazia”.",
+        "c": "Não. Gênesis 1:2 sustenta a resposta: “Sem forma e vazia”.",
+        "d": "Não. Gênesis 1:2 sustenta a resposta: “Sem forma e vazia”."
+      },
+      "verseRef": "Gênesis 1:2",
+      "reveal": "land"
+    },
+    {
+      "id": "g-semente-criacao-03",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Qual foi a primeira ordem criadora registrada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Haja firmamento"
+        },
+        {
+          "id": "b",
+          "text": "Produza a terra vegetação"
+        },
+        {
+          "id": "c",
+          "text": "Haja luz"
+        },
+        {
+          "id": "d",
+          "text": "Ajuntem-se as águas"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:3 sustenta a resposta: “Haja luz”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:3 sustenta a resposta: “Haja luz”.",
+        "b": "Não. Gênesis 1:3 sustenta a resposta: “Haja luz”.",
+        "d": "Não. Gênesis 1:3 sustenta a resposta: “Haja luz”."
+      },
+      "verseRef": "Gênesis 1:3",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-04",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "O que Deus separou no primeiro dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A terra dos mares"
+        },
+        {
+          "id": "b",
+          "text": "As aves dos peixes"
+        },
+        {
+          "id": "c",
+          "text": "O homem da mulher"
+        },
+        {
+          "id": "d",
+          "text": "A luz das trevas"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:4 sustenta a resposta: “A luz das trevas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:4 sustenta a resposta: “A luz das trevas”.",
+        "b": "Não. Gênesis 1:4 sustenta a resposta: “A luz das trevas”.",
+        "c": "Não. Gênesis 1:4 sustenta a resposta: “A luz das trevas”."
+      },
+      "verseRef": "Gênesis 1:4",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-05",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Em qual dia Deus fez o firmamento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No segundo dia"
+        },
+        {
+          "id": "b",
+          "text": "No primeiro dia"
+        },
+        {
+          "id": "c",
+          "text": "No quarto dia"
+        },
+        {
+          "id": "d",
+          "text": "No sexto dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:6-8 sustenta a resposta: “No segundo dia”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:6-8 sustenta a resposta: “No segundo dia”.",
+        "c": "Não. Gênesis 1:6-8 sustenta a resposta: “No segundo dia”.",
+        "d": "Não. Gênesis 1:6-8 sustenta a resposta: “No segundo dia”."
+      },
+      "verseRef": "Gênesis 1:6-8",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-06",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Como Deus chamou a porção seca?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Céus"
+        },
+        {
+          "id": "b",
+          "text": "Terra"
+        },
+        {
+          "id": "c",
+          "text": "Mares"
+        },
+        {
+          "id": "d",
+          "text": "Éden"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:10 sustenta a resposta: “Terra”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:10 sustenta a resposta: “Terra”.",
+        "c": "Não. Gênesis 1:10 sustenta a resposta: “Terra”.",
+        "d": "Não. Gênesis 1:10 sustenta a resposta: “Terra”."
+      },
+      "verseRef": "Gênesis 1:10",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-07",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Em qual dia a terra produziu vegetação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No segundo dia"
+        },
+        {
+          "id": "b",
+          "text": "No quinto dia"
+        },
+        {
+          "id": "c",
+          "text": "No terceiro dia"
+        },
+        {
+          "id": "d",
+          "text": "No sétimo dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:11-13 sustenta a resposta: “No terceiro dia”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:11-13 sustenta a resposta: “No terceiro dia”.",
+        "b": "Não. Gênesis 1:11-13 sustenta a resposta: “No terceiro dia”.",
+        "d": "Não. Gênesis 1:11-13 sustenta a resposta: “No terceiro dia”."
+      },
+      "verseRef": "Gênesis 1:11-13",
+      "reveal": "land"
+    },
+    {
+      "id": "g-semente-criacao-08",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Para que serviam os luminares no firmamento?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para regar a terra"
+        },
+        {
+          "id": "b",
+          "text": "Para sustentar o firmamento"
+        },
+        {
+          "id": "c",
+          "text": "Para dar nomes aos animais"
+        },
+        {
+          "id": "d",
+          "text": "Para separar dia e noite e marcar tempos"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:14-18 sustenta a resposta: “Para separar dia e noite e marcar tempos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:14-18 sustenta a resposta: “Para separar dia e noite e marcar tempos”.",
+        "b": "Não. Gênesis 1:14-18 sustenta a resposta: “Para separar dia e noite e marcar tempos”.",
+        "c": "Não. Gênesis 1:14-18 sustenta a resposta: “Para separar dia e noite e marcar tempos”."
+      },
+      "verseRef": "Gênesis 1:14-18",
+      "reveal": "stars"
+    },
+    {
+      "id": "g-semente-criacao-09",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Quais criaturas aparecem no quinto dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seres aquáticos e aves"
+        },
+        {
+          "id": "b",
+          "text": "Animais terrestres e humanidade"
+        },
+        {
+          "id": "c",
+          "text": "Plantas e árvores"
+        },
+        {
+          "id": "d",
+          "text": "Sol, lua e estrelas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:20-23 sustenta a resposta: “Seres aquáticos e aves”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:20-23 sustenta a resposta: “Seres aquáticos e aves”.",
+        "c": "Não. Gênesis 1:20-23 sustenta a resposta: “Seres aquáticos e aves”.",
+        "d": "Não. Gênesis 1:20-23 sustenta a resposta: “Seres aquáticos e aves”."
+      },
+      "verseRef": "Gênesis 1:20-23",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-10",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "À imagem de quem a humanidade foi criada?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dos anjos"
+        },
+        {
+          "id": "b",
+          "text": "De Deus"
+        },
+        {
+          "id": "c",
+          "text": "Dos animais"
+        },
+        {
+          "id": "d",
+          "text": "Do firmamento"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:26-27 sustenta a resposta: “De Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:26-27 sustenta a resposta: “De Deus”.",
+        "c": "Não. Gênesis 1:26-27 sustenta a resposta: “De Deus”.",
+        "d": "Não. Gênesis 1:26-27 sustenta a resposta: “De Deus”."
+      },
+      "verseRef": "Gênesis 1:26-27",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-criacao-11",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Como Deus criou a humanidade segundo Gênesis 1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apenas homem"
+        },
+        {
+          "id": "b",
+          "text": "Três famílias"
+        },
+        {
+          "id": "c",
+          "text": "Homem e mulher"
+        },
+        {
+          "id": "d",
+          "text": "Como seres celestiais"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:27 sustenta a resposta: “Homem e mulher”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:27 sustenta a resposta: “Homem e mulher”.",
+        "b": "Não. Gênesis 1:27 sustenta a resposta: “Homem e mulher”.",
+        "d": "Não. Gênesis 1:27 sustenta a resposta: “Homem e mulher”."
+      },
+      "verseRef": "Gênesis 1:27",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-criacao-12",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Que alimento Deus deu inicialmente aos seres humanos?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carne de todos os animais"
+        },
+        {
+          "id": "b",
+          "text": "Somente peixe"
+        },
+        {
+          "id": "c",
+          "text": "Pão e vinho"
+        },
+        {
+          "id": "d",
+          "text": "Plantas com semente e frutos"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:29 sustenta a resposta: “Plantas com semente e frutos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:29 sustenta a resposta: “Plantas com semente e frutos”.",
+        "b": "Não. Gênesis 1:29 sustenta a resposta: “Plantas com semente e frutos”.",
+        "c": "Não. Gênesis 1:29 sustenta a resposta: “Plantas com semente e frutos”."
+      },
+      "verseRef": "Gênesis 1:29",
+      "reveal": "plants"
+    },
+    {
+      "id": "g-semente-criacao-13",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Como Deus avaliou tudo o que havia feito?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muito bom"
+        },
+        {
+          "id": "b",
+          "text": "Incompleto"
+        },
+        {
+          "id": "c",
+          "text": "Bom apenas em parte"
+        },
+        {
+          "id": "d",
+          "text": "Irremediavelmente mau"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:31 sustenta a resposta: “Muito bom”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:31 sustenta a resposta: “Muito bom”.",
+        "c": "Não. Gênesis 1:31 sustenta a resposta: “Muito bom”.",
+        "d": "Não. Gênesis 1:31 sustenta a resposta: “Muito bom”."
+      },
+      "verseRef": "Gênesis 1:31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-14",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "O que foi criado no sexto dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Firmamento e nuvens"
+        },
+        {
+          "id": "b",
+          "text": "Animais terrestres e humanidade"
+        },
+        {
+          "id": "c",
+          "text": "Peixes e aves"
+        },
+        {
+          "id": "d",
+          "text": "Luminares e estrelas"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:24-31 sustenta a resposta: “Animais terrestres e humanidade”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:24-31 sustenta a resposta: “Animais terrestres e humanidade”.",
+        "c": "Não. Gênesis 1:24-31 sustenta a resposta: “Animais terrestres e humanidade”.",
+        "d": "Não. Gênesis 1:24-31 sustenta a resposta: “Animais terrestres e humanidade”."
+      },
+      "verseRef": "Gênesis 1:24-31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-15",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "O que Deus fez no sétimo dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Criou os mares"
+        },
+        {
+          "id": "b",
+          "text": "Fez o homem"
+        },
+        {
+          "id": "c",
+          "text": "Descansou de toda a obra"
+        },
+        {
+          "id": "d",
+          "text": "Plantou a primeira árvore"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”.",
+        "b": "Não. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”.",
+        "d": "Não. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”."
+      },
+      "verseRef": "Gênesis 2:2",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-16",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Qual dia Deus abençoou e santificou?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "O terceiro dia"
+        },
+        {
+          "id": "c",
+          "text": "O sexto dia"
+        },
+        {
+          "id": "d",
+          "text": "O sétimo dia"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:3 sustenta a resposta: “O sétimo dia”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:3 sustenta a resposta: “O sétimo dia”.",
+        "b": "Não. Gênesis 2:3 sustenta a resposta: “O sétimo dia”.",
+        "c": "Não. Gênesis 2:3 sustenta a resposta: “O sétimo dia”."
+      },
+      "verseRef": "Gênesis 2:3",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-semente-criacao-17",
+      "difficulty": "semente",
+      "section": "criacao",
+      "question": "Sobre o que a humanidade recebeu domínio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Peixes, aves e animais da terra"
+        },
+        {
+          "id": "b",
+          "text": "Os luminares do céu"
+        },
+        {
+          "id": "c",
+          "text": "Outros deuses"
+        },
+        {
+          "id": "d",
+          "text": "A árvore da vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:26-28 sustenta a resposta: “Peixes, aves e animais da terra”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:26-28 sustenta a resposta: “Peixes, aves e animais da terra”.",
+        "c": "Não. Gênesis 1:26-28 sustenta a resposta: “Peixes, aves e animais da terra”.",
+        "d": "Não. Gênesis 1:26-28 sustenta a resposta: “Peixes, aves e animais da terra”."
+      },
+      "verseRef": "Gênesis 1:26-28",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-01",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "De que o Senhor Deus formou o homem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Da água do rio"
+        },
+        {
+          "id": "b",
+          "text": "Do pó da terra"
+        },
+        {
+          "id": "c",
+          "text": "Da madeira das árvores"
+        },
+        {
+          "id": "d",
+          "text": "Da luz do céu"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:7 sustenta a resposta: “Do pó da terra”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:7 sustenta a resposta: “Do pó da terra”.",
+        "c": "Não. Gênesis 2:7 sustenta a resposta: “Do pó da terra”.",
+        "d": "Não. Gênesis 2:7 sustenta a resposta: “Do pó da terra”."
+      },
+      "verseRef": "Gênesis 2:7",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-02",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "O que Deus soprou nas narinas do homem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O vento oriental"
+        },
+        {
+          "id": "b",
+          "text": "Água do rio"
+        },
+        {
+          "id": "c",
+          "text": "O fôlego de vida"
+        },
+        {
+          "id": "d",
+          "text": "Pó do jardim"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:7 sustenta a resposta: “O fôlego de vida”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:7 sustenta a resposta: “O fôlego de vida”.",
+        "b": "Não. Gênesis 2:7 sustenta a resposta: “O fôlego de vida”.",
+        "d": "Não. Gênesis 2:7 sustenta a resposta: “O fôlego de vida”."
+      },
+      "verseRef": "Gênesis 2:7",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-03",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Quais árvores especiais ficavam no jardim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A oliveira e a videira"
+        },
+        {
+          "id": "b",
+          "text": "A figueira e o cedro"
+        },
+        {
+          "id": "c",
+          "text": "A árvore da fé e a da esperança"
+        },
+        {
+          "id": "d",
+          "text": "A árvore da vida e a do conhecimento do bem e do mal"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:9 sustenta a resposta: “A árvore da vida e a do conhecimento do bem e do mal”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:9 sustenta a resposta: “A árvore da vida e a do conhecimento do bem e do mal”.",
+        "b": "Não. Gênesis 2:9 sustenta a resposta: “A árvore da vida e a do conhecimento do bem e do mal”.",
+        "c": "Não. Gênesis 2:9 sustenta a resposta: “A árvore da vida e a do conhecimento do bem e do mal”."
+      },
+      "verseRef": "Gênesis 2:9",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-04",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Que tarefa o homem recebeu no jardim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cultivá-lo e guardá-lo"
+        },
+        {
+          "id": "b",
+          "text": "Construir uma cidade"
+        },
+        {
+          "id": "c",
+          "text": "Erguer uma torre"
+        },
+        {
+          "id": "d",
+          "text": "Fazer uma arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:15 sustenta a resposta: “Cultivá-lo e guardá-lo”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:15 sustenta a resposta: “Cultivá-lo e guardá-lo”.",
+        "c": "Não. Gênesis 2:15 sustenta a resposta: “Cultivá-lo e guardá-lo”.",
+        "d": "Não. Gênesis 2:15 sustenta a resposta: “Cultivá-lo e guardá-lo”."
+      },
+      "verseRef": "Gênesis 2:15",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-05",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "De qual árvore o homem não deveria comer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Da árvore da vida"
+        },
+        {
+          "id": "b",
+          "text": "Da árvore do conhecimento do bem e do mal"
+        },
+        {
+          "id": "c",
+          "text": "De toda árvore frutífera"
+        },
+        {
+          "id": "d",
+          "text": "Da figueira junto ao rio"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:16-17 sustenta a resposta: “Da árvore do conhecimento do bem e do mal”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:16-17 sustenta a resposta: “Da árvore do conhecimento do bem e do mal”.",
+        "c": "Não. Gênesis 2:16-17 sustenta a resposta: “Da árvore do conhecimento do bem e do mal”.",
+        "d": "Não. Gênesis 2:16-17 sustenta a resposta: “Da árvore do conhecimento do bem e do mal”."
+      },
+      "verseRef": "Gênesis 2:16-17",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-06",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Qual consequência Deus anunciou para comer da árvore proibida?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perderia a fala"
+        },
+        {
+          "id": "b",
+          "text": "Seria levado ao dilúvio"
+        },
+        {
+          "id": "c",
+          "text": "Certamente morreria"
+        },
+        {
+          "id": "d",
+          "text": "Dormiria por sete dias"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:17 sustenta a resposta: “Certamente morreria”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:17 sustenta a resposta: “Certamente morreria”.",
+        "b": "Não. Gênesis 2:17 sustenta a resposta: “Certamente morreria”.",
+        "d": "Não. Gênesis 2:17 sustenta a resposta: “Certamente morreria”."
+      },
+      "verseRef": "Gênesis 2:17",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-07",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "O que Deus declarou não ser bom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que houvesse mares"
+        },
+        {
+          "id": "b",
+          "text": "Que existissem animais"
+        },
+        {
+          "id": "c",
+          "text": "Que o jardim tivesse rios"
+        },
+        {
+          "id": "d",
+          "text": "Que o homem estivesse só"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:18 sustenta a resposta: “Que o homem estivesse só”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:18 sustenta a resposta: “Que o homem estivesse só”.",
+        "b": "Não. Gênesis 2:18 sustenta a resposta: “Que o homem estivesse só”.",
+        "c": "Não. Gênesis 2:18 sustenta a resposta: “Que o homem estivesse só”."
+      },
+      "verseRef": "Gênesis 2:18",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-08",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Quem deu nome aos animais?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem"
+        },
+        {
+          "id": "b",
+          "text": "A mulher"
+        },
+        {
+          "id": "c",
+          "text": "A serpente"
+        },
+        {
+          "id": "d",
+          "text": "Caim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:19-20 sustenta a resposta: “O homem”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:19-20 sustenta a resposta: “O homem”.",
+        "c": "Não. Gênesis 2:19-20 sustenta a resposta: “O homem”.",
+        "d": "Não. Gênesis 2:19-20 sustenta a resposta: “O homem”."
+      },
+      "verseRef": "Gênesis 2:19-20",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-09",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "De que parte do homem Deus fez a mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "De sua mão"
+        },
+        {
+          "id": "b",
+          "text": "De uma de suas costelas"
+        },
+        {
+          "id": "c",
+          "text": "De seu cabelo"
+        },
+        {
+          "id": "d",
+          "text": "De seu pé"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:21-22 sustenta a resposta: “De uma de suas costelas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:21-22 sustenta a resposta: “De uma de suas costelas”.",
+        "c": "Não. Gênesis 2:21-22 sustenta a resposta: “De uma de suas costelas”.",
+        "d": "Não. Gênesis 2:21-22 sustenta a resposta: “De uma de suas costelas”."
+      },
+      "verseRef": "Gênesis 2:21-22",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-semente-jardim-10",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Como a serpente é descrita?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mais forte que todos os animais"
+        },
+        {
+          "id": "b",
+          "text": "A única criatura alada"
+        },
+        {
+          "id": "c",
+          "text": "Mais astuta que todos os animais do campo"
+        },
+        {
+          "id": "d",
+          "text": "Guardadora da árvore da vida"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:1 sustenta a resposta: “Mais astuta que todos os animais do campo”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:1 sustenta a resposta: “Mais astuta que todos os animais do campo”.",
+        "b": "Não. Gênesis 3:1 sustenta a resposta: “Mais astuta que todos os animais do campo”.",
+        "d": "Não. Gênesis 3:1 sustenta a resposta: “Mais astuta que todos os animais do campo”."
+      },
+      "verseRef": "Gênesis 3:1",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-semente-jardim-11",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "A quem a mulher deu do fruto depois de comer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "À serpente"
+        },
+        {
+          "id": "b",
+          "text": "A Caim"
+        },
+        {
+          "id": "c",
+          "text": "A um querubim"
+        },
+        {
+          "id": "d",
+          "text": "Ao marido que estava com ela"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:6 sustenta a resposta: “Ao marido que estava com ela”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:6 sustenta a resposta: “Ao marido que estava com ela”.",
+        "b": "Não. Gênesis 3:6 sustenta a resposta: “Ao marido que estava com ela”.",
+        "c": "Não. Gênesis 3:6 sustenta a resposta: “Ao marido que estava com ela”."
+      },
+      "verseRef": "Gênesis 3:6",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-semente-jardim-12",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "O que o casal percebeu após comer do fruto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que estava nu"
+        },
+        {
+          "id": "b",
+          "text": "Que era imortal"
+        },
+        {
+          "id": "c",
+          "text": "Que o jardim desaparecera"
+        },
+        {
+          "id": "d",
+          "text": "Que podia voar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:7 sustenta a resposta: “Que estava nu”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:7 sustenta a resposta: “Que estava nu”.",
+        "c": "Não. Gênesis 3:7 sustenta a resposta: “Que estava nu”.",
+        "d": "Não. Gênesis 3:7 sustenta a resposta: “Que estava nu”."
+      },
+      "verseRef": "Gênesis 3:7",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-semente-jardim-13",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Que folhas o casal usou para fazer cintas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Folhas de oliveira"
+        },
+        {
+          "id": "b",
+          "text": "Folhas de figueira"
+        },
+        {
+          "id": "c",
+          "text": "Folhas de cedro"
+        },
+        {
+          "id": "d",
+          "text": "Folhas de videira"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 3:7 sustenta a resposta: “Folhas de figueira”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:7 sustenta a resposta: “Folhas de figueira”.",
+        "c": "Não. Gênesis 3:7 sustenta a resposta: “Folhas de figueira”.",
+        "d": "Não. Gênesis 3:7 sustenta a resposta: “Folhas de figueira”."
+      },
+      "verseRef": "Gênesis 3:7",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-14",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Por que Adão se escondeu de Deus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque começou a chover"
+        },
+        {
+          "id": "b",
+          "text": "Porque os animais o perseguiam"
+        },
+        {
+          "id": "c",
+          "text": "Porque estava nu e teve medo"
+        },
+        {
+          "id": "d",
+          "text": "Porque o rio secou"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:8-10 sustenta a resposta: “Porque estava nu e teve medo”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:8-10 sustenta a resposta: “Porque estava nu e teve medo”.",
+        "b": "Não. Gênesis 3:8-10 sustenta a resposta: “Porque estava nu e teve medo”.",
+        "d": "Não. Gênesis 3:8-10 sustenta a resposta: “Porque estava nu e teve medo”."
+      },
+      "verseRef": "Gênesis 3:8-10",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-15",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Que vestes Deus fez para o casal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vestes de linho"
+        },
+        {
+          "id": "b",
+          "text": "Armaduras de bronze"
+        },
+        {
+          "id": "c",
+          "text": "Mantos de lã"
+        },
+        {
+          "id": "d",
+          "text": "Vestes de peles"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:21 sustenta a resposta: “Vestes de peles”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:21 sustenta a resposta: “Vestes de peles”.",
+        "b": "Não. Gênesis 3:21 sustenta a resposta: “Vestes de peles”.",
+        "c": "Não. Gênesis 3:21 sustenta a resposta: “Vestes de peles”."
+      },
+      "verseRef": "Gênesis 3:21",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-jardim-16",
+      "difficulty": "semente",
+      "section": "jardim",
+      "question": "Quem guardou o caminho da árvore da vida?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Querubins e uma espada flamejante"
+        },
+        {
+          "id": "b",
+          "text": "Caim e Abel"
+        },
+        {
+          "id": "c",
+          "text": "Dois pastores com lanças"
+        },
+        {
+          "id": "d",
+          "text": "A serpente e um leão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:24 sustenta a resposta: “Querubins e uma espada flamejante”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:24 sustenta a resposta: “Querubins e uma espada flamejante”.",
+        "c": "Não. Gênesis 3:24 sustenta a resposta: “Querubins e uma espada flamejante”.",
+        "d": "Não. Gênesis 3:24 sustenta a resposta: “Querubins e uma espada flamejante”."
+      },
+      "verseRef": "Gênesis 3:24",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-semente-depois-01",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Quais eram as ocupações de Caim e Abel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ambos eram pescadores"
+        },
+        {
+          "id": "b",
+          "text": "Caim lavrava a terra e Abel cuidava de ovelhas"
+        },
+        {
+          "id": "c",
+          "text": "Caim era pastor e Abel construtor"
+        },
+        {
+          "id": "d",
+          "text": "Ambos cuidavam do jardim"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 4:2 sustenta a resposta: “Caim lavrava a terra e Abel cuidava de ovelhas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:2 sustenta a resposta: “Caim lavrava a terra e Abel cuidava de ovelhas”.",
+        "c": "Não. Gênesis 4:2 sustenta a resposta: “Caim lavrava a terra e Abel cuidava de ovelhas”.",
+        "d": "Não. Gênesis 4:2 sustenta a resposta: “Caim lavrava a terra e Abel cuidava de ovelhas”."
+      },
+      "verseRef": "Gênesis 4:2",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-semente-depois-02",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que Abel apresentou ao Senhor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frutos secos da terra"
+        },
+        {
+          "id": "b",
+          "text": "Uma torre de pedras"
+        },
+        {
+          "id": "c",
+          "text": "Primícias do rebanho e sua gordura"
+        },
+        {
+          "id": "d",
+          "text": "Um ramo de oliveira"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 4:4 sustenta a resposta: “Primícias do rebanho e sua gordura”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:4 sustenta a resposta: “Primícias do rebanho e sua gordura”.",
+        "b": "Não. Gênesis 4:4 sustenta a resposta: “Primícias do rebanho e sua gordura”.",
+        "d": "Não. Gênesis 4:4 sustenta a resposta: “Primícias do rebanho e sua gordura”."
+      },
+      "verseRef": "Gênesis 4:4",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-03",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Quem matou Abel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lameque"
+        },
+        {
+          "id": "b",
+          "text": "Noé"
+        },
+        {
+          "id": "c",
+          "text": "Sete"
+        },
+        {
+          "id": "d",
+          "text": "Caim"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 4:8 sustenta a resposta: “Caim”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:8 sustenta a resposta: “Caim”.",
+        "b": "Não. Gênesis 4:8 sustenta a resposta: “Caim”.",
+        "c": "Não. Gênesis 4:8 sustenta a resposta: “Caim”."
+      },
+      "verseRef": "Gênesis 4:8",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-04",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que Deus colocou em Caim para protegê-lo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um sinal"
+        },
+        {
+          "id": "b",
+          "text": "Uma coroa"
+        },
+        {
+          "id": "c",
+          "text": "Uma armadura"
+        },
+        {
+          "id": "d",
+          "text": "Um arco nas nuvens"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 4:15 sustenta a resposta: “Um sinal”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 4:15 sustenta a resposta: “Um sinal”.",
+        "c": "Não. Gênesis 4:15 sustenta a resposta: “Um sinal”.",
+        "d": "Não. Gênesis 4:15 sustenta a resposta: “Um sinal”."
+      },
+      "verseRef": "Gênesis 4:15",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-semente-depois-05",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Qual filho Eva reconheceu como descendente no lugar de Abel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enoque"
+        },
+        {
+          "id": "b",
+          "text": "Sete"
+        },
+        {
+          "id": "c",
+          "text": "Jabal"
+        },
+        {
+          "id": "d",
+          "text": "Sem"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 4:25 sustenta a resposta: “Sete”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:25 sustenta a resposta: “Sete”.",
+        "c": "Não. Gênesis 4:25 sustenta a resposta: “Sete”.",
+        "d": "Não. Gênesis 4:25 sustenta a resposta: “Sete”."
+      },
+      "verseRef": "Gênesis 4:25",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-06",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que aconteceu com Enoque após andar com Deus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Morreu no dilúvio"
+        },
+        {
+          "id": "b",
+          "text": "Construiu Babel"
+        },
+        {
+          "id": "c",
+          "text": "Deus o tomou para si"
+        },
+        {
+          "id": "d",
+          "text": "Tornou-se rei de Sinar"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 5:24 sustenta a resposta: “Deus o tomou para si”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 5:24 sustenta a resposta: “Deus o tomou para si”.",
+        "b": "Não. Gênesis 5:24 sustenta a resposta: “Deus o tomou para si”.",
+        "d": "Não. Gênesis 5:24 sustenta a resposta: “Deus o tomou para si”."
+      },
+      "verseRef": "Gênesis 5:24",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-07",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Quem foi o pai de Noé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Matusalém"
+        },
+        {
+          "id": "b",
+          "text": "Jafé"
+        },
+        {
+          "id": "c",
+          "text": "Ninrode"
+        },
+        {
+          "id": "d",
+          "text": "Lameque"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 5:28-29 sustenta a resposta: “Lameque”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 5:28-29 sustenta a resposta: “Lameque”.",
+        "b": "Não. Gênesis 5:28-29 sustenta a resposta: “Lameque”.",
+        "c": "Não. Gênesis 5:28-29 sustenta a resposta: “Lameque”."
+      },
+      "verseRef": "Gênesis 5:28-29",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-semente-depois-08",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Quais eram os três filhos de Noé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem, Cam e Jafé"
+        },
+        {
+          "id": "b",
+          "text": "Caim, Abel e Sete"
+        },
+        {
+          "id": "c",
+          "text": "Jabal, Jubal e Tubalcaim"
+        },
+        {
+          "id": "d",
+          "text": "Abrão, Naor e Harã"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.",
+        "c": "Não. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.",
+        "d": "Não. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”."
+      },
+      "verseRef": "Gênesis 6:10",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-semente-depois-09",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Por quantos dias e noites choveu no dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sete dias e sete noites"
+        },
+        {
+          "id": "b",
+          "text": "Quarenta dias e quarenta noites"
+        },
+        {
+          "id": "c",
+          "text": "Cento e cinquenta dias e noites"
+        },
+        {
+          "id": "d",
+          "text": "Doze dias e doze noites"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 7:12 sustenta a resposta: “Quarenta dias e quarenta noites”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 7:12 sustenta a resposta: “Quarenta dias e quarenta noites”.",
+        "c": "Não. Gênesis 7:12 sustenta a resposta: “Quarenta dias e quarenta noites”.",
+        "d": "Não. Gênesis 7:12 sustenta a resposta: “Quarenta dias e quarenta noites”."
+      },
+      "verseRef": "Gênesis 7:12",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-semente-depois-10",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Sobre quais montes a arca repousou?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os montes de Moriá"
+        },
+        {
+          "id": "b",
+          "text": "Os montes do Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Os montes de Ararate"
+        },
+        {
+          "id": "d",
+          "text": "Os montes de Seir"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 8:4 sustenta a resposta: “Os montes de Ararate”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 8:4 sustenta a resposta: “Os montes de Ararate”.",
+        "b": "Não. Gênesis 8:4 sustenta a resposta: “Os montes de Ararate”.",
+        "d": "Não. Gênesis 8:4 sustenta a resposta: “Os montes de Ararate”."
+      },
+      "verseRef": "Gênesis 8:4",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-semente-depois-11",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Qual ave voltou com uma folha nova de oliveira?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O corvo"
+        },
+        {
+          "id": "b",
+          "text": "A águia"
+        },
+        {
+          "id": "c",
+          "text": "A codorniz"
+        },
+        {
+          "id": "d",
+          "text": "A pomba"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 8:11 sustenta a resposta: “A pomba”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 8:11 sustenta a resposta: “A pomba”.",
+        "b": "Não. Gênesis 8:11 sustenta a resposta: “A pomba”.",
+        "c": "Não. Gênesis 8:11 sustenta a resposta: “A pomba”."
+      },
+      "verseRef": "Gênesis 8:11",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-12",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Qual sinal Deus deu para a aliança após o dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O arco nas nuvens"
+        },
+        {
+          "id": "b",
+          "text": "Uma coluna de fogo"
+        },
+        {
+          "id": "c",
+          "text": "Uma estrela no oriente"
+        },
+        {
+          "id": "d",
+          "text": "Uma pedra escrita"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 9:12-13 sustenta a resposta: “O arco nas nuvens”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 9:12-13 sustenta a resposta: “O arco nas nuvens”.",
+        "c": "Não. Gênesis 9:12-13 sustenta a resposta: “O arco nas nuvens”.",
+        "d": "Não. Gênesis 9:12-13 sustenta a resposta: “O arco nas nuvens”."
+      },
+      "verseRef": "Gênesis 9:12-13",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-semente-depois-13",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Em que região foi construída a cidade de Babel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No jardim do Éden"
+        },
+        {
+          "id": "b",
+          "text": "Na planície de Sinar"
+        },
+        {
+          "id": "c",
+          "text": "Nos montes de Ararate"
+        },
+        {
+          "id": "d",
+          "text": "Na terra de Canaã"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 11:2 sustenta a resposta: “Na planície de Sinar”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:2 sustenta a resposta: “Na planície de Sinar”.",
+        "c": "Não. Gênesis 11:2 sustenta a resposta: “Na planície de Sinar”.",
+        "d": "Não. Gênesis 11:2 sustenta a resposta: “Na planície de Sinar”."
+      },
+      "verseRef": "Gênesis 11:2",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-semente-depois-14",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "Que material substituiu a pedra na construção de Babel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Madeira"
+        },
+        {
+          "id": "b",
+          "text": "Bronze"
+        },
+        {
+          "id": "c",
+          "text": "Tijolos"
+        },
+        {
+          "id": "d",
+          "text": "Mármore"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 11:3 sustenta a resposta: “Tijolos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:3 sustenta a resposta: “Tijolos”.",
+        "b": "Não. Gênesis 11:3 sustenta a resposta: “Tijolos”.",
+        "d": "Não. Gênesis 11:3 sustenta a resposta: “Tijolos”."
+      },
+      "verseRef": "Gênesis 11:3",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-semente-depois-15",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que Deus confundiu em Babel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As estações do ano"
+        },
+        {
+          "id": "b",
+          "text": "Os cursos dos rios"
+        },
+        {
+          "id": "c",
+          "text": "Os nomes dos animais"
+        },
+        {
+          "id": "d",
+          "text": "A linguagem do povo"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 11:7 sustenta a resposta: “A linguagem do povo”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:7 sustenta a resposta: “A linguagem do povo”.",
+        "b": "Não. Gênesis 11:7 sustenta a resposta: “A linguagem do povo”.",
+        "c": "Não. Gênesis 11:7 sustenta a resposta: “A linguagem do povo”."
+      },
+      "verseRef": "Gênesis 11:7",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-semente-depois-16",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que Deus mandou Abrão deixar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sua terra, seus parentes e a casa de seu pai"
+        },
+        {
+          "id": "b",
+          "text": "Sua esposa e seus servos"
+        },
+        {
+          "id": "c",
+          "text": "Seu rebanho inteiro"
+        },
+        {
+          "id": "d",
+          "text": "A arca e o altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 12:1 sustenta a resposta: “Sua terra, seus parentes e a casa de seu pai”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 12:1 sustenta a resposta: “Sua terra, seus parentes e a casa de seu pai”.",
+        "c": "Não. Gênesis 12:1 sustenta a resposta: “Sua terra, seus parentes e a casa de seu pai”.",
+        "d": "Não. Gênesis 12:1 sustenta a resposta: “Sua terra, seus parentes e a casa de seu pai”."
+      },
+      "verseRef": "Gênesis 12:1",
+      "reveal": null
+    },
+    {
+      "id": "g-semente-depois-17",
+      "difficulty": "semente",
+      "section": "depois",
+      "question": "O que Deus prometeu fazer de Abrão?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O construtor de uma torre"
+        },
+        {
+          "id": "b",
+          "text": "Uma grande nação"
+        },
+        {
+          "id": "c",
+          "text": "O rei do Egito"
+        },
+        {
+          "id": "d",
+          "text": "O guardião do Éden"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 12:2 sustenta a resposta: “Uma grande nação”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 12:2 sustenta a resposta: “Uma grande nação”.",
+        "c": "Não. Gênesis 12:2 sustenta a resposta: “Uma grande nação”.",
+        "d": "Não. Gênesis 12:2 sustenta a resposta: “Uma grande nação”."
+      },
+      "verseRef": "Gênesis 12:2",
+      "reveal": null
+    },
+    {
+      "id": "g-caminhada-criacao-01",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Que padrão organiza repetidamente os dias da criação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conflito, derrota e reconstrução"
+        },
+        {
+          "id": "b",
+          "text": "Sonho, interpretação e viagem"
+        },
+        {
+          "id": "c",
+          "text": "Ordem divina, cumprimento, avaliação e tarde e manhã"
+        },
+        {
+          "id": "d",
+          "text": "Sacrifício, chuva e aliança"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:3-31 sustenta a resposta: “Ordem divina, cumprimento, avaliação e tarde e manhã”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:3-31 sustenta a resposta: “Ordem divina, cumprimento, avaliação e tarde e manhã”.",
+        "b": "Não. Gênesis 1:3-31 sustenta a resposta: “Ordem divina, cumprimento, avaliação e tarde e manhã”.",
+        "d": "Não. Gênesis 1:3-31 sustenta a resposta: “Ordem divina, cumprimento, avaliação e tarde e manhã”."
+      },
+      "verseRef": "Gênesis 1:3-31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-02",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que a sequência mostra sobre a luz e os luminares?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os luminares criam a luz no primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "A lua surge antes da luz"
+        },
+        {
+          "id": "c",
+          "text": "Todos aparecem no mesmo dia"
+        },
+        {
+          "id": "d",
+          "text": "A luz surge antes do sol, da lua e das estrelas"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:3-5; 1:14-19 sustenta a resposta: “A luz surge antes do sol, da lua e das estrelas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:3-5; 1:14-19 sustenta a resposta: “A luz surge antes do sol, da lua e das estrelas”.",
+        "b": "Não. Gênesis 1:3-5; 1:14-19 sustenta a resposta: “A luz surge antes do sol, da lua e das estrelas”.",
+        "c": "Não. Gênesis 1:3-5; 1:14-19 sustenta a resposta: “A luz surge antes do sol, da lua e das estrelas”."
+      },
+      "verseRef": "Gênesis 1:3-5; 1:14-19",
+      "reveal": "light"
+    },
+    {
+      "id": "g-caminhada-criacao-03",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Qual relação existe entre o segundo e o quinto dias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O segundo organiza céus e águas; o quinto os povoa"
+        },
+        {
+          "id": "b",
+          "text": "Ambos criam somente vegetação"
+        },
+        {
+          "id": "c",
+          "text": "O segundo cria o homem; o quinto, a mulher"
+        },
+        {
+          "id": "d",
+          "text": "Ambos descrevem o descanso"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:6-8; 1:20-23 sustenta a resposta: “O segundo organiza céus e águas; o quinto os povoa”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:6-8; 1:20-23 sustenta a resposta: “O segundo organiza céus e águas; o quinto os povoa”.",
+        "c": "Não. Gênesis 1:6-8; 1:20-23 sustenta a resposta: “O segundo organiza céus e águas; o quinto os povoa”.",
+        "d": "Não. Gênesis 1:6-8; 1:20-23 sustenta a resposta: “O segundo organiza céus e águas; o quinto os povoa”."
+      },
+      "verseRef": "Gênesis 1:6-8; 1:20-23",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-04",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que ocorre logo após a terra seca aparecer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem nomeia os animais"
+        },
+        {
+          "id": "b",
+          "text": "A terra produz vegetação"
+        },
+        {
+          "id": "c",
+          "text": "Os luminares deixam de brilhar"
+        },
+        {
+          "id": "d",
+          "text": "Deus descansa"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:9-12 sustenta a resposta: “A terra produz vegetação”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:9-12 sustenta a resposta: “A terra produz vegetação”.",
+        "c": "Não. Gênesis 1:9-12 sustenta a resposta: “A terra produz vegetação”.",
+        "d": "Não. Gênesis 1:9-12 sustenta a resposta: “A terra produz vegetação”."
+      },
+      "verseRef": "Gênesis 1:9-12",
+      "reveal": "land"
+    },
+    {
+      "id": "g-caminhada-criacao-05",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Qual dia não recebe explicitamente a frase de que era bom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "O terceiro dia"
+        },
+        {
+          "id": "c",
+          "text": "O segundo dia"
+        },
+        {
+          "id": "d",
+          "text": "O sexto dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:6-8 sustenta a resposta: “O segundo dia”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:6-8 sustenta a resposta: “O segundo dia”.",
+        "b": "Não. Gênesis 1:6-8 sustenta a resposta: “O segundo dia”.",
+        "d": "Não. Gênesis 1:6-8 sustenta a resposta: “O segundo dia”."
+      },
+      "verseRef": "Gênesis 1:6-8",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-06",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Por que o terceiro dia contém duas avaliações de bondade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque nele surgem dois seres humanos"
+        },
+        {
+          "id": "b",
+          "text": "Porque durou duas noites"
+        },
+        {
+          "id": "c",
+          "text": "Porque encerra duas semanas"
+        },
+        {
+          "id": "d",
+          "text": "Porque inclui terra e mares e também vegetação"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:9-13 sustenta a resposta: “Porque inclui terra e mares e também vegetação”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:9-13 sustenta a resposta: “Porque inclui terra e mares e também vegetação”.",
+        "b": "Não. Gênesis 1:9-13 sustenta a resposta: “Porque inclui terra e mares e também vegetação”.",
+        "c": "Não. Gênesis 1:9-13 sustenta a resposta: “Porque inclui terra e mares e também vegetação”."
+      },
+      "verseRef": "Gênesis 1:9-13",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-07",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Como o governo dos luminares difere do domínio humano?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eles governam dia e noite; humanos governam seres vivos"
+        },
+        {
+          "id": "b",
+          "text": "Luminares governam animais; humanos, estrelas"
+        },
+        {
+          "id": "c",
+          "text": "Ambos governam apenas as águas"
+        },
+        {
+          "id": "d",
+          "text": "Não há diferença"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:16-18; 1:26-28 sustenta a resposta: “Eles governam dia e noite; humanos governam seres vivos”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:16-18; 1:26-28 sustenta a resposta: “Eles governam dia e noite; humanos governam seres vivos”.",
+        "c": "Não. Gênesis 1:16-18; 1:26-28 sustenta a resposta: “Eles governam dia e noite; humanos governam seres vivos”.",
+        "d": "Não. Gênesis 1:16-18; 1:26-28 sustenta a resposta: “Eles governam dia e noite; humanos governam seres vivos”."
+      },
+      "verseRef": "Gênesis 1:16-18; 1:26-28",
+      "reveal": "stars"
+    },
+    {
+      "id": "g-caminhada-criacao-08",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Quem recebe bênção explícita de fecundidade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apenas as plantas"
+        },
+        {
+          "id": "b",
+          "text": "Criaturas aquáticas, aves e seres humanos"
+        },
+        {
+          "id": "c",
+          "text": "Somente os luminares"
+        },
+        {
+          "id": "d",
+          "text": "A terra seca e os mares"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:22; 1:28 sustenta a resposta: “Criaturas aquáticas, aves e seres humanos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:22; 1:28 sustenta a resposta: “Criaturas aquáticas, aves e seres humanos”.",
+        "c": "Não. Gênesis 1:22; 1:28 sustenta a resposta: “Criaturas aquáticas, aves e seres humanos”.",
+        "d": "Não. Gênesis 1:22; 1:28 sustenta a resposta: “Criaturas aquáticas, aves e seres humanos”."
+      },
+      "verseRef": "Gênesis 1:22; 1:28",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-09",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Que responsabilidade acompanha ser imagem de Deus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dar luz à terra"
+        },
+        {
+          "id": "b",
+          "text": "Separar as águas superiores"
+        },
+        {
+          "id": "c",
+          "text": "Exercer domínio sobre os seres vivos"
+        },
+        {
+          "id": "d",
+          "text": "Santificar o sétimo dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:26-28 sustenta a resposta: “Exercer domínio sobre os seres vivos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:26-28 sustenta a resposta: “Exercer domínio sobre os seres vivos”.",
+        "b": "Não. Gênesis 1:26-28 sustenta a resposta: “Exercer domínio sobre os seres vivos”.",
+        "d": "Não. Gênesis 1:26-28 sustenta a resposta: “Exercer domínio sobre os seres vivos”."
+      },
+      "verseRef": "Gênesis 1:26-28",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-criacao-10",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Como o alimento humano difere do alimento dos animais?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humanos recebem carne; animais, frutos"
+        },
+        {
+          "id": "b",
+          "text": "Ambos recebem apenas peixes"
+        },
+        {
+          "id": "c",
+          "text": "Animais recebem árvores; humanos, água"
+        },
+        {
+          "id": "d",
+          "text": "Humanos recebem sementes e frutos; animais, plantas verdes"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:29-30 sustenta a resposta: “Humanos recebem sementes e frutos; animais, plantas verdes”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:29-30 sustenta a resposta: “Humanos recebem sementes e frutos; animais, plantas verdes”.",
+        "b": "Não. Gênesis 1:29-30 sustenta a resposta: “Humanos recebem sementes e frutos; animais, plantas verdes”.",
+        "c": "Não. Gênesis 1:29-30 sustenta a resposta: “Humanos recebem sementes e frutos; animais, plantas verdes”."
+      },
+      "verseRef": "Gênesis 1:29-30",
+      "reveal": "plants"
+    },
+    {
+      "id": "g-caminhada-criacao-11",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Quando a avaliação muda de bom para muito bom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Após Deus contemplar toda a obra concluída"
+        },
+        {
+          "id": "b",
+          "text": "Logo após criar a luz"
+        },
+        {
+          "id": "c",
+          "text": "Antes de criar a humanidade"
+        },
+        {
+          "id": "d",
+          "text": "Somente após o descanso"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:31 sustenta a resposta: “Após Deus contemplar toda a obra concluída”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:31 sustenta a resposta: “Após Deus contemplar toda a obra concluída”.",
+        "c": "Não. Gênesis 1:31 sustenta a resposta: “Após Deus contemplar toda a obra concluída”.",
+        "d": "Não. Gênesis 1:31 sustenta a resposta: “Após Deus contemplar toda a obra concluída”."
+      },
+      "verseRef": "Gênesis 1:31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-12",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que o descanso do sétimo dia indica sobre a obra?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que Deus abandonou uma obra incompleta"
+        },
+        {
+          "id": "b",
+          "text": "Que a obra criadora estava concluída"
+        },
+        {
+          "id": "c",
+          "text": "Que as criaturas pararam de existir"
+        },
+        {
+          "id": "d",
+          "text": "Que o sexto dia foi cancelado"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”.",
+        "c": "Não. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”.",
+        "d": "Não. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”."
+      },
+      "verseRef": "Gênesis 2:1-2",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-13",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que torna o sétimo dia distinto dos seis anteriores?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele recebe duas tardes"
+        },
+        {
+          "id": "b",
+          "text": "Nele surgem todos os animais"
+        },
+        {
+          "id": "c",
+          "text": "Deus o abençoa e santifica"
+        },
+        {
+          "id": "d",
+          "text": "Ele não pertence à criação"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”.",
+        "b": "Não. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”.",
+        "d": "Não. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”."
+      },
+      "verseRef": "Gênesis 2:3",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-14",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que a repetição “segundo as suas espécies” enfatiza?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A origem humana nos animais"
+        },
+        {
+          "id": "b",
+          "text": "A inexistência de limites"
+        },
+        {
+          "id": "c",
+          "text": "A superioridade dos luminares"
+        },
+        {
+          "id": "d",
+          "text": "A diversidade ordenada dos seres vivos"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”.",
+        "b": "Não. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”.",
+        "c": "Não. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”."
+      },
+      "verseRef": "Gênesis 1:11-12; 1:21; 1:24-25",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-15",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Qual fala introduz a criação humana de modo distinto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Façamos o ser humano à nossa imagem"
+        },
+        {
+          "id": "b",
+          "text": "Ajuntem-se as águas"
+        },
+        {
+          "id": "c",
+          "text": "Haja luminares"
+        },
+        {
+          "id": "d",
+          "text": "Produza a terra seres vivos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:26 sustenta a resposta: “Façamos o ser humano à nossa imagem”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:26 sustenta a resposta: “Façamos o ser humano à nossa imagem”.",
+        "c": "Não. Gênesis 1:26 sustenta a resposta: “Façamos o ser humano à nossa imagem”.",
+        "d": "Não. Gênesis 1:26 sustenta a resposta: “Façamos o ser humano à nossa imagem”."
+      },
+      "verseRef": "Gênesis 1:26",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-criacao-16",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "O que o ato divino de nomear os domínios comunica?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que Adão já estava presente"
+        },
+        {
+          "id": "b",
+          "text": "Sua autoridade sobre a criação"
+        },
+        {
+          "id": "c",
+          "text": "Que a serpente escolheu os nomes"
+        },
+        {
+          "id": "d",
+          "text": "Que os domínios eram deuses"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:5; 1:8; 1:10 sustenta a resposta: “Sua autoridade sobre a criação”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:5; 1:8; 1:10 sustenta a resposta: “Sua autoridade sobre a criação”.",
+        "c": "Não. Gênesis 1:5; 1:8; 1:10 sustenta a resposta: “Sua autoridade sobre a criação”.",
+        "d": "Não. Gênesis 1:5; 1:8; 1:10 sustenta a resposta: “Sua autoridade sobre a criação”."
+      },
+      "verseRef": "Gênesis 1:5; 1:8; 1:10",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-caminhada-criacao-17",
+      "difficulty": "caminhada",
+      "section": "criacao",
+      "question": "Quais movimentos compõem o mandato à humanidade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deixar a terra e fazer uma arca"
+        },
+        {
+          "id": "b",
+          "text": "Nomear estrelas e separar águas"
+        },
+        {
+          "id": "c",
+          "text": "Encher a terra e sujeitá-la"
+        },
+        {
+          "id": "d",
+          "text": "Trabalhar no sétimo dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:28 sustenta a resposta: “Encher a terra e sujeitá-la”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:28 sustenta a resposta: “Encher a terra e sujeitá-la”.",
+        "b": "Não. Gênesis 1:28 sustenta a resposta: “Encher a terra e sujeitá-la”.",
+        "d": "Não. Gênesis 1:28 sustenta a resposta: “Encher a terra e sujeitá-la”."
+      },
+      "verseRef": "Gênesis 1:28",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-01",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Por que ainda não havia plantas cultivadas no campo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sol ainda não existia"
+        },
+        {
+          "id": "b",
+          "text": "O dilúvio destruíra tudo"
+        },
+        {
+          "id": "c",
+          "text": "Os animais comeram as sementes"
+        },
+        {
+          "id": "d",
+          "text": "Não havia chuva nem homem para lavrar o solo"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:5 sustenta a resposta: “Não havia chuva nem homem para lavrar o solo”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:5 sustenta a resposta: “Não havia chuva nem homem para lavrar o solo”.",
+        "b": "Não. Gênesis 2:5 sustenta a resposta: “Não havia chuva nem homem para lavrar o solo”.",
+        "c": "Não. Gênesis 2:5 sustenta a resposta: “Não havia chuva nem homem para lavrar o solo”."
+      },
+      "verseRef": "Gênesis 2:5",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-02",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Qual sequência descreve a formação do homem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pó, fôlego e ser vivente"
+        },
+        {
+          "id": "b",
+          "text": "Água, asas e jardim"
+        },
+        {
+          "id": "c",
+          "text": "Costela, nome e sono"
+        },
+        {
+          "id": "d",
+          "text": "Árvore, fruto e trabalho"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:7 sustenta a resposta: “Pó, fôlego e ser vivente”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:7 sustenta a resposta: “Pó, fôlego e ser vivente”.",
+        "c": "Não. Gênesis 2:7 sustenta a resposta: “Pó, fôlego e ser vivente”.",
+        "d": "Não. Gênesis 2:7 sustenta a resposta: “Pó, fôlego e ser vivente”."
+      },
+      "verseRef": "Gênesis 2:7",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-03",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "O que acontece ao rio que sai do Éden?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deságua no mar Vermelho"
+        },
+        {
+          "id": "b",
+          "text": "Divide-se em quatro braços"
+        },
+        {
+          "id": "c",
+          "text": "Transforma-se em chuva"
+        },
+        {
+          "id": "d",
+          "text": "Some sob a árvore da vida"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:10 sustenta a resposta: “Divide-se em quatro braços”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:10 sustenta a resposta: “Divide-se em quatro braços”.",
+        "c": "Não. Gênesis 2:10 sustenta a resposta: “Divide-se em quatro braços”.",
+        "d": "Não. Gênesis 2:10 sustenta a resposta: “Divide-se em quatro braços”."
+      },
+      "verseRef": "Gênesis 2:10",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-04",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Como a ordem sobre as árvores combina liberdade e limite?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proíbe todos os frutos"
+        },
+        {
+          "id": "b",
+          "text": "Permite apenas a árvore da vida"
+        },
+        {
+          "id": "c",
+          "text": "Permite todas, exceto uma"
+        },
+        {
+          "id": "d",
+          "text": "Não estabelece limite"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:16-17 sustenta a resposta: “Permite todas, exceto uma”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:16-17 sustenta a resposta: “Permite todas, exceto uma”.",
+        "b": "Não. Gênesis 2:16-17 sustenta a resposta: “Permite todas, exceto uma”.",
+        "d": "Não. Gênesis 2:16-17 sustenta a resposta: “Permite todas, exceto uma”."
+      },
+      "verseRef": "Gênesis 2:16-17",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-05",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "O que acontece antes da formação da mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A serpente oferece o fruto"
+        },
+        {
+          "id": "b",
+          "text": "O casal faz cintas"
+        },
+        {
+          "id": "c",
+          "text": "Deus expulsa o homem"
+        },
+        {
+          "id": "d",
+          "text": "O homem nomeia animais e não acha auxiliadora correspondente"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:19-22 sustenta a resposta: “O homem nomeia animais e não acha auxiliadora correspondente”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:19-22 sustenta a resposta: “O homem nomeia animais e não acha auxiliadora correspondente”.",
+        "b": "Não. Gênesis 2:19-22 sustenta a resposta: “O homem nomeia animais e não acha auxiliadora correspondente”.",
+        "c": "Não. Gênesis 2:19-22 sustenta a resposta: “O homem nomeia animais e não acha auxiliadora correspondente”."
+      },
+      "verseRef": "Gênesis 2:19-22",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-06",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Qual sequência leva à formação da mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sono profundo, retirada da costela e formação"
+        },
+        {
+          "id": "b",
+          "text": "Chuva, barro e sopro"
+        },
+        {
+          "id": "c",
+          "text": "Nomeação, fruto e expulsão"
+        },
+        {
+          "id": "d",
+          "text": "Sacrifício, aliança e bênção"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:21-22 sustenta a resposta: “Sono profundo, retirada da costela e formação”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:21-22 sustenta a resposta: “Sono profundo, retirada da costela e formação”.",
+        "c": "Não. Gênesis 2:21-22 sustenta a resposta: “Sono profundo, retirada da costela e formação”.",
+        "d": "Não. Gênesis 2:21-22 sustenta a resposta: “Sono profundo, retirada da costela e formação”."
+      },
+      "verseRef": "Gênesis 2:21-22",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-07",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Que conclusão acompanha o reconhecimento da mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cada um vive em jardim separado"
+        },
+        {
+          "id": "b",
+          "text": "O homem se une à mulher, e ambos se tornam uma só carne"
+        },
+        {
+          "id": "c",
+          "text": "A mulher governa sozinha"
+        },
+        {
+          "id": "d",
+          "text": "O homem volta imediatamente ao pó"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:23-24 sustenta a resposta: “O homem se une à mulher, e ambos se tornam uma só carne”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:23-24 sustenta a resposta: “O homem se une à mulher, e ambos se tornam uma só carne”.",
+        "c": "Não. Gênesis 2:23-24 sustenta a resposta: “O homem se une à mulher, e ambos se tornam uma só carne”.",
+        "d": "Não. Gênesis 2:23-24 sustenta a resposta: “O homem se une à mulher, e ambos se tornam uma só carne”."
+      },
+      "verseRef": "Gênesis 2:23-24",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-08",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Como a serpente distorce inicialmente a ordem divina?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Afirma que só a árvore da vida era permitida"
+        },
+        {
+          "id": "b",
+          "text": "Diz que Deus nunca falou"
+        },
+        {
+          "id": "c",
+          "text": "Transforma uma proibição em pergunta sobre todas as árvores"
+        },
+        {
+          "id": "d",
+          "text": "Manda o casal sair"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:1 sustenta a resposta: “Transforma uma proibição em pergunta sobre todas as árvores”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:1 sustenta a resposta: “Transforma uma proibição em pergunta sobre todas as árvores”.",
+        "b": "Não. Gênesis 3:1 sustenta a resposta: “Transforma uma proibição em pergunta sobre todas as árvores”.",
+        "d": "Não. Gênesis 3:1 sustenta a resposta: “Transforma uma proibição em pergunta sobre todas as árvores”."
+      },
+      "verseRef": "Gênesis 3:1",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-jardim-09",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Quais aspectos tornaram o fruto atraente à mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amargo, oculto e fortalecedor"
+        },
+        {
+          "id": "b",
+          "text": "Era o único alimento"
+        },
+        {
+          "id": "c",
+          "text": "Adão o havia ordenado"
+        },
+        {
+          "id": "d",
+          "text": "Bom para comer, agradável aos olhos e desejável para obter sabedoria"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:6 sustenta a resposta: “Bom para comer, agradável aos olhos e desejável para obter sabedoria”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:6 sustenta a resposta: “Bom para comer, agradável aos olhos e desejável para obter sabedoria”.",
+        "b": "Não. Gênesis 3:6 sustenta a resposta: “Bom para comer, agradável aos olhos e desejável para obter sabedoria”.",
+        "c": "Não. Gênesis 3:6 sustenta a resposta: “Bom para comer, agradável aos olhos e desejável para obter sabedoria”."
+      },
+      "verseRef": "Gênesis 3:6",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-jardim-10",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Qual efeito é narrado imediatamente após ambos comerem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seus olhos se abrem e percebem a nudez"
+        },
+        {
+          "id": "b",
+          "text": "São expulsos sem diálogo"
+        },
+        {
+          "id": "c",
+          "text": "A serpente perde as pernas"
+        },
+        {
+          "id": "d",
+          "text": "O jardim é queimado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:6-7 sustenta a resposta: “Seus olhos se abrem e percebem a nudez”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:6-7 sustenta a resposta: “Seus olhos se abrem e percebem a nudez”.",
+        "c": "Não. Gênesis 3:6-7 sustenta a resposta: “Seus olhos se abrem e percebem a nudez”.",
+        "d": "Não. Gênesis 3:6-7 sustenta a resposta: “Seus olhos se abrem e percebem a nudez”."
+      },
+      "verseRef": "Gênesis 3:6-7",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-11",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Como o casal responde ao ser confrontado?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ambos assumem toda a culpa"
+        },
+        {
+          "id": "b",
+          "text": "Adão culpa a mulher, e ela culpa a serpente"
+        },
+        {
+          "id": "c",
+          "text": "Adão culpa o rio, e ela os animais"
+        },
+        {
+          "id": "d",
+          "text": "Ambos ficam calados"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 3:12-13 sustenta a resposta: “Adão culpa a mulher, e ela culpa a serpente”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:12-13 sustenta a resposta: “Adão culpa a mulher, e ela culpa a serpente”.",
+        "c": "Não. Gênesis 3:12-13 sustenta a resposta: “Adão culpa a mulher, e ela culpa a serpente”.",
+        "d": "Não. Gênesis 3:12-13 sustenta a resposta: “Adão culpa a mulher, e ela culpa a serpente”."
+      },
+      "verseRef": "Gênesis 3:12-13",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-12",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Em que ordem Deus pronuncia as sentenças?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homem, mulher e serpente"
+        },
+        {
+          "id": "b",
+          "text": "Mulher, serpente e homem"
+        },
+        {
+          "id": "c",
+          "text": "Serpente, mulher e homem"
+        },
+        {
+          "id": "d",
+          "text": "Homem, serpente e mulher"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:14-19 sustenta a resposta: “Serpente, mulher e homem”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:14-19 sustenta a resposta: “Serpente, mulher e homem”.",
+        "b": "Não. Gênesis 3:14-19 sustenta a resposta: “Serpente, mulher e homem”.",
+        "d": "Não. Gênesis 3:14-19 sustenta a resposta: “Serpente, mulher e homem”."
+      },
+      "verseRef": "Gênesis 3:14-19",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-jardim-13",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Como a desobediência afeta o trabalho do homem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo cultivo fica proibido"
+        },
+        {
+          "id": "b",
+          "text": "Animais passam a fazer o trabalho"
+        },
+        {
+          "id": "c",
+          "text": "O solo nunca mais produz"
+        },
+        {
+          "id": "d",
+          "text": "O solo produz espinhos, e o trabalho traz fadiga"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:17-19 sustenta a resposta: “O solo produz espinhos, e o trabalho traz fadiga”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:17-19 sustenta a resposta: “O solo produz espinhos, e o trabalho traz fadiga”.",
+        "b": "Não. Gênesis 3:17-19 sustenta a resposta: “O solo produz espinhos, e o trabalho traz fadiga”.",
+        "c": "Não. Gênesis 3:17-19 sustenta a resposta: “O solo produz espinhos, e o trabalho traz fadiga”."
+      },
+      "verseRef": "Gênesis 3:17-19",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-jardim-14",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Quando o homem chama sua mulher de Eva?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois das sentenças e antes das vestes de peles"
+        },
+        {
+          "id": "b",
+          "text": "Antes de ela ser formada"
+        },
+        {
+          "id": "c",
+          "text": "Ao nomear os animais"
+        },
+        {
+          "id": "d",
+          "text": "Depois do nascimento de Caim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:20-21 sustenta a resposta: “Depois das sentenças e antes das vestes de peles”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:20-21 sustenta a resposta: “Depois das sentenças e antes das vestes de peles”.",
+        "c": "Não. Gênesis 3:20-21 sustenta a resposta: “Depois das sentenças e antes das vestes de peles”.",
+        "d": "Não. Gênesis 3:20-21 sustenta a resposta: “Depois das sentenças e antes das vestes de peles”."
+      },
+      "verseRef": "Gênesis 3:20-21",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-caminhada-jardim-15",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Por que o casal é impedido de permanecer no jardim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o rio secou"
+        },
+        {
+          "id": "b",
+          "text": "Para não comer da árvore da vida e viver para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Para construir Babel"
+        },
+        {
+          "id": "d",
+          "text": "Porque acabaram os frutos"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 3:22-24 sustenta a resposta: “Para não comer da árvore da vida e viver para sempre”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:22-24 sustenta a resposta: “Para não comer da árvore da vida e viver para sempre”.",
+        "c": "Não. Gênesis 3:22-24 sustenta a resposta: “Para não comer da árvore da vida e viver para sempre”.",
+        "d": "Não. Gênesis 3:22-24 sustenta a resposta: “Para não comer da árvore da vida e viver para sempre”."
+      },
+      "verseRef": "Gênesis 3:22-24",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-caminhada-jardim-16",
+      "difficulty": "caminhada",
+      "section": "jardim",
+      "question": "Que conflito é anunciado em Gênesis 3:15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disputa pela posse do rio"
+        },
+        {
+          "id": "b",
+          "text": "Aliança para governar animais"
+        },
+        {
+          "id": "c",
+          "text": "Inimizade entre a serpente e a mulher e suas descendências"
+        },
+        {
+          "id": "d",
+          "text": "Competição pelo cultivo"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:15 sustenta a resposta: “Inimizade entre a serpente e a mulher e suas descendências”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:15 sustenta a resposta: “Inimizade entre a serpente e a mulher e suas descendências”.",
+        "b": "Não. Gênesis 3:15 sustenta a resposta: “Inimizade entre a serpente e a mulher e suas descendências”.",
+        "d": "Não. Gênesis 3:15 sustenta a resposta: “Inimizade entre a serpente e a mulher e suas descendências”."
+      },
+      "verseRef": "Gênesis 3:15",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-depois-01",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Como Caim reage à rejeição de sua oferta?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegra-se e oferece novamente"
+        },
+        {
+          "id": "b",
+          "text": "Parte para construir a arca"
+        },
+        {
+          "id": "c",
+          "text": "Pede ajuda a Abel"
+        },
+        {
+          "id": "d",
+          "text": "Fica muito irado e seu semblante cai"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 4:5 sustenta a resposta: “Fica muito irado e seu semblante cai”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:5 sustenta a resposta: “Fica muito irado e seu semblante cai”.",
+        "b": "Não. Gênesis 4:5 sustenta a resposta: “Fica muito irado e seu semblante cai”.",
+        "c": "Não. Gênesis 4:5 sustenta a resposta: “Fica muito irado e seu semblante cai”."
+      },
+      "verseRef": "Gênesis 4:5",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-depois-02",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que imagem Deus usa ao advertir Caim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O pecado jaz à porta e deseja dominá-lo"
+        },
+        {
+          "id": "b",
+          "text": "Uma serpente guarda a árvore"
+        },
+        {
+          "id": "c",
+          "text": "Um rio ameaça o campo"
+        },
+        {
+          "id": "d",
+          "text": "Uma torre toca o céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 4:7 sustenta a resposta: “O pecado jaz à porta e deseja dominá-lo”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 4:7 sustenta a resposta: “O pecado jaz à porta e deseja dominá-lo”.",
+        "c": "Não. Gênesis 4:7 sustenta a resposta: “O pecado jaz à porta e deseja dominá-lo”.",
+        "d": "Não. Gênesis 4:7 sustenta a resposta: “O pecado jaz à porta e deseja dominá-lo”."
+      },
+      "verseRef": "Gênesis 4:7",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-depois-03",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Como a pena de Caim se relaciona ao seu trabalho?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seu rebanho multiplica sete vezes"
+        },
+        {
+          "id": "b",
+          "text": "A terra não dá sua força, e ele se torna errante"
+        },
+        {
+          "id": "c",
+          "text": "Ele cultiva o Éden sem esforço"
+        },
+        {
+          "id": "d",
+          "text": "Ele domina todas as cidades"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 4:11-12 sustenta a resposta: “A terra não dá sua força, e ele se torna errante”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:11-12 sustenta a resposta: “A terra não dá sua força, e ele se torna errante”.",
+        "c": "Não. Gênesis 4:11-12 sustenta a resposta: “A terra não dá sua força, e ele se torna errante”.",
+        "d": "Não. Gênesis 4:11-12 sustenta a resposta: “A terra não dá sua força, e ele se torna errante”."
+      },
+      "verseRef": "Gênesis 4:11-12",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-depois-04",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que atividades aparecem entre descendentes de Caim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Construção da arca, sacerdócio e escrita"
+        },
+        {
+          "id": "b",
+          "text": "Astronomia, medicina e navegação"
+        },
+        {
+          "id": "c",
+          "text": "Pastoreio nômade, música e metalurgia"
+        },
+        {
+          "id": "d",
+          "text": "Pesca, tecelagem e governo"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 4:20-22 sustenta a resposta: “Pastoreio nômade, música e metalurgia”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:20-22 sustenta a resposta: “Pastoreio nômade, música e metalurgia”.",
+        "b": "Não. Gênesis 4:20-22 sustenta a resposta: “Pastoreio nômade, música e metalurgia”.",
+        "d": "Não. Gênesis 4:20-22 sustenta a resposta: “Pastoreio nômade, música e metalurgia”."
+      },
+      "verseRef": "Gênesis 4:20-22",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-caminhada-depois-05",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que refrão marca a genealogia de Adão?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E construiu uma torre"
+        },
+        {
+          "id": "b",
+          "text": "E atravessou o mar"
+        },
+        {
+          "id": "c",
+          "text": "E tornou-se rei"
+        },
+        {
+          "id": "d",
+          "text": "E morreu"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 5:5-31 sustenta a resposta: “E morreu”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 5:5-31 sustenta a resposta: “E morreu”.",
+        "b": "Não. Gênesis 5:5-31 sustenta a resposta: “E morreu”.",
+        "c": "Não. Gênesis 5:5-31 sustenta a resposta: “E morreu”."
+      },
+      "verseRef": "Gênesis 5:5-31",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-06",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que esperança Lameque associa ao nome de Noé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consolo na fadiga do solo amaldiçoado"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sobre cidades vizinhas"
+        },
+        {
+          "id": "c",
+          "text": "Retorno imediato ao Éden"
+        },
+        {
+          "id": "d",
+          "text": "Fim de todas as línguas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 5:29 sustenta a resposta: “Consolo na fadiga do solo amaldiçoado”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 5:29 sustenta a resposta: “Consolo na fadiga do solo amaldiçoado”.",
+        "c": "Não. Gênesis 5:29 sustenta a resposta: “Consolo na fadiga do solo amaldiçoado”.",
+        "d": "Não. Gênesis 5:29 sustenta a resposta: “Consolo na fadiga do solo amaldiçoado”."
+      },
+      "verseRef": "Gênesis 5:29",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-07",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que situação motiva o anúncio do dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os rios do Éden secaram"
+        },
+        {
+          "id": "b",
+          "text": "A terra estava corrompida e cheia de violência"
+        },
+        {
+          "id": "c",
+          "text": "O povo recusou carne"
+        },
+        {
+          "id": "d",
+          "text": "Noé deixou de construir"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 6:11-13 sustenta a resposta: “A terra estava corrompida e cheia de violência”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 6:11-13 sustenta a resposta: “A terra estava corrompida e cheia de violência”.",
+        "c": "Não. Gênesis 6:11-13 sustenta a resposta: “A terra estava corrompida e cheia de violência”.",
+        "d": "Não. Gênesis 6:11-13 sustenta a resposta: “A terra estava corrompida e cheia de violência”."
+      },
+      "verseRef": "Gênesis 6:11-13",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-08",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Como Noé contrasta com sua geração?",
+      "options": [
+        {
+          "id": "a",
+          "text": "É caçador e construtor"
+        },
+        {
+          "id": "b",
+          "text": "É o homem mais rico de Sinar"
+        },
+        {
+          "id": "c",
+          "text": "É justo, íntegro e anda com Deus"
+        },
+        {
+          "id": "d",
+          "text": "É sacerdote de Babel"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 6:8-9 sustenta a resposta: “É justo, íntegro e anda com Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 6:8-9 sustenta a resposta: “É justo, íntegro e anda com Deus”.",
+        "b": "Não. Gênesis 6:8-9 sustenta a resposta: “É justo, íntegro e anda com Deus”.",
+        "d": "Não. Gênesis 6:8-9 sustenta a resposta: “É justo, íntegro e anda com Deus”."
+      },
+      "verseRef": "Gênesis 6:8-9",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-09",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que distinção aparece no número de animais na arca?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impuros entram, e puros ficam fora"
+        },
+        {
+          "id": "b",
+          "text": "Só aves entram em pares"
+        },
+        {
+          "id": "c",
+          "text": "Todos entram em sete pares"
+        },
+        {
+          "id": "d",
+          "text": "Puros entram em maior número que impuros"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 7:2-3 sustenta a resposta: “Puros entram em maior número que impuros”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 7:2-3 sustenta a resposta: “Puros entram em maior número que impuros”.",
+        "b": "Não. Gênesis 7:2-3 sustenta a resposta: “Puros entram em maior número que impuros”.",
+        "c": "Não. Gênesis 7:2-3 sustenta a resposta: “Puros entram em maior número que impuros”."
+      },
+      "verseRef": "Gênesis 7:2-3",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-10",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "O que ocorre depois que Deus se lembra de Noé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um vento sopra, e as águas começam a baixar"
+        },
+        {
+          "id": "b",
+          "text": "A arca é queimada"
+        },
+        {
+          "id": "c",
+          "text": "As línguas são confundidas"
+        },
+        {
+          "id": "d",
+          "text": "Noé retorna ao Éden"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 8:1-3 sustenta a resposta: “Um vento sopra, e as águas começam a baixar”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 8:1-3 sustenta a resposta: “Um vento sopra, e as águas começam a baixar”.",
+        "c": "Não. Gênesis 8:1-3 sustenta a resposta: “Um vento sopra, e as águas começam a baixar”.",
+        "d": "Não. Gênesis 8:1-3 sustenta a resposta: “Um vento sopra, e as águas começam a baixar”."
+      },
+      "verseRef": "Gênesis 8:1-3",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-11",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Qual sequência de aves Noé envia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Primeiro uma pomba, depois uma águia"
+        },
+        {
+          "id": "b",
+          "text": "Primeiro um corvo, depois uma pomba"
+        },
+        {
+          "id": "c",
+          "text": "Primeiro uma águia, depois um corvo"
+        },
+        {
+          "id": "d",
+          "text": "Somente uma pomba"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 8:6-12 sustenta a resposta: “Primeiro um corvo, depois uma pomba”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 8:6-12 sustenta a resposta: “Primeiro um corvo, depois uma pomba”.",
+        "c": "Não. Gênesis 8:6-12 sustenta a resposta: “Primeiro um corvo, depois uma pomba”.",
+        "d": "Não. Gênesis 8:6-12 sustenta a resposta: “Primeiro um corvo, depois uma pomba”."
+      },
+      "verseRef": "Gênesis 8:6-12",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-12",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "O que sucede à oferta de Noé após sair da arca?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus ordena Babel"
+        },
+        {
+          "id": "b",
+          "text": "Noé fica proibido de cultivar"
+        },
+        {
+          "id": "c",
+          "text": "Deus promete preservar a terra e seus ciclos"
+        },
+        {
+          "id": "d",
+          "text": "A arca volta ao mar"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 8:20-22 sustenta a resposta: “Deus promete preservar a terra e seus ciclos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 8:20-22 sustenta a resposta: “Deus promete preservar a terra e seus ciclos”.",
+        "b": "Não. Gênesis 8:20-22 sustenta a resposta: “Deus promete preservar a terra e seus ciclos”.",
+        "d": "Não. Gênesis 8:20-22 sustenta a resposta: “Deus promete preservar a terra e seus ciclos”."
+      },
+      "verseRef": "Gênesis 8:20-22",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-13",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Que mudança alimentar ocorre após o dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somente frutos são permitidos"
+        },
+        {
+          "id": "b",
+          "text": "Todo alimento é proibido"
+        },
+        {
+          "id": "c",
+          "text": "O sangue vira alimento"
+        },
+        {
+          "id": "d",
+          "text": "Animais são permitidos como alimento, mas sem sangue"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 9:3-4 sustenta a resposta: “Animais são permitidos como alimento, mas sem sangue”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 9:3-4 sustenta a resposta: “Animais são permitidos como alimento, mas sem sangue”.",
+        "b": "Não. Gênesis 9:3-4 sustenta a resposta: “Animais são permitidos como alimento, mas sem sangue”.",
+        "c": "Não. Gênesis 9:3-4 sustenta a resposta: “Animais são permitidos como alimento, mas sem sangue”."
+      },
+      "verseRef": "Gênesis 9:3-4",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-14",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Com quem Deus estabelece a aliança do arco?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noé, seus descendentes e todos os seres vivos"
+        },
+        {
+          "id": "b",
+          "text": "Somente Sem"
+        },
+        {
+          "id": "c",
+          "text": "Apenas os animais puros"
+        },
+        {
+          "id": "d",
+          "text": "Os construtores de Babel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 9:8-17 sustenta a resposta: “Noé, seus descendentes e todos os seres vivos”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 9:8-17 sustenta a resposta: “Noé, seus descendentes e todos os seres vivos”.",
+        "c": "Não. Gênesis 9:8-17 sustenta a resposta: “Noé, seus descendentes e todos os seres vivos”.",
+        "d": "Não. Gênesis 9:8-17 sustenta a resposta: “Noé, seus descendentes e todos os seres vivos”."
+      },
+      "verseRef": "Gênesis 9:8-17",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-caminhada-depois-15",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Quais motivações são declaradas em Babel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adorar no Éden e preservar animais"
+        },
+        {
+          "id": "b",
+          "text": "Fazer um nome e evitar a dispersão"
+        },
+        {
+          "id": "c",
+          "text": "Encontrar Ararate e fazer uma arca"
+        },
+        {
+          "id": "d",
+          "text": "Abençoar todas as famílias"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 11:4 sustenta a resposta: “Fazer um nome e evitar a dispersão”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:4 sustenta a resposta: “Fazer um nome e evitar a dispersão”.",
+        "c": "Não. Gênesis 11:4 sustenta a resposta: “Fazer um nome e evitar a dispersão”.",
+        "d": "Não. Gênesis 11:4 sustenta a resposta: “Fazer um nome e evitar a dispersão”."
+      },
+      "verseRef": "Gênesis 11:4",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-caminhada-depois-16",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Como o resultado de Babel contrasta com o plano humano?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queriam línguas diversas, mas receberam uma"
+        },
+        {
+          "id": "b",
+          "text": "Queriam sair, mas ficaram presos"
+        },
+        {
+          "id": "c",
+          "text": "Queriam evitar dispersão, mas foram espalhados"
+        },
+        {
+          "id": "d",
+          "text": "Queriam arca, mas receberam jardim"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 11:4; 11:8-9 sustenta a resposta: “Queriam evitar dispersão, mas foram espalhados”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:4; 11:8-9 sustenta a resposta: “Queriam evitar dispersão, mas foram espalhados”.",
+        "b": "Não. Gênesis 11:4; 11:8-9 sustenta a resposta: “Queriam evitar dispersão, mas foram espalhados”.",
+        "d": "Não. Gênesis 11:4; 11:8-9 sustenta a resposta: “Queriam evitar dispersão, mas foram espalhados”."
+      },
+      "verseRef": "Gênesis 11:4; 11:8-9",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-caminhada-depois-17",
+      "difficulty": "caminhada",
+      "section": "depois",
+      "question": "Como a bênção de Abrão alcançaria outras famílias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Só sua casa teria alimento"
+        },
+        {
+          "id": "b",
+          "text": "Sua cidade dominaria pela força"
+        },
+        {
+          "id": "c",
+          "text": "Ele reconstruiria Babel"
+        },
+        {
+          "id": "d",
+          "text": "Nele seriam benditas todas as famílias da terra"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 12:3 sustenta a resposta: “Nele seriam benditas todas as famílias da terra”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 12:3 sustenta a resposta: “Nele seriam benditas todas as famílias da terra”.",
+        "b": "Não. Gênesis 12:3 sustenta a resposta: “Nele seriam benditas todas as famílias da terra”.",
+        "c": "Não. Gênesis 12:3 sustenta a resposta: “Nele seriam benditas todas as famílias da terra”."
+      },
+      "verseRef": "Gênesis 12:3",
+      "reveal": null
+    },
+    {
+      "id": "g-profundezas-criacao-01",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Como Gênesis 1 responde à terra sem forma e vazia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus forma domínios e depois os preenche"
+        },
+        {
+          "id": "b",
+          "text": "Deus destrói a terra e faz outra"
+        },
+        {
+          "id": "c",
+          "text": "Ela permanece vazia até o dilúvio"
+        },
+        {
+          "id": "d",
+          "text": "Humanos criam a ordem sozinhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:2-31 sustenta a resposta: “Deus forma domínios e depois os preenche”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:2-31 sustenta a resposta: “Deus forma domínios e depois os preenche”.",
+        "c": "Não. Gênesis 1:2-31 sustenta a resposta: “Deus forma domínios e depois os preenche”.",
+        "d": "Não. Gênesis 1:2-31 sustenta a resposta: “Deus forma domínios e depois os preenche”."
+      },
+      "verseRef": "Gênesis 1:2-31",
+      "reveal": "land"
+    },
+    {
+      "id": "g-profundezas-criacao-02",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que imagem antecede a primeira palavra criadora?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adão cultivando a terra"
+        },
+        {
+          "id": "b",
+          "text": "O Espírito de Deus pairando sobre as águas"
+        },
+        {
+          "id": "c",
+          "text": "Um arco nas nuvens"
+        },
+        {
+          "id": "d",
+          "text": "Querubins no jardim"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:2 sustenta a resposta: “O Espírito de Deus pairando sobre as águas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:2 sustenta a resposta: “O Espírito de Deus pairando sobre as águas”.",
+        "c": "Não. Gênesis 1:2 sustenta a resposta: “O Espírito de Deus pairando sobre as águas”.",
+        "d": "Não. Gênesis 1:2 sustenta a resposta: “O Espírito de Deus pairando sobre as águas”."
+      },
+      "verseRef": "Gênesis 1:2",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-criacao-03",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Qual recurso se repete na organização dos primeiros dias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misturar tudo sem distinção"
+        },
+        {
+          "id": "b",
+          "text": "Eliminar todas as águas"
+        },
+        {
+          "id": "c",
+          "text": "Separar elementos para estabelecer domínios"
+        },
+        {
+          "id": "d",
+          "text": "Delegar a criação aos animais"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:4; 1:6-7; 1:9-10 sustenta a resposta: “Separar elementos para estabelecer domínios”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:4; 1:6-7; 1:9-10 sustenta a resposta: “Separar elementos para estabelecer domínios”.",
+        "b": "Não. Gênesis 1:4; 1:6-7; 1:9-10 sustenta a resposta: “Separar elementos para estabelecer domínios”.",
+        "d": "Não. Gênesis 1:4; 1:6-7; 1:9-10 sustenta a resposta: “Separar elementos para estabelecer domínios”."
+      },
+      "verseRef": "Gênesis 1:4; 1:6-7; 1:9-10",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-04",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que peculiaridade aparece na contagem do primeiro dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto o chama de sétimo"
+        },
+        {
+          "id": "b",
+          "text": "O dia não possui manhã"
+        },
+        {
+          "id": "c",
+          "text": "O dia é chamado sábado"
+        },
+        {
+          "id": "d",
+          "text": "O texto diz “dia um” antes dos ordinais"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:5 sustenta a resposta: “O texto diz “dia um” antes dos ordinais”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:5 sustenta a resposta: “O texto diz “dia um” antes dos ordinais”.",
+        "b": "Não. Gênesis 1:5 sustenta a resposta: “O texto diz “dia um” antes dos ordinais”.",
+        "c": "Não. Gênesis 1:5 sustenta a resposta: “O texto diz “dia um” antes dos ordinais”."
+      },
+      "verseRef": "Gênesis 1:5",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-05",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Qual correspondência liga o terceiro ao sexto dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terra e vegetação são preparadas; animais e humanos as ocupam"
+        },
+        {
+          "id": "b",
+          "text": "Firmamento é preparado; peixes ocupam estrelas"
+        },
+        {
+          "id": "c",
+          "text": "Luz é criada; a arca a governa"
+        },
+        {
+          "id": "d",
+          "text": "Mares aparecem; o homem vira peixe"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:9-13; 1:24-31 sustenta a resposta: “Terra e vegetação são preparadas; animais e humanos as ocupam”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:9-13; 1:24-31 sustenta a resposta: “Terra e vegetação são preparadas; animais e humanos as ocupam”.",
+        "c": "Não. Gênesis 1:9-13; 1:24-31 sustenta a resposta: “Terra e vegetação são preparadas; animais e humanos as ocupam”.",
+        "d": "Não. Gênesis 1:9-13; 1:24-31 sustenta a resposta: “Terra e vegetação são preparadas; animais e humanos as ocupam”."
+      },
+      "verseRef": "Gênesis 1:9-13; 1:24-31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-06",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Como o quarto dia desenvolve a obra do primeiro?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sol cria retroativamente o primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "Luminares administram a distinção entre luz e trevas"
+        },
+        {
+          "id": "c",
+          "text": "Estrelas substituem a luz"
+        },
+        {
+          "id": "d",
+          "text": "A lua elimina a noite"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:3-5; 1:14-18 sustenta a resposta: “Luminares administram a distinção entre luz e trevas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:3-5; 1:14-18 sustenta a resposta: “Luminares administram a distinção entre luz e trevas”.",
+        "c": "Não. Gênesis 1:3-5; 1:14-18 sustenta a resposta: “Luminares administram a distinção entre luz e trevas”.",
+        "d": "Não. Gênesis 1:3-5; 1:14-18 sustenta a resposta: “Luminares administram a distinção entre luz e trevas”."
+      },
+      "verseRef": "Gênesis 1:3-5; 1:14-18",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-07",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Por que o texto usa “luminar maior” e “menor”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque seus nomes eram desconhecidos"
+        },
+        {
+          "id": "b",
+          "text": "Porque ambos eram a mesma luz"
+        },
+        {
+          "id": "c",
+          "text": "Para destacar sua função criada, sem tratá-los como deuses"
+        },
+        {
+          "id": "d",
+          "text": "Porque as estrelas os criaram"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:16 sustenta a resposta: “Para destacar sua função criada, sem tratá-los como deuses”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:16 sustenta a resposta: “Para destacar sua função criada, sem tratá-los como deuses”.",
+        "b": "Não. Gênesis 1:16 sustenta a resposta: “Para destacar sua função criada, sem tratá-los como deuses”.",
+        "d": "Não. Gênesis 1:16 sustenta a resposta: “Para destacar sua função criada, sem tratá-los como deuses”."
+      },
+      "verseRef": "Gênesis 1:16",
+      "reveal": "stars"
+    },
+    {
+      "id": "g-profundezas-criacao-08",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que detalhe inclui as grandes criaturas marinhas sob a soberania divina?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elas surgem sem ordem divina"
+        },
+        {
+          "id": "b",
+          "text": "Elas derrotam Deus"
+        },
+        {
+          "id": "c",
+          "text": "Elas são chamadas más"
+        },
+        {
+          "id": "d",
+          "text": "Elas são explicitamente criadas por Deus"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:21 sustenta a resposta: “Elas são explicitamente criadas por Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:21 sustenta a resposta: “Elas são explicitamente criadas por Deus”.",
+        "b": "Não. Gênesis 1:21 sustenta a resposta: “Elas são explicitamente criadas por Deus”.",
+        "c": "Não. Gênesis 1:21 sustenta a resposta: “Elas são explicitamente criadas por Deus”."
+      },
+      "verseRef": "Gênesis 1:21",
+      "reveal": "waters"
+    },
+    {
+      "id": "g-profundezas-criacao-09",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "O que impede restringir a imagem de Deus ao homem masculino?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A imagem é ligada a homem e mulher"
+        },
+        {
+          "id": "b",
+          "text": "Somente Adão recebe vida"
+        },
+        {
+          "id": "c",
+          "text": "A mulher surge depois dos animais"
+        },
+        {
+          "id": "d",
+          "text": "O domínio é só dos filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:27 sustenta a resposta: “A imagem é ligada a homem e mulher”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:27 sustenta a resposta: “A imagem é ligada a homem e mulher”.",
+        "c": "Não. Gênesis 1:27 sustenta a resposta: “A imagem é ligada a homem e mulher”.",
+        "d": "Não. Gênesis 1:27 sustenta a resposta: “A imagem é ligada a homem e mulher”."
+      },
+      "verseRef": "Gênesis 1:27",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-criacao-10",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que ligação sustenta a vocação representativa da humanidade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O domínio vem após o pecado"
+        },
+        {
+          "id": "b",
+          "text": "Imagem de Deus e governo aparecem na mesma deliberação"
+        },
+        {
+          "id": "c",
+          "text": "Animais concedem a autoridade"
+        },
+        {
+          "id": "d",
+          "text": "A serpente coroa Adão"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:26 sustenta a resposta: “Imagem de Deus e governo aparecem na mesma deliberação”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:26 sustenta a resposta: “Imagem de Deus e governo aparecem na mesma deliberação”.",
+        "c": "Não. Gênesis 1:26 sustenta a resposta: “Imagem de Deus e governo aparecem na mesma deliberação”.",
+        "d": "Não. Gênesis 1:26 sustenta a resposta: “Imagem de Deus e governo aparecem na mesma deliberação”."
+      },
+      "verseRef": "Gênesis 1:26",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-criacao-11",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Por que fecundidade e domínio são mais que capacidades naturais?",
+      "options": [
+        {
+          "id": "a",
+          "text": "São conquistados em Babel"
+        },
+        {
+          "id": "b",
+          "text": "Dependem do fruto proibido"
+        },
+        {
+          "id": "c",
+          "text": "São pronunciados como bênção e comissão de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Surgem apenas após o dilúvio"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:28 sustenta a resposta: “São pronunciados como bênção e comissão de Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:28 sustenta a resposta: “São pronunciados como bênção e comissão de Deus”.",
+        "b": "Não. Gênesis 1:28 sustenta a resposta: “São pronunciados como bênção e comissão de Deus”.",
+        "d": "Não. Gênesis 1:28 sustenta a resposta: “São pronunciados como bênção e comissão de Deus”."
+      },
+      "verseRef": "Gênesis 1:28",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-12",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que detalhe limita um domínio humano absoluto?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem também cria os céus"
+        },
+        {
+          "id": "b",
+          "text": "Humanos governam Deus"
+        },
+        {
+          "id": "c",
+          "text": "Animais deixam de pertencer a Deus"
+        },
+        {
+          "id": "d",
+          "text": "A autoridade é recebida do Criador sobre sua criação boa"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”.",
+        "b": "Não. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”.",
+        "c": "Não. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”."
+      },
+      "verseRef": "Gênesis 1:25-28",
+      "reveal": "stars"
+    },
+    {
+      "id": "g-profundezas-criacao-13",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Como o contexto apresenta o descanso divino?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cessação de uma obra concluída"
+        },
+        {
+          "id": "b",
+          "text": "Recuperação de fraqueza"
+        },
+        {
+          "id": "c",
+          "text": "Abandono de uma obra fracassada"
+        },
+        {
+          "id": "d",
+          "text": "Sono até o dilúvio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”.",
+        "c": "Não. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”.",
+        "d": "Não. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”."
+      },
+      "verseRef": "Gênesis 2:1-3",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-14",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que diferença literária marca o sétimo dia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não é numerado"
+        },
+        {
+          "id": "b",
+          "text": "Não recebe a fórmula de tarde e manhã"
+        },
+        {
+          "id": "c",
+          "text": "Deus declara algo mau"
+        },
+        {
+          "id": "d",
+          "text": "A terra volta a ficar vazia"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”.",
+        "c": "Não. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”.",
+        "d": "Não. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”."
+      },
+      "verseRef": "Gênesis 2:2-3",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-15",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que expressão enquadra toda a narrativa da criação?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca e altar"
+        },
+        {
+          "id": "b",
+          "text": "Jardim e serpente"
+        },
+        {
+          "id": "c",
+          "text": "Céus e terra"
+        },
+        {
+          "id": "d",
+          "text": "Cidade e torre"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”.",
+        "b": "Não. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”.",
+        "d": "Não. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”."
+      },
+      "verseRef": "Gênesis 1:1; 2:1",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-16",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "Que sequência evidencia a eficácia da palavra divina?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus tenta, mas criaturas recusam"
+        },
+        {
+          "id": "b",
+          "text": "Animais falam, e Deus obedece"
+        },
+        {
+          "id": "c",
+          "text": "A terra age antes da ordem"
+        },
+        {
+          "id": "d",
+          "text": "Deus diz, e assim acontece"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 1:3; 1:6-7; 1:9; 1:11 sustenta a resposta: “Deus diz, e assim acontece”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:3; 1:6-7; 1:9; 1:11 sustenta a resposta: “Deus diz, e assim acontece”.",
+        "b": "Não. Gênesis 1:3; 1:6-7; 1:9; 1:11 sustenta a resposta: “Deus diz, e assim acontece”.",
+        "c": "Não. Gênesis 1:3; 1:6-7; 1:9; 1:11 sustenta a resposta: “Deus diz, e assim acontece”."
+      },
+      "verseRef": "Gênesis 1:3; 1:6-7; 1:9; 1:11",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-criacao-17",
+      "difficulty": "profundezas",
+      "section": "criacao",
+      "question": "O que as avaliações de Gênesis 1 ensinam sobre o mundo material?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A criação material é repetidamente declarada boa"
+        },
+        {
+          "id": "b",
+          "text": "A matéria é intrinsecamente má"
+        },
+        {
+          "id": "c",
+          "text": "Só o invisível é bom"
+        },
+        {
+          "id": "d",
+          "text": "A bondade começa após o dilúvio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 1:4-31 sustenta a resposta: “A criação material é repetidamente declarada boa”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 1:4-31 sustenta a resposta: “A criação material é repetidamente declarada boa”.",
+        "c": "Não. Gênesis 1:4-31 sustenta a resposta: “A criação material é repetidamente declarada boa”.",
+        "d": "Não. Gênesis 1:4-31 sustenta a resposta: “A criação material é repetidamente declarada boa”."
+      },
+      "verseRef": "Gênesis 1:4-31",
+      "reveal": "cosmos"
+    },
+    {
+      "id": "g-profundezas-jardim-01",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que relação é refletida entre o homem e o solo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem recebe nome do rio Pisom"
+        },
+        {
+          "id": "b",
+          "text": "O homem vem do solo e é ligado ao trabalho nele"
+        },
+        {
+          "id": "c",
+          "text": "O solo vem de uma costela"
+        },
+        {
+          "id": "d",
+          "text": "A mulher é chamada terra"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:5-7; 2:15 sustenta a resposta: “O homem vem do solo e é ligado ao trabalho nele”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:5-7; 2:15 sustenta a resposta: “O homem vem do solo e é ligado ao trabalho nele”.",
+        "c": "Não. Gênesis 2:5-7; 2:15 sustenta a resposta: “O homem vem do solo e é ligado ao trabalho nele”.",
+        "d": "Não. Gênesis 2:5-7; 2:15 sustenta a resposta: “O homem vem do solo e é ligado ao trabalho nele”."
+      },
+      "verseRef": "Gênesis 2:5-7; 2:15",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-jardim-02",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Como pó e fôlego juntos descrevem a existência humana?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Divindade autônoma presa ao corpo"
+        },
+        {
+          "id": "b",
+          "text": "Espírito sem vínculo com a terra"
+        },
+        {
+          "id": "c",
+          "text": "Vida corporal dependente do dom de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Animal criado pelas águas"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:7 sustenta a resposta: “Vida corporal dependente do dom de Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:7 sustenta a resposta: “Vida corporal dependente do dom de Deus”.",
+        "b": "Não. Gênesis 2:7 sustenta a resposta: “Vida corporal dependente do dom de Deus”.",
+        "d": "Não. Gênesis 2:7 sustenta a resposta: “Vida corporal dependente do dom de Deus”."
+      },
+      "verseRef": "Gênesis 2:7",
+      "reveal": "spirit"
+    },
+    {
+      "id": "g-profundezas-jardim-03",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que dupla função têm as árvores centrais?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abrigo e madeira para a arca"
+        },
+        {
+          "id": "b",
+          "text": "Calendário e governo da noite"
+        },
+        {
+          "id": "c",
+          "text": "Separação das águas"
+        },
+        {
+          "id": "d",
+          "text": "Vida oferecida e limite moral estabelecido"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:9; 2:16-17 sustenta a resposta: “Vida oferecida e limite moral estabelecido”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:9; 2:16-17 sustenta a resposta: “Vida oferecida e limite moral estabelecido”.",
+        "b": "Não. Gênesis 2:9; 2:16-17 sustenta a resposta: “Vida oferecida e limite moral estabelecido”.",
+        "c": "Não. Gênesis 2:9; 2:16-17 sustenta a resposta: “Vida oferecida e limite moral estabelecido”."
+      },
+      "verseRef": "Gênesis 2:9; 2:16-17",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-jardim-04",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que ironia envolve o encargo de guardar o jardim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem devia guardá-lo, mas querubins guardam seu acesso"
+        },
+        {
+          "id": "b",
+          "text": "Adão guarda a entrada após expulso"
+        },
+        {
+          "id": "c",
+          "text": "A serpente sempre foi guardiã"
+        },
+        {
+          "id": "d",
+          "text": "O jardim nunca precisa de proteção"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 2:15; 3:24 sustenta a resposta: “O homem devia guardá-lo, mas querubins guardam seu acesso”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 2:15; 3:24 sustenta a resposta: “O homem devia guardá-lo, mas querubins guardam seu acesso”.",
+        "c": "Não. Gênesis 2:15; 3:24 sustenta a resposta: “O homem devia guardá-lo, mas querubins guardam seu acesso”.",
+        "d": "Não. Gênesis 2:15; 3:24 sustenta a resposta: “O homem devia guardá-lo, mas querubins guardam seu acesso”."
+      },
+      "verseRef": "Gênesis 2:15; 3:24",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-jardim-05",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "O que destaca “auxiliadora que lhe corresponda”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma serva inferior entre animais"
+        },
+        {
+          "id": "b",
+          "text": "Uma parceira adequada e correspondente"
+        },
+        {
+          "id": "c",
+          "text": "Uma criatura sem distinção pessoal"
+        },
+        {
+          "id": "d",
+          "text": "Uma substituta para Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 2:18-20 sustenta a resposta: “Uma parceira adequada e correspondente”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:18-20 sustenta a resposta: “Uma parceira adequada e correspondente”.",
+        "c": "Não. Gênesis 2:18-20 sustenta a resposta: “Uma parceira adequada e correspondente”.",
+        "d": "Não. Gênesis 2:18-20 sustenta a resposta: “Uma parceira adequada e correspondente”."
+      },
+      "verseRef": "Gênesis 2:18-20",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-jardim-06",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "O que enfatiza “osso dos meus ossos e carne da minha carne”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Superioridade dos animais"
+        },
+        {
+          "id": "b",
+          "text": "Origem sem relação com o homem"
+        },
+        {
+          "id": "c",
+          "text": "Parentesco, unidade e correspondência"
+        },
+        {
+          "id": "d",
+          "text": "Separação definitiva"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 2:23 sustenta a resposta: “Parentesco, unidade e correspondência”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:23 sustenta a resposta: “Parentesco, unidade e correspondência”.",
+        "b": "Não. Gênesis 2:23 sustenta a resposta: “Parentesco, unidade e correspondência”.",
+        "d": "Não. Gênesis 2:23 sustenta a resposta: “Parentesco, unidade e correspondência”."
+      },
+      "verseRef": "Gênesis 2:23",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-jardim-07",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que contraste a nudez cria entre Gênesis 2 e 3?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Culpa antes; inocência depois"
+        },
+        {
+          "id": "b",
+          "text": "Vestes antes; coroas depois"
+        },
+        {
+          "id": "c",
+          "text": "Esconderijo antes; busca depois"
+        },
+        {
+          "id": "d",
+          "text": "Sem vergonha antes; vergonha e cobertura depois"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 2:25; 3:7-10 sustenta a resposta: “Sem vergonha antes; vergonha e cobertura depois”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 2:25; 3:7-10 sustenta a resposta: “Sem vergonha antes; vergonha e cobertura depois”.",
+        "b": "Não. Gênesis 2:25; 3:7-10 sustenta a resposta: “Sem vergonha antes; vergonha e cobertura depois”.",
+        "c": "Não. Gênesis 2:25; 3:7-10 sustenta a resposta: “Sem vergonha antes; vergonha e cobertura depois”."
+      },
+      "verseRef": "Gênesis 2:25; 3:7-10",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-jardim-08",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Como progride a fala da serpente sobre a palavra divina?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Da distorção da ordem à negação da consequência"
+        },
+        {
+          "id": "b",
+          "text": "Da verdade ao silêncio"
+        },
+        {
+          "id": "c",
+          "text": "Repete a ordem sem alteração"
+        },
+        {
+          "id": "d",
+          "text": "Nega que haja árvores"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:1-4 sustenta a resposta: “Da distorção da ordem à negação da consequência”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:1-4 sustenta a resposta: “Da distorção da ordem à negação da consequência”.",
+        "c": "Não. Gênesis 3:1-4 sustenta a resposta: “Da distorção da ordem à negação da consequência”.",
+        "d": "Não. Gênesis 3:1-4 sustenta a resposta: “Da distorção da ordem à negação da consequência”."
+      },
+      "verseRef": "Gênesis 3:1-4",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-jardim-09",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que ironia existe na promessa de ser “como Deus”?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tornaram-se criadores dos céus"
+        },
+        {
+          "id": "b",
+          "text": "Já eram imagem de Deus, mas buscaram autonomia desobediente"
+        },
+        {
+          "id": "c",
+          "text": "A serpente pensava que eram animais"
+        },
+        {
+          "id": "d",
+          "text": "A promessa tratava só de força"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:26-27; 3:5-6 sustenta a resposta: “Já eram imagem de Deus, mas buscaram autonomia desobediente”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:26-27; 3:5-6 sustenta a resposta: “Já eram imagem de Deus, mas buscaram autonomia desobediente”.",
+        "c": "Não. Gênesis 1:26-27; 3:5-6 sustenta a resposta: “Já eram imagem de Deus, mas buscaram autonomia desobediente”.",
+        "d": "Não. Gênesis 1:26-27; 3:5-6 sustenta a resposta: “Já eram imagem de Deus, mas buscaram autonomia desobediente”."
+      },
+      "verseRef": "Gênesis 1:26-27; 3:5-6",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-jardim-10",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que função têm as perguntas divinas ao casal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Provam que Deus desconhecia o jardim"
+        },
+        {
+          "id": "b",
+          "text": "Dão à serpente direito de julgar"
+        },
+        {
+          "id": "c",
+          "text": "Expõem a ruptura e exigem resposta por seus atos"
+        },
+        {
+          "id": "d",
+          "text": "Apagam as consequências"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:9-13 sustenta a resposta: “Expõem a ruptura e exigem resposta por seus atos”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:9-13 sustenta a resposta: “Expõem a ruptura e exigem resposta por seus atos”.",
+        "b": "Não. Gênesis 3:9-13 sustenta a resposta: “Expõem a ruptura e exigem resposta por seus atos”.",
+        "d": "Não. Gênesis 3:9-13 sustenta a resposta: “Expõem a ruptura e exigem resposta por seus atos”."
+      },
+      "verseRef": "Gênesis 3:9-13",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-jardim-11",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "O que falta nas respostas de Adão e da mulher?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Menção ao fruto"
+        },
+        {
+          "id": "b",
+          "text": "Identificação da serpente"
+        },
+        {
+          "id": "c",
+          "text": "Reconhecimento do jardim"
+        },
+        {
+          "id": "d",
+          "text": "Confissão sem transferir responsabilidade"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:12-13 sustenta a resposta: “Confissão sem transferir responsabilidade”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:12-13 sustenta a resposta: “Confissão sem transferir responsabilidade”.",
+        "b": "Não. Gênesis 3:12-13 sustenta a resposta: “Confissão sem transferir responsabilidade”.",
+        "c": "Não. Gênesis 3:12-13 sustenta a resposta: “Confissão sem transferir responsabilidade”."
+      },
+      "verseRef": "Gênesis 3:12-13",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-jardim-12",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que assimetria aparece no conflito de Gênesis 3:15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cabeça da serpente ferida e calcanhar da descendência ferido"
+        },
+        {
+          "id": "b",
+          "text": "Ambos ferem apenas as mãos"
+        },
+        {
+          "id": "c",
+          "text": "A serpente vence sem golpe"
+        },
+        {
+          "id": "d",
+          "text": "A mulher fica fora da promessa"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:15 sustenta a resposta: “Cabeça da serpente ferida e calcanhar da descendência ferido”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:15 sustenta a resposta: “Cabeça da serpente ferida e calcanhar da descendência ferido”.",
+        "c": "Não. Gênesis 3:15 sustenta a resposta: “Cabeça da serpente ferida e calcanhar da descendência ferido”.",
+        "d": "Não. Gênesis 3:15 sustenta a resposta: “Cabeça da serpente ferida e calcanhar da descendência ferido”."
+      },
+      "verseRef": "Gênesis 3:15",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-jardim-13",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Como a sentença de morte se manifesta ao homem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Morte antes de responder"
+        },
+        {
+          "id": "b",
+          "text": "Vida penosa até retornar ao pó"
+        },
+        {
+          "id": "c",
+          "text": "Fim do vínculo com o solo"
+        },
+        {
+          "id": "d",
+          "text": "Imortalidade fora do jardim"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 3:17-19 sustenta a resposta: “Vida penosa até retornar ao pó”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:17-19 sustenta a resposta: “Vida penosa até retornar ao pó”.",
+        "c": "Não. Gênesis 3:17-19 sustenta a resposta: “Vida penosa até retornar ao pó”.",
+        "d": "Não. Gênesis 3:17-19 sustenta a resposta: “Vida penosa até retornar ao pó”."
+      },
+      "verseRef": "Gênesis 3:17-19",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-jardim-14",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que cuidado aparece entre sentença e expulsão?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus devolve o fruto"
+        },
+        {
+          "id": "b",
+          "text": "A serpente os alimenta"
+        },
+        {
+          "id": "c",
+          "text": "Deus faz vestes e cobre o casal"
+        },
+        {
+          "id": "d",
+          "text": "Querubins dão a árvore da vida"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 3:21 sustenta a resposta: “Deus faz vestes e cobre o casal”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:21 sustenta a resposta: “Deus faz vestes e cobre o casal”.",
+        "b": "Não. Gênesis 3:21 sustenta a resposta: “Deus faz vestes e cobre o casal”.",
+        "d": "Não. Gênesis 3:21 sustenta a resposta: “Deus faz vestes e cobre o casal”."
+      },
+      "verseRef": "Gênesis 3:21",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-jardim-15",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que tensão o nome Eva introduz após a sentença de morte?",
+      "options": [
+        {
+          "id": "a",
+          "text": "É chamada mãe dos mortos"
+        },
+        {
+          "id": "b",
+          "text": "Seu nome nega descendência"
+        },
+        {
+          "id": "c",
+          "text": "O nome elimina a mortalidade"
+        },
+        {
+          "id": "d",
+          "text": "Ela é chamada mãe de todos os viventes"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 3:20 sustenta a resposta: “Ela é chamada mãe de todos os viventes”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 3:20 sustenta a resposta: “Ela é chamada mãe de todos os viventes”.",
+        "b": "Não. Gênesis 3:20 sustenta a resposta: “Ela é chamada mãe de todos os viventes”.",
+        "c": "Não. Gênesis 3:20 sustenta a resposta: “Ela é chamada mãe de todos os viventes”."
+      },
+      "verseRef": "Gênesis 3:20",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-jardim-16",
+      "difficulty": "profundezas",
+      "section": "jardim",
+      "question": "Que direção marca o afastamento do jardim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O lado oriental"
+        },
+        {
+          "id": "b",
+          "text": "O centro"
+        },
+        {
+          "id": "c",
+          "text": "O lado ocidental"
+        },
+        {
+          "id": "d",
+          "text": "O norte de Ararate"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 3:24 sustenta a resposta: “O lado oriental”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 3:24 sustenta a resposta: “O lado oriental”.",
+        "c": "Não. Gênesis 3:24 sustenta a resposta: “O lado oriental”.",
+        "d": "Não. Gênesis 3:24 sustenta a resposta: “O lado oriental”."
+      },
+      "verseRef": "Gênesis 3:24",
+      "reveal": "eden"
+    },
+    {
+      "id": "g-profundezas-depois-01",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como o assassinato de Abel agrava a relação com o solo?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O solo produz sem trabalho"
+        },
+        {
+          "id": "b",
+          "text": "O solo recebe o sangue e nega sua força a Caim"
+        },
+        {
+          "id": "c",
+          "text": "O sangue remove a maldição"
+        },
+        {
+          "id": "d",
+          "text": "Caim recebe o Éden"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 4:10-12 sustenta a resposta: “O solo recebe o sangue e nega sua força a Caim”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:10-12 sustenta a resposta: “O solo recebe o sangue e nega sua força a Caim”.",
+        "c": "Não. Gênesis 4:10-12 sustenta a resposta: “O solo recebe o sangue e nega sua força a Caim”.",
+        "d": "Não. Gênesis 4:10-12 sustenta a resposta: “O solo recebe o sangue e nega sua força a Caim”."
+      },
+      "verseRef": "Gênesis 4:10-12",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-depois-02",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como a fala de Lameque amplia a violência de Caim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Substitui vingança por perdão"
+        },
+        {
+          "id": "b",
+          "text": "Limita retaliação a uma vez"
+        },
+        {
+          "id": "c",
+          "text": "Converte proteção sete vezes em vingança setenta e sete"
+        },
+        {
+          "id": "d",
+          "text": "Entrega julgamento a Abel"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 4:15; 4:23-24 sustenta a resposta: “Converte proteção sete vezes em vingança setenta e sete”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:15; 4:23-24 sustenta a resposta: “Converte proteção sete vezes em vingança setenta e sete”.",
+        "b": "Não. Gênesis 4:15; 4:23-24 sustenta a resposta: “Converte proteção sete vezes em vingança setenta e sete”.",
+        "d": "Não. Gênesis 4:15; 4:23-24 sustenta a resposta: “Converte proteção sete vezes em vingança setenta e sete”."
+      },
+      "verseRef": "Gênesis 4:15; 4:23-24",
+      "reveal": "fall"
+    },
+    {
+      "id": "g-profundezas-depois-03",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como distinguir os dois personagens chamados Enoque?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ambos são o mesmo filho de Noé"
+        },
+        {
+          "id": "b",
+          "text": "Um faz a arca e outro Babel"
+        },
+        {
+          "id": "c",
+          "text": "Ambos vivem após o dilúvio"
+        },
+        {
+          "id": "d",
+          "text": "Um liga-se à cidade de Caim; outro anda com Deus na linhagem de Sete"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 4:17; 5:18-24 sustenta a resposta: “Um liga-se à cidade de Caim; outro anda com Deus na linhagem de Sete”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 4:17; 5:18-24 sustenta a resposta: “Um liga-se à cidade de Caim; outro anda com Deus na linhagem de Sete”.",
+        "b": "Não. Gênesis 4:17; 5:18-24 sustenta a resposta: “Um liga-se à cidade de Caim; outro anda com Deus na linhagem de Sete”.",
+        "c": "Não. Gênesis 4:17; 5:18-24 sustenta a resposta: “Um liga-se à cidade de Caim; outro anda com Deus na linhagem de Sete”."
+      },
+      "verseRef": "Gênesis 4:17; 5:18-24",
+      "reveal": null
+    },
+    {
+      "id": "g-profundezas-depois-04",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como a linguagem de imagem conecta Adão e Sete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adão, semelhante a Deus, gera Sete à sua semelhança"
+        },
+        {
+          "id": "b",
+          "text": "Sete cria Adão à imagem animal"
+        },
+        {
+          "id": "c",
+          "text": "A imagem desaparece antes de Sete"
+        },
+        {
+          "id": "d",
+          "text": "Só Caim é imagem de Adão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 5:1-3 sustenta a resposta: “Adão, semelhante a Deus, gera Sete à sua semelhança”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 5:1-3 sustenta a resposta: “Adão, semelhante a Deus, gera Sete à sua semelhança”.",
+        "c": "Não. Gênesis 5:1-3 sustenta a resposta: “Adão, semelhante a Deus, gera Sete à sua semelhança”.",
+        "d": "Não. Gênesis 5:1-3 sustenta a resposta: “Adão, semelhante a Deus, gera Sete à sua semelhança”."
+      },
+      "verseRef": "Gênesis 5:1-3",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-depois-05",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Que diagnóstico interior antecede o dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ninguém sabia construir"
+        },
+        {
+          "id": "b",
+          "text": "Todo propósito do coração era continuamente mau"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém falava a mesma língua"
+        },
+        {
+          "id": "d",
+          "text": "Todos pararam de cultivar"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 6:5 sustenta a resposta: “Todo propósito do coração era continuamente mau”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 6:5 sustenta a resposta: “Todo propósito do coração era continuamente mau”.",
+        "c": "Não. Gênesis 6:5 sustenta a resposta: “Todo propósito do coração era continuamente mau”.",
+        "d": "Não. Gênesis 6:5 sustenta a resposta: “Todo propósito do coração era continuamente mau”."
+      },
+      "verseRef": "Gênesis 6:5",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-06",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Quando “aliança” aparece pela primeira vez no dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somente após o arco"
+        },
+        {
+          "id": "b",
+          "text": "Durante Babel"
+        },
+        {
+          "id": "c",
+          "text": "Antes do dilúvio, na promessa a Noé"
+        },
+        {
+          "id": "d",
+          "text": "Na oferta de Abel"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 6:18 sustenta a resposta: “Antes do dilúvio, na promessa a Noé”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 6:18 sustenta a resposta: “Antes do dilúvio, na promessa a Noé”.",
+        "b": "Não. Gênesis 6:18 sustenta a resposta: “Antes do dilúvio, na promessa a Noé”.",
+        "d": "Não. Gênesis 6:18 sustenta a resposta: “Antes do dilúvio, na promessa a Noé”."
+      },
+      "verseRef": "Gênesis 6:18",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-07",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Que detalhe ressalta a proteção divina no início do dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noé sela a porta após a chuva"
+        },
+        {
+          "id": "b",
+          "text": "Animais fazem outra porta"
+        },
+        {
+          "id": "c",
+          "text": "Um vento abre a arca"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor fecha a porta da arca"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 7:16 sustenta a resposta: “O Senhor fecha a porta da arca”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 7:16 sustenta a resposta: “O Senhor fecha a porta da arca”.",
+        "b": "Não. Gênesis 7:16 sustenta a resposta: “O Senhor fecha a porta da arca”.",
+        "c": "Não. Gênesis 7:16 sustenta a resposta: “O Senhor fecha a porta da arca”."
+      },
+      "verseRef": "Gênesis 7:16",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-08",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "O que durou cento e cinquenta dias?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O predomínio das águas sobre a terra"
+        },
+        {
+          "id": "b",
+          "text": "A chuva sem interrupção"
+        },
+        {
+          "id": "c",
+          "text": "A construção da arca"
+        },
+        {
+          "id": "d",
+          "text": "A viagem da pomba"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 7:12; 7:24 sustenta a resposta: “O predomínio das águas sobre a terra”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 7:12; 7:24 sustenta a resposta: “O predomínio das águas sobre a terra”.",
+        "c": "Não. Gênesis 7:12; 7:24 sustenta a resposta: “O predomínio das águas sobre a terra”.",
+        "d": "Não. Gênesis 7:12; 7:24 sustenta a resposta: “O predomínio das águas sobre a terra”."
+      },
+      "verseRef": "Gênesis 7:12; 7:24",
+      "reveal": null
+    },
+    {
+      "id": "g-profundezas-depois-09",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Que eco da criação surge quando as águas recuam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma lua separa a luz"
+        },
+        {
+          "id": "b",
+          "text": "Um vento de Deus passa sobre as águas"
+        },
+        {
+          "id": "c",
+          "text": "Adão nomeia animais"
+        },
+        {
+          "id": "d",
+          "text": "A árvore da vida flutua"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 1:2; 8:1 sustenta a resposta: “Um vento de Deus passa sobre as águas”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 1:2; 8:1 sustenta a resposta: “Um vento de Deus passa sobre as águas”.",
+        "c": "Não. Gênesis 1:2; 8:1 sustenta a resposta: “Um vento de Deus passa sobre as águas”.",
+        "d": "Não. Gênesis 1:2; 8:1 sustenta a resposta: “Um vento de Deus passa sobre as águas”."
+      },
+      "verseRef": "Gênesis 1:2; 8:1",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-10",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Que realidade Deus reconhece depois do dilúvio?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A maldade foi eliminada"
+        },
+        {
+          "id": "b",
+          "text": "Humanos não podem cultivar"
+        },
+        {
+          "id": "c",
+          "text": "A inclinação humana é má desde a juventude"
+        },
+        {
+          "id": "d",
+          "text": "Há novamente uma só língua"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 8:21 sustenta a resposta: “A inclinação humana é má desde a juventude”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 8:21 sustenta a resposta: “A inclinação humana é má desde a juventude”.",
+        "b": "Não. Gênesis 8:21 sustenta a resposta: “A inclinação humana é má desde a juventude”.",
+        "d": "Não. Gênesis 8:21 sustenta a resposta: “A inclinação humana é má desde a juventude”."
+      },
+      "verseRef": "Gênesis 8:21",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-11",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Por que derramar sangue humano é tratado com gravidade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sangue pertence aos rios"
+        },
+        {
+          "id": "b",
+          "text": "Só Noé pode julgar"
+        },
+        {
+          "id": "c",
+          "text": "Animais dominam pessoas"
+        },
+        {
+          "id": "d",
+          "text": "O ser humano foi feito à imagem de Deus"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 9:5-6 sustenta a resposta: “O ser humano foi feito à imagem de Deus”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 9:5-6 sustenta a resposta: “O ser humano foi feito à imagem de Deus”.",
+        "b": "Não. Gênesis 9:5-6 sustenta a resposta: “O ser humano foi feito à imagem de Deus”.",
+        "c": "Não. Gênesis 9:5-6 sustenta a resposta: “O ser humano foi feito à imagem de Deus”."
+      },
+      "verseRef": "Gênesis 9:5-6",
+      "reveal": "humanity"
+    },
+    {
+      "id": "g-profundezas-depois-12",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Quem se lembra da aliança ao ver o arco?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Somente Noé"
+        },
+        {
+          "id": "c",
+          "text": "As aves"
+        },
+        {
+          "id": "d",
+          "text": "Os construtores de Babel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 9:14-16 sustenta a resposta: “Deus”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 9:14-16 sustenta a resposta: “Deus”.",
+        "c": "Não. Gênesis 9:14-16 sustenta a resposta: “Deus”.",
+        "d": "Não. Gênesis 9:14-16 sustenta a resposta: “Deus”."
+      },
+      "verseRef": "Gênesis 9:14-16",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-13",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Sobre quem Noé pronuncia diretamente a maldição?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cam"
+        },
+        {
+          "id": "b",
+          "text": "Canaã"
+        },
+        {
+          "id": "c",
+          "text": "Sem"
+        },
+        {
+          "id": "d",
+          "text": "Jafé"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 9:22-25 sustenta a resposta: “Canaã”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 9:22-25 sustenta a resposta: “Canaã”.",
+        "c": "Não. Gênesis 9:22-25 sustenta a resposta: “Canaã”.",
+        "d": "Não. Gênesis 9:22-25 sustenta a resposta: “Canaã”."
+      },
+      "verseRef": "Gênesis 9:22-25",
+      "reveal": "flood"
+    },
+    {
+      "id": "g-profundezas-depois-14",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "O que observar ao comparar Gênesis 10 e 11?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Babel ocorre antes de Noé"
+        },
+        {
+          "id": "b",
+          "text": "Gênesis 10 tem uma família apenas"
+        },
+        {
+          "id": "c",
+          "text": "A tabela cita línguas antes de o capítulo 11 explicar a dispersão"
+        },
+        {
+          "id": "d",
+          "text": "Os capítulos narram duas criações"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackCorrect": "Correto. Gênesis 10:5; 10:20; 10:31; 11:1-9 sustenta a resposta: “A tabela cita línguas antes de o capítulo 11 explicar a dispersão”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 10:5; 10:20; 10:31; 11:1-9 sustenta a resposta: “A tabela cita línguas antes de o capítulo 11 explicar a dispersão”.",
+        "b": "Não. Gênesis 10:5; 10:20; 10:31; 11:1-9 sustenta a resposta: “A tabela cita línguas antes de o capítulo 11 explicar a dispersão”.",
+        "d": "Não. Gênesis 10:5; 10:20; 10:31; 11:1-9 sustenta a resposta: “A tabela cita línguas antes de o capítulo 11 explicar a dispersão”."
+      },
+      "verseRef": "Gênesis 10:5; 10:20; 10:31; 11:1-9",
+      "reveal": null
+    },
+    {
+      "id": "g-profundezas-depois-15",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Que ironia reduz a pretensão da torre até os céus?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A torre supera o trono divino"
+        },
+        {
+          "id": "b",
+          "text": "A obra chega aos céus"
+        },
+        {
+          "id": "c",
+          "text": "A torre é de pedra"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor precisa descer para vê-la"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackCorrect": "Correto. Gênesis 11:4-5 sustenta a resposta: “O Senhor precisa descer para vê-la”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 11:4-5 sustenta a resposta: “O Senhor precisa descer para vê-la”.",
+        "b": "Não. Gênesis 11:4-5 sustenta a resposta: “O Senhor precisa descer para vê-la”.",
+        "c": "Não. Gênesis 11:4-5 sustenta a resposta: “O Senhor precisa descer para vê-la”."
+      },
+      "verseRef": "Gênesis 11:4-5",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-profundezas-depois-16",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como o chamado de Abrão contrasta com “fazer um nome” em Babel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humanos buscam fama; Deus promete engrandecer Abrão"
+        },
+        {
+          "id": "b",
+          "text": "Abrão deve terminar Babel"
+        },
+        {
+          "id": "c",
+          "text": "Deus proíbe Abrão de ter nome"
+        },
+        {
+          "id": "d",
+          "text": "Ambos buscam fama do mesmo modo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackCorrect": "Correto. Gênesis 11:4; 12:2 sustenta a resposta: “Humanos buscam fama; Deus promete engrandecer Abrão”.",
+      "feedbackWrong": {
+        "b": "Não. Gênesis 11:4; 12:2 sustenta a resposta: “Humanos buscam fama; Deus promete engrandecer Abrão”.",
+        "c": "Não. Gênesis 11:4; 12:2 sustenta a resposta: “Humanos buscam fama; Deus promete engrandecer Abrão”.",
+        "d": "Não. Gênesis 11:4; 12:2 sustenta a resposta: “Humanos buscam fama; Deus promete engrandecer Abrão”."
+      },
+      "verseRef": "Gênesis 11:4; 12:2",
+      "reveal": "babel"
+    },
+    {
+      "id": "g-profundezas-depois-17",
+      "difficulty": "profundezas",
+      "section": "depois",
+      "question": "Como a promessa a Abrão responde às nações dispersas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus abandona todas as nações"
+        },
+        {
+          "id": "b",
+          "text": "Por uma família, Deus oferece bênção a todas as famílias"
+        },
+        {
+          "id": "c",
+          "text": "Abrão deve reunir povos numa torre"
+        },
+        {
+          "id": "d",
+          "text": "A bênção fica restrita a Ur"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackCorrect": "Correto. Gênesis 10:32; 11:9; 12:1-3 sustenta a resposta: “Por uma família, Deus oferece bênção a todas as famílias”.",
+      "feedbackWrong": {
+        "a": "Não. Gênesis 10:32; 11:9; 12:1-3 sustenta a resposta: “Por uma família, Deus oferece bênção a todas as famílias”.",
+        "c": "Não. Gênesis 10:32; 11:9; 12:1-3 sustenta a resposta: “Por uma família, Deus oferece bênção a todas as famílias”.",
+        "d": "Não. Gênesis 10:32; 11:9; 12:1-3 sustenta a resposta: “Por uma família, Deus oferece bênção a todas as famílias”."
+      },
+      "verseRef": "Gênesis 10:32; 11:9; 12:1-3",
+      "reveal": "babel"
+    }
+  ]
+}

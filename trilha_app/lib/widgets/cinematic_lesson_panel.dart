@@ -1,0 +1,615 @@
+import 'dart:ui';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../models/trail.dart';
+import '../theme/app_theme.dart';
+
+/// Painel de pergunta cinematográfico — cena, não quiz genérico.
+class CinematicLessonPanel extends StatefulWidget {
+  final String narrative;
+  final Question question;
+  final String? selected;
+  final bool? isCorrect;
+  final bool showFeedback;
+  final ValueChanged<String> onSelect;
+  final Color accent;
+  final String? sectionLabel;
+  final String? encouragement;
+  final bool hintUsed;
+  final Set<String> eliminatedIds;
+  final VoidCallback? onHint;
+  final bool outOfLamps;
+  final String? verseSnippet;
+
+  const CinematicLessonPanel({
+    super.key,
+    required this.narrative,
+    required this.question,
+    required this.selected,
+    required this.isCorrect,
+    required this.showFeedback,
+    required this.onSelect,
+    this.accent = AppColors.accent,
+    this.sectionLabel,
+    this.encouragement,
+    this.hintUsed = false,
+    this.eliminatedIds = const {},
+    this.onHint,
+    this.outOfLamps = false,
+    this.verseSnippet,
+  });
+
+  @override
+  State<CinematicLessonPanel> createState() => _CinematicLessonPanelState();
+}
+
+class _CinematicLessonPanelState extends State<CinematicLessonPanel>
+    with TickerProviderStateMixin {
+  late final AnimationController _stagger;
+  late final AnimationController _shimmer;
+  String? _picked;
+
+  @override
+  void initState() {
+    super.initState();
+    _stagger = AnimationController(vsync: this, duration: const Duration(milliseconds: 900))
+      ..forward();
+    _shimmer = AnimationController(vsync: this, duration: const Duration(milliseconds: 2200))
+      ..repeat();
+  }
+
+  @override
+  void didUpdateWidget(covariant CinematicLessonPanel oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.question.question != widget.question.question) {
+      _picked = null;
+      _stagger.forward(from: 0);
+    }
+    if (widget.selected != null && widget.selected != _picked) {
+      _picked = widget.selected;
+    }
+    if (_picked != null && widget.eliminatedIds.contains(_picked)) {
+      _picked = null;
+    }
+  }
+
+  @override
+  void dispose() {
+    _stagger.dispose();
+    _shimmer.dispose();
+    super.dispose();
+  }
+
+  void _pick(String id) {
+    if (widget.showFeedback || widget.selected != null || widget.outOfLamps) return;
+    if (widget.eliminatedIds.contains(id)) return;
+    HapticFeedback.selectionClick();
+    setState(() => _picked = id);
+  }
+
+  void _confirm() {
+    final id = _picked;
+    if (id == null || widget.showFeedback || widget.selected != null || widget.outOfLamps) return;
+    HapticFeedback.mediumImpact();
+    widget.onSelect(id);
+  }
+
+  _ChoiceState _state(String id) {
+    if (widget.showFeedback && widget.selected != null) {
+      if (id == widget.question.correctOptionId) return _ChoiceState.correct;
+      if (id == widget.selected) return _ChoiceState.wrong;
+      return _ChoiceState.dimmed;
+    }
+    if (_picked == id) return _ChoiceState.picked;
+    return _ChoiceState.idle;
+  }
+
+  static const _letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+
+  @override
+  Widget build(BuildContext context) {
+    final bottom = MediaQuery.of(context).padding.bottom;
+    final accent = widget.accent;
+    final locked = widget.showFeedback || widget.selected != null || widget.outOfLamps;
+    final canConfirm = _picked != null && !locked;
+    final narrative = widget.narrative.split('\n').where((l) => l.trim().isNotEmpty).firstOrNull ??
+        widget.narrative;
+
+    return Padding(
+      padding: EdgeInsets.fromLTRB(18, 4, 18, 10 + bottom),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          FadeTransition(
+            opacity: CurvedAnimation(parent: _stagger, curve: const Interval(0, 0.4, curve: Curves.easeOut)),
+            child: SlideTransition(
+              position: Tween<Offset>(begin: const Offset(0, 0.08), end: Offset.zero).animate(
+                CurvedAnimation(parent: _stagger, curve: const Interval(0, 0.45, curve: Curves.easeOutCubic)),
+              ),
+              child: _ScenePrompt(
+                narrative: narrative,
+                question: widget.question.question,
+                verseRef: widget.question.verseRef,
+                verseSnippet: widget.verseSnippet,
+                accent: accent,
+                showHint: !locked,
+                hintUsed: widget.hintUsed,
+                onHint: widget.onHint,
+              ),
+            ),
+          ),
+          const SizedBox(height: 14),
+          Expanded(
+            child: ListView(
+              padding: EdgeInsets.zero,
+              children: [
+                ...widget.question.options.asMap().entries.map((e) {
+                  final i = e.key;
+                  final opt = e.value;
+                  final eliminated = widget.eliminatedIds.contains(opt.id);
+                  final start = 0.22 + i * 0.1;
+                  final curve = CurvedAnimation(
+                    parent: _stagger,
+                    curve: Interval(start, (start + 0.42).clamp(0.0, 1.0), curve: Curves.easeOutCubic),
+                  );
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 11),
+                    child: FadeTransition(
+                      opacity: curve,
+                      child: SlideTransition(
+                        position: Tween<Offset>(begin: Offset(0.04 + i * 0.01, 0.08), end: Offset.zero)
+                            .animate(curve),
+                        child: Opacity(
+                          opacity: eliminated ? 0.32 : 1,
+                          child: _ChoiceTile(
+                            letter: _letters[i.clamp(0, _letters.length - 1)],
+                            text: opt.text,
+                            state: eliminated ? _ChoiceState.dimmed : _state(opt.id),
+                            enabled: !locked && !eliminated,
+                            accent: accent,
+                            onTap: () => _pick(opt.id),
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                }),
+              ],
+            ),
+          ),
+          if (!widget.showFeedback) ...[
+            const SizedBox(height: 6),
+            FadeTransition(
+              opacity: CurvedAnimation(parent: _stagger, curve: const Interval(0.55, 1, curve: Curves.easeOut)),
+              child: _ConfirmCta(
+                enabled: canConfirm,
+                accent: accent,
+                shimmer: _shimmer,
+                onTap: _confirm,
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _ScenePrompt extends StatelessWidget {
+  final String narrative;
+  final String question;
+  final String? verseRef;
+  final String? verseSnippet;
+  final Color accent;
+  final bool showHint;
+  final bool hintUsed;
+  final VoidCallback? onHint;
+
+  const _ScenePrompt({
+    required this.narrative,
+    required this.question,
+    required this.verseRef,
+    required this.verseSnippet,
+    required this.accent,
+    required this.showHint,
+    required this.hintUsed,
+    required this.onHint,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(24),
+      child: BackdropFilter(
+        filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
+        child: Container(
+          padding: const EdgeInsets.fromLTRB(18, 16, 18, 14),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [
+                Colors.white.withValues(alpha: 0.1),
+                Colors.white.withValues(alpha: 0.04),
+                Colors.black.withValues(alpha: 0.22),
+              ],
+            ),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
+            boxShadow: [
+              BoxShadow(
+                color: accent.withValues(alpha: 0.12),
+                blurRadius: 28,
+                offset: const Offset(0, 10),
+              ),
+            ],
+          ),
+          child: Column(
+            children: [
+              Text(
+                narrative,
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: GoogleFonts.cormorantGaramond(
+                  fontSize: 15,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w500,
+                  height: 1.3,
+                  color: Colors.white.withValues(alpha: 0.55),
+                ),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                width: 36,
+                height: 1.5,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(999),
+                  gradient: LinearGradient(
+                    colors: [
+                      accent.withValues(alpha: 0),
+                      accent.withValues(alpha: 0.85),
+                      accent.withValues(alpha: 0),
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                question,
+                textAlign: TextAlign.center,
+                style: GoogleFonts.cormorantGaramond(
+                  fontSize: 26,
+                  fontWeight: FontWeight.w600,
+                  height: 1.22,
+                  color: Colors.white,
+                  letterSpacing: -0.2,
+                ),
+              ),
+              if (verseRef != null) ...[
+                const SizedBox(height: 14),
+                Container(
+                  width: double.infinity,
+                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(14),
+                    color: accent.withValues(alpha: 0.1),
+                    border: Border.all(color: accent.withValues(alpha: 0.28)),
+                  ),
+                  child: Column(
+                    children: [
+                      Text(
+                        verseRef!,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 11,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.6,
+                          color: accent,
+                        ),
+                      ),
+                      if (verseSnippet != null) ...[
+                        const SizedBox(height: 4),
+                        Text(
+                          '“$verseSnippet”',
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontStyle: FontStyle.italic,
+                            height: 1.35,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white.withValues(alpha: 0.72),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+              if (showHint) ...[
+                const SizedBox(height: 10),
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: _WhisperChip(
+                    used: hintUsed,
+                    accent: accent,
+                    onTap: onHint,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _WhisperChip extends StatelessWidget {
+  final bool used;
+  final Color accent;
+  final VoidCallback? onTap;
+
+  const _WhisperChip({required this.used, required this.accent, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: used ? null : onTap,
+        borderRadius: BorderRadius.circular(999),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(999),
+            color: used ? Colors.white.withValues(alpha: 0.05) : accent.withValues(alpha: 0.12),
+            border: Border.all(
+              color: used ? Colors.white.withValues(alpha: 0.1) : accent.withValues(alpha: 0.4),
+            ),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(
+                used ? Icons.hearing_disabled_rounded : Icons.hearing_rounded,
+                size: 14,
+                color: used ? Colors.white38 : accent,
+              ),
+              const SizedBox(width: 6),
+              Text(
+                used ? 'Sussurro usado' : 'Sussurro',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  color: used ? Colors.white38 : accent,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+enum _ChoiceState { idle, picked, correct, wrong, dimmed }
+
+class _ChoiceTile extends StatelessWidget {
+  final String letter;
+  final String text;
+  final _ChoiceState state;
+  final bool enabled;
+  final Color accent;
+  final VoidCallback onTap;
+
+  const _ChoiceTile({
+    required this.letter,
+    required this.text,
+    required this.state,
+    required this.enabled,
+    required this.accent,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final Color border;
+    final Color fill;
+    final Color letterBg;
+    final Color letterFg;
+    final double elevation;
+
+    switch (state) {
+      case _ChoiceState.picked:
+        border = accent.withValues(alpha: 0.9);
+        fill = Color.lerp(const Color(0xFF14101F), accent, 0.22)!;
+        letterBg = accent;
+        letterFg = const Color(0xFF2A2100);
+        elevation = 1;
+      case _ChoiceState.correct:
+        border = accent;
+        fill = Color.lerp(const Color(0xFF14101F), accent, 0.3)!;
+        letterBg = accent;
+        letterFg = const Color(0xFF2A2100);
+        elevation = 1;
+      case _ChoiceState.wrong:
+        border = AppColors.error.withValues(alpha: 0.9);
+        fill = Color.lerp(const Color(0xFF14101F), AppColors.error, 0.22)!;
+        letterBg = AppColors.error;
+        letterFg = Colors.white;
+        elevation = 0;
+      case _ChoiceState.dimmed:
+        border = Colors.white.withValues(alpha: 0.06);
+        fill = const Color(0xB012101C);
+        letterBg = Colors.white.withValues(alpha: 0.06);
+        letterFg = Colors.white.withValues(alpha: 0.28);
+        elevation = 0;
+      case _ChoiceState.idle:
+        border = Colors.white.withValues(alpha: 0.14);
+        fill = const Color(0xCC12101C);
+        letterBg = Colors.white.withValues(alpha: 0.08);
+        letterFg = Colors.white.withValues(alpha: 0.7);
+        elevation = 0;
+    }
+
+    final active = state == _ChoiceState.picked || state == _ChoiceState.correct;
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: enabled ? onTap : null,
+        borderRadius: BorderRadius.circular(18),
+        child: AnimatedScale(
+          scale: active ? 1.015 : 1,
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.easeOutCubic,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeOutCubic,
+            padding: const EdgeInsets.fromLTRB(12, 13, 14, 13),
+            decoration: BoxDecoration(
+              color: fill,
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: border, width: active || state == _ChoiceState.wrong ? 1.7 : 1),
+              boxShadow: [
+                if (active)
+                  BoxShadow(color: accent.withValues(alpha: 0.28), blurRadius: 18, offset: const Offset(0, 6)),
+                if (elevation > 0)
+                  BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 12, offset: const Offset(0, 6)),
+              ],
+            ),
+            child: Row(
+              children: [
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 180),
+                  width: 36,
+                  height: 36,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: active
+                        ? LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [Color.lerp(letterBg, Colors.white, 0.25)!, letterBg],
+                          )
+                        : null,
+                    color: active ? null : letterBg,
+                    border: Border.all(
+                      color: active ? Colors.white.withValues(alpha: 0.25) : Colors.white.withValues(alpha: 0.08),
+                    ),
+                    boxShadow: active
+                        ? [BoxShadow(color: accent.withValues(alpha: 0.45), blurRadius: 10)]
+                        : null,
+                  ),
+                  child: Text(
+                    letter,
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w900,
+                      color: letterFg,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Text(
+                    text,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      height: 1.3,
+                      color: Colors.white.withValues(alpha: state == _ChoiceState.dimmed ? 0.35 : 0.95),
+                    ),
+                  ),
+                ),
+                if (state == _ChoiceState.correct)
+                  Icon(Icons.check_rounded, color: accent, size: 22)
+                else if (state == _ChoiceState.wrong)
+                  const Icon(Icons.close_rounded, color: AppColors.error, size: 22)
+                else if (state == _ChoiceState.picked)
+                  Icon(Icons.arrow_forward_rounded, color: accent.withValues(alpha: 0.8), size: 18),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ConfirmCta extends StatelessWidget {
+  final bool enabled;
+  final Color accent;
+  final Animation<double> shimmer;
+  final VoidCallback onTap;
+
+  const _ConfirmCta({
+    required this.enabled,
+    required this.accent,
+    required this.shimmer,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: shimmer,
+      builder: (context, child) {
+        final t = shimmer.value;
+        return GestureDetector(
+          onTap: enabled ? onTap : null,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(vertical: 17),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(18),
+              gradient: enabled
+                  ? LinearGradient(
+                      begin: Alignment(-1.2 + 2.4 * t, 0),
+                      end: Alignment(-0.2 + 2.4 * t, 0),
+                      colors: const [
+                        Color(0xFFF5D78E),
+                        Color(0xFFFFF1C2),
+                        Color(0xFFE8B84B),
+                        Color(0xFFC99A2E),
+                      ],
+                      stops: const [0.0, 0.35, 0.65, 1.0],
+                    )
+                  : null,
+              color: enabled ? null : Colors.white.withValues(alpha: 0.08),
+              border: Border.all(
+                color: enabled ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.08),
+              ),
+              boxShadow: enabled
+                  ? [
+                      BoxShadow(
+                        color: accent.withValues(alpha: 0.35 + 0.15 * ((t - 0.5).abs() * 2)),
+                        blurRadius: 22,
+                        offset: const Offset(0, 8),
+                      ),
+                    ]
+                  : null,
+            ),
+            child: Text(
+              enabled ? 'CONFIRMAR RESPOSTA' : 'ESCOLHA UMA OPÇÃO',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 0.8,
+                color: enabled ? const Color(0xFF2A2100) : Colors.white.withValues(alpha: 0.38),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+}

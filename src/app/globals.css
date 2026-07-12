@@ -1,26 +1,106 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #6c5ce7;
+  --primary-dark: #5b4cdb;
+  --primary-light: #a29bfe;
+  --success: #58cc02;
+  --success-dark: #46a302;
+  --warning: #ffc800;
+  --error: #ff4b4b;
+  --surface: #f7f7f7;
+  --card: #ffffff;
+  --text: #3c3c3c;
+  --text-muted: #777777;
+  --nav-height: 72px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-success: var(--success);
+  --color-success-dark: var(--success-dark);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-nunito);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+  min-height: 100dvh;
+}
+
+.btn-3d {
+  box-shadow: 0 4px 0 var(--primary-dark);
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn-3d:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--primary-dark);
+}
+
+.btn-success {
+  box-shadow: 0 4px 0 var(--success-dark);
+}
+
+.btn-success:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 var(--success-dark);
+}
+
+.app-shell {
+  padding-bottom: calc(var(--nav-height) + var(--safe-bottom));
+}
+
+.bottom-nav {
+  height: calc(var(--nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+}
+
+.splash-gradient {
+  background: linear-gradient(180deg, #6c5ce7 0%, #5b4cdb 50%, #4834d4 100%);
+}
+
+.trail-node-shadow {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.trail-node-current {
+  box-shadow: 0 0 0 4px rgba(88, 204, 2, 0.35), 0 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.trail-node-locked {
+  box-shadow: 0 4px 0 #d1d1d1;
+  filter: grayscale(0.6);
+}
+
+@keyframes splash-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.splash-logo {
+  animation: splash-pulse 2s ease-in-out infinite;
+}
+
+@keyframes splash-bar {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+.splash-progress {
+  animation: splash-bar 2.2s ease-out forwards;
 }

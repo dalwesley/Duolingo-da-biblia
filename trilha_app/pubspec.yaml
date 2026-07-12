@@ -1,0 +1,40 @@
+name: trilha_app
+description: Trilha — aprenda a Bíblia em missões gamificadas.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5
+  shared_preferences: ^2.5.3
+  google_fonts: ^6.2.1
+  audioplayers: ^6.4.0
+  flutter_local_notifications: ^19.0.0
+  timezone: ^0.10.0
+  uuid: ^4.5.1
+  share_plus: ^10.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  adaptive_icon_background: "#1A1530"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/trails.json
+    - assets/data/genesis_questions.json
+    - assets/sounds/
