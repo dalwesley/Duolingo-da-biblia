@@ -20,21 +20,7 @@ class CinematicBackdrop extends StatefulWidget {
   State<CinematicBackdrop> createState() => _CinematicBackdropState();
 }
 
-class _CinematicBackdropState extends State<CinematicBackdrop> with SingleTickerProviderStateMixin {
-  late final AnimationController _time;
-
-  @override
-  void initState() {
-    super.initState();
-    _time = AnimationController(vsync: this, duration: const Duration(seconds: 28))..repeat();
-  }
-
-  @override
-  void dispose() {
-    _time.dispose();
-    super.dispose();
-  }
-
+class _CinematicBackdropState extends State<CinematicBackdrop> {
   CreationWorldState get _display {
     if (widget.revealing == null || widget.revealProgress <= 0) return widget.world;
     final t = Curves.easeOutCubic.transform(widget.revealProgress);
@@ -57,10 +43,9 @@ class _CinematicBackdropState extends State<CinematicBackdrop> with SingleTicker
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _time,
-      builder: (context, _) => CustomPaint(
-        painter: _AtmospherePainter(state: _display, time: _time.value),
+    return RepaintBoundary(
+      child: CustomPaint(
+        painter: _AtmospherePainter(state: _display, time: 0.25),
         size: Size.infinite,
       ),
     );

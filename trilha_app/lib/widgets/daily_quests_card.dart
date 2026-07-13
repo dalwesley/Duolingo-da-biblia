@@ -22,13 +22,22 @@ class DailyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Missões do dia',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: a.text),
+                'CENAS DO DIA',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 1.4,
+                  color: AppColors.accent.withValues(alpha: 0.9),
+                ),
               ),
               const Spacer(),
               Text(
                 '${progress.questsCompletedToday}/${DailyQuestDefs.all.length}',
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: a.textMuted(0.5)),
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  color: a.textMuted(0.5),
+                ),
               ),
             ],
           ),
@@ -58,7 +67,7 @@ class DailyQuestsCard extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w800,
-                            color: a.onDark ? Colors.white.withValues(alpha: done ? 0.55 : 1) : a.text.withValues(alpha: done ? 0.55 : 1),
+                            color: Colors.white.withValues(alpha: done ? 0.55 : 1),
                             decoration: claimed ? TextDecoration.lineThrough : null,
                           ),
                         ),
@@ -94,14 +103,22 @@ class DailyQuestsCard extends StatelessWidget {
                         ),
                         child: Text(
                           '+${q.xpReward}',
-                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w900, color: Color(0xFF3D2E00)),
+                          style: const TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w900,
+                            color: Color(0xFF3D2E00),
+                          ),
                         ),
                       ),
                     )
                   else
                     Text(
                       '$value/${q.target}',
-                      style: TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: a.textMuted(0.45)),
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w800,
+                        color: a.textMuted(0.45),
+                      ),
                     ),
                 ],
               ),

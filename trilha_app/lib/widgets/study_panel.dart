@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../data/mission_study.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 
-/// Momento de estudo — abrir a Bíblia e ler o trecho antes de responder.
+/// Momento de estudo — cena de abertura da Bíblia antes de responder.
 class StudyPanel extends StatefulWidget {
   final MissionStudy study;
   final Color accent;
@@ -31,7 +33,7 @@ class _StudyPanelState extends State<StudyPanel>
     super.initState();
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 700),
+      duration: const Duration(milliseconds: 800),
     )..forward();
   }
 
@@ -52,173 +54,155 @@ class _StudyPanelState extends State<StudyPanel>
         padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
         children: [
           Text(
-            'Leia ${study.passageRef}',
+            'ABRA A ESCRITURA',
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 22,
+            style: TextStyle(
+              fontSize: 11,
               fontWeight: FontWeight.w900,
-              color: Colors.white,
-              height: 1.25,
+              letterSpacing: 2,
+              color: accent.withValues(alpha: 0.95),
             ),
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: 10),
+          Text(
+            study.passageRef,
+            textAlign: TextAlign.center,
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 32,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+              height: 1.15,
+            ),
+          ),
+          const SizedBox(height: 10),
           Text(
             study.focusQuestion,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 14,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontWeight.w500,
               fontStyle: FontStyle.italic,
-              color: Colors.white.withValues(alpha: 0.7),
-              height: 1.35,
+              color: Colors.white.withValues(alpha: 0.68),
+              height: 1.4,
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 24),
+
+          // Pergaminho / prévia
           Container(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
+            padding: const EdgeInsets.fromLTRB(22, 24, 22, 22),
             decoration: BoxDecoration(
-              color: accent.withValues(alpha: 0.14),
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: accent.withValues(alpha: 0.4)),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  'Faça o seu devocional',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 0.4,
-                    color: accent,
-                  ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  'Esse momento aproxima você de Deus e prepara o coração antes de responder.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12,
-                    height: 1.4,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white.withValues(alpha: 0.72),
-                  ),
-                ),
-                const SizedBox(height: 12),
-                _StudyAction(
-                  icon: Icons.menu_book_rounded,
-                  accent: accent,
-                  title: 'Abra',
-                  detail: study.passageRef,
-                ),
-                const SizedBox(height: 10),
-                _StudyAction(
-                  icon: Icons.visibility_rounded,
-                  accent: accent,
-                  title: 'Leia',
-                  detail: 'o trecho completo — não só o resumo abaixo',
-                ),
-                const SizedBox(height: 10),
-                _StudyAction(
-                  icon: Icons.edit_note_rounded,
-                  accent: accent,
-                  title: 'Marque',
-                  detail: 'palavras e frases que chamarem atenção',
-                ),
-                const SizedBox(height: 10),
-                _StudyAction(
-                  icon: Icons.search_rounded,
-                  accent: accent,
-                  title: 'Pesquise',
-                  detail: 'com a pergunta-guia em mente',
+              borderRadius: BorderRadius.circular(24),
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Colors.white.withValues(alpha: 0.1),
+                  Colors.white.withValues(alpha: 0.04),
+                ],
+              ),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
+              boxShadow: [
+                BoxShadow(
+                  color: accent.withValues(alpha: 0.12),
+                  blurRadius: 28,
                 ),
               ],
             ),
-          ),
-          const SizedBox(height: 16),
-          Container(
-            padding: const EdgeInsets.all(18),
-            decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: 0.35),
-              borderRadius: BorderRadius.circular(22),
-              border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-            ),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.short_text_rounded,
-                      color: accent.withValues(alpha: 0.85),
-                      size: 18,
+                    Container(
+                      width: 20,
+                      height: 1,
+                      color: accent.withValues(alpha: 0.4),
                     ),
-                    const SizedBox(width: 8),
-                    Text(
-                      'Prévia (não substitui a leitura)',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 0.4,
-                        color: accent.withValues(alpha: 0.9),
-                      ),
+                    const SizedBox(width: 10),
+                    CinematicIcon(
+                      glyph: CinematicGlyph.book,
+                      size: 28,
+                      accent: accent,
+                      glowing: false,
+                    ),
+                    const SizedBox(width: 10),
+                    Container(
+                      width: 20,
+                      height: 1,
+                      color: accent.withValues(alpha: 0.4),
                     ),
                   ],
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 16),
                 Text(
                   '"${study.passageText}"',
-                  style: TextStyle(
-                    fontSize: 15,
-                    height: 1.5,
-                    fontStyle: FontStyle.italic,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.cormorantGaramond(
+                    fontSize: 20,
                     fontWeight: FontWeight.w600,
-                    color: Colors.white.withValues(alpha: 0.72),
+                    fontStyle: FontStyle.italic,
+                    height: 1.45,
+                    color: Colors.white.withValues(alpha: 0.88),
+                  ),
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  'Prévia — leia o trecho completo na sua Bíblia',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white.withValues(alpha: 0.4),
                   ),
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 20),
+
           Text(
             study.context,
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 14,
               height: 1.5,
-              color: Colors.white.withValues(alpha: 0.78),
+              color: Colors.white.withValues(alpha: 0.75),
             ),
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 20),
+
+          // Palavra-chave
           Container(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
               gradient: LinearGradient(
                 colors: [
                   accent.withValues(alpha: 0.22),
-                  accent.withValues(alpha: 0.08),
+                  accent.withValues(alpha: 0.06),
                 ],
               ),
-              borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: accent.withValues(alpha: 0.3)),
+              border: Border.all(color: accent.withValues(alpha: 0.35)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Ao marcar, procure isto',
+                  'AO LER, PROCURE ISTO',
                   style: TextStyle(
                     fontSize: 10,
                     fontWeight: FontWeight.w900,
-                    letterSpacing: 1.2,
+                    letterSpacing: 1.4,
                     color: accent,
                   ),
                 ),
-                const SizedBox(height: 6),
+                const SizedBox(height: 8),
                 Text(
                   study.keyword,
-                  style: const TextStyle(
-                    fontSize: 17,
-                    fontWeight: FontWeight.w900,
+                  style: GoogleFonts.cormorantGaramond(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
                     color: Colors.white,
                   ),
                 ),
@@ -228,31 +212,59 @@ class _StudyPanelState extends State<StudyPanel>
                   style: TextStyle(
                     fontSize: 13,
                     height: 1.4,
-                    color: Colors.white.withValues(alpha: 0.8),
+                    color: Colors.white.withValues(alpha: 0.78),
                   ),
                 ),
               ],
             ),
           ),
+
+          // Rito de leitura
+          const SizedBox(height: 20),
+          _RiteStep(n: '01', title: 'Abra', detail: study.passageRef, accent: accent),
+          const SizedBox(height: 10),
+          _RiteStep(
+            n: '02',
+            title: 'Leia',
+            detail: 'o trecho completo — não só a prévia',
+            accent: accent,
+          ),
+          const SizedBox(height: 10),
+          _RiteStep(
+            n: '03',
+            title: 'Marque',
+            detail: 'palavras que tocarem o coração',
+            accent: accent,
+          ),
+          const SizedBox(height: 10),
+          _RiteStep(
+            n: '04',
+            title: 'Pesquise',
+            detail: 'com a pergunta-guia em mente',
+            accent: accent,
+          ),
+
           if (widget.priorReflection != null) ...[
-            const SizedBox(height: 14),
+            const SizedBox(height: 16),
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.06),
+                color: Colors.white.withValues(alpha: 0.05),
                 borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
               ),
               child: Text(
                 'Sua reflexão anterior: “${widget.priorReflection}”',
                 style: TextStyle(
                   fontSize: 13,
                   fontStyle: FontStyle.italic,
-                  color: Colors.white.withValues(alpha: 0.7),
+                  color: Colors.white.withValues(alpha: 0.65),
                 ),
               ),
             ),
           ],
-          const SizedBox(height: 20),
+
+          const SizedBox(height: 24),
           GestureDetector(
             onTap: () => setState(() => _acknowledged = !_acknowledged),
             child: Row(
@@ -261,11 +273,12 @@ class _StudyPanelState extends State<StudyPanel>
                 AnimatedContainer(
                   duration: const Duration(milliseconds: 200),
                   margin: const EdgeInsets.only(top: 1),
-                  width: 24,
-                  height: 24,
+                  width: 26,
+                  height: 26,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(7),
-                    color: _acknowledged ? accent : Colors.transparent,
+                    borderRadius: BorderRadius.circular(8),
+                    gradient: _acknowledged ? AppGradients.gold : null,
+                    color: _acknowledged ? null : Colors.transparent,
                     border: Border.all(
                       color: accent.withValues(alpha: 0.7),
                       width: 2,
@@ -279,7 +292,7 @@ class _StudyPanelState extends State<StudyPanel>
                         )
                       : null,
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: 12),
                 Expanded(
                   child: Text(
                     'Li ${study.passageRef} na minha Bíblia',
@@ -294,49 +307,47 @@ class _StudyPanelState extends State<StudyPanel>
               ],
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 20),
           Opacity(
-            opacity: _acknowledged ? 1 : 0.45,
+            opacity: _acknowledged ? 1 : 0.4,
             child: GestureDetector(
               onTap: _acknowledged ? widget.onContinue : null,
               child: Container(
                 width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(vertical: 17),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [Color.lerp(accent, Colors.white, 0.25)!, accent],
-                  ),
-                  borderRadius: BorderRadius.circular(16),
+                  gradient: AppGradients.gold,
+                  borderRadius: BorderRadius.circular(18),
                   boxShadow: _acknowledged
                       ? [
                           BoxShadow(
-                            color: accent.withValues(alpha: 0.4),
-                            blurRadius: 14,
-                            offset: const Offset(0, 4),
+                            color: AppColors.accent.withValues(alpha: 0.45),
+                            blurRadius: 16,
+                            offset: const Offset(0, 6),
                           ),
                         ]
                       : null,
                 ),
                 child: const Text(
-                  'RESPONDER COM O TEXTO',
+                  'ENTRAR NAS PERGUNTAS',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w900,
                     color: Color(0xFF3D2E00),
-                    letterSpacing: 0.6,
+                    letterSpacing: 0.8,
                   ),
                 ),
               ),
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 10),
           Text(
             'Abra a Bíblia, leia o trecho e só depois responda.',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 11,
-              color: Colors.white.withValues(alpha: 0.45),
+              color: Colors.white.withValues(alpha: 0.4),
             ),
           ),
         ],
@@ -345,17 +356,17 @@ class _StudyPanelState extends State<StudyPanel>
   }
 }
 
-class _StudyAction extends StatelessWidget {
-  final IconData icon;
-  final Color accent;
+class _RiteStep extends StatelessWidget {
+  final String n;
   final String title;
   final String detail;
+  final Color accent;
 
-  const _StudyAction({
-    required this.icon,
-    required this.accent,
+  const _RiteStep({
+    required this.n,
     required this.title,
     required this.detail,
+    required this.accent,
   });
 
   @override
@@ -363,40 +374,34 @@ class _StudyAction extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          width: 32,
-          height: 32,
-          decoration: BoxDecoration(
-            color: accent.withValues(alpha: 0.2),
-            borderRadius: BorderRadius.circular(10),
+        Text(
+          n,
+          style: TextStyle(
+            fontSize: 13,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 1,
+            color: accent.withValues(alpha: 0.85),
           ),
-          child: Icon(icon, size: 18, color: accent),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: 14),
         Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 4),
-            child: RichText(
-              text: TextSpan(
-                style: TextStyle(
-                  fontSize: 14,
-                  height: 1.35,
-                  color: Colors.white.withValues(alpha: 0.88),
-                ),
-                children: [
-                  TextSpan(
-                    text: '$title ',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
-                    ),
-                  ),
-                  TextSpan(
-                    text: detail,
-                    style: const TextStyle(fontWeight: FontWeight.w600),
-                  ),
-                ],
+          child: RichText(
+            text: TextSpan(
+              style: TextStyle(
+                fontSize: 14,
+                height: 1.35,
+                color: Colors.white.withValues(alpha: 0.85),
               ),
+              children: [
+                TextSpan(
+                  text: '$title ',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white,
+                  ),
+                ),
+                TextSpan(text: detail),
+              ],
             ),
           ),
         ),
@@ -459,33 +464,33 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'REFLEXÃO',
+            'EPÍLOGO',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 11,
               fontWeight: FontWeight.w900,
-              letterSpacing: 1.6,
+              letterSpacing: 2,
               color: accent,
             ),
           ),
-          const SizedBox(height: 10),
-          const Text(
-            'O que esta passagem deposita em você?',
+          const SizedBox(height: 12),
+          Text(
+            'O que esta passagem\ndeposita em você?',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 22,
-              fontWeight: FontWeight.w900,
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 28,
+              fontWeight: FontWeight.w700,
               color: Colors.white,
-              height: 1.25,
+              height: 1.2,
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            '$pct% de acertos · agora consolide o aprendizado',
+            '$pct% de acertos · agora consolide',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 12,
-              color: Colors.white.withValues(alpha: 0.55),
+              color: Colors.white.withValues(alpha: 0.5),
             ),
           ),
           const SizedBox(height: 14),
@@ -495,7 +500,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
             style: TextStyle(
               fontSize: 14,
               fontStyle: FontStyle.italic,
-              color: Colors.white.withValues(alpha: 0.75),
+              color: Colors.white.withValues(alpha: 0.7),
               height: 1.4,
             ),
           ),
@@ -523,7 +528,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                         decoration: BoxDecoration(
                           color: selected
                               ? accent.withValues(alpha: 0.22)
-                              : Colors.white.withValues(alpha: 0.07),
+                              : Colors.white.withValues(alpha: 0.06),
                           borderRadius: BorderRadius.circular(16),
                           border: Border.all(
                             color: selected
@@ -581,7 +586,16 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       decoration: BoxDecoration(
                         gradient: AppGradients.gold,
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(18),
+                        boxShadow: canSubmit
+                            ? [
+                                BoxShadow(
+                                  color: AppColors.accent.withValues(alpha: 0.4),
+                                  blurRadius: 14,
+                                  offset: const Offset(0, 4),
+                                ),
+                              ]
+                            : null,
                       ),
                       child: const Text(
                         'GUARDAR E CONCLUIR',

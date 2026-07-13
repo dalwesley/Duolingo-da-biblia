@@ -4,36 +4,18 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 
-class ImmersiveBackground extends StatefulWidget {
+/// Mundo contínuo — céu, luz e vinheta. Pintado uma única vez (sem loops).
+class ImmersiveBackground extends StatelessWidget {
   final Widget child;
   final AppearanceStyle? appearance;
 
   const ImmersiveBackground({super.key, required this.child, this.appearance});
 
   @override
-  State<ImmersiveBackground> createState() => _ImmersiveBackgroundState();
-}
-
-class _ImmersiveBackgroundState extends State<ImmersiveBackground> with SingleTickerProviderStateMixin {
-  late final AnimationController _twinkle;
-
-  @override
-  void initState() {
-    super.initState();
-    _twinkle = AnimationController(vsync: this, duration: const Duration(seconds: 4))..repeat();
-  }
-
-  @override
-  void dispose() {
-    _twinkle.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final style = widget.appearance ?? Appearance.of(context);
+    final style = appearance ?? Appearance.of(context);
     final phase = style.phase;
-    final showStars = DayPhaseHelper.showStars(phase) || style.look == AppearanceLook.night;
+    final night = phase == DayPhase.night || phase == DayPhase.evening;
 
     return Stack(
       fit: StackFit.expand,
@@ -41,106 +23,141 @@ class _ImmersiveBackgroundState extends State<ImmersiveBackground> with SingleTi
         DecoratedBox(
           decoration: BoxDecoration(gradient: DayPhaseHelper.backgroundGradient(phase)),
         ),
-        if (showStars)
-          AnimatedBuilder(
-            animation: _twinkle,
-            builder: (context, _) => CustomPaint(
-              painter: _StarsPainter(phase: _twinkle.value, denser: style.look == AppearanceLook.night),
+        if (DayPhaseHelper.showStars(phase))
+          RepaintBoundary(
+            child: CustomPaint(
+              painter: _StarsPainter(dense: phase == DayPhase.night),
               size: Size.infinite,
             ),
           ),
+        // Orbital glow — luz narrativa
         Positioned(
-          top: -80,
-          right: -60,
+          top: -100,
+          right: -80,
           child: Container(
-            width: 260,
-            height: 260,
+            width: 320,
+            height: 320,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.primary.withValues(alpha: style.look == AppearanceLook.night ? 0.22 : 0.35),
+                  AppColors.primaryLight.withValues(alpha: night ? 0.18 : 0.28),
                   Colors.transparent,
                 ],
               ),
             ),
           ),
         ),
-        if (phase == DayPhase.evening || style.look == AppearanceLook.night)
-          Positioned(
-            bottom: -40,
-            left: 0,
-            right: 0,
+        Positioned(
+          top: 160,
+          left: -60,
+          child: Container(
+            width: 220,
+            height: 220,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: RadialGradient(
+                colors: [
+                  AppColors.accent.withValues(
+                    alpha: phase == DayPhase.morning ? 0.2 : 0.1,
+                  ),
+                  Colors.transparent,
+                ],
+              ),
+            ),
+          ),
+        ),
+        // Horizonte dourado
+        Positioned(
+          bottom: 0,
+          left: 0,
+          right: 0,
+          child: IgnorePointer(
             child: Container(
-              height: 160,
+              height: 220,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
-                  colors: [AppColors.accent.withValues(alpha: 0.12), Colors.transparent],
+                  colors: [
+                    AppColors.accent.withValues(
+                      alpha: phase == DayPhase.morning
+                          ? 0.18
+                          : phase == DayPhase.evening
+                              ? 0.14
+                              : 0.06,
+                    ),
+                    Colors.transparent,
+                  ],
                 ),
               ),
             ),
           ),
-        Positioned(
-          top: 120,
-          left: -40,
-          child: Container(
-            width: 180,
-            height: 180,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                colors: [
-                  AppColors.accent.withValues(alpha: style.look == AppearanceLook.morning ? 0.18 : 0.12),
-                  Colors.transparent,
-                ],
+        ),
+        // Vinheta — bem mais leve de dia
+        Positioned.fill(
+          child: IgnorePointer(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.center,
+                  radius: 1.15,
+                  colors: [
+                    Colors.transparent,
+                    Colors.black.withValues(alpha: night ? 0.35 : 0.14),
+                  ],
+                  stops: const [0.45, 1.0],
+                ),
               ),
             ),
           ),
         ),
-        widget.child,
+        child,
       ],
     );
   }
 }
 
 class _StarsPainter extends CustomPainter {
-  final double phase;
-  final bool denser;
-  _StarsPainter({required this.phase, this.denser = false});
+  final bool dense;
+
+  _StarsPainter({required this.dense});
 
   @override
   void paint(Canvas canvas, Size size) {
     final rnd = math.Random(42);
-    final count = denser ? 42 : 30;
-    for (var i = 0; i < count; i++) {
+    final starCount = dense ? 55 : 38;
+    final paint = Paint();
+
+    for (var i = 0; i < starCount; i++) {
       final x = rnd.nextDouble() * size.width;
-      final y = rnd.nextDouble() * size.height * 0.7;
-      final r = rnd.nextDouble() * 1.5 + 0.4;
-      final opacity = 0.15 + 0.5 * math.sin(phase * math.pi * 2 + i).abs();
-      canvas.drawCircle(
-        Offset(x, y),
-        r,
-        Paint()..color = Colors.white.withValues(alpha: opacity),
-      );
+      final y = rnd.nextDouble() * size.height * 0.78;
+      final r = rnd.nextDouble() * 1.6 + 0.3;
+      final alpha = 0.15 + rnd.nextDouble() * 0.4;
+      paint.color = Colors.white.withValues(alpha: alpha);
+      canvas.drawCircle(Offset(x, y), r, paint);
     }
   }
 
   @override
-  bool shouldRepaint(covariant _StarsPainter old) => old.phase != phase || old.denser != denser;
+  bool shouldRepaint(covariant _StarsPainter old) => old.dense != dense;
 }
 
+/// Painel de vidro — sem blur real (BackdropFilter é caro demais em lista).
 class GlassCard extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
   final VoidCallback? onTap;
+  final double radius;
+  final bool elevated;
 
   const GlassCard({
     super.key,
     required this.child,
     this.padding = const EdgeInsets.all(18),
     this.onTap,
+    this.radius = 24,
+    this.elevated = false,
   });
 
   @override
@@ -151,15 +168,34 @@ class GlassCard extends StatelessWidget {
     final content = Container(
       padding: padding,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(26),
-        gradient: useDark ? style.cardGradient : null,
-        color: useDark ? (style.cardGradient == null ? style.cardFill : null) : Colors.white.withValues(alpha: 0.92),
-        border: Border.all(color: useDark ? style.cardBorder : Colors.white.withValues(alpha: 0.8)),
+        borderRadius: BorderRadius.circular(radius),
+        gradient: useDark
+            ? LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.white.withValues(alpha: elevated ? 0.18 : 0.12),
+                  Colors.white.withValues(alpha: elevated ? 0.08 : 0.05),
+                ],
+              )
+            : LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.white.withValues(alpha: 0.88),
+                  Colors.white.withValues(alpha: 0.72),
+                ],
+              ),
+        border: Border.all(
+          color: useDark
+              ? Colors.white.withValues(alpha: elevated ? 0.22 : 0.12)
+              : Colors.white.withValues(alpha: 0.9),
+        ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: useDark ? (style.look == AppearanceLook.night ? 0.45 : 0.28) : 0.06),
-            blurRadius: 22,
-            offset: const Offset(0, 10),
+            color: Colors.black.withValues(alpha: useDark ? 0.25 : 0.08),
+            blurRadius: elevated ? 24 : 16,
+            offset: const Offset(0, 8),
           ),
         ],
       ),
@@ -169,7 +205,11 @@ class GlassCard extends StatelessWidget {
     if (onTap != null) {
       return Material(
         color: Colors.transparent,
-        child: InkWell(onTap: onTap, borderRadius: BorderRadius.circular(26), child: content),
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(radius),
+          child: content,
+        ),
       );
     }
     return content;

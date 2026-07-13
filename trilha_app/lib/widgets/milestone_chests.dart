@@ -246,8 +246,13 @@ class WeeklyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'Missões da semana',
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: a.text),
+                'CENAS DA SEMANA',
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 1.4,
+                  color: AppColors.accent.withValues(alpha: 0.9),
+                ),
               ),
               const Spacer(),
               Text(

@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -873,13 +872,11 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
           builder: (context, value, child) => Transform.translate(offset: Offset(0, value * 100), child: child),
           child: ClipRRect(
             borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
-            child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
-              child: Container(
+            child: Container(
                 width: double.infinity,
                 padding: EdgeInsets.fromLTRB(24, 22, 24, 18 + bottom),
                 decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.78),
+                  color: const Color(0xFF0A0812).withValues(alpha: 0.94),
                   border: Border(top: BorderSide(color: color.withValues(alpha: 0.7), width: 3)),
                 ),
                 child: Column(
@@ -1017,7 +1014,6 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                   ],
                 ),
               ),
-            ),
           ),
         ),
       ),

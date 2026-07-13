@@ -1,7 +1,7 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
@@ -22,9 +22,10 @@ class MainBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const tabs = [
-      (icon: Icons.home_rounded, label: 'Início'),
-      (icon: Icons.map_rounded, label: 'Trilhas'),
-      (icon: Icons.tune_rounded, label: 'Ajustes'),
+      (glyph: CinematicGlyph.spark, label: 'Início'),
+      (glyph: CinematicGlyph.path, label: 'Mundos'),
+      (glyph: CinematicGlyph.crown, label: 'Liga'),
+      (glyph: CinematicGlyph.lamp, label: 'Ajustes'),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
@@ -37,25 +38,27 @@ class MainBottomNav extends StatelessWidget {
         padding: EdgeInsets.fromLTRB(20, 0, 20, bottomInset > 0 ? bottomInset + 8 : 16),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(28),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 24, sigmaY: 24),
-            child: Container(
-              height: 64,
+          child: Container(
+              height: 68,
               decoration: BoxDecoration(
                 color: immersive
                     ? style.navBarFill
-                    : (onDark ? Colors.white.withValues(alpha: 0.12) : Colors.white.withValues(alpha: 0.95)),
+                    : (onDark
+                        ? const Color(0xFF15102A).withValues(alpha: 0.92)
+                        : Colors.white.withValues(alpha: 0.95)),
                 borderRadius: BorderRadius.circular(28),
                 border: Border.all(
                   color: immersive
                       ? style.navBarBorder
-                      : (onDark ? Colors.white.withValues(alpha: 0.2) : Colors.black.withValues(alpha: 0.06)),
+                      : (onDark
+                          ? Colors.white.withValues(alpha: 0.18)
+                          : Colors.black.withValues(alpha: 0.06)),
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: onDark ? 0.25 : 0.08),
-                    blurRadius: 20,
-                    offset: const Offset(0, 4),
+                    color: Colors.black.withValues(alpha: 0.35),
+                    blurRadius: 24,
+                    offset: const Offset(0, 8),
                   ),
                 ],
               ),
@@ -63,32 +66,46 @@ class MainBottomNav extends StatelessWidget {
                 children: List.generate(tabs.length, (i) {
                   final active = currentIndex == i;
                   final tab = tabs[i];
+                  final activeColor =
+                      onDark ? const Color(0xFF3D2E00) : Colors.white;
+                  final idleColor = onDark
+                      ? Colors.white.withValues(alpha: 0.5)
+                      : AppColors.textMuted;
+
                   return Expanded(
                     child: GestureDetector(
                       onTap: () => onTap(i),
                       behavior: HitTestBehavior.opaque,
                       child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 250),
+                        duration: const Duration(milliseconds: 280),
                         curve: Curves.easeOutCubic,
                         margin: const EdgeInsets.all(5),
                         decoration: active
                             ? BoxDecoration(
-                                gradient: onDark ? AppGradients.gold : AppGradients.hero,
+                                gradient: onDark
+                                    ? AppGradients.gold
+                                    : AppGradients.hero,
                                 borderRadius: BorderRadius.circular(22),
-                                boxShadow: active && onDark
-                                    ? [BoxShadow(color: AppColors.accent.withValues(alpha: 0.35), blurRadius: 12)]
+                                boxShadow: onDark
+                                    ? [
+                                        BoxShadow(
+                                          color: AppColors.accent
+                                              .withValues(alpha: 0.4),
+                                          blurRadius: 14,
+                                        ),
+                                      ]
                                     : null,
                               )
                             : null,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(
-                              tab.icon,
-                              size: 22,
-                              color: active
-                                  ? (onDark ? const Color(0xFF3D2E00) : Colors.white)
-                                  : (onDark ? Colors.white.withValues(alpha: 0.55) : AppColors.textMuted),
+                            CinematicIcon(
+                              glyph: tab.glyph,
+                              size: 26,
+                              accent: active ? activeColor : idleColor,
+                              glowing: active,
+                              framed: false,
                             ),
                             const SizedBox(height: 2),
                             Text(
@@ -96,9 +113,8 @@ class MainBottomNav extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w800,
-                                color: active
-                                    ? (onDark ? const Color(0xFF3D2E00) : Colors.white)
-                                    : (onDark ? Colors.white.withValues(alpha: 0.55) : AppColors.textMuted),
+                                letterSpacing: 0.3,
+                                color: active ? activeColor : idleColor,
                               ),
                             ),
                           ],
@@ -108,7 +124,6 @@ class MainBottomNav extends StatelessWidget {
                   );
                 }),
               ),
-            ),
           ),
         ),
       ),

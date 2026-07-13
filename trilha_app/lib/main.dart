@@ -3,12 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/splash_screen.dart';
+import 'services/league_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
 import 'services/sound_service.dart';
 import 'services/sync_service.dart';
 import 'theme/app_theme.dart';
-import 'utils/appearance.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,19 +29,17 @@ class TrilhaApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => ProgressService()..load()),
         ChangeNotifierProvider(create: (_) => SyncService()..init()),
+        ChangeNotifierProvider(create: (_) => LeagueService()..init()),
       ],
       child: Consumer<ProgressService>(
         builder: (context, progress, _) {
-          final dark = progress.settings.appearanceMode == AppearanceMode.night ||
-              (progress.settings.appearanceMode == AppearanceMode.automatic &&
-                  AppearanceStyle.resolve(AppearanceMode.automatic).onDark);
           SoundService.instance.setEnabled(progress.settings.sound);
           return MaterialApp(
             title: 'Trilha',
             debugShowCheckedModeBanner: false,
-            theme: AppTheme.light,
+            theme: AppTheme.dark,
             darkTheme: AppTheme.dark,
-            themeMode: dark ? ThemeMode.dark : ThemeMode.light,
+            themeMode: ThemeMode.dark,
             home: const SplashScreen(),
             onGenerateRoute: (settings) {
               if (settings.name == '/lesson') {

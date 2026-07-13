@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -47,7 +46,6 @@ class CinematicLessonPanel extends StatefulWidget {
 class _CinematicLessonPanelState extends State<CinematicLessonPanel>
     with TickerProviderStateMixin {
   late final AnimationController _stagger;
-  late final AnimationController _shimmer;
   String? _picked;
 
   @override
@@ -55,8 +53,6 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
     super.initState();
     _stagger = AnimationController(vsync: this, duration: const Duration(milliseconds: 900))
       ..forward();
-    _shimmer = AnimationController(vsync: this, duration: const Duration(milliseconds: 2200))
-      ..repeat();
   }
 
   @override
@@ -77,7 +73,6 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
   @override
   void dispose() {
     _stagger.dispose();
-    _shimmer.dispose();
     super.dispose();
   }
 
@@ -185,7 +180,6 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
               child: _ConfirmCta(
                 enabled: canConfirm,
                 accent: accent,
-                shimmer: _shimmer,
                 onTap: _confirm,
               ),
             ),
@@ -221,9 +215,7 @@ class _ScenePrompt extends StatelessWidget {
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.circular(24),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
-        child: Container(
+      child: Container(
           padding: const EdgeInsets.fromLTRB(18, 16, 18, 14),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
@@ -231,9 +223,9 @@ class _ScenePrompt extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                Colors.white.withValues(alpha: 0.1),
-                Colors.white.withValues(alpha: 0.04),
-                Colors.black.withValues(alpha: 0.22),
+                Colors.white.withValues(alpha: 0.12),
+                Colors.white.withValues(alpha: 0.05),
+                Colors.black.withValues(alpha: 0.3),
               ],
             ),
             border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
@@ -343,7 +335,6 @@ class _ScenePrompt extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }
@@ -546,70 +537,50 @@ class _ChoiceTile extends StatelessWidget {
 class _ConfirmCta extends StatelessWidget {
   final bool enabled;
   final Color accent;
-  final Animation<double> shimmer;
   final VoidCallback onTap;
 
   const _ConfirmCta({
     required this.enabled,
     required this.accent,
-    required this.shimmer,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: shimmer,
-      builder: (context, child) {
-        final t = shimmer.value;
-        return GestureDetector(
-          onTap: enabled ? onTap : null,
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 220),
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 17),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
-              gradient: enabled
-                  ? LinearGradient(
-                      begin: Alignment(-1.2 + 2.4 * t, 0),
-                      end: Alignment(-0.2 + 2.4 * t, 0),
-                      colors: const [
-                        Color(0xFFF5D78E),
-                        Color(0xFFFFF1C2),
-                        Color(0xFFE8B84B),
-                        Color(0xFFC99A2E),
-                      ],
-                      stops: const [0.0, 0.35, 0.65, 1.0],
-                    )
-                  : null,
-              color: enabled ? null : Colors.white.withValues(alpha: 0.08),
-              border: Border.all(
-                color: enabled ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.08),
-              ),
-              boxShadow: enabled
-                  ? [
-                      BoxShadow(
-                        color: accent.withValues(alpha: 0.35 + 0.15 * ((t - 0.5).abs() * 2)),
-                        blurRadius: 22,
-                        offset: const Offset(0, 8),
-                      ),
-                    ]
-                  : null,
-            ),
-            child: Text(
-              enabled ? 'CONFIRMAR RESPOSTA' : 'ESCOLHA UMA OPÇÃO',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w900,
-                letterSpacing: 0.8,
-                color: enabled ? const Color(0xFF2A2100) : Colors.white.withValues(alpha: 0.38),
-              ),
-            ),
+    return GestureDetector(
+      onTap: enabled ? onTap : null,
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 220),
+        width: double.infinity,
+        padding: const EdgeInsets.symmetric(vertical: 17),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(18),
+          gradient: enabled ? AppGradients.gold : null,
+          color: enabled ? null : Colors.white.withValues(alpha: 0.08),
+          border: Border.all(
+            color: enabled ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.08),
           ),
-        );
-      },
+          boxShadow: enabled
+              ? [
+                  BoxShadow(
+                    color: accent.withValues(alpha: 0.4),
+                    blurRadius: 22,
+                    offset: const Offset(0, 8),
+                  ),
+                ]
+              : null,
+        ),
+        child: Text(
+          enabled ? 'CONFIRMAR RESPOSTA' : 'ESCOLHA UMA OPÇÃO',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 0.8,
+            color: enabled ? const Color(0xFF2A2100) : Colors.white.withValues(alpha: 0.38),
+          ),
+        ),
+      ),
     );
   }
 }

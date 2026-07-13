@@ -31,45 +31,29 @@ class GenesisModuleScenery extends StatefulWidget {
   State<GenesisModuleScenery> createState() => _GenesisModuleSceneryState();
 }
 
-class _GenesisModuleSceneryState extends State<GenesisModuleScenery> with SingleTickerProviderStateMixin {
-  late final AnimationController _breath;
-
-  @override
-  void initState() {
-    super.initState();
-    _breath = AnimationController(vsync: this, duration: const Duration(seconds: 18))..repeat(reverse: true);
-  }
-
-  @override
-  void dispose() {
-    _breath.dispose();
-    super.dispose();
-  }
-
+class _GenesisModuleSceneryState extends State<GenesisModuleScenery> {
   @override
   Widget build(BuildContext context) {
     final theme = widget.theme;
     final mood = genesisMoodForTitle(widget.moduleTitle);
 
-    return AnimatedBuilder(
-      animation: _breath,
-      builder: (context, _) {
-        final t = Curves.easeInOut.transform(_breath.value);
-        return Stack(
+    return Stack(
           clipBehavior: Clip.none,
           children: [
             Positioned.fill(
               child: DecoratedBox(decoration: BoxDecoration(gradient: theme.sky)),
             ),
             Positioned.fill(
-              child: CustomPaint(
-                painter: _ChapterAtmospherePainter(
-                  mood: mood,
-                  accent: theme.decorColor,
-                  pathAccent: theme.pathActive,
-                  phase: t,
-                  intensity: widget.isActiveChapter ? 1 : 0.55,
-                  seed: widget.sectionIndex * 47,
+              child: RepaintBoundary(
+                child: CustomPaint(
+                  painter: _ChapterAtmospherePainter(
+                    mood: mood,
+                    accent: theme.decorColor,
+                    pathAccent: theme.pathActive,
+                    phase: 0.5,
+                    intensity: widget.isActiveChapter ? 1 : 0.55,
+                    seed: widget.sectionIndex * 47,
+                  ),
                 ),
               ),
             ),
@@ -129,8 +113,6 @@ class _GenesisModuleSceneryState extends State<GenesisModuleScenery> with Single
             ),
           ],
         );
-      },
-    );
   }
 }
 

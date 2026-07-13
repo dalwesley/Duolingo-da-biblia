@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -29,11 +30,12 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    // No fundo imersivo o topo do gradient é sempre escuro o bastante para texto claro.
     final onDark = immersive || dark || onBack != null;
 
     return AppBar(
-      backgroundColor: immersive ? Colors.transparent : (dark ? AppColors.night : AppColors.card),
+      backgroundColor: immersive
+          ? Colors.transparent
+          : (dark ? AppColors.night : AppColors.card),
       surfaceTintColor: Colors.transparent,
       elevation: 0,
       leading: onBack != null
@@ -43,11 +45,17 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: onDark ? Colors.white.withValues(alpha: 0.12) : AppColors.surface,
+                  color: Colors.white.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(12),
-                  border: Border.all(color: onDark ? Colors.white.withValues(alpha: 0.15) : Colors.black.withValues(alpha: 0.08)),
+                  border: Border.all(
+                    color: Colors.white.withValues(alpha: 0.15),
+                  ),
                 ),
-                child: Icon(Icons.arrow_back_rounded, size: 20, color: onDark ? Colors.white : AppColors.text),
+                child: const Icon(
+                  Icons.arrow_back_rounded,
+                  size: 20,
+                  color: Colors.white,
+                ),
               ),
             )
           : immersive
@@ -71,20 +79,21 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                   Text(
                     subtitle!,
                     style: TextStyle(
-                      fontSize: 12,
-                      color: onDark ? Colors.white.withValues(alpha: 0.62) : AppColors.textMuted,
+                      fontSize: 11,
+                      color: Colors.white.withValues(alpha: 0.6),
                       fontWeight: FontWeight.w600,
+                      letterSpacing: 0.3,
                     ),
                   ),
                 Text(
                   title,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    color: onDark ? Colors.white : AppColors.text,
-                    height: 1.15,
+                  style: GoogleFonts.cormorantGaramond(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                    height: 1.1,
                   ),
                 ),
               ],
@@ -94,23 +103,29 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               children: [
                 Text(
                   title,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w800, color: onDark ? Colors.white : AppColors.text),
+                  style: GoogleFonts.cormorantGaramond(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w700,
+                    color: onDark ? Colors.white : AppColors.text,
+                  ),
                 ),
                 if (subtitle != null)
                   Text(
                     subtitle!,
                     style: TextStyle(
                       fontSize: 11,
-                      color: onDark ? Colors.white.withValues(alpha: 0.6) : AppColors.textMuted,
+                      color: onDark
+                          ? Colors.white.withValues(alpha: 0.55)
+                          : AppColors.textMuted,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
               ],
             ),
       actions: [
-        _XpBadge(value: progress.xp, dark: onDark),
+        _XpBadge(value: progress.xp),
         const SizedBox(width: 8),
-        _StreakBadge(value: progress.streak, dark: onDark),
+        _StreakBadge(value: progress.streak),
         const SizedBox(width: 14),
       ],
     );
@@ -119,25 +134,41 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
 
 class _XpBadge extends StatelessWidget {
   final int value;
-  final bool dark;
 
-  const _XpBadge({required this.value, required this.dark});
+  const _XpBadge({required this.value});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        gradient: dark ? AppGradients.gold : null,
-        color: dark ? null : AppColors.accentSoft,
+        gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppColors.accent.withValues(alpha: dark ? 0 : 0.3)),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.accent.withValues(alpha: 0.35),
+            blurRadius: 10,
+          ),
+        ],
       ),
       child: Row(
         children: [
-          Icon(Icons.auto_awesome_rounded, size: 14, color: dark ? const Color(0xFF3D2E00) : AppColors.accentDark),
+          const CinematicIcon(
+            glyph: CinematicGlyph.spark,
+            size: 16,
+            accent: Color(0xFF3D2E00),
+            glowing: false,
+            framed: false,
+          ),
           const SizedBox(width: 4),
-          Text('$value', style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: dark ? const Color(0xFF3D2E00) : AppColors.accentDark)),
+          Text(
+            '$value',
+            style: const TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w900,
+              color: Color(0xFF3D2E00),
+            ),
+          ),
         ],
       ),
     );
@@ -146,24 +177,34 @@ class _XpBadge extends StatelessWidget {
 
 class _StreakBadge extends StatelessWidget {
   final int value;
-  final bool dark;
 
-  const _StreakBadge({required this.value, required this.dark});
+  const _StreakBadge({required this.value});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: dark ? Colors.white.withValues(alpha: 0.12) : AppColors.streak.withValues(alpha: 0.12),
+        color: Colors.white.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppColors.streak.withValues(alpha: dark ? 0.4 : 0.3)),
+        border: Border.all(color: AppColors.streak.withValues(alpha: 0.45)),
       ),
       child: Row(
         children: [
-          Icon(Icons.local_fire_department_rounded, size: 14, color: AppColors.streak),
+          const Icon(
+            Icons.local_fire_department_rounded,
+            size: 14,
+            color: AppColors.streak,
+          ),
           const SizedBox(width: 4),
-          Text('$value', style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: dark ? Colors.white : AppColors.streak)),
+          Text(
+            '$value',
+            style: const TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );

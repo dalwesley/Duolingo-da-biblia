@@ -63,6 +63,9 @@ class ProgressService extends ChangeNotifier {
   static const _keyWeeklyClaimed = 'weeklyQuestClaimed';
   static const _keyClaimedChests = 'claimedChests';
   static const _keyReflections = 'missionReflections';
+  static const _keyWeeklyXp = 'weeklyXp';
+  static const _keyLastWeekXp = 'lastWeekXp';
+  static const _keyLastWeekKey = 'lastWeekKey';
 
   static const maxLamps = 5;
 
@@ -90,6 +93,13 @@ class ProgressService extends ChangeNotifier {
   List<String> claimedChests = [];
   /// Última reflexão por slug de missão.
   Map<String, String> missionReflections = {};
+
+  /// XP acumulado só nesta semana (para a liga).
+  int weeklyXp = 0;
+
+  /// XP final da semana anterior + qual semana era (para fechar a liga).
+  int lastWeekXp = 0;
+  String? lastWeekKey;
   bool _loaded = false;
 
   /// True when daily goal was just crossed (UI one-shot).
@@ -169,6 +179,9 @@ class ProgressService extends ChangeNotifier {
       } catch (_) {}
     }
     weeklyClaimed = prefs.getStringList(_keyWeeklyClaimed) ?? [];
+    weeklyXp = prefs.getInt(_keyWeeklyXp) ?? 0;
+    lastWeekXp = prefs.getInt(_keyLastWeekXp) ?? 0;
+    lastWeekKey = prefs.getString(_keyLastWeekKey);
     _ensureWeeklyWeek();
 
     claimedChests = prefs.getStringList(_keyClaimedChests) ?? [];
@@ -197,10 +210,30 @@ class ProgressService extends ChangeNotifier {
   void _ensureWeeklyWeek() {
     final week = _weekKey();
     if (weeklyWeek != week) {
+      // Fecha a semana anterior guardando o XP final (usado pela liga).
+      if (weeklyWeek != null) {
+        lastWeekXp = weeklyXp;
+        lastWeekKey = weeklyWeek;
+      }
       weeklyWeek = week;
       weeklyProgressMap = {};
       weeklyClaimed = [];
+      weeklyXp = 0;
     }
+  }
+
+  /// Soma XP total + XP semanal (liga) de uma vez.
+  void _gainXp(int amount) {
+    _ensureWeeklyWeek();
+    xp += amount;
+    weeklyXp += amount;
+  }
+
+  /// Bônus avulso (ex.: prêmio de promoção na liga).
+  Future<void> grantBonusXp(int amount) async {
+    _gainXp(amount);
+    await _save();
+    notifyListeners();
   }
 
   Future<void> _save() async {
@@ -234,6 +267,9 @@ class ProgressService extends ChangeNotifier {
     await prefs.setStringList(_keyWeeklyClaimed, weeklyClaimed);
     await prefs.setStringList(_keyClaimedChests, claimedChests);
     await prefs.setString(_keyReflections, jsonEncode(missionReflections));
+    await prefs.setInt(_keyWeeklyXp, weeklyXp);
+    await prefs.setInt(_keyLastWeekXp, lastWeekXp);
+    if (lastWeekKey != null) await prefs.setString(_keyLastWeekKey, lastWeekKey!);
   }
 
   String? reflectionFor(String missionSlug) => missionReflections[missionSlug];
@@ -343,7 +379,7 @@ class ProgressService extends ChangeNotifier {
   Future<bool> claimChest(String chestId, int xpReward) async {
     if (claimedChests.contains(chestId)) return false;
     claimedChests = [...claimedChests, chestId];
-    xp += xpReward;
+    _gainXp(xpReward);
     await _save();
     notifyListeners();
     return true;
@@ -386,7 +422,7 @@ class ProgressService extends ChangeNotifier {
     if (isQuestClaimed(id)) return;
     if (questProgress(id) < q.target) return;
     questClaimed = [...questClaimed, id];
-    xp += q.xpReward;
+    _gainXp(q.xpReward);
     await _save();
     notifyListeners();
   }
@@ -401,7 +437,7 @@ class ProgressService extends ChangeNotifier {
     if (isWeeklyQuestClaimed(id)) return;
     if (weeklyQuestProgress(id) < q.target) return;
     weeklyClaimed = [...weeklyClaimed, id];
-    xp += q.xpReward;
+    _gainXp(q.xpReward);
     await _save();
     notifyListeners();
   }
@@ -444,7 +480,7 @@ class ProgressService extends ChangeNotifier {
     }
 
     final award = isReplay ? (rewardXp * 0.35).round().clamp(5, rewardXp) : rewardXp;
-    xp += award;
+    _gainXp(award);
 
     if (!alreadyToday) {
       _recordSession();
@@ -534,6 +570,9 @@ class ProgressService extends ChangeNotifier {
     weeklyClaimed = [];
     claimedChests = [];
     missionReflections = {};
+    weeklyXp = 0;
+    lastWeekXp = 0;
+    lastWeekKey = null;
     await _save();
     notifyListeners();
   }

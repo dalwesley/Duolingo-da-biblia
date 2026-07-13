@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 
-class HeroContinueCard extends StatefulWidget {
+/// Portal da próxima cena — CTA dominante, linguagem de filme bíblico.
+class HeroContinueCard extends StatelessWidget {
   final Mission? mission;
   final String trailTitle;
   final String trailSlug;
@@ -21,171 +23,222 @@ class HeroContinueCard extends StatefulWidget {
   });
 
   @override
-  State<HeroContinueCard> createState() => _HeroContinueCardState();
-}
-
-class _HeroContinueCardState extends State<HeroContinueCard> with SingleTickerProviderStateMixin {
-  late final AnimationController _shimmer;
-
-  @override
-  void initState() {
-    super.initState();
-    _shimmer = AnimationController(vsync: this, duration: const Duration(milliseconds: 2800))..repeat();
-  }
-
-  @override
-  void dispose() {
-    _shimmer.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    if (widget.mission == null) return _completedState();
+    final mission = this.mission;
+    if (mission == null) return _completedState();
 
-    final mission = widget.mission!;
-    final visuals = TrailVisuals.forSlug(widget.trailSlug);
+    final visuals = TrailVisuals.forSlug(trailSlug);
 
     return GestureDetector(
-      onTap: widget.onTap,
-      child: AnimatedBuilder(
-        animation: _shimmer,
-        builder: (context, child) {
-          final t = _shimmer.value;
-          return Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30),
-              gradient: AppGradients.hero,
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.primary.withValues(alpha: 0.45),
-                  blurRadius: 28,
-                  offset: const Offset(0, 14),
-                ),
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.12 + 0.08 * (0.5 + 0.5 * (t * 2 - 1).abs())),
-                  blurRadius: 36,
-                ),
-              ],
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(28),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.primary.withValues(alpha: 0.42),
+              blurRadius: 36,
+              offset: const Offset(0, 16),
             ),
-            child: child,
-          );
-        },
+            BoxShadow(
+              color: AppColors.accent.withValues(alpha: 0.16),
+              blurRadius: 40,
+            ),
+          ],
+        ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(28),
           child: Stack(
             children: [
+              // Fundo de cena
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        const Color(0xFF2A1F6B),
+                        AppColors.primaryDark,
+                        Color.lerp(visuals.accent, AppColors.night, 0.55)!,
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              // Luz superior
               Positioned(
-                right: -36,
-                top: -40,
+                right: -40,
+                top: -50,
+                child: Container(
+                  width: 200,
+                  height: 200,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: RadialGradient(
+                      colors: [
+                        Colors.white.withValues(alpha: 0.18),
+                        Colors.transparent,
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned(
+                left: -40,
+                bottom: -50,
                 child: Container(
                   width: 180,
                   height: 180,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     gradient: RadialGradient(
-                      colors: [Colors.white.withValues(alpha: 0.16), Colors.transparent],
+                      colors: [
+                        AppColors.accent.withValues(alpha: 0.22),
+                        Colors.transparent,
+                      ],
                     ),
                   ),
                 ),
               ),
-              Positioned(
-                left: -50,
-                bottom: -60,
-                child: Container(
-                  width: 160,
-                  height: 160,
+              // Vinheta
+              Positioned.fill(
+                child: DecoratedBox(
                   decoration: BoxDecoration(
-                    shape: BoxShape.circle,
                     gradient: RadialGradient(
-                      colors: [AppColors.accent.withValues(alpha: 0.18), Colors.transparent],
+                      center: const Alignment(0.4, -0.2),
+                      radius: 1.2,
+                      colors: [
+                        Colors.transparent,
+                        Colors.black.withValues(alpha: 0.35),
+                      ],
                     ),
                   ),
                 ),
               ),
+              // Glifo fantasma
               Positioned(
-                right: 8,
-                top: 8,
+                right: 4,
+                top: 12,
                 child: Opacity(
-                  opacity: 0.55,
+                  opacity: 0.4,
                   child: CinematicIcon.mission(
                     mission.title,
                     isBoss: mission.isBoss,
-                    size: 88,
+                    size: 100,
                     accent: visuals.accent,
                     glowing: false,
                   ),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
+                padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 6),
-                      decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.16),
-                        borderRadius: BorderRadius.circular(999),
-                        border: Border.all(color: Colors.white.withValues(alpha: 0.18)),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          CinematicIcon(
-                            glyph: CinematicGlyphResolver.forTrail(widget.trailSlug),
-                            size: 22,
-                            accent: Colors.white,
-                            glowing: false,
+                    Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          decoration: BoxDecoration(
+                            color: Colors.black.withValues(alpha: 0.28),
+                            borderRadius: BorderRadius.circular(999),
+                            border: Border.all(
+                              color: Colors.white.withValues(alpha: 0.16),
+                            ),
                           ),
-                          const SizedBox(width: 6),
-                          Text(
-                            widget.trailTitle,
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w800,
-                              color: Colors.white.withValues(alpha: 0.92),
-                              letterSpacing: 0.2,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              CinematicIcon(
+                                glyph: CinematicGlyphResolver.forTrail(trailSlug),
+                                size: 20,
+                                accent: AppColors.accent,
+                                glowing: false,
+                              ),
+                              const SizedBox(width: 6),
+                              Text(
+                                trailTitle.toUpperCase(),
+                                style: TextStyle(
+                                  fontSize: 10,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 1.1,
+                                  color: Colors.white.withValues(alpha: 0.9),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        if (mission.isBoss) ...[
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            decoration: BoxDecoration(
+                              gradient: AppGradients.gold,
+                              borderRadius: BorderRadius.circular(999),
+                            ),
+                            child: const Text(
+                              'BOSS',
+                              style: TextStyle(
+                                fontSize: 9,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 1,
+                                color: Color(0xFF3D2E00),
+                              ),
                             ),
                           ),
                         ],
-                      ),
+                      ],
                     ),
-                    const SizedBox(height: 18),
+                    const SizedBox(height: 20),
                     Text(
-                      mission.title,
-                      style: const TextStyle(
-                        fontSize: 26,
+                      'PRÓXIMA CENA',
+                      style: TextStyle(
+                        fontSize: 10,
                         fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        height: 1.15,
-                        letterSpacing: -0.3,
+                        letterSpacing: 1.8,
+                        color: AppColors.accent.withValues(alpha: 0.9),
                       ),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      mission.isBoss ? 'Desafio especial · recompensa maior' : 'Próxima missão da sua jornada',
+                      mission.title,
+                      style: GoogleFonts.cormorantGaramond(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        height: 1.12,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      mission.isBoss
+                          ? 'Desafio especial · recompensa maior'
+                          : 'Entre na passagem e continue a jornada',
                       style: TextStyle(
                         fontSize: 13,
-                        color: Colors.white.withValues(alpha: 0.72),
+                        color: Colors.white.withValues(alpha: 0.68),
                         fontWeight: FontWeight.w500,
                         height: 1.3,
                       ),
                     ),
-                    const SizedBox(height: 22),
+                    const SizedBox(height: 24),
                     Row(
                       children: [
                         Expanded(
                           child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 13),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 15,
+                            ),
                             decoration: BoxDecoration(
                               gradient: AppGradients.gold,
                               borderRadius: BorderRadius.circular(18),
                               boxShadow: [
                                 BoxShadow(
-                                  color: AppColors.accentDark.withValues(alpha: 0.45),
-                                  offset: const Offset(0, 5),
-                                  blurRadius: 12,
+                                  color: AppColors.accentDark.withValues(alpha: 0.5),
+                                  offset: const Offset(0, 6),
+                                  blurRadius: 14,
                                 ),
                               ],
                             ),
@@ -193,31 +246,44 @@ class _HeroContinueCardState extends State<HeroContinueCard> with SingleTickerPr
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'CONTINUAR',
+                                  'ENTRAR NA CENA',
                                   style: TextStyle(
-                                    fontSize: 14,
+                                    fontSize: 13,
                                     fontWeight: FontWeight.w900,
                                     color: Color(0xFF3D2E00),
-                                    letterSpacing: 1,
+                                    letterSpacing: 1.1,
                                   ),
                                 ),
                                 SizedBox(width: 8),
-                                Icon(Icons.arrow_forward_rounded, color: Color(0xFF3D2E00), size: 20),
+                                Icon(
+                                  Icons.arrow_forward_rounded,
+                                  color: Color(0xFF3D2E00),
+                                  size: 18,
+                                ),
                               ],
                             ),
                           ),
                         ),
                         const SizedBox(width: 12),
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 14,
+                            vertical: 15,
+                          ),
                           decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.22),
+                            color: Colors.black.withValues(alpha: 0.3),
                             borderRadius: BorderRadius.circular(18),
-                            border: Border.all(color: Colors.white.withValues(alpha: 0.18)),
+                            border: Border.all(
+                              color: Colors.white.withValues(alpha: 0.18),
+                            ),
                           ),
                           child: Text(
                             '+${mission.xpReward}',
-                            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.white),
+                            style: const TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.white,
+                            ),
                           ),
                         ),
                       ],
@@ -234,23 +300,42 @@ class _HeroContinueCardState extends State<HeroContinueCard> with SingleTickerPr
 
   Widget _completedState() {
     return Container(
-      padding: const EdgeInsets.all(28),
+      padding: const EdgeInsets.all(32),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30),
-        gradient: const LinearGradient(colors: [AppColors.nightMid, AppColors.night]),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
-        boxShadow: AppTheme.glow(AppColors.accent, blur: 20),
+        borderRadius: BorderRadius.circular(28),
+        gradient: const LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [Color(0xFF1A1530), Color(0xFF0D0B1A)],
+        ),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.4)),
+        boxShadow: AppTheme.glow(AppColors.accent, blur: 24),
       ),
-      child: const Column(
+      child: Column(
         children: [
-          Icon(Icons.workspace_premium_rounded, size: 48, color: AppColors.accent),
-          SizedBox(height: 12),
-          Text('Trilha completa!', style: TextStyle(fontSize: 22, fontWeight: FontWeight.w800, color: Colors.white)),
-          SizedBox(height: 6),
+          CinematicIcon(
+            glyph: CinematicGlyph.crown,
+            size: 64,
+            accent: AppColors.accent,
+            glowing: true,
+          ),
+          const SizedBox(height: 16),
           Text(
-            'Sua fidelidade é inspiradora. Explore novas jornadas.',
+            'Trilha completa',
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 28,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Sua fidelidade é inspiradora.\nExplore novos mundos.',
             textAlign: TextAlign.center,
-            style: TextStyle(color: AppColors.textMutedDark),
+            style: TextStyle(
+              color: Colors.white.withValues(alpha: 0.65),
+              height: 1.4,
+            ),
           ),
         ],
       ),

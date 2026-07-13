@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -329,12 +328,10 @@ class _CinematicChrome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRect(
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: 22, sigmaY: 22),
-        child: Container(
+      child: Container(
           padding: EdgeInsets.fromLTRB(10, topInset + 8, 12, 12),
           decoration: BoxDecoration(
-            color: const Color(0xFF070B18).withValues(alpha: 0.82),
+            color: const Color(0xFF070B18).withValues(alpha: 0.94),
             border: Border(
               bottom: BorderSide(
                 color: Colors.white.withValues(alpha: 0.12),
@@ -419,7 +416,6 @@ class _CinematicChrome extends StatelessWidget {
             ],
           ),
         ),
-      ),
     );
   }
 }

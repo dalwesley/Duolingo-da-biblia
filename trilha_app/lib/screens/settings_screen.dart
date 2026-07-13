@@ -45,12 +45,16 @@ class _SettingsScreenState extends State<SettingsScreen> {
       padding: EdgeInsets.fromLTRB(20, topInset + 76, 20, scrollPaddingBelowNav(context)),
       children: [
         Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(22),
           decoration: BoxDecoration(
-            gradient: AppGradients.hero,
-            borderRadius: BorderRadius.circular(22),
-            border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-            boxShadow: AppTheme.glow(AppColors.primary, blur: 16),
+            borderRadius: BorderRadius.circular(26),
+            gradient: const LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: [Color(0xFF2A1F6B), Color(0xFF1A1530), Color(0xFF0D0B1A)],
+            ),
+            border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
+            boxShadow: AppTheme.glow(AppColors.primary, blur: 20),
           ),
           child: Row(
             children: [
@@ -60,9 +64,25 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text('Seu perfil', style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: Colors.white.withValues(alpha: 0.8))),
-                    Text(progress.userName, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: Colors.white)),
+                    Text(
+                      'PEREGRINO',
+                      style: TextStyle(
+                        fontSize: 10,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1.6,
+                        color: AppColors.accent.withValues(alpha: 0.9),
+                      ),
+                    ),
                     const SizedBox(height: 4),
+                    Text(
+                      progress.userName,
+                      style: const TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
                     Row(
                       children: [
                         _miniStat(Icons.auto_awesome_rounded, '${progress.xp} XP'),

@@ -10,6 +10,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/top_bar.dart';
 import 'home_screen.dart';
+import 'league_screen.dart';
 import 'settings_screen.dart';
 import 'trilhas_screen.dart';
 import 'trail_map_screen.dart';
@@ -85,13 +86,15 @@ class _MainShellState extends State<MainShell> {
             personalGreeting: _index == 0,
             title: switch (_index) {
               0 => progress.userName,
-              1 => 'Trilhas',
-              _ => 'Configurações',
+              1 => 'Mundos',
+              2 => 'Liga',
+              _ => 'Ajustes',
             },
             subtitle: switch (_index) {
               0 => DayPhaseHelper.greeting(appearance.phase),
-              1 => 'Escolha seu caminho',
-              _ => 'Personalize sua experiência',
+              1 => 'Escolha seu capítulo',
+              2 => 'Competição da semana',
+              _ => 'Sua jornada, seu ritmo',
             },
           ),
           body: switch (_index) {
@@ -106,6 +109,10 @@ class _MainShellState extends State<MainShell> {
             1 => ImmersiveBackground(
                 appearance: appearance,
                 child: TrilhasScreen(repo: _repo, onOpenTrail: _openTrail),
+              ),
+            2 => ImmersiveBackground(
+                appearance: appearance,
+                child: const LeagueScreen(),
               ),
             _ => ImmersiveBackground(
                 appearance: appearance,
