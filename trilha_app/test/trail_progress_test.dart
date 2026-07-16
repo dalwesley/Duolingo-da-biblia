@@ -10,14 +10,14 @@ void main() {
     icon: '📖',
     order: 1,
     comingSoon: false,
-    color: '#6C5CE7',
+    color: '#2F5D4A',
     modules: [
       TrailModule(
         title: 'Mod 1',
         icon: '🌍',
         missions: [
-          Mission(slug: 'm1', title: 'M1', intro: '', type: 'lesson', xpReward: 50, questions: []),
-          Mission(slug: 'm2', title: 'M2', intro: '', type: 'lesson', xpReward: 50, questions: []),
+          Mission(slug: 'm1', title: 'M1', intro: '', type: 'lesson', stepsReward: 50, questions: []),
+          Mission(slug: 'm2', title: 'M2', intro: '', type: 'lesson', stepsReward: 50, questions: []),
         ],
       ),
     ],
@@ -46,7 +46,7 @@ void main() {
         order: 2,
         unlockAfter: 'test',
         comingSoon: false,
-        color: '#6C5CE7',
+        color: '#2F5D4A',
         modules: [],
       ),
     ];

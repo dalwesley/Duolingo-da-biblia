@@ -22,7 +22,7 @@ class DailyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'CENAS DO DIA',
+                'MISSÕES DE HOJE',
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w900,
@@ -102,11 +102,11 @@ class DailyQuestsCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
-                          '+${q.xpReward}',
+                          '+${q.stepsReward}',
                           style: const TextStyle(
                             fontSize: 11,
                             fontWeight: FontWeight.w900,
-                            color: Color(0xFF3D2E00),
+                            color: AppColors.inkOnAccent,
                           ),
                         ),
                       ),

@@ -418,19 +418,19 @@ class _ChoiceTile extends StatelessWidget {
     switch (state) {
       case _ChoiceState.picked:
         border = accent.withValues(alpha: 0.9);
-        fill = Color.lerp(const Color(0xFF14101F), accent, 0.22)!;
+        fill = Color.lerp(const Color(0xFF141C18), accent, 0.22)!;
         letterBg = accent;
         letterFg = const Color(0xFF2A2100);
         elevation = 1;
       case _ChoiceState.correct:
         border = accent;
-        fill = Color.lerp(const Color(0xFF14101F), accent, 0.3)!;
+        fill = Color.lerp(const Color(0xFF141C18), accent, 0.3)!;
         letterBg = accent;
         letterFg = const Color(0xFF2A2100);
         elevation = 1;
       case _ChoiceState.wrong:
         border = AppColors.error.withValues(alpha: 0.9);
-        fill = Color.lerp(const Color(0xFF14101F), AppColors.error, 0.22)!;
+        fill = Color.lerp(const Color(0xFF141C18), AppColors.error, 0.22)!;
         letterBg = AppColors.error;
         letterFg = Colors.white;
         elevation = 0;

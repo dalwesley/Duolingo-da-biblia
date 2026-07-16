@@ -1,8 +1,8 @@
-import 'dart:convert';
 import 'dart:math';
-import 'package:flutter/services.dart';
+
 import '../models/difficulty.dart';
 import '../models/trail.dart';
+import '../services/content_catalog_service.dart';
 
 class QuestionBank {
   static QuestionBank? _instance;
@@ -10,34 +10,25 @@ class QuestionBank {
 
   QuestionBank._();
 
-  List<DifficultyMeta>? _difficulties;
-  List<BankQuestion>? _questions;
   final _rng = Random();
 
-  Future<void> ensureLoaded() async {
-    if (_questions != null) return;
-    final raw = await rootBundle.loadString('assets/data/genesis_questions.json');
-    final data = jsonDecode(raw) as Map<String, dynamic>;
-    _difficulties = (data['difficulties'] as List)
-        .map((e) => DifficultyMeta.fromJson(e as Map<String, dynamic>))
-        .toList();
-    _questions = (data['questions'] as List)
-        .map((e) => BankQuestion.fromJson(e as Map<String, dynamic>))
-        .toList();
-  }
+  Future<void> ensureLoaded() => ContentCatalogService.instance.ensureLoaded();
 
-  Future<List<DifficultyMeta>> getDifficulties() async {
-    await ensureLoaded();
-    return _difficulties!;
+  Future<List<DifficultyMeta>> getDifficulties() {
+    return ContentCatalogService.instance.getDifficulties();
   }
 
   Future<DifficultyMeta?> metaFor(TrailDifficulty d) async {
-    await ensureLoaded();
+    final difficulties = await getDifficulties();
     try {
-      return _difficulties!.firstWhere((m) => m.difficulty == d);
+      return difficulties.firstWhere((m) => m.difficulty == d);
     } catch (_) {
       return null;
     }
+  }
+
+  Future<List<BankQuestion>> _questions() {
+    return ContentCatalogService.instance.getBankQuestions();
   }
 
   /// Seleciona perguntas únicas para uma missão: prioriza a seção do módulo,
@@ -49,13 +40,15 @@ class QuestionBank {
     required List<String> usedIds,
     bool isBoss = false,
   }) async {
-    await ensureLoaded();
+    final questions = await _questions();
     final section = moduleTitleToSection(moduleTitle);
     final target = isBoss ? count + 1 : count;
 
-    final pool = _questions!.where((q) => q.difficulty == difficulty).toList();
-    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()..shuffle(_rng);
-    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()..shuffle(_rng);
+    final pool = questions.where((q) => q.difficulty == difficulty).toList();
+    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()
+      ..shuffle(_rng);
+    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()
+      ..shuffle(_rng);
     final usedFallback = pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
 
     final picked = <BankQuestion>[];
@@ -71,7 +64,6 @@ class QuestionBank {
     take(unusedOther, target);
     take(usedFallback, target);
 
-    // Garantir variedade: nunca repetir a mesma pergunta no mesmo set
     final unique = <String, BankQuestion>{};
     for (final q in picked) {
       unique[q.id] = q;
@@ -86,12 +78,14 @@ class QuestionBank {
     required List<String> usedIds,
     bool isBoss = false,
   }) async {
-    await ensureLoaded();
+    final questions = await _questions();
     final section = moduleTitleToSection(moduleTitle);
     final target = isBoss ? count + 1 : count;
-    final pool = _questions!.where((q) => q.difficulty == difficulty).toList();
-    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()..shuffle(_rng);
-    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()..shuffle(_rng);
+    final pool = questions.where((q) => q.difficulty == difficulty).toList();
+    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()
+      ..shuffle(_rng);
+    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()
+      ..shuffle(_rng);
     final usedFallback = pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
 
     final ids = <String>[];
@@ -110,8 +104,10 @@ class QuestionBank {
   }
 
   BankQuestion? byId(String id) {
+    final questions = ContentCatalogService.instance.bankQuestionsCache;
+    if (questions == null) return null;
     try {
-      return _questions?.firstWhere((q) => q.id == id);
+      return questions.firstWhere((q) => q.id == id);
     } catch (_) {
       return null;
     }

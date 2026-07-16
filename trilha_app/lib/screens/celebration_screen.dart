@@ -12,7 +12,7 @@ import 'trail_map_screen.dart';
 
 class CelebrationScreen extends StatefulWidget {
   final String missionSlug;
-  final int xp;
+  final int steps;
   final int correct;
   final int total;
   final String trailSlug;
@@ -23,7 +23,7 @@ class CelebrationScreen extends StatefulWidget {
   const CelebrationScreen({
     super.key,
     required this.missionSlug,
-    required this.xp,
+    required this.steps,
     required this.correct,
     required this.total,
     required this.trailSlug,
@@ -66,7 +66,7 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
       progress
           .completeMission(
             widget.missionSlug,
-            widget.xp,
+            widget.steps,
             isReplay: widget.isReplay,
             correct: widget.correct,
             total: widget.total,
@@ -151,7 +151,7 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                                   ? Icons.military_tech_rounded
                                   : Icons.auto_awesome_rounded,
                           size: 52,
-                          color: widget.perfect ? const Color(0xFF3D2E00) : Colors.white,
+                          color: widget.perfect ? AppColors.inkOnAccent : Colors.white,
                         ),
                       ),
                     ),
@@ -162,17 +162,19 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                         children: [
                           Text(
                             widget.perfect
-                                ? 'Missão perfeita!'
+                                ? '+1 passo · caminhada perfeita'
                                 : widget.isReplay
-                                    ? 'Revisão concluída'
+                                    ? 'Você revisitou este trecho'
                                     : isBoss
-                                        ? 'Desafio vencido!'
-                                        : 'Missão completa!',
-                            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white),
+                                        ? 'Você avançou no desafio'
+                                        : '+1 passo',
+                            style: AppTypography.display(size: 28),
                           ),
                           const SizedBox(height: 12),
                           MascotBubble(
-                            message: MascotMessages.celebration(isBoss: isBoss, pct: pct),
+                            message: widget.isReplay
+                                ? MascotMessages.celebration(isBoss: isBoss, pct: pct)
+                                : 'A Palavra iluminou mais um trecho da sua caminhada.\nContinue amanhã.',
                           ),
                           if (_showGoalBanner) ...[
                             const SizedBox(height: 14),
@@ -184,9 +186,9 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                                 borderRadius: BorderRadius.circular(18),
                               ),
                               child: const Text(
-                                '✦ Meta diária alcançada! Sua sequência está viva.',
+                                '✦ Meta do dia alcançada. Sua caminhada segue firme.',
                                 textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: Color(0xFF3D2E00)),
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent),
                               ),
                             ),
                           ],
@@ -195,18 +197,18 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                             children: [
                               Expanded(
                                 child: _StatCard(
-                                  icon: Icons.auto_awesome_rounded,
-                                  value: '+${widget.xp}',
-                                  label: 'XP',
+                                  icon: Icons.directions_walk_rounded,
+                                  value: '+${widget.steps}',
+                                  label: 'Passos',
                                   color: AppColors.accent,
                                 ),
                               ),
                               const SizedBox(width: 10),
                               Expanded(
                                 child: _StatCard(
-                                  icon: Icons.local_fire_department_rounded,
+                                  icon: Icons.wb_sunny_rounded,
                                   value: '${progress.streak}',
-                                  label: 'Sequência',
+                                  label: 'Dias',
                                   color: AppColors.streak,
                                 ),
                               ),
@@ -215,7 +217,7 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                                 child: _StatCard(
                                   icon: Icons.check_circle_rounded,
                                   value: '$pct%',
-                                  label: 'Acertos',
+                                  label: 'Clareza',
                                   color: AppColors.teal,
                                 ),
                               ),
@@ -229,12 +231,12 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                       ShareStreakButton(
                         streak: progress.streak,
                         userName: progress.userName,
-                        xp: progress.xp,
+                        steps: progress.steps,
                       ),
                       const SizedBox(height: 12),
                     ],
                     _GoldButton(
-                      label: 'CONTINUAR TRILHA',
+                      label: 'CONTINUAR A CAMINHADA',
                       onTap: () {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(builder: (_) => TrailMapScreen(slug: widget.trailSlug)),
@@ -310,7 +312,7 @@ class _GoldButton extends StatelessWidget {
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: Color(0xFF3D2E00), letterSpacing: 0.5),
+          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent, letterSpacing: 0.5),
         ),
       ),
     );

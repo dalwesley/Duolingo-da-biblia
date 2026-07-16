@@ -30,18 +30,18 @@ class ImmersiveBackground extends StatelessWidget {
               size: Size.infinite,
             ),
           ),
-        // Orbital glow — luz narrativa
+        // Luz ambiente — olive suave (sem névoa lilás)
         Positioned(
           top: -100,
           right: -80,
           child: Container(
-            width: 320,
-            height: 320,
+            width: 280,
+            height: 280,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.primaryLight.withValues(alpha: night ? 0.18 : 0.28),
+                  AppColors.primaryLight.withValues(alpha: night ? 0.1 : 0.16),
                   Colors.transparent,
                 ],
               ),
@@ -52,29 +52,27 @@ class ImmersiveBackground extends StatelessWidget {
           top: 160,
           left: -60,
           child: Container(
-            width: 220,
-            height: 220,
+            width: 200,
+            height: 200,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.accent.withValues(
-                    alpha: phase == DayPhase.morning ? 0.2 : 0.1,
-                  ),
+                  AppColors.accent.withValues(alpha: 0.06),
                   Colors.transparent,
                 ],
               ),
             ),
           ),
         ),
-        // Horizonte dourado
+        // Horizonte quente
         Positioned(
           bottom: 0,
           left: 0,
           right: 0,
           child: IgnorePointer(
             child: Container(
-              height: 220,
+              height: 200,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
@@ -82,10 +80,10 @@ class ImmersiveBackground extends StatelessWidget {
                   colors: [
                     AppColors.accent.withValues(
                       alpha: phase == DayPhase.morning
-                          ? 0.18
+                          ? 0.06
                           : phase == DayPhase.evening
-                              ? 0.14
-                              : 0.06,
+                              ? 0.1
+                              : 0.04,
                     ),
                     Colors.transparent,
                   ],
@@ -104,9 +102,9 @@ class ImmersiveBackground extends StatelessWidget {
                   radius: 1.15,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withValues(alpha: night ? 0.35 : 0.14),
+                    Colors.black.withValues(alpha: night ? 0.28 : 0.18),
                   ],
-                  stops: const [0.45, 1.0],
+                  stops: const [0.5, 1.0],
                 ),
               ),
             ),
@@ -143,7 +141,7 @@ class _StarsPainter extends CustomPainter {
   bool shouldRepaint(covariant _StarsPainter old) => old.dense != dense;
 }
 
-/// Painel de vidro — sem blur real (BackdropFilter é caro demais em lista).
+/// Painel unificado — usa Appearance (mesmo card em todas as abas).
 class GlassCard extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
@@ -154,50 +152,28 @@ class GlassCard extends StatelessWidget {
   const GlassCard({
     super.key,
     required this.child,
-    this.padding = const EdgeInsets.all(18),
+    this.padding = const EdgeInsets.all(AppSpace.lg),
     this.onTap,
-    this.radius = 24,
+    this.radius = AppRadii.lg,
     this.elevated = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final style = Appearance.of(context);
-    final useDark = style.onDark;
 
     final content = Container(
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        gradient: useDark
-            ? LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.white.withValues(alpha: elevated ? 0.18 : 0.12),
-                  Colors.white.withValues(alpha: elevated ? 0.08 : 0.05),
-                ],
-              )
-            : LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.white.withValues(alpha: 0.88),
-                  Colors.white.withValues(alpha: 0.72),
-                ],
-              ),
+        color: style.cardFill,
+        gradient: style.cardGradient,
         border: Border.all(
-          color: useDark
-              ? Colors.white.withValues(alpha: elevated ? 0.22 : 0.12)
-              : Colors.white.withValues(alpha: 0.9),
+          color: elevated
+              ? style.cardBorder.withValues(alpha: 0.9)
+              : style.cardBorder,
         ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: useDark ? 0.25 : 0.08),
-            blurRadius: elevated ? 24 : 16,
-            offset: const Offset(0, 8),
-          ),
-        ],
+        boxShadow: AppTheme.cardShadow(elevated: elevated),
       ),
       child: child,
     );

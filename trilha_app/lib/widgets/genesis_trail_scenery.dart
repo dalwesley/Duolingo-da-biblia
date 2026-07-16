@@ -317,7 +317,7 @@ class _ChapterAtmospherePainter extends CustomPainter {
   }
 
   void _paintCreation(Canvas canvas, Size size) {
-    // Abismo — véu inferior
+    // Abismo — véu inferior (noite oliva, não azul puro)
     canvas.drawRect(
       Rect.fromLTRB(0, size.height * 0.55, size.width, size.height),
       Paint()
@@ -325,9 +325,9 @@ class _ChapterAtmospherePainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            const Color(0xFF061018).withValues(alpha: 0),
-            const Color(0xFF03060C).withValues(alpha: 0.55 * intensity),
-            const Color(0xFF010204).withValues(alpha: 0.85 * intensity),
+            const Color(0xFF061210).withValues(alpha: 0),
+            const Color(0xFF030806).withValues(alpha: 0.55 * intensity),
+            const Color(0xFF010403).withValues(alpha: 0.85 * intensity),
           ],
         ).createShader(Rect.fromLTRB(0, size.height * 0.55, size.width, size.height)),
     );
@@ -458,7 +458,7 @@ class _ChapterAtmospherePainter extends CustomPainter {
       ..close();
     canvas.drawPath(
       dunes,
-      Paint()..color = const Color(0xFF2A1A10).withValues(alpha: 0.5 * intensity),
+      Paint()..color = const Color(0xFF1A2214).withValues(alpha: 0.5 * intensity),
     );
   }
 
@@ -471,8 +471,9 @@ class _ChapterAtmospherePainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            const Color(0xFF0A2A48).withValues(alpha: 0.15 * intensity),
-            const Color(0xFF041428).withValues(alpha: 0.65 * intensity),
+            // Águas frias dentro da família oliva/teal — não azul "outro mundo".
+            const Color(0xFF0A2A28).withValues(alpha: 0.15 * intensity),
+            const Color(0xFF041816).withValues(alpha: 0.65 * intensity),
           ],
         ).createShader(deep),
     );

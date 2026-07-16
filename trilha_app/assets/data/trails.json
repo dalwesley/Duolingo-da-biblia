@@ -2,12 +2,12 @@
   {
     "slug": "genesis-1-11",
     "title": "Gênesis 1–11",
-    "description": "Da Criação ao chamado de Abraão — sua jornada pela Palavra.",
+    "description": "Criação, queda e dilúvio — o prólogo da história sagrada.",
     "icon": "📖",
     "order": 1,
     "unlockAfter": null,
     "comingSoon": false,
-    "color": "#6C5CE7",
+    "color": "#2F5D4A",
     "modules": [
       {
         "title": "A Criação",
@@ -1255,14 +1255,29 @@
           }
         ]
       }
-    ]
+    ],
+    "realm": "antigo-testamento",
+    "category": "pentateuco"
+  },
+  {
+    "slug": "genesis-12-50",
+    "title": "Gênesis 12–50",
+    "description": "Abraão, Isaque, Jacó e José — a família da promessa.",
+    "icon": "🏕️",
+    "order": 2,
+    "unlockAfter": "genesis-1-11",
+    "comingSoon": true,
+    "color": "#4A8B6F",
+    "modules": [],
+    "realm": "antigo-testamento",
+    "category": "pentateuco"
   },
   {
     "slug": "exodo",
     "title": "Êxodo",
-    "description": "Do Egito à entrega da Lei — a libertação do povo de Deus.",
+    "description": "Do Egito à entrega da Lei — libertação e aliança.",
     "icon": "⛰️",
-    "order": 2,
+    "order": 3,
     "unlockAfter": "genesis-1-11",
     "comingSoon": false,
     "color": "#0984E3",
@@ -1276,7 +1291,7 @@
             "title": "O povo no Egito",
             "intro": "Gênesis termina com Israel no Egito. Êxodo começa séculos depois: um novo faraó escraviza o povo. Deus ouve o clamor de Seu povo.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 60,
             "questions": [
               {
                 "question": "Por que o faraó escravizou os israelitas?",
@@ -1335,6 +1350,35 @@
                   "d": "Deus interveio para libertar, não apenas relocar."
                 },
                 "verseRef": "Êxodo 2:23-25"
+              },
+              {
+                "question": "Quem ordenou que as parteiras matassem os meninos hebreus?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "O faraó"
+                  },
+                  {
+                    "id": "b",
+                    "text": "José"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Moisés"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Arão"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim! O faraó tentou controlar o crescimento de Israel pela violência.",
+                "feedbackWrong": {
+                  "b": "José já havia morrido; o novo rei não o conhecia.",
+                  "c": "Moisés ainda nem havia nascido nesse ponto da narrativa.",
+                  "d": "Arão aparece bem mais tarde."
+                },
+                "verseRef": "Êxodo 1:15-16"
               }
             ]
           },
@@ -1343,7 +1387,7 @@
             "title": "O chamado de Moisés",
             "intro": "Deus chama Moisés na sarça ardente. Ele hesita, mas Deus promete estar com ele.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 60,
             "questions": [
               {
                 "question": "Onde Deus apareceu a Moisés?",
@@ -1402,6 +1446,35 @@
                   "d": "El Shaddai é usado, mas neste momento Deus revela 'EU SOU'."
                 },
                 "verseRef": "Êxodo 3:14"
+              },
+              {
+                "question": "Qual foi a primeira objeção de Moisés ao chamado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Quem sou eu para ir ao faraó?"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Não tenho dinheiro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Prefiro voltar ao Egito como príncipe"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O povo já tem outro líder"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto! Moisés se sente incapaz — e Deus responde com a Sua presença.",
+                "feedbackWrong": {
+                  "b": "A hesitação de Moisés é de identidade e autoridade, não de dinheiro.",
+                  "c": "Ele havia fugido do Egito e pastoreava em Midiã.",
+                  "d": "Deus o envia exatamente porque o povo precisa de libertação."
+                },
+                "verseRef": "Êxodo 3:11"
               }
             ]
           }
@@ -1416,7 +1489,7 @@
             "title": "As dez pragas",
             "intro": "Deus envia pragas sobre o Egito para que o faraó liberte Israel. Cada praga mostra o poder de Deus sobre os deuses do Egito.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 60,
             "questions": [
               {
                 "question": "Qual foi a última praga que convenceu o faraó a deixar o povo ir?",
@@ -1446,6 +1519,64 @@
                   "d": "A escuridão foi a nona praga."
                 },
                 "verseRef": "Êxodo 12:29-31"
+              },
+              {
+                "question": "O que as pragas pretendiam revelar principalmente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que o Senhor é Deus no meio da terra"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que o Egito tinha melhor magia"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que Moisés era um deus"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que Israel deveria adorar o Nilo"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Exato! As pragas são sinais para que o Egito e Israel conheçam o Senhor.",
+                "feedbackWrong": {
+                  "b": "Os magos falham; o Senhor prevalece.",
+                  "c": "Moisés é servo; a glória é de Deus.",
+                  "d": "As pragas confrontam os deuses egípcios, inclusive ligados ao Nilo."
+                },
+                "verseRef": "Êxodo 8:22"
+              },
+              {
+                "question": "Quantas pragas o Senhor enviou sobre o Egito?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Dez"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sete"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Três"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Doze"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — dez pragas, culminando na morte dos primogênitos.",
+                "feedbackWrong": {
+                  "b": "Sete aparece em juízos apocalípticos, não aqui.",
+                  "c": "Houve bem mais que três.",
+                  "d": "A narrativa clássica conta dez."
+                },
+                "verseRef": "Êxodo 7–12"
               }
             ]
           },
@@ -1454,7 +1585,7 @@
             "title": "A Páscoa",
             "intro": "Deus institui a Páscoa: o sangue do cordeiro no lintel protegeria as casas. É memorial da libertação.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 60,
             "questions": [
               {
                 "question": "O que o sangue no lintel simbolizava na Páscoa?",
@@ -1484,6 +1615,35 @@
                   "d": "A vitória viria depois, no Mar Vermelho."
                 },
                 "verseRef": "Êxodo 12:13"
+              },
+              {
+                "question": "O que Israel deveria comer na noite da Páscoa?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "O cordeiro assado, pães ázimos e ervas amargas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Peixe do Nilo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Frutos do Egito"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Maná do céu"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto! A refeição marca libertação, pressa e memória da escravidão.",
+                "feedbackWrong": {
+                  "b": "Não faz parte da instituição da Páscoa.",
+                  "c": "A ênfase é no cordeiro e nos ázimos.",
+                  "d": "O maná vem depois, no deserto."
+                },
+                "verseRef": "Êxodo 12:8"
               }
             ]
           },
@@ -1492,7 +1652,7 @@
             "title": "O Mar Vermelho",
             "intro": "O faraó persegue Israel. Deus abre o mar, o povo passa em terra seca e os egípcios são vencidos.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 60,
             "questions": [
               {
                 "question": "Como Israel atravessou o Mar Vermelho?",
@@ -1520,6 +1680,64 @@
                   "b": "Não há menção de pontes.",
                   "c": "O texto fala em terra seca, não natação.",
                   "d": "O faraó perseguia para destruí-los."
+                },
+                "verseRef": "Êxodo 14:21-22"
+              },
+              {
+                "question": "O que Moisés ordenou ao povo diante do Mar Vermelho?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Não temais; vede o livramento do Senhor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Voltem ao Egito pedindo paz"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Construam barcos imediatamente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Lutem contra o exército do faraó"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim! A salvação começa com fé firme, não com pânico.",
+                "feedbackWrong": {
+                  "b": "Voltar seria negar a libertação.",
+                  "c": "Deus abre o mar; não há frota israelita.",
+                  "d": "O Senhor pelejará por eles."
+                },
+                "verseRef": "Êxodo 14:13-14"
+              },
+              {
+                "question": "Como Israel atravessou o mar?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Em terra seca, com as águas como muro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A nado, à noite"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Sobre pontes egípcias"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Em carros do faraó capturados"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Exato! Deus abriu o caminho — salvação sobrenatural.",
+                "feedbackWrong": {
+                  "b": "O texto descreve terra seca, não natação.",
+                  "c": "Não havia pontes ali.",
+                  "d": "Os carros do faraó foram tragados pelas águas."
                 },
                 "verseRef": "Êxodo 14:21-22"
               }
@@ -1589,44 +1807,2202 @@
                   "d": "O dilúvio é narrativa de Gênesis."
                 },
                 "verseRef": "Êxodo 12"
+              },
+              {
+                "question": "Qual é o fio central da libertação em Êxodo 1–15?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Deus ouve, liberta e forma um povo para Si"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Israel vence pela força militar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O faraó se converte e lidera o êxodo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Moisés age sem dependência de Deus"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Perfeito! Do clamor à canção, Deus é o protagonista da libertação.",
+                "feedbackWrong": {
+                  "b": "A vitória é do Senhor, não de um exército hebreu.",
+                  "c": "O faraó resistiu até o fim.",
+                  "d": "Moisés depende continuamente da presença de Deus."
+                },
+                "verseRef": "Êxodo 15:1-2"
               }
             ]
           }
         ]
       }
-    ]
+    ],
+    "realm": "antigo-testamento",
+    "category": "pentateuco"
+  },
+  {
+    "slug": "levitico",
+    "title": "Levítico",
+    "description": "Santidade, sacrifícios e culto — Deus no meio do Seu povo.",
+    "icon": "🔥",
+    "order": 4,
+    "unlockAfter": "exodo",
+    "comingSoon": true,
+    "color": "#B85C38",
+    "realm": "antigo-testamento",
+    "category": "pentateuco",
+    "modules": []
+  },
+  {
+    "slug": "numeros",
+    "title": "Números",
+    "description": "O deserto, a murmuração e a fidelidade de Deus à promessa.",
+    "icon": "⛺",
+    "order": 5,
+    "unlockAfter": "levitico",
+    "comingSoon": true,
+    "color": "#6B8F71",
+    "realm": "antigo-testamento",
+    "category": "pentateuco",
+    "modules": []
+  },
+  {
+    "slug": "deuteronomio",
+    "title": "Deuteronômio",
+    "description": "A Lei relembrada — amar ao Senhor de todo o coração.",
+    "icon": "📜",
+    "order": 6,
+    "unlockAfter": "numeros",
+    "comingSoon": true,
+    "color": "#8B7355",
+    "realm": "antigo-testamento",
+    "category": "pentateuco",
+    "modules": []
+  },
+  {
+    "slug": "josue",
+    "title": "Josué",
+    "description": "A conquista da terra — coragem, aliança e herança.",
+    "icon": "⚔️",
+    "order": 10,
+    "unlockAfter": "deuteronomio",
+    "comingSoon": true,
+    "color": "#5D8A66",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "juizes",
+    "title": "Juízes",
+    "description": "Ciclos de apostasia e livramento — Deus levanta juízes.",
+    "icon": "🔨",
+    "order": 11,
+    "unlockAfter": "josue",
+    "comingSoon": true,
+    "color": "#7A6B4F",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "rute",
+    "title": "Rute",
+    "description": "Fidelidade e redenção na família — um fio da linhagem de Davi.",
+    "icon": "🌾",
+    "order": 12,
+    "unlockAfter": "juizes",
+    "comingSoon": true,
+    "color": "#C4A35A",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "samuel",
+    "title": "1–2 Samuel",
+    "description": "De Samuel a Davi — o rei segundo o coração de Deus.",
+    "icon": "👑",
+    "order": 13,
+    "unlockAfter": "rute",
+    "comingSoon": true,
+    "color": "#6A8EAE",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "reis",
+    "title": "1–2 Reis",
+    "description": "Do templo à queda — reinos, profetas e exílio.",
+    "icon": "🏛️",
+    "order": 14,
+    "unlockAfter": "samuel",
+    "comingSoon": true,
+    "color": "#8E6A5A",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "cronicas",
+    "title": "1–2 Crônicas",
+    "description": "A história do templo e da linhagem — olhar sacerdotal sobre Israel.",
+    "icon": "📖",
+    "order": 15,
+    "unlockAfter": "reis",
+    "comingSoon": true,
+    "color": "#5A7A8E",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "esdras-neemias",
+    "title": "Esdras–Neemias",
+    "description": "O retorno do exílio — reconstruir muro, culto e povo.",
+    "icon": "🧱",
+    "order": 16,
+    "unlockAfter": "cronicas",
+    "comingSoon": true,
+    "color": "#7A8E5A",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "ester",
+    "title": "Ester",
+    "description": "Providência oculta — Deus preserva o Seu povo.",
+    "icon": "💎",
+    "order": 17,
+    "unlockAfter": "esdras-neemias",
+    "comingSoon": true,
+    "color": "#C45C7A",
+    "realm": "antigo-testamento",
+    "category": "historicos-at",
+    "modules": []
+  },
+  {
+    "slug": "jo",
+    "title": "Jó",
+    "description": "Sofimento, fé e o mistério da soberania de Deus.",
+    "icon": "🌪️",
+    "order": 20,
+    "unlockAfter": "genesis-1-11",
+    "comingSoon": true,
+    "color": "#6C7A89",
+    "realm": "antigo-testamento",
+    "category": "poeticos",
+    "modules": []
+  },
+  {
+    "slug": "salmos",
+    "title": "Salmos",
+    "description": "Oração, lamento e louvor — a linguagem do coração diante de Deus.",
+    "icon": "🎵",
+    "order": 21,
+    "unlockAfter": "evangelhos",
+    "comingSoon": true,
+    "color": "#6C5CE7",
+    "modules": [],
+    "realm": "antigo-testamento",
+    "category": "poeticos"
+  },
+  {
+    "slug": "proverbios",
+    "title": "Provérbios",
+    "description": "Sabedoria prática para a vida diária — temor do Senhor e caminho reto.",
+    "icon": "💎",
+    "order": 22,
+    "unlockAfter": "genesis-1-11",
+    "comingSoon": true,
+    "color": "#E8B84B",
+    "modules": [],
+    "realm": "antigo-testamento",
+    "category": "poeticos"
+  },
+  {
+    "slug": "eclesiastes",
+    "title": "Eclesiastes",
+    "description": "Vaidade e temor do Senhor — significado sob o sol.",
+    "icon": "⏳",
+    "order": 23,
+    "unlockAfter": "proverbios",
+    "comingSoon": true,
+    "color": "#8A7A5A",
+    "realm": "antigo-testamento",
+    "category": "poeticos",
+    "modules": []
+  },
+  {
+    "slug": "cantares",
+    "title": "Cânticos",
+    "description": "Amor, aliança e beleza — o cântico dos cânticos.",
+    "icon": "💐",
+    "order": 24,
+    "unlockAfter": "eclesiastes",
+    "comingSoon": true,
+    "color": "#D48A9A",
+    "realm": "antigo-testamento",
+    "category": "poeticos",
+    "modules": []
+  },
+  {
+    "slug": "isaias",
+    "title": "Isaías",
+    "description": "Santo de Israel — juízo, consolação e o Servo sofredor.",
+    "icon": "⚡",
+    "order": 30,
+    "unlockAfter": "reis",
+    "comingSoon": true,
+    "color": "#74B9FF",
+    "realm": "antigo-testamento",
+    "category": "profeticos",
+    "modules": []
+  },
+  {
+    "slug": "jeremias",
+    "title": "Jeremias",
+    "description": "Lágrimas e nova aliança — fidelidade no meio da queda.",
+    "icon": "💧",
+    "order": 31,
+    "unlockAfter": "isaias",
+    "comingSoon": true,
+    "color": "#5B8FA8",
+    "realm": "antigo-testamento",
+    "category": "profeticos",
+    "modules": []
+  },
+  {
+    "slug": "ezequiel",
+    "title": "Ezequiel",
+    "description": "Glória, juízo e restauração — o templo e o coração novo.",
+    "icon": "👁️",
+    "order": 32,
+    "unlockAfter": "jeremias",
+    "comingSoon": true,
+    "color": "#6B6FA8",
+    "realm": "antigo-testamento",
+    "category": "profeticos",
+    "modules": []
+  },
+  {
+    "slug": "daniel",
+    "title": "Daniel",
+    "description": "Fidelidade no exílio — reinos humanos e o Reino de Deus.",
+    "icon": "🦁",
+    "order": 33,
+    "unlockAfter": "ezequiel",
+    "comingSoon": true,
+    "color": "#C4A040",
+    "realm": "antigo-testamento",
+    "category": "profeticos",
+    "modules": []
+  },
+  {
+    "slug": "profetas-menores",
+    "title": "Profetas Menores",
+    "description": "Oséias a Malaquias — justiça, misericórdia e esperança messiânica.",
+    "icon": "🔔",
+    "order": 34,
+    "unlockAfter": "daniel",
+    "comingSoon": true,
+    "color": "#5A9E8E",
+    "realm": "antigo-testamento",
+    "category": "profeticos",
+    "modules": []
   },
   {
     "slug": "evangelhos",
-    "title": "Evangelhos",
-    "description": "A vida, morte e ressurreição de Jesus Cristo.",
+    "title": "Os Quatro Evangelhos",
+    "description": "Panorama de Mateus a João — vida, morte e ressurreição de Jesus.",
     "icon": "✝️",
-    "order": 3,
+    "order": 40,
     "unlockAfter": "exodo",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#E17055",
-    "modules": []
+    "modules": [
+      {
+        "title": "O Início",
+        "icon": "✨",
+        "missions": [
+          {
+            "slug": "evg-01-encarnacao",
+            "title": "O Verbo se fez carne",
+            "intro": "Os Evangelhos começam com uma afirmação radical: Deus entra na história em Jesus.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Segundo João, quem é o Verbo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Um anjo criado no princípio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Aquele que estava com Deus e se fez carne"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A Lei de Moisés"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Apenas um profeta humano"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim! O Verbo eterno se fez carne e habitou entre nós.",
+                "feedbackWrong": {
+                  "a": "João identifica o Verbo com Deus, não com um anjo.",
+                  "d": "O texto vai além: o Verbo era Deus.",
+                  "c": "A Lei aponta, mas o Verbo é a Pessoa."
+                },
+                "verseRef": "João 1:1–14"
+              },
+              {
+                "question": "Onde Jesus nasceu, segundo Mateus e Lucas?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Em Nazaré"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Em Capernaum"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Em Belém"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Em Jerusalém"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto! Belém cumpre a expectativa messiânica.",
+                "feedbackWrong": {
+                  "a": "Ele cresceu em Nazaré, mas nasceu em Belém.",
+                  "d": "Jerusalém é centro do culto, não o local do nascimento.",
+                  "b": "Capernaum vem depois, no ministério."
+                },
+                "verseRef": "Mateus 2:1"
+              },
+              {
+                "question": "O que o anjo anunciou aos pastores?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Nasceu o Salvador, que é Cristo, o Senhor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Os magos deveriam voltar a Herodes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O templo seria destruído"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Nasceu um novo rei romano"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Exato — boas novas de grande alegria.",
+                "feedbackWrong": {
+                  "d": "O anúncio é messiânico, não imperial.",
+                  "c": "Isso vem bem mais tarde.",
+                  "b": "Os magos são outra narrativa."
+                },
+                "verseRef": "Lucas 2:11"
+              }
+            ]
+          },
+          {
+            "slug": "evg-02-batismo",
+            "title": "O batismo de Jesus",
+            "intro": "Jesus é batizado por João. O céu se abre — Filho amado, Espírito e missão pública.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quem batizou Jesus no Jordão?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Paulo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "João Batista"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Pedro"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Nicodemos"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim! João prepara o caminho e batiza o Messias.",
+                "feedbackWrong": {
+                  "c": "Pedro é discípulo posterior.",
+                  "d": "Nicodemos aparece em João 3.",
+                  "a": "Paulo ainda nem havia se convertido."
+                },
+                "verseRef": "Mateus 3:13–17"
+              },
+              {
+                "question": "O que a voz do céu declarou no batismo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Este é o meu Filho amado, em quem me comprazo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Este é o meu servo maior que Moisés"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Este é o profeta de Nazaré"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Este é o rei de Israel para sempre"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto — identidade e deleite do Pai.",
+                "feedbackWrong": {
+                  "b": "A ênfase é Filho amado.",
+                  "d": "Há realeza, mas a frase citada é sobre o Filho.",
+                  "c": "Não é o texto do batismo."
+                },
+                "verseRef": "Mateus 3:17"
+              }
+            ]
+          },
+          {
+            "slug": "evg-03-tentacao",
+            "title": "A tentação no deserto",
+            "intro": "Após o batismo, Jesus é levado ao deserto. Ele responde à tentação com a Escritura.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quantos dias Jesus jejuou no deserto, segundo Mateus?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Cem dias"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sete dias"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Quarenta dias"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Três dias"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim — paralelo com Israel no deserto.",
+                "feedbackWrong": {
+                  "b": "O texto aponta quarenta.",
+                  "d": "Três dias evoca a sepultura, não o jejum aqui.",
+                  "a": "Não é o número bíblico."
+                },
+                "verseRef": "Mateus 4:1–2"
+              },
+              {
+                "question": "Como Jesus responde à tentação?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Pedindo um milagre imediato"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Fugindo para o Egito"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Convencendo o diabo com filosofia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Citando a Escritura: “Está escrito…”"
+                  }
+                ],
+                "correctOptionId": "d",
+                "feedbackCorrect": "Exato — a Palavra é a defesa.",
+                "feedbackWrong": {
+                  "a": "Ele recusa transformar a pedra em pão.",
+                  "b": "Ele permanece e resiste.",
+                  "c": "A arma é a Palavra."
+                },
+                "verseRef": "Mateus 4:4–10"
+              }
+            ]
+          },
+          {
+            "slug": "evg-boss-01",
+            "title": "Desafio: O Início",
+            "intro": "Una nascimento, batismo e tentação: quem é Jesus e como começa o ministério.",
+            "type": "boss",
+            "xpReward": 110,
+            "questions": [
+              {
+                "question": "Qual fio une encarnação, batismo e tentação?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Jesus evita o sofrimento humano"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Jesus é o Filho fiel que assume a missão do Pai"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Os Evangelhos negam a divindade de Jesus"
+                  },
+                  {
+                    "id": "d",
+                    "text": "João substitui Jesus como Messias"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Perfeito — identidade e fidelidade abrem o caminho.",
+                "feedbackWrong": {
+                  "a": "Ele entra plenamente na história e na luta.",
+                  "d": "João aponta para Jesus.",
+                  "c": "João afirma o Verbo que era Deus."
+                },
+                "verseRef": "João 1; Mateus 3–4"
+              },
+              {
+                "question": "Por que a tentação importa logo após o batismo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Mostra um Messias obediente onde Israel falhou"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ensina que jejuar é inútil"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Prova que Jesus pecou no deserto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Cancela o batismo"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — o Filho fiel no deserto.",
+                "feedbackWrong": {
+                  "c": "Ele foi tentado, sem pecar.",
+                  "d": "O batismo confirma a identidade; a tentação a prova.",
+                  "b": "O jejum faz parte da narrativa de dependência."
+                },
+                "verseRef": "Mateus 4:1–11"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ensino e Sinais",
+        "icon": "📖",
+        "missions": [
+          {
+            "slug": "evg-04-sermao",
+            "title": "As bem-aventuranças",
+            "intro": "No monte, Jesus anuncia o Reino de forma invertida: pobres, mansos e perseguidos são bem-aventurados.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quem Jesus chama de bem-aventurados no início do Sermão?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Os ricos de Jerusalém"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Somente os discípulos doze"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Os pobres de espírito, porque deles é o Reino"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Os escribas e fariseus"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto — dependência de Deus é porta do Reino.",
+                "feedbackWrong": {
+                  "a": "O Reino começa pelos necessitados diante de Deus.",
+                  "d": "Mais tarde Jesus os confronta.",
+                  "b": "O ensino é aberto ao povo."
+                },
+                "verseRef": "Mateus 5:3"
+              },
+              {
+                "question": "O que Jesus diz sobre ser sal e luz?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Os discípulos devem dar sabor e iluminar o mundo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Sal e luz são apenas metáforas sem ética"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Só Israel pode ser luz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Devem se esconder da sociedade"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — testemunho visível do Reino.",
+                "feedbackWrong": {
+                  "d": "A luz não se põe debaixo do alqueire.",
+                  "c": "O chamado se estende aos seguidores.",
+                  "b": "Há missão prática de testemunho."
+                },
+                "verseRef": "Mateus 5:13–16"
+              }
+            ]
+          },
+          {
+            "slug": "evg-05-parabolas",
+            "title": "As parábolas do Reino",
+            "intro": "Jesus ensina em parábolas: sementes, tesouros e portas — o Reino cresce de forma surpreendente.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Na parábola do semeador, o que representa a semente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "O dinheiro dos discípulos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O templo de Jerusalém"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A palavra do Reino"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O exército de Roma"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Exato — a Palavra encontra solos diferentes.",
+                "feedbackWrong": {
+                  "a": "Não é o sentido da parábola.",
+                  "d": "A metáfora é agrícola e espiritual.",
+                  "b": "A semente é a mensagem."
+                },
+                "verseRef": "Mateus 13:18–23"
+              },
+              {
+                "question": "O que acontece com a semente em boa terra?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Frutifica em cem, sessenta ou trinta por um"
+                  },
+                  {
+                    "id": "b",
+                    "text": "É sufocada só pela riqueza"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Seca imediatamente"
+                  },
+                  {
+                    "id": "d",
+                    "text": "É engolida pelas aves"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — ouvir e entender produz fruto.",
+                "feedbackWrong": {
+                  "c": "Isso ocorre no solo pedregoso.",
+                  "d": "Isso é o caminho.",
+                  "b": "Os espinhos incluem cuidados e enganos; a boa terra frutifica."
+                },
+                "verseRef": "Mateus 13:23"
+              }
+            ]
+          },
+          {
+            "slug": "evg-06-milagres",
+            "title": "Sinais e compaixão",
+            "intro": "Os milagres não são espetáculo vazio: revelam autoridade e misericórdia do Rei.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que os milagres de Jesus revelam principalmente?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que só ricos são curados"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Autoridade e compaixão do Reino presente nEle"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que Ele precisa de plateia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que a Lei foi abolida por magia"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Correto — poder a serviço do amor.",
+                "feedbackWrong": {
+                  "c": "Muitas vezes Ele manda calar.",
+                  "d": "Ele cumpre e aprofunda a Lei.",
+                  "a": "Ele toca leprosos, cegos e excluídos."
+                },
+                "verseRef": "Mateus 8–9"
+              },
+              {
+                "question": "Antes de multiplicar pães, o que Jesus sente pela multidão?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Raiva dos discípulos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Indiferença"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Compaixão, porque andavam como ovelhas sem pastor"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Medo de Roma"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim — o milagre nasce da compaixão.",
+                "feedbackWrong": {
+                  "b": "O texto destaca compaixão.",
+                  "a": "Ele envolve os discípulos na missão.",
+                  "d": "O foco é o cuidado pastoral."
+                },
+                "verseRef": "Marcos 6:34"
+              }
+            ]
+          },
+          {
+            "slug": "evg-boss-02",
+            "title": "Desafio: Ensino e Sinais",
+            "intro": "Una bem-aventuranças, parábolas e milagres: como o Reino se revela.",
+            "type": "boss",
+            "xpReward": 110,
+            "questions": [
+              {
+                "question": "Como o Reino aparece no ensino de Jesus?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Como fim da misericórdia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Como conquista militar imediata"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Como graça que transforma coração e gera fruto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Como privilégio só dos poderosos"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Perfeito — Reino invertido e frutífero.",
+                "feedbackWrong": {
+                  "b": "O Reino cresce como semente.",
+                  "d": "As bem-aventuranças exaltam os humildes.",
+                  "a": "Os milagres são mercê."
+                },
+                "verseRef": "Mateus 5; 13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cruz e Ressurreição",
+        "icon": "✝️",
+        "missions": [
+          {
+            "slug": "evg-07-ceia",
+            "title": "A última ceia",
+            "intro": "Na noite em que foi traído, Jesus institui a nova aliança em Seu sangue.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que Jesus diz sobre o pão na ceia?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Isto é o meu corpo, que é dado por vós"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Isto é apenas um lanche comum"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Isto é o maná do deserto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Isto substitui a Lei"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — entrega vicária anunciada.",
+                "feedbackWrong": {
+                  "c": "Ele aponta para Seu próprio corpo.",
+                  "d": "É memorial da nova aliança.",
+                  "b": "O gesto é sacramental e profético."
+                },
+                "verseRef": "Lucas 22:19"
+              },
+              {
+                "question": "O que o cálice representa?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A nova aliança no Seu sangue"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A vitória de Roma"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O vinho das bodas de Caná apenas"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O batismo de João"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto — sangue derramado pela aliança.",
+                "feedbackWrong": {
+                  "b": "Não.",
+                  "d": "Outro rito.",
+                  "c": "Aqui o sentido é sacrificial."
+                },
+                "verseRef": "Lucas 22:20"
+              }
+            ]
+          },
+          {
+            "slug": "evg-08-cruz",
+            "title": "A cruz",
+            "intro": "Jesus é crucificado. Os Evangelhos mostram abandono, zombaria — e cumprimento das Escrituras.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Onde Jesus foi crucificado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "No templo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "No Gólgota (lugar da Caveira)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Em Belém"
+                  },
+                  {
+                    "id": "d",
+                    "text": "No Getsêmani"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Exato.",
+                "feedbackWrong": {
+                  "a": "A crucificação é fora das portas.",
+                  "c": "Belém é nascimento.",
+                  "d": "Getsêmani é a oração prévia."
+                },
+                "verseRef": "Marcos 15:22"
+              },
+              {
+                "question": "Qual é o sentido central da cruz nos Evangelhos?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Apenas um exemplo moral sem salvação"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Um acidente político sem significado"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A prova de que Deus falhou"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O Filho dá a vida em resgate por muitos"
+                  }
+                ],
+                "correctOptionId": "d",
+                "feedbackCorrect": "Sim — vida dada em resgate.",
+                "feedbackWrong": {
+                  "b": "Os textos veem cumprimento e propósito.",
+                  "c": "A cruz é caminho da vitória.",
+                  "a": "Há redenção, não só exemplo."
+                },
+                "verseRef": "Marcos 10:45"
+              }
+            ]
+          },
+          {
+            "slug": "evg-09-ressurreicao",
+            "title": "Ele ressuscitou",
+            "intro": "O túmulo vazio e as aparições mudam tudo: a morte não tem a última palavra.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quem encontra o túmulo vazio primeiro, em vários relatos?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Os guardas romanos como evangelistas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mulheres discípulas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Herodes"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pilatos"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Correto — testemunhas primeiras e fieis.",
+                "feedbackWrong": {
+                  "d": "Pilatos autoriza a sepultura, não anuncia a ressurreição.",
+                  "a": "Eles são figuras secundárias.",
+                  "c": "Não."
+                },
+                "verseRef": "Mateus 28:1–10"
+              },
+              {
+                "question": "Qual é a comissão final em Mateus?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Fazer discípulos de todas as nações"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Reconstruir o templo de Herodes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Esconder o evangelho dos gentios"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ficar apenas em Jerusalém para sempre"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — missão até os confins.",
+                "feedbackWrong": {
+                  "d": "Lucas fala de começar em Jerusalém, mas ir ao mundo.",
+                  "b": "Não é a ordem.",
+                  "c": "A ordem é universal."
+                },
+                "verseRef": "Mateus 28:19–20"
+              }
+            ]
+          },
+          {
+            "slug": "evg-boss-final",
+            "title": "Desafio final: Evangelhos",
+            "intro": "Do Verbo encarnado ao Rei ressuscitado — una o fio dos quatro Evangelhos.",
+            "type": "boss",
+            "xpReward": 120,
+            "questions": [
+              {
+                "question": "Qual é o arco central dos Evangelhos?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "João Batista substitui Jesus"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A cruz encerra a história sem esperança"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O Filho vem, ensina, morre e ressuscita para salvar"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Um herói político derrota Roma"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Perfeito — encarnação, cruz e vitória.",
+                "feedbackWrong": {
+                  "d": "O Reino não é esse tipo de conquista.",
+                  "a": "João aponta para Ele.",
+                  "b": "A ressurreição abre a missão."
+                },
+                "verseRef": "João 1; Mateus 28"
+              },
+              {
+                "question": "O que a ressurreição garante aos discípulos?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que Jesus reina e a missão continua com a Sua presença"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que podem abandonar a fé"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que a cruz foi um erro"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que só Israel importa"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — autoridade e presença até o fim.",
+                "feedbackWrong": {
+                  "b": "O contrário: fé viva.",
+                  "c": "A cruz é caminho glorificado.",
+                  "d": "A comissão é para todas as nações."
+                },
+                "verseRef": "Mateus 28:18–20"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "realm": "novo-testamento",
+    "category": "evangelhos"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "👑",
+    "color": "#E17055",
+    "unlockAfter": "evangelhos",
+    "slug": "mateus",
+    "title": "Mateus",
+    "description": "O Rei prometido — cumprimento e o Sermão do Monte.",
+    "order": 41,
+    "realm": "novo-testamento",
+    "category": "evangelhos"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🏃",
+    "color": "#D63031",
+    "unlockAfter": "mateus",
+    "slug": "marcos",
+    "title": "Marcos",
+    "description": "O Evangelho da ação — o Servo que veio para servir.",
+    "order": 42,
+    "realm": "novo-testamento",
+    "category": "evangelhos"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "❤️",
+    "color": "#E84393",
+    "unlockAfter": "marcos",
+    "slug": "lucas",
+    "title": "Lucas",
+    "description": "O Salvador dos perdidos — misericórdia e o caminho ao pai.",
+    "order": 43,
+    "realm": "novo-testamento",
+    "category": "evangelhos"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🕊️",
+    "color": "#FD79A8",
+    "unlockAfter": "lucas",
+    "slug": "joao",
+    "title": "João",
+    "description": "O Verbo eterno — sinais, “Eu Sou” e a vida eterna.",
+    "order": 44,
+    "realm": "novo-testamento",
+    "category": "evangelhos"
   },
   {
     "slug": "atos",
     "title": "Atos dos Apóstolos",
     "description": "O nascimento da Igreja e a expansão do Evangelho.",
     "icon": "🔥",
-    "order": 4,
+    "order": 50,
     "unlockAfter": "evangelhos",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#FDCB6E",
+    "modules": [
+      {
+        "title": "A Igreja nasce",
+        "icon": "🔥",
+        "missions": [
+          {
+            "slug": "ato-01-ascensao",
+            "title": "A ascensão",
+            "intro": "Jesus sobe aos céus e promete o Espírito. Os discípulos esperam em Jerusalém.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que Jesus promete antes de subir?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Um exército angelical imediato"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O fim da missão"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O poder do Espírito Santo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A queda imediata de Roma"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim — poder para testemunhar.",
+                "feedbackWrong": {
+                  "a": "A promessa é o Espírito.",
+                  "d": "O foco é testemunho.",
+                  "b": "A missão começa."
+                },
+                "verseRef": "Atos 1:8"
+              },
+              {
+                "question": "Até onde o testemunho deve chegar?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Só até a Galileia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Apenas ao templo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Até os confins da terra"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Somente às sinagogas da Ásia"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto.",
+                "feedbackWrong": {
+                  "a": "O texto amplia até os confins.",
+                  "b": "Começa em Jerusalém, mas não para ali.",
+                  "d": "O horizonte é mundial."
+                },
+                "verseRef": "Atos 1:8"
+              }
+            ]
+          },
+          {
+            "slug": "ato-02-pentecostes",
+            "title": "Pentecostes",
+            "intro": "O Espírito é derramado. Línguas, ousadia e o nascimento público da igreja.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que acontece no dia de Pentecostes?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Pedro nega Jesus de novo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O templo é destruído"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A igreja decide dispersar-se em silêncio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Todos ficam cheios do Espírito Santo"
+                  }
+                ],
+                "correctOptionId": "d",
+                "feedbackCorrect": "Exato — o Espírito enche a igreja.",
+                "feedbackWrong": {
+                  "b": "Isso vem depois historicamente.",
+                  "a": "Pedro prega com ousadia.",
+                  "c": "Há proclamação pública."
+                },
+                "verseRef": "Atos 2:1–4"
+              },
+              {
+                "question": "O que Pedro proclama em seu sermão?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que a Lei acabou sem graça"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que Deus fez a Jesus Senhor e Cristo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que Moisés é o Messias"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que Roma deve ser adorada"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim — Jesus é Senhor e Cristo.",
+                "feedbackWrong": {
+                  "c": "Pedro aponta para Jesus.",
+                  "a": "Ele chama ao arrependimento em Jesus.",
+                  "d": "Não."
+                },
+                "verseRef": "Atos 2:36"
+              }
+            ]
+          },
+          {
+            "slug": "ato-03-comunhao",
+            "title": "A vida da comunidade",
+            "intro": "Ensino, comunhão, pão e orações — a igreja aprende a viver junta.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quais práticas marcam a igreja primitiva em Atos 2?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Isolamento total"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Culto só uma vez por ano"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Negociação com o Sinédrio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Ensino, comunhão, partir do pão e orações"
+                  }
+                ],
+                "correctOptionId": "d",
+                "feedbackCorrect": "Correto — os quatro pilares.",
+                "feedbackWrong": {
+                  "a": "Eles estavam juntos.",
+                  "b": "Há perseverança diária.",
+                  "c": "O foco é a vida comum."
+                },
+                "verseRef": "Atos 2:42"
+              },
+              {
+                "question": "Como a comunidade trata os bens?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Com impostos a Roma em nome da fé"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Com indiferença aos pobres"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Com generosidade, repartindo conforme a necessidade"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Com acumulação individualista"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim — generosidade prática.",
+                "feedbackWrong": {
+                  "d": "O texto destaca partilha.",
+                  "a": "Não é o ponto.",
+                  "b": "Havia cuidado mútuo."
+                },
+                "verseRef": "Atos 2:44–45"
+              }
+            ]
+          },
+          {
+            "slug": "ato-boss-01",
+            "title": "Desafio: Atos",
+            "intro": "Da ascensão à comunidade: o Espírito lança a missão.",
+            "type": "boss",
+            "xpReward": 110,
+            "questions": [
+              {
+                "question": "Qual é o fio de Atos 1–2?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Os discípulos voltam à pesca para sempre"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Pentecostes cancela a missão"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Jesus reina, o Espírito vem, a igreja testemunha"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A igreja nasce sem o Espírito"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Perfeito.",
+                "feedbackWrong": {
+                  "a": "Eles se tornam testemunhas.",
+                  "b": "Pentecostes inicia a missão.",
+                  "d": "O Espírito é central."
+                },
+                "verseRef": "Atos 1–2"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "realm": "novo-testamento",
+    "category": "historicos-nt"
+  },
+  {
+    "slug": "cartas-paulo",
+    "title": "Cartas de Paulo",
+    "description": "Panorama de Romanos a Filemom — graça, fé e vida da igreja.",
+    "icon": "✉️",
+    "order": 60,
+    "unlockAfter": "atos",
+    "comingSoon": true,
+    "color": "#00B894",
+    "modules": [],
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "⚖️",
+    "color": "#00B894",
+    "unlockAfter": "cartas-paulo",
+    "slug": "romanos",
+    "title": "Romanos",
+    "description": "O evangelho da justiça de Deus — pecado, graça e nova vida.",
+    "order": 61,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🔗",
+    "color": "#00CEC9",
+    "unlockAfter": "romanos",
+    "slug": "corintios",
+    "title": "1–2 Coríntios",
+    "description": "Igreja, unidade, dons e o amor que edifica.",
+    "order": 62,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🔓",
+    "color": "#55EFC4",
+    "unlockAfter": "corintios",
+    "slug": "galatas",
+    "title": "Gálatas",
+    "description": "Liberdade em Cristo — justificação pela fé, sem jugo da Lei.",
+    "order": 63,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🛡️",
+    "color": "#81ECEC",
+    "unlockAfter": "galatas",
+    "slug": "efesios",
+    "title": "Efésios",
+    "description": "A igreja em Cristo — unidade, graça e armadura de Deus.",
+    "order": 64,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "✨",
+    "color": "#74B9FF",
+    "unlockAfter": "efesios",
+    "slug": "filipenses",
+    "title": "Filipenses",
+    "description": "Alegria no Senhor — humildade e o exemplo de Cristo.",
+    "order": 65,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🌟",
+    "color": "#0984E3",
+    "unlockAfter": "filipenses",
+    "slug": "colossenses",
+    "title": "Colossenses",
+    "description": "Cristo acima de tudo — plenitude e nova humanidade.",
+    "order": 66,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🌅",
+    "color": "#6C5CE7",
+    "unlockAfter": "colossenses",
+    "slug": "tessalonicenses",
+    "title": "1–2 Tessalonicenses",
+    "description": "Esperança da vinda de Cristo — perseverança e consolação.",
+    "order": 67,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🧭",
+    "color": "#A29BFE",
+    "unlockAfter": "tessalonicenses",
+    "slug": "pastorais",
+    "title": "Cartas Pastorais",
+    "description": "1–2 Timóteo e Tito — cuidado da igreja e legado da fé.",
+    "order": 68,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🤝",
+    "color": "#B2BEC3",
+    "unlockAfter": "pastorais",
+    "slug": "filemom",
+    "title": "Filemom",
+    "description": "Graça que transforma relacionamentos — perdão e irmãos em Cristo.",
+    "order": 69,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "slug": "cartas-gerais",
+    "title": "Cartas Gerais",
+    "description": "Panorama de Hebreus a Judas — perseverança e fé viva.",
+    "icon": "📜",
+    "order": 72,
+    "unlockAfter": "cartas-paulo",
+    "comingSoon": true,
+    "color": "#26A69A",
+    "realm": "novo-testamento",
+    "category": "epistolas",
     "modules": []
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "⛪",
+    "color": "#26A69A",
+    "unlockAfter": "cartas-gerais",
+    "slug": "hebreus",
+    "title": "Hebreus",
+    "description": "Cristo, o Sumo Sacerdote superior — fé que persevera.",
+    "order": 73,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🪞",
+    "color": "#00897B",
+    "unlockAfter": "hebreus",
+    "slug": "tiago",
+    "title": "Tiago",
+    "description": "Fé que se vê — sabedoria prática e obras que confirmam.",
+    "order": 74,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🪨",
+    "color": "#00796B",
+    "unlockAfter": "tiago",
+    "slug": "pedro",
+    "title": "1–2 Pedro",
+    "description": "Esperança no sofrimento — eleitos, santidade e dia do Senhor.",
+    "order": 75,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "💌",
+    "color": "#00695C",
+    "unlockAfter": "pedro",
+    "slug": "cartas-joao",
+    "title": "1–3 João",
+    "description": "Amor, verdade e comunhão — quem permanece em Cristo.",
+    "order": 76,
+    "realm": "novo-testamento",
+    "category": "epistolas"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "⚔️",
+    "color": "#004D40",
+    "unlockAfter": "cartas-joao",
+    "slug": "judas",
+    "title": "Judas",
+    "description": "Contender pela fé — alerta contra impostores e contaminação.",
+    "order": 77,
+    "realm": "novo-testamento",
+    "category": "epistolas"
   },
   {
     "slug": "apocalipse",
     "title": "Apocalipse",
     "description": "A revelação final — esperança e vitória de Cristo.",
     "icon": "👑",
-    "order": 5,
+    "order": 80,
     "unlockAfter": "atos",
+    "comingSoon": false,
+    "color": "#C45C3A",
+    "modules": [
+      {
+        "title": "Esperança final",
+        "icon": "👑",
+        "missions": [
+          {
+            "slug": "apo-01-cartas",
+            "title": "Cartas às igrejas",
+            "intro": "Jesus fala às sete igrejas: ânimo, correção e promessa aos vencedores.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "A quem o Apocalipse se dirige no início?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Às sete igrejas da Ásia"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Apenas a João isolado"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Aos fariseus de Jerusalém"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Somente a Roma imperial"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — mensagem pastoral às igrejas.",
+                "feedbackWrong": {
+                  "d": "Há endereçamento eclesial claro.",
+                  "b": "João escreve para as igrejas.",
+                  "c": "O cenário é a Ásia Menor."
+                },
+                "verseRef": "Apocalipse 1:4"
+              },
+              {
+                "question": "O que Jesus promete aos vencedores?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Participar da árvore da vida / vida com Ele"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Esquecer a fidelidade"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Abandonar o testemunho"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Riqueza imediata"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto — recompensa aos fieis.",
+                "feedbackWrong": {
+                  "d": "A vitória é escatológica e espiritual.",
+                  "b": "A chamada é perseverar.",
+                  "c": "O contrário."
+                },
+                "verseRef": "Apocalipse 2:7"
+              }
+            ]
+          },
+          {
+            "slug": "apo-02-cordeiro",
+            "title": "O Cordeiro no trono",
+            "intro": "No centro do céu não está o medo — está o Cordeiro que foi morto e é digno.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Quem é digno de abrir o livro selado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Um anjo qualquer"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O império da besta"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O Cordeiro que foi morto"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O dragão"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Exato — vitória pelo sacrifício.",
+                "feedbackWrong": {
+                  "d": "O dragão é opositor.",
+                  "a": "Ninguém mais foi achado digno.",
+                  "b": "A besta usurpa; o Cordeiro reina."
+                },
+                "verseRef": "Apocalipse 5:5–6"
+              },
+              {
+                "question": "O que a multidão clama sobre o Cordeiro?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Digno é o Cordeiro que foi morto"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Digno é o medo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Digno é o mercado de Babilônia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Digno é César"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim — louvor ao Cordeiro.",
+                "feedbackWrong": {
+                  "d": "O culto verdadeiro é a Deus e ao Cordeiro.",
+                  "c": "Babilônia cai.",
+                  "b": "O céu canta dignidade e louvor."
+                },
+                "verseRef": "Apocalipse 5:12"
+              }
+            ]
+          },
+          {
+            "slug": "apo-03-novo",
+            "title": "Novo céu e nova terra",
+            "intro": "A história termina com restauração: Deus com o Seu povo, sem morte nem dor.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que João vê no fim?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Um templo terrestre reconstruído apenas"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O fim sem esperança"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Novo céu e nova terra; Deus habitando com os homens"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O retorno eterno ao caos"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto — Deus conosco para sempre.",
+                "feedbackWrong": {
+                  "d": "Há nova criação.",
+                  "a": "João vê a cidade/habitar de Deus.",
+                  "b": "Há cura das nações e vida."
+                },
+                "verseRef": "Apocalipse 21:1–4"
+              },
+              {
+                "question": "O que deixa de existir na nova criação?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A adoração"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A presença de Deus"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A árvore da vida"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Morte, pranto, clamor e dor"
+                  }
+                ],
+                "correctOptionId": "d",
+                "feedbackCorrect": "Sim — toda lágrima é enxugada.",
+                "feedbackWrong": {
+                  "a": "A adoração permanece.",
+                  "b": "Ele habita com o povo.",
+                  "c": "Ela reaparece para cura."
+                },
+                "verseRef": "Apocalipse 21:4"
+              }
+            ]
+          },
+          {
+            "slug": "apo-boss-01",
+            "title": "Desafio: Apocalipse",
+            "intro": "Das cartas ao trono e à nova criação — a esperança dos fieis.",
+            "type": "boss",
+            "xpReward": 110,
+            "questions": [
+              {
+                "question": "Qual é o centro da esperança no Apocalipse?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A besta vence para sempre"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O Cordeiro reina e fará nova todas as coisas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Deus abandona a história"
+                  },
+                  {
+                    "id": "d",
+                    "text": "As igrejas devem desistir"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Perfeito — Cordeiro e nova criação.",
+                "feedbackWrong": {
+                  "a": "A besta é derrotada.",
+                  "d": "Elas são chamadas a vencer.",
+                  "c": "Ele vem habitar com o povo."
+                },
+                "verseRef": "Apocalipse 5; 21"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "realm": "novo-testamento",
+    "category": "apocalipse"
+  },
+  {
+    "slug": "vida-crista",
+    "title": "Discipulado",
+    "description": "Seguir a Jesus no dia a dia — fé, caráter, relacionamentos e missão.",
+    "icon": "🌱",
+    "order": 200,
+    "unlockAfter": "evangelhos",
+    "comingSoon": true,
+    "color": "#55EFC4",
+    "modules": [],
+    "realm": "vida-crista",
+    "category": "discipulado"
+  },
+  {
+    "slug": "familia",
+    "title": "Família e Relacionamentos",
+    "description": "Casamento, filhos e comunidade — viver o evangelho em casa.",
+    "icon": "🏠",
+    "order": 201,
+    "unlockAfter": "vida-crista",
+    "comingSoon": true,
+    "color": "#6BAF8D",
+    "realm": "vida-crista",
+    "category": "discipulado",
+    "modules": []
+  },
+  {
+    "slug": "missao",
+    "title": "Missão e Evangelismo",
+    "description": "Anunciar Cristo — testemunho, discipulado e envio.",
+    "icon": "🌍",
+    "order": 202,
+    "unlockAfter": "vida-crista",
+    "comingSoon": true,
+    "color": "#4A90A4",
+    "realm": "vida-crista",
+    "category": "discipulado",
+    "modules": []
+  },
+  {
+    "slug": "oracao",
+    "title": "Oração",
+    "description": "Aprender a orar com Jesus, os Salmos e a igreja primitiva.",
+    "icon": "🙏",
+    "order": 210,
+    "unlockAfter": "salmos",
     "comingSoon": true,
     "color": "#A29BFE",
+    "modules": [],
+    "realm": "vida-crista",
+    "category": "oracao"
+  },
+  {
+    "slug": "jejum",
+    "title": "Jejum e Disciplinas",
+    "description": "Práticas espirituais — jejum, silêncio e vigilância.",
+    "icon": "🕯️",
+    "order": 211,
+    "unlockAfter": "oracao",
+    "comingSoon": true,
+    "color": "#9A8AB8",
+    "realm": "vida-crista",
+    "category": "oracao",
+    "modules": []
+  },
+  {
+    "slug": "historia-igreja",
+    "title": "História da Igreja",
+    "description": "Dos apóstolos à reforma — como a fé atravessou os séculos.",
+    "icon": "🏛️",
+    "order": 220,
+    "unlockAfter": "atos",
+    "comingSoon": true,
+    "color": "#D4A574",
+    "modules": [],
+    "realm": "vida-crista",
+    "category": "historia-igreja"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🕯️",
+    "color": "#D4A574",
+    "unlockAfter": "historia-igreja",
+    "slug": "igreja-primitiva",
+    "title": "Igreja Primitiva",
+    "description": "Dos apóstolos aos pais da igreja — fé sob pressão romana.",
+    "order": 221,
+    "realm": "vida-crista",
+    "category": "historia-igreja"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "📜",
+    "color": "#A67C52",
+    "unlockAfter": "igreja-primitiva",
+    "slug": "reforma",
+    "title": "Reforma",
+    "description": "Sola Scriptura e o reavivamento do evangelho no século XVI.",
+    "order": 222,
+    "realm": "vida-crista",
+    "category": "historia-igreja"
+  },
+  {
+    "slug": "hermeneutica",
+    "title": "Hermenêutica",
+    "description": "Como ler e interpretar a Escritura com fidelidade e clareza.",
+    "icon": "🔍",
+    "order": 300,
+    "unlockAfter": "evangelhos",
+    "comingSoon": true,
+    "color": "#7E8A9A",
+    "realm": "teologia",
+    "category": "hermeneutica",
+    "modules": []
+  },
+  {
+    "slug": "linguas-originais",
+    "title": "Introdução às Línguas",
+    "description": "Por que o hebraico e o grego importam para ler a Bíblia.",
+    "icon": "Αα",
+    "order": 310,
+    "unlockAfter": "hermeneutica",
+    "comingSoon": true,
+    "color": "#8D6E63",
+    "realm": "teologia",
+    "category": "linguas",
+    "modules": []
+  },
+  {
+    "slug": "hebraico",
+    "title": "Hebraico Bíblico",
+    "description": "Alfabeto, raízes e leitura do Antigo Testamento no original.",
+    "icon": "א",
+    "order": 311,
+    "unlockAfter": "linguas-originais",
+    "comingSoon": true,
+    "color": "#8D6E63",
+    "realm": "teologia",
+    "category": "linguas",
+    "modules": []
+  },
+  {
+    "slug": "grego",
+    "title": "Grego Bíblico",
+    "description": "Koine do Novo Testamento — morfologia, sintaxe e exegese.",
+    "icon": "Ω",
+    "order": 312,
+    "unlockAfter": "linguas-originais",
+    "comingSoon": true,
+    "color": "#6D5E63",
+    "realm": "teologia",
+    "category": "linguas",
+    "modules": []
+  },
+  {
+    "slug": "teologia-sistematica",
+    "title": "Teologia Sistemática",
+    "description": "Doutrina organizada: Deus, salvação, igreja e últimas coisas.",
+    "icon": "📚",
+    "order": 320,
+    "unlockAfter": "hermeneutica",
+    "comingSoon": true,
+    "color": "#5C6BC0",
+    "realm": "teologia",
+    "category": "sistematica",
+    "modules": []
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "☁️",
+    "color": "#5C6BC0",
+    "unlockAfter": "teologia-sistematica",
+    "slug": "doutrina-de-deus",
+    "title": "Doutrina de Deus",
+    "description": "Quem é Deus — atributos, Trindade e soberania.",
+    "order": 321,
+    "realm": "teologia",
+    "category": "sistematica"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🧍",
+    "color": "#7986CB",
+    "unlockAfter": "doutrina-de-deus",
+    "slug": "antropologia",
+    "title": "Antropologia",
+    "description": "O ser humano — imagem de Deus, queda e responsabilidade.",
+    "order": 322,
+    "realm": "teologia",
+    "category": "sistematica"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🙏",
+    "color": "#9FA8DA",
+    "unlockAfter": "antropologia",
+    "slug": "soteriologia",
+    "title": "Soteriologia",
+    "description": "A salvação — eleição, regeneração, justificação e santificação.",
+    "order": 323,
+    "realm": "teologia",
+    "category": "sistematica"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🏛️",
+    "color": "#3F51B5",
+    "unlockAfter": "soteriologia",
+    "slug": "eclesiologia",
+    "title": "Eclesiologia",
+    "description": "A Igreja — natureza, sacramento, dons e missão.",
+    "order": 324,
+    "realm": "teologia",
+    "category": "sistematica"
+  },
+  {
+    "comingSoon": true,
+    "modules": [],
+    "icon": "🔮",
+    "color": "#303F9F",
+    "unlockAfter": "eclesiologia",
+    "slug": "escatologia",
+    "title": "Escatologia",
+    "description": "As últimas coisas — vinda de Cristo, julgamento e nova criação.",
+    "order": 325,
+    "realm": "teologia",
+    "category": "sistematica"
+  },
+  {
+    "slug": "teologia-biblica",
+    "title": "Teologia Bíblica",
+    "description": "A história redentora — da criação à nova criação.",
+    "icon": "🧭",
+    "order": 330,
+    "unlockAfter": "hermeneutica",
+    "comingSoon": true,
+    "color": "#5C7C9A",
+    "realm": "teologia",
+    "category": "sistematica",
+    "modules": []
+  },
+  {
+    "slug": "cristologia",
+    "title": "Cristologia",
+    "description": "Quem é Jesus — pessoa, ofícios e obra do Filho de Deus.",
+    "icon": "✝️",
+    "order": 340,
+    "unlockAfter": "evangelhos",
+    "comingSoon": true,
+    "color": "#C62828",
+    "realm": "teologia",
+    "category": "cristologia",
+    "modules": []
+  },
+  {
+    "slug": "pneumatologia",
+    "title": "Pneumatologia",
+    "description": "O Espírito Santo — pessoa, obra e frutos na igreja.",
+    "icon": "🕊️",
+    "order": 341,
+    "unlockAfter": "cristologia",
+    "comingSoon": true,
+    "color": "#7EB8D4",
+    "realm": "teologia",
+    "category": "sistematica",
     "modules": []
   }
 ]

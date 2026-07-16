@@ -22,7 +22,7 @@ class DifficultyMeta {
   final String label;
   final String subtitle;
   final String description;
-  final double xpMultiplier;
+  final double stepsMultiplier;
   final String accent;
   final String icon;
 
@@ -31,7 +31,7 @@ class DifficultyMeta {
     required this.label,
     required this.subtitle,
     required this.description,
-    required this.xpMultiplier,
+    required this.stepsMultiplier,
     required this.accent,
     required this.icon,
   });
@@ -42,7 +42,7 @@ class DifficultyMeta {
       label: json['label'] as String,
       subtitle: json['subtitle'] as String,
       description: json['description'] as String,
-      xpMultiplier: (json['xpMultiplier'] as num).toDouble(),
+      stepsMultiplier: ((json['stepsMultiplier'] ?? json['xpMultiplier']) as num).toDouble(),
       accent: json['accent'] as String,
       icon: json['icon'] as String,
     );

@@ -36,11 +36,19 @@ class TrailMapPath extends StatelessWidget {
   Widget build(BuildContext context) {
     if (missions.isEmpty) return const SizedBox.shrink();
 
+    final gold = theme?.pathActive ?? AppColors.accent;
+    final inactive = theme?.pathInactive ?? Colors.white.withValues(alpha: 0.15);
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         for (var i = 0; i < missions.length; i++) ...[
-          if (i > 0) const SizedBox(height: 10),
+          if (i > 0)
+            _SceneConnector(
+              active: _completed(missions[i - 1].slug),
+              activeColor: gold,
+              inactiveColor: inactive,
+            ),
           _MissionSceneCard(
             mission: missions[i],
             index: startGlobalIndex + i + 1,
@@ -53,6 +61,64 @@ class TrailMapPath extends StatelessWidget {
           ),
         ],
       ],
+    );
+  }
+}
+
+class _SceneConnector extends StatelessWidget {
+  final bool active;
+  final Color activeColor;
+  final Color inactiveColor;
+
+  const _SceneConnector({
+    required this.active,
+    required this.activeColor,
+    required this.inactiveColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final color = active ? activeColor : inactiveColor;
+    return SizedBox(
+      height: 22,
+      child: Center(
+        child: Column(
+          children: [
+            Container(
+              width: 2,
+              height: 6,
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: active ? 0.7 : 0.35),
+                borderRadius: BorderRadius.circular(1),
+              ),
+            ),
+            Container(
+              width: 7,
+              height: 7,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: color.withValues(alpha: active ? 0.9 : 0.35),
+                boxShadow: active
+                    ? [
+                        BoxShadow(
+                          color: activeColor.withValues(alpha: 0.35),
+                          blurRadius: 8,
+                        ),
+                      ]
+                    : null,
+              ),
+            ),
+            Container(
+              width: 2,
+              height: 6,
+              decoration: BoxDecoration(
+                color: color.withValues(alpha: active ? 0.7 : 0.35),
+                borderRadius: BorderRadius.circular(1),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -178,7 +244,7 @@ class _MissionSceneCard extends StatelessWidget {
                           mission.isBoss
                               ? 'DESAFIO'
                               : _current
-                                  ? 'EM CURSO'
+                                  ? 'NO CAMINHO'
                                   : completed
                                       ? 'CONCLUÍDA'
                                       : 'CENA',

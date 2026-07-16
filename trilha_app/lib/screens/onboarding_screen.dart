@@ -66,13 +66,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     children: [
                       _Page(
                         mascot: true,
-                        title: 'Bem-vindo à Trilha',
-                        body: 'Aprenda a Bíblia em missões curtas, gamificadas e imersivas — no seu ritmo.',
+                        title: 'Bem-vindo à caminhada',
+                        body: 'Conhecer a Bíblia não é o objetivo. O objetivo é conhecer a Cristo — um passo de cada vez.',
                       ),
                       _Page(
                         glyph: CinematicGlyph.path,
-                        title: 'Sua jornada',
-                        body: 'Complete missões, ganhe XP, mantenha sua sequência e desbloqueie novas trilhas.',
+                        title: 'Sua caminhada',
+                        body: 'Cada lição é um passo. A caravana semanal é um rank de passos — para se animarem, não para medir espiritualidade.',
                         child: Column(
                           children: [
                             TextField(
@@ -87,7 +87,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               ),
                             ),
                             const SizedBox(height: 16),
-                            const Text('Meta diária', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800)),
+                            const Text('Passos por dia', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800)),
                             const SizedBox(height: 8),
                             Row(
                               children: [1, 2, 3].map((g) {
@@ -104,7 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                           borderRadius: BorderRadius.circular(14),
                                           border: Border.all(color: sel ? AppColors.accent : Colors.white.withValues(alpha: 0.12)),
                                         ),
-                                        child: Text('$g missão${g > 1 ? 'ões' : ''}', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.w800, color: sel ? AppColors.accent : Colors.white70)),
+                                        child: Text('$g passo${g > 1 ? 's' : ''}', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.w800, color: sel ? AppColors.accent : Colors.white70)),
                                       ),
                                     ),
                                   ),
@@ -117,7 +117,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       _Page(
                         glyph: CinematicGlyph.book,
                         title: 'Comece por Gênesis',
-                        body: 'Sua primeira trilha já está liberada. Da Criação ao chamado de Abraão — 14 missões te esperam.',
+                        body: 'Sua primeira jornada já está liberada. Da Criação ao chamado de Abraão — caminhe um trecho de cada vez.',
                       ),
                     ],
                   ),
@@ -154,9 +154,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         boxShadow: [BoxShadow(color: AppColors.accentDark.withValues(alpha: 0.45), offset: const Offset(0, 4))],
                       ),
                       child: Text(
-                        _index < 2 ? 'CONTINUAR' : 'COMEÇAR JORNADA',
+                        _index < 2 ? 'AVANÇAR' : 'COMEÇAR A CAMINHAR',
                         textAlign: TextAlign.center,
-                        style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: Color(0xFF3D2E00), letterSpacing: 0.5),
+                        style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent, letterSpacing: 0.5),
                       ),
                     ),
                   ),
@@ -191,7 +191,11 @@ class _Page extends StatelessWidget {
           else if (glyph != null)
             CinematicIcon(glyph: glyph!, size: 96, accent: AppColors.accent, animate: true),
           const SizedBox(height: 28),
-          Text(title, textAlign: TextAlign.center, style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white)),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 28, color: Colors.white),
+          ),
           const SizedBox(height: 12),
           Text(body, textAlign: TextAlign.center, style: TextStyle(fontSize: 15, height: 1.5, color: Colors.white.withValues(alpha: 0.75))),
           if (child != null) ...[const SizedBox(height: 24), child!],

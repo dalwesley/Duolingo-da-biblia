@@ -3,18 +3,18 @@ import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
 
-/// Compartilhar sequência — prova social / investimento (YouVersion + Duolingo).
+/// Compartilhar dias caminhando — encorajamento, não ostentação.
 class ShareStreakButton extends StatelessWidget {
   final int streak;
   final String userName;
-  final int xp;
+  final int steps;
   final bool compact;
 
   const ShareStreakButton({
     super.key,
     required this.streak,
     required this.userName,
-    required this.xp,
+    required this.steps,
     this.compact = false,
   });
 
@@ -23,14 +23,16 @@ class ShareStreakButton extends StatelessWidget {
     final days = streak == 1 ? '1 dia' : '$streak dias';
     final name = userName.trim().isEmpty ? '' : '\n— $userName';
     final text = '''
-🔥 Minha sequência no Trilha: $days!
+👣 Minha caminhada no Trilha: $days!
 
-Estou na jornada pela Palavra — $xp XP até agora.$name
+Estou caminhando pela Palavra — $steps passos até agora.$name
 
 Baixe o Trilha e caminhe comigo. 📖✨
 '''
         .trim();
-    await Share.share(text, subject: 'Minha sequência no Trilha');
+    await SharePlus.instance.share(
+      ShareParams(text: text, subject: 'Minha caminhada no Trilha'),
+    );
   }
 
   @override
@@ -38,7 +40,7 @@ Baixe o Trilha e caminhe comigo. 📖✨
     if (compact) {
       return IconButton(
         onPressed: streak > 0 ? _share : null,
-        tooltip: 'Compartilhar sequência',
+        tooltip: 'Compartilhar caminhada',
         icon: Icon(
           Icons.ios_share_rounded,
           color: streak > 0 ? AppColors.accent : Colors.white38,

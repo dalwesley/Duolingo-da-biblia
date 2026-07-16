@@ -5,7 +5,7 @@ import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 
-/// Portal da próxima cena — CTA dominante, linguagem de filme bíblico.
+/// CTA da próxima missão — card dominante na home.
 class HeroContinueCard extends StatelessWidget {
   final Mission? mission;
   final String trailTitle;
@@ -18,7 +18,7 @@ class HeroContinueCard extends StatelessWidget {
     required this.mission,
     required this.trailTitle,
     this.trailSlug = 'genesis-1-11',
-    this.trailColor = '#6C5CE7',
+    this.trailColor = '#2F5D4A',
     this.onTap,
   });
 
@@ -36,13 +36,13 @@ class HeroContinueCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(28),
           boxShadow: [
             BoxShadow(
-              color: AppColors.primary.withValues(alpha: 0.42),
-              blurRadius: 36,
-              offset: const Offset(0, 16),
+              color: AppColors.primary.withValues(alpha: 0.28),
+              blurRadius: 28,
+              offset: const Offset(0, 12),
             ),
             BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.16),
-              blurRadius: 40,
+              color: AppColors.accent.withValues(alpha: 0.1),
+              blurRadius: 32,
             ),
           ],
         ),
@@ -50,7 +50,7 @@ class HeroContinueCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(28),
           child: Stack(
             children: [
-              // Fundo de cena
+              // Fundo da missão
               Positioned.fill(
                 child: DecoratedBox(
                   decoration: BoxDecoration(
@@ -58,7 +58,7 @@ class HeroContinueCard extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        const Color(0xFF2A1F6B),
+                        const Color(0xFF2A4A3C),
                         AppColors.primaryDark,
                         Color.lerp(visuals.accent, AppColors.night, 0.55)!,
                       ],
@@ -183,7 +183,7 @@ class HeroContinueCard extends StatelessWidget {
                                 fontSize: 9,
                                 fontWeight: FontWeight.w900,
                                 letterSpacing: 1,
-                                color: Color(0xFF3D2E00),
+                                color: AppColors.inkOnAccent,
                               ),
                             ),
                           ),
@@ -192,7 +192,7 @@ class HeroContinueCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'PRÓXIMA CENA',
+                      'CONTINUE SUA CAMINHADA',
                       style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w900,
@@ -213,8 +213,8 @@ class HeroContinueCard extends StatelessWidget {
                     const SizedBox(height: 8),
                     Text(
                       mission.isBoss
-                          ? 'Desafio especial · recompensa maior'
-                          : 'Entre na passagem e continue a jornada',
+                          ? 'Desafio especial · mais passos na jornada'
+                          : 'Dê o próximo passo na Palavra',
                       style: TextStyle(
                         fontSize: 13,
                         color: Colors.white.withValues(alpha: 0.68),
@@ -246,18 +246,18 @@ class HeroContinueCard extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'ENTRAR NA CENA',
+                                  'AVANÇAR',
                                   style: TextStyle(
                                     fontSize: 13,
                                     fontWeight: FontWeight.w900,
-                                    color: Color(0xFF3D2E00),
+                                    color: AppColors.inkOnAccent,
                                     letterSpacing: 1.1,
                                   ),
                                 ),
                                 SizedBox(width: 8),
                                 Icon(
                                   Icons.arrow_forward_rounded,
-                                  color: Color(0xFF3D2E00),
+                                  color: AppColors.inkOnAccent,
                                   size: 18,
                                 ),
                               ],
@@ -278,7 +278,7 @@ class HeroContinueCard extends StatelessWidget {
                             ),
                           ),
                           child: Text(
-                            '+${mission.xpReward}',
+                            '+${mission.stepsReward} passos',
                             style: const TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w900,
@@ -306,7 +306,7 @@ class HeroContinueCard extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF1A1530), Color(0xFF0D0B1A)],
+          colors: [Color(0xFF1A221E), Color(0xFF121816)],
         ),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.4)),
         boxShadow: AppTheme.glow(AppColors.accent, blur: 24),
@@ -330,7 +330,7 @@ class HeroContinueCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Sua fidelidade é inspiradora.\nExplore novos mundos.',
+            'Sua fidelidade é inspiradora.\nExplore novas passagens.',
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.white.withValues(alpha: 0.65),

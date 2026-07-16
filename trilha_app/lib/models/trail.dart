@@ -47,7 +47,7 @@ class Mission {
   final String title;
   final String intro;
   final String type;
-  final int xpReward;
+  final int stepsReward;
   final List<Question> questions;
 
   const Mission({
@@ -55,7 +55,7 @@ class Mission {
     required this.title,
     required this.intro,
     required this.type,
-    required this.xpReward,
+    required this.stepsReward,
     required this.questions,
   });
 
@@ -67,7 +67,7 @@ class Mission {
       title: json['title'] as String,
       intro: json['intro'] as String,
       type: json['type'] as String? ?? 'lesson',
-      xpReward: json['xpReward'] as int? ?? 50,
+      stepsReward: (json['stepsReward'] as int?) ?? (json['xpReward'] as int?) ?? 50,
       questions: (json['questions'] as List? ?? [])
           .map((e) => Question.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -106,6 +106,8 @@ class Trail {
   final String? unlockAfter;
   final bool comingSoon;
   final String color;
+  final String realmId;
+  final String categoryId;
   final List<TrailModule> modules;
 
   const Trail({
@@ -117,6 +119,8 @@ class Trail {
     this.unlockAfter,
     required this.comingSoon,
     required this.color,
+    this.realmId = 'antigo-testamento',
+    this.categoryId = 'pentateuco',
     required this.modules,
   });
 
@@ -132,7 +136,9 @@ class Trail {
       order: json['order'] as int? ?? 0,
       unlockAfter: json['unlockAfter'] as String?,
       comingSoon: json['comingSoon'] as bool? ?? false,
-      color: json['color'] as String? ?? '#6C5CE7',
+      color: json['color'] as String? ?? '#2F5D4A',
+      realmId: json['realm'] as String? ?? 'antigo-testamento',
+      categoryId: json['category'] as String? ?? 'pentateuco',
       modules: (json['modules'] as List? ?? [])
           .map((e) => TrailModule.fromJson(e as Map<String, dynamic>))
           .toList(),

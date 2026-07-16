@@ -36,7 +36,7 @@ class AppSettings {
 }
 
 class ProgressService extends ChangeNotifier {
-  static const _keyXp = 'xp';
+  static const _keySteps = 'xp';
   static const _keyStreak = 'streak';
   static const _keyLastPlayed = 'lastPlayedDate';
   static const _keyCompleted = 'completedMissions';
@@ -63,20 +63,26 @@ class ProgressService extends ChangeNotifier {
   static const _keyWeeklyClaimed = 'weeklyQuestClaimed';
   static const _keyClaimedChests = 'claimedChests';
   static const _keyReflections = 'missionReflections';
-  static const _keyWeeklyXp = 'weeklyXp';
-  static const _keyLastWeekXp = 'lastWeekXp';
+  // Storage keys keep legacy names so existing installs migrate cleanly.
+  static const _keyWeeklySteps = 'weeklyXp';
+  static const _keyLastWeekSteps = 'lastWeekXp';
   static const _keyLastWeekKey = 'lastWeekKey';
+  static const _keyReadBibleChapters = 'readBibleChapters';
+  static const _keyBibleBookmarks = 'bibleBookmarks';
+  static const _keyMemoryScores = 'memoryScores';
+  static const _keyMemoryMastered = 'memoryMastered';
 
   static const maxLamps = 5;
 
-  int xp = 0;
+  /// Unidade do produto: passos (legado local/cloud ainda usa a chave `xp`).
+  int steps = 0;
   int streak = 0;
   String? lastPlayedDate;
   List<String> completedMissions = [];
   int missionsToday = 0;
   bool hasSeenSplash = false;
   bool hasSeenOnboarding = false;
-  String userName = 'Estudante';
+  String userName = 'Peregrino';
   AppSettings settings = const AppSettings();
   Map<String, String> trailDifficulties = {};
   List<String> usedQuestionIds = [];
@@ -94,11 +100,23 @@ class ProgressService extends ChangeNotifier {
   /// Última reflexão por slug de missão.
   Map<String, String> missionReflections = {};
 
-  /// XP acumulado só nesta semana (para a liga).
-  int weeklyXp = 0;
+  /// Capítulos lidos na Bíblia ("abbrev:capítulo", ex.: "gn:1").
+  List<String> readBibleChapters = [];
 
-  /// XP final da semana anterior + qual semana era (para fechar a liga).
-  int lastWeekXp = 0;
+  /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
+  List<String> bibleBookmarks = [];
+
+  /// Pontuação de memorização por id (0–5).
+  Map<String, int> memoryScores = {};
+
+  /// Versículos considerados firmes (score alto mantido).
+  List<String> memoryMastered = [];
+
+  /// Passos acumulados só nesta semana (comunidade / salas).
+  int weeklySteps = 0;
+
+  /// Passos finais da semana anterior.
+  int lastWeekSteps = 0;
   String? lastWeekKey;
   bool _loaded = false;
 
@@ -122,14 +140,14 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> load() async {
     final prefs = await SharedPreferences.getInstance();
-    xp = prefs.getInt(_keyXp) ?? 0;
+    steps = prefs.getInt(_keySteps) ?? 0;
     streak = prefs.getInt(_keyStreak) ?? 0;
     lastPlayedDate = prefs.getString(_keyLastPlayed);
     completedMissions = prefs.getStringList(_keyCompleted) ?? [];
     missionsToday = prefs.getInt(_keyMissionsToday) ?? 0;
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
-    userName = prefs.getString(_keyUserName) ?? 'Estudante';
+    userName = prefs.getString(_keyUserName) ?? 'Peregrino';
     settings = AppSettings(
       sound: prefs.getBool(_keySound) ?? true,
       notifications: prefs.getBool(_keyNotifications) ?? true,
@@ -179,12 +197,24 @@ class ProgressService extends ChangeNotifier {
       } catch (_) {}
     }
     weeklyClaimed = prefs.getStringList(_keyWeeklyClaimed) ?? [];
-    weeklyXp = prefs.getInt(_keyWeeklyXp) ?? 0;
-    lastWeekXp = prefs.getInt(_keyLastWeekXp) ?? 0;
+    weeklySteps = prefs.getInt(_keyWeeklySteps) ?? 0;
+    lastWeekSteps = prefs.getInt(_keyLastWeekSteps) ?? 0;
     lastWeekKey = prefs.getString(_keyLastWeekKey);
     _ensureWeeklyWeek();
 
     claimedChests = prefs.getStringList(_keyClaimedChests) ?? [];
+    readBibleChapters = prefs.getStringList(_keyReadBibleChapters) ?? [];
+    bibleBookmarks = prefs.getStringList(_keyBibleBookmarks) ?? [];
+    final memRaw = prefs.getString(_keyMemoryScores);
+    if (memRaw != null && memRaw.isNotEmpty) {
+      try {
+        final decoded = jsonDecode(memRaw) as Map<String, dynamic>;
+        memoryScores = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+      } catch (_) {
+        memoryScores = {};
+      }
+    }
+    memoryMastered = prefs.getStringList(_keyMemoryMastered) ?? [];
     final reflRaw = prefs.getString(_keyReflections);
     if (reflRaw != null && reflRaw.isNotEmpty) {
       try {
@@ -212,33 +242,110 @@ class ProgressService extends ChangeNotifier {
     if (weeklyWeek != week) {
       // Fecha a semana anterior guardando o XP final (usado pela liga).
       if (weeklyWeek != null) {
-        lastWeekXp = weeklyXp;
+        lastWeekSteps = weeklySteps;
         lastWeekKey = weeklyWeek;
       }
       weeklyWeek = week;
       weeklyProgressMap = {};
       weeklyClaimed = [];
-      weeklyXp = 0;
+      weeklySteps = 0;
     }
   }
 
-  /// Soma XP total + XP semanal (liga) de uma vez.
-  void _gainXp(int amount) {
+  /// Soma passos totais + passos semanais de uma vez.
+  void _gainSteps(int amount) {
     _ensureWeeklyWeek();
-    xp += amount;
-    weeklyXp += amount;
+    steps += amount;
+    weeklySteps += amount;
   }
 
   /// Bônus avulso (ex.: prêmio de promoção na liga).
-  Future<void> grantBonusXp(int amount) async {
-    _gainXp(amount);
+  Future<void> grantBonusSteps(int amount) async {
+    _gainSteps(amount);
+    await _save();
+    notifyListeners();
+  }
+
+  /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
+  Future<void> recordBibleReading(String bookAbbrev, int chapter) async {
+    final key = bibleChapterKey(bookAbbrev, chapter);
+    if (!readBibleChapters.contains(key)) {
+      readBibleChapters = [...readBibleChapters, key];
+    }
+    await _bumpQuest('read');
+    await _bumpQuest('seasonal');
+  }
+
+  static String bibleChapterKey(String bookAbbrev, int chapter) =>
+      '${bookAbbrev.toLowerCase()}:$chapter';
+
+  static String bibleBookmarkKey(String bookAbbrev, int chapter, int verse) =>
+      '${bookAbbrev.toLowerCase()}:$chapter:$verse';
+
+  bool hasReadBibleChapter(String bookAbbrev, int chapter) =>
+      readBibleChapters.contains(bibleChapterKey(bookAbbrev, chapter));
+
+  int readChaptersInBook(String bookAbbrev) {
+    final prefix = '${bookAbbrev.toLowerCase()}:';
+    return readBibleChapters.where((k) => k.startsWith(prefix) && k.split(':').length == 2).length;
+  }
+
+  bool isVerseBookmarked(String bookAbbrev, int chapter, int verse) =>
+      bibleBookmarks.contains(bibleBookmarkKey(bookAbbrev, chapter, verse));
+
+  Future<bool> toggleBibleBookmark(String bookAbbrev, int chapter, int verse) async {
+    final key = bibleBookmarkKey(bookAbbrev, chapter, verse);
+    if (bibleBookmarks.contains(key)) {
+      bibleBookmarks = [for (final k in bibleBookmarks) if (k != key) k];
+      await _save();
+      notifyListeners();
+      return false;
+    }
+    bibleBookmarks = [key, ...bibleBookmarks];
+    await _bumpQuest('bookmark');
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
+  /// Favoritos recentes primeiro (já ordenados).
+  List<({String abbrev, int chapter, int verse})> parseBookmarks() {
+    final out = <({String abbrev, int chapter, int verse})>[];
+    for (final k in bibleBookmarks) {
+      final parts = k.split(':');
+      if (parts.length != 3) continue;
+      final chapter = int.tryParse(parts[1]);
+      final verse = int.tryParse(parts[2]);
+      if (chapter == null || verse == null) continue;
+      out.add((abbrev: parts[0], chapter: chapter, verse: verse));
+    }
+    return out;
+  }
+
+  int memoryScore(String id) => memoryScores[id] ?? 0;
+
+  bool isMemoryMastered(String id) =>
+      memoryMastered.contains(id) || memoryScore(id) >= 5;
+
+  Future<void> recordMemoryReview(String id, {required bool knew}) async {
+    final current = memoryScore(id);
+    final next = knew ? (current + 1).clamp(0, 5) : (current - 1).clamp(0, 5);
+    memoryScores = {...memoryScores, id: next};
+    if (next >= 5) {
+      if (!memoryMastered.contains(id)) {
+        memoryMastered = [...memoryMastered, id];
+      }
+    } else {
+      memoryMastered = [for (final m in memoryMastered) if (m != id) m];
+    }
+    await _bumpQuest('memory');
     await _save();
     notifyListeners();
   }
 
   Future<void> _save() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(_keyXp, xp);
+    await prefs.setInt(_keySteps, steps);
     await prefs.setInt(_keyStreak, streak);
     if (lastPlayedDate != null) {
       await prefs.setString(_keyLastPlayed, lastPlayedDate!);
@@ -266,9 +373,13 @@ class ProgressService extends ChangeNotifier {
     await prefs.setString(_keyWeeklyProgress, jsonEncode(weeklyProgressMap));
     await prefs.setStringList(_keyWeeklyClaimed, weeklyClaimed);
     await prefs.setStringList(_keyClaimedChests, claimedChests);
+    await prefs.setStringList(_keyReadBibleChapters, readBibleChapters);
+    await prefs.setStringList(_keyBibleBookmarks, bibleBookmarks);
+    await prefs.setString(_keyMemoryScores, jsonEncode(memoryScores));
+    await prefs.setStringList(_keyMemoryMastered, memoryMastered);
     await prefs.setString(_keyReflections, jsonEncode(missionReflections));
-    await prefs.setInt(_keyWeeklyXp, weeklyXp);
-    await prefs.setInt(_keyLastWeekXp, lastWeekXp);
+    await prefs.setInt(_keyWeeklySteps, weeklySteps);
+    await prefs.setInt(_keyLastWeekSteps, lastWeekSteps);
     if (lastWeekKey != null) await prefs.setString(_keyLastWeekKey, lastWeekKey!);
   }
 
@@ -314,6 +425,16 @@ class ProgressService extends ChangeNotifier {
   bool playedOnDate(DateTime date) {
     final key = date.toIso8601String().substring(0, 10);
     return playDates.contains(key) || lastPlayedDate == key;
+  }
+
+  bool get walkedToday => missionsToday > 0;
+
+  /// Ausente por mais de um dia (a graça não funciona como streak).
+  bool get isReturningAfterGap {
+    if (lastPlayedDate == null) return false;
+    final today = _todayKey();
+    if (lastPlayedDate == today || lastPlayedDate == _yesterdayKey()) return false;
+    return true;
   }
 
   String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
@@ -376,10 +497,10 @@ class ProgressService extends ChangeNotifier {
 
   bool isChestClaimed(String chestId) => claimedChests.contains(chestId);
 
-  Future<bool> claimChest(String chestId, int xpReward) async {
+  Future<bool> claimChest(String chestId, int stepsReward) async {
     if (claimedChests.contains(chestId)) return false;
     claimedChests = [...claimedChests, chestId];
-    _gainXp(xpReward);
+    _gainSteps(stepsReward);
     await _save();
     notifyListeners();
     return true;
@@ -422,7 +543,7 @@ class ProgressService extends ChangeNotifier {
     if (isQuestClaimed(id)) return;
     if (questProgress(id) < q.target) return;
     questClaimed = [...questClaimed, id];
-    _gainXp(q.xpReward);
+    _gainSteps(q.stepsReward);
     await _save();
     notifyListeners();
   }
@@ -437,30 +558,30 @@ class ProgressService extends ChangeNotifier {
     if (isWeeklyQuestClaimed(id)) return;
     if (weeklyQuestProgress(id) < q.target) return;
     weeklyClaimed = [...weeklyClaimed, id];
-    _gainXp(q.xpReward);
+    _gainSteps(q.stepsReward);
     await _save();
     notifyListeners();
   }
 
-  /// Calcula XP final: base × precisão × bônus perfeito × bônus lâmpadas.
-  static int computeLessonXp({
-    required int baseXp,
+  /// Calcula passos da lição: base × precisão × bônus perfeito × bônus lâmpadas.
+  static int computeLessonSteps({
+    required int baseSteps,
     required int correct,
     required int total,
     required int lampsLeft,
     required int maxLamps,
   }) {
-    if (total <= 0) return baseXp;
+    if (total <= 0) return baseSteps;
     final accuracy = correct / total;
-    var reward = baseXp * accuracy;
+    var reward = baseSteps * accuracy;
     if (accuracy >= 1) reward *= 1.25; // perfeito
     if (lampsLeft >= maxLamps) reward *= 1.1; // sem erros de lâmpada
-    return reward.round().clamp(10, baseXp * 2);
+    return reward.round().clamp(10, baseSteps * 2);
   }
 
   Future<void> completeMission(
     String slug,
-    int rewardXp, {
+    int rewardSteps, {
     bool isReplay = false,
     int correct = 0,
     int total = 0,
@@ -479,8 +600,8 @@ class ProgressService extends ChangeNotifier {
       }
     }
 
-    final award = isReplay ? (rewardXp * 0.35).round().clamp(5, rewardXp) : rewardXp;
-    _gainXp(award);
+    final award = isReplay ? (rewardSteps * 0.35).round().clamp(5, rewardSteps) : rewardSteps;
+    _gainSteps(award);
 
     if (!alreadyToday) {
       _recordSession();
@@ -518,19 +639,183 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> importProgress({
-    required int xp,
+    required int steps,
     required int streak,
     required String? lastPlayedDate,
     required List<String> completedMissions,
     required int missionsToday,
     required String userName,
   }) async {
-    this.xp = xp;
+    this.steps = steps;
     this.streak = streak;
     this.lastPlayedDate = lastPlayedDate;
     this.completedMissions = completedMissions;
     this.missionsToday = missionsToday;
     this.userName = userName;
+    await _save();
+    notifyListeners();
+  }
+
+  /// Snapshot completo para Firebase (fonte da verdade).
+  Map<String, dynamic> toCloudMap() {
+    return {
+      'version': 2,
+      'userName': userName,
+      'xp': steps,
+      'steps': steps,
+      'streak': streak,
+      'lastPlayedDate': lastPlayedDate,
+      'completedMissions': completedMissions,
+      'missionsToday': missionsToday,
+      'hasSeenOnboarding': hasSeenOnboarding,
+      'weeklyXp': weeklySteps,
+      'weeklySteps': weeklySteps,
+      'lastWeekXp': lastWeekSteps,
+      'lastWeekSteps': lastWeekSteps,
+      'lastWeekKey': lastWeekKey,
+      'weeklyWeek': weeklyWeek,
+      'streakFreezeAvailable': streakFreezeAvailable,
+      'streakFreezeWeek': streakFreezeWeek,
+      'questDay': questDay,
+      'questProgress': questProgressMap,
+      'questClaimed': questClaimed,
+      'weeklyProgress': weeklyProgressMap,
+      'weeklyClaimed': weeklyClaimed,
+      'claimedChests': claimedChests,
+      'readBibleChapters': readBibleChapters,
+      'bibleBookmarks': bibleBookmarks,
+      'memoryScores': memoryScores,
+      'memoryMastered': memoryMastered,
+      'usedQuestionIds': usedQuestionIds,
+      'mistakeQuestionIds': mistakeQuestionIds,
+      'playDates': playDates,
+      'trailDifficulties': trailDifficulties,
+      'missionReflections': missionReflections,
+      'settings': {
+        'sound': settings.sound,
+        'notifications': settings.notifications,
+        'dailyGoal': settings.dailyGoal,
+        'appearanceMode': settings.appearanceMode.storageKey,
+      },
+    };
+  }
+
+  static List<String> _asStringList(dynamic v) => [
+        for (final e in (v as List? ?? const [])) e.toString(),
+      ];
+
+  static Map<String, int> _asIntMap(dynamic v) {
+    if (v is! Map) return {};
+    return v.map((k, val) => MapEntry(k.toString(), (val as num).toInt()));
+  }
+
+  static Map<String, String> _asStringMap(dynamic v) {
+    if (v is! Map) return {};
+    return v.map((k, val) => MapEntry(k.toString(), val.toString()));
+  }
+
+  /// Aplica documento da nuvem (v1 parcial ou v2 completo) e grava cache local.
+  Future<void> applyFromCloud(Map<String, dynamic> data) async {
+    final version = (data['version'] as num?)?.toInt() ?? 1;
+
+    if (data.containsKey('xp') || data.containsKey('steps')) {
+      steps = (data['steps'] as num?)?.toInt() ??
+          (data['xp'] as num?)?.toInt() ??
+          steps;
+    }
+    if (data.containsKey('streak')) {
+      streak = (data['streak'] as num?)?.toInt() ?? streak;
+    }
+    if (data.containsKey('lastPlayedDate')) {
+      lastPlayedDate = data['lastPlayedDate'] as String?;
+    }
+    if (data.containsKey('completedMissions')) {
+      completedMissions = _asStringList(data['completedMissions']);
+    }
+    if (data.containsKey('missionsToday')) {
+      missionsToday = (data['missionsToday'] as num?)?.toInt() ?? missionsToday;
+    }
+    if (data.containsKey('userName')) {
+      final name = (data['userName'] as String?)?.trim();
+      if (name != null && name.isNotEmpty) userName = name;
+    }
+    if (data.containsKey('weeklySteps') || data.containsKey('weeklyXp')) {
+      weeklySteps = (data['weeklySteps'] as num?)?.toInt() ??
+          (data['weeklyXp'] as num?)?.toInt() ??
+          weeklySteps;
+    }
+
+    if (version >= 2) {
+      if (data.containsKey('hasSeenOnboarding')) {
+        hasSeenOnboarding = data['hasSeenOnboarding'] == true;
+      }
+      lastWeekSteps = (data['lastWeekSteps'] as num?)?.toInt() ??
+          (data['lastWeekXp'] as num?)?.toInt() ??
+          lastWeekSteps;
+      lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
+      weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
+      streakFreezeAvailable =
+          data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
+      streakFreezeWeek =
+          data['streakFreezeWeek'] as String? ?? streakFreezeWeek;
+      questDay = data['questDay'] as String? ?? questDay;
+      if (data.containsKey('questProgress')) {
+        questProgressMap = _asIntMap(data['questProgress']);
+      }
+      if (data.containsKey('questClaimed')) {
+        questClaimed = _asStringList(data['questClaimed']);
+      }
+      if (data.containsKey('weeklyProgress')) {
+        weeklyProgressMap = _asIntMap(data['weeklyProgress']);
+      }
+      if (data.containsKey('weeklyClaimed')) {
+        weeklyClaimed = _asStringList(data['weeklyClaimed']);
+      }
+      if (data.containsKey('claimedChests')) {
+        claimedChests = _asStringList(data['claimedChests']);
+      }
+      if (data.containsKey('readBibleChapters')) {
+        readBibleChapters = _asStringList(data['readBibleChapters']);
+      }
+      if (data.containsKey('bibleBookmarks')) {
+        bibleBookmarks = _asStringList(data['bibleBookmarks']);
+      }
+      if (data.containsKey('memoryScores')) {
+        memoryScores = _asIntMap(data['memoryScores']);
+      }
+      if (data.containsKey('memoryMastered')) {
+        memoryMastered = _asStringList(data['memoryMastered']);
+      }
+      if (data.containsKey('usedQuestionIds')) {
+        usedQuestionIds = _asStringList(data['usedQuestionIds']);
+      }
+      if (data.containsKey('mistakeQuestionIds')) {
+        mistakeQuestionIds = _asStringList(data['mistakeQuestionIds']);
+      }
+      if (data.containsKey('playDates')) {
+        playDates = _asStringList(data['playDates']);
+      }
+      if (data.containsKey('trailDifficulties')) {
+        trailDifficulties = _asStringMap(data['trailDifficulties']);
+      }
+      if (data.containsKey('missionReflections')) {
+        missionReflections = _asStringMap(data['missionReflections']);
+      }
+      final s = data['settings'];
+      if (s is Map) {
+        settings = AppSettings(
+          sound: s['sound'] as bool? ?? settings.sound,
+          notifications: s['notifications'] as bool? ?? settings.notifications,
+          dailyGoal: (s['dailyGoal'] as num?)?.toInt() ?? settings.dailyGoal,
+          appearanceMode: AppearanceModeX.fromStorage(
+            s['appearanceMode'] as String?,
+          ),
+        );
+      }
+    }
+
+    _ensureQuestDay();
+    _ensureWeeklyWeek();
     await _save();
     notifyListeners();
   }
@@ -544,7 +829,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> setUserName(String name) async {
-    userName = name.trim().isEmpty ? 'Estudante' : name.trim();
+    userName = name.trim().isEmpty ? 'Peregrino' : name.trim();
     await _save();
     notifyListeners();
   }
@@ -556,7 +841,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> resetProgress() async {
-    xp = 0;
+    steps = 0;
     streak = 0;
     lastPlayedDate = null;
     completedMissions = [];
@@ -570,8 +855,12 @@ class ProgressService extends ChangeNotifier {
     weeklyClaimed = [];
     claimedChests = [];
     missionReflections = {};
-    weeklyXp = 0;
-    lastWeekXp = 0;
+    readBibleChapters = [];
+    bibleBookmarks = [];
+    memoryScores = {};
+    memoryMastered = [];
+    weeklySteps = 0;
+    lastWeekSteps = 0;
     lastWeekKey = null;
     await _save();
     notifyListeners();

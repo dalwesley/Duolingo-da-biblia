@@ -1,4 +1,6 @@
-/// Versículo do dia — rotaciona por dia do ano.
+import 'liturgical_calendar.dart';
+
+/// Versículo do dia — litúrgico nos tempos fortes; senão, rotaciona no ano.
 class DailyScripture {
   static const _verses = [
     ('Lâmpada para os meus pés é a tua palavra.', 'Salmos 119:105'),
@@ -17,7 +19,19 @@ class DailyScripture {
     ('A graça do Senhor Jesus seja com o vosso espírito.', 'Filipenses 4:23'),
   ];
 
+  static const _seasonalVerses = {
+    LiturgicalSeason.advent: ('Porque um menino nos nasceu, um filho se nos deu.', 'Isaías 9:6'),
+    LiturgicalSeason.christmas: ('E o Verbo se fez carne e habitou entre nós.', 'João 1:14'),
+    LiturgicalSeason.lent: ('Convertei-vos a mim de todo o vosso coração.', 'Joel 2:12'),
+    LiturgicalSeason.holyWeek: ('Mas ele foi traspassado pelas nossas transgressões.', 'Isaías 53:5'),
+    LiturgicalSeason.easter: ('Mas, de fato, Cristo ressuscitou dentre os mortos.', '1 Coríntios 15:20'),
+    LiturgicalSeason.pentecost: ('Todos ficaram cheios do Espírito Santo.', 'Atos 2:4'),
+  };
+
   static (String text, String ref) today() {
+    final moment = LiturgicalCalendar.momentFor();
+    final seasonal = _seasonalVerses[moment.season];
+    if (seasonal != null) return seasonal;
     final dayOfYear = DateTime.now().difference(DateTime(DateTime.now().year)).inDays;
     return _verses[dayOfYear % _verses.length];
   }

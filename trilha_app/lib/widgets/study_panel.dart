@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../data/mission_study.dart';
+import '../screens/bible_screen.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 
@@ -54,7 +55,7 @@ class _StudyPanelState extends State<StudyPanel>
         padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
         children: [
           Text(
-            'ABRA A ESCRITURA',
+            'LEIA A PASSAGEM',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 11,
@@ -154,6 +155,51 @@ class _StudyPanelState extends State<StudyPanel>
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
                     color: Colors.white.withValues(alpha: 0.4),
+                  ),
+                ),
+                const SizedBox(height: 14),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            BibleReaderScreen(reference: study.passageRef),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 18,
+                      vertical: 11,
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(
+                        color: accent.withValues(alpha: 0.65),
+                        width: 1.5,
+                      ),
+                      color: accent.withValues(alpha: 0.1),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          Icons.menu_book_rounded,
+                          size: 17,
+                          color: accent,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          'LER NO APP',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 0.8,
+                            color: accent,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -288,7 +334,7 @@ class _StudyPanelState extends State<StudyPanel>
                       ? const Icon(
                           Icons.check_rounded,
                           size: 16,
-                          color: Color(0xFF3D2E00),
+                          color: AppColors.inkOnAccent,
                         )
                       : null,
                 ),
@@ -334,7 +380,7 @@ class _StudyPanelState extends State<StudyPanel>
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w900,
-                    color: Color(0xFF3D2E00),
+                    color: AppColors.inkOnAccent,
                     letterSpacing: 0.8,
                   ),
                 ),
@@ -464,18 +510,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'EPÍLOGO',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 2,
-              color: accent,
-            ),
-          ),
-          const SizedBox(height: 12),
-          Text(
-            'O que esta passagem\ndeposita em você?',
+            'O que você leva\ndesta passagem?',
             textAlign: TextAlign.center,
             style: GoogleFonts.cormorantGaramond(
               fontSize: 28,
@@ -486,7 +521,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
           ),
           const SizedBox(height: 8),
           Text(
-            '$pct% de acertos · agora consolide',
+            '$pct% de acertos',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 12,
@@ -598,12 +633,12 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                             : null,
                       ),
                       child: const Text(
-                        'GUARDAR E CONCLUIR',
+                        'AVANÇAR',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w900,
-                          color: Color(0xFF3D2E00),
+                          color: AppColors.inkOnAccent,
                           letterSpacing: 0.5,
                         ),
                       ),

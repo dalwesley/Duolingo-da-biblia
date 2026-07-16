@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../data/mission_study.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'immersive_background.dart';
 
 /// Diário leve — últimas reflexões guardadas nas missões.
 class ReflectionJournalCard extends StatelessWidget {
@@ -11,19 +13,20 @@ class ReflectionJournalCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final items = progress.recentReflections(limit: 2);
+    final a = Appearance.of(context);
+    final items = progress.recentReflections(limit: 3);
     if (items.isEmpty) return const SizedBox.shrink();
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Seu diário',
+          'SEU DIÁRIO',
           style: TextStyle(
-            fontSize: 13,
+            fontSize: 11,
             fontWeight: FontWeight.w900,
-            letterSpacing: 0.4,
-            color: AppColors.textOnDark.withValues(alpha: 0.9),
+            letterSpacing: 1.4,
+            color: AppColors.accent.withValues(alpha: 0.9),
           ),
         ),
         const SizedBox(height: 10),
@@ -32,14 +35,8 @@ class ReflectionJournalCard extends StatelessWidget {
           final title = study?.passageRef ?? e.key;
           return Padding(
             padding: const EdgeInsets.only(bottom: 10),
-            child: Container(
-              width: double.infinity,
+            child: GlassCard(
               padding: const EdgeInsets.all(14),
-              decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.08),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: AppColors.accent.withValues(alpha: 0.28)),
-              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -59,7 +56,7 @@ class ReflectionJournalCard extends StatelessWidget {
                       height: 1.4,
                       fontStyle: FontStyle.italic,
                       fontWeight: FontWeight.w600,
-                      color: Colors.white.withValues(alpha: 0.88),
+                      color: a.text.withValues(alpha: 0.9),
                     ),
                   ),
                 ],

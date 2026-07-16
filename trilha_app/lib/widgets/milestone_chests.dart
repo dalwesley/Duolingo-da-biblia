@@ -73,7 +73,7 @@ class MilestoneChestsCard extends StatelessWidget {
 
   Future<void> _openChest(BuildContext context, ProgressService progress, TrailMilestone m) async {
     HapticFeedback.mediumImpact();
-    final ok = await progress.claimChest(m.chestId(trailSlug), m.xpReward);
+    final ok = await progress.claimChest(m.chestId(trailSlug), m.stepsReward);
     if (!ok || !context.mounted) return;
     SoundService.instance.playStreak();
     await showDialog<void>(
@@ -180,7 +180,7 @@ class _ChestOpenDialog extends StatelessWidget {
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFF2A2248), Color(0xFF1A1530)],
+            colors: [Color(0xFF28332C), Color(0xFF121816)],
           ),
           borderRadius: BorderRadius.circular(28),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),
@@ -193,7 +193,7 @@ class _ChestOpenDialog extends StatelessWidget {
               width: 72,
               height: 72,
               decoration: const BoxDecoration(shape: BoxShape.circle, gradient: AppGradients.gold),
-              child: const Icon(Icons.card_giftcard_rounded, size: 36, color: Color(0xFF3D2E00)),
+              child: const Icon(Icons.card_giftcard_rounded, size: 36, color: AppColors.inkOnAccent),
             ),
             const SizedBox(height: 18),
             Text(
@@ -215,8 +215,8 @@ class _ChestOpenDialog extends StatelessWidget {
                 borderRadius: BorderRadius.circular(999),
               ),
               child: Text(
-                '+${milestone.xpReward} XP',
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: Color(0xFF3D2E00)),
+                '+${milestone.stepsReward} passos',
+                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent),
               ),
             ),
             const SizedBox(height: 20),
@@ -246,7 +246,7 @@ class WeeklyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'CENAS DA SEMANA',
+                'MISSÕES DA SEMANA',
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w900,
@@ -319,7 +319,7 @@ class WeeklyQuestsCard extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
-                          '+${q.xpReward}',
+                          '+${q.stepsReward}',
                           style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w900, color: Color(0xFF0B1D3A)),
                         ),
                       ),

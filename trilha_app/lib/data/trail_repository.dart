@@ -1,17 +1,9 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import '../models/trail.dart';
+import '../services/content_catalog_service.dart';
 
 class TrailRepository {
-  List<Trail>? _cache;
-
-  Future<List<Trail>> getTrails() async {
-    if (_cache != null) return _cache!;
-    final raw = await rootBundle.loadString('assets/data/trails.json');
-    final list = jsonDecode(raw) as List;
-    _cache = list.map((e) => Trail.fromJson(e as Map<String, dynamic>)).toList()
-      ..sort((a, b) => a.order.compareTo(b.order));
-    return _cache!;
+  Future<List<Trail>> getTrails({bool forceRefresh = false}) {
+    return ContentCatalogService.instance.getTrails(forceRefresh: forceRefresh);
   }
 
   Future<Trail?> getTrailBySlug(String slug) async {

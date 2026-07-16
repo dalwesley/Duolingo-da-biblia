@@ -6,10 +6,12 @@ import '../data/trail_repository.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../models/trail_catalog.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
+import '../widgets/milestone_chests.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
 import 'difficulty_picker_screen.dart';
@@ -71,7 +73,12 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     if (mounted) setState(() => _checkingDifficulty = false);
   }
 
-  bool get _useThematicMap => widget.slug == 'genesis-1-11' || widget.slug == 'exodo';
+  bool get _useThematicMap =>
+      widget.slug == 'genesis-1-11' ||
+      widget.slug == 'exodo' ||
+      widget.slug == 'evangelhos' ||
+      widget.slug == 'atos' ||
+      widget.slug == 'apocalipse';
 
   int _activeModuleIndex(Trail trail, List<String> completed) {
     for (var i = 0; i < trail.modules.length; i++) {
@@ -109,10 +116,19 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     if (mounted) setState(() {});
   }
 
+  TrailRealm get _realm =>
+      _trail != null ? TrailRealm.fromId(_trail!.realmId) : TrailRealm.antigoTestamento;
+
   Color _backdropFor(Trail trail, int activeModule) {
-    if (!_useThematicMap || trail.modules.isEmpty) return const Color(0xFF070B18);
+    if (!_useThematicMap || trail.modules.isEmpty) {
+      return RealmVisualsFallback.atSky.first;
+    }
     final title = trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title;
-    return GenesisModuleTheme.forModule(title).sky.colors.first;
+    return GenesisModuleTheme.forModule(
+      title,
+      realm: TrailRealm.fromId(trail.realmId),
+      trailSlug: trail.slug,
+    ).sky.colors.first;
   }
 
   @override
@@ -120,9 +136,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final progress = context.watch<ProgressService>();
 
     if (_trail == null || _checkingDifficulty) {
-      return const Scaffold(
-        backgroundColor: Color(0xFF0B1D3A),
-        body: Center(child: CircularProgressIndicator(color: AppColors.accent)),
+      final loadingBg = _trail != null
+          ? GenesisModuleTheme.forModule(
+              _trail!.modules.isNotEmpty ? _trail!.modules.first.title : '',
+              realm: TrailRealm.fromId(_trail!.realmId),
+              trailSlug: _trail!.slug,
+            ).sky.colors.first
+          : RealmVisualsFallback.atSky.first;
+      return Scaffold(
+        backgroundColor: loadingBg,
+        body: const Center(child: CircularProgressIndicator(color: AppColors.accent)),
       );
     }
 
@@ -211,11 +234,25 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       total: prog.total,
                     ),
                   ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+                  child: MilestoneChestsCard(
+                    trailSlug: trail.slug,
+                    done: prog.done,
+                    total: prog.total,
+                  ),
+                ),
                 ...trail.modules.asMap().entries.map((entry) {
                   final mi = entry.key;
                   final mod = entry.value;
                   final start = trail.modules.take(mi).fold(0, (sum, m) => sum + m.missions.length);
-                  final moduleTheme = _useThematicMap ? GenesisModuleTheme.forModule(mod.title) : null;
+                  final moduleTheme = _useThematicMap
+                      ? GenesisModuleTheme.forModule(
+                          mod.title,
+                          realm: _realm,
+                          trailSlug: trail.slug,
+                        )
+                      : null;
                   final isActive = mi == activeModule;
                   final modDone = mod.missions.where((m) => progress.completedMissions.contains(m.slug)).length;
 
@@ -275,7 +312,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title,
                       )
                     : CinematicGlyphResolver.forTrail(trail.slug),
-                xp: progress.xp,
+                steps: progress.steps,
                 streak: progress.streak,
                 progressLabel: '${prog.done}/${prog.total}',
                 onBack: () => Navigator.pop(context),
@@ -309,7 +346,7 @@ class _CinematicChrome extends StatelessWidget {
   final String? eyebrow;
   final String title;
   final CinematicGlyph glyph;
-  final int xp;
+  final int steps;
   final int streak;
   final String progressLabel;
   final VoidCallback onBack;
@@ -319,7 +356,7 @@ class _CinematicChrome extends StatelessWidget {
     this.eyebrow,
     required this.title,
     required this.glyph,
-    required this.xp,
+    required this.steps,
     required this.streak,
     required this.progressLabel,
     required this.onBack,
@@ -331,7 +368,7 @@ class _CinematicChrome extends StatelessWidget {
       child: Container(
           padding: EdgeInsets.fromLTRB(10, topInset + 8, 12, 12),
           decoration: BoxDecoration(
-            color: const Color(0xFF070B18).withValues(alpha: 0.94),
+            color: const Color(0xFF0A0E0C).withValues(alpha: 0.94),
             border: Border(
               bottom: BorderSide(
                 color: Colors.white.withValues(alpha: 0.12),
@@ -398,7 +435,7 @@ class _CinematicChrome extends StatelessWidget {
               const SizedBox(width: 6),
               _ChromeStat(
                 icon: Icons.auto_awesome_rounded,
-                value: '$xp',
+                value: '$steps',
                 tint: AppColors.accent,
               ),
               const SizedBox(width: 6),

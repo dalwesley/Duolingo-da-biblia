@@ -83,7 +83,7 @@ class ContinueCard extends StatelessWidget {
                       style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: Colors.white),
                     ),
                     Text(
-                      '+${mission!.xpReward} XP',
+                      '+${mission!.stepsReward} passos',
                       style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: Colors.white.withValues(alpha: 0.85)),
                     ),
                   ],

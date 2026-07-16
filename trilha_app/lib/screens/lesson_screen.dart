@@ -7,6 +7,7 @@ import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
+import '../models/trail_catalog.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
@@ -16,8 +17,9 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
 import '../widgets/lamps_bar.dart';
 import '../widgets/study_panel.dart';
-import '../screens/difficulty_picker_screen.dart';
 import '../screens/celebration_screen.dart';
+import '../screens/bible_screen.dart';
+import '../screens/difficulty_picker_screen.dart';
 
 enum _Phase { intro, study, quiz, reflection }
 
@@ -45,6 +47,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   Mission? _mission;
   String? _trailSlug;
   String? _moduleTitle;
+  String? _realmId;
   List<String> _pickedIds = [];
   List<String?> _revealTags = [];
   DifficultyMeta? _difficultyMeta;
@@ -95,6 +98,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
         _baseMission = override;
         _trailSlug = 'genesis-1-11';
         _moduleTitle = 'A Criação';
+        _realmId = 'antigo-testamento';
         _pickedIds = widget.questionIdsOverride ?? [];
         _revealTags = List.filled(override.questions.length, null);
         _mission = override;
@@ -105,9 +109,11 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     final mission = await _repo.getMissionBySlug(widget.missionSlug);
     final trailSlug = await _repo.getTrailSlugForMission(widget.missionSlug);
     String? moduleTitle;
+    String? realmId;
     if (trailSlug != null) {
       final trail = await _repo.getTrailBySlug(trailSlug);
       if (trail != null) {
+        realmId = trail.realmId;
         for (final mod in trail.modules) {
           if (mod.missions.any((m) => m.slug == widget.missionSlug)) {
             moduleTitle = mod.title;
@@ -177,6 +183,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       _baseMission = mission;
       _trailSlug = trailSlug;
       _moduleTitle = moduleTitle;
+      _realmId = realmId;
       _pickedIds = ids;
       _revealTags = tags;
       _difficultyMeta = meta;
@@ -186,21 +193,24 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
           title: mission.title,
           intro: mission.intro,
           type: mission.type,
-          xpReward: _scaledXp(mission.xpReward, meta?.xpMultiplier ?? 1),
+          stepsReward: _scaledSteps(mission.stepsReward, meta?.stepsMultiplier ?? 1),
           questions: questions,
         );
       }
     });
   }
 
-  int _scaledXp(int base, double multiplier) => (base * multiplier).round();
+  int _scaledSteps(int base, double multiplier) => (base * multiplier).round();
 
   Question get _question => _mission!.questions[_questionIndex];
 
   bool get _cinematic => CinematicResolver.isCinematicMission(_trailSlug, _moduleTitle);
 
-  GenesisModuleTheme get _theme =>
-      _moduleTitle != null ? GenesisModuleTheme.forModule(_moduleTitle!) : GenesisModuleTheme.forModule('');
+  GenesisModuleTheme get _theme => GenesisModuleTheme.forModule(
+        _moduleTitle ?? '',
+        realm: TrailRealm.fromId(_realmId),
+        trailSlug: _trailSlug,
+      );
 
   String get _correctOptionText {
     final q = _question;
@@ -303,8 +313,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     final progress = context.read<ProgressService>();
     final isReplay = widget.practiceMode ||
         (_baseMission != null && progress.isMissionCompleted(_baseMission!.slug));
-    final xp = ProgressService.computeLessonXp(
-      baseXp: _mission!.xpReward,
+    final steps = ProgressService.computeLessonSteps(
+      baseSteps: _mission!.stepsReward,
       correct: _correctCount,
       total: forced ? _answeredCount.clamp(1, total) : total,
       lampsLeft: _lamps,
@@ -314,7 +324,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       MaterialPageRoute(
         builder: (_) => CelebrationScreen(
           missionSlug: _mission!.slug,
-          xp: xp,
+          steps: steps,
           correct: _correctCount,
           total: forced ? _answeredCount.clamp(1, total) : total,
           trailSlug: _trailSlug ?? 'genesis-1-11',
@@ -745,8 +755,8 @@ class _IntroPanel extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             mission.isBoss
-                ? 'Desafio · ${mission.questions.length} perguntas · +${mission.xpReward} XP'
-                : '${mission.questions.length} perguntas · +${mission.xpReward} XP',
+                ? 'Desafio · ${mission.questions.length} perguntas · +${mission.stepsReward} passos'
+                : '${mission.questions.length} perguntas · +${mission.stepsReward} passos',
             style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.white.withValues(alpha: 0.62)),
           ),
           if (difficultyMeta != null) ...[
@@ -802,7 +812,7 @@ class _IntroPanel extends StatelessWidget {
           const Spacer(flex: 2),
           _GoldButton(
             label: hasStudy
-                ? 'ESTUDAR O TEXTO'
+                ? 'CAMINHAR NO TEXTO'
                 : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NA CENA'),
             onTap: onStart,
             accent: theme.decorColor,
@@ -857,7 +867,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
         ? 'Lâmpadas apagadas'
         : isCorrect
             ? 'Correto!'
-            : 'Olhe de novo';
+            : 'Você tropeçou';
     final needsReread = !isCorrect && !outOfLamps && (widget.verseText != null || question.verseRef != null);
     final canContinue = !needsReread || _reread;
 
@@ -876,7 +886,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                 width: double.infinity,
                 padding: EdgeInsets.fromLTRB(24, 22, 24, 18 + bottom),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF0A0812).withValues(alpha: 0.94),
+                  color: const Color(0xFF0A0E0C).withValues(alpha: 0.94),
                   border: Border(top: BorderSide(color: color.withValues(alpha: 0.7), width: 3)),
                 ),
                 child: Column(
@@ -924,8 +934,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                     const SizedBox(height: 14),
                     Text(
                       outOfLamps
-                          ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva XP parcial.'
-                          : feedback,
+                          ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva passos parciais. Levante-se e continue caminhando.'
+                          : isCorrect
+                              ? feedback
+                              : 'Levante-se.\nContinue caminhando.\n\n$feedback',
                       style: TextStyle(fontSize: 15, height: 1.5, color: Colors.white.withValues(alpha: 0.92)),
                     ),
                     if (!outOfLamps && (widget.verseText != null || question.verseRef != null)) ...[
@@ -954,6 +966,34 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                   height: 1.45,
                                   fontStyle: FontStyle.italic,
                                   color: Colors.white.withValues(alpha: 0.9),
+                                ),
+                              ),
+                            ],
+                            if (question.verseRef != null) ...[
+                              const SizedBox(height: 10),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (_) => BibleReaderScreen(
+                                        reference: question.verseRef!,
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: Row(
+                                  children: [
+                                    Icon(Icons.menu_book_rounded, size: 16, color: color),
+                                    const SizedBox(width: 6),
+                                    Text(
+                                      'Abrir na Bíblia',
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w900,
+                                        color: color,
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -1001,7 +1041,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                       child: _GoldButton(
                         label: canContinue
                             ? (outOfLamps
-                                ? 'ENCERRAR COM XP PARCIAL'
+                                ? 'ENCERRAR COM PASSOS PARCIAIS'
                                 : widget.isLast
                                     ? 'SEGUIR'
                                     : 'CONTINUAR')
@@ -1056,7 +1096,7 @@ class _GoldButton extends StatelessWidget {
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w900,
-            color: darkText ? const Color(0xFF3D2E00) : Colors.white,
+            color: darkText ? AppColors.inkOnAccent : Colors.white,
             letterSpacing: 0.5,
           ),
         ),

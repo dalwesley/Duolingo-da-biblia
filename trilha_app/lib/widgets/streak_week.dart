@@ -50,7 +50,7 @@ class StreakWeek extends StatelessWidget {
               ),
               child: Center(
                 child: active
-                    ? const Icon(Icons.check_rounded, size: 16, color: Color(0xFF3D2E00))
+                    ? const Icon(Icons.check_rounded, size: 16, color: AppColors.inkOnAccent)
                     : Text(
                         labels[i],
                         style: TextStyle(

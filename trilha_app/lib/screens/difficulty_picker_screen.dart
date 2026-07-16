@@ -59,7 +59,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light,
       child: Scaffold(
-        backgroundColor: const Color(0xFF070B18),
+        backgroundColor: const Color(0xFF0A0E0C),
         body: Stack(
           fit: StackFit.expand,
           children: [
@@ -68,7 +68,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xFF1A1035), Color(0xFF0B1D3A), Color(0xFF070B18)],
+                  colors: [Color(0xFF1E3D32), Color(0xFF152820), Color(0xFF0A0E0C)],
                 ),
               ),
             ),
@@ -138,7 +138,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                 ),
                                 SizedBox(height: 12),
                                 Text(
-                                  '150 perguntas de Gênesis 1–11.\nVocê pode mudar depois nas configurações da trilha.',
+                                  '150 perguntas de Gênesis 1–11.\nVocê pode mudar depois em Configurações.',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(fontSize: 13, height: 1.4, color: Colors.white70),
                                 ),
@@ -199,9 +199,9 @@ class _DifficultyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = AppTheme.parseHex(meta.accent);
-    final xpLabel = meta.xpMultiplier == 1
-        ? 'XP padrão'
-        : '+${((meta.xpMultiplier - 1) * 100).round()}% XP';
+    final xpLabel = meta.stepsMultiplier == 1
+        ? 'Passos padrão'
+        : '+${((meta.stepsMultiplier - 1) * 100).round()}% passos';
 
     return Material(
       color: Colors.transparent,

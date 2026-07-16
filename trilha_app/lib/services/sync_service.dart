@@ -24,7 +24,7 @@ class SyncService extends ChangeNotifier {
   }
 
   Map<String, dynamic> exportPayload({
-    required int xp,
+    required int steps,
     required int streak,
     required String? lastPlayedDate,
     required List<String> completedMissions,
@@ -35,7 +35,8 @@ class SyncService extends ChangeNotifier {
       'version': 1,
       'deviceId': deviceId,
       'exportedAt': DateTime.now().toIso8601String(),
-      'xp': xp,
+      'xp': steps, // legado
+      'steps': steps,
       'streak': streak,
       'lastPlayedDate': lastPlayedDate,
       'completedMissions': completedMissions,
@@ -45,7 +46,7 @@ class SyncService extends ChangeNotifier {
   }
 
   String exportJson({
-    required int xp,
+    required int steps,
     required int streak,
     required String? lastPlayedDate,
     required List<String> completedMissions,
@@ -53,7 +54,7 @@ class SyncService extends ChangeNotifier {
     required String userName,
   }) {
     return const JsonEncoder.withIndent('  ').convert(exportPayload(
-      xp: xp,
+      steps: steps,
       streak: streak,
       lastPlayedDate: lastPlayedDate,
       completedMissions: completedMissions,
@@ -62,17 +63,17 @@ class SyncService extends ChangeNotifier {
     ));
   }
 
-  ({int xp, int streak, String? lastPlayedDate, List<String> completedMissions, int missionsToday, String userName})? parseImport(String json) {
+  ({int steps, int streak, String? lastPlayedDate, List<String> completedMissions, int missionsToday, String userName})? parseImport(String json) {
     try {
       final data = jsonDecode(json) as Map<String, dynamic>;
       if (data['version'] != 1) return null;
       return (
-        xp: data['xp'] as int? ?? 0,
+        steps: (data['steps'] as int?) ?? (data['xp'] as int?) ?? 0,
         streak: data['streak'] as int? ?? 0,
         lastPlayedDate: data['lastPlayedDate'] as String?,
         completedMissions: (data['completedMissions'] as List?)?.cast<String>() ?? [],
         missionsToday: data['missionsToday'] as int? ?? 0,
-        userName: data['userName'] as String? ?? 'Estudante',
+        userName: data['userName'] as String? ?? 'Peregrino',
       );
     } catch (_) {
       return null;

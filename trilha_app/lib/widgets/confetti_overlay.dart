@@ -24,7 +24,7 @@ class _ConfettiOverlayState extends State<ConfettiOverlay> with SingleTickerProv
           delay: rng.nextDouble() * 0.4,
           speed: 0.5 + rng.nextDouble() * 0.8,
           size: 4 + rng.nextDouble() * 6,
-          color: [const Color(0xFFE8B84B), const Color(0xFFF5D78E), Colors.white, const Color(0xFF8B7CF6)][i % 4],
+          color: [const Color(0xFFD4A84B), const Color(0xFFF5D78E), Colors.white, const Color(0xFF4A8B6F)][i % 4],
         ));
     _controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 2400))..forward();
   }

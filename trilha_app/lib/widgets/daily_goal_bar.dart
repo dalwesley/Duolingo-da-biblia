@@ -36,9 +36,9 @@ class DailyGoalBar extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Meta diária', style: TextStyle(fontWeight: FontWeight.w800)),
+                    const Text('Passos de hoje', style: TextStyle(fontWeight: FontWeight.w800)),
                     Text(
-                      '${progress.missionsToday}/$goal missão${goal > 1 ? 'ões' : ''}',
+                      '${progress.missionsToday}/$goal passo${goal > 1 ? 's' : ''}',
                       style: const TextStyle(fontSize: 12, color: AppColors.textMuted),
                     ),
                   ],

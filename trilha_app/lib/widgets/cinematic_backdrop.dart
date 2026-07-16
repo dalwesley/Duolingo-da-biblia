@@ -72,8 +72,8 @@ class _AtmospherePainter extends CustomPainter {
 
     // Céu superior — responde à luz / espírito
     final skyTop = Color.lerp(
-      const Color(0xFF0A0814),
-      Color.lerp(const Color(0xFF1A2850), const Color(0xFF3A5A8A), state.light * 0.7)!,
+      const Color(0xFF0A1010),
+      Color.lerp(const Color(0xFF1A3040), const Color(0xFF3A6A70), state.light * 0.7)!,
       (state.light * 0.55 + state.spirit * 0.25).clamp(0.0, 1.0),
     )!;
     canvas.drawRect(
@@ -99,8 +99,8 @@ class _AtmospherePainter extends CustomPainter {
       Paint()
         ..shader = RadialGradient(
           colors: [
-            Color.lerp(const Color(0xFF3D2B69), const Color(0xFFE8B84B), state.light * 0.4)!
-                .withValues(alpha: 0.1 + 0.08 * breath + state.spirit * 0.12),
+            Color.lerp(const Color(0xFF2A4A3C), const Color(0xFFD4A84B), state.light * 0.4)!
+                .withValues(alpha: 0.08 + 0.06 * breath + state.spirit * 0.08),
             Colors.transparent,
           ],
         ).createShader(Rect.fromCircle(center: auraCenter, radius: size.width * 0.6)),
@@ -123,7 +123,7 @@ class _AtmospherePainter extends CustomPainter {
       }
     }
 
-    // Luz divina — glow suave no alto (sem raios)
+    // Luz — glow suave no alto
     if (state.light > 0.04) {
       final center = Offset(size.width * 0.5, size.height * 0.12);
       final radius = size.width * (0.55 + state.light * 0.35 + breath * 0.03);
@@ -142,7 +142,7 @@ class _AtmospherePainter extends CustomPainter {
       );
     }
 
-    // Espírito — véu violeta bem suave
+    // Presença — véu de luz suave (dourado / branco quente)
     if (state.spirit > 0.04) {
       final c = Offset(size.width * 0.5, size.height * 0.05);
       final r = size.width * 0.5 * state.spirit;
@@ -152,7 +152,7 @@ class _AtmospherePainter extends CustomPainter {
         Paint()
           ..shader = RadialGradient(
             colors: [
-              const Color(0xFF7B6FD6).withValues(alpha: state.spirit * 0.18),
+              const Color(0xFFF5E6C8).withValues(alpha: state.spirit * 0.14),
               Colors.transparent,
             ],
           ).createShader(Rect.fromCircle(center: c, radius: r)),

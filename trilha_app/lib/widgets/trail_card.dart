@@ -32,7 +32,7 @@ class TrailCard extends StatelessWidget {
     final prog = TrailProgress.getProgress(trail, progress.completedMissions);
     final hasContent = trail.missionSlugs.isNotEmpty;
     final canOpen = unlocked && hasContent && !trail.comingSoon;
-    final visuals = TrailVisuals.forSlug(trail.slug);
+    final visuals = TrailVisuals.forTrail(trail);
     final unlockLabel = _unlockLabel();
 
     final card = _TrailWorldShell(
@@ -98,6 +98,13 @@ class TrailCard extends StatelessWidget {
           if (!unlocked && unlockLabel != null) ...[
             const SizedBox(height: 16),
             _UnlockBanner(label: unlockLabel, accent: visuals.accent),
+          ],
+          if (unlocked && trail.comingSoon) ...[
+            const SizedBox(height: 16),
+            _UnlockBanner(
+              label: 'Em produção — logo no mapa',
+              accent: visuals.accent,
+            ),
           ],
           if (canOpen) ...[
             const SizedBox(height: 16),

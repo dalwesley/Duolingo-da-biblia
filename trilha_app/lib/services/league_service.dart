@@ -2,16 +2,25 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-/// Divisões da liga semanal — jornada de crescimento, tema bíblico.
+/// Divisões da caravana semanal — jornada coletiva, tema bíblico.
 enum LeagueTier { semente, videira, oliveira, cedro, estrela }
 
 extension LeagueTierX on LeagueTier {
   String get label => switch (this) {
-        LeagueTier.semente => 'Liga da Semente',
-        LeagueTier.videira => 'Liga da Videira',
-        LeagueTier.oliveira => 'Liga da Oliveira',
-        LeagueTier.cedro => 'Liga do Cedro',
-        LeagueTier.estrela => 'Liga da Estrela',
+        LeagueTier.semente => 'Caravana da Semente',
+        LeagueTier.videira => 'Caravana da Videira',
+        LeagueTier.oliveira => 'Caravana da Oliveira',
+        LeagueTier.cedro => 'Caravana do Cedro',
+        LeagueTier.estrela => 'Caravana da Estrela',
+      };
+
+  /// Nome curto para zonas do ranking.
+  String get shortLabel => switch (this) {
+        LeagueTier.semente => 'Semente',
+        LeagueTier.videira => 'Videira',
+        LeagueTier.oliveira => 'Oliveira',
+        LeagueTier.cedro => 'Cedro',
+        LeagueTier.estrela => 'Estrela',
       };
 
   String get verse => switch (this) {
@@ -28,10 +37,10 @@ enum LeagueOutcome { promoted, stayed, demoted }
 
 class LeagueEntry {
   final String name;
-  final int xp;
+  final int steps;
   final bool isUser;
 
-  const LeagueEntry({required this.name, required this.xp, this.isUser = false});
+  const LeagueEntry({required this.name, required this.steps, this.isUser = false});
 }
 
 class _LeagueBot {
@@ -46,9 +55,9 @@ class _LeagueBot {
   const _LeagueBot(this.name, this.weeklyTarget, this.pace);
 }
 
-/// Liga semanal simulada: 19 competidores determinísticos por semana + o
-/// usuário, ranqueados por XP ganho na semana. Sem backend — a mesma semana
-/// gera sempre a mesma liga.
+/// Caravana semanal: 19 companheiros determinísticos por semana + o
+/// usuário, ranqueados por passos ganhos na semana. Sem backend — a mesma
+/// semana gera sempre a mesma caravana.
 class LeagueService extends ChangeNotifier {
   static const _keyTier = 'leagueTier';
   static const _keyProcessedWeek = 'leagueProcessedWeek';
@@ -87,7 +96,7 @@ class LeagueService extends ChangeNotifier {
 
   static DateTime _weekStart(String key) => DateTime.parse(key);
 
-  /// Dias restantes até a liga fechar (domingo inclui hoje).
+  /// Dias restantes até a caravana fechar (domingo inclui hoje).
   static int daysLeft([DateTime? now]) {
     final d = now ?? DateTime.now();
     return 8 - d.weekday;
@@ -108,10 +117,10 @@ class LeagueService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Fecha a semana anterior se virou a semana. [lastWeekXp] é o XP final do
+  /// Fecha a semana anterior se virou a semana. [lastWeekSteps] é o XP final do
   /// usuário na semana [lastWeekKey] (vindos do ProgressService).
   Future<void> settleWeekIfNeeded({
-    required int lastWeekXp,
+    required int lastWeekSteps,
     required String? lastWeekKey,
   }) async {
     final current = weekKey();
@@ -127,7 +136,7 @@ class LeagueService extends ChangeNotifier {
 
     final closedWeek = _processedWeek!;
     // XP do usuário na semana fechada (0 se o registro não bate).
-    final userXp = (lastWeekKey == closedWeek) ? lastWeekXp : 0;
+    final userXp = (lastWeekKey == closedWeek) ? lastWeekSteps : 0;
 
     // Ranking final da semana fechada, com os mesmos bots daquela semana.
     final weekEnd = _weekStart(closedWeek).add(const Duration(days: 7));
@@ -175,21 +184,26 @@ class LeagueService extends ChangeNotifier {
     }
   }
 
-  /// Classificação atual da semana: 19 bots + usuário, XP decrescente.
+  /// Classificação atual da semana: usuário + jogadores reais da nuvem (se
+  /// houver) + bots completando o grupo de 20, XP decrescente.
   List<LeagueEntry> standings({
     required String userName,
-    required int userWeeklyXp,
+    required int userWeeklySteps,
+    List<LeagueEntry> realPlayers = const [],
     DateTime? now,
   }) {
     final week = weekKey(now);
-    final bots = _botsForWeek(week, tierIndex);
     final at = now ?? DateTime.now();
+    final real = realPlayers.take(groupSize - 1).toList();
+    final botsNeeded = groupSize - 1 - real.length;
+    final bots = _botsForWeek(week, tierIndex).take(botsNeeded);
     final entries = [
+      ...real,
       for (final b in bots)
-        LeagueEntry(name: b.name, xp: _botXpAt(b, week, at)),
-      LeagueEntry(name: userName, xp: userWeeklyXp, isUser: true),
+        LeagueEntry(name: b.name, steps: _botXpAt(b, week, at)),
+      LeagueEntry(name: userName, steps: userWeeklySteps, isUser: true),
     ]..sort((a, b) {
-        if (b.xp != a.xp) return b.xp.compareTo(a.xp);
+        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
         // Empate: usuário fica na frente (gentileza de produto).
         if (a.isUser) return -1;
         if (b.isUser) return 1;

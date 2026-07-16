@@ -3,7 +3,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
-/// Lembretes diários para estudar.
+/// Lembretes diários para caminhar.
 class NotificationService {
   static final NotificationService instance = NotificationService._();
   NotificationService._();
@@ -42,14 +42,14 @@ class NotificationService {
 
     await _plugin.zonedSchedule(
       id,
-      'Trilha',
-      'Sua jornada pela Palavra te espera. Uma missão hoje?',
+      '👣 Próximo passo',
+      'A Palavra já iluminou seu caminho hoje? Continue caminhando.',
       _nextInstance(hour, minute),
       const NotificationDetails(
         android: AndroidNotificationDetails(
           'trilha_daily',
-          'Lembretes diários',
-          channelDescription: 'Lembrete para estudar a Bíblia',
+          'Lembretes da caminhada',
+          channelDescription: 'Lembrete diário para dar o próximo passo',
           importance: Importance.defaultImportance,
         ),
         iOS: DarwinNotificationDetails(),

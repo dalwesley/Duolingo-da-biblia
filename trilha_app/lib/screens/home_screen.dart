@@ -6,27 +6,31 @@ import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/streak_week.dart';
-import '../widgets/daily_quests_card.dart';
-import '../widgets/milestone_chests.dart';
+import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
+import '../widgets/streak_week.dart';
+import 'bible_screen.dart';
+import 'memory_screen.dart';
 import 'practice_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final TrailRepository repo;
   final void Function(String slug) onOpenTrail;
   final void Function(String missionSlug) onOpenMission;
+  final VoidCallback onOpenTrilhas;
 
   const HomeScreen({
     super.key,
     required this.repo,
     required this.onOpenTrail,
     required this.onOpenMission,
+    required this.onOpenTrilhas,
   });
 
   @override
@@ -97,53 +101,99 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return ListView(
       padding: EdgeInsets.fromLTRB(
         20,
-        MediaQuery.of(context).padding.top + 64,
+        AppSpace.lg,
         20,
         110 + bottomInset,
       ),
       children: [
-        // Cena de abertura — escritura do dia
-        _reveal(0, const _OpeningScripture()),
-        const SizedBox(height: 28),
-
-        // Portal da jornada — CTA dominante
         _reveal(
-          1,
+          0,
           HeroContinueCard(
             mission: current,
             trailTitle: active?.title ?? '',
             trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#6C5CE7',
+            trailColor: active?.color ?? '#2F5D4A',
             onTap: current != null ? () => widget.onOpenMission(current.slug) : null,
           ),
         ),
-        const SizedBox(height: 20),
-
-        // Faixa de fidelidade — compacta, editorial
+        if (LiturgicalCalendar.isHighSeason) ...[
+          const SizedBox(height: 14),
+          _reveal(
+            1,
+            LiturgicalBanner(
+              onOpenBible: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => BibleReaderScreen(
+                      reference: LiturgicalCalendar.momentFor().focusRef,
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ],
+        const SizedBox(height: 14),
         _reveal(
-          2,
-          _FidelityStrip(
+          1,
+          _MetaStrip(
             missionsToday: progress.missionsToday,
             goal: goal,
             goalPct: goalPct,
             streak: progress.streak,
-            streakFreeze: progress.streakFreezeAvailable,
             playedToday: playedToday,
+            returningAfterGap: progress.isReturningAfterGap,
             userName: progress.userName,
-            xp: progress.xp,
+            steps: progress.steps,
           ),
         ),
-        const SizedBox(height: 22),
-
-        // Missões do dia
-        _reveal(3, const DailyQuestsCard()),
         const SizedBox(height: 14),
-        _reveal(4, const WeeklyQuestsCard()),
-
+        _reveal(
+          2,
+          GlassCard(
+            elevated: true,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const MemoryScreen()),
+            ),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            child: Row(
+              children: [
+                CinematicIcon(
+                  glyph: CinematicGlyph.scroll,
+                  size: 40,
+                  accent: AppColors.accent,
+                  glowing: false,
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Memorizar',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w900,
+                          color: a.text,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Guarde a Palavra no coração',
+                        style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward_rounded, color: a.textMuted(0.5), size: 20),
+              ],
+            ),
+          ),
+        ),
         if (progress.mistakeQuestionIds.isNotEmpty) ...[
           const SizedBox(height: 14),
           _reveal(
-            5,
+            2,
             GlassCard(
               elevated: true,
               onTap: () => Navigator.of(context).push(
@@ -188,12 +238,11 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             ),
           ),
         ],
-
         if (active != null && prog != null) ...[
-          const SizedBox(height: 22),
+          const SizedBox(height: 16),
           _reveal(
-            6,
-            _TrailPortal(
+            3,
+            _ActiveTrailLine(
               trail: active,
               done: prog.done,
               total: prog.total,
@@ -201,14 +250,45 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             ),
           ),
         ],
-
-        const SizedBox(height: 24),
+        const SizedBox(height: 16),
         _reveal(
-          7,
-          _JourneySeals(
-            xp: progress.xp,
-            missions: progress.completedMissions.length,
-            trails: trails.where((t) => t.missionSlugs.isNotEmpty).length,
+          4,
+          GlassCard(
+            elevated: true,
+            onTap: widget.onOpenTrilhas,
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            child: Row(
+              children: [
+                CinematicIcon(
+                  glyph: CinematicGlyph.path,
+                  size: 40,
+                  accent: AppColors.accent,
+                  glowing: false,
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Todas as trilhas',
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w900,
+                          color: a.text,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        'Escolha ou continue sua jornada',
+                        style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
+                      ),
+                    ],
+                  ),
+                ),
+                Icon(Icons.arrow_forward_rounded, color: a.textMuted(0.5), size: 20),
+              ],
+            ),
           ),
         ),
       ],
@@ -216,158 +296,179 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   }
 }
 
-/// Escritura como abertura de cena — tipografia editorial.
-class _OpeningScripture extends StatelessWidget {
-  const _OpeningScripture();
-
-  @override
-  Widget build(BuildContext context) {
-    return const ScripturePill(cinematic: true);
-  }
-}
-
-class _FidelityStrip extends StatelessWidget {
+class _MetaStrip extends StatelessWidget {
   final int missionsToday;
   final int goal;
   final double goalPct;
   final int streak;
-  final bool streakFreeze;
   final bool playedToday;
+  final bool returningAfterGap;
   final String userName;
-  final int xp;
+  final int steps;
 
-  const _FidelityStrip({
+  const _MetaStrip({
     required this.missionsToday,
     required this.goal,
     required this.goalPct,
     required this.streak,
-    required this.streakFreeze,
     required this.playedToday,
+    required this.returningAfterGap,
     required this.userName,
-    required this.xp,
+    required this.steps,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final left = (goal - missionsToday).clamp(0, goal);
-    final copy = missionsToday >= goal
-        ? 'Meta alcançada hoje'
-        : left == 1
-            ? 'Falta 1 missão'
-            : 'Faltam $left missões';
+    final todayCopy = playedToday
+        ? (missionsToday >= goal
+            ? 'Hoje você já deu $missionsToday passo${missionsToday == 1 ? '' : 's'}.'
+            : 'Hoje: $missionsToday de $goal passos.')
+        : returningAfterGap
+            ? 'Sua caminhada continua daqui.\nVamos dar o próximo passo?'
+            : 'Hoje você ainda não deu nenhum passo.';
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            'Continue sua caminhada',
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 22,
+              fontWeight: FontWeight.w700,
+              color: a.text,
+              height: 1.15,
+            ),
+          ),
+          const SizedBox(height: 14),
           Row(
             children: [
-              RingProgress(
-                value: goalPct,
-                size: 64,
-                stroke: 6,
-                center: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      '$missionsToday',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w900,
-                        color: a.text,
-                        height: 1,
-                      ),
-                    ),
-                    Text(
-                      '/$goal',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w700,
-                        color: a.textMuted(0.45),
-                      ),
-                    ),
-                  ],
+              Expanded(
+                child: _WalkStat(
+                  icon: Icons.directions_walk_rounded,
+                  value: '$steps',
+                  label: 'passos',
+                  color: AppColors.accent,
                 ),
               ),
-              const SizedBox(width: 14),
+              const SizedBox(width: 10),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'FIDELIDADE',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 1.4,
-                        color: AppColors.accent.withValues(alpha: 0.9),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      copy,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(height: 6),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.local_fire_department_rounded,
-                          color: AppColors.streak,
-                          size: 16,
-                        ),
-                        const SizedBox(width: 4),
-                        Text(
-                          streak == 1 ? '1 dia' : '$streak dias',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
-                            color: a.text,
-                          ),
-                        ),
-                        if (streakFreeze) ...[
-                          const SizedBox(width: 6),
-                          Icon(
-                            Icons.ac_unit_rounded,
-                            size: 14,
-                            color: Colors.lightBlueAccent.withValues(alpha: 0.9),
-                          ),
-                        ],
-                        const Spacer(),
-                        ShareStreakButton(
-                          streak: streak,
-                          userName: userName,
-                          xp: xp,
-                          compact: true,
-                        ),
-                      ],
-                    ),
-                  ],
+                child: _WalkStat(
+                  icon: Icons.wb_sunny_rounded,
+                  value: '$streak',
+                  label: streak == 1 ? 'dia caminhando' : 'dias caminhando',
+                  color: AppColors.streak,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 16),
-          StreakWeek(streak: streak, playedToday: playedToday),
+          const SizedBox(height: 14),
+          Text(
+            todayCopy,
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w700,
+              height: 1.35,
+              color: a.text.withValues(alpha: 0.9),
+            ),
+          ),
+          if (!returningAfterGap) ...[
+            const SizedBox(height: 14),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: LinearProgressIndicator(
+                value: goalPct.clamp(0.0, 1.0),
+                minHeight: 6,
+                backgroundColor: a.text.withValues(alpha: 0.08),
+                color: AppColors.accent,
+              ),
+            ),
+          ],
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              Expanded(child: StreakWeek(streak: streak, playedToday: playedToday)),
+              ShareStreakButton(
+                streak: streak,
+                userName: userName,
+                steps: steps,
+                compact: true,
+              ),
+            ],
+          ),
         ],
       ),
     );
   }
 }
 
-class _TrailPortal extends StatelessWidget {
+class _WalkStat extends StatelessWidget {
+  final IconData icon;
+  final String value;
+  final String label;
+  final Color color;
+
+  const _WalkStat({
+    required this.icon,
+    required this.value,
+    required this.label,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: color.withValues(alpha: 0.28)),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, size: 18, color: color),
+          const SizedBox(width: 8),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  value,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w900,
+                    color: a.text,
+                    height: 1,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  label,
+                  style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w700,
+                    color: a.textMuted(0.55),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ActiveTrailLine extends StatelessWidget {
   final Trail trail;
   final int done;
   final int total;
   final VoidCallback onTap;
 
-  const _TrailPortal({
+  const _ActiveTrailLine({
     required this.trail,
     required this.done,
     required this.total,
@@ -376,157 +477,55 @@ class _TrailPortal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final visuals = TrailVisuals.forSlug(trail.slug);
+    final visuals = TrailVisuals.forTrail(trail);
     final pct = total > 0 ? done / total : 0.0;
     final a = Appearance.of(context);
 
     return GlassCard(
       elevated: true,
       onTap: onTap,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       child: Row(
         children: [
           CinematicIcon(
             glyph: CinematicGlyphResolver.forTrail(trail.slug),
-            size: 56,
+            size: 40,
             accent: visuals.accent,
             glowing: true,
           ),
-          const SizedBox(width: 16),
+          const SizedBox(width: 12),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'MAPA DA TRILHA',
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 1.3,
-                    color: visuals.accent.withValues(alpha: 0.9),
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
                   trail.title,
                   style: GoogleFonts.cormorantGaramond(
-                    fontSize: 22,
+                    fontSize: 18,
                     fontWeight: FontWeight.w700,
                     color: a.text,
                     height: 1.1,
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: 6),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(999),
                   child: LinearProgressIndicator(
                     value: pct,
-                    minHeight: 5,
+                    minHeight: 4,
                     backgroundColor: a.progressTrack,
                     color: visuals.glow,
                   ),
                 ),
-                const SizedBox(height: 6),
+                const SizedBox(height: 4),
                 Text(
-                  '$done de $total cenas',
+                  'Abrir mapa · $done/$total missões',
                   style: TextStyle(fontSize: 11, color: a.textMuted(0.55)),
                 ),
               ],
             ),
           ),
-          Icon(Icons.arrow_forward_rounded, color: visuals.accent.withValues(alpha: 0.8)),
-        ],
-      ),
-    );
-  }
-}
-
-class _JourneySeals extends StatelessWidget {
-  final int xp;
-  final int missions;
-  final int trails;
-
-  const _JourneySeals({
-    required this.xp,
-    required this.missions,
-    required this.trails,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: _Seal(
-            glyph: CinematicGlyph.spark,
-            value: '$xp',
-            label: 'XP',
-            accent: AppColors.accent,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: _Seal(
-            glyph: CinematicGlyph.scroll,
-            value: '$missions',
-            label: 'Cenas',
-            accent: AppColors.primaryLight,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: _Seal(
-            glyph: CinematicGlyph.cosmos,
-            value: '$trails',
-            label: 'Mundos',
-            accent: AppColors.teal,
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _Seal extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String value;
-  final String label;
-  final Color accent;
-
-  const _Seal({
-    required this.glyph,
-    required this.value,
-    required this.label,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return GlassCard(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
-      child: Column(
-        children: [
-          CinematicIcon(glyph: glyph, size: 32, accent: accent, glowing: false),
-          const SizedBox(height: 8),
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w900,
-              color: accent,
-            ),
-          ),
-          const SizedBox(height: 2),
-          Text(
-            label,
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w700,
-              letterSpacing: 0.6,
-              color: a.textMuted(0.5),
-            ),
-          ),
+          Icon(Icons.arrow_forward_rounded, color: visuals.accent.withValues(alpha: 0.8), size: 20),
         ],
       ),
     );

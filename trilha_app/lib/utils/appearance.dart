@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/app_theme.dart';
 import 'day_phase.dart';
 
 /// Preferência do usuário para o visual do app.
@@ -20,9 +21,9 @@ extension AppearanceModeX on AppearanceMode {
       };
 
   String get description => switch (this) {
-        AppearanceMode.morning => 'Amanhecer cinematográfico',
-        AppearanceMode.afternoon => 'Luz dourada do dia',
-        AppearanceMode.night => 'Noite profunda e imersiva',
+        AppearanceMode.morning => 'Luz suave de manhã',
+        AppearanceMode.afternoon => 'Clareza do dia',
+        AppearanceMode.night => 'Estudo à noite',
         AppearanceMode.automatic => 'Muda conforme o horário',
       };
 
@@ -39,7 +40,6 @@ extension AppearanceModeX on AppearanceMode {
         if (mode.name == raw) return mode;
       }
     }
-    // Migração do antigo toggle "Tema escuro".
     if (legacyDarkMode == true) return AppearanceMode.night;
     return AppearanceMode.automatic;
   }
@@ -54,50 +54,56 @@ class AppearanceStyle {
 
   const AppearanceStyle({required this.look, required this.phase});
 
-  /// Texto / ícones — mundo cinematográfico sempre pede contraste claro.
+  bool get isDay =>
+      look == AppearanceLook.morning || look == AppearanceLook.afternoon;
+
   bool get onDark => true;
 
-  /// Fundo imersivo (roxo) sempre pede texto claro — inclusive no tema manhã.
-  Color get backdropText => Colors.white;
-  Color get backdropMuted => Colors.white.withValues(alpha: 0.78);
-  Color get sectionLabel => Colors.white.withValues(alpha: 0.72);
+  Color get backdropText => AppColors.textOnDark;
+  Color get backdropMuted =>
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.88 : 0.78);
+  Color get sectionLabel =>
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.85 : 0.72);
 
-  Color get text => Colors.white.withValues(alpha: 0.96);
+  Color get text => AppColors.textOnDark.withValues(alpha: 0.98);
 
-  /// Secundário legível — sem empilhar alpha em cima de cor já muted.
-  Color textMuted([double alpha = 0.7]) =>
-      Colors.white.withValues(alpha: alpha.clamp(0.55, 0.9));
+  Color textMuted([double alpha = 0.7]) => AppColors.textOnDark.withValues(
+        alpha: (isDay ? alpha.clamp(0.72, 0.95) : alpha.clamp(0.55, 0.9)),
+      );
 
   Color get cardFill => switch (look) {
-        AppearanceLook.morning => Colors.white.withValues(alpha: 0.12),
-        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.14),
-        AppearanceLook.night => const Color(0xFF0E0C18).withValues(alpha: 0.72),
+        AppearanceLook.morning => AppColors.nightMid.withValues(alpha: 0.92),
+        AppearanceLook.afternoon => AppColors.nightMid.withValues(alpha: 0.9),
+        AppearanceLook.night => AppColors.night.withValues(alpha: 0.78),
       };
 
   Color get cardFillSoft => switch (look) {
-        AppearanceLook.morning => Colors.white.withValues(alpha: 0.08),
-        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.1),
-        AppearanceLook.night => const Color(0xFF08070F).withValues(alpha: 0.65),
+        AppearanceLook.morning => AppColors.nightLight.withValues(alpha: 0.82),
+        AppearanceLook.afternoon => AppColors.nightLight.withValues(alpha: 0.78),
+        AppearanceLook.night => AppColors.night.withValues(alpha: 0.65),
       };
 
-  Color get cardBorder => Colors.white.withValues(
-        alpha: look == AppearanceLook.night ? 0.1 : 0.16,
-      );
+  Color get cardBorder => switch (look) {
+        AppearanceLook.morning => Colors.white.withValues(alpha: 0.2),
+        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.16),
+        AppearanceLook.night => Colors.white.withValues(alpha: 0.1),
+      };
 
   LinearGradient? get cardGradient => LinearGradient(
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
         colors: [
-          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.1 : 0.16),
-          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.04 : 0.06),
+          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.1 : 0.08),
+          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.04 : 0.03),
         ],
       );
 
-  Color get progressTrack => Colors.white.withValues(alpha: 0.14);
+  Color get progressTrack =>
+      Colors.white.withValues(alpha: isDay ? 0.22 : 0.14);
 
   Color get navBarFill => look == AppearanceLook.night
-      ? const Color(0xFF12101C).withValues(alpha: 0.94)
-      : const Color(0xFF3A2F6E).withValues(alpha: 0.92);
+      ? AppColors.nightMid.withValues(alpha: 0.94)
+      : AppColors.primaryDark.withValues(alpha: 0.94);
 
   Color get navBarBorder =>
       Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.1 : 0.18);
@@ -120,7 +126,6 @@ class AppearanceStyle {
     final phase = switch (mode) {
       AppearanceMode.morning => DayPhase.morning,
       AppearanceMode.afternoon => DayPhase.afternoon,
-      // Noite forçada = visual pós-18h (evening).
       AppearanceMode.night => DayPhase.evening,
       AppearanceMode.automatic => clockPhase,
     };

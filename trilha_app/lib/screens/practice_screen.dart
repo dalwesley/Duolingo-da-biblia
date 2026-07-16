@@ -45,7 +45,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
           title: 'Revisar erros',
           intro: 'Volte aos pontos em que você errou. Cada acerto limpa a pergunta da fila.',
           type: 'lesson',
-          xpReward: 30,
+          stepsReward: 30,
           questions: questions,
         );
       }

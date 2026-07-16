@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "397918013314",
+    "project_id": "trilha-biblia",
+    "storage_bucket": "trilha-biblia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397918013314:android:f10ffe7412ec73d952f19b",
+        "android_client_info": {
+          "package_name": "com.trilha.trilha_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397918013314-6172pq788psnmn8o9hopriql009nk1dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trilha.trilha_app",
+            "certificate_hash": "dfddf04463744b6e91a8febf8d24b084bdf0f034"
+          }
+        },
+        {
+          "client_id": "397918013314-qa8f7ccne3125e3m0p577vccu1fakc16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQyVZtXwtFLDXXY6hOI_lVFyELXYsvhhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397918013314-qa8f7ccne3125e3m0p577vccu1fakc16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

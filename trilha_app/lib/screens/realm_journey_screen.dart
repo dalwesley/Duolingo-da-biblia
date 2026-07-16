@@ -1,0 +1,645 @@
+import 'dart:math' as math;
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import '../models/trail.dart';
+import '../models/trail_catalog.dart';
+import '../services/progress_service.dart';
+import '../utils/realm_visuals.dart';
+import '../utils/trail_progress.dart';
+import '../widgets/journey_path.dart';
+import 'trail_map_screen.dart';
+
+/// Peregrinação cinematográfica — trilhas dentro de um reino.
+class RealmJourneyScreen extends StatefulWidget {
+  final TrailRealm realm;
+  final List<Trail> allTrails;
+
+  const RealmJourneyScreen({
+    super.key,
+    required this.realm,
+    required this.allTrails,
+  });
+
+  @override
+  State<RealmJourneyScreen> createState() => _RealmJourneyScreenState();
+}
+
+class _RealmJourneyScreenState extends State<RealmJourneyScreen>
+    with SingleTickerProviderStateMixin {
+  final _scroll = ScrollController();
+  final _currentKey = GlobalKey();
+  bool _jumped = false;
+  late final AnimationController _world;
+
+  @override
+  void initState() {
+    super.initState();
+    _world = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 18),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _world.dispose();
+    _scroll.dispose();
+    super.dispose();
+  }
+
+  List<JourneyPathItem> _buildItems(List<String> completed) {
+    final realmTrails = widget.allTrails
+        .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
+        .toList()
+      ..sort((a, b) {
+        final ca = TrailCategory.fromId(a.categoryId).order;
+        final cb = TrailCategory.fromId(b.categoryId).order;
+        if (ca != cb) return ca.compareTo(cb);
+        return a.order.compareTo(b.order);
+      });
+
+    var sawCurrent = false;
+    final items = <JourneyPathItem>[];
+
+    for (final trail in realmTrails) {
+      final unlocked =
+          TrailProgress.isTrailUnlocked(trail, widget.allTrails, completed);
+      final done = TrailProgress.isTrailCompleted(trail, completed);
+      final prog = TrailProgress.getProgress(trail, completed);
+      final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
+
+      final JourneyNodeState state;
+      if (!unlocked) {
+        state = JourneyNodeState.locked;
+      } else if (done) {
+        state = JourneyNodeState.completed;
+      } else if (!hasContent) {
+        state = JourneyNodeState.soon;
+      } else if (!sawCurrent) {
+        state = JourneyNodeState.current;
+        sawCurrent = true;
+      } else {
+        state = JourneyNodeState.upcoming;
+      }
+
+      items.add(
+        JourneyPathItem(
+          trail: trail,
+          state: state,
+          category: TrailCategory.fromId(trail.categoryId),
+          done: prog.done,
+          total: prog.total,
+        ),
+      );
+    }
+
+    return items;
+  }
+
+  void _jumpToCurrent() {
+    final ctx = _currentKey.currentContext;
+    if (ctx == null) return;
+    Scrollable.ensureVisible(
+      ctx,
+      alignment: 0.28,
+      duration: const Duration(milliseconds: 620),
+      curve: Curves.easeOutCubic,
+    );
+  }
+
+  void _onNodeTap(JourneyPathItem item) {
+    HapticFeedback.selectionClick();
+    final trail = item.trail;
+    final canOpen = item.state == JourneyNodeState.current ||
+        item.state == JourneyNodeState.completed ||
+        item.state == JourneyNodeState.upcoming;
+
+    if (canOpen && trail.missionSlugs.isNotEmpty && !trail.comingSoon) {
+      Navigator.of(context).push(
+        PageRouteBuilder(
+          transitionDuration: const Duration(milliseconds: 480),
+          pageBuilder: (_, animation, secondaryAnimation) {
+            return FadeTransition(
+              opacity: CurvedAnimation(parent: animation, curve: Curves.easeOut),
+              child: TrailMapScreen(slug: trail.slug),
+            );
+          },
+        ),
+      );
+      return;
+    }
+
+    _showSoonSheet(item);
+  }
+
+  void _showSoonSheet(JourneyPathItem item) {
+    final visuals = RealmVisuals.of(widget.realm);
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: const Color(0xFF121816),
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+      ),
+      builder: (ctx) {
+        return Padding(
+          padding: EdgeInsets.fromLTRB(
+            28,
+            18,
+            28,
+            28 + MediaQuery.of(ctx).padding.bottom,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 36,
+                height: 3,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.18),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: 28),
+              Text(
+                item.trail.title,
+                textAlign: TextAlign.center,
+                style: GoogleFonts.cormorantGaramond(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                item.trail.description,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  height: 1.5,
+                  color: Colors.white.withValues(alpha: 0.58),
+                ),
+              ),
+              const SizedBox(height: 24),
+              Text(
+                item.state == JourneyNodeState.locked
+                    ? 'Continue a jornada anterior para alcançar este horizonte.'
+                    : 'Esta trilha ainda está sendo escrita — em breve no caminho.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                  height: 1.4,
+                  color: visuals.accent.withValues(alpha: 0.9),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final visuals = RealmVisuals.of(widget.realm);
+    final items = _buildItems(progress.completedMissions);
+    final top = MediaQuery.of(context).padding.top;
+    final bottom = MediaQuery.of(context).padding.bottom;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!_jumped && _currentKey.currentContext != null) {
+        _jumped = true;
+        Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
+      }
+    });
+
+    final completedCount =
+        items.where((i) => i.state == JourneyNodeState.completed).length;
+
+    return Scaffold(
+      backgroundColor: visuals.sky.first,
+      body: Stack(
+        children: [
+          // Living world atmosphere
+          Positioned.fill(
+            child: AnimatedBuilder(
+              animation: _world,
+              builder: (context, _) {
+                return CustomPaint(
+                  painter: _RealmWorldPainter(
+                    sky: visuals.sky,
+                    accent: visuals.accent,
+                    glow: visuals.glow,
+                    phase: _world.value,
+                    seed: widget.realm.index * 91,
+                  ),
+                );
+              },
+            ),
+          ),
+
+          // Edge vignette
+          Positioned.fill(
+            child: IgnorePointer(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    center: const Alignment(0, -0.15),
+                    radius: 1.2,
+                    colors: [
+                      Colors.transparent,
+                      Colors.black.withValues(alpha: 0.55),
+                    ],
+                    stops: const [0.42, 1],
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          CustomScrollView(
+            controller: _scroll,
+            physics: const BouncingScrollPhysics(),
+            slivers: [
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(18, top + 6, 18, 0),
+                  child: Row(
+                    children: [
+                      _ChromeButton(
+                        icon: Icons.arrow_back_rounded,
+                        onTap: () => Navigator.pop(context),
+                      ),
+                      const Spacer(),
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 7,
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.black.withValues(alpha: 0.28),
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: 0.1),
+                          ),
+                        ),
+                        child: Text(
+                          '$completedCount · ${items.length}',
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            letterSpacing: 0.4,
+                            color: Colors.white.withValues(alpha: 0.65),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SliverToBoxAdapter(
+                child: _CinematicTitle(
+                  eyebrow: visuals.eyebrow,
+                  title: widget.realm.label,
+                  tagline: visuals.tagline,
+                  accent: visuals.accent,
+                ),
+              ),
+              SliverToBoxAdapter(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(16, 12, 20, 140 + bottom),
+                  child: JourneyPath(
+                    items: items,
+                    accent: visuals.accent,
+                    glow: visuals.glow,
+                    currentKey: _currentKey,
+                    onTap: _onNodeTap,
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+          // Soft jump control — not a loud FAB
+          Positioned(
+            right: 18,
+            bottom: 28 + bottom,
+            child: _JumpChip(
+              accent: visuals.accent,
+              onTap: _jumpToCurrent,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CinematicTitle extends StatelessWidget {
+  final String eyebrow;
+  final String title;
+  final String tagline;
+  final Color accent;
+
+  const _CinematicTitle({
+    required this.eyebrow,
+    required this.title,
+    required this.tagline,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(28, 36, 28, 28),
+      child: Column(
+        children: [
+          Text(
+            eyebrow,
+            style: TextStyle(
+              fontSize: 11,
+              fontWeight: FontWeight.w800,
+              letterSpacing: 3.4,
+              color: accent.withValues(alpha: 0.92),
+            ),
+          ),
+          const SizedBox(height: 14),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 40,
+              fontWeight: FontWeight.w600,
+              color: Colors.white,
+              height: 1.05,
+              letterSpacing: -0.5,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Container(
+            width: 56,
+            height: 1,
+            color: accent.withValues(alpha: 0.45),
+          ),
+          const SizedBox(height: 16),
+          Text(
+            tagline,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 15,
+              height: 1.45,
+              fontWeight: FontWeight.w400,
+              color: Colors.white.withValues(alpha: 0.52),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ChromeButton extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback onTap;
+
+  const _ChromeButton({required this.icon, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.black.withValues(alpha: 0.28),
+      shape: const CircleBorder(),
+      child: InkWell(
+        customBorder: const CircleBorder(),
+        onTap: onTap,
+        child: Container(
+          width: 44,
+          height: 44,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+          ),
+          child: Icon(icon, color: Colors.white.withValues(alpha: 0.9), size: 20),
+        ),
+      ),
+    );
+  }
+}
+
+class _JumpChip extends StatelessWidget {
+  final Color accent;
+  final VoidCallback onTap;
+
+  const _JumpChip({required this.accent, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(24),
+        child: Ink(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(24),
+            color: const Color(0xEE121816),
+            border: Border.all(color: accent.withValues(alpha: 0.35)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.4),
+                blurRadius: 20,
+                offset: const Offset(0, 8),
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.north_rounded, size: 16, color: accent),
+              const SizedBox(width: 8),
+              Text(
+                'Seu passo',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  letterSpacing: 0.3,
+                  color: Colors.white.withValues(alpha: 0.88),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Céu, estrelas, colinas e luz — atmosfera da peregrinação.
+class _RealmWorldPainter extends CustomPainter {
+  final List<Color> sky;
+  final Color accent;
+  final Color glow;
+  final double phase;
+  final int seed;
+
+  _RealmWorldPainter({
+    required this.sky,
+    required this.accent,
+    required this.glow,
+    required this.phase,
+    required this.seed,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = Offset.zero & size;
+
+    // Deep sky
+    canvas.drawRect(
+      rect,
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            sky[0],
+            sky.length > 1 ? sky[1] : sky[0],
+            sky.length > 2 ? sky[2] : sky.last,
+            Color.lerp(sky.last, Colors.black, 0.35)!,
+          ],
+          stops: const [0, 0.35, 0.7, 1],
+        ).createShader(rect),
+    );
+
+    final rng = math.Random(seed);
+
+    // Stars
+    for (var i = 0; i < 55; i++) {
+      final x = rng.nextDouble() * size.width;
+      final y = rng.nextDouble() * size.height * 0.55;
+      final twinkle = 0.35 + 0.65 * ((math.sin(phase * math.pi * 2 + i) + 1) / 2);
+      canvas.drawCircle(
+        Offset(x, y),
+        0.6 + rng.nextDouble() * 1.2,
+        Paint()..color = Colors.white.withValues(alpha: 0.15 + twinkle * 0.35),
+      );
+    }
+
+    // Soft god-ray / light shaft
+    final shaftX = size.width * (0.65 + 0.05 * math.sin(phase * math.pi * 2));
+    final shaft = Path()
+      ..moveTo(shaftX - 40, 0)
+      ..lineTo(shaftX + 40, 0)
+      ..lineTo(shaftX + 120, size.height * 0.7)
+      ..lineTo(shaftX - 80, size.height * 0.7)
+      ..close();
+    canvas.drawPath(
+      shaft,
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            glow.withValues(alpha: 0.07),
+            accent.withValues(alpha: 0.02),
+            Colors.transparent,
+          ],
+        ).createShader(Rect.fromLTWH(0, 0, size.width, size.height * 0.7)),
+    );
+
+    // Ambient blooms
+    _bloom(canvas, Offset(size.width * 0.85, size.height * 0.12), size.width * 0.45,
+        glow.withValues(alpha: 0.16));
+    _bloom(canvas, Offset(size.width * 0.1, size.height * 0.35), size.width * 0.35,
+        accent.withValues(alpha: 0.08));
+
+    // Distant mountain layers
+    _hills(
+      canvas,
+      size,
+      baseY: size.height * 0.62,
+      amp: size.height * 0.08,
+      color: Colors.black.withValues(alpha: 0.18),
+      offset: phase * 12,
+      seed: seed + 1,
+    );
+    _hills(
+      canvas,
+      size,
+      baseY: size.height * 0.72,
+      amp: size.height * 0.11,
+      color: Colors.black.withValues(alpha: 0.28),
+      offset: phase * -8,
+      seed: seed + 2,
+    );
+    _hills(
+      canvas,
+      size,
+      baseY: size.height * 0.84,
+      amp: size.height * 0.1,
+      color: Color.lerp(sky.last, Colors.black, 0.55)!.withValues(alpha: 0.85),
+      offset: 0,
+      seed: seed + 3,
+    );
+
+    // Warm ground haze
+    canvas.drawRect(
+      Rect.fromLTWH(0, size.height * 0.75, size.width, size.height * 0.25),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.transparent,
+            accent.withValues(alpha: 0.06),
+            Colors.black.withValues(alpha: 0.35),
+          ],
+        ).createShader(
+          Rect.fromLTWH(0, size.height * 0.75, size.width, size.height * 0.25),
+        ),
+    );
+  }
+
+  void _bloom(Canvas canvas, Offset c, double r, Color color) {
+    canvas.drawCircle(
+      c,
+      r,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [color, Colors.transparent],
+        ).createShader(Rect.fromCircle(center: c, radius: r)),
+    );
+  }
+
+  void _hills(
+    Canvas canvas,
+    Size size, {
+    required double baseY,
+    required double amp,
+    required Color color,
+    required double offset,
+    required int seed,
+  }) {
+    final rng = math.Random(seed);
+    final path = Path()..moveTo(-20, size.height);
+    path.lineTo(-20, baseY);
+    var x = -20.0;
+    while (x < size.width + 40) {
+      final peak = baseY - amp * (0.4 + rng.nextDouble() * 0.8);
+      final mid = x + 40 + rng.nextDouble() * 50;
+      path.quadraticBezierTo(mid + offset * 0.3, peak, x + 90, baseY);
+      x += 90;
+    }
+    path.lineTo(size.width + 20, size.height);
+    path.close();
+    canvas.drawPath(path, Paint()..color = color);
+  }
+
+  @override
+  bool shouldRepaint(covariant _RealmWorldPainter old) =>
+      old.phase != phase || old.accent != accent;
+}

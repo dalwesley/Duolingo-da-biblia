@@ -2,7 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Símbolos cinematográficos — selos iluminados, sem emoji e sem ícone de sistema.
+/// Símbolos da lição — ícones tipográficos, sem emoji.
 enum CinematicGlyph {
   cosmos,
   sun,
@@ -77,17 +77,28 @@ class CinematicGlyphResolver {
       'Depois do Éden' => CinematicGlyph.mountain,
       'Opressão no Egito' => CinematicGlyph.chain,
       'A Libertação' => CinematicGlyph.sea,
+      'O Início' => CinematicGlyph.dove,
+      'Ensino e Sinais' => CinematicGlyph.scroll,
+      'Cruz e Ressurreição' => CinematicGlyph.heart,
+      'A Igreja nasce' => CinematicGlyph.flame,
+      'Esperança final' => CinematicGlyph.crown,
       _ => CinematicGlyph.scroll,
     };
   }
 
   static CinematicGlyph forTrail(String slug) {
     return switch (slug) {
-      'genesis-1-11' => CinematicGlyph.book,
+      'genesis-1-11' || 'genesis-12-50' => CinematicGlyph.book,
       'exodo' => CinematicGlyph.mountain,
       'evangelhos' => CinematicGlyph.heart,
       'atos' => CinematicGlyph.flame,
       'apocalipse' => CinematicGlyph.crown,
+      'salmos' || 'oracao' => CinematicGlyph.dove,
+      'proverbios' => CinematicGlyph.gem,
+      'profetas' => CinematicGlyph.spark,
+      'cartas-paulo' => CinematicGlyph.scroll,
+      'vida-crista' => CinematicGlyph.seed,
+      'historia-igreja' => CinematicGlyph.tower,
       _ => CinematicGlyph.scroll,
     };
   }
@@ -106,6 +117,10 @@ class CinematicGlyphResolver {
       'mission' => CinematicGlyph.book,
       'accuracy' => CinematicGlyph.target,
       'perfect' => CinematicGlyph.crown,
+      'read' => CinematicGlyph.scroll,
+      'bookmark' => CinematicGlyph.star,
+      'seasonal' => CinematicGlyph.calendar,
+      'memory' => CinematicGlyph.scroll,
       'w_missions' => CinematicGlyph.calendar,
       'w_days' => CinematicGlyph.flame,
       'w_perfect' => CinematicGlyph.gem,
@@ -115,17 +130,17 @@ class CinematicGlyphResolver {
 
   static Color paletteFor(CinematicGlyph glyph, {Color? accent}) {
     return switch (glyph) {
-      CinematicGlyph.sun || CinematicGlyph.spark || CinematicGlyph.star => const Color(0xFFFFD56A),
-      CinematicGlyph.cosmos || CinematicGlyph.depths => const Color(0xFF9B8CFF),
-      CinematicGlyph.tree || CinematicGlyph.seed => const Color(0xFF7DCEA0),
-      CinematicGlyph.flood || CinematicGlyph.sea || CinematicGlyph.tears => const Color(0xFF74B9FF),
-      CinematicGlyph.flame || CinematicGlyph.fall => const Color(0xFFFF8C42),
-      CinematicGlyph.heart || CinematicGlyph.dove => const Color(0xFFFFAB91),
+      CinematicGlyph.sun || CinematicGlyph.spark || CinematicGlyph.star => AppColors.accent,
+      CinematicGlyph.cosmos || CinematicGlyph.depths => AppColors.slate,
+      CinematicGlyph.tree || CinematicGlyph.seed => AppColors.cedar,
+      CinematicGlyph.flood || CinematicGlyph.sea || CinematicGlyph.tears => AppColors.sky,
+      CinematicGlyph.flame || CinematicGlyph.fall => AppColors.ember,
+      CinematicGlyph.heart || CinematicGlyph.dove => AppColors.clay,
       CinematicGlyph.crown || CinematicGlyph.gem || CinematicGlyph.lamp => AppColors.accent,
-      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => const Color(0xFFD4C4A8),
-      CinematicGlyph.scales || CinematicGlyph.path || CinematicGlyph.target => const Color(0xFFE8B84B),
-      CinematicGlyph.humanity => const Color(0xFFF5D78E),
-      CinematicGlyph.echo => const Color(0xFFFF8C8C),
+      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => AppColors.sand,
+      CinematicGlyph.scales || CinematicGlyph.path || CinematicGlyph.target => AppColors.accent,
+      CinematicGlyph.humanity => AppColors.accentSoft,
+      CinematicGlyph.echo => AppColors.clay,
       CinematicGlyph.book || CinematicGlyph.scroll || CinematicGlyph.calendar || CinematicGlyph.check =>
         accent ?? AppColors.primaryLight,
     };
@@ -147,7 +162,7 @@ class CinematicIcon extends StatelessWidget {
     this.size = 48,
     this.accent,
     this.framed = true,
-    this.glowing = true,
+    this.glowing = false,
     this.animate = false,
   });
 
@@ -158,7 +173,7 @@ class CinematicIcon extends StatelessWidget {
     double size = 48,
     Color? accent,
     bool framed = true,
-    bool glowing = true,
+    bool glowing = false,
     bool animate = false,
   }) {
     return CinematicIcon(
@@ -198,8 +213,8 @@ class CinematicIcon extends StatelessWidget {
     }
 
     final rim = Color.lerp(color, Colors.white, 0.45)!;
-    final deep = Color.lerp(color, const Color(0xFF0A0714), 0.8)!;
-    final mid = Color.lerp(color, const Color(0xFF140F2A), 0.5)!;
+    final deep = Color.lerp(color, const Color(0xFF0A0E0C), 0.8)!;
+    final mid = Color.lerp(color, const Color(0xFF1A221E), 0.5)!;
 
     final medallion = Container(
       width: size,
@@ -217,17 +232,17 @@ class CinematicIcon extends StatelessWidget {
         ),
         boxShadow: glowing
             ? [
-                BoxShadow(color: color.withValues(alpha: 0.4), blurRadius: size * 0.34, offset: Offset(0, size * 0.06)),
-                BoxShadow(color: Colors.black.withValues(alpha: 0.4), blurRadius: size * 0.2, offset: Offset(0, size * 0.08)),
+                BoxShadow(color: color.withValues(alpha: 0.22), blurRadius: size * 0.24, offset: Offset(0, size * 0.05)),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.3), blurRadius: size * 0.16, offset: Offset(0, size * 0.06)),
               ]
             : [
-                BoxShadow(color: Colors.black.withValues(alpha: 0.35), blurRadius: size * 0.16, offset: Offset(0, size * 0.05)),
+                BoxShadow(color: Colors.black.withValues(alpha: 0.28), blurRadius: size * 0.12, offset: Offset(0, size * 0.04)),
               ],
       ),
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Luz interna — o símbolo parece aceso dentro do relicário.
+          // Luz interna suave
           Container(
             width: size * 0.8,
             height: size * 0.8,
@@ -246,7 +261,7 @@ class CinematicIcon extends StatelessWidget {
           // Anel orbital fino na cor do selo.
           CustomPaint(
             size: Size.square(size * 0.84),
-            painter: _OrbitRingPainter(color: rim.withValues(alpha: 0.3)),
+            painter: _OrbitRingPainter(color: rim.withValues(alpha: 0.18)),
           ),
           child,
           // Reflexo de lente sutil no topo.
@@ -693,76 +708,78 @@ class _GlyphPainter extends CustomPainter {
   }
 
   void _paintBook(Canvas canvas, Offset c, double s) {
-    // Livro aberto — páginas em curva.
+    // Livro aberto — páginas em curva, sem raios.
     final leftPage = Path()
-      ..moveTo(c.dx, c.dy - s * 0.18)
-      ..quadraticBezierTo(c.dx - s * 0.18, c.dy - s * 0.3, c.dx - s * 0.36, c.dy - s * 0.22)
-      ..lineTo(c.dx - s * 0.36, c.dy + s * 0.18)
-      ..quadraticBezierTo(c.dx - s * 0.18, c.dy + s * 0.1, c.dx, c.dy + s * 0.22)
+      ..moveTo(c.dx, c.dy - s * 0.2)
+      ..quadraticBezierTo(c.dx - s * 0.2, c.dy - s * 0.32, c.dx - s * 0.38, c.dy - s * 0.24)
+      ..lineTo(c.dx - s * 0.38, c.dy + s * 0.2)
+      ..quadraticBezierTo(c.dx - s * 0.2, c.dy + s * 0.12, c.dx, c.dy + s * 0.24)
       ..close();
     final rightPage = Path()
-      ..moveTo(c.dx, c.dy - s * 0.18)
-      ..quadraticBezierTo(c.dx + s * 0.18, c.dy - s * 0.3, c.dx + s * 0.36, c.dy - s * 0.22)
-      ..lineTo(c.dx + s * 0.36, c.dy + s * 0.18)
-      ..quadraticBezierTo(c.dx + s * 0.18, c.dy + s * 0.1, c.dx, c.dy + s * 0.22)
+      ..moveTo(c.dx, c.dy - s * 0.2)
+      ..quadraticBezierTo(c.dx + s * 0.2, c.dy - s * 0.32, c.dx + s * 0.38, c.dy - s * 0.24)
+      ..lineTo(c.dx + s * 0.38, c.dy + s * 0.2)
+      ..quadraticBezierTo(c.dx + s * 0.2, c.dy + s * 0.12, c.dx, c.dy + s * 0.24)
       ..close();
     canvas.drawPath(leftPage, _fill);
     canvas.drawPath(rightPage, _soft);
-    // Lombada iluminada.
+    // Contorno fino das páginas
+    final edge = Paint()
+      ..color = Colors.white.withValues(alpha: 0.22)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = s * 0.018;
+    canvas.drawPath(leftPage, edge);
+    canvas.drawPath(rightPage, edge);
+    // Lombada
     canvas.drawLine(
-      c + Offset(0, -s * 0.18),
-      c + Offset(0, s * 0.22),
+      c + Offset(0, -s * 0.2),
+      c + Offset(0, s * 0.24),
       Paint()
-        ..color = Colors.white.withValues(alpha: 0.5)
-        ..strokeWidth = s * 0.03
+        ..color = Colors.white.withValues(alpha: 0.55)
+        ..strokeWidth = s * 0.028
         ..strokeCap = StrokeCap.round,
     );
-    // Linhas de texto.
-    for (var i = 0; i < 2; i++) {
-      final y = c.dy - s * 0.08 + i * s * 0.1;
-      canvas.drawLine(
-        Offset(c.dx - s * 0.28, y),
-        Offset(c.dx - s * 0.08, y + s * 0.02),
-        Paint()
-          ..color = Colors.black.withValues(alpha: 0.25)
-          ..strokeWidth = s * 0.022
-          ..strokeCap = StrokeCap.round,
-      );
-      canvas.drawLine(
-        Offset(c.dx + s * 0.08, y + s * 0.02),
-        Offset(c.dx + s * 0.28, y),
-        Paint()
-          ..color = Colors.black.withValues(alpha: 0.25)
-          ..strokeWidth = s * 0.022
-          ..strokeCap = StrokeCap.round,
-      );
+    // Linhas de texto discretas
+    for (var i = 0; i < 3; i++) {
+      final y = c.dy - s * 0.08 + i * s * 0.08;
+      final ink = Paint()
+        ..color = Colors.black.withValues(alpha: 0.22)
+        ..strokeWidth = s * 0.018
+        ..strokeCap = StrokeCap.round;
+      canvas.drawLine(Offset(c.dx - s * 0.3, y), Offset(c.dx - s * 0.08, y + s * 0.015), ink);
+      canvas.drawLine(Offset(c.dx + s * 0.08, y + s * 0.015), Offset(c.dx + s * 0.3, y), ink);
     }
-    // Raio de luz saindo do livro.
-    canvas.drawLine(c + Offset(0, -s * 0.2), c + Offset(0, -s * 0.38), _stroke(s * 0.028, 0.7));
-    canvas.drawLine(c + Offset(-s * 0.1, -s * 0.2), c + Offset(-s * 0.18, -s * 0.34), _stroke(s * 0.022, 0.45));
-    canvas.drawLine(c + Offset(s * 0.1, -s * 0.2), c + Offset(s * 0.18, -s * 0.34), _stroke(s * 0.022, 0.45));
   }
 
   void _paintSeed(Canvas canvas, Offset c, double s) {
-    // Solo.
-    canvas.drawLine(c + Offset(-s * 0.28, s * 0.24), c + Offset(s * 0.28, s * 0.24), _stroke(s * 0.04, 0.6));
-    // Caule.
-    canvas.drawLine(c + Offset(0, s * 0.24), c + Offset(0, -s * 0.05), _stroke(s * 0.04));
-    // Folhas.
+    // Solo em arco
+    canvas.drawArc(
+      Rect.fromCenter(center: c + Offset(0, s * 0.22), width: s * 0.62, height: s * 0.22),
+      math.pi * 1.05,
+      math.pi * 0.9,
+      false,
+      _stroke(s * 0.035, 0.55),
+    );
+    // Caule
+    canvas.drawLine(
+      c + Offset(0, s * 0.2),
+      c + Offset(0, -s * 0.02),
+      _stroke(s * 0.038),
+    );
+    // Folhas
     final left = Path()
-      ..moveTo(c.dx, c.dy)
-      ..quadraticBezierTo(c.dx - s * 0.28, c.dy - s * 0.05, c.dx - s * 0.18, c.dy - s * 0.28)
-      ..quadraticBezierTo(c.dx - s * 0.02, c.dy - s * 0.12, c.dx, c.dy)
+      ..moveTo(c.dx, c.dy + s * 0.02)
+      ..quadraticBezierTo(c.dx - s * 0.3, c.dy - s * 0.02, c.dx - s * 0.2, c.dy - s * 0.3)
+      ..quadraticBezierTo(c.dx - s * 0.02, c.dy - s * 0.1, c.dx, c.dy + s * 0.02)
       ..close();
     final right = Path()
-      ..moveTo(c.dx, c.dy)
-      ..quadraticBezierTo(c.dx + s * 0.28, c.dy - s * 0.05, c.dx + s * 0.18, c.dy - s * 0.28)
-      ..quadraticBezierTo(c.dx + s * 0.02, c.dy - s * 0.12, c.dx, c.dy)
+      ..moveTo(c.dx, c.dy + s * 0.02)
+      ..quadraticBezierTo(c.dx + s * 0.3, c.dy - s * 0.02, c.dx + s * 0.2, c.dy - s * 0.3)
+      ..quadraticBezierTo(c.dx + s * 0.02, c.dy - s * 0.1, c.dx, c.dy + s * 0.02)
       ..close();
     canvas.drawPath(left, _fill);
     canvas.drawPath(right, _soft);
-    // Broto de luz.
-    canvas.drawCircle(c + Offset(0, -s * 0.05), s * 0.035, _highlight);
+    canvas.drawCircle(c + Offset(0, -s * 0.02), s * 0.04, _highlight);
   }
 
   void _paintPath(Canvas canvas, Offset c, double s) {
@@ -771,17 +788,33 @@ class _GlyphPainter extends CustomPainter {
       ..quadraticBezierTo(c.dx - s * 0.1, c.dy + s * 0.05, c.dx, c.dy - s * 0.05)
       ..quadraticBezierTo(c.dx + s * 0.12, c.dy - s * 0.18, c.dx + s * 0.08, c.dy - s * 0.32);
     canvas.drawPath(path, _stroke(s * 0.08));
-    // Marcos no caminho.
     for (final o in [Offset(-0.18, 0.18), Offset(0.0, -0.02), Offset(0.1, -0.22)]) {
       canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.05, _highlight);
     }
   }
 
   void _paintDepths(Canvas canvas, Offset c, double s) {
-    for (var i = 3; i >= 1; i--) {
-      canvas.drawCircle(c, s * (0.12 * i), _stroke(s * 0.045, 0.3 + i * 0.2));
+    // Arcos de portal / arquitetura — não alvo concêntrico
+    for (var i = 0; i < 3; i++) {
+      final inset = i * s * 0.1;
+      final rect = Rect.fromCenter(
+        center: c + Offset(0, s * 0.08),
+        width: s * 0.56 - inset,
+        height: s * 0.62 - inset,
+      );
+      canvas.drawArc(
+        rect,
+        math.pi * 1.05,
+        math.pi * 0.9,
+        false,
+        _stroke(s * 0.04, 0.75 - i * 0.18),
+      );
     }
-    canvas.drawCircle(c, s * 0.07, _fill);
+    canvas.drawLine(
+      c + Offset(0, -s * 0.18),
+      c + Offset(0, s * 0.28),
+      _stroke(s * 0.03, 0.45),
+    );
   }
 
   void _paintSpark(Canvas canvas, Offset c, double s) {
@@ -800,13 +833,41 @@ class _GlyphPainter extends CustomPainter {
 
   void _paintHeart(Canvas canvas, Offset c, double s) {
     final path = Path()
-      ..moveTo(c.dx, c.dy + s * 0.3)
-      ..cubicTo(c.dx - s * 0.42, c.dy + s * 0.02, c.dx - s * 0.38, c.dy - s * 0.28, c.dx, c.dy - s * 0.12)
-      ..cubicTo(c.dx + s * 0.38, c.dy - s * 0.28, c.dx + s * 0.42, c.dy + s * 0.02, c.dx, c.dy + s * 0.3)
+      ..moveTo(c.dx, c.dy + s * 0.32)
+      ..cubicTo(
+        c.dx - s * 0.44,
+        c.dy + s * 0.04,
+        c.dx - s * 0.4,
+        c.dy - s * 0.3,
+        c.dx,
+        c.dy - s * 0.1,
+      )
+      ..cubicTo(
+        c.dx + s * 0.4,
+        c.dy - s * 0.3,
+        c.dx + s * 0.44,
+        c.dy + s * 0.04,
+        c.dx,
+        c.dy + s * 0.32,
+      )
       ..close();
-    canvas.drawPath(path, _glow);
     canvas.drawPath(path, _fill);
-    canvas.drawCircle(c + Offset(-s * 0.12, -s * 0.1), s * 0.05, _highlight);
+    // Contorno e brilho interno (sem aura exagerada)
+    canvas.drawPath(
+      path,
+      Paint()
+        ..color = Colors.white.withValues(alpha: 0.2)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = s * 0.02,
+    );
+    canvas.drawOval(
+      Rect.fromCenter(
+        center: c + Offset(-s * 0.12, -s * 0.08),
+        width: s * 0.14,
+        height: s * 0.08,
+      ),
+      Paint()..color = Colors.white.withValues(alpha: 0.28),
+    );
   }
 
   void _paintMountain(Canvas canvas, Offset c, double s) {

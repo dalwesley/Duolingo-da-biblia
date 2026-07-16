@@ -3,9 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/splash_screen.dart';
+import 'services/backend_service.dart';
+import 'services/companion_service.dart';
 import 'services/league_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
+import 'services/room_service.dart';
 import 'services/sound_service.dart';
 import 'services/sync_service.dart';
 import 'theme/app_theme.dart';
@@ -30,6 +33,27 @@ class TrilhaApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ProgressService()..load()),
         ChangeNotifierProvider(create: (_) => SyncService()..init()),
         ChangeNotifierProvider(create: (_) => LeagueService()..init()),
+        ChangeNotifierProvider(create: (_) => BackendService()..init()),
+        ChangeNotifierProxyProvider<BackendService, RoomService>(
+          create: (ctx) => RoomService(ctx.read<BackendService>())..init(),
+          update: (_, backend, previous) {
+            final room = previous ?? RoomService(backend);
+            if (backend.isActive && !room.hasRoom) {
+              room.syncIfNeeded();
+            }
+            return room;
+          },
+        ),
+        ChangeNotifierProxyProvider<BackendService, CompanionService>(
+          create: (ctx) => CompanionService(ctx.read<BackendService>())..init(),
+          update: (_, backend, previous) {
+            final companions = previous ?? CompanionService(backend);
+            if (backend.isActive) {
+              companions.refresh();
+            }
+            return companions;
+          },
+        ),
       ],
       child: Consumer<ProgressService>(
         builder: (context, progress, _) {

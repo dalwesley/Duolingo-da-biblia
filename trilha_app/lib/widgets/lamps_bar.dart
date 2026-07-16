@@ -2,7 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Lâmpadas = vidas (Sl 119:105) — selos de luz, não ícones de sistema.
+/// Lâmpadas = vidas (Sl 119:105).
 class LampsBar extends StatelessWidget {
   final int current;
   final int max;

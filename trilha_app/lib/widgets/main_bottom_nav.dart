@@ -22,38 +22,27 @@ class MainBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const tabs = [
-      (glyph: CinematicGlyph.spark, label: 'Início'),
-      (glyph: CinematicGlyph.path, label: 'Mundos'),
-      (glyph: CinematicGlyph.crown, label: 'Liga'),
-      (glyph: CinematicGlyph.lamp, label: 'Ajustes'),
+      (glyph: CinematicGlyph.spark, icon: null, label: 'Caminhada'),
+      (glyph: CinematicGlyph.book, icon: null, label: 'Bíblia'),
+      (glyph: CinematicGlyph.crown, icon: null, label: 'Juntos'),
+      (glyph: null, icon: Icons.settings_rounded, label: 'Config'),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
     final style = appearance ?? Appearance.of(context);
-    final onDark = immersive ? style.onDark : dark;
 
     return ColoredBox(
       color: Colors.transparent,
       child: Padding(
         padding: EdgeInsets.fromLTRB(20, 0, 20, bottomInset > 0 ? bottomInset + 8 : 16),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           child: Container(
               height: 68,
               decoration: BoxDecoration(
-                color: immersive
-                    ? style.navBarFill
-                    : (onDark
-                        ? const Color(0xFF15102A).withValues(alpha: 0.92)
-                        : Colors.white.withValues(alpha: 0.95)),
-                borderRadius: BorderRadius.circular(28),
-                border: Border.all(
-                  color: immersive
-                      ? style.navBarBorder
-                      : (onDark
-                          ? Colors.white.withValues(alpha: 0.18)
-                          : Colors.black.withValues(alpha: 0.06)),
-                ),
+                color: style.navBarFill,
+                borderRadius: BorderRadius.circular(AppRadii.xl),
+                border: Border.all(color: style.navBarBorder),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withValues(alpha: 0.35),
@@ -66,11 +55,8 @@ class MainBottomNav extends StatelessWidget {
                 children: List.generate(tabs.length, (i) {
                   final active = currentIndex == i;
                   final tab = tabs[i];
-                  final activeColor =
-                      onDark ? const Color(0xFF3D2E00) : Colors.white;
-                  final idleColor = onDark
-                      ? Colors.white.withValues(alpha: 0.5)
-                      : AppColors.textMuted;
+                  final activeColor = AppColors.inkOnAccent;
+                  final idleColor = Colors.white.withValues(alpha: 0.5);
 
                   return Expanded(
                     child: GestureDetector(
@@ -82,34 +68,38 @@ class MainBottomNav extends StatelessWidget {
                         margin: const EdgeInsets.all(5),
                         decoration: active
                             ? BoxDecoration(
-                                gradient: onDark
-                                    ? AppGradients.gold
-                                    : AppGradients.hero,
+                                gradient: AppGradients.gold,
                                 borderRadius: BorderRadius.circular(22),
-                                boxShadow: onDark
-                                    ? [
-                                        BoxShadow(
-                                          color: AppColors.accent
-                                              .withValues(alpha: 0.4),
-                                          blurRadius: 14,
-                                        ),
-                                      ]
-                                    : null,
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: AppColors.accent.withValues(alpha: 0.22),
+                                    blurRadius: 10,
+                                  ),
+                                ],
                               )
                             : null,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            CinematicIcon(
-                              glyph: tab.glyph,
-                              size: 26,
-                              accent: active ? activeColor : idleColor,
-                              glowing: active,
-                              framed: false,
-                            ),
+                            if (tab.icon != null)
+                              Icon(
+                                tab.icon,
+                                size: 22,
+                                color: active ? activeColor : idleColor,
+                              )
+                            else
+                              CinematicIcon(
+                                glyph: tab.glyph!,
+                                size: 26,
+                                accent: active ? activeColor : idleColor,
+                                glowing: active,
+                                framed: false,
+                              ),
                             const SizedBox(height: 2),
                             Text(
                               tab.label,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w800,

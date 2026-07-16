@@ -28,17 +28,17 @@ class DayPhaseHelper {
     return p == DayPhase.evening || p == DayPhase.night;
   }
 
-  /// Gradientes por fase — dia claro e vivo, noite profunda.
+  /// Gradientes por fase — dia vivo, mas escuro o bastante para texto branco.
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF3D2E7A),
-            Color(0xFF6B5CA8),
-            Color(0xFF9B7CC8),
-            Color(0xFFCF9A6E),
+            Color(0xFF3A5566),
+            Color(0xFF4A6B62),
+            Color(0xFF5A6550),
+            Color(0xFF4F4638),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -46,10 +46,10 @@ class DayPhaseHelper {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color(0xFF4A3F8C),
-            Color(0xFF6C5CE7),
-            Color(0xFF8B7CF6),
-            Color(0xFF6C5CE7),
+            Color(0xFF2F5548),
+            Color(0xFF3F6B58),
+            Color(0xFF5A7558),
+            Color(0xFF4A4838),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -57,10 +57,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF0A0814),
-            Color(0xFF1A1235),
-            Color(0xFF2A1848),
-            Color(0xFF3D2040),
+            Color(0xFF1A2430),
+            Color(0xFF2A3840),
+            Color(0xFF4A4035),
+            Color(0xFF6B4A30),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -68,10 +68,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF05040C),
-            Color(0xFF0D0B1A),
-            Color(0xFF15102A),
-            Color(0xFF1A1430),
+            Color(0xFF0C100E),
+            Color(0xFF121816),
+            Color(0xFF1A221E),
+            Color(0xFF1E2A24),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -80,10 +80,10 @@ class DayPhaseHelper {
 
   static Color scaffoldBackground([DayPhase? phase]) {
     return switch (phase ?? current()) {
-      DayPhase.morning => const Color(0xFF3D2E7A),
-      DayPhase.afternoon => const Color(0xFF4A3F8C),
-      DayPhase.evening => const Color(0xFF0A0814),
-      DayPhase.night => const Color(0xFF05040C),
+      DayPhase.morning => const Color(0xFF3A5566),
+      DayPhase.afternoon => const Color(0xFF2F5548),
+      DayPhase.evening => const Color(0xFF1A2430),
+      DayPhase.night => const Color(0xFF0C100E),
     };
   }
 }
