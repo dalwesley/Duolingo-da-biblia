@@ -8,6 +8,7 @@ import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
@@ -15,8 +16,8 @@ import '../utils/genesis_theme.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
-import '../widgets/lamps_bar.dart';
 import '../widgets/study_panel.dart';
+import '../widgets/top_bar.dart';
 import '../screens/celebration_screen.dart';
 import '../screens/bible_screen.dart';
 import '../screens/difficulty_picker_screen.dart';
@@ -75,10 +76,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   void initState() {
     super.initState();
     _revealAnim = AnimationController(vsync: this, duration: const Duration(milliseconds: 850));
-    _revealAnim.addListener(() => setState(() {}));
     _questionEnter = AnimationController(vsync: this, duration: const Duration(milliseconds: 520));
     _impactFlash = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
-    _impactFlash.addListener(() => setState(() {}));
     _load();
   }
 
@@ -91,6 +90,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   }
 
   Future<void> _load() async {
+    await ContentCatalogService.instance.ensureLoaded();
     if (widget.missionOverride != null) {
       final override = widget.missionOverride!;
       if (!mounted) return;
@@ -431,10 +431,13 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
           fit: StackFit.expand,
           children: [
             if (_cinematic)
-              CinematicBackdrop(
-                world: _displayWorld,
-                revealing: _revealing,
-                revealProgress: _revealAnim.value,
+              AnimatedBuilder(
+                animation: _revealAnim,
+                builder: (context, _) => CinematicBackdrop(
+                  world: _displayWorld,
+                  revealing: _revealing,
+                  revealProgress: _revealAnim.value,
+                ),
               )
             else
               DecoratedBox(decoration: BoxDecoration(gradient: _theme.sky)),
@@ -463,124 +466,182 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
               ),
             ),
             SafeArea(
-              child: Column(
-                children: [
-                  _LessonHeader(
-                    onClose: () => Navigator.pop(context),
-                    progress: progress,
-                    current: _phase == _Phase.quiz ? _questionIndex + 1 : 0,
-                    total: total,
-                    accent: accent,
-                    difficultyLabel: _difficultyMeta?.label,
-                    lamps: _phase == _Phase.quiz ? _lamps : null,
-                    phaseLabel: switch (_phase) {
-                      _Phase.study => 'Estudo',
-                      _Phase.reflection => 'Reflexão',
-                      _Phase.intro => null,
-                      _Phase.quiz => null,
-                    },
-                  ),
-                  Expanded(
-                    child: AnimatedSwitcher(
-                      duration: const Duration(milliseconds: 420),
-                      switchInCurve: Curves.easeOutCubic,
-                      switchOutCurve: Curves.easeInCubic,
-                      transitionBuilder: (child, anim) {
-                        final offset = Tween<Offset>(begin: const Offset(0.06, 0.04), end: Offset.zero).animate(anim);
-                        return FadeTransition(
-                          opacity: anim,
-                          child: SlideTransition(position: offset, child: child),
-                        );
-                      },
-                      child: switch (_phase) {
-                        _Phase.intro => _IntroPanel(
-                            key: const ValueKey('intro'),
-                            mission: mission,
-                            theme: _theme,
-                            difficultyMeta: _difficultyMeta,
-                            hasStudy: _hasStudy,
-                            onStart: _startStudyOrQuiz,
-                          ),
-                        _Phase.study when study != null => StudyPanel(
-                            key: const ValueKey('study'),
-                            study: study,
-                            accent: accent,
-                            priorReflection: priorReflection,
-                            onContinue: _startQuiz,
-                          ),
-                        _Phase.reflection when study != null => ReflectionPanel(
-                            key: const ValueKey('reflection'),
-                            study: study,
-                            accent: accent,
-                            correct: _correctCount,
-                            total: total,
-                            onFinish: _completeReflection,
-                          ),
-                        _ => const SizedBox.shrink(key: ValueKey('quiz-space')),
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            if (_phase == _Phase.quiz)
-              Positioned(
-                left: 0,
-                right: 0,
-                top: MediaQuery.of(context).padding.top + 64,
-                bottom: 0,
-                child: AnimatedSwitcher(
-                  duration: const Duration(milliseconds: 420),
-                  switchInCurve: Curves.easeOutCubic,
-                  transitionBuilder: (child, anim) {
-                    return FadeTransition(
-                      opacity: anim,
-                      child: SlideTransition(
-                        position: Tween<Offset>(begin: const Offset(0, 0.04), end: Offset.zero).animate(anim),
-                        child: child,
-                      ),
-                    );
-                  },
-                  child: CinematicLessonPanel(
-                    key: ValueKey('q-$_questionIndex-${_pickedIds.length}'),
-                    narrative: _beat.narrative,
-                    question: _question,
-                    selected: _selected,
-                    isCorrect: _isCorrect,
-                    showFeedback: _showFeedback,
-                    onSelect: _select,
-                    accent: accent,
-                    encouragement: null,
-                    hintUsed: _hintUsed,
-                    eliminatedIds: _eliminated,
-                    onHint: _useHint,
-                    outOfLamps: _outOfLamps,
-                    verseSnippet: () {
-                      final v = MissionStudy.verseText(_question.verseRef);
-                      if (v == null) return null;
-                      return v.length > 72 ? '${v.substring(0, 70)}…' : v;
-                    }(),
-                  ),
+              bottom: false,
+              child: CustomScrollView(
+                physics: const BouncingScrollPhysics(
+                  parent: AlwaysScrollableScrollPhysics(),
                 ),
-              ),
-            if (_phase == _Phase.quiz && _impactFlash.value > 0 && _impactFlash.value < 1)
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: RadialGradient(
-                        center: const Alignment(0, -0.2),
-                        radius: 1.1,
-                        colors: [
-                          (_impactPositive ? accent : AppColors.error).withValues(
-                            alpha: (1 - _impactFlash.value) * (_impactPositive ? 0.28 : 0.22),
+                slivers: [
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(
+                        AppSpace.screen,
+                        AppSpace.sm,
+                        AppSpace.screen,
+                        0,
+                      ),
+                      child: Column(
+                        children: [
+                          TopBar(
+                            inline: true,
+                            immersive: true,
+                            dark: true,
+                            title: switch (_phase) {
+                              _Phase.intro => mission.title,
+                              _Phase.study => 'Estudo',
+                              _Phase.quiz => _difficultyMeta != null
+                                  ? 'Cena ${_questionIndex + 1}/$total'
+                                  : 'Cena ${_questionIndex + 1} de $total',
+                              _Phase.reflection => 'Reflexão',
+                            },
+                            subtitle: switch (_phase) {
+                              _Phase.intro => _difficultyMeta?.label ??
+                                  (mission.isBoss ? 'Desafio' : 'Missão'),
+                              _Phase.study => mission.title,
+                              _Phase.quiz =>
+                                _difficultyMeta?.label ?? mission.title,
+                              _Phase.reflection => mission.title,
+                            },
+                            onBack: () => Navigator.pop(context),
+                            leadingGlyph: CinematicGlyphResolver.forMission(
+                              mission.title,
+                              isBoss: mission.isBoss,
+                            ),
                           ),
-                          Colors.transparent,
+                          const SizedBox(height: 10),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(999),
+                            child: SizedBox(
+                              height: 4,
+                              child: Stack(
+                                fit: StackFit.expand,
+                                children: [
+                                  ColoredBox(
+                                    color: Colors.white.withValues(alpha: 0.1),
+                                  ),
+                                  FractionallySizedBox(
+                                    alignment: Alignment.centerLeft,
+                                    widthFactor: progress.clamp(0.0, 1.0),
+                                    child: DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Color.lerp(
+                                              accent,
+                                              Colors.white,
+                                              0.25,
+                                            )!,
+                                            accent,
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
                         ],
                       ),
                     ),
                   ),
-                ),
+                  if (_phase == _Phase.quiz)
+                    SliverToBoxAdapter(
+                      child: CinematicLessonPanel(
+                        key: ValueKey(
+                          'q-$_questionIndex-${_pickedIds.length}',
+                        ),
+                        narrative: _beat.narrative,
+                        question: _question,
+                        selected: _selected,
+                        isCorrect: _isCorrect,
+                        showFeedback: _showFeedback,
+                        onSelect: _select,
+                        accent: accent,
+                        encouragement: null,
+                        hintUsed: _hintUsed,
+                        eliminatedIds: _eliminated,
+                        onHint: _useHint,
+                        outOfLamps: _outOfLamps,
+                        lamps: _lamps,
+                        verseSnippet: () {
+                          final v =
+                              MissionStudy.verseText(_question.verseRef);
+                          if (v == null) return null;
+                          return v.length > 72
+                              ? '${v.substring(0, 70)}…'
+                              : v;
+                        }(),
+                      ),
+                    )
+                  else if (_phase == _Phase.study && study != null)
+                    SliverToBoxAdapter(
+                      child: StudyPanel(
+                        key: const ValueKey('study'),
+                        study: study,
+                        accent: accent,
+                        priorReflection: priorReflection,
+                        onContinue: _startQuiz,
+                      ),
+                    )
+                  else if (_phase == _Phase.reflection && study != null)
+                    SliverFillRemaining(
+                      hasScrollBody: false,
+                      child: ReflectionPanel(
+                        key: const ValueKey('reflection'),
+                        study: study,
+                        accent: accent,
+                        correct: _correctCount,
+                        total: total,
+                        onFinish: _completeReflection,
+                      ),
+                    )
+                  else if (_phase == _Phase.intro)
+                    SliverFillRemaining(
+                      hasScrollBody: false,
+                      child: _IntroPanel(
+                        key: const ValueKey('intro'),
+                        mission: mission,
+                        theme: _theme,
+                        difficultyMeta: _difficultyMeta,
+                        hasStudy: _hasStudy,
+                        onStart: _startStudyOrQuiz,
+                      ),
+                    )
+                  else
+                    const SliverToBoxAdapter(child: SizedBox.shrink()),
+                ],
+              ),
+            ),
+            if (_phase == _Phase.quiz)
+              AnimatedBuilder(
+                animation: _impactFlash,
+                builder: (context, _) {
+                  if (_impactFlash.value <= 0 || _impactFlash.value >= 1) {
+                    return const SizedBox.shrink();
+                  }
+                  return Positioned.fill(
+                    child: IgnorePointer(
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          gradient: RadialGradient(
+                            center: const Alignment(0, -0.2),
+                            radius: 1.1,
+                            colors: [
+                              (_impactPositive ? accent : AppColors.error)
+                                  .withValues(
+                                alpha: (1 - _impactFlash.value) *
+                                    (_impactPositive ? 0.28 : 0.22),
+                              ),
+                              Colors.transparent,
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  );
+                },
               ),
             if (_showFeedback && _selected != null && _isCorrect != null)
               _FeedbackOverlay(
@@ -595,122 +656,6 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
               ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class _LessonHeader extends StatelessWidget {
-  final VoidCallback onClose;
-  final double progress;
-  final int current;
-  final int total;
-  final Color accent;
-  final String? difficultyLabel;
-  final int? lamps;
-  final String? phaseLabel;
-
-  const _LessonHeader({
-    required this.onClose,
-    required this.progress,
-    required this.current,
-    required this.total,
-    required this.accent,
-    this.difficultyLabel,
-    this.lamps,
-    this.phaseLabel,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final label = phaseLabel ??
-        (total > 0 && current > 0
-            ? (difficultyLabel != null
-                ? 'Cena $current/$total · $difficultyLabel'
-                : 'Cena $current de $total')
-            : null);
-
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 8, 14, 8),
-      child: Row(
-        children: [
-          IconButton(
-            onPressed: onClose,
-            icon: Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
-                boxShadow: [
-                  BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 10, offset: const Offset(0, 4)),
-                ],
-              ),
-              child: const Icon(Icons.close_rounded, color: Colors.white, size: 20),
-            ),
-          ),
-          Expanded(
-            child: Column(
-              children: [
-                if (label != null)
-                  Text(
-                    label.toUpperCase(),
-                    style: TextStyle(
-                      fontSize: 10,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 1.4,
-                      color: Colors.white.withValues(alpha: 0.5),
-                    ),
-                  ),
-                const SizedBox(height: 8),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(999),
-                  child: SizedBox(
-                    height: 6,
-                    child: Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        ColoredBox(color: Colors.white.withValues(alpha: 0.1)),
-                        FractionallySizedBox(
-                          alignment: Alignment.centerLeft,
-                          widthFactor: progress.clamp(0.0, 1.0),
-                          child: DecoratedBox(
-                            decoration: BoxDecoration(
-                              gradient: LinearGradient(
-                                colors: [
-                                  Color.lerp(accent, Colors.white, 0.25)!,
-                                  accent,
-                                  Color.lerp(accent, const Color(0xFF8B5A00), 0.2)!,
-                                ],
-                              ),
-                              boxShadow: [
-                                BoxShadow(color: accent.withValues(alpha: 0.55), blurRadius: 8),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          if (lamps != null) ...[
-            const SizedBox(width: 10),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(14),
-                color: Colors.black.withValues(alpha: 0.28),
-                border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
-              ),
-              child: LampsBar(current: lamps!, accent: accent),
-            ),
-          ] else
-            const SizedBox(width: 48),
-        ],
       ),
     );
   }

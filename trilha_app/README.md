@@ -32,13 +32,20 @@ Ative **Depuração USB** nas Opções do desenvolvedor.
 flutter run -d <device-id>
 ```
 
-## Atualizar conteúdo das trilhas
+## Conteúdo das trilhas
 
-O conteúdo vem de `assets/data/trails.json`, gerado a partir do seed TypeScript:
+O app lê trilhas do Firestore (`content_trails`), com cache local e fallback em `assets/data/trails.json`.
+
+Para editar / publicar conteúdo, use o painel em `../admin/`.
+
+## Estudo bíblico (Strong)
+
+Na leitura, toque num versículo → **Estudar** para ver palavras originais, Strong, morfologia, concordância e referências cruzadas (offline).
+
+Dados em `assets/data/bible_study.sqlite.gz` (STEPBible / openbible.info, CC BY). Para regenerar:
 
 ```bash
-# na raiz do monorepo
-npm run db:export-flutter
+python3 scripts/build_bible_study_db.py
 ```
 
 ## Build para publicar
@@ -54,5 +61,7 @@ flutter build ios --release
 ## Estrutura
 
 - `lib/screens/` — splash, home, trilhas, config, mapa, lição, celebração
-- `lib/services/progress_service.dart` — XP, streak, progresso local
-- `assets/data/trails.json` — trilhas e perguntas
+- `lib/services/` — progresso, Firebase, catálogo de conteúdo
+- `assets/data/` — fallback offline (Bíblia, trilhas)
+
+O painel web Firebase fica em `../admin/`, separado do app.

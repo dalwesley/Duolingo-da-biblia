@@ -6,9 +6,13 @@ import 'package:provider/provider.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../services/progress_service.dart';
+import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/cinematic_icon.dart';
 import '../widgets/journey_path.dart';
+import '../widgets/top_bar.dart';
 import 'trail_map_screen.dart';
 
 /// Peregrinação cinematográfica — trilhas dentro de um reino.
@@ -40,6 +44,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
       vsync: this,
       duration: const Duration(seconds: 18),
     )..repeat();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
   }
 
   @override
@@ -99,6 +104,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
   }
 
   void _jumpToCurrent() {
+    if (!mounted) return;
     final ctx = _currentKey.currentContext;
     if (ctx == null) return;
     Scrollable.ensureVisible(
@@ -107,6 +113,16 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
       duration: const Duration(milliseconds: 620),
       curve: Curves.easeOutCubic,
     );
+  }
+
+  void _scheduleJumpToCurrent() {
+    if (!mounted || _jumped) return;
+    if (_currentKey.currentContext == null) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
+      return;
+    }
+    _jumped = true;
+    Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
   }
 
   void _onNodeTap(JourneyPathItem item) {
@@ -206,133 +222,109 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
     final progress = context.watch<ProgressService>();
     final visuals = RealmVisuals.of(widget.realm);
     final items = _buildItems(progress.completedMissions);
-    final top = MediaQuery.of(context).padding.top;
     final bottom = MediaQuery.of(context).padding.bottom;
+    final mode = progress.settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!_jumped && _currentKey.currentContext != null) {
-        _jumped = true;
-        Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
-      }
-    });
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: Scaffold(
+        backgroundColor: visuals.sky.first,
+        body: Stack(
+          children: [
+            // Living world atmosphere
+            Positioned.fill(
+              child: AnimatedBuilder(
+                animation: _world,
+                builder: (context, _) {
+                  return CustomPaint(
+                    painter: _RealmWorldPainter(
+                      sky: visuals.sky,
+                      accent: visuals.accent,
+                      glow: visuals.glow,
+                      phase: _world.value,
+                      seed: widget.realm.index * 91,
+                    ),
+                  );
+                },
+              ),
+            ),
 
-    final completedCount =
-        items.where((i) => i.state == JourneyNodeState.completed).length;
+            // Edge vignette
+            Positioned.fill(
+              child: IgnorePointer(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                      center: const Alignment(0, -0.15),
+                      radius: 1.2,
+                      colors: [
+                        Colors.transparent,
+                        Colors.black.withValues(alpha: 0.55),
+                      ],
+                      stops: const [0.42, 1],
+                    ),
+                  ),
+                ),
+              ),
+            ),
 
-    return Scaffold(
-      backgroundColor: visuals.sky.first,
-      body: Stack(
-        children: [
-          // Living world atmosphere
-          Positioned.fill(
-            child: AnimatedBuilder(
-              animation: _world,
-              builder: (context, _) {
-                return CustomPaint(
-                  painter: _RealmWorldPainter(
-                    sky: visuals.sky,
+            CustomScrollView(
+              controller: _scroll,
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                      AppSpace.screen,
+                      0,
+                    ),
+                    child: TopBar(
+                      inline: true,
+                      immersive: true,
+                      dark: true,
+                      title: widget.realm.label,
+                      onBack: () => Navigator.pop(context),
+                      leadingGlyph: CinematicGlyph.path,
+                    ),
+                  ),
+                ),
+                SliverToBoxAdapter(
+                  child: _CinematicTitle(
+                    eyebrow: visuals.eyebrow,
+                    tagline: visuals.tagline,
                     accent: visuals.accent,
-                    glow: visuals.glow,
-                    phase: _world.value,
-                    seed: widget.realm.index * 91,
                   ),
-                );
-              },
+                ),
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(16, 12, 20, 140 + bottom),
+                    child: JourneyPath(
+                      items: items,
+                      accent: visuals.accent,
+                      glow: visuals.glow,
+                      currentKey: _currentKey,
+                      onTap: _onNodeTap,
+                    ),
+                  ),
+                ),
+              ],
             ),
-          ),
 
-          // Edge vignette
-          Positioned.fill(
-            child: IgnorePointer(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: RadialGradient(
-                    center: const Alignment(0, -0.15),
-                    radius: 1.2,
-                    colors: [
-                      Colors.transparent,
-                      Colors.black.withValues(alpha: 0.55),
-                    ],
-                    stops: const [0.42, 1],
-                  ),
-                ),
+            // Soft jump control — not a loud FAB
+            Positioned(
+              right: 18,
+              bottom: 28 + bottom,
+              child: _JumpChip(
+                accent: visuals.accent,
+                onTap: _jumpToCurrent,
               ),
             ),
-          ),
-
-          CustomScrollView(
-            controller: _scroll,
-            physics: const BouncingScrollPhysics(),
-            slivers: [
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(18, top + 6, 18, 0),
-                  child: Row(
-                    children: [
-                      _ChromeButton(
-                        icon: Icons.arrow_back_rounded,
-                        onTap: () => Navigator.pop(context),
-                      ),
-                      const Spacer(),
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 7,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.black.withValues(alpha: 0.28),
-                          border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.1),
-                          ),
-                        ),
-                        child: Text(
-                          '$completedCount · ${items.length}',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.4,
-                            color: Colors.white.withValues(alpha: 0.65),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              SliverToBoxAdapter(
-                child: _CinematicTitle(
-                  eyebrow: visuals.eyebrow,
-                  title: widget.realm.label,
-                  tagline: visuals.tagline,
-                  accent: visuals.accent,
-                ),
-              ),
-              SliverToBoxAdapter(
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(16, 12, 20, 140 + bottom),
-                  child: JourneyPath(
-                    items: items,
-                    accent: visuals.accent,
-                    glow: visuals.glow,
-                    currentKey: _currentKey,
-                    onTap: _onNodeTap,
-                  ),
-                ),
-              ),
-            ],
-          ),
-
-          // Soft jump control — not a loud FAB
-          Positioned(
-            right: 18,
-            bottom: 28 + bottom,
-            child: _JumpChip(
-              accent: visuals.accent,
-              onTap: _jumpToCurrent,
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -340,13 +332,11 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
 
 class _CinematicTitle extends StatelessWidget {
   final String eyebrow;
-  final String title;
   final String tagline;
   final Color accent;
 
   const _CinematicTitle({
     required this.eyebrow,
-    required this.title,
     required this.tagline,
     required this.accent,
   });
@@ -354,7 +344,7 @@ class _CinematicTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 36, 28, 28),
+      padding: const EdgeInsets.fromLTRB(28, 20, 28, 28),
       child: Column(
         children: [
           Text(
@@ -364,18 +354,6 @@ class _CinematicTitle extends StatelessWidget {
               fontWeight: FontWeight.w800,
               letterSpacing: 3.4,
               color: accent.withValues(alpha: 0.92),
-            ),
-          ),
-          const SizedBox(height: 14),
-          Text(
-            title,
-            textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 40,
-              fontWeight: FontWeight.w600,
-              color: Colors.white,
-              height: 1.05,
-              letterSpacing: -0.5,
             ),
           ),
           const SizedBox(height: 16),
@@ -396,34 +374,6 @@ class _CinematicTitle extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _ChromeButton extends StatelessWidget {
-  final IconData icon;
-  final VoidCallback onTap;
-
-  const _ChromeButton({required this.icon, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.black.withValues(alpha: 0.28),
-      shape: const CircleBorder(),
-      child: InkWell(
-        customBorder: const CircleBorder(),
-        onTap: onTap,
-        child: Container(
-          width: 44,
-          height: 44,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-          ),
-          child: Icon(icon, color: Colors.white.withValues(alpha: 0.9), size: 20),
-        ),
       ),
     );
   }

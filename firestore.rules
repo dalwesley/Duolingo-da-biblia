@@ -1,0 +1,108 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn()
+        && exists(/databases/$(database)/documents/admin_users/$(request.auth.uid))
+        && get(/databases/$(database)/documents/admin_users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function isContentEditor() {
+      return isAdmin()
+        || (isSignedIn()
+            && exists(/databases/$(database)/documents/admin_users/$(request.auth.uid))
+            && get(/databases/$(database)/documents/admin_users/$(request.auth.uid)).data.role in ['admin', 'editor']);
+    }
+
+    // Cada usuário só lê/escreve o próprio progresso.
+    match /users/{uid} {
+      allow read, write: if isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Liga semanal: qualquer autenticado lê; só o dono escreve o próprio ranking.
+    match /leagues/{week}/players/{uid} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Ranking geral (passos totais): qualquer autenticado lê; cada um escreve o próprio.
+    match /overallPlayers/{uid} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Ranking mensal (legado).
+    match /monthlyLeagues/{month}/players/{uid} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Salas de estudo privadas.
+    match /rooms/{code} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn()
+        && request.resource.data.ownerId == request.auth.uid;
+      allow update, delete: if isSignedIn()
+        && resource.data.ownerId == request.auth.uid;
+
+      match /members/{uid} {
+        allow read: if isSignedIn();
+        allow write: if isSignedIn() && request.auth.uid == uid;
+      }
+    }
+
+    // Companhias de caminhada (pares).
+    // get com resource == null: permite checar se o código já existe antes de criar.
+    match /companies/{code} {
+      allow get: if isSignedIn() && (
+        resource == null
+        || resource.data.hostId == request.auth.uid
+        || resource.data.guestId == request.auth.uid
+        || resource.data.guestId == null
+      );
+      allow list: if false;
+      allow create: if isSignedIn()
+        && request.resource.data.hostId == request.auth.uid;
+      allow update: if isSignedIn()
+        && (resource.data.hostId == request.auth.uid
+            || resource.data.guestId == request.auth.uid
+            || (resource.data.guestId == null
+                && request.resource.data.guestId == request.auth.uid));
+      allow delete: if isSignedIn()
+        && resource.data.hostId == request.auth.uid;
+    }
+
+    // —— Conteúdo do currículo (trilhas / perguntas / estudos) ——
+    // Leitura pública (app pode carregar antes do login). Escrita só admin/editor.
+    match /content_trails/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    match /content_bank_questions/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    match /content_difficulties/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    match /content_mission_studies/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+    match /content_meta/{id} {
+      allow read: if true;
+      allow write: if isContentEditor();
+    }
+
+    // Perfis do painel admin.
+    match /admin_users/{uid} {
+      allow read: if isSignedIn() && (request.auth.uid == uid || isAdmin());
+      allow write: if isAdmin();
+    }
+  }
+}

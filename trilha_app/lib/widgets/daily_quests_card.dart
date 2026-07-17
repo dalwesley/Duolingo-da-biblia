@@ -22,7 +22,7 @@ class DailyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'MISSÕES DE HOJE',
+                'DESAFIOS DE HOJE',
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w900,

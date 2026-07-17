@@ -51,173 +51,39 @@ class _FrostScopeState extends State<FrostScope> {
   Widget build(BuildContext context) => widget.builder(context, _frost);
 }
 
-class TopBar extends StatelessWidget implements PreferredSizeWidget {
-  final String title;
-  final String? subtitle;
-  final VoidCallback? onBack;
-  final bool immersive;
-  final bool dark;
-  /// Saudação em cima + nome em destaque (home).
-  final bool personalGreeting;
-  /// Foto do usuário (home) — toque abre o perfil.
-  final String? photoUrl;
-  final VoidCallback? onProfileTap;
-  /// Mantido para compatibilidade com telas que ainda passam o controlador,
-  /// mas a TopBar agora é sempre sólida.
-  final ValueListenable<double>? frost;
-  /// Mantido para compatibilidade; sem efeito com a barra sólida.
-  final double frostFloor;
+/// Passos + dias caminhando — presente em toda app bar.
+class TopBarStats extends StatelessWidget {
+  final int steps;
+  final int streak;
 
-  const TopBar({
+  const TopBarStats({
     super.key,
-    required this.title,
-    this.subtitle,
-    this.onBack,
-    this.immersive = false,
-    this.dark = false,
-    this.personalGreeting = false,
-    this.photoUrl,
-    this.onProfileTap,
-    this.frost,
-    this.frostFloor = 0,
+    required this.steps,
+    required this.streak,
   });
 
-  @override
-  Size get preferredSize => const Size.fromHeight(68);
+  factory TopBarStats.of(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    return TopBarStats(steps: progress.steps, streak: progress.streak);
+  }
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final appearance = Appearance.of(context);
-    final onDark = immersive || dark || onBack != null;
-    final showAvatar = personalGreeting && onProfileTap != null;
-
-    return AppBar(
-      toolbarHeight: preferredSize.height,
-      backgroundColor: appearance.navBarFill.withValues(alpha: 1),
-      flexibleSpace: null,
-      surfaceTintColor: Colors.transparent,
-      elevation: 8,
-      shadowColor: Colors.black.withValues(alpha: 0.35),
-      scrolledUnderElevation: 0,
-      clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: const BorderRadius.vertical(
-          bottom: Radius.circular(AppRadii.xl),
-        ),
-        side: BorderSide(color: appearance.navBarBorder),
-      ),
-      leadingWidth: showAvatar ? 64 : null,
-      leading: onBack != null
-          ? IconButton(
-              onPressed: onBack,
-              icon: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.12),
-                  borderRadius: BorderRadius.circular(12),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.15),
-                  ),
-                ),
-                child: const Icon(
-                  Icons.arrow_back_rounded,
-                  size: 20,
-                  color: Colors.white,
-                ),
-              ),
-            )
-          : showAvatar
-              ? Padding(
-                  padding: const EdgeInsets.only(left: 14),
-                  child: Center(
-                    child: UserAvatar(
-                      photoUrl: photoUrl,
-                      name: progress.userName,
-                      radius: 20,
-                      onTap: onProfileTap,
-                    ),
-                  ),
-                )
-              : immersive
-                  ? null
-                  : const Padding(
-                      padding: EdgeInsets.only(left: 8),
-                      child: Center(
-                        child: CinematicIcon(
-                          glyph: CinematicGlyph.spark,
-                          size: 40,
-                          accent: AppColors.primaryLight,
-                          glowing: false,
-                        ),
-                      ),
-                    ),
-      title: personalGreeting
-          ? Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                if (subtitle != null)
-                  Text(
-                    subtitle!,
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: Colors.white.withValues(alpha: 0.6),
-                      fontWeight: FontWeight.w600,
-                      letterSpacing: 0.3,
-                    ),
-                  ),
-                Text(
-                  title,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                    height: 1.1,
-                  ),
-                ),
-              ],
-            )
-          : Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    color: onDark ? Colors.white : AppColors.text,
-                  ),
-                ),
-                if (subtitle != null)
-                  Text(
-                    subtitle!,
-                    style: TextStyle(
-                      fontSize: 11,
-                      color: onDark
-                          ? Colors.white.withValues(alpha: 0.55)
-                          : AppColors.textMuted,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-              ],
-            ),
-      actions: [
-        _StepsBadge(value: progress.steps),
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        StepsBadge(value: steps),
         const SizedBox(width: 8),
-        _WalkDaysBadge(value: progress.streak),
-        const SizedBox(width: 14),
+        StreakBadge(value: streak),
       ],
     );
   }
 }
 
-class _StepsBadge extends StatelessWidget {
+class StepsBadge extends StatelessWidget {
   final int value;
 
-  const _StepsBadge({required this.value});
+  const StepsBadge({super.key, required this.value});
 
   @override
   Widget build(BuildContext context) {
@@ -234,6 +100,7 @@ class _StepsBadge extends StatelessWidget {
         ],
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(
             Icons.directions_walk_rounded,
@@ -255,10 +122,10 @@ class _StepsBadge extends StatelessWidget {
   }
 }
 
-class _WalkDaysBadge extends StatelessWidget {
+class StreakBadge extends StatelessWidget {
   final int value;
 
-  const _WalkDaysBadge({required this.value});
+  const StreakBadge({super.key, required this.value});
 
   @override
   Widget build(BuildContext context) {
@@ -270,6 +137,7 @@ class _WalkDaysBadge extends StatelessWidget {
         border: Border.all(color: AppColors.streak.withValues(alpha: 0.45)),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(
             Icons.wb_sunny_rounded,
@@ -291,10 +159,423 @@ class _WalkDaysBadge extends StatelessWidget {
   }
 }
 
+/// Altura do chrome inline (sem AppBar — evita espaço morto).
+const double kTopBarInlineHeight = 48;
+
+class TopBar extends StatelessWidget implements PreferredSizeWidget {
+  final String title;
+  final String? subtitle;
+  final VoidCallback? onBack;
+  final bool immersive;
+  final bool dark;
+  final bool inline;
+
+  /// Saudação em cima + nome em destaque (home).
+  final bool personalGreeting;
+
+  /// Foto do usuário (home) — toque abre o perfil.
+  final String? photoUrl;
+  final VoidCallback? onProfileTap;
+  final CinematicGlyph leadingGlyph;
+  final IconData? leadingIcon;
+
+  /// Mantido para compatibilidade com telas que ainda passam o controlador,
+  /// mas a TopBar agora é sempre sólida.
+  final ValueListenable<double>? frost;
+
+  /// Mantido para compatibilidade; sem efeito com a barra sólida.
+  final double frostFloor;
+
+  /// Quando false, esconde passos/dias.
+  final bool showStats;
+
+  const TopBar({
+    super.key,
+    required this.title,
+    this.subtitle,
+    this.onBack,
+    this.immersive = false,
+    this.dark = false,
+    this.inline = false,
+    this.personalGreeting = false,
+    this.photoUrl,
+    this.onProfileTap,
+    this.leadingGlyph = CinematicGlyph.spark,
+    this.leadingIcon,
+    this.frost,
+    this.frostFloor = 0,
+    this.showStats = false,
+  });
+
+  @override
+  Size get preferredSize => Size.fromHeight(
+    inline ? kTopBarInlineHeight : 56,
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final appearance = Appearance.of(context);
+    final onDark = immersive || dark || onBack != null;
+    final showAvatar = personalGreeting && onProfileTap != null;
+
+    if (inline) {
+      return _InlineChrome(
+        appearance: appearance,
+        onDark: onDark,
+        title: title,
+        subtitle: subtitle,
+        personalGreeting: personalGreeting,
+        showAvatar: showAvatar,
+        photoUrl: photoUrl,
+        userName: progress.userName,
+        onProfileTap: onProfileTap,
+        onBack: onBack,
+        leadingGlyph: leadingGlyph,
+        leadingIcon: leadingIcon,
+        showStats: showStats,
+        steps: progress.steps,
+        streak: progress.streak,
+      );
+    }
+
+    return AppBar(
+      primary: true,
+      automaticallyImplyLeading: false,
+      toolbarHeight: preferredSize.height,
+      backgroundColor: appearance.navBarFill.withValues(alpha: 1),
+      surfaceTintColor: Colors.transparent,
+      elevation: 8,
+      shadowColor: Colors.black.withValues(alpha: 0.35),
+      scrolledUnderElevation: 0,
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: const BorderRadius.vertical(
+          bottom: Radius.circular(AppRadii.xl),
+        ),
+        side: BorderSide(color: appearance.navBarBorder),
+      ),
+      leadingWidth: 56,
+      leading: onBack != null
+          ? IconButton(
+              onPressed: onBack,
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints.tightFor(width: 36, height: 36),
+              visualDensity: VisualDensity.compact,
+              icon: const _BackGlyph(),
+            )
+          : Padding(
+              padding: const EdgeInsets.only(left: 4),
+              child: Center(
+                child: _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+              ),
+            ),
+      title: _TitleBlock(
+        title: title,
+        subtitle: subtitle,
+        personalGreeting: personalGreeting,
+        onDark: onDark,
+      ),
+      actions: showStats
+          ? [
+              TopBarStats(steps: progress.steps, streak: progress.streak),
+              const SizedBox(width: 8),
+            ]
+          : onBack != null
+          ? [
+              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+              const SizedBox(width: 4),
+            ]
+          : null,
+    );
+  }
+}
+
+class _InlineChrome extends StatelessWidget {
+  final AppearanceStyle appearance;
+  final bool onDark;
+  final String title;
+  final String? subtitle;
+  final bool personalGreeting;
+  final bool showAvatar;
+  final String? photoUrl;
+  final String userName;
+  final VoidCallback? onProfileTap;
+  final VoidCallback? onBack;
+  final CinematicGlyph leadingGlyph;
+  final IconData? leadingIcon;
+  final bool showStats;
+  final int steps;
+  final int streak;
+
+  const _InlineChrome({
+    required this.appearance,
+    required this.onDark,
+    required this.title,
+    required this.subtitle,
+    required this.personalGreeting,
+    required this.showAvatar,
+    required this.photoUrl,
+    required this.userName,
+    required this.onProfileTap,
+    required this.onBack,
+    required this.leadingGlyph,
+    required this.leadingIcon,
+    required this.showStats,
+    required this.steps,
+    required this.streak,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      elevation: 8,
+      shadowColor: Colors.black.withValues(alpha: 0.35),
+      borderRadius: BorderRadius.circular(AppRadii.xl),
+      child: Container(
+        height: kTopBarInlineHeight,
+        padding: const EdgeInsets.symmetric(horizontal: 4),
+        decoration: BoxDecoration(
+          color: appearance.navBarFill.withValues(alpha: 1),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
+          border: Border.all(color: appearance.navBarBorder),
+        ),
+        child: Row(
+          children: [
+            if (onBack != null) ...[
+              GestureDetector(
+                onTap: onBack,
+                behavior: HitTestBehavior.opaque,
+                child: const _BackGlyph(),
+              ),
+              const SizedBox(width: 8),
+            ] else if (showAvatar) ...[
+              UserAvatar(
+                photoUrl: photoUrl,
+                name: userName,
+                radius: 16,
+                onTap: onProfileTap,
+              ),
+              const SizedBox(width: 10),
+            ] else ...[
+              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+              const SizedBox(width: 8),
+            ],
+            Expanded(
+              child: _TitleBlock(
+                title: title,
+                subtitle: subtitle,
+                personalGreeting: personalGreeting,
+                onDark: onDark,
+              ),
+            ),
+            if (showStats) ...[
+              const SizedBox(width: 8),
+              TopBarStats(steps: steps, streak: streak),
+            ] else if (onBack != null) ...[
+              const SizedBox(width: 8),
+              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _BackGlyph extends StatelessWidget {
+  const _BackGlyph();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 36,
+      height: 36,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white.withValues(alpha: 0.12),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.15),
+        ),
+      ),
+      child: const Icon(
+        Icons.arrow_back_rounded,
+        size: 18,
+        color: Colors.white,
+      ),
+    );
+  }
+}
+
+/// Ícone da seção atual — mesmo glifo e traço do menu inferior.
+class _MenuMark extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final IconData? icon;
+
+  const _MenuMark({
+    this.glyph = CinematicGlyph.spark,
+    this.icon,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    const size = 36.0;
+    final child = icon != null
+        ? Icon(icon, size: size * 0.48, color: AppColors.accent)
+        : CinematicIcon(
+            glyph: glyph,
+            size: size * 0.55,
+            accent: AppColors.accent,
+            framed: false,
+            glowing: false,
+          );
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: AppColors.accent.withValues(alpha: 0.14),
+        border: Border.all(
+          color: AppColors.accent.withValues(alpha: 0.35),
+        ),
+      ),
+      alignment: Alignment.center,
+      child: child,
+    );
+  }
+}
+
+/// Medalhão circular — mesmo visual do [CinematicIcon] framed.
+class _FramedMark extends StatelessWidget {
+  final double size;
+  final Widget child;
+
+  const _FramedMark({required this.size, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    const color = AppColors.accent;
+    final rim = Color.lerp(color, Colors.white, 0.45)!;
+    final deep = Color.lerp(color, const Color(0xFF0A0E0C), 0.8)!;
+    final mid = Color.lerp(color, const Color(0xFF1A221E), 0.5)!;
+
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: RadialGradient(
+          center: const Alignment(-0.35, -0.45),
+          radius: 1.15,
+          colors: [mid, deep],
+        ),
+        border: Border.all(
+          color: rim.withValues(alpha: 0.65),
+          width: size * 0.032,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: size * 0.12,
+            offset: Offset(0, size * 0.04),
+          ),
+        ],
+      ),
+      alignment: Alignment.center,
+      child: child,
+    );
+  }
+}
+
+class _TitleBlock extends StatelessWidget {
+  final String title;
+  final String? subtitle;
+  final bool personalGreeting;
+  final bool onDark;
+
+  const _TitleBlock({
+    required this.title,
+    required this.subtitle,
+    required this.personalGreeting,
+    required this.onDark,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (personalGreeting) {
+      return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (subtitle != null)
+            Text(
+              subtitle!,
+              style: TextStyle(
+                fontSize: 11,
+                color: Colors.white.withValues(alpha: 0.6),
+                fontWeight: FontWeight.w600,
+                letterSpacing: 0.3,
+                height: 1.1,
+              ),
+            ),
+          Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+              height: 1.15,
+            ),
+          ),
+        ],
+      );
+    }
+
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          title,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: GoogleFonts.cormorantGaramond(
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: onDark ? Colors.white : AppColors.text,
+            height: 1.15,
+          ),
+        ),
+        if (subtitle != null)
+          Text(
+            subtitle!,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              fontSize: 11,
+              height: 1.1,
+              color: onDark
+                  ? Colors.white.withValues(alpha: 0.55)
+                  : AppColors.textMuted,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+      ],
+    );
+  }
+}
+
 /// Fundo da app bar que vai de transparente (topo) a fosco (rolagem).
 class FrostedBar extends StatelessWidget {
   final ValueListenable<double> frost;
   final bool dark;
+
   /// Intensidade mínima do fosco (0 = totalmente transparente no topo).
   final double floor;
 

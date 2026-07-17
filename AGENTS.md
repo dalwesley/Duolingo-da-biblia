@@ -1,5 +1,8 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Trilha monorepo
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+Este repositório contém apenas:
+
+- `trilha_app/` — app Flutter
+- `admin/` — painel admin (Vite + Firebase)
+
+Não há mais app Next.js na raiz. Conteúdo de trilhas é gerenciado no Firebase (`content_trails`) via painel admin.

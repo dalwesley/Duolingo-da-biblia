@@ -12,6 +12,7 @@ class HeroContinueCard extends StatelessWidget {
   final String trailSlug;
   final String trailColor;
   final VoidCallback? onTap;
+  final VoidCallback? onExploreTrails;
 
   const HeroContinueCard({
     super.key,
@@ -20,6 +21,7 @@ class HeroContinueCard extends StatelessWidget {
     this.trailSlug = 'genesis-1-11',
     this.trailColor = '#2F5D4A',
     this.onTap,
+    this.onExploreTrails,
   });
 
   @override
@@ -36,13 +38,9 @@ class HeroContinueCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(28),
           boxShadow: [
             BoxShadow(
-              color: AppColors.primary.withValues(alpha: 0.28),
-              blurRadius: 28,
-              offset: const Offset(0, 12),
-            ),
-            BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.1),
-              blurRadius: 32,
+              color: AppColors.primary.withValues(alpha: 0.2),
+              blurRadius: 22,
+              offset: const Offset(0, 10),
             ),
           ],
         ),
@@ -178,7 +176,7 @@ class HeroContinueCard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(999),
                             ),
                             child: const Text(
-                              'BOSS',
+                              'DESAFIO',
                               style: TextStyle(
                                 fontSize: 9,
                                 fontWeight: FontWeight.w900,
@@ -192,7 +190,7 @@ class HeroContinueCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'CONTINUE SUA CAMINHADA',
+                      'PRÓXIMO PASSO',
                       style: TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w900,
@@ -210,18 +208,18 @@ class HeroContinueCard extends StatelessWidget {
                         height: 1.12,
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      mission.isBoss
-                          ? 'Desafio especial · mais passos na jornada'
-                          : 'Dê o próximo passo na Palavra',
-                      style: TextStyle(
-                        fontSize: 13,
-                        color: Colors.white.withValues(alpha: 0.68),
-                        fontWeight: FontWeight.w500,
-                        height: 1.3,
+                    if (mission.isBoss) ...[
+                      const SizedBox(height: 8),
+                      Text(
+                        'Desafio especial · mais passos na jornada',
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Colors.white.withValues(alpha: 0.68),
+                          fontWeight: FontWeight.w500,
+                          height: 1.3,
+                        ),
                       ),
-                    ),
+                    ],
                     const SizedBox(height: 24),
                     Row(
                       children: [
@@ -246,7 +244,7 @@ class HeroContinueCard extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'AVANÇAR',
+                                  'CAMINHAR',
                                   style: TextStyle(
                                     fontSize: 13,
                                     fontWeight: FontWeight.w900,
@@ -299,45 +297,66 @@ class HeroContinueCard extends StatelessWidget {
   }
 
   Widget _completedState() {
-    return Container(
-      padding: const EdgeInsets.all(32),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(28),
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [Color(0xFF1A221E), Color(0xFF121816)],
+    return GestureDetector(
+      onTap: onExploreTrails,
+      child: Container(
+        padding: const EdgeInsets.all(28),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(28),
+          gradient: const LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFF1A221E), Color(0xFF121816)],
+          ),
+          border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
         ),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.4)),
-        boxShadow: AppTheme.glow(AppColors.accent, blur: 24),
-      ),
-      child: Column(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.crown,
-            size: 64,
-            accent: AppColors.accent,
-            glowing: true,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Trilha completa',
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 28,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
+        child: Column(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.path,
+              size: 56,
+              accent: AppColors.accent,
+              glowing: false,
             ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Sua fidelidade é inspiradora.\nExplore novas passagens.',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white.withValues(alpha: 0.65),
-              height: 1.4,
+            const SizedBox(height: 14),
+            Text(
+              'Trecho concluído',
+              style: GoogleFonts.cormorantGaramond(
+                fontSize: 26,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+              ),
             ),
-          ),
-        ],
+            const SizedBox(height: 8),
+            Text(
+              'Escolha uma nova trilha e continue\nconhecendo a Cristo.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white.withValues(alpha: 0.65),
+                height: 1.4,
+              ),
+            ),
+            if (onExploreTrails != null) ...[
+              const SizedBox(height: 18),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                decoration: BoxDecoration(
+                  gradient: AppGradients.gold,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: const Text(
+                  'EXPLORAR TRILHAS',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 0.8,
+                    color: AppColors.inkOnAccent,
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

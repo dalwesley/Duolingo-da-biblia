@@ -18,11 +18,13 @@ import 'realm_journey_screen.dart';
 class TrilhasScreen extends StatefulWidget {
   final TrailRepository repo;
   final bool asPushedPage;
+  final Widget? topBar;
 
   const TrilhasScreen({
     super.key,
     required this.repo,
     this.asPushedPage = false,
+    this.topBar,
   });
 
   @override
@@ -65,8 +67,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(begin: const Offset(0, 0.08), end: Offset.zero)
-            .animate(curve),
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.08),
+          end: Offset.zero,
+        ).animate(curve),
         child: child,
       ),
     );
@@ -82,10 +86,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         pageBuilder: (_, animation, secondaryAnimation) {
           return FadeTransition(
             opacity: CurvedAnimation(parent: animation, curve: Curves.easeOut),
-            child: RealmJourneyScreen(
-              realm: realm,
-              allTrails: trails,
-            ),
+            child: RealmJourneyScreen(realm: realm, allTrails: trails),
           );
         },
       ),
@@ -98,39 +99,54 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final topInset = MediaQuery.viewPaddingOf(context).top;
 
     if (_trails == null) {
-      return const Center(child: CircularProgressIndicator(color: AppColors.accent));
+      return const Center(
+        child: CircularProgressIndicator(color: AppColors.accent),
+      );
     }
 
     final trails = _trails!;
 
-    // Rota empurrada: Scaffold já reserva a AppBar — só um respiro.
-    final topPad = widget.asPushedPage ? 12.0 : topInset + 72;
+    final topPad = widget.topBar != null
+        ? topInset + AppSpace.sm
+        : widget.asPushedPage
+        ? 12.0
+        : AppSpace.sm;
     final bottomPad = widget.asPushedPage
         ? 32 + MediaQuery.viewPaddingOf(context).bottom
         : scrollPaddingBelowNav(context);
 
     return ListView(
-      padding: EdgeInsets.fromLTRB(18, topPad, 18, bottomPad),
+      padding: EdgeInsets.fromLTRB(AppSpace.screen, topPad, AppSpace.screen, bottomPad),
       physics: const BouncingScrollPhysics(),
       children: [
-        if (!widget.asPushedPage) ...[
-          _reveal(0, const _JourneyHeader()),
-          const SizedBox(height: 28),
+        if (widget.topBar != null) ...[
+          widget.topBar!,
+          const SizedBox(height: 18),
         ],
         ...TrailRealm.values.asMap().entries.map((e) {
           final realm = e.value;
-          final realmTrails =
-              trails.where((t) => TrailRealm.fromId(t.realmId) == realm).toList();
+          final realmTrails = trails
+              .where((t) => TrailRealm.fromId(t.realmId) == realm)
+              .toList();
           final unlocked = realmTrails
-              .where((t) =>
-                  TrailProgress.isTrailUnlocked(
-                      t, trails, progress.completedMissions) &&
-                  t.missionSlugs.isNotEmpty &&
-                  !t.comingSoon)
+              .where(
+                (t) =>
+                    TrailProgress.isTrailUnlocked(
+                      t,
+                      trails,
+                      progress.completedMissions,
+                    ) &&
+                    t.missionSlugs.isNotEmpty &&
+                    !t.comingSoon,
+              )
               .length;
           final completed = realmTrails
-              .where((t) =>
-                  TrailProgress.isTrailCompleted(t, progress.completedMissions))
+              .where(
+                (t) => TrailProgress.isTrailCompleted(
+                  t,
+                  progress.completedMissions,
+                ),
+              )
               .length;
 
           return _reveal(
@@ -147,35 +163,6 @@ class _TrilhasScreenState extends State<TrilhasScreen>
             ),
           );
         }),
-      ],
-    );
-  }
-}
-
-class _JourneyHeader extends StatelessWidget {
-  const _JourneyHeader();
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          'SUA JORNADA',
-          style: AppTypography.label(color: AppColors.accent.withValues(alpha: 0.9)),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          'Escolha a trilha.\nSiga os passos.',
-          style: AppTypography.display(size: 34),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          'Cada caminho abre passagens vivas —\ncomo capítulos da mesma história.',
-          style: AppTypography.body(
-            color: Colors.white.withValues(alpha: 0.55),
-          ),
-        ),
       ],
     );
   }
@@ -286,10 +273,7 @@ class _RealmPortalState extends State<_RealmPortal>
                     gradient: RadialGradient(
                       center: Alignment(0, -0.15),
                       radius: 1.05,
-                      colors: [
-                        Colors.transparent,
-                        Color(0x99000000),
-                      ],
+                      colors: [Colors.transparent, Color(0x99000000)],
                       stops: [0.35, 1],
                     ),
                   ),
@@ -518,11 +502,7 @@ class _RealmSeal extends StatelessWidget {
               gradient: RadialGradient(
                 center: const Alignment(-0.28, -0.38),
                 radius: 1.05,
-                colors: [
-                  mid,
-                  deep,
-                  Color.lerp(deep, Colors.black, 0.35)!,
-                ],
+                colors: [mid, deep, Color.lerp(deep, Colors.black, 0.35)!],
                 stops: const [0.0, 0.55, 1.0],
               ),
               border: Border.all(
@@ -623,19 +603,25 @@ class _RealmWorldPainter extends CustomPainter {
     canvas.drawRect(
       Rect.fromLTWH(0, size.height * 0.28, size.width, size.height * 0.28),
       Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.transparent,
-            glow.withValues(alpha: 0.12),
-            accent.withValues(alpha: 0.06),
-            Colors.transparent,
-          ],
-          stops: const [0.0, 0.35, 0.65, 1.0],
-        ).createShader(
-          Rect.fromLTWH(0, size.height * 0.28, size.width, size.height * 0.28),
-        ),
+        ..shader =
+            LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.transparent,
+                glow.withValues(alpha: 0.12),
+                accent.withValues(alpha: 0.06),
+                Colors.transparent,
+              ],
+              stops: const [0.0, 0.35, 0.65, 1.0],
+            ).createShader(
+              Rect.fromLTWH(
+                0,
+                size.height * 0.28,
+                size.width,
+                size.height * 0.28,
+              ),
+            ),
     );
 
     // Bloom difuso no alto (atmosfera, sem ponto central)
@@ -643,17 +629,15 @@ class _RealmWorldPainter extends CustomPainter {
       Offset(size.width * 0.5, size.height * 0.08),
       size.width * 0.55,
       Paint()
-        ..shader = RadialGradient(
-          colors: [
-            glow.withValues(alpha: 0.14),
-            Colors.transparent,
-          ],
-        ).createShader(
-          Rect.fromCircle(
-            center: Offset(size.width * 0.5, size.height * 0.08),
-            radius: size.width * 0.55,
-          ),
-        ),
+        ..shader =
+            RadialGradient(
+              colors: [glow.withValues(alpha: 0.14), Colors.transparent],
+            ).createShader(
+              Rect.fromCircle(
+                center: Offset(size.width * 0.5, size.height * 0.08),
+                radius: size.width * 0.55,
+              ),
+            ),
     );
 
     // Colinas em camadas
@@ -662,7 +646,8 @@ class _RealmWorldPainter extends CustomPainter {
       path.lineTo(0, size.height * yBase);
       for (var x = 0.0; x <= size.width; x += 8) {
         final t = x / size.width;
-        final y = size.height * yBase +
+        final y =
+            size.height * yBase +
             math.sin(t * math.pi * 2 + phase) * amp +
             math.sin(t * math.pi * 5 + phase * 1.7) * amp * 0.35;
         path.lineTo(x, y);
@@ -694,17 +679,23 @@ class _RealmWorldPainter extends CustomPainter {
     canvas.drawRect(
       Rect.fromLTWH(0, size.height * 0.55, size.width, size.height * 0.25),
       Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.transparent,
-            Colors.black.withValues(alpha: 0.12),
-            Colors.transparent,
-          ],
-        ).createShader(
-          Rect.fromLTWH(0, size.height * 0.55, size.width, size.height * 0.25),
-        ),
+        ..shader =
+            LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Colors.transparent,
+                Colors.black.withValues(alpha: 0.12),
+                Colors.transparent,
+              ],
+            ).createShader(
+              Rect.fromLTWH(
+                0,
+                size.height * 0.55,
+                size.width,
+                size.height * 0.25,
+              ),
+            ),
     );
   }
 

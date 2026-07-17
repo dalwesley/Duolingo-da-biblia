@@ -3,7 +3,10 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
 
-/// Identidade do dispositivo + backup/restauração de progresso.
+import 'league_service.dart';
+import 'progress_service.dart';
+
+/// Identidade do dispositivo + backup/restauração completo (mesmo mapa do Firestore).
 class SyncService extends ChangeNotifier {
   static const _keyDeviceId = 'deviceId';
   static const _keyLastSync = 'lastSyncAt';
@@ -23,58 +26,52 @@ class SyncService extends ChangeNotifier {
     notifyListeners();
   }
 
-  Map<String, dynamic> exportPayload({
-    required int steps,
-    required int streak,
-    required String? lastPlayedDate,
-    required List<String> completedMissions,
-    required int missionsToday,
-    required String userName,
+  /// Backup de emergência = snapshot v2 idêntico ao documento `users/{uid}`.
+  Map<String, dynamic> exportPayload(
+    ProgressService progress, {
+    LeagueService? league,
   }) {
     return {
-      'version': 1,
+      ...progress.toCloudMap(),
+      if (league != null) ...league.toCloudMap(),
       'deviceId': deviceId,
       'exportedAt': DateTime.now().toIso8601String(),
-      'xp': steps, // legado
-      'steps': steps,
-      'streak': streak,
-      'lastPlayedDate': lastPlayedDate,
-      'completedMissions': completedMissions,
-      'missionsToday': missionsToday,
-      'userName': userName,
     };
   }
 
-  String exportJson({
-    required int steps,
-    required int streak,
-    required String? lastPlayedDate,
-    required List<String> completedMissions,
-    required int missionsToday,
-    required String userName,
+  String exportJson(
+    ProgressService progress, {
+    LeagueService? league,
   }) {
-    return const JsonEncoder.withIndent('  ').convert(exportPayload(
-      steps: steps,
-      streak: streak,
-      lastPlayedDate: lastPlayedDate,
-      completedMissions: completedMissions,
-      missionsToday: missionsToday,
-      userName: userName,
-    ));
+    return const JsonEncoder.withIndent('  ').convert(
+      exportPayload(progress, league: league),
+    );
   }
 
-  ({int steps, int streak, String? lastPlayedDate, List<String> completedMissions, int missionsToday, String userName})? parseImport(String json) {
+  /// Aceita v2 (completo) ou v1 legado (subconjunto).
+  Map<String, dynamic>? parseImport(String json) {
     try {
       final data = jsonDecode(json) as Map<String, dynamic>;
-      if (data['version'] != 1) return null;
-      return (
-        steps: (data['steps'] as int?) ?? (data['xp'] as int?) ?? 0,
-        streak: data['streak'] as int? ?? 0,
-        lastPlayedDate: data['lastPlayedDate'] as String?,
-        completedMissions: (data['completedMissions'] as List?)?.cast<String>() ?? [],
-        missionsToday: data['missionsToday'] as int? ?? 0,
-        userName: data['userName'] as String? ?? 'Peregrino',
-      );
+      final version = (data['version'] as num?)?.toInt() ?? 0;
+      if (version < 1) return null;
+      if (version == 1) {
+        // Normaliza v1 para o formato que [ProgressService.applyFromCloud] entende.
+        return {
+          'version': 1,
+          'steps': (data['steps'] as num?)?.toInt() ??
+              (data['xp'] as num?)?.toInt() ??
+              0,
+          'xp': (data['steps'] as num?)?.toInt() ??
+              (data['xp'] as num?)?.toInt() ??
+              0,
+          'streak': (data['streak'] as num?)?.toInt() ?? 0,
+          'lastPlayedDate': data['lastPlayedDate'] as String?,
+          'completedMissions': data['completedMissions'],
+          'missionsToday': (data['missionsToday'] as num?)?.toInt() ?? 0,
+          'userName': data['userName'] as String? ?? 'Peregrino',
+        };
+      }
+      return data;
     } catch (_) {
       return null;
     }

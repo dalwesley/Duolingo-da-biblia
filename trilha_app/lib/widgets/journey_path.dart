@@ -5,7 +5,6 @@ import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
-import 'cinematic_icon.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
 
@@ -58,7 +57,11 @@ class JourneyPath extends StatelessWidget {
         children.add(
           Padding(
             padding: EdgeInsets.only(top: i == 0 ? 4 : 36, bottom: 20),
-            child: _FilmIntertitle(label: item.category.label, accent: accent),
+            child: _FilmIntertitle(
+              label: item.category.label,
+              description: item.category.description,
+              accent: accent,
+            ),
           ),
         );
         lastCategory = item.category;
@@ -97,9 +100,14 @@ class JourneyPath extends StatelessWidget {
 
 class _FilmIntertitle extends StatelessWidget {
   final String label;
+  final String description;
   final Color accent;
 
-  const _FilmIntertitle({required this.label, required this.accent});
+  const _FilmIntertitle({
+    required this.label,
+    required this.description,
+    required this.accent,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -119,17 +127,23 @@ class _FilmIntertitle extends StatelessWidget {
         Container(
           width: 48,
           height: 1.5,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(1),
-            gradient: LinearGradient(
-              colors: [
-                accent.withValues(alpha: 0),
-                accent.withValues(alpha: 0.7),
-                accent.withValues(alpha: 0),
-              ],
+          color: accent.withValues(alpha: 0.45),
+        ),
+        if (description.isNotEmpty) ...[
+          const SizedBox(height: 14),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 28),
+            child: Text(
+              description,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 13,
+                height: 1.45,
+                color: Colors.white.withValues(alpha: 0.52),
+              ),
             ),
           ),
-        ),
+        ],
       ],
     );
   }
@@ -162,7 +176,7 @@ class _PathStation extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           SizedBox(
-            width: 36,
+            width: 42,
             child: Column(
               children: [
                 _RailBeacon(
@@ -178,16 +192,17 @@ class _PathStation extends StatelessWidget {
                       painter: _RailPainter(
                         color: railActive
                             ? accent.withValues(alpha: 0.55)
-                            : Colors.white.withValues(alpha: 0.12),
+                            : Colors.white.withValues(alpha: 0.14),
                         active: railActive,
+                        seed: item.trail.slug.hashCode ^ item.chapterIndex,
                       ),
-                      child: const SizedBox(width: 36),
+                      child: const SizedBox(width: 42),
                     ),
                   ),
               ],
             ),
           ),
-          const SizedBox(width: 14),
+          const SizedBox(width: 12),
           Expanded(
             child: Padding(
               padding: EdgeInsets.only(bottom: isLast ? 0 : 22),
@@ -274,21 +289,25 @@ class _RailBeacon extends StatelessWidget {
 class _RailPainter extends CustomPainter {
   final Color color;
   final bool active;
+  final int seed;
 
-  _RailPainter({required this.color, required this.active});
+  _RailPainter({
+    required this.color,
+    required this.active,
+    required this.seed,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final x = size.width / 2;
-    final path = Path()
-      ..moveTo(x, 0)
-      ..lineTo(x, size.height);
+    if (size.height <= 1) return;
 
+    final path = _trailPath(size);
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = active ? 2.4 : 1.6
-      ..strokeCap = StrokeCap.round;
+      ..strokeWidth = active ? 2.4 : 1.7
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round;
 
     if (active) {
       canvas.drawPath(
@@ -299,25 +318,78 @@ class _RailPainter extends CustomPainter {
           ..strokeWidth = 7
           ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
       );
-      canvas.drawPath(path, paint);
+      _drawDashed(canvas, path, paint, dash: 10, gap: 4);
     } else {
-      const dash = 5.0;
-      const gap = 5.0;
-      var y = 0.0;
-      while (y < size.height) {
-        canvas.drawLine(
-          Offset(x, y),
-          Offset(x, math.min(y + dash, size.height)),
-          paint,
-        );
-        y += dash + gap;
+      _drawDashed(canvas, path, paint, dash: 5.5, gap: 5.5);
+    }
+  }
+
+  /// Caminho orgânico: começa e termina no centro, com curvas e trechos retos.
+  Path _trailPath(Size size) {
+    final rng = math.Random(seed);
+    final cx = size.width / 2;
+    final h = size.height;
+    final swing = size.width * (0.22 + rng.nextDouble() * 0.14);
+    final dir = seed.isEven ? 1.0 : -1.0;
+
+    final y1 = h * (0.18 + rng.nextDouble() * 0.08);
+    final y2 = h * (0.42 + rng.nextDouble() * 0.1);
+    final y3 = h * (0.68 + rng.nextDouble() * 0.08);
+
+    final path = Path()..moveTo(cx, 0);
+    path.lineTo(cx + dir * swing * 0.08, y1 * 0.55);
+    path.cubicTo(
+      cx + dir * swing * 0.15,
+      y1,
+      cx + dir * swing,
+      y1 + (y2 - y1) * 0.25,
+      cx + dir * swing * 0.85,
+      y2,
+    );
+    path.cubicTo(
+      cx + dir * swing * 0.55,
+      y2 + (y3 - y2) * 0.35,
+      cx - dir * swing * 0.25,
+      y2 + (y3 - y2) * 0.65,
+      cx - dir * swing * 0.7,
+      y3,
+    );
+    path.cubicTo(
+      cx - dir * swing * 0.35,
+      y3 + (h - y3) * 0.4,
+      cx + dir * swing * 0.05,
+      h - 4,
+      cx,
+      h,
+    );
+    return path;
+  }
+
+  void _drawDashed(
+    Canvas canvas,
+    Path path,
+    Paint paint, {
+    required double dash,
+    required double gap,
+  }) {
+    for (final metric in path.computeMetrics()) {
+      var distance = 0.0;
+      var draw = true;
+      while (distance < metric.length) {
+        final len = draw ? dash : gap;
+        final next = math.min(distance + len, metric.length);
+        if (draw) {
+          canvas.drawPath(metric.extractPath(distance, next), paint);
+        }
+        distance = next;
+        draw = !draw;
       }
     }
   }
 
   @override
   bool shouldRepaint(covariant _RailPainter old) =>
-      old.color != color || old.active != active;
+      old.color != color || old.active != active || old.seed != seed;
 }
 
 class _HeroStation extends StatefulWidget {
@@ -361,8 +433,6 @@ class _HeroStationState extends State<_HeroStation>
     final item = widget.item;
     final visuals = TrailVisuals.forTrail(item.trail);
     final pct = item.total > 0 ? item.done / item.total : 0.0;
-    final glyph = CinematicGlyphResolver.forTrail(item.trail.slug);
-
     return AnimatedBuilder(
       animation: _breath,
       builder: (context, child) {
@@ -416,17 +486,6 @@ class _HeroStationState extends State<_HeroStation>
                         intense: true,
                       ),
                     ),
-                  ),
-                ),
-                Positioned(
-                  right: -20,
-                  top: -30,
-                  child: CinematicIcon(
-                    glyph: glyph,
-                    size: 110,
-                    accent: visuals.accent.withValues(alpha: 0.18),
-                    framed: false,
-                    glowing: false,
                   ),
                 ),
                 // Film edge vignette

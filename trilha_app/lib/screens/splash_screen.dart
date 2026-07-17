@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,8 +24,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with TickerProviderStateMixin {
-  static const _firstDuration = Duration(milliseconds: 4600);
-  static const _returnDuration = Duration(milliseconds: 2400);
+  static const _firstDuration = Duration(milliseconds: 3200);
+  static const _returnDuration = Duration(milliseconds: 1600);
 
   late final AnimationController _master;
   late final AnimationController _shimmer;
@@ -74,9 +75,6 @@ class _SplashScreenState extends State<SplashScreen>
     if (!progress.hasSeenSplash) await progress.setHasSeenSplash(true);
     if (!mounted) return;
 
-    setState(() => _readyToExit = true);
-    await Future<void>.delayed(const Duration(milliseconds: 280));
-    if (!mounted || _exiting) return;
     await _exit(progress);
   }
 
@@ -108,19 +106,28 @@ class _SplashScreenState extends State<SplashScreen>
     if (!backend.isGoogleSignedIn) {
       next = const LoginScreen();
     } else {
-      await backend.hydrateProgress(progress);
+      final league = context.read<LeagueService>();
+      await backend.hydrateProgress(progress, league: league);
       if (!mounted) return;
-      // Empurra schema completo se a nuvem ainda não tinha v2.
-      await backend.saveNow(progress, LeagueService.weekKey());
-      if (!mounted) return;
-      // Currículo remoto (trilhas/perguntas) — fallback local se offline.
-      await ContentCatalogService.instance.ensureLoaded();
-      if (!mounted) return;
+      // Sem bloquear a navegação: schema e catálogo carregam em segundo plano.
+      // A Home exibe um skeleton enquanto o catálogo chega.
+      unawaited(() async {
+        final saved = await backend.saveNow(
+          progress,
+          LeagueService.weekKey(),
+          league: league,
+        );
+        if (saved) await progress.clearLegacyLocalPrefs();
+      }());
+      unawaited(ContentCatalogService.instance.ensureLoaded());
       next = progress.hasSeenOnboarding
           ? const MainShell()
           : const OnboardingScreen();
     }
 
+    if (!mounted) return;
+    setState(() => _readyToExit = true);
+    await Future<void>.delayed(const Duration(milliseconds: 220));
     if (!mounted) return;
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(

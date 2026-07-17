@@ -8,10 +8,7 @@ import '../utils/daily_scripture.dart';
 import 'cinematic_icon.dart';
 
 class StreakWeek extends StatelessWidget {
-  final int streak;
-  final bool playedToday;
-
-  const StreakWeek({super.key, required this.streak, required this.playedToday});
+  const StreakWeek({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +23,7 @@ class StreakWeek extends StatelessWidget {
       children: List.generate(7, (i) {
         final day = DateTime(monday.year, monday.month, monday.day + i);
         final isToday = day.year == today.year && day.month == today.month && day.day == today.day;
-        final active = progress.playedOnDate(day) || (isToday && playedToday);
+        final active = progress.playedOnDate(day);
 
         return Column(
           children: [
@@ -56,10 +53,26 @@ class StreakWeek extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w700,
-                          color: a.textMuted(0.4),
+                          color: isToday
+                              ? AppColors.accent.withValues(alpha: 0.95)
+                              : a.textMuted(0.4),
                         ),
                       ),
               ),
+            ),
+            SizedBox(
+              height: 14,
+              child: isToday
+                  ? Text(
+                      'hoje',
+                      style: TextStyle(
+                        fontSize: 9,
+                        fontWeight: FontWeight.w800,
+                        color: AppColors.accent.withValues(alpha: 0.9),
+                        letterSpacing: 0.2,
+                      ),
+                    )
+                  : null,
             ),
           ],
         );

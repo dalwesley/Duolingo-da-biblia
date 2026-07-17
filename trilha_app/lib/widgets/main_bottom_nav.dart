@@ -22,10 +22,11 @@ class MainBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const tabs = [
-      (glyph: CinematicGlyph.spark, icon: null, label: 'Caminhada'),
-      (glyph: CinematicGlyph.book, icon: null, label: 'Bíblia'),
-      (glyph: CinematicGlyph.crown, icon: null, label: 'Juntos'),
-      (glyph: null, icon: Icons.settings_rounded, label: 'Config'),
+      (glyph: CinematicGlyph.spark, label: 'Hoje'),
+      (glyph: CinematicGlyph.book, label: 'Bíblia'),
+      (glyph: CinematicGlyph.path, label: 'Trilhas'),
+      (glyph: CinematicGlyph.dove, label: 'Juntos'),
+      (glyph: CinematicGlyph.tune, label: 'Config'),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
@@ -34,86 +35,79 @@ class MainBottomNav extends StatelessWidget {
     return ColoredBox(
       color: Colors.transparent,
       child: Padding(
-        padding: EdgeInsets.fromLTRB(20, 0, 20, bottomInset > 0 ? bottomInset + 8 : 16),
+        padding: EdgeInsets.fromLTRB(
+          16,
+          0,
+          16,
+          bottomInset > 0 ? bottomInset + 8 : 16,
+        ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(AppRadii.xl),
           child: Container(
-              height: 68,
-              decoration: BoxDecoration(
-                color: style.navBarFill,
-                borderRadius: BorderRadius.circular(AppRadii.xl),
-                border: Border.all(color: style.navBarBorder),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.35),
-                    blurRadius: 24,
-                    offset: const Offset(0, 8),
-                  ),
-                ],
-              ),
-              child: Row(
-                children: List.generate(tabs.length, (i) {
-                  final active = currentIndex == i;
-                  final tab = tabs[i];
-                  final activeColor = AppColors.inkOnAccent;
-                  final idleColor = Colors.white.withValues(alpha: 0.5);
+            height: 64,
+            decoration: BoxDecoration(
+              color: style.navBarFill,
+              borderRadius: BorderRadius.circular(AppRadii.xl),
+              border: Border.all(color: style.navBarBorder),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.28),
+                  blurRadius: 20,
+                  offset: const Offset(0, 6),
+                ),
+              ],
+            ),
+            child: Row(
+              children: List.generate(tabs.length, (i) {
+                final active = currentIndex == i;
+                final tab = tabs[i];
+                final activeColor = AppColors.inkOnAccent;
+                final idleColor = Colors.white.withValues(alpha: 0.48);
+                final color = active ? activeColor : idleColor;
 
-                  return Expanded(
-                    child: GestureDetector(
-                      onTap: () => onTap(i),
-                      behavior: HitTestBehavior.opaque,
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 280),
-                        curve: Curves.easeOutCubic,
-                        margin: const EdgeInsets.all(5),
-                        decoration: active
-                            ? BoxDecoration(
-                                gradient: AppGradients.gold,
-                                borderRadius: BorderRadius.circular(22),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: AppColors.accent.withValues(alpha: 0.22),
-                                    blurRadius: 10,
-                                  ),
-                                ],
-                              )
-                            : null,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            if (tab.icon != null)
-                              Icon(
-                                tab.icon,
-                                size: 22,
-                                color: active ? activeColor : idleColor,
-                              )
-                            else
-                              CinematicIcon(
-                                glyph: tab.glyph!,
-                                size: 26,
-                                accent: active ? activeColor : idleColor,
-                                glowing: active,
-                                framed: false,
-                              ),
-                            const SizedBox(height: 2),
-                            Text(
-                              tab.label,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 10,
-                                fontWeight: FontWeight.w800,
-                                letterSpacing: 0.3,
-                                color: active ? activeColor : idleColor,
-                              ),
+                return Expanded(
+                  child: GestureDetector(
+                    onTap: () => onTap(i),
+                    behavior: HitTestBehavior.opaque,
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 260),
+                      curve: Curves.easeOutCubic,
+                      margin: const EdgeInsets.all(4),
+                      decoration: active
+                          ? BoxDecoration(
+                              gradient: AppGradients.gold,
+                              borderRadius: BorderRadius.circular(18),
+                            )
+                          : null,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          CinematicIcon(
+                            glyph: tab.glyph,
+                            size: 22,
+                            accent: color,
+                            glowing: false,
+                            framed: false,
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            tab.label,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              fontSize: 9,
+                              fontWeight: FontWeight.w800,
+                              letterSpacing: 0.1,
+                              color: color,
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
-                  );
-                }),
-              ),
+                  ),
+                );
+              }),
+            ),
           ),
         ),
       ),

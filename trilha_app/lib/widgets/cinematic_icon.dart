@@ -33,6 +33,7 @@ enum CinematicGlyph {
   check,
   echo,
   target,
+  tune,
 }
 
 class CinematicGlyphResolver {
@@ -131,7 +132,7 @@ class CinematicGlyphResolver {
   static Color paletteFor(CinematicGlyph glyph, {Color? accent}) {
     return switch (glyph) {
       CinematicGlyph.sun || CinematicGlyph.spark || CinematicGlyph.star => AppColors.accent,
-      CinematicGlyph.cosmos || CinematicGlyph.depths => AppColors.slate,
+      CinematicGlyph.cosmos || CinematicGlyph.depths => AppColors.cedarDeep,
       CinematicGlyph.tree || CinematicGlyph.seed => AppColors.cedar,
       CinematicGlyph.flood || CinematicGlyph.sea || CinematicGlyph.tears => AppColors.sky,
       CinematicGlyph.flame || CinematicGlyph.fall => AppColors.ember,
@@ -143,6 +144,7 @@ class CinematicGlyphResolver {
       CinematicGlyph.echo => AppColors.clay,
       CinematicGlyph.book || CinematicGlyph.scroll || CinematicGlyph.calendar || CinematicGlyph.check =>
         accent ?? AppColors.primaryLight,
+      CinematicGlyph.tune => accent ?? AppColors.accent,
     };
   }
 }
@@ -416,6 +418,8 @@ class _GlyphPainter extends CustomPainter {
         _paintEcho(canvas, c, s);
       case CinematicGlyph.target:
         _paintTarget(canvas, c, s);
+      case CinematicGlyph.tune:
+        _paintTune(canvas, c, s);
     }
   }
 
@@ -1053,6 +1057,29 @@ class _GlyphPainter extends CustomPainter {
     canvas.drawCircle(c, s * 0.09, _glow);
     canvas.drawCircle(c, s * 0.08, _fill);
     canvas.drawCircle(c + Offset(-s * 0.025, -s * 0.025), s * 0.025, _highlight);
+  }
+
+  /// Preferências — três trilhos com botões de ajuste.
+  void _paintTune(Canvas canvas, Offset c, double s) {
+    final stroke = _stroke(s * 0.055);
+    final rows = [-0.22, 0.0, 0.22];
+    final knobs = [-0.18, 0.2, -0.06];
+    for (var i = 0; i < 3; i++) {
+      final y = c.dy + s * rows[i];
+      canvas.drawLine(
+        Offset(c.dx - s * 0.32, y),
+        Offset(c.dx + s * 0.32, y),
+        stroke,
+      );
+      final knob = c + Offset(s * knobs[i], s * rows[i]);
+      canvas.drawCircle(knob, s * 0.09, _glow);
+      canvas.drawCircle(knob, s * 0.08, _fill);
+      canvas.drawCircle(
+        knob + Offset(-s * 0.02, -s * 0.02),
+        s * 0.025,
+        _highlight,
+      );
+    }
   }
 
   @override

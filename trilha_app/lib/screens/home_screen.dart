@@ -6,24 +6,30 @@ import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/daily_scripture.dart';
+import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_week.dart';
+import '../widgets/verse_of_day_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
 
+/// Home — um único trabalho: o próximo passo na Palavra.
 class HomeScreen extends StatefulWidget {
   final TrailRepository repo;
   final void Function(String slug) onOpenTrail;
   final void Function(String missionSlug) onOpenMission;
   final VoidCallback onOpenTrilhas;
+  final Widget? topBar;
 
   const HomeScreen({
     super.key,
@@ -31,21 +37,25 @@ class HomeScreen extends StatefulWidget {
     required this.onOpenTrail,
     required this.onOpenMission,
     required this.onOpenTrilhas,
+    this.topBar,
   });
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateMixin {
+class _HomeScreenState extends State<HomeScreen>
+    with SingleTickerProviderStateMixin {
   List<Trail>? _trails;
   late final AnimationController _fadeIn;
 
   @override
   void initState() {
     super.initState();
-    _fadeIn = AnimationController(vsync: this, duration: const Duration(milliseconds: 1100))
-      ..forward();
+    _fadeIn = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..forward();
     _load();
   }
 
@@ -62,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   Widget _reveal(int index, Widget child) {
     final start = (0.1 * index).clamp(0.0, 0.65);
-    final end = (start + 0.4).clamp(0.0, 1.0);
+    final end = (start + 0.38).clamp(0.0, 1.0);
     final curve = CurvedAnimation(
       parent: _fadeIn,
       curve: Interval(start, end, curve: Curves.easeOutCubic),
@@ -70,7 +80,10 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(begin: const Offset(0, 0.05), end: Offset.zero).animate(curve),
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.04),
+          end: Offset.zero,
+        ).animate(curve),
         child: child,
       ),
     );
@@ -79,14 +92,16 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final bottomInset = MediaQuery.of(context).padding.bottom;
 
     if (_trails == null) {
-      return const Center(child: CircularProgressIndicator(color: AppColors.accent));
+      return _HomeSkeleton(topBar: widget.topBar);
     }
 
     final trails = _trails!;
-    final active = TrailProgress.findActiveTrail(trails, progress.completedMissions);
+    final active = TrailProgress.findActiveTrail(
+      trails,
+      progress.completedMissions,
+    );
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
         : null;
@@ -94,30 +109,40 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         ? TrailProgress.getProgress(active, progress.completedMissions)
         : null;
     final goal = progress.settings.dailyGoal;
+    final playedToday = progress.walkedToday;
+    final goalMet = progress.dailyGoalMet;
     final goalPct = goal > 0 ? progress.missionsToday / goal : 0.0;
-    final playedToday = progress.missionsToday > 0;
-    final a = Appearance.of(context);
 
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
-        AppSpace.lg,
-        20,
-        110 + bottomInset,
+        AppSpace.screen,
+        widget.topBar != null
+            ? MediaQuery.viewPaddingOf(context).top + AppSpace.sm
+            : AppSpace.sm,
+        AppSpace.screen,
+        scrollPaddingBelowNav(context),
       ),
+      physics: const ClampingScrollPhysics(),
       children: [
+        if (widget.topBar != null) ...[
+          widget.topBar!,
+          const SizedBox(height: 12),
+        ],
         _reveal(
           0,
-          HeroContinueCard(
-            mission: current,
-            trailTitle: active?.title ?? '',
-            trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#2F5D4A',
-            onTap: current != null ? () => widget.onOpenMission(current.slug) : null,
+          VerseOfDayCard(
+            onOpen: () {
+              final ref = DailyScripture.today().$2;
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => BibleReaderScreen(reference: ref),
+                ),
+              );
+            },
           ),
         ),
         if (LiturgicalCalendar.isHighSeason) ...[
-          const SizedBox(height: 14),
+          const SizedBox(height: 12),
           _reveal(
             1,
             LiturgicalBanner(
@@ -136,112 +161,40 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         const SizedBox(height: 14),
         _reveal(
           1,
-          _MetaStrip(
+          HeroContinueCard(
+            mission: current,
+            trailTitle: active?.title ?? '',
+            trailSlug: active?.slug ?? 'genesis-1-11',
+            trailColor: active?.color ?? '#2F5D4A',
+            onTap: current != null
+                ? () => widget.onOpenMission(current.slug)
+                : null,
+            onExploreTrails: widget.onOpenTrilhas,
+          ),
+        ),
+        const SizedBox(height: 14),
+        _reveal(
+          2,
+          _DayPulse(
             missionsToday: progress.missionsToday,
             goal: goal,
             goalPct: goalPct,
             streak: progress.streak,
             playedToday: playedToday,
+            goalMet: goalMet,
             returningAfterGap: progress.isReturningAfterGap,
             userName: progress.userName,
             steps: progress.steps,
           ),
         ),
         const SizedBox(height: 14),
-        _reveal(
-          2,
-          GlassCard(
-            elevated: true,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const MemoryScreen()),
-            ),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            child: Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.scroll,
-                  size: 40,
-                  accent: AppColors.accent,
-                  glowing: false,
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Memorizar',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w900,
-                          color: a.text,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        'Guarde a Palavra no coração',
-                        style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
-                      ),
-                    ],
-                  ),
-                ),
-                Icon(Icons.arrow_forward_rounded, color: a.textMuted(0.5), size: 20),
-              ],
-            ),
-          ),
-        ),
-        if (progress.mistakeQuestionIds.isNotEmpty) ...[
+        _reveal(3, const DailyQuestsCard()),
+        const SizedBox(height: 14),
+        _reveal(4, const _MemoryPracticeLinks()),
+        if (active != null && prog != null) ...[
           const SizedBox(height: 14),
           _reveal(
-            2,
-            GlassCard(
-              elevated: true,
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const PracticeScreen()),
-              ),
-              child: Row(
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyph.echo,
-                    size: 44,
-                    accent: AppColors.error,
-                    glowing: true,
-                  ),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Reforçar memória',
-                          style: TextStyle(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w900,
-                            color: a.text,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          '${progress.mistakeQuestionIds.length} passagem(ns) para revisitar',
-                          style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Icon(
-                    Icons.arrow_forward_rounded,
-                    color: a.textMuted(0.5),
-                    size: 20,
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-        if (active != null && prog != null) ...[
-          const SizedBox(height: 16),
-          _reveal(
-            3,
+            5,
             _ActiveTrailLine(
               trail: active,
               done: prog.done,
@@ -250,19 +203,76 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             ),
           ),
         ],
-        const SizedBox(height: 16),
-        _reveal(
-          4,
+      ],
+    );
+  }
+}
+
+/// Atalhos de memorização e reforço — saíram do perfil para a home.
+class _MemoryPracticeLinks extends StatelessWidget {
+  const _MemoryPracticeLinks();
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
+
+    return Column(
+      children: [
+        GlassCard(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => const MemoryScreen()),
+          ),
+          child: Row(
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.scroll,
+                size: 40,
+                accent: AppColors.accent,
+                glowing: false,
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Memorizar',
+                      style: AppTypography.title(size: 15, color: a.text),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      progress.memoryMastered.isEmpty
+                          ? 'Guarde a Palavra no coração'
+                          : '${progress.memoryMastered.length} firmes no coração',
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textMuted(0.55),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(
+                Icons.arrow_forward_rounded,
+                color: a.textMuted(0.45),
+                size: 18,
+              ),
+            ],
+          ),
+        ),
+        if (progress.mistakeQuestionIds.isNotEmpty) ...[
+          const SizedBox(height: 12),
           GlassCard(
-            elevated: true,
-            onTap: widget.onOpenTrilhas,
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const PracticeScreen()),
+            ),
             child: Row(
               children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.path,
+                const CinematicIcon(
+                  glyph: CinematicGlyph.echo,
                   size: 40,
-                  accent: AppColors.accent,
+                  accent: AppColors.error,
                   glowing: false,
                 ),
                 const SizedBox(width: 14),
@@ -271,47 +281,53 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Todas as trilhas',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w900,
-                          color: a.text,
-                        ),
+                        'Revisitar',
+                        style: AppTypography.title(size: 15, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'Escolha ou continue sua jornada',
-                        style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
+                        '${progress.mistakeQuestionIds.length} passagem(ns) para reforçar',
+                        style: AppTypography.body(
+                          size: 12,
+                          color: a.textMuted(0.55),
+                        ),
                       ),
                     ],
                   ),
                 ),
-                Icon(Icons.arrow_forward_rounded, color: a.textMuted(0.5), size: 20),
+                Icon(
+                  Icons.arrow_forward_rounded,
+                  color: a.textMuted(0.45),
+                  size: 18,
+                ),
               ],
             ),
           ),
-        ),
+        ],
       ],
     );
   }
 }
 
-class _MetaStrip extends StatelessWidget {
+/// Pulso do dia — sequência da semana + meta diária.
+class _DayPulse extends StatelessWidget {
   final int missionsToday;
   final int goal;
   final double goalPct;
   final int streak;
   final bool playedToday;
+  final bool goalMet;
   final bool returningAfterGap;
   final String userName;
   final int steps;
 
-  const _MetaStrip({
+  const _DayPulse({
     required this.missionsToday,
     required this.goal,
     required this.goalPct,
     required this.streak,
     required this.playedToday,
+    required this.goalMet,
     required this.returningAfterGap,
     required this.userName,
     required this.steps,
@@ -320,67 +336,65 @@ class _MetaStrip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final todayCopy = playedToday
-        ? (missionsToday >= goal
-            ? 'Hoje você já deu $missionsToday passo${missionsToday == 1 ? '' : 's'}.'
-            : 'Hoje: $missionsToday de $goal passos.')
+    final title = goalMet
+        ? 'Meta de hoje cumprida'
+        : playedToday
+        ? 'Meta de hoje'
         : returningAfterGap
-            ? 'Sua caminhada continua daqui.\nVamos dar o próximo passo?'
-            : 'Hoje você ainda não deu nenhum passo.';
+        ? 'Sua caminhada continua'
+        : 'Meta de hoje';
+    final detail = goalMet
+        ? null
+        : playedToday
+        ? '$missionsToday de $goal'
+        : returningAfterGap
+        ? 'Um passo basta para reacender a chama'
+        : 'Ainda sem passo hoje · meta $goal';
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Continue sua caminhada',
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 22,
-              fontWeight: FontWeight.w700,
-              color: a.text,
-              height: 1.15,
-            ),
-          ),
-          const SizedBox(height: 14),
           Row(
             children: [
               Expanded(
-                child: _WalkStat(
-                  icon: Icons.directions_walk_rounded,
-                  value: '$steps',
-                  label: 'passos',
-                  color: AppColors.accent,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w800,
+                        color: a.text.withValues(alpha: 0.92),
+                        height: 1.25,
+                      ),
+                    ),
+                    if (detail != null) ...[
+                      Text(
+                        detail,
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                          color: a.textMuted(0.55),
+                          height: 1.3,
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: _WalkStat(
-                  icon: Icons.wb_sunny_rounded,
-                  value: '$streak',
-                  label: streak == 1 ? 'dia caminhando' : 'dias caminhando',
-                  color: AppColors.streak,
-                ),
-              ),
+              _StreakChip(streak: streak),
             ],
           ),
-          const SizedBox(height: 14),
-          Text(
-            todayCopy,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w700,
-              height: 1.35,
-              color: a.text.withValues(alpha: 0.9),
-            ),
-          ),
-          if (!returningAfterGap) ...[
-            const SizedBox(height: 14),
+          if (!returningAfterGap && !goalMet) ...[
+            const SizedBox(height: 12),
             ClipRRect(
               borderRadius: BorderRadius.circular(8),
               child: LinearProgressIndicator(
                 value: goalPct.clamp(0.0, 1.0),
-                minHeight: 6,
+                minHeight: 5,
                 backgroundColor: a.text.withValues(alpha: 0.08),
                 color: AppColors.accent,
               ),
@@ -388,8 +402,9 @@ class _MetaStrip extends StatelessWidget {
           ],
           const SizedBox(height: 14),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(child: StreakWeek(streak: streak, playedToday: playedToday)),
+              const Expanded(child: StreakWeek()),
               ShareStreakButton(
                 streak: streak,
                 userName: userName,
@@ -404,56 +419,37 @@ class _MetaStrip extends StatelessWidget {
   }
 }
 
-class _WalkStat extends StatelessWidget {
-  final IconData icon;
-  final String value;
-  final String label;
-  final Color color;
+class _StreakChip extends StatelessWidget {
+  final int streak;
 
-  const _WalkStat({
-    required this.icon,
-    required this.value,
-    required this.label,
-    required this.color,
-  });
+  const _StreakChip({required this.streak});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withValues(alpha: 0.28)),
+        color: AppColors.accent.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.22)),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 18, color: color),
-          const SizedBox(width: 8),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  value,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: a.text,
-                    height: 1,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  label,
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
-              ],
+          Icon(
+            Icons.local_fire_department_rounded,
+            size: 14,
+            color: AppColors.accent.withValues(alpha: 0.95),
+          ),
+          const SizedBox(width: 4),
+          Text(
+            streak == 1 ? '1 dia' : '$streak dias',
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.w800,
+              color: a.text.withValues(alpha: 0.9),
+              height: 1,
             ),
           ),
         ],
@@ -482,7 +478,6 @@ class _ActiveTrailLine extends StatelessWidget {
     final a = Appearance.of(context);
 
     return GlassCard(
-      elevated: true,
       onTap: onTap,
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       child: Row(
@@ -491,7 +486,7 @@ class _ActiveTrailLine extends StatelessWidget {
             glyph: CinematicGlyphResolver.forTrail(trail.slug),
             size: 40,
             accent: visuals.accent,
-            glowing: true,
+            glowing: false,
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -525,9 +520,106 @@ class _ActiveTrailLine extends StatelessWidget {
               ],
             ),
           ),
-          Icon(Icons.arrow_forward_rounded, color: visuals.accent.withValues(alpha: 0.8), size: 20),
+          Icon(
+            Icons.arrow_forward_rounded,
+            color: visuals.accent.withValues(alpha: 0.8),
+            size: 20,
+          ),
         ],
       ),
+    );
+  }
+}
+
+/// Skeleton exibido enquanto o catálogo de trilhas carrega — espelha o layout
+/// real da home para evitar tela preta na abertura.
+class _HomeSkeleton extends StatefulWidget {
+  final Widget? topBar;
+
+  const _HomeSkeleton({this.topBar});
+
+  @override
+  State<_HomeSkeleton> createState() => _HomeSkeletonState();
+}
+
+class _HomeSkeletonState extends State<_HomeSkeleton>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _shimmer;
+
+  @override
+  void initState() {
+    super.initState();
+    _shimmer = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1300),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _shimmer.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        widget.topBar != null
+            ? MediaQuery.viewPaddingOf(context).top + AppSpace.sm
+            : AppSpace.sm,
+        AppSpace.screen,
+        scrollPaddingBelowNav(context),
+      ),
+      physics: const NeverScrollableScrollPhysics(),
+      children: [
+        if (widget.topBar != null) ...[
+          widget.topBar!,
+          const SizedBox(height: 12),
+        ],
+        _ShimmerBox(controller: _shimmer, height: 88),
+        const SizedBox(height: 14),
+        _ShimmerBox(controller: _shimmer, height: 210),
+        const SizedBox(height: 14),
+        _ShimmerBox(controller: _shimmer, height: 132),
+        const SizedBox(height: 14),
+        _ShimmerBox(controller: _shimmer, height: 190),
+      ],
+    );
+  }
+}
+
+class _ShimmerBox extends StatelessWidget {
+  final AnimationController controller;
+  final double height;
+
+  const _ShimmerBox({required this.controller, required this.height});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final base = a.text.withValues(alpha: 0.05);
+    final highlight = a.text.withValues(alpha: 0.12);
+
+    return AnimatedBuilder(
+      animation: controller,
+      builder: (context, _) {
+        final t = controller.value;
+        return Container(
+          height: height,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            border: Border.all(color: a.cardBorder),
+            gradient: LinearGradient(
+              begin: Alignment(-1 + 2 * t, 0),
+              end: Alignment(1 + 2 * t, 0),
+              colors: [base, highlight, base],
+              stops: const [0.35, 0.5, 0.65],
+            ),
+          ),
+        );
+      },
     );
   }
 }

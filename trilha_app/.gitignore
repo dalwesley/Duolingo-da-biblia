@@ -48,3 +48,10 @@ app.*.map.json
 admin/node_modules/
 admin/dist/
 admin/.env
+
+# Bible study DB gerado localmente (o asset versionado é o .gz)
+assets/data/bible_study.sqlite
+
+# Tradução do léxico (cache + venv local)
+.venv-translate/
+scripts/.lexicon_pt_cache.json

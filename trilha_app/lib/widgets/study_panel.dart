@@ -52,6 +52,8 @@ class _StudyPanelState extends State<StudyPanel>
     return FadeTransition(
       opacity: CurvedAnimation(parent: _enter, curve: Curves.easeOut),
       child: ListView(
+        shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         padding: const EdgeInsets.fromLTRB(20, 8, 20, 24),
         children: [
           Text(

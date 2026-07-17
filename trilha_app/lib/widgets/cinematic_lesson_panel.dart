@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
+import 'lamps_bar.dart';
 
 /// Painel de pergunta cinematográfico — cena, não quiz genérico.
 class CinematicLessonPanel extends StatefulWidget {
@@ -20,6 +21,7 @@ class CinematicLessonPanel extends StatefulWidget {
   final VoidCallback? onHint;
   final bool outOfLamps;
   final String? verseSnippet;
+  final int lamps;
 
   const CinematicLessonPanel({
     super.key,
@@ -37,6 +39,7 @@ class CinematicLessonPanel extends StatefulWidget {
     this.onHint,
     this.outOfLamps = false,
     this.verseSnippet,
+    this.lamps = 5,
   });
 
   @override
@@ -117,10 +120,16 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           FadeTransition(
-            opacity: CurvedAnimation(parent: _stagger, curve: const Interval(0, 0.4, curve: Curves.easeOut)),
+            opacity: CurvedAnimation(
+              parent: _stagger,
+              curve: const Interval(0, 0.4, curve: Curves.easeOut),
+            ),
             child: SlideTransition(
               position: Tween<Offset>(begin: const Offset(0, 0.08), end: Offset.zero).animate(
-                CurvedAnimation(parent: _stagger, curve: const Interval(0, 0.45, curve: Curves.easeOutCubic)),
+                CurvedAnimation(
+                  parent: _stagger,
+                  curve: const Interval(0, 0.45, curve: Curves.easeOutCubic),
+                ),
               ),
               child: _ScenePrompt(
                 narrative: narrative,
@@ -135,48 +144,68 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
             ),
           ),
           const SizedBox(height: 14),
-          Expanded(
-            child: ListView(
-              padding: EdgeInsets.zero,
-              children: [
-                ...widget.question.options.asMap().entries.map((e) {
-                  final i = e.key;
-                  final opt = e.value;
-                  final eliminated = widget.eliminatedIds.contains(opt.id);
-                  final start = 0.22 + i * 0.1;
-                  final curve = CurvedAnimation(
-                    parent: _stagger,
-                    curve: Interval(start, (start + 0.42).clamp(0.0, 1.0), curve: Curves.easeOutCubic),
-                  );
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 11),
-                    child: FadeTransition(
-                      opacity: curve,
-                      child: SlideTransition(
-                        position: Tween<Offset>(begin: Offset(0.04 + i * 0.01, 0.08), end: Offset.zero)
-                            .animate(curve),
-                        child: Opacity(
-                          opacity: eliminated ? 0.32 : 1,
-                          child: _ChoiceTile(
-                            letter: _letters[i.clamp(0, _letters.length - 1)],
-                            text: opt.text,
-                            state: eliminated ? _ChoiceState.dimmed : _state(opt.id),
-                            enabled: !locked && !eliminated,
-                            accent: accent,
-                            onTap: () => _pick(opt.id),
-                          ),
-                        ),
-                      ),
+          ...widget.question.options.asMap().entries.map((e) {
+            final i = e.key;
+            final opt = e.value;
+            final eliminated = widget.eliminatedIds.contains(opt.id);
+            final start = 0.22 + i * 0.1;
+            final curve = CurvedAnimation(
+              parent: _stagger,
+              curve: Interval(
+                start,
+                (start + 0.42).clamp(0.0, 1.0),
+                curve: Curves.easeOutCubic,
+              ),
+            );
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 11),
+              child: FadeTransition(
+                opacity: curve,
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: Offset(0.04 + i * 0.01, 0.08),
+                    end: Offset.zero,
+                  ).animate(curve),
+                  child: Opacity(
+                    opacity: eliminated ? 0.32 : 1,
+                    child: _ChoiceTile(
+                      letter: _letters[i.clamp(0, _letters.length - 1)],
+                      text: opt.text,
+                      state: eliminated ? _ChoiceState.dimmed : _state(opt.id),
+                      enabled: !locked && !eliminated,
+                      accent: accent,
+                      onTap: () => _pick(opt.id),
                     ),
-                  );
-                }),
-              ],
+                  ),
+                ),
+              ),
+            );
+          }),
+          const SizedBox(height: 10),
+          Center(
+            child: Container(
+              padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                color: Colors.black.withValues(alpha: 0.32),
+                border: Border.all(
+                  color: accent.withValues(alpha: 0.28),
+                ),
+              ),
+              child: LampsBar(
+                current: widget.lamps,
+                accent: accent,
+                labeled: true,
+              ),
             ),
           ),
           if (!widget.showFeedback) ...[
-            const SizedBox(height: 6),
+            const SizedBox(height: 10),
             FadeTransition(
-              opacity: CurvedAnimation(parent: _stagger, curve: const Interval(0.55, 1, curve: Curves.easeOut)),
+              opacity: CurvedAnimation(
+                parent: _stagger,
+                curve: const Interval(0.55, 1, curve: Curves.easeOut),
+              ),
               child: _ConfirmCta(
                 enabled: canConfirm,
                 accent: accent,

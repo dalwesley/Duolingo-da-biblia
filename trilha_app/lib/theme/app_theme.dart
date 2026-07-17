@@ -254,16 +254,17 @@ class AppTheme {
     return Color(int.parse('FF$value', radix: 16));
   }
 
-  static List<BoxShadow> glow(Color color, {double blur = 24}) => [
-        BoxShadow(color: color.withValues(alpha: 0.22), blurRadius: blur, spreadRadius: 0),
-        BoxShadow(color: color.withValues(alpha: 0.08), blurRadius: blur * 1.6, spreadRadius: 2),
+  /// Brilho discreto — presença, não neon.
+  static List<BoxShadow> glow(Color color, {double blur = 20}) => [
+        BoxShadow(color: color.withValues(alpha: 0.14), blurRadius: blur, spreadRadius: 0),
+        BoxShadow(color: color.withValues(alpha: 0.05), blurRadius: blur * 1.4, spreadRadius: 1),
       ];
 
   static List<BoxShadow> cardShadow({bool elevated = false}) => [
         BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
-          blurRadius: elevated ? 22 : 16,
-          offset: Offset(0, elevated ? 10 : 8),
+          color: Colors.black.withValues(alpha: elevated ? 0.22 : 0.14),
+          blurRadius: elevated ? 18 : 12,
+          offset: Offset(0, elevated ? 8 : 5),
         ),
       ];
 }

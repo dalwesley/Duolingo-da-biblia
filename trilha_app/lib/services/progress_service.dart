@@ -3,18 +3,21 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/daily_quest.dart';
 import '../utils/appearance.dart';
+import 'bible_service.dart';
 
 class AppSettings {
   final bool sound;
   final bool notifications;
   final int dailyGoal;
   final AppearanceMode appearanceMode;
+  final String bibleTranslationId;
 
   const AppSettings({
     this.sound = true,
     this.notifications = true,
     this.dailyGoal = 1,
     this.appearanceMode = AppearanceMode.automatic,
+    this.bibleTranslationId = BibleService.defaultTranslationId,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -25,12 +28,14 @@ class AppSettings {
     bool? notifications,
     int? dailyGoal,
     AppearanceMode? appearanceMode,
+    String? bibleTranslationId,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
       notifications: notifications ?? this.notifications,
       dailyGoal: dailyGoal ?? this.dailyGoal,
       appearanceMode: appearanceMode ?? this.appearanceMode,
+      bibleTranslationId: bibleTranslationId ?? this.bibleTranslationId,
     );
   }
 }
@@ -49,6 +54,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyDailyGoal = 'dailyGoal';
   static const _keyDarkMode = 'darkMode';
   static const _keyAppearanceMode = 'appearanceMode';
+  static const _keyBibleTranslation = 'bibleTranslationId';
   static const _keyTrailDifficulty = 'trailDifficultyMap';
   static const _keyUsedQuestions = 'usedQuestionIds';
   static const _keyMistakeIds = 'mistakeQuestionIds';
@@ -67,6 +73,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyWeeklySteps = 'weeklyXp';
   static const _keyLastWeekSteps = 'lastWeekXp';
   static const _keyLastWeekKey = 'lastWeekKey';
+  static const _keyMonthlySteps = 'monthlySteps';
+  static const _keyMonthlyMonth = 'monthlyMonth';
   static const _keyReadBibleChapters = 'readBibleChapters';
   static const _keyBibleBookmarks = 'bibleBookmarks';
   static const _keyMemoryScores = 'memoryScores';
@@ -118,6 +126,10 @@ class ProgressService extends ChangeNotifier {
   /// Passos finais da semana anterior.
   int lastWeekSteps = 0;
   String? lastWeekKey;
+
+  /// Passos acumulados no mês atual (ranking mensal).
+  int monthlySteps = 0;
+  String? monthlyMonth;
   bool _loaded = false;
 
   /// True when daily goal was just crossed (UI one-shot).
@@ -138,94 +150,234 @@ class ProgressService extends ChangeNotifier {
     return start.toIso8601String().substring(0, 10);
   }
 
+  String _weekMondayKey([DateTime? now]) {
+    final d = now ?? DateTime.now();
+    final monday = DateTime(d.year, d.month, d.day)
+        .subtract(Duration(days: d.weekday - 1));
+    return monday.toIso8601String().substring(0, 10);
+  }
+
+  String _monthKey() {
+    final now = DateTime.now();
+    return '${now.year}-${now.month.toString().padLeft(2, '0')}';
+  }
+
   Future<void> load() async {
+    // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
+    // Splash visto: preferência de aparelho (não é progresso do usuário).
     final prefs = await SharedPreferences.getInstance();
-    steps = prefs.getInt(_keySteps) ?? 0;
-    streak = prefs.getInt(_keyStreak) ?? 0;
-    lastPlayedDate = prefs.getString(_keyLastPlayed);
-    completedMissions = prefs.getStringList(_keyCompleted) ?? [];
-    missionsToday = prefs.getInt(_keyMissionsToday) ?? 0;
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
-    hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
-    userName = prefs.getString(_keyUserName) ?? 'Peregrino';
-    settings = AppSettings(
-      sound: prefs.getBool(_keySound) ?? true,
-      notifications: prefs.getBool(_keyNotifications) ?? true,
-      dailyGoal: prefs.getInt(_keyDailyGoal) ?? 1,
-      appearanceMode: AppearanceModeX.fromStorage(
-        prefs.getString(_keyAppearanceMode),
-        legacyDarkMode: prefs.getBool(_keyDarkMode),
-      ),
+    _loaded = true;
+    notifyListeners();
+  }
+
+  /// Lê snapshot legado em SharedPreferences (migração única → nuvem).
+  Future<Map<String, dynamic>?> readLegacyLocalSnapshot() async {
+    final prefs = await SharedPreferences.getInstance();
+    final steps = prefs.getInt(_keySteps) ?? 0;
+    final completed = prefs.getStringList(_keyCompleted) ?? const <String>[];
+    final streak = prefs.getInt(_keyStreak) ?? 0;
+    final name = prefs.getString(_keyUserName);
+    final hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
+    final hasAnything = steps > 0 ||
+        completed.isNotEmpty ||
+        streak > 0 ||
+        hasSeenOnboarding ||
+        (name != null && name.isNotEmpty && name != 'Peregrino');
+    if (!hasAnything) return null;
+
+    AppearanceMode appearance = AppearanceMode.automatic;
+    appearance = AppearanceModeX.fromStorage(
+      prefs.getString(_keyAppearanceMode),
+      legacyDarkMode: prefs.getBool(_keyDarkMode),
     );
+
+    Map<String, String> diffs = {};
     final diffRaw = prefs.getString(_keyTrailDifficulty);
     if (diffRaw != null && diffRaw.isNotEmpty) {
       try {
         final decoded = jsonDecode(diffRaw) as Map<String, dynamic>;
-        trailDifficulties = decoded.map((k, v) => MapEntry(k, v.toString()));
-      } catch (_) {
-        trailDifficulties = {};
-      }
+        diffs = decoded.map((k, v) => MapEntry(k, v.toString()));
+      } catch (_) {}
     }
-    usedQuestionIds = prefs.getStringList(_keyUsedQuestions) ?? [];
-    mistakeQuestionIds = prefs.getStringList(_keyMistakeIds) ?? [];
-    playDates = prefs.getStringList(_keyPlayDates) ?? [];
-    streakFreezeWeek = prefs.getString(_keyFreezeWeek);
-    final week = _weekKey();
-    if (streakFreezeWeek != week) {
-      streakFreezeAvailable = true;
-      streakFreezeWeek = week;
-    } else {
-      streakFreezeAvailable = prefs.getBool(_keyStreakFreeze) ?? true;
-    }
-    questDay = prefs.getString(_keyQuestDay);
+
+    Map<String, int> questProgress = {};
     final qp = prefs.getString(_keyQuestProgress);
     if (qp != null && qp.isNotEmpty) {
       try {
         final decoded = jsonDecode(qp) as Map<String, dynamic>;
-        questProgressMap = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+        questProgress =
+            decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
       } catch (_) {}
     }
-    questClaimed = prefs.getStringList(_keyQuestClaimed) ?? [];
-    _ensureQuestDay();
 
-    weeklyWeek = prefs.getString(_keyWeeklyWeek);
+    Map<String, int> weeklyProgress = {};
     final wp = prefs.getString(_keyWeeklyProgress);
     if (wp != null && wp.isNotEmpty) {
       try {
         final decoded = jsonDecode(wp) as Map<String, dynamic>;
-        weeklyProgressMap = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+        weeklyProgress =
+            decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
       } catch (_) {}
     }
-    weeklyClaimed = prefs.getStringList(_keyWeeklyClaimed) ?? [];
-    weeklySteps = prefs.getInt(_keyWeeklySteps) ?? 0;
-    lastWeekSteps = prefs.getInt(_keyLastWeekSteps) ?? 0;
-    lastWeekKey = prefs.getString(_keyLastWeekKey);
-    _ensureWeeklyWeek();
 
-    claimedChests = prefs.getStringList(_keyClaimedChests) ?? [];
-    readBibleChapters = prefs.getStringList(_keyReadBibleChapters) ?? [];
-    bibleBookmarks = prefs.getStringList(_keyBibleBookmarks) ?? [];
+    Map<String, int> memScores = {};
     final memRaw = prefs.getString(_keyMemoryScores);
     if (memRaw != null && memRaw.isNotEmpty) {
       try {
         final decoded = jsonDecode(memRaw) as Map<String, dynamic>;
-        memoryScores = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
-      } catch (_) {
-        memoryScores = {};
-      }
+        memScores = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+      } catch (_) {}
     }
-    memoryMastered = prefs.getStringList(_keyMemoryMastered) ?? [];
+
+    Map<String, String> reflections = {};
     final reflRaw = prefs.getString(_keyReflections);
     if (reflRaw != null && reflRaw.isNotEmpty) {
       try {
         final decoded = jsonDecode(reflRaw) as Map<String, dynamic>;
-        missionReflections = decoded.map((k, v) => MapEntry(k, v.toString()));
-      } catch (_) {
-        missionReflections = {};
-      }
+        reflections = decoded.map((k, v) => MapEntry(k, v.toString()));
+      } catch (_) {}
     }
-    _loaded = true;
+
+    return {
+      'version': 2,
+      'userName': name ?? 'Peregrino',
+      'xp': steps,
+      'steps': steps,
+      'streak': streak,
+      'lastPlayedDate': prefs.getString(_keyLastPlayed),
+      'completedMissions': completed,
+      'missionsToday': prefs.getInt(_keyMissionsToday) ?? 0,
+      'hasSeenOnboarding': hasSeenOnboarding,
+      'weeklyXp': prefs.getInt(_keyWeeklySteps) ?? 0,
+      'weeklySteps': prefs.getInt(_keyWeeklySteps) ?? 0,
+      'lastWeekXp': prefs.getInt(_keyLastWeekSteps) ?? 0,
+      'lastWeekSteps': prefs.getInt(_keyLastWeekSteps) ?? 0,
+      'lastWeekKey': prefs.getString(_keyLastWeekKey),
+      'weeklyWeek': prefs.getString(_keyWeeklyWeek),
+      'monthlySteps': prefs.getInt(_keyMonthlySteps) ?? 0,
+      'monthlyMonth': prefs.getString(_keyMonthlyMonth),
+      'streakFreezeAvailable': prefs.getBool(_keyStreakFreeze) ?? true,
+      'streakFreezeWeek': prefs.getString(_keyFreezeWeek),
+      'questDay': prefs.getString(_keyQuestDay),
+      'questProgress': questProgress,
+      'questClaimed': prefs.getStringList(_keyQuestClaimed) ?? const <String>[],
+      'weeklyProgress': weeklyProgress,
+      'weeklyClaimed': prefs.getStringList(_keyWeeklyClaimed) ?? const <String>[],
+      'claimedChests': prefs.getStringList(_keyClaimedChests) ?? const <String>[],
+      'readBibleChapters':
+          prefs.getStringList(_keyReadBibleChapters) ?? const <String>[],
+      'bibleBookmarks':
+          prefs.getStringList(_keyBibleBookmarks) ?? const <String>[],
+      'memoryScores': memScores,
+      'memoryMastered':
+          prefs.getStringList(_keyMemoryMastered) ?? const <String>[],
+      'usedQuestionIds':
+          prefs.getStringList(_keyUsedQuestions) ?? const <String>[],
+      'mistakeQuestionIds':
+          prefs.getStringList(_keyMistakeIds) ?? const <String>[],
+      'playDates': prefs.getStringList(_keyPlayDates) ?? const <String>[],
+      'trailDifficulties': diffs,
+      'missionReflections': reflections,
+      'settings': {
+        'sound': prefs.getBool(_keySound) ?? true,
+        'notifications': prefs.getBool(_keyNotifications) ?? true,
+        'dailyGoal': prefs.getInt(_keyDailyGoal) ?? 1,
+        'appearanceMode': appearance.storageKey,
+        'bibleTranslationId': prefs.getString(_keyBibleTranslation) ??
+            BibleService.defaultTranslationId,
+      },
+    };
+  }
+
+  /// Remove chaves de progresso locais (após migrar/hidratar da nuvem).
+  Future<void> clearLegacyLocalPrefs() async {
+    final prefs = await SharedPreferences.getInstance();
+    const keys = [
+      _keySteps,
+      _keyStreak,
+      _keyLastPlayed,
+      _keyCompleted,
+      _keyMissionsToday,
+      _keyHasSeenOnboarding,
+      _keyUserName,
+      _keySound,
+      _keyNotifications,
+      _keyDailyGoal,
+      _keyDarkMode,
+      _keyAppearanceMode,
+      _keyBibleTranslation,
+      _keyTrailDifficulty,
+      _keyUsedQuestions,
+      _keyMistakeIds,
+      _keyPlayDates,
+      _keyStreakFreeze,
+      _keyFreezeWeek,
+      _keyQuestDay,
+      _keyQuestProgress,
+      _keyQuestClaimed,
+      _keyWeeklyWeek,
+      _keyWeeklyProgress,
+      _keyWeeklyClaimed,
+      _keyClaimedChests,
+      _keyReflections,
+      _keyWeeklySteps,
+      _keyLastWeekSteps,
+      _keyLastWeekKey,
+      _keyMonthlySteps,
+      _keyMonthlyMonth,
+      _keyReadBibleChapters,
+      _keyBibleBookmarks,
+      _keyMemoryScores,
+      _keyMemoryMastered,
+    ];
+    for (final key in keys) {
+      await prefs.remove(key);
+    }
+  }
+
+  /// Zera memória da sessão (logout) — não toca na nuvem.
+  void resetMemoryToDefaults() {
+    steps = 0;
+    streak = 0;
+    lastPlayedDate = null;
+    completedMissions = [];
+    missionsToday = 0;
+    hasSeenOnboarding = false;
+    userName = 'Peregrino';
+    settings = const AppSettings();
+    trailDifficulties = {};
+    usedQuestionIds = [];
+    mistakeQuestionIds = [];
+    playDates = [];
+    streakFreezeAvailable = true;
+    streakFreezeWeek = null;
+    questDay = null;
+    questProgressMap = {};
+    questClaimed = [];
+    weeklyWeek = null;
+    weeklyProgressMap = {};
+    weeklyClaimed = [];
+    claimedChests = [];
+    missionReflections = {};
+    readBibleChapters = [];
+    bibleBookmarks = [];
+    memoryScores = {};
+    memoryMastered = [];
+    weeklySteps = 0;
+    lastWeekSteps = 0;
+    lastWeekKey = null;
+    monthlySteps = 0;
+    monthlyMonth = null;
+    goalJustReached = false;
     notifyListeners();
+  }
+
+  /// Zera a meta do dia quando o calendário virou e ainda não houve passo hoje.
+  void _ensureMissionsDay() {
+    if (lastPlayedDate == _todayKey()) return;
+    if (missionsToday == 0) return;
+    missionsToday = 0;
   }
 
   void _ensureQuestDay() {
@@ -252,11 +404,21 @@ class ProgressService extends ChangeNotifier {
     }
   }
 
-  /// Soma passos totais + passos semanais de uma vez.
+  void _ensureMonthlyMonth() {
+    final month = _monthKey();
+    if (monthlyMonth != month) {
+      monthlyMonth = month;
+      monthlySteps = 0;
+    }
+  }
+
+  /// Soma passos totais + contadores semanal e mensal de uma vez.
   void _gainSteps(int amount) {
     _ensureWeeklyWeek();
+    _ensureMonthlyMonth();
     steps += amount;
     weeklySteps += amount;
+    monthlySteps += amount;
   }
 
   /// Bônus avulso (ex.: prêmio de promoção na liga).
@@ -343,44 +505,9 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Persiste na nuvem via listeners (MainShell / saveNow). Sem disco local.
   Future<void> _save() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(_keySteps, steps);
-    await prefs.setInt(_keyStreak, streak);
-    if (lastPlayedDate != null) {
-      await prefs.setString(_keyLastPlayed, lastPlayedDate!);
-    }
-    await prefs.setStringList(_keyCompleted, completedMissions);
-    await prefs.setInt(_keyMissionsToday, missionsToday);
-    await prefs.setBool(_keyHasSeenSplash, hasSeenSplash);
-    await prefs.setBool(_keyHasSeenOnboarding, hasSeenOnboarding);
-    await prefs.setString(_keyUserName, userName);
-    await prefs.setBool(_keySound, settings.sound);
-    await prefs.setBool(_keyNotifications, settings.notifications);
-    await prefs.setInt(_keyDailyGoal, settings.dailyGoal);
-    await prefs.setString(_keyAppearanceMode, settings.appearanceMode.storageKey);
-    await prefs.setBool(_keyDarkMode, settings.appearanceMode == AppearanceMode.night);
-    await prefs.setString(_keyTrailDifficulty, jsonEncode(trailDifficulties));
-    await prefs.setStringList(_keyUsedQuestions, usedQuestionIds);
-    await prefs.setStringList(_keyMistakeIds, mistakeQuestionIds);
-    await prefs.setStringList(_keyPlayDates, playDates);
-    await prefs.setBool(_keyStreakFreeze, streakFreezeAvailable);
-    if (streakFreezeWeek != null) await prefs.setString(_keyFreezeWeek, streakFreezeWeek!);
-    if (questDay != null) await prefs.setString(_keyQuestDay, questDay!);
-    await prefs.setString(_keyQuestProgress, jsonEncode(questProgressMap));
-    await prefs.setStringList(_keyQuestClaimed, questClaimed);
-    if (weeklyWeek != null) await prefs.setString(_keyWeeklyWeek, weeklyWeek!);
-    await prefs.setString(_keyWeeklyProgress, jsonEncode(weeklyProgressMap));
-    await prefs.setStringList(_keyWeeklyClaimed, weeklyClaimed);
-    await prefs.setStringList(_keyClaimedChests, claimedChests);
-    await prefs.setStringList(_keyReadBibleChapters, readBibleChapters);
-    await prefs.setStringList(_keyBibleBookmarks, bibleBookmarks);
-    await prefs.setString(_keyMemoryScores, jsonEncode(memoryScores));
-    await prefs.setStringList(_keyMemoryMastered, memoryMastered);
-    await prefs.setString(_keyReflections, jsonEncode(missionReflections));
-    await prefs.setInt(_keyWeeklySteps, weeklySteps);
-    await prefs.setInt(_keyLastWeekSteps, lastWeekSteps);
-    if (lastWeekKey != null) await prefs.setString(_keyLastWeekKey, lastWeekKey!);
+    notifyListeners();
   }
 
   String? reflectionFor(String missionSlug) => missionReflections[missionSlug];
@@ -409,6 +536,7 @@ class ProgressService extends ChangeNotifier {
     } else if (lastPlayedDate != null && streakFreezeAvailable) {
       // Perdeu 1 dia — protege com congelamento (estilo streak freeze).
       streakFreezeAvailable = false;
+      streakFreezeWeek = _weekMondayKey();
       // streak permanece
     } else {
       streak = 1;
@@ -427,7 +555,16 @@ class ProgressService extends ChangeNotifier {
     return playDates.contains(key) || lastPlayedDate == key;
   }
 
-  bool get walkedToday => missionsToday > 0;
+  /// De fato caminhou neste dia civil (não usa missionsToday residual de ontem).
+  bool get walkedToday {
+    _ensureMissionsDay();
+    return lastPlayedDate == _todayKey();
+  }
+
+  bool get dailyGoalMet {
+    _ensureMissionsDay();
+    return walkedToday && missionsToday >= settings.dailyGoal;
+  }
 
   /// Ausente por mais de um dia (a graça não funciona como streak).
   bool get isReturningAfterGap {
@@ -638,24 +775,6 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> importProgress({
-    required int steps,
-    required int streak,
-    required String? lastPlayedDate,
-    required List<String> completedMissions,
-    required int missionsToday,
-    required String userName,
-  }) async {
-    this.steps = steps;
-    this.streak = streak;
-    this.lastPlayedDate = lastPlayedDate;
-    this.completedMissions = completedMissions;
-    this.missionsToday = missionsToday;
-    this.userName = userName;
-    await _save();
-    notifyListeners();
-  }
-
   /// Snapshot completo para Firebase (fonte da verdade).
   Map<String, dynamic> toCloudMap() {
     return {
@@ -674,6 +793,8 @@ class ProgressService extends ChangeNotifier {
       'lastWeekSteps': lastWeekSteps,
       'lastWeekKey': lastWeekKey,
       'weeklyWeek': weeklyWeek,
+      'monthlySteps': monthlySteps,
+      'monthlyMonth': monthlyMonth,
       'streakFreezeAvailable': streakFreezeAvailable,
       'streakFreezeWeek': streakFreezeWeek,
       'questDay': questDay,
@@ -696,6 +817,7 @@ class ProgressService extends ChangeNotifier {
         'notifications': settings.notifications,
         'dailyGoal': settings.dailyGoal,
         'appearanceMode': settings.appearanceMode.storageKey,
+        'bibleTranslationId': settings.bibleTranslationId,
       },
     };
   }
@@ -714,7 +836,7 @@ class ProgressService extends ChangeNotifier {
     return v.map((k, val) => MapEntry(k.toString(), val.toString()));
   }
 
-  /// Aplica documento da nuvem (v1 parcial ou v2 completo) e grava cache local.
+  /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
 
@@ -754,6 +876,9 @@ class ProgressService extends ChangeNotifier {
           lastWeekSteps;
       lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
       weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
+      monthlySteps =
+          (data['monthlySteps'] as num?)?.toInt() ?? monthlySteps;
+      monthlyMonth = data['monthlyMonth'] as String? ?? monthlyMonth;
       streakFreezeAvailable =
           data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
       streakFreezeWeek =
@@ -810,13 +935,18 @@ class ProgressService extends ChangeNotifier {
           appearanceMode: AppearanceModeX.fromStorage(
             s['appearanceMode'] as String?,
           ),
+          bibleTranslationId:
+              s['bibleTranslationId'] as String? ?? settings.bibleTranslationId,
         );
       }
     }
 
+    _ensureMissionsDay();
     _ensureQuestDay();
     _ensureWeeklyWeek();
-    await _save();
+    _ensureMonthlyMonth();
+    await BibleService.instance.setTranslation(settings.bibleTranslationId);
+    _loaded = true;
     notifyListeners();
   }
 
@@ -824,7 +954,8 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> setHasSeenSplash(bool value) async {
     hasSeenSplash = value;
-    await _save();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyHasSeenSplash, value);
     notifyListeners();
   }
 
@@ -835,7 +966,12 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> updateSettings(AppSettings newSettings) async {
+    final translationChanged =
+        newSettings.bibleTranslationId != settings.bibleTranslationId;
     settings = newSettings;
+    if (translationChanged) {
+      await BibleService.instance.setTranslation(settings.bibleTranslationId);
+    }
     await _save();
     notifyListeners();
   }
@@ -862,6 +998,8 @@ class ProgressService extends ChangeNotifier {
     weeklySteps = 0;
     lastWeekSteps = 0;
     lastWeekKey = null;
+    monthlySteps = 0;
+    monthlyMonth = _monthKey();
     await _save();
     notifyListeners();
   }

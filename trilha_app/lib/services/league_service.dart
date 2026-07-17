@@ -56,8 +56,8 @@ class _LeagueBot {
 }
 
 /// Caravana semanal: 19 companheiros determinísticos por semana + o
-/// usuário, ranqueados por passos ganhos na semana. Sem backend — a mesma
-/// semana gera sempre a mesma caravana.
+/// usuário, ranqueados por passos ganhos na semana. Tier e settlement
+/// sincronizam no Firestore (users/{uid}); bots completam o grupo de 20.
 class LeagueService extends ChangeNotifier {
   static const _keyTier = 'leagueTier';
   static const _keyProcessedWeek = 'leagueProcessedWeek';
@@ -83,6 +83,7 @@ class LeagueService extends ChangeNotifier {
   int pendingRank = 0;
   String? _processedWeek;
   bool _loaded = false;
+  bool _cloudHydrated = false;
 
   bool get isLoaded => _loaded;
   LeagueTier get tier => LeagueTier.values[tierIndex];
@@ -94,6 +95,11 @@ class LeagueService extends ChangeNotifier {
     return monday.toIso8601String().substring(0, 10);
   }
 
+  static String monthKey([DateTime? now]) {
+    final d = now ?? DateTime.now();
+    return '${d.year}-${d.month.toString().padLeft(2, '0')}';
+  }
+
   static DateTime _weekStart(String key) => DateTime.parse(key);
 
   /// Dias restantes até a caravana fechar (domingo inclui hoje).
@@ -102,8 +108,17 @@ class LeagueService extends ChangeNotifier {
     return 8 - d.weekday;
   }
 
+  /// Dias restantes até o ranking mensal fechar (inclui hoje).
+  static int daysLeftInMonth([DateTime? now]) {
+    final d = now ?? DateTime.now();
+    final lastDay = DateTime(d.year, d.month + 1, 0).day;
+    return lastDay - d.day + 1;
+  }
+
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
+    // Cloud (hydrate) tem prioridade se ja chegou enquanto o prefs carregava.
+    if (_cloudHydrated) return;
     tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, LeagueTier.values.length - 1);
     _processedWeek = prefs.getString(_keyProcessedWeek);
     final rawOutcome = prefs.getString(_keyOutcome);
@@ -113,7 +128,45 @@ class LeagueService extends ChangeNotifier {
       }
       pendingRank = prefs.getInt(_keyOutcomeRank) ?? 0;
     }
+    if (_cloudHydrated) return;
     _loaded = true;
+    notifyListeners();
+  }
+
+  /// Campos persistidos em users/{uid} junto com o progresso.
+  Map<String, dynamic> toCloudMap() {
+    return {
+      'leagueTier': tierIndex,
+      'leagueProcessedWeek': _processedWeek,
+      'leaguePendingOutcome': pendingOutcome?.name,
+      'leaguePendingRank': pendingRank,
+    };
+  }
+
+  /// Aplica estado da nuvem (fonte da verdade entre dispositivos).
+  Future<void> applyFromCloud(Map<String, dynamic> data) async {
+    if (data.containsKey('leagueTier')) {
+      tierIndex = ((data['leagueTier'] as num?)?.toInt() ?? tierIndex)
+          .clamp(0, LeagueTier.values.length - 1);
+    }
+    if (data.containsKey('leagueProcessedWeek')) {
+      _processedWeek = data['leagueProcessedWeek'] as String? ?? _processedWeek;
+    }
+    if (data.containsKey('leaguePendingOutcome')) {
+      final raw = data['leaguePendingOutcome'] as String?;
+      pendingOutcome = null;
+      if (raw != null) {
+        for (final o in LeagueOutcome.values) {
+          if (o.name == raw) pendingOutcome = o;
+        }
+      }
+    }
+    if (data.containsKey('leaguePendingRank')) {
+      pendingRank = (data['leaguePendingRank'] as num?)?.toInt() ?? pendingRank;
+    }
+    _cloudHydrated = true;
+    _loaded = true;
+    await _persist();
     notifyListeners();
   }
 
@@ -212,6 +265,28 @@ class LeagueService extends ChangeNotifier {
     return entries;
   }
 
+  /// Classificação geral (passos totais da jornada). Sem promoção/rebaixamento.
+  List<LeagueEntry> overallStandings({
+    required String userName,
+    required int userTotalSteps,
+    List<LeagueEntry> realPlayers = const [],
+  }) {
+    final real = realPlayers.take(groupSize - 1).toList();
+    final botsNeeded = groupSize - 1 - real.length;
+    final bots = _botsForOverall(tierIndex).take(botsNeeded);
+    final entries = [
+      ...real,
+      for (final b in bots) LeagueEntry(name: b.name, steps: b.weeklyTarget),
+      LeagueEntry(name: userName, steps: userTotalSteps, isUser: true),
+    ]..sort((a, b) {
+        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+        if (a.isUser) return -1;
+        if (b.isUser) return 1;
+        return a.name.compareTo(b.name);
+      });
+    return entries;
+  }
+
   int userRank(List<LeagueEntry> entries) =>
       entries.indexWhere((e) => e.isUser) + 1;
 
@@ -239,6 +314,25 @@ class LeagueService extends ChangeNotifier {
       }
       final pace = 0.75 + rng.nextDouble() * 0.6;
       return _LeagueBot(picked[i], target.round(), pace);
+    });
+  }
+
+  static List<_LeagueBot> _botsForOverall(int tier) {
+    final rng = Random(0x0FEA11 ^ (tier * 0x9E3779B9));
+    final pool = [..._names]..shuffle(rng);
+    final picked = pool.take(groupSize - 1).toList();
+    final tierBoost = 1.0 + tier * 0.35;
+    return List.generate(picked.length, (i) {
+      final roll = rng.nextDouble();
+      final double target;
+      if (roll < 0.15) {
+        target = (12000 + rng.nextInt(18000)) * tierBoost;
+      } else if (roll < 0.65) {
+        target = (3500 + rng.nextInt(7000)) * tierBoost;
+      } else {
+        target = (600 + rng.nextInt(2800)) * tierBoost;
+      }
+      return _LeagueBot(picked[i], target.round(), 1.0);
     });
   }
 

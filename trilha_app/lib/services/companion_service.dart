@@ -145,7 +145,7 @@ class CompanionService extends ChangeNotifier {
   /// Publica que o usuário caminhou hoje e recalcula dias juntos.
   Future<void> syncWalksIfNeeded(ProgressService progress) async {
     if (!backend.isActive || companions.isEmpty) return;
-    if (!progress.walkedToday && progress.missionsToday <= 0) return;
+    if (!progress.walkedToday) return;
     await backend.publishCompanionWalks(
       codes: companions.map((c) => c.code).toList(),
       userName: progress.userName,

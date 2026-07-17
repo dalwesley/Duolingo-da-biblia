@@ -38,7 +38,7 @@ class LivingSeedCard extends StatelessWidget {
             accent: growth.stage == GrowthStage.lamp
                 ? AppColors.accent
                 : AppColors.primaryLight,
-            glowing: growth.stage == GrowthStage.lamp || progress.streak > 0,
+            glowing: false,
           ),
           const SizedBox(width: 14),
           Expanded(

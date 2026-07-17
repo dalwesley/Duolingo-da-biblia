@@ -162,8 +162,10 @@ class _MissionSceneCard extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: unlocked
               ? [
-                  Color.lerp(bottom, const Color(0xFF05040A), completed ? 0.5 : 0.22)!.withValues(alpha: _current ? 0.92 : 0.78),
-                  Color.lerp(top, bottom, 0.62)!.withValues(alpha: _current ? 0.62 : completed ? 0.32 : 0.48),
+                  Color.lerp(bottom, const Color(0xFF05040A), completed ? 0.72 : 0.22)!
+                      .withValues(alpha: _current ? 0.92 : completed ? 0.38 : 0.78),
+                  Color.lerp(top, bottom, 0.62)!
+                      .withValues(alpha: _current ? 0.62 : completed ? 0.16 : 0.48),
                 ]
               : [
                   Colors.white.withValues(alpha: 0.035),
@@ -174,28 +176,39 @@ class _MissionSceneCard extends StatelessWidget {
           color: _current
               ? accent.withValues(alpha: 0.42)
               : completed
-                  ? gold.withValues(alpha: 0.22)
+                  ? gold.withValues(alpha: 0.1)
                   : Colors.white.withValues(alpha: unlocked ? 0.12 : 0.06),
         ),
         boxShadow: [
           if (_current)
-            BoxShadow(color: accent.withValues(alpha: 0.18), blurRadius: 32, offset: const Offset(0, 14))
-          else if (unlocked)
-            BoxShadow(color: Colors.black.withValues(alpha: 0.2), blurRadius: 16, offset: const Offset(0, 8)),
+            BoxShadow(
+              color: accent.withValues(alpha: 0.18),
+              blurRadius: 32,
+              offset: const Offset(0, 14),
+            )
+          else if (unlocked && !completed)
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.2),
+              blurRadius: 16,
+              offset: const Offset(0, 8),
+            ),
         ],
       ),
       child: IntrinsicHeight(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Marca tipográfica — não é ícone de app
             Container(
               width: _current ? 64 : 56,
               alignment: Alignment.topCenter,
               padding: EdgeInsets.only(top: _current ? 18 : 16),
               decoration: BoxDecoration(
                 border: Border(
-                  right: BorderSide(color: Colors.white.withValues(alpha: unlocked ? 0.08 : 0.04)),
+                  right: BorderSide(
+                    color: Colors.white.withValues(
+                      alpha: unlocked ? (completed ? 0.04 : 0.08) : 0.04,
+                    ),
+                  ),
                 ),
                 gradient: _current
                     ? LinearGradient(
@@ -217,7 +230,11 @@ class _MissionSceneCard extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       height: 1,
                       color: unlocked
-                          ? (_current ? accent : Colors.white.withValues(alpha: completed ? 0.55 : 0.7))
+                          ? (_current
+                              ? accent
+                              : Colors.white.withValues(
+                                  alpha: completed ? 0.28 : 0.7,
+                                ))
                           : Colors.white.withValues(alpha: 0.22),
                     ),
                   ),
@@ -234,7 +251,12 @@ class _MissionSceneCard extends StatelessWidget {
             ),
             Expanded(
               child: Padding(
-                padding: EdgeInsets.fromLTRB(16, _current ? 16 : 14, 16, _current ? 16 : 14),
+                padding: EdgeInsets.fromLTRB(
+                  16,
+                  _current ? 16 : 14,
+                  16,
+                  _current ? 16 : 14,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -255,8 +277,10 @@ class _MissionSceneCard extends StatelessWidget {
                             color: _current
                                 ? accent.withValues(alpha: 0.95)
                                 : completed
-                                    ? gold.withValues(alpha: 0.75)
-                                    : Colors.white.withValues(alpha: unlocked ? 0.4 : 0.25),
+                                    ? gold.withValues(alpha: 0.38)
+                                    : Colors.white.withValues(
+                                        alpha: unlocked ? 0.4 : 0.25,
+                                      ),
                           ),
                         ),
                         if (!unlocked) ...[
@@ -277,7 +301,9 @@ class _MissionSceneCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Opacity(
-                          opacity: unlocked ? 1 : 0.35,
+                          opacity: unlocked
+                              ? (completed ? 0.4 : 1)
+                              : 0.35,
                           child: CinematicIcon.mission(
                             mission.title,
                             isBoss: mission.isBoss,
@@ -294,7 +320,11 @@ class _MissionSceneCard extends StatelessWidget {
                               fontSize: _current ? 24 : 20,
                               fontWeight: FontWeight.w600,
                               height: 1.15,
-                              color: Colors.white.withValues(alpha: unlocked ? 0.96 : 0.38),
+                              color: Colors.white.withValues(
+                                alpha: unlocked
+                                    ? (completed ? 0.42 : 0.96)
+                                    : 0.38,
+                              ),
                             ),
                           ),
                         ),
@@ -357,7 +387,12 @@ class _MissionSceneCard extends StatelessWidget {
       ),
     );
 
-    if (onTap == null) return card;
+    // Concluídas recuam — legíveis, mas sem disputar com a cena atual.
+    final faded = completed
+        ? Opacity(opacity: 0.52, child: card)
+        : card;
+
+    if (onTap == null) return faded;
 
     return Material(
       color: Colors.transparent,
@@ -366,7 +401,7 @@ class _MissionSceneCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(_current ? 20 : 16),
         splashColor: accent.withValues(alpha: 0.1),
         highlightColor: accent.withValues(alpha: 0.05),
-        child: card,
+        child: faded,
       ),
     );
   }

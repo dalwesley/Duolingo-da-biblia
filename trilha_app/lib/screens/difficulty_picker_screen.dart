@@ -5,6 +5,7 @@ import '../data/question_bank.dart';
 import '../models/difficulty.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/difficulty_visuals.dart';
 import '../widgets/cinematic_icon.dart';
 
 /// Escolha cinematográfica de dificuldade ao iniciar a trilha de Gênesis.
@@ -198,7 +199,7 @@ class _DifficultyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = AppTheme.parseHex(meta.accent);
+    final color = DifficultyVisuals.accentFor(meta.difficulty);
     final xpLabel = meta.stepsMultiplier == 1
         ? 'Passos padrão'
         : '+${((meta.stepsMultiplier - 1) * 100).round()}% passos';
@@ -235,10 +236,17 @@ class _DifficultyCard extends StatelessWidget {
                 width: 58,
                 height: 58,
                 alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: color.withValues(alpha: 0.18),
+                  border: Border.all(color: color.withValues(alpha: 0.4)),
+                ),
                 child: CinematicIcon(
-                  glyph: CinematicGlyphResolver.forDifficulty(meta.difficulty.id),
-                  size: 58,
+                  glyph: DifficultyVisuals.glyphFor(meta.difficulty),
+                  size: 30,
                   accent: color,
+                  framed: false,
+                  glowing: false,
                 ),
               ),
               const SizedBox(width: 16),

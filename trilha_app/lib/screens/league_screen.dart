@@ -12,10 +12,15 @@ import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/accept_invite_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
+import '../widgets/invite_qr_sheet.dart';
 
 class LeagueScreen extends StatefulWidget {
-  const LeagueScreen({super.key});
+  final Widget? topBar;
+
+  const LeagueScreen({super.key, this.topBar});
 
   @override
   State<LeagueScreen> createState() => _LeagueScreenState();
@@ -25,7 +30,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     with SingleTickerProviderStateMixin {
   late final AnimationController _enter;
   List<LeagueEntry> _realPlayers = const [];
-  int _tab = 0; // 0 = caravana, 1 = companhia, 2 = salas
+  List<LeagueEntry> _overallPlayers = const [];
+  int _tab = 0; // 0 = companhia, 1 = caravana, 2 = salas
+  bool _overallRanking = false;
 
   @override
   void initState() {
@@ -49,19 +56,29 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
     if (backend.isActive) {
       final week = LeagueService.weekKey();
-      await backend.saveNow(progress, week, roomCode: rooms.activeCode);
+      await backend.saveNow(
+        progress,
+        week,
+        roomCode: rooms.activeCode,
+        league: league,
+      );
       final players = await backend.fetchWeekPlayers(week);
+      final overallPlayers = await backend.fetchOverallPlayers();
       await rooms.syncIfNeeded();
       if (!mounted) return;
       final companionSvc = context.read<CompanionService>();
       await companionSvc.refresh();
-      if (progress.missionsToday > 0) {
+      if (progress.walkedToday) {
         await companionSvc.syncWalksIfNeeded(progress);
       }
       if (!mounted) return;
       setState(() {
         _realPlayers = [
           for (final p in players) LeagueEntry(name: p.name, steps: p.steps),
+        ];
+        _overallPlayers = [
+          for (final p in overallPlayers)
+            LeagueEntry(name: p.name, steps: p.steps),
         ];
       });
     }
@@ -83,8 +100,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(begin: const Offset(0, 0.06), end: Offset.zero)
-            .animate(curve),
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.06),
+          end: Offset.zero,
+        ).animate(curve),
         child: child,
       ),
     );
@@ -94,24 +113,27 @@ class _LeagueScreenState extends State<LeagueScreen>
   Widget build(BuildContext context) {
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
-        AppSpace.xl,
-        20,
+        AppSpace.screen,
+        widget.topBar == null
+            ? AppSpace.sm
+            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
+        if (widget.topBar != null) ...[
+          widget.topBar!,
+          const SizedBox(height: 18),
+        ],
         _reveal(
           0,
-          _SegmentTabs(
-            index: _tab,
-            onChanged: (i) => setState(() => _tab = i),
-          ),
+          _SegmentTabs(index: _tab, onChanged: (i) => setState(() => _tab = i)),
         ),
         const SizedBox(height: 20),
         if (_tab == 0)
-          ..._buildLeague(context)
-        else if (_tab == 1)
           ..._buildCompanions(context)
+        else if (_tab == 1)
+          ..._buildLeague(context)
         else
           ..._buildRooms(context),
       ],
@@ -133,61 +155,88 @@ class _LeagueScreenState extends State<LeagueScreen>
       ];
     }
 
-    final entries = league.standings(
-      userName: progress.userName,
-      userWeeklySteps: progress.weeklySteps,
-      realPlayers: _realPlayers,
-    );
+    final overall = _overallRanking;
+    final entries = overall
+        ? league.overallStandings(
+            userName: progress.userName,
+            userTotalSteps: progress.steps,
+            realPlayers: _overallPlayers,
+          )
+        : league.standings(
+            userName: progress.userName,
+            userWeeklySteps: progress.weeklySteps,
+            realPlayers: _realPlayers,
+          );
     final userRank = league.userRank(entries);
+    final userSteps = overall ? progress.steps : progress.weeklySteps;
     final canPromote = league.tierIndex < LeagueTier.values.length - 1;
     final canDemote = league.tierIndex > 0;
+    final a = Appearance.of(context);
 
     final children = <Widget>[
-      _reveal(1, _LeagueHeader(rank: userRank, weeklySteps: progress.weeklySteps)),
-      const SizedBox(height: 18),
-      _reveal(2, _TierLadder(currentIndex: league.tierIndex)),
-      const SizedBox(height: 14),
-      _reveal(3, const _CountdownChip()),
-      if (league.pendingOutcome != null) ...[
-        const SizedBox(height: 16),
-        _reveal(4, _OutcomeBanner(league: league)),
-      ],
-      const SizedBox(height: 12),
-      Text(
-        'Ordem por passos dados — não por espiritualidade.',
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 11,
-          height: 1.35,
-          fontWeight: FontWeight.w600,
-          color: Appearance.of(context).textMuted(0.55),
+      _reveal(
+        1,
+        _RankingPeriodTabs(
+          overall: overall,
+          onChanged: (value) => setState(() => _overallRanking = value),
         ),
       ),
-      const SizedBox(height: 18),
+      const SizedBox(height: 16),
+      _reveal(
+        2,
+        _CaravanaHeroCard(
+          overall: overall,
+          rank: userRank,
+          steps: userSteps,
+          tierIndex: league.tierIndex,
+        ),
+      ),
+      if (!overall && league.pendingOutcome != null) ...[
+        const SizedBox(height: 12),
+        _reveal(3, _OutcomeBanner(league: league)),
+      ],
+      const SizedBox(height: 20),
+      Text(
+        overall ? 'CLASSIFICAÇÃO GERAL' : 'CLASSIFICAÇÃO DA SEMANA',
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w900,
+          letterSpacing: 1.4,
+          color: a.textMuted(0.55),
+        ),
+      ),
+      const SizedBox(height: 10),
     ];
 
     for (var i = 0; i < entries.length; i++) {
       final rank = i + 1;
-      if (rank == 1 && canPromote) {
-        children.add(_ZoneLabel(
-          text: 'À FRENTE · CARAVANA ${LeagueTier.values[league.tierIndex + 1].shortLabel.toUpperCase()}',
-          up: true,
-        ));
+      if (!overall && rank == 1 && canPromote) {
+        children.add(
+          _ZoneLabel(
+            text:
+                'SOBEM · ${LeagueTier.values[league.tierIndex + 1].shortLabel.toUpperCase()}',
+            up: true,
+          ),
+        );
       }
-      if (rank == LeagueService.groupSize - LeagueService.demoteCount + 1 &&
+      if (!overall &&
+          rank == LeagueService.groupSize - LeagueService.demoteCount + 1 &&
           canDemote) {
-        children.add(_ZoneLabel(
-          text: 'RECUPERANDO O RITMO · CARAVANA ${LeagueTier.values[league.tierIndex - 1].shortLabel.toUpperCase()}',
-          up: false,
-        ));
+        children.add(
+          _ZoneLabel(
+            text:
+                'DESCEM · ${LeagueTier.values[league.tierIndex - 1].shortLabel.toUpperCase()}',
+            up: false,
+          ),
+        );
       }
       children.add(
         _reveal(
-          (5 + i ~/ 4).clamp(0, 8),
+          (4 + i ~/ 4).clamp(0, 8),
           _StandingRow(entry: entries[i], rank: rank),
         ),
       );
-      if (rank == LeagueService.promoteCount && canPromote) {
+      if (!overall && rank == LeagueService.promoteCount && canPromote) {
         children.add(const _ZoneDivider());
       }
     }
@@ -230,17 +279,18 @@ class _LeagueScreenState extends State<LeagueScreen>
         Column(
           children: [
             Text(
-              'COMPANHIA',
-              style: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w900,
-                letterSpacing: 2,
-                color: AppColors.accent.withValues(alpha: 0.9),
+              'Andem juntos',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.cormorantGaramond(
+                fontSize: 28,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+                height: 1.1,
               ),
             ),
             const SizedBox(height: 8),
             Text(
-              'Até ${CompanionService.maxCompanions} pessoas. Vocês caminham lado a lado — sem ranking entre si.',
+              'Convide até ${CompanionService.maxCompanions} pessoas.\nSem ranking entre vocês — só presença.',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 13,
@@ -291,16 +341,18 @@ class _LeagueScreenState extends State<LeagueScreen>
                 ClipboardData(text: companions.companions[i].code),
               );
               if (!context.mounted) return;
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Código copiado')),
-              );
+              ScaffoldMessenger.of(
+                context,
+              ).showSnackBar(const SnackBar(content: Text('Código copiado')));
             },
+            onShowQr: () =>
+                showInviteQrSheet(context, code: companions.companions[i].code),
             onLeave: () async {
               final ok = await _confirmLeaveCompanion(context);
               if (ok == true && context.mounted) {
-                await context
-                    .read<CompanionService>()
-                    .leave(companions.companions[i].code);
+                await context.read<CompanionService>().leave(
+                  companions.companions[i].code,
+                );
               }
             },
           ),
@@ -326,7 +378,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           if (companions.canAdd)
             Expanded(
               child: _OutlineAction(
-                label: 'Entrar com código',
+                label: 'Aceitar convite',
                 onTap: companions.loading
                     ? null
                     : () => _joinCompanion(context),
@@ -344,7 +396,10 @@ class _LeagueScreenState extends State<LeagueScreen>
         },
         child: Text(
           'Atualizar presença',
-          style: TextStyle(color: a.textMuted(0.7), fontWeight: FontWeight.w700),
+          style: TextStyle(
+            color: a.textMuted(0.7),
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
     );
@@ -364,72 +419,24 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
     await Clipboard.setData(ClipboardData(text: created.code));
     if (!context.mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('Código ${created.code} copiado — envie ao companheiro'),
-      ),
-    );
+    await showInviteQrSheet(context, code: created.code);
   }
 
   Future<void> _joinCompanion(BuildContext context) async {
-    final controller = TextEditingController();
-    final code = await showDialog<String>(
-      context: context,
-      builder: (ctx) {
-        final a = Appearance.of(ctx);
-        return AlertDialog(
-          backgroundColor: AppColors.nightMid,
-          title: Text(
-            'Entrar na companhia',
-            style: GoogleFonts.cormorantGaramond(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 24,
-            ),
-          ),
-          content: TextField(
-            controller: controller,
-            autofocus: true,
-            textCapitalization: TextCapitalization.characters,
-            maxLength: 8,
-            style: const TextStyle(color: Colors.white, letterSpacing: 2),
-            decoration: InputDecoration(
-              hintText: 'Código',
-              hintStyle: TextStyle(color: a.textMuted(0.5)),
-              filled: true,
-              fillColor: a.cardFillSoft,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide.none,
-              ),
-            ),
-            onSubmitted: (v) => Navigator.pop(ctx, v.trim()),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
-            ),
-            TextButton(
-              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
-              child: const Text('Entrar', style: TextStyle(color: AppColors.accent)),
-            ),
-          ],
-        );
-      },
-    );
+    final code = await showAcceptInviteSheet(context);
     if (code == null || code.isEmpty || !context.mounted) return;
     final ok = await context.read<CompanionService>().joinWithCode(
-          code,
-          context.read<ProgressService>(),
-        );
+      code,
+      context.read<ProgressService>(),
+    );
     if (!context.mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
           ok
               ? 'Companhia formada — caminhem juntos'
-              : (context.read<CompanionService>().lastError ?? 'Não foi possível entrar'),
+              : (context.read<CompanionService>().lastError ??
+                    'Não foi possível entrar'),
         ),
       ),
     );
@@ -442,7 +449,10 @@ class _LeagueScreenState extends State<LeagueScreen>
         final a = Appearance.of(ctx);
         return AlertDialog(
           backgroundColor: AppColors.nightMid,
-          title: const Text('Sair da companhia?', style: TextStyle(color: Colors.white)),
+          title: const Text(
+            'Sair da companhia?',
+            style: TextStyle(color: Colors.white),
+          ),
           content: Text(
             'A caminhada juntos com esta pessoa termina. Sem culpa — a Caravana continua.',
             style: TextStyle(color: a.textMuted(0.8)),
@@ -454,7 +464,10 @@ class _LeagueScreenState extends State<LeagueScreen>
             ),
             TextButton(
               onPressed: () => Navigator.pop(ctx, true),
-              child: const Text('Sair', style: TextStyle(color: AppColors.error)),
+              child: const Text(
+                'Sair',
+                style: TextStyle(color: AppColors.error),
+              ),
             ),
           ],
         );
@@ -466,6 +479,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     final rooms = context.watch<RoomService>();
     final backend = context.watch<BackendService>();
     final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
 
     if (!rooms.isLoaded) {
       return [
@@ -495,6 +509,15 @@ class _LeagueScreenState extends State<LeagueScreen>
       return [
         _reveal(
           1,
+          const _RoomsIntro(
+            title: 'Estudem juntos',
+            subtitle:
+                'Crie uma sala privada para turma, célula ou amigos.\nRanking só de quem entrou — foco no grupo.',
+          ),
+        ),
+        const SizedBox(height: 18),
+        _reveal(
+          2,
           _RoomsEmptyState(
             loading: rooms.loading,
             error: rooms.lastError,
@@ -512,17 +535,36 @@ class _LeagueScreenState extends State<LeagueScreen>
     return [
       _reveal(
         1,
+        const _RoomsIntro(
+          title: 'Caminhem em sala',
+          subtitle:
+              'Acompanhe a semana do grupo, compartilhe o código e anime quem ficou perto no ranking.',
+        ),
+      ),
+      const SizedBox(height: 18),
+      _reveal(
+        2,
         _RoomHeader(
           room: room,
           rank: userRank > 0 ? userRank : null,
+          memberCount: members.length,
+          weeklySteps: progress.weeklySteps,
           isOwner: room.isOwner(backend.uid),
           onCopy: () async {
             await Clipboard.setData(ClipboardData(text: room.code));
             if (!context.mounted) return;
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text('Código copiado!')),
-            );
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(const SnackBar(content: Text('Código copiado!')));
           },
+          onShowQr: () => showInviteQrSheet(
+            context,
+            code: room.code,
+            title: room.name,
+            subtitle: 'Escaneie o QR ou entre com o código',
+            shareMessage:
+                'Entre na sala "${room.name}" no Trilha com o código ${room.code}.',
+          ),
           onLeave: () async {
             final ok = await _confirmLeave(context);
             if (ok == true && context.mounted) {
@@ -533,7 +575,6 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
       ),
       const SizedBox(height: 14),
-      _reveal(2, const _CountdownChip()),
       if (rooms.lastError != null) ...[
         const SizedBox(height: 12),
         Text(
@@ -543,6 +584,16 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
       ],
       const SizedBox(height: 18),
+      Text(
+        'RANKING DA SALA',
+        style: TextStyle(
+          fontSize: 11,
+          fontWeight: FontWeight.w900,
+          letterSpacing: 1.4,
+          color: a.textMuted(0.55),
+        ),
+      ),
+      const SizedBox(height: 10),
       if (rooms.loading)
         const Padding(
           padding: EdgeInsets.symmetric(vertical: 24),
@@ -576,70 +627,26 @@ class _LeagueScreenState extends State<LeagueScreen>
       Text(
         'Ordem por passos nesta semana · ${progress.userName}',
         textAlign: TextAlign.center,
-        style: TextStyle(
-          fontSize: 11,
-          color: Appearance.of(context).textMuted(0.55),
-        ),
+        style: TextStyle(fontSize: 11, color: a.textMuted(0.55)),
       ),
     ];
   }
 
   Future<void> _showCreateRoom(BuildContext context) async {
-    final controller = TextEditingController();
     final name = await showDialog<String>(
       context: context,
-      builder: (ctx) {
-        final a = Appearance.of(ctx);
-        return AlertDialog(
-          backgroundColor: AppColors.nightMid,
-          title: Text(
-            'Criar sala',
-            style: GoogleFonts.cormorantGaramond(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 24,
-            ),
-          ),
-          content: TextField(
-            controller: controller,
-            autofocus: true,
-            maxLength: 40,
-            style: const TextStyle(color: Colors.white),
-            decoration: InputDecoration(
-              hintText: 'Ex.: Turma 7º ano',
-              hintStyle: TextStyle(color: a.textMuted(0.5)),
-              filled: true,
-              fillColor: a.cardFillSoft,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide.none,
-              ),
-            ),
-            onSubmitted: (v) => Navigator.pop(ctx, v.trim()),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
-            ),
-            FilledButton(
-              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.accent,
-                foregroundColor: AppColors.inkOnAccent,
-              ),
-              child: const Text('Criar', style: TextStyle(fontWeight: FontWeight.w800)),
-            ),
-          ],
-        );
-      },
+      builder: (ctx) => const _TextInputDialog(
+        title: 'Criar sala',
+        hint: 'Ex.: Turma 7º ano',
+        confirmLabel: 'Criar',
+        maxLength: 40,
+      ),
     );
-    controller.dispose();
     if (name == null || name.isEmpty || !context.mounted) return;
     final ok = await context.read<RoomService>().createRoom(
-          name,
-          context.read<ProgressService>(),
-        );
+      name,
+      context.read<ProgressService>(),
+    );
     if (!context.mounted) return;
     if (ok) {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -653,66 +660,22 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Future<void> _showJoinRoom(BuildContext context) async {
-    final controller = TextEditingController();
     final code = await showDialog<String>(
       context: context,
-      builder: (ctx) {
-        final a = Appearance.of(ctx);
-        return AlertDialog(
-          backgroundColor: AppColors.nightMid,
-          title: Text(
-            'Entrar na sala',
-            style: GoogleFonts.cormorantGaramond(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 24,
-            ),
-          ),
-          content: TextField(
-            controller: controller,
-            autofocus: true,
-            maxLength: 8,
-            textCapitalization: TextCapitalization.characters,
-            style: const TextStyle(
-              color: Colors.white,
-              letterSpacing: 3,
-              fontWeight: FontWeight.w800,
-            ),
-            decoration: InputDecoration(
-              hintText: 'Código',
-              hintStyle: TextStyle(color: a.textMuted(0.5), letterSpacing: 0),
-              filled: true,
-              fillColor: a.cardFillSoft,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide: BorderSide.none,
-              ),
-            ),
-            onSubmitted: (v) => Navigator.pop(ctx, v.trim()),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(ctx),
-              child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
-            ),
-            FilledButton(
-              onPressed: () => Navigator.pop(ctx, controller.text.trim()),
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.accent,
-                foregroundColor: AppColors.inkOnAccent,
-              ),
-              child: const Text('Entrar', style: TextStyle(fontWeight: FontWeight.w800)),
-            ),
-          ],
-        );
-      },
+      builder: (ctx) => const _TextInputDialog(
+        title: 'Entrar na sala',
+        hint: 'Código',
+        confirmLabel: 'Entrar',
+        maxLength: 8,
+        capitalize: true,
+        letterSpacing: 3,
+      ),
     );
-    controller.dispose();
     if (code == null || code.isEmpty || !context.mounted) return;
     await context.read<RoomService>().joinRoom(
-          code,
-          context.read<ProgressService>(),
-        );
+      code,
+      context.read<ProgressService>(),
+    );
   }
 
   Future<bool?> _confirmLeave(BuildContext context) {
@@ -722,7 +685,10 @@ class _LeagueScreenState extends State<LeagueScreen>
         final a = Appearance.of(ctx);
         return AlertDialog(
           backgroundColor: AppColors.nightMid,
-          title: const Text('Sair da sala?', style: TextStyle(color: Colors.white)),
+          title: const Text(
+            'Sair da sala?',
+            style: TextStyle(color: Colors.white),
+          ),
           content: Text(
             'Você sai do ranking desta sala. Pode entrar de novo com o código.',
             style: TextStyle(color: a.textMuted(0.8)),
@@ -730,11 +696,17 @@ class _LeagueScreenState extends State<LeagueScreen>
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(ctx, false),
-              child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
+              child: Text(
+                'Cancelar',
+                style: TextStyle(color: a.textMuted(0.7)),
+              ),
             ),
             TextButton(
               onPressed: () => Navigator.pop(ctx, true),
-              child: const Text('Sair', style: TextStyle(color: AppColors.error)),
+              child: const Text(
+                'Sair',
+                style: TextStyle(color: AppColors.error),
+              ),
             ),
           ],
         );
@@ -751,18 +723,13 @@ class _SegmentTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Container(
+    return GlassCard(
       padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(
-        color: a.cardFillSoft,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: a.cardBorder),
-      ),
+      radius: AppRadii.md,
       child: Row(
         children: [
-          _seg(context, 0, 'Caravana'),
-          _seg(context, 1, 'Companhia'),
+          _seg(context, 0, 'Companhia'),
+          _seg(context, 1, 'Caravana'),
           _seg(context, 2, 'Salas'),
         ],
       ),
@@ -791,6 +758,64 @@ class _SegmentTabs extends StatelessWidget {
                   ? AppColors.inkOnAccent
                   : Appearance.of(context).textMuted(0.7),
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _RankingPeriodTabs extends StatelessWidget {
+  final bool overall;
+  final ValueChanged<bool> onChanged;
+
+  const _RankingPeriodTabs({required this.overall, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Center(
+      child: Container(
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          color: a.cardFillSoft,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: a.cardBorder),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            _item(context, label: 'Semana', value: false),
+            _item(context, label: 'Geral', value: true),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _item(
+    BuildContext context, {
+    required String label,
+    required bool value,
+  }) {
+    final selected = overall == value;
+    return GestureDetector(
+      onTap: () => onChanged(value),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
+        decoration: BoxDecoration(
+          gradient: selected ? AppGradients.gold : null,
+          borderRadius: BorderRadius.circular(11),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w900,
+            color: selected
+                ? AppColors.inkOnAccent
+                : Appearance.of(context).textMuted(0.7),
           ),
         ),
       ),
@@ -840,8 +865,7 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            error ??
-                'Entre com Google para caminhar na caravana ao vivo.',
+            error ?? 'Entre com Google para caminhar na caravana ao vivo.',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 13,
@@ -884,6 +908,52 @@ class _RoomsOfflineCard extends StatelessWidget {
   }
 }
 
+class _RoomsIntro extends StatelessWidget {
+  final String title;
+  final String subtitle;
+
+  const _RoomsIntro({required this.title, required this.subtitle});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          'SALAS PRIVADAS',
+          style: TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 2,
+            color: AppColors.accent.withValues(alpha: 0.9),
+          ),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          title,
+          textAlign: TextAlign.center,
+          style: GoogleFonts.cormorantGaramond(
+            fontSize: 30,
+            fontWeight: FontWeight.w700,
+            color: Colors.white,
+            height: 1.1,
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          subtitle,
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 13,
+            height: 1.4,
+            fontWeight: FontWeight.w600,
+            color: Colors.white.withValues(alpha: 0.58),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
 class _RoomsEmptyState extends StatelessWidget {
   final bool loading;
   final String? error;
@@ -900,89 +970,152 @@ class _RoomsEmptyState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Column(
-      children: [
-        Text(
-          'SALAS PRIVADAS',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 2,
-            color: AppColors.accent.withValues(alpha: 0.9),
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        gradient: a.cardGradient,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Column(
+        children: [
+          const CinematicIcon(
+            glyph: CinematicGlyph.dove,
+            size: 38,
+            accent: AppColors.accent,
+            glowing: false,
+            framed: false,
           ),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          'Estude em grupo',
-          textAlign: TextAlign.center,
-          style: GoogleFonts.cormorantGaramond(
-            fontSize: 32,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-            height: 1.1,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          'Professores e amigos criam salas com código — ranking só de quem entrou.',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 13,
-            height: 1.35,
-            color: a.textMuted(0.7),
-          ),
-        ),
-        const SizedBox(height: 24),
-        if (loading)
-          const CircularProgressIndicator(color: AppColors.accent)
-        else ...[
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton(
-              onPressed: onCreate,
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.accent,
-                foregroundColor: AppColors.inkOnAccent,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-              ),
-              child: const Text(
-                'Criar sala',
-                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 15),
-              ),
+          const SizedBox(height: 14),
+          Text(
+            'Quem vai estudar com você?',
+            textAlign: TextAlign.center,
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 26,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
             ),
           ),
           const SizedBox(height: 10),
-          SizedBox(
-            width: double.infinity,
-            child: OutlinedButton(
-              onPressed: onJoin,
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                side: BorderSide(color: Colors.white.withValues(alpha: 0.25)),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(14),
-                ),
-              ),
-              child: const Text(
-                'Entrar com código',
-                style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
-              ),
+          Text(
+            'Crie uma sala e envie o código, ou entre em uma sala que alguém já preparou. A semana fica mais clara quando o grupo aparece no mesmo placar.',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 13,
+              height: 1.45,
+              color: Colors.white.withValues(alpha: 0.6),
             ),
           ),
-        ],
-        if (error != null) ...[
-          const SizedBox(height: 14),
-          Text(
-            error!,
-            textAlign: TextAlign.center,
-            style: const TextStyle(color: AppColors.error, fontSize: 12),
+          const SizedBox(height: 18),
+          Row(
+            children: [
+              _RoomBenefit(
+                icon: Icons.lock_rounded,
+                label: 'Privada',
+                color: a.textMuted(0.78),
+              ),
+              const SizedBox(width: 8),
+              _RoomBenefit(
+                icon: Icons.ios_share_rounded,
+                label: 'Código',
+                color: a.textMuted(0.78),
+              ),
+              const SizedBox(width: 8),
+              _RoomBenefit(
+                icon: Icons.leaderboard_rounded,
+                label: 'Semanal',
+                color: a.textMuted(0.78),
+              ),
+            ],
           ),
+          const SizedBox(height: 20),
+          if (loading)
+            const CircularProgressIndicator(color: AppColors.accent)
+          else ...[
+            GestureDetector(
+              onTap: onCreate,
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                decoration: BoxDecoration(
+                  gradient: AppGradients.gold,
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      color: AppColors.accent.withValues(alpha: 0.22),
+                      blurRadius: 18,
+                      offset: const Offset(0, 8),
+                    ),
+                  ],
+                ),
+                child: const Text(
+                  'Criar sala',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 14,
+                    color: AppColors.inkOnAccent,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 10),
+            _OutlineAction(label: 'Entrar com código', onTap: onJoin),
+          ],
+          if (error != null) ...[
+            const SizedBox(height: 14),
+            Text(
+              error!,
+              textAlign: TextAlign.center,
+              style: const TextStyle(color: AppColors.error, fontSize: 12),
+            ),
+          ],
         ],
-      ],
+      ),
+    );
+  }
+}
+
+class _RoomBenefit extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final Color color;
+
+  const _RoomBenefit({
+    required this.icon,
+    required this.label,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.045),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+        ),
+        child: Column(
+          children: [
+            Icon(
+              icon,
+              size: 16,
+              color: AppColors.accent.withValues(alpha: 0.9),
+            ),
+            const SizedBox(height: 5),
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w800,
+                color: color,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
@@ -990,16 +1123,22 @@ class _RoomsEmptyState extends StatelessWidget {
 class _RoomHeader extends StatelessWidget {
   final StudyRoom room;
   final int? rank;
+  final int memberCount;
+  final int weeklySteps;
   final bool isOwner;
   final VoidCallback onCopy;
+  final VoidCallback onShowQr;
   final VoidCallback onLeave;
   final VoidCallback onRefresh;
 
   const _RoomHeader({
     required this.room,
     required this.rank,
+    required this.memberCount,
+    required this.weeklySteps,
     required this.isOwner,
     required this.onCopy,
+    required this.onShowQr,
     required this.onLeave,
     required this.onRefresh,
   });
@@ -1007,172 +1146,436 @@ class _RoomHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Column(
-      children: [
-        Text(
-          isOwner ? 'SUA SALA' : 'SALA',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 2,
-            color: AppColors.accent.withValues(alpha: 0.9),
+    final days = LeagueService.daysLeft();
+    final closesText = days <= 1 ? 'Fecha hoje' : '$days dias';
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 14),
+      decoration: BoxDecoration(
+        gradient: a.cardGradient,
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Column(
+        children: [
+          Row(
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.dove,
+                size: 38,
+                accent: AppColors.accent,
+                glowing: false,
+                framed: false,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      isOwner ? 'Sua sala' : 'Sala',
+                      style: TextStyle(
+                        fontSize: 11,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1.5,
+                        color: AppColors.accent.withValues(alpha: 0.9),
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      room.name,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.cormorantGaramond(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                        height: 1.05,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          room.name,
-          textAlign: TextAlign.center,
-          style: GoogleFonts.cormorantGaramond(
-            fontSize: 32,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-            height: 1.1,
-          ),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          'Criada por ${room.ownerName}',
-          style: TextStyle(
-            fontSize: 12,
-            fontStyle: FontStyle.italic,
-            color: a.textMuted(0.65),
-          ),
-        ),
-        const SizedBox(height: 14),
-        GestureDetector(
-          onTap: onCopy,
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-            decoration: BoxDecoration(
-              color: a.cardFillSoft,
-              borderRadius: BorderRadius.circular(14),
-              border: Border.all(color: a.cardBorder),
+          const SizedBox(height: 8),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Criada por ${room.ownerName}',
+              style: TextStyle(
+                fontSize: 12,
+                fontStyle: FontStyle.italic,
+                color: a.textMuted(0.65),
+              ),
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  room.code,
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 4,
-                    color: AppColors.accent,
+          ),
+          const SizedBox(height: 16),
+          GestureDetector(
+            onTap: onCopy,
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+              decoration: BoxDecoration(
+                color: Colors.white.withValues(alpha: 0.055),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(
+                  color: AppColors.accent.withValues(alpha: 0.32),
+                ),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Código da sala',
+                          style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w800,
+                            color: a.textMuted(0.58),
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          room.code,
+                          style: const TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 4,
+                            color: AppColors.accent,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Icon(Icons.copy_rounded, size: 20, color: a.textMuted(0.72)),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              Expanded(
+                child: GestureDetector(
+                  onTap: onShowQr,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                    decoration: BoxDecoration(
+                      gradient: AppGradients.gold,
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.qr_code_2_rounded,
+                          size: 18,
+                          color: AppColors.inkOnAccent,
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          'Compartilhar QR',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.inkOnAccent,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                const SizedBox(width: 10),
-                Icon(
-                  Icons.copy_rounded,
-                  size: 18,
-                  color: a.textMuted(0.7),
-                ),
-              ],
-            ),
-          ),
-        ),
-        if (rank != null) ...[
-          const SizedBox(height: 12),
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-            decoration: BoxDecoration(
-              gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(20),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.35),
-                  blurRadius: 14,
-                ),
-              ],
-            ),
-            child: Text(
-              'Você está em $rankº lugar',
-              style: const TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w900,
-                color: AppColors.inkOnAccent,
               ),
-            ),
+              const SizedBox(width: 10),
+              _RoomIconButton(
+                icon: Icons.refresh_rounded,
+                label: 'Atualizar',
+                onTap: onRefresh,
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              _RoomStatChip(
+                label: 'Seu lugar',
+                value: rank == null ? '--' : '$rankº',
+                accent: rank != null,
+              ),
+              const SizedBox(width: 8),
+              _RoomStatChip(label: 'Pessoas', value: '$memberCount'),
+              const SizedBox(width: 8),
+              _RoomStatChip(label: 'Você', value: '$weeklySteps'),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Row(
+            children: [
+              Icon(
+                Icons.hourglass_bottom_rounded,
+                size: 14,
+                color: AppColors.streak.withValues(alpha: 0.95),
+              ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: Text(
+                  'Semana da caravana: $closesText',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: a.textMuted(0.72),
+                  ),
+                ),
+              ),
+              TextButton(
+                onPressed: onLeave,
+                child: Text(
+                  'Sair',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: a.textMuted(0.55),
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
-        const SizedBox(height: 12),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextButton.icon(
-              onPressed: onRefresh,
-              icon: Icon(Icons.refresh_rounded, size: 16, color: a.textMuted(0.7)),
-              label: Text(
-                'Atualizar',
-                style: TextStyle(color: a.textMuted(0.7), fontWeight: FontWeight.w700),
-              ),
-            ),
-            TextButton(
-              onPressed: onLeave,
-              child: const Text(
-                'Sair',
-                style: TextStyle(color: AppColors.error, fontWeight: FontWeight.w700),
-              ),
-            ),
-          ],
-        ),
-      ],
+      ),
     );
   }
 }
 
-class _LeagueHeader extends StatelessWidget {
-  final int rank;
-  final int weeklySteps;
+class _RoomIconButton extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
 
-  const _LeagueHeader({required this.rank, required this.weeklySteps});
+  const _RoomIconButton({
+    required this.icon,
+    required this.label,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          'CARAVANA DA SEMANA',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 2,
-            color: AppColors.accent.withValues(alpha: 0.9),
-          ),
+    final a = Appearance.of(context);
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+        decoration: BoxDecoration(
+          color: Colors.white.withValues(alpha: 0.045),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: a.cardBorder),
         ),
-        const SizedBox(height: 8),
-        Text(
-          'Quem deu mais passos — para se animarem uns aos outros.',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 12,
-            height: 1.35,
-            fontWeight: FontWeight.w600,
-            color: Colors.white.withValues(alpha: 0.55),
-          ),
-        ),
-        const SizedBox(height: 12),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
-          decoration: BoxDecoration(
-            gradient: AppGradients.gold,
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.accent.withValues(alpha: 0.35),
-                blurRadius: 14,
+        child: Column(
+          children: [
+            Icon(
+              icon,
+              size: 17,
+              color: AppColors.accent.withValues(alpha: 0.9),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              style: TextStyle(
+                fontSize: 9,
+                fontWeight: FontWeight.w800,
+                color: a.textMuted(0.68),
               ),
-            ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _RoomStatChip extends StatelessWidget {
+  final String label;
+  final String value;
+  final bool accent;
+
+  const _RoomStatChip({
+    required this.label,
+    required this.value,
+    this.accent = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
+        decoration: BoxDecoration(
+          gradient: accent ? AppGradients.gold : null,
+          color: accent ? null : Colors.white.withValues(alpha: 0.045),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(
+            color: accent
+                ? Colors.white.withValues(alpha: 0.45)
+                : Colors.white.withValues(alpha: 0.08),
           ),
-          child: Text(
-            'Você está em $rankº · $weeklySteps passos esta semana',
-            style: const TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w900,
-              color: AppColors.inkOnAccent,
+        ),
+        child: Column(
+          children: [
+            Text(
+              value,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w900,
+                color: accent ? AppColors.inkOnAccent : AppColors.accent,
+              ),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.w800,
+                color: accent
+                    ? AppColors.inkOnAccent.withValues(alpha: 0.75)
+                    : a.textMuted(0.58),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _CaravanaHeroCard extends StatelessWidget {
+  final bool overall;
+  final int rank;
+  final int steps;
+  final int tierIndex;
+
+  const _CaravanaHeroCard({
+    required this.overall,
+    required this.rank,
+    required this.steps,
+    required this.tierIndex,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final tier = LeagueTier.values[tierIndex];
+    final days = LeagueService.daysLeft();
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+      decoration: BoxDecoration(
+        gradient: a.cardGradient,
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Column(
+        children: [
+          Text(
+            overall ? 'Ranking geral' : 'Sua semana',
+            style: GoogleFonts.cormorantGaramond(
+              fontSize: 26,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+              height: 1.1,
             ),
           ),
-        ),
-      ],
+          const SizedBox(height: 4),
+          Text(
+            overall
+                ? 'Passos de toda a jornada'
+                : 'Quem mais caminhou nesta caravana',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 12,
+              height: 1.35,
+              color: a.textMuted(0.65),
+            ),
+          ),
+          const SizedBox(height: 16),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+            decoration: BoxDecoration(
+              gradient: AppGradients.gold,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            child: Column(
+              children: [
+                Text(
+                  '$rankº lugar',
+                  style: const TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.inkOnAccent,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  '$steps passos${overall ? ' no total' : ' esta semana'}',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.inkOnAccent.withValues(alpha: 0.85),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (!overall) ...[
+            const SizedBox(height: 14),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    tier.label,
+                    style: TextStyle(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.white.withValues(alpha: 0.9),
+                    ),
+                  ),
+                ),
+                const Icon(
+                  Icons.hourglass_bottom_rounded,
+                  size: 14,
+                  color: AppColors.streak,
+                ),
+                const SizedBox(width: 4),
+                Text(
+                  days <= 1 ? 'Fecha hoje' : '$days dias',
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: a.textMuted(0.75),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            _TierLadder(currentIndex: tierIndex),
+            const SizedBox(height: 8),
+            Text(
+              'Top 7 sobem de caravana · últimos 5 descem',
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 11, color: a.textMuted(0.5)),
+            ),
+          ],
+        ],
+      ),
     );
   }
 }
@@ -1185,50 +1588,59 @@ class _TierLadder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: List.generate(LeagueTier.values.length, (i) {
+        final tier = LeagueTier.values[i];
         final reached = i <= currentIndex;
-        final current = i == currentIndex;
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 5),
-          child: Container(
-            width: current ? 42 : 34,
-            height: current ? 42 : 34,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: reached ? AppGradients.gold : null,
-              color: reached ? null : Colors.white.withValues(alpha: 0.07),
-              border: Border.all(
-                color: current
-                    ? Colors.white.withValues(alpha: 0.85)
-                    : Colors.white.withValues(alpha: reached ? 0.2 : 0.12),
-                width: current ? 2 : 1,
+        final isCurrent = i == currentIndex;
+        return Expanded(
+          child: Column(
+            children: [
+              Container(
+                width: isCurrent ? 34 : 28,
+                height: isCurrent ? 34 : 28,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  gradient: reached ? AppGradients.gold : null,
+                  color: reached ? null : Colors.white.withValues(alpha: 0.07),
+                  border: Border.all(
+                    color: isCurrent
+                        ? Colors.white.withValues(alpha: 0.85)
+                        : Colors.white.withValues(alpha: reached ? 0.2 : 0.1),
+                    width: isCurrent ? 1.5 : 1,
+                  ),
+                ),
+                child: Center(
+                  child: CinematicIcon(
+                    glyph: switch (tier) {
+                      LeagueTier.semente => CinematicGlyph.seed,
+                      LeagueTier.videira => CinematicGlyph.tree,
+                      LeagueTier.oliveira => CinematicGlyph.mountain,
+                      LeagueTier.cedro => CinematicGlyph.crown,
+                      LeagueTier.estrela => CinematicGlyph.star,
+                    },
+                    size: isCurrent ? 17 : 14,
+                    accent: reached ? AppColors.inkOnAccent : a.textMuted(0.35),
+                    glowing: false,
+                    framed: false,
+                  ),
+                ),
               ),
-              boxShadow: current
-                  ? [
-                      BoxShadow(
-                        color: AppColors.accent.withValues(alpha: 0.45),
-                        blurRadius: 12,
-                      ),
-                    ]
-                  : null,
-            ),
-            child: Center(
-              child: CinematicIcon(
-                glyph: switch (LeagueTier.values[i]) {
-                  LeagueTier.semente => CinematicGlyph.seed,
-                  LeagueTier.videira => CinematicGlyph.tree,
-                  LeagueTier.oliveira => CinematicGlyph.mountain,
-                  LeagueTier.cedro => CinematicGlyph.crown,
-                  LeagueTier.estrela => CinematicGlyph.star,
-                },
-                size: current ? 22 : 18,
-                accent: reached ? AppColors.inkOnAccent : a.textMuted(0.4),
-                glowing: false,
-                framed: false,
+              const SizedBox(height: 4),
+              Text(
+                tier.shortLabel,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  fontSize: 9,
+                  fontWeight: isCurrent ? FontWeight.w900 : FontWeight.w600,
+                  color: isCurrent
+                      ? AppColors.accent
+                      : a.textMuted(reached ? 0.55 : 0.3),
+                ),
               ),
-            ),
+            ],
           ),
         );
       }),
@@ -1236,41 +1648,98 @@ class _TierLadder extends StatelessWidget {
   }
 }
 
-class _CountdownChip extends StatelessWidget {
-  const _CountdownChip();
+class _TextInputDialog extends StatefulWidget {
+  final String title;
+  final String hint;
+  final String confirmLabel;
+  final int maxLength;
+  final bool capitalize;
+  final double letterSpacing;
+
+  const _TextInputDialog({
+    required this.title,
+    required this.hint,
+    required this.confirmLabel,
+    required this.maxLength,
+    this.capitalize = false,
+    this.letterSpacing = 0,
+  });
+
+  @override
+  State<_TextInputDialog> createState() => _TextInputDialogState();
+}
+
+class _TextInputDialogState extends State<_TextInputDialog> {
+  late final TextEditingController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TextEditingController();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _submit() => Navigator.pop(context, _controller.text.trim());
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final days = LeagueService.daysLeft();
-    final text = days <= 1
-        ? 'A caravana fecha hoje'
-        : 'A caravana fecha em $days dias';
-    return Center(
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        decoration: BoxDecoration(
-          color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: a.cardBorder),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Icon(Icons.hourglass_bottom_rounded,
-                size: 14, color: AppColors.streak),
-            const SizedBox(width: 6),
-            Text(
-              text,
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w700,
-                color: a.textMuted(0.8),
-              ),
-            ),
-          ],
+    return AlertDialog(
+      backgroundColor: AppColors.nightMid,
+      title: Text(
+        widget.title,
+        style: GoogleFonts.cormorantGaramond(
+          color: Colors.white,
+          fontWeight: FontWeight.w700,
+          fontSize: 24,
         ),
       ),
+      content: TextField(
+        controller: _controller,
+        autofocus: true,
+        maxLength: widget.maxLength,
+        textCapitalization: widget.capitalize
+            ? TextCapitalization.characters
+            : TextCapitalization.none,
+        style: TextStyle(
+          color: Colors.white,
+          letterSpacing: widget.letterSpacing,
+          fontWeight: widget.capitalize ? FontWeight.w800 : FontWeight.w500,
+        ),
+        decoration: InputDecoration(
+          hintText: widget.hint,
+          hintStyle: TextStyle(color: a.textMuted(0.5), letterSpacing: 0),
+          filled: true,
+          fillColor: a.cardFillSoft,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: BorderSide.none,
+          ),
+        ),
+        onSubmitted: (_) => _submit(),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
+        ),
+        FilledButton(
+          onPressed: _submit,
+          style: FilledButton.styleFrom(
+            backgroundColor: AppColors.accent,
+            foregroundColor: AppColors.inkOnAccent,
+          ),
+          child: Text(
+            widget.confirmLabel,
+            style: const TextStyle(fontWeight: FontWeight.w800),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -1286,17 +1755,17 @@ class _OutcomeBanner extends StatelessWidget {
     final outcome = league.pendingOutcome!;
     final (title, message) = switch (outcome) {
       LeagueOutcome.promoted => (
-          'Você avançou de caravana',
-          'Ficou em ${league.pendingRank}º e agora caminha na ${league.tier.label}. +${LeagueService.promotionBonusXp} passos de encorajamento!',
-        ),
+        'Você avançou de caravana',
+        'Ficou em ${league.pendingRank}º e agora caminha na ${league.tier.label}. +${LeagueService.promotionBonusXp} passos de encorajamento!',
+      ),
       LeagueOutcome.stayed => (
-          'Semana da caravana encerrada',
-          'Você ficou em ${league.pendingRank}º na ${league.tier.label}. Nova semana — continuem se animando.',
-        ),
+        'Semana da caravana encerrada',
+        'Você ficou em ${league.pendingRank}º na ${league.tier.label}. Nova semana — continuem se animando.',
+      ),
       LeagueOutcome.demoted => (
-          'Sua caminhada continua daqui',
-          'Você ficou em ${league.pendingRank}º. Na ${league.tier.label} há espaço para o próximo passo — sem vergonha, só graça.',
-        ),
+        'Sua caminhada continua daqui',
+        'Você ficou em ${league.pendingRank}º. Na ${league.tier.label} há espaço para o próximo passo — sem vergonha, só graça.',
+      ),
     };
 
     return Container(
@@ -1353,11 +1822,21 @@ class _OutcomeBanner extends StatelessWidget {
           TextButton(
             onPressed: () async {
               if (outcome == LeagueOutcome.promoted) {
-                await context
-                    .read<ProgressService>()
-                    .grantBonusSteps(LeagueService.promotionBonusXp);
+                await context.read<ProgressService>().grantBonusSteps(
+                  LeagueService.promotionBonusXp,
+                );
               }
               await league.dismissOutcome();
+              if (!context.mounted) return;
+              final progress = context.read<ProgressService>();
+              final backend = context.read<BackendService>();
+              final rooms = context.read<RoomService>();
+              await backend.saveNow(
+                progress,
+                LeagueService.weekKey(),
+                roomCode: rooms.activeCode,
+                league: league,
+              );
             },
             child: Text(
               outcome == LeagueOutcome.promoted ? 'Coletar' : 'Ok',
@@ -1389,7 +1868,9 @@ class _ZoneLabel extends StatelessWidget {
       child: Row(
         children: [
           Icon(
-            up ? Icons.keyboard_double_arrow_up_rounded : Icons.keyboard_double_arrow_down_rounded,
+            up
+                ? Icons.keyboard_double_arrow_up_rounded
+                : Icons.keyboard_double_arrow_down_rounded,
             size: 16,
             color: color,
           ),
@@ -1594,8 +2075,7 @@ class _CompanionsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            error ??
-                'Entre com Google para caminhar com alguém de verdade.',
+            error ?? 'Entre com Google para caminhar com alguém de verdade.',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 13,
@@ -1669,9 +2149,9 @@ class _CompanionsEmpty extends StatelessWidget {
           if (loading)
             const CircularProgressIndicator(color: AppColors.accent)
           else ...[
-            _OutlineAction(label: 'Convidar companheiro', onTap: onInvite),
+            _OutlineAction(label: 'Convidar amigo', onTap: onInvite),
             const SizedBox(height: 10),
-            _OutlineAction(label: 'Entrar com código', onTap: onJoin),
+            _OutlineAction(label: 'Aceitar convite', onTap: onJoin),
           ],
         ],
       ),
@@ -1683,11 +2163,13 @@ class _CompanionCard extends StatelessWidget {
   final WalkCompanion companion;
   final VoidCallback onCopy;
   final VoidCallback onLeave;
+  final VoidCallback onShowQr;
 
   const _CompanionCard({
     required this.companion,
     required this.onCopy,
     required this.onLeave,
+    required this.onShowQr,
   });
 
   @override
@@ -1757,8 +2239,10 @@ class _CompanionCard extends StatelessWidget {
               ),
               if (companion.sharedDays > 0)
                 Container(
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 6,
+                  ),
                   decoration: BoxDecoration(
                     color: AppColors.streak.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(12),
@@ -1791,6 +2275,23 @@ class _CompanionCard extends StatelessWidget {
                   ),
                 ),
               ),
+              if (companion.awaitingPartner)
+                TextButton.icon(
+                  onPressed: onShowQr,
+                  icon: const Icon(
+                    Icons.qr_code_2_rounded,
+                    size: 18,
+                    color: AppColors.accent,
+                  ),
+                  label: const Text(
+                    'QR',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: AppColors.accent,
+                    ),
+                  ),
+                ),
               TextButton(
                 onPressed: onLeave,
                 child: Text(

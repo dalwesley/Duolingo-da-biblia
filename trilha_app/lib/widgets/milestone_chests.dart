@@ -246,7 +246,7 @@ class WeeklyQuestsCard extends StatelessWidget {
           Row(
             children: [
               Text(
-                'MISSÕES DA SEMANA',
+                'PASSOS DA SEMANA',
                 style: TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w900,
@@ -300,7 +300,7 @@ class WeeklyQuestsCard extends StatelessWidget {
                             value: pct,
                             minHeight: 5,
                             backgroundColor: a.progressTrack,
-                            color: claimed ? AppColors.teal : const Color(0xFF74B9FF),
+                            color: claimed ? AppColors.accent : AppColors.primaryLight,
                           ),
                         ),
                       ],
@@ -315,12 +315,12 @@ class WeeklyQuestsCard extends StatelessWidget {
                       child: Container(
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                         decoration: BoxDecoration(
-                          color: const Color(0xFF74B9FF),
+                          gradient: AppGradients.gold,
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Text(
                           '+${q.stepsReward}',
-                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w900, color: Color(0xFF0B1D3A)),
+                          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent),
                         ),
                       ),
                     )

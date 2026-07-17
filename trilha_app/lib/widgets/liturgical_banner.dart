@@ -23,16 +23,15 @@ class LiturgicalBanner extends StatelessWidget {
     final accent = AppTheme.parseHex(moment.accentHex);
 
     return GlassCard(
-      elevated: true,
       onTap: onOpenBible,
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
       child: Row(
         children: [
           CinematicIcon(
             glyph: CinematicGlyph.calendar,
-            size: 44,
+            size: 40,
             accent: accent,
-            glowing: true,
+            glowing: false,
           ),
           const SizedBox(width: 12),
           Expanded(

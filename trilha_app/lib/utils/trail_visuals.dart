@@ -40,7 +40,9 @@ class TrailVisuals {
       'historicos-at' => _palette(Icons.shield_rounded, AppColors.cedar, AppColors.cedarDeep),
       'poeticos' => _palette(Icons.music_note_rounded, AppColors.sand, AppColors.sandDeep),
       // Proféticos: azul-acinzentado frio ainda na família AT (não clay NT).
-      'profeticos' => _palette(Icons.bolt_rounded, AppColors.slate, AppColors.slateDeep),
+      'profetas-maiores' => _palette(Icons.bolt_rounded, AppColors.slate, AppColors.slateDeep),
+      'profetas-menores' => _palette(Icons.notifications_rounded, AppColors.slate, AppColors.slateDeep),
+      'intertestamentario' => _palette(Icons.hourglass_empty_rounded, AppColors.slate, AppColors.slateDeep),
       'evangelhos' => _palette(Icons.favorite_rounded, AppColors.clay, AppColors.clayDeep),
       'historicos-nt' => _palette(Icons.local_fire_department_rounded, AppColors.ember, AppColors.emberDeep),
       // Epístolas: cedar era verde-AT; agora clay profundo = família NT.

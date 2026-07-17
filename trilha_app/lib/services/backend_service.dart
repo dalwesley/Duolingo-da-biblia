@@ -8,6 +8,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import '../firebase_options.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
+import 'league_service.dart';
 import 'progress_service.dart';
 
 /// Jogador real vindo da nuvem (liga da semana).
@@ -240,10 +241,11 @@ class BackendService extends ChangeNotifier {
     };
   }
 
-  Map<String, dynamic> _payload(ProgressService p) {
+  Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
     final user = currentUser;
     return {
       ...p.toCloudMap(),
+      if (league != null) ...league.toCloudMap(),
       'email': user?.email,
       'photoUrl': user?.photoURL,
       'authProvider': isGoogleSignedIn ? 'google' : 'unknown',
@@ -251,20 +253,36 @@ class BackendService extends ChangeNotifier {
     };
   }
 
-  /// Backup imediato do progresso + publicação do XP semanal na liga
+  /// Backup imediato + publicação nos rankings semanal, mensal e geral
   /// (e na sala ativa, se houver).
   Future<bool> saveNow(
     ProgressService progress,
     String week, {
     String? roomCode,
+    LeagueService? league,
   }) async {
     if (!isActive) return false;
     try {
       final batch = _db.batch();
-      batch.set(_db.doc('users/$_uid'), _payload(progress), SetOptions(merge: true));
+      batch.set(
+        _db.doc('users/$_uid'),
+        _payload(progress, league: league),
+        SetOptions(merge: true),
+      );
       batch.set(_db.doc('leagues/$week/players/$_uid'), {
         'name': progress.userName,
         'xp': progress.weeklySteps,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      final month = LeagueService.monthKey();
+      batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
+        'name': progress.userName,
+        'xp': progress.monthlySteps,
+        'updatedAt': FieldValue.serverTimestamp(),
+      });
+      batch.set(_db.doc('overallPlayers/$_uid'), {
+        'name': progress.userName,
+        'xp': progress.steps,
         'updatedAt': FieldValue.serverTimestamp(),
       });
       if (roomCode != null && roomCode.isNotEmpty) {
@@ -284,15 +302,27 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Carrega o progresso do Firebase (fonte da verdade) para o cache local.
+  /// Carrega o progresso do Firebase (fonte da verdade) para a memória da sessão.
+  /// Se a nuvem estiver vazia, tenta migrar dados legados do aparelho uma vez.
   /// Retorna true se havia documento na nuvem.
-  Future<bool> hydrateProgress(ProgressService progress) async {
+  Future<bool> hydrateProgress(
+    ProgressService progress, {
+    LeagueService? league,
+  }) async {
     if (!isActive) return false;
     try {
       final data = await fetchBackup();
-      if (data == null) return false;
-      await progress.applyFromCloud(data);
-      return true;
+      if (data != null) {
+        await progress.applyFromCloud(data);
+        if (league != null) await league.applyFromCloud(data);
+        await progress.clearLegacyLocalPrefs();
+        return true;
+      }
+      final legacy = await progress.readLegacyLocalSnapshot();
+      if (legacy != null) {
+        await progress.applyFromCloud(legacy);
+      }
+      return false;
     } catch (e) {
       debugPrint('Falha ao hidratar progresso: $e');
       return false;
@@ -304,11 +334,12 @@ class BackendService extends ChangeNotifier {
     ProgressService progress,
     String week, {
     String? roomCode,
+    LeagueService? league,
   }) {
     if (!isActive) return;
     _debounce?.cancel();
     _debounce = Timer(const Duration(seconds: 2), () {
-      saveNow(progress, week, roomCode: roomCode);
+      saveNow(progress, week, roomCode: roomCode, league: league);
     });
   }
 
@@ -476,6 +507,32 @@ class BackendService extends ChangeNotifier {
       ];
     } catch (e) {
       debugPrint('Falha ao buscar liga na nuvem: $e');
+      return const [];
+    }
+  }
+
+  /// Jogadores reais do ranking geral (exclui o próprio usuário).
+  Future<List<CloudPlayer>> fetchOverallPlayers({int limit = 30}) async {
+    if (!isActive) return const [];
+    try {
+      final snap = await _db
+          .collection('overallPlayers')
+          .orderBy('xp', descending: true)
+          .limit(limit)
+          .get();
+      return [
+        for (final d in snap.docs)
+          if (d.id != _uid)
+            CloudPlayer(
+              uid: d.id,
+              name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
+                  ? d.data()['name'] as String
+                  : 'Peregrino',
+              steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
+            ),
+      ];
+    } catch (e) {
+      debugPrint('Falha ao buscar ranking geral: $e');
       return const [];
     }
   }

@@ -27,7 +27,8 @@ class _LoginScreenState extends State<LoginScreen> {
     GoogleSignInResult result,
   ) async {
     // Firebase é a fonte da verdade.
-    await backend.hydrateProgress(progress);
+    final league = context.read<LeagueService>();
+    await backend.hydrateProgress(progress, league: league);
 
     final name = result.displayName?.trim();
     if (name != null &&
@@ -36,7 +37,12 @@ class _LoginScreenState extends State<LoginScreen> {
       await progress.setUserName(name);
     }
 
-    await backend.saveNow(progress, LeagueService.weekKey());
+    final saved = await backend.saveNow(
+      progress,
+      LeagueService.weekKey(),
+      league: league,
+    );
+    if (saved) await progress.clearLegacyLocalPrefs();
     if (!mounted) return;
 
     final next = progress.hasSeenOnboarding
@@ -114,7 +120,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 12),
                 Text(
-                  'Sua conta Google guarda o progresso, a caravana e as salas.',
+                  'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 14,

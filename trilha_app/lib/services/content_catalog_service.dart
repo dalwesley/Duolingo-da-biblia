@@ -41,7 +41,12 @@ class ContentCatalogService {
       }
       return;
     }
-    if (!forceRefresh && _trails != null && _bankQuestions != null) return;
+    if (!forceRefresh &&
+        _trails != null &&
+        _bankQuestions != null &&
+        _studies != null) {
+      return;
+    }
 
     _loading = true;
     try {

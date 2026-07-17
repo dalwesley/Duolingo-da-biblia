@@ -25,7 +25,7 @@ class ShareStreakButton extends StatelessWidget {
     final text = '''
 👣 Minha caminhada no Trilha: $days!
 
-Estou caminhando pela Palavra — $steps passos até agora.$name
+Estou caminhando na Palavra — $steps passos até agora.$name
 
 Baixe o Trilha e caminhe comigo. 📖✨
 '''
@@ -38,12 +38,20 @@ Baixe o Trilha e caminhe comigo. 📖✨
   @override
   Widget build(BuildContext context) {
     if (compact) {
-      return IconButton(
-        onPressed: streak > 0 ? _share : null,
-        tooltip: 'Compartilhar caminhada',
-        icon: Icon(
-          Icons.ios_share_rounded,
-          color: streak > 0 ? AppColors.accent : Colors.white38,
+      return SizedBox(
+        width: 34,
+        height: 34,
+        child: IconButton(
+          onPressed: streak > 0 ? _share : null,
+          tooltip: 'Compartilhar caminhada',
+          padding: EdgeInsets.zero,
+          constraints: const BoxConstraints.tightFor(width: 34, height: 34),
+          visualDensity: VisualDensity.compact,
+          icon: Icon(
+            Icons.ios_share_rounded,
+            size: 20,
+            color: streak > 0 ? AppColors.accent : Colors.white38,
+          ),
         ),
       );
     }

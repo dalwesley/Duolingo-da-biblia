@@ -1,22 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../services/backend_service.dart';
+import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
+import '../utils/spiritual_growth.dart';
 import '../widgets/cinematic_icon.dart';
-import '../widgets/daily_quests_card.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/reflection_journal_card.dart';
 import '../widgets/user_avatar.dart';
-import 'memory_screen.dart';
-import 'practice_screen.dart';
+import 'bible_screen.dart';
 
 /// Perfil / jornada — aberto pelo avatar na home.
 class MeScreen extends StatefulWidget {
-  const MeScreen({super.key});
+  final Widget? topBar;
+
+  const MeScreen({
+    super.key,
+    this.topBar,
+  });
 
   @override
   State<MeScreen> createState() => _MeScreenState();
@@ -45,17 +53,28 @@ class _MeScreenState extends State<MeScreen> {
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
     final a = Appearance.of(context);
-    final bottomInset = MediaQuery.viewPaddingOf(context).bottom;
+    final growth = SpiritualGrowth.fromStreak(progress.streak);
 
     return ListView(
-      padding: EdgeInsets.fromLTRB(20, 16, 20, 28 + bottomInset),
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        widget.topBar == null
+            ? AppSpace.lg
+            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        AppSpace.screen,
+        scrollPaddingBelowNav(context),
+      ),
       children: [
+        if (widget.topBar != null) ...[
+          widget.topBar!,
+          const SizedBox(height: 16),
+        ],
         Row(
           children: [
             UserAvatar(
               photoUrl: backend.userPhotoUrl,
               name: progress.userName,
-              radius: 32,
+              radius: 30,
             ),
             const SizedBox(width: 14),
             Expanded(
@@ -64,123 +83,156 @@ class _MeScreenState extends State<MeScreen> {
                 children: [
                   Text(
                     progress.userName,
-                    style: TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w900,
+                    style: GoogleFonts.cormorantGaramond(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w700,
                       color: a.text,
+                      height: 1.1,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    growth.title,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w700,
+                      color: AppColors.accent.withValues(alpha: 0.9),
                     ),
                   ),
                   if (backend.userEmail != null) ...[
                     const SizedBox(height: 2),
                     Text(
                       backend.userEmail!,
-                      style: TextStyle(fontSize: 12, color: a.textMuted(0.7)),
+                      style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
                     ),
                   ],
                 ],
               ),
             ),
+            CinematicIcon(
+              glyph: switch (growth.stage) {
+                GrowthStage.seed => CinematicGlyph.seed,
+                GrowthStage.sprout => CinematicGlyph.tree,
+                GrowthStage.sapling => CinematicGlyph.tree,
+                GrowthStage.olive => CinematicGlyph.tree,
+                GrowthStage.lamp => CinematicGlyph.lamp,
+              },
+              size: 44,
+              accent: growth.stage == GrowthStage.lamp
+                  ? AppColors.accent
+                  : AppColors.primaryLight,
+              glowing: false,
+            ),
           ],
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 18),
+        const LivingSeedCard(),
+        const SizedBox(height: 14),
         _JourneySeals(
           steps: progress.steps,
           missions: progress.completedMissions.length,
           trails: _trailCount,
+          streak: progress.streak,
         ),
         const SizedBox(height: 18),
-        const DailyQuestsCard(),
-        const SizedBox(height: 14),
         const WeeklyQuestsCard(),
+        const _FavoritesSection(),
         const SizedBox(height: 14),
-        GlassCard(
-          elevated: true,
-          onTap: () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => const MemoryScreen()),
-          ),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.scroll,
-                size: 44,
-                accent: AppColors.accent,
-                glowing: true,
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Memorizar versículos',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w900,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      progress.memoryMastered.isEmpty
-                          ? 'Flashcards com a Palavra'
-                          : '${progress.memoryMastered.length} firmes no coração',
-                      style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
-                    ),
-                  ],
-                ),
-              ),
-              Icon(Icons.arrow_forward_rounded, color: a.textMuted(0.5), size: 20),
-            ],
-          ),
-        ),
-        if (progress.mistakeQuestionIds.isNotEmpty) ...[
-          const SizedBox(height: 14),
-          GlassCard(
-            elevated: true,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const PracticeScreen()),
-            ),
-            child: Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.echo,
-                  size: 44,
-                  accent: AppColors.error,
-                  glowing: true,
-                ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Reforçar memória',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w900,
-                          color: a.text,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        '${progress.mistakeQuestionIds.length} passagem(ns) para revisitar',
-                        style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
-                      ),
-                    ],
-                  ),
-                ),
-                Icon(
-                  Icons.arrow_forward_rounded,
-                  color: a.textMuted(0.5),
-                  size: 20,
-                ),
-              ],
-            ),
-          ),
-        ],
-        const SizedBox(height: 18),
         const ReflectionJournalCard(),
         const SizedBox(height: 8),
+      ],
+    );
+  }
+}
+
+class _FavoritesSection extends StatefulWidget {
+  const _FavoritesSection();
+
+  @override
+  State<_FavoritesSection> createState() => _FavoritesSectionState();
+}
+
+class _FavoritesSectionState extends State<_FavoritesSection> {
+  Map<String, String> _namesByAbbrev = const {};
+
+  @override
+  void initState() {
+    super.initState();
+    _loadNames();
+  }
+
+  Future<void> _loadNames() async {
+    final books = await BibleService.instance.books();
+    if (!mounted) return;
+    setState(() {
+      _namesByAbbrev = {
+        for (final b in books) b.abbrev.toLowerCase(): b.name,
+      };
+    });
+  }
+
+  String _label(({String abbrev, int chapter, int verse}) b) {
+    final name =
+        _namesByAbbrev[b.abbrev.toLowerCase()] ?? b.abbrev.toUpperCase();
+    return '${name} ${b.chapter}:${b.verse}';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final bookmarks = progress.parseBookmarks().take(8).toList();
+    if (bookmarks.isEmpty) return const SizedBox.shrink();
+
+    final a = Appearance.of(context);
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 14),
+        Text(
+          'FAVORITOS',
+          style: AppTypography.label(
+            size: 12,
+            color: a.text.withValues(alpha: 0.88),
+            letterSpacing: 1.6,
+          ),
+        ),
+        const SizedBox(height: 10),
+        ...bookmarks.map((b) {
+          final label = _label(b);
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: GlassCard(
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => BibleReaderScreen(reference: label),
+                ),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.star_rounded,
+                    color: AppColors.accent.withValues(alpha: 0.95),
+                    size: 18,
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      label,
+                      style: AppTypography.title(size: 14, color: a.text),
+                    ),
+                  ),
+                  Icon(
+                    Icons.chevron_right_rounded,
+                    color: a.textMuted(0.4),
+                    size: 20,
+                  ),
+                ],
+              ),
+            ),
+          );
+        }),
       ],
     );
   }
@@ -190,11 +242,13 @@ class _JourneySeals extends StatelessWidget {
   final int steps;
   final int missions;
   final int trails;
+  final int streak;
 
   const _JourneySeals({
     required this.steps,
     required this.missions,
     required this.trails,
+    required this.streak,
   });
 
   @override
@@ -209,7 +263,16 @@ class _JourneySeals extends StatelessWidget {
             accent: AppColors.accent,
           ),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 8),
+        Expanded(
+          child: _Seal(
+            glyph: CinematicGlyph.flame,
+            value: '$streak',
+            label: 'Dias',
+            accent: AppColors.streak,
+          ),
+        ),
+        const SizedBox(width: 8),
         Expanded(
           child: _Seal(
             glyph: CinematicGlyph.scroll,
@@ -218,13 +281,13 @@ class _JourneySeals extends StatelessWidget {
             accent: AppColors.primaryLight,
           ),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 8),
         Expanded(
           child: _Seal(
-            glyph: CinematicGlyph.cosmos,
+            glyph: CinematicGlyph.path,
             value: '$trails',
             label: 'Trilhas',
-            accent: AppColors.teal,
+            accent: AppColors.cedar,
           ),
         ),
       ],
@@ -249,15 +312,15 @@ class _Seal extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return GlassCard(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 6),
       child: Column(
         children: [
-          CinematicIcon(glyph: glyph, size: 32, accent: accent, glowing: false),
-          const SizedBox(height: 8),
+          CinematicIcon(glyph: glyph, size: 26, accent: accent, glowing: false),
+          const SizedBox(height: 6),
           Text(
             value,
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 15,
               fontWeight: FontWeight.w900,
               color: accent,
             ),
@@ -266,9 +329,9 @@ class _Seal extends StatelessWidget {
           Text(
             label,
             style: TextStyle(
-              fontSize: 10,
+              fontSize: 9,
               fontWeight: FontWeight.w700,
-              letterSpacing: 0.6,
+              letterSpacing: 0.4,
               color: a.textMuted(0.5),
             ),
           ),

@@ -9,6 +9,7 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/top_bar.dart';
 
 /// Memorização — flashcards com SRS leve (favoritos + catálogo).
 class MemoryScreen extends StatefulWidget {
@@ -40,7 +41,10 @@ class _MemoryScreenState extends State<MemoryScreen> {
 
     // Prioriza o que ainda não está firme.
     final ranked = [...MemoryVerseCatalog.curated]
-      ..sort((a, b) => progress.memoryScore(a.id).compareTo(progress.memoryScore(b.id)));
+      ..sort(
+        (a, b) =>
+            progress.memoryScore(a.id).compareTo(progress.memoryScore(b.id)),
+      );
 
     for (final v in ranked) {
       if (progress.isMemoryMastered(v.id)) continue;
@@ -53,7 +57,11 @@ class _MemoryScreenState extends State<MemoryScreen> {
     for (final b in progress.parseBookmarks()) {
       final id = 'bm:${b.abbrev}:${b.chapter}:${b.verse}';
       if (seen.contains(id) || progress.isMemoryMastered(id)) continue;
-      final text = await BibleService.instance.verseText(b.abbrev, b.chapter, b.verse);
+      final text = await BibleService.instance.verseText(
+        b.abbrev,
+        b.chapter,
+        b.verse,
+      );
       if (text == null) continue;
       final books = await BibleService.instance.books();
       String name = b.abbrev.toUpperCase();
@@ -63,14 +71,16 @@ class _MemoryScreenState extends State<MemoryScreen> {
           break;
         }
       }
-      deck.add(MemoryVerse(
-        id: id,
-        reference: '$name ${b.chapter}:${b.verse}',
-        text: text,
-        abbrev: b.abbrev,
-        chapter: b.chapter,
-        verse: b.verse,
-      ));
+      deck.add(
+        MemoryVerse(
+          id: id,
+          reference: '$name ${b.chapter}:${b.verse}',
+          text: text,
+          abbrev: b.abbrev,
+          chapter: b.chapter,
+          verse: b.verse,
+        ),
+      );
       seen.add(id);
       if (deck.length >= 10) break;
     }
@@ -126,137 +136,175 @@ class _MemoryScreenState extends State<MemoryScreen> {
       value: SystemUiOverlayStyle.light,
       child: Scaffold(
         backgroundColor: AppColors.night,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          foregroundColor: Colors.white,
-          title: Text('Memorizar', style: AppTypography.display(size: 24)),
-        ),
-        body: _loading
-            ? const Center(child: CircularProgressIndicator(color: AppColors.accent))
-            : _finished
-                ? _DonePane(
-                    known: _known,
-                    learning: _learning,
-                    onAgain: _load,
-                    onClose: () => Navigator.pop(context),
-                  )
-                : Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        Text(
-                          '${_index + 1} / ${_deck.length}',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w800,
-                            color: a.textMuted(0.5),
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(999),
-                          child: LinearProgressIndicator(
-                            value: (_index + (_revealed ? 0.5 : 0)) / _deck.length,
-                            minHeight: 5,
-                            backgroundColor: Colors.white12,
-                            color: AppColors.accent,
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                        Expanded(
-                          child: Container(
-                            padding: const EdgeInsets.all(24),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(28),
-                              gradient: const LinearGradient(
-                                begin: Alignment.topLeft,
-                                end: Alignment.bottomRight,
-                                colors: [Color(0xFF1E2A24), Color(0xFF121816)],
-                              ),
-                              border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
-                              boxShadow: AppTheme.glow(AppColors.accent, blur: 22),
+        body: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                AppSpace.screen,
+                0,
+              ),
+              child: TopBar(
+                inline: true,
+                immersive: true,
+                dark: true,
+                title: 'Memorizar',
+                subtitle: 'Guarde a Palavra',
+                onBack: () => Navigator.pop(context),
+                leadingGlyph: CinematicGlyph.scroll,
+              ),
+            ),
+            Expanded(
+              child: _loading
+                  ? const Center(
+                      child: CircularProgressIndicator(
+                        color: AppColors.accent,
+                      ),
+                    )
+                  : _finished
+                  ? _DonePane(
+                      known: _known,
+                      learning: _learning,
+                      onAgain: _load,
+                      onClose: () => Navigator.pop(context),
+                    )
+                  : Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Text(
+                            '${_index + 1} / ${_deck.length}',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w800,
+                              color: a.textMuted(0.5),
                             ),
-                            child: Column(
-                              children: [
-                                CinematicIcon(
-                                  glyph: CinematicGlyph.scroll,
-                                  size: 48,
-                                  accent: AppColors.accent,
-                                  glowing: true,
+                          ),
+                          const SizedBox(height: 8),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(999),
+                            child: LinearProgressIndicator(
+                              value: (_index + (_revealed ? 0.5 : 0)) /
+                                  _deck.length,
+                              minHeight: 5,
+                              backgroundColor: Colors.white12,
+                              color: AppColors.accent,
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+                          Expanded(
+                            child: Container(
+                              padding: const EdgeInsets.all(24),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(28),
+                                gradient: const LinearGradient(
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                  colors: [
+                                    Color(0xFF1E2A24),
+                                    Color(0xFF121816),
+                                  ],
                                 ),
-                                const SizedBox(height: 18),
-                                Text(
-                                  _current.reference,
-                                  textAlign: TextAlign.center,
-                                  style: GoogleFonts.cormorantGaramond(
-                                    fontSize: 28,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.white,
+                                border: Border.all(
+                                  color: AppColors.accent.withValues(
+                                    alpha: 0.35,
                                   ),
                                 ),
-                                const SizedBox(height: 22),
-                                Expanded(
-                                  child: Center(
-                                    child: AnimatedOpacity(
-                                      duration: const Duration(milliseconds: 220),
-                                      opacity: _revealed ? 1 : 0.35,
-                                      child: Text(
-                                        _revealed
-                                            ? _current.text
-                                            : 'Toque para revelar o versículo',
-                                        textAlign: TextAlign.center,
-                                        style: GoogleFonts.cormorantGaramond(
-                                          fontSize: _revealed ? 22 : 16,
-                                          height: 1.45,
-                                          fontWeight: FontWeight.w600,
-                                          fontStyle: _revealed ? FontStyle.normal : FontStyle.italic,
-                                          color: Colors.white.withValues(alpha: 0.92),
-                                        ),
+                                boxShadow: AppTheme.glow(
+                                  AppColors.accent,
+                                  blur: 22,
+                                ),
+                              ),
+                              child: Column(
+                                children: [
+                                  CinematicIcon(
+                                    glyph: CinematicGlyph.scroll,
+                                    size: 48,
+                                    accent: AppColors.accent,
+                                    glowing: true,
+                                  ),
+                            const SizedBox(height: 18),
+                            Text(
+                              _current.reference,
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.cormorantGaramond(
+                                fontSize: 28,
+                                fontWeight: FontWeight.w700,
+                                color: Colors.white,
+                              ),
+                            ),
+                            const SizedBox(height: 22),
+                            Expanded(
+                              child: Center(
+                                child: AnimatedOpacity(
+                                  duration: const Duration(milliseconds: 220),
+                                  opacity: _revealed ? 1 : 0.35,
+                                  child: Text(
+                                    _revealed
+                                        ? _current.text
+                                        : 'Toque para revelar o versículo',
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.cormorantGaramond(
+                                      fontSize: _revealed ? 22 : 16,
+                                      height: 1.45,
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: _revealed
+                                          ? FontStyle.normal
+                                          : FontStyle.italic,
+                                      color: Colors.white.withValues(
+                                        alpha: 0.92,
                                       ),
                                     ),
                                   ),
                                 ),
-                                if (!_revealed)
-                                  TextButton(
-                                    onPressed: () => setState(() => _revealed = true),
-                                    child: const Text(
-                                      'Revelar',
-                                      style: TextStyle(
-                                        color: AppColors.accent,
-                                        fontWeight: FontWeight.w900,
-                                      ),
-                                    ),
-                                  ),
-                              ],
+                              ),
                             ),
-                          ),
+                            if (!_revealed)
+                              TextButton(
+                                onPressed: () =>
+                                    setState(() => _revealed = true),
+                                child: const Text(
+                                  'Revelar',
+                                  style: TextStyle(
+                                    color: AppColors.accent,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                                ),
+                              ),
+                          ],
                         ),
-                        const SizedBox(height: 18),
-                        if (_revealed)
-                          Row(
-                            children: [
-                              Expanded(
-                                child: _ActionBtn(
-                                  label: 'Ainda não',
-                                  color: const Color(0xFFFF8C8C),
-                                  onTap: () => _answer(knew: false),
-                                ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: _ActionBtn(
-                                  label: 'Já sei',
-                                  color: AppColors.teal,
-                                  onTap: () => _answer(knew: true),
-                                ),
-                              ),
-                            ],
-                          ),
-                      ],
+                      ),
                     ),
-                  ),
+                    const SizedBox(height: 18),
+                    if (_revealed)
+                      Row(
+                        children: [
+                          Expanded(
+                            child: _ActionBtn(
+                              label: 'Ainda não',
+                              color: const Color(0xFFFF8C8C),
+                              onTap: () => _answer(knew: false),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: _ActionBtn(
+                              label: 'Já sei',
+                              color: AppColors.teal,
+                              onTap: () => _answer(knew: true),
+                            ),
+                          ),
+                        ],
+                      ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -287,7 +335,11 @@ class _ActionBtn extends StatelessWidget {
         child: Center(
           child: Text(
             label,
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: color),
+            style: TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w900,
+              color: color,
+            ),
           ),
         ),
       ),
@@ -316,7 +368,11 @@ class _DonePane extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          const CinematicIcon(glyph: CinematicGlyph.spark, size: 72, glowing: true),
+          const CinematicIcon(
+            glyph: CinematicGlyph.spark,
+            size: 72,
+            glowing: true,
+          ),
           const SizedBox(height: 20),
           Text(
             'Sessão concluída',
@@ -341,11 +397,17 @@ class _DonePane extends StatelessWidget {
               foregroundColor: AppColors.inkOnAccent,
               padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
             ),
-            child: const Text('Treinar de novo', style: TextStyle(fontWeight: FontWeight.w900)),
+            child: const Text(
+              'Treinar de novo',
+              style: TextStyle(fontWeight: FontWeight.w900),
+            ),
           ),
           TextButton(
             onPressed: onClose,
-            child: const Text('Fechar', style: TextStyle(color: Colors.white70)),
+            child: const Text(
+              'Fechar',
+              style: TextStyle(color: Colors.white70),
+            ),
           ),
         ],
       ),

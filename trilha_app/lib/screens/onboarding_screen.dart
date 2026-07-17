@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../services/backend_service.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
@@ -28,10 +30,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   Future<void> _finish() async {
     final progress = context.read<ProgressService>();
+    final backend = context.read<BackendService>();
     final name = _nameController.text.trim();
     if (name.isNotEmpty) await progress.setUserName(name);
     await progress.updateSettings(progress.settings.copyWith(dailyGoal: _dailyGoal));
     await progress.setHasSeenOnboarding(true);
+    await backend.saveNow(
+      progress,
+      LeagueService.weekKey(),
+      league: context.read<LeagueService>(),
+    );
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(

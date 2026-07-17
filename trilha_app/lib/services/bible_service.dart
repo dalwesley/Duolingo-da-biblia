@@ -1,6 +1,29 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 
+/// Uma tradução bíblica conhecida pelo app.
+class BibleTranslation {
+  final String id;
+  final String name;
+  final String shortName;
+  final String blurb;
+  final String? assetPath;
+
+  /// Crédito/licença a exibir quando a tradução estiver ativa.
+  final String? attribution;
+
+  const BibleTranslation({
+    required this.id,
+    required this.name,
+    required this.shortName,
+    required this.blurb,
+    this.assetPath,
+    this.attribution,
+  });
+
+  bool get available => assetPath != null;
+}
+
 /// Um livro da Bíblia carregado do asset offline.
 class BibleBook {
   final String name;
@@ -50,22 +73,85 @@ class BibleSearchHit {
   String get citation => '$bookName $chapter:$verse';
 }
 
-/// Bíblia offline — Tradução Brasileira (1917, domínio público),
-/// carregada de assets/data/bible_tb.json.
+/// Bíblia offline — tradução ativa escolhida pelo usuário.
 class BibleService {
   static BibleService? _instance;
   static BibleService get instance => _instance ??= BibleService._();
 
   BibleService._();
 
-  static const translationName = 'Tradução Brasileira';
+  static const defaultTranslationId = 'tb';
   static const oldTestamentCount = 39;
 
+  static const catalog = <BibleTranslation>[
+    BibleTranslation(
+      id: 'tb',
+      name: 'Tradução Brasileira',
+      shortName: 'TB',
+      blurb: '1917 · domínio público · offline',
+      assetPath: 'assets/data/bible_tb.json',
+      attribution: 'Tradução Brasileira (1917) · domínio público.',
+    ),
+    BibleTranslation(
+      id: 'jfaal',
+      name: 'João Ferreira de Almeida Atualizada Livre',
+      shortName: 'JFAAL',
+      blurb: 'Almeida 1911 atualizada · livre · offline',
+      assetPath: 'assets/data/bible_jfaal.json',
+      attribution:
+          'Escrituras em português da JFAAL, Copyright © Marcos Cristiano '
+          'Alves Ferreira. Setembro de 2024. Licença CC BY 3.0 BR.',
+    ),
+    BibleTranslation(
+      id: 'ara',
+      name: 'Almeida Revista e Atualizada',
+      shortName: 'ARA',
+      blurb: 'Em breve',
+    ),
+    BibleTranslation(
+      id: 'nvi',
+      name: 'Nova Versão Internacional',
+      shortName: 'NVI',
+      blurb: 'Em breve',
+    ),
+  ];
+
+  static BibleTranslation byId(String id) {
+    for (final t in catalog) {
+      if (t.id == id) return t;
+    }
+    return catalog.first;
+  }
+
+  /// Compat: nome da tradução ativa.
+  static String get translationName => instance.current.name;
+
+  String _translationId = defaultTranslationId;
   List<BibleBook>? _books;
+
+  String get translationId => _translationId;
+  BibleTranslation get current => byId(_translationId);
+
+  /// Troca a tradução ativa e limpa o cache de livros.
+  Future<void> setTranslation(String id) async {
+    final next = byId(id);
+    if (!next.available) return;
+    if (_translationId == next.id && _books != null) return;
+    _translationId = next.id;
+    _books = null;
+    await books();
+  }
 
   Future<List<BibleBook>> books() async {
     if (_books != null) return _books!;
-    final raw = await rootBundle.loadString('assets/data/bible_tb.json');
+    final path = current.assetPath;
+    if (path == null) {
+      // Fallback seguro caso a preferência aponte para algo indisponível.
+      _translationId = defaultTranslationId;
+    }
+    final raw = await rootBundle.loadString(
+      byId(_translationId).assetPath!,
+    );
     final data = jsonDecode(raw) as List<dynamic>;
     _books = [
       for (final b in data)
