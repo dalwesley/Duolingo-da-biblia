@@ -30,6 +30,35 @@ Future<void> showVerseStudySheet(
   );
 }
 
+/// Abre o estudo Strong a partir de uma referência textual ("Êxodo 16:4").
+Future<void> showVerseStudyFromReference(
+  BuildContext context,
+  String reference,
+) async {
+  final ref = await BibleService.instance.resolve(reference);
+  if (ref == null || !context.mounted) return;
+
+  final books = await BibleService.instance.books();
+  if (!context.mounted) return;
+  if (ref.bookIndex < 0 || ref.bookIndex >= books.length) return;
+
+  final book = books[ref.bookIndex];
+  final verse = ref.verseStart ?? 1;
+  final text =
+      await BibleService.instance.verseText(book.abbrev, ref.chapter, verse) ??
+          '';
+  if (!context.mounted) return;
+
+  await showVerseStudySheet(
+    context,
+    bookIndex: ref.bookIndex,
+    bookName: book.name,
+    chapter: ref.chapter,
+    verse: verse,
+    text: text,
+  );
+}
+
 /// Prévia de referência: lê o versículo sem sair do estudo.
 Future<void> showVersePreviewDialog(
   BuildContext context, {

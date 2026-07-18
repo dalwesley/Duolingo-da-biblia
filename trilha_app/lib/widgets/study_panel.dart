@@ -4,6 +4,7 @@ import '../data/mission_study.dart';
 import '../screens/bible_screen.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'verse_study_sheet.dart';
 
 /// Momento de estudo — cena de abertura da Bíblia antes de responder.
 class StudyPanel extends StatefulWidget {
@@ -160,49 +161,96 @@ class _StudyPanelState extends State<StudyPanel>
                   ),
                 ),
                 const SizedBox(height: 14),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) =>
-                            BibleReaderScreen(reference: study.passageRef),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 18,
-                      vertical: 11,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: accent.withValues(alpha: 0.65),
-                        width: 1.5,
-                      ),
-                      color: accent.withValues(alpha: 0.1),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.menu_book_rounded,
-                          size: 17,
-                          color: accent,
-                        ),
-                        const SizedBox(width: 8),
-                        Text(
-                          'LER NO APP',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 0.8,
-                            color: accent,
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 10,
+                  runSpacing: 10,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) =>
+                                BibleReaderScreen(reference: study.passageRef),
                           ),
+                        );
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 11,
                         ),
-                      ],
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: accent.withValues(alpha: 0.65),
+                            width: 1.5,
+                          ),
+                          color: accent.withValues(alpha: 0.1),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.menu_book_rounded,
+                              size: 17,
+                              color: accent,
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              'LER NO APP',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 0.8,
+                                color: accent,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
+                    GestureDetector(
+                      onTap: () => showVerseStudyFromReference(
+                        context,
+                        study.passageRef,
+                      ),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 11,
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: 0.28),
+                            width: 1.5,
+                          ),
+                          color: Colors.white.withValues(alpha: 0.06),
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.auto_stories_rounded,
+                              size: 17,
+                              color: Colors.white.withValues(alpha: 0.9),
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              'ESTUDAR',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w900,
+                                letterSpacing: 0.8,
+                                color: Colors.white.withValues(alpha: 0.92),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

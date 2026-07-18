@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import 'lamps_bar.dart';
+import 'verse_study_sheet.dart';
 
 /// Painel de pergunta cinematográfico — cena, não quiz genérico.
 class CinematicLessonPanel extends StatefulWidget {
@@ -310,43 +311,76 @@ class _ScenePrompt extends StatelessWidget {
               ),
               if (verseRef != null) ...[
                 const SizedBox(height: 14),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-                  decoration: BoxDecoration(
+                Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () => showVerseStudyFromReference(context, verseRef!),
                     borderRadius: BorderRadius.circular(14),
-                    color: accent.withValues(alpha: 0.1),
-                    border: Border.all(color: accent.withValues(alpha: 0.28)),
-                  ),
-                  child: Column(
-                    children: [
-                      Text(
-                        verseRef!,
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 11,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 0.6,
-                          color: accent,
+                    child: Ink(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 14,
+                        vertical: 10,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(14),
+                        color: accent.withValues(alpha: 0.1),
+                        border: Border.all(
+                          color: accent.withValues(alpha: 0.28),
                         ),
                       ),
-                      if (verseSnippet != null) ...[
-                        const SizedBox(height: 4),
-                        Text(
-                          '“$verseSnippet”',
-                          textAlign: TextAlign.center,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontStyle: FontStyle.italic,
-                            height: 1.35,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white.withValues(alpha: 0.72),
+                      child: Column(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                verseRef!,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.6,
+                                  color: accent,
+                                ),
+                              ),
+                              const SizedBox(width: 6),
+                              Icon(
+                                Icons.auto_stories_rounded,
+                                size: 14,
+                                color: accent.withValues(alpha: 0.9),
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ],
+                          if (verseSnippet != null) ...[
+                            const SizedBox(height: 4),
+                            Text(
+                              '“$verseSnippet”',
+                              textAlign: TextAlign.center,
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontStyle: FontStyle.italic,
+                                height: 1.35,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white.withValues(alpha: 0.72),
+                              ),
+                            ),
+                          ],
+                          const SizedBox(height: 4),
+                          Text(
+                            'Tocar para estudar',
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w700,
+                              letterSpacing: 0.4,
+                              color: Colors.white.withValues(alpha: 0.45),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
               ],

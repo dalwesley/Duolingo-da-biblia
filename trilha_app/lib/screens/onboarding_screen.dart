@@ -74,13 +74,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     children: [
                       _Page(
                         mascot: true,
-                        title: 'Bem-vindo à caminhada',
-                        body: 'Conhecer a Bíblia não é o objetivo. O objetivo é conhecer a Cristo — um passo de cada vez.',
+                        title: 'Um passo na Palavra',
+                        body: 'Trilha é o caminho diário para aprender a Bíblia de verdade — missões curtas, com profundidade quando o versículo pede.',
                       ),
                       _Page(
                         glyph: CinematicGlyph.path,
                         title: 'Sua caminhada',
-                        body: 'Cada lição é um passo. A caravana semanal é um rank de passos — para se animarem, não para medir espiritualidade.',
+                        body: 'Cada missão é um passo. Escolha um ritmo diário e volte amanhã — o hábito forma o coração.',
                         child: Column(
                           children: [
                             TextField(
@@ -125,7 +125,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       _Page(
                         glyph: CinematicGlyph.book,
                         title: 'Comece por Gênesis',
-                        body: 'Sua primeira jornada já está liberada. Da Criação ao chamado de Abraão — caminhe um trecho de cada vez.',
+                        body: 'Sua primeira trilha já está liberada. Leia, responda e, quando quiser, estude a palavra no original — tudo no caminho.',
                       ),
                     ],
                   ),

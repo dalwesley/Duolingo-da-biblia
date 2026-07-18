@@ -1840,6 +1840,588 @@
             ]
           }
         ]
+      },
+      {
+        "title": "No deserto",
+        "missions": [
+          {
+            "slug": "exo-06-mana",
+            "title": "O maná no deserto",
+            "intro": "Livres do Egito, o povo enfrenta fome. Deus sustenta — e ensina confiança dia a dia.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que Deus enviou para alimentar o povo no deserto?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Maná (pão do céu)"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Trigo do Egito"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Frutos do Sinai"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Peixes do Nilo"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim. O maná caía pela manhã — provisão diária.",
+                "feedbackWrong": {
+                  "b": "Eles já tinham saído do Egito; a provisão veio do céu.",
+                  "c": "Não. Foi o maná que sustentou o povo.",
+                  "d": "A narrativa aponta para o maná, não peixes do Nilo."
+                },
+                "verseRef": "Êxodo 16:4"
+              },
+              {
+                "question": "Por que não deveriam guardar maná para o dia seguinte (exceto antes do sábado)?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Porque apodrecia sem motivo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para confiar na provisão diária de Deus"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque Moisés queria controlar o estoque"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque o faraó ainda perseguia"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Exato. O ritmo diário formava confiança — exceto o dia antes do sábado.",
+                "feedbackWrong": {
+                  "a": "Apodrecia quando desobedeciam; a lição era confiar.",
+                  "c": "Não era controle humano — era formação espiritual.",
+                  "d": "A perseguição do faraó já tinha ficado para trás no Mar Vermelho."
+                },
+                "verseRef": "Êxodo 16:19-20"
+              },
+              {
+                "question": "O que aconteceu com o maná no sábado?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Caiu em dobro e não apodrecia se guardado na sexta"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Não caiu de jeito nenhum"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Caiu o dobro na sexta e não caía no sábado"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Só os líderes podiam colher"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto. Na sexta colhiam o dobro; no sábado o maná não caía.",
+                "feedbackWrong": {
+                  "a": "Quase — o dobro era na sexta, e não caía no sábado.",
+                  "b": "Na sexta havia provisão dobrada justamente para o sábado.",
+                  "d": "Todo o povo era instruído a colher conforme a regra."
+                },
+                "verseRef": "Êxodo 16:22-26"
+              }
+            ]
+          },
+          {
+            "slug": "exo-07-sinai",
+            "title": "Chegada ao Sinai",
+            "intro": "Três meses após a saída, Israel acampa diante do monte. Deus os chama a ser povo sacerdotal.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Onde o povo acampou três meses depois de sair do Egito?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Diante do monte Sinai"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Em Canaã"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Às margens do Nilo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Em Jerusalém"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim. Chegaram ao deserto do Sinai e acamparam diante do monte.",
+                "feedbackWrong": {
+                  "b": "Canaã ainda estava à frente — a aliança começa no Sinai.",
+                  "c": "Eles já haviam deixado o Egito.",
+                  "d": "Jerusalém ainda não era o centro da narrativa aqui."
+                },
+                "verseRef": "Êxodo 19:1-2"
+              },
+              {
+                "question": "O que Deus disse que Israel seria se obedecesse à Sua voz?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Um império militar"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Propriedade peculiar, reino de sacerdotes e nação santa"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Um povo sem lei"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Servos do faraó novamente"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Exato. A vocação é sacerdotal e santa — identidade diante das nações.",
+                "feedbackWrong": {
+                  "a": "O texto fala de vocação sacerdotal, não de império.",
+                  "c": "Pelo contrário: a aliança inclui mandamentos.",
+                  "d": "A libertação os tirou do faraó para servir a Deus."
+                },
+                "verseRef": "Êxodo 19:5-6"
+              },
+              {
+                "question": "Como o monte se mostrou quando o Senhor desceu sobre ele?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Em silêncio total"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Com uma brisa suave apenas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Com trovões, relâmpagos, nuvem espessa e forte trombeta"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Com um arco-íris"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim. A presença era tremenda — o povo tremeu.",
+                "feedbackWrong": {
+                  "a": "Houve sinais poderosos, não silêncio.",
+                  "b": "A cena é de poder e temor santo.",
+                  "d": "O sinal central aqui é a teofania com trovões e trombeta."
+                },
+                "verseRef": "Êxodo 19:16-18"
+              }
+            ]
+          },
+          {
+            "slug": "exo-08-mandamentos",
+            "title": "Os Dez Mandamentos",
+            "intro": "No Sinai, Deus fala. Os mandamentos não são peso vazio — são o caminho da aliança.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Qual é o primeiro mandamento, em essência?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Não ter outros deuses diante do Senhor"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Não matar"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Honrar pai e mãe"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Guardar o sábado"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto. Tudo começa com exclusividade a Deus.",
+                "feedbackWrong": {
+                  "b": "Importante, mas vem depois do primeiro.",
+                  "c": "Também é mandamento, mas não o primeiro.",
+                  "d": "O sábado é o quarto na lista tradicional."
+                },
+                "verseRef": "Êxodo 20:3"
+              },
+              {
+                "question": "O que o mandamento sobre o sábado lembra ao povo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que devem trabalhar sete dias"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que o Senhor santificou o sétimo dia e eles devem santificá-lo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que só líderes descansam"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que o Egito também descansava"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim. O descanso é santo porque Deus descansou e santificou o dia.",
+                "feedbackWrong": {
+                  "a": "Pelo contrário: seis dias de trabalho, um de descanso.",
+                  "c": "O mandamento é para toda a casa.",
+                  "d": "A memória é da criação (e, em Deuteronômio, também da libertação)."
+                },
+                "verseRef": "Êxodo 20:8-11"
+              },
+              {
+                "question": "Os mandamentos começam lembrando o que Deus já fez. O quê?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Que criou as estrelas naquela noite"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Que deu a terra de Canaã imediatamente"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que os tirou da terra do Egito, da casa da servidão"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que escolheu Davi como rei"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Exato. A lei vem depois da graça da libertação.",
+                "feedbackWrong": {
+                  "a": "Não é o prólogo dos Dez Mandamentos.",
+                  "b": "Canaã ainda virá; o prólogo é o Êxodo.",
+                  "d": "Davi é muito posterior na história."
+                },
+                "verseRef": "Êxodo 20:2"
+              }
+            ]
+          },
+          {
+            "slug": "exo-09-bezerro",
+            "title": "O bezerro de ouro",
+            "intro": "Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "O que o povo pediu a Arão enquanto Moisés demorava no monte?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Deuses que fossem adiante deles"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Mais maná"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Voltar ao faraó em paz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Construir o tabernáculo imediatamente"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim. Quiseram um deus feito por mãos humanas.",
+                "feedbackWrong": {
+                  "b": "A crise aqui é idolatria, não fome.",
+                  "c": "O impulso foi fabricar um ídolo, não negociar com o faraó.",
+                  "d": "O tabernáculo virá depois — aqui há um bezerro."
+                },
+                "verseRef": "Êxodo 32:1"
+              },
+              {
+                "question": "De que material foi feito o bezerro?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Pedra do Sinai"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Ouro das orelhas do povo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Madeira de acácia"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Bronze das armas"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Correto. Arão pediu os brincos de ouro e fundiu a imagem.",
+                "feedbackWrong": {
+                  "a": "Não — foi ouro fundido.",
+                  "c": "Acácia aparece no tabernáculo, não no bezerro.",
+                  "d": "O texto destaca as joias de ouro."
+                },
+                "verseRef": "Êxodo 32:2-4"
+              },
+              {
+                "question": "O que Moisés fez quando viu o bezerro e a dança?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Ignorou e subiu de novo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Abençoou a festa"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Quebrou as tábuas da aliança"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Nomeou Arão como rei"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim. Quebrou as tábuas — sinal da aliança rompida.",
+                "feedbackWrong": {
+                  "a": "Ele confrontou o pecado com ação simbólica forte.",
+                  "b": "Pelo contrário: ira santa.",
+                  "d": "Arão foi confrontado, não coroado."
+                },
+                "verseRef": "Êxodo 32:19"
+              }
+            ]
+          },
+          {
+            "slug": "exo-10-tabernaculo",
+            "title": "O tabernáculo",
+            "intro": "Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.",
+            "type": "lesson",
+            "xpReward": 60,
+            "questions": [
+              {
+                "question": "Para que servia o tabernáculo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Para que o Senhor habitasse no meio deles"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Como depósito de armas"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Como palácio de Moisés"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Como templo permanente em pedra"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Exato. “E me farão um santuário, e habitarei no meio deles.”",
+                "feedbackWrong": {
+                  "b": "Era santuário, não arsenal.",
+                  "c": "A glória era do Senhor, não de Moisés.",
+                  "d": "Era tenda móvel — o templo de pedra virá depois."
+                },
+                "verseRef": "Êxodo 25:8"
+              },
+              {
+                "question": "O que havia no Lugar Santíssimo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A mesa dos pães"
+                  },
+                  {
+                    "id": "b",
+                    "text": "A arca da aliança"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O altar de bronze do pátio"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A pia de bronze apenas"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim. A arca, com o propiciatório, no Santíssimo.",
+                "feedbackWrong": {
+                  "a": "A mesa ficava no Lugar Santo.",
+                  "c": "O altar de holocaustos ficava no pátio.",
+                  "d": "A pia era para lavagem no pátio/área de serviço."
+                },
+                "verseRef": "Êxodo 26:33-34"
+              },
+              {
+                "question": "Como o povo sabia quando partir ou ficar no acampamento?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Pelo calendário egípcio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Por sorteio entre as tribos"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Pela nuvem / glória do Senhor sobre o tabernáculo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Por mensageiros de Canaã"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Correto. A nuvem cobria; quando se ergueu, partiam.",
+                "feedbackWrong": {
+                  "a": "A orientação vinha da presença de Deus.",
+                  "b": "Não era sorteio — era a nuvem da glória.",
+                  "d": "A partida seguia a presença, não escoteiros de Canaã (isso é Números)."
+                },
+                "verseRef": "Êxodo 40:34-38"
+              }
+            ]
+          },
+          {
+            "slug": "exo-boss-02",
+            "title": "Desafio: Aliança no deserto",
+            "intro": "Maná, Sinai, mandamentos, queda e tabernáculo — a libertação continua na formação do povo.",
+            "type": "boss",
+            "xpReward": 100,
+            "questions": [
+              {
+                "question": "Qual sequência melhor resume o arco após o Mar Vermelho?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Provisão → aliança no Sinai → crise de idolatria → presença no tabernáculo"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Conquista de Canaã → templo → exílio"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Retorno ao Egito → novo faraó → paz"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Escolha de Saul → Davi → Salomão"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Isso. O deserto forma o povo entre libertação e presença.",
+                "feedbackWrong": {
+                  "b": "Isso é bem mais tarde na história bíblica.",
+                  "c": "O chamado era seguir adiante, não voltar.",
+                  "d": "Monarquia é outra era."
+                },
+                "verseRef": "Êxodo 16–40"
+              },
+              {
+                "question": "Por que a lei vem depois da saída do Egito?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Porque Deus só ama quem obedece primeiro"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Porque a libertação (graça) fundamenta a aliança (obediência)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Porque Moisés inventou regras no caminho"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque o faraó exigiu isso"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim. “Eu te tirei…” vem antes dos “não terás…”.",
+                "feedbackWrong": {
+                  "a": "A ordem bíblica é libertação → aliança.",
+                  "c": "Os mandamentos são dados por Deus.",
+                  "d": "O faraó é o opressor deixado para trás."
+                },
+                "verseRef": "Êxodo 20:2-3"
+              },
+              {
+                "question": "O tabernáculo ensina principalmente que…",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Deus prefere prédios luxuosos"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Só sacerdotes podem crer"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Deus deseja habitar com Seu povo no caminho"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A presença de Deus ficou só no Egito"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Exato. Santuário móvel = Deus no meio da caminhada.",
+                "feedbackWrong": {
+                  "a": "A ênfase é presença, não luxo.",
+                  "b": "O povo inteiro é chamado; o sacerdócio serve a presença.",
+                  "d": "A glória cobre o tabernáculo no deserto."
+                },
+                "verseRef": "Êxodo 25:8"
+              }
+            ]
+          }
+        ],
+        "icon": "path"
       }
     ],
     "realm": "antigo-testamento",
@@ -2474,6 +3056,35 @@
                   "c": "Não é o texto do batismo."
                 },
                 "verseRef": "Mateus 3:17"
+              },
+              {
+                "question": "O que o Espírito Santo fez no batismo de Jesus?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Desceu como pomba sobre Ele"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Levou-O imediatamente ao céu"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Silenciou João"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Apagou a voz do Pai"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim. Os céus se abriram e o Espírito desceu como pomba.",
+                "feedbackWrong": {
+                  "b": "Em seguida veio a tentação no deserto, não a ascensão.",
+                  "c": "João batizou e testemunhou.",
+                  "d": "A voz do Pai afirmou o Filho amado."
+                },
+                "verseRef": "Mateus 3:16-17"
               }
             ]
           },
@@ -2541,6 +3152,35 @@
                   "c": "A arma é a Palavra."
                 },
                 "verseRef": "Mateus 4:4–10"
+              },
+              {
+                "question": "Com o que Jesus respondeu às tentações?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Com milagres de pão imediato"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Com a Palavra escrita (“Está escrito”)"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Com fuga sem resposta"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Com acordo parcial"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Correto. Cada tentação foi enfrentada com Escritura.",
+                "feedbackWrong": {
+                  "a": "Ele recusou transformar pedras em pão sob suspeita.",
+                  "c": "Ele respondeu — não fugiu sem falar.",
+                  "d": "Não houve acordo com o diabo."
+                },
+                "verseRef": "Mateus 4:4"
               }
             ]
           },
@@ -2681,6 +3321,35 @@
                   "b": "Há missão prática de testemunho."
                 },
                 "verseRef": "Mateus 5:13–16"
+              },
+              {
+                "question": "As bem-aventuranças começam abençoando quem?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Os pobres de espírito"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Os ricos de ouro"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Os poderosos de Roma"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Os que nunca sofrem"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Sim. “Bem-aventurados os pobres de espírito…”",
+                "feedbackWrong": {
+                  "b": "O sermão inverte valores do mundo.",
+                  "c": "O Reino não começa pelo poder imperial.",
+                  "d": "Há bem-aventurança também para os que choram e são perseguidos."
+                },
+                "verseRef": "Mateus 5:3"
               }
             ]
           },
@@ -2748,6 +3417,35 @@
                   "b": "Os espinhos incluem cuidados e enganos; a boa terra frutifica."
                 },
                 "verseRef": "Mateus 13:23"
+              },
+              {
+                "question": "Por que Jesus falava em parábolas, segundo Ele mesmo?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Só para entreter crianças"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Para esconder tudo de todos para sempre"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Para revelar os mistérios do Reino a quem tem ouvidos — e julgar a dureza"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Porque não sabia ensinar de outro modo"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Exato. Parábolas revelam e discernem corações.",
+                "feedbackWrong": {
+                  "a": "Há profundidade teológica, não só história infantil.",
+                  "b": "Aos discípulos era dado entender.",
+                  "d": "Ele ensina com autoridade e propósito."
+                },
+                "verseRef": "Mateus 13:10-13"
               }
             ]
           },
@@ -2815,6 +3513,35 @@
                   "d": "O foco é o cuidado pastoral."
                 },
                 "verseRef": "Marcos 6:34"
+              },
+              {
+                "question": "Os milagres de Jesus apontam principalmente para…",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Espectáculo sem significado"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O Reino chegando com compaixão e autoridade"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Que discípulos não precisam de fé"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Que a Lei foi abolida sem cumprimento"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim. Sinais do Reino: cura, perdão, autoridade sobre o caos.",
+                "feedbackWrong": {
+                  "a": "Os evangelhos ligam sinais à identidade e missão de Jesus.",
+                  "c": "Os milagres despertam e exigem fé.",
+                  "d": "Jesus cumpre e aprofunda a Lei."
+                },
+                "verseRef": "Mateus 11:4-5"
               }
             ]
           },
@@ -2853,6 +3580,35 @@
                   "a": "Os milagres são mercê."
                 },
                 "verseRef": "Mateus 5; 13"
+              },
+              {
+                "question": "Ensino e sinais juntos mostram que Jesus…",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Só fala e nunca age"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Só age e nunca ensina"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Anuncia o Reino em palavra e o demonstra em poder compassivo"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Evita o povo e ensina só a elites"
+                  }
+                ],
+                "correctOptionId": "c",
+                "feedbackCorrect": "Sim. Parábolas e milagres caminham juntos no Evangelho.",
+                "feedbackWrong": {
+                  "a": "Há muitos sinais.",
+                  "b": "O Sermão e as parábolas são centrais.",
+                  "d": "Ele ensina multidões e se compadece delas."
+                },
+                "verseRef": "Mateus 9:35"
               }
             ]
           }
@@ -2926,6 +3682,35 @@
                   "c": "Aqui o sentido é sacrificial."
                 },
                 "verseRef": "Lucas 22:20"
+              },
+              {
+                "question": "O que Jesus institui na ceia com o pão e o cálice?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A nova aliança em Seu sangue"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Um festival nacional anual obrigatório de Roma"
+                  },
+                  {
+                    "id": "c",
+                    "text": "A rejeição de Israel"
+                  },
+                  {
+                    "id": "d",
+                    "text": "A proibição de comer juntos"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Correto. “Este cálice é a nova aliança no meu sangue.”",
+                "feedbackWrong": {
+                  "b": "É memorial da aliança, não festa romana.",
+                  "c": "A ceia inaugura aliança, não cancelamento gratuito.",
+                  "d": "É refeição compartilhada com os discípulos."
+                },
+                "verseRef": "Lucas 22:19-20"
               }
             ]
           },
@@ -2993,6 +3778,35 @@
                   "a": "Há redenção, não só exemplo."
                 },
                 "verseRef": "Marcos 10:45"
+              },
+              {
+                "question": "Na cruz, a inscrição sobre Jesus dizia essencialmente que Ele era…",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Apenas um rebelde comum"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O Rei dos judeus"
+                  },
+                  {
+                    "id": "c",
+                    "text": "O sumo sacerdote de Roma"
+                  },
+                  {
+                    "id": "d",
+                    "text": "O novo faraó"
+                  }
+                ],
+                "correctOptionId": "b",
+                "feedbackCorrect": "Sim. A acusação/título aponta para Sua realeza.",
+                "feedbackWrong": {
+                  "a": "O título na cruz é explícito sobre realeza.",
+                  "c": "Não era sacerdote romano.",
+                  "d": "A linguagem é messiânica/judaica, não egípcia."
+                },
+                "verseRef": "João 19:19"
               }
             ]
           },
@@ -3060,6 +3874,35 @@
                   "c": "A ordem é universal."
                 },
                 "verseRef": "Mateus 28:19–20"
+              },
+              {
+                "question": "O que as mulheres encontraram ao chegar ao túmulo no primeiro dia da semana?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "A pedra removida e o túmulo vazio"
+                  },
+                  {
+                    "id": "b",
+                    "text": "O corpo intacto e guardas dormindo felizes"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Um templo novo já construído"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Pilatos celebrando"
+                  }
+                ],
+                "correctOptionId": "a",
+                "feedbackCorrect": "Exato. O túmulo vazio é o anúncio da ressurreição.",
+                "feedbackWrong": {
+                  "b": "Os evangelhos testemunham o túmulo vazio.",
+                  "c": "Isso não acontece na manhã da ressurreição.",
+                  "d": "A cena é de temor e anúncio angelical/aparecimentos."
+                },
+                "verseRef": "Lucas 24:1-3"
               }
             ]
           },

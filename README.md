@@ -1,6 +1,8 @@
-# Trilha — Duolingo da Bíblia
+# Trilha — formação bíblica com hábito
 
-App Flutter de aprendizado bíblico gamificado + painel admin no Firebase.
+App Flutter para aprender a Bíblia em missões diárias + painel admin no Firebase.
+
+Norte e checklist: [`ROADMAP.md`](ROADMAP.md).
 
 ## Projetos
 
