@@ -5,6 +5,7 @@ import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
+import 'ui_primitives.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
 
@@ -515,7 +516,7 @@ class _HeroStationState extends State<_HeroStation>
                       Row(
                         children: [
                           Text(
-                            'CAPÍTULO ${_roman(item.chapterIndex)}',
+                            'CENA ${_roman(item.chapterIndex)}',
                             style: TextStyle(
                               fontSize: 10,
                               fontWeight: FontWeight.w800,
@@ -571,14 +572,10 @@ class _HeroStationState extends State<_HeroStation>
                       ),
                       const SizedBox(height: 16),
                       if (item.total > 0) ...[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(2),
-                          child: LinearProgressIndicator(
-                            value: pct,
-                            minHeight: 2.5,
-                            backgroundColor: Colors.white.withValues(alpha: 0.1),
-                            color: widget.accent,
-                          ),
+                        AppProgressBar(
+                          value: pct,
+                          color: widget.accent,
+                          trackColor: Colors.white.withValues(alpha: 0.1),
                         ),
                         const SizedBox(height: 10),
                       ],
@@ -586,7 +583,7 @@ class _HeroStationState extends State<_HeroStation>
                         children: [
                           if (item.total > 0)
                             Text(
-                              '${item.done} de ${item.total} cenas',
+                              '${item.done} de ${item.total} passos',
                               style: TextStyle(
                                 fontSize: 12,
                                 fontWeight: FontWeight.w600,
@@ -705,14 +702,10 @@ class _QuietStation extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          'CAPÍTULO ${_roman(item.chapterIndex)}',
-                          style: TextStyle(
-                            fontSize: 9,
-                            fontWeight: FontWeight.w800,
-                            letterSpacing: 1.8,
-                            color: Colors.white.withValues(alpha: 0.35),
-                          ),
+                        SectionLabel(
+                          'Cena ${_roman(item.chapterIndex)}',
+                          size: 10,
+                          color: Colors.white.withValues(alpha: 0.35),
                         ),
                         const SizedBox(height: 3),
                         Text(
@@ -733,7 +726,7 @@ class _QuietStation extends StatelessWidget {
                                   : isLocked
                                       ? 'Ainda além do horizonte'
                                       : item.total > 0
-                                          ? '${item.done}/${item.total} cenas'
+                                          ? '${item.done}/${item.total} passos'
                                           : item.trail.description,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,

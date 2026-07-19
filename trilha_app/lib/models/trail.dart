@@ -45,6 +45,7 @@ class Question {
 class Mission {
   final String slug;
   final String title;
+  final String subtitle;
   final String intro;
   final String type;
   final int stepsReward;
@@ -53,6 +54,7 @@ class Mission {
   const Mission({
     required this.slug,
     required this.title,
+    this.subtitle = '',
     required this.intro,
     required this.type,
     required this.stepsReward,
@@ -65,7 +67,8 @@ class Mission {
     return Mission(
       slug: json['slug'] as String,
       title: json['title'] as String,
-      intro: json['intro'] as String,
+      subtitle: json['subtitle'] as String? ?? '',
+      intro: json['intro'] as String? ?? '',
       type: json['type'] as String? ?? 'lesson',
       stepsReward: (json['stepsReward'] as int?) ?? (json['xpReward'] as int?) ?? 50,
       questions: (json['questions'] as List? ?? [])
@@ -78,11 +81,14 @@ class Mission {
 class TrailModule {
   final String title;
   final String icon;
+  /// Chave do banco de perguntas (ex.: `abraao`, `opressao`).
+  final String? section;
   final List<Mission> missions;
 
   const TrailModule({
     required this.title,
     required this.icon,
+    this.section,
     required this.missions,
   });
 
@@ -90,6 +96,7 @@ class TrailModule {
     return TrailModule(
       title: json['title'] as String,
       icon: json['icon'] as String,
+      section: json['section'] as String? ?? json['sectionId'] as String?,
       missions: (json['missions'] as List? ?? [])
           .map((e) => Mission.fromJson(e as Map<String, dynamic>))
           .toList(),

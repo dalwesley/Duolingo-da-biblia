@@ -17,7 +17,9 @@ import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
+import '../widgets/streak_risk_banner.dart';
 import '../widgets/streak_week.dart';
+import '../widgets/ui_primitives.dart';
 import '../widgets/verse_of_day_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
@@ -126,10 +128,68 @@ class _HomeScreenState extends State<HomeScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
+          const SizedBox(height: 10),
+        ],
+        // Duolingo: status do dia primeiro (streak/meta), depois o CTA.
+        if (progress.showStreakRiskBanner) ...[
+          _reveal(
+            0,
+            StreakRiskBanner(
+              onContinue: current != null
+                  ? () => widget.onOpenMission(current.slug)
+                  : widget.onOpenTrilhas,
+            ),
+          ),
           const SizedBox(height: 12),
         ],
         _reveal(
-          0,
+          progress.showStreakRiskBanner ? 1 : 0,
+          _DayPulse(
+            missionsToday: progress.missionsToday,
+            goal: goal,
+            goalPct: goalPct,
+            streak: progress.streak,
+            playedToday: playedToday,
+            goalMet: goalMet,
+            returningAfterGap: progress.isReturningAfterGap,
+            userName: progress.userName,
+            steps: progress.steps,
+            atRisk: progress.isStreakAtRisk,
+          ),
+        ),
+        const SizedBox(height: 14),
+        _reveal(
+          2,
+          HeroContinueCard(
+            mission: current,
+            trailTitle: active?.title ?? '',
+            trailSlug: active?.slug ?? 'genesis-1-11',
+            trailColor: active?.color ?? '#2F5D4A',
+            onTap: current != null
+                ? () => widget.onOpenMission(current.slug)
+                : null,
+            onExploreTrails: widget.onOpenTrilhas,
+          ),
+        ),
+        const SizedBox(height: 14),
+        _reveal(2, const DailyQuestsCard()),
+        if (active != null && prog != null) ...[
+          const SizedBox(height: 14),
+          _reveal(
+            3,
+            _ActiveTrailLine(
+              trail: active,
+              done: prog.done,
+              total: prog.total,
+              onTap: () => widget.onOpenTrail(active.slug),
+            ),
+          ),
+        ],
+        const SizedBox(height: 12),
+        _reveal(4, const _MemoryPracticeLinks()),
+        const SizedBox(height: 12),
+        _reveal(
+          5,
           VerseOfDayCard(
             onOpen: () {
               final ref = DailyScripture.today().$2;
@@ -144,7 +204,7 @@ class _HomeScreenState extends State<HomeScreen>
         if (LiturgicalCalendar.isHighSeason) ...[
           const SizedBox(height: 12),
           _reveal(
-            1,
+            6,
             LiturgicalBanner(
               onOpenBible: () {
                 Navigator.of(context).push(
@@ -158,48 +218,46 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
         ],
-        const SizedBox(height: 14),
-        _reveal(
-          1,
-          HeroContinueCard(
-            mission: current,
-            trailTitle: active?.title ?? '',
-            trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#2F5D4A',
-            onTap: current != null
-                ? () => widget.onOpenMission(current.slug)
-                : null,
-            onExploreTrails: widget.onOpenTrilhas,
+      ],
+    );
+  }
+}
+
+/// Atalhos compactos — prática secundária, sem roubar o CTA.
+class _MemoryPracticeLinks extends StatelessWidget {
+  const _MemoryPracticeLinks();
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final hasPractice = progress.mistakeQuestionIds.isNotEmpty;
+
+    return Row(
+      children: [
+        Expanded(
+          child: _MiniPracticeChip(
+            title: 'Memorizar',
+            subtitle: progress.memoryMastered.isEmpty
+                ? 'No coração'
+                : '${progress.memoryMastered.length} firmes',
+            glyph: CinematicGlyph.scroll,
+            accent: AppColors.accent,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(builder: (_) => const MemoryScreen()),
+            ),
           ),
         ),
-        const SizedBox(height: 14),
-        _reveal(
-          2,
-          _DayPulse(
-            missionsToday: progress.missionsToday,
-            goal: goal,
-            goalPct: goalPct,
-            streak: progress.streak,
-            playedToday: playedToday,
-            goalMet: goalMet,
-            returningAfterGap: progress.isReturningAfterGap,
-            userName: progress.userName,
-            steps: progress.steps,
-          ),
-        ),
-        const SizedBox(height: 14),
-        _reveal(3, const DailyQuestsCard()),
-        const SizedBox(height: 14),
-        _reveal(4, const _MemoryPracticeLinks()),
-        if (active != null && prog != null) ...[
-          const SizedBox(height: 14),
-          _reveal(
-            5,
-            _ActiveTrailLine(
-              trail: active,
-              done: prog.done,
-              total: prog.total,
-              onTap: () => widget.onOpenTrail(active.slug),
+        if (hasPractice) ...[
+          const SizedBox(width: 10),
+          Expanded(
+            child: _MiniPracticeChip(
+              title: 'Revisitar',
+              subtitle: '${progress.mistakeQuestionIds.length} para reforçar',
+              glyph: CinematicGlyph.echo,
+              accent: AppColors.error,
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const PracticeScreen()),
+              ),
             ),
           ),
         ],
@@ -208,103 +266,58 @@ class _HomeScreenState extends State<HomeScreen>
   }
 }
 
-/// Atalhos de memorização e reforço — saíram do perfil para a home.
-class _MemoryPracticeLinks extends StatelessWidget {
-  const _MemoryPracticeLinks();
+class _MiniPracticeChip extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final CinematicGlyph glyph;
+  final Color accent;
+  final VoidCallback onTap;
+
+  const _MiniPracticeChip({
+    required this.title,
+    required this.subtitle,
+    required this.glyph,
+    required this.accent,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
-
-    return Column(
-      children: [
-        GlassCard(
-          onTap: () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => const MemoryScreen()),
+    return GlassCard(
+      onTap: onTap,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: glyph,
+            size: 32,
+            accent: accent,
+            glowing: false,
           ),
-          child: Row(
-            children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.scroll,
-                size: 40,
-                accent: AppColors.accent,
-                glowing: false,
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Memorizar',
-                      style: AppTypography.title(size: 15, color: a.text),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      progress.memoryMastered.isEmpty
-                          ? 'Guarde a Palavra no coração'
-                          : '${progress.memoryMastered.length} firmes no coração',
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.55),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Icon(
-                Icons.arrow_forward_rounded,
-                color: a.textMuted(0.45),
-                size: 18,
-              ),
-            ],
-          ),
-        ),
-        if (progress.mistakeQuestionIds.isNotEmpty) ...[
-          const SizedBox(height: 12),
-          GlassCard(
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const PracticeScreen()),
-            ),
-            child: Row(
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CinematicIcon(
-                  glyph: CinematicGlyph.echo,
-                  size: 40,
-                  accent: AppColors.error,
-                  glowing: false,
+                Text(
+                  title,
+                  style: AppTypography.title(size: 13, color: a.text),
                 ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Revisitar',
-                        style: AppTypography.title(size: 15, color: a.text),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        '${progress.mistakeQuestionIds.length} passagem(ns) para reforçar',
-                        style: AppTypography.body(
-                          size: 12,
-                          color: a.textMuted(0.55),
-                        ),
-                      ),
-                    ],
+                Text(
+                  subtitle,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 11,
+                    color: a.textMuted(0.55),
                   ),
-                ),
-                Icon(
-                  Icons.arrow_forward_rounded,
-                  color: a.textMuted(0.45),
-                  size: 18,
                 ),
               ],
             ),
           ),
         ],
-      ],
+      ),
     );
   }
 }
@@ -320,6 +333,7 @@ class _DayPulse extends StatelessWidget {
   final bool returningAfterGap;
   final String userName;
   final int steps;
+  final bool atRisk;
 
   const _DayPulse({
     required this.missionsToday,
@@ -331,28 +345,34 @@ class _DayPulse extends StatelessWidget {
     required this.returningAfterGap,
     required this.userName,
     required this.steps,
+    required this.atRisk,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final progress = context.watch<ProgressService>();
     final title = goalMet
         ? 'Meta de hoje cumprida'
-        : playedToday
-        ? 'Meta de hoje'
-        : returningAfterGap
-        ? 'Sua caminhada continua'
-        : 'Meta de hoje';
+        : atRisk
+            ? 'Salve sua sequência'
+            : playedToday
+                ? 'Meta de hoje'
+                : returningAfterGap
+                    ? 'Sua caminhada continua'
+                    : 'Meta de hoje';
     final detail = goalMet
         ? null
-        : playedToday
-        ? '$missionsToday de $goal'
-        : returningAfterGap
-        ? 'Um passo basta para reacender a chama'
-        : 'Ainda sem passo hoje · meta $goal';
+        : atRisk
+            ? 'Faltam ${progress.streakRiskCountdown} · um passo basta'
+            : playedToday
+                ? '$missionsToday de $goal'
+                : returningAfterGap
+                    ? 'Um passo basta para reacender a chama'
+                    : 'Ainda sem passo hoje · meta $goal';
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+      padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -367,7 +387,9 @@ class _DayPulse extends StatelessWidget {
                       style: AppTypography.body(
                         size: 13,
                         weight: FontWeight.w800,
-                        color: a.text.withValues(alpha: 0.92),
+                        color: atRisk
+                            ? AppColors.streak
+                            : a.text.withValues(alpha: 0.92),
                         height: 1.25,
                       ),
                     ),
@@ -385,19 +407,34 @@ class _DayPulse extends StatelessWidget {
                   ],
                 ),
               ),
-              _StreakChip(streak: streak),
+              SoftBadge(
+                text: streak == 1 ? '1 dia' : '$streak dias',
+                icon: Icons.local_fire_department_rounded,
+                accent: atRisk ? AppColors.streak : AppColors.accent,
+              ),
             ],
           ),
+          if (streak > 0) ...[
+            const SizedBox(height: 10),
+            Row(
+              children: [
+                const StreakFreezeChip(),
+                if (atRisk && !progress.showStreakRiskBanner) ...[
+                  const SizedBox(width: 8),
+                  SoftBadge(
+                    text: progress.streakRiskCountdown,
+                    icon: Icons.timer_outlined,
+                    accent: AppColors.streak,
+                  ),
+                ],
+              ],
+            ),
+          ],
           if (!returningAfterGap && !goalMet) ...[
             const SizedBox(height: 12),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: LinearProgressIndicator(
-                value: goalPct.clamp(0.0, 1.0),
-                minHeight: 5,
-                backgroundColor: a.text.withValues(alpha: 0.08),
-                color: AppColors.accent,
-              ),
+            AppProgressBar(
+              value: goalPct,
+              color: atRisk ? AppColors.streak : AppColors.accent,
             ),
           ],
           const SizedBox(height: 14),
@@ -412,45 +449,6 @@ class _DayPulse extends StatelessWidget {
                 compact: true,
               ),
             ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _StreakChip extends StatelessWidget {
-  final int streak;
-
-  const _StreakChip({required this.streak});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-      decoration: BoxDecoration(
-        color: AppColors.accent.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.22)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            Icons.local_fire_department_rounded,
-            size: 14,
-            color: AppColors.accent.withValues(alpha: 0.95),
-          ),
-          const SizedBox(width: 4),
-          Text(
-            streak == 1 ? '1 dia' : '$streak dias',
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
-              color: a.text.withValues(alpha: 0.9),
-              height: 1,
-            ),
           ),
         ],
       ),
@@ -479,7 +477,7 @@ class _ActiveTrailLine extends StatelessWidget {
 
     return GlassCard(
       onTap: onTap,
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      padding: AppMetrics.cardPadding,
       child: Row(
         children: [
           CinematicIcon(
@@ -503,15 +501,7 @@ class _ActiveTrailLine extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(999),
-                  child: LinearProgressIndicator(
-                    value: pct,
-                    minHeight: 4,
-                    backgroundColor: a.progressTrack,
-                    color: visuals.glow,
-                  ),
-                ),
+                AppProgressBar(value: pct, color: visuals.glow),
                 const SizedBox(height: 4),
                 Text(
                   'Abrir mapa · $done/$total missões',

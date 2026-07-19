@@ -1,6 +1,8 @@
 # Trilha Admin
 
-Painel web (estilo Ipsat/Satélite) para gerenciar **trilhas**, **subtrilhas (módulos)**, **missões**, **perguntas** e **estudos** no Firebase — sem precisar publicar nova versão do app.
+Painel web (estilo Ipsat/Satélite) para gerenciar **trilhas**, **cenas**, **passos**, **perguntas** e **estudos (preparo)** no Firebase — sem precisar publicar nova versão do app.
+
+Hierarquia no app e no painel: **Trilha → Cena → Passo → Preparo → Perguntas**.
 
 ## Stack
 

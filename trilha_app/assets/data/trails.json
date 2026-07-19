@@ -522,7 +522,8 @@
               }
             ]
           }
-        ]
+        ],
+        "section": "criacao"
       },
       {
         "title": "O Jardim",
@@ -854,7 +855,8 @@
               }
             ]
           }
-        ]
+        ],
+        "section": "jardim"
       },
       {
         "title": "Depois do Éden",
@@ -1253,7 +1255,8 @@
               }
             ]
           }
-        ]
+        ],
+        "section": "depois"
       }
     ],
     "realm": "antigo-testamento",
@@ -1266,11 +1269,133 @@
     "icon": "🏕️",
     "order": 2,
     "unlockAfter": "genesis-1-11",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#4A8B6F",
-    "modules": [],
+    "modules": [
+      {
+        "title": "Abraão",
+        "section": "abraao",
+        "icon": "🌟",
+        "missions": [
+          {
+            "slug": "genesis-12-5-abraao-01-chamado-de-abrao",
+            "title": "Chamado de Abrão",
+            "subtitle": "",
+            "intro": "Deixa a terra e vai — a promessa começa com obediência.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-abraao-02-a-alianca-e-a-fe",
+            "title": "A aliança e a fé",
+            "subtitle": "",
+            "intro": "Estrelas no céu: descendência e bênção para as nações.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-abraao-03-isaque-prometido",
+            "title": "Isaque prometido",
+            "subtitle": "",
+            "intro": "Riso e fidelidade: o filho da promessa nasce.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-abraao-04-desafio-a-promessa",
+            "title": "Desafio: A promessa",
+            "subtitle": "",
+            "intro": "Revise o chamado, a aliança e a fé de Abraão.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Isaque e Jacó",
+        "section": "jaco",
+        "icon": "⛺",
+        "missions": [
+          {
+            "slug": "genesis-12-5-jaco-01-isaque-e-rebeca",
+            "title": "Isaque e Rebeca",
+            "subtitle": "",
+            "intro": "A linha da promessa continua na próxima geração.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-jaco-02-jaco-e-esau",
+            "title": "Jacó e Esaú",
+            "subtitle": "",
+            "intro": "Primogenitura, bênção e conflito entre irmãos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-jaco-03-betel-e-o-novo-nome",
+            "title": "Betel e o novo nome",
+            "subtitle": "",
+            "intro": "De Jacó a Israel — encontro com Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "José",
+        "section": "jose",
+        "icon": "👑",
+        "missions": [
+          {
+            "slug": "genesis-12-5-jose-01-sonhos-e-traicao",
+            "title": "Sonhos e traição",
+            "subtitle": "",
+            "intro": "O poço e o Egito: Deus na trama humana.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-jose-02-do-carcere-ao-palaci",
+            "title": "Do cárcere ao palácio",
+            "subtitle": "",
+            "intro": "Interpretação, provisão e elevação.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-jose-03-reconciliacao",
+            "title": "Reconciliação",
+            "subtitle": "",
+            "intro": "O que intentaram para mal, Deus tornou em bem.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "genesis-12-5-jose-04-desafio-jose",
+            "title": "Desafio: José",
+            "subtitle": "",
+            "intro": "A soberania de Deus na história de José.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
     "realm": "antigo-testamento",
-    "category": "pentateuco"
+    "category": "pentateuco",
+    "isActive": true
   },
   {
     "slug": "exodo",
@@ -1478,7 +1603,8 @@
               }
             ]
           }
-        ]
+        ],
+        "section": "opressao"
       },
       {
         "title": "A Libertação",
@@ -1839,7 +1965,8 @@
               }
             ]
           }
-        ]
+        ],
+        "section": "libertacao"
       },
       {
         "title": "No deserto",
@@ -2421,7 +2548,8 @@
             ]
           }
         ],
-        "icon": "path"
+        "icon": "path",
+        "section": "deserto"
       }
     ],
     "realm": "antigo-testamento",
@@ -2430,457 +2558,2365 @@
   {
     "slug": "levitico",
     "title": "Levítico",
-    "description": "Santidade, sacrifícios e culto — Deus no meio do Seu povo.",
+    "description": "Santidade, sacrifício e culto — viver perto de um Deus santo.",
     "icon": "🔥",
     "order": 4,
     "unlockAfter": "exodo",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#B85C38",
     "realm": "antigo-testamento",
     "category": "pentateuco",
-    "modules": []
+    "modules": [
+      {
+        "title": "Sacrifícios",
+        "section": "sacrificios",
+        "icon": "🔥",
+        "missions": [
+          {
+            "slug": "levitico-sacrificio-01-ofertas-ao-senhor",
+            "title": "Ofertas ao Senhor",
+            "subtitle": "",
+            "intro": "Holocausto, oferta de manjares e comunhão.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "levitico-sacrificio-02-expiacao-pelo-pecado",
+            "title": "Expiação pelo pecado",
+            "subtitle": "",
+            "intro": "Sangue e perdão no sistema sacrificial.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "levitico-sacrificio-03-desafio-o-altar",
+            "title": "Desafio: O altar",
+            "subtitle": "",
+            "intro": "Por que o sacrifício importa na santidade.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Sacerdócio",
+        "section": "sacerdocio",
+        "icon": "👔",
+        "missions": [
+          {
+            "slug": "levitico-sacerdocio-01-arao-e-os-sacerdotes",
+            "title": "Arão e os sacerdotes",
+            "subtitle": "",
+            "intro": "Consagração para servir no santuário.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "levitico-sacerdocio-02-nadabe-e-abiu",
+            "title": "Nadabe e Abiú",
+            "subtitle": "",
+            "intro": "Fogo estranho — santidade não se brinca.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Santidade",
+        "section": "santidade",
+        "icon": "✨",
+        "missions": [
+          {
+            "slug": "levitico-santidade-01-sede-santos",
+            "title": "Sede santos",
+            "subtitle": "",
+            "intro": "O chamado ético e ritual do povo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "levitico-santidade-02-dia-da-expiacao",
+            "title": "Dia da Expiação",
+            "subtitle": "",
+            "intro": "Yom Kipur — limpeza anual do santuário e do povo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "levitico-santidade-03-desafio-santo-como-e",
+            "title": "Desafio: Santo como Eu",
+            "subtitle": "",
+            "intro": "Santidade de Deus e vida do povo.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "numeros",
     "title": "Números",
-    "description": "O deserto, a murmuração e a fidelidade de Deus à promessa.",
+    "description": "No deserto: censo, murmuração, serpente e a porta da terra.",
     "icon": "⛺",
     "order": 5,
     "unlockAfter": "levitico",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6B8F71",
     "realm": "antigo-testamento",
     "category": "pentateuco",
-    "modules": []
+    "modules": [
+      {
+        "title": "Partida",
+        "section": "partida",
+        "icon": "🏕️",
+        "missions": [
+          {
+            "slug": "numeros-partida-01-o-censo-do-povo",
+            "title": "O censo do povo",
+            "subtitle": "",
+            "intro": "Organização das tribos em marcha.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "numeros-partida-02-a-nuvem-e-a-trombeta",
+            "title": "A nuvem e a trombeta",
+            "subtitle": "",
+            "intro": "Quando mover e quando parar com Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Murmurações",
+        "section": "murmuracao",
+        "icon": "😤",
+        "missions": [
+          {
+            "slug": "numeros-murmuracao-01-espias-em-canaa",
+            "title": "Espias em Canaã",
+            "subtitle": "",
+            "intro": "Fé versus medo na porta da terra.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "numeros-murmuracao-02-quarenta-anos",
+            "title": "Quarenta anos",
+            "subtitle": "",
+            "intro": "A geração que não entrou.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "numeros-murmuracao-03-a-serpente-de-bronze",
+            "title": "A serpente de bronze",
+            "subtitle": "",
+            "intro": "Olhar e viver — juízo e graça.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "numeros-murmuracao-04-desafio-no-deserto",
+            "title": "Desafio: No deserto",
+            "subtitle": "",
+            "intro": "Fé, medo e provisão no caminho.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Às portas",
+        "section": "portas",
+        "icon": "🚪",
+        "missions": [
+          {
+            "slug": "numeros-portas-01-balaao",
+            "title": "Balaão",
+            "subtitle": "",
+            "intro": "Bênção que não se compra.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "numeros-portas-02-nova-geracao",
+            "title": "Nova geração",
+            "subtitle": "",
+            "intro": "Preparação para herdar a terra.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "deuteronomio",
     "title": "Deuteronômio",
-    "description": "A Lei relembrada — amar ao Senhor de todo o coração.",
+    "description": "Moisés repete a Lei: amar ao Senhor de todo o coração.",
     "icon": "📜",
     "order": 6,
     "unlockAfter": "numeros",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#8B7355",
     "realm": "antigo-testamento",
     "category": "pentateuco",
-    "modules": []
+    "modules": [
+      {
+        "title": "Lembrar",
+        "section": "lembrar",
+        "icon": "📜",
+        "missions": [
+          {
+            "slug": "deuteronomio-lembrar-01-recontar-a-jornada",
+            "title": "Recontar a jornada",
+            "subtitle": "",
+            "intro": "Memória da libertação e da fidelidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "deuteronomio-lembrar-02-o-shema",
+            "title": "O Shemá",
+            "subtitle": "",
+            "intro": "Ouve, Israel — amar a Deus acima de tudo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Aliança",
+        "section": "alianca",
+        "icon": "🤝",
+        "missions": [
+          {
+            "slug": "deuteronomio-alianca-01-bencaos-e-maldicoes",
+            "title": "Bênçãos e maldições",
+            "subtitle": "",
+            "intro": "Escolha de vida ou morte.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "deuteronomio-alianca-02-um-profeta-como-mois",
+            "title": "Um profeta como Moisés",
+            "subtitle": "",
+            "intro": "Esperança de um mediador futuro.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "deuteronomio-alianca-03-desafio-escolhei-a-v",
+            "title": "Desafio: Escolhei a vida",
+            "subtitle": "",
+            "intro": "Amor, obediência e aliança.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Despedida",
+        "section": "despedida",
+        "icon": "🌅",
+        "missions": [
+          {
+            "slug": "deuteronomio-despedida-01-josue-designado",
+            "title": "Josué designado",
+            "subtitle": "",
+            "intro": "A liderança passa; a promessa continua.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "deuteronomio-despedida-02-cantico-de-moises",
+            "title": "Cântico de Moisés",
+            "subtitle": "",
+            "intro": "Testemunho final do servo do Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "josue",
     "title": "Josué",
-    "description": "A conquista da terra — coragem, aliança e herança.",
+    "description": "Entrada na terra: coragem, Jericó e aliança renovada.",
     "icon": "⚔️",
     "order": 10,
     "unlockAfter": "deuteronomio",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5D8A66",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Entrada",
+        "section": "entrada",
+        "icon": "🌊",
+        "missions": [
+          {
+            "slug": "josue-entrada-01-se-forte-e-corajoso",
+            "title": "Sê forte e corajoso",
+            "subtitle": "",
+            "intro": "A promessa acompanha Josué.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "josue-entrada-02-raabe-e-os-espias",
+            "title": "Raabe e os espias",
+            "subtitle": "",
+            "intro": "Fé inesperada em Jericó.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "josue-entrada-03-o-jordao",
+            "title": "O Jordão",
+            "subtitle": "",
+            "intro": "Passagem em terra seca — novo êxodo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Conquista",
+        "section": "conquista",
+        "icon": "🎺",
+        "missions": [
+          {
+            "slug": "josue-conquista-01-jerico",
+            "title": "Jericó",
+            "subtitle": "",
+            "intro": "Muros e obediência — a vitória é do Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "josue-conquista-02-ai-e-o-pecado-de-aca",
+            "title": "Ai e o pecado de Acã",
+            "subtitle": "",
+            "intro": "Derrota quando a aliança é quebrada.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "josue-conquista-03-desafio-a-terra",
+            "title": "Desafio: A terra",
+            "subtitle": "",
+            "intro": "Fé, obediência e conquista.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Aliança",
+        "section": "alianca-josue",
+        "icon": "🪨",
+        "missions": [
+          {
+            "slug": "josue-alianca-jo-01-reparto-das-terras",
+            "title": "Reparto das terras",
+            "subtitle": "",
+            "intro": "Herança para as tribos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "josue-alianca-jo-02-escolhei-hoje-a-quem",
+            "title": "Escolhei hoje a quem servir",
+            "subtitle": "",
+            "intro": "Renovação em Siquém.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "juizes",
     "title": "Juízes",
-    "description": "Ciclos de apostasia e livramento — Deus levanta juízes.",
+    "description": "Ciclo de pecado, opressão, clamor e livramento.",
     "icon": "🔨",
     "order": 11,
     "unlockAfter": "josue",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#7A6B4F",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "O ciclo",
+        "section": "ciclo",
+        "icon": "🔁",
+        "missions": [
+          {
+            "slug": "juizes-ciclo-01-cada-um-fazia-o-que-",
+            "title": "Cada um fazia o que era reto",
+            "subtitle": "",
+            "intro": "Sem rei e sem fidelidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "juizes-ciclo-02-deus-levanta-juizes",
+            "title": "Deus levanta juízes",
+            "subtitle": "",
+            "intro": "Livradores no meio da crise.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Juízes",
+        "section": "juizes",
+        "icon": "⚔️",
+        "missions": [
+          {
+            "slug": "juizes-juizes-01-debora-e-baraque",
+            "title": "Débora e Baraque",
+            "subtitle": "",
+            "intro": "Vitória cantada por uma profetisa.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "juizes-juizes-02-gideao",
+            "title": "Gideão",
+            "subtitle": "",
+            "intro": "Do medo à fé — poucos contra muitos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "juizes-juizes-03-sansao",
+            "title": "Sansão",
+            "subtitle": "",
+            "intro": "Força, falha e um último ato.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "juizes-juizes-04-desafio-o-ciclo",
+            "title": "Desafio: O ciclo",
+            "subtitle": "",
+            "intro": "Pecado, juízo e misericórdia.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "rute",
     "title": "Rute",
-    "description": "Fidelidade e redenção na família — um fio da linhagem de Davi.",
+    "description": "Lealdade, redenção e a linhagem de Davi.",
     "icon": "🌾",
     "order": 12,
     "unlockAfter": "juizes",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C4A35A",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Lealdade",
+        "section": "lealdade",
+        "icon": "🌾",
+        "missions": [
+          {
+            "slug": "rute-lealdade-01-rute-e-noemi",
+            "title": "Rute e Noemi",
+            "subtitle": "",
+            "intro": "Teu Deus será o meu Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "rute-lealdade-02-nos-campos-de-boaz",
+            "title": "Nos campos de Boaz",
+            "subtitle": "",
+            "intro": "Provisão e favor no meio da perda.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Redenção",
+        "section": "redencao",
+        "icon": "💍",
+        "missions": [
+          {
+            "slug": "rute-redencao-01-o-resgatador",
+            "title": "O resgatador",
+            "subtitle": "",
+            "intro": "Boaz cumpre o papel de parente-redentor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "rute-redencao-02-desafio-linhagem",
+            "title": "Desafio: Linhagem",
+            "subtitle": "",
+            "intro": "Fidelidade que entra na história de Davi.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "samuel",
     "title": "1–2 Samuel",
-    "description": "De Samuel a Davi — o rei segundo o coração de Deus.",
+    "description": "De Samuel a Saul e Davi — rei segundo o coração de Deus.",
     "icon": "👑",
     "order": 13,
     "unlockAfter": "rute",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6A8EAE",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Samuel",
+        "section": "samuel",
+        "icon": "🔔",
+        "missions": [
+          {
+            "slug": "samuel-samuel-01-o-chamado-de-samuel",
+            "title": "O chamado de Samuel",
+            "subtitle": "",
+            "intro": "Fala, Senhor, porque o teu servo ouve.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "samuel-samuel-02-israel-pede-um-rei",
+            "title": "Israel pede um rei",
+            "subtitle": "",
+            "intro": "Rejeitar o governo de Deus?",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Saul",
+        "section": "saul",
+        "icon": "👑",
+        "missions": [
+          {
+            "slug": "samuel-saul-01-saul-ungido",
+            "title": "Saul ungido",
+            "subtitle": "",
+            "intro": "Começo promissor, coração dividido.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "samuel-saul-02-desobediencia-de-sau",
+            "title": "Desobediência de Saul",
+            "subtitle": "",
+            "intro": "Obedecer é melhor do que sacrificar.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Davi",
+        "section": "davi",
+        "icon": "🎵",
+        "missions": [
+          {
+            "slug": "samuel-davi-01-davi-ungido",
+            "title": "Davi ungido",
+            "subtitle": "",
+            "intro": "O Senhor vê o coração.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "samuel-davi-02-davi-e-golias",
+            "title": "Davi e Golias",
+            "subtitle": "",
+            "intro": "A batalha é do Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "samuel-davi-03-desafio-o-rei",
+            "title": "Desafio: O rei",
+            "subtitle": "",
+            "intro": "Samuel, Saul e o coração de Davi.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "reis",
     "title": "1–2 Reis",
-    "description": "Do templo à queda — reinos, profetas e exílio.",
+    "description": "Salomão, divisão do reino, profetas e exílio.",
     "icon": "🏛️",
     "order": 14,
     "unlockAfter": "samuel",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#8E6A5A",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Salomão",
+        "section": "salomao",
+        "icon": "🏛️",
+        "missions": [
+          {
+            "slug": "reis-salomao-01-sabedoria-e-o-templo",
+            "title": "Sabedoria e o templo",
+            "subtitle": "",
+            "intro": "Glória e perigo da prosperidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "reis-salomao-02-o-coracao-dividido",
+            "title": "O coração dividido",
+            "subtitle": "",
+            "intro": "Mulheres estrangeiras e idolatria.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Reino dividido",
+        "section": "dividido",
+        "icon": "💔",
+        "missions": [
+          {
+            "slug": "reis-dividido-01-norte-e-sul",
+            "title": "Norte e Sul",
+            "subtitle": "",
+            "intro": "Jeroboão e a ruptura.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "reis-dividido-02-elias-no-carmelo",
+            "title": "Elias no Carmelo",
+            "subtitle": "",
+            "intro": "O Senhor é Deus!",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "reis-dividido-03-desafio-fidelidade",
+            "title": "Desafio: Fidelidade",
+            "subtitle": "",
+            "intro": "Templo, cisma e profetas.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Queda",
+        "section": "queda-reis",
+        "icon": "🏚️",
+        "missions": [
+          {
+            "slug": "reis-queda-reis-01-queda-de-samaria",
+            "title": "Queda de Samaria",
+            "subtitle": "",
+            "intro": "O fim do reino do norte.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "reis-queda-reis-02-queda-de-jerusalem",
+            "title": "Queda de Jerusalém",
+            "subtitle": "",
+            "intro": "Exílio da Judá.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "cronicas",
     "title": "1–2 Crônicas",
-    "description": "A história do templo e da linhagem — olhar sacerdotal sobre Israel.",
+    "description": "História pelo olhar do culto: Davi, templo e reforma.",
     "icon": "📖",
     "order": 15,
     "unlockAfter": "reis",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5A7A8E",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Davi e o culto",
+        "section": "culto",
+        "icon": "🎶",
+        "missions": [
+          {
+            "slug": "cronicas-culto-01-a-arca-e-a-adoracao",
+            "title": "A arca e a adoração",
+            "subtitle": "",
+            "intro": "Davi organiza o louvor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "cronicas-culto-02-preparacao-do-templo",
+            "title": "Preparação do templo",
+            "subtitle": "",
+            "intro": "Materiais e coração para a casa de Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Templo e reis",
+        "section": "templo",
+        "icon": "🛕",
+        "missions": [
+          {
+            "slug": "cronicas-templo-01-salomao-dedica-o-tem",
+            "title": "Salomão dedica o templo",
+            "subtitle": "",
+            "intro": "Glória enche a casa.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "cronicas-templo-02-reformas-e-quedas",
+            "title": "Reformas e quedas",
+            "subtitle": "",
+            "intro": "Quando o culto é restaurado ou abandonado.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "cronicas-templo-03-desafio-o-templo",
+            "title": "Desafio: O templo",
+            "subtitle": "",
+            "intro": "Culto, rei e presença de Deus.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "esdras",
     "title": "Esdras",
-    "description": "O retorno do exílio — reconstruir o templo, o culto e o povo.",
+    "description": "Volta do exílio: altar, templo e a Lei.",
     "icon": "🧱",
     "order": 16,
     "unlockAfter": "cronicas",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#7A8E5A",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Retorno",
+        "section": "retorno",
+        "icon": "🧱",
+        "missions": [
+          {
+            "slug": "esdras-retorno-01-decreto-de-ciro",
+            "title": "Decreto de Ciro",
+            "subtitle": "",
+            "intro": "Deus mexe nos reis para cumprir promessa.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "esdras-retorno-02-altar-e-fundamentos",
+            "title": "Altar e fundamentos",
+            "subtitle": "",
+            "intro": "Começar pelo culto.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Reforma",
+        "section": "reforma-esdras",
+        "icon": "📖",
+        "missions": [
+          {
+            "slug": "esdras-reforma-es-01-esdras-e-a-lei",
+            "title": "Esdras e a Lei",
+            "subtitle": "",
+            "intro": "Ensinar a Torá ao povo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "esdras-reforma-es-02-desafio-restauracao",
+            "title": "Desafio: Restauração",
+            "subtitle": "",
+            "intro": "Volta, templo e Palavra.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "neemias",
     "title": "Neemias",
-    "description": "Reconstruir o muro — liderança, oração e reforma em Jerusalém.",
+    "description": "Muros, oração e renovação da aliança.",
     "icon": "🛡️",
     "order": 17,
     "unlockAfter": "esdras",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6A8E5A",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "Os muros",
+        "section": "muros",
+        "icon": "🧱",
+        "missions": [
+          {
+            "slug": "neemias-muros-01-oracao-de-neemias",
+            "title": "Oração de Neemias",
+            "subtitle": "",
+            "intro": "Jejuar, confessar e pedir.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "neemias-muros-02-edificar-sob-oposica",
+            "title": "Edificar sob oposição",
+            "subtitle": "",
+            "intro": "Espada numa mão, tijolo na outra.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Renovação",
+        "section": "renovacao",
+        "icon": "📜",
+        "missions": [
+          {
+            "slug": "neemias-renovacao-01-leitura-da-lei",
+            "title": "Leitura da Lei",
+            "subtitle": "",
+            "intro": "O povo chora e depois celebra.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "neemias-renovacao-02-desafio-reconstruir",
+            "title": "Desafio: Reconstruir",
+            "subtitle": "",
+            "intro": "Oração, muros e aliança.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "ester",
     "title": "Ester",
-    "description": "Providência oculta — Deus preserva o Seu povo.",
+    "description": "Providência oculta: rainha, risco e livramento.",
     "icon": "💎",
     "order": 18,
     "unlockAfter": "neemias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C45C7A",
     "realm": "antigo-testamento",
     "category": "historicos-at",
-    "modules": []
+    "modules": [
+      {
+        "title": "A corte",
+        "section": "corte",
+        "icon": "👑",
+        "missions": [
+          {
+            "slug": "ester-corte-01-ester-rainha",
+            "title": "Ester rainha",
+            "subtitle": "",
+            "intro": "Posicionada para um tempo como este.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ester-corte-02-o-plano-de-hama",
+            "title": "O plano de Hamã",
+            "subtitle": "",
+            "intro": "Ameaça de extinção.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Livramento",
+        "section": "livramento",
+        "icon": "🎉",
+        "missions": [
+          {
+            "slug": "ester-livramento-01-jejuar-e-agir",
+            "title": "Jejuar e agir",
+            "subtitle": "",
+            "intro": "Se eu perecer, pereci.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ester-livramento-02-purim",
+            "title": "Purim",
+            "subtitle": "",
+            "intro": "Lembrar o livramento com festa.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ester-livramento-03-desafio-providencia",
+            "title": "Desafio: Providência",
+            "subtitle": "",
+            "intro": "Deus age mesmo quando o nome não aparece.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "jo",
     "title": "Jó",
-    "description": "Sofimento, fé e o mistério da soberania de Deus.",
+    "description": "Sofrimento, fé e o mistério de Deus.",
     "icon": "🌪️",
     "order": 20,
     "unlockAfter": "genesis-1-11",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6C7A89",
     "realm": "antigo-testamento",
     "category": "poeticos",
-    "modules": []
+    "modules": [
+      {
+        "title": "Prova",
+        "section": "prova",
+        "icon": "🌪️",
+        "missions": [
+          {
+            "slug": "jo-prova-01-jo-integro",
+            "title": "Jó íntegro",
+            "subtitle": "",
+            "intro": "Teme a Deus e se desvia do mal.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jo-prova-02-perda-e-adoracao",
+            "title": "Perda e adoração",
+            "subtitle": "",
+            "intro": "O Senhor o deu; o Senhor o tomou.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Diálogo",
+        "section": "dialogo",
+        "icon": "💬",
+        "missions": [
+          {
+            "slug": "jo-dialogo-01-amigos-e-acusacoes",
+            "title": "Amigos e acusações",
+            "subtitle": "",
+            "intro": "Teologia rasa diante da dor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jo-dialogo-02-deus-responde",
+            "title": "Deus responde",
+            "subtitle": "",
+            "intro": "Onde estavas tu…?",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jo-dialogo-03-desafio-sofrimento",
+            "title": "Desafio: Sofrimento",
+            "subtitle": "",
+            "intro": "Fé, mistério e restauração.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "salmos",
     "title": "Salmos",
-    "description": "Oração, lamento e louvor — a linguagem do coração diante de Deus.",
+    "description": "Oração, louvor e lamento do povo de Deus.",
     "icon": "🎵",
     "order": 21,
     "unlockAfter": "evangelhos",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6C5CE7",
-    "modules": [],
+    "modules": [
+      {
+        "title": "Louvor",
+        "section": "louvor",
+        "icon": "🙌",
+        "missions": [
+          {
+            "slug": "salmos-louvor-01-bem-aventurado-o-hom",
+            "title": "Bem-aventurado o homem",
+            "subtitle": "",
+            "intro": "Salmo 1 — dois caminhos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+            "title": "O Senhor é o meu pastor",
+            "subtitle": "",
+            "intro": "Salmo 23 — cuidado e presença.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Lamento e confiança",
+        "section": "lamento",
+        "icon": "😢",
+        "missions": [
+          {
+            "slug": "salmos-lamento-01-ate-quando-senhor",
+            "title": "Até quando, Senhor?",
+            "subtitle": "",
+            "intro": "Clamar com honestidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "salmos-lamento-02-criai-em-mim-um-cora",
+            "title": "Criai em mim um coração puro",
+            "subtitle": "",
+            "intro": "Arrependimento e renovação.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "salmos-lamento-03-desafio-orar-os-salm",
+            "title": "Desafio: Orar os Salmos",
+            "subtitle": "",
+            "intro": "Louvor, lamento e confiança.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
     "realm": "antigo-testamento",
-    "category": "poeticos"
+    "category": "poeticos",
+    "isActive": true
   },
   {
     "slug": "proverbios",
     "title": "Provérbios",
-    "description": "Sabedoria prática para a vida diária — temor do Senhor e caminho reto.",
+    "description": "Sabedoria prática para o temor do Senhor.",
     "icon": "💎",
     "order": 22,
     "unlockAfter": "genesis-1-11",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#E8B84B",
-    "modules": [],
+    "modules": [
+      {
+        "title": "Temor e sabedoria",
+        "section": "sabedoria",
+        "icon": "🦉",
+        "missions": [
+          {
+            "slug": "proverbios-sabedoria-01-o-principio-da-sabed",
+            "title": "O princípio da sabedoria",
+            "subtitle": "",
+            "intro": "Temor do Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "proverbios-sabedoria-02-dois-caminhos",
+            "title": "Dois caminhos",
+            "subtitle": "",
+            "intro": "Sábio e tolo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Vida prática",
+        "section": "pratica",
+        "icon": "🧭",
+        "missions": [
+          {
+            "slug": "proverbios-pratica-01-palavras-e-trabalho",
+            "title": "Palavras e trabalho",
+            "subtitle": "",
+            "intro": "Língua, preguiça e diligência.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "proverbios-pratica-02-desafio-sabedoria",
+            "title": "Desafio: Sabedoria",
+            "subtitle": "",
+            "intro": "Temor, caminho e caráter.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
     "realm": "antigo-testamento",
-    "category": "poeticos"
+    "category": "poeticos",
+    "isActive": true
   },
   {
     "slug": "eclesiastes",
     "title": "Eclesiastes",
-    "description": "Vaidade e temor do Senhor — significado sob o sol.",
+    "description": "Vaidade sob o sol — e o temor de Deus no fim.",
     "icon": "⏳",
     "order": 23,
     "unlockAfter": "proverbios",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#8A7A5A",
     "realm": "antigo-testamento",
     "category": "poeticos",
-    "modules": []
+    "modules": [
+      {
+        "title": "Sob o sol",
+        "section": "sol",
+        "icon": "☀️",
+        "missions": [
+          {
+            "slug": "eclesiastes-sol-01-vaidade-de-vaidades",
+            "title": "Vaidade de vaidades",
+            "subtitle": "",
+            "intro": "Tudo é vapor sem Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "eclesiastes-sol-02-tempo-para-todo-prop",
+            "title": "Tempo para todo propósito",
+            "subtitle": "",
+            "intro": "Sazonalidade da vida.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Conclusão",
+        "section": "conclusao",
+        "icon": "⚖️",
+        "missions": [
+          {
+            "slug": "eclesiastes-conclusao-01-teme-a-deus",
+            "title": "Teme a Deus",
+            "subtitle": "",
+            "intro": "O fim de todo o homem.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "eclesiastes-conclusao-02-desafio-sentido",
+            "title": "Desafio: Sentido",
+            "subtitle": "",
+            "intro": "Vaidade e temor do Senhor.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "cantares",
     "title": "Cantares",
-    "description": "Amor, aliança e beleza — o cântico dos cânticos.",
+    "description": "Amor fiel — poesia da aliança e do desejo santo.",
     "icon": "💐",
     "order": 24,
     "unlockAfter": "eclesiastes",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#D48A9A",
     "realm": "antigo-testamento",
     "category": "poeticos",
-    "modules": []
+    "modules": [
+      {
+        "title": "Amor",
+        "section": "amor",
+        "icon": "💝",
+        "missions": [
+          {
+            "slug": "cantares-amor-01-cantico-dos-canticos",
+            "title": "Cântico dos cânticos",
+            "subtitle": "",
+            "intro": "Beleza do amor conjugal.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "cantares-amor-02-selado-no-coracao",
+            "title": "Selado no coração",
+            "subtitle": "",
+            "intro": "Amor forte como a morte.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "cantares-amor-03-desafio-alianca-de-a",
+            "title": "Desafio: Aliança de amor",
+            "subtitle": "",
+            "intro": "Fidelidade e celebração do amor.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "isaias",
     "title": "Isaías",
-    "description": "Santo de Israel — juízo, consolação e o Servo sofredor.",
+    "description": "Santo, santo, santo — juízo, consolação e o Servo.",
     "icon": "⚡",
     "order": 30,
     "unlockAfter": "reis",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#74B9FF",
     "realm": "antigo-testamento",
     "category": "profetas-maiores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Chamado",
+        "section": "chamado-isaias",
+        "icon": "🔥",
+        "missions": [
+          {
+            "slug": "isaias-chamado-is-01-visao-do-trono",
+            "title": "Visão do trono",
+            "subtitle": "",
+            "intro": "Santo, santo, santo é o Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "isaias-chamado-is-02-aqui-estou-eu-envia-",
+            "title": "Aqui estou eu, envia-me",
+            "subtitle": "",
+            "intro": "Profeta para um povo rebelde.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Juízo e esperança",
+        "section": "esperanca-isaias",
+        "icon": "🌿",
+        "missions": [
+          {
+            "slug": "isaias-esperanca--01-o-emanuel",
+            "title": "O Emanuel",
+            "subtitle": "",
+            "intro": "Um menino, um sinal.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "isaias-esperanca--02-o-servo-sofredor",
+            "title": "O Servo sofredor",
+            "subtitle": "",
+            "intro": "Ferido por nossas transgressões.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "isaias-esperanca--03-desafio-isaias",
+            "title": "Desafio: Isaías",
+            "subtitle": "",
+            "intro": "Santidade, juízo e salvação.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "jeremias",
     "title": "Jeremias",
-    "description": "Lágrimas e nova aliança — fidelidade no meio da queda.",
+    "description": "Lágrimas e aliança nova no meio do colapso.",
     "icon": "💧",
     "order": 31,
     "unlockAfter": "isaias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5B8FA8",
     "realm": "antigo-testamento",
     "category": "profetas-maiores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Chamado",
+        "section": "chamado-jeremias",
+        "icon": "😭",
+        "missions": [
+          {
+            "slug": "jeremias-chamado-je-01-antes-que-te-formass",
+            "title": "Antes que te formasse",
+            "subtitle": "",
+            "intro": "Profeta às nações.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jeremias-chamado-je-02-templo-nao-salva",
+            "title": "Templo não salva",
+            "subtitle": "",
+            "intro": "Confiança falsa religiosa.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Nova aliança",
+        "section": "nova-alianca",
+        "icon": "✍️",
+        "missions": [
+          {
+            "slug": "jeremias-nova-alian-01-lei-no-coracao",
+            "title": "Lei no coração",
+            "subtitle": "",
+            "intro": "A aliança escrita por dentro.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jeremias-nova-alian-02-desafio-jeremias",
+            "title": "Desafio: Jeremias",
+            "subtitle": "",
+            "intro": "Juízo, lágrimas e esperança.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "lamentacoes",
     "title": "Lamentações",
-    "description": "Luto por Jerusalém — dor, confissão e esperança no Senhor.",
+    "description": "Luto de Jerusalém — e misericórdias que se renovam.",
     "icon": "🕯️",
     "order": 32,
     "unlockAfter": "jeremias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#7A6B8A",
     "realm": "antigo-testamento",
     "category": "profetas-maiores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Luto",
+        "section": "luto",
+        "icon": "🕊️",
+        "missions": [
+          {
+            "slug": "lamentacoes-luto-01-como-esta-sentada-so",
+            "title": "Como está sentada solitária",
+            "subtitle": "",
+            "intro": "A cidade que caiu.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "lamentacoes-luto-02-as-misericordias-do-",
+            "title": "As misericórdias do Senhor",
+            "subtitle": "",
+            "intro": "Novas a cada manhã.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "lamentacoes-luto-03-desafio-esperanca-no",
+            "title": "Desafio: Esperança no luto",
+            "subtitle": "",
+            "intro": "Dor honesta e fidelidade de Deus.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "ezequiel",
     "title": "Ezequiel",
-    "description": "Glória, juízo e restauração — o templo e o coração novo.",
+    "description": "Glória, juízo e um coração novo.",
     "icon": "👁️",
     "order": 33,
     "unlockAfter": "lamentacoes",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6B6FA8",
     "realm": "antigo-testamento",
     "category": "profetas-maiores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Visões",
+        "section": "visoes",
+        "icon": "👁️",
+        "missions": [
+          {
+            "slug": "ezequiel-visoes-01-a-gloria-de-deus",
+            "title": "A glória de Deus",
+            "subtitle": "",
+            "intro": "Rodas e trono — Deus não está preso.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ezequiel-visoes-02-atalaia-de-israel",
+            "title": "Atalaia de Israel",
+            "subtitle": "",
+            "intro": "Responsabilidade de avisar.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Restauração",
+        "section": "restauracao-ez",
+        "icon": "❤️",
+        "missions": [
+          {
+            "slug": "ezequiel-restauraca-01-coracao-de-carne",
+            "title": "Coração de carne",
+            "subtitle": "",
+            "intro": "Espírito e vida nova.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ezequiel-restauraca-02-vale-de-ossos-secos",
+            "title": "Vale de ossos secos",
+            "subtitle": "",
+            "intro": "Pode esta ossada viver?",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ezequiel-restauraca-03-desafio-ezequiel",
+            "title": "Desafio: Ezequiel",
+            "subtitle": "",
+            "intro": "Glória, juízo e renovação.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "daniel",
     "title": "Daniel",
-    "description": "Fidelidade no exílio — reinos humanos e o Reino de Deus.",
+    "description": "Fidelidade no exílio e reinos sob o Altíssimo.",
     "icon": "🦁",
     "order": 34,
     "unlockAfter": "ezequiel",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C4A040",
     "realm": "antigo-testamento",
     "category": "profetas-maiores",
-    "modules": []
+    "modules": [
+      {
+        "title": "No palácio",
+        "section": "palacio",
+        "icon": "🦁",
+        "missions": [
+          {
+            "slug": "daniel-palacio-01-proposito-no-coracao",
+            "title": "Propósito no coração",
+            "subtitle": "",
+            "intro": "Alimento e fidelidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "daniel-palacio-02-a-fornalha",
+            "title": "A fornalha",
+            "subtitle": "",
+            "intro": "O quarto homem no fogo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "daniel-palacio-03-a-cova-dos-leoes",
+            "title": "A cova dos leões",
+            "subtitle": "",
+            "intro": "Deus fecha a boca dos leões.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Reinos",
+        "section": "reinos",
+        "icon": "🗿",
+        "missions": [
+          {
+            "slug": "daniel-reinos-01-o-sonho-da-estatua",
+            "title": "O sonho da estátua",
+            "subtitle": "",
+            "intro": "Reinos passam; o de Deus permanece.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "daniel-reinos-02-desafio-daniel",
+            "title": "Desafio: Daniel",
+            "subtitle": "",
+            "intro": "Fidelidade e soberania no exílio.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "oseias",
     "title": "Oséias",
-    "description": "Amor fiel de Deus — aliança quebrada e misericórdia que restaura.",
+    "description": "Amor fiel de Deus a um povo adúltero.",
     "icon": "💞",
     "order": 35,
     "unlockAfter": "daniel",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C45C7A",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Amor e infidelidade",
+        "section": "oseias",
+        "icon": "💔",
+        "missions": [
+          {
+            "slug": "oseias-oseias-01-oseias-e-gomer",
+            "title": "Oséias e Gômer",
+            "subtitle": "",
+            "intro": "Profecia vivida no casamento.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "oseias-oseias-02-misericordia-quero",
+            "title": "Misericórdia quero",
+            "subtitle": "",
+            "intro": "Não sacrifício vazio.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "oseias-oseias-03-desafio-oseias",
+            "title": "Desafio: Oséias",
+            "subtitle": "",
+            "intro": "Amor que busca o infiel.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "joel",
     "title": "Joel",
-    "description": "O dia do Senhor — juízo, arrependimento e o derramar do Espírito.",
+    "description": "O dia do Senhor e o derramar do Espírito.",
     "icon": "🌾",
     "order": 36,
     "unlockAfter": "oseias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#8E6A5A",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "O dia do Senhor",
+        "section": "joel",
+        "icon": "🌑",
+        "missions": [
+          {
+            "slug": "joel-joel-01-gafanhotos-e-juizo",
+            "title": "Gafanhotos e juízo",
+            "subtitle": "",
+            "intro": "Despertar para o arrependimento.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "joel-joel-02-derramarei-o-meu-esp",
+            "title": "Derramarei o meu Espírito",
+            "subtitle": "",
+            "intro": "Promessa para toda a carne.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "joel-joel-03-desafio-joel",
+            "title": "Desafio: Joel",
+            "subtitle": "",
+            "intro": "Juízo, arrependimento e Espírito.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "amos",
     "title": "Amós",
-    "description": "Justiça que rola como rio — o Senhor exige retidão do povo.",
+    "description": "Justiça como águas — Deus defende o oprimido.",
     "icon": "⚖️",
     "order": 37,
     "unlockAfter": "joel",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5A8E6A",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Justiça",
+        "section": "amos",
+        "icon": "⚖️",
+        "missions": [
+          {
+            "slug": "amos-amos-01-rugido-de-siao",
+            "title": "Rugido de Sião",
+            "subtitle": "",
+            "intro": "O Senhor fala contra a injustiça.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "amos-amos-02-deixai-correr-o-juiz",
+            "title": "Deixai correr o juízo",
+            "subtitle": "",
+            "intro": "Culto sem justiça não basta.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "amos-amos-03-desafio-amos",
+            "title": "Desafio: Amós",
+            "subtitle": "",
+            "intro": "Justiça, culto e o dia do Senhor.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "obadias",
     "title": "Obadias",
-    "description": "Juízo sobre Edom — soberania de Deus sobre as nações.",
+    "description": "Orgulho de Edom e o reino do Senhor.",
     "icon": "🏔️",
     "order": 38,
     "unlockAfter": "amos",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#7A6B4F",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Edom",
+        "section": "obadias",
+        "icon": "🏔️",
+        "missions": [
+          {
+            "slug": "obadias-obadias-01-orgulho-abatido",
+            "title": "Orgulho abatido",
+            "subtitle": "",
+            "intro": "Não te eleves como a águia.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "obadias-obadias-02-o-reino-sera-do-senh",
+            "title": "O reino será do Senhor",
+            "subtitle": "",
+            "intro": "Esperança final.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "obadias-obadias-03-desafio-obadias",
+            "title": "Desafio: Obadias",
+            "subtitle": "",
+            "intro": "Orgulho, juízo e reino de Deus.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "jonas",
     "title": "Jonas",
-    "description": "Misericórdia além de Israel — o profeta, o peixe e Nínive.",
+    "description": "Profeta em fuga — misericórdia até para Nínive.",
     "icon": "🐋",
     "order": 39,
     "unlockAfter": "obadias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5B8FA8",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Fuga e peixe",
+        "section": "fuga",
+        "icon": "🐋",
+        "missions": [
+          {
+            "slug": "jonas-fuga-01-jonas-foge",
+            "title": "Jonas foge",
+            "subtitle": "",
+            "intro": "Não se foge do Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jonas-fuga-02-no-ventre-do-peixe",
+            "title": "No ventre do peixe",
+            "subtitle": "",
+            "intro": "Oração desde o abismo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          }
+        ]
+      },
+      {
+        "title": "Nínive",
+        "section": "ninive",
+        "icon": "🏙️",
+        "missions": [
+          {
+            "slug": "jonas-ninive-01-a-cidade-se-arrepend",
+            "title": "A cidade se arrepende",
+            "subtitle": "",
+            "intro": "Misericórdia que incomoda.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "jonas-ninive-02-desafio-jonas",
+            "title": "Desafio: Jonas",
+            "subtitle": "",
+            "intro": "Obediência e compaixão de Deus.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "miqueias",
     "title": "Miqueias",
-    "description": "Fazer justiça, amar a misericórdia e andar humildemente com Deus.",
+    "description": "Agir com justiça, amar a misericórdia, andar com Deus.",
     "icon": "🌄",
     "order": 40,
     "unlockAfter": "jonas",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6A8EAE",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Justiça e esperança",
+        "section": "miqueias",
+        "icon": "🥾",
+        "missions": [
+          {
+            "slug": "miqueias-miqueias-01-o-senhor-requer-de-t",
+            "title": "O Senhor requer de ti",
+            "subtitle": "",
+            "intro": "Justiça, misericórdia e humildade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "miqueias-miqueias-02-belem-efrata",
+            "title": "Belém Efrata",
+            "subtitle": "",
+            "intro": "De ti me sairá o Dominador.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "miqueias-miqueias-03-desafio-miqueias",
+            "title": "Desafio: Miqueias",
+            "subtitle": "",
+            "intro": "Ética e messias.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "naum",
     "title": "Naum",
-    "description": "A queda de Nínive — o Senhor é refúgio e juízo.",
+    "description": "Nínive cai — o Senhor é refúgio e juízo.",
     "icon": "⛈️",
     "order": 41,
     "unlockAfter": "miqueias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5A6B8E",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Nínive",
+        "section": "naum",
+        "icon": "💥",
+        "missions": [
+          {
+            "slug": "naum-naum-01-o-senhor-e-bom",
+            "title": "O Senhor é bom",
+            "subtitle": "",
+            "intro": "Refúgio no dia da angústia.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "naum-naum-02-queda-da-cidade-crue",
+            "title": "Queda da cidade cruel",
+            "subtitle": "",
+            "intro": "Juízo sobre a opressão.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "naum-naum-03-desafio-naum",
+            "title": "Desafio: Naum",
+            "subtitle": "",
+            "intro": "Consolo e juízo.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "habacuque",
     "title": "Habacuque",
-    "description": "Do questionamento à fé — o justo viverá pela sua fé.",
+    "description": "Até quando? — o justo viverá pela fé.",
     "icon": "🙏",
     "order": 42,
     "unlockAfter": "naum",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#8A7A5A",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Perguntas e fé",
+        "section": "habacuque",
+        "icon": "❓",
+        "missions": [
+          {
+            "slug": "habacuque-habacuque-01-a-queixa-do-profeta",
+            "title": "A queixa do profeta",
+            "subtitle": "",
+            "intro": "Por que a injustiça prosperar?",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+            "title": "O justo pela sua fé",
+            "subtitle": "",
+            "intro": "Resposta que sustenta.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "habacuque-habacuque-03-desafio-habacuque",
+            "title": "Desafio: Habacuque",
+            "subtitle": "",
+            "intro": "Dúvida honesta e fé viva.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "sofonias",
     "title": "Sofonias",
-    "description": "O dia do Senhor — juízo purificador e restauração do remanescente.",
+    "description": "O dia do Senhor — juízo e cântico de alegria.",
     "icon": "🔥",
     "order": 43,
     "unlockAfter": "habacuque",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C45C5A",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Dia do Senhor",
+        "section": "sofonias",
+        "icon": "🌅",
+        "missions": [
+          {
+            "slug": "sofonias-sofonias-01-dia-de-juizo",
+            "title": "Dia de juízo",
+            "subtitle": "",
+            "intro": "Buscai ao Senhor.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+            "title": "O Senhor se alegra por ti",
+            "subtitle": "",
+            "intro": "Deus canta sobre o remanescente.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "sofonias-sofonias-03-desafio-sofonias",
+            "title": "Desafio: Sofonias",
+            "subtitle": "",
+            "intro": "Juízo e alegria divina.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "ageu",
     "title": "Ageu",
-    "description": "Reconstruir o templo — prioridade ao culto e à glória de Deus.",
+    "description": "Reconstruí a casa — prioridade do templo.",
     "icon": "🏛️",
     "order": 44,
     "unlockAfter": "sofonias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#C4A040",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "A casa do Senhor",
+        "section": "ageu",
+        "icon": "🏗️",
+        "missions": [
+          {
+            "slug": "ageu-ageu-01-casas-forradas-templ",
+            "title": "Casas forradas, templo em ruínas",
+            "subtitle": "",
+            "intro": "Repriorizar a Deus.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ageu-ageu-02-eu-estou-convosco",
+            "title": "Eu estou convosco",
+            "subtitle": "",
+            "intro": "Ânimo para edificar.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "ageu-ageu-03-desafio-ageu",
+            "title": "Desafio: Ageu",
+            "subtitle": "",
+            "intro": "Prioridade e presença.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "zacarias",
     "title": "Zacarias",
-    "description": "Visões e esperança messiânica — o Rei humilde que vem.",
+    "description": "Visões de esperança — Rei humilde e fonte aberta.",
     "icon": "✨",
     "order": 45,
     "unlockAfter": "ageu",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6C5CE7",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Visões",
+        "section": "zacarias",
+        "icon": "🔮",
+        "missions": [
+          {
+            "slug": "zacarias-zacarias-01-voltai-para-mim",
+            "title": "Voltai para mim",
+            "subtitle": "",
+            "intro": "Arrependimento e restauração.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "zacarias-zacarias-02-rei-no-jumentinho",
+            "title": "Rei no jumentinho",
+            "subtitle": "",
+            "intro": "Messias humilde.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "zacarias-zacarias-03-desafio-zacarias",
+            "title": "Desafio: Zacarias",
+            "subtitle": "",
+            "intro": "Esperança e Messias.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "malaquias",
     "title": "Malaquias",
-    "description": "Última palavra do AT — fidelidade, dízimo e o mensageiro que vem.",
+    "description": "Última palavra do AT — coração e o mensageiro.",
     "icon": "📜",
     "order": 46,
     "unlockAfter": "zacarias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#5A9E8E",
     "realm": "antigo-testamento",
     "category": "profetas-menores",
-    "modules": []
+    "modules": [
+      {
+        "title": "Coração e aliança",
+        "section": "malaquias",
+        "icon": "✉️",
+        "missions": [
+          {
+            "slug": "malaquias-malaquias-01-eu-vos-tenho-amado",
+            "title": "Eu vos tenho amado",
+            "subtitle": "",
+            "intro": "Amor questionado e reafirmado.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "malaquias-malaquias-02-o-mensageiro-da-alia",
+            "title": "O mensageiro da aliança",
+            "subtitle": "",
+            "intro": "Preparar o caminho.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "malaquias-malaquias-03-desafio-malaquias",
+            "title": "Desafio: Malaquias",
+            "subtitle": "",
+            "intro": "Fidelidade até a virada do Testamento.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "periodo-intertestamentario",
     "title": "Período Intertestamentário",
-    "description": "Os cerca de 400 anos de silêncio entre Malaquias e o Novo Testamento — o que não foi escrito entre as alianças.",
+    "description": "Os anos de silêncio profético — e a preparação do cenário.",
     "icon": "⏳",
     "order": 47,
     "unlockAfter": "malaquias",
-    "comingSoon": true,
+    "comingSoon": false,
     "color": "#6C7A89",
     "realm": "antigo-testamento",
     "category": "intertestamentario",
-    "modules": []
+    "modules": [
+      {
+        "title": "Entre os testamentos",
+        "section": "inter",
+        "icon": "⏳",
+        "missions": [
+          {
+            "slug": "periodo-inte-inter-01-imperios-em-cena",
+            "title": "Impérios em cena",
+            "subtitle": "",
+            "intro": "Persas, gregos e romanos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "periodo-inte-inter-02-esperanca-messianica",
+            "title": "Esperança messiânica",
+            "subtitle": "",
+            "intro": "Anseio por livramento.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": []
+          },
+          {
+            "slug": "periodo-inte-inter-03-desafio-a-espera",
+            "title": "Desafio: A espera",
+            "subtitle": "",
+            "intro": "História e expectativa do Messias.",
+            "type": "boss",
+            "xpReward": 80,
+            "questions": []
+          }
+        ]
+      }
+    ],
+    "isActive": true
   },
   {
     "slug": "evangelhos",

@@ -7,6 +7,7 @@ import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
 /// Companion emocional próprio da Trilha — crescimento por streak, sem pet genérico.
 class LivingSeedCard extends StatelessWidget {
@@ -29,7 +30,7 @@ class LivingSeedCard extends StatelessWidget {
     final a = Appearance.of(context);
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      padding: AppMetrics.cardPadding,
       child: Row(
         children: [
           CinematicIcon(
@@ -45,15 +46,7 @@ class LivingSeedCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  'SUA SEMENTE',
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 1.4,
-                    color: AppColors.accent.withValues(alpha: 0.9),
-                  ),
-                ),
+                const SectionLabel('Sua semente'),
                 const SizedBox(height: 2),
                 Text(
                   growth.title,
@@ -71,15 +64,7 @@ class LivingSeedCard extends StatelessWidget {
                 ),
                 if (growth.stage != GrowthStage.lamp) ...[
                   const SizedBox(height: 8),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(999),
-                    child: LinearProgressIndicator(
-                      value: growth.progressToNext,
-                      minHeight: 4,
-                      backgroundColor: a.progressTrack,
-                      color: AppColors.accent,
-                    ),
-                  ),
+                  AppProgressBar(value: growth.progressToNext),
                 ],
               ],
             ),

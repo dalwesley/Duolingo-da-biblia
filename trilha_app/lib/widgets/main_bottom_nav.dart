@@ -3,6 +3,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 
+/// Nav inferior — linguagem Duolingo: ícone + label, ativo em verde/dourado limpo.
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -36,78 +37,70 @@ class MainBottomNav extends StatelessWidget {
       color: Colors.transparent,
       child: Padding(
         padding: EdgeInsets.fromLTRB(
-          16,
+          12,
           0,
-          16,
-          bottomInset > 0 ? bottomInset + 8 : 16,
+          12,
+          bottomInset > 0 ? bottomInset + 6 : 12,
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          child: Container(
-            height: 64,
-            decoration: BoxDecoration(
-              color: style.navBarFill,
-              borderRadius: BorderRadius.circular(AppRadii.xl),
-              border: Border.all(color: style.navBarBorder),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.28),
-                  blurRadius: 20,
-                  offset: const Offset(0, 6),
-                ),
-              ],
-            ),
-            child: Row(
-              children: List.generate(tabs.length, (i) {
-                final active = currentIndex == i;
-                final tab = tabs[i];
-                final activeColor = AppColors.inkOnAccent;
-                final idleColor = Colors.white.withValues(alpha: 0.48);
-                final color = active ? activeColor : idleColor;
+        child: Container(
+          height: 62,
+          decoration: BoxDecoration(
+            color: style.navBarFill,
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: style.navBarBorder),
+          ),
+          child: Row(
+            children: List.generate(tabs.length, (i) {
+              final active = currentIndex == i;
+              final tab = tabs[i];
+              final color = active
+                  ? AppColors.accent
+                  : Colors.white.withValues(alpha: 0.42);
 
-                return Expanded(
-                  child: GestureDetector(
-                    onTap: () => onTap(i),
-                    behavior: HitTestBehavior.opaque,
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 260),
-                      curve: Curves.easeOutCubic,
-                      margin: const EdgeInsets.all(4),
-                      decoration: active
-                          ? BoxDecoration(
-                              gradient: AppGradients.gold,
-                              borderRadius: BorderRadius.circular(18),
-                            )
-                          : null,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          CinematicIcon(
-                            glyph: tab.glyph,
-                            size: 22,
-                            accent: color,
-                            glowing: false,
-                            framed: false,
-                          ),
-                          const SizedBox(height: 2),
-                          Text(
-                            tab.label,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: TextStyle(
-                              fontSize: 9,
-                              fontWeight: FontWeight.w800,
-                              letterSpacing: 0.1,
-                              color: color,
-                            ),
-                          ),
-                        ],
+              return Expanded(
+                child: InkWell(
+                  onTap: () => onTap(i),
+                  borderRadius: BorderRadius.circular(16),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      AnimatedContainer(
+                        duration: const Duration(milliseconds: 200),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 12,
+                          vertical: 4,
+                        ),
+                        decoration: active
+                            ? BoxDecoration(
+                                color: AppColors.accent.withValues(alpha: 0.16),
+                                borderRadius: BorderRadius.circular(12),
+                              )
+                            : null,
+                        child: CinematicIcon(
+                          glyph: tab.glyph,
+                          size: 22,
+                          accent: color,
+                          glowing: false,
+                          framed: false,
+                        ),
                       ),
-                    ),
+                      const SizedBox(height: 2),
+                      Text(
+                        tab.label,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(
+                          fontSize: 10,
+                          fontWeight: active ? FontWeight.w900 : FontWeight.w700,
+                          letterSpacing: 0.1,
+                          color: color,
+                        ),
+                      ),
+                    ],
                   ),
-                );
-              }),
-            ),
+                ),
+              );
+            }),
           ),
         ),
       ),

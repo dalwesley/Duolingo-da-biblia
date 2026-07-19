@@ -1,4 +1,4 @@
-import { getUser, isAuthenticated, logOut, mapAuthError, signIn, skipAuth, watchAuth } from './auth.js';
+import { didAnonFail, getAnonFailMessage, getUser, isAuthenticated, logOut, mapAuthError, signIn, skipAuth, watchAuth } from './auth.js';
 import { renderDashboard } from './dashboard-page.js';
 import { renderBankPage } from './bank-page.js';
 import { renderImportPage } from './import-page.js';
@@ -22,11 +22,11 @@ let sidebarOpen = false;
 initTheme();
 
 const NAV = [
-  { route: 'dashboard', label: 'Início', icon: '🏠' },
-  { route: 'trails', label: 'Trilhas', icon: '🗺️' },
-  { route: 'bank', label: 'Perguntas', icon: '❓' },
-  { route: 'studies', label: 'Estudos', icon: '📖' },
-  { route: 'import', label: 'Importar', icon: '⬆️' },
+  { route: 'dashboard', label: 'Início', icon: '🏠', hint: 'Visão geral' },
+  { route: 'trails', label: 'Trilhas', icon: '🗺️', hint: 'Conteúdo principal' },
+  { route: 'bank', label: 'Perguntas', icon: '❓', hint: 'Banco' },
+  { route: 'studies', label: 'Estudos', icon: '📖', hint: 'Preparo' },
+  { route: 'import', label: 'Importar', icon: '⬆️', hint: 'JSON' },
 ];
 
 function navigate(next) {
@@ -35,15 +35,22 @@ function navigate(next) {
   render();
 }
 
+function pageTitle() {
+  if (route.startsWith('trail:')) return 'Editar trilha';
+  return NAV.find((n) => n.route === route)?.label || 'Trilha Admin';
+}
+
 function shell(content) {
   const navHtml = `
     <div class="nav-section">
-      <span class="nav-section-label">Conteúdo</span>
+      <span class="nav-section-label">Menu</span>
       ${NAV.filter((n) => canAccessRoute(n.route))
         .map((n) => {
           const active = route === n.route || (route.startsWith('trail:') && n.route === 'trails');
-          return `<a href="#" data-route="${n.route}" class="${active ? 'active' : ''}">
-            <span class="nav-icon">${n.icon}</span>${n.label}</a>`;
+          return `<a href="#" data-route="${n.route}" class="${active ? 'active' : ''}" title="${n.hint}">
+            <span class="nav-icon">${n.icon}</span>
+            <span class="nav-text"><strong>${n.label}</strong><small>${n.hint}</small></span>
+          </a>`;
         })
         .join('')}
     </div>`;
@@ -56,29 +63,29 @@ function shell(content) {
           <div class="brand-lockup">
             <div class="brand-mark">📖</div>
             <div>
-              <h1>Trilha Admin</h1>
-              <p>Conteúdo do app</p>
+              <h1>Trilha</h1>
+              <p>Painel de conteúdo</p>
             </div>
           </div>
         </div>
         <nav>${navHtml}</nav>
         <div class="sidebar-footer">
           ${getUser() ? `<p class="sidebar-user">${escapeHtml(getUser().email || getUser().uid)}</p>` : ''}
-          ${skipAuth ? '<p class="sidebar-user" style="opacity:.7">dev bypass</p>' : ''}
           <button type="button" class="btn btn-ghost btn-logout" title="Sair">Sair</button>
         </div>
       </aside>
       <div class="main-wrap">
         <header class="mobile-header">
           <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
-          <strong class="page-title">Trilha Admin</strong>
+          <strong class="page-title">${escapeHtml(pageTitle())}</strong>
           <div class="mobile-header-actions">
             <button type="button" class="header-btn" id="theme-toggle-m" aria-label="Tema">${themeToggleIcon()}</button>
             <button type="button" class="btn btn-secondary btn-sm btn-logout">Sair</button>
           </div>
         </header>
         <header class="desktop-header">
-          <div class="desktop-header-actions" style="margin-left:auto">
+          <div class="desktop-header-title">${escapeHtml(pageTitle())}</div>
+          <div class="desktop-header-actions">
             <span class="header-role badge badge-muted">${escapeHtml(roleLabel(getRole()))}</span>
             <button type="button" class="header-btn" id="theme-toggle" aria-label="Tema">${themeToggleIcon()}</button>
             <button type="button" class="btn btn-secondary btn-sm btn-logout">Sair</button>
@@ -175,13 +182,18 @@ async function renderPage() {
 }
 
 async function render() {
-  if (!isAuthenticated() && !skipAuth) {
-    loginScreen();
-    return;
-  }
-
-  if (!isAuthenticated() && skipAuth) {
-    loginScreen('Aguardando auth anônimo… Habilite Anonymous Auth no Firebase Console se travar.');
+  // Sem usuário: sempre mostra login (e-mail/senha).
+  // SKIP_AUTH só tenta anônimo; se falhar, não trava a tela.
+  if (!isAuthenticated()) {
+    let hint = '';
+    if (skipAuth && !didAnonFail()) {
+      hint = 'Tentando bypass anônimo… Se travar, entre com e-mail/senha de admin.';
+    } else if (skipAuth && didAnonFail()) {
+      hint =
+        getAnonFailMessage() ||
+        'Auth anônimo indisponível. Entre com e-mail/senha (Authentication → Email/Password).';
+    }
+    loginScreen(hint);
     return;
   }
 

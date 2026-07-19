@@ -17,8 +17,8 @@ export async function renderStudiesPage(root) {
     root.innerHTML = `
       <div class="page-header row-between">
         <div>
-          <h1>Estudos de missão</h1>
-          <p class="page-sub">Texto de estudo / reflexão por slug de missão</p>
+          <h1>Estudos (preparo)</h1>
+          <p class="page-sub">Texto do preparo / reflexão por slug do passo</p>
         </div>
         <button type="button" class="btn btn-primary" id="btn-new">+ Estudo</button>
       </div>
@@ -85,7 +85,7 @@ export async function renderStudiesPage(root) {
         <div class="modal-panel modal-lg">
           <button type="button" class="modal-close">×</button>
           <h2>${existing ? 'Editar estudo' : 'Novo estudo'}</h2>
-          <label>Slug da missão<input id="st-slug" value="${escapeHtml(s.id || s.slug || '')}" ${existing ? 'disabled' : ''} /></label>
+          <label>Slug do passo<input id="st-slug" value="${escapeHtml(s.id || s.slug || '')}" ${existing ? 'disabled' : ''} /></label>
           <label>Passagem (ref)<input id="st-ref" value="${escapeHtml(s.passageRef || '')}" /></label>
           <label>Texto da passagem<textarea id="st-text" rows="3">${escapeHtml(s.passageText || '')}</textarea></label>
           <label>Contexto<textarea id="st-ctx" rows="3">${escapeHtml(s.context || '')}</textarea></label>

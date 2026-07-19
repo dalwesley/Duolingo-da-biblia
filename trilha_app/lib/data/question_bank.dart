@@ -31,44 +31,39 @@ class QuestionBank {
     return ContentCatalogService.instance.getBankQuestions();
   }
 
-  /// Seleciona perguntas únicas para uma missão: prioriza a seção do módulo,
-  /// evita IDs já usados e completa com outras seções da mesma dificuldade.
+  bool hasBankForTrail(String? trailSlug) {
+    if (trailSlug == null) return false;
+    final cached = ContentCatalogService.instance.bankQuestionsCache;
+    if (cached == null || cached.isEmpty) return false;
+    return cached.any((q) => q.trailSlug == trailSlug);
+  }
+
+  /// Seleciona perguntas únicas para um passo.
+  /// [section] deve ser o slug do passo (5 perguntas dedicadas por modo).
+  /// Fallback: outras seções da mesma trilha/nível se o pool do passo acabar.
   Future<List<Question>> pickForMission({
     required TrailDifficulty difficulty,
     required String? moduleTitle,
     required int count,
     required List<String> usedIds,
+    String? trailSlug,
+    String? section,
     bool isBoss = false,
   }) async {
-    final questions = await _questions();
-    final section = moduleTitleToSection(moduleTitle);
-    final target = isBoss ? count + 1 : count;
-
-    final pool = questions.where((q) => q.difficulty == difficulty).toList();
-    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()
-      ..shuffle(_rng);
-    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()
-      ..shuffle(_rng);
-    final usedFallback = pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
-
-    final picked = <BankQuestion>[];
-    void take(List<BankQuestion> from, int need) {
-      for (final q in from) {
-        if (picked.length >= need) break;
-        if (picked.any((p) => p.id == q.id)) continue;
-        picked.add(q);
-      }
-    }
-
-    take(unusedSection, target);
-    take(unusedOther, target);
-    take(usedFallback, target);
-
-    final unique = <String, BankQuestion>{};
-    for (final q in picked) {
-      unique[q.id] = q;
-    }
-    return unique.values.take(target).map((q) => q.toQuestion(shuffleOptions: true, rng: _rng)).toList();
+    final ids = await pickIdsForMission(
+      difficulty: difficulty,
+      moduleTitle: moduleTitle,
+      section: section,
+      count: count,
+      usedIds: usedIds,
+      trailSlug: trailSlug,
+      isBoss: isBoss,
+    );
+    return ids
+        .map(byId)
+        .whereType<BankQuestion>()
+        .map((q) => q.toQuestion(shuffleOptions: true, rng: _rng))
+        .toList();
   }
 
   Future<List<String>> pickIdsForMission({
@@ -76,17 +71,31 @@ class QuestionBank {
     required String? moduleTitle,
     required int count,
     required List<String> usedIds,
+    String? trailSlug,
+    String? section,
+    @Deprecated('Contagem fixa via count; mantido por compatibilidade')
     bool isBoss = false,
   }) async {
     final questions = await _questions();
-    final section = moduleTitleToSection(moduleTitle);
-    final target = isBoss ? count + 1 : count;
-    final pool = questions.where((q) => q.difficulty == difficulty).toList();
-    final unusedSection = pool.where((q) => q.section == section && !usedIds.contains(q.id)).toList()
+    final trail = trailSlug ?? 'genesis-1-11';
+    final resolvedSection =
+        (section != null && section.isNotEmpty)
+            ? section
+            : moduleTitleToSection(moduleTitle, trailSlug: trail);
+    final target = count;
+    final pool = questions
+        .where((q) => q.difficulty == difficulty && q.trailSlug == trail)
+        .toList();
+    final unusedSection = pool
+        .where((q) => q.section == resolvedSection && !usedIds.contains(q.id))
+        .toList()
       ..shuffle(_rng);
-    final unusedOther = pool.where((q) => q.section != section && !usedIds.contains(q.id)).toList()
+    final unusedOther = pool
+        .where((q) => q.section != resolvedSection && !usedIds.contains(q.id))
+        .toList()
       ..shuffle(_rng);
-    final usedFallback = pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
+    final usedFallback =
+        pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
 
     final ids = <String>[];
     void take(List<BankQuestion> from) {

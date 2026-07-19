@@ -6,7 +6,9 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
+/// Missões diárias — bloco compacto no estilo quests do Duolingo.
 class DailyQuestsCard extends StatelessWidget {
   const DailyQuestsCard({super.key});
 
@@ -14,50 +16,35 @@ class DailyQuestsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
+    final doneCount = progress.questsCompletedToday;
+    final total = DailyQuestDefs.all.length;
 
     return GlassCard(
+      padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Text(
-                'DESAFIOS DE HOJE',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 1.4,
-                  color: AppColors.accent.withValues(alpha: 0.9),
-                ),
-              ),
-              const Spacer(),
-              Text(
-                '${progress.questsCompletedToday}/${DailyQuestDefs.all.length}',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w800,
-                  color: a.textMuted(0.5),
-                ),
-              ),
-            ],
+          CardHeader(
+            label: 'Missões diárias',
+            trailing: CountBadge('$doneCount/$total'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 12),
           ...DailyQuestDefs.all.map((q) {
             final value = progress.questProgress(q.id);
-            final done = progress.isQuestClaimed(q.id) || value >= q.target;
             final claimed = progress.isQuestClaimed(q.id);
+            final done = claimed || value >= q.target;
             final pct = (value / q.target).clamp(0.0, 1.0);
 
             return Padding(
-              padding: const EdgeInsets.only(bottom: 12),
+              padding: const EdgeInsets.only(bottom: 10),
               child: Row(
                 children: [
                   CinematicIcon(
                     glyph: CinematicGlyphResolver.forQuest(q.id),
-                    size: 36,
-                    glowing: !done,
+                    size: 34,
+                    glowing: false,
                   ),
-                  const SizedBox(width: 12),
+                  const SizedBox(width: 10),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -67,58 +54,45 @@ class DailyQuestsCard extends StatelessWidget {
                           style: TextStyle(
                             fontSize: 13,
                             fontWeight: FontWeight.w800,
-                            color: Colors.white.withValues(alpha: done ? 0.55 : 1),
-                            decoration: claimed ? TextDecoration.lineThrough : null,
+                            color: Colors.white.withValues(
+                              alpha: claimed ? 0.45 : 0.95,
+                            ),
+                            decoration:
+                                claimed ? TextDecoration.lineThrough : null,
                           ),
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          q.subtitle,
-                          style: TextStyle(fontSize: 11, color: a.textMuted(0.5)),
+                          '${value.clamp(0, q.target)}/${q.target} · ${q.subtitle}',
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: a.textMuted(0.5),
+                          ),
                         ),
                         const SizedBox(height: 6),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(999),
-                          child: LinearProgressIndicator(
-                            value: pct,
-                            minHeight: 5,
-                            backgroundColor: a.progressTrack,
-                            color: claimed ? AppColors.teal : AppColors.accent,
-                          ),
+                        AppProgressBar(
+                          value: pct,
+                          color: claimed
+                              ? AppColors.teal
+                              : AppColors.primaryLight,
                         ),
                       ],
                     ),
                   ),
                   const SizedBox(width: 10),
-                  if (claimed)
-                    const Icon(Icons.check_circle_rounded, color: AppColors.teal, size: 22)
-                  else if (done)
-                    GestureDetector(
-                      onTap: () => progress.claimQuest(q.id),
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                        decoration: BoxDecoration(
-                          gradient: AppGradients.gold,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Text(
-                          '+${q.stepsReward}',
-                          style: const TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w900,
-                            color: AppColors.inkOnAccent,
-                          ),
-                        ),
-                      ),
+                  if (done)
+                    const Icon(
+                      Icons.check_circle_rounded,
+                      color: AppColors.teal,
+                      size: 22,
                     )
                   else
-                    Text(
-                      '$value/${q.target}',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w800,
-                        color: a.textMuted(0.45),
-                      ),
+                    CountBadge(
+                      '+${q.stepsReward}',
+                      filled: false,
+                      color: a.textMuted(0.55),
                     ),
                 ],
               ),

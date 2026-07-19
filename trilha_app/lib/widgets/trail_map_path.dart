@@ -268,8 +268,8 @@ class _MissionSceneCard extends StatelessWidget {
                               : _current
                                   ? 'NO CAMINHO'
                                   : completed
-                                      ? 'CONCLUÍDA'
-                                      : 'CENA',
+                                      ? 'CONCLUÍDO'
+                                      : 'PASSO',
                           style: TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.w700,
@@ -314,18 +314,41 @@ class _MissionSceneCard extends StatelessWidget {
                         ),
                         const SizedBox(width: 12),
                         Expanded(
-                          child: Text(
-                            mission.title,
-                            style: GoogleFonts.cormorantGaramond(
-                              fontSize: _current ? 24 : 20,
-                              fontWeight: FontWeight.w600,
-                              height: 1.15,
-                              color: Colors.white.withValues(
-                                alpha: unlocked
-                                    ? (completed ? 0.42 : 0.96)
-                                    : 0.38,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                mission.title,
+                                style: GoogleFonts.cormorantGaramond(
+                                  fontSize: _current ? 24 : 20,
+                                  fontWeight: FontWeight.w600,
+                                  height: 1.15,
+                                  color: Colors.white.withValues(
+                                    alpha: unlocked
+                                        ? (completed ? 0.42 : 0.96)
+                                        : 0.38,
+                                  ),
+                                ),
                               ),
-                            ),
+                              if (mission.subtitle.isNotEmpty) ...[
+                                const SizedBox(height: 4),
+                                Text(
+                                  mission.subtitle,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    height: 1.3,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.white.withValues(
+                                      alpha: unlocked
+                                          ? (completed ? 0.32 : 0.55)
+                                          : 0.28,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ],
                           ),
                         ),
                       ],
@@ -346,25 +369,21 @@ class _MissionSceneCard extends StatelessWidget {
                       const SizedBox(height: 14),
                       Row(
                         children: [
-                          Text(
-                            'Entrar na cena',
-                            style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
-                              color: gold,
-                              letterSpacing: 0.2,
-                            ),
-                          ),
-                          const SizedBox(width: 6),
-                          Text(
-                            '→',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w400,
-                              color: gold.withValues(alpha: 0.9),
-                              height: 1,
-                            ),
-                          ),
+                    Text(
+                      'Entrar no caminho →',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w900,
+                        color: gold,
+                        letterSpacing: 0.2,
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                    Icon(
+                      Icons.play_arrow_rounded,
+                      size: 20,
+                      color: gold.withValues(alpha: 0.95),
+                    ),
                         ],
                       ),
                     ] else if (unlocked && !completed) ...[

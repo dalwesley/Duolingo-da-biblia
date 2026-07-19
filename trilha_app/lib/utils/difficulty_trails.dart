@@ -1,0 +1,46 @@
+/// Trilhas que usam banco de perguntas com 3 níveis de dificuldade.
+const difficultyBankTrails = {
+  'genesis-1-11',
+  'exodo',
+  'genesis-12-50',
+  'levitico',
+  'numeros',
+  'deuteronomio',
+  'josue',
+  'juizes',
+  'rute',
+  'samuel',
+  'reis',
+  'cronicas',
+  'esdras',
+  'neemias',
+  'ester',
+  'jo',
+  'salmos',
+  'proverbios',
+  'eclesiastes',
+  'cantares',
+  'isaias',
+  'jeremias',
+  'lamentacoes',
+  'ezequiel',
+  'daniel',
+  'oseias',
+  'joel',
+  'amos',
+  'obadias',
+  'jonas',
+  'miqueias',
+  'naum',
+  'habacuque',
+  'sofonias',
+  'ageu',
+  'zacarias',
+  'malaquias',
+  'periodo-intertestamentario',
+};
+
+bool trailUsesDifficultyBank(String? trailSlug) {
+  if (trailSlug == null || trailSlug.isEmpty) return false;
+  return difficultyBankTrails.contains(trailSlug);
+}

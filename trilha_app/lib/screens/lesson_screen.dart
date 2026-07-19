@@ -13,6 +13,7 @@ import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/genesis_theme.dart';
+import '../utils/difficulty_trails.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
@@ -94,6 +95,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     if (widget.missionOverride != null) {
       final override = widget.missionOverride!;
       if (!mounted) return;
+      final hasStudy = !widget.practiceMode &&
+          MissionStudy.forSlug(widget.missionSlug) != null;
       setState(() {
         _baseMission = override;
         _trailSlug = 'genesis-1-11';
@@ -102,6 +105,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
         _pickedIds = widget.questionIdsOverride ?? [];
         _revealTags = List.filled(override.questions.length, null);
         _mission = override;
+        if (hasStudy) _phase = _Phase.study;
       });
       return;
     }
@@ -125,23 +129,23 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
 
     if (!mounted) return;
     final progress = context.read<ProgressService>();
-    final isGenesis = trailSlug == 'genesis-1-11';
-    final genesisSlug = trailSlug;
+    final usesBank = trailUsesDifficultyBank(trailSlug) &&
+        QuestionBank.instance.hasBankForTrail(trailSlug);
 
-    // Se abriu missão direto sem escolher profundidade, força o picker.
-    if (isGenesis && genesisSlug != null && !progress.hasDifficultyForTrail(genesisSlug)) {
+    // Se abriu passo direto sem escolher profundidade, força o picker.
+    if (usesBank && trailSlug != null && !progress.hasDifficultyForTrail(trailSlug)) {
       await Navigator.of(context).push(
         PageRouteBuilder(
           opaque: true,
           pageBuilder: (_, _, _) => DifficultyPickerScreen(
-            trailSlug: genesisSlug,
+            trailSlug: trailSlug,
             onSelected: () => Navigator.of(context).pop(),
           ),
           transitionsBuilder: (_, anim, _, child) => FadeTransition(opacity: anim, child: child),
         ),
       );
       if (!mounted) return;
-      if (!context.read<ProgressService>().hasDifficultyForTrail(genesisSlug)) {
+      if (!context.read<ProgressService>().hasDifficultyForTrail(trailSlug)) {
         Navigator.of(context).pop();
         return;
       }
@@ -152,19 +156,22 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     var tags = <String?>[];
     DifficultyMeta? meta;
 
-    if (mission != null && isGenesis && genesisSlug != null) {
+    if (mission != null && usesBank && trailSlug != null) {
       if (!mounted) return;
       final freshProgress = context.read<ProgressService>();
-      final diffId = freshProgress.difficultyForTrail(genesisSlug) ?? TrailDifficulty.semente.id;
+      final diffId = freshProgress.difficultyForTrail(trailSlug) ?? TrailDifficulty.semente.id;
       final difficulty = TrailDifficulty.fromId(diffId) ?? TrailDifficulty.semente;
       meta = await QuestionBank.instance.metaFor(difficulty);
-      final count = mission.isBoss ? 6 : 5;
+      // 5 perguntas por passo no modo escolhido (pool dedicado ao slug do passo).
+      const count = 5;
       ids = await QuestionBank.instance.pickIdsForMission(
         difficulty: difficulty,
         moduleTitle: moduleTitle,
+        section: mission.slug,
         count: count,
         usedIds: freshProgress.usedQuestionIds,
-        isBoss: mission.isBoss,
+        trailSlug: trailSlug,
+        isBoss: false,
       );
       final bankQs = <Question>[];
       for (final id in ids) {
@@ -179,6 +186,9 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     }
 
     if (!mounted) return;
+    final hasStudy = !widget.practiceMode &&
+        mission != null &&
+        MissionStudy.forSlug(widget.missionSlug) != null;
     setState(() {
       _baseMission = mission;
       _trailSlug = trailSlug;
@@ -187,10 +197,13 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       _pickedIds = ids;
       _revealTags = tags;
       _difficultyMeta = meta;
+      // Com estudo: um só preparo (título + passagem). Sem: intro clássica.
+      if (hasStudy) _phase = _Phase.study;
       if (mission != null) {
         _mission = Mission(
           slug: mission.slug,
           title: mission.title,
+          subtitle: mission.subtitle,
           intro: mission.intro,
           type: mission.type,
           stepsReward: _scaledSteps(mission.stepsReward, meta?.stepsMultiplier ?? 1),
@@ -488,16 +501,16 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                             dark: true,
                             title: switch (_phase) {
                               _Phase.intro => mission.title,
-                              _Phase.study => 'Estudo',
+                              _Phase.study => mission.title,
                               _Phase.quiz => _difficultyMeta != null
-                                  ? 'Cena ${_questionIndex + 1}/$total'
-                                  : 'Cena ${_questionIndex + 1} de $total',
+                                  ? 'Pergunta ${_questionIndex + 1}/$total'
+                                  : 'Pergunta ${_questionIndex + 1} de $total',
                               _Phase.reflection => 'Reflexão',
                             },
                             subtitle: switch (_phase) {
                               _Phase.intro => _difficultyMeta?.label ??
-                                  (mission.isBoss ? 'Desafio' : 'Missão'),
-                              _Phase.study => mission.title,
+                                  (mission.isBoss ? 'Desafio' : 'No caminho'),
+                              _Phase.study => _difficultyMeta?.label ?? 'Preparo',
                               _Phase.quiz =>
                                 _difficultyMeta?.label ?? mission.title,
                               _Phase.reflection => mission.title,
@@ -582,6 +595,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                         study: study,
                         accent: accent,
                         priorReflection: priorReflection,
+                        missionTitle: mission.title,
+                        missionIntro: mission.intro,
                         onContinue: _startQuiz,
                       ),
                     )
@@ -697,6 +712,19 @@ class _IntroPanel extends StatelessWidget {
             textAlign: TextAlign.center,
             style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white, height: 1.15),
           ),
+          if (mission.subtitle.isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              mission.subtitle,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 15,
+                height: 1.35,
+                fontWeight: FontWeight.w500,
+                color: Colors.white.withValues(alpha: 0.7),
+              ),
+            ),
+          ],
           const SizedBox(height: 8),
           Text(
             mission.isBoss
@@ -758,7 +786,7 @@ class _IntroPanel extends StatelessWidget {
           _GoldButton(
             label: hasStudy
                 ? 'CAMINHAR NO TEXTO'
-                : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NA CENA'),
+                : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
             onTap: onStart,
             accent: theme.decorColor,
           ),
@@ -1049,3 +1077,4 @@ class _GoldButton extends StatelessWidget {
     );
   }
 }
+

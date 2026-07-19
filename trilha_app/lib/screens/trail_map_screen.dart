@@ -7,6 +7,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../models/trail_catalog.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_trails.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
@@ -14,6 +15,7 @@ import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
+import '../widgets/ui_primitives.dart';
 import 'difficulty_picker_screen.dart';
 
 class TrailMapScreen extends StatefulWidget {
@@ -49,7 +51,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     if (!mounted) return;
     setState(() => _trail = trail);
 
-    if (widget.slug == 'genesis-1-11') {
+    if (trailUsesDifficultyBank(widget.slug)) {
       final progress = context.read<ProgressService>();
       if (!progress.hasDifficultyForTrail(widget.slug)) {
         await Navigator.of(context).push(
@@ -236,7 +238,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final appearance = AppearanceStyle.resolve(mode);
 
     final eyebrow = _useThematicMap && trail.modules.isNotEmpty
-        ? 'CAPÍTULO ${_roman(activeModule + 1)}'
+        ? 'CENA ${_roman(activeModule + 1)}'
         : null;
     final headerTitle = _useThematicMap && trail.modules.isNotEmpty
         ? trail
@@ -308,10 +310,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         trailTitle: trail.title,
                         done: prog.done,
                         total: prog.total,
-                        difficultyLabel: widget.slug == 'genesis-1-11'
+                        difficultyLabel: trailUsesDifficultyBank(widget.slug)
                             ? _difficultyLabel(difficultyId ?? 'semente')
                             : null,
-                        onDifficultyTap: widget.slug == 'genesis-1-11'
+                        onDifficultyTap: trailUsesDifficultyBank(widget.slug)
                             ? _changeDifficulty
                             : null,
                       ),
@@ -405,9 +407,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
 
   String _difficultyLabel(String id) {
     return switch (id) {
-      'semente' => 'Semente',
-      'caminhada' => 'Caminhada',
-      'profundezas' => 'Profundezas',
+      'semente' => 'Modo Semente',
+      'caminhada' => 'Modo Caminhada',
+      'profundezas' => 'Modo Profundezas',
       _ => id,
     };
   }
@@ -521,14 +523,10 @@ class _GenericTrailHero extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 8),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: LinearProgressIndicator(
-                    value: pct,
-                    minHeight: 8,
-                    backgroundColor: color.withValues(alpha: 0.12),
-                    color: color,
-                  ),
+                AppProgressBar(
+                  value: pct,
+                  color: color,
+                  trackColor: color.withValues(alpha: 0.12),
                 ),
               ],
             ),
@@ -560,7 +558,7 @@ class _GenericModuleHeader extends StatelessWidget {
           CinematicIcon(glyph: glyph, size: 28, glowing: false),
           const SizedBox(width: 8),
           Text(
-            'Seção $index · $title',
+            'Cena $index · $title',
             style: const TextStyle(
               fontWeight: FontWeight.w800,
               color: Colors.white,

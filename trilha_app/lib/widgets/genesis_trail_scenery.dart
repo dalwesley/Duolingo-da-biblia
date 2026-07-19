@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../utils/genesis_theme.dart';
+import 'ui_primitives.dart';
 
 /// Capítulo full-bleed — mundo contínuo com cartão de título no estilo dos cards boas.
 class GenesisModuleScenery extends StatefulWidget {
@@ -188,7 +189,7 @@ class _ChapterTitleCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'CAPÍTULO ${_roman(sectionIndex)}',
+                        'CENA ${_roman(sectionIndex)}',
                         style: TextStyle(
                           fontSize: 10,
                           fontWeight: FontWeight.w700,
@@ -245,14 +246,10 @@ class _ChapterTitleCard extends StatelessWidget {
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(2),
-                child: LinearProgressIndicator(
-                  value: pct,
-                  minHeight: 2.5,
-                  backgroundColor: Colors.white.withValues(alpha: 0.1),
-                  color: theme.pathActive,
-                ),
+              AppProgressBar(
+                value: pct,
+                color: theme.pathActive,
+                trackColor: Colors.white.withValues(alpha: 0.1),
               ),
             ],
           ],
@@ -533,7 +530,7 @@ class GenesisTrailHeader extends StatelessWidget {
         children: [
           Expanded(
             child: Text(
-              '$done de $total missões',
+              '$done de $total passos',
               style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white70),
             ),
           ),

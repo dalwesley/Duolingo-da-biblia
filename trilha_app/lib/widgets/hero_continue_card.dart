@@ -4,6 +4,7 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// CTA da próxima missão — card dominante na home.
 class HeroContinueCard extends StatelessWidget {
@@ -189,15 +190,7 @@ class HeroContinueCard extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: 20),
-                    Text(
-                      'PRÓXIMO PASSO',
-                      style: TextStyle(
-                        fontSize: 10,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 1.8,
-                        color: AppColors.accent.withValues(alpha: 0.9),
-                      ),
-                    ),
+                    const SectionLabel('Próximo passo'),
                     const SizedBox(height: 8),
                     Text(
                       mission.title,

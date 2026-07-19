@@ -10,6 +10,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 
 /// Memorização — flashcards com SRS leve (favoritos + catálogo).
 class MemoryScreen extends StatefulWidget {
@@ -184,15 +185,10 @@ class _MemoryScreenState extends State<MemoryScreen> {
                             ),
                           ),
                           const SizedBox(height: 8),
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(999),
-                            child: LinearProgressIndicator(
-                              value: (_index + (_revealed ? 0.5 : 0)) /
-                                  _deck.length,
-                              minHeight: 5,
-                              backgroundColor: Colors.white12,
-                              color: AppColors.accent,
-                            ),
+                          AppProgressBar(
+                            value: (_index + (_revealed ? 0.5 : 0)) /
+                                _deck.length,
+                            trackColor: Colors.white12,
                           ),
                           const SizedBox(height: 24),
                           Expanded(

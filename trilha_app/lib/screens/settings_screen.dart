@@ -20,6 +20,7 @@ import '../utils/layout_utils.dart';
 import '../utils/spiritual_growth.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import 'login_screen.dart';
 
@@ -147,7 +148,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             children: [
               _sectionHeading(a, 'Seu caminho', 'Ritmo e profundidade do estudo'),
               GlassCard(
-                padding: const EdgeInsets.fromLTRB(16, 18, 16, 16),
+                padding: AppMetrics.cardPadding,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -173,7 +174,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             children: [
               _sectionHeading(a, 'Experiência', 'Visual, som e lembretes'),
               GlassCard(
-                padding: const EdgeInsets.fromLTRB(16, 18, 16, 8),
+                padding: AppMetrics.cardPadding,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -197,14 +198,14 @@ class _SettingsScreenState extends State<SettingsScreen>
                     _toggle(
                       a,
                       'Notificações',
-                      'Lembrete diário às 19h',
+                      'Lembretes de meta, missões, prática e mais',
                       progress.settings.notifications,
                       (v) async {
                         await progress.updateSettings(
                           progress.settings.copyWith(notifications: v),
                         );
-                        await NotificationService.instance.scheduleDailyReminder(
-                          enabled: v,
+                        await NotificationService.instance.syncFromProgress(
+                          progress,
                         );
                       },
                     ),

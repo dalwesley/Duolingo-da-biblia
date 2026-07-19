@@ -24,6 +24,7 @@ class StreakWeek extends StatelessWidget {
         final day = DateTime(monday.year, monday.month, monday.day + i);
         final isToday = day.year == today.year && day.month == today.month && day.day == today.day;
         final active = progress.playedOnDate(day);
+        final frozen = progress.wasFrozenOnDate(day);
 
         return Column(
           children: [
@@ -33,31 +34,53 @@ class StreakWeek extends StatelessWidget {
               height: 34,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                gradient: active ? AppGradients.gold : null,
-                color: active ? null : Colors.white.withValues(alpha: 0.06),
+                gradient: active
+                    ? AppGradients.gold
+                    : frozen
+                        ? LinearGradient(
+                            colors: [
+                              const Color(0xFFA8D8EA),
+                              const Color(0xFF7EC8E3),
+                            ],
+                          )
+                        : null,
+                color: active || frozen
+                    ? null
+                    : Colors.white.withValues(alpha: 0.06),
                 border: Border.all(
                   color: isToday
                       ? AppColors.accent
-                      : Colors.white.withValues(alpha: active ? 0 : 0.12),
+                      : frozen
+                          ? const Color(0xFF7EC8E3).withValues(alpha: 0.7)
+                          : Colors.white.withValues(alpha: active ? 0 : 0.12),
                   width: isToday ? 2 : 1,
                 ),
                 boxShadow: active
                     ? [BoxShadow(color: AppColors.accent.withValues(alpha: 0.4), blurRadius: 10)]
-                    : null,
+                    : frozen
+                        ? [
+                            BoxShadow(
+                              color: const Color(0xFF7EC8E3).withValues(alpha: 0.35),
+                              blurRadius: 8,
+                            ),
+                          ]
+                        : null,
               ),
               child: Center(
                 child: active
                     ? const Icon(Icons.check_rounded, size: 16, color: AppColors.inkOnAccent)
-                    : Text(
-                        labels[i],
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w700,
-                          color: isToday
-                              ? AppColors.accent.withValues(alpha: 0.95)
-                              : a.textMuted(0.4),
-                        ),
-                      ),
+                    : frozen
+                        ? const Icon(Icons.ac_unit_rounded, size: 15, color: Color(0xFF1A3A4A))
+                        : Text(
+                            labels[i],
+                            style: TextStyle(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w700,
+                              color: isToday
+                                  ? AppColors.accent.withValues(alpha: 0.95)
+                                  : a.textMuted(0.4),
+                            ),
+                          ),
               ),
             ),
             SizedBox(

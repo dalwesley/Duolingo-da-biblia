@@ -10,6 +10,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 import '../widgets/verse_study_sheet.dart';
 
 /// Aba Bíblia — navegação livro → capítulo → leitura, tudo offline.
@@ -745,13 +746,9 @@ class _TestamentSection extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: Text(
+              child: SectionLabel(
                 title,
-                style: AppTypography.label(
-                  size: 12,
-                  color: Colors.white.withValues(alpha: 0.88),
-                  letterSpacing: 1.6,
-                ),
+                color: Colors.white.withValues(alpha: 0.88),
               ),
             ),
             Text(
@@ -939,14 +936,9 @@ class _ChapterPicker extends StatelessWidget {
         ),
         if (readCount > 0) ...[
           const SizedBox(height: 12),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            child: LinearProgressIndicator(
-              value: readCount / book.chapters.length,
-              minHeight: 4,
-              backgroundColor: Colors.white.withValues(alpha: 0.08),
-              color: AppColors.accent,
-            ),
+          AppProgressBar(
+            value: readCount / book.chapters.length,
+            trackColor: Colors.white.withValues(alpha: 0.08),
           ),
         ],
         const SizedBox(height: 20),

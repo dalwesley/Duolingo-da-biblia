@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import 'ui_primitives.dart';
 
 /// Mundo contínuo — céu, luz e vinheta. Pintado uma única vez (sem loops).
 class ImmersiveBackground extends StatelessWidget {
@@ -152,9 +153,9 @@ class GlassCard extends StatelessWidget {
   const GlassCard({
     super.key,
     required this.child,
-    this.padding = const EdgeInsets.all(AppSpace.lg),
+    this.padding = AppMetrics.cardPadding,
     this.onTap,
-    this.radius = AppRadii.lg,
+    this.radius = AppMetrics.cardRadius,
     this.elevated = false,
   });
 

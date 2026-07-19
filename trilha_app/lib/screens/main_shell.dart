@@ -6,6 +6,7 @@ import '../data/trail_repository.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/league_service.dart';
+import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../utils/appearance.dart';
@@ -18,12 +19,18 @@ import 'bible_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
 import 'me_screen.dart';
+import 'memory_screen.dart';
+import 'practice_screen.dart';
 import 'settings_screen.dart';
 import 'trilhas_screen.dart';
 import 'trail_map_screen.dart';
 
 class MainShell extends StatefulWidget {
-  const MainShell({super.key});
+  /// Se definido, abre o mapa dessa trilha após o primeiro frame
+  /// (ex.: onboarding → Gênesis).
+  final String? initialTrailSlug;
+
+  const MainShell({super.key, this.initialTrailSlug});
 
   @override
   State<MainShell> createState() => _MainShellState();
@@ -53,7 +60,36 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _progressRef = context.read<ProgressService>();
       _progressRef!.addListener(_onProgressChanged);
       _flushCloudSave();
+      _syncReminders();
+      NotificationService.instance.onAction = _handleReminderAction;
+      final pending = NotificationService.instance.takePendingAction();
+      if (pending != null) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _handleReminderAction(pending);
+        });
+      }
+      final trail = widget.initialTrailSlug;
+      if (trail != null && trail.isNotEmpty) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) _openTrail(trail);
+        });
+      }
     });
+  }
+
+  void _syncReminders() {
+    final progress = _progressRef;
+    if (progress == null) return;
+    if (!progress.isLoaded) {
+      void once() {
+        if (!progress.isLoaded) return;
+        progress.removeListener(once);
+        NotificationService.instance.syncFromProgress(progress);
+      }
+      progress.addListener(once);
+      return;
+    }
+    NotificationService.instance.syncFromProgress(progress);
   }
 
   void _flushCloudSave() {
@@ -89,6 +125,42 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         state == AppLifecycleState.inactive ||
         state == AppLifecycleState.detached) {
       _flushCloudSave();
+      _syncReminders();
+    }
+    if (state == AppLifecycleState.resumed) {
+      final pending = NotificationService.instance.takePendingAction();
+      if (pending != null) _handleReminderAction(pending);
+      _syncReminders();
+    }
+  }
+
+  void _handleReminderAction(ReminderAction action) {
+    if (!mounted) return;
+    switch (action) {
+      case ReminderAction.home:
+        setState(() {
+          _index = 0;
+          _frost.value = 0;
+        });
+      case ReminderAction.practice:
+        setState(() {
+          _index = 0;
+          _frost.value = 0;
+        });
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => const PracticeScreen()),
+        );
+      case ReminderAction.memory:
+        setState(() {
+          _index = 0;
+          _frost.value = 0;
+        });
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => const MemoryScreen()),
+        );
+      case ReminderAction.favorites:
+      case ReminderAction.weekly:
+        _openProfile();
     }
   }
 
@@ -99,6 +171,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _phaseTimer?.cancel();
     _frost.dispose();
     _progressRef?.removeListener(_onProgressChanged);
+    NotificationService.instance.onAction = null;
     super.dispose();
   }
 

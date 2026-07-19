@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/question_bank.dart';
+import '../data/trail_repository.dart';
+import '../models/difficulty.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
+import '../utils/trail_progress.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
+import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
 
 class CelebrationScreen extends StatefulWidget {
@@ -36,9 +42,14 @@ class CelebrationScreen extends StatefulWidget {
   State<CelebrationScreen> createState() => _CelebrationScreenState();
 }
 
-class _CelebrationScreenState extends State<CelebrationScreen> with SingleTickerProviderStateMixin {
+class _CelebrationScreenState extends State<CelebrationScreen>
+    with SingleTickerProviderStateMixin {
   bool _saved = false;
   bool _showGoalBanner = false;
+  bool _trailComplete = false;
+  TrailDifficulty? _currentMode;
+  TrailDifficulty? _nextMode;
+  DifficultyMeta? _nextMeta;
   late final AnimationController _anim;
   late final Animation<double> _scale;
   late final Animation<double> _fade;
@@ -46,9 +57,15 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
   @override
   void initState() {
     super.initState();
-    _anim = AnimationController(vsync: this, duration: const Duration(milliseconds: 900))..forward();
+    _anim = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
+    )..forward();
     _scale = CurvedAnimation(parent: _anim, curve: Curves.elasticOut);
-    _fade = CurvedAnimation(parent: _anim, curve: const Interval(0.2, 1, curve: Curves.easeOut));
+    _fade = CurvedAnimation(
+      parent: _anim,
+      curve: const Interval(0.2, 1, curve: Curves.easeOut),
+    );
   }
 
   @override
@@ -71,7 +88,7 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
             correct: widget.correct,
             total: widget.total,
           )
-          .then((_) {
+          .then((_) async {
         if (!mounted) return;
         if (widget.perfect) {
           SoundService.instance.playStreak();
@@ -82,15 +99,80 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
           setState(() => _showGoalBanner = true);
           progress.clearGoalJustReached();
         }
+        await _resolveModeSuggestion(progress);
       });
     }
+  }
+
+  Future<void> _resolveModeSuggestion(ProgressService progress) async {
+    if (!trailUsesDifficultyBank(widget.trailSlug)) return;
+    await QuestionBank.instance.ensureLoaded();
+    if (!QuestionBank.instance.hasBankForTrail(widget.trailSlug)) return;
+
+    final currentId =
+        progress.difficultyForTrail(widget.trailSlug) ?? TrailDifficulty.semente.id;
+    final current = TrailDifficulty.fromId(currentId) ?? TrailDifficulty.semente;
+    final next = current.next;
+    if (next == null) return;
+
+    final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
+    final complete = trail != null &&
+        TrailProgress.isTrailCompleted(trail, progress.completedMissions);
+
+    if (complete) {
+      await progress.markTrailModeCleared(widget.trailSlug, current.id);
+    }
+
+    // Sugere próximo modo: ao concluir a trilha, ou após um passo com boa clareza.
+    final pct =
+        widget.total > 0 ? (widget.correct / widget.total) : 1.0;
+    final shouldSuggest = complete || (!widget.isReplay && pct >= 0.6);
+    if (!shouldSuggest) return;
+
+    final meta = await QuestionBank.instance.metaFor(next);
+    if (!mounted) return;
+    setState(() {
+      _trailComplete = complete;
+      _currentMode = current;
+      _nextMode = next;
+      _nextMeta = meta;
+    });
+  }
+
+  Future<void> _acceptNextMode({required bool replayThisStep}) async {
+    final next = _nextMode;
+    if (next == null) return;
+    HapticFeedback.mediumImpact();
+    final progress = context.read<ProgressService>();
+    await progress.setTrailDifficulty(widget.trailSlug, next.id);
+    if (!mounted) return;
+
+    if (replayThisStep) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => LessonScreen(
+            missionSlug: widget.missionSlug,
+            practiceMode: true,
+          ),
+        ),
+      );
+      return;
+    }
+
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => TrailMapScreen(slug: widget.trailSlug),
+      ),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final pct = widget.total > 0 ? ((widget.correct / widget.total) * 100).round() : 100;
+    final pct =
+        widget.total > 0 ? ((widget.correct / widget.total) * 100).round() : 100;
     final isBoss = widget.isBoss;
+    final showModeUp = _nextMode != null && _nextMeta != null;
 
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light,
@@ -99,7 +181,9 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
         body: Stack(
           fit: StackFit.expand,
           children: [
-            const DecoratedBox(decoration: BoxDecoration(gradient: AppGradients.cosmic)),
+            const DecoratedBox(
+              decoration: BoxDecoration(gradient: AppGradients.cosmic),
+            ),
             const ConfettiOverlay(active: true),
             Positioned(
               top: -80,
@@ -109,7 +193,12 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                 height: 240,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  gradient: RadialGradient(colors: [AppColors.accent.withValues(alpha: 0.25), Colors.transparent]),
+                  gradient: RadialGradient(
+                    colors: [
+                      AppColors.accent.withValues(alpha: 0.25),
+                      Colors.transparent,
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -121,7 +210,8 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                     Align(
                       alignment: Alignment.centerLeft,
                       child: IconButton(
-                        onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
+                        onPressed: () =>
+                            Navigator.of(context).popUntil((r) => r.isFirst),
                         icon: Container(
                           width: 40,
                           height: 40,
@@ -129,7 +219,10 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                             color: Colors.white.withValues(alpha: 0.12),
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: const Icon(Icons.close_rounded, color: Colors.white),
+                          child: const Icon(
+                            Icons.close_rounded,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),
@@ -141,8 +234,15 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                         height: 110,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          gradient: widget.perfect ? AppGradients.gold : AppGradients.hero,
-                          boxShadow: AppTheme.glow(widget.perfect ? AppColors.accent : AppColors.primary, blur: 28),
+                          gradient: widget.perfect
+                              ? AppGradients.gold
+                              : AppGradients.hero,
+                          boxShadow: AppTheme.glow(
+                            widget.perfect
+                                ? AppColors.accent
+                                : AppColors.primary,
+                            blur: 28,
+                          ),
                         ),
                         child: Icon(
                           widget.perfect
@@ -151,7 +251,9 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                                   ? Icons.military_tech_rounded
                                   : Icons.auto_awesome_rounded,
                           size: 52,
-                          color: widget.perfect ? AppColors.inkOnAccent : Colors.white,
+                          color: widget.perfect
+                              ? AppColors.inkOnAccent
+                              : Colors.white,
                         ),
                       ),
                     ),
@@ -173,7 +275,10 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                           const SizedBox(height: 12),
                           MascotBubble(
                             message: widget.isReplay
-                                ? MascotMessages.celebration(isBoss: isBoss, pct: pct)
+                                ? MascotMessages.celebration(
+                                    isBoss: isBoss,
+                                    pct: pct,
+                                  )
                                 : 'A Palavra iluminou mais um trecho da sua caminhada.\nContinue amanhã.',
                           ),
                           if (_showGoalBanner) ...[
@@ -188,7 +293,11 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                               child: const Text(
                                 '✦ Meta do dia alcançada. Sua caminhada segue firme.',
                                 textAlign: TextAlign.center,
-                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent),
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w900,
+                                  color: AppColors.inkOnAccent,
+                                ),
                               ),
                             ),
                           ],
@@ -223,6 +332,21 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                               ),
                             ],
                           ),
+                          if (showModeUp) ...[
+                            const SizedBox(height: 16),
+                            _ModeUpgradeCard(
+                              trailComplete: _trailComplete,
+                              currentLabel:
+                                  _currentMode?.labelPt ?? 'Semente',
+                              nextLabel: _nextMeta!.label,
+                              nextSubtitle: _nextMeta!.subtitle,
+                              onTryStep: () =>
+                                  _acceptNextMode(replayThisStep: true),
+                              onSwitchTrail: _trailComplete
+                                  ? () => _acceptNextMode(replayThisStep: false)
+                                  : null,
+                            ),
+                          ],
                         ],
                       ),
                     ),
@@ -239,16 +363,23 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
                       label: 'CONTINUAR A CAMINHADA',
                       onTap: () {
                         Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (_) => TrailMapScreen(slug: widget.trailSlug)),
+                          MaterialPageRoute(
+                            builder: (_) =>
+                                TrailMapScreen(slug: widget.trailSlug),
+                          ),
                         );
                       },
                     ),
                     const SizedBox(height: 10),
                     TextButton(
-                      onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
+                      onPressed: () =>
+                          Navigator.of(context).popUntil((r) => r.isFirst),
                       child: Text(
                         'Voltar ao início',
-                        style: TextStyle(color: Colors.white.withValues(alpha: 0.7), fontWeight: FontWeight.w700),
+                        style: TextStyle(
+                          color: Colors.white.withValues(alpha: 0.7),
+                          fontWeight: FontWeight.w700,
+                        ),
                       ),
                     ),
                   ],
@@ -262,29 +393,144 @@ class _CelebrationScreenState extends State<CelebrationScreen> with SingleTicker
   }
 }
 
+class _ModeUpgradeCard extends StatelessWidget {
+  final bool trailComplete;
+  final String currentLabel;
+  final String nextLabel;
+  final String nextSubtitle;
+  final VoidCallback onTryStep;
+  final VoidCallback? onSwitchTrail;
+
+  const _ModeUpgradeCard({
+    required this.trailComplete,
+    required this.currentLabel,
+    required this.nextLabel,
+    required this.nextSubtitle,
+    required this.onTryStep,
+    this.onSwitchTrail,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            trailComplete
+                ? 'Modo $currentLabel concluído'
+                : 'Bom passo em $currentLabel',
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            trailComplete
+                ? 'Que tal responder de novo em $nextLabel? $nextSubtitle'
+                : 'Quer tentar as perguntas deste passo em $nextLabel?',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontSize: 13,
+              height: 1.35,
+              color: Colors.white.withValues(alpha: 0.72),
+            ),
+          ),
+          const SizedBox(height: 12),
+          GestureDetector(
+            onTap: onTryStep,
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 13),
+              decoration: BoxDecoration(
+                gradient: AppGradients.gold,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Text(
+                trailComplete
+                    ? 'REVISAR UM PASSO EM ${nextLabel.toUpperCase()}'
+                    : 'TENTAR EM ${nextLabel.toUpperCase()}',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 0.4,
+                  color: AppColors.inkOnAccent,
+                ),
+              ),
+            ),
+          ),
+          if (onSwitchTrail != null) ...[
+            const SizedBox(height: 8),
+            TextButton(
+              onPressed: onSwitchTrail,
+              child: Text(
+                'Mudar a trilha para $nextLabel',
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white.withValues(alpha: 0.75),
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
 class _StatCard extends StatelessWidget {
   final IconData icon;
   final String value;
   final String label;
   final Color color;
 
-  const _StatCard({required this.icon, required this.value, required this.label, required this.color});
+  const _StatCard({
+    required this.icon,
+    required this.value,
+    required this.label,
+    required this.color,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
       decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.28),
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: color.withValues(alpha: 0.3)),
+        color: Colors.white.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Column(
         children: [
-          Icon(icon, color: color, size: 22),
-          const SizedBox(height: 8),
-          Text(value, style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: color)),
-          Text(label, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w700, color: Colors.white.withValues(alpha: 0.55))),
+          Icon(icon, color: color, size: 20),
+          const SizedBox(height: 6),
+          Text(
+            value,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+            ),
+          ),
+          Text(
+            label,
+            style: TextStyle(
+              fontSize: 10,
+              fontWeight: FontWeight.w600,
+              color: Colors.white.withValues(alpha: 0.55),
+            ),
+          ),
         ],
       ),
     );
@@ -306,13 +552,24 @@ class _GoldButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
           gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [BoxShadow(color: AppColors.accentDark.withValues(alpha: 0.5), offset: const Offset(0, 4))],
+          borderRadius: BorderRadius.circular(18),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.accent.withValues(alpha: 0.4),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
         ),
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent, letterSpacing: 0.5),
+          style: const TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w900,
+            color: AppColors.inkOnAccent,
+            letterSpacing: 0.6,
+          ),
         ),
       ),
     );

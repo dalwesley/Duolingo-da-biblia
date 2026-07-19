@@ -2,7 +2,14 @@ import { COL, listCollection, removeDoc, saveDoc } from './db.js';
 import { confirmAction, escapeHtml, setLoading, showToast } from './ui.js';
 
 const DIFFS = ['semente', 'caminhada', 'profundezas'];
-const SECTIONS = ['criacao', 'jardim', 'depois'];
+const SECTIONS = [
+  'criacao',
+  'jardim',
+  'depois',
+  'opressao',
+  'libertacao',
+  'deserto',
+];
 
 export async function renderBankPage(root) {
   root.innerHTML = `<div class="page-header"><h1>Banco de perguntas</h1></div><div class="card"><p>Carregando…</p></div>`;
@@ -29,7 +36,7 @@ export async function renderBankPage(root) {
       <div class="page-header row-between">
         <div>
           <h1>Banco de perguntas</h1>
-          <p class="page-sub">Usado em Gênesis (e prática) — ${items.length} no total</p>
+          <p class="page-sub">Banco por trilha e nível (Gênesis, Êxodo…) — ${items.length} no total</p>
         </div>
         <button type="button" class="btn btn-primary" id="btn-new-q">+ Pergunta</button>
       </div>
@@ -126,6 +133,9 @@ export async function renderBankPage(root) {
           <h2>${isNew ? 'Nova pergunta' : 'Editar pergunta'}</h2>
           <div class="form-grid">
             <label>ID<input id="bq-id" value="${escapeHtml(q.id)}" ${isNew ? '' : 'disabled'} /></label>
+            <label>Trilha<select id="bq-trail">
+              ${['genesis-1-11', 'exodo'].map((t) => `<option value="${t}" ${(q.trail || q.trailSlug || 'genesis-1-11') === t ? 'selected' : ''}>${t}</option>`).join('')}
+            </select></label>
             <label>Dificuldade<select id="bq-diff">${DIFFS.map((d) => `<option ${q.difficulty === d ? 'selected' : ''}>${d}</option>`).join('')}</select></label>
             <label>Seção<select id="bq-sec">${SECTIONS.map((s) => `<option ${q.section === s ? 'selected' : ''}>${s}</option>`).join('')}</select></label>
             <label>Versículo<input id="bq-verse" value="${escapeHtml(q.verseRef || '')}" /></label>
@@ -174,6 +184,7 @@ export async function renderBankPage(root) {
       }
       const payload = {
         id,
+        trail: document.getElementById('bq-trail').value,
         difficulty: document.getElementById('bq-diff').value,
         section: document.getElementById('bq-sec').value,
         question: document.getElementById('bq-q').value,

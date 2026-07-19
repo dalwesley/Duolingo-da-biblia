@@ -5,6 +5,7 @@ import '../utils/appearance.dart';
 import '../utils/daily_scripture.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
 /// Versículo do dia — âncora silenciosa da caminhada.
 class VerseOfDayCard extends StatelessWidget {
@@ -23,7 +24,7 @@ class VerseOfDayCard extends StatelessWidget {
         onTap: onOpen,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         child: GlassCard(
-          padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
+          padding: AppMetrics.cardPadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -37,13 +38,7 @@ class VerseOfDayCard extends StatelessWidget {
                     framed: false,
                   ),
                   const SizedBox(width: 8),
-                  Text(
-                    'PALAVRA DE HOJE',
-                    style: AppTypography.label(
-                      size: 10,
-                      color: AppColors.accent.withValues(alpha: 0.85),
-                    ),
-                  ),
+                  const SectionLabel('Palavra de hoje'),
                 ],
               ),
               const SizedBox(height: 12),

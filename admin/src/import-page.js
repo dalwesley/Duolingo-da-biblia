@@ -15,9 +15,9 @@ export async function renderImportPage(root) {
     <div class="card">
       <h2>Arquivos esperados</h2>
       <ul class="hint-list">
-        <li><code>trails.json</code> — trilhas, subtrilhas, missões e perguntas embutidas</li>
+        <li><code>trails.json</code> — trilhas, cenas, passos e perguntas embutidas</li>
         <li><code>genesis_questions.json</code> — banco de perguntas + dificuldades</li>
-        <li><code>mission_studies.json</code> — estudos por missão (gerado pelo script extract)</li>
+        <li><code>mission_studies.json</code> — preparo (estudo) por passo</li>
       </ul>
       <div class="form-grid" style="margin-top:var(--space-5)">
         <label>trails.json<input type="file" id="file-trails" accept="application/json,.json" /></label>

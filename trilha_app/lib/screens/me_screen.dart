@@ -14,6 +14,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/reflection_journal_card.dart';
+import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import 'bible_screen.dart';
 
@@ -189,14 +190,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 14),
-        Text(
-          'FAVORITOS',
-          style: AppTypography.label(
-            size: 12,
-            color: a.text.withValues(alpha: 0.88),
-            letterSpacing: 1.6,
-          ),
-        ),
+        const SectionLabel('Favoritos'),
         const SizedBox(height: 10),
         ...bookmarks.map((b) {
           final label = _label(b);
@@ -208,7 +202,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                   builder: (_) => BibleReaderScreen(reference: label),
                 ),
               ),
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+              padding: AppMetrics.cardPadding,
               child: Row(
                 children: [
                   Icon(

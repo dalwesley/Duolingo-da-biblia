@@ -8,6 +8,23 @@ enum TrailDifficulty {
 
   String get id => name;
 
+  /// Próximo modo (Semente → Caminhada → Profundezas).
+  TrailDifficulty? get next {
+    return switch (this) {
+      TrailDifficulty.semente => TrailDifficulty.caminhada,
+      TrailDifficulty.caminhada => TrailDifficulty.profundezas,
+      TrailDifficulty.profundezas => null,
+    };
+  }
+
+  String get labelPt {
+    return switch (this) {
+      TrailDifficulty.semente => 'Semente',
+      TrailDifficulty.caminhada => 'Caminhada',
+      TrailDifficulty.profundezas => 'Profundezas',
+    };
+  }
+
   static TrailDifficulty? fromId(String? id) {
     if (id == null) return null;
     for (final d in TrailDifficulty.values) {
@@ -51,6 +68,7 @@ class DifficultyMeta {
 
 class BankQuestion {
   final String id;
+  final String trailSlug;
   final TrailDifficulty difficulty;
   final String section;
   final String question;
@@ -63,6 +81,7 @@ class BankQuestion {
 
   const BankQuestion({
     required this.id,
+    this.trailSlug = 'genesis-1-11',
     required this.difficulty,
     required this.section,
     required this.question,
@@ -75,8 +94,17 @@ class BankQuestion {
   });
 
   factory BankQuestion.fromJson(Map<String, dynamic> json) {
+    final id = json['id'] as String;
+    final inferredTrail = id.startsWith('e-')
+        ? 'exodo'
+        : id.startsWith('g-')
+            ? 'genesis-1-11'
+            : 'genesis-1-11';
     return BankQuestion(
-      id: json['id'] as String,
+      id: id,
+      trailSlug: json['trail'] as String? ??
+          json['trailSlug'] as String? ??
+          inferredTrail,
       difficulty: TrailDifficulty.fromId(json['difficulty'] as String) ?? TrailDifficulty.semente,
       section: json['section'] as String,
       question: json['question'] as String,
@@ -109,8 +137,18 @@ class BankQuestion {
   }
 }
 
-String moduleTitleToSection(String? moduleTitle) {
-  return switch (moduleTitle) {
+/// Mapeia título da cena (módulo) → seção do banco de perguntas.
+String moduleTitleToSection(String? moduleTitle, {String? trailSlug}) {
+  final title = moduleTitle?.trim() ?? '';
+  if (trailSlug == 'exodo') {
+    return switch (title) {
+      'Opressão no Egito' => 'opressao',
+      'A Libertação' => 'libertacao',
+      'No deserto' => 'deserto',
+      _ => 'opressao',
+    };
+  }
+  return switch (title) {
     'A Criação' => 'criacao',
     'O Jardim' => 'jardim',
     'Depois do Éden' => 'depois',

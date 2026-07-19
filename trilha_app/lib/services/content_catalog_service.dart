@@ -190,6 +190,7 @@ class ContentCatalogService {
         _bankQuestions = bankSnap.docs
             .map((d) => BankQuestion.fromJson({...d.data(), 'id': d.id}))
             .toList();
+        await _mergeMissingTrailBanksFromAssets();
       }
 
       final studiesSnap = await db.collection('content_mission_studies').get();
@@ -244,11 +245,13 @@ class ContentCatalogService {
                         (m) => {
                           'title': m.title,
                           'icon': m.icon,
+                          'section': m.section,
                           'missions': m.missions
                               .map(
                                 (ms) => {
                                   'slug': ms.slug,
                                   'title': ms.title,
+                                  'subtitle': ms.subtitle,
                                   'intro': ms.intro,
                                   'type': ms.type,
                                   'xpReward': ms.stepsReward,
@@ -304,6 +307,7 @@ class ContentCatalogService {
                 .map(
                   (q) => {
                     'id': q.id,
+                    'trail': q.trailSlug,
                     'difficulty': q.difficulty.id,
                     'section': q.section,
                     'question': q.question,
@@ -340,14 +344,98 @@ class ContentCatalogService {
   }
 
   Future<void> _loadBankFromAsset() async {
-    final raw = await rootBundle.loadString('assets/data/genesis_questions.json');
-    final data = jsonDecode(raw) as Map<String, dynamic>;
-    _difficulties = (data['difficulties'] as List)
+    final genesisRaw =
+        await rootBundle.loadString('assets/data/genesis_questions.json');
+    final genesis = jsonDecode(genesisRaw) as Map<String, dynamic>;
+    _difficulties = (genesis['difficulties'] as List)
         .map((e) => DifficultyMeta.fromJson(e as Map<String, dynamic>))
         .toList();
-    _bankQuestions = (data['questions'] as List)
-        .map((e) => BankQuestion.fromJson(e as Map<String, dynamic>))
-        .toList();
+
+    final questions = <BankQuestion>[];
+    void addQuestions(Map<String, dynamic> data, String defaultTrail) {
+      for (final e in data['questions'] as List? ?? const []) {
+        final map = Map<String, dynamic>.from(e as Map);
+        map['trail'] ??= map['trailSlug'] ?? defaultTrail;
+        questions.add(BankQuestion.fromJson(map));
+      }
+    }
+
+    addQuestions(genesis, 'genesis-1-11');
+
+    try {
+      final exodoRaw =
+          await rootBundle.loadString('assets/data/exodo_questions.json');
+      final exodo = jsonDecode(exodoRaw) as Map<String, dynamic>;
+      addQuestions(exodo, 'exodo');
+    } catch (e) {
+      debugPrint('ContentCatalog exodo bank missing: $e');
+    }
+
+    try {
+      final otRaw =
+          await rootBundle.loadString('assets/data/ot_questions.json');
+      final ot = jsonDecode(otRaw) as Map<String, dynamic>;
+      for (final e in ot['questions'] as List? ?? const []) {
+        final map = Map<String, dynamic>.from(e as Map);
+        final trail = map['trail'] as String? ?? map['trailSlug'] as String?;
+        if (trail != null) map['trail'] = trail;
+        questions.add(BankQuestion.fromJson(map));
+      }
+    } catch (e) {
+      debugPrint('ContentCatalog OT bank missing: $e');
+    }
+
+    _bankQuestions = questions;
+  }
+
+  /// Se o Firestore só tem Gênesis, ainda assim carrega Êxodo (e futuros) dos assets.
+  Future<void> _mergeMissingTrailBanksFromAssets() async {
+    final current = _bankQuestions ?? [];
+    final haveTrails = current.map((q) => q.trailSlug).toSet();
+    final existingIds = current.map((q) => q.id).toSet();
+    final merged = [...current];
+
+    Future<void> mergeFile(String assetPath, String trail) async {
+      if (haveTrails.contains(trail)) return;
+      try {
+        final raw = await rootBundle.loadString(assetPath);
+        final data = jsonDecode(raw) as Map<String, dynamic>;
+        for (final e in data['questions'] as List? ?? const []) {
+          final map = Map<String, dynamic>.from(e as Map);
+          map['trail'] ??= trail;
+          final q = BankQuestion.fromJson(map);
+          if (existingIds.contains(q.id)) continue;
+          merged.add(q);
+          existingIds.add(q.id);
+        }
+        haveTrails.add(trail);
+      } catch (e) {
+        debugPrint('ContentCatalog merge $trail failed: $e');
+      }
+    }
+
+    await mergeFile('assets/data/exodo_questions.json', 'exodo');
+
+    try {
+      final raw = await rootBundle.loadString('assets/data/ot_questions.json');
+      final data = jsonDecode(raw) as Map<String, dynamic>;
+      for (final e in data['questions'] as List? ?? const []) {
+        final map = Map<String, dynamic>.from(e as Map);
+        final q = BankQuestion.fromJson(map);
+        if (haveTrails.contains(q.trailSlug) || existingIds.contains(q.id)) {
+          continue;
+        }
+        merged.add(q);
+        existingIds.add(q.id);
+      }
+      for (final q in merged) {
+        haveTrails.add(q.trailSlug);
+      }
+    } catch (e) {
+      debugPrint('ContentCatalog merge OT bank failed: $e');
+    }
+
+    _bankQuestions = merged;
   }
 
   Future<void> _loadStudiesFromAsset() async {

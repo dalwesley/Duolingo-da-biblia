@@ -11,9 +11,20 @@ export const skipAuth = import.meta.env.VITE_ADMIN_SKIP_AUTH === 'true';
 
 let currentUser = null;
 let anonAttempted = false;
+/** true se o bypass anônimo falhou — libera login por e-mail. */
+let anonFailed = false;
+let anonFailMessage = '';
 
 export function getUser() {
   return currentUser;
+}
+
+export function didAnonFail() {
+  return anonFailed;
+}
+
+export function getAnonFailMessage() {
+  return anonFailMessage;
 }
 
 export function mapAuthError(err) {
@@ -26,7 +37,8 @@ export function mapAuthError(err) {
     'auth/user-disabled': 'Conta desativada.',
     'auth/too-many-requests': 'Muitas tentativas. Aguarde alguns minutos.',
     'auth/network-request-failed': 'Sem conexão. Verifique a internet.',
-    'auth/operation-not-allowed': 'Auth anônimo/e-mail não habilitado no Firebase.',
+    'auth/operation-not-allowed':
+      'Método de login desabilitado no Firebase Console (Anonymous ou E-mail/senha).',
   };
   return map[code] || err?.message || 'Não foi possível entrar.';
 }
@@ -40,8 +52,10 @@ export function watchAuth(onChange) {
         await signInAnonymously(auth);
         return;
       } catch (err) {
+        anonFailed = true;
+        anonFailMessage = mapAuthError(err);
         if (import.meta.env.DEV) {
-          console.warn('Auth anônimo falhou:', err);
+          console.warn('Auth anônimo falhou — use e-mail/senha:', err);
         }
         onChange(null);
         return;

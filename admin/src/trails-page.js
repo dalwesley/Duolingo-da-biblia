@@ -7,36 +7,90 @@ import {
   removeDoc,
   saveDoc,
 } from './db.js';
-import { confirmAction, escapeHtml, setLoading, showToast } from './ui.js';
+import {
+  bindModalDismiss,
+  confirmAction,
+  escapeHtml,
+  setLoading,
+  showModalElement,
+  showToast,
+} from './ui.js';
 
 const REALMS = [
-  { value: 'antigo-testamento', label: 'Antigo Testamento' },
-  { value: 'novo-testamento', label: 'Novo Testamento' },
-  { value: 'vida-crista', label: 'Vida Cristã' },
-  { value: 'teologia', label: 'Teologia' },
+  { value: 'antigo-testamento', label: 'Antigo Testamento', icon: '📜' },
+  { value: 'novo-testamento', label: 'Novo Testamento', icon: '✝️' },
+  { value: 'vida-crista', label: 'Vida Cristã', icon: '🌱' },
+  { value: 'teologia', label: 'Teologia', icon: '📖' },
 ];
 
 const CATEGORIES = [
-  'pentateuco', 'historicos-at', 'poeticos', 'profetas-maiores', 'profetas-menores',
-  'intertestamentario',
-  'evangelhos', 'historicos-nt', 'epistolas', 'apocalipse',
-  'discipulado', 'oracao', 'historia-igreja',
-  'hermeneutica', 'linguas', 'sistematica', 'cristologia',
+  { value: 'pentateuco', label: 'Pentateuco', realm: 'antigo-testamento' },
+  { value: 'historicos-at', label: 'Históricos (AT)', realm: 'antigo-testamento' },
+  { value: 'poeticos', label: 'Poéticos', realm: 'antigo-testamento' },
+  { value: 'profetas-maiores', label: 'Profetas maiores', realm: 'antigo-testamento' },
+  { value: 'profetas-menores', label: 'Profetas menores', realm: 'antigo-testamento' },
+  { value: 'intertestamentario', label: 'Intertestamentário', realm: 'antigo-testamento' },
+  { value: 'evangelhos', label: 'Evangelhos', realm: 'novo-testamento' },
+  { value: 'historicos-nt', label: 'Históricos (NT)', realm: 'novo-testamento' },
+  { value: 'epistolas', label: 'Epístolas', realm: 'novo-testamento' },
+  { value: 'apocalipse', label: 'Apocalipse', realm: 'novo-testamento' },
+  { value: 'discipulado', label: 'Discipulado', realm: 'vida-crista' },
+  { value: 'oracao', label: 'Oração', realm: 'vida-crista' },
+  { value: 'historia-igreja', label: 'História da Igreja', realm: 'vida-crista' },
+  { value: 'hermeneutica', label: 'Hermenêutica', realm: 'teologia' },
+  { value: 'linguas', label: 'Línguas', realm: 'teologia' },
+  { value: 'sistematica', label: 'Teologia sistemática', realm: 'teologia' },
+  { value: 'cristologia', label: 'Cristologia', realm: 'teologia' },
 ];
 
-function emptyMission() {
+function categoryLabel(value) {
+  return CATEGORIES.find((c) => c.value === value)?.label || value || '—';
+}
+
+function categoriesForRealm(realm) {
+  return CATEGORIES.filter((c) => c.realm === realm);
+}
+
+function defaultCategory(realm) {
+  return categoriesForRealm(realm)[0]?.value || 'pentateuco';
+}
+
+function slugify(text) {
+  return String(text || '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .slice(0, 48);
+}
+
+function stepCount(trail) {
+  return (trail.modules || []).reduce((n, m) => n + (m.missions?.length || 0), 0);
+}
+
+function emptyStudy() {
   return {
-    slug: '',
-    title: '',
+    passageRef: '',
+    passageText: '',
+    context: '',
+    keyword: '',
+    keywordGloss: '',
+    focusQuestion: '',
+    reflectionPrompts: [],
+  };
+}
+
+function emptyStep(n = 1, title = '') {
+  return {
+    slug: `passo-${n}`,
+    title: title || `Passo ${n}`,
+    subtitle: '',
     intro: '',
     type: 'lesson',
     xpReward: 50,
     questions: [],
   };
-}
-
-function emptyModule() {
-  return { title: '', icon: '📘', missions: [] };
 }
 
 function emptyQuestion() {
@@ -55,341 +109,609 @@ function emptyQuestion() {
   };
 }
 
-export async function renderTrailsList(root, navigate) {
-  root.innerHTML = `<div class="page-header"><h1>Trilhas</h1></div><div class="card"><p>Carregando…</p></div>`;
-  const trails = await listCollection(COL.trails);
+function field(label, control, hint = '') {
+  return `<label class="ez-field"><span class="ez-label">${label}</span>${control}${
+    hint ? `<span class="ez-hint">${hint}</span>` : ''
+  }</label>`;
+}
 
-  root.innerHTML = `
-    <div class="page-header row-between">
-      <div>
-        <h1>Trilhas</h1>
-        <p class="page-sub">Trilha → subtrilhas (módulos) → missões → perguntas embutidas</p>
-      </div>
-      <button type="button" class="btn btn-primary" id="btn-new-trail">+ Nova trilha</button>
-    </div>
-    <div class="card">
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Ordem</th>
-              <th>Trilha</th>
-              <th>Reino</th>
-              <th>Módulos</th>
-              <th>Missões</th>
-              <th>Status</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            ${trails.length === 0
-              ? '<tr><td colspan="7">Nenhuma trilha no Firebase. Use <strong>Importar JSON</strong>.</td></tr>'
-              : trails.map((t) => {
-                  const mods = t.modules || [];
-                  const missions = mods.reduce((n, m) => n + (m.missions?.length || 0), 0);
-                  return `<tr>
-                    <td>${t.order ?? 0}</td>
-                    <td><strong>${escapeHtml(t.icon || '')} ${escapeHtml(t.title || t.id)}</strong><div class="muted">${escapeHtml(t.slug || t.id)}</div></td>
-                    <td>${escapeHtml(realmLabel(t.realm))}</td>
-                    <td>${mods.length}</td>
-                    <td>${missions}</td>
-                    <td>${t.comingSoon ? '<span class="badge badge-warn">Em breve</span>' : '<span class="badge badge-success">Ativa</span>'}</td>
-                    <td class="td-actions">
-                      <button type="button" class="btn btn-sm btn-secondary" data-edit="${escapeHtml(t.id)}">Editar</button>
-                      <button type="button" class="btn btn-sm btn-danger" data-del="${escapeHtml(t.id)}">Excluir</button>
-                    </td>
-                  </tr>`;
-                }).join('')}
-          </tbody>
-        </table>
-      </div>
-    </div>`;
+function pad(n) {
+  return String(n).padStart(2, '0');
+}
 
-  root.querySelector('#btn-new-trail')?.addEventListener('click', async () => {
-    const slug = prompt('Slug da trilha (ex.: genesis-1-11):');
-    if (!slug) return;
-    const clean = slug.trim().toLowerCase().replace(/[^a-z0-9-]/g, '-');
-    await saveDoc(COL.trails, clean, {
-      slug: clean,
-      title: 'Nova trilha',
-      description: '',
-      icon: '📖',
-      order: trails.length + 1,
-      unlockAfter: null,
-      comingSoon: true,
-      color: '#2F5D4A',
-      realm: 'antigo-testamento',
-      category: 'pentateuco',
-      modules: [],
-      isActive: true,
+function ensureStructure(draft, studyMap = {}) {
+  if (!draft.modules?.length) {
+    draft.modules = [{ title: draft.title || 'Jornada', icon: '📘', missions: [emptyStep(1)] }];
+  }
+  for (const mod of draft.modules) {
+    if (!mod.missions?.length) mod.missions = [emptyStep(1)];
+    for (const ms of mod.missions) {
+      if (!ms._study) {
+        const remote = studyMap[ms.slug];
+        ms._study = remote
+          ? {
+              passageRef: remote.passageRef || '',
+              passageText: remote.passageText || '',
+              context: remote.context || '',
+              keyword: remote.keyword || '',
+              keywordGloss: remote.keywordGloss || '',
+              focusQuestion: remote.focusQuestion || '',
+              reflectionPrompts: remote.reflectionPrompts || [],
+            }
+          : emptyStudy();
+      }
+    }
+  }
+  return draft;
+}
+
+function stripStudies(draft) {
+  return {
+    ...draft,
+    modules: (draft.modules || []).map((mod) => ({
+      ...mod,
+      missions: (mod.missions || []).map(({ _study, ...ms }) => ms),
+    })),
+  };
+}
+
+function studyHasContent(study) {
+  if (!study) return false;
+  return Boolean(
+    study.passageRef?.trim()
+      || study.passageText?.trim()
+      || study.context?.trim()
+      || study.keyword?.trim()
+      || study.keywordGloss?.trim()
+      || study.focusQuestion?.trim(),
+  );
+}
+
+function flatSteps(draft) {
+  const out = [];
+  (draft.modules || []).forEach((mod, mi) => {
+    (mod.missions || []).forEach((ms, qi) => {
+      out.push({ mi, qi, ms, mod });
     });
-    showToast('Trilha criada');
-    navigate(`trail:${clean}`);
   });
+  return out;
+}
 
-  root.querySelectorAll('[data-edit]').forEach((btn) => {
-    btn.addEventListener('click', () => navigate(`trail:${btn.dataset.edit}`));
-  });
+/* ─── Lista ─────────────────────────────────────────────── */
 
-  root.querySelectorAll('[data-del]').forEach((btn) => {
-    btn.addEventListener('click', async () => {
-      const ok = await confirmAction(`Excluir trilha “${btn.dataset.del}”?`);
-      if (!ok) return;
+export async function renderTrailsList(root, navigate) {
+  root.innerHTML = `<div class="ez-page"><div class="ez-skeleton">Carregando…</div></div>`;
+  const trails = await listCollection(COL.trails);
+  let filter = 'all';
+  let queryText = '';
+
+  function filtered() {
+    const q = queryText.trim().toLowerCase();
+    return trails.filter((t) => {
+      if (filter === 'live' && t.comingSoon) return false;
+      if (filter === 'soon' && !t.comingSoon) return false;
+      if (!q) return true;
+      return `${t.title || ''} ${t.slug || ''}`.toLowerCase().includes(q);
+    });
+  }
+
+  function paint() {
+    const items = filtered();
+    const live = trails.filter((t) => !t.comingSoon).length;
+
+    root.innerHTML = `
+      <div class="ez-page">
+        <header class="ez-hero">
+          <div>
+            <h1>Trilhas</h1>
+            <p class="ez-lead">Crie a trilha, escreva os passos, pronto.</p>
+          </div>
+          <button type="button" class="btn btn-primary" id="btn-new-trail">+ Nova trilha</button>
+        </header>
+
+        <div class="ez-toolbar">
+          <input type="search" id="trail-search" class="ez-search" placeholder="Buscar…" value="${escapeHtml(queryText)}" />
+          <div class="ez-pills">
+            <button type="button" class="ez-pill ${filter === 'all' ? 'active' : ''}" data-filter="all">Todas (${trails.length})</button>
+            <button type="button" class="ez-pill ${filter === 'live' ? 'active' : ''}" data-filter="live">No ar (${live})</button>
+            <button type="button" class="ez-pill ${filter === 'soon' ? 'active' : ''}" data-filter="soon">Rascunho (${trails.length - live})</button>
+          </div>
+        </div>
+
+        ${trails.length === 0
+          ? `<div class="ez-empty">
+              <h2>Nenhuma trilha</h2>
+              <p>Comece pelo nome — o resto é passo a passo.</p>
+              <button type="button" class="btn btn-primary" id="btn-empty-new">Criar trilha</button>
+            </div>`
+          : items.length === 0
+            ? `<div class="ez-empty"><p>Nada neste filtro.</p></div>`
+            : `<div class="ez-trail-grid">
+                ${items.map((t) => `
+                  <article class="ez-trail-card" data-open="${escapeHtml(t.id)}">
+                    <div class="ez-trail-top">
+                      <span class="ez-trail-icon">${escapeHtml(t.icon || '📖')}</span>
+                      <span class="ez-status ${t.comingSoon ? 'soon' : 'live'}">${t.comingSoon ? 'Rascunho' : 'No ar'}</span>
+                    </div>
+                    <h2>${escapeHtml(t.title || t.id)}</h2>
+                    <div class="ez-meta">
+                      <span>${escapeHtml(realmLabel(t.realm))}</span>
+                      <span>${stepCount(t)} passos</span>
+                    </div>
+                    <div class="ez-card-actions" onclick="event.stopPropagation()">
+                      <button type="button" class="btn btn-primary btn-sm" data-edit="${escapeHtml(t.id)}">Editar</button>
+                      <button type="button" class="btn btn-ghost btn-sm" data-del="${escapeHtml(t.id)}">Excluir</button>
+                    </div>
+                  </article>`).join('')}
+              </div>`}
+      </div>`;
+
+    root.querySelector('#trail-search')?.addEventListener('input', (e) => {
+      queryText = e.target.value;
+      paint();
+      const input = root.querySelector('#trail-search');
+      input?.focus();
+      input?.setSelectionRange(input.value.length, input.value.length);
+    });
+    root.querySelectorAll('[data-filter]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filter = btn.dataset.filter;
+        paint();
+      });
+    });
+    const openCreate = () => openCreateSimple(trails, navigate);
+    root.querySelector('#btn-new-trail')?.addEventListener('click', openCreate);
+    root.querySelector('#btn-empty-new')?.addEventListener('click', openCreate);
+    root.querySelectorAll('[data-open], [data-edit]').forEach((el) => {
+      el.addEventListener('click', () => navigate(`trail:${el.dataset.open || el.dataset.edit}`));
+    });
+    root.querySelectorAll('[data-del]').forEach((btn) => {
+      btn.addEventListener('click', async (e) => {
+        e.stopPropagation();
+        if (!(await confirmAction(`Excluir “${btn.dataset.del}”?`))) return;
+        setLoading(true);
+        try {
+          await removeDoc(COL.trails, btn.dataset.del);
+          showToast('Removida');
+          await renderTrailsList(root, navigate);
+        } catch (err) {
+          showToast(err.message || 'Erro', 'error');
+        } finally {
+          setLoading(false);
+        }
+      });
+    });
+  }
+
+  paint();
+}
+
+/* ─── Criar: só o nome ──────────────────────────────────── */
+
+function openCreateSimple(trails, navigate) {
+  const modal = document.getElementById('modal');
+  if (!modal) return;
+  let realm = 'antigo-testamento';
+
+  function paint() {
+    modal.innerHTML = `
+      <div class="modal-backdrop">
+        <div class="modal-card card ez-modal" role="dialog" aria-modal="true">
+          <button type="button" class="modal-close" aria-label="Fechar">×</button>
+          <h2>Nova trilha</h2>
+          <p class="ez-lead" style="margin-top:0">Só o nome. Depois você escreve os passos.</p>
+          <form id="create-trail-form" class="ez-form">
+            ${field('Nome', '<input name="title" required placeholder="Ex.: Gênesis 1–11" autofocus />')}
+            <p class="ez-label" style="margin-bottom:0.5rem">Onde fica</p>
+            <div class="simple-realm-row">
+              ${REALMS.map((r) => `
+                <button type="button" class="simple-realm ${realm === r.value ? 'active' : ''}" data-realm="${r.value}">
+                  ${r.icon} ${escapeHtml(r.label)}
+                </button>`).join('')}
+            </div>
+            <div class="btn-row" style="margin-top:var(--space-5)">
+              <button type="button" class="btn btn-secondary" id="cancel">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Criar</button>
+            </div>
+          </form>
+        </div>
+      </div>`;
+
+    showModalElement(modal);
+    const close = bindModalDismiss(modal);
+    modal.querySelector('#cancel')?.addEventListener('click', close);
+    modal.querySelectorAll('[data-realm]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        realm = btn.dataset.realm;
+        paint();
+      });
+    });
+    modal.querySelector('#create-trail-form')?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const title = String(new FormData(e.target).get('title') || '').trim();
+      if (!title) return;
+      let clean = slugify(title) || `trilha-${Date.now()}`;
+      if (trails.some((t) => t.id === clean || t.slug === clean)) {
+        clean = `${clean}-${trails.length + 1}`;
+      }
       setLoading(true);
       try {
-        await removeDoc(COL.trails, btn.dataset.del);
-        showToast('Trilha removida');
-        await renderTrailsList(root, navigate);
-      } catch (e) {
-        showToast(e.message || 'Erro ao excluir', 'error');
+        await saveDoc(COL.trails, clean, {
+          slug: clean,
+          title,
+          description: '',
+          icon: '📖',
+          order: trails.length + 1,
+          unlockAfter: null,
+          comingSoon: true,
+          color: '#2F5D4A',
+          realm,
+          category: defaultCategory(realm),
+          modules: [
+            {
+              title,
+              icon: '📘',
+              missions: [emptyStep(1, 'Primeiro passo')],
+            },
+          ],
+          isActive: true,
+        });
+        close();
+        showToast('Pronta — escreva o primeiro passo');
+        navigate(`trail:${clean}`);
+      } catch (err) {
+        showToast(err.message || 'Erro', 'error');
       } finally {
         setLoading(false);
       }
     });
-  });
+  }
+
+  paint();
 }
 
+/* ─── Editor simples: trilha + passos ───────────────────── */
+
 export async function renderTrailEditor(root, trailId, navigate) {
-  root.innerHTML = `<div class="page-header"><h1>Editando…</h1></div><div class="card"><p>Carregando…</p></div>`;
-  const trails = await listCollection(COL.trails);
+  root.innerHTML = `<div class="ez-page"><div class="ez-skeleton">Abrindo…</div></div>`;
+  const [trails, studies] = await Promise.all([
+    listCollection(COL.trails),
+    listCollection(COL.studies),
+  ]);
   const trail = trails.find((t) => t.id === trailId);
   if (!trail) {
-    root.innerHTML = `<div class="card"><p>Trilha não encontrada.</p><button class="btn" data-route="trails">Voltar</button></div>`;
+    root.innerHTML = `<div class="ez-page"><div class="ez-empty"><h2>Não encontrada</h2><button class="btn btn-primary" data-route="trails">Voltar</button></div></div>`;
+    root.querySelector('[data-route]')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigate('trails');
+    });
     return;
   }
 
-  let draft = structuredClone({
-    ...trail,
-    modules: trail.modules || [],
-  });
+  const studyMap = Object.fromEntries(studies.map((s) => [s.id, s]));
+  let draft = ensureStructure(
+    structuredClone({ ...trail, modules: trail.modules || [] }),
+    studyMap,
+  );
+  let focus = { mi: 0, qi: 0 };
+  let showMore = false;
+  let dirty = false;
+
+  function markDirty() {
+    dirty = true;
+    root.querySelectorAll('[data-save]').forEach((b) => {
+      b.classList.add('needs-save');
+      b.textContent = 'Salvar';
+    });
+  }
+
+  function current() {
+    return draft.modules[focus.mi]?.missions?.[focus.qi] || null;
+  }
+
+  function stepIndex() {
+    const steps = flatSteps(draft);
+    const i = steps.findIndex((s) => s.mi === focus.mi && s.qi === focus.qi);
+    return i >= 0 ? i + 1 : 1;
+  }
 
   function render() {
+    const steps = flatSteps(draft);
+    const ms = current();
+    const idx = stepIndex();
+    const study = ms?._study || emptyStudy();
+
     root.innerHTML = `
-      <div class="page-header row-between">
-        <div>
-          <nav class="breadcrumb"><a href="#" data-route="trails">Trilhas</a> / <span>${escapeHtml(draft.title)}</span></nav>
-          <h1>${escapeHtml(draft.icon || '')} ${escapeHtml(draft.title)}</h1>
-          <p class="page-sub">Subtrilhas, missões e perguntas embutidas</p>
-        </div>
-        <div class="btn-row">
-          <button type="button" class="btn btn-secondary" data-route="trails">Voltar</button>
-          <button type="button" class="btn btn-primary" id="btn-save-trail">Salvar</button>
-        </div>
-      </div>
+      <div class="ez-page simple-editor">
+        <header class="simple-top">
+          <button type="button" class="btn btn-ghost btn-sm" data-back>← Trilhas</button>
+          <div class="simple-top-title">
+            <strong>${escapeHtml(draft.title || trailId)}</strong>
+            <span>${draft.comingSoon ? 'Rascunho' : 'No ar'} · ${steps.length} passos</span>
+          </div>
+          <button type="button" class="btn btn-primary" data-save>${dirty ? 'Salvar' : 'Salvo'}</button>
+        </header>
 
-      <div class="card" style="margin-bottom:var(--space-5)">
-        <h2>Dados da trilha</h2>
-        <div class="form-grid">
-          <label>Slug<input id="f-slug" value="${escapeHtml(draft.slug || '')}" disabled /></label>
-          <label>Título<input id="f-title" value="${escapeHtml(draft.title || '')}" /></label>
-          <label>Ícone<input id="f-icon" value="${escapeHtml(draft.icon || '')}" /></label>
-          <label>Ordem<input id="f-order" type="number" value="${draft.order ?? 0}" /></label>
-          <label>Cor<input id="f-color" type="color" value="${escapeHtml(draft.color || '#2F5D4A')}" /></label>
-          <label>Reino<select id="f-realm">${REALMS.map((r) => `<option value="${r.value}" ${draft.realm === r.value ? 'selected' : ''}>${r.label}</option>`).join('')}</select></label>
-          <label>Categoria<select id="f-category">${CATEGORIES.map((c) => `<option value="${c}" ${draft.category === c ? 'selected' : ''}>${c}</option>`).join('')}</select></label>
-          <label>Desbloqueia após<input id="f-unlock" value="${escapeHtml(draft.unlockAfter || '')}" placeholder="slug da trilha anterior" /></label>
-          <label class="checkbox-label"><input id="f-soon" type="checkbox" ${draft.comingSoon ? 'checked' : ''}/> Em breve</label>
-        </div>
-        <label style="display:block;margin-top:var(--space-3)">Descrição<textarea id="f-desc" rows="2">${escapeHtml(draft.description || '')}</textarea></label>
-      </div>
+        <p class="simple-guide">No app o usuário vê cada <strong>passo</strong> no caminho. Em cada um: um texto curto e as perguntas.</p>
 
-      <div class="card">
-        <div class="row-between" style="margin-bottom:var(--space-4)">
-          <h2 style="margin:0">Subtrilhas (módulos)</h2>
-          <button type="button" class="btn btn-secondary" id="btn-add-mod">+ Subtrilha</button>
+        <div class="simple-steps">
+          ${steps.map((s, i) => `
+            <button type="button" class="simple-step-chip ${s.mi === focus.mi && s.qi === focus.qi ? 'active' : ''}" data-focus="${s.mi}-${s.qi}" title="${escapeHtml(s.ms.title || '')}">
+              ${pad(i + 1)}
+            </button>`).join('')}
+          <button type="button" class="simple-step-chip add" data-add-step>+ Passo</button>
         </div>
-        ${(draft.modules || []).map((mod, mi) => renderModule(mod, mi)).join('') || '<p class="muted">Nenhuma subtrilha ainda.</p>'}
+
+        ${!ms
+          ? `<div class="ez-empty"><p>Sem passos.</p><button type="button" class="btn btn-primary" data-add-step>Criar passo</button></div>`
+          : `
+          <section class="simple-card">
+            <p class="simple-kicker">Passo ${pad(idx)}</p>
+            ${field('Título', `<input id="f-title" value="${escapeHtml(ms.title || '')}" placeholder="Ex.: Quem criou o mundo?" />`)}
+            ${field(
+              'Descritivo',
+              `<textarea id="f-intro" rows="2" placeholder="Uma ou duas frases para contextualizar…">${escapeHtml(ms.intro || '')}</textarea>`,
+            )}
+            ${field(
+              'Versículo base',
+              `<input id="st-ref" value="${escapeHtml(study.passageRef || '')}" placeholder="Ex.: Gênesis 1:1–2" />`,
+            )}
+            ${field(
+              'Texto da passagem',
+              `<textarea id="st-text" rows="2" placeholder="Cole o trecho (prévia)…">${escapeHtml(study.passageText || '')}</textarea>`,
+            )}
+            ${field(
+              'Dica de leitura',
+              `<input id="st-kw" value="${escapeHtml(study.keyword || '')}" placeholder="Ex.: Criar (bara) — o que observar ao ler" />`,
+            )}
+          </section>
+
+          <section class="simple-card">
+            <div class="row-between">
+              <div>
+                <h2>Perguntas</h2>
+                <p class="ez-lead" style="margin:0">Enunciado + 4 opções. Marque a certa.</p>
+              </div>
+              <button type="button" class="btn btn-secondary btn-sm" data-add-q>+ Pergunta</button>
+            </div>
+            ${(ms.questions || []).length === 0
+              ? `<div class="simple-empty-q"><p>Nenhuma ainda.</p><button type="button" class="btn btn-primary btn-sm" data-add-q>Adicionar</button></div>`
+              : (ms.questions || []).map((q, qi2) => renderQ(q, qi2)).join('')}
+          </section>
+
+          <div class="simple-actions">
+            <button type="button" class="btn btn-secondary" data-add-step>+ Próximo passo</button>
+            <button type="button" class="btn btn-primary" data-save>Salvar</button>
+          </div>`}
+
+        <details class="simple-more" ${showMore ? 'open' : ''}>
+          <summary>Mais opções</summary>
+          <div class="simple-more-body">
+            ${field('Nome da trilha', `<input id="t-title" value="${escapeHtml(draft.title || '')}" />`)}
+            ${field('Descrição', `<textarea id="t-desc" rows="2">${escapeHtml(draft.description || '')}</textarea>`)}
+            <div class="ez-form-grid">
+              ${field('Ícone', `<input id="t-icon" value="${escapeHtml(draft.icon || '')}" maxlength="4" />`)}
+              ${field(
+                'Reino',
+                `<select id="t-realm">${REALMS.map((r) => `<option value="${r.value}" ${draft.realm === r.value ? 'selected' : ''}>${r.label}</option>`).join('')}</select>`,
+              )}
+              ${field(
+                'Categoria',
+                `<select id="t-category">${categoriesForRealm(draft.realm || 'antigo-testamento').map((c) => `<option value="${c.value}" ${draft.category === c.value ? 'selected' : ''}>${escapeHtml(c.label)}</option>`).join('')}</select>`,
+              )}
+            </div>
+            <label class="ez-check">
+              <input id="t-soon" type="checkbox" ${draft.comingSoon ? 'checked' : ''}/>
+              <span>Rascunho (ainda não publicar no app)</span>
+            </label>
+            ${ms ? `<button type="button" class="btn btn-ghost btn-sm btn-danger" data-del-step>Remover este passo</button>` : ''}
+          </div>
+        </details>
       </div>`;
 
-    bindEditor();
+    bind();
   }
 
-  function renderModule(mod, mi) {
-    return `
-      <div class="nested-block" data-mod="${mi}">
-        <div class="row-between">
-          <h3>Subtrilha ${mi + 1}</h3>
-          <button type="button" class="btn btn-sm btn-danger" data-del-mod="${mi}">Remover</button>
-        </div>
-        <div class="form-grid">
-          <label>Título<input data-mod-title="${mi}" value="${escapeHtml(mod.title || '')}" /></label>
-          <label>Ícone<input data-mod-icon="${mi}" value="${escapeHtml(mod.icon || '')}" /></label>
-        </div>
-        <div class="row-between" style="margin:var(--space-3) 0">
-          <strong>Missões</strong>
-          <button type="button" class="btn btn-sm btn-secondary" data-add-mission="${mi}">+ Missão</button>
-        </div>
-        ${(mod.missions || []).map((ms, qi) => renderMission(ms, mi, qi)).join('') || '<p class="muted">Sem missões.</p>'}
-      </div>`;
-  }
-
-  function renderMission(ms, mi, qi) {
-    const qs = ms.questions || [];
-    return `
-      <div class="nested-block nested-block-inner" data-mission="${mi}-${qi}">
-        <div class="row-between">
-          <h4>${escapeHtml(ms.title || 'Missão')} <span class="muted">(${escapeHtml(ms.type || 'lesson')})</span></h4>
-          <button type="button" class="btn btn-sm btn-danger" data-del-mission="${mi}-${qi}">Remover</button>
-        </div>
-        <div class="form-grid">
-          <label>Slug<input data-ms-slug="${mi}-${qi}" value="${escapeHtml(ms.slug || '')}" /></label>
-          <label>Título<input data-ms-title="${mi}-${qi}" value="${escapeHtml(ms.title || '')}" /></label>
-          <label>Tipo<select data-ms-type="${mi}-${qi}">
-            <option value="lesson" ${ms.type === 'lesson' ? 'selected' : ''}>lesson</option>
-            <option value="boss" ${ms.type === 'boss' ? 'selected' : ''}>boss</option>
-          </select></label>
-          <label>XP / passos<input type="number" data-ms-xp="${mi}-${qi}" value="${ms.xpReward ?? ms.stepsReward ?? 50}" /></label>
-        </div>
-        <label>Intro<textarea data-ms-intro="${mi}-${qi}" rows="2">${escapeHtml(ms.intro || '')}</textarea></label>
-        <div class="row-between" style="margin:var(--space-3) 0">
-          <strong>Perguntas embutidas (${qs.length})</strong>
-          <button type="button" class="btn btn-sm btn-secondary" data-add-q="${mi}-${qi}">+ Pergunta</button>
-        </div>
-        ${qs.map((q, qi2) => renderQuestion(q, mi, qi, qi2)).join('')}
-      </div>`;
-  }
-
-  function renderQuestion(q, mi, qi, qi2) {
+  function renderQ(q, qi2) {
     const opts = q.options || [];
     return `
-      <details class="q-details" open>
-        <summary>Pergunta ${qi2 + 1}: ${escapeHtml((q.question || '').slice(0, 60))}</summary>
-        <label>Enunciado<textarea data-q-text="${mi}-${qi}-${qi2}" rows="2">${escapeHtml(q.question || '')}</textarea></label>
-        <label>Versículo<input data-q-verse="${mi}-${qi}-${qi2}" value="${escapeHtml(q.verseRef || '')}" /></label>
-        <label>Feedback correto<textarea data-q-ok="${mi}-${qi}-${qi2}" rows="2">${escapeHtml(q.feedbackCorrect || '')}</textarea></label>
-        <div class="form-grid">
+      <div class="simple-q">
+        <div class="simple-q-head">
+          <strong>Pergunta ${qi2 + 1}</strong>
+          <button type="button" class="btn btn-ghost btn-sm" data-del-q="${qi2}">✕</button>
+        </div>
+        <textarea data-q-text="${qi2}" rows="2" placeholder="Enunciado">${escapeHtml(q.question || '')}</textarea>
+        <div class="simple-opts">
           ${['a', 'b', 'c', 'd'].map((id) => {
             const opt = opts.find((o) => o.id === id) || { id, text: '' };
-            return `<label>Opção ${id.toUpperCase()}<input data-q-opt="${mi}-${qi}-${qi2}-${id}" value="${escapeHtml(opt.text || '')}" /></label>`;
+            const correct = q.correctOptionId === id;
+            return `
+              <label class="simple-opt ${correct ? 'correct' : ''}">
+                <input type="radio" name="correct-${qi2}" value="${id}" ${correct ? 'checked' : ''} data-q-correct="${qi2}" />
+                <span>${id.toUpperCase()}</span>
+                <input type="text" data-q-opt="${qi2}-${id}" value="${escapeHtml(opt.text || '')}" placeholder="Opção ${id.toUpperCase()}" />
+              </label>`;
           }).join('')}
-          <label>Correta<select data-q-correct="${mi}-${qi}-${qi2}">
-            ${['a', 'b', 'c', 'd'].map((id) => `<option value="${id}" ${q.correctOptionId === id ? 'selected' : ''}>${id}</option>`).join('')}
-          </select></label>
         </div>
-        <button type="button" class="btn btn-sm btn-danger" data-del-q="${mi}-${qi}-${qi2}">Remover pergunta</button>
-      </details>`;
+      </div>`;
   }
 
-  function readFormIntoDraft() {
-    draft.title = root.querySelector('#f-title')?.value || draft.title;
-    draft.icon = root.querySelector('#f-icon')?.value || draft.icon;
-    draft.order = Number(root.querySelector('#f-order')?.value || 0);
-    draft.color = root.querySelector('#f-color')?.value || draft.color;
-    draft.realm = root.querySelector('#f-realm')?.value || draft.realm;
-    draft.category = root.querySelector('#f-category')?.value || draft.category;
-    draft.unlockAfter = root.querySelector('#f-unlock')?.value || null;
-    draft.comingSoon = Boolean(root.querySelector('#f-soon')?.checked);
-    draft.description = root.querySelector('#f-desc')?.value || '';
+  function readForm() {
+    if (root.querySelector('#t-title')) {
+      draft.title = root.querySelector('#t-title')?.value || draft.title;
+      draft.description = root.querySelector('#t-desc')?.value || '';
+      draft.icon = root.querySelector('#t-icon')?.value || draft.icon;
+      const nextRealm = root.querySelector('#t-realm')?.value || draft.realm;
+      draft.realm = nextRealm;
+      let cat = root.querySelector('#t-category')?.value || draft.category;
+      if (!categoriesForRealm(nextRealm).some((c) => c.value === cat)) cat = defaultCategory(nextRealm);
+      draft.category = cat;
+      draft.comingSoon = Boolean(root.querySelector('#t-soon')?.checked);
+    }
 
-    draft.modules = (draft.modules || []).map((mod, mi) => {
-      const title = root.querySelector(`[data-mod-title="${mi}"]`)?.value ?? mod.title;
-      const icon = root.querySelector(`[data-mod-icon="${mi}"]`)?.value ?? mod.icon;
-      const missions = (mod.missions || []).map((ms, qi) => {
-        const key = `${mi}-${qi}`;
-        const questions = (ms.questions || []).map((q, qi2) => {
-          const qk = `${mi}-${qi}-${qi2}`;
-          const options = ['a', 'b', 'c', 'd'].map((id) => ({
-            id,
-            text: root.querySelector(`[data-q-opt="${qk}-${id}"]`)?.value || '',
-          }));
-          const correct = root.querySelector(`[data-q-correct="${qk}"]`)?.value || 'a';
-          const feedbackWrong = {};
-          for (const id of ['a', 'b', 'c', 'd']) {
-            if (id !== correct) {
-              feedbackWrong[id] = q.feedbackWrong?.[id] || 'Resposta incorreta. Revise o texto.';
-            }
-          }
-          return {
-            question: root.querySelector(`[data-q-text="${qk}"]`)?.value || '',
-            options,
-            correctOptionId: correct,
-            feedbackCorrect: root.querySelector(`[data-q-ok="${qk}"]`)?.value || '',
-            feedbackWrong,
-            verseRef: root.querySelector(`[data-q-verse="${qk}"]`)?.value || '',
-          };
-        });
-        return {
-          slug: root.querySelector(`[data-ms-slug="${key}"]`)?.value || '',
-          title: root.querySelector(`[data-ms-title="${key}"]`)?.value || '',
-          type: root.querySelector(`[data-ms-type="${key}"]`)?.value || 'lesson',
-          xpReward: Number(root.querySelector(`[data-ms-xp="${key}"]`)?.value || 50),
-          intro: root.querySelector(`[data-ms-intro="${key}"]`)?.value || '',
-          questions,
-        };
-      });
-      return { title, icon, missions };
-    });
-  }
+    const ms = current();
+    if (!ms) return;
 
-  function bindEditor() {
-    root.querySelector('#btn-save-trail')?.addEventListener('click', async () => {
-      readFormIntoDraft();
-      setLoading(true);
-      try {
-        const { id, updatedAt, ...payload } = draft;
-        await saveDoc(COL.trails, trailId, {
-          ...payload,
-          slug: trailId,
-          isActive: true,
-        });
-        showToast('Trilha salva — app atualiza no próximo carregamento');
-      } catch (e) {
-        showToast(e.message || 'Erro ao salvar', 'error');
-      } finally {
-        setLoading(false);
+    if (root.querySelector('#f-title')) {
+      ms.title = root.querySelector('#f-title')?.value || ms.title;
+      ms.intro = root.querySelector('#f-intro')?.value || '';
+      if (!ms.slug || String(ms.slug).startsWith('passo-')) {
+        const s = slugify(ms.title);
+        if (s) ms.slug = s;
       }
+      const prev = ms._study || emptyStudy();
+      ms._study = {
+        ...prev,
+        passageRef: root.querySelector('#st-ref')?.value || '',
+        passageText: root.querySelector('#st-text')?.value || '',
+        keyword: root.querySelector('#st-kw')?.value || '',
+      };
+    }
+
+    if (!root.querySelector('[data-q-text]')) return;
+
+    ms.questions = (ms.questions || []).map((q, qi2) => {
+      if (!root.querySelector(`[data-q-text="${qi2}"]`)) return q;
+      const correct = root.querySelector(`input[data-q-correct="${qi2}"]:checked`)?.value
+        || root.querySelector(`[name="correct-${qi2}"]:checked`)?.value
+        || 'a';
+      const options = ['a', 'b', 'c', 'd'].map((id) => ({
+        id,
+        text: root.querySelector(`[data-q-opt="${qi2}-${id}"]`)?.value || '',
+      }));
+      const feedbackWrong = {};
+      for (const id of ['a', 'b', 'c', 'd']) {
+        if (id !== correct) feedbackWrong[id] = 'Resposta incorreta. Revise o texto.';
+      }
+      return {
+        question: root.querySelector(`[data-q-text="${qi2}"]`)?.value || '',
+        options,
+        correctOptionId: correct,
+        feedbackCorrect: q.feedbackCorrect || 'Muito bem!',
+        feedbackWrong,
+        verseRef: q.verseRef || '',
+      };
+    });
+  }
+
+  async function save() {
+    readForm();
+    showMore = Boolean(root.querySelector('.simple-more')?.open);
+    // Mantém uma cena interna (o app usa); o editor não obriga o usuário a criá-la
+    if (draft.modules?.[0]) {
+      draft.modules[0].title = draft.modules[0].title || draft.title || 'Jornada';
+    }
+    setLoading(true);
+    try {
+      const clean = stripStudies(draft);
+      const { id, updatedAt, ...payload } = clean;
+      await saveDoc(COL.trails, trailId, { ...payload, slug: trailId, isActive: true });
+
+      for (const mod of draft.modules || []) {
+        for (const ms of mod.missions || []) {
+          if (!ms.slug || !studyHasContent(ms._study)) continue;
+          await saveDoc(COL.studies, ms.slug, {
+            slug: ms.slug,
+            passageRef: ms._study.passageRef || '',
+            passageText: ms._study.passageText || '',
+            context: ms._study.context || '',
+            keyword: ms._study.keyword || '',
+            keywordGloss: ms._study.keywordGloss || '',
+            focusQuestion: ms._study.focusQuestion || '',
+            reflectionPrompts: ms._study.reflectionPrompts || [],
+          });
+        }
+      }
+
+      dirty = false;
+      showToast('Salvo');
+      render();
+    } catch (e) {
+      showToast(e.message || 'Erro', 'error');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  function bind() {
+    root.querySelector('[data-back]')?.addEventListener('click', () => navigate('trails'));
+    root.querySelectorAll('[data-save]').forEach((b) => b.addEventListener('click', save));
+
+    root.querySelector('.simple-more')?.addEventListener('toggle', (e) => {
+      showMore = e.target.open;
     });
 
-    root.querySelector('#btn-add-mod')?.addEventListener('click', () => {
-      readFormIntoDraft();
-      draft.modules.push(emptyModule());
+    root.querySelectorAll('[data-focus]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        readForm();
+        showMore = Boolean(root.querySelector('.simple-more')?.open);
+        const [mi, qi] = btn.dataset.focus.split('-').map(Number);
+        focus = { mi, qi };
+        render();
+      });
+    });
+
+    const addStep = () => {
+      readForm();
+      showMore = Boolean(root.querySelector('.simple-more')?.open);
+      if (!draft.modules.length) {
+        draft.modules = [{ title: draft.title || 'Jornada', icon: '📘', missions: [] }];
+      }
+      const mod = draft.modules[0];
+      const n = flatSteps(draft).length + 1;
+      mod.missions.push({ ...emptyStep(n), _study: emptyStudy() });
+      focus = { mi: 0, qi: mod.missions.length - 1 };
+      markDirty();
+      render();
+    };
+    root.querySelectorAll('[data-add-step]').forEach((b) => b.addEventListener('click', addStep));
+
+    root.querySelector('[data-del-step]')?.addEventListener('click', async () => {
+      if (!(await confirmAction('Remover este passo?'))) return;
+      readForm();
+      draft.modules[focus.mi].missions.splice(focus.qi, 1);
+      if (!draft.modules[focus.mi].missions.length) {
+        draft.modules[focus.mi].missions.push({ ...emptyStep(1), _study: emptyStudy() });
+      }
+      focus.qi = Math.min(focus.qi, draft.modules[focus.mi].missions.length - 1);
+      markDirty();
       render();
     });
 
-    root.querySelectorAll('[data-del-mod]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        readFormIntoDraft();
-        draft.modules.splice(Number(btn.dataset.delMod), 1);
+    root.querySelectorAll('[data-add-q]').forEach((b) => {
+      b.addEventListener('click', () => {
+        readForm();
+        showMore = Boolean(root.querySelector('.simple-more')?.open);
+        const ms = current();
+        ms.questions = ms.questions || [];
+        ms.questions.push(emptyQuestion());
+        markDirty();
         render();
       });
     });
 
-    root.querySelectorAll('[data-add-mission]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        readFormIntoDraft();
-        const mi = Number(btn.dataset.addMission);
-        draft.modules[mi].missions = draft.modules[mi].missions || [];
-        draft.modules[mi].missions.push(emptyMission());
+    root.querySelectorAll('[data-del-q]').forEach((b) => {
+      b.addEventListener('click', () => {
+        readForm();
+        showMore = Boolean(root.querySelector('.simple-more')?.open);
+        current().questions.splice(Number(b.dataset.delQ), 1);
+        markDirty();
         render();
       });
     });
 
-    root.querySelectorAll('[data-del-mission]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        readFormIntoDraft();
-        const [mi, qi] = btn.dataset.delMission.split('-').map(Number);
-        draft.modules[mi].missions.splice(qi, 1);
-        render();
-      });
-    });
-
-    root.querySelectorAll('[data-add-q]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        readFormIntoDraft();
-        const [mi, qi] = btn.dataset.addQ.split('-').map(Number);
-        draft.modules[mi].missions[qi].questions =
-          draft.modules[mi].missions[qi].questions || [];
-        draft.modules[mi].missions[qi].questions.push(emptyQuestion());
-        render();
-      });
-    });
-
-    root.querySelectorAll('[data-del-q]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        readFormIntoDraft();
-        const [mi, qi, qi2] = btn.dataset.delQ.split('-').map(Number);
-        draft.modules[mi].missions[qi].questions.splice(qi2, 1);
-        render();
+    root.querySelectorAll(
+      '#f-title, #f-intro, #st-ref, #st-text, #st-kw, #t-title, #t-desc, #t-icon, #t-realm, #t-category, #t-soon, textarea[data-q-text], input[data-q-opt], input[data-q-correct], input[type="radio"]',
+    ).forEach((el) => {
+      el.addEventListener('input', markDirty);
+      el.addEventListener('change', () => {
+        if (el.id === 't-realm') {
+          readForm();
+          showMore = true;
+          render();
+          return;
+        }
+        markDirty();
       });
     });
   }
@@ -397,4 +719,4 @@ export async function renderTrailEditor(root, trailId, navigate) {
   render();
 }
 
-export { batchSet, bumpCatalogVersion };
+export { batchSet, bumpCatalogVersion, categoryLabel };

@@ -5,6 +5,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
 /// Diário leve — últimas reflexões guardadas nas missões.
 class ReflectionJournalCard extends StatelessWidget {
@@ -20,15 +21,7 @@ class ReflectionJournalCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          'SEU DIÁRIO',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 1.4,
-            color: AppColors.accent.withValues(alpha: 0.9),
-          ),
-        ),
+        const SectionLabel('Seu diário'),
         const SizedBox(height: 10),
         ...items.map((e) {
           final study = MissionStudy.forSlug(e.key);
@@ -36,7 +29,7 @@ class ReflectionJournalCard extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.only(bottom: 10),
             child: GlassCard(
-              padding: const EdgeInsets.all(14),
+              padding: AppMetrics.cardPadding,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

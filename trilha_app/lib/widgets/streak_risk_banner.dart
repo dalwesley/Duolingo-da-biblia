@@ -1,0 +1,129 @@
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../services/progress_service.dart';
+import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'immersive_background.dart';
+import 'ui_primitives.dart';
+
+/// Banner de risco — sequência em perigo até a meia-noite.
+class StreakRiskBanner extends StatefulWidget {
+  final VoidCallback? onContinue;
+
+  const StreakRiskBanner({super.key, this.onContinue});
+
+  @override
+  State<StreakRiskBanner> createState() => _StreakRiskBannerState();
+}
+
+class _StreakRiskBannerState extends State<StreakRiskBanner> {
+  Timer? _tick;
+
+  @override
+  void initState() {
+    super.initState();
+    _tick = Timer.periodic(const Duration(minutes: 1), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _tick?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    if (!progress.showStreakRiskBanner) return const SizedBox.shrink();
+
+    final a = Appearance.of(context);
+    final streak = progress.streak;
+    final countdown = progress.streakRiskCountdown;
+    final freeze = progress.hasStreakFreeze;
+
+    return GlassCard(
+      onTap: widget.onContinue,
+      padding: AppMetrics.cardPadding,
+      elevated: true,
+      child: Row(
+        children: [
+          Container(
+            width: 44,
+            height: 44,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.streak.withValues(alpha: 0.18),
+              border: Border.all(
+                color: AppColors.streak.withValues(alpha: 0.45),
+              ),
+            ),
+            child: const Icon(
+              Icons.local_fire_department_rounded,
+              color: AppColors.streak,
+              size: 24,
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Sequência em risco',
+                  style: AppTypography.body(
+                    size: 14,
+                    weight: FontWeight.w900,
+                    color: a.text,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  freeze
+                      ? '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown. Um passo salva — ou o gelo cobre 1 falta.'
+                      : '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown para não zerar.',
+                  style: TextStyle(
+                    fontSize: 12,
+                    height: 1.35,
+                    fontWeight: FontWeight.w600,
+                    color: a.textMuted(0.7),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          Icon(
+            Icons.arrow_forward_rounded,
+            color: AppColors.streak.withValues(alpha: 0.9),
+            size: 22,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Chip do congelamento semanal.
+class StreakFreezeChip extends StatelessWidget {
+  const StreakFreezeChip({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final used = progress.streakFreezeUsedThisWeek;
+
+    // Sem streak ainda: não polui a home.
+    if (progress.streak <= 0 && !used) return const SizedBox.shrink();
+
+    return SoftBadge(
+      text: used ? 'Gelo salvou 1 dia' : 'Gelo pronto',
+      icon: Icons.ac_unit_rounded,
+      accent: used ? AppColors.teal : const Color(0xFF7EC8E3),
+      bordered: true,
+    );
+  }
+}

@@ -56,6 +56,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
   static const _keyTrailDifficulty = 'trailDifficultyMap';
+  static const _keyClearedTrailModes = 'clearedTrailModes';
   static const _keyUsedQuestions = 'usedQuestionIds';
   static const _keyMistakeIds = 'mistakeQuestionIds';
   static const _keyPlayDates = 'playDates';
@@ -93,11 +94,15 @@ class ProgressService extends ChangeNotifier {
   String userName = 'Peregrino';
   AppSettings settings = const AppSettings();
   Map<String, String> trailDifficulties = {};
+  /// Modos (dificuldades) em que a trilha já foi concluída por completo.
+  Map<String, List<String>> clearedTrailModes = {};
   List<String> usedQuestionIds = [];
   List<String> mistakeQuestionIds = [];
   List<String> playDates = [];
   bool streakFreezeAvailable = true;
   String? streakFreezeWeek;
+  /// Dias cobertos pelo congelamento (aparecem com gelo na semana).
+  List<String> frozenDates = [];
   String? questDay;
   Map<String, int> questProgressMap = {};
   List<String> questClaimed = [];
@@ -141,6 +146,16 @@ class ProgressService extends ChangeNotifier {
 
   String _yesterdayKey() {
     final d = DateTime.now().subtract(const Duration(days: 1));
+    return d.toIso8601String().substring(0, 10);
+  }
+
+  String _dayAfterKey(String yyyyMmDd) {
+    final parts = yyyyMmDd.split('-');
+    final d = DateTime(
+      int.parse(parts[0]),
+      int.parse(parts[1]),
+      int.parse(parts[2]),
+    ).add(const Duration(days: 1));
     return d.toIso8601String().substring(0, 10);
   }
 
@@ -198,6 +213,20 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(diffRaw) as Map<String, dynamic>;
         diffs = decoded.map((k, v) => MapEntry(k, v.toString()));
+      } catch (_) {}
+    }
+
+    Map<String, List<String>> clearedModes = {};
+    final clearedRaw = prefs.getString(_keyClearedTrailModes);
+    if (clearedRaw != null && clearedRaw.isNotEmpty) {
+      try {
+        final decoded = jsonDecode(clearedRaw) as Map<String, dynamic>;
+        clearedModes = decoded.map(
+          (k, v) => MapEntry(
+            k,
+            [for (final e in (v as List? ?? const [])) e.toString()],
+          ),
+        );
       } catch (_) {}
     }
 
@@ -278,6 +307,7 @@ class ProgressService extends ChangeNotifier {
           prefs.getStringList(_keyMistakeIds) ?? const <String>[],
       'playDates': prefs.getStringList(_keyPlayDates) ?? const <String>[],
       'trailDifficulties': diffs,
+      'clearedTrailModes': clearedModes,
       'missionReflections': reflections,
       'settings': {
         'sound': prefs.getBool(_keySound) ?? true,
@@ -308,6 +338,7 @@ class ProgressService extends ChangeNotifier {
       _keyAppearanceMode,
       _keyBibleTranslation,
       _keyTrailDifficulty,
+      _keyClearedTrailModes,
       _keyUsedQuestions,
       _keyMistakeIds,
       _keyPlayDates,
@@ -347,9 +378,11 @@ class ProgressService extends ChangeNotifier {
     userName = 'Peregrino';
     settings = const AppSettings();
     trailDifficulties = {};
+    clearedTrailModes = {};
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     playDates = [];
+    frozenDates = [];
     streakFreezeAvailable = true;
     streakFreezeWeek = null;
     questDay = null;
@@ -401,6 +434,18 @@ class ProgressService extends ChangeNotifier {
       weeklyProgressMap = {};
       weeklyClaimed = [];
       weeklySteps = 0;
+    }
+    _ensureStreakFreezeWeek();
+  }
+
+  /// 1 congelamento por semana civil (estilo Duolingo).
+  void _ensureStreakFreezeWeek() {
+    final week = _weekMondayKey();
+    if (streakFreezeAvailable) return;
+    // Sem registro de consumo, ou consumo de outra semana → concede de novo.
+    // Evita “Gelo usado” preso quando streakFreezeWeek veio null da nuvem.
+    if (streakFreezeWeek == null || streakFreezeWeek != week) {
+      streakFreezeAvailable = true;
     }
   }
 
@@ -531,13 +576,22 @@ class ProgressService extends ChangeNotifier {
     final today = _todayKey();
     if (lastPlayedDate == today) return;
 
+    _ensureStreakFreezeWeek();
+
     if (lastPlayedDate == _yesterdayKey()) {
       streak = streak + 1;
     } else if (lastPlayedDate != null && streakFreezeAvailable) {
-      // Perdeu 1 dia — protege com congelamento (estilo streak freeze).
+      // Perdeu 1 dia — protege com congelamento.
       streakFreezeAvailable = false;
       streakFreezeWeek = _weekMondayKey();
-      // streak permanece
+      final gap = _dayAfterKey(lastPlayedDate!);
+      if (gap != today && !frozenDates.contains(gap)) {
+        frozenDates = [...frozenDates, gap];
+        if (frozenDates.length > 30) {
+          frozenDates = frozenDates.sublist(frozenDates.length - 30);
+        }
+      }
+      streak = streak + 1; // continua a sequência após o dia protegido
     } else {
       streak = 1;
     }
@@ -546,13 +600,20 @@ class ProgressService extends ChangeNotifier {
     missionsToday = 0;
     if (!playDates.contains(today)) {
       playDates = [...playDates, today];
-      if (playDates.length > 60) playDates = playDates.sublist(playDates.length - 60);
+      if (playDates.length > 60) {
+        playDates = playDates.sublist(playDates.length - 60);
+      }
     }
   }
 
   bool playedOnDate(DateTime date) {
     final key = date.toIso8601String().substring(0, 10);
     return playDates.contains(key) || lastPlayedDate == key;
+  }
+
+  bool wasFrozenOnDate(DateTime date) {
+    final key = date.toIso8601String().substring(0, 10);
+    return frozenDates.contains(key);
   }
 
   /// De fato caminhou neste dia civil (não usa missionsToday residual de ontem).
@@ -566,11 +627,54 @@ class ProgressService extends ChangeNotifier {
     return walkedToday && missionsToday >= settings.dailyGoal;
   }
 
+  /// Sequência viva, mas ainda sem passo hoje — risco de quebrar à meia-noite.
+  bool get isStreakAtRisk {
+    if (streak <= 0) return false;
+    if (walkedToday) return false;
+    return lastPlayedDate == _yesterdayKey();
+  }
+
+  /// Banner de urgência (a partir das 17h).
+  bool get showStreakRiskBanner {
+    if (!isStreakAtRisk) return false;
+    return DateTime.now().hour >= 17;
+  }
+
+  /// Tempo restante até a sequência quebrar (meia-noite local).
+  Duration get timeUntilStreakBreak {
+    final now = DateTime.now();
+    final midnight = DateTime(now.year, now.month, now.day + 1);
+    return midnight.difference(now);
+  }
+
+  String get streakRiskCountdown {
+    final d = timeUntilStreakBreak;
+    if (d.isNegative) return '0min';
+    final h = d.inHours;
+    final m = d.inMinutes.remainder(60);
+    if (h <= 0) return '${m}min';
+    return '${h}h ${m.toString().padLeft(2, '0')}min';
+  }
+
+  /// Congelamento disponível nesta semana.
+  bool get hasStreakFreeze {
+    _ensureStreakFreezeWeek();
+    return streakFreezeAvailable;
+  }
+
+  /// Só é “usado” se consumiu de fato nesta semana (protegeu 1 falta).
+  bool get streakFreezeUsedThisWeek {
+    _ensureStreakFreezeWeek();
+    return !streakFreezeAvailable && streakFreezeWeek == _weekMondayKey();
+  }
+
   /// Ausente por mais de um dia (a graça não funciona como streak).
   bool get isReturningAfterGap {
     if (lastPlayedDate == null) return false;
     final today = _todayKey();
-    if (lastPlayedDate == today || lastPlayedDate == _yesterdayKey()) return false;
+    if (lastPlayedDate == today || lastPlayedDate == _yesterdayKey()) {
+      return false;
+    }
     return true;
   }
 
@@ -580,6 +684,23 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> setTrailDifficulty(String trailSlug, String difficultyId) async {
     trailDifficulties = {...trailDifficulties, trailSlug: difficultyId};
+    await _save();
+    notifyListeners();
+  }
+
+  List<String> clearedModesFor(String trailSlug) =>
+      List<String>.from(clearedTrailModes[trailSlug] ?? const []);
+
+  bool hasClearedMode(String trailSlug, String difficultyId) =>
+      clearedModesFor(trailSlug).contains(difficultyId);
+
+  Future<void> markTrailModeCleared(String trailSlug, String difficultyId) async {
+    final current = clearedModesFor(trailSlug);
+    if (current.contains(difficultyId)) return;
+    clearedTrailModes = {
+      ...clearedTrailModes,
+      trailSlug: [...current, difficultyId],
+    };
     await _save();
     notifyListeners();
   }
@@ -652,6 +773,11 @@ class ProgressService extends ChangeNotifier {
     if (q == null) return;
     final next = (questProgressMap[id] ?? 0) + by;
     questProgressMap = {...questProgressMap, id: next.clamp(0, q.target)};
+    // Recompensa automática ao atingir a meta — sem “coletar”.
+    if ((questProgressMap[id] ?? 0) >= q.target && !isQuestClaimed(id)) {
+      questClaimed = [...questClaimed, id];
+      _gainSteps(q.stepsReward);
+    }
     await _save();
     notifyListeners();
   }
@@ -666,6 +792,10 @@ class ProgressService extends ChangeNotifier {
     final current = weeklyProgressMap[id] ?? 0;
     final next = absolute ?? (current + by);
     weeklyProgressMap = {...weeklyProgressMap, id: next.clamp(0, q.target)};
+    if ((weeklyProgressMap[id] ?? 0) >= q.target && !isWeeklyQuestClaimed(id)) {
+      weeklyClaimed = [...weeklyClaimed, id];
+      _gainSteps(q.stepsReward);
+    }
     await _save();
     notifyListeners();
   }
@@ -683,6 +813,28 @@ class ProgressService extends ChangeNotifier {
     _gainSteps(q.stepsReward);
     await _save();
     notifyListeners();
+  }
+
+  /// Concede passos de missões já concluídas sem claim manual.
+  Future<void> _autoClaimCompletedQuests() async {
+    _ensureQuestDay();
+    _ensureWeeklyWeek();
+    var changed = false;
+    for (final q in DailyQuestDefs.all) {
+      if (isQuestClaimed(q.id)) continue;
+      if (questProgress(q.id) < q.target) continue;
+      questClaimed = [...questClaimed, q.id];
+      _gainSteps(q.stepsReward);
+      changed = true;
+    }
+    for (final q in WeeklyQuestDefs.all) {
+      if (isWeeklyQuestClaimed(q.id)) continue;
+      if (weeklyQuestProgress(q.id) < q.target) continue;
+      weeklyClaimed = [...weeklyClaimed, q.id];
+      _gainSteps(q.stepsReward);
+      changed = true;
+    }
+    if (changed) await _save();
   }
 
   Future<void> claimWeeklyQuest(String id) async {
@@ -797,6 +949,7 @@ class ProgressService extends ChangeNotifier {
       'monthlyMonth': monthlyMonth,
       'streakFreezeAvailable': streakFreezeAvailable,
       'streakFreezeWeek': streakFreezeWeek,
+      'frozenDates': frozenDates,
       'questDay': questDay,
       'questProgress': questProgressMap,
       'questClaimed': questClaimed,
@@ -811,6 +964,7 @@ class ProgressService extends ChangeNotifier {
       'mistakeQuestionIds': mistakeQuestionIds,
       'playDates': playDates,
       'trailDifficulties': trailDifficulties,
+      'clearedTrailModes': clearedTrailModes,
       'missionReflections': missionReflections,
       'settings': {
         'sound': settings.sound,
@@ -834,6 +988,16 @@ class ProgressService extends ChangeNotifier {
   static Map<String, String> _asStringMap(dynamic v) {
     if (v is! Map) return {};
     return v.map((k, val) => MapEntry(k.toString(), val.toString()));
+  }
+
+  static Map<String, List<String>> _asStringListMap(dynamic v) {
+    if (v is! Map) return {};
+    return v.map(
+      (k, val) => MapEntry(
+        k.toString(),
+        [for (final e in (val as List? ?? const [])) e.toString()],
+      ),
+    );
   }
 
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
@@ -883,6 +1047,9 @@ class ProgressService extends ChangeNotifier {
           data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
       streakFreezeWeek =
           data['streakFreezeWeek'] as String? ?? streakFreezeWeek;
+      if (data.containsKey('frozenDates')) {
+        frozenDates = _asStringList(data['frozenDates']);
+      }
       questDay = data['questDay'] as String? ?? questDay;
       if (data.containsKey('questProgress')) {
         questProgressMap = _asIntMap(data['questProgress']);
@@ -923,6 +1090,9 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('trailDifficulties')) {
         trailDifficulties = _asStringMap(data['trailDifficulties']);
       }
+      if (data.containsKey('clearedTrailModes')) {
+        clearedTrailModes = _asStringListMap(data['clearedTrailModes']);
+      }
       if (data.containsKey('missionReflections')) {
         missionReflections = _asStringMap(data['missionReflections']);
       }
@@ -945,8 +1115,15 @@ class ProgressService extends ChangeNotifier {
     _ensureQuestDay();
     _ensureWeeklyWeek();
     _ensureMonthlyMonth();
+    // Repara gelo preso (false sem semana) e persiste se mudou.
+    final freezeBefore = streakFreezeAvailable;
+    _ensureStreakFreezeWeek();
+    await _autoClaimCompletedQuests();
     await BibleService.instance.setTranslation(settings.bibleTranslationId);
     _loaded = true;
+    if (freezeBefore != streakFreezeAvailable) {
+      await _save();
+    }
     notifyListeners();
   }
 
@@ -985,6 +1162,9 @@ class ProgressService extends ChangeNotifier {
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     playDates = [];
+    frozenDates = [];
+    streakFreezeAvailable = true;
+    streakFreezeWeek = null;
     questProgressMap = {};
     questClaimed = [];
     weeklyProgressMap = {};

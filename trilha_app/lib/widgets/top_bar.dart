@@ -91,7 +91,7 @@ class StepsBadge extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         boxShadow: [
           BoxShadow(
             color: AppColors.accent.withValues(alpha: 0.35),
@@ -133,7 +133,7 @@ class StreakBadge extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.1),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(color: AppColors.streak.withValues(alpha: 0.45)),
       ),
       child: Row(

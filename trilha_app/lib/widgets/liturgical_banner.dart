@@ -5,6 +5,7 @@ import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
 /// Banner sazonal — só aparece nos tempos fortes.
 class LiturgicalBanner extends StatelessWidget {
@@ -24,7 +25,7 @@ class LiturgicalBanner extends StatelessWidget {
 
     return GlassCard(
       onTap: onOpenBible,
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      padding: AppMetrics.cardPadding,
       child: Row(
         children: [
           CinematicIcon(
@@ -38,15 +39,7 @@ class LiturgicalBanner extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  moment.title.toUpperCase(),
-                  style: TextStyle(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 1.4,
-                    color: accent,
-                  ),
-                ),
+                SectionLabel(moment.title, color: accent),
                 const SizedBox(height: 2),
                 Text(
                   moment.subtitle,

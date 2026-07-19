@@ -127,7 +127,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                 ),
                                 SizedBox(height: 10),
                                 Text(
-                                  'Escolha a profundidade\nda sua jornada',
+                                  'Escolha o modo\nda sua jornada',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 28,
@@ -139,7 +139,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                 ),
                                 SizedBox(height: 12),
                                 Text(
-                                  '150 perguntas de Gênesis 1–11.\nVocê pode mudar depois em Configurações.',
+                                  'Semente, Caminhada ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(fontSize: 13, height: 1.4, color: Colors.white70),
                                 ),
