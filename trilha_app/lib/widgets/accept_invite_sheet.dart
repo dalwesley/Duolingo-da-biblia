@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 
 /// Sheet para aceitar convite: digitar código ou escanear QR.
 Future<String?> showAcceptInviteSheet(BuildContext context) {
@@ -51,11 +51,16 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
     return Padding(
       padding: EdgeInsets.only(bottom: keyboard),
       child: Container(
-        margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-        padding: EdgeInsets.fromLTRB(24, 20, 24, 20 + bottom),
+        margin: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, AppSpace.md),
+        padding: EdgeInsets.fromLTRB(
+          AppSpace.xxl,
+          AppSpace.screen,
+          AppSpace.xxl,
+          AppSpace.screen + bottom,
+        ),
         decoration: BoxDecoration(
           color: const Color(0xFF121816),
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
         ),
         child: Column(
@@ -68,7 +73,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
                 height: 4,
                 decoration: BoxDecoration(
                   color: Colors.white.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(999),
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
                 ),
               ),
             ),
@@ -76,114 +81,105 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             Text(
               'Aceitar convite',
               textAlign: TextAlign.center,
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 24,
-                fontWeight: FontWeight.w700,
+              style: AppTypography.display(
+                size: 24,
+                weight: FontWeight.w700,
                 color: Colors.white,
               ),
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: AppSpace.xs),
             Text(
               'Escaneie o QR ou digite o código do amigo',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 12,
+              style: AppTypography.body(
+                size: 12,
                 color: Colors.white.withValues(alpha: 0.6),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: AppSpace.screen),
             TextField(
               controller: _controller,
               autofocus: true,
               textCapitalization: TextCapitalization.characters,
               textAlign: TextAlign.center,
               maxLength: 8,
-              style: const TextStyle(
+              style: AppTypography.title(
                 color: Colors.white,
-                letterSpacing: 4,
-                fontSize: 22,
-                fontWeight: FontWeight.w800,
-              ),
+                size: 22,
+                weight: FontWeight.w800,
+              ).copyWith(letterSpacing: 4),
               decoration: InputDecoration(
                 counterText: '',
                 hintText: 'CÓDIGO',
-                hintStyle: TextStyle(
+                hintStyle: AppTypography.title(
                   color: Colors.white.withValues(alpha: 0.25),
-                  letterSpacing: 4,
-                  fontWeight: FontWeight.w700,
-                ),
+                  size: 22,
+                  weight: FontWeight.w700,
+                ).copyWith(letterSpacing: 4),
                 filled: true,
                 fillColor: Colors.white.withValues(alpha: 0.06),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   borderSide: BorderSide(
                     color: AppColors.accent.withValues(alpha: 0.35),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   borderSide: BorderSide(
                     color: AppColors.accent.withValues(alpha: 0.35),
                   ),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   borderSide: const BorderSide(color: AppColors.accent),
                 ),
               ),
               onSubmitted: _submit,
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpace.md),
             GestureDetector(
               onTap: _scanQr,
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 15),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   border: Border.all(
                     color: AppColors.accent.withValues(alpha: 0.45),
                   ),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.qr_code_scanner_rounded,
+                    const CinematicIcon(
+                      glyph: CinematicGlyph.qr,
                       size: 20,
-                      color: AppColors.accent,
+                      accent: AppColors.accent,
+                      framed: false,
                     ),
-                    SizedBox(width: 8),
+                    const SizedBox(width: AppSpace.sm),
                     Text(
                       'ESCANEAR QR',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 0.8,
-                        color: AppColors.accent,
-                      ),
+                      style: AppTypography.cta(size: 13, color: AppColors.accent)
+                          .copyWith(letterSpacing: 0.8),
                     ),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpace.md),
             GestureDetector(
               onTap: () => _submit(),
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 15),
                 decoration: BoxDecoration(
                   gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                 ),
-                child: const Text(
+                child: Text(
                   'ENTRAR',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 0.8,
-                    color: AppColors.inkOnAccent,
-                  ),
+                  style: AppTypography.cta(size: 13).copyWith(letterSpacing: 0.8),
                 ),
               ),
             ),
@@ -237,9 +233,9 @@ class _QrScanPageState extends State<_QrScanPage> {
         foregroundColor: Colors.white,
         title: Text(
           'Escanear QR',
-          style: GoogleFonts.cormorantGaramond(
-            fontWeight: FontWeight.w700,
-            fontSize: 22,
+          style: AppTypography.display(
+            weight: FontWeight.w700,
+            size: 22,
           ),
         ),
       ),
@@ -252,21 +248,21 @@ class _QrScanPageState extends State<_QrScanPage> {
               width: 240,
               height: 240,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
+                borderRadius: BorderRadius.circular(AppRadii.lg),
                 border: Border.all(color: AppColors.accent, width: 2),
               ),
             ),
           ),
           Positioned(
-            left: 24,
-            right: 24,
+            left: AppSpace.xxl,
+            right: AppSpace.xxl,
             bottom: 48 + MediaQuery.viewPaddingOf(context).bottom,
             child: Text(
               'Aponte para o QR do convite',
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: AppTypography.body(
                 color: Colors.white.withValues(alpha: 0.85),
-                fontWeight: FontWeight.w600,
+                weight: FontWeight.w600,
               ),
             ),
           ),

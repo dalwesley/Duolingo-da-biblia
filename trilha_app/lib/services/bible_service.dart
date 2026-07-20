@@ -52,7 +52,7 @@ class BibleRef {
   });
 }
 
-/// Resultado de busca full-text no texto offline.
+/// Resultado de busca: livro (nome/abrev) ou versículo (texto offline).
 class BibleSearchHit {
   final int bookIndex;
   final String bookName;
@@ -61,6 +61,9 @@ class BibleSearchHit {
   final int verse;
   final String text;
 
+  /// `true` quando o match é o livro em si (nome/abreviação), não um versículo.
+  final bool isBook;
+
   const BibleSearchHit({
     required this.bookIndex,
     required this.bookName,
@@ -68,9 +71,11 @@ class BibleSearchHit {
     required this.chapter,
     required this.verse,
     required this.text,
+    this.isBook = false,
   });
 
-  String get citation => '$bookName $chapter:$verse';
+  String get citation =>
+      isBook ? bookName : '$bookName $chapter:$verse';
 }
 
 /// Bíblia offline — tradução ativa escolhida pelo usuário.
@@ -211,12 +216,32 @@ class BibleService {
     );
   }
 
-  /// Busca por palavra/frase no texto bíblico (offline).
+  /// Busca livros (nome/abrev) e versículos no texto bíblico (offline).
   Future<List<BibleSearchHit>> search(String query, {int limit = 40}) async {
     final q = _norm(query);
     if (q.length < 2) return const [];
     final list = await books();
     final hits = <BibleSearchHit>[];
+
+    // Livros primeiro — "apocali" → Apocalipse, "gn" → Gênesis, etc.
+    for (var bi = 0; bi < list.length; bi++) {
+      final book = list[bi];
+      final name = _norm(book.name);
+      final abbrev = _norm(book.abbrev);
+      if (name.contains(q) || abbrev.contains(q)) {
+        hits.add(BibleSearchHit(
+          bookIndex: bi,
+          bookName: book.name,
+          abbrev: book.abbrev,
+          chapter: 1,
+          verse: 0,
+          text: '${book.chapters.length} capítulos',
+          isBook: true,
+        ));
+        if (hits.length >= limit) return hits;
+      }
+    }
+
     for (var bi = 0; bi < list.length; bi++) {
       final book = list[bi];
       for (var ci = 0; ci < book.chapters.length; ci++) {

@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
+import '../services/home_widget_service.dart';
 import '../services/league_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
@@ -85,11 +86,13 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         if (!progress.isLoaded) return;
         progress.removeListener(once);
         NotificationService.instance.syncFromProgress(progress);
+        HomeWidgetService.syncFromProgress(progress);
       }
       progress.addListener(once);
       return;
     }
     NotificationService.instance.syncFromProgress(progress);
+    HomeWidgetService.syncFromProgress(progress);
   }
 
   void _flushCloudSave() {
@@ -117,6 +120,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     if (progress.walkedToday) {
       context.read<CompanionService>().syncWalksIfNeeded(progress);
     }
+    HomeWidgetService.syncFromProgress(progress);
   }
 
   @override
@@ -126,6 +130,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         state == AppLifecycleState.detached) {
       _flushCloudSave();
       _syncReminders();
+      final progress = _progressRef;
+      if (progress != null) {
+        HomeWidgetService.syncFromProgress(progress);
+      }
     }
     if (state == AppLifecycleState.resumed) {
       final pending = NotificationService.instance.takePendingAction();
@@ -186,7 +194,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   }
 
   void _openProfile() {
-    final mode = context.read<ProgressService>().settings.appearanceMode;
+    final progress = context.read<ProgressService>();
+    final backend = context.read<BackendService>();
+    final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
     Navigator.of(context).push(
       MaterialPageRoute(
@@ -202,10 +212,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                   inline: true,
                   immersive: true,
                   dark: appearance.onDark,
-                  title: 'Eu',
+                  title: progress.userName,
                   subtitle: 'Sua jornada, seu ritmo',
                   onBack: () => Navigator.pop(ctx),
-                  leadingGlyph: CinematicGlyph.humanity,
+                  photoUrl: backend.userPhotoUrl,
+                  showTrailingAvatar: true,
+                  showLeading: false,
                 ),
               ),
             ),
@@ -233,11 +245,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       personalGreeting: index == 0,
       photoUrl: backend.userPhotoUrl,
       onProfileTap: index == 0 ? _openProfile : null,
+      showLeading: true,
       leadingGlyph: switch (index) {
-        0 => CinematicGlyph.spark,
+        0 => CinematicGlyph.home,
         1 => CinematicGlyph.book,
         2 => CinematicGlyph.path,
-        3 => CinematicGlyph.dove,
+        3 => CinematicGlyph.people,
         _ => CinematicGlyph.tune,
       },
       title: switch (index) {
@@ -245,14 +258,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         1 => 'Bíblia',
         2 => 'Trilhas',
         3 => 'Juntos',
-        _ => 'Configurações',
+        _ => 'Config',
       },
       subtitle: switch (index) {
         0 => DayPhaseHelper.greeting(appearance.phase),
         1 => 'A Palavra, offline',
         2 => 'Escolha o caminho',
         3 => 'Companhia · Caravana · Salas',
-        _ => 'Preferências e conta',
+        _ => 'Ritmo · Aparência · Conta',
       },
     );
   }

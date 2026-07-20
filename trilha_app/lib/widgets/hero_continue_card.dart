@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
@@ -20,7 +19,7 @@ class HeroContinueCard extends StatelessWidget {
     required this.mission,
     required this.trailTitle,
     this.trailSlug = 'genesis-1-11',
-    this.trailColor = '#2F5D4A',
+    this.trailColor = '#243F36',
     this.onTap,
     this.onExploreTrails,
   });
@@ -36,7 +35,7 @@ class HeroContinueCard extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           boxShadow: [
             BoxShadow(
               color: AppColors.primary.withValues(alpha: 0.2),
@@ -46,7 +45,7 @@ class HeroContinueCard extends StatelessWidget {
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           child: Stack(
             children: [
               // Fundo da missão
@@ -57,7 +56,7 @@ class HeroContinueCard extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        const Color(0xFF2A4A3C),
+                        const Color(0xFF1E342C),
                         AppColors.primaryDark,
                         Color.lerp(visuals.accent, AppColors.night, 0.55)!,
                       ],
@@ -131,17 +130,20 @@ class HeroContinueCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
+                padding: const EdgeInsets.all(AppSpace.xl),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.md,
+                            vertical: 6,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.black.withValues(alpha: 0.28),
-                            borderRadius: BorderRadius.circular(999),
+                            borderRadius: BorderRadius.circular(AppRadii.pill),
                             border: Border.all(
                               color: Colors.white.withValues(alpha: 0.16),
                             ),
@@ -158,9 +160,8 @@ class HeroContinueCard extends StatelessWidget {
                               const SizedBox(width: 6),
                               Text(
                                 trailTitle.toUpperCase(),
-                                style: TextStyle(
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w900,
+                                style: AppTypography.label(
+                                  size: 10,
                                   letterSpacing: 1.1,
                                   color: Colors.white.withValues(alpha: 0.9),
                                 ),
@@ -169,18 +170,20 @@ class HeroContinueCard extends StatelessWidget {
                           ),
                         ),
                         if (mission.isBoss) ...[
-                          const SizedBox(width: 8),
+                          const SizedBox(width: AppSpace.sm),
                           Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 6,
+                            ),
                             decoration: BoxDecoration(
                               gradient: AppGradients.gold,
-                              borderRadius: BorderRadius.circular(999),
+                              borderRadius: BorderRadius.circular(AppRadii.pill),
                             ),
-                            child: const Text(
+                            child: Text(
                               'DESAFIO',
-                              style: TextStyle(
-                                fontSize: 9,
-                                fontWeight: FontWeight.w900,
+                              style: AppTypography.label(
+                                size: 9,
                                 letterSpacing: 1,
                                 color: AppColors.inkOnAccent,
                               ),
@@ -189,73 +192,37 @@ class HeroContinueCard extends StatelessWidget {
                         ],
                       ],
                     ),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: AppSpace.xl),
                     const SectionLabel('Próximo passo'),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: AppSpace.sm),
                     Text(
                       mission.title,
-                      style: GoogleFonts.cormorantGaramond(
-                        fontSize: 30,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
+                      style: AppTypography.display(
+                        size: 30,
                         height: 1.12,
                       ),
                     ),
                     if (mission.isBoss) ...[
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         'Desafio especial · mais passos na jornada',
-                        style: TextStyle(
-                          fontSize: 13,
+                        style: AppTypography.body(
+                          size: 13,
                           color: Colors.white.withValues(alpha: 0.68),
-                          fontWeight: FontWeight.w500,
                           height: 1.3,
                         ),
                       ),
                     ],
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppSpace.xxl),
                     Row(
                       children: [
-                        Expanded(
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 15,
-                            ),
-                            decoration: BoxDecoration(
-                              gradient: AppGradients.gold,
-                              borderRadius: BorderRadius.circular(18),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: AppColors.accentDark.withValues(alpha: 0.5),
-                                  offset: const Offset(0, 6),
-                                  blurRadius: 14,
-                                ),
-                              ],
-                            ),
-                            child: const Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'CAMINHAR',
-                                  style: TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.w900,
-                                    color: AppColors.inkOnAccent,
-                                    letterSpacing: 1.1,
-                                  ),
-                                ),
-                                SizedBox(width: 8),
-                                Icon(
-                                  Icons.arrow_forward_rounded,
-                                  color: AppColors.inkOnAccent,
-                                  size: 18,
-                                ),
-                              ],
-                            ),
+                        const Expanded(
+                          child: CopperCta(
+                            label: 'Caminhar',
+                            onTap: null,
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        const SizedBox(width: AppSpace.md),
                         Container(
                           padding: const EdgeInsets.symmetric(
                             horizontal: 14,
@@ -263,16 +230,15 @@ class HeroContinueCard extends StatelessWidget {
                           ),
                           decoration: BoxDecoration(
                             color: Colors.black.withValues(alpha: 0.3),
-                            borderRadius: BorderRadius.circular(18),
+                            borderRadius: BorderRadius.circular(AppRadii.md),
                             border: Border.all(
                               color: Colors.white.withValues(alpha: 0.18),
                             ),
                           ),
                           child: Text(
                             '+${mission.stepsReward} passos',
-                            style: const TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w900,
+                            style: AppTypography.title(
+                              size: 14,
                               color: Colors.white,
                             ),
                           ),
@@ -293,59 +259,43 @@ class HeroContinueCard extends StatelessWidget {
     return GestureDetector(
       onTap: onExploreTrails,
       child: Container(
-        padding: const EdgeInsets.all(28),
+        padding: const EdgeInsets.all(AppRadii.xl),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFF1A221E), Color(0xFF121816)],
+            colors: [AppColors.nightMid, AppColors.night],
           ),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
         ),
         child: Column(
           children: [
-            CinematicIcon(
+            const CinematicIcon(
               glyph: CinematicGlyph.path,
               size: 56,
               accent: AppColors.accent,
               glowing: false,
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpace.md + 2),
             Text(
               'Trecho concluído',
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 26,
-                fontWeight: FontWeight.w700,
-                color: Colors.white,
-              ),
+              style: AppTypography.display(size: 26),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             Text(
               'Escolha uma nova trilha e continue\nconhecendo a Cristo.',
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: AppTypography.body(
                 color: Colors.white.withValues(alpha: 0.65),
-                height: 1.4,
               ),
             ),
             if (onExploreTrails != null) ...[
-              const SizedBox(height: 18),
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                decoration: BoxDecoration(
-                  gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(16),
-                ),
-                child: const Text(
-                  'EXPLORAR TRILHAS',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w900,
-                    letterSpacing: 0.8,
-                    color: AppColors.inkOnAccent,
-                  ),
-                ),
+              const SizedBox(height: AppSpace.lg + 2),
+              const CopperCta(
+                label: 'Explorar trilhas',
+                expanded: false,
+                onTap: null,
               ),
             ],
           ],

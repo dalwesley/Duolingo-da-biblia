@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/content_catalog_service.dart';
@@ -14,7 +14,7 @@ import 'login_screen.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
-/// Abertura — luz → marca → estudar.
+/// Abertura cinematográfica — o vazio se abre, a trilha aparece, a marca respira.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -24,16 +24,17 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with TickerProviderStateMixin {
-  static const _firstDuration = Duration(milliseconds: 3200);
-  static const _returnDuration = Duration(milliseconds: 1600);
+  static const _firstDuration = Duration(milliseconds: 4200);
+  static const _returnDuration = Duration(milliseconds: 2100);
 
   late final AnimationController _master;
-  late final AnimationController _shimmer;
+  late final AnimationController _drift;
   late final AnimationController _breathe;
 
   bool _readyToExit = false;
   bool _exiting = false;
   bool _isReturnVisit = false;
+  bool _hitClimax = false;
 
   @override
   void initState() {
@@ -41,13 +42,13 @@ class _SplashScreenState extends State<SplashScreen>
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
     _master = AnimationController(vsync: this, duration: _firstDuration);
-    _shimmer = AnimationController(
+    _drift = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 2200),
+      duration: const Duration(seconds: 14),
     )..repeat();
     _breathe = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 3200),
+      duration: const Duration(milliseconds: 3800),
     )..repeat(reverse: true);
 
     _boot();
@@ -55,9 +56,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   Future<void> _boot() async {
     final progress = context.read<ProgressService>();
-    final load = progress.isLoaded
-        ? Future<void>.value()
-        : progress.load();
+    final load = progress.isLoaded ? Future<void>.value() : progress.load();
 
     await load;
     if (!mounted) return;
@@ -67,7 +66,6 @@ class _SplashScreenState extends State<SplashScreen>
       _master.duration = _returnDuration;
     }
 
-    // Gatilhos de impacto no clímax da luz.
     _master.addListener(_onMasterTick);
     await _master.forward();
 
@@ -78,9 +76,8 @@ class _SplashScreenState extends State<SplashScreen>
     await _exit(progress);
   }
 
-  bool _hitClimax = false;
   void _onMasterTick() {
-    final climax = _isReturnVisit ? 0.42 : 0.48;
+    final climax = _isReturnVisit ? 0.38 : 0.42;
     if (!_hitClimax && _master.value >= climax) {
       _hitClimax = true;
       HapticFeedback.lightImpact();
@@ -109,8 +106,6 @@ class _SplashScreenState extends State<SplashScreen>
       final league = context.read<LeagueService>();
       await backend.hydrateProgress(progress, league: league);
       if (!mounted) return;
-      // Sem bloquear a navegação: schema e catálogo carregam em segundo plano.
-      // A Home exibe um skeleton enquanto o catálogo chega.
       unawaited(() async {
         final saved = await backend.saveNow(
           progress,
@@ -127,14 +122,16 @@ class _SplashScreenState extends State<SplashScreen>
 
     if (!mounted) return;
     setState(() => _readyToExit = true);
-    await Future<void>.delayed(const Duration(milliseconds: 220));
+    await Future<void>.delayed(const Duration(milliseconds: 420));
     if (!mounted) return;
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (_, __, ___) => next,
-        transitionsBuilder: (_, a, __, c) =>
-            FadeTransition(opacity: a, child: c),
-        transitionDuration: const Duration(milliseconds: 600),
+        transitionsBuilder: (_, a, __, c) => FadeTransition(
+          opacity: CurvedAnimation(parent: a, curve: Curves.easeOutCubic),
+          child: c,
+        ),
+        transitionDuration: const Duration(milliseconds: 780),
       ),
     );
   }
@@ -143,7 +140,7 @@ class _SplashScreenState extends State<SplashScreen>
   void dispose() {
     _master.removeListener(_onMasterTick);
     _master.dispose();
-    _shimmer.dispose();
+    _drift.dispose();
     _breathe.dispose();
     SystemChrome.setEnabledSystemUIMode(
       SystemUiMode.manual,
@@ -152,14 +149,12 @@ class _SplashScreenState extends State<SplashScreen>
     super.dispose();
   }
 
-  // Intervalos: primeira visita vs retorno (mais comprimidos).
-  Interval _i(double start, double end) {
+  Interval _i(double start, double end, {Curve curve = Curves.easeOutCubic}) {
     if (_isReturnVisit) {
-      // Comprime a narrativa mantendo a ordem emocional.
-      double map(double t) => (t * 0.75 + 0.05).clamp(0.0, 1.0);
-      return Interval(map(start), map(end), curve: Curves.easeOutCubic);
+      double map(double t) => (t * 0.78 + 0.04).clamp(0.0, 1.0);
+      return Interval(map(start), map(end), curve: curve);
     }
-    return Interval(start, end, curve: Curves.easeOutCubic);
+    return Interval(start, end, curve: curve);
   }
 
   @override
@@ -174,195 +169,254 @@ class _SplashScreenState extends State<SplashScreen>
         systemNavigationBarIconBrightness: Brightness.light,
       ),
       child: Scaffold(
-        backgroundColor: const Color(0xFF030208),
+        backgroundColor: const Color(0xFF050807),
         body: AnimatedBuilder(
-          animation: Listenable.merge([_master, _shimmer, _breathe]),
+          animation: Listenable.merge([_master, _drift, _breathe]),
           builder: (context, _) {
             final t = _master.value;
             final breath = _breathe.value;
+            final drift = _drift.value;
             final exitFade = _readyToExit ? 0.0 : 1.0;
 
-            final stars = CurvedAnimation(parent: _master, curve: _i(0.02, 0.28));
-            final dawn = CurvedAnimation(parent: _master, curve: _i(0.18, 0.52));
-            final seal = CurvedAnimation(parent: _master, curve: _i(0.38, 0.62));
-            final title = CurvedAnimation(parent: _master, curve: _i(0.52, 0.72));
-            final tagline = CurvedAnimation(parent: _master, curve: _i(0.62, 0.82));
-            final verse = CurvedAnimation(parent: _master, curve: _i(0.72, 0.92));
-            final letterbox = CurvedAnimation(parent: _master, curve: _i(0.0, 0.2));
+            final atmosphere = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.0, 0.42, curve: Curves.easeOut),
+            );
+            final path = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.18, 0.58, curve: Curves.easeInOutCubic),
+            );
+            final mark = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.36, 0.62, curve: Curves.easeOutCubic),
+            );
+            final title = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.48, 0.72),
+            );
+            final line = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.58, 0.8),
+            );
+            final verse = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.7, 0.92),
+            );
+            final letterbox = CurvedAnimation(
+              parent: _master,
+              curve: _i(0.0, 0.22),
+            );
+
+            final markV = mark.value.clamp(0.0, 1.0);
+            final titleV = title.value.clamp(0.0, 1.0);
+            final lineV = line.value.clamp(0.0, 1.0);
+            final verseV = verse.value.clamp(0.0, 1.0);
+            final atm = atmosphere.value.clamp(0.0, 1.0);
 
             return Opacity(
               opacity: exitFade,
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // 1. Void absoluto
-                  const ColoredBox(color: Color(0xFF030208)),
+                  const ColoredBox(color: Color(0xFF050807)),
 
-                  // 2. Nebulosa + estrelas
+                  // Mundo — névoa, colinas, horizonte
                   RepaintBoundary(
                     child: CustomPaint(
                       size: size,
-                      painter: _CinematicSkyPainter(
-                        progress: stars.value,
-                        shimmer: _shimmer.value,
+                      painter: _WorldPainter(
+                        atmosphere: atm,
+                        pathReveal: path.value.clamp(0.0, 1.0),
                         breath: breath,
-                        dawn: dawn.value,
+                        drift: drift,
                       ),
                     ),
                   ),
 
-                  // 3. Aurora / raios da criação
-                  RepaintBoundary(
-                    child: CustomPaint(
-                      size: size,
-                      painter: _DawnRaysPainter(
-                        progress: dawn.value,
-                        breath: breath,
-                      ),
-                    ),
-                  ),
-
-                  // 4. Horizonte dourado + trilha
-                  RepaintBoundary(
-                    child: CustomPaint(
-                      size: size,
-                      painter: _HorizonPathPainter(
-                        progress: dawn.value,
-                        breath: breath,
-                      ),
-                    ),
-                  ),
-
-                  // 5. Vinheta cinematográfica
+                  // Vinheta profunda
                   IgnorePointer(
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         gradient: RadialGradient(
-                          center: const Alignment(0, -0.15),
-                          radius: 1.15,
+                          center: const Alignment(0, -0.05),
+                          radius: 1.2,
                           colors: [
                             Colors.transparent,
-                            Colors.black.withValues(alpha: 0.15 + 0.35 * (1 - dawn.value)),
-                            Colors.black.withValues(alpha: 0.72),
+                            Colors.black.withValues(alpha: 0.25 + 0.2 * (1 - atm)),
+                            Colors.black.withValues(alpha: 0.78),
                           ],
-                          stops: const [0.25, 0.62, 1],
+                          stops: const [0.2, 0.58, 1],
                         ),
                       ),
                     ),
                   ),
 
-                  // 6. Conteúdo central
+                  // Conteúdo
                   SafeArea(
-                    child: Column(
-                      children: [
-                        const Spacer(flex: 3),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 28),
+                      child: Column(
+                        children: [
+                          const Spacer(flex: 5),
 
-                        // Selo luminoso
-                        Transform.scale(
-                          scale: 0.55 + 0.45 * Curves.elasticOut.transform(seal.value.clamp(0.0, 1.0)),
-                          child: Opacity(
-                            opacity: seal.value.clamp(0.0, 1.0),
-                            child: _LightSeal(
-                              pulse: breath,
-                              glow: dawn.value,
-                            ),
-                          ),
-                        ),
-
-                        const SizedBox(height: 28),
-
-                        // Marca
-                        Opacity(
-                          opacity: title.value.clamp(0.0, 1.0),
-                          child: Transform.translate(
-                            offset: Offset(0, 18 * (1 - title.value)),
-                            child: _BrandTitle(
-                              shimmer: _shimmer.value,
-                              visible: title.value,
-                            ),
-                          ),
-                        ),
-
-                        const SizedBox(height: 14),
-
-                        // Tagline
-                        Opacity(
-                          opacity: tagline.value.clamp(0.0, 1.0),
-                          child: Transform.translate(
-                            offset: Offset(0, 10 * (1 - tagline.value)),
-                            child: Text(
-                              'A jornada pela Palavra começa aqui',
-                              textAlign: TextAlign.center,
-                              style: GoogleFonts.plusJakartaSans(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
-                                letterSpacing: 0.4,
-                                height: 1.35,
-                                color: Colors.white.withValues(alpha: 0.72),
+                          // Marca visual — poço limpo, livro
+                          Opacity(
+                            opacity: markV,
+                            child: Transform.scale(
+                              scale: 0.82 + 0.18 * markV,
+                              child: Transform.translate(
+                                offset: Offset(0, 24 * (1 - markV)),
+                                child: _Mark(
+                                  breath: breath,
+                                  intensity: atm,
+                                ),
                               ),
                             ),
                           ),
-                        ),
 
-                        const Spacer(flex: 2),
+                          const SizedBox(height: 36),
 
-                        // Versículo sussurrado
-                        Opacity(
-                          opacity: (verse.value * 0.95).clamp(0.0, 1.0),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 36),
-                            child: Column(
-                              children: [
-                                Text(
-                                  '"Lâmpada para os meus pés é a tua palavra,\ne luz para o meu caminho."',
-                                  textAlign: TextAlign.center,
-                                  style: GoogleFonts.cormorantGaramond(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FontStyle.italic,
-                                    height: 1.45,
-                                    color: AppColors.accent.withValues(alpha: 0.88),
-                                  ),
+                          // TRILHA — herói tipográfico
+                          Opacity(
+                            opacity: titleV,
+                            child: Transform.translate(
+                              offset: Offset(0, 20 * (1 - titleV)),
+                              child: Text(
+                                'TRILHA',
+                                textAlign: TextAlign.center,
+                                style: AppTypography.display(
+                                  size: 58,
+                                  weight: FontWeight.w600,
+                                  color: const Color(0xFFF2EDE4),
+                                  height: 0.95,
+                                ).copyWith(
+                                  letterSpacing: 14,
+                                  shadows: [
+                                    Shadow(
+                                      color: AppColors.accent
+                                          .withValues(alpha: 0.28 * titleV),
+                                      blurRadius: 32,
+                                    ),
+                                  ],
                                 ),
-                                const SizedBox(height: 8),
-                                Text(
-                                  'Salmos 119:105',
-                                  style: TextStyle(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w800,
-                                    letterSpacing: 1.6,
-                                    color: Colors.white.withValues(alpha: 0.4),
-                                  ),
-                                ),
-                              ],
+                              ),
                             ),
                           ),
-                        ),
 
-                        const SizedBox(height: 36),
+                          const SizedBox(height: 18),
 
-                        // Barra de progresso da abertura
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(48, 0, 48, 28),
-                          child: Opacity(
-                            opacity: (0.35 + 0.65 * tagline.value).clamp(0.0, 1.0),
-                            child: _LaunchProgress(value: t),
+                          // Linha de luz sob a marca
+                          Opacity(
+                            opacity: lineV,
+                            child: Container(
+                              width: 48 + 36 * lineV,
+                              height: 1,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(2),
+                                gradient: LinearGradient(
+                                  colors: [
+                                    Colors.transparent,
+                                    AppColors.accent.withValues(alpha: 0.75),
+                                    const Color(0xFFE8C9A0)
+                                        .withValues(alpha: 0.9),
+                                    AppColors.accent.withValues(alpha: 0.75),
+                                    Colors.transparent,
+                                  ],
+                                ),
+                              ),
+                            ),
                           ),
-                        ),
-                      ],
+
+                          const SizedBox(height: 16),
+
+                          Opacity(
+                            opacity: lineV,
+                            child: Transform.translate(
+                              offset: Offset(0, 10 * (1 - lineV)),
+                              child: Text(
+                                'O caminho pela Palavra',
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  size: 15,
+                                  height: 1.4,
+                                  color: Colors.white.withValues(alpha: 0.58),
+                                ).copyWith(letterSpacing: 0.6),
+                              ),
+                            ),
+                          ),
+
+                          const Spacer(flex: 4),
+
+                          // Versículo — sussurro final
+                          Opacity(
+                            opacity: verseV * 0.95,
+                            child: Transform.translate(
+                              offset: Offset(0, 12 * (1 - verseV)),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Lâmpada para os meus pés é a tua palavra,\ne luz para o meu caminho.',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.display(
+                                      size: 16,
+                                      weight: FontWeight.w500,
+                                      fontStyle: FontStyle.italic,
+                                      height: 1.5,
+                                      color: const Color(0xFFE8D5B8)
+                                          .withValues(alpha: 0.82),
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Text(
+                                    'SALMOS 119:105',
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      letterSpacing: 2.4,
+                                      color:
+                                          Colors.white.withValues(alpha: 0.32),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                          const SizedBox(height: 40),
+
+                          // Progresso mínimo — um fio
+                          Opacity(
+                            opacity: (0.2 + 0.8 * lineV).clamp(0.0, 1.0),
+                            child: _BreathLine(value: t, breath: breath),
+                          ),
+
+                          const SizedBox(height: 32),
+                        ],
+                      ),
                     ),
                   ),
 
-                  // 7. Letterbox (barras de cinema)
+                  // Letterbox
                   Positioned(
                     top: 0,
                     left: 0,
                     right: 0,
-                    child: Transform.translate(
-                      offset: Offset(0, -40 * (1 - letterbox.value)),
+                    child: IgnorePointer(
                       child: Container(
-                        height: 28 + 10 * (1 - dawn.value),
-                        color: Colors.black,
+                        height: 36 + 8 * (1 - atm),
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Colors.black,
+                              Colors.black.withValues(
+                                alpha: 0.85 * letterbox.value.clamp(0.0, 1.0),
+                              ),
+                              Colors.transparent,
+                            ],
+                            stops: const [0.0, 0.55, 1.0],
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -370,23 +424,26 @@ class _SplashScreenState extends State<SplashScreen>
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    child: Transform.translate(
-                      offset: Offset(0, 40 * (1 - letterbox.value)),
+                    child: IgnorePointer(
                       child: Container(
-                        height: 28 + 10 * (1 - dawn.value),
-                        color: Colors.black,
+                        height: 48 + 10 * (1 - atm),
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.bottomCenter,
+                            end: Alignment.topCenter,
+                            colors: [
+                              Colors.black,
+                              Colors.black.withValues(
+                                alpha: 0.9 * letterbox.value.clamp(0.0, 1.0),
+                              ),
+                              Colors.transparent,
+                            ],
+                            stops: const [0.0, 0.5, 1.0],
+                          ),
+                        ),
                       ),
                     ),
                   ),
-
-                  // Flash suave no clímax
-                  if (dawn.value > 0.55 && dawn.value < 0.85)
-                    IgnorePointer(
-                      child: Opacity(
-                        opacity: (1 - ((dawn.value - 0.55) / 0.3).abs()) * 0.12,
-                        child: const ColoredBox(color: Color(0xFFF5D78E)),
-                      ),
-                    ),
                 ],
               ),
             );
@@ -398,95 +455,65 @@ class _SplashScreenState extends State<SplashScreen>
 }
 
 // ---------------------------------------------------------------------------
-// Peças visuais
+// Marca
 // ---------------------------------------------------------------------------
 
-class _LightSeal extends StatelessWidget {
-  final double pulse;
-  final double glow;
+class _Mark extends StatelessWidget {
+  final double breath;
+  final double intensity;
 
-  const _LightSeal({required this.pulse, required this.glow});
+  const _Mark({required this.breath, required this.intensity});
 
   @override
   Widget build(BuildContext context) {
-    final radius = 54.0 + 6 * pulse;
+    final halo = 0.12 + 0.1 * breath;
     return SizedBox(
-      width: 148,
-      height: 148,
+      width: 112,
+      height: 112,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Halo externo
           Container(
-            width: 140 + 20 * glow,
-            height: 140 + 20 * glow,
+            width: 112,
+            height: 112,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.22 + 0.2 * glow),
-                  blurRadius: 48 + 24 * pulse,
-                  spreadRadius: 4,
-                ),
-                BoxShadow(
-                  color: AppColors.primaryLight.withValues(alpha: 0.12),
-                  blurRadius: 56,
-                  spreadRadius: 4,
+                  color: AppColors.accent.withValues(alpha: halo * intensity),
+                  blurRadius: 42 + 12 * breath,
+                  spreadRadius: 2,
                 ),
               ],
             ),
           ),
-          // Anel dourado
-          Container(
-            width: radius * 2,
-            height: radius * 2,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                colors: [
-                  AppColors.accent.withValues(alpha: 0.3),
-                  AppColors.accent.withValues(alpha: 0.06),
-                  Colors.transparent,
-                ],
-                stops: const [0.0, 0.55, 1.0],
-              ),
-              border: Border.all(
-                color: AppColors.accent.withValues(alpha: 0.5 + 0.2 * pulse),
-                width: 1.5,
-              ),
-            ),
-          ),
-          // Núcleo
           Container(
             width: 88,
             height: 88,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+              gradient: RadialGradient(
+                center: const Alignment(-0.3, -0.4),
                 colors: [
-                  const Color(0xFF28332C).withValues(alpha: 0.9),
-                  const Color(0xFF121816).withValues(alpha: 0.95),
+                  Color.lerp(
+                    const Color(0xFF2A3832),
+                    AppColors.accent,
+                    0.12,
+                  )!,
+                  const Color(0xFF0E1411),
                 ],
               ),
               border: Border.all(
-                color: Colors.white.withValues(alpha: 0.18),
+                color: Colors.white.withValues(alpha: 0.14),
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.45),
-                  blurRadius: 20,
-                ),
-              ],
             ),
             child: const Center(
               child: CinematicIcon(
                 glyph: CinematicGlyph.book,
-                size: 52,
-                accent: AppColors.accent,
-                glowing: true,
+                size: 42,
+                accent: Color(0xFFE8C9A0),
                 framed: false,
+                glowing: false,
               ),
             ),
           ),
@@ -496,362 +523,311 @@ class _LightSeal extends StatelessWidget {
   }
 }
 
-class _BrandTitle extends StatelessWidget {
-  final double shimmer;
-  final double visible;
+class _BreathLine extends StatelessWidget {
+  final double value;
+  final double breath;
 
-  const _BrandTitle({required this.shimmer, required this.visible});
+  const _BreathLine({required this.value, required this.breath});
 
   @override
   Widget build(BuildContext context) {
-    final shift = (shimmer * 2 - 1).clamp(-1.0, 1.0);
-    return ShaderMask(
-      blendMode: BlendMode.srcIn,
-      shaderCallback: (bounds) {
-        return LinearGradient(
-          begin: Alignment(-1 + shift, -0.3),
-          end: Alignment(1 + shift, 0.3),
-          colors: const [
-            Color(0xFFC99A2E),
-            Color(0xFFF5D78E),
-            Color(0xFFFFF8E7),
-            Color(0xFFF5D78E),
-            Color(0xFFE8B84B),
-          ],
-          stops: const [0.0, 0.35, 0.5, 0.65, 1.0],
-        ).createShader(bounds);
-      },
-      child: Text(
-        'TRILHA',
-        textAlign: TextAlign.center,
-        style: GoogleFonts.cormorantGaramond(
-          fontSize: 64,
-          fontWeight: FontWeight.w700,
-          letterSpacing: 10,
-          height: 1,
-          color: Colors.white,
-          shadows: [
-            Shadow(
-              color: AppColors.accent.withValues(alpha: 0.35 * visible),
-              blurRadius: 28,
+    return SizedBox(
+      height: 2,
+      child: LayoutBuilder(
+        builder: (context, c) {
+          final w = c.maxWidth * 0.42;
+          return Center(
+            child: Container(
+              width: w,
+              height: 1.5,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(2),
+                color: Colors.white.withValues(alpha: 0.08),
+              ),
+              clipBehavior: Clip.antiAlias,
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: FractionallySizedBox(
+                  widthFactor: value.clamp(0.05, 1.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(2),
+                      gradient: LinearGradient(
+                        colors: [
+                          AppColors.accent.withValues(alpha: 0.35),
+                          Color.lerp(
+                            AppColors.accent,
+                            const Color(0xFFE8C9A0),
+                            0.45 + 0.2 * breath,
+                          )!,
+                          AppColors.accent.withValues(alpha: 0.55),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ),
-          ],
-        ),
+          );
+        },
       ),
     );
   }
 }
 
-class _LaunchProgress extends StatelessWidget {
-  final double value;
-
-  const _LaunchProgress({required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(99),
-          child: SizedBox(
-            height: 2.5,
-            child: Stack(
-              children: [
-                Container(color: Colors.white.withValues(alpha: 0.08)),
-                FractionallySizedBox(
-                  widthFactor: value.clamp(0.0, 1.0),
-                  child: Container(
-                    decoration: const BoxDecoration(
-                      gradient: AppGradients.gold,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          'PREPARANDO SEU ESTUDO',
-          style: TextStyle(
-            fontSize: 9,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 2.4,
-            color: Colors.white.withValues(alpha: 0.35),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
 // ---------------------------------------------------------------------------
-// Painters
+// Mundo — floresta ao entardecer, caminho de luz
 // ---------------------------------------------------------------------------
 
-class _CinematicSkyPainter extends CustomPainter {
-  final double progress;
-  final double shimmer;
+class _WorldPainter extends CustomPainter {
+  final double atmosphere;
+  final double pathReveal;
   final double breath;
-  final double dawn;
+  final double drift;
 
-  _CinematicSkyPainter({
-    required this.progress,
-    required this.shimmer,
+  _WorldPainter({
+    required this.atmosphere,
+    required this.pathReveal,
     required this.breath,
-    required this.dawn,
+    required this.drift,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    // Céu de amanhecer — charcoal → olive/dourado
-    final top = Color.lerp(
-      const Color(0xFF0A0E0C),
-      const Color(0xFF1E3D32),
-      dawn * 0.7,
+    final a = atmosphere;
+
+    // Céu profundo → olive
+    final skyTop = Color.lerp(
+      const Color(0xFF050807),
+      const Color(0xFF0C1612),
+      a,
     )!;
-    final mid = Color.lerp(
-      const Color(0xFF121816),
-      const Color(0xFF3D5A48),
-      dawn * 0.55,
+    final skyMid = Color.lerp(
+      const Color(0xFF070A09),
+      const Color(0xFF152820),
+      a * 0.85,
     )!;
+    final skyLow = Color.lerp(
+      const Color(0xFF060908),
+      const Color(0xFF1A2E26),
+      a * 0.7,
+    )!;
+
     canvas.drawRect(
       Offset.zero & size,
       Paint()
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [top, mid, const Color(0xFF0A0E0C)],
-          stops: const [0.0, 0.45, 1.0],
+          colors: [skyTop, skyMid, skyLow, const Color(0xFF080C0A)],
+          stops: const [0.0, 0.35, 0.62, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Luz ambiente quente
-    final glow = Paint()
-      ..shader = RadialGradient(
-        colors: [
-          AppColors.primaryLight.withValues(alpha: 0.16 * progress * (0.7 + 0.3 * breath)),
-          AppColors.accent.withValues(alpha: 0.06 * progress),
-          Colors.transparent,
-        ],
-      ).createShader(
-        Rect.fromCircle(
-          center: Offset(size.width * 0.72, size.height * 0.22),
-          radius: size.width * 0.55,
-        ),
-      );
+    // Luz volumétrica no horizonte (sem raios baratos)
+    final horizonY = size.height * 0.58;
+    final glowCenter = Offset(size.width * 0.5, horizonY);
     canvas.drawCircle(
-      Offset(size.width * 0.72, size.height * 0.22),
-      size.width * 0.55,
-      glow,
-    );
-
-    // Estrelas determinísticas
-    final rng = math.Random(42);
-    final count = 90;
-    for (var i = 0; i < count; i++) {
-      final x = rng.nextDouble() * size.width;
-      final y = rng.nextDouble() * size.height * 0.72;
-      final base = 0.35 + rng.nextDouble() * 0.65;
-      final twinkle =
-          0.55 + 0.45 * math.sin((shimmer * math.pi * 2) + i * 0.7);
-      final appear = ((progress * 1.4) - (i / count) * 0.4).clamp(0.0, 1.0);
-      final r = (0.5 + rng.nextDouble() * 1.4) * (i % 11 == 0 ? 1.8 : 1);
-      final paint = Paint()
-        ..color = Colors.white.withValues(
-          alpha: (base * twinkle * appear * (1 - dawn * 0.25)).clamp(0.0, 1.0),
-        );
-      canvas.drawCircle(Offset(x, y), r, paint);
-
-      // Algumas estrelas com cruz de brilho
-      if (i % 17 == 0 && appear > 0.6) {
-        final cross = Paint()
-          ..color = Colors.white.withValues(alpha: 0.25 * appear * twinkle)
-          ..strokeWidth = 0.8;
-        canvas.drawLine(Offset(x - 5, y), Offset(x + 5, y), cross);
-        canvas.drawLine(Offset(x, y - 5), Offset(x, y + 5), cross);
-      }
-    }
-
-    // Poeira dourada flutuante
-    final dustRng = math.Random(7);
-    for (var i = 0; i < 28; i++) {
-      final x = dustRng.nextDouble() * size.width;
-      final baseY = dustRng.nextDouble() * size.height;
-      final drift = math.sin(shimmer * math.pi * 2 + i) * 12;
-      final y = (baseY + drift) % size.height;
-      final a = dawn * (0.15 + dustRng.nextDouble() * 0.35);
-      canvas.drawCircle(
-        Offset(x, y),
-        1.2 + dustRng.nextDouble(),
-        Paint()..color = AppColors.accent.withValues(alpha: a),
-      );
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _CinematicSkyPainter old) =>
-      old.progress != progress ||
-      old.shimmer != shimmer ||
-      old.breath != breath ||
-      old.dawn != dawn;
-}
-
-class _DawnRaysPainter extends CustomPainter {
-  final double progress;
-  final double breath;
-
-  _DawnRaysPainter({required this.progress, required this.breath});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    if (progress <= 0.01) return;
-
-    final origin = Offset(size.width * 0.5, size.height * 0.58);
-    final rayCount = 9;
-    for (var i = 0; i < rayCount; i++) {
-      final angle = -math.pi * 0.92 + (math.pi * 0.84) * (i / (rayCount - 1));
-      final len = size.height * (0.55 + 0.12 * math.sin(i + breath));
-      final tip = Offset(
-        origin.dx + math.cos(angle) * len,
-        origin.dy + math.sin(angle) * len,
-      );
-      final paint = Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.bottomCenter,
-          end: Alignment.topCenter,
-          colors: [
-            AppColors.accent.withValues(alpha: 0.0),
-            AppColors.accent.withValues(alpha: 0.18 * progress),
-            const Color(0xFFFFF3D6).withValues(alpha: 0.08 * progress),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromPoints(origin, tip))
-        ..strokeWidth = 18 + (i.isEven ? 10 : 0)
-        ..strokeCap = StrokeCap.round
-        ..style = PaintingStyle.stroke
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 12);
-      canvas.drawLine(origin, tip, paint);
-    }
-
-    // Núcleo da luz
-    canvas.drawCircle(
-      origin,
-      size.width * (0.18 + 0.06 * breath) * progress,
+      glowCenter,
+      size.width * (0.55 + 0.04 * breath),
       Paint()
         ..shader = RadialGradient(
           colors: [
-            const Color(0xFFFFF3D6).withValues(alpha: 0.55 * progress),
-            AppColors.accent.withValues(alpha: 0.28 * progress),
-            AppColors.accent.withValues(alpha: 0.0),
+            Color.lerp(
+              const Color(0xFF3D6B58),
+              AppColors.accent,
+              0.35,
+            )!
+                .withValues(alpha: 0.22 * a),
+            AppColors.accent.withValues(alpha: 0.1 * a),
+            Colors.transparent,
           ],
+          stops: const [0.0, 0.35, 1.0],
         ).createShader(
           Rect.fromCircle(
-            center: origin,
-            radius: size.width * 0.28,
+            center: glowCenter,
+            radius: size.width * 0.6,
           ),
         ),
     );
-  }
 
-  @override
-  bool shouldRepaint(covariant _DawnRaysPainter old) =>
-      old.progress != progress || old.breath != breath;
-}
-
-class _HorizonPathPainter extends CustomPainter {
-  final double progress;
-  final double breath;
-
-  _HorizonPathPainter({required this.progress, required this.breath});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    if (progress <= 0.01) return;
-
-    final horizonY = size.height * 0.62;
-
-    // Brilho do horizonte
+    // Faixa quente no horizonte
     canvas.drawRect(
-      Rect.fromLTWH(0, horizonY - 40, size.width, 120),
+      Rect.fromLTWH(0, horizonY - 30, size.width, 90),
       Paint()
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
             Colors.transparent,
-            AppColors.accent.withValues(alpha: 0.22 * progress),
-            AppColors.accent.withValues(alpha: 0.05 * progress),
+            AppColors.accent.withValues(alpha: 0.14 * a),
+            const Color(0xFFE8C9A0).withValues(alpha: 0.06 * a),
             Colors.transparent,
           ],
-        ).createShader(Rect.fromLTWH(0, horizonY - 40, size.width, 120)),
+        ).createShader(Rect.fromLTWH(0, horizonY - 30, size.width, 90)),
     );
 
-    // Trilha / caminho de luz subindo ao encontro do usuário
-    final path = Path();
-    final start = Offset(size.width * 0.5, size.height * 0.98);
-    final end = Offset(size.width * 0.5, horizonY + 8);
-    path.moveTo(start.dx, start.dy);
+    // Silhuetas de colinas (camadas) — flutuação vertical suave
+    final driftWave = drift * math.pi * 2;
+    _hill(
+      canvas,
+      size,
+      y: horizonY + 8 + math.sin(driftWave) * 5,
+      amp: 28,
+      phase: 0.8,
+      color: const Color(0xFF0A1210).withValues(alpha: 0.55 * a),
+      seed: 1,
+    );
+    _hill(
+      canvas,
+      size,
+      y: horizonY + 36 + math.sin(driftWave + 1.2) * 7,
+      amp: 42,
+      phase: 1.6,
+      color: const Color(0xFF070E0C).withValues(alpha: 0.72 * a),
+      seed: 2,
+    );
+    _hill(
+      canvas,
+      size,
+      y: horizonY + 70 + math.sin(driftWave * 0.6 + 2.0) * 9,
+      amp: 56,
+      phase: 2.4,
+      color: const Color(0xFF050908).withValues(alpha: 0.9 * a),
+      seed: 3,
+    );
 
-    final steps = 24;
-    for (var i = 1; i <= steps; i++) {
-      final t = i / steps;
-      final y = start.dy + (end.dy - start.dy) * t;
-      final sway = math.sin(t * math.pi * 2 + breath) * 10 * (1 - t);
-      final widthFactor = 0.18 * (1 - t) + 0.01;
-      // só guia central
-      path.lineTo(size.width * 0.5 + sway, y);
-      // ignore unused for path width — drawn separately
-      if (widthFactor < 0) break;
+    // Névoa flutuante
+    _mist(canvas, size, a, drift, breath);
+
+    // Caminho de luz — perspectiva
+    if (pathReveal > 0.01) {
+      _path(canvas, size, pathReveal, breath, a);
     }
+  }
 
-    final reveal = progress.clamp(0.0, 1.0);
-    final metrics = path.computeMetrics().first;
-    final drawn = metrics.extractPath(0, metrics.length * reveal);
+  void _hill(
+    Canvas canvas,
+    Size size, {
+    required double y,
+    required double amp,
+    required double phase,
+    required Color color,
+    required int seed,
+  }) {
+    final path = Path()..moveTo(0, size.height);
+    path.lineTo(0, y);
+    for (var x = 0.0; x <= size.width; x += 6) {
+      final n = math.sin(x * 0.012 + phase + seed) * amp +
+          math.sin(x * 0.031 + seed * 2) * (amp * 0.35);
+      path.lineTo(x, y + n);
+    }
+    path
+      ..lineTo(size.width, size.height)
+      ..close();
+    canvas.drawPath(path, Paint()..color = color);
+  }
+
+  void _mist(
+    Canvas canvas,
+    Size size,
+    double a,
+    double drift,
+    double breath,
+  ) {
+    final layers = [
+      (0.32, 0.42, 0.08),
+      (0.55, 0.62, 0.06),
+      (0.72, 0.78, 0.05),
+    ];
+    for (var i = 0; i < layers.length; i++) {
+      final (cy, rx, alpha) = layers[i];
+      final verticalShift =
+          size.height * 0.018 * math.sin(drift * math.pi * 2 + i * 1.4);
+      final center = Offset(
+        size.width * 0.5,
+        size.height * cy + verticalShift,
+      );
+      canvas.drawOval(
+        Rect.fromCenter(
+          center: center,
+          width: size.width * (0.7 + 0.1 * breath),
+          height: size.height * rx * 0.35,
+        ),
+        Paint()
+          ..shader = RadialGradient(
+            colors: [
+              Colors.white.withValues(alpha: alpha * a * (0.7 + 0.3 * breath)),
+              Colors.transparent,
+            ],
+          ).createShader(
+            Rect.fromCenter(
+              center: center,
+              width: size.width * 0.8,
+              height: size.height * 0.2,
+            ),
+          )
+          ..maskFilter = const ui.MaskFilter.blur(ui.BlurStyle.normal, 28),
+      );
+    }
+  }
+
+  void _path(
+    Canvas canvas,
+    Size size,
+    double reveal,
+    double breath,
+    double atm,
+  ) {
+    final pathLift = math.sin(breath * math.pi * 2) * 6;
+    final start = Offset(size.width * 0.5, size.height * 0.97);
+    final end = Offset(size.width * 0.5, size.height * 0.56 + pathLift);
+
+    const steps = 40;
+    final ptsL = <Offset>[];
+    final ptsR = <Offset>[];
+    for (var i = 0; i <= steps; i++) {
+      final t = i / steps;
+      if (t > reveal) break;
+      final y = ui.lerpDouble(start.dy, end.dy, t)!;
+      final halfW =
+          ui.lerpDouble(size.width * 0.2, 2.0, Curves.easeIn.transform(t))!;
+      final x = size.width * 0.5;
+      ptsL.add(Offset(x - halfW, y));
+      ptsR.add(Offset(x + halfW, y));
+    }
+    if (ptsL.length < 2) return;
+
+    final fill = Path()..moveTo(ptsL.first.dx, ptsL.first.dy);
+    for (final p in ptsL.skip(1)) {
+      fill.lineTo(p.dx, p.dy);
+    }
+    for (final p in ptsR.reversed) {
+      fill.lineTo(p.dx, p.dy);
+    }
+    fill.close();
 
     canvas.drawPath(
-      drawn,
-      Paint()
-        ..color = AppColors.accent.withValues(alpha: 0.55 * progress)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 3
-        ..strokeCap = StrokeCap.round
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
-    );
-    canvas.drawPath(
-      drawn,
+      fill,
       Paint()
         ..shader = LinearGradient(
           begin: Alignment.bottomCenter,
           end: Alignment.topCenter,
           colors: [
-            AppColors.accent.withValues(alpha: 0.9 * progress),
-            const Color(0xFFFFF3D6).withValues(alpha: 0.5 * progress),
-            Colors.white.withValues(alpha: 0.15 * progress),
+            AppColors.accent.withValues(alpha: 0.35 * atm),
+            AppColors.accent.withValues(alpha: 0.18 * atm),
+            const Color(0xFFE8C9A0).withValues(alpha: 0.12 * atm),
+            Colors.transparent,
           ],
-        ).createShader(Rect.fromLTWH(0, horizonY, size.width, size.height - horizonY))
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.6
-        ..strokeCap = StrokeCap.round,
+        ).createShader(Rect.fromPoints(start, end))
+        ..maskFilter = const ui.MaskFilter.blur(ui.BlurStyle.normal, 8),
     );
-
-    // Passos/pontos ao longo do caminho
-    for (var i = 1; i <= 5; i++) {
-      final t = (i / 6) * reveal;
-      if (t <= 0) continue;
-      final tan = metrics.getTangentForOffset(metrics.length * t);
-      if (tan == null) continue;
-      canvas.drawCircle(
-        tan.position,
-        2.5,
-        Paint()
-          ..color = Colors.white.withValues(alpha: 0.55 * progress)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2),
-      );
-    }
   }
 
   @override
-  bool shouldRepaint(covariant _HorizonPathPainter old) =>
-      old.progress != progress || old.breath != breath;
+  bool shouldRepaint(covariant _WorldPainter old) =>
+      old.atmosphere != atmosphere ||
+      old.pathReveal != pathReveal ||
+      old.breath != breath ||
+      old.drift != drift;
 }

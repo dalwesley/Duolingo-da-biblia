@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -83,7 +82,12 @@ class _LoginScreenState extends State<LoginScreen> {
         decoration: const BoxDecoration(gradient: AppGradients.cosmic),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(28, 28, 28, 24),
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.xxl,
+              AppSpace.xxl,
+              AppSpace.xxl,
+              AppSpace.xxl,
+            ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -96,45 +100,37 @@ class _LoginScreenState extends State<LoginScreen> {
                     glowing: true,
                   ),
                 ),
-                const SizedBox(height: 28),
+                const SizedBox(height: AppSpace.xxl),
                 Text(
                   'TRILHA',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w900,
+                  style: AppTypography.label(
+                    size: 13,
                     letterSpacing: 3.2,
                     color: AppColors.accent.withValues(alpha: 0.95),
                   ),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   'Entre para continuar',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 36,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                    height: 1.1,
-                  ),
+                  style: AppTypography.display(size: 36),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 14,
-                    height: 1.45,
+                  style: AppTypography.body(
                     color: Colors.white.withValues(alpha: 0.65),
                   ),
                 ),
                 const Spacer(flex: 3),
                 if (_error != null) ...[
                   Container(
-                    padding: const EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(AppSpace.md),
                     decoration: BoxDecoration(
                       color: AppColors.error.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(AppRadii.md),
                       border: Border.all(
                         color: AppColors.error.withValues(alpha: 0.4),
                       ),
@@ -142,29 +138,34 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Text(
                       _error!,
                       textAlign: TextAlign.center,
-                      style: const TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xFFFFC9C9),
+                      style: AppTypography.body(
+                        size: 12,
+                        weight: FontWeight.w600,
+                        color: const Color(0xFFFFC9C9),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 14),
+                  const SizedBox(height: AppSpace.md),
                 ],
                 if (!backend.isFirebaseReady && !backend.isInitializing) ...[
                   OutlinedButton.icon(
                     onPressed: busy ? null : () => backend.retry(),
                     icon: const Icon(Icons.refresh_rounded, size: 18),
-                    label: const Text('Tentar reconectar'),
+                    label: Text(
+                      'Tentar reconectar',
+                      style: AppTypography.cta(color: Colors.white70),
+                    ),
                     style: OutlinedButton.styleFrom(
                       foregroundColor: Colors.white70,
                       side: BorderSide(
                         color: Colors.white.withValues(alpha: 0.2),
                       ),
-                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: AppSpace.md,
+                      ),
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: AppSpace.sm),
                 ],
                 FilledButton(
                   onPressed: busy ? null : _signIn,
@@ -172,9 +173,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     backgroundColor: Colors.white,
                     foregroundColor: const Color(0xFF1A211C),
                     disabledBackgroundColor: Colors.white.withValues(alpha: 0.5),
-                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18),
+                      borderRadius: BorderRadius.circular(AppRadii.lg),
                     ),
                   ),
                   child: busy
@@ -186,27 +187,28 @@ class _LoginScreenState extends State<LoginScreen> {
                             color: Color(0xFF1A211C),
                           ),
                         )
-                      : const Row(
+                      : Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.g_mobiledata_rounded, size: 28),
-                            SizedBox(width: 4),
+                            const Icon(Icons.g_mobiledata_rounded, size: 28),
+                            const SizedBox(width: AppSpace.xs),
                             Text(
                               'Continuar com Google',
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w900,
+                              style: AppTypography.cta(
+                                size: 15,
+                                color: const Color(0xFF1A211C),
                               ),
                             ),
                           ],
                         ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpace.lg),
                 Text(
                   'É necessário entrar para usar o Trilha.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 11,
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 0,
                     color: Colors.white.withValues(alpha: 0.4),
                   ),
                 ),

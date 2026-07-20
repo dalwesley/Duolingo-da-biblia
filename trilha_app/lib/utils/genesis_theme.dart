@@ -300,14 +300,14 @@ class GenesisModuleTheme {
 /// Céus padrão alinhados a [RealmVisuals] — fallback sem módulo conhecido.
 class RealmVisualsFallback {
   static const atSky = [
-    Color(0xFF0B1A14),
-    Color(0xFF1E3D32),
-    Color(0xFF2A4A3A),
+    Color(0xFF0A1612),
+    Color(0xFF152820),
+    Color(0xFF243F36),
   ];
   static const ntSky = [
-    Color(0xFF1A100E),
-    Color(0xFF3A2218),
-    Color(0xFF4A2E20),
+    Color(0xFF18100E),
+    Color(0xFF342018),
+    Color(0xFF443028),
   ];
 }
 
@@ -318,6 +318,6 @@ class GenesisTrailTheme {
   static const headerGradient = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFF1E3D32), Color(0xFF2F5D4A), Color(0xFF4A8B6F)],
+    colors: [Color(0xFF152820), Color(0xFF243F36), Color(0xFF3D6B58)],
   );
 }

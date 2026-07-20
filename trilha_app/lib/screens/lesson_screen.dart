@@ -695,7 +695,7 @@ class _IntroPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
         children: [
           const Spacer(flex: 1),
@@ -710,35 +710,38 @@ class _IntroPanel extends StatelessWidget {
           Text(
             mission.title,
             textAlign: TextAlign.center,
-            style: const TextStyle(fontSize: 28, fontWeight: FontWeight.w900, color: Colors.white, height: 1.15),
+            style: AppTypography.display(size: 28),
           ),
           if (mission.subtitle.isNotEmpty) ...[
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             Text(
               mission.subtitle,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
+              style: AppTypography.body(
+                size: 15,
                 height: 1.35,
-                fontWeight: FontWeight.w500,
                 color: Colors.white.withValues(alpha: 0.7),
               ),
             ),
           ],
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.sm),
           Text(
             mission.isBoss
                 ? 'Desafio · ${mission.questions.length} perguntas · +${mission.stepsReward} passos'
                 : '${mission.questions.length} perguntas · +${mission.stepsReward} passos',
-            style: TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: Colors.white.withValues(alpha: 0.62)),
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w600,
+              color: Colors.white.withValues(alpha: 0.62),
+            ),
           ),
           if (difficultyMeta != null) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpace.sm),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               decoration: BoxDecoration(
                 color: theme.decorColor.withValues(alpha: 0.18),
-                borderRadius: BorderRadius.circular(999),
+                borderRadius: BorderRadius.circular(AppRadii.pill),
                 border: Border.all(color: theme.decorColor.withValues(alpha: 0.4)),
               ),
               child: Row(
@@ -748,38 +751,45 @@ class _IntroPanel extends StatelessWidget {
                     glyph: CinematicGlyphResolver.forDifficulty(difficultyMeta!.difficulty.id),
                     size: 22,
                     accent: theme.decorColor,
-                    framed: true,
                     glowing: false,
                   ),
                   const SizedBox(width: 8),
                   Text(
                     difficultyMeta!.label,
-                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: theme.decorColor),
+                    style: AppTypography.title(size: 12, color: theme.decorColor),
                   ),
                 ],
               ),
             ),
           ],
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Text(
             hasStudy
                 ? 'Estudo → perguntas → reflexão · 5 lâmpadas'
                 : '5 lâmpadas · erro apaga uma · dica remove uma opção',
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600, color: Colors.white.withValues(alpha: 0.5)),
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: Colors.white.withValues(alpha: 0.5),
+            ),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: AppSpace.section),
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(AppSpace.xl),
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.28),
-              borderRadius: BorderRadius.circular(22),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
             ),
             child: Text(
               mission.intro,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 15, height: 1.55, color: Colors.white.withValues(alpha: 0.9)),
+              style: AppTypography.body(
+                size: 15,
+                height: 1.55,
+                color: Colors.white.withValues(alpha: 0.9),
+              ),
             ),
           ),
           const Spacer(flex: 2),
@@ -790,7 +800,7 @@ class _IntroPanel extends StatelessWidget {
             onTap: onStart,
             accent: theme.decorColor,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpace.xl),
         ],
       ),
     );
@@ -854,10 +864,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
           curve: Curves.easeOutCubic,
           builder: (context, value, child) => Transform.translate(offset: Offset(0, value * 100), child: child),
           child: ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
             child: Container(
                 width: double.infinity,
-                padding: EdgeInsets.fromLTRB(24, 22, 24, 18 + bottom),
+                padding: EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.section, AppSpace.screen, AppSpace.lg + bottom),
                 decoration: BoxDecoration(
                   color: const Color(0xFF0A0E0C).withValues(alpha: 0.94),
                   border: Border(top: BorderSide(color: color.withValues(alpha: 0.7), width: 3)),
@@ -885,41 +895,48 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                               BoxShadow(color: color.withValues(alpha: 0.4), blurRadius: 16),
                             ],
                           ),
-                          child: Icon(
-                            outOfLamps
-                                ? Icons.nightlight_round
-                                : isCorrect
-                                    ? Icons.check_rounded
-                                    : Icons.menu_book_rounded,
-                            color: const Color(0xFF1A1200),
-                            size: 26,
+                          child: Center(
+                            child: CinematicIcon(
+                              glyph: outOfLamps
+                                  ? CinematicGlyph.frost
+                                  : isCorrect
+                                      ? CinematicGlyph.check
+                                      : CinematicGlyph.book,
+                              size: 26,
+                              accent: const Color(0xFF1A1200),
+                              framed: false,
+                            ),
                           ),
                         ),
-                        const SizedBox(width: 14),
+                        const SizedBox(width: AppSpace.section),
                         Expanded(
                           child: Text(
                             title,
-                            style: TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: color),
+                            style: AppTypography.display(size: 22, color: color),
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 14),
+                    const SizedBox(height: AppSpace.section),
                     Text(
                       outOfLamps
                           ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva passos parciais. Levante-se e continue caminhando.'
                           : isCorrect
                               ? feedback
                               : 'Levante-se.\nContinue caminhando.\n\n$feedback',
-                      style: TextStyle(fontSize: 15, height: 1.5, color: Colors.white.withValues(alpha: 0.92)),
+                      style: AppTypography.body(
+                        size: 15,
+                        height: 1.5,
+                        color: Colors.white.withValues(alpha: 0.92),
+                      ),
                     ),
                     if (!outOfLamps && (widget.verseText != null || question.verseRef != null)) ...[
-                      const SizedBox(height: 12),
+                      const SizedBox(height: AppSpace.md),
                       Container(
-                        padding: const EdgeInsets.all(14),
+                        padding: const EdgeInsets.all(AppSpace.section),
                         decoration: BoxDecoration(
                           color: color.withValues(alpha: 0.12),
-                          borderRadius: BorderRadius.circular(14),
+                          borderRadius: BorderRadius.circular(AppRadii.sm),
                           border: Border.all(color: color.withValues(alpha: 0.35)),
                         ),
                         child: Column(
@@ -928,22 +945,21 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                             if (question.verseRef != null)
                               Text(
                                 question.verseRef!,
-                                style: TextStyle(fontSize: 11, fontWeight: FontWeight.w900, color: color),
+                                style: AppTypography.label(size: 11, color: color, letterSpacing: 0.6),
                               ),
                             if (widget.verseText != null) ...[
-                              const SizedBox(height: 6),
+                              const SizedBox(height: AppSpace.xs),
                               Text(
                                 '"${widget.verseText}"',
-                                style: TextStyle(
-                                  fontSize: 14,
+                                style: AppTypography.body(
+                                  size: 14,
                                   height: 1.45,
-                                  fontStyle: FontStyle.italic,
                                   color: Colors.white.withValues(alpha: 0.9),
-                                ),
+                                ).copyWith(fontStyle: FontStyle.italic),
                               ),
                             ],
                             if (question.verseRef != null) ...[
-                              const SizedBox(height: 10),
+                              const SizedBox(height: AppSpace.sm),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.of(context).push(
@@ -956,15 +972,16 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                 },
                                 child: Row(
                                   children: [
-                                    Icon(Icons.menu_book_rounded, size: 16, color: color),
-                                    const SizedBox(width: 6),
+                                    CinematicIcon(
+                                      glyph: CinematicGlyph.book,
+                                      size: 16,
+                                      accent: color,
+                                      framed: false,
+                                    ),
+                                    const SizedBox(width: AppSpace.xs),
                                     Text(
                                       'Abrir na Bíblia',
-                                      style: TextStyle(
-                                        fontSize: 12,
-                                        fontWeight: FontWeight.w900,
-                                        color: color,
-                                      ),
+                                      style: AppTypography.cta(size: 12, color: color),
                                     ),
                                   ],
                                 ),
@@ -975,7 +992,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                       ),
                     ],
                     if (needsReread) ...[
-                      const SizedBox(height: 12),
+                      const SizedBox(height: AppSpace.md),
                       GestureDetector(
                         onTap: () => setState(() => _reread = !_reread),
                         child: Row(
@@ -990,16 +1007,23 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                 border: Border.all(color: color.withValues(alpha: 0.8), width: 2),
                               ),
                               child: _reread
-                                  ? const Icon(Icons.check_rounded, size: 14, color: Colors.white)
+                                  ? Center(
+                                      child: CinematicIcon(
+                                        glyph: CinematicGlyph.check,
+                                        size: 14,
+                                        accent: Colors.white,
+                                        framed: false,
+                                      ),
+                                    )
                                   : null,
                             ),
-                            const SizedBox(width: 10),
+                            const SizedBox(width: AppSpace.sm),
                             Expanded(
                               child: Text(
                                 'Reli o versículo com atenção',
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w700,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  weight: FontWeight.w700,
                                   color: Colors.white.withValues(alpha: 0.85),
                                 ),
                               ),
@@ -1008,7 +1032,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                         ),
                       ),
                     ],
-                    const SizedBox(height: 18),
+                    const SizedBox(height: AppSpace.lg),
                     Opacity(
                       opacity: canContinue ? 1 : 0.45,
                       child: _GoldButton(
@@ -1060,17 +1084,15 @@ class _GoldButton extends StatelessWidget {
                 ? [Color.lerp(accent, Colors.white, 0.25)!, accent, Color.lerp(accent, Colors.black, 0.15)!]
                 : [accent, Color.lerp(accent, AppColors.primaryDark, 0.35)!],
           ),
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           boxShadow: [BoxShadow(color: accent.withValues(alpha: 0.45), offset: const Offset(0, 4), blurRadius: 12)],
         ),
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w900,
+          style: AppTypography.cta(
+            size: 15,
             color: darkText ? AppColors.inkOnAccent : Colors.white,
-            letterSpacing: 0.5,
           ),
         ),
       ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
@@ -16,6 +15,7 @@ import '../widgets/accept_invite_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
+import '../widgets/ui_primitives.dart';
 
 class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
@@ -147,7 +147,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!league.isLoaded) {
       return [
         const Padding(
-          padding: EdgeInsets.only(top: 48),
+          padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
           child: Center(
             child: CircularProgressIndicator(color: AppColors.accent),
           ),
@@ -196,14 +196,9 @@ class _LeagueScreenState extends State<LeagueScreen>
         _reveal(3, _OutcomeBanner(league: league)),
       ],
       const SizedBox(height: 20),
-      Text(
-        overall ? 'CLASSIFICAÇÃO GERAL' : 'CLASSIFICAÇÃO DA SEMANA',
-        style: TextStyle(
-          fontSize: 11,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 1.4,
-          color: a.textMuted(0.55),
-        ),
+      SectionLabel(
+        overall ? 'Classificação geral' : 'Classificação da semana',
+        color: a.textMuted(0.7),
       ),
       const SizedBox(height: 10),
     ];
@@ -252,7 +247,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!companions.isLoaded) {
       return [
         const Padding(
-          padding: EdgeInsets.only(top: 48),
+          padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
           child: Center(
             child: CircularProgressIndicator(color: AppColors.accent),
           ),
@@ -281,21 +276,15 @@ class _LeagueScreenState extends State<LeagueScreen>
             Text(
               'Andem juntos',
               textAlign: TextAlign.center,
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 28,
-                fontWeight: FontWeight.w700,
-                color: Colors.white,
-                height: 1.1,
-              ),
+              style: AppTypography.display(size: 28),
             ),
             const SizedBox(height: 8),
             Text(
               'Convide até ${CompanionService.maxCompanions} pessoas.\nSem ranking entre vocês — só presença.',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
-                height: 1.4,
-                fontWeight: FontWeight.w600,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w600,
                 color: Colors.white.withValues(alpha: 0.55),
               ),
             ),
@@ -310,7 +299,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         Text(
           companions.lastError!,
           textAlign: TextAlign.center,
-          style: const TextStyle(color: AppColors.error, fontSize: 12),
+          style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       );
       list.add(const SizedBox(height: 12));
@@ -396,9 +385,9 @@ class _LeagueScreenState extends State<LeagueScreen>
         },
         child: Text(
           'Atualizar presença',
-          style: TextStyle(
+          style: AppTypography.body(
+            weight: FontWeight.w700,
             color: a.textMuted(0.7),
-            fontWeight: FontWeight.w700,
           ),
         ),
       ),
@@ -484,7 +473,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!rooms.isLoaded) {
       return [
         const Padding(
-          padding: EdgeInsets.only(top: 48),
+          padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
           child: Center(
             child: CircularProgressIndicator(color: AppColors.accent),
           ),
@@ -580,18 +569,13 @@ class _LeagueScreenState extends State<LeagueScreen>
         Text(
           rooms.lastError!,
           textAlign: TextAlign.center,
-          style: const TextStyle(color: AppColors.error, fontSize: 12),
+          style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       ],
       const SizedBox(height: 18),
-      Text(
-        'RANKING DA SALA',
-        style: TextStyle(
-          fontSize: 11,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 1.4,
-          color: a.textMuted(0.55),
-        ),
+      SectionLabel(
+        'Ranking da sala',
+        color: a.textMuted(0.7),
       ),
       const SizedBox(height: 10),
       if (rooms.loading)
@@ -605,9 +589,8 @@ class _LeagueScreenState extends State<LeagueScreen>
         Text(
           'Ainda sem participantes. Compartilhe o código ${room.code}.',
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style: AppTypography.body(
             color: Appearance.of(context).textMuted(0.7),
-            fontSize: 13,
           ),
         )
       else
@@ -627,7 +610,11 @@ class _LeagueScreenState extends State<LeagueScreen>
       Text(
         'Ordem por passos nesta semana · ${progress.userName}',
         textAlign: TextAlign.center,
-        style: TextStyle(fontSize: 11, color: a.textMuted(0.55)),
+        style: AppTypography.label(
+          size: 11,
+          letterSpacing: 0,
+          color: a.textMuted(0.55),
+        ),
       ),
     ];
   }
@@ -746,14 +733,13 @@ class _SegmentTabs extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 10),
           decoration: BoxDecoration(
             gradient: selected ? AppGradients.gold : null,
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(AppRadii.sm),
           ),
           child: Text(
             label,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.cta(
+              size: 13,
               color: selected
                   ? AppColors.inkOnAccent
                   : Appearance.of(context).textMuted(0.7),
@@ -779,7 +765,7 @@ class _RankingPeriodTabs extends StatelessWidget {
         padding: const EdgeInsets.all(3),
         decoration: BoxDecoration(
           color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: a.cardBorder),
         ),
         child: Row(
@@ -806,13 +792,12 @@ class _RankingPeriodTabs extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
         decoration: BoxDecoration(
           gradient: selected ? AppGradients.gold : null,
-          borderRadius: BorderRadius.circular(11),
+          borderRadius: BorderRadius.circular(AppRadii.sm),
         ),
         child: Text(
           label,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w900,
+          style: AppTypography.cta(
+            size: 12,
             color: selected
                 ? AppColors.inkOnAccent
                 : Appearance.of(context).textMuted(0.7),
@@ -837,13 +822,8 @@ class _RoomsOfflineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: a.cardBorder),
-      ),
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpace.xl),
       child: Column(
         children: [
           const CinematicIcon(
@@ -857,18 +837,14 @@ class _RoomsOfflineCard extends StatelessWidget {
           Text(
             'Salas precisam da nuvem',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTypography.display(size: 24),
           ),
           const SizedBox(height: 8),
           Text(
             error ?? 'Entre com Google para caminhar na caravana ao vivo.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
+            style: AppTypography.body(
+              size: 13,
               height: 1.35,
               color: a.textMuted(0.75),
             ),
@@ -880,15 +856,11 @@ class _RoomsOfflineCard extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 11),
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
               ),
               child: Text(
                 loading ? 'Conectando…' : 'Tentar de novo',
-                style: const TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.inkOnAccent,
-                ),
+                style: AppTypography.cta(size: 13),
               ),
             ),
           ),
@@ -896,9 +868,9 @@ class _RoomsOfflineCard extends StatelessWidget {
           Text(
             'Faça login com Google ao abrir o app',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w700,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
               color: AppColors.accent.withValues(alpha: 0.9),
             ),
           ),
@@ -920,9 +892,7 @@ class _RoomsIntro extends StatelessWidget {
       children: [
         Text(
           'SALAS PRIVADAS',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w900,
+          style: AppTypography.label(
             letterSpacing: 2,
             color: AppColors.accent.withValues(alpha: 0.9),
           ),
@@ -931,21 +901,15 @@ class _RoomsIntro extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: GoogleFonts.cormorantGaramond(
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-            height: 1.1,
-          ),
+          style: AppTypography.display(size: 30, height: 1.1),
         ),
         const SizedBox(height: 8),
         Text(
           subtitle,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 13,
-            height: 1.4,
-            fontWeight: FontWeight.w600,
+          style: AppTypography.body(
+            size: 13,
+            weight: FontWeight.w600,
             color: Colors.white.withValues(alpha: 0.58),
           ),
         ),
@@ -970,13 +934,8 @@ class _RoomsEmptyState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: a.cardBorder),
-      ),
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpace.xl),
       child: Column(
         children: [
           const CinematicIcon(
@@ -990,39 +949,35 @@ class _RoomsEmptyState extends StatelessWidget {
           Text(
             'Quem vai estudar com você?',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 26,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTypography.display(size: 26),
           ),
           const SizedBox(height: 10),
           Text(
             'Crie uma sala e envie o código, ou entre em uma sala que alguém já preparou. A semana fica mais clara quando o grupo aparece no mesmo placar.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
+            style: AppTypography.body(
+              size: 13,
               height: 1.45,
-              color: Colors.white.withValues(alpha: 0.6),
+              color: a.textMuted(0.65),
             ),
           ),
           const SizedBox(height: 18),
           Row(
             children: [
               _RoomBenefit(
-                icon: Icons.lock_rounded,
+                glyph: CinematicGlyph.lock,
                 label: 'Privada',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
-                icon: Icons.ios_share_rounded,
+                glyph: CinematicGlyph.share,
                 label: 'Código',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
-                icon: Icons.leaderboard_rounded,
+                glyph: CinematicGlyph.podium,
                 label: 'Semanal',
                 color: a.textMuted(0.78),
               ),
@@ -1039,7 +994,7 @@ class _RoomsEmptyState extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 decoration: BoxDecoration(
                   gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   boxShadow: [
                     BoxShadow(
                       color: AppColors.accent.withValues(alpha: 0.22),
@@ -1048,14 +1003,10 @@ class _RoomsEmptyState extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: const Text(
+                child: Text(
                   'Criar sala',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 14,
-                    color: AppColors.inkOnAccent,
-                  ),
+                  style: AppTypography.cta(),
                 ),
               ),
             ),
@@ -1067,7 +1018,7 @@ class _RoomsEmptyState extends StatelessWidget {
             Text(
               error!,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: AppColors.error, fontSize: 12),
+              style: AppTypography.body(size: 12, color: AppColors.error),
             ),
           ],
         ],
@@ -1077,12 +1028,12 @@ class _RoomsEmptyState extends StatelessWidget {
 }
 
 class _RoomBenefit extends StatelessWidget {
-  final IconData icon;
+  final CinematicGlyph glyph;
   final String label;
   final Color color;
 
   const _RoomBenefit({
-    required this.icon,
+    required this.glyph,
     required this.label,
     required this.color,
   });
@@ -1094,22 +1045,22 @@ class _RoomBenefit extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white.withValues(alpha: 0.045),
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
         ),
         child: Column(
           children: [
-            Icon(
-              icon,
+            CinematicIcon(
+              glyph: glyph,
               size: 16,
-              color: AppColors.accent.withValues(alpha: 0.9),
+              accent: AppColors.accent.withValues(alpha: 0.9),
+              framed: false,
             ),
             const SizedBox(height: 5),
             Text(
               label,
-              style: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w800,
+              style: AppTypography.label(
+                letterSpacing: 0,
                 color: color,
               ),
             ),
@@ -1149,14 +1100,8 @@ class _RoomHeader extends StatelessWidget {
     final days = LeagueService.daysLeft();
     final closesText = days <= 1 ? 'Fecha hoje' : '$days dias';
 
-    return Container(
-      width: double.infinity,
+    return GlassCard(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 14),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: a.cardBorder),
-      ),
       child: Column(
         children: [
           Row(
@@ -1175,9 +1120,7 @@ class _RoomHeader extends StatelessWidget {
                   children: [
                     Text(
                       isOwner ? 'Sua sala' : 'Sala',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.w900,
+                      style: AppTypography.label(
                         letterSpacing: 1.5,
                         color: AppColors.accent.withValues(alpha: 0.9),
                       ),
@@ -1187,12 +1130,7 @@ class _RoomHeader extends StatelessWidget {
                       room.name,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.cormorantGaramond(
-                        fontSize: 26,
-                        fontWeight: FontWeight.w700,
-                        color: Colors.white,
-                        height: 1.05,
-                      ),
+                      style: AppTypography.display(size: 26, height: 1.05),
                     ),
                   ],
                 ),
@@ -1204,11 +1142,10 @@ class _RoomHeader extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Text(
               'Criada por ${room.ownerName}',
-              style: TextStyle(
-                fontSize: 12,
-                fontStyle: FontStyle.italic,
+              style: AppTypography.body(
+                size: 12,
                 color: a.textMuted(0.65),
-              ),
+              ).copyWith(fontStyle: FontStyle.italic),
             ),
           ),
           const SizedBox(height: 16),
@@ -1219,7 +1156,7 @@ class _RoomHeader extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.055),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 border: Border.all(
                   color: AppColors.accent.withValues(alpha: 0.32),
                 ),
@@ -1232,26 +1169,29 @@ class _RoomHeader extends StatelessWidget {
                       children: [
                         Text(
                           'Código da sala',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w800,
+                          style: AppTypography.label(
+                            letterSpacing: 0,
                             color: a.textMuted(0.58),
                           ),
                         ),
                         const SizedBox(height: 2),
                         Text(
                           room.code,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 4,
+                          style: AppTypography.title(
+                            size: 22,
+                            weight: FontWeight.w900,
                             color: AppColors.accent,
-                          ),
+                          ).copyWith(letterSpacing: 4),
                         ),
                       ],
                     ),
                   ),
-                  Icon(Icons.copy_rounded, size: 20, color: a.textMuted(0.72)),
+                  CinematicIcon(
+                    glyph: CinematicGlyph.copy,
+                    size: 20,
+                    accent: a.textMuted(0.72),
+                    framed: false,
+                  ),
                 ],
               ),
             ),
@@ -1266,24 +1206,21 @@ class _RoomHeader extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 12),
                     decoration: BoxDecoration(
                       gradient: AppGradients.gold,
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(AppRadii.md),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Icon(
-                          Icons.qr_code_2_rounded,
+                        const CinematicIcon(
+                          glyph: CinematicGlyph.qr,
                           size: 18,
-                          color: AppColors.inkOnAccent,
+                          accent: AppColors.inkOnAccent,
+                          framed: false,
                         ),
-                        SizedBox(width: 8),
+                        const SizedBox(width: AppSpace.sm),
                         Text(
                           'Compartilhar QR',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w900,
-                            color: AppColors.inkOnAccent,
-                          ),
+                          style: AppTypography.cta(size: 13),
                         ),
                       ],
                     ),
@@ -1292,7 +1229,7 @@ class _RoomHeader extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               _RoomIconButton(
-                icon: Icons.refresh_rounded,
+                glyph: CinematicGlyph.echo,
                 label: 'Atualizar',
                 onTap: onRefresh,
               ),
@@ -1315,18 +1252,19 @@ class _RoomHeader extends StatelessWidget {
           const SizedBox(height: 10),
           Row(
             children: [
-              Icon(
-                Icons.hourglass_bottom_rounded,
+              CinematicIcon(
+                glyph: CinematicGlyph.calendar,
                 size: 14,
-                color: AppColors.streak.withValues(alpha: 0.95),
+                accent: AppColors.streak.withValues(alpha: 0.95),
+                framed: false,
               ),
               const SizedBox(width: 6),
               Expanded(
                 child: Text(
                   'Semana da caravana: $closesText',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
                     color: a.textMuted(0.72),
                   ),
                 ),
@@ -1335,10 +1273,10 @@ class _RoomHeader extends StatelessWidget {
                 onPressed: onLeave,
                 child: Text(
                   'Sair',
-                  style: TextStyle(
-                    fontSize: 12,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
                     color: a.textMuted(0.55),
-                    fontWeight: FontWeight.w700,
                   ),
                 ),
               ),
@@ -1351,12 +1289,12 @@ class _RoomHeader extends StatelessWidget {
 }
 
 class _RoomIconButton extends StatelessWidget {
-  final IconData icon;
+  final CinematicGlyph glyph;
   final String label;
   final VoidCallback onTap;
 
   const _RoomIconButton({
-    required this.icon,
+    required this.glyph,
     required this.label,
     required this.onTap,
   });
@@ -1370,22 +1308,23 @@ class _RoomIconButton extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
           color: Colors.white.withValues(alpha: 0.045),
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: a.cardBorder),
         ),
         child: Column(
           children: [
-            Icon(
-              icon,
+            CinematicIcon(
+              glyph: glyph,
               size: 17,
-              color: AppColors.accent.withValues(alpha: 0.9),
+              accent: AppColors.accent.withValues(alpha: 0.9),
+              framed: false,
             ),
             const SizedBox(height: 2),
             Text(
               label,
-              style: TextStyle(
-                fontSize: 9,
-                fontWeight: FontWeight.w800,
+              style: AppTypography.label(
+                size: 9,
+                letterSpacing: 0,
                 color: a.textMuted(0.68),
               ),
             ),
@@ -1416,7 +1355,7 @@ class _RoomStatChip extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: accent ? AppGradients.gold : null,
           color: accent ? null : Colors.white.withValues(alpha: 0.045),
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: accent
                 ? Colors.white.withValues(alpha: 0.45)
@@ -1429,9 +1368,9 @@ class _RoomStatChip extends StatelessWidget {
               value,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w900,
+              style: AppTypography.title(
+                size: 15,
+                weight: FontWeight.w900,
                 color: accent ? AppColors.inkOnAccent : AppColors.accent,
               ),
             ),
@@ -1440,9 +1379,9 @@ class _RoomStatChip extends StatelessWidget {
               label,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w800,
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 0,
                 color: accent
                     ? AppColors.inkOnAccent.withValues(alpha: 0.75)
                     : a.textMuted(0.58),
@@ -1474,24 +1413,13 @@ class _CaravanaHeroCard extends StatelessWidget {
     final tier = LeagueTier.values[tierIndex];
     final days = LeagueService.daysLeft();
 
-    return Container(
-      width: double.infinity,
+    return GlassCard(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: a.cardBorder),
-      ),
       child: Column(
         children: [
           Text(
             overall ? 'Ranking geral' : 'Sua semana',
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 26,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-              height: 1.1,
-            ),
+            style: AppTypography.display(size: 26, height: 1.1),
           ),
           const SizedBox(height: 4),
           Text(
@@ -1499,8 +1427,7 @@ class _CaravanaHeroCard extends StatelessWidget {
                 ? 'Passos de toda a jornada'
                 : 'Quem mais caminhou nesta caravana',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 12,
+            style: AppTypography.body(
               height: 1.35,
               color: a.textMuted(0.65),
             ),
@@ -1511,24 +1438,24 @@ class _CaravanaHeroCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
             decoration: BoxDecoration(
               gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(AppRadii.md),
             ),
             child: Column(
               children: [
                 Text(
                   '$rankº lugar',
-                  style: const TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w900,
+                  style: AppTypography.title(
+                    size: 22,
+                    weight: FontWeight.w900,
                     color: AppColors.inkOnAccent,
                   ),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   '$steps passos${overall ? ' no total' : ' esta semana'}',
-                  style: TextStyle(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w700,
                     color: AppColors.inkOnAccent.withValues(alpha: 0.85),
                   ),
                 ),
@@ -1542,24 +1469,25 @@ class _CaravanaHeroCard extends StatelessWidget {
                 Expanded(
                   child: Text(
                     tier.label,
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w800,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w800,
                       color: Colors.white.withValues(alpha: 0.9),
                     ),
                   ),
                 ),
-                const Icon(
-                  Icons.hourglass_bottom_rounded,
+                const CinematicIcon(
+                  glyph: CinematicGlyph.calendar,
                   size: 14,
-                  color: AppColors.streak,
+                  accent: AppColors.streak,
+                  framed: false,
                 ),
                 const SizedBox(width: 4),
                 Text(
                   days <= 1 ? 'Fecha hoje' : '$days dias',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
                     color: a.textMuted(0.75),
                   ),
                 ),
@@ -1571,7 +1499,11 @@ class _CaravanaHeroCard extends StatelessWidget {
             Text(
               'Top 7 sobem de caravana · últimos 5 descem',
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 11, color: a.textMuted(0.5)),
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 0,
+                color: a.textMuted(0.5),
+              ),
             ),
           ],
         ],
@@ -1632,9 +1564,10 @@ class _TierLadder extends StatelessWidget {
                 tier.shortLabel,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: 9,
-                  fontWeight: isCurrent ? FontWeight.w900 : FontWeight.w600,
+                style: AppTypography.label(
+                  size: 9,
+                  letterSpacing: 0,
+                  weight: isCurrent ? FontWeight.w900 : FontWeight.w600,
                   color: isCurrent
                       ? AppColors.accent
                       : a.textMuted(reached ? 0.55 : 0.3),
@@ -1693,11 +1626,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
       backgroundColor: AppColors.nightMid,
       title: Text(
         widget.title,
-        style: GoogleFonts.cormorantGaramond(
-          color: Colors.white,
-          fontWeight: FontWeight.w700,
-          fontSize: 24,
-        ),
+        style: AppTypography.display(size: 24),
       ),
       content: TextField(
         controller: _controller,
@@ -1706,18 +1635,16 @@ class _TextInputDialogState extends State<_TextInputDialog> {
         textCapitalization: widget.capitalize
             ? TextCapitalization.characters
             : TextCapitalization.none,
-        style: TextStyle(
-          color: Colors.white,
-          letterSpacing: widget.letterSpacing,
-          fontWeight: widget.capitalize ? FontWeight.w800 : FontWeight.w500,
-        ),
+        style: AppTypography.body(
+          weight: widget.capitalize ? FontWeight.w800 : FontWeight.w500,
+        ).copyWith(letterSpacing: widget.letterSpacing),
         decoration: InputDecoration(
           hintText: widget.hint,
-          hintStyle: TextStyle(color: a.textMuted(0.5), letterSpacing: 0),
+          hintStyle: AppTypography.body(color: a.textMuted(0.5)),
           filled: true,
           fillColor: a.cardFillSoft,
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(AppRadii.sm),
             borderSide: BorderSide.none,
           ),
         ),
@@ -1726,7 +1653,10 @@ class _TextInputDialogState extends State<_TextInputDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: Text('Cancelar', style: TextStyle(color: a.textMuted(0.7))),
+          child: Text(
+            'Cancelar',
+            style: AppTypography.body(color: a.textMuted(0.7)),
+          ),
         ),
         FilledButton(
           onPressed: _submit,
@@ -1736,7 +1666,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
           ),
           child: Text(
             widget.confirmLabel,
-            style: const TextStyle(fontWeight: FontWeight.w800),
+            style: AppTypography.cta(),
           ),
         ),
       ],
@@ -1768,58 +1698,50 @@ class _OutcomeBanner extends StatelessWidget {
       ),
     };
 
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        gradient: outcome == LeagueOutcome.promoted ? AppGradients.gold : null,
-        color: outcome == LeagueOutcome.promoted ? null : a.cardFill,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: a.cardBorder),
-      ),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: outcome == LeagueOutcome.promoted
-                ? CinematicGlyph.crown
-                : CinematicGlyph.path,
-            size: 34,
-            accent: outcome == LeagueOutcome.promoted
-                ? AppColors.inkOnAccent
-                : AppColors.accent,
-            glowing: false,
-            framed: false,
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w900,
-                    color: outcome == LeagueOutcome.promoted
-                        ? AppColors.inkOnAccent
-                        : a.text,
-                  ),
+    final content = Row(
+      children: [
+        CinematicIcon(
+          glyph: outcome == LeagueOutcome.promoted
+              ? CinematicGlyph.crown
+              : CinematicGlyph.path,
+          size: 34,
+          accent: outcome == LeagueOutcome.promoted
+              ? AppColors.inkOnAccent
+              : AppColors.accent,
+          glowing: false,
+          framed: false,
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: AppTypography.title(
+                  size: 15,
+                  weight: FontWeight.w900,
+                  color: outcome == LeagueOutcome.promoted
+                      ? AppColors.inkOnAccent
+                      : a.text,
                 ),
-                const SizedBox(height: 3),
-                Text(
-                  message,
-                  style: TextStyle(
-                    fontSize: 12,
-                    height: 1.3,
-                    color: outcome == LeagueOutcome.promoted
-                        ? const Color(0xFF5A4400)
-                        : a.textMuted(0.75),
-                  ),
+              ),
+              const SizedBox(height: 3),
+              Text(
+                message,
+                style: AppTypography.body(
+                  size: 12,
+                  height: 1.3,
+                  color: outcome == LeagueOutcome.promoted
+                      ? const Color(0xFF5A4400)
+                      : a.textMuted(0.75),
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-          const SizedBox(width: 8),
-          TextButton(
+        ),
+        const SizedBox(width: 8),
+        TextButton(
             onPressed: () async {
               if (outcome == LeagueOutcome.promoted) {
                 await context.read<ProgressService>().grantBonusSteps(
@@ -1840,8 +1762,7 @@ class _OutcomeBanner extends StatelessWidget {
             },
             child: Text(
               outcome == LeagueOutcome.promoted ? 'Coletar' : 'Ok',
-              style: TextStyle(
-                fontWeight: FontWeight.w900,
+              style: AppTypography.cta(
                 color: outcome == LeagueOutcome.promoted
                     ? AppColors.inkOnAccent
                     : AppColors.accent,
@@ -1849,8 +1770,22 @@ class _OutcomeBanner extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
+      );
+
+    if (outcome == LeagueOutcome.promoted) {
+      return Container(
+        padding: AppMetrics.cardPadding,
+        decoration: BoxDecoration(
+          gradient: AppGradients.gold,
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          border: Border.all(color: a.cardBorder),
+          boxShadow: AppTheme.cardShadow(elevated: true),
+        ),
+        child: content,
+      );
+    }
+
+    return GlassCard(padding: AppMetrics.cardPadding, child: content);
   }
 }
 
@@ -1867,20 +1802,18 @@ class _ZoneLabel extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 10, top: 4),
       child: Row(
         children: [
-          Icon(
-            up
-                ? Icons.keyboard_double_arrow_up_rounded
-                : Icons.keyboard_double_arrow_down_rounded,
+          CinematicIcon(
+            glyph: up ? CinematicGlyph.rise : CinematicGlyph.demote,
             size: 16,
-            color: color,
+            accent: color,
+            framed: false,
           ),
           const SizedBox(width: 6),
           Expanded(
             child: Text(
               text,
-              style: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w900,
+              style: AppTypography.label(
+                size: 10,
                 letterSpacing: 1.2,
                 color: color.withValues(alpha: 0.9),
               ),
@@ -1909,10 +1842,11 @@ class _ZoneDivider extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: Icon(
-              Icons.keyboard_double_arrow_up_rounded,
+            child: CinematicIcon(
+              glyph: CinematicGlyph.rise,
               size: 14,
-              color: AppColors.accent.withValues(alpha: 0.7),
+              accent: AppColors.accent.withValues(alpha: 0.7),
+              framed: false,
             ),
           ),
           Expanded(
@@ -1944,90 +1878,98 @@ class _StandingRow extends StatelessWidget {
       _ => null,
     };
 
-    return Container(
-      margin: const EdgeInsets.only(bottom: 8),
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      decoration: BoxDecoration(
-        gradient: entry.isUser ? AppGradients.gold : a.cardGradient,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: entry.isUser
-              ? Colors.white.withValues(alpha: 0.5)
-              : a.cardBorder,
-          width: entry.isUser ? 1.5 : 1,
-        ),
-        boxShadow: entry.isUser
-            ? [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.35),
-                  blurRadius: 14,
-                ),
-              ]
-            : null,
-      ),
-      child: Row(
-        children: [
-          SizedBox(
-            width: 26,
-            child: Text(
-              '$rank',
-              style: TextStyle(
-                fontSize: isTop3 ? 16 : 13,
-                fontWeight: FontWeight.w900,
-                color: entry.isUser
-                    ? AppColors.inkOnAccent
-                    : (medal ?? a.textMuted(0.6)),
-              ),
-            ),
-          ),
-          Container(
-            width: 34,
-            height: 34,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: entry.isUser
-                  ? Colors.white.withValues(alpha: 0.35)
-                  : AppColors.primaryLight.withValues(alpha: 0.3),
-              border: Border.all(
-                color: entry.isUser
-                    ? Colors.white.withValues(alpha: 0.6)
-                    : Colors.white.withValues(alpha: 0.15),
-              ),
-            ),
-            child: Center(
-              child: Text(
-                entry.name.isEmpty ? '?' : entry.name[0].toUpperCase(),
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w900,
-                  color: entry.isUser ? AppColors.inkOnAccent : Colors.white,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Text(
-              entry.isUser ? '${entry.name} (você)' : entry.name,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: entry.isUser ? FontWeight.w900 : FontWeight.w600,
-                color: entry.isUser ? AppColors.inkOnAccent : a.text,
-              ),
-            ),
-          ),
-          Text(
-            '${entry.steps} passos',
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
+    final row = Row(
+      children: [
+        SizedBox(
+          width: 26,
+          child: Text(
+            '$rank',
+            style: AppTypography.title(
+              size: isTop3 ? 16 : 13,
+              weight: FontWeight.w900,
               color: entry.isUser
                   ? AppColors.inkOnAccent
-                  : AppColors.accent.withValues(alpha: 0.9),
+                  : (medal ?? a.textMuted(0.6)),
             ),
           ),
-        ],
+        ),
+        Container(
+          width: 34,
+          height: 34,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: entry.isUser
+                ? Colors.white.withValues(alpha: 0.35)
+                : AppColors.primaryLight.withValues(alpha: 0.3),
+            border: Border.all(
+              color: entry.isUser
+                  ? Colors.white.withValues(alpha: 0.6)
+                  : Colors.white.withValues(alpha: 0.15),
+            ),
+          ),
+          child: Center(
+            child: Text(
+              entry.name.isEmpty ? '?' : entry.name[0].toUpperCase(),
+              style: AppTypography.title(
+                size: 14,
+                weight: FontWeight.w900,
+                color: entry.isUser ? AppColors.inkOnAccent : Colors.white,
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            entry.isUser ? '${entry.name} (você)' : entry.name,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.body(
+              weight: entry.isUser ? FontWeight.w900 : FontWeight.w600,
+              color: entry.isUser ? AppColors.inkOnAccent : a.text,
+            ),
+          ),
+        ),
+        Text(
+          '${entry.steps} passos',
+          style: AppTypography.body(
+            size: 13,
+            weight: FontWeight.w800,
+            color: entry.isUser
+                ? AppColors.inkOnAccent
+                : AppColors.accent.withValues(alpha: 0.9),
+          ),
+        ),
+      ],
+    );
+
+    if (entry.isUser) {
+      return Container(
+        margin: const EdgeInsets.only(bottom: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        decoration: BoxDecoration(
+          gradient: AppGradients.gold,
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          border: Border.all(
+            color: Colors.white.withValues(alpha: 0.5),
+            width: 1.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.accent.withValues(alpha: 0.35),
+              blurRadius: 14,
+            ),
+          ],
+        ),
+        child: row,
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 8),
+      child: GlassCard(
+        radius: AppRadii.md,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+        child: row,
       ),
     );
   }
@@ -2047,13 +1989,8 @@ class _CompanionsOfflineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: a.cardBorder),
-      ),
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpace.xl),
       child: Column(
         children: [
           const CinematicIcon(
@@ -2067,20 +2004,15 @@ class _CompanionsOfflineCard extends StatelessWidget {
           Text(
             'Companhia precisa da nuvem',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTypography.display(size: 24),
           ),
           const SizedBox(height: 8),
           Text(
             error ?? 'Entre com Google para caminhar com alguém de verdade.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              height: 1.4,
-              color: Colors.white.withValues(alpha: 0.65),
+            style: AppTypography.body(
+              size: 13,
+              color: a.textMuted(0.7),
             ),
           ),
           const SizedBox(height: 16),
@@ -2089,11 +2021,11 @@ class _CompanionsOfflineCard extends StatelessWidget {
           else
             TextButton(
               onPressed: onRetry,
-              child: const Text(
+              child: Text(
                 'Tentar de novo',
-                style: TextStyle(
+                style: AppTypography.body(
+                  weight: FontWeight.w800,
                   color: AppColors.accent,
-                  fontWeight: FontWeight.w800,
                 ),
               ),
             ),
@@ -2117,32 +2049,23 @@ class _CompanionsEmpty extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        gradient: a.cardGradient,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: a.cardBorder),
-      ),
+    return GlassCard(
+      padding: const EdgeInsets.all(AppSpace.xl),
       child: Column(
         children: [
           Text(
             'Quem caminha ao seu lado?',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 26,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTypography.display(size: 26),
           ),
           const SizedBox(height: 10),
           Text(
             'Convide um amigo ou entre com um código. Quando os dois dão um passo no dia, a companhia avança.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
+            style: AppTypography.body(
+              size: 13,
               height: 1.45,
-              color: Colors.white.withValues(alpha: 0.6),
+              color: a.textMuted(0.65),
             ),
           ),
           const SizedBox(height: 20),
@@ -2175,17 +2098,9 @@ class _CompanionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: a.cardFill,
-        borderRadius: BorderRadius.circular(18),
-        border: Border.all(
-          color: companion.bothWalkedToday
-              ? AppColors.accent.withValues(alpha: 0.45)
-              : a.cardBorder,
-        ),
-      ),
+    return GlassCard(
+      padding: AppMetrics.cardPadding,
+      elevated: companion.bothWalkedToday,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -2203,8 +2118,8 @@ class _CompanionCard extends StatelessWidget {
                     companion.displayName.isEmpty
                         ? '?'
                         : companion.displayName[0].toUpperCase(),
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w900,
+                    style: AppTypography.title(
+                      weight: FontWeight.w900,
                       color: AppColors.inkOnAccent,
                     ),
                   ),
@@ -2219,17 +2134,17 @@ class _CompanionCard extends StatelessWidget {
                       companion.awaitingPartner
                           ? 'Convite aberto'
                           : companion.displayName,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w900,
+                      style: AppTypography.title(
+                        size: 16,
+                        weight: FontWeight.w900,
                         color: a.text,
                       ),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       companion.statusLine,
-                      style: TextStyle(
-                        fontSize: 12,
+                      style: AppTypography.body(
+                        size: 12,
                         height: 1.3,
                         color: a.textMuted(0.7),
                       ),
@@ -2245,14 +2160,14 @@ class _CompanionCard extends StatelessWidget {
                   ),
                   decoration: BoxDecoration(
                     color: AppColors.streak.withValues(alpha: 0.15),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(AppRadii.sm),
                   ),
                   child: Text(
                     '${companion.sharedDays}d',
-                    style: const TextStyle(
-                      fontWeight: FontWeight.w900,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w900,
                       color: AppColors.streak,
-                      fontSize: 13,
                     ),
                   ),
                 ),
@@ -2266,9 +2181,8 @@ class _CompanionCard extends StatelessWidget {
                   onTap: onCopy,
                   child: Text(
                     'Código ${companion.code}',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
+                    style: AppTypography.label(
+                      size: 12,
                       letterSpacing: 1.2,
                       color: AppColors.accent.withValues(alpha: 0.9),
                     ),
@@ -2276,29 +2190,36 @@ class _CompanionCard extends StatelessWidget {
                 ),
               ),
               if (companion.awaitingPartner)
-                TextButton.icon(
+                TextButton(
                   onPressed: onShowQr,
-                  icon: const Icon(
-                    Icons.qr_code_2_rounded,
-                    size: 18,
-                    color: AppColors.accent,
-                  ),
-                  label: const Text(
-                    'QR',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w800,
-                      color: AppColors.accent,
-                    ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const CinematicIcon(
+                        glyph: CinematicGlyph.qr,
+                        size: 18,
+                        accent: AppColors.accent,
+                        framed: false,
+                      ),
+                      const SizedBox(width: 6),
+                      Text(
+                        'QR',
+                        style: AppTypography.label(
+                          size: 12,
+                          letterSpacing: 0,
+                          color: AppColors.accent,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               TextButton(
                 onPressed: onLeave,
                 child: Text(
                   'Sair',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w700,
                     color: a.textMuted(0.55),
                   ),
                 ),
@@ -2325,7 +2246,7 @@ class _OutlineAction extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 14),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: onTap == null
                 ? Colors.white.withValues(alpha: 0.12)
@@ -2336,9 +2257,8 @@ class _OutlineAction extends StatelessWidget {
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 13,
-            fontWeight: FontWeight.w900,
+          style: AppTypography.cta(
+            size: 13,
             color: onTap == null
                 ? Colors.white.withValues(alpha: 0.35)
                 : AppColors.accent,

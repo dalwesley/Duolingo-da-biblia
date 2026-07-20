@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/daily_scripture.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
@@ -20,7 +18,6 @@ import '../widgets/share_streak_button.dart';
 import '../widgets/streak_risk_banner.dart';
 import '../widgets/streak_week.dart';
 import '../widgets/ui_primitives.dart';
-import '../widgets/verse_of_day_card.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
@@ -140,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen>
                   : widget.onOpenTrilhas,
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.section),
         ],
         _reveal(
           progress.showStreakRiskBanner ? 1 : 0,
@@ -157,24 +154,24 @@ class _HomeScreenState extends State<HomeScreen>
             atRisk: progress.isStreakAtRisk,
           ),
         ),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.section),
         _reveal(
           2,
           HeroContinueCard(
             mission: current,
             trailTitle: active?.title ?? '',
             trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#2F5D4A',
+            trailColor: active?.color ?? '#243F36',
             onTap: current != null
                 ? () => widget.onOpenMission(current.slug)
                 : null,
             onExploreTrails: widget.onOpenTrilhas,
           ),
         ),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.section),
         _reveal(2, const DailyQuestsCard()),
         if (active != null && prog != null) ...[
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.section),
           _reveal(
             3,
             _ActiveTrailLine(
@@ -185,26 +182,12 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
         ],
-        const SizedBox(height: 12),
+        const SizedBox(height: AppSpace.section),
         _reveal(4, const _MemoryPracticeLinks()),
-        const SizedBox(height: 12),
-        _reveal(
-          5,
-          VerseOfDayCard(
-            onOpen: () {
-              final ref = DailyScripture.today().$2;
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) => BibleReaderScreen(reference: ref),
-                ),
-              );
-            },
-          ),
-        ),
         if (LiturgicalCalendar.isHighSeason) ...[
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.section),
           _reveal(
-            6,
+            5,
             LiturgicalBanner(
               onOpenBible: () {
                 Navigator.of(context).push(
@@ -248,7 +231,7 @@ class _MemoryPracticeLinks extends StatelessWidget {
           ),
         ),
         if (hasPractice) ...[
-          const SizedBox(width: 10),
+          const SizedBox(width: AppSpace.sm + 2),
           Expanded(
             child: _MiniPracticeChip(
               title: 'Revisitar',
@@ -286,16 +269,19 @@ class _MiniPracticeChip extends StatelessWidget {
     final a = Appearance.of(context);
     return GlassCard(
       onTap: onTap,
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.md,
+        vertical: AppSpace.md,
+      ),
       child: Row(
         children: [
           CinematicIcon(
             glyph: glyph,
-            size: 32,
+            size: AppMetrics.leadingIcon,
             accent: accent,
             glowing: false,
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: AppSpace.sm + 2),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -396,9 +382,9 @@ class _DayPulse extends StatelessWidget {
                     if (detail != null) ...[
                       Text(
                         detail,
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w600,
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w600,
                           color: a.textMuted(0.55),
                           height: 1.3,
                         ),
@@ -409,7 +395,7 @@ class _DayPulse extends StatelessWidget {
               ),
               SoftBadge(
                 text: streak == 1 ? '1 dia' : '$streak dias',
-                icon: Icons.local_fire_department_rounded,
+                glyph: CinematicGlyph.flame,
                 accent: atRisk ? AppColors.streak : AppColors.accent,
               ),
             ],
@@ -423,7 +409,7 @@ class _DayPulse extends StatelessWidget {
                   const SizedBox(width: 8),
                   SoftBadge(
                     text: progress.streakRiskCountdown,
-                    icon: Icons.timer_outlined,
+                    glyph: CinematicGlyph.calendar,
                     accent: AppColors.streak,
                   ),
                 ],
@@ -493,27 +479,29 @@ class _ActiveTrailLine extends StatelessWidget {
               children: [
                 Text(
                   trail.title,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.display(
+                    size: 18,
                     color: a.text,
-                    height: 1.1,
                   ),
                 ),
                 const SizedBox(height: 6),
                 AppProgressBar(value: pct, color: visuals.glow),
-                const SizedBox(height: 4),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   'Abrir mapa · $done/$total missões',
-                  style: TextStyle(fontSize: 11, color: a.textMuted(0.55)),
+                  style: AppTypography.body(
+                    size: 11,
+                    color: a.textMuted(0.55),
+                  ),
                 ),
               ],
             ),
           ),
-          Icon(
-            Icons.arrow_forward_rounded,
-            color: visuals.accent.withValues(alpha: 0.8),
+          CinematicIcon(
+            glyph: CinematicGlyph.path,
             size: 20,
+            accent: visuals.accent.withValues(alpha: 0.8),
+            framed: false,
           ),
         ],
       ),
@@ -566,14 +554,14 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.section),
         ],
         _ShimmerBox(controller: _shimmer, height: 88),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.section),
         _ShimmerBox(controller: _shimmer, height: 210),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.section),
         _ShimmerBox(controller: _shimmer, height: 132),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.section),
         _ShimmerBox(controller: _shimmer, height: 190),
       ],
     );

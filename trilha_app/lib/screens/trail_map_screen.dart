@@ -195,10 +195,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                 onBack: () => Navigator.pop(context),
                 leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
               ),
-              const SizedBox(height: 48),
+              const SizedBox(height: AppSpace.xxxl),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.all(32),
+                  padding: const EdgeInsets.all(AppSpace.xxxl),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -207,19 +207,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         size: 72,
                         accent: AppTheme.parseHex(trail.color),
                       ),
-                      const SizedBox(height: 16),
-                      const Text(
+                      const SizedBox(height: AppSpace.section),
+                      Text(
                         'Em breve',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w800,
-                        ),
+                        style: AppTypography.title(size: 24),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         trail.description,
                         textAlign: TextAlign.center,
-                        style: const TextStyle(color: AppColors.textMuted),
+                        style: AppTypography.body(color: AppColors.textMuted),
                       ),
                     ],
                   ),
@@ -305,7 +302,12 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                   ),
                   if (_useThematicMap)
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 12, 20, 12),
+                      padding: const EdgeInsets.fromLTRB(
+                        AppSpace.screen,
+                        AppSpace.md,
+                        AppSpace.screen,
+                        AppSpace.md,
+                      ),
                       child: _TrailJourneyIntro(
                         trailTitle: trail.title,
                         done: prog.done,
@@ -320,7 +322,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     )
                   else
                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpace.screen,
+                      ),
                       child: _GenericTrailHero(
                         slug: trail.slug,
                         color: AppTheme.parseHex(trail.color),
@@ -329,7 +333,12 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       ),
                     ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.xs,
+                      AppSpace.screen,
+                      AppSpace.sm,
+                    ),
                     child: MilestoneChestsCard(
                       trailSlug: trail.slug,
                       done: prog.done,
@@ -382,7 +391,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     }
 
                     return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpace.section,
+                      ),
                       child: Column(
                         children: [
                           _GenericModuleHeader(
@@ -391,7 +402,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             glyph: CinematicGlyphResolver.forModule(mod.title),
                           ),
                           path,
-                          const SizedBox(height: 16),
+                          const SizedBox(height: AppSpace.section),
                         ],
                       ),
                     );
@@ -445,10 +456,13 @@ class _TrailJourneyIntro extends StatelessWidget {
       child: GestureDetector(
         onTap: onDifficultyTap,
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpace.md,
+            vertical: AppSpace.sm - 1,
+          ),
           decoration: BoxDecoration(
             color: Colors.white.withValues(alpha: 0.08),
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
           ),
           child: Row(
@@ -456,18 +470,18 @@ class _TrailJourneyIntro extends StatelessWidget {
             children: [
               Text(
                 difficultyLabel!,
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
+                style: AppTypography.label(
+                  size: 12,
                   color: Colors.white,
+                  letterSpacing: 0.4,
                 ),
               ),
               Text(
                 '  ·  mudar',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w600,
+                style: AppTypography.label(
+                  size: 11,
                   color: AppColors.accent.withValues(alpha: 0.85),
+                  letterSpacing: 0.3,
                 ),
               ),
             ],
@@ -495,11 +509,11 @@ class _GenericTrailHero extends StatelessWidget {
   Widget build(BuildContext context) {
     final pct = total > 0 ? done / total : 0.0;
     return Container(
-      margin: const EdgeInsets.only(bottom: 20),
-      padding: const EdgeInsets.all(20),
+      margin: const EdgeInsets.only(bottom: AppSpace.xl),
+      padding: const EdgeInsets.all(AppSpace.xl),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
       ),
       child: Row(
@@ -509,20 +523,16 @@ class _GenericTrailHero extends StatelessWidget {
             size: 56,
             accent: color,
           ),
-          const SizedBox(width: 16),
+          const SizedBox(width: AppSpace.section),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   '$done de $total missões',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: color,
-                  ),
+                  style: AppTypography.title(size: 18, color: color),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpace.sm),
                 AppProgressBar(
                   value: pct,
                   color: color,
@@ -551,18 +561,15 @@ class _GenericModuleHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12),
+      padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CinematicIcon(glyph: glyph, size: 28, glowing: false),
-          const SizedBox(width: 8),
+          const SizedBox(width: AppSpace.sm),
           Text(
             'Cena $index · $title',
-            style: const TextStyle(
-              fontWeight: FontWeight.w800,
-              color: Colors.white,
-            ),
+            style: AppTypography.title(size: 14, color: Colors.white),
           ),
         ],
       ),

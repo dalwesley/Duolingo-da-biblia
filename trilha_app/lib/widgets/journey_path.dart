@@ -1,10 +1,10 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../utils/trail_visuals.dart';
+import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
@@ -117,9 +117,8 @@ class _FilmIntertitle extends StatelessWidget {
         Text(
           label.toUpperCase(),
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w800,
+          style: AppTypography.label(
+            size: 11,
             letterSpacing: 3.2,
             color: accent.withValues(alpha: 0.85),
           ),
@@ -137,8 +136,8 @@ class _FilmIntertitle extends StatelessWidget {
             child: Text(
               description,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
+              style: AppTypography.body(
+                size: 13,
                 height: 1.45,
                 color: Colors.white.withValues(alpha: 0.52),
               ),
@@ -279,7 +278,14 @@ class _RailBeacon extends StatelessWidget {
             ],
           ),
           child: isDone
-              ? Icon(Icons.check_rounded, size: 8, color: AppColors.night.withValues(alpha: 0.85))
+              ? Center(
+                  child: CinematicIcon(
+                    glyph: CinematicGlyph.check,
+                    size: 8,
+                    accent: AppColors.night.withValues(alpha: 0.85),
+                    framed: false,
+                  ),
+                )
               : null,
         ),
       ),
@@ -440,7 +446,7 @@ class _HeroStationState extends State<_HeroStation>
         final glowStrength = 0.18 + (_breath.value * 0.12);
         return Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(26),
+            borderRadius: BorderRadius.circular(AppRadii.xl),
             boxShadow: [
               BoxShadow(
                 color: widget.glow.withValues(alpha: glowStrength),
@@ -456,11 +462,11 @@ class _HeroStationState extends State<_HeroStation>
         color: Colors.transparent,
         child: InkWell(
           onTap: widget.onTap,
-          borderRadius: BorderRadius.circular(26),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           child: Ink(
             height: 220,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(26),
+              borderRadius: BorderRadius.circular(AppRadii.xl),
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -478,7 +484,7 @@ class _HeroStationState extends State<_HeroStation>
               children: [
                 Positioned.fill(
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(26),
+                    borderRadius: BorderRadius.circular(AppRadii.xl),
                     child: CustomPaint(
                       painter: _StationMoodPainter(
                         accent: visuals.accent,
@@ -494,7 +500,7 @@ class _HeroStationState extends State<_HeroStation>
                   child: IgnorePointer(
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(26),
+                        borderRadius: BorderRadius.circular(AppRadii.xl),
                         gradient: RadialGradient(
                           center: const Alignment(-0.2, -0.3),
                           radius: 1.15,
@@ -509,7 +515,7 @@ class _HeroStationState extends State<_HeroStation>
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
+                  padding: const EdgeInsets.fromLTRB(AppSpace.xl, AppSpace.lg, AppSpace.xl, AppSpace.lg),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -517,9 +523,8 @@ class _HeroStationState extends State<_HeroStation>
                         children: [
                           Text(
                             'CENA ${_roman(item.chapterIndex)}',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w800,
+                            style: AppTypography.label(
+                              size: 10,
                               letterSpacing: 2.4,
                               color: widget.accent.withValues(alpha: 0.9),
                             ),
@@ -531,7 +536,7 @@ class _HeroStationState extends State<_HeroStation>
                               vertical: 4,
                             ),
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(AppRadii.lg),
                               color: widget.accent.withValues(alpha: 0.18),
                               border: Border.all(
                                 color: widget.accent.withValues(alpha: 0.4),
@@ -539,9 +544,8 @@ class _HeroStationState extends State<_HeroStation>
                             ),
                             child: Text(
                               'NO CAMINHO',
-                              style: TextStyle(
-                                fontSize: 9,
-                                fontWeight: FontWeight.w900,
+                              style: AppTypography.label(
+                                size: 9,
                                 letterSpacing: 0.8,
                                 color: widget.accent,
                               ),
@@ -552,25 +556,20 @@ class _HeroStationState extends State<_HeroStation>
                       const Spacer(),
                       Text(
                         item.trail.title,
-                        style: GoogleFonts.cormorantGaramond(
-                          fontSize: 30,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white,
-                          height: 1.05,
-                        ),
+                        style: AppTypography.display(size: 30, height: 1.05),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         item.trail.description,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 13,
+                        style: AppTypography.body(
+                          size: 13,
                           height: 1.35,
                           color: Colors.white.withValues(alpha: 0.62),
                         ),
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: AppSpace.lg),
                       if (item.total > 0) ...[
                         AppProgressBar(
                           value: pct,
@@ -584,21 +583,16 @@ class _HeroStationState extends State<_HeroStation>
                           if (item.total > 0)
                             Text(
                               '${item.done} de ${item.total} passos',
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w600,
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w600,
                                 color: Colors.white.withValues(alpha: 0.5),
                               ),
                             ),
                           const Spacer(),
                           Text(
                             'ENTRAR →',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w900,
-                              letterSpacing: 1.1,
-                              color: widget.accent,
-                            ),
+                            style: AppTypography.cta(size: 12, color: widget.accent),
                           ),
                         ],
                       ),
@@ -646,10 +640,10 @@ class _QuietStation extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: onTap,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(AppRadii.lg),
           child: Ink(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -665,14 +659,14 @@ class _QuietStation extends StatelessWidget {
               ),
             ),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+              padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.section, AppSpace.lg, AppSpace.section),
               child: Row(
                 children: [
                   Container(
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
+                      borderRadius: BorderRadius.circular(AppRadii.sm),
                       gradient: isLocked
                           ? null
                           : visuals.iconGradient,
@@ -683,19 +677,25 @@ class _QuietStation extends StatelessWidget {
                         color: Colors.white.withValues(alpha: 0.12),
                       ),
                     ),
-                    child: Icon(
-                      isDone
-                          ? Icons.check_rounded
-                          : isLocked
-                              ? Icons.lock_outline_rounded
-                              : isSoon
-                                  ? Icons.schedule_rounded
-                                  : visuals.icon,
-                      color: isDone
-                          ? accent
-                          : Colors.white.withValues(alpha: isLocked ? 0.4 : 0.9),
-                      size: 22,
-                    ),
+                    child: isDone || isLocked || isSoon
+                        ? CinematicIcon(
+                            glyph: isDone
+                                ? CinematicGlyph.check
+                                : isLocked
+                                    ? CinematicGlyph.lock
+                                    : CinematicGlyph.calendar,
+                            size: 22,
+                            accent: isDone
+                                ? accent
+                                : Colors.white.withValues(alpha: isLocked ? 0.4 : 0.9),
+                            framed: false,
+                          )
+                        : CinematicIcon(
+                            glyph: visuals.glyph,
+                            size: 22,
+                            accent: Colors.white.withValues(alpha: 0.92),
+                            framed: false,
+                          ),
                   ),
                   const SizedBox(width: 14),
                   Expanded(
@@ -710,14 +710,13 @@ class _QuietStation extends StatelessWidget {
                         const SizedBox(height: 3),
                         Text(
                           item.trail.title,
-                          style: GoogleFonts.cormorantGaramond(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.white.withValues(alpha: isLocked ? 0.65 : 0.92),
+                          style: AppTypography.display(
+                            size: 20,
                             height: 1.1,
+                            color: Colors.white.withValues(alpha: isLocked ? 0.65 : 0.92),
                           ),
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: AppSpace.xs),
                         Text(
                           isDone
                               ? 'Concluída'
@@ -730,8 +729,8 @@ class _QuietStation extends StatelessWidget {
                                           : item.trail.description,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 12,
+                          style: AppTypography.body(
+                            size: 12,
                             color: isDone
                                 ? accent.withValues(alpha: 0.8)
                                 : Colors.white.withValues(alpha: 0.42),

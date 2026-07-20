@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
@@ -121,7 +120,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpace.lg),
         ],
         ...TrailRealm.values.asMap().entries.map((e) {
           final realm = e.value;
@@ -152,7 +151,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           return _reveal(
             (widget.asPushedPage ? 0 : 1) + e.key,
             Padding(
-              padding: const EdgeInsets.only(bottom: 18),
+              padding: const EdgeInsets.only(bottom: AppSpace.lg),
               child: _RealmPortal(
                 realm: realm,
                 trailCount: realmTrails.length,
@@ -163,9 +162,100 @@ class _TrilhasScreenState extends State<TrilhasScreen>
             ),
           );
         }),
+        _reveal(
+          (widget.asPushedPage ? 0 : 1) + TrailRealm.values.length,
+          const Padding(
+            padding: EdgeInsets.only(bottom: AppSpace.lg),
+            child: _ComingSoonPortal(),
+          ),
+        ),
       ],
     );
   }
+}
+
+/// Placeholder apagado para trilhas futuras.
+class _ComingSoonPortal extends StatelessWidget {
+  const _ComingSoonPortal();
+
+  @override
+  Widget build(BuildContext context) {
+    return Opacity(
+      opacity: 0.42,
+      child: Container(
+        height: 286,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.xl),
+          border: Border.all(
+            color: Colors.white.withValues(alpha: 0.1),
+            width: 1.2,
+          ),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Color(0xFF121618), Color(0xFF1A2024), Color(0xFF0E1210)],
+            stops: [0.0, 0.5, 1.0],
+          ),
+        ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            CustomPaint(painter: _ComingSoonStarsPainter()),
+            Padding(
+              padding: const EdgeInsets.all(AppSpace.xxl),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 84,
+                    height: 84,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.white.withValues(alpha: 0.04),
+                      border: Border.all(
+                        color: Colors.white.withValues(alpha: 0.12),
+                      ),
+                    ),
+                    child: Icon(
+                      Icons.add_rounded,
+                      size: 40,
+                      color: Colors.white.withValues(alpha: 0.38),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.lg),
+                  Text(
+                    'Em breve…',
+                    textAlign: TextAlign.center,
+                    style: AppTypography.display(
+                      size: 28,
+                      color: Colors.white.withValues(alpha: 0.45),
+                      height: 1.05,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ComingSoonStarsPainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rng = math.Random(42);
+    final starPaint = Paint()..color = Colors.white.withValues(alpha: 0.08);
+    for (var i = 0; i < 12; i++) {
+      final x = rng.nextDouble() * size.width;
+      final y = rng.nextDouble() * size.height * 0.55;
+      canvas.drawCircle(Offset(x, y), rng.nextDouble() * 0.9 + 0.3, starPaint);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 class _RealmPortal extends StatefulWidget {
@@ -227,7 +317,7 @@ class _RealmPortalState extends State<_RealmPortal>
             return Container(
               height: 286,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(AppRadii.xl),
                 boxShadow: [
                   BoxShadow(
                     color: visuals.glow.withValues(alpha: 0.16 + pulse * 0.14),
@@ -240,7 +330,7 @@ class _RealmPortalState extends State<_RealmPortal>
             );
           },
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(AppRadii.xl),
             child: Stack(
               fit: StackFit.expand,
               children: [
@@ -296,7 +386,7 @@ class _RealmPortalState extends State<_RealmPortal>
                 // Moldura fina
                 DecoratedBox(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
+                    borderRadius: BorderRadius.circular(AppRadii.xl),
                     border: Border.all(
                       color: visuals.accent.withValues(alpha: 0.35),
                       width: 1.2,
@@ -305,16 +395,20 @@ class _RealmPortalState extends State<_RealmPortal>
                 ),
                 // Cartaz central
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(24, 22, 24, 20),
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpace.xxl,
+                    AppSpace.xxl,
+                    AppSpace.xxl,
+                    AppSpace.xl,
+                  ),
                   child: Column(
                     children: [
                       _RealmSeal(
                         glyph: visuals.glyph,
                         accent: visuals.accent,
-                        glow: visuals.glow,
                         size: 84,
                       ),
-                      const SizedBox(height: 16),
+                      const SizedBox(height: AppSpace.lg),
                       Row(
                         children: [
                           Expanded(
@@ -331,12 +425,13 @@ class _RealmPortalState extends State<_RealmPortal>
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: AppSpace.md,
+                            ),
                             child: Text(
                               visuals.eyebrow,
-                              style: TextStyle(
-                                fontSize: 10,
-                                fontWeight: FontWeight.w900,
+                              style: AppTypography.label(
+                                size: 10,
                                 letterSpacing: 2.4,
                                 color: visuals.accent,
                               ),
@@ -357,27 +452,25 @@ class _RealmPortalState extends State<_RealmPortal>
                           ),
                         ],
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         widget.realm.label,
                         textAlign: TextAlign.center,
-                        style: GoogleFonts.cormorantGaramond(
-                          fontSize: 32,
-                          fontWeight: FontWeight.w700,
+                        style: AppTypography.display(
+                          size: 32,
                           color: Colors.white,
                           height: 1.05,
                         ),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         visuals.tagline,
                         textAlign: TextAlign.center,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 13,
+                        style: AppTypography.body(
+                          size: 13,
                           height: 1.35,
-                          fontWeight: FontWeight.w500,
                           color: Colors.white.withValues(alpha: 0.62),
                         ),
                       ),
@@ -396,35 +489,34 @@ class _RealmPortalState extends State<_RealmPortal>
                           ),
                         ),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: AppSpace.md),
                       Row(
                         children: [
                           Text(
                             hasProgress
                                 ? '${widget.completedCount}/${widget.trailCount} concluídas'
                                 : '${widget.trailCount} trilhas',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w700,
-                              letterSpacing: 0.3,
+                            style: AppTypography.body(
+                              size: 12,
+                              weight: FontWeight.w700,
                               color: Colors.white.withValues(alpha: 0.55),
                             ),
                           ),
                           const Spacer(),
                           Text(
                             'ABRIR TRILHA',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w900,
+                            style: AppTypography.label(
+                              size: 11,
                               letterSpacing: 1.4,
                               color: visuals.accent,
                             ),
                           ),
-                          const SizedBox(width: 6),
-                          Icon(
-                            Icons.arrow_forward_rounded,
+                          const SizedBox(width: AppSpace.xs),
+                          CinematicIcon(
+                            glyph: CinematicGlyph.path,
                             size: 16,
-                            color: visuals.accent,
+                            accent: visuals.accent,
+                            framed: false,
                           ),
                         ],
                       ),
@@ -440,136 +532,25 @@ class _RealmPortalState extends State<_RealmPortal>
   }
 }
 
-/// Selo do reino — medalhão editorial, sem glow de jogo.
+/// Selo do reino — poço circular limpo.
 class _RealmSeal extends StatelessWidget {
   final CinematicGlyph glyph;
   final Color accent;
-  final Color glow;
   final double size;
 
   const _RealmSeal({
     required this.glyph,
     required this.accent,
-    required this.glow,
     this.size = 84,
   });
 
   @override
   Widget build(BuildContext context) {
-    final metal = Color.lerp(accent, const Color(0xFFF2E6C8), 0.35)!;
-    final deep = Color.lerp(glow, const Color(0xFF07090B), 0.72)!;
-    final mid = Color.lerp(glow, const Color(0xFF141A1C), 0.45)!;
-
-    return SizedBox(
-      width: size,
-      height: size,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          // Aura externa muito contida
-          Container(
-            width: size,
-            height: size,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: glow.withValues(alpha: 0.28),
-                  blurRadius: size * 0.28,
-                  spreadRadius: -2,
-                ),
-              ],
-            ),
-          ),
-          // Anel externo fino
-          Container(
-            width: size,
-            height: size,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: metal.withValues(alpha: 0.35),
-                width: 1.1,
-              ),
-            ),
-          ),
-          // Disco principal
-          Container(
-            width: size * 0.86,
-            height: size * 0.86,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: RadialGradient(
-                center: const Alignment(-0.28, -0.38),
-                radius: 1.05,
-                colors: [mid, deep, Color.lerp(deep, Colors.black, 0.35)!],
-                stops: const [0.0, 0.55, 1.0],
-              ),
-              border: Border.all(
-                color: metal.withValues(alpha: 0.55),
-                width: size * 0.018,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.45),
-                  blurRadius: size * 0.12,
-                  offset: Offset(0, size * 0.04),
-                ),
-              ],
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                // Poço interno
-                Container(
-                  width: size * 0.68,
-                  height: size * 0.68,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.white.withValues(alpha: 0.08),
-                      width: 1,
-                    ),
-                    gradient: RadialGradient(
-                      colors: [
-                        accent.withValues(alpha: 0.16),
-                        Colors.transparent,
-                      ],
-                    ),
-                  ),
-                ),
-                // Glifo
-                CinematicIcon(
-                  glyph: glyph,
-                  size: size * 0.52,
-                  accent: Color.lerp(accent, Colors.white, 0.18),
-                  framed: false,
-                  glowing: false,
-                ),
-                // Reflexo de lente no topo
-                Positioned(
-                  top: size * 0.08,
-                  child: Container(
-                    width: size * 0.38,
-                    height: size * 0.1,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(99),
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.white.withValues(alpha: 0.2),
-                          Colors.white.withValues(alpha: 0),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+    return CinematicIcon(
+      glyph: glyph,
+      size: size,
+      accent: accent,
+      glowing: true,
     );
   }
 }

@@ -2,12 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'icon_well.dart';
 import 'user_avatar.dart';
 
 class FrostController extends ValueNotifier<double> {
@@ -102,17 +102,17 @@ class StepsBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(
-            Icons.directions_walk_rounded,
+          const CinematicIcon(
+            glyph: CinematicGlyph.path,
             size: 14,
-            color: AppColors.inkOnAccent,
+            accent: AppColors.inkOnAccent,
+            framed: false,
           ),
           const SizedBox(width: 4),
           Text(
             '$value',
-            style: const TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.title(
+              size: 13,
               color: AppColors.inkOnAccent,
             ),
           ),
@@ -139,17 +139,17 @@ class StreakBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(
-            Icons.wb_sunny_rounded,
+          const CinematicIcon(
+            glyph: CinematicGlyph.flame,
             size: 14,
-            color: AppColors.streak,
+            accent: AppColors.streak,
+            framed: false,
           ),
           const SizedBox(width: 4),
           Text(
             '$value',
-            style: const TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.title(
+              size: 13,
               color: Colors.white,
             ),
           ),
@@ -189,6 +189,12 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Quando false, esconde passos/dias.
   final bool showStats;
 
+  /// Marca leading (ícone da aba). Desligado em Config — o nav já basta.
+  final bool showLeading;
+
+  /// Avatar à direita (ex.: perfil com botão voltar).
+  final bool showTrailingAvatar;
+
   const TopBar({
     super.key,
     required this.title,
@@ -205,6 +211,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.frost,
     this.frostFloor = 0,
     this.showStats = false,
+    this.showLeading = true,
+    this.showTrailingAvatar = false,
   });
 
   @override
@@ -234,6 +242,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
         leadingGlyph: leadingGlyph,
         leadingIcon: leadingIcon,
         showStats: showStats,
+        showLeading: showLeading,
+        showTrailingAvatar: showTrailingAvatar,
         steps: progress.steps,
         streak: progress.streak,
       );
@@ -281,6 +291,19 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               TopBarStats(steps: progress.steps, streak: progress.streak),
               const SizedBox(width: 8),
             ]
+          : showTrailingAvatar
+          ? [
+              Padding(
+                padding: const EdgeInsets.only(right: 8),
+                child: Center(
+                  child: UserAvatar(
+                    photoUrl: photoUrl,
+                    name: progress.userName,
+                    radius: 16,
+                  ),
+                ),
+              ),
+            ]
           : onBack != null
           ? [
               _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
@@ -305,6 +328,8 @@ class _InlineChrome extends StatelessWidget {
   final CinematicGlyph leadingGlyph;
   final IconData? leadingIcon;
   final bool showStats;
+  final bool showLeading;
+  final bool showTrailingAvatar;
   final int steps;
   final int streak;
 
@@ -322,6 +347,8 @@ class _InlineChrome extends StatelessWidget {
     required this.leadingGlyph,
     required this.leadingIcon,
     required this.showStats,
+    required this.showLeading,
+    required this.showTrailingAvatar,
     required this.steps,
     required this.streak,
   });
@@ -358,9 +385,11 @@ class _InlineChrome extends StatelessWidget {
                 onTap: onProfileTap,
               ),
               const SizedBox(width: 10),
-            ] else ...[
+            ] else if (showLeading) ...[
               _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
               const SizedBox(width: 8),
+            ] else ...[
+              const SizedBox(width: 10),
             ],
             Expanded(
               child: _TitleBlock(
@@ -373,7 +402,14 @@ class _InlineChrome extends StatelessWidget {
             if (showStats) ...[
               const SizedBox(width: 8),
               TopBarStats(steps: steps, streak: streak),
-            ] else if (onBack != null) ...[
+            ] else if (showTrailingAvatar) ...[
+              const SizedBox(width: 8),
+              UserAvatar(
+                photoUrl: photoUrl,
+                name: userName,
+                radius: 16,
+              ),
+            ] else if (onBack != null && showLeading) ...[
               const SizedBox(width: 8),
               _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
             ],
@@ -389,16 +425,8 @@ class _BackGlyph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 36,
-      height: 36,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: Colors.white.withValues(alpha: 0.12),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.15),
-        ),
-      ),
+    return IconWell(
+      size: 36,
       child: const Icon(
         Icons.arrow_back_rounded,
         size: 18,
@@ -421,70 +449,18 @@ class _MenuMark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const size = 36.0;
-    final child = icon != null
-        ? Icon(icon, size: size * 0.48, color: AppColors.accent)
-        : CinematicIcon(
-            glyph: glyph,
-            size: size * 0.55,
-            accent: AppColors.accent,
-            framed: false,
-            glowing: false,
-          );
-
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: AppColors.accent.withValues(alpha: 0.14),
-        border: Border.all(
-          color: AppColors.accent.withValues(alpha: 0.35),
-        ),
-      ),
-      alignment: Alignment.center,
-      child: child,
-    );
-  }
-}
-
-/// Medalhão circular — mesmo visual do [CinematicIcon] framed.
-class _FramedMark extends StatelessWidget {
-  final double size;
-  final Widget child;
-
-  const _FramedMark({required this.size, required this.child});
-
-  @override
-  Widget build(BuildContext context) {
-    const color = AppColors.accent;
-    final rim = Color.lerp(color, Colors.white, 0.45)!;
-    final deep = Color.lerp(color, const Color(0xFF0A0E0C), 0.8)!;
-    final mid = Color.lerp(color, const Color(0xFF1A221E), 0.5)!;
-
-    return Container(
-      width: size,
-      height: size,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: RadialGradient(
-          center: const Alignment(-0.35, -0.45),
-          radius: 1.15,
-          colors: [mid, deep],
-        ),
-        border: Border.all(
-          color: rim.withValues(alpha: 0.65),
-          width: size * 0.032,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.28),
-            blurRadius: size * 0.12,
-            offset: Offset(0, size * 0.04),
-          ),
-        ],
-      ),
-      alignment: Alignment.center,
-      child: child,
+    if (icon != null) {
+      return IconWell(
+        size: size,
+        accent: AppColors.accent,
+        child: Icon(icon, size: size * 0.48, color: AppColors.accent),
+      );
+    }
+    return CinematicIcon(
+      glyph: glyph,
+      size: size,
+      accent: AppColors.accent,
+      glowing: false,
     );
   }
 }
@@ -513,22 +489,19 @@ class _TitleBlock extends StatelessWidget {
           if (subtitle != null)
             Text(
               subtitle!,
-              style: TextStyle(
-                fontSize: 11,
+              style: AppTypography.body(
+                size: 11,
                 color: Colors.white.withValues(alpha: 0.6),
-                fontWeight: FontWeight.w600,
-                letterSpacing: 0.3,
+                weight: FontWeight.w600,
                 height: 1.1,
-              ),
+              ).copyWith(letterSpacing: 0.3),
             ),
           Text(
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
+            style: AppTypography.display(
+              size: 20,
               height: 1.15,
             ),
           ),
@@ -545,11 +518,10 @@ class _TitleBlock extends StatelessWidget {
           title,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: GoogleFonts.cormorantGaramond(
-            fontSize: 20,
-            fontWeight: FontWeight.w700,
-            color: onDark ? Colors.white : AppColors.text,
+          style: AppTypography.display(
+            size: 20,
             height: 1.15,
+            color: onDark ? Colors.white : AppColors.text,
           ),
         ),
         if (subtitle != null)
@@ -557,13 +529,12 @@ class _TitleBlock extends StatelessWidget {
             subtitle!,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: 11,
+            style: AppTypography.body(
+              size: 11,
               height: 1.1,
               color: onDark
                   ? Colors.white.withValues(alpha: 0.55)
                   : AppColors.textMuted,
-              fontWeight: FontWeight.w500,
             ),
           ),
       ],

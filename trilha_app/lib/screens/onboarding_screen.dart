@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -249,7 +248,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(8, 4, 8, 0),
+                        padding: const EdgeInsets.fromLTRB(AppSpace.sm, AppSpace.xs, AppSpace.sm, 0),
                         child: Row(
                           children: [
                             Expanded(
@@ -262,10 +261,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                               onPressed: _finishing ? null : _finish,
                               child: Text(
                                 'Pular',
-                                style: TextStyle(
+                                style: AppTypography.body(
+                                  size: 13,
+                                  weight: FontWeight.w700,
                                   color: Colors.white.withValues(alpha: 0.45),
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 13,
                                 ),
                               ),
                             ),
@@ -282,7 +281,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(24, 8, 24, 20),
+                        padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.sm, AppSpace.screen, AppSpace.xl),
                         child: _CtaButton(
                           label: _ctaLabel,
                           enabled: _ctaEnabled && !_finishing,
@@ -338,7 +337,7 @@ class _PromiseBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 12, 28, 8),
+      padding: const EdgeInsets.fromLTRB(AppSpace.xxl, AppSpace.md, AppSpace.xxl, AppSpace.sm),
       child: Column(
         children: [
           const Spacer(flex: 2),
@@ -351,32 +350,25 @@ class _PromiseBeat extends StatelessWidget {
           const SizedBox(height: 28),
           Text(
             'NO PRINCÍPIO',
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
               letterSpacing: 3.2,
               color: AppColors.accent.withValues(alpha: 0.85),
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.section),
           Text(
             'Um caminho diário\npara aprender a Bíblia\nde verdade.',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 34,
-              fontWeight: FontWeight.w700,
-              height: 1.12,
-              color: Colors.white.withValues(alpha: 0.96),
-            ),
+            style: AppTypography.display(size: 34, height: 1.12),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpace.lg),
           Text(
             'Missões curtas. Profundidade quando o versículo pedir.\nFeito em português, para a sua caminhada.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 14,
+            style: AppTypography.body(
+              size: 14,
               height: 1.5,
-              fontWeight: FontWeight.w500,
               color: Colors.white.withValues(alpha: 0.62),
             ),
           ),
@@ -384,19 +376,18 @@ class _PromiseBeat extends StatelessWidget {
           Text(
             '"Lâmpada para os meus pés é a tua palavra."',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 15,
+            style: AppTypography.display(
+              size: 15,
+              weight: FontWeight.w600,
               fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.w600,
               color: AppColors.accent.withValues(alpha: 0.75),
             ),
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: AppSpace.xs),
           Text(
             'Salmos 119:105',
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w800,
+            style: AppTypography.label(
+              size: 10,
               letterSpacing: 1.4,
               color: Colors.white.withValues(alpha: 0.35),
             ),
@@ -417,7 +408,7 @@ class _WhyBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 8, 24, 0),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.sm, AppSpace.screen, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -425,38 +416,32 @@ class _WhyBeat extends StatelessWidget {
           Text(
             'O QUE TE TROUXE',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
               letterSpacing: 2.8,
               color: AppColors.accent.withValues(alpha: 0.85),
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.sm),
           Text(
             'Por que você quer caminhar\nna Palavra?',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 30,
-              fontWeight: FontWeight.w700,
-              height: 1.15,
-              color: Colors.white.withValues(alpha: 0.96),
-            ),
+            style: AppTypography.display(size: 30, height: 1.15),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.sm),
           Text(
             'Escolha o que mais ressoa agora.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
+            style: AppTypography.body(
+              size: 13,
               color: Colors.white.withValues(alpha: 0.5),
             ),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: AppSpace.section),
           ..._Why.values.map((w) {
             final on = selected == w;
             return Padding(
-              padding: const EdgeInsets.only(bottom: 10),
+              padding: const EdgeInsets.only(bottom: AppSpace.sm),
               child: _ChoiceTile(
                 glyph: w.glyph,
                 label: w.label,
@@ -469,14 +454,14 @@ class _WhyBeat extends StatelessWidget {
             duration: const Duration(milliseconds: 280),
             opacity: selected == null ? 0 : 1,
             child: Padding(
-              padding: const EdgeInsets.only(top: 8),
+              padding: const EdgeInsets.only(top: AppSpace.sm),
               child: Text(
                 selected?.echo ?? '',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.cormorantGaramond(
-                  fontSize: 16,
+                style: AppTypography.display(
+                  size: 16,
+                  weight: FontWeight.w600,
                   fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w600,
                   color: AppColors.accent.withValues(alpha: 0.88),
                 ),
               ),
@@ -508,7 +493,7 @@ class _RhythmBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(24, 8, 24, 0),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.sm, AppSpace.screen, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -516,33 +501,23 @@ class _RhythmBeat extends StatelessWidget {
           Text(
             'SEU RITMO',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
               letterSpacing: 2.8,
               color: AppColors.accent.withValues(alpha: 0.85),
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.sm),
           Text(
             'Como podemos te chamar\nnessa caminhada?',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 30,
-              fontWeight: FontWeight.w700,
-              height: 1.15,
-              color: Colors.white.withValues(alpha: 0.96),
-            ),
+            style: AppTypography.display(size: 30, height: 1.15),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: AppSpace.section),
           TextField(
             controller: controller,
             textCapitalization: TextCapitalization.words,
-            style: const TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.w700,
-              fontSize: 16,
-            ),
+            style: AppTypography.title(size: 16, color: Colors.white),
             cursorColor: AppColors.accent,
             decoration: InputDecoration(
               hintText: 'Seu nome',
@@ -550,54 +525,53 @@ class _RhythmBeat extends StatelessWidget {
               filled: true,
               fillColor: Colors.white.withValues(alpha: 0.07),
               contentPadding: const EdgeInsets.symmetric(
-                horizontal: 18,
-                vertical: 16,
+                horizontal: AppSpace.lg,
+                vertical: AppSpace.lg,
               ),
               border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 borderSide: BorderSide.none,
               ),
               enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 borderSide: BorderSide(
                   color: Colors.white.withValues(alpha: 0.12),
                 ),
               ),
               focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 borderSide: BorderSide(
                   color: AppColors.accent.withValues(alpha: 0.55),
                 ),
               ),
             ),
           ),
-          const SizedBox(height: 28),
+          const SizedBox(height: AppSpace.xxl),
           Text(
             'Passos por dia',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
+            style: AppTypography.title(
+              size: 13,
               color: Colors.white.withValues(alpha: 0.72),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Row(
             children: [1, 2, 3].map((g) {
               final on = dailyGoal == g;
               return Expanded(
                 child: Padding(
-                  padding: EdgeInsets.only(right: g < 3 ? 10 : 0),
+                  padding: EdgeInsets.only(right: g < 3 ? AppSpace.sm : 0),
                   child: GestureDetector(
                     onTap: () => onGoal(g),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 220),
-                      padding: const EdgeInsets.symmetric(vertical: 18),
+                      padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
                       decoration: BoxDecoration(
                         color: on
                             ? AppColors.accent.withValues(alpha: 0.18)
                             : Colors.white.withValues(alpha: 0.05),
-                        borderRadius: BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(AppRadii.md),
                         border: Border.all(
                           color: on
                               ? AppColors.accent.withValues(alpha: 0.65)
@@ -608,19 +582,18 @@ class _RhythmBeat extends StatelessWidget {
                         children: [
                           Text(
                             '$g',
-                            style: GoogleFonts.cormorantGaramond(
-                              fontSize: 28,
-                              fontWeight: FontWeight.w700,
+                            style: AppTypography.display(
+                              size: 28,
                               color: on ? AppColors.accent : Colors.white70,
                               height: 1,
                             ),
                           ),
-                          const SizedBox(height: 4),
+                          const SizedBox(height: AppSpace.xs),
                           Text(
                             g == 1 ? 'passo' : 'passos',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w700,
+                            style: AppTypography.body(
+                              size: 11,
+                              weight: FontWeight.w700,
                               color: on
                                   ? AppColors.accent.withValues(alpha: 0.9)
                                   : Colors.white54,
@@ -634,14 +607,14 @@ class _RhythmBeat extends StatelessWidget {
               );
             }).toList(),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpace.lg),
           Text(
             _goalEcho,
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 16,
+            style: AppTypography.display(
+              size: 16,
+              weight: FontWeight.w600,
               fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.w600,
               color: AppColors.accent.withValues(alpha: 0.85),
             ),
           ),
@@ -666,7 +639,7 @@ class _ThresholdBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final greeting = name.isEmpty ? 'Peregrino' : name;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 12, 28, 0),
+      padding: const EdgeInsets.fromLTRB(AppSpace.xxl, AppSpace.md, AppSpace.xxl, 0),
       child: Column(
         children: [
           const Spacer(flex: 2),
@@ -679,53 +652,43 @@ class _ThresholdBeat extends StatelessWidget {
           const SizedBox(height: 26),
           Text(
             'O CAMINHO SE ABRE',
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
               letterSpacing: 3,
               color: AppColors.accent.withValues(alpha: 0.9),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Text(
             '$greeting,\nsua primeira trilha espera.',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 32,
-              fontWeight: FontWeight.w700,
-              height: 1.15,
-              color: Colors.white.withValues(alpha: 0.96),
-            ),
+            style: AppTypography.display(size: 32, height: 1.15),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpace.xl),
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
+            padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.lg, AppSpace.lg, AppSpace.lg),
             decoration: BoxDecoration(
               color: Colors.white.withValues(alpha: 0.06),
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(color: AppColors.accent.withValues(alpha: 0.28)),
             ),
             child: Column(
               children: [
                 Text(
                   'Gênesis 1–11',
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                  ),
+                  style: AppTypography.display(size: 24),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   'Do vazio à luz — onde tudo começa',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 13,
+                  style: AppTypography.body(
+                    size: 13,
                     color: Colors.white.withValues(alpha: 0.55),
                   ),
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: AppSpace.section),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -747,14 +710,14 @@ class _ThresholdBeat extends StatelessWidget {
           Text(
             'Um passo basta para começar.',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 17,
+            style: AppTypography.display(
+              size: 17,
+              weight: FontWeight.w600,
               fontStyle: FontStyle.italic,
-              fontWeight: FontWeight.w600,
               color: Colors.white.withValues(alpha: 0.7),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
         ],
       ),
     );
@@ -784,15 +747,15 @@ class _ChoiceTile extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppRadii.md),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 220),
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.section, vertical: AppSpace.section),
           decoration: BoxDecoration(
             color: selected
                 ? AppColors.accent.withValues(alpha: 0.14)
                 : Colors.white.withValues(alpha: 0.05),
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(
               color: selected
                   ? AppColors.accent.withValues(alpha: 0.55)
@@ -811,22 +774,24 @@ class _ChoiceTile extends StatelessWidget {
               Expanded(
                 child: Text(
                   label,
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.w800,
+                  style: AppTypography.title(
+                    size: 15,
                     color: Colors.white.withValues(alpha: selected ? 0.95 : 0.78),
                   ),
                 ),
               ),
-              Icon(
-                selected
-                    ? Icons.check_circle_rounded
-                    : Icons.circle_outlined,
-                size: 20,
-                color: selected
-                    ? AppColors.accent
-                    : Colors.white.withValues(alpha: 0.25),
-              ),
+              selected
+                  ? CinematicIcon(
+                      glyph: CinematicGlyph.check,
+                      size: 20,
+                      accent: AppColors.accent,
+                      framed: false,
+                    )
+                  : Icon(
+                      Icons.circle_outlined,
+                      size: 20,
+                      color: Colors.white.withValues(alpha: 0.25),
+                    ),
             ],
           ),
         ),
@@ -844,10 +809,10 @@ class _MiniChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.sm, vertical: 7),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.06),
-        borderRadius: BorderRadius.circular(999),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Row(
@@ -863,9 +828,9 @@ class _MiniChip extends StatelessWidget {
           const SizedBox(width: 6),
           Text(
             label,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w700,
+            style: AppTypography.body(
+              size: 11,
+              weight: FontWeight.w700,
               color: Colors.white.withValues(alpha: 0.75),
             ),
           ),
@@ -885,12 +850,12 @@ class _BeatProgress extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = (index + 1) / total;
     return Padding(
-      padding: const EdgeInsets.only(left: 16),
+      padding: const EdgeInsets.only(left: AppSpace.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(99),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
             child: SizedBox(
               height: 2.5,
               width: 120,
@@ -912,9 +877,8 @@ class _BeatProgress extends StatelessWidget {
           const SizedBox(height: 6),
           Text(
             '${index + 1} / $total',
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w800,
+            style: AppTypography.label(
+              size: 10,
               letterSpacing: 1.2,
               color: Colors.white.withValues(alpha: 0.35),
             ),
@@ -946,13 +910,13 @@ class _CtaButton extends StatelessWidget {
         color: Colors.transparent,
         child: InkWell(
           onTap: enabled ? onTap : null,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           child: Ink(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 17),
             decoration: BoxDecoration(
               gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(AppRadii.md),
               boxShadow: [
                 BoxShadow(
                   color: AppColors.accentDark.withValues(alpha: 0.4),
@@ -975,12 +939,7 @@ class _CtaButton extends StatelessWidget {
                 : Text(
                     label,
                     textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.8,
-                      color: AppColors.inkOnAccent,
-                    ),
+                    style: AppTypography.cta(size: 14),
                   ),
           ),
         ),
@@ -1010,12 +969,12 @@ class _OnboardingSkyPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final top = Color.lerp(
       const Color(0xFF05070A),
-      const Color(0xFF1E3D32),
+      const Color(0xFF152820),
       dawn * 0.75,
     )!;
     final mid = Color.lerp(
       const Color(0xFF0E1412),
-      const Color(0xFF2A4A3A),
+      const Color(0xFF243F36),
       dawn * 0.55,
     )!;
     canvas.drawRect(

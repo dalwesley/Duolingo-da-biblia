@@ -3,7 +3,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 
-/// Nav inferior — linguagem Duolingo: ícone + label, ativo em verde/dourado limpo.
+/// Nav inferior — glifos brand + label; ativo em cobre sobre moss suave.
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -23,10 +23,10 @@ class MainBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const tabs = [
-      (glyph: CinematicGlyph.spark, label: 'Hoje'),
+      (glyph: CinematicGlyph.home, label: 'Hoje'),
       (glyph: CinematicGlyph.book, label: 'Bíblia'),
       (glyph: CinematicGlyph.path, label: 'Trilhas'),
-      (glyph: CinematicGlyph.dove, label: 'Juntos'),
+      (glyph: CinematicGlyph.people, label: 'Juntos'),
       (glyph: CinematicGlyph.tune, label: 'Config'),
     ];
 
@@ -37,17 +37,24 @@ class MainBottomNav extends StatelessWidget {
       color: Colors.transparent,
       child: Padding(
         padding: EdgeInsets.fromLTRB(
-          12,
+          AppSpace.md,
           0,
-          12,
-          bottomInset > 0 ? bottomInset + 6 : 12,
+          AppSpace.md,
+          bottomInset > 0 ? bottomInset + 6 : AppSpace.md,
         ),
         child: Container(
-          height: 62,
+          height: 64,
           decoration: BoxDecoration(
             color: style.navBarFill,
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             border: Border.all(color: style.navBarBorder),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.22),
+                blurRadius: 18,
+                offset: const Offset(0, 8),
+              ),
+            ],
           ),
           child: Row(
             children: List.generate(tabs.length, (i) {
@@ -55,25 +62,29 @@ class MainBottomNav extends StatelessWidget {
               final tab = tabs[i];
               final color = active
                   ? AppColors.accent
-                  : Colors.white.withValues(alpha: 0.42);
+                  : Colors.white.withValues(alpha: 0.4);
 
               return Expanded(
                 child: InkWell(
                   onTap: () => onTap(i),
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
+                        duration: const Duration(milliseconds: 220),
+                        curve: Curves.easeOutCubic,
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 12,
-                          vertical: 4,
+                          horizontal: 14,
+                          vertical: 5,
                         ),
                         decoration: active
                             ? BoxDecoration(
-                                color: AppColors.accent.withValues(alpha: 0.16),
-                                borderRadius: BorderRadius.circular(12),
+                                color: AppColors.primaryLight.withValues(alpha: 0.28),
+                                borderRadius: BorderRadius.circular(AppRadii.sm),
+                                border: Border.all(
+                                  color: AppColors.accent.withValues(alpha: 0.35),
+                                ),
                               )
                             : null,
                         child: CinematicIcon(
@@ -89,11 +100,11 @@ class MainBottomNav extends StatelessWidget {
                         tab.label,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: active ? FontWeight.w900 : FontWeight.w700,
+                        style: AppTypography.label(
+                          size: 10,
                           letterSpacing: 0.1,
                           color: color,
+                          weight: active ? FontWeight.w900 : FontWeight.w700,
                         ),
                       ),
                     ],

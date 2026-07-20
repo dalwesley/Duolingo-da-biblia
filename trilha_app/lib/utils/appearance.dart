@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../widgets/cinematic_icon.dart';
 import 'day_phase.dart';
 
 /// Preferência do usuário para o visual do app.
@@ -27,11 +28,11 @@ extension AppearanceModeX on AppearanceMode {
         AppearanceMode.automatic => 'Muda conforme o horário',
       };
 
-  IconData get icon => switch (this) {
-        AppearanceMode.morning => Icons.wb_sunny_rounded,
-        AppearanceMode.afternoon => Icons.wb_twilight_rounded,
-        AppearanceMode.night => Icons.nights_stay_rounded,
-        AppearanceMode.automatic => Icons.schedule_rounded,
+  CinematicGlyph get glyph => switch (this) {
+        AppearanceMode.morning => CinematicGlyph.sun,
+        AppearanceMode.afternoon => CinematicGlyph.spark,
+        AppearanceMode.night => CinematicGlyph.depths,
+        AppearanceMode.automatic => CinematicGlyph.calendar,
       };
 
   static AppearanceMode fromStorage(String? raw, {bool? legacyDarkMode}) {
@@ -123,11 +124,18 @@ class AppearanceStyle {
         },
     };
 
+    // Fase visual alinhada ao look: Noite e Automático (18h+) usam o mesmo
+    // céu de noite — antes Noite forçava `evening` e Automático após 22h usava
+    // `night`, deixando os dois diferentes no mesmo horário.
     final phase = switch (mode) {
       AppearanceMode.morning => DayPhase.morning,
       AppearanceMode.afternoon => DayPhase.afternoon,
-      AppearanceMode.night => DayPhase.evening,
-      AppearanceMode.automatic => clockPhase,
+      AppearanceMode.night => DayPhase.night,
+      AppearanceMode.automatic => switch (clockPhase) {
+          DayPhase.morning => DayPhase.morning,
+          DayPhase.afternoon => DayPhase.afternoon,
+          DayPhase.evening || DayPhase.night => DayPhase.night,
+        },
     };
 
     return AppearanceStyle(look: look, phase: phase);

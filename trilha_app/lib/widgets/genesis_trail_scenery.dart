@@ -1,6 +1,5 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../utils/genesis_theme.dart';
 import 'ui_primitives.dart';
@@ -190,19 +189,19 @@ class _ChapterTitleCard extends StatelessWidget {
                     children: [
                       Text(
                         'CENA ${_roman(sectionIndex)}',
-                        style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w700,
+                        style: AppTypography.label(
+                          size: 10,
+                          weight: FontWeight.w700,
                           letterSpacing: 2.6,
                           color: theme.decorColor.withValues(alpha: 0.5),
                         ),
                       ),
-                      const SizedBox(height: 8),
+                      const SizedBox(height: AppSpace.sm),
                       Text(
                         title,
-                        style: GoogleFonts.cormorantGaramond(
-                          fontSize: 24,
-                          fontWeight: FontWeight.w600,
+                        style: AppTypography.display(
+                          size: 24,
+                          weight: FontWeight.w600,
                           height: 1.1,
                           color: Colors.white.withValues(alpha: 0.75),
                         ),
@@ -215,9 +214,9 @@ class _ChapterTitleCard extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 4),
                     child: Text(
                       '$done · $total',
-                      style: GoogleFonts.cormorantGaramond(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
+                      style: AppTypography.display(
+                        size: 18,
+                        weight: FontWeight.w500,
                         color: theme.decorColor.withValues(alpha: 0.45),
                       ),
                     ),
@@ -227,19 +226,19 @@ class _ChapterTitleCard extends StatelessWidget {
           if (highlighted) ...[
             Text(
               theme.narrative,
-              style: TextStyle(
-                fontSize: 14,
+              style: AppTypography.body(
+                size: 14,
                 height: 1.5,
-                fontWeight: FontWeight.w500,
+                weight: FontWeight.w500,
                 color: Colors.white.withValues(alpha: 0.72),
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             Text(
               theme.verse,
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w700,
+              style: AppTypography.label(
+                size: 12,
+                weight: FontWeight.w700,
                 letterSpacing: 0.3,
                 color: theme.decorColor.withValues(alpha: 0.88),
               ),
@@ -531,12 +530,20 @@ class GenesisTrailHeader extends StatelessWidget {
           Expanded(
             child: Text(
               '$done de $total passos',
-              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white70),
+              style: AppTypography.title(
+                size: 14,
+                weight: FontWeight.w700,
+                color: Colors.white70,
+              ),
             ),
           ),
           Text(
             '${(pct * 100).round()}%',
-            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.accent),
+            style: AppTypography.title(
+              size: 14,
+              weight: FontWeight.w800,
+              color: AppColors.accent,
+            ),
           ),
         ],
       ),

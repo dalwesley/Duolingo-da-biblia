@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -68,14 +67,25 @@ class StreakWeek extends StatelessWidget {
               ),
               child: Center(
                 child: active
-                    ? const Icon(Icons.check_rounded, size: 16, color: AppColors.inkOnAccent)
+                    ? const CinematicIcon(
+                        glyph: CinematicGlyph.check,
+                        size: 16,
+                        accent: AppColors.inkOnAccent,
+                        framed: false,
+                      )
                     : frozen
-                        ? const Icon(Icons.ac_unit_rounded, size: 15, color: Color(0xFF1A3A4A))
+                        ? const CinematicIcon(
+                            glyph: CinematicGlyph.frost,
+                            size: 15,
+                            accent: Color(0xFF1A3A4A),
+                            framed: false,
+                          )
                         : Text(
                             labels[i],
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 0,
+                              weight: FontWeight.w700,
                               color: isToday
                                   ? AppColors.accent.withValues(alpha: 0.95)
                                   : a.textMuted(0.4),
@@ -88,11 +98,10 @@ class StreakWeek extends StatelessWidget {
               child: isToday
                   ? Text(
                       'hoje',
-                      style: TextStyle(
-                        fontSize: 9,
-                        fontWeight: FontWeight.w800,
-                        color: AppColors.accent.withValues(alpha: 0.9),
+                      style: AppTypography.label(
+                        size: 9,
                         letterSpacing: 0.2,
+                        color: AppColors.accent.withValues(alpha: 0.9),
                       ),
                     )
                   : null,
@@ -141,24 +150,23 @@ class ScripturePill extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: AppSpace.lg),
           Text(
             '"${q.$1}"',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 22,
-              fontWeight: FontWeight.w600,
+            style: AppTypography.display(
+              size: 22,
               fontStyle: FontStyle.italic,
-              color: Colors.white.withValues(alpha: 0.94),
               height: 1.35,
+              weight: FontWeight.w600,
+              color: Colors.white.withValues(alpha: 0.94),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Text(
             q.$2.toUpperCase(),
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
               letterSpacing: 1.6,
               color: AppColors.accent.withValues(alpha: 0.95),
             ),
@@ -168,11 +176,11 @@ class ScripturePill extends StatelessWidget {
     }
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(14, 14, 16, 14),
+      padding: const EdgeInsets.fromLTRB(14, 14, AppSpace.lg, 14),
       decoration: BoxDecoration(
         gradient: a.cardGradient,
         color: a.cardGradient == null ? a.cardFill : null,
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: a.cardBorder),
       ),
       child: Row(
@@ -184,29 +192,28 @@ class ScripturePill extends StatelessWidget {
             accent: AppColors.accent,
             glowing: false,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: AppSpace.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   q.$1,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
+                  style: AppTypography.display(
+                    size: 16,
                     fontStyle: FontStyle.italic,
-                    color: a.text.withValues(alpha: 0.92),
                     height: 1.35,
+                    weight: FontWeight.w600,
+                    color: a.text.withValues(alpha: 0.92),
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   q.$2,
-                  style: TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w800,
+                  style: AppTypography.body(
+                    size: 11,
+                    weight: FontWeight.w800,
                     color: AppColors.accent.withValues(alpha: 0.95),
-                    letterSpacing: 0.2,
                   ),
                 ),
               ],

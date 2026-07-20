@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 
 /// Bottom sheet de convite: QR para o presencial, código para a distância.
 Future<void> showInviteQrSheet(
@@ -44,11 +44,16 @@ class _InviteQrSheet extends StatelessWidget {
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
 
     return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-      padding: EdgeInsets.fromLTRB(24, 20, 24, 20 + bottom),
+      margin: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, AppSpace.md),
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.xxl,
+        AppSpace.screen,
+        AppSpace.xxl,
+        AppSpace.screen + bottom,
+      ),
       decoration: BoxDecoration(
         color: const Color(0xFF121816),
-        borderRadius: BorderRadius.circular(28),
+        borderRadius: BorderRadius.circular(AppRadii.xl),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
       ),
       child: Column(
@@ -61,7 +66,7 @@ class _InviteQrSheet extends StatelessWidget {
               height: 4,
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.2),
-                borderRadius: BorderRadius.circular(999),
+                borderRadius: BorderRadius.circular(AppRadii.pill),
               ),
             ),
           ),
@@ -69,28 +74,28 @@ class _InviteQrSheet extends StatelessWidget {
           Text(
             title,
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 24,
-              fontWeight: FontWeight.w700,
+            style: AppTypography.display(
+              size: 24,
+              weight: FontWeight.w700,
               color: Colors.white,
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: AppSpace.xs),
           Text(
             subtitle ?? 'Mostre o QR ou envie o código pelo WhatsApp',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 12,
+            style: AppTypography.body(
+              size: 12,
               color: Colors.white.withValues(alpha: 0.6),
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpace.screen),
           Center(
             child: Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(AppRadii.lg),
               ),
               child: QrImageView(
                 data: code,
@@ -108,7 +113,7 @@ class _InviteQrSheet extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpace.screen),
           GestureDetector(
             onTap: () async {
               await Clipboard.setData(ClipboardData(text: code));
@@ -120,7 +125,7 @@ class _InviteQrSheet extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 14),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 color: Colors.white.withValues(alpha: 0.06),
                 border: Border.all(
                   color: AppColors.accent.withValues(alpha: 0.4),
@@ -131,24 +136,24 @@ class _InviteQrSheet extends StatelessWidget {
                 children: [
                   Text(
                     code,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 6,
+                    style: AppTypography.title(
+                      size: 22,
+                      weight: FontWeight.w900,
                       color: AppColors.accent,
-                    ),
+                    ).copyWith(letterSpacing: 6),
                   ),
                   const SizedBox(width: 10),
-                  Icon(
-                    Icons.copy_rounded,
+                  CinematicIcon(
+                    glyph: CinematicGlyph.copy,
                     size: 18,
-                    color: Colors.white.withValues(alpha: 0.55),
+                    accent: Colors.white.withValues(alpha: 0.55),
+                    framed: false,
                   ),
                 ],
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           GestureDetector(
             onTap: () {
               SharePlus.instance.share(
@@ -162,25 +167,21 @@ class _InviteQrSheet extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 15),
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.share_rounded,
+                  const CinematicIcon(
+                    glyph: CinematicGlyph.share,
                     size: 18,
-                    color: AppColors.inkOnAccent,
+                    accent: AppColors.inkOnAccent,
+                    framed: false,
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: AppSpace.sm),
                   Text(
                     'ENVIAR CÓDIGO',
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.8,
-                      color: AppColors.inkOnAccent,
-                    ),
+                    style: AppTypography.cta(size: 13).copyWith(letterSpacing: 0.8),
                   ),
                 ],
               ),

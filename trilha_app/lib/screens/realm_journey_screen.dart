@@ -1,7 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
@@ -156,15 +155,15 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
       context: context,
       backgroundColor: const Color(0xFF121816),
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
       ),
       builder: (ctx) {
         return Padding(
           padding: EdgeInsets.fromLTRB(
-            28,
-            18,
-            28,
-            28 + MediaQuery.of(ctx).padding.bottom,
+            AppSpace.xxl,
+            AppSpace.lg,
+            AppSpace.xxl,
+            AppSpace.xxl + MediaQuery.of(ctx).padding.bottom,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -177,37 +176,32 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
-              const SizedBox(height: 28),
+              const SizedBox(height: AppSpace.xxl),
               Text(
                 item.trail.title,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.cormorantGaramond(
-                  fontSize: 30,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                ),
+                style: AppTypography.display(size: 30),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: AppSpace.md),
               Text(
                 item.trail.description,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 15,
+                style: AppTypography.body(
+                  size: 15,
                   height: 1.5,
                   color: Colors.white.withValues(alpha: 0.58),
                 ),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: AppSpace.xxl),
               Text(
                 item.state == JourneyNodeState.locked
                     ? 'Continue a jornada anterior para alcançar este horizonte.'
                     : 'Esta trilha ainda está sendo escrita — em breve no caminho.',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 13,
-                  fontWeight: FontWeight.w600,
-                  height: 1.4,
+                style: AppTypography.label(
+                  size: 13,
                   color: visuals.accent.withValues(alpha: 0.9),
+                  letterSpacing: 0.3,
                 ),
               ),
             ],
@@ -293,11 +287,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
                   ),
                 ),
                 SliverToBoxAdapter(
-                  child: _CinematicTitle(
-                    eyebrow: visuals.eyebrow,
-                    tagline: visuals.tagline,
-                    accent: visuals.accent,
-                  ),
+                  child: SizedBox(height: AppSpace.lg),
                 ),
                 SliverToBoxAdapter(
                   child: Padding(
@@ -330,55 +320,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
   }
 }
 
-class _CinematicTitle extends StatelessWidget {
-  final String eyebrow;
-  final String tagline;
-  final Color accent;
-
-  const _CinematicTitle({
-    required this.eyebrow,
-    required this.tagline,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 20, 28, 28),
-      child: Column(
-        children: [
-          Text(
-            eyebrow,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w800,
-              letterSpacing: 3.4,
-              color: accent.withValues(alpha: 0.92),
-            ),
-          ),
-          const SizedBox(height: 16),
-          Container(
-            width: 56,
-            height: 1,
-            color: accent.withValues(alpha: 0.45),
-          ),
-          const SizedBox(height: 16),
-          Text(
-            tagline,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 15,
-              height: 1.45,
-              fontWeight: FontWeight.w400,
-              color: Colors.white.withValues(alpha: 0.52),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class _JumpChip extends StatelessWidget {
   final Color accent;
   final VoidCallback onTap;
@@ -391,11 +332,14 @@ class _JumpChip extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         child: Ink(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpace.section,
+            vertical: AppSpace.md,
+          ),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             color: const Color(0xEE121816),
             border: Border.all(color: accent.withValues(alpha: 0.35)),
             boxShadow: [
@@ -409,15 +353,20 @@ class _JumpChip extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(Icons.north_rounded, size: 16, color: accent),
-              const SizedBox(width: 8),
+              CinematicIcon(
+                glyph: CinematicGlyph.rise,
+                size: 16,
+                accent: accent,
+                framed: false,
+                glowing: false,
+              ),
+              const SizedBox(width: AppSpace.sm),
               Text(
                 'Seu passo',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 0.3,
+                style: AppTypography.label(
+                  size: 12,
                   color: Colors.white.withValues(alpha: 0.88),
+                  letterSpacing: 0.3,
                 ),
               ),
             ],

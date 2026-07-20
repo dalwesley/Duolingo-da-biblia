@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
@@ -51,21 +52,11 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
       elevated: true,
       child: Row(
         children: [
-          Container(
-            width: 44,
-            height: 44,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: AppColors.streak.withValues(alpha: 0.18),
-              border: Border.all(
-                color: AppColors.streak.withValues(alpha: 0.45),
-              ),
-            ),
-            child: const Icon(
-              Icons.local_fire_department_rounded,
-              color: AppColors.streak,
-              size: 24,
-            ),
+          CinematicIcon(
+            glyph: CinematicGlyph.flame,
+            size: 44,
+            accent: AppColors.streak,
+            glowing: false,
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -74,9 +65,8 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
               children: [
                 Text(
                   'Sequência em risco',
-                  style: AppTypography.body(
+                  style: AppTypography.title(
                     size: 14,
-                    weight: FontWeight.w900,
                     color: a.text,
                   ),
                 ),
@@ -85,10 +75,10 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
                   freeze
                       ? '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown. Um passo salva — ou o gelo cobre 1 falta.'
                       : '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown para não zerar.',
-                  style: TextStyle(
-                    fontSize: 12,
+                  style: AppTypography.body(
+                    size: 12,
                     height: 1.35,
-                    fontWeight: FontWeight.w600,
+                    weight: FontWeight.w600,
                     color: a.textMuted(0.7),
                   ),
                 ),
@@ -96,10 +86,11 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
             ),
           ),
           const SizedBox(width: 8),
-          Icon(
-            Icons.arrow_forward_rounded,
-            color: AppColors.streak.withValues(alpha: 0.9),
-            size: 22,
+          CinematicIcon(
+            glyph: CinematicGlyph.path,
+            size: 20,
+            accent: AppColors.streak.withValues(alpha: 0.9),
+            framed: false,
           ),
         ],
       ),
@@ -121,7 +112,7 @@ class StreakFreezeChip extends StatelessWidget {
 
     return SoftBadge(
       text: used ? 'Gelo salvou 1 dia' : 'Gelo pronto',
-      icon: Icons.ac_unit_rounded,
+      glyph: CinematicGlyph.frost,
       accent: used ? AppColors.teal : const Color(0xFF7EC8E3),
       bordered: true,
     );

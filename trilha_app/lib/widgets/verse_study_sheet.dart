@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
@@ -96,20 +95,20 @@ Future<void> showVersePreviewDialog(
     builder: (ctx) {
       return AlertDialog(
         backgroundColor: const Color(0xFF1A221C),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadii.md)),
         title: Text(
           refLabel,
-          style: const TextStyle(
+          style: AppTypography.title(
             color: AppColors.accent,
-            fontWeight: FontWeight.w800,
-            fontSize: 16,
+            weight: FontWeight.w800,
+            size: 16,
           ),
         ),
         content: SingleChildScrollView(
           child: verses.isEmpty
               ? Text(
                   'Versículo indisponível nesta tradução.',
-                  style: TextStyle(
+                  style: AppTypography.body(
                     color: Colors.white.withValues(alpha: 0.65),
                     height: 1.35,
                   ),
@@ -123,18 +122,18 @@ Future<void> showVersePreviewDialog(
                       if (verses.length > 1)
                         Text(
                           '${verse + i}',
-                          style: TextStyle(
-                            fontSize: 11,
-                            fontWeight: FontWeight.w800,
+                          style: AppTypography.label(
+                            size: 11,
+                            weight: FontWeight.w800,
                             color: AppColors.accent.withValues(alpha: 0.8),
                           ),
                         ),
                       Text(
                         verses[i],
-                        style: GoogleFonts.cormorantGaramond(
-                          fontSize: 18,
+                        style: AppTypography.display(
+                          size: 18,
                           height: 1.4,
-                          fontWeight: FontWeight.w600,
+                          weight: FontWeight.w600,
                           color: Colors.white.withValues(alpha: 0.92),
                         ),
                       ),
@@ -142,8 +141,8 @@ Future<void> showVersePreviewDialog(
                     const SizedBox(height: 10),
                     Text(
                       BibleService.translationName,
-                      style: TextStyle(
-                        fontSize: 11,
+                      style: AppTypography.body(
+                        size: 11,
                         color: Colors.white.withValues(alpha: 0.4),
                       ),
                     ),
@@ -156,9 +155,9 @@ Future<void> showVersePreviewDialog(
             onPressed: () => Navigator.pop(ctx),
             child: Text(
               'Fechar',
-              style: TextStyle(
+              style: AppTypography.title(
+                weight: FontWeight.w700,
                 color: Colors.white.withValues(alpha: 0.65),
-                fontWeight: FontWeight.w700,
               ),
             ),
           ),
@@ -173,9 +172,9 @@ Future<void> showVersePreviewDialog(
               backgroundColor: AppColors.accent,
               foregroundColor: const Color(0xFF1A221C),
             ),
-            child: const Text(
+            child: Text(
               'Ir para o texto',
-              style: TextStyle(fontWeight: FontWeight.w800),
+              style: AppTypography.title(weight: FontWeight.w800),
             ),
           ),
         ],
@@ -257,7 +256,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 10),
       decoration: BoxDecoration(
         color: const Color(0xFF141C18),
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Column(
@@ -281,17 +280,17 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     children: [
                       Text(
                         'Estudar',
-                        style: GoogleFonts.cormorantGaramond(
-                          fontSize: 26,
-                          fontWeight: FontWeight.w700,
+                        style: AppTypography.display(
+                          size: 26,
+                          weight: FontWeight.w700,
                           color: Colors.white,
                         ),
                       ),
                       Text(
                         _ref,
-                        style: const TextStyle(
-                          fontSize: 13,
-                          fontWeight: FontWeight.w800,
+                        style: AppTypography.title(
+                          size: 13,
+                          weight: FontWeight.w800,
                           color: AppColors.accent,
                         ),
                       ),
@@ -314,10 +313,10 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
               widget.text,
               maxLines: 4,
               overflow: TextOverflow.ellipsis,
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 18,
+              style: AppTypography.display(
+                size: 18,
                 height: 1.35,
-                fontWeight: FontWeight.w600,
+                weight: FontWeight.w600,
                 color: Colors.white.withValues(alpha: 0.88),
               ),
             ),
@@ -342,7 +341,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                             ? 'O estudo precisa de um reinício completo do app.\n\nPare o app e rode flutter run de novo (hot reload não basta).'
                             : 'Não foi possível carregar o estudo.',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
+                        style: AppTypography.body(
                           color: Colors.white.withValues(alpha: 0.7),
                           height: 1.4,
                         ),
@@ -355,7 +354,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   return Center(
                     child: Text(
                       'Sem dados de originais para este versículo.',
-                      style: TextStyle(
+                      style: AppTypography.body(
                         color: Colors.white.withValues(alpha: 0.55),
                       ),
                     ),
@@ -403,8 +402,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     ] else if (study.tokens.isNotEmpty) ...[
                       Text(
                         'Toque numa palavra para ver Strong, morfologia e concordância.',
-                        style: TextStyle(
-                          fontSize: 12,
+                        style: AppTypography.body(
+                          size: 12,
                           color: Colors.white.withValues(alpha: 0.45),
                         ),
                       ),
@@ -434,7 +433,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                               child: Material(
                                 color: Colors.transparent,
                                 child: InkWell(
-                                  borderRadius: BorderRadius.circular(12),
+                                  borderRadius: BorderRadius.circular(AppRadii.sm),
                                   onTap: () {
                                     showVersePreviewDialog(
                                       context,
@@ -452,7 +451,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                                     ),
                                     decoration: BoxDecoration(
                                       color: Colors.white.withValues(alpha: 0.05),
-                                      borderRadius: BorderRadius.circular(12),
+                                      borderRadius: BorderRadius.circular(AppRadii.sm),
                                       border: Border.all(
                                         color: Colors.white.withValues(
                                           alpha: 0.08,
@@ -464,17 +463,17 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                                         Expanded(
                                           child: Text(
                                             label,
-                                            style: const TextStyle(
+                                            style: AppTypography.title(
                                               color: Colors.white,
-                                              fontWeight: FontWeight.w700,
-                                              fontSize: 13,
+                                              weight: FontWeight.w700,
+                                              size: 13,
                                             ),
                                           ),
                                         ),
                                         Text(
                                           '${r.votes}',
-                                          style: TextStyle(
-                                            fontSize: 11,
+                                          style: AppTypography.body(
+                                            size: 11,
                                             color: Colors.white.withValues(
                                               alpha: 0.35,
                                             ),
@@ -501,8 +500,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     ],
                     Text(
                       BibleStudyService.attribution,
-                      style: TextStyle(
-                        fontSize: 10,
+                      style: AppTypography.body(
+                        size: 10,
                         height: 1.35,
                         color: Colors.white.withValues(alpha: 0.32),
                       ),
@@ -520,9 +519,9 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   Widget _sectionTitle(String t) {
     return Text(
       t,
-      style: TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w900,
+      style: AppTypography.label(
+        size: 12,
+        weight: FontWeight.w900,
         letterSpacing: 0.4,
         color: Colors.white.withValues(alpha: 0.55),
       ),
@@ -548,14 +547,14 @@ class _TokenChip extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
         child: Ink(
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
           decoration: BoxDecoration(
             color: selected
                 ? AppColors.accent.withValues(alpha: 0.18)
                 : Colors.white.withValues(alpha: 0.05),
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(AppRadii.sm),
             border: Border.all(
               color: selected
                   ? AppColors.accent.withValues(alpha: 0.5)
@@ -568,18 +567,18 @@ class _TokenChip extends StatelessWidget {
               Text(
                 token.surface,
                 textDirection: rtl ? TextDirection.rtl : TextDirection.ltr,
-                style: TextStyle(
-                  fontSize: rtl ? 18 : 15,
-                  fontWeight: FontWeight.w700,
+                style: AppTypography.title(
+                  size: rtl ? 18 : 15,
+                  weight: FontWeight.w700,
                   color: Colors.white.withValues(alpha: 0.95),
                 ),
               ),
               const SizedBox(height: 2),
               Text(
                 token.gloss.isEmpty ? token.strong : token.gloss,
-                style: TextStyle(
-                  fontSize: 10,
-                  fontWeight: FontWeight.w700,
+                style: AppTypography.label(
+                  size: 10,
+                  weight: FontWeight.w700,
                   color: selected
                       ? AppColors.accent
                       : Colors.white.withValues(alpha: 0.45),
@@ -617,7 +616,7 @@ class _StrongPanel extends StatelessWidget {
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: AppColors.accent.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppRadii.md),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.25)),
       ),
       child: loading
@@ -643,9 +642,9 @@ class _StrongPanel extends StatelessWidget {
                       ),
                       child: Text(
                         token.strong,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w900,
+                        style: AppTypography.label(
+                          size: 12,
+                          weight: FontWeight.w900,
                           color: AppColors.accent,
                         ),
                       ),
@@ -656,9 +655,9 @@ class _StrongPanel extends StatelessWidget {
                         entry?.gloss.isNotEmpty == true
                             ? entry!.gloss
                             : token.gloss,
-                        style: const TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w800,
+                        style: AppTypography.title(
+                          size: 15,
+                          weight: FontWeight.w800,
                           color: Colors.white,
                         ),
                       ),
@@ -681,17 +680,17 @@ class _StrongPanel extends StatelessWidget {
                   const SizedBox(height: 8),
                   Text(
                     'Definição',
-                    style: TextStyle(
-                      fontSize: 11,
-                      fontWeight: FontWeight.w800,
+                    style: AppTypography.label(
+                      size: 11,
+                      weight: FontWeight.w800,
                       color: Colors.white.withValues(alpha: 0.45),
                     ),
                   ),
                   const SizedBox(height: 4),
                   Text(
                     entry!.definition,
-                    style: TextStyle(
-                      fontSize: 13,
+                    style: AppTypography.body(
+                      size: 13,
                       height: 1.4,
                       color: Colors.white.withValues(alpha: 0.82),
                     ),
@@ -700,9 +699,9 @@ class _StrongPanel extends StatelessWidget {
                 const SizedBox(height: 12),
                 Text(
                   'Concordância · $occurrences ocorrências',
-                  style: TextStyle(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w900,
+                  style: AppTypography.label(
+                    size: 12,
+                    weight: FontWeight.w900,
                     color: Colors.white.withValues(alpha: 0.55),
                   ),
                 ),
@@ -722,19 +721,19 @@ class _StrongPanel extends StatelessWidget {
                         contentPadding: EdgeInsets.zero,
                         title: Text(
                           '$name ${h.chapter}:${h.verse}',
-                          style: const TextStyle(
+                          style: AppTypography.title(
                             color: Colors.white,
-                            fontWeight: FontWeight.w700,
-                            fontSize: 13,
+                            weight: FontWeight.w700,
+                            size: 13,
                           ),
                         ),
                         subtitle: Text(
                           h.gloss.isNotEmpty ? h.gloss : h.surface,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
+                          style: AppTypography.body(
                             color: Colors.white.withValues(alpha: 0.45),
-                            fontSize: 12,
+                            size: 12,
                           ),
                         ),
                         trailing: Icon(
@@ -760,17 +759,17 @@ class _StrongPanel extends StatelessWidget {
           children: [
             TextSpan(
               text: '$k · ',
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
+              style: AppTypography.title(
+                size: 12,
+                weight: FontWeight.w800,
                 color: Colors.white.withValues(alpha: 0.4),
               ),
             ),
             TextSpan(
               text: v,
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w600,
                 color: Colors.white.withValues(alpha: 0.9),
               ),
             ),

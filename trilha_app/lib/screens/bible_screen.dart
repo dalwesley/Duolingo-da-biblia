@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/bible_reading_theme.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
@@ -90,7 +91,8 @@ class _BibleScreenState extends State<BibleScreen> {
     setState(() {
       _searching = false;
       _bookIndex = hit.bookIndex;
-      _chapter = hit.chapter;
+      // Livro → seletor de capítulos; versículo → leitura direta.
+      _chapter = hit.isBook ? null : hit.chapter;
       _searchCtrl.clear();
       _hits = const [];
     });
@@ -130,7 +132,7 @@ class _BibleScreenState extends State<BibleScreen> {
       return _SearchPane(
         topBar: _navTopBar(
           title: 'Buscar',
-          subtitle: 'Na Palavra',
+          subtitle: 'Livros e versículos',
           onBack: () => setState(() {
             _searching = false;
             _searchCtrl.clear();
@@ -211,80 +213,81 @@ class _BookPicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
+        AppSpace.screen,
         topBar == null
             ? AppSpace.sm
             : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        20,
+        AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
         if (topBar != null) ...[
           topBar!,
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.md),
         ] else ...[
           Column(
             children: [
               Text(
                 'BÍBLIA',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w900,
+                style: AppTypography.label(
+                  size: 11,
                   letterSpacing: 2,
                   color: AppColors.accent.withValues(alpha: 0.9),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: AppSpace.sm),
               Text(
                 'Bíblia Sagrada',
-                style: GoogleFonts.cormorantGaramond(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w700,
+                style: AppTypography.display(
+                  size: 32,
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: AppSpace.xs),
               Text(
                 BibleService.translationName,
-                style: TextStyle(
-                  fontSize: 12,
-                  fontStyle: FontStyle.italic,
+                style: AppTypography.body(
+                  size: 12,
                   color: Colors.white.withValues(alpha: 0.55),
-                ),
+                ).copyWith(fontStyle: FontStyle.italic),
               ),
             ],
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpace.lg),
         ],
         Material(
           color: Colors.transparent,
           child: InkWell(
             onTap: onSearch,
-            borderRadius: BorderRadius.circular(AppRadii.md),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             child: Ink(
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpace.md,
+                vertical: AppSpace.md,
+              ),
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.07),
-                borderRadius: BorderRadius.circular(AppRadii.md),
+                color: Appearance.of(context).cardFillSoft,
+                borderRadius: BorderRadius.circular(AppRadii.lg),
                 border: Border.all(
-                  color: Colors.white.withValues(alpha: 0.12),
+                  color: Appearance.of(context).cardBorder,
                 ),
               ),
               child: Row(
                 children: [
-                  Icon(
-                    Icons.search_rounded,
-                    color: AppColors.accent.withValues(alpha: 0.9),
+                  CinematicIcon(
+                    glyph: CinematicGlyph.search,
                     size: 20,
+                    accent: AppColors.accent.withValues(alpha: 0.9),
+                    framed: false,
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: AppSpace.sm),
                   Expanded(
                     child: Text(
-                      'Buscar na Palavra…',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white.withValues(alpha: 0.48),
+                      'Buscar livro ou versículo…',
+                      style: AppTypography.body(
+                        size: 14,
+                        weight: FontWeight.w600,
+                        color: Appearance.of(context).textMuted(0.55),
                       ),
                     ),
                   ),
@@ -293,16 +296,16 @@ class _BookPicker extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: AppSpace.sm),
         const _TranslationPicker(),
-        const SizedBox(height: 20),
+        const SizedBox(height: AppSpace.xl),
         _TestamentSection(
           title: 'ANTIGO TESTAMENTO',
           books: books.take(BibleService.oldTestamentCount).toList(),
           offset: 0,
           onPick: onPick,
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: AppSpace.xl),
         _TestamentSection(
           title: 'NOVO TESTAMENTO',
           books: books.skip(BibleService.oldTestamentCount).toList(),
@@ -334,7 +337,12 @@ class _TranslationPicker extends StatelessWidget {
           child: ConstrainedBox(
             constraints: BoxConstraints(maxHeight: maxH),
             child: SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
+              padding: const EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                AppSpace.lg,
+                AppSpace.screen,
+                AppSpace.xl,
+              ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -349,29 +357,25 @@ class _TranslationPicker extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: AppSpace.lg),
                   Text(
                     'Tradução',
-                    style: GoogleFonts.cormorantGaramond(
-                      fontSize: 26,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                    ),
+                    style: AppTypography.display(size: 26, color: Colors.white),
                   ),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: AppSpace.xs),
                   Text(
                     'Escolha a versão usada na leitura offline.',
-                    style: TextStyle(
-                      fontSize: 13,
+                    style: AppTypography.body(
+                      size: 13,
                       color: Colors.white.withValues(alpha: 0.55),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: AppSpace.lg),
                   ...BibleService.catalog.map((t) {
                     final isSelected = t.id == selected;
                     final enabled = t.available;
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
+                      padding: const EdgeInsets.only(bottom: AppSpace.sm),
                       child: Material(
                         color: Colors.transparent,
                         child: InkWell(
@@ -386,17 +390,17 @@ class _TranslationPicker extends StatelessWidget {
                                     ),
                                   );
                                 },
-                          borderRadius: BorderRadius.circular(14),
+                          borderRadius: BorderRadius.circular(AppRadii.md),
                           child: Ink(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 14,
-                              vertical: 14,
+                              horizontal: AppSpace.md,
+                              vertical: AppSpace.md,
                             ),
                             decoration: BoxDecoration(
                               color: isSelected
                                   ? AppColors.accent.withValues(alpha: 0.14)
                                   : Colors.white.withValues(alpha: 0.05),
-                              borderRadius: BorderRadius.circular(14),
+                              borderRadius: BorderRadius.circular(AppRadii.md),
                               border: Border.all(
                                 color: isSelected
                                     ? AppColors.accent.withValues(alpha: 0.45)
@@ -415,13 +419,12 @@ class _TranslationPicker extends StatelessWidget {
                                             alpha: 0.16,
                                           )
                                         : Colors.white.withValues(alpha: 0.06),
-                                    borderRadius: BorderRadius.circular(8),
+                                    borderRadius: BorderRadius.circular(AppRadii.sm),
                                   ),
                                   child: Text(
                                     t.shortName,
-                                    style: TextStyle(
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w900,
+                                    style: AppTypography.label(
+                                      size: 12,
                                       color: enabled
                                           ? AppColors.accent
                                           : Colors.white.withValues(
@@ -430,7 +433,7 @@ class _TranslationPicker extends StatelessWidget {
                                     ),
                                   ),
                                 ),
-                                const SizedBox(width: 12),
+                                const SizedBox(width: AppSpace.md),
                                 Expanded(
                                   child: Column(
                                     crossAxisAlignment:
@@ -438,9 +441,8 @@ class _TranslationPicker extends StatelessWidget {
                                     children: [
                                       Text(
                                         t.name,
-                                        style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.w800,
+                                        style: AppTypography.title(
+                                          size: 14,
                                           color: enabled
                                               ? Colors.white
                                               : Colors.white.withValues(
@@ -451,8 +453,8 @@ class _TranslationPicker extends StatelessWidget {
                                       const SizedBox(height: 2),
                                       Text(
                                         t.blurb,
-                                        style: TextStyle(
-                                          fontSize: 12,
+                                        style: AppTypography.body(
+                                          size: 12,
                                           color: Colors.white.withValues(
                                             alpha: enabled ? 0.5 : 0.32,
                                           ),
@@ -462,17 +464,17 @@ class _TranslationPicker extends StatelessWidget {
                                   ),
                                 ),
                                 if (isSelected)
-                                  const Icon(
-                                    Icons.check_circle_rounded,
-                                    color: AppColors.accent,
+                                  const CinematicIcon(
+                                    glyph: CinematicGlyph.check,
                                     size: 20,
+                                    accent: AppColors.accent,
+                                    framed: false,
                                   )
                                 else if (!enabled)
                                   Text(
                                     'Em breve',
-                                    style: TextStyle(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w700,
+                                    style: AppTypography.label(
+                                      size: 11,
                                       color: Colors.white.withValues(
                                         alpha: 0.35,
                                       ),
@@ -485,12 +487,12 @@ class _TranslationPicker extends StatelessWidget {
                       ),
                     );
                   }),
-                  const SizedBox(height: 8),
+                  const SizedBox(height: AppSpace.sm),
                   Text(
                     BibleService.byId(selected).attribution ??
                         'Traduções offline disponíveis no dispositivo.',
-                    style: TextStyle(
-                      fontSize: 11,
+                    style: AppTypography.body(
+                      size: 11,
                       height: 1.35,
                       color: Colors.white.withValues(alpha: 0.4),
                     ),
@@ -507,71 +509,52 @@ class _TranslationPicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
     final translation = BibleService.byId(
       progress.settings.bibleTranslationId,
     );
 
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: () => _open(context),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          decoration: BoxDecoration(
-            color: AppColors.accent.withValues(alpha: 0.08),
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(
-              color: AppColors.accent.withValues(alpha: 0.28),
-            ),
+    return GlassCard(
+      onTap: () => _open(context),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.md,
+        vertical: AppSpace.md,
+      ),
+      child: Row(
+        children: [
+          SoftBadge(
+            text: translation.shortName,
+            accent: AppColors.accent,
           ),
-          child: Row(
-            children: [
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                decoration: BoxDecoration(
-                  color: AppColors.accent.withValues(alpha: 0.16),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  translation.shortName,
-                  style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.accent,
+          const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  translation.name,
+                  style: AppTypography.title(
+                    size: 14,
+                    color: a.text,
                   ),
                 ),
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      translation.name,
-                      style: const TextStyle(
-                        fontSize: 13,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.white,
-                      ),
-                    ),
-                    Text(
-                      translation.blurb,
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: Colors.white.withValues(alpha: 0.45),
-                      ),
-                    ),
-                  ],
+                const SizedBox(height: 2),
+                Text(
+                  translation.blurb,
+                  style: AppTypography.body(
+                    size: 11,
+                    color: a.textMuted(0.55),
+                  ),
                 ),
-              ),
-              Icon(
-                Icons.expand_more_rounded,
-                color: Colors.white.withValues(alpha: 0.45),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
+          Icon(
+            Icons.expand_more_rounded,
+            color: a.textMuted(0.45),
+            size: 22,
+          ),
+        ],
       ),
     );
   }
@@ -600,112 +583,120 @@ class _SearchPane extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
+        AppSpace.screen,
         topBar == null
             ? AppSpace.sm
             : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        20,
+        AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: 18)],
+        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.lg)],
         TextField(
           controller: controller,
           autofocus: true,
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.w600,
+          style: AppTypography.body(
+            size: 14,
+            weight: FontWeight.w600,
+            color: Appearance.of(context).text,
           ),
           cursorColor: AppColors.accent,
           decoration: InputDecoration(
-            hintText: 'Ex.: lâmpada, amor, fe…',
-            hintStyle: TextStyle(color: Colors.white.withValues(alpha: 0.35)),
+            hintText: 'Ex.: Apocalipse, amor, fé…',
+            hintStyle: AppTypography.body(
+              color: Appearance.of(context).textMuted(0.4),
+            ),
             filled: true,
-            fillColor: Colors.white.withValues(alpha: 0.08),
-            prefixIcon: Icon(
-              Icons.search_rounded,
-              color: Colors.white.withValues(alpha: 0.5),
+            fillColor: Appearance.of(context).cardFillSoft,
+            prefixIcon: Padding(
+              padding: const EdgeInsets.all(AppSpace.md),
+              child: CinematicIcon(
+                glyph: CinematicGlyph.search,
+                size: 20,
+                accent: Appearance.of(context).textMuted(0.55),
+                framed: false,
+              ),
             ),
             border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               borderSide: BorderSide(
-                color: Colors.white.withValues(alpha: 0.12),
+                color: Appearance.of(context).cardBorder,
               ),
             ),
             enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               borderSide: BorderSide(
-                color: Colors.white.withValues(alpha: 0.12),
+                color: Appearance.of(context).cardBorder,
               ),
             ),
             focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               borderSide: const BorderSide(color: AppColors.accent),
             ),
           ),
           onChanged: onChanged,
         ),
-        const SizedBox(height: 16),
+        const SizedBox(height: AppSpace.lg),
         if (busy)
           const Padding(
-            padding: EdgeInsets.only(top: 24),
+            padding: EdgeInsets.only(top: AppSpace.xxl),
             child: Center(
               child: CircularProgressIndicator(color: AppColors.accent),
             ),
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
           Padding(
-            padding: const EdgeInsets.only(top: 24),
+            padding: const EdgeInsets.only(top: AppSpace.xxl),
             child: Text(
-              'Nenhum versículo encontrado',
+              'Nenhum resultado encontrado',
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white.withValues(alpha: 0.5)),
+              style: AppTypography.body(
+                color: Colors.white.withValues(alpha: 0.5),
+              ),
             ),
           )
         else
           ...hits.map((h) {
+            final a = Appearance.of(context);
             return Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () => onOpen(h),
-                  borderRadius: BorderRadius.circular(16),
-                  child: Ink(
-                    padding: const EdgeInsets.all(14),
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.06),
-                      borderRadius: BorderRadius.circular(16),
-                      border: Border.all(
-                        color: Colors.white.withValues(alpha: 0.1),
+              padding: const EdgeInsets.only(bottom: AppSpace.sm),
+              child: GlassCard(
+                onTap: () => onOpen(h),
+                padding: const EdgeInsets.all(AppSpace.md),
+                radius: AppRadii.md,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      h.isBook ? 'Livro' : h.citation,
+                      style: AppTypography.label(
+                        size: 12,
+                        color: AppColors.accent,
                       ),
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          h.citation,
-                          style: const TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w900,
-                            color: AppColors.accent,
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          h.text,
-                          maxLines: 3,
-                          overflow: TextOverflow.ellipsis,
-                          style: GoogleFonts.cormorantGaramond(
-                            fontSize: 17,
-                            height: 1.35,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white.withValues(alpha: 0.9),
-                          ),
-                        ),
-                      ],
+                    const SizedBox(height: AppSpace.xs),
+                    Text(
+                      h.isBook ? h.bookName : h.text,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.display(
+                        size: 17,
+                        height: 1.35,
+                        weight: FontWeight.w600,
+                        color: a.text.withValues(alpha: 0.9),
+                      ),
                     ),
-                  ),
+                    if (h.isBook) ...[
+                      const SizedBox(height: AppSpace.xs),
+                      Text(
+                        h.text,
+                        style: AppTypography.body(
+                          size: 13,
+                          color: a.textMuted(0.55),
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
               ),
             );
@@ -744,30 +735,27 @@ class _TestamentSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
-            const SizedBox(width: 10),
+            const SizedBox(width: AppSpace.sm),
             Expanded(
               child: SectionLabel(
                 title,
-                color: Colors.white.withValues(alpha: 0.88),
+                color: a.sectionLabel,
               ),
             ),
             Text(
               '${books.length}',
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w700,
-                color: Colors.white.withValues(alpha: 0.4),
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.textMuted(0.45),
               ),
             ),
           ],
         ),
-        const SizedBox(height: 12),
-        DecoratedBox(
-          decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.045),
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: a.cardBorder),
-          ),
+        const SizedBox(height: AppSpace.md),
+        GlassCard(
+          padding: EdgeInsets.zero,
+          radius: AppRadii.lg,
           child: Column(
             children: List.generate(books.length, (i) {
               final isLast = i == books.length - 1;
@@ -807,8 +795,8 @@ class _BookRow extends StatelessWidget {
     final chapters = book.chapters.length;
     final abbrev = book.abbrev.toUpperCase();
     final radius = BorderRadius.vertical(
-      top: isFirst ? const Radius.circular(AppRadii.md) : Radius.zero,
-      bottom: isLast ? const Radius.circular(AppRadii.md) : Radius.zero,
+      top: isFirst ? const Radius.circular(AppRadii.lg) : Radius.zero,
+      bottom: isLast ? const Radius.circular(AppRadii.lg) : Radius.zero,
     );
 
     return Material(
@@ -819,7 +807,12 @@ class _BookRow extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(14, 13, 12, 13),
+              padding: const EdgeInsets.fromLTRB(
+                AppSpace.md,
+                AppSpace.md,
+                AppSpace.md,
+                AppSpace.md,
+              ),
               child: Row(
                 children: [
                   SizedBox(
@@ -827,39 +820,37 @@ class _BookRow extends StatelessWidget {
                     child: Text(
                       abbrev,
                       maxLines: 1,
-                      style: TextStyle(
-                        fontSize: abbrev.length > 3 ? 10 : 12,
-                        fontWeight: FontWeight.w900,
+                      style: AppTypography.label(
+                        size: abbrev.length > 3 ? 10 : 12,
                         letterSpacing: 0.3,
                         color: AppColors.accent,
                       ),
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpace.sm),
                   Expanded(
                     child: Text(
                       book.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w700,
+                      style: AppTypography.title(
+                        size: 15,
+                        weight: FontWeight.w700,
                         height: 1.2,
-                        letterSpacing: -0.2,
                         color: a.text,
                       ),
                     ),
                   ),
-                  const SizedBox(width: 8),
+                  const SizedBox(width: AppSpace.sm),
                   Text(
                     chapters == 1 ? '1 cap.' : '$chapters caps.',
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w600,
                       color: a.textMuted(0.55),
                     ),
                   ),
-                  const SizedBox(width: 4),
+                  const SizedBox(width: AppSpace.xs),
                   Icon(
                     Icons.chevron_right_rounded,
                     size: 18,
@@ -904,47 +895,43 @@ class _ChapterPicker extends StatelessWidget {
     final readCount = progress.readChaptersInBook(book.abbrev);
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
+        AppSpace.screen,
         topBar == null
             ? AppSpace.sm
             : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        20,
+        AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: 14)],
+        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.md)],
         if (topBar == null) ...[
           Center(
             child: Text(
               book.name,
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
-                color: Colors.white,
-              ),
+              style: AppTypography.display(size: 32, color: Colors.white),
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: AppSpace.xs),
         ],
         Center(
           child: Text(
             readCount > 0
                 ? '$readCount de ${book.chapters.length} capítulos lidos'
                 : '${book.chapters.length} capítulos',
-            style: TextStyle(fontSize: 12, color: a.textMuted(0.6)),
+            style: AppTypography.body(size: 12, color: a.textMuted(0.6)),
           ),
         ),
         if (readCount > 0) ...[
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           AppProgressBar(
             value: readCount / book.chapters.length,
             trackColor: Colors.white.withValues(alpha: 0.08),
           ),
         ],
-        const SizedBox(height: 20),
+        const SizedBox(height: AppSpace.xl),
         Wrap(
-          spacing: 10,
-          runSpacing: 10,
+          spacing: AppSpace.sm,
+          runSpacing: AppSpace.sm,
           children: List.generate(book.chapters.length, (i) {
             final chapter = i + 1;
             final read = progress.hasReadBibleChapter(book.abbrev, chapter);
@@ -952,13 +939,13 @@ class _ChapterPicker extends StatelessWidget {
               color: Colors.transparent,
               child: InkWell(
                 onTap: () => onPick(chapter),
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(AppRadii.pill),
                 child: Ink(
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
                     gradient: read ? AppGradients.gold : a.cardGradient,
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(AppRadii.pill),
                     border: Border.all(
                       color: read
                           ? AppColors.accent.withValues(alpha: 0.7)
@@ -976,9 +963,8 @@ class _ChapterPicker extends StatelessWidget {
                   child: Center(
                     child: Text(
                       '$chapter',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w800,
+                      style: AppTypography.title(
+                        size: 15,
                         color: read ? AppColors.inkOnAccent : a.text,
                       ),
                     ),
@@ -993,7 +979,7 @@ class _ChapterPicker extends StatelessWidget {
   }
 }
 
-/// Leitor de capítulo — usado na aba e na rota vinda das lições.
+/// Leitor de capítulo — página clara no sol, suave à noite.
 class BibleReaderView extends StatelessWidget {
   final Widget? topBar;
   final BibleBook book;
@@ -1024,9 +1010,20 @@ class BibleReaderView extends StatelessWidget {
     return verseNumber >= highlightStart! && verseNumber <= end;
   }
 
+  Future<void> _adjustFont(BuildContext context, double delta) async {
+    final progress = context.read<ProgressService>();
+    final next = (progress.settings.fontScale + delta).clamp(0.85, 1.35);
+    if (next == progress.settings.fontScale) return;
+    HapticFeedback.selectionClick();
+    await progress.updateSettings(
+      progress.settings.copyWith(fontScale: next),
+    );
+  }
+
   Future<void> _verseActions(
     BuildContext context, {
     required ProgressService progress,
+    required BibleReadingStyle reading,
     required BibleBook book,
     required int bookIndex,
     required int chapter,
@@ -1037,51 +1034,51 @@ class BibleReaderView extends StatelessWidget {
     final saved = progress.isVerseBookmarked(book.abbrev, chapter, verse);
     await showModalBottomSheet<void>(
       context: context,
-      backgroundColor: const Color(0xFF1A221C),
+      backgroundColor: reading.page,
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(22)),
+        borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
       ),
       builder: (ctx) {
         return SafeArea(
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              AppSpace.lg,
+              AppSpace.screen,
+              AppSpace.xl,
+            ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
                   '${book.name} $chapter:$verse',
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.accent,
+                  style: AppTypography.label(
+                    size: 13,
+                    color: reading.verseNumber,
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpace.sm),
                 Text(
                   text,
                   maxLines: 4,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 18,
-                    height: 1.35,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.white.withValues(alpha: 0.9),
-                  ),
+                  style: reading.verseStyle.copyWith(fontSize: 18, height: 1.4),
                 ),
-                const SizedBox(height: 18),
+                const SizedBox(height: AppSpace.lg),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  leading: Icon(
-                    saved ? Icons.star_rounded : Icons.star_outline_rounded,
-                    color: AppColors.accent,
+                  leading: CinematicIcon(
+                    glyph: CinematicGlyph.star,
+                    size: 24,
+                    accent: reading.verseNumber.withValues(
+                      alpha: saved ? 1 : 0.45,
+                    ),
+                    framed: false,
                   ),
                   title: Text(
                     saved ? 'Remover dos favoritos' : 'Guardar no coração',
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                    ),
+                    style: AppTypography.title(size: 14, color: reading.ink),
                   ),
                   onTap: () async {
                     Navigator.pop(ctx);
@@ -1105,23 +1102,19 @@ class BibleReaderView extends StatelessWidget {
                 ),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  leading: const Icon(
-                    Icons.menu_book_rounded,
-                    color: AppColors.accent,
+                  leading: CinematicIcon(
+                    glyph: CinematicGlyph.scroll,
+                    size: 24,
+                    accent: reading.verseNumber,
+                    framed: false,
                   ),
-                  title: const Text(
+                  title: Text(
                     'Estudar (Strong & originais)',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                    ),
+                    style: AppTypography.title(size: 14, color: reading.ink),
                   ),
                   subtitle: Text(
                     'Léxico, morfologia, concordância e refs',
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Colors.white.withValues(alpha: 0.45),
-                    ),
+                    style: reading.metaStyle,
                   ),
                   onTap: () {
                     Navigator.pop(ctx);
@@ -1138,16 +1131,15 @@ class BibleReaderView extends StatelessWidget {
                 ),
                 ListTile(
                   contentPadding: EdgeInsets.zero,
-                  leading: const Icon(
-                    Icons.ios_share_rounded,
-                    color: Colors.white70,
+                  leading: CinematicIcon(
+                    glyph: CinematicGlyph.share,
+                    size: 24,
+                    accent: reading.inkMuted,
+                    framed: false,
                   ),
-                  title: const Text(
+                  title: Text(
                     'Compartilhar',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                    ),
+                    style: AppTypography.title(size: 14, color: reading.ink),
                   ),
                   onTap: () {
                     Navigator.pop(ctx);
@@ -1171,155 +1163,195 @@ class BibleReaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final verses = book.chapters[chapter - 1];
     final progress = context.watch<ProgressService>();
+    final reading = BibleReadingStyle.resolve(a);
+    final verses = book.chapters[chapter - 1];
     final alreadyRead = progress.hasReadBibleChapter(book.abbrev, chapter);
 
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        20,
+        AppSpace.md,
         topBar == null
             ? AppSpace.sm
             : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        20,
+        AppSpace.md,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: 14)],
-        if (topBar == null) ...[
-          Center(
-            child: Text(
-              '${book.name} $chapter',
-              style: GoogleFonts.cormorantGaramond(
-                fontSize: 32,
-                fontWeight: FontWeight.w700,
-                color: Colors.white,
-              ),
-            ),
-          ),
-          const SizedBox(height: 4),
-          Center(
-            child: Text(
-              BibleService.translationName,
-              style: TextStyle(
-                fontSize: 11,
-                fontStyle: FontStyle.italic,
-                color: a.textMuted(0.55),
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
-        ],
+        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.md)],
+        // Página de leitura — contraste adaptado ao horário.
         Container(
-          padding: const EdgeInsets.fromLTRB(20, 22, 20, 22),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
-            gradient: a.cardGradient,
-            border: Border.all(color: a.cardBorder),
+            color: reading.page,
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            border: Border.all(color: reading.pageBorder),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: reading.isDay ? 0.12 : 0.35),
+                blurRadius: 24,
+                offset: const Offset(0, 10),
+              ),
+            ],
           ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: List.generate(verses.length, (i) {
-              final n = i + 1;
-              final hl = _highlighted(n);
-              final saved = progress.isVerseBookmarked(book.abbrev, chapter, n);
-              return Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () => _verseActions(
-                    context,
-                    progress: progress,
-                    book: book,
-                    bookIndex: bookIndex,
-                    chapter: chapter,
-                    verse: n,
-                    text: verses[i],
-                    onOpenVerse: onOpenVerse,
-                  ),
-                  onLongPress: () => _verseActions(
-                    context,
-                    progress: progress,
-                    book: book,
-                    bookIndex: bookIndex,
-                    chapter: chapter,
-                    verse: n,
-                    text: verses[i],
-                    onOpenVerse: onOpenVerse,
-                  ),
-                  borderRadius: BorderRadius.circular(12),
-                  child: Container(
-                    margin: const EdgeInsets.only(bottom: 10),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 8,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.xl,
+                  AppSpace.xl,
+                  AppSpace.xl,
+                  AppSpace.md,
+                ),
+                child: Column(
+                  children: [
+                    Text(
+                      '${book.name} $chapter',
+                      textAlign: TextAlign.center,
+                      style: reading.titleStyle,
                     ),
-                    decoration: hl
-                        ? BoxDecoration(
-                            color: AppColors.accent.withValues(alpha: 0.14),
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(
-                              color: AppColors.accent.withValues(alpha: 0.4),
-                            ),
-                          )
-                        : saved
-                        ? BoxDecoration(
-                            color: AppColors.accent.withValues(alpha: 0.06),
-                            borderRadius: BorderRadius.circular(12),
-                          )
-                        : null,
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    const SizedBox(height: AppSpace.xs),
+                    Text(
+                      BibleService.translationName,
+                      textAlign: TextAlign.center,
+                      style: reading.metaStyle.copyWith(
+                        fontStyle: FontStyle.italic,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.md),
+                    // Conforto: tamanho do texto.
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Expanded(
-                          child: RichText(
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: '$n  ',
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    fontWeight: FontWeight.w900,
-                                    color: AppColors.accent.withValues(
-                                      alpha: 0.85,
-                                    ),
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: verses[i],
-                                  style: GoogleFonts.cormorantGaramond(
-                                    fontSize: 19,
-                                    height: 1.5,
-                                    fontWeight: FontWeight.w600,
-                                    color: Colors.white.withValues(
-                                      alpha: hl ? 0.98 : 0.88,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                        _FontChip(
+                          label: 'A−',
+                          enabled: progress.settings.fontScale > 0.86,
+                          reading: reading,
+                          onTap: () => _adjustFont(context, -0.1),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 6, top: 2),
-                          child: Icon(
-                            saved
-                                ? Icons.star_rounded
-                                : Icons.more_horiz_rounded,
-                            size: 15,
-                            color: saved
-                                ? AppColors.accent
-                                : Colors.white.withValues(alpha: 0.28),
-                          ),
+                        const SizedBox(width: AppSpace.sm),
+                        _FontChip(
+                          label: 'A+',
+                          enabled: progress.settings.fontScale < 1.34,
+                          reading: reading,
+                          onTap: () => _adjustFont(context, 0.1),
                         ),
                       ],
                     ),
-                  ),
+                  ],
                 ),
-              );
-            }),
+              ),
+              Container(
+                height: 1,
+                margin: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
+                color: reading.pageBorder.withValues(alpha: 0.7),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.xl,
+                  AppSpace.lg,
+                  AppSpace.xl,
+                  AppSpace.xl,
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: List.generate(verses.length, (i) {
+                    final n = i + 1;
+                    final hl = _highlighted(n);
+                    final saved =
+                        progress.isVerseBookmarked(book.abbrev, chapter, n);
+                    return Material(
+                      color: Colors.transparent,
+                      child: InkWell(
+                        onTap: () => _verseActions(
+                          context,
+                          progress: progress,
+                          reading: reading,
+                          book: book,
+                          bookIndex: bookIndex,
+                          chapter: chapter,
+                          verse: n,
+                          text: verses[i],
+                          onOpenVerse: onOpenVerse,
+                        ),
+                        onLongPress: () => _verseActions(
+                          context,
+                          progress: progress,
+                          reading: reading,
+                          book: book,
+                          bookIndex: bookIndex,
+                          chapter: chapter,
+                          verse: n,
+                          text: verses[i],
+                          onOpenVerse: onOpenVerse,
+                        ),
+                        borderRadius: BorderRadius.circular(AppRadii.sm),
+                        child: Container(
+                          width: double.infinity,
+                          margin: EdgeInsets.only(
+                            bottom: i == verses.length - 1 ? 0 : AppSpace.lg,
+                          ),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.sm,
+                            vertical: AppSpace.sm,
+                          ),
+                          decoration: hl
+                              ? BoxDecoration(
+                                  color: reading.highlightFill,
+                                  borderRadius:
+                                      BorderRadius.circular(AppRadii.sm),
+                                  border: Border.all(
+                                    color: reading.highlightBorder,
+                                  ),
+                                )
+                              : saved
+                                  ? BoxDecoration(
+                                      color: reading.savedFill,
+                                      borderRadius:
+                                          BorderRadius.circular(AppRadii.sm),
+                                    )
+                                  : null,
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                width: 30,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 6),
+                                  child: Text('$n', style: reading.numberStyle),
+                                ),
+                              ),
+                              Expanded(
+                                child: Text(
+                                  verses[i],
+                                  style: reading.verseStyle,
+                                ),
+                              ),
+                              if (saved)
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                    left: AppSpace.xs,
+                                    top: 4,
+                                  ),
+                                  child: CinematicIcon(
+                                    glyph: CinematicGlyph.star,
+                                    size: 14,
+                                    accent: reading.verseNumber,
+                                    framed: false,
+                                  ),
+                                ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    );
+                  }),
+                ),
+              ),
+            ],
           ),
         ),
-        const SizedBox(height: 18),
+        const SizedBox(height: AppSpace.lg),
         Row(
           children: [
             if (chapter > 1 && onChangeChapter != null)
@@ -1327,20 +1359,22 @@ class BibleReaderView extends StatelessWidget {
                 child: _NavChip(
                   label: '← Cap. ${chapter - 1}',
                   onTap: () => onChangeChapter!(chapter - 1),
+                  reading: reading,
                 ),
               ),
             if (chapter > 1 && onChangeChapter != null)
-              const SizedBox(width: 10),
+              const SizedBox(width: AppSpace.sm),
             if (chapter < book.chapters.length && onChangeChapter != null)
               Expanded(
                 child: _NavChip(
                   label: 'Cap. ${chapter + 1} →',
                   onTap: () => onChangeChapter!(chapter + 1),
+                  reading: reading,
                 ),
               ),
           ],
         ),
-        const SizedBox(height: 14),
+        const SizedBox(height: AppSpace.md),
         GestureDetector(
           onTap: alreadyRead
               ? null
@@ -1356,13 +1390,13 @@ class BibleReaderView extends StatelessWidget {
                 },
           child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
             decoration: BoxDecoration(
               gradient: alreadyRead ? null : AppGradients.gold,
-              color: alreadyRead ? Colors.white.withValues(alpha: 0.08) : null,
-              borderRadius: BorderRadius.circular(18),
+              color: alreadyRead ? reading.chipFill : null,
+              borderRadius: BorderRadius.circular(AppRadii.md),
               border: alreadyRead
-                  ? Border.all(color: AppColors.accent.withValues(alpha: 0.45))
+                  ? Border.all(color: reading.pageBorder)
                   : null,
               boxShadow: alreadyRead
                   ? null
@@ -1383,21 +1417,19 @@ class BibleReaderView extends StatelessWidget {
                       : CinematicGlyph.book,
                   size: 20,
                   accent: alreadyRead
-                      ? AppColors.accent
+                      ? reading.verseNumber
                       : AppColors.inkOnAccent,
                   glowing: false,
                   framed: false,
                 ),
-                const SizedBox(width: 8),
+                const SizedBox(width: AppSpace.sm),
                 Text(
                   alreadyRead ? 'CAPÍTULO LIDO' : 'AVANÇAR NA LEITURA',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w900,
+                  style: AppTypography.cta(
+                    size: 14,
                     color: alreadyRead
-                        ? AppColors.accent
+                        ? reading.verseNumber
                         : AppColors.inkOnAccent,
-                    letterSpacing: 0.8,
                   ),
                 ),
               ],
@@ -1409,32 +1441,78 @@ class BibleReaderView extends StatelessWidget {
   }
 }
 
+class _FontChip extends StatelessWidget {
+  final String label;
+  final bool enabled;
+  final BibleReadingStyle reading;
+  final VoidCallback onTap;
+
+  const _FontChip({
+    required this.label,
+    required this.enabled,
+    required this.reading,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: enabled ? onTap : null,
+      child: Container(
+        width: 40,
+        height: 32,
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: reading.chipFill,
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          border: Border.all(color: reading.pageBorder),
+        ),
+        child: Text(
+          label,
+          style: AppTypography.title(
+            size: 13,
+            color: enabled
+                ? reading.ink
+                : reading.inkMuted.withValues(alpha: 0.4),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _NavChip extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
+  final BibleReadingStyle? reading;
 
-  const _NavChip({required this.label, required this.onTap});
+  const _NavChip({
+    required this.label,
+    required this.onTap,
+    this.reading,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final fill = reading?.chipFill;
+    final border = reading?.pageBorder ?? a.cardBorder;
+    final ink = reading?.ink ?? a.text;
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 12),
+        padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
         decoration: BoxDecoration(
-          gradient: a.cardGradient,
-          borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: a.cardBorder),
+          color: fill,
+          gradient: fill == null ? a.cardGradient : null,
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+          border: Border.all(color: border),
         ),
         child: Center(
           child: Text(
             label,
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
-              color: a.text,
-            ),
+            style: AppTypography.title(size: 13, color: ink),
           ),
         ),
       ),

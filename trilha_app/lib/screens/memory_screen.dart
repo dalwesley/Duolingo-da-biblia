@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import '../data/memory_verses.dart';
 import '../services/bible_service.dart';
@@ -171,31 +170,36 @@ class _MemoryScreenState extends State<MemoryScreen> {
                       onClose: () => Navigator.pop(context),
                     )
                   : Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
+                      padding: EdgeInsets.fromLTRB(
+                        AppSpace.screen,
+                        AppSpace.sm,
+                        AppSpace.screen,
+                        AppSpace.xxl,
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
                             '${_index + 1} / ${_deck.length}',
                             textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w800,
+                            style: AppTypography.label(
+                              size: 12,
                               color: a.textMuted(0.5),
+                              letterSpacing: 0.4,
                             ),
                           ),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: AppSpace.sm),
                           AppProgressBar(
                             value: (_index + (_revealed ? 0.5 : 0)) /
                                 _deck.length,
                             trackColor: Colors.white12,
                           ),
-                          const SizedBox(height: 24),
+                          const SizedBox(height: AppSpace.xxl),
                           Expanded(
                             child: Container(
-                              padding: const EdgeInsets.all(24),
+                              padding: const EdgeInsets.all(AppSpace.xxl),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(28),
+                                borderRadius: BorderRadius.circular(AppRadii.xl),
                                 gradient: const LinearGradient(
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
@@ -222,17 +226,13 @@ class _MemoryScreenState extends State<MemoryScreen> {
                                     accent: AppColors.accent,
                                     glowing: true,
                                   ),
-                            const SizedBox(height: 18),
+                            const SizedBox(height: AppSpace.lg),
                             Text(
                               _current.reference,
                               textAlign: TextAlign.center,
-                              style: GoogleFonts.cormorantGaramond(
-                                fontSize: 28,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.white,
-                              ),
+                              style: AppTypography.display(),
                             ),
-                            const SizedBox(height: 22),
+                            const SizedBox(height: AppSpace.xl),
                             Expanded(
                               child: Center(
                                 child: AnimatedOpacity(
@@ -243,10 +243,10 @@ class _MemoryScreenState extends State<MemoryScreen> {
                                         ? _current.text
                                         : 'Toque para revelar o versículo',
                                     textAlign: TextAlign.center,
-                                    style: GoogleFonts.cormorantGaramond(
-                                      fontSize: _revealed ? 22 : 16,
+                                    style: AppTypography.display(
+                                      size: _revealed ? 22 : 16,
+                                      weight: FontWeight.w600,
                                       height: 1.45,
-                                      fontWeight: FontWeight.w600,
                                       fontStyle: _revealed
                                           ? FontStyle.normal
                                           : FontStyle.italic,
@@ -262,11 +262,10 @@ class _MemoryScreenState extends State<MemoryScreen> {
                               TextButton(
                                 onPressed: () =>
                                     setState(() => _revealed = true),
-                                child: const Text(
+                                child: Text(
                                   'Revelar',
-                                  style: TextStyle(
+                                  style: AppTypography.cta(
                                     color: AppColors.accent,
-                                    fontWeight: FontWeight.w900,
                                   ),
                                 ),
                               ),
@@ -274,7 +273,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 18),
+                    const SizedBox(height: AppSpace.lg),
                     if (_revealed)
                       Row(
                         children: [
@@ -285,7 +284,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                               onTap: () => _answer(knew: false),
                             ),
                           ),
-                          const SizedBox(width: 12),
+                          const SizedBox(width: AppSpace.md),
                           Expanded(
                             child: _ActionBtn(
                               label: 'Já sei',
@@ -322,20 +321,16 @@ class _ActionBtn extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 16),
+        padding: const EdgeInsets.symmetric(vertical: AppSpace.section),
         decoration: BoxDecoration(
           color: color.withValues(alpha: 0.18),
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: color.withValues(alpha: 0.7)),
         ),
         child: Center(
           child: Text(
             label,
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w900,
-              color: color,
-            ),
+            style: AppTypography.cta(size: 15, color: color),
           ),
         ),
       ),
@@ -359,7 +354,7 @@ class _DonePane extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(28),
+      padding: const EdgeInsets.all(AppSpace.xxl),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -369,40 +364,44 @@ class _DonePane extends StatelessWidget {
             size: 72,
             glowing: true,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: AppSpace.xl),
           Text(
             'Sessão concluída',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 32,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-            ),
+            style: AppTypography.display(size: 32),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Text(
             '$known firmes · $learning em progresso',
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.white.withValues(alpha: 0.65)),
+            style: AppTypography.body(
+              color: Colors.white.withValues(alpha: 0.65),
+            ),
           ),
-          const SizedBox(height: 28),
+          const SizedBox(height: AppSpace.xxl),
           FilledButton(
             onPressed: onAgain,
             style: FilledButton.styleFrom(
               backgroundColor: AppColors.accent,
               foregroundColor: AppColors.inkOnAccent,
-              padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpace.xxl,
+                vertical: AppSpace.md + 2,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppRadii.md),
+              ),
             ),
-            child: const Text(
+            child: Text(
               'Treinar de novo',
-              style: TextStyle(fontWeight: FontWeight.w900),
+              style: AppTypography.cta(color: AppColors.inkOnAccent),
             ),
           ),
           TextButton(
             onPressed: onClose,
-            child: const Text(
+            child: Text(
               'Fechar',
-              style: TextStyle(color: Colors.white70),
+              style: AppTypography.body(color: Colors.white70),
             ),
           ),
         ],

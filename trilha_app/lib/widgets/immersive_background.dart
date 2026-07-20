@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -24,13 +23,6 @@ class ImmersiveBackground extends StatelessWidget {
         DecoratedBox(
           decoration: BoxDecoration(gradient: DayPhaseHelper.backgroundGradient(phase)),
         ),
-        if (DayPhaseHelper.showStars(phase))
-          RepaintBoundary(
-            child: CustomPaint(
-              painter: _StarsPainter(dense: phase == DayPhase.night),
-              size: Size.infinite,
-            ),
-          ),
         // Luz ambiente — olive suave (sem névoa lilás)
         Positioned(
           top: -100,
@@ -115,31 +107,6 @@ class ImmersiveBackground extends StatelessWidget {
       ],
     );
   }
-}
-
-class _StarsPainter extends CustomPainter {
-  final bool dense;
-
-  _StarsPainter({required this.dense});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final rnd = math.Random(42);
-    final starCount = dense ? 55 : 38;
-    final paint = Paint();
-
-    for (var i = 0; i < starCount; i++) {
-      final x = rnd.nextDouble() * size.width;
-      final y = rnd.nextDouble() * size.height * 0.78;
-      final r = rnd.nextDouble() * 1.6 + 0.3;
-      final alpha = 0.15 + rnd.nextDouble() * 0.4;
-      paint.color = Colors.white.withValues(alpha: alpha);
-      canvas.drawCircle(Offset(x, y), r, paint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _StarsPainter old) => old.dense != dense;
 }
 
 /// Painel unificado — usa Appearance (mesmo card em todas as abas).

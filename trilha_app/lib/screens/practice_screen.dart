@@ -96,14 +96,29 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       leadingGlyph: CinematicGlyph.echo,
                     ),
                   ),
-                  const Expanded(
+                  Expanded(
                     child: Center(
                       child: Padding(
-                        padding: EdgeInsets.all(32),
-                        child: Text(
-                          'Nenhum erro guardado ainda.\nContinue as missões — quando errar, volta aqui.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(color: Colors.white70, height: 1.5),
+                        padding: const EdgeInsets.all(AppSpace.xxxl),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            const CinematicIcon(
+                              glyph: CinematicGlyph.echo,
+                              size: 56,
+                              accent: AppColors.accent,
+                              glowing: true,
+                            ),
+                            const SizedBox(height: AppSpace.section),
+                            Text(
+                              'Nenhum erro guardado ainda.\nContinue as missões — quando errar, volta aqui.',
+                              textAlign: TextAlign.center,
+                              style: AppTypography.body(
+                                color: Colors.white70,
+                                height: 1.5,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),

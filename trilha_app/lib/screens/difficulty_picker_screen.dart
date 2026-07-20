@@ -69,7 +69,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xFF1E3D32), Color(0xFF152820), Color(0xFF0A0E0C)],
+                  colors: [Color(0xFF152820), Color(0xFF0E1210), Color(0xFF0A0E0C)],
                 ),
               ),
             ),
@@ -89,7 +89,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
             ),
             SafeArea(
               child: Padding(
-                padding: const EdgeInsets.fromLTRB(22, 12, 22, 24),
+                padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.md, AppSpace.screen, AppSpace.xxl),
                 child: items == null
                     ? const Center(child: CircularProgressIndicator(color: AppColors.accent))
                     : Column(
@@ -104,53 +104,50 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                 height: 40,
                                 decoration: BoxDecoration(
                                   color: Colors.white.withValues(alpha: 0.1),
-                                  borderRadius: BorderRadius.circular(12),
+                                  borderRadius: BorderRadius.circular(AppRadii.sm),
                                 ),
                                 child: const Icon(Icons.close_rounded, color: Colors.white),
                               ),
                             ),
                           ),
-                          const SizedBox(height: 8),
+                          const SizedBox(height: AppSpace.sm),
                           FadeTransition(
                             opacity: CurvedAnimation(parent: _enter, curve: const Interval(0, 0.4, curve: Curves.easeOut)),
-                            child: const Column(
+                            child: Column(
                               children: [
                                 Text(
                                   'Antes de partir',
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.w800,
-                                    color: AppColors.accent,
+                                  style: AppTypography.label(
+                                    size: 13,
                                     letterSpacing: 1.4,
+                                    color: AppColors.accent,
                                   ),
                                 ),
-                                SizedBox(height: 10),
+                                const SizedBox(height: AppSpace.sm),
                                 Text(
                                   'Escolha o modo\nda sua jornada',
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    fontSize: 28,
-                                    fontWeight: FontWeight.w900,
-                                    color: Colors.white,
-                                    height: 1.15,
-                                    letterSpacing: -0.4,
-                                  ),
+                                  style: AppTypography.display(size: 28, height: 1.15),
                                 ),
-                                SizedBox(height: 12),
+                                const SizedBox(height: AppSpace.md),
                                 Text(
                                   'Semente, Caminhada ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
                                   textAlign: TextAlign.center,
-                                  style: TextStyle(fontSize: 13, height: 1.4, color: Colors.white70),
+                                  style: AppTypography.body(
+                                    size: 13,
+                                    height: 1.4,
+                                    color: Colors.white70,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
-                          const SizedBox(height: 28),
+                          const SizedBox(height: AppSpace.xxl),
                           Expanded(
                             child: ListView.separated(
                               itemCount: items.length,
-                              separatorBuilder: (_, _) => const SizedBox(height: 14),
+                              separatorBuilder: (_, _) => const SizedBox(height: AppSpace.section),
                               itemBuilder: (context, i) {
                                 final meta = items[i];
                                 final start = 0.15 + i * 0.12;
@@ -211,12 +208,12 @@ class _DifficultyCard extends StatelessWidget {
         onHighlightChanged: (v) {
           if (v) onHighlight();
         },
-        borderRadius: BorderRadius.circular(26),
+        borderRadius: BorderRadius.circular(AppRadii.xl),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 220),
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(AppSpace.xl),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(26),
+            borderRadius: BorderRadius.circular(AppRadii.xl),
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -232,24 +229,13 @@ class _DifficultyCard extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Container(
-                width: 58,
-                height: 58,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: color.withValues(alpha: 0.18),
-                  border: Border.all(color: color.withValues(alpha: 0.4)),
-                ),
-                child: CinematicIcon(
+              CinematicIcon(
                   glyph: DifficultyVisuals.glyphFor(meta.difficulty),
-                  size: 30,
+                  size: 58,
                   accent: color,
-                  framed: false,
-                  glowing: false,
+                  glowing: selected,
                 ),
-              ),
-              const SizedBox(width: 16),
+              const SizedBox(width: AppSpace.lg),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -258,36 +244,45 @@ class _DifficultyCard extends StatelessWidget {
                       children: [
                         Text(
                           meta.label,
-                          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: Colors.white),
+                          style: AppTypography.title(size: 20, color: Colors.white),
                         ),
-                        const SizedBox(width: 8),
+                        const SizedBox(width: AppSpace.sm),
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                          padding: const EdgeInsets.symmetric(horizontal: AppSpace.sm, vertical: 3),
                           decoration: BoxDecoration(
                             color: color.withValues(alpha: 0.2),
-                            borderRadius: BorderRadius.circular(999),
+                            borderRadius: BorderRadius.circular(AppRadii.pill),
                           ),
                           child: Text(
                             xpLabel,
-                            style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: color),
+                            style: AppTypography.label(size: 10, color: color, letterSpacing: 0.4),
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 4),
+                    const SizedBox(height: AppSpace.xs),
                     Text(
                       meta.subtitle,
-                      style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700, color: color.withValues(alpha: 0.95)),
+                      style: AppTypography.title(size: 12, color: color.withValues(alpha: 0.95)),
                     ),
-                    const SizedBox(height: 6),
+                    const SizedBox(height: AppSpace.xs),
                     Text(
                       meta.description,
-                      style: TextStyle(fontSize: 13, height: 1.35, color: Colors.white.withValues(alpha: 0.72)),
+                      style: AppTypography.body(
+                        size: 13,
+                        height: 1.35,
+                        color: Colors.white.withValues(alpha: 0.72),
+                      ),
                     ),
                   ],
                 ),
               ),
-              Icon(Icons.arrow_forward_rounded, color: color),
+              CinematicIcon(
+                glyph: CinematicGlyph.rise,
+                size: 22,
+                accent: color,
+                framed: false,
+              ),
             ],
           ),
         ),

@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import '../theme/app_theme.dart';
+
+const _navBarHeight = 64.0;
+const _navBottomExtra = 6.0;
+const _contentGap = 8.0;
 
 /// Espaço inferior para conteúdo rolar acima do menu flutuante.
-/// Nav = 64 + padding inferior (~16) + folga de toque (~24).
+/// Espelha [MainBottomNav]: 64 de altura + margem inferior + folga mínima.
 double scrollPaddingBelowNav(BuildContext context) {
-  return 104 + MediaQuery.of(context).padding.bottom;
+  final bottomInset = MediaQuery.paddingOf(context).bottom;
+  final navBottomMargin =
+      bottomInset > 0 ? bottomInset + _navBottomExtra : AppSpace.md;
+  return _navBarHeight + navBottomMargin + _contentGap;
 }

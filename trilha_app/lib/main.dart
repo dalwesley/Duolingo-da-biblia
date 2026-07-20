@@ -6,6 +6,7 @@ import 'screens/splash_screen.dart';
 import 'services/backend_service.dart';
 import 'services/companion_service.dart';
 import 'services/league_service.dart';
+import 'services/home_widget_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
 import 'services/room_service.dart';
@@ -19,6 +20,7 @@ void main() async {
 
   await SoundService.instance.init();
   await NotificationService.instance.init();
+  await HomeWidgetService.init();
 
   runApp(const TrilhaApp());
 }
@@ -64,11 +66,23 @@ class TrilhaApp extends StatelessWidget {
             theme: AppTheme.dark,
             darkTheme: AppTheme.dark,
             themeMode: ThemeMode.dark,
+            builder: (context, child) {
+              return MediaQuery(
+                data: MediaQuery.of(context).copyWith(
+                  textScaler: TextScaler.linear(
+                    progress.settings.fontScale.clamp(0.85, 1.35),
+                  ),
+                ),
+                child: child ?? const SizedBox.shrink(),
+              );
+            },
             home: const SplashScreen(),
             onGenerateRoute: (settings) {
               if (settings.name == '/lesson') {
                 final slug = settings.arguments as String;
-                return MaterialPageRoute(builder: (_) => LessonScreen(missionSlug: slug));
+                return MaterialPageRoute(
+                  builder: (_) => LessonScreen(missionSlug: slug),
+                );
               }
               return null;
             },

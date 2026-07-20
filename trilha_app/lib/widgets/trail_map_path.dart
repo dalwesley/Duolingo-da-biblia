@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/genesis_theme.dart';
@@ -156,7 +155,7 @@ class _MissionSceneCard extends StatelessWidget {
       curve: Curves.easeOutCubic,
       clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(_current ? 20 : 16),
+        borderRadius: BorderRadius.circular(_current ? AppRadii.lg : AppRadii.md),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -225,9 +224,9 @@ class _MissionSceneCard extends StatelessWidget {
                 children: [
                   Text(
                     mission.isBoss ? '∞' : _indexLabel,
-                    style: GoogleFonts.cormorantGaramond(
-                      fontSize: _current ? 28 : 22,
-                      fontWeight: FontWeight.w600,
+                    style: AppTypography.display(
+                      size: _current ? 28 : 22,
+                      weight: FontWeight.w600,
                       height: 1,
                       color: unlocked
                           ? (_current
@@ -270,9 +269,9 @@ class _MissionSceneCard extends StatelessWidget {
                                   : completed
                                       ? 'CONCLUÍDO'
                                       : 'PASSO',
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w700,
+                          style: AppTypography.label(
+                            size: 10,
+                            weight: FontWeight.w700,
                             letterSpacing: 2,
                             color: _current
                                 ? accent.withValues(alpha: 0.95)
@@ -287,9 +286,9 @@ class _MissionSceneCard extends StatelessWidget {
                           const Spacer(),
                           Text(
                             'Bloqueada',
-                            style: TextStyle(
-                              fontSize: 11,
-                              fontWeight: FontWeight.w600,
+                            style: AppTypography.body(
+                              size: 11,
+                              weight: FontWeight.w600,
                               color: Colors.white.withValues(alpha: 0.32),
                             ),
                           ),
@@ -319,9 +318,9 @@ class _MissionSceneCard extends StatelessWidget {
                             children: [
                               Text(
                                 mission.title,
-                                style: GoogleFonts.cormorantGaramond(
-                                  fontSize: _current ? 24 : 20,
-                                  fontWeight: FontWeight.w600,
+                                style: AppTypography.display(
+                                  size: _current ? 24 : 20,
+                                  weight: FontWeight.w600,
                                   height: 1.15,
                                   color: Colors.white.withValues(
                                     alpha: unlocked
@@ -331,15 +330,15 @@ class _MissionSceneCard extends StatelessWidget {
                                 ),
                               ),
                               if (mission.subtitle.isNotEmpty) ...[
-                                const SizedBox(height: 4),
+                                const SizedBox(height: AppSpace.xs),
                                 Text(
                                   mission.subtitle,
                                   maxLines: 2,
                                   overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    fontSize: 13,
+                                  style: AppTypography.body(
+                                    size: 13,
                                     height: 1.3,
-                                    fontWeight: FontWeight.w500,
+                                    weight: FontWeight.w500,
                                     color: Colors.white.withValues(
                                       alpha: unlocked
                                           ? (completed ? 0.32 : 0.55)
@@ -359,10 +358,10 @@ class _MissionSceneCard extends StatelessWidget {
                         mission.intro,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: TextStyle(
-                          fontSize: 13,
+                        style: AppTypography.body(
+                          size: 13,
                           height: 1.4,
-                          fontWeight: FontWeight.w500,
+                          weight: FontWeight.w500,
                           color: Colors.white.withValues(alpha: 0.62),
                         ),
                       ),
@@ -371,12 +370,10 @@ class _MissionSceneCard extends StatelessWidget {
                         children: [
                     Text(
                       'Entrar no caminho →',
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w900,
+                      style: AppTypography.cta(
+                        size: 14,
                         color: gold,
-                        letterSpacing: 0.2,
-                      ),
+                      ).copyWith(letterSpacing: 0.2),
                     ),
                     const SizedBox(width: 6),
                     Icon(
@@ -390,9 +387,9 @@ class _MissionSceneCard extends StatelessWidget {
                       const SizedBox(height: 10),
                       Text(
                         'Abrir →',
-                        style: TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w700,
+                        style: AppTypography.title(
+                          size: 12,
+                          weight: FontWeight.w700,
                           color: accent.withValues(alpha: 0.85),
                         ),
                       ),
@@ -417,7 +414,7 @@ class _MissionSceneCard extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(_current ? 20 : 16),
+        borderRadius: BorderRadius.circular(_current ? AppRadii.lg : AppRadii.md),
         splashColor: accent.withValues(alpha: 0.1),
         highlightColor: accent.withValues(alpha: 0.05),
         child: faded,

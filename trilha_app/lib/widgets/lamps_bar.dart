@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 
 /// Lâmpadas = vidas da missão (Sl 119:105).
 /// Cada erro apaga uma; zerar encerra a cena.
@@ -52,10 +53,11 @@ class LampsBar extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
-                Icons.local_fire_department_rounded,
+              CinematicIcon(
+                glyph: CinematicGlyph.lamp,
                 size: 14,
-                color: accent.withValues(alpha: 0.9),
+                accent: accent.withValues(alpha: 0.9),
+                framed: false,
               ),
               const SizedBox(width: 6),
               Text(
@@ -109,13 +111,13 @@ class _LanternPainter extends CustomPainter {
     final cx = w * 0.5;
 
     final metal = lit
-        ? Color.lerp(color, const Color(0xFF8A6A22), 0.25)!
+        ? Color.lerp(color, const Color(0xFF8A5A28), 0.25)!
         : Colors.white.withValues(alpha: 0.42);
     final metalHi = lit
         ? Color.lerp(color, Colors.white, 0.4)!
         : Colors.white.withValues(alpha: 0.55);
     final metalLo = lit
-        ? Color.lerp(color, const Color(0xFF3D2A08), 0.5)!
+        ? Color.lerp(color, const Color(0xFF3D2208), 0.5)!
         : Colors.white.withValues(alpha: 0.22);
 
     if (lit) {

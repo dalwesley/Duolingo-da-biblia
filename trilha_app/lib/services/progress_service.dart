@@ -11,6 +11,8 @@ class AppSettings {
   final int dailyGoal;
   final AppearanceMode appearanceMode;
   final String bibleTranslationId;
+  /// Escala tipográfica global do app (0.85–1.35).
+  final double fontScale;
 
   const AppSettings({
     this.sound = true,
@@ -18,6 +20,7 @@ class AppSettings {
     this.dailyGoal = 1,
     this.appearanceMode = AppearanceMode.automatic,
     this.bibleTranslationId = BibleService.defaultTranslationId,
+    this.fontScale = 1.0,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -29,6 +32,7 @@ class AppSettings {
     int? dailyGoal,
     AppearanceMode? appearanceMode,
     String? bibleTranslationId,
+    double? fontScale,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -36,6 +40,7 @@ class AppSettings {
       dailyGoal: dailyGoal ?? this.dailyGoal,
       appearanceMode: appearanceMode ?? this.appearanceMode,
       bibleTranslationId: bibleTranslationId ?? this.bibleTranslationId,
+      fontScale: fontScale ?? this.fontScale,
     );
   }
 }
@@ -55,6 +60,9 @@ class ProgressService extends ChangeNotifier {
   static const _keyDarkMode = 'darkMode';
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
+  static const _keyFontScale = 'fontScale';
+  /// Legado — migrado para [_keyFontScale].
+  static const _keyBibleFontScale = 'bibleFontScale';
   static const _keyTrailDifficulty = 'trailDifficultyMap';
   static const _keyClearedTrailModes = 'clearedTrailModes';
   static const _keyUsedQuestions = 'usedQuestionIds';
@@ -78,6 +86,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyMonthlyMonth = 'monthlyMonth';
   static const _keyReadBibleChapters = 'readBibleChapters';
   static const _keyBibleBookmarks = 'bibleBookmarks';
+  static const _keySharedVerses = 'sharedVerses';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
 
@@ -118,6 +127,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
+
+  /// Referências compartilhadas ("Lucas 1:1"), mais recentes primeiro.
+  List<String> sharedVerses = [];
 
   /// Pontuação de memorização por id (0–5).
   Map<String, int> memoryScores = {};
@@ -298,6 +310,8 @@ class ProgressService extends ChangeNotifier {
           prefs.getStringList(_keyReadBibleChapters) ?? const <String>[],
       'bibleBookmarks':
           prefs.getStringList(_keyBibleBookmarks) ?? const <String>[],
+      'sharedVerses':
+          prefs.getStringList(_keySharedVerses) ?? const <String>[],
       'memoryScores': memScores,
       'memoryMastered':
           prefs.getStringList(_keyMemoryMastered) ?? const <String>[],
@@ -316,6 +330,9 @@ class ProgressService extends ChangeNotifier {
         'appearanceMode': appearance.storageKey,
         'bibleTranslationId': prefs.getString(_keyBibleTranslation) ??
             BibleService.defaultTranslationId,
+        'fontScale': prefs.getDouble(_keyFontScale) ??
+            prefs.getDouble(_keyBibleFontScale) ??
+            1.0,
       },
     };
   }
@@ -337,6 +354,8 @@ class ProgressService extends ChangeNotifier {
       _keyDarkMode,
       _keyAppearanceMode,
       _keyBibleTranslation,
+      _keyFontScale,
+      _keyBibleFontScale,
       _keyTrailDifficulty,
       _keyClearedTrailModes,
       _keyUsedQuestions,
@@ -395,6 +414,7 @@ class ProgressService extends ChangeNotifier {
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
+    sharedVerses = [];
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
@@ -527,6 +547,22 @@ class ProgressService extends ChangeNotifier {
       out.add((abbrev: parts[0], chapter: chapter, verse: verse));
     }
     return out;
+  }
+
+  /// Registra um versículo compartilhado (ex.: "Lucas 1:1"). Mais recente primeiro.
+  Future<void> recordSharedVerse(String reference) async {
+    final ref = reference.trim();
+    if (ref.isEmpty) return;
+    sharedVerses = [
+      ref,
+      for (final r in sharedVerses)
+        if (r.toLowerCase() != ref.toLowerCase()) r,
+    ];
+    if (sharedVerses.length > 24) {
+      sharedVerses = sharedVerses.sublist(0, 24);
+    }
+    await _save();
+    notifyListeners();
   }
 
   int memoryScore(String id) => memoryScores[id] ?? 0;
@@ -958,6 +994,7 @@ class ProgressService extends ChangeNotifier {
       'claimedChests': claimedChests,
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
+      'sharedVerses': sharedVerses,
       'memoryScores': memoryScores,
       'memoryMastered': memoryMastered,
       'usedQuestionIds': usedQuestionIds,
@@ -972,6 +1009,7 @@ class ProgressService extends ChangeNotifier {
         'dailyGoal': settings.dailyGoal,
         'appearanceMode': settings.appearanceMode.storageKey,
         'bibleTranslationId': settings.bibleTranslationId,
+        'fontScale': settings.fontScale,
       },
     };
   }
@@ -1072,6 +1110,9 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('bibleBookmarks')) {
         bibleBookmarks = _asStringList(data['bibleBookmarks']);
       }
+      if (data.containsKey('sharedVerses')) {
+        sharedVerses = _asStringList(data['sharedVerses']);
+      }
       if (data.containsKey('memoryScores')) {
         memoryScores = _asIntMap(data['memoryScores']);
       }
@@ -1107,6 +1148,10 @@ class ProgressService extends ChangeNotifier {
           ),
           bibleTranslationId:
               s['bibleTranslationId'] as String? ?? settings.bibleTranslationId,
+          fontScale: ((s['fontScale'] as num?)?.toDouble() ??
+                  (s['bibleFontScale'] as num?)?.toDouble() ??
+                  settings.fontScale)
+              .clamp(0.85, 1.35),
         );
       }
     }
@@ -1173,6 +1218,7 @@ class ProgressService extends ChangeNotifier {
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
+    sharedVerses = [];
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;

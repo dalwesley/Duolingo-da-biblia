@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 import 'lamps_bar.dart';
 import 'verse_study_sheet.dart';
 
@@ -116,7 +116,7 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
         widget.narrative;
 
     return Padding(
-      padding: EdgeInsets.fromLTRB(18, 4, 18, 10 + bottom),
+      padding: EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.xs, AppSpace.screen, AppSpace.sm + bottom),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -144,7 +144,7 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
               ),
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.section),
           ...widget.question.options.asMap().entries.map((e) {
             final i = e.key;
             final opt = e.value;
@@ -159,7 +159,7 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
               ),
             );
             return Padding(
-              padding: const EdgeInsets.only(bottom: 11),
+              padding: const EdgeInsets.only(bottom: AppSpace.sm),
               child: FadeTransition(
                 opacity: curve,
                 child: SlideTransition(
@@ -182,12 +182,12 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
               ),
             );
           }),
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.sm),
           Center(
             child: Container(
-              padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
+              padding: const EdgeInsets.fromLTRB(AppSpace.section, AppSpace.sm, AppSpace.section, AppSpace.sm),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 color: Colors.black.withValues(alpha: 0.32),
                 border: Border.all(
                   color: accent.withValues(alpha: 0.28),
@@ -201,7 +201,7 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
             ),
           ),
           if (!widget.showFeedback) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpace.sm),
             FadeTransition(
               opacity: CurvedAnimation(
                 parent: _stagger,
@@ -244,11 +244,11 @@ class _ScenePrompt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(24),
+      borderRadius: BorderRadius.circular(AppRadii.lg),
       child: Container(
-          padding: const EdgeInsets.fromLTRB(18, 16, 18, 14),
+          padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.lg, AppSpace.lg, AppSpace.section),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(24),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -274,20 +274,20 @@ class _ScenePrompt extends StatelessWidget {
                 textAlign: TextAlign.center,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: GoogleFonts.cormorantGaramond(
-                  fontSize: 15,
+                style: AppTypography.display(
+                  size: 15,
+                  weight: FontWeight.w500,
                   fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.w500,
                   height: 1.3,
                   color: Colors.white.withValues(alpha: 0.55),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: AppSpace.sm),
               Container(
                 width: 36,
                 height: 1.5,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(999),
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
                   gradient: LinearGradient(
                     colors: [
                       accent.withValues(alpha: 0),
@@ -297,33 +297,27 @@ class _ScenePrompt extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(height: 12),
+              const SizedBox(height: AppSpace.md),
               Text(
                 question,
                 textAlign: TextAlign.center,
-                style: GoogleFonts.cormorantGaramond(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w600,
-                  height: 1.22,
-                  color: Colors.white,
-                  letterSpacing: -0.2,
-                ),
+                style: AppTypography.display(size: 26, weight: FontWeight.w600, height: 1.22),
               ),
               if (verseRef != null) ...[
-                const SizedBox(height: 14),
+                const SizedBox(height: AppSpace.section),
                 Material(
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: () => showVerseStudyFromReference(context, verseRef!),
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(AppRadii.sm),
                     child: Ink(
                       width: double.infinity,
                       padding: const EdgeInsets.symmetric(
-                        horizontal: 14,
-                        vertical: 10,
+                        horizontal: AppSpace.section,
+                        vertical: AppSpace.sm,
                       ),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14),
+                        borderRadius: BorderRadius.circular(AppRadii.sm),
                         color: accent.withValues(alpha: 0.1),
                         border: Border.all(
                           color: accent.withValues(alpha: 0.28),
@@ -337,43 +331,42 @@ class _ScenePrompt extends StatelessWidget {
                               Text(
                                 verseRef!,
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 11,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 0.6,
+                                style: AppTypography.label(
+                                  size: 11,
                                   color: accent,
+                                  letterSpacing: 0.6,
                                 ),
                               ),
-                              const SizedBox(width: 6),
-                              Icon(
-                                Icons.auto_stories_rounded,
+                              const SizedBox(width: AppSpace.xs),
+                              CinematicIcon(
+                                glyph: CinematicGlyph.scroll,
                                 size: 14,
-                                color: accent.withValues(alpha: 0.9),
+                                accent: accent.withValues(alpha: 0.9),
+                                framed: false,
                               ),
                             ],
                           ),
                           if (verseSnippet != null) ...[
-                            const SizedBox(height: 4),
+                            const SizedBox(height: AppSpace.xs),
                             Text(
                               '“$verseSnippet”',
                               textAlign: TextAlign.center,
                               maxLines: 2,
                               overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontStyle: FontStyle.italic,
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w600,
                                 height: 1.35,
-                                fontWeight: FontWeight.w600,
                                 color: Colors.white.withValues(alpha: 0.72),
-                              ),
+                              ).copyWith(fontStyle: FontStyle.italic),
                             ),
                           ],
-                          const SizedBox(height: 4),
+                          const SizedBox(height: AppSpace.xs),
                           Text(
                             'Tocar para estudar',
-                            style: TextStyle(
-                              fontSize: 10,
-                              fontWeight: FontWeight.w700,
+                            style: AppTypography.label(
+                              size: 10,
+                              weight: FontWeight.w700,
                               letterSpacing: 0.4,
                               color: Colors.white.withValues(alpha: 0.45),
                             ),
@@ -385,7 +378,7 @@ class _ScenePrompt extends StatelessWidget {
                 ),
               ],
               if (showHint) ...[
-                const SizedBox(height: 10),
+                const SizedBox(height: AppSpace.sm),
                 Align(
                   alignment: Alignment.centerRight,
                   child: _WhisperChip(
@@ -415,12 +408,12 @@ class _WhisperChip extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: used ? null : onTap,
-        borderRadius: BorderRadius.circular(999),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.md, vertical: 7),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
             color: used ? Colors.white.withValues(alpha: 0.05) : accent.withValues(alpha: 0.12),
             border: Border.all(
               color: used ? Colors.white.withValues(alpha: 0.1) : accent.withValues(alpha: 0.4),
@@ -429,17 +422,17 @@ class _WhisperChip extends StatelessWidget {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(
-                used ? Icons.hearing_disabled_rounded : Icons.hearing_rounded,
+              CinematicIcon(
+                glyph: CinematicGlyph.echo,
                 size: 14,
-                color: used ? Colors.white38 : accent,
+                accent: used ? Colors.white38 : accent,
+                framed: false,
               ),
-              const SizedBox(width: 6),
+              const SizedBox(width: AppSpace.xs),
               Text(
                 used ? 'Sussurro usado' : 'Sussurro',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w800,
+                style: AppTypography.title(
+                  size: 12,
                   color: used ? Colors.white38 : accent,
                 ),
               ),
@@ -517,7 +510,7 @@ class _ChoiceTile extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: enabled ? onTap : null,
-        borderRadius: BorderRadius.circular(18),
+        borderRadius: BorderRadius.circular(AppRadii.md),
         child: AnimatedScale(
           scale: active ? 1.015 : 1,
           duration: const Duration(milliseconds: 200),
@@ -525,10 +518,10 @@ class _ChoiceTile extends StatelessWidget {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             curve: Curves.easeOutCubic,
-            padding: const EdgeInsets.fromLTRB(12, 13, 14, 13),
+            padding: const EdgeInsets.fromLTRB(AppSpace.md, 13, AppSpace.section, 13),
             decoration: BoxDecoration(
               color: fill,
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(color: border, width: active || state == _ChoiceState.wrong ? 1.7 : 1),
               boxShadow: [
                 if (active)
@@ -563,31 +556,37 @@ class _ChoiceTile extends StatelessWidget {
                   ),
                   child: Text(
                     letter,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w900,
-                      color: letterFg,
-                    ),
+                    style: AppTypography.title(size: 14, color: letterFg),
                   ),
                 ),
-                const SizedBox(width: 14),
+                const SizedBox(width: AppSpace.section),
                 Expanded(
                   child: Text(
                     text,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
+                    style: AppTypography.body(
+                      size: 16,
+                      weight: FontWeight.w700,
                       height: 1.3,
                       color: Colors.white.withValues(alpha: state == _ChoiceState.dimmed ? 0.35 : 0.95),
                     ),
                   ),
                 ),
                 if (state == _ChoiceState.correct)
-                  Icon(Icons.check_rounded, color: accent, size: 22)
+                  CinematicIcon(
+                    glyph: CinematicGlyph.check,
+                    size: 22,
+                    accent: accent,
+                    framed: false,
+                  )
                 else if (state == _ChoiceState.wrong)
                   const Icon(Icons.close_rounded, color: AppColors.error, size: 22)
                 else if (state == _ChoiceState.picked)
-                  Icon(Icons.arrow_forward_rounded, color: accent.withValues(alpha: 0.8), size: 18),
+                  CinematicIcon(
+                    glyph: CinematicGlyph.rise,
+                    size: 18,
+                    accent: accent.withValues(alpha: 0.8),
+                    framed: false,
+                  ),
               ],
             ),
           ),
@@ -617,7 +616,7 @@ class _ConfirmCta extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 17),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           gradient: enabled ? AppGradients.gold : null,
           color: enabled ? null : Colors.white.withValues(alpha: 0.08),
           border: Border.all(
@@ -636,12 +635,9 @@ class _ConfirmCta extends StatelessWidget {
         child: Text(
           enabled ? 'CONFIRMAR RESPOSTA' : 'ESCOLHA UMA OPÇÃO',
           textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w900,
-            letterSpacing: 0.8,
-            color: enabled ? const Color(0xFF2A2100) : Colors.white.withValues(alpha: 0.38),
-          ),
+          style: enabled
+              ? AppTypography.cta(size: 14)
+              : AppTypography.cta(size: 14, color: Colors.white.withValues(alpha: 0.38)),
         ),
       ),
     );

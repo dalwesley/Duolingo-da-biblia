@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
 class AppMetrics {
@@ -8,10 +9,71 @@ class AppMetrics {
   static const progressHeight = 4.0;
 
   /// Padding padrão dos GlassCards de conteúdo.
-  static const cardPadding = EdgeInsets.fromLTRB(16, 14, 16, 14);
+  static const cardPadding = EdgeInsets.all(AppSpace.lg);
 
   /// Raio padrão dos cards (alias de [AppRadii.lg]).
   static const cardRadius = AppRadii.lg;
+
+  /// Ícone leading em listas (quests, trilhas).
+  static const leadingIcon = 34.0;
+
+  /// Ícone compacto em badges/chips.
+  static const chipIcon = 14.0;
+}
+
+/// Botão CTA cobre — ação principal em cards e telas.
+class CopperCta extends StatelessWidget {
+  final String label;
+  final VoidCallback? onTap;
+  final CinematicGlyph? trailing;
+  final bool expanded;
+  final EdgeInsetsGeometry padding;
+
+  const CopperCta({
+    super.key,
+    required this.label,
+    this.onTap,
+    this.trailing = CinematicGlyph.path,
+    this.expanded = true,
+    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final child = Container(
+      padding: padding,
+      decoration: BoxDecoration(
+        gradient: AppGradients.gold,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.accentDark.withValues(alpha: 0.45),
+            offset: const Offset(0, 6),
+            blurRadius: 14,
+          ),
+        ],
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
+        children: [
+          Text(label.toUpperCase(), style: AppTypography.cta(size: 13)),
+          if (trailing != null) ...[
+            const SizedBox(width: 8),
+            CinematicIcon(
+              glyph: trailing!,
+              size: 16,
+              accent: AppColors.inkOnAccent,
+              framed: false,
+            ),
+          ],
+        ],
+      ),
+    );
+
+    if (onTap == null) return child;
+    return GestureDetector(onTap: onTap, child: child);
+  }
 }
 
 /// Barra de progresso fina padronizada.
@@ -54,7 +116,7 @@ class SectionLabel extends StatelessWidget {
     this.text, {
     super.key,
     this.color,
-    this.size = 12,
+    this.size = 11,
   });
 
   @override
@@ -64,8 +126,8 @@ class SectionLabel extends StatelessWidget {
       text.toUpperCase(),
       style: AppTypography.label(
         size: size,
-        letterSpacing: 1.2,
-        color: color ?? a.text.withValues(alpha: 0.92),
+        letterSpacing: 1.3,
+        color: color ?? a.text.withValues(alpha: 0.88),
       ),
     );
   }
@@ -96,15 +158,13 @@ class CountBadge extends StatelessWidget {
             ? (background ?? ink.withValues(alpha: 0.14))
             : Colors.transparent,
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: filled
-            ? null
-            : Border.all(color: ink.withValues(alpha: 0.28)),
+        border: filled ? null : Border.all(color: ink.withValues(alpha: 0.28)),
       ),
       child: Text(
         text,
-        style: TextStyle(
-          fontSize: 12,
-          fontWeight: FontWeight.w900,
+        style: AppTypography.body(
+          size: 12,
+          weight: FontWeight.w900,
           color: ink,
           height: 1.1,
         ),
@@ -113,10 +173,11 @@ class CountBadge extends StatelessWidget {
   }
 }
 
-/// Chip/badge suave com ícone opcional (streak, status).
+/// Chip/badge suave com ícone brand ou Material (legacy).
 class SoftBadge extends StatelessWidget {
   final String text;
   final IconData? icon;
+  final CinematicGlyph? glyph;
   final Color? accent;
   final Color? textColor;
   final bool bordered;
@@ -125,6 +186,7 @@ class SoftBadge extends StatelessWidget {
     super.key,
     required this.text,
     this.icon,
+    this.glyph,
     this.accent,
     this.textColor,
     this.bordered = true,
@@ -146,15 +208,23 @@ class SoftBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (icon != null) ...[
-            Icon(icon, size: 14, color: tone.withValues(alpha: 0.95)),
+          if (glyph != null) ...[
+            CinematicIcon(
+              glyph: glyph!,
+              size: AppMetrics.chipIcon,
+              accent: tone.withValues(alpha: 0.95),
+              framed: false,
+            ),
+            const SizedBox(width: 4),
+          ] else if (icon != null) ...[
+            Icon(icon, size: AppMetrics.chipIcon, color: tone.withValues(alpha: 0.95)),
             const SizedBox(width: 4),
           ],
           Text(
             text,
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w800,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
               color: textColor ?? a.text.withValues(alpha: 0.9),
               height: 1,
             ),

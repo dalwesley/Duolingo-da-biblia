@@ -3,7 +3,7 @@ import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Atmosfera visual de cada reino — alinhada à família olive/gold/clay/slate.
+/// Atmosfera visual de cada reino — cedro/cobre/clay/slate.
 class RealmVisuals {
   final List<Color> sky;
   final Color accent;
@@ -23,7 +23,7 @@ class RealmVisuals {
 
   static RealmVisuals of(TrailRealm realm) => switch (realm) {
         TrailRealm.antigoTestamento => const RealmVisuals(
-            sky: [Color(0xFF0B1A14), Color(0xFF1E3D32), Color(0xFF2A4A3A)],
+            sky: [Color(0xFF0A1612), Color(0xFF152820), Color(0xFF243F36)],
             accent: AppColors.accent,
             glow: AppColors.primaryLight,
             glyph: CinematicGlyph.book,
@@ -31,7 +31,7 @@ class RealmVisuals {
             tagline: 'Da criação aos profetas — o caminho da aliança',
           ),
         TrailRealm.novoTestamento => const RealmVisuals(
-            sky: [Color(0xFF1A100E), Color(0xFF3A2218), Color(0xFF4A2E20)],
+            sky: [Color(0xFF18100E), Color(0xFF342018), Color(0xFF443028)],
             accent: AppColors.clay,
             glow: AppColors.clayDeep,
             glyph: CinematicGlyph.heart,
@@ -39,7 +39,7 @@ class RealmVisuals {
             tagline: 'Cristo, a Igreja e a esperança que não falha',
           ),
         TrailRealm.vidaCrista => const RealmVisuals(
-            sky: [Color(0xFF0A1614), Color(0xFF12302A), Color(0xFF1A4038)],
+            sky: [Color(0xFF0A1412), Color(0xFF102820), Color(0xFF183830)],
             accent: AppColors.cedar,
             glow: AppColors.cedarDeep,
             glyph: CinematicGlyph.seed,
@@ -47,7 +47,7 @@ class RealmVisuals {
             tagline: 'Discipulado, oração e a história da fé',
           ),
         TrailRealm.teologia => const RealmVisuals(
-            sky: [Color(0xFF0C1218), Color(0xFF1A2430), Color(0xFF243040)],
+            sky: [Color(0xFF0C1016), Color(0xFF182028), Color(0xFF222C38)],
             accent: AppColors.slate,
             glow: AppColors.slateDeep,
             glyph: CinematicGlyph.scroll,

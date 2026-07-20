@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../data/mission_study.dart';
 import '../screens/bible_screen.dart';
 import '../theme/app_theme.dart';
@@ -68,14 +67,19 @@ class _StudyPanelState extends State<StudyPanel>
       child: ListView(
         shrinkWrap: true,
         physics: const NeverScrollableScrollPhysics(),
-        padding: const EdgeInsets.fromLTRB(20, 8, 20, 28),
+        padding: const EdgeInsets.fromLTRB(
+          AppSpace.screen,
+          AppSpace.sm,
+          AppSpace.screen,
+          28,
+        ),
         children: [
           Text(
             'PREPARE-SE',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 11,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 11,
+              weight: FontWeight.w900,
               letterSpacing: 2,
               color: accent.withValues(alpha: 0.95),
             ),
@@ -85,9 +89,9 @@ class _StudyPanelState extends State<StudyPanel>
             Text(
               title,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.w900,
+              style: AppTypography.title(
+                size: 26,
+                weight: FontWeight.w900,
                 color: Colors.white,
                 height: 1.15,
               ),
@@ -98,8 +102,8 @@ class _StudyPanelState extends State<StudyPanel>
             Text(
               intro,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
+              style: AppTypography.body(
+                size: 14,
                 height: 1.45,
                 color: Colors.white.withValues(alpha: 0.72),
               ),
@@ -109,9 +113,14 @@ class _StudyPanelState extends State<StudyPanel>
 
           // Passagem
           Container(
-            padding: const EdgeInsets.fromLTRB(20, 22, 20, 20),
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              22,
+              AppSpace.screen,
+              AppSpace.screen,
+            ),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(22),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -127,34 +136,33 @@ class _StudyPanelState extends State<StudyPanel>
                 Text(
                   study.passageRef,
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 26,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.display(
+                    size: 26,
+                    weight: FontWeight.w700,
                     color: Colors.white,
                     height: 1.15,
                   ),
                 ),
                 if (study.focusQuestion.isNotEmpty) ...[
-                  const SizedBox(height: 8),
+                  const SizedBox(height: AppSpace.sm),
                   Text(
                     study.focusQuestion,
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.w500,
-                      fontStyle: FontStyle.italic,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w500,
                       color: Colors.white.withValues(alpha: 0.65),
                       height: 1.35,
-                    ),
+                    ).copyWith(fontStyle: FontStyle.italic),
                   ),
                 ],
-                const SizedBox(height: 16),
+                const SizedBox(height: AppSpace.section),
                 Text(
                   '"${study.passageText}"',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
+                  style: AppTypography.display(
+                    size: 18,
+                    weight: FontWeight.w600,
                     fontStyle: FontStyle.italic,
                     height: 1.45,
                     color: Colors.white.withValues(alpha: 0.88),
@@ -166,7 +174,7 @@ class _StudyPanelState extends State<StudyPanel>
                     Expanded(
                       child: _StudyAction(
                         label: 'Ler na Bíblia',
-                        icon: Icons.menu_book_rounded,
+                        glyph: CinematicGlyph.book,
                         accent: accent,
                         filled: true,
                         onTap: _openBible,
@@ -176,7 +184,7 @@ class _StudyPanelState extends State<StudyPanel>
                     Expanded(
                       child: _StudyAction(
                         label: 'Estudar',
-                        icon: Icons.auto_stories_rounded,
+                        glyph: CinematicGlyph.scroll,
                         accent: accent,
                         filled: false,
                         onTap: () => showVerseStudyFromReference(
@@ -192,12 +200,12 @@ class _StudyPanelState extends State<StudyPanel>
           ),
 
           if (study.context.isNotEmpty) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpace.section),
             Text(
               study.context,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
+              style: AppTypography.body(
+                size: 14,
                 height: 1.5,
                 color: Colors.white.withValues(alpha: 0.75),
               ),
@@ -205,11 +213,11 @@ class _StudyPanelState extends State<StudyPanel>
           ],
 
           if (study.keyword.isNotEmpty) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpace.section),
             Container(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(AppSpace.section),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(18),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 gradient: LinearGradient(
                   colors: [
                     accent.withValues(alpha: 0.22),
@@ -234,28 +242,28 @@ class _StudyPanelState extends State<StudyPanel>
                       children: [
                         Text(
                           'DICA DE LEITURA',
-                          style: TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.w900,
+                          style: AppTypography.label(
+                            size: 10,
+                            weight: FontWeight.w900,
                             letterSpacing: 1.2,
                             color: accent,
                           ),
                         ),
-                        const SizedBox(height: 4),
+                        const SizedBox(height: AppSpace.xs),
                         Text(
                           study.keyword,
-                          style: GoogleFonts.cormorantGaramond(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
+                          style: AppTypography.display(
+                            size: 20,
+                            weight: FontWeight.w700,
                             color: Colors.white,
                           ),
                         ),
                         if (study.keywordGloss.isNotEmpty) ...[
-                          const SizedBox(height: 4),
+                          const SizedBox(height: AppSpace.xs),
                           Text(
                             study.keywordGloss,
-                            style: TextStyle(
-                              fontSize: 13,
+                            style: AppTypography.body(
+                              size: 13,
                               height: 1.35,
                               color: Colors.white.withValues(alpha: 0.78),
                             ),
@@ -275,16 +283,15 @@ class _StudyPanelState extends State<StudyPanel>
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(
                 color: Colors.white.withValues(alpha: 0.05),
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
               ),
               child: Text(
                 'Sua reflexão anterior: “${widget.priorReflection}”',
-                style: TextStyle(
-                  fontSize: 13,
-                  fontStyle: FontStyle.italic,
+                style: AppTypography.body(
+                  size: 13,
                   color: Colors.white.withValues(alpha: 0.65),
-                ),
+                ).copyWith(fontStyle: FontStyle.italic),
               ),
             ),
           ],
@@ -297,7 +304,7 @@ class _StudyPanelState extends State<StudyPanel>
               padding: const EdgeInsets.symmetric(vertical: 17),
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(18),
+                borderRadius: BorderRadius.circular(AppRadii.md),
                 boxShadow: [
                   BoxShadow(
                     color: AppColors.accent.withValues(alpha: 0.45),
@@ -306,24 +313,19 @@ class _StudyPanelState extends State<StudyPanel>
                   ),
                 ],
               ),
-              child: const Text(
+              child: Text(
                 'RESPONDER PERGUNTAS',
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.inkOnAccent,
-                  letterSpacing: 0.8,
-                ),
+                style: AppTypography.cta().copyWith(letterSpacing: 0.8),
               ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           Text(
             'Leia o trecho quando puder — a passagem contextualiza as respostas.',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 11,
+            style: AppTypography.body(
+              size: 11,
               height: 1.35,
               color: Colors.white.withValues(alpha: 0.4),
             ),
@@ -336,14 +338,14 @@ class _StudyPanelState extends State<StudyPanel>
 
 class _StudyAction extends StatelessWidget {
   final String label;
-  final IconData icon;
+  final CinematicGlyph glyph;
   final Color accent;
   final bool filled;
   final VoidCallback onTap;
 
   const _StudyAction({
     required this.label,
-    required this.icon,
+    required this.glyph,
     required this.accent,
     required this.filled,
     required this.onTap,
@@ -356,7 +358,7 @@ class _StudyAction extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: filled
                 ? accent.withValues(alpha: 0.65)
@@ -370,19 +372,20 @@ class _StudyAction extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              icon,
+            CinematicIcon(
+              glyph: glyph,
               size: 16,
-              color: filled ? accent : Colors.white.withValues(alpha: 0.9),
+              accent: filled ? accent : Colors.white.withValues(alpha: 0.9),
+              framed: false,
             ),
             const SizedBox(width: 6),
             Flexible(
               child: Text(
                 label,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w900,
+                style: AppTypography.label(
+                  size: 12,
+                  weight: FontWeight.w900,
                   letterSpacing: 0.4,
                   color: filled ? accent : Colors.white.withValues(alpha: 0.92),
                 ),
@@ -444,26 +447,31 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
         _custom.text.trim().isNotEmpty;
 
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 8, 20, 16),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        AppSpace.sm,
+        AppSpace.screen,
+        AppSpace.section,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
             'O que você leva\ndesta passagem?',
             textAlign: TextAlign.center,
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 28,
-              fontWeight: FontWeight.w700,
+            style: AppTypography.display(
+              size: 28,
+              weight: FontWeight.w700,
               color: Colors.white,
               height: 1.2,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.sm),
           Text(
             '$pct% de acertos',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 12,
+            style: AppTypography.body(
+              size: 12,
               color: Colors.white.withValues(alpha: 0.5),
             ),
           ),
@@ -471,12 +479,11 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
           Text(
             study.focusQuestion,
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 14,
-              fontStyle: FontStyle.italic,
+            style: AppTypography.body(
+              size: 14,
               color: Colors.white.withValues(alpha: 0.7),
               height: 1.4,
-            ),
+            ).copyWith(fontStyle: FontStyle.italic),
           ),
           const SizedBox(height: 8),
           Expanded(
@@ -503,7 +510,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                           color: selected
                               ? accent.withValues(alpha: 0.22)
                               : Colors.white.withValues(alpha: 0.06),
-                          borderRadius: BorderRadius.circular(16),
+                          borderRadius: BorderRadius.circular(AppRadii.md),
                           border: Border.all(
                             color: selected
                                 ? accent
@@ -513,9 +520,9 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                         ),
                         child: Text(
                           p,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w700,
+                          style: AppTypography.body(
+                            size: 14,
+                            weight: FontWeight.w700,
                             color: Colors.white.withValues(
                               alpha: selected ? 1 : 0.85,
                             ),
@@ -529,23 +536,23 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                   controller: _custom,
                   onChanged: (_) => setState(() => _selected = null),
                   maxLines: 2,
-                  style: const TextStyle(
+                  style: AppTypography.body(
                     color: Colors.white,
-                    fontWeight: FontWeight.w600,
+                    weight: FontWeight.w600,
                   ),
                   decoration: InputDecoration(
                     hintText: 'Ou escreva com suas palavras…',
-                    hintStyle: TextStyle(
+                    hintStyle: AppTypography.body(
                       color: Colors.white.withValues(alpha: 0.35),
                     ),
                     filled: true,
                     fillColor: Colors.white.withValues(alpha: 0.06),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(AppRadii.md),
                       borderSide: BorderSide.none,
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(16),
+                      borderRadius: BorderRadius.circular(AppRadii.md),
                       borderSide: BorderSide(color: accent, width: 1.5),
                     ),
                   ),
@@ -560,7 +567,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       decoration: BoxDecoration(
                         gradient: AppGradients.gold,
-                        borderRadius: BorderRadius.circular(18),
+                        borderRadius: BorderRadius.circular(AppRadii.md),
                         boxShadow: canSubmit
                             ? [
                                 BoxShadow(
@@ -571,15 +578,10 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                               ]
                             : null,
                       ),
-                      child: const Text(
+                      child: Text(
                         'AVANÇAR',
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.inkOnAccent,
-                          letterSpacing: 0.5,
-                        ),
+                        style: AppTypography.cta().copyWith(letterSpacing: 0.5),
                       ),
                     ),
                   ),

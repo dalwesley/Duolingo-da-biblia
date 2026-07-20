@@ -27,7 +27,7 @@ class UserAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final border = borderColor ?? AppColors.accent.withValues(alpha: 0.55);
+    final border = borderColor ?? Colors.white.withValues(alpha: 0.18);
     final child = Container(
       width: radius * 2,
       height: radius * 2,
@@ -36,8 +36,9 @@ class UserAvatar extends StatelessWidget {
         border: Border.all(color: border, width: 1.5),
         boxShadow: [
           BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.2),
-            blurRadius: 8,
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: 10,
+            offset: const Offset(0, 3),
           ),
         ],
       ),

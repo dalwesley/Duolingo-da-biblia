@@ -18,6 +18,7 @@ class DailyQuestsCard extends StatelessWidget {
     final a = Appearance.of(context);
     final doneCount = progress.questsCompletedToday;
     final total = DailyQuestDefs.all.length;
+    final quests = DailyQuestDefs.all;
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -28,20 +29,23 @@ class DailyQuestsCard extends StatelessWidget {
             label: 'Missões diárias',
             trailing: CountBadge('$doneCount/$total'),
           ),
-          const SizedBox(height: 12),
-          ...DailyQuestDefs.all.map((q) {
+          const SizedBox(height: AppSpace.md),
+          ...quests.asMap().entries.map((entry) {
+            final index = entry.key;
+            final q = entry.value;
+            final isLast = index == quests.length - 1;
             final value = progress.questProgress(q.id);
             final claimed = progress.isQuestClaimed(q.id);
             final done = claimed || value >= q.target;
             final pct = (value / q.target).clamp(0.0, 1.0);
 
             return Padding(
-              padding: const EdgeInsets.only(bottom: 10),
+              padding: EdgeInsets.only(bottom: isLast ? 0 : AppSpace.sm),
               child: Row(
                 children: [
                   CinematicIcon(
                     glyph: CinematicGlyphResolver.forQuest(q.id),
-                    size: 34,
+                    size: AppMetrics.leadingIcon,
                     glowing: false,
                   ),
                   const SizedBox(width: 10),
@@ -51,12 +55,12 @@ class DailyQuestsCard extends StatelessWidget {
                       children: [
                         Text(
                           q.title,
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white.withValues(
+                          style: AppTypography.title(
+                            size: 13,
+                            color: a.text.withValues(
                               alpha: claimed ? 0.45 : 0.95,
                             ),
+                          ).copyWith(
                             decoration:
                                 claimed ? TextDecoration.lineThrough : null,
                           ),
@@ -66,8 +70,8 @@ class DailyQuestsCard extends StatelessWidget {
                           '${value.clamp(0, q.target)}/${q.target} · ${q.subtitle}',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                            fontSize: 11,
+                          style: AppTypography.body(
+                            size: 11,
                             color: a.textMuted(0.5),
                           ),
                         ),
@@ -83,10 +87,11 @@ class DailyQuestsCard extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   if (done)
-                    const Icon(
-                      Icons.check_circle_rounded,
-                      color: AppColors.teal,
+                    const CinematicIcon(
+                      glyph: CinematicGlyph.check,
                       size: 22,
+                      accent: AppColors.teal,
+                      framed: false,
                     )
                   else
                     CountBadge(

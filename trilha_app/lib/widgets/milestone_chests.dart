@@ -25,49 +25,47 @@ class MilestoneChestsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
     final pct = total > 0 ? (done / total * 100) : 0.0;
 
-    return Container(
-      margin: const EdgeInsets.only(bottom: 16),
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.07),
-        borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.25)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            'Baús da jornada',
-            style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900, color: Colors.white),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            'Recompensas ao avançar na trilha',
-            style: TextStyle(fontSize: 11, color: Colors.white.withValues(alpha: 0.5)),
-          ),
-          const SizedBox(height: 14),
-          Row(
-            children: TrailMilestone.all.map((m) {
-              final unlocked = pct >= m.percent;
-              final claimed = progress.isChestClaimed(m.chestId(trailSlug));
-              return Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: _ChestTile(
-                    milestone: m,
-                    unlocked: unlocked,
-                    claimed: claimed,
-                    onTap: unlocked && !claimed
-                        ? () => _openChest(context, progress, m)
-                        : null,
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.section),
+      child: GlassCard(
+        padding: AppMetrics.cardPadding,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const CardHeader(label: 'Baús da jornada'),
+            const SizedBox(height: AppSpace.xs),
+            Text(
+              'Recompensas ao avançar na trilha',
+              style: AppTypography.body(
+                size: 11,
+                color: a.textMuted(0.55),
+              ),
+            ),
+            const SizedBox(height: 14),
+            Row(
+              children: TrailMilestone.all.map((m) {
+                final unlocked = pct >= m.percent;
+                final claimed = progress.isChestClaimed(m.chestId(trailSlug));
+                return Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    child: _ChestTile(
+                      milestone: m,
+                      unlocked: unlocked,
+                      claimed: claimed,
+                      onTap: unlocked && !claimed
+                          ? () => _openChest(context, progress, m)
+                          : null,
+                    ),
                   ),
-                ),
-              );
-            }).toList(),
-          ),
-        ],
+                );
+              }).toList(),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -107,7 +105,7 @@ class _ChestTile extends StatelessWidget {
         duration: const Duration(milliseconds: 250),
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           gradient: glow
               ? LinearGradient(
                   begin: Alignment.topCenter,
@@ -129,33 +127,34 @@ class _ChestTile extends StatelessWidget {
         ),
         child: Column(
           children: [
-            Icon(
-              claimed
-                  ? Icons.inventory_2_rounded
+            CinematicIcon(
+              glyph: claimed
+                  ? CinematicGlyph.gem
                   : unlocked
-                      ? Icons.card_giftcard_rounded
-                      : Icons.lock_rounded,
-              color: claimed
+                      ? CinematicGlyph.crown
+                      : CinematicGlyph.lock,
+              size: 26,
+              accent: claimed
                   ? AppColors.teal
                   : unlocked
                       ? AppColors.accent
                       : Colors.white38,
-              size: 26,
+              framed: false,
             ),
             const SizedBox(height: 6),
             Text(
               '${milestone.percent}%',
-              style: TextStyle(
-                fontSize: 11,
-                fontWeight: FontWeight.w900,
+              style: AppTypography.label(
+                size: 11,
+                weight: FontWeight.w900,
                 color: Colors.white.withValues(alpha: unlocked ? 0.95 : 0.4),
               ),
             ),
             Text(
               claimed ? 'Aberto' : unlocked ? 'Abrir' : 'Trancado',
-              style: TextStyle(
-                fontSize: 9,
-                fontWeight: FontWeight.w700,
+              style: AppTypography.label(
+                size: 9,
+                weight: FontWeight.w700,
                 color: Colors.white.withValues(alpha: 0.45),
               ),
             ),
@@ -183,7 +182,7 @@ class _ChestOpenDialog extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: [Color(0xFF28332C), Color(0xFF121816)],
           ),
-          borderRadius: BorderRadius.circular(28),
+          borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),
           boxShadow: AppTheme.glow(AppColors.accent, blur: 28),
         ),
@@ -200,30 +199,47 @@ class _ChestOpenDialog extends StatelessWidget {
             Text(
               milestone.title,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: Colors.white),
+              style: AppTypography.title(
+                size: 22,
+                weight: FontWeight.w900,
+                color: Colors.white,
+              ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             Text(
               milestone.subtitle,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 13, color: Colors.white.withValues(alpha: 0.65)),
+              style: AppTypography.body(
+                size: 13,
+                color: Colors.white.withValues(alpha: 0.65),
+              ),
             ),
             const SizedBox(height: 18),
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(999),
+                borderRadius: BorderRadius.circular(AppRadii.pill),
               ),
               child: Text(
                 '+${milestone.stepsReward} passos',
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.inkOnAccent),
+                style: AppTypography.title(
+                  size: 16,
+                  weight: FontWeight.w900,
+                  color: AppColors.inkOnAccent,
+                ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: AppSpace.screen),
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Continuar', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w800)),
+              child: Text(
+                'Continuar',
+                style: AppTypography.title(
+                  color: Colors.white,
+                  weight: FontWeight.w800,
+                ),
+              ),
             ),
           ],
         ),
@@ -274,10 +290,11 @@ class WeeklyQuestsCard extends StatelessWidget {
                       children: [
                         Text(
                           q.title,
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontWeight: FontWeight.w800,
+                          style: AppTypography.title(
+                            size: 13,
+                            weight: FontWeight.w800,
                             color: a.text.withValues(alpha: claimed ? 0.45 : 0.95),
+                          ).copyWith(
                             decoration: claimed ? TextDecoration.lineThrough : null,
                           ),
                         ),
@@ -286,7 +303,10 @@ class WeeklyQuestsCard extends StatelessWidget {
                           '${value.clamp(0, q.target)}/${q.target} · ${q.subtitle}',
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 11, color: a.textMuted(0.5)),
+                          style: AppTypography.body(
+                            size: 11,
+                            color: a.textMuted(0.5),
+                          ),
                         ),
                         const SizedBox(height: 6),
                         AppProgressBar(
@@ -298,7 +318,12 @@ class WeeklyQuestsCard extends StatelessWidget {
                   ),
                   const SizedBox(width: 10),
                   if (done)
-                    const Icon(Icons.check_circle_rounded, color: AppColors.teal, size: 22)
+                    const CinematicIcon(
+                      glyph: CinematicGlyph.check,
+                      size: 22,
+                      accent: AppColors.teal,
+                      framed: false,
+                    )
                   else
                     CountBadge(
                       '+${q.stepsReward}',

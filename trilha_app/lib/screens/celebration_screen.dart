@@ -11,6 +11,7 @@ import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/confetti_overlay.dart';
+import '../widgets/cinematic_icon.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
 import 'lesson_screen.dart';
@@ -204,7 +205,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             ),
             SafeArea(
               child: Padding(
-                padding: const EdgeInsets.all(24),
+                padding: const EdgeInsets.all(AppSpace.xxl),
                 child: Column(
                   children: [
                     Align(
@@ -217,7 +218,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           height: 40,
                           decoration: BoxDecoration(
                             color: Colors.white.withValues(alpha: 0.12),
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(AppRadii.sm),
                           ),
                           child: const Icon(
                             Icons.close_rounded,
@@ -244,16 +245,19 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             blur: 28,
                           ),
                         ),
-                        child: Icon(
-                          widget.perfect
-                              ? Icons.workspace_premium_rounded
-                              : isBoss
-                                  ? Icons.military_tech_rounded
-                                  : Icons.auto_awesome_rounded,
-                          size: 52,
-                          color: widget.perfect
-                              ? AppColors.inkOnAccent
-                              : Colors.white,
+                        child: Center(
+                          child: CinematicIcon(
+                            glyph: widget.perfect
+                                ? CinematicGlyph.crown
+                                : isBoss
+                                    ? CinematicGlyph.podium
+                                    : CinematicGlyph.spark,
+                            size: 52,
+                            accent: widget.perfect
+                                ? AppColors.inkOnAccent
+                                : Colors.white,
+                            framed: false,
+                          ),
                         ),
                       ),
                     ),
@@ -272,7 +276,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         : '+1 passo',
                             style: AppTypography.display(size: 28),
                           ),
-                          const SizedBox(height: 12),
+                          const SizedBox(height: AppSpace.md),
                           MascotBubble(
                             message: widget.isReplay
                                 ? MascotMessages.celebration(
@@ -282,20 +286,20 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                 : 'A Palavra iluminou mais um trecho da sua caminhada.\nContinue amanhã.',
                           ),
                           if (_showGoalBanner) ...[
-                            const SizedBox(height: 14),
+                            const SizedBox(height: AppSpace.section),
                             Container(
                               width: double.infinity,
-                              padding: const EdgeInsets.all(14),
+                              padding: const EdgeInsets.all(AppSpace.section),
                               decoration: BoxDecoration(
                                 gradient: AppGradients.gold,
-                                borderRadius: BorderRadius.circular(18),
+                                borderRadius: BorderRadius.circular(AppRadii.md),
                               ),
-                              child: const Text(
+                              child: Text(
                                 '✦ Meta do dia alcançada. Sua caminhada segue firme.',
                                 textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w900,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  weight: FontWeight.w900,
                                   color: AppColors.inkOnAccent,
                                 ),
                               ),
@@ -306,25 +310,25 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             children: [
                               Expanded(
                                 child: _StatCard(
-                                  icon: Icons.directions_walk_rounded,
+                                  glyph: CinematicGlyph.path,
                                   value: '+${widget.steps}',
                                   label: 'Passos',
                                   color: AppColors.accent,
                                 ),
                               ),
-                              const SizedBox(width: 10),
+                              const SizedBox(width: AppSpace.sm),
                               Expanded(
                                 child: _StatCard(
-                                  icon: Icons.wb_sunny_rounded,
+                                  glyph: CinematicGlyph.flame,
                                   value: '${progress.streak}',
                                   label: 'Dias',
                                   color: AppColors.streak,
                                 ),
                               ),
-                              const SizedBox(width: 10),
+                              const SizedBox(width: AppSpace.sm),
                               Expanded(
                                 child: _StatCard(
-                                  icon: Icons.check_circle_rounded,
+                                  glyph: CinematicGlyph.check,
                                   value: '$pct%',
                                   label: 'Clareza',
                                   color: AppColors.teal,
@@ -333,7 +337,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             ],
                           ),
                           if (showModeUp) ...[
-                            const SizedBox(height: 16),
+                            const SizedBox(height: AppSpace.lg),
                             _ModeUpgradeCard(
                               trailComplete: _trailComplete,
                               currentLabel:
@@ -357,7 +361,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         userName: progress.userName,
                         steps: progress.steps,
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: AppSpace.md),
                     ],
                     _GoldButton(
                       label: 'CONTINUAR A CAMINHADA',
@@ -370,15 +374,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         );
                       },
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: AppSpace.sm),
                     TextButton(
                       onPressed: () =>
                           Navigator.of(context).popUntil((r) => r.isFirst),
                       child: Text(
                         'Voltar ao início',
-                        style: TextStyle(
+                        style: AppTypography.body(
+                          weight: FontWeight.w700,
                           color: Colors.white.withValues(alpha: 0.7),
-                          fontWeight: FontWeight.w700,
                         ),
                       ),
                     ),
@@ -414,10 +418,10 @@ class _ModeUpgradeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
+      padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.lg, AppSpace.lg, AppSpace.section),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
       ),
       child: Column(
@@ -428,56 +432,47 @@ class _ModeUpgradeCard extends StatelessWidget {
                 ? 'Modo $currentLabel concluído'
                 : 'Bom passo em $currentLabel',
             textAlign: TextAlign.center,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-            ),
+            style: AppTypography.title(size: 14, color: Colors.white),
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: AppSpace.xs),
           Text(
             trailComplete
                 ? 'Que tal responder de novo em $nextLabel? $nextSubtitle'
                 : 'Quer tentar as perguntas deste passo em $nextLabel?',
             textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 13,
+            style: AppTypography.body(
+              size: 13,
               height: 1.35,
               color: Colors.white.withValues(alpha: 0.72),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           GestureDetector(
             onTap: onTryStep,
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 13),
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(14),
+                borderRadius: BorderRadius.circular(AppRadii.sm),
               ),
               child: Text(
                 trailComplete
                     ? 'REVISAR UM PASSO EM ${nextLabel.toUpperCase()}'
                     : 'TENTAR EM ${nextLabel.toUpperCase()}',
                 textAlign: TextAlign.center,
-                style: const TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 0.4,
-                  color: AppColors.inkOnAccent,
-                ),
+                style: AppTypography.cta(size: 12),
               ),
             ),
           ),
           if (onSwitchTrail != null) ...[
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             TextButton(
               onPressed: onSwitchTrail,
               child: Text(
                 'Mudar a trilha para $nextLabel',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w700,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
                   color: Colors.white.withValues(alpha: 0.75),
                 ),
               ),
@@ -490,13 +485,13 @@ class _ModeUpgradeCard extends StatelessWidget {
 }
 
 class _StatCard extends StatelessWidget {
-  final IconData icon;
+  final CinematicGlyph glyph;
   final String value;
   final String label;
   final Color color;
 
   const _StatCard({
-    required this.icon,
+    required this.glyph,
     required this.value,
     required this.label,
     required this.color,
@@ -505,29 +500,31 @@ class _StatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: AppSpace.section, horizontal: AppSpace.sm),
       decoration: BoxDecoration(
         color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(AppRadii.md),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Column(
         children: [
-          Icon(icon, color: color, size: 20),
-          const SizedBox(height: 6),
+          CinematicIcon(
+            glyph: glyph,
+            size: 20,
+            accent: color,
+            framed: false,
+          ),
+          const SizedBox(height: AppSpace.xs),
           Text(
             value,
-            style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-            ),
+            style: AppTypography.title(size: 16, color: Colors.white),
           ),
           Text(
             label,
-            style: TextStyle(
-              fontSize: 10,
-              fontWeight: FontWeight.w600,
+            style: AppTypography.label(
+              size: 10,
+              weight: FontWeight.w600,
+              letterSpacing: 0.4,
               color: Colors.white.withValues(alpha: 0.55),
             ),
           ),
@@ -549,10 +546,10 @@ class _GoldButton extends StatelessWidget {
       onTap: onTap,
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 16),
+        padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
         decoration: BoxDecoration(
           gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           boxShadow: [
             BoxShadow(
               color: AppColors.accent.withValues(alpha: 0.4),
@@ -564,12 +561,7 @@ class _GoldButton extends StatelessWidget {
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w900,
-            color: AppColors.inkOnAccent,
-            letterSpacing: 0.6,
-          ),
+          style: AppTypography.cta(size: 14),
         ),
       ),
     );

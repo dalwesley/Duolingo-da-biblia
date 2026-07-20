@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
@@ -34,7 +33,7 @@ class LiturgicalBanner extends StatelessWidget {
             accent: accent,
             glowing: false,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: AppSpace.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -43,22 +42,30 @@ class LiturgicalBanner extends StatelessWidget {
                 const SizedBox(height: 2),
                 Text(
                   moment.subtitle,
-                  style: GoogleFonts.cormorantGaramond(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w700,
+                  style: AppTypography.display(
+                    size: 18,
+                    weight: FontWeight.w700,
                     color: a.text,
                     height: 1.15,
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   'Leitura do tempo · ${moment.focusRef}',
-                  style: TextStyle(fontSize: 11, color: a.textMuted(0.55)),
+                  style: AppTypography.body(
+                    size: 11,
+                    color: a.textMuted(0.55),
+                  ),
                 ),
               ],
             ),
           ),
-          Icon(Icons.menu_book_rounded, color: accent.withValues(alpha: 0.85), size: 22),
+          CinematicIcon(
+            glyph: CinematicGlyph.book,
+            size: 22,
+            accent: accent.withValues(alpha: 0.85),
+            framed: false,
+          ),
         ],
       ),
     );

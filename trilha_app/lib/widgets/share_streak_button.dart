@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 
 /// Compartilhar dias caminhando — encorajamento, não ostentação.
 class ShareStreakButton extends StatelessWidget {
@@ -47,10 +48,11 @@ Baixe o Trilha e caminhe comigo. 📖✨
           padding: EdgeInsets.zero,
           constraints: const BoxConstraints.tightFor(width: 34, height: 34),
           visualDensity: VisualDensity.compact,
-          icon: Icon(
-            Icons.ios_share_rounded,
+          icon: CinematicIcon(
+            glyph: CinematicGlyph.share,
             size: 20,
-            color: streak > 0 ? AppColors.accent : Colors.white38,
+            accent: streak > 0 ? AppColors.accent : Colors.white38,
+            framed: false,
           ),
         ),
       );
@@ -62,19 +64,24 @@ Baixe o Trilha e caminhe comigo. 📖✨
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white.withValues(alpha: 0.08),
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: AppColors.streak.withValues(alpha: 0.35)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(Icons.ios_share_rounded, size: 16, color: AppColors.streak.withValues(alpha: streak > 0 ? 1 : 0.4)),
-            const SizedBox(width: 8),
+            CinematicIcon(
+              glyph: CinematicGlyph.share,
+              size: 16,
+              accent: AppColors.streak.withValues(alpha: streak > 0 ? 1 : 0.4),
+              framed: false,
+            ),
+            const SizedBox(width: AppSpace.sm),
             Text(
               'Compartilhar',
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
+              style: AppTypography.title(
+                size: 12,
+                weight: FontWeight.w800,
                 color: Colors.white.withValues(alpha: streak > 0 ? 0.9 : 0.4),
               ),
             ),

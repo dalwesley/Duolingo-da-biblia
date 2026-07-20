@@ -4,9 +4,10 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../services/bible_service.dart';
+import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 
 /// Abre sheet para compartilhar um versículo (imagem com marca Trilha, ou texto).
@@ -53,6 +54,11 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
 
+  Future<void> _rememberShare() async {
+    if (!mounted) return;
+    await context.read<ProgressService>().recordSharedVerse(_ref);
+  }
+
   Future<void> _shareImage() async {
     if (_busy) return;
     setState(() => _busy = true);
@@ -78,6 +84,7 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
           subject: '$_ref — Trilha',
         ),
       );
+      await _rememberShare();
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -97,6 +104,7 @@ Via Trilha
     await SharePlus.instance.share(
       ShareParams(text: body, subject: '$_ref — Trilha'),
     );
+    await _rememberShare();
   }
 
   @override
@@ -107,7 +115,7 @@ Via Trilha
       padding: EdgeInsets.fromLTRB(18, 14, 18, 14 + bottom),
       decoration: BoxDecoration(
         color: const Color(0xFF1A221E),
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Column(
@@ -124,9 +132,9 @@ Via Trilha
           const SizedBox(height: 14),
           Text(
             'Compartilhar versículo',
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w900,
+            style: AppTypography.label(
+              size: 13,
+              weight: FontWeight.w900,
               letterSpacing: 0.6,
               color: Colors.white.withValues(alpha: 0.7),
             ),
@@ -151,7 +159,7 @@ Via Trilha
                 foregroundColor: AppColors.inkOnAccent,
                 padding: const EdgeInsets.symmetric(vertical: 14),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                 ),
               ),
               icon: _busy
@@ -166,17 +174,17 @@ Via Trilha
                   : const Icon(Icons.image_rounded, size: 20),
               label: Text(
                 _busy ? 'Preparando…' : 'Compartilhar imagem',
-                style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 14),
+                style: AppTypography.cta(),
               ),
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.sm),
           TextButton(
             onPressed: _busy ? null : _shareText,
             child: Text(
               'Compartilhar como texto',
-              style: TextStyle(
-                fontWeight: FontWeight.w700,
+              style: AppTypography.title(
+                weight: FontWeight.w700,
                 color: Colors.white.withValues(alpha: 0.7),
               ),
             ),
@@ -208,11 +216,11 @@ class ShareVerseCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF121816), Color(0xFF1E3D32), Color(0xFF1A221E)],
+          colors: [Color(0xFF0E1210), Color(0xFF152820), Color(0xFF161C19)],
         ),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
       ),
@@ -232,9 +240,9 @@ class ShareVerseCard extends StatelessWidget {
               const SizedBox(width: 8),
               Text(
                 'TRILHA',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w900,
+                style: AppTypography.label(
+                  size: 12,
+                  weight: FontWeight.w900,
                   letterSpacing: 2.2,
                   color: AppColors.accent.withValues(alpha: 0.95),
                 ),
@@ -244,30 +252,29 @@ class ShareVerseCard extends StatelessWidget {
           const SizedBox(height: 18),
           Text(
             '“$text”',
-            style: GoogleFonts.cormorantGaramond(
-              fontSize: 22,
+            style: AppTypography.display(
+              size: 22,
               height: 1.35,
-              fontWeight: FontWeight.w600,
+              weight: FontWeight.w600,
               color: Colors.white.withValues(alpha: 0.95),
             ),
           ),
           const SizedBox(height: 18),
           Text(
             '$bookName $chapter:$verse',
-            style: TextStyle(
-              fontSize: 13,
-              fontWeight: FontWeight.w800,
+            style: AppTypography.title(
+              size: 13,
+              weight: FontWeight.w800,
               color: AppColors.accent.withValues(alpha: 0.95),
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: AppSpace.xs),
           Text(
             BibleService.translationName,
-            style: TextStyle(
-              fontSize: 11,
-              fontStyle: FontStyle.italic,
+            style: AppTypography.body(
+              size: 11,
               color: Colors.white.withValues(alpha: 0.45),
-            ),
+            ).copyWith(fontStyle: FontStyle.italic),
           ),
         ],
       ),

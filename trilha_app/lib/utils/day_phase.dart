@@ -22,23 +22,17 @@ class DayPhaseHelper {
     };
   }
 
-  /// Estrelas só quando o céu escurece de verdade.
-  static bool showStars([DayPhase? phase]) {
-    final p = phase ?? current();
-    return p == DayPhase.evening || p == DayPhase.night;
-  }
-
-  /// Gradientes por fase — dia vivo, mas escuro o bastante para texto branco.
+  /// Gradientes por fase — floresta fria; escuro o bastante para texto claro.
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF3A5566),
-            Color(0xFF4A6B62),
-            Color(0xFF5A6550),
-            Color(0xFF4F4638),
+            Color(0xFF2A4450),
+            Color(0xFF345850),
+            Color(0xFF3D5248),
+            Color(0xFF3A3830),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -46,10 +40,10 @@ class DayPhaseHelper {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
+            Color(0xFF243F36),
             Color(0xFF2F5548),
-            Color(0xFF3F6B58),
-            Color(0xFF5A7558),
-            Color(0xFF4A4838),
+            Color(0xFF3D5A48),
+            Color(0xFF383830),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -57,10 +51,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF1A2430),
-            Color(0xFF2A3840),
-            Color(0xFF4A4035),
-            Color(0xFF6B4A30),
+            Color(0xFF141C24),
+            Color(0xFF1E2A30),
+            Color(0xFF3A3228),
+            Color(0xFF5A3E28),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -68,10 +62,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF0C100E),
-            Color(0xFF121816),
-            Color(0xFF1A221E),
-            Color(0xFF1E2A24),
+            Color(0xFF0A0E0C),
+            Color(0xFF0E1210),
+            Color(0xFF161C19),
+            Color(0xFF1A2420),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
