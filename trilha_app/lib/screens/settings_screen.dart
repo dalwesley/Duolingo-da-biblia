@@ -75,6 +75,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   Widget _reveal(int index, Widget child) {
+    if (_entrance.isCompleted) return child;
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.36).clamp(0.0, 1.0);
     final curve = CurvedAnimation(

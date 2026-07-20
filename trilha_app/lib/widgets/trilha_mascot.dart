@@ -19,18 +19,3 @@ class TrilhaMascot extends StatelessWidget {
     );
   }
 }
-
-class TrilhaMascotBadge extends StatelessWidget {
-  final double size;
-
-  const TrilhaMascotBadge({super.key, this.size = 64});
-
-  @override
-  Widget build(BuildContext context) {
-    return CinematicIcon(
-      glyph: CinematicGlyph.dove,
-      size: size,
-      accent: AppColors.primaryLight,
-    );
-  }
-}

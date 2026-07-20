@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -34,6 +36,8 @@ class _BibleScreenState extends State<BibleScreen> {
   bool _searchingBusy = false;
   String? _loadedTranslationId;
   bool _reloadScheduled = false;
+  Timer? _searchDebounce;
+  int _searchGen = 0;
 
   @override
   void initState() {
@@ -45,6 +49,7 @@ class _BibleScreenState extends State<BibleScreen> {
 
   @override
   void dispose() {
+    _searchDebounce?.cancel();
     _searchCtrl.dispose();
     super.dispose();
   }
@@ -77,13 +82,25 @@ class _BibleScreenState extends State<BibleScreen> {
     });
   }
 
-  Future<void> _runSearch(String q) async {
+  void _scheduleSearch(String q) {
+    _searchDebounce?.cancel();
+    final trimmed = q.trim();
+    if (trimmed.length < 2) {
+      setState(() {
+        _hits = const [];
+        _searchingBusy = false;
+      });
+      return;
+    }
     setState(() => _searchingBusy = true);
-    final hits = await BibleService.instance.search(q);
-    if (!mounted) return;
-    setState(() {
-      _hits = hits;
-      _searchingBusy = false;
+    final gen = ++_searchGen;
+    _searchDebounce = Timer(const Duration(milliseconds: 280), () async {
+      final hits = await BibleService.instance.search(trimmed);
+      if (!mounted || gen != _searchGen) return;
+      setState(() {
+        _hits = hits;
+        _searchingBusy = false;
+      });
     });
   }
 
@@ -142,7 +159,7 @@ class _BibleScreenState extends State<BibleScreen> {
         controller: _searchCtrl,
         hits: _hits,
         busy: _searchingBusy,
-        onChanged: _runSearch,
+        onChanged: _scheduleSearch,
         onClose: () => setState(() {
           _searching = false;
           _searchCtrl.clear();
@@ -1163,10 +1180,17 @@ class BibleReaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final progress = context.watch<ProgressService>();
+    final fontScale = context.select((ProgressService p) => p.settings.fontScale);
+    final alreadyRead = context.select(
+      (ProgressService p) => p.hasReadBibleChapter(book.abbrev, chapter),
+    );
+    final chapterBmSig = context.select((ProgressService p) {
+      final prefix = '${book.abbrev.toLowerCase()}:$chapter:';
+      return p.bibleBookmarks.where((k) => k.startsWith(prefix)).join('|');
+    });
+    final progress = context.read<ProgressService>();
     final reading = BibleReadingStyle.resolve(a);
     final verses = book.chapters[chapter - 1];
-    final alreadyRead = progress.hasReadBibleChapter(book.abbrev, chapter);
 
     return ListView(
       padding: EdgeInsets.fromLTRB(
@@ -1225,14 +1249,14 @@ class BibleReaderView extends StatelessWidget {
                       children: [
                         _FontChip(
                           label: 'A−',
-                          enabled: progress.settings.fontScale > 0.86,
+                          enabled: fontScale > 0.86,
                           reading: reading,
                           onTap: () => _adjustFont(context, -0.1),
                         ),
                         const SizedBox(width: AppSpace.sm),
                         _FontChip(
                           label: 'A+',
-                          enabled: progress.settings.fontScale < 1.34,
+                          enabled: fontScale < 1.34,
                           reading: reading,
                           onTap: () => _adjustFont(context, 0.1),
                         ),
@@ -1258,8 +1282,13 @@ class BibleReaderView extends StatelessWidget {
                   children: List.generate(verses.length, (i) {
                     final n = i + 1;
                     final hl = _highlighted(n);
+                    final bmKey = ProgressService.bibleBookmarkKey(
+                      book.abbrev,
+                      chapter,
+                      n,
+                    );
                     final saved =
-                        progress.isVerseBookmarked(book.abbrev, chapter, n);
+                        '|$chapterBmSig|'.contains('|$bmKey|');
                     return Material(
                       color: Colors.transparent,
                       child: InkWell(

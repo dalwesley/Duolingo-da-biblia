@@ -310,14 +310,3 @@ class RealmVisualsFallback {
     Color(0xFF443028),
   ];
 }
-
-class GenesisTrailTheme {
-  static const headerVerse = 'No princípio, Deus criou os céus e a terra.';
-  static const headerRef = 'Gênesis 1:1';
-
-  static const headerGradient = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [Color(0xFF152820), Color(0xFF243F36), Color(0xFF3D6B58)],
-  );
-}

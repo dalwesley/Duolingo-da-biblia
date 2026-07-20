@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -28,29 +26,6 @@ class FrostController extends ValueNotifier<double> {
   }
 }
 
-/// Fornece um [FrostController] com ciclo de vida proprio para telas sem estado.
-class FrostScope extends StatefulWidget {
-  final Widget Function(BuildContext context, FrostController frost) builder;
-
-  const FrostScope({super.key, required this.builder});
-
-  @override
-  State<FrostScope> createState() => _FrostScopeState();
-}
-
-class _FrostScopeState extends State<FrostScope> {
-  final _frost = FrostController();
-
-  @override
-  void dispose() {
-    _frost.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) => widget.builder(context, _frost);
-}
-
 /// Passos + dias caminhando — presente em toda app bar.
 class TopBarStats extends StatelessWidget {
   final int steps;
@@ -61,11 +36,6 @@ class TopBarStats extends StatelessWidget {
     required this.steps,
     required this.streak,
   });
-
-  factory TopBarStats.of(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    return TopBarStats(steps: progress.steps, streak: progress.streak);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -222,10 +192,14 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
     final appearance = Appearance.of(context);
     final onDark = immersive || dark || onBack != null;
     final showAvatar = personalGreeting && onProfileTap != null;
+    final userName = context.select((ProgressService p) => p.userName);
+    final steps =
+        showStats ? context.select((ProgressService p) => p.steps) : 0;
+    final streak =
+        showStats ? context.select((ProgressService p) => p.streak) : 0;
 
     if (inline) {
       return _InlineChrome(
@@ -236,7 +210,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
         personalGreeting: personalGreeting,
         showAvatar: showAvatar,
         photoUrl: photoUrl,
-        userName: progress.userName,
+        userName: userName,
         onProfileTap: onProfileTap,
         onBack: onBack,
         leadingGlyph: leadingGlyph,
@@ -244,8 +218,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
         showStats: showStats,
         showLeading: showLeading,
         showTrailingAvatar: showTrailingAvatar,
-        steps: progress.steps,
-        streak: progress.streak,
+        steps: steps,
+        streak: streak,
       );
     }
 
@@ -288,7 +262,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: showStats
           ? [
-              TopBarStats(steps: progress.steps, streak: progress.streak),
+              TopBarStats(steps: steps, streak: streak),
               const SizedBox(width: 8),
             ]
           : showTrailingAvatar
@@ -298,7 +272,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 child: Center(
                   child: UserAvatar(
                     photoUrl: photoUrl,
-                    name: progress.userName,
+                    name: userName,
                     radius: 16,
                   ),
                 ),
@@ -538,51 +512,6 @@ class _TitleBlock extends StatelessWidget {
             ),
           ),
       ],
-    );
-  }
-}
-
-/// Fundo da app bar que vai de transparente (topo) a fosco (rolagem).
-class FrostedBar extends StatelessWidget {
-  final ValueListenable<double> frost;
-  final bool dark;
-
-  /// Intensidade mínima do fosco (0 = totalmente transparente no topo).
-  final double floor;
-
-  const FrostedBar({
-    super.key,
-    required this.frost,
-    this.dark = true,
-    this.floor = 0,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final base = dark ? AppColors.night : AppColors.card;
-    final line = dark ? Colors.white : Colors.black;
-    final floorT = floor.clamp(0.0, 1.0);
-    return ValueListenableBuilder<double>(
-      valueListenable: frost,
-      builder: (context, offset, _) {
-        final t = ((offset / 56).clamp(0.0, 1.0)).clamp(floorT, 1.0);
-        return ClipRect(
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 18 * t, sigmaY: 18 * t),
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: base.withValues(alpha: 0.78 * t),
-                border: Border(
-                  bottom: BorderSide(
-                    color: line.withValues(alpha: 0.1 * t),
-                    width: 0.6,
-                  ),
-                ),
-              ),
-            ),
-          ),
-        );
-      },
     );
   }
 }

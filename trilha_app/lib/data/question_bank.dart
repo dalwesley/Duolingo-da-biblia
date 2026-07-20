@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import '../models/difficulty.dart';
-import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
 
 class QuestionBank {
@@ -36,34 +35,6 @@ class QuestionBank {
     final cached = ContentCatalogService.instance.bankQuestionsCache;
     if (cached == null || cached.isEmpty) return false;
     return cached.any((q) => q.trailSlug == trailSlug);
-  }
-
-  /// Seleciona perguntas únicas para um passo.
-  /// [section] deve ser o slug do passo (5 perguntas dedicadas por modo).
-  /// Fallback: outras seções da mesma trilha/nível se o pool do passo acabar.
-  Future<List<Question>> pickForMission({
-    required TrailDifficulty difficulty,
-    required String? moduleTitle,
-    required int count,
-    required List<String> usedIds,
-    String? trailSlug,
-    String? section,
-    bool isBoss = false,
-  }) async {
-    final ids = await pickIdsForMission(
-      difficulty: difficulty,
-      moduleTitle: moduleTitle,
-      section: section,
-      count: count,
-      usedIds: usedIds,
-      trailSlug: trailSlug,
-      isBoss: isBoss,
-    );
-    return ids
-        .map(byId)
-        .whereType<BankQuestion>()
-        .map((q) => q.toQuestion(shuffleOptions: true, rng: _rng))
-        .toList();
   }
 
   Future<List<String>> pickIdsForMission({

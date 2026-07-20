@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:home_widget/home_widget.dart';
@@ -11,6 +12,10 @@ class HomeWidgetService {
   static const _androidProvider = 'TrilhaHomeWidgetProvider';
   static const _iosKind = 'TrilhaHomeWidget';
   static const _appGroupId = 'group.com.trilha.trilhaApp';
+  static const _debounce = Duration(seconds: 2);
+
+  static Timer? _timer;
+  static ProgressService? _pending;
 
   static Future<void> init() async {
     if (!Platform.isIOS && !Platform.isAndroid) return;
@@ -19,9 +24,30 @@ class HomeWidgetService {
     }
   }
 
-  static Future<void> syncFromProgress(ProgressService progress) async {
+  /// Agenda sync (debounce 2s). Use [immediate] no lifecycle pause/resume.
+  static void syncFromProgress(
+    ProgressService progress, {
+    bool immediate = false,
+  }) {
     if (!Platform.isIOS && !Platform.isAndroid) return;
-    if (!progress.isLoaded) return;
+    _pending = progress;
+    if (immediate) {
+      _timer?.cancel();
+      _timer = null;
+      unawaited(_flush());
+      return;
+    }
+    _timer?.cancel();
+    _timer = Timer(_debounce, () {
+      unawaited(_flush());
+    });
+  }
+
+  static Future<void> _flush() async {
+    final progress = _pending;
+    _pending = null;
+    _timer = null;
+    if (progress == null || !progress.isLoaded) return;
 
     final goal = progress.settings.dailyGoal.clamp(1, 99);
     final done = progress.walkedToday ? progress.missionsToday : 0;
@@ -57,7 +83,7 @@ class HomeWidgetService {
     );
   }
 
-  /// Android 8+: pede para fixar o widget na tela inicial (quando o launcher suporta).
+  /// Android 8+: pede para fixar o widget na tela inicial (quando o launcher suporte).
   static Future<void> requestPinIfSupported() async {
     if (!Platform.isAndroid) return;
     final supported = await HomeWidget.isRequestPinWidgetSupported();
@@ -78,6 +104,8 @@ class HomeWidgetService {
     if (goalMet) return 'Meta de hoje concluída';
     if (atRisk && streak > 0) return 'Sequência em risco — caminhe hoje';
     final left = (goal - done).clamp(1, goal);
-    return left == 1 ? 'Falta 1 missão' : 'Faltam $left missões';
+    return left == 1
+        ? 'Falta 1 passo hoje'
+        : 'Faltam $left passos hoje';
   }
 }

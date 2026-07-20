@@ -92,7 +92,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       return;
     }
     NotificationService.instance.syncFromProgress(progress);
-    HomeWidgetService.syncFromProgress(progress);
+    HomeWidgetService.syncFromProgress(progress, immediate: true);
   }
 
   void _flushCloudSave() {
@@ -132,7 +132,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _syncReminders();
       final progress = _progressRef;
       if (progress != null) {
-        HomeWidgetService.syncFromProgress(progress);
+        HomeWidgetService.syncFromProgress(progress, immediate: true);
       }
     }
     if (state == AppLifecycleState.resumed) {
@@ -234,8 +234,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   Widget _tabTopBar({
     required int index,
-    required ProgressService progress,
-    required BackendService backend,
+    required String userName,
+    required String? photoUrl,
     required AppearanceStyle appearance,
   }) {
     return TopBar(
@@ -243,7 +243,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       immersive: true,
       dark: appearance.onDark,
       personalGreeting: index == 0,
-      photoUrl: backend.userPhotoUrl,
+      photoUrl: photoUrl,
       onProfileTap: index == 0 ? _openProfile : null,
       showLeading: true,
       leadingGlyph: switch (index) {
@@ -254,7 +254,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         _ => CinematicGlyph.tune,
       },
       title: switch (index) {
-        0 => progress.userName,
+        0 => userName,
         1 => 'Bíblia',
         2 => 'Trilhas',
         3 => 'Juntos',
@@ -272,14 +272,25 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final backend = context.watch<BackendService>();
-    final mode = progress.settings.appearanceMode;
+    // Só o que muda o chrome do shell — evita rebuild de todas as abas
+    // a cada passo/quest.
+    final mode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
+    final userName = context.select((ProgressService p) => p.userName);
+    final photoUrl = context.select((BackendService b) => b.userPhotoUrl);
     final appearance = AppearanceStyle.resolve(mode);
     _lastLook = appearance.look;
     final homeBg = DayPhaseHelper.scaffoldBackground(appearance.phase);
     final statusLight =
         appearance.onDark || appearance.look == AppearanceLook.morning;
+
+    Widget tabBar(int index) => _tabTopBar(
+          index: index,
+          userName: userName,
+          photoUrl: photoUrl,
+          appearance: appearance,
+        );
 
     return Appearance(
       mode: mode,
@@ -307,12 +318,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                   appearance: appearance,
                   child: HomeScreen(
                     repo: _repo,
-                    topBar: _tabTopBar(
-                      index: 0,
-                      progress: progress,
-                      backend: backend,
-                      appearance: appearance,
-                    ),
+                    topBar: tabBar(0),
                     onOpenTrail: _openTrail,
                     onOpenMission: _openMission,
                     onOpenTrilhas: _goToTrilhas,
@@ -321,46 +327,27 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                 ImmersiveBackground(
                   appearance: appearance,
                   child: BibleScreen(
-                    topBar: _tabTopBar(
-                      index: 1,
-                      progress: progress,
-                      backend: backend,
-                      appearance: appearance,
-                    ),
+                    topBar: tabBar(1),
                   ),
                 ),
                 ImmersiveBackground(
                   appearance: appearance,
                   child: TrilhasScreen(
                     repo: _repo,
-                    topBar: _tabTopBar(
-                      index: 2,
-                      progress: progress,
-                      backend: backend,
-                      appearance: appearance,
-                    ),
+                    topBar: tabBar(2),
+                    portalsActive: _index == 2,
                   ),
                 ),
                 ImmersiveBackground(
                   appearance: appearance,
                   child: LeagueScreen(
-                    topBar: _tabTopBar(
-                      index: 3,
-                      progress: progress,
-                      backend: backend,
-                      appearance: appearance,
-                    ),
+                    topBar: tabBar(3),
                   ),
                 ),
                 ImmersiveBackground(
                   appearance: appearance,
                   child: SettingsScreen(
-                    topBar: _tabTopBar(
-                      index: 4,
-                      progress: progress,
-                      backend: backend,
-                      appearance: appearance,
-                    ),
+                    topBar: tabBar(4),
                   ),
                 ),
               ],

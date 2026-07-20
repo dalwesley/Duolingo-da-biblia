@@ -119,11 +119,4 @@ class MemoryVerseCatalog {
       verse: 4,
     ),
   ];
-
-  static MemoryVerse? byId(String id) {
-    for (final v in curated) {
-      if (v.id == id) return v;
-    }
-    return null;
-  }
 }

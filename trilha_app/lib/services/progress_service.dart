@@ -587,8 +587,27 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Persiste na nuvem via listeners (MainShell / saveNow). Sem disco local.
-  Future<void> _save() async {
-    notifyListeners();
+  bool _batching = false;
+
+  @override
+  void notifyListeners() {
+    if (_batching) return;
+    super.notifyListeners();
+  }
+
+  Future<void> _save({bool notify = true}) async {
+    if (notify) notifyListeners();
+  }
+
+  /// Agrupa várias mutações num único [notifyListeners].
+  Future<T> _batch<T>(Future<T> Function() fn) async {
+    _batching = true;
+    try {
+      return await fn();
+    } finally {
+      _batching = false;
+      super.notifyListeners();
+    }
   }
 
   String? reflectionFor(String missionSlug) => missionReflections[missionSlug];
@@ -911,46 +930,48 @@ class ProgressService extends ChangeNotifier {
     int correct = 0,
     int total = 0,
   }) async {
-    _ensureQuestDay();
-    final today = _todayKey();
-    final alreadyToday = lastPlayedDate == today;
-    final wasGoalMet = missionsToday >= settings.dailyGoal;
+    await _batch(() async {
+      _ensureQuestDay();
+      final today = _todayKey();
+      final alreadyToday = lastPlayedDate == today;
+      final wasGoalMet = missionsToday >= settings.dailyGoal;
 
-    if (!isReplay) {
-      if (completedMissions.contains(slug)) {
-        // Já completa: trata como revisão (XP reduzido)
-        isReplay = true;
+      if (!isReplay) {
+        if (completedMissions.contains(slug)) {
+          // Já completa: trata como revisão (XP reduzido)
+          isReplay = true;
+        } else {
+          completedMissions = [...completedMissions, slug];
+        }
+      }
+
+      final award =
+          isReplay ? (rewardSteps * 0.35).round().clamp(5, rewardSteps) : rewardSteps;
+      _gainSteps(award);
+
+      if (!alreadyToday) {
+        _recordSession();
+        missionsToday = 1;
       } else {
-        completedMissions = [...completedMissions, slug];
+        missionsToday = missionsToday + 1;
+        if (!playDates.contains(today)) {
+          playDates = [...playDates, today];
+        }
       }
-    }
 
-    final award = isReplay ? (rewardSteps * 0.35).round().clamp(5, rewardSteps) : rewardSteps;
-    _gainSteps(award);
+      goalJustReached = !wasGoalMet && missionsToday >= settings.dailyGoal;
 
-    if (!alreadyToday) {
-      _recordSession();
-      missionsToday = 1;
-    } else {
-      missionsToday = missionsToday + 1;
-      if (!playDates.contains(today)) {
-        playDates = [...playDates, today];
-      }
-    }
+      await _bumpQuest('mission');
+      if (total > 0 && correct / total >= 0.8) await _bumpQuest('accuracy');
+      if (total > 0 && correct >= total) await _bumpQuest('perfect');
 
-    goalJustReached = !wasGoalMet && missionsToday >= settings.dailyGoal;
+      // Semanais
+      await _bumpWeekly('w_missions');
+      await _bumpWeekly('w_days', absolute: daysPlayedThisWeek);
+      if (total > 0 && correct >= total) await _bumpWeekly('w_perfect');
 
-    await _bumpQuest('mission');
-    if (total > 0 && correct / total >= 0.8) await _bumpQuest('accuracy');
-    if (total > 0 && correct >= total) await _bumpQuest('perfect');
-
-    // Semanais
-    await _bumpWeekly('w_missions');
-    await _bumpWeekly('w_days', absolute: daysPlayedThisWeek);
-    if (total > 0 && correct >= total) await _bumpWeekly('w_perfect');
-
-    await _save();
-    notifyListeners();
+      await _save();
+    });
   }
 
   void clearGoalJustReached() {

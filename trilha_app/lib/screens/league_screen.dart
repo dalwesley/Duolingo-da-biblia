@@ -91,6 +91,7 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Widget _reveal(int index, Widget child) {
+    if (_enter.isCompleted) return child;
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.4).clamp(0.0, 1.0);
     final curve = CurvedAnimation(

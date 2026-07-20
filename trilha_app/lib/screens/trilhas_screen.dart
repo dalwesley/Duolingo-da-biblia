@@ -19,11 +19,15 @@ class TrilhasScreen extends StatefulWidget {
   final bool asPushedPage;
   final Widget? topBar;
 
+  /// Quando false (aba oculta no IndexedStack), pausa animações dos portais.
+  final bool portalsActive;
+
   const TrilhasScreen({
     super.key,
     required this.repo,
     this.asPushedPage = false,
     this.topBar,
+    this.portalsActive = true,
   });
 
   @override
@@ -57,6 +61,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 
   Widget _reveal(int index, Widget child) {
+    if (_enter.isCompleted) return child;
     final start = (0.08 * index).clamp(0.0, 0.55);
     final end = (start + 0.42).clamp(0.0, 1.0);
     final curve = CurvedAnimation(
@@ -157,6 +162,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                 trailCount: realmTrails.length,
                 unlockedCount: unlocked,
                 completedCount: completed,
+                animate: widget.portalsActive,
                 onTap: () => _openRealm(realm),
               ),
             ),
@@ -263,6 +269,7 @@ class _RealmPortal extends StatefulWidget {
   final int trailCount;
   final int unlockedCount;
   final int completedCount;
+  final bool animate;
   final VoidCallback onTap;
 
   const _RealmPortal({
@@ -270,6 +277,7 @@ class _RealmPortal extends StatefulWidget {
     required this.trailCount,
     required this.unlockedCount,
     required this.completedCount,
+    required this.animate,
     required this.onTap,
   });
 
@@ -288,7 +296,19 @@ class _RealmPortalState extends State<_RealmPortal>
     _breath = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 3200),
-    )..repeat(reverse: true);
+    );
+    if (widget.animate) _breath.repeat(reverse: true);
+  }
+
+  @override
+  void didUpdateWidget(covariant _RealmPortal oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.animate == oldWidget.animate) return;
+    if (widget.animate) {
+      _breath.repeat(reverse: true);
+    } else {
+      _breath.stop();
+    }
   }
 
   @override

@@ -70,6 +70,7 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Widget _reveal(int index, Widget child) {
+    if (_fadeIn.isCompleted) return child;
     final start = (0.1 * index).clamp(0.0, 0.65);
     final end = (start + 0.38).clamp(0.0, 1.0);
     final curve = CurvedAnimation(

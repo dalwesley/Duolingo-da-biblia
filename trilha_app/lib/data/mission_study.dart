@@ -43,11 +43,6 @@ class MissionStudy {
     return MissionStudy.fromMap(remote);
   }
 
-  /// Garante catálogo (incl. estudos) e devolve o estudo da missão.
-  static Future<MissionStudy?> loadForSlug(String slug) async {
-    await ContentCatalogService.instance.ensureLoaded();
-    return forSlug(slug);
-  }
 
   /// Texto do versículo para releitura no erro (por referência).
   static String? verseText(String? ref) {
