@@ -1,49 +1,49 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Identidade Steway — caminho no cedro.
-/// Floresta fria + cobre de conquista + pedra-limestone.
-/// Sem lilás, mint neon, creme quente genérico ou dourado de stock.
+/// Identidade Steway — rota no horizonte.
+/// Tinta oceânica + açafrão de aurora + pedra fria.
+/// Sem oliva/cobre legado, sem lilás, mint neon ou dourado de stock.
 class AppColors {
-  static const primary = Color(0xFF243F36);
-  static const primaryLight = Color(0xFF3D6B58);
-  static const primaryDark = Color(0xFF152820);
-  /// Cobre — conquista, passos, CTAs.
-  static const accent = Color(0xFFC4783E);
-  static const accentDark = Color(0xFF9A5A28);
-  static const accentSoft = Color(0xFFF5E6D4);
-  /// Texto sobre botões/doses de cobre.
-  static const inkOnAccent = Color(0xFF2A1808);
-  /// Moss — sucesso / concluído (substitui teal neon).
-  static const teal = Color(0xFF5A9E88);
-  static const streak = Color(0xFFE07040);
-  static const completed = Color(0xFFC4783E);
-  static const completedDark = Color(0xFF9A5A28);
-  static const error = Color(0xFFD45A5A);
-  static const night = Color(0xFF0E1210);
-  static const nightMid = Color(0xFF161C19);
-  static const nightLight = Color(0xFF222A25);
-  /// Pedra fria — sem pergaminho amarelado.
-  static const surface = Color(0xFFE8E6E0);
+  static const primary = Color(0xFF1B3A5C);
+  static const primaryLight = Color(0xFF4A7BA8);
+  static const primaryDark = Color(0xFF0C1A2C);
+  /// Açafrão — conquista, passos, CTAs.
+  static const accent = Color(0xFFE8922A);
+  static const accentDark = Color(0xFFC07018);
+  static const accentSoft = Color(0xFFF8E8C8);
+  /// Texto sobre botões/doses de açafrão.
+  static const inkOnAccent = Color(0xFF1A1000);
+  /// Maré — sucesso / concluído.
+  static const teal = Color(0xFF3DA89A);
+  static const streak = Color(0xFFF25C45);
+  static const completed = Color(0xFFE8922A);
+  static const completedDark = Color(0xFFC07018);
+  static const error = Color(0xFFE05A5A);
+  static const night = Color(0xFF070B12);
+  static const nightMid = Color(0xFF0E1620);
+  static const nightLight = Color(0xFF182430);
+  /// Pedra fria azulada.
+  static const surface = Color(0xFFE4E8EE);
   static const card = Colors.white;
-  static const text = Color(0xFF141A17);
-  static const textOnDark = Color(0xFFE8E6E0);
-  static const textMuted = Color(0xFF657068);
-  static const textMutedDark = Color(0xFF9AA39C);
+  static const text = Color(0xFF101820);
+  static const textOnDark = Color(0xFFE8ECF2);
+  static const textMuted = Color(0xFF5A6878);
+  static const textMutedDark = Color(0xFF8A98A8);
 
   // Família de conteúdo (trilhas/reinos)
-  static const clay = Color(0xFFC9947E); // NT / evangelhos
-  static const clayDeep = Color(0xFFA06650);
-  static const cedar = Color(0xFF5E8F70); // vida cristã
-  static const cedarDeep = Color(0xFF345A48);
-  static const slate = Color(0xFF7E90A0); // teologia / hermenêutica
-  static const slateDeep = Color(0xFF3E4E5E);
-  static const sand = Color(0xFFB89A72); // história / línguas
-  static const sandDeep = Color(0xFF7A6040);
-  static const ember = Color(0xFFD07848); // apocalipse / fogo
-  static const emberDeep = Color(0xFFA05030);
-  static const sky = Color(0xFF6E92AE); // proféticos / êxodo
-  static const skyDeep = Color(0xFF385A78);
+  static const clay = Color(0xFFD4A08E); // NT / evangelhos
+  static const clayDeep = Color(0xFFA86858);
+  static const cedar = Color(0xFF4A9B8C); // vida cristã (maré)
+  static const cedarDeep = Color(0xFF1E5A50);
+  static const slate = Color(0xFF7A94B0); // teologia / hermenêutica
+  static const slateDeep = Color(0xFF2E4460);
+  static const sand = Color(0xFFC4A070); // história / línguas
+  static const sandDeep = Color(0xFF7A5A38);
+  static const ember = Color(0xFFE87848); // apocalipse / fogo
+  static const emberDeep = Color(0xFFA84828);
+  static const sky = Color(0xFF6A9AC8); // proféticos / êxodo
+  static const skyDeep = Color(0xFF2A4A78);
 
   // Legado
   static const success = accent;
@@ -55,20 +55,20 @@ class AppGradients {
   static const cosmic = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFF0E1210), Color(0xFF152820), Color(0xFF161C19)],
+    colors: [Color(0xFF070B12), Color(0xFF0C1A2C), Color(0xFF0E1620)],
   );
 
   static const hero = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [Color(0xFF243F36), Color(0xFF2F5548), Color(0xFF3D6B58)],
+    colors: [Color(0xFF1B3A5C), Color(0xFF2A5578), Color(0xFF4A7BA8)],
   );
 
-  /// Cobre — CTAs e badges de progresso (alias histórico: gold).
+  /// Açafrão — CTAs e badges de progresso (alias histórico: gold).
   static const gold = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Color(0xFFE8B07A), Color(0xFFC4783E), Color(0xFF9A5A28)],
+    colors: [Color(0xFFF0B85A), Color(0xFFE8922A), Color(0xFFC07018)],
   );
 
   static const copper = gold;
@@ -76,7 +76,7 @@ class AppGradients {
   static const dawn = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [Color(0xFF161C19), Color(0xFF222A25), Color(0xFFE8E6E0)],
+    colors: [Color(0xFF0E1620), Color(0xFF182430), Color(0xFFE4E8EE)],
     stops: [0.0, 0.45, 1.0],
   );
 

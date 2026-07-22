@@ -21,7 +21,7 @@ class AppMetrics {
   static const chipIcon = 14.0;
 }
 
-/// Botão CTA cobre — ação principal em cards e telas.
+/// Botão CTA açafrão — ação principal em cards e telas.
 class CopperCta extends StatelessWidget {
   final String label;
   final VoidCallback? onTap;

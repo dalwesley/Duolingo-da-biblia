@@ -23,7 +23,7 @@ class ImmersiveBackground extends StatelessWidget {
         DecoratedBox(
           decoration: BoxDecoration(gradient: DayPhaseHelper.backgroundGradient(phase)),
         ),
-        // Luz ambiente — olive suave (sem névoa lilás)
+        // Luz ambiente — manhã = aurora fria; tarde = teal aberto
         Positioned(
           top: -100,
           right: -80,
@@ -34,7 +34,16 @@ class ImmersiveBackground extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.primaryLight.withValues(alpha: night ? 0.1 : 0.16),
+                  (phase == DayPhase.afternoon
+                          ? AppColors.teal
+                          : AppColors.primaryLight)
+                      .withValues(
+                    alpha: night
+                        ? 0.12
+                        : phase == DayPhase.afternoon
+                            ? 0.26
+                            : 0.16,
+                  ),
                   Colors.transparent,
                 ],
               ),
@@ -51,32 +60,42 @@ class ImmersiveBackground extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  AppColors.accent.withValues(alpha: 0.06),
+                  AppColors.accent.withValues(
+                    alpha: night
+                        ? 0.08
+                        : phase == DayPhase.morning
+                            ? 0.16
+                            : 0.05,
+                  ),
                   Colors.transparent,
                 ],
               ),
             ),
           ),
         ),
-        // Horizonte quente
+        // Horizonte — forte na aurora, quase sumido à tarde
         Positioned(
           bottom: 0,
           left: 0,
           right: 0,
           child: IgnorePointer(
             child: Container(
-              height: 200,
+              height: phase == DayPhase.afternoon ? 140 : 220,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                   colors: [
-                    AppColors.accent.withValues(
-                      alpha: phase == DayPhase.morning
-                          ? 0.06
-                          : phase == DayPhase.evening
-                              ? 0.1
-                              : 0.04,
+                    (phase == DayPhase.afternoon
+                            ? AppColors.teal
+                            : AppColors.accent)
+                        .withValues(
+                      alpha: switch (phase) {
+                        DayPhase.morning => 0.18,
+                        DayPhase.afternoon => 0.08,
+                        DayPhase.evening => 0.16,
+                        DayPhase.night => 0.04,
+                      },
                     ),
                     Colors.transparent,
                   ],
@@ -85,7 +104,7 @@ class ImmersiveBackground extends StatelessWidget {
             ),
           ),
         ),
-        // Vinheta — bem mais leve de dia
+        // Vinheta
         Positioned.fill(
           child: IgnorePointer(
             child: DecoratedBox(
@@ -95,7 +114,13 @@ class ImmersiveBackground extends StatelessWidget {
                   radius: 1.15,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withValues(alpha: night ? 0.28 : 0.18),
+                    Colors.black.withValues(
+                      alpha: night
+                          ? 0.32
+                          : phase == DayPhase.morning
+                              ? 0.18
+                              : 0.14,
+                    ),
                   ],
                   stops: const [0.5, 1.0],
                 ),

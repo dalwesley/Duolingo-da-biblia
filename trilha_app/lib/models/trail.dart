@@ -143,7 +143,7 @@ class Trail {
       order: json['order'] as int? ?? 0,
       unlockAfter: json['unlockAfter'] as String?,
       comingSoon: json['comingSoon'] as bool? ?? false,
-      color: json['color'] as String? ?? '#243F36',
+      color: json['color'] as String? ?? '#1B3A5C',
       realmId: json['realm'] as String? ?? 'antigo-testamento',
       categoryId: json['category'] as String? ?? 'pentateuco',
       modules: (json['modules'] as List? ?? [])

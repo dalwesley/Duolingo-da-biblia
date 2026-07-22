@@ -69,7 +69,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xFF152820), Color(0xFF0E1210), Color(0xFF0A0E0C)],
+                  colors: [Color(0xFF0C1A2C), Color(0xFF070B12), Color(0xFF05080E)],
                 ),
               ),
             ),

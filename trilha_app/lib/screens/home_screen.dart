@@ -234,7 +234,7 @@ class _HomeScreenState extends State<HomeScreen>
             mission: current,
             trailTitle: active?.title ?? '',
             trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#243F36',
+            trailColor: active?.color ?? '#1B3A5C',
             onTap: current != null
                 ? () => widget.onOpenMission(current.slug)
                 : null,

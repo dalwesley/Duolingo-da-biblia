@@ -21,7 +21,7 @@ class HeroContinueCard extends StatelessWidget {
     required this.mission,
     required this.trailTitle,
     this.trailSlug = 'genesis-1-11',
-    this.trailColor = '#243F36',
+    this.trailColor = '#1B3A5C',
     this.onTap,
     this.onExploreTrails,
     this.goalMet = false,

@@ -22,9 +22,9 @@ extension AppearanceModeX on AppearanceMode {
       };
 
   String get description => switch (this) {
-        AppearanceMode.morning => 'Luz suave de manhã',
-        AppearanceMode.afternoon => 'Clareza do dia',
-        AppearanceMode.night => 'Estudo à noite',
+        AppearanceMode.morning => 'Aurora azul e chão quente',
+        AppearanceMode.afternoon => 'Sol alto, céu teal',
+        AppearanceMode.night => 'Tinta da noite',
         AppearanceMode.automatic => 'Muda conforme o horário',
       };
 
@@ -102,12 +102,19 @@ class AppearanceStyle {
   Color get progressTrack =>
       Colors.white.withValues(alpha: isDay ? 0.22 : 0.14);
 
-  Color get navBarFill => look == AppearanceLook.night
-      ? AppColors.nightMid.withValues(alpha: 0.94)
-      : AppColors.primaryDark.withValues(alpha: 0.94);
+  Color get navBarFill => switch (look) {
+        AppearanceLook.night => AppColors.nightMid.withValues(alpha: 0.94),
+        AppearanceLook.morning => const Color(0xFF182438).withValues(alpha: 0.94),
+        AppearanceLook.afternoon => const Color(0xFF0E3040).withValues(alpha: 0.94),
+      };
 
-  Color get navBarBorder =>
-      Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.1 : 0.18);
+  Color get navBarBorder => Colors.white.withValues(
+        alpha: switch (look) {
+          AppearanceLook.night => 0.1,
+          AppearanceLook.morning => 0.2,
+          AppearanceLook.afternoon => 0.16,
+        },
+      );
 
   static AppearanceStyle resolve(AppearanceMode mode, [DateTime? now]) {
     final clock = now ?? DateTime.now();

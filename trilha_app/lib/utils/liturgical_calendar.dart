@@ -140,7 +140,7 @@ class LiturgicalCalendar {
       title: 'Tempo comum',
       subtitle: 'Crescimento na Palavra, dia a dia',
       focusRef: 'Salmos 119:105',
-      accentHex: '#243F36',
+      accentHex: '#1B3A5C',
     );
   }
 

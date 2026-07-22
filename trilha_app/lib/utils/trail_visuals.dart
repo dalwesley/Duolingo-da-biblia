@@ -3,7 +3,7 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Glifos e gradientes por trilha — família cedro/cobre/clay/slate.
+/// Glifos e gradientes por trilha — família oceano/açafrão/clay/slate.
 class TrailVisuals {
   final CinematicGlyph glyph;
   final LinearGradient iconGradient;

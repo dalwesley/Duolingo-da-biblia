@@ -592,7 +592,7 @@ class _BreathLine extends StatelessWidget {
 }
 
 // ---------------------------------------------------------------------------
-// Mundo — floresta ao entardecer, caminho de luz
+// Mundo — horizonte oceânico ao entardecer, caminho de luz
 // ---------------------------------------------------------------------------
 
 class _WorldPainter extends CustomPainter {
@@ -612,20 +612,20 @@ class _WorldPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final a = atmosphere;
 
-    // Céu profundo → olive
+    // Céu profundo → oceano
     final skyTop = Color.lerp(
-      const Color(0xFF050807),
-      const Color(0xFF0C1612),
+      const Color(0xFF04060A),
+      const Color(0xFF0A1420),
       a,
     )!;
     final skyMid = Color.lerp(
-      const Color(0xFF070A09),
-      const Color(0xFF152820),
+      const Color(0xFF060A10),
+      const Color(0xFF0C1A2C),
       a * 0.85,
     )!;
     final skyLow = Color.lerp(
-      const Color(0xFF060908),
-      const Color(0xFF1A2E26),
+      const Color(0xFF080C14),
+      const Color(0xFF1A3050),
       a * 0.7,
     )!;
 
@@ -635,7 +635,7 @@ class _WorldPainter extends CustomPainter {
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [skyTop, skyMid, skyLow, const Color(0xFF080C0A)],
+          colors: [skyTop, skyMid, skyLow, const Color(0xFF060A10)],
           stops: const [0.0, 0.35, 0.62, 1.0],
         ).createShader(Offset.zero & size),
     );
@@ -650,7 +650,7 @@ class _WorldPainter extends CustomPainter {
         ..shader = RadialGradient(
           colors: [
             Color.lerp(
-              const Color(0xFF3D6B58),
+              const Color(0xFF4A7BA8),
               AppColors.accent,
               0.35,
             )!

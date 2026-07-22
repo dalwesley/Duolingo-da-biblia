@@ -3,7 +3,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 
-/// Nav inferior — glifos brand + label; ativo em cobre sobre moss suave.
+/// Nav inferior — glifos brand + label; ativo em açafrão sobre azure suave.
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;

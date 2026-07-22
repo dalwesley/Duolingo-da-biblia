@@ -220,7 +220,7 @@ class ShareVerseCard extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF0E1210), Color(0xFF152820), Color(0xFF161C19)],
+          colors: [Color(0xFF070B12), Color(0xFF0C1A2C), Color(0xFF0E1620)],
         ),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
       ),
