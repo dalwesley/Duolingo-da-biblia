@@ -1,4 +1,4 @@
-# Roadmap Trilha — formação bíblica com hábito
+# Roadmap Steway — formação bíblica com hábito
 
 **Norte:** caminho diário em português para aprender a Bíblia de verdade — missões curtas + estudo original offline.
 Não somos YouVersion (ler), nem Hallow (orar), nem trivia vazia.

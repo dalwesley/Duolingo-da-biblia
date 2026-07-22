@@ -19,7 +19,7 @@ export async function renderDashboard(root) {
     <div class="ez-page">
       <header class="ez-hero">
         <div>
-          <p class="ez-kicker">Painel Trilha</p>
+          <p class="ez-kicker">Painel Steway</p>
           <h1>Olá — o que vamos publicar hoje?</h1>
           <p class="ez-lead">Tudo que você salva aqui chega no app sem precisar de nova versão na loja.</p>
         </div>

@@ -595,7 +595,6 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                         study: study,
                         accent: accent,
                         priorReflection: priorReflection,
-                        missionTitle: mission.title,
                         missionIntro: mission.intro,
                         onContinue: _startQuiz,
                       ),

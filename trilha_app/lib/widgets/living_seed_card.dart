@@ -8,7 +8,7 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Companion emocional próprio da Trilha — crescimento por streak, sem pet genérico.
+/// Companion emocional próprio do Steway — crescimento por streak, sem pet genérico.
 class LivingSeedCard extends StatelessWidget {
   const LivingSeedCard({super.key});
 

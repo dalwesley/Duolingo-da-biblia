@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Identidade Trilha — caminho no cedro.
+/// Identidade Steway — caminho no cedro.
 /// Floresta fria + cobre de conquista + pedra-limestone.
 /// Sem lilás, mint neon, creme quente genérico ou dourado de stock.
 class AppColors {
@@ -175,9 +175,11 @@ class AppSpace {
   static const xxxl = 32.0;
   /// Gutter horizontal das telas.
   static const screen = 20.0;
-  /// Ritmo vertical entre cards de conteúdo.
+  /// Ritmo vertical entre cards / seções de conteúdo.
   static const section = 16.0;
-  /// Offset sob TopBar / status.
+  /// Gap entre TopBar e o primeiro bloco (mesmo ritmo de [section]).
+  static const afterTopBar = section;
+  /// Offset absoluto sob TopBar (layouts especiais).
   static const underTopBar = 72.0;
 }
 

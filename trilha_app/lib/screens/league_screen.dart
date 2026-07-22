@@ -124,13 +124,13 @@ class _LeagueScreenState extends State<LeagueScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: 18),
+          const SizedBox(height: AppSpace.afterTopBar),
         ],
         _reveal(
           0,
           _SegmentTabs(index: _tab, onChanged: (i) => setState(() => _tab = i)),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: AppSpace.section),
         if (_tab == 0)
           ..._buildCompanions(context)
         else if (_tab == 1)
@@ -182,7 +182,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           onChanged: (value) => setState(() => _overallRanking = value),
         ),
       ),
-      const SizedBox(height: 16),
+      const SizedBox(height: AppSpace.section),
       _reveal(
         2,
         _CaravanaHeroCard(
@@ -193,15 +193,15 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
       ),
       if (!overall && league.pendingOutcome != null) ...[
-        const SizedBox(height: 12),
+        const SizedBox(height: AppSpace.md),
         _reveal(3, _OutcomeBanner(league: league)),
       ],
-      const SizedBox(height: 20),
+      const SizedBox(height: AppSpace.section),
       SectionLabel(
         overall ? 'Classificação geral' : 'Classificação da semana',
         color: a.textMuted(0.7),
       ),
-      const SizedBox(height: 10),
+      const SizedBox(height: AppSpace.sm),
     ];
 
     for (var i = 0; i < entries.length; i++) {
@@ -279,7 +279,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               textAlign: TextAlign.center,
               style: AppTypography.display(size: 28),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: AppSpace.sm),
             Text(
               'Convide até ${CompanionService.maxCompanions} pessoas.\nSem ranking entre vocês — só presença.',
               textAlign: TextAlign.center,
@@ -292,7 +292,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           ],
         ),
       ),
-      const SizedBox(height: 18),
+      const SizedBox(height: AppSpace.section),
     ];
 
     if (companions.lastError != null) {
@@ -303,7 +303,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       );
-      list.add(const SizedBox(height: 12));
+      list.add(const SizedBox(height: AppSpace.md));
     }
 
     if (companions.companions.isEmpty) {
@@ -348,10 +348,10 @@ class _LeagueScreenState extends State<LeagueScreen>
           ),
         ),
       );
-      list.add(const SizedBox(height: 10));
+      list.add(const SizedBox(height: AppSpace.sm));
     }
 
-    list.add(const SizedBox(height: 8));
+    list.add(const SizedBox(height: AppSpace.sm));
     list.add(
       Row(
         children: [
@@ -364,7 +364,7 @@ class _LeagueScreenState extends State<LeagueScreen>
                     : () => _createCompanion(context),
               ),
             ),
-          if (companions.canAdd) const SizedBox(width: 10),
+          if (companions.canAdd) const SizedBox(width: AppSpace.sm),
           if (companions.canAdd)
             Expanded(
               child: _OutlineAction(
@@ -377,7 +377,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         ],
       ),
     );
-    list.add(const SizedBox(height: 12));
+    list.add(const SizedBox(height: AppSpace.md));
     list.add(
       TextButton(
         onPressed: () async {
@@ -505,7 +505,7 @@ class _LeagueScreenState extends State<LeagueScreen>
                 'Crie uma sala privada para turma, célula ou amigos.\nRanking só de quem entrou — foco no grupo.',
           ),
         ),
-        const SizedBox(height: 18),
+        const SizedBox(height: AppSpace.section),
         _reveal(
           2,
           _RoomsEmptyState(
@@ -531,7 +531,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               'Acompanhe a semana do grupo, compartilhe o código e anime quem ficou perto no ranking.',
         ),
       ),
-      const SizedBox(height: 18),
+      const SizedBox(height: AppSpace.section),
       _reveal(
         2,
         _RoomHeader(
@@ -553,7 +553,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             title: room.name,
             subtitle: 'Escaneie o QR ou entre com o código',
             shareMessage:
-                'Entre na sala "${room.name}" no Trilha com o código ${room.code}.',
+                'Entre na sala "${room.name}" no Steway com o código ${room.code}.',
           ),
           onLeave: () async {
             final ok = await _confirmLeave(context);
@@ -564,24 +564,24 @@ class _LeagueScreenState extends State<LeagueScreen>
           onRefresh: () => rooms.refreshMembers(),
         ),
       ),
-      const SizedBox(height: 14),
+      const SizedBox(height: AppSpace.md),
       if (rooms.lastError != null) ...[
-        const SizedBox(height: 12),
+        const SizedBox(height: AppSpace.md),
         Text(
           rooms.lastError!,
           textAlign: TextAlign.center,
           style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       ],
-      const SizedBox(height: 18),
+      const SizedBox(height: AppSpace.section),
       SectionLabel(
         'Ranking da sala',
         color: a.textMuted(0.7),
       ),
-      const SizedBox(height: 10),
+      const SizedBox(height: AppSpace.sm),
       if (rooms.loading)
         const Padding(
-          padding: EdgeInsets.symmetric(vertical: 24),
+          padding: EdgeInsets.symmetric(vertical: AppSpace.xxl),
           child: Center(
             child: CircularProgressIndicator(color: AppColors.accent),
           ),

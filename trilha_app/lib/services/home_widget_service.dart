@@ -102,7 +102,9 @@ class HomeWidgetService {
     required int done,
   }) {
     if (goalMet) return 'Meta de hoje concluída';
-    if (atRisk && streak > 0) return 'Sequência em risco — caminhe hoje';
+    if (atRisk && streak > 0) {
+      return 'Ficando para trás na caravana — caminhe hoje';
+    }
     final left = (goal - done).clamp(1, goal);
     return left == 1
         ? 'Falta 1 passo hoje'

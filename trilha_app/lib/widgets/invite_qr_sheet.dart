@@ -159,7 +159,7 @@ class _InviteQrSheet extends StatelessWidget {
               SharePlus.instance.share(
                 ShareParams(
                   text: shareMessage ??
-                      'Caminhe comigo no Trilha! Use o código $code para entrar.',
+                      'Caminhe comigo no Steway! Use o código $code para entrar.',
                 ),
               );
             },

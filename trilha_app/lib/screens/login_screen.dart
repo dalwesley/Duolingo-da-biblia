@@ -102,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: AppSpace.xxl),
                 Text(
-                  'TRILHA',
+                  'STEWAY',
                   textAlign: TextAlign.center,
                   style: AppTypography.label(
                     size: 13,
@@ -204,7 +204,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: AppSpace.lg),
                 Text(
-                  'É necessário entrar para usar o Trilha.',
+                  'É necessário entrar para usar o Steway.',
                   textAlign: TextAlign.center,
                   style: AppTypography.label(
                     size: 11,

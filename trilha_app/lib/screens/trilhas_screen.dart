@@ -113,7 +113,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final topPad = widget.topBar != null
         ? topInset + AppSpace.sm
         : widget.asPushedPage
-        ? 12.0
+        ? AppSpace.md
         : AppSpace.sm;
     final bottomPad = widget.asPushedPage
         ? 32 + MediaQuery.viewPaddingOf(context).bottom
@@ -125,7 +125,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: AppSpace.lg),
+          const SizedBox(height: AppSpace.afterTopBar),
         ],
         ...TrailRealm.values.asMap().entries.map((e) {
           final realm = e.value;
@@ -156,7 +156,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           return _reveal(
             (widget.asPushedPage ? 0 : 1) + e.key,
             Padding(
-              padding: const EdgeInsets.only(bottom: AppSpace.lg),
+              padding: const EdgeInsets.only(bottom: AppSpace.section),
               child: _RealmPortal(
                 realm: realm,
                 trailCount: realmTrails.length,
@@ -171,7 +171,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         _reveal(
           (widget.asPushedPage ? 0 : 1) + TrailRealm.values.length,
           const Padding(
-            padding: EdgeInsets.only(bottom: AppSpace.lg),
+            padding: EdgeInsets.only(bottom: AppSpace.section),
             child: _ComingSoonPortal(),
           ),
         ),

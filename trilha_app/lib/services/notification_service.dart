@@ -199,7 +199,7 @@ class NotificationService {
       when: _nextSlot(hour, minute),
       copy: const _ReminderCopy(
         title: 'Meta de hoje',
-        body: 'Ainda dá tempo de cumprir sua meta diária na Trilha.',
+        body: 'Ainda dá tempo de cumprir sua meta diária no Steway.',
         action: ReminderAction.home,
         priority: 10,
       ),
@@ -225,14 +225,14 @@ class NotificationService {
       final atRisk = progress.isStreakAtRisk;
       hooks.add(_ReminderCopy(
         title: atRisk
-            ? 'Sequência em risco'
+            ? 'A caravana segue'
             : streak > 0
-                ? 'Não perca a sequência'
+                ? 'A caravana te espera'
                 : 'Meta de hoje',
         body: atRisk
-            ? '$name, faltam ${progress.streakRiskCountdown} para salvar $streak ${streak == 1 ? 'dia' : 'dias'}. Um passo agora.'
+            ? '$name, você está ficando para trás na caravana. Faltam ${progress.streakRiskCountdown} — um passo e você alcança o grupo.'
             : streak > 0
-                ? '$name, são $streak ${streak == 1 ? 'dia' : 'dias'} seguidos. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para a meta.'
+                ? '$name, a caravana já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
                 : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
         action: ReminderAction.home,
         priority: atRisk ? 120 : 100,

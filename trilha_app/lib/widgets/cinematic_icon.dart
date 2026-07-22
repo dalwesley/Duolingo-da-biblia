@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'icon_well.dart';
 
-/// Símbolos da marca — line art premium, sem emoji.
+/// Símbolos da marca — silhuetas sólidas, sem emoji.
 enum CinematicGlyph {
   cosmos,
   sun,
@@ -133,9 +133,9 @@ class CinematicGlyphResolver {
       'accuracy' => CinematicGlyph.target,
       'perfect' => CinematicGlyph.crown,
       'read' => CinematicGlyph.scroll,
-      'bookmark' => CinematicGlyph.heart,
+      'bookmark' => CinematicGlyph.star,
       'seasonal' => CinematicGlyph.calendar,
-      'memory' => CinematicGlyph.lamp,
+      'memory' => CinematicGlyph.heart,
       'w_missions' => CinematicGlyph.calendar,
       'w_days' => CinematicGlyph.flame,
       'w_perfect' => CinematicGlyph.gem,
@@ -173,7 +173,7 @@ class CinematicGlyphResolver {
   }
 }
 
-/// Ícone premium — line art em poço circular limpo (sem selo dourado).
+/// Ícone premium — silhuetas sólidas em poço circular limpo (sem selo dourado).
 class CinematicIcon extends StatelessWidget {
   final CinematicGlyph glyph;
   final double size;
@@ -216,7 +216,7 @@ class CinematicIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = accent ?? CinematicGlyphResolver.paletteFor(glyph);
-    final glyphSize = size * (framed ? 0.52 : 1);
+    final glyphSize = size * (framed ? 0.58 : 1);
     final child = CustomPaint(
       size: Size.square(glyphSize),
       painter: _GlyphPainter(glyph: glyph, color: color, premium: true),
@@ -288,7 +288,7 @@ class _BreathingAura extends StatelessWidget {
   }
 }
 
-/// Line art premium — traço fino, fill suave, proporção editorial.
+/// Silhuetas sólidas — fill denso, legível em fundos escuros.
 class _GlyphPainter extends CustomPainter {
   final CinematicGlyph glyph;
   final Color color;
@@ -301,18 +301,17 @@ class _GlyphPainter extends CustomPainter {
   });
 
   late Color _ink;
-  late Color _fill;
+  late Paint _solid;
+  late Paint _soft;
 
   @override
   void paint(Canvas canvas, Size size) {
     final c = Offset(size.width / 2, size.height / 2);
     final s = size.shortestSide;
 
-    final dark = color.computeLuminance() < 0.22;
-    _ink = dark ? color : Color.lerp(color, Colors.white, 0.18)!;
-    _fill = dark
-        ? color.withValues(alpha: 0.22)
-        : Color.lerp(color, Colors.white, 0.55)!.withValues(alpha: 0.28);
+    _ink = Color.lerp(color, Colors.white, color.computeLuminance() < 0.35 ? 0.45 : 0.15)!;
+    _solid = Paint()..color = _ink;
+    _soft = Paint()..color = _ink.withValues(alpha: 0.55);
 
     switch (glyph) {
       case CinematicGlyph.sun:
@@ -410,150 +409,180 @@ class _GlyphPainter extends CustomPainter {
     ..strokeCap = StrokeCap.round
     ..strokeJoin = StrokeJoin.round;
 
-  Paint get _fillPaint => Paint()..color = _fill;
+  void _ring(Canvas canvas, Offset c, double outer, double inner) {
+    final path = Path()
+      ..addOval(Rect.fromCircle(center: c, radius: outer))
+      ..addOval(Rect.fromCircle(center: c, radius: inner))
+      ..fillType = PathFillType.evenOdd;
+    canvas.drawPath(path, _solid);
+  }
 
-  Paint get _inkFill => Paint()..color = _ink.withValues(alpha: 0.92);
+  void _rect(Canvas canvas, Rect r, [double radius = 0]) {
+    if (radius > 0) {
+      canvas.drawRRect(RRect.fromRectAndRadius(r, Radius.circular(radius)), _solid);
+    } else {
+      canvas.drawRect(r, _solid);
+    }
+  }
 
   // —— Glifos ——
 
   void _sun(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
-    canvas.drawCircle(c, s * 0.16, _fillPaint);
-    canvas.drawCircle(c, s * 0.16, _stroke(w));
+    canvas.drawCircle(c, s * 0.17, _solid);
     for (var i = 0; i < 8; i++) {
       final a = i * math.pi / 4 - math.pi / 2;
-      final inner = s * 0.24;
-      final outer = s * (i.isEven ? 0.42 : 0.36);
-      canvas.drawLine(
-        c + Offset(math.cos(a) * inner, math.sin(a) * inner),
-        c + Offset(math.cos(a) * outer, math.sin(a) * outer),
-        _stroke(i.isEven ? w : w * 0.75, i.isEven ? 1 : 0.7),
-      );
+      final len = s * (i.isEven ? 0.14 : 0.1);
+      final inner = s * 0.22;
+      final outer = inner + len;
+      final p1 = c + Offset(math.cos(a) * inner, math.sin(a) * inner);
+      final p2 = c + Offset(math.cos(a) * outer, math.sin(a) * outer);
+      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.045;
+      final ray = Path()
+        ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
+        ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
+        ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
+        ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
+        ..close();
+      canvas.drawPath(ray, _solid);
     }
   }
 
   void _cosmos(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     for (final r in [0.38, 0.26, 0.14]) {
-      canvas.drawCircle(c, s * r, _stroke(w, 0.85 - (0.38 - r)));
+      _ring(canvas, c, s * r, s * (r - 0.04));
     }
-    canvas.drawCircle(c, s * 0.055, _inkFill);
+    canvas.drawCircle(c, s * 0.06, _solid);
     for (var i = 0; i < 4; i++) {
       final a = i * 1.4 + 0.3;
       canvas.drawCircle(
         c + Offset(math.cos(a) * s * 0.32, math.sin(a) * s * 0.32),
-        s * 0.028,
-        _inkFill,
+        s * 0.035,
+        _solid,
       );
     }
   }
 
   void _humanity(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    canvas.drawCircle(c + Offset(0, -s * 0.16), s * 0.11, _stroke(w));
+    canvas.drawCircle(c + Offset(0, -s * 0.18), s * 0.12, _solid);
     final body = Path()
-      ..moveTo(c.dx - s * 0.26, c.dy + s * 0.34)
-      ..quadraticBezierTo(c.dx - s * 0.2, c.dy + s * 0.02, c.dx, c.dy - s * 0.02)
-      ..quadraticBezierTo(c.dx + s * 0.2, c.dy + s * 0.02, c.dx + s * 0.26, c.dy + s * 0.34);
-    canvas.drawPath(body, _stroke(w));
-    canvas.drawArc(
-      Rect.fromCircle(center: c + Offset(0, -s * 0.16), radius: s * 0.2),
-      math.pi * 1.15,
-      math.pi * 0.7,
-      false,
-      _stroke(w * 0.7, 0.55),
-    );
+      ..moveTo(c.dx - s * 0.28, c.dy + s * 0.34)
+      ..quadraticBezierTo(c.dx - s * 0.22, c.dy + s * 0.04, c.dx, c.dy - s * 0.04)
+      ..quadraticBezierTo(c.dx + s * 0.22, c.dy + s * 0.04, c.dx + s * 0.28, c.dy + s * 0.34)
+      ..close();
+    canvas.drawPath(body, _solid);
+    final halo = Path()
+      ..addArc(
+        Rect.fromCircle(center: c + Offset(0, -s * 0.18), radius: s * 0.22),
+        math.pi * 1.1,
+        math.pi * 0.8,
+      );
+    canvas.drawPath(halo, _stroke(s * 0.07, 0.6));
   }
 
   void _dove(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final body = Path()
-      ..moveTo(c.dx - s * 0.2, c.dy + s * 0.12)
-      ..quadraticBezierTo(c.dx, c.dy - s * 0.08, c.dx + s * 0.28, c.dy - s * 0.1)
-      ..quadraticBezierTo(c.dx + s * 0.18, c.dy + s * 0.12, c.dx - s * 0.06, c.dy + s * 0.16)
+      ..moveTo(c.dx - s * 0.22, c.dy + s * 0.14)
+      ..quadraticBezierTo(c.dx, c.dy - s * 0.1, c.dx + s * 0.3, c.dy - s * 0.12)
+      ..quadraticBezierTo(c.dx + s * 0.2, c.dy + s * 0.14, c.dx - s * 0.08, c.dy + s * 0.18)
       ..close();
-    canvas.drawPath(body, _fillPaint);
-    canvas.drawPath(body, _stroke(w));
+    canvas.drawPath(body, _solid);
     final wing = Path()
-      ..moveTo(c.dx, c.dy - s * 0.02)
-      ..quadraticBezierTo(c.dx - s * 0.12, c.dy - s * 0.34, c.dx - s * 0.3, c.dy - s * 0.22);
-    canvas.drawPath(wing, _stroke(w));
-    canvas.drawLine(
-      c + Offset(s * 0.28, -s * 0.1),
-      c + Offset(s * 0.38, -s * 0.2),
-      _stroke(w * 0.8, 0.75),
-    );
+      ..moveTo(c.dx - s * 0.02, c.dy - s * 0.04)
+      ..quadraticBezierTo(c.dx - s * 0.14, c.dy - s * 0.36, c.dx - s * 0.32, c.dy - s * 0.24)
+      ..quadraticBezierTo(c.dx - s * 0.18, c.dy - s * 0.08, c.dx - s * 0.02, c.dy - s * 0.04)
+      ..close();
+    canvas.drawPath(wing, _soft);
+    final beak = Path()
+      ..moveTo(c.dx + s * 0.28, c.dy - s * 0.12)
+      ..lineTo(c.dx + s * 0.4, c.dy - s * 0.2)
+      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.06)
+      ..close();
+    canvas.drawPath(beak, _solid);
   }
 
   void _tree(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    canvas.drawLine(c + Offset(0, s * 0.08), c + Offset(0, s * 0.36), _stroke(w * 1.2));
-    canvas.drawCircle(c + Offset(0, -s * 0.06), s * 0.22, _fillPaint);
-    canvas.drawCircle(c + Offset(0, -s * 0.06), s * 0.22, _stroke(w));
-    canvas.drawCircle(c + Offset(-s * 0.16, s * 0.04), s * 0.12, _stroke(w * 0.85, 0.7));
-    canvas.drawCircle(c + Offset(s * 0.16, s * 0.04), s * 0.12, _stroke(w * 0.85, 0.7));
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(0, s * 0.26), width: s * 0.12, height: s * 0.22),
+      s * 0.03,
+    );
+    canvas.drawCircle(c + Offset(0, -s * 0.08), s * 0.24, _solid);
+    canvas.drawCircle(c + Offset(-s * 0.18, s * 0.02), s * 0.14, _soft);
+    canvas.drawCircle(c + Offset(s * 0.18, s * 0.02), s * 0.14, _soft);
   }
 
   void _fall(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final fruit = Path()
-      ..addOval(Rect.fromCenter(center: c + Offset(0, s * 0.04), width: s * 0.34, height: s * 0.4));
+      ..addOval(Rect.fromCenter(center: c + Offset(0, s * 0.04), width: s * 0.36, height: s * 0.42));
     final bite = Path()
-      ..addOval(Rect.fromCircle(center: c + Offset(s * 0.16, -s * 0.04), radius: s * 0.1));
-    final cut = Path.combine(PathOperation.difference, fruit, bite);
-    canvas.drawPath(cut, _fillPaint);
-    canvas.drawPath(cut, _stroke(w));
-    canvas.drawLine(c + Offset(0, -s * 0.16), c + Offset(s * 0.02, -s * 0.3), _stroke(w * 0.8));
+      ..addOval(Rect.fromCircle(center: c + Offset(s * 0.16, -s * 0.04), radius: s * 0.11));
+    canvas.drawPath(Path.combine(PathOperation.difference, fruit, bite), _solid);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(s * 0.01, -s * 0.24), width: s * 0.05, height: s * 0.1),
+      s * 0.02,
+    );
   }
 
   void _tears(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final drop = Path()
       ..moveTo(c.dx, c.dy - s * 0.32)
-      ..quadraticBezierTo(c.dx + s * 0.2, c.dy, c.dx, c.dy + s * 0.32)
-      ..quadraticBezierTo(c.dx - s * 0.2, c.dy, c.dx, c.dy - s * 0.32)
+      ..quadraticBezierTo(c.dx + s * 0.22, c.dy, c.dx, c.dy + s * 0.32)
+      ..quadraticBezierTo(c.dx - s * 0.22, c.dy, c.dx, c.dy - s * 0.32)
       ..close();
-    canvas.drawPath(drop, _fillPaint);
-    canvas.drawPath(drop, _stroke(w));
+    canvas.drawPath(drop, _solid);
   }
 
   void _scales(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    canvas.drawLine(c + Offset(0, -s * 0.3), c + Offset(0, s * 0.3), _stroke(w));
-    canvas.drawLine(c + Offset(-s * 0.3, -s * 0.1), c + Offset(s * 0.3, -s * 0.1), _stroke(w));
-    canvas.drawCircle(c + Offset(-s * 0.26, s * 0.08), s * 0.11, _stroke(w));
-    canvas.drawCircle(c + Offset(s * 0.26, s * 0.08), s * 0.11, _stroke(w));
-    canvas.drawCircle(c + Offset(0, -s * 0.3), s * 0.04, _inkFill);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(0, -s * 0.1), width: s * 0.62, height: s * 0.08),
+      s * 0.03,
+    );
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c, width: s * 0.08, height: s * 0.58),
+      s * 0.03,
+    );
+    canvas.drawOval(
+      Rect.fromCenter(center: c + Offset(-s * 0.26, s * 0.12), width: s * 0.26, height: s * 0.2),
+      _solid,
+    );
+    canvas.drawOval(
+      Rect.fromCenter(center: c + Offset(s * 0.26, s * 0.12), width: s * 0.26, height: s * 0.2),
+      _solid,
+    );
+    canvas.drawCircle(c + Offset(0, -s * 0.3), s * 0.05, _solid);
   }
 
   void _waves(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
     for (var i = 0; i < 3; i++) {
-      final y = c.dy - s * 0.16 + i * s * 0.16;
-      final path = Path()..moveTo(c.dx - s * 0.36, y);
-      for (var x = -0.36; x <= 0.36; x += 0.12) {
-        path.lineTo(c.dx + s * x, y + math.sin((x + 0.4) * math.pi * 2.2 + i) * s * 0.045);
+      final y = c.dy - s * 0.14 + i * s * 0.14;
+      final path = Path()..moveTo(c.dx - s * 0.38, y + s * 0.06);
+      for (var x = -0.38; x <= 0.38; x += 0.08) {
+        path.lineTo(c.dx + s * x, y + math.sin((x + 0.4) * math.pi * 2.2 + i) * s * 0.05);
       }
-      canvas.drawPath(path, _stroke(w, 0.95 - i * 0.2));
+      path
+        ..lineTo(c.dx + s * 0.38, y + s * 0.14)
+        ..lineTo(c.dx - s * 0.38, y + s * 0.14)
+        ..close();
+      canvas.drawPath(path, i == 1 ? _solid : _soft);
     }
   }
 
   void _tower(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     final tiers = [
-      Rect.fromCenter(center: c + Offset(0, s * 0.2), width: s * 0.5, height: s * 0.16),
-      Rect.fromCenter(center: c + Offset(0, s * 0.02), width: s * 0.36, height: s * 0.16),
-      Rect.fromCenter(center: c + Offset(0, -s * 0.16), width: s * 0.24, height: s * 0.16),
+      Rect.fromCenter(center: c + Offset(0, s * 0.2), width: s * 0.52, height: s * 0.18),
+      Rect.fromCenter(center: c + Offset(0, s * 0.02), width: s * 0.38, height: s * 0.18),
+      Rect.fromCenter(center: c + Offset(0, -s * 0.16), width: s * 0.26, height: s * 0.18),
     ];
     for (final r in tiers) {
-      canvas.drawRRect(RRect.fromRectAndRadius(r, Radius.circular(s * 0.025)), _fillPaint);
-      canvas.drawRRect(RRect.fromRectAndRadius(r, Radius.circular(s * 0.025)), _stroke(w));
+      canvas.drawRRect(RRect.fromRectAndRadius(r, Radius.circular(s * 0.03)), _solid);
     }
-    canvas.drawCircle(c + Offset(0, -s * 0.3), s * 0.04, _inkFill);
+    canvas.drawCircle(c + Offset(0, -s * 0.32), s * 0.05, _solid);
   }
 
   void _star(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     final path = Path();
     for (var i = 0; i < 5; i++) {
       final a = -math.pi / 2 + i * 4 * math.pi / 5;
@@ -565,501 +594,524 @@ class _GlyphPainter extends CustomPainter {
       }
     }
     path.close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(w));
+    canvas.drawPath(path, _solid);
   }
 
   void _crown(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final path = Path()
-      ..moveTo(c.dx - s * 0.32, c.dy + s * 0.14)
-      ..lineTo(c.dx - s * 0.28, c.dy - s * 0.18)
-      ..lineTo(c.dx - s * 0.1, c.dy)
-      ..lineTo(c.dx, c.dy - s * 0.28)
-      ..lineTo(c.dx + s * 0.1, c.dy)
-      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.18)
-      ..lineTo(c.dx + s * 0.32, c.dy + s * 0.14)
+      ..moveTo(c.dx - s * 0.34, c.dy + s * 0.16)
+      ..lineTo(c.dx - s * 0.3, c.dy - s * 0.2)
+      ..lineTo(c.dx - s * 0.12, c.dy - s * 0.02)
+      ..lineTo(c.dx, c.dy - s * 0.3)
+      ..lineTo(c.dx + s * 0.12, c.dy - s * 0.02)
+      ..lineTo(c.dx + s * 0.3, c.dy - s * 0.2)
+      ..lineTo(c.dx + s * 0.34, c.dy + s * 0.16)
       ..close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(w));
+    canvas.drawPath(path, _solid);
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(0, s * 0.22), width: s * 0.68, height: s * 0.1),
+        Rect.fromCenter(center: c + Offset(0, s * 0.24), width: s * 0.72, height: s * 0.12),
         Radius.circular(s * 0.04),
       ),
-      _stroke(w),
+      _solid,
     );
+    for (final x in [-0.3, 0.0, 0.3]) {
+      canvas.drawCircle(c + Offset(s * x, -s * 0.2), s * 0.045, _soft);
+    }
   }
 
   void _chain(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
     canvas.drawOval(
-      Rect.fromCenter(center: c + Offset(-s * 0.16, -s * 0.1), width: s * 0.24, height: s * 0.34),
-      _stroke(w),
+      Rect.fromCenter(center: c + Offset(-s * 0.16, -s * 0.1), width: s * 0.28, height: s * 0.38),
+      _stroke(s * 0.1),
     );
     canvas.drawOval(
-      Rect.fromCenter(center: c + Offset(s * 0.16, s * 0.1), width: s * 0.24, height: s * 0.34),
-      _stroke(w),
+      Rect.fromCenter(center: c + Offset(s * 0.16, s * 0.1), width: s * 0.28, height: s * 0.38),
+      _stroke(s * 0.1),
     );
-    canvas.drawCircle(c, s * 0.03, _inkFill);
+    canvas.drawCircle(c, s * 0.05, _solid);
   }
 
   void _flame(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final flame = Path()
-      ..moveTo(c.dx, c.dy + s * 0.32)
-      ..quadraticBezierTo(c.dx - s * 0.3, c.dy + s * 0.05, c.dx - s * 0.06, c.dy - s * 0.16)
-      ..quadraticBezierTo(c.dx, c.dy - s * 0.02, c.dx + s * 0.04, c.dy - s * 0.1)
-      ..quadraticBezierTo(c.dx + s * 0.08, c.dy - s * 0.34, c.dx + s * 0.02, c.dy - s * 0.36)
-      ..quadraticBezierTo(c.dx + s * 0.32, c.dy - s * 0.02, c.dx, c.dy + s * 0.32)
+      ..moveTo(c.dx, c.dy + s * 0.34)
+      ..quadraticBezierTo(c.dx - s * 0.32, c.dy + s * 0.06, c.dx - s * 0.08, c.dy - s * 0.18)
+      ..quadraticBezierTo(c.dx, c.dy - s * 0.04, c.dx + s * 0.06, c.dy - s * 0.12)
+      ..quadraticBezierTo(c.dx + s * 0.1, c.dy - s * 0.38, c.dx + s * 0.02, c.dy - s * 0.4)
+      ..quadraticBezierTo(c.dx + s * 0.34, c.dy - s * 0.04, c.dx, c.dy + s * 0.34)
       ..close();
-    canvas.drawPath(flame, _fillPaint);
-    canvas.drawPath(flame, _stroke(w));
+    canvas.drawPath(flame, _solid);
     final inner = Path()
-      ..moveTo(c.dx, c.dy + s * 0.2)
-      ..quadraticBezierTo(c.dx - s * 0.1, c.dy + s * 0.04, c.dx, c.dy - s * 0.08)
-      ..quadraticBezierTo(c.dx + s * 0.1, c.dy + s * 0.04, c.dx, c.dy + s * 0.2)
+      ..moveTo(c.dx, c.dy + s * 0.22)
+      ..quadraticBezierTo(c.dx - s * 0.12, c.dy + s * 0.04, c.dx, c.dy - s * 0.1)
+      ..quadraticBezierTo(c.dx + s * 0.12, c.dy + s * 0.04, c.dx, c.dy + s * 0.22)
       ..close();
-    canvas.drawPath(inner, _stroke(w * 0.7, 0.55));
+    canvas.drawPath(inner, _soft);
   }
 
   void _book(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     final left = Path()
-      ..moveTo(c.dx, c.dy - s * 0.22)
-      ..quadraticBezierTo(c.dx - s * 0.18, c.dy - s * 0.3, c.dx - s * 0.36, c.dy - s * 0.22)
-      ..lineTo(c.dx - s * 0.36, c.dy + s * 0.22)
-      ..quadraticBezierTo(c.dx - s * 0.18, c.dy + s * 0.14, c.dx, c.dy + s * 0.26)
+      ..moveTo(c.dx, c.dy - s * 0.24)
+      ..quadraticBezierTo(c.dx - s * 0.2, c.dy - s * 0.32, c.dx - s * 0.38, c.dy - s * 0.24)
+      ..lineTo(c.dx - s * 0.38, c.dy + s * 0.24)
+      ..quadraticBezierTo(c.dx - s * 0.2, c.dy + s * 0.16, c.dx, c.dy + s * 0.28)
       ..close();
     final right = Path()
-      ..moveTo(c.dx, c.dy - s * 0.22)
-      ..quadraticBezierTo(c.dx + s * 0.18, c.dy - s * 0.3, c.dx + s * 0.36, c.dy - s * 0.22)
-      ..lineTo(c.dx + s * 0.36, c.dy + s * 0.22)
-      ..quadraticBezierTo(c.dx + s * 0.18, c.dy + s * 0.14, c.dx, c.dy + s * 0.26)
+      ..moveTo(c.dx, c.dy - s * 0.24)
+      ..quadraticBezierTo(c.dx + s * 0.2, c.dy - s * 0.32, c.dx + s * 0.38, c.dy - s * 0.24)
+      ..lineTo(c.dx + s * 0.38, c.dy + s * 0.24)
+      ..quadraticBezierTo(c.dx + s * 0.2, c.dy + s * 0.16, c.dx, c.dy + s * 0.28)
       ..close();
-    canvas.drawPath(left, _fillPaint);
-    canvas.drawPath(right, _fillPaint);
-    canvas.drawPath(left, _stroke(w));
-    canvas.drawPath(right, _stroke(w));
-    canvas.drawLine(c + Offset(0, -s * 0.22), c + Offset(0, s * 0.26), _stroke(w * 0.9));
+    canvas.drawPath(left, _solid);
+    canvas.drawPath(right, _solid);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c, width: s * 0.06, height: s * 0.54),
+      s * 0.02,
+    );
     for (var i = 0; i < 2; i++) {
-      final y = c.dy - s * 0.06 + i * s * 0.1;
-      canvas.drawLine(Offset(c.dx - s * 0.26, y), Offset(c.dx - s * 0.08, y), _stroke(w * 0.55, 0.4));
-      canvas.drawLine(Offset(c.dx + s * 0.08, y), Offset(c.dx + s * 0.26, y), _stroke(w * 0.55, 0.4));
+      final y = c.dy - s * 0.06 + i * s * 0.12;
+      _rect(
+        canvas,
+        Rect.fromCenter(center: Offset(c.dx - s * 0.18, y), width: s * 0.18, height: s * 0.04),
+        s * 0.02,
+      );
+      _rect(
+        canvas,
+        Rect.fromCenter(center: Offset(c.dx + s * 0.18, y), width: s * 0.18, height: s * 0.04),
+        s * 0.02,
+      );
     }
   }
 
   void _scroll(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c, width: s * 0.46, height: s * 0.52),
-        Radius.circular(s * 0.03),
+        Rect.fromCenter(center: c, width: s * 0.48, height: s * 0.54),
+        Radius.circular(s * 0.04),
       ),
-      _fillPaint,
+      _solid,
     );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c, width: s * 0.46, height: s * 0.52),
-        Radius.circular(s * 0.03),
-      ),
-      _stroke(w),
-    );
-    for (final y in [-0.28, 0.28]) {
+    for (final y in [-0.3, 0.3]) {
       canvas.drawRRect(
         RRect.fromRectAndRadius(
-          Rect.fromCenter(center: c + Offset(0, s * y), width: s * 0.58, height: s * 0.12),
-          Radius.circular(s * 0.06),
+          Rect.fromCenter(center: c + Offset(0, s * y), width: s * 0.6, height: s * 0.14),
+          Radius.circular(s * 0.07),
         ),
-        _stroke(w),
+        _solid,
       );
     }
     for (var i = 0; i < 3; i++) {
       final y = c.dy - s * 0.1 + i * s * 0.1;
-      canvas.drawLine(Offset(c.dx - s * 0.14, y), Offset(c.dx + s * 0.14, y), _stroke(w * 0.55, 0.4));
+      _rect(
+        canvas,
+        Rect.fromCenter(center: Offset(c.dx, y), width: s * 0.28, height: s * 0.04),
+        s * 0.02,
+      );
     }
   }
 
   void _seed(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    canvas.drawArc(
-      Rect.fromCenter(center: c + Offset(0, s * 0.22), width: s * 0.56, height: s * 0.2),
-      math.pi * 1.05,
-      math.pi * 0.9,
-      false,
-      _stroke(w * 0.8, 0.55),
+    final seed = Path()
+      ..moveTo(c.dx, c.dy + s * 0.22)
+      ..quadraticBezierTo(c.dx - s * 0.14, c.dy + s * 0.08, c.dx, c.dy - s * 0.08)
+      ..quadraticBezierTo(c.dx + s * 0.14, c.dy + s * 0.08, c.dx, c.dy + s * 0.22)
+      ..close();
+    canvas.drawPath(seed, _solid);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(0, s * 0.24), width: s * 0.06, height: s * 0.12),
+      s * 0.02,
     );
-    canvas.drawLine(c + Offset(0, s * 0.18), c + Offset(0, -s * 0.02), _stroke(w));
     final left = Path()
-      ..moveTo(c.dx, c.dy)
-      ..quadraticBezierTo(c.dx - s * 0.28, c.dy - s * 0.04, c.dx - s * 0.18, c.dy - s * 0.28);
+      ..moveTo(c.dx, c.dy - s * 0.02)
+      ..quadraticBezierTo(c.dx - s * 0.3, c.dy - s * 0.06, c.dx - s * 0.2, c.dy - s * 0.3)
+      ..quadraticBezierTo(c.dx - s * 0.1, c.dy - s * 0.14, c.dx, c.dy - s * 0.02)
+      ..close();
     final right = Path()
-      ..moveTo(c.dx, c.dy)
-      ..quadraticBezierTo(c.dx + s * 0.28, c.dy - s * 0.04, c.dx + s * 0.18, c.dy - s * 0.28);
-    canvas.drawPath(left, _stroke(w));
-    canvas.drawPath(right, _stroke(w));
+      ..moveTo(c.dx, c.dy - s * 0.02)
+      ..quadraticBezierTo(c.dx + s * 0.3, c.dy - s * 0.06, c.dx + s * 0.2, c.dy - s * 0.3)
+      ..quadraticBezierTo(c.dx + s * 0.1, c.dy - s * 0.14, c.dx, c.dy - s * 0.02)
+      ..close();
+    canvas.drawPath(left, _solid);
+    canvas.drawPath(right, _soft);
   }
 
+  /// Caminho em S com marcos — lê como trilha, não como `/`.
   void _path(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    // Poste de trilha — geometria clara em tamanho de menu
-    final postTop = c + Offset(0, -s * 0.08);
-    final postBottom = c + Offset(0, s * 0.34);
-    canvas.drawLine(postTop, postBottom, _stroke(w * 1.25));
-
-    // Placa esquerda
-    final left = Path()
-      ..moveTo(c.dx - s * 0.02, c.dy - s * 0.28)
-      ..lineTo(c.dx - s * 0.34, c.dy - s * 0.28)
-      ..lineTo(c.dx - s * 0.42, c.dy - s * 0.16)
-      ..lineTo(c.dx - s * 0.34, c.dy - s * 0.04)
-      ..lineTo(c.dx - s * 0.02, c.dy - s * 0.04)
-      ..close();
-    // Placa direita (um pouco mais baixa)
-    final right = Path()
-      ..moveTo(c.dx + s * 0.02, c.dy - s * 0.1)
-      ..lineTo(c.dx + s * 0.32, c.dy - s * 0.1)
-      ..lineTo(c.dx + s * 0.4, c.dy + s * 0.02)
-      ..lineTo(c.dx + s * 0.32, c.dy + s * 0.14)
-      ..lineTo(c.dx + s * 0.02, c.dy + s * 0.14)
-      ..close();
-
-    canvas.drawPath(left, _fillPaint);
-    canvas.drawPath(right, _fillPaint);
-    canvas.drawPath(left, _stroke(w));
-    canvas.drawPath(right, _stroke(w));
-
-    // Base do poste
-    canvas.drawLine(
-      c + Offset(-s * 0.12, s * 0.34),
-      c + Offset(s * 0.12, s * 0.34),
-      _stroke(w),
-    );
+    final trail = Path()
+      ..moveTo(c.dx - s * 0.3, c.dy + s * 0.3)
+      ..quadraticBezierTo(
+        c.dx - s * 0.34,
+        c.dy + s * 0.02,
+        c.dx - s * 0.02,
+        c.dy - s * 0.02,
+      )
+      ..quadraticBezierTo(
+        c.dx + s * 0.32,
+        c.dy - s * 0.06,
+        c.dx + s * 0.22,
+        c.dy - s * 0.32,
+      );
+    canvas.drawPath(trail, _stroke(s * 0.1));
+    // Marcos no caminho (início → meio → destino).
+    for (final o in [
+      Offset(-0.26, 0.26),
+      Offset(-0.02, -0.02),
+      Offset(0.2, -0.28),
+    ]) {
+      canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.065, _solid);
+    }
   }
 
   void _people(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     void figure(Offset o, double scale) {
-      final head = o + Offset(0, -s * 0.2 * scale);
-      canvas.drawCircle(head, s * 0.09 * scale, _fillPaint);
-      canvas.drawCircle(head, s * 0.09 * scale, _stroke(w));
+      canvas.drawCircle(o + Offset(0, -s * 0.22 * scale), s * 0.1 * scale, _solid);
       final body = Path()
-        ..moveTo(o.dx - s * 0.2 * scale, o.dy + s * 0.32 * scale)
+        ..moveTo(o.dx - s * 0.22 * scale, o.dy + s * 0.34 * scale)
         ..quadraticBezierTo(
-          o.dx - s * 0.16 * scale,
-          o.dy + s * 0.02 * scale,
+          o.dx - s * 0.18 * scale,
+          o.dy + s * 0.04 * scale,
           o.dx,
-          o.dy - s * 0.04 * scale,
+          o.dy - s * 0.06 * scale,
         )
         ..quadraticBezierTo(
-          o.dx + s * 0.16 * scale,
-          o.dy + s * 0.02 * scale,
-          o.dx + s * 0.2 * scale,
-          o.dy + s * 0.32 * scale,
-        );
-      canvas.drawPath(body, _stroke(w));
+          o.dx + s * 0.18 * scale,
+          o.dy + s * 0.04 * scale,
+          o.dx + s * 0.22 * scale,
+          o.dy + s * 0.34 * scale,
+        )
+        ..close();
+      canvas.drawPath(body, _solid);
     }
 
-    // Dois caminhantes — companhia
     figure(c + Offset(-s * 0.16, s * 0.02), 0.88);
     figure(c + Offset(s * 0.18, 0), 1.0);
   }
 
   void _home(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    final house = Path()
-      ..moveTo(c.dx, c.dy - s * 0.34)
-      ..lineTo(c.dx + s * 0.36, c.dy - s * 0.06)
-      ..lineTo(c.dx + s * 0.36, c.dy + s * 0.32)
-      ..lineTo(c.dx - s * 0.36, c.dy + s * 0.32)
-      ..lineTo(c.dx - s * 0.36, c.dy - s * 0.06)
+    final roof = Path()
+      ..moveTo(c.dx, c.dy - s * 0.36)
+      ..lineTo(c.dx + s * 0.38, c.dy - s * 0.04)
+      ..lineTo(c.dx - s * 0.38, c.dy - s * 0.04)
       ..close();
-    canvas.drawPath(house, _fillPaint);
-    canvas.drawPath(house, _stroke(w));
-    // Porta
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.18),
-          width: s * 0.18,
-          height: s * 0.28,
-        ),
-        Radius.circular(s * 0.02),
-      ),
-      _stroke(w * 0.9),
+    canvas.drawPath(roof, _solid);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(0, s * 0.16), width: s * 0.72, height: s * 0.36),
+      s * 0.04,
     );
+    final door = Path()
+      ..addRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: c + Offset(0, s * 0.2), width: s * 0.2, height: s * 0.28),
+          Radius.circular(s * 0.03),
+        ),
+      );
+    final wall = Path()
+      ..addRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: c + Offset(0, s * 0.16), width: s * 0.72, height: s * 0.36),
+          Radius.circular(s * 0.04),
+        ),
+      );
+    canvas.drawPath(Path.combine(PathOperation.difference, wall, door), _soft);
   }
 
   void _depths(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     for (var i = 0; i < 3; i++) {
       final inset = i * s * 0.1;
-      canvas.drawArc(
-        Rect.fromCenter(
-          center: c + Offset(0, s * 0.08),
-          width: s * 0.52 - inset,
-          height: s * 0.58 - inset,
-        ),
-        math.pi * 1.05,
-        math.pi * 0.9,
-        false,
-        _stroke(w, 0.85 - i * 0.2),
-      );
+      final outer = s * 0.54 - inset;
+      final inner = outer - s * 0.08;
+      final rect = Rect.fromCenter(center: c + Offset(0, s * 0.1), width: outer, height: outer * 1.1);
+      final path = Path()
+        ..addArc(rect, math.pi * 1.05, math.pi * 0.9)
+        ..arcTo(rect, math.pi * 1.95, -math.pi * 0.9, false)
+        ..close();
+      final hole = Path()..addOval(Rect.fromCenter(center: c + Offset(0, s * 0.1), width: inner, height: inner * 1.1));
+      canvas.drawPath(Path.combine(PathOperation.difference, path, hole), i == 1 ? _solid : _soft);
     }
   }
 
   void _spark(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
-    for (var i = 0; i < 8; i++) {
-      final a = i * math.pi / 4;
-      final long = i.isEven;
-      canvas.drawLine(
-        c + Offset(math.cos(a) * s * 0.08, math.sin(a) * s * 0.08),
-        c + Offset(math.cos(a) * s * (long ? 0.4 : 0.24), math.sin(a) * s * (long ? 0.4 : 0.24)),
-        _stroke(long ? w : w * 0.7, long ? 1 : 0.6),
-      );
+    for (var i = 0; i < 4; i++) {
+      final a = i * math.pi / 2 - math.pi / 4;
+      final inner = s * 0.06;
+      final outer = s * 0.38;
+      final p1 = c + Offset(math.cos(a) * inner, math.sin(a) * inner);
+      final p2 = c + Offset(math.cos(a) * outer, math.sin(a) * outer);
+      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.08;
+      final ray = Path()
+        ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
+        ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
+        ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
+        ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
+        ..close();
+      canvas.drawPath(ray, _solid);
     }
-    canvas.drawCircle(c, s * 0.08, _fillPaint);
-    canvas.drawCircle(c, s * 0.08, _stroke(w * 0.8));
+    canvas.drawCircle(c, s * 0.1, _solid);
   }
 
   void _heart(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final path = Path()
-      ..moveTo(c.dx, c.dy + s * 0.3)
-      ..cubicTo(c.dx - s * 0.4, c.dy + s * 0.02, c.dx - s * 0.36, c.dy - s * 0.28, c.dx, c.dy - s * 0.08)
-      ..cubicTo(c.dx + s * 0.36, c.dy - s * 0.28, c.dx + s * 0.4, c.dy + s * 0.02, c.dx, c.dy + s * 0.3)
+      ..moveTo(c.dx, c.dy + s * 0.32)
+      ..cubicTo(c.dx - s * 0.42, c.dy + s * 0.04, c.dx - s * 0.38, c.dy - s * 0.3, c.dx, c.dy - s * 0.1)
+      ..cubicTo(c.dx + s * 0.38, c.dy - s * 0.3, c.dx + s * 0.42, c.dy + s * 0.04, c.dx, c.dy + s * 0.32)
       ..close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(w));
+    canvas.drawPath(path, _solid);
   }
 
   void _mountain(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final back = Path()
-      ..moveTo(c.dx - s * 0.36, c.dy + s * 0.28)
-      ..lineTo(c.dx - s * 0.08, c.dy - s * 0.14)
-      ..lineTo(c.dx + s * 0.18, c.dy + s * 0.28)
+      ..moveTo(c.dx - s * 0.38, c.dy + s * 0.3)
+      ..lineTo(c.dx - s * 0.1, c.dy - s * 0.16)
+      ..lineTo(c.dx + s * 0.2, c.dy + s * 0.3)
       ..close();
     final front = Path()
-      ..moveTo(c.dx - s * 0.16, c.dy + s * 0.28)
-      ..lineTo(c.dx + s * 0.08, c.dy - s * 0.3)
-      ..lineTo(c.dx + s * 0.36, c.dy + s * 0.28)
+      ..moveTo(c.dx - s * 0.18, c.dy + s * 0.3)
+      ..lineTo(c.dx + s * 0.1, c.dy - s * 0.32)
+      ..lineTo(c.dx + s * 0.38, c.dy + s * 0.3)
       ..close();
-    canvas.drawPath(back, _stroke(w, 0.55));
-    canvas.drawPath(front, _fillPaint);
-    canvas.drawPath(front, _stroke(w));
+    canvas.drawPath(back, _soft);
+    canvas.drawPath(front, _solid);
   }
 
   void _calendar(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(0, s * 0.04), width: s * 0.52, height: s * 0.46),
+        Rect.fromCenter(center: c + Offset(0, s * 0.04), width: s * 0.54, height: s * 0.48),
         Radius.circular(s * 0.06),
       ),
-      _fillPaint,
+      _solid,
     );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(0, s * 0.04), width: s * 0.52, height: s * 0.46),
-        Radius.circular(s * 0.06),
-      ),
-      _stroke(w),
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(0, -s * 0.12), width: s * 0.54, height: s * 0.12),
+      s * 0.03,
     );
-    canvas.drawLine(
-      c + Offset(-s * 0.26, -s * 0.1),
-      c + Offset(s * 0.26, -s * 0.1),
-      _stroke(w),
-    );
-    for (final x in [-0.12, 0.0, 0.12]) {
-      canvas.drawLine(
-        c + Offset(s * x, -s * 0.22),
-        c + Offset(s * x, -s * 0.12),
-        _stroke(w * 0.9),
+    for (final x in [-0.14, 0.0, 0.14]) {
+      _rect(
+        canvas,
+        Rect.fromCenter(center: c + Offset(s * x, -s * 0.24), width: s * 0.06, height: s * 0.1),
+        s * 0.02,
       );
     }
-    canvas.drawCircle(c + Offset(s * 0.08, s * 0.08), s * 0.04, _inkFill);
+    canvas.drawCircle(c + Offset(s * 0.1, s * 0.1), s * 0.05, _soft);
   }
 
   void _gem(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     final path = Path()
-      ..moveTo(c.dx, c.dy - s * 0.32)
-      ..lineTo(c.dx + s * 0.26, c.dy - s * 0.06)
-      ..lineTo(c.dx, c.dy + s * 0.32)
-      ..lineTo(c.dx - s * 0.26, c.dy - s * 0.06)
+      ..moveTo(c.dx, c.dy - s * 0.34)
+      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.06)
+      ..lineTo(c.dx, c.dy + s * 0.34)
+      ..lineTo(c.dx - s * 0.28, c.dy - s * 0.06)
       ..close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(w));
-    canvas.drawLine(c + Offset(-s * 0.14, -s * 0.06), c + Offset(s * 0.14, -s * 0.06), _stroke(w * 0.7, 0.55));
+    canvas.drawPath(path, _solid);
+    final facet = Path()
+      ..moveTo(c.dx - s * 0.16, c.dy - s * 0.06)
+      ..lineTo(c.dx, c.dy - s * 0.22)
+      ..lineTo(c.dx + s * 0.16, c.dy - s * 0.06)
+      ..close();
+    canvas.drawPath(facet, _soft);
   }
 
   void _lamp(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final bowl = Path()
-      ..moveTo(c.dx - s * 0.28, c.dy + s * 0.06)
-      ..quadraticBezierTo(c.dx - s * 0.26, c.dy + s * 0.26, c.dx, c.dy + s * 0.28)
-      ..quadraticBezierTo(c.dx + s * 0.26, c.dy + s * 0.26, c.dx + s * 0.32, c.dy + s * 0.02)
-      ..quadraticBezierTo(c.dx + s * 0.12, c.dy + s * 0.08, c.dx - s * 0.28, c.dy + s * 0.06)
+      ..moveTo(c.dx - s * 0.3, c.dy + s * 0.08)
+      ..quadraticBezierTo(c.dx - s * 0.28, c.dy + s * 0.28, c.dx, c.dy + s * 0.3)
+      ..quadraticBezierTo(c.dx + s * 0.28, c.dy + s * 0.28, c.dx + s * 0.34, c.dy + s * 0.04)
+      ..quadraticBezierTo(c.dx + s * 0.14, c.dy + s * 0.1, c.dx - s * 0.3, c.dy + s * 0.08)
       ..close();
-    canvas.drawPath(bowl, _fillPaint);
-    canvas.drawPath(bowl, _stroke(w));
+    canvas.drawPath(bowl, _solid);
     final flame = Path()
-      ..moveTo(c.dx + s * 0.28, c.dy)
-      ..quadraticBezierTo(c.dx + s * 0.2, c.dy - s * 0.18, c.dx + s * 0.28, c.dy - s * 0.3)
-      ..quadraticBezierTo(c.dx + s * 0.34, c.dy - s * 0.14, c.dx + s * 0.28, c.dy)
+      ..moveTo(c.dx + s * 0.3, c.dy + s * 0.02)
+      ..quadraticBezierTo(c.dx + s * 0.22, c.dy - s * 0.2, c.dx + s * 0.3, c.dy - s * 0.32)
+      ..quadraticBezierTo(c.dx + s * 0.36, c.dy - s * 0.16, c.dx + s * 0.3, c.dy + s * 0.02)
       ..close();
-    canvas.drawPath(flame, _stroke(w * 0.9));
+    canvas.drawPath(flame, _solid);
+    _rect(
+      canvas,
+      Rect.fromCenter(center: c + Offset(-s * 0.08, s * 0.3), width: s * 0.16, height: s * 0.06),
+      s * 0.02,
+    );
   }
 
   void _check(Canvas canvas, Offset c, double s) {
     final path = Path()
-      ..moveTo(c.dx - s * 0.22, c.dy)
-      ..lineTo(c.dx - s * 0.04, c.dy + s * 0.18)
-      ..lineTo(c.dx + s * 0.26, c.dy - s * 0.2);
-    canvas.drawPath(path, _stroke(s * 0.08));
+      ..moveTo(c.dx - s * 0.24, c.dy)
+      ..lineTo(c.dx - s * 0.04, c.dy + s * 0.2)
+      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.22);
+    canvas.drawPath(path, _stroke(s * 0.1));
   }
 
   void _echo(Canvas canvas, Offset c, double s) {
-    final w = s * 0.06;
-    final r = s * 0.28;
-    canvas.drawArc(Rect.fromCircle(center: c, radius: r), -math.pi * 0.4, math.pi * 0.75, false, _stroke(w));
-    canvas.drawArc(Rect.fromCircle(center: c, radius: r), math.pi * 0.6, math.pi * 0.75, false, _stroke(w));
-    canvas.drawCircle(c, s * 0.06, _inkFill);
+    for (final r in [0.14, 0.24, 0.34]) {
+      _ring(canvas, c, s * r, s * (r - 0.05));
+    }
+    canvas.drawCircle(c, s * 0.07, _solid);
   }
 
   void _target(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    canvas.drawCircle(c, s * 0.34, _stroke(w, 0.55));
-    canvas.drawCircle(c, s * 0.2, _stroke(w, 0.85));
-    canvas.drawCircle(c, s * 0.07, _inkFill);
+    _ring(canvas, c, s * 0.34, s * 0.24);
+    _ring(canvas, c, s * 0.2, s * 0.1);
+    canvas.drawCircle(c, s * 0.08, _solid);
   }
 
   void _tune(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
     final rows = [-0.2, 0.0, 0.2];
     final knobs = [-0.16, 0.18, -0.04];
     for (var i = 0; i < 3; i++) {
       final y = c.dy + s * rows[i];
-      canvas.drawLine(Offset(c.dx - s * 0.3, y), Offset(c.dx + s * 0.3, y), _stroke(w));
-      canvas.drawCircle(c + Offset(s * knobs[i], s * rows[i]), s * 0.075, _fillPaint);
-      canvas.drawCircle(c + Offset(s * knobs[i], s * rows[i]), s * 0.075, _stroke(w * 0.9));
+      _rect(
+        canvas,
+        Rect.fromCenter(center: Offset(c.dx, y), width: s * 0.62, height: s * 0.08),
+        s * 0.03,
+      );
+      canvas.drawCircle(c + Offset(s * knobs[i], s * rows[i]), s * 0.09, _solid);
     }
   }
 
   void _lock(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
+    final shackle = Path()
+      ..addArc(
+        Rect.fromCenter(center: c + Offset(0, -s * 0.04), width: s * 0.32, height: s * 0.36),
+        math.pi,
+        math.pi,
+      );
+    canvas.drawPath(shackle, _stroke(s * 0.09));
     canvas.drawRRect(
       RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(0, s * 0.1), width: s * 0.44, height: s * 0.34),
-        Radius.circular(s * 0.05),
+        Rect.fromCenter(center: c + Offset(0, s * 0.12), width: s * 0.48, height: s * 0.36),
+        Radius.circular(s * 0.06),
       ),
-      _fillPaint,
+      _solid,
     );
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(0, s * 0.1), width: s * 0.44, height: s * 0.34),
-        Radius.circular(s * 0.05),
-      ),
-      _stroke(w),
-    );
-    canvas.drawArc(
-      Rect.fromCenter(center: c + Offset(0, -s * 0.04), width: s * 0.28, height: s * 0.32),
-      math.pi,
-      math.pi,
-      false,
-      _stroke(w),
-    );
-    canvas.drawCircle(c + Offset(0, s * 0.1), s * 0.04, _inkFill);
+    canvas.drawCircle(c + Offset(0, s * 0.12), s * 0.05, _soft);
   }
 
   void _search(Canvas canvas, Offset c, double s) {
-    final w = s * 0.055;
-    canvas.drawCircle(c + Offset(-s * 0.06, -s * 0.06), s * 0.2, _stroke(w));
-    canvas.drawLine(
-      c + Offset(s * 0.1, s * 0.1),
-      c + Offset(s * 0.3, s * 0.3),
-      _stroke(w * 1.15),
-    );
+    _ring(canvas, c + Offset(-s * 0.06, -s * 0.06), s * 0.22, s * 0.1);
+    final handle = Path()
+      ..moveTo(c.dx + s * 0.1, c.dy + s * 0.1)
+      ..lineTo(c.dx + s * 0.32, c.dy + s * 0.32)
+      ..lineTo(c.dx + s * 0.24, c.dy + s * 0.4)
+      ..lineTo(c.dx + s * 0.02, c.dy + s * 0.18)
+      ..close();
+    canvas.drawPath(handle, _solid);
   }
 
   void _shield(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final path = Path()
-      ..moveTo(c.dx, c.dy - s * 0.34)
-      ..quadraticBezierTo(c.dx + s * 0.32, c.dy - s * 0.26, c.dx + s * 0.3, c.dy)
-      ..quadraticBezierTo(c.dx + s * 0.26, c.dy + s * 0.2, c.dx, c.dy + s * 0.34)
-      ..quadraticBezierTo(c.dx - s * 0.26, c.dy + s * 0.2, c.dx - s * 0.3, c.dy)
-      ..quadraticBezierTo(c.dx - s * 0.32, c.dy - s * 0.26, c.dx, c.dy - s * 0.34)
+      ..moveTo(c.dx, c.dy - s * 0.36)
+      ..quadraticBezierTo(c.dx + s * 0.34, c.dy - s * 0.28, c.dx + s * 0.32, c.dy)
+      ..quadraticBezierTo(c.dx + s * 0.28, c.dy + s * 0.22, c.dx, c.dy + s * 0.36)
+      ..quadraticBezierTo(c.dx - s * 0.28, c.dy + s * 0.22, c.dx - s * 0.32, c.dy)
+      ..quadraticBezierTo(c.dx - s * 0.34, c.dy - s * 0.28, c.dx, c.dy - s * 0.36)
       ..close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(w));
-    canvas.drawLine(c + Offset(0, -s * 0.14), c + Offset(0, s * 0.16), _stroke(w * 0.8, 0.55));
+    canvas.drawPath(path, _solid);
+    final cross = Path()
+      ..moveTo(c.dx, c.dy - s * 0.16)
+      ..lineTo(c.dx, c.dy + s * 0.18)
+      ..moveTo(c.dx - s * 0.12, c.dy - s * 0.02)
+      ..lineTo(c.dx + s * 0.12, c.dy - s * 0.02);
+    canvas.drawPath(cross, _stroke(s * 0.07, 0.55));
   }
 
   void _mail(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
-    final r = RRect.fromRectAndRadius(
-      Rect.fromCenter(center: c, width: s * 0.6, height: s * 0.42),
-      Radius.circular(s * 0.05),
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(center: c, width: s * 0.62, height: s * 0.44),
+        Radius.circular(s * 0.06),
+      ),
+      _solid,
     );
-    canvas.drawRRect(r, _fillPaint);
-    canvas.drawRRect(r, _stroke(w));
     final flap = Path()
-      ..moveTo(c.dx - s * 0.28, c.dy - s * 0.12)
-      ..lineTo(c.dx, c.dy + s * 0.06)
-      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.12);
-    canvas.drawPath(flap, _stroke(w));
+      ..moveTo(c.dx - s * 0.3, c.dy - s * 0.14)
+      ..lineTo(c.dx, c.dy + s * 0.08)
+      ..lineTo(c.dx + s * 0.3, c.dy - s * 0.14)
+      ..close();
+    canvas.drawPath(flap, _soft);
   }
 
   void _frost(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     for (var i = 0; i < 6; i++) {
       final a = i * math.pi / 3;
-      canvas.drawLine(
-        c,
-        c + Offset(math.cos(a) * s * 0.34, math.sin(a) * s * 0.34),
-        _stroke(w),
+      final end = c + Offset(math.cos(a) * s * 0.36, math.sin(a) * s * 0.36);
+      _rect(
+        canvas,
+        Rect.fromCenter(
+          center: c + Offset(math.cos(a) * s * 0.18, math.sin(a) * s * 0.18),
+          width: s * 0.08,
+          height: s * 0.36,
+        ),
+        s * 0.02,
       );
       final mid = c + Offset(math.cos(a) * s * 0.18, math.sin(a) * s * 0.18);
       final p = a + math.pi / 2;
-      canvas.drawLine(
-        mid + Offset(math.cos(p) * s * 0.07, math.sin(p) * s * 0.07),
-        mid - Offset(math.cos(p) * s * 0.07, math.sin(p) * s * 0.07),
-        _stroke(w * 0.75, 0.7),
-      );
+      final branch = Path()
+        ..moveTo(mid.dx + math.cos(p) * s * 0.08, mid.dy + math.sin(p) * s * 0.08)
+        ..lineTo(end.dx, end.dy)
+        ..lineTo(mid.dx - math.cos(p) * s * 0.08, mid.dy - math.sin(p) * s * 0.08)
+        ..close();
+      canvas.drawPath(branch, _solid);
     }
-    canvas.drawCircle(c, s * 0.05, _inkFill);
+    canvas.drawCircle(c, s * 0.06, _solid);
   }
 
   void _share(Canvas canvas, Offset c, double s) {
-    final w = s * 0.05;
     final nodes = [Offset(-0.18, -0.2), Offset(0.2, 0.0), Offset(-0.18, 0.2)];
-    for (final n in nodes) {
-      canvas.drawCircle(c + Offset(n.dx * s, n.dy * s), s * 0.065, _fillPaint);
-      canvas.drawCircle(c + Offset(n.dx * s, n.dy * s), s * 0.065, _stroke(w));
-    }
+    _rect(
+      canvas,
+      Rect.fromCenter(
+        center: c + Offset(nodes[0].dx * s, nodes[0].dy * s),
+        width: s * 0.14,
+        height: s * 0.14,
+      ),
+      s * 0.03,
+    );
+    _rect(
+      canvas,
+      Rect.fromCenter(
+        center: c + Offset(nodes[1].dx * s, nodes[1].dy * s),
+        width: s * 0.14,
+        height: s * 0.14,
+      ),
+      s * 0.03,
+    );
+    _rect(
+      canvas,
+      Rect.fromCenter(
+        center: c + Offset(nodes[2].dx * s, nodes[2].dy * s),
+        width: s * 0.14,
+        height: s * 0.14,
+      ),
+      s * 0.03,
+    );
     canvas.drawLine(
       c + Offset(nodes[0].dx * s, nodes[0].dy * s),
       c + Offset(nodes[1].dx * s, nodes[1].dy * s),
-      _stroke(w * 0.85, 0.75),
+      _stroke(s * 0.07),
     );
     canvas.drawLine(
       c + Offset(nodes[2].dx * s, nodes[2].dy * s),
       c + Offset(nodes[1].dx * s, nodes[1].dy * s),
-      _stroke(w * 0.85, 0.75),
+      _stroke(s * 0.07),
     );
   }
 
   void _qr(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     void corner(Offset o) {
-      final r = Rect.fromCenter(center: c + o, width: s * 0.2, height: s * 0.2);
-      canvas.drawRRect(RRect.fromRectAndRadius(r, Radius.circular(s * 0.025)), _stroke(w));
-      canvas.drawRect(
-        Rect.fromCenter(center: c + o, width: s * 0.07, height: s * 0.07),
-        _inkFill,
+      canvas.drawRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: c + o, width: s * 0.22, height: s * 0.22),
+          Radius.circular(s * 0.03),
+        ),
+        _solid,
+      );
+      _rect(
+        canvas,
+        Rect.fromCenter(center: c + o, width: s * 0.1, height: s * 0.1),
+        s * 0.02,
       );
     }
 
@@ -1067,59 +1119,61 @@ class _GlyphPainter extends CustomPainter {
     corner(Offset(s * 0.15, -s * 0.15));
     corner(Offset(-s * 0.15, s * 0.15));
     for (final o in [Offset(0.08, 0.08), Offset(0.18, 0.08), Offset(0.08, 0.18), Offset(0.18, 0.18)]) {
-      canvas.drawRect(
-        Rect.fromCenter(center: c + Offset(o.dx * s, o.dy * s), width: s * 0.06, height: s * 0.06),
-        _inkFill,
+      _rect(
+        canvas,
+        Rect.fromCenter(center: c + Offset(o.dx * s, o.dy * s), width: s * 0.07, height: s * 0.07),
+        s * 0.015,
       );
     }
   }
 
   void _copy(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
-    final back = RRect.fromRectAndRadius(
-      Rect.fromCenter(center: c + Offset(s * 0.06, s * 0.06), width: s * 0.34, height: s * 0.42),
-      Radius.circular(s * 0.04),
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(center: c + Offset(s * 0.06, s * 0.06), width: s * 0.36, height: s * 0.44),
+        Radius.circular(s * 0.05),
+      ),
+      _soft,
     );
-    final front = RRect.fromRectAndRadius(
-      Rect.fromCenter(center: c + Offset(-s * 0.06, -s * 0.06), width: s * 0.34, height: s * 0.42),
-      Radius.circular(s * 0.04),
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(center: c + Offset(-s * 0.06, -s * 0.06), width: s * 0.36, height: s * 0.44),
+        Radius.circular(s * 0.05),
+      ),
+      _solid,
     );
-    canvas.drawRRect(back, _stroke(w, 0.55));
-    canvas.drawRRect(front, _fillPaint);
-    canvas.drawRRect(front, _stroke(w));
   }
 
   void _podium(Canvas canvas, Offset c, double s) {
-    final w = s * 0.045;
     final steps = [
-      (Offset(-0.2, 0.12), 0.26, 0.34),
-      (Offset(0.0, 0.0), 0.26, 0.5),
-      (Offset(0.2, 0.16), 0.26, 0.28),
+      (Offset(-0.2, 0.12), 0.28, 0.34),
+      (Offset(0.0, 0.0), 0.28, 0.52),
+      (Offset(0.2, 0.16), 0.28, 0.3),
     ];
     for (var i = 0; i < steps.length; i++) {
       final (o, ww, h) = steps[i];
-      final r = RRect.fromRectAndRadius(
-        Rect.fromCenter(center: c + Offset(o.dx * s, o.dy * s), width: s * ww, height: s * h),
-        Radius.circular(s * 0.025),
+      canvas.drawRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: c + Offset(o.dx * s, o.dy * s), width: s * ww, height: s * h),
+          Radius.circular(s * 0.03),
+        ),
+        i == 1 ? _solid : _soft,
       );
-      if (i == 1) canvas.drawRRect(r, _fillPaint);
-      canvas.drawRRect(r, _stroke(w, i == 1 ? 1 : 0.7));
     }
   }
 
   void _arrow(Canvas canvas, Offset c, double s, {required bool up}) {
     final dir = up ? -1.0 : 1.0;
     final path = Path()
-      ..moveTo(c.dx, c.dy + dir * s * 0.26)
-      ..lineTo(c.dx - s * 0.16, c.dy + dir * s * 0.02)
-      ..lineTo(c.dx - s * 0.05, c.dy + dir * s * 0.02)
-      ..lineTo(c.dx - s * 0.05, c.dy - dir * s * 0.26)
-      ..lineTo(c.dx + s * 0.05, c.dy - dir * s * 0.26)
-      ..lineTo(c.dx + s * 0.05, c.dy + dir * s * 0.02)
-      ..lineTo(c.dx + s * 0.16, c.dy + dir * s * 0.02)
+      ..moveTo(c.dx, c.dy + dir * s * 0.28)
+      ..lineTo(c.dx - s * 0.18, c.dy + dir * s * 0.04)
+      ..lineTo(c.dx - s * 0.06, c.dy + dir * s * 0.04)
+      ..lineTo(c.dx - s * 0.06, c.dy - dir * s * 0.28)
+      ..lineTo(c.dx + s * 0.06, c.dy - dir * s * 0.28)
+      ..lineTo(c.dx + s * 0.06, c.dy + dir * s * 0.04)
+      ..lineTo(c.dx + s * 0.18, c.dy + dir * s * 0.04)
       ..close();
-    canvas.drawPath(path, _fillPaint);
-    canvas.drawPath(path, _stroke(s * 0.045));
+    canvas.drawPath(path, _solid);
   }
 
   @override

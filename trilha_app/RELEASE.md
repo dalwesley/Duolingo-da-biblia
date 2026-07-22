@@ -1,4 +1,4 @@
-# Release — Trilha App
+# Release — Steway App
 
 ## Build de release (Android)
 
@@ -28,7 +28,7 @@ O AAB estará em `build/app/outputs/bundle/release/`.
 ## Play Store — Teste interno
 
 1. Acesse [Google Play Console](https://play.google.com/console)
-2. Crie o app "Trilha"
+2. Crie o app "Steway"
 3. Envie o AAB em **Teste interno**
 4. Convide testadores por e-mail
 

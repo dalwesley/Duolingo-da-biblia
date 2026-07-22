@@ -1,8 +1,8 @@
-# Trilha monorepo
+# Steway monorepo
 
 Este repositório contém apenas:
 
-- `trilha_app/` — app Flutter
+- `trilha_app/` — app Flutter (Steway)
 - `admin/` — painel admin (Vite + Firebase)
 
 Não há mais app Next.js na raiz. Conteúdo de trilhas é gerenciado no Firebase (`content_trails`) via painel admin.

@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../services/backend_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/league_service.dart';
@@ -24,6 +25,9 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with TickerProviderStateMixin {
+  /// One-shot: força onboarding na próxima abertura após este update.
+  static const _replayOnboardingKey = 'replayOnboarding_2026_07_21';
+
   static const _firstDuration = Duration(milliseconds: 4200);
   static const _returnDuration = Duration(milliseconds: 2100);
 
@@ -115,6 +119,18 @@ class _SplashScreenState extends State<SplashScreen>
         if (saved) await progress.clearLegacyLocalPrefs();
       }());
       unawaited(ContentCatalogService.instance.ensureLoaded());
+
+      final prefs = await SharedPreferences.getInstance();
+      if (!(prefs.getBool(_replayOnboardingKey) ?? false)) {
+        await progress.setHasSeenOnboarding(false);
+        await backend.saveNow(
+          progress,
+          LeagueService.weekKey(),
+          league: league,
+        );
+        await prefs.setBool(_replayOnboardingKey, true);
+      }
+
       next = progress.hasSeenOnboarding
           ? const MainShell()
           : const OnboardingScreen();
@@ -276,13 +292,13 @@ class _SplashScreenState extends State<SplashScreen>
 
                           const SizedBox(height: 36),
 
-                          // TRILHA — herói tipográfico
+                          // STEWAY — herói tipográfico
                           Opacity(
                             opacity: titleV,
                             child: Transform.translate(
                               offset: Offset(0, 20 * (1 - titleV)),
                               child: Text(
-                                'TRILHA',
+                                'STEWAY',
                                 textAlign: TextAlign.center,
                                 style: AppTypography.display(
                                   size: 58,

@@ -11,7 +11,6 @@ class StudyPanel extends StatefulWidget {
   final Color accent;
   final VoidCallback onContinue;
   final String? priorReflection;
-  final String? missionTitle;
   final String? missionIntro;
 
   const StudyPanel({
@@ -20,7 +19,6 @@ class StudyPanel extends StatefulWidget {
     required this.accent,
     required this.onContinue,
     this.priorReflection,
-    this.missionTitle,
     this.missionIntro,
   });
 
@@ -59,7 +57,6 @@ class _StudyPanelState extends State<StudyPanel>
   Widget build(BuildContext context) {
     final study = widget.study;
     final accent = widget.accent;
-    final title = widget.missionTitle?.trim();
     final intro = widget.missionIntro?.trim();
 
     return FadeTransition(
@@ -84,21 +81,8 @@ class _StudyPanelState extends State<StudyPanel>
               color: accent.withValues(alpha: 0.95),
             ),
           ),
-          if (title != null && title.isNotEmpty) ...[
-            const SizedBox(height: 10),
-            Text(
-              title,
-              textAlign: TextAlign.center,
-              style: AppTypography.title(
-                size: 26,
-                weight: FontWeight.w900,
-                color: Colors.white,
-                height: 1.15,
-              ),
-            ),
-          ],
           if (intro != null && intro.isNotEmpty) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpace.sm),
             Text(
               intro,
               textAlign: TextAlign.center,
@@ -109,7 +93,7 @@ class _StudyPanelState extends State<StudyPanel>
               ),
             ),
           ],
-          const SizedBox(height: 22),
+          const SizedBox(height: AppSpace.xxl),
 
           // Passagem
           Container(

@@ -13,6 +13,8 @@ class HeroContinueCard extends StatelessWidget {
   final String trailColor;
   final VoidCallback? onTap;
   final VoidCallback? onExploreTrails;
+  /// Meta diária já cumprida — copy de “continue” em vez de urgência.
+  final bool goalMet;
 
   const HeroContinueCard({
     super.key,
@@ -22,6 +24,7 @@ class HeroContinueCard extends StatelessWidget {
     this.trailColor = '#243F36',
     this.onTap,
     this.onExploreTrails,
+    this.goalMet = false,
   });
 
   @override
@@ -30,6 +33,13 @@ class HeroContinueCard extends StatelessWidget {
     if (mission == null) return _completedState();
 
     final visuals = TrailVisuals.forSlug(trailSlug);
+    final stepLabel = goalMet ? 'Continue à frente' : 'Próximo passo';
+    final ctaLabel = goalMet ? 'Mais um passo' : 'Caminhar';
+    final hook = goalMet
+        ? 'Meta ok · um passo a mais fortalece a caravana'
+        : mission.isBoss
+        ? 'Desafio especial · mais passos na jornada'
+        : null;
 
     return GestureDetector(
       onTap: onTap,
@@ -193,7 +203,7 @@ class HeroContinueCard extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: AppSpace.xl),
-                    const SectionLabel('Próximo passo'),
+                    SectionLabel(stepLabel),
                     const SizedBox(height: AppSpace.sm),
                     Text(
                       mission.title,
@@ -202,10 +212,10 @@ class HeroContinueCard extends StatelessWidget {
                         height: 1.12,
                       ),
                     ),
-                    if (mission.isBoss) ...[
+                    if (hook != null) ...[
                       const SizedBox(height: AppSpace.sm),
                       Text(
-                        'Desafio especial · mais passos na jornada',
+                        hook,
                         style: AppTypography.body(
                           size: 13,
                           color: Colors.white.withValues(alpha: 0.68),
@@ -216,9 +226,9 @@ class HeroContinueCard extends StatelessWidget {
                     const SizedBox(height: AppSpace.xxl),
                     Row(
                       children: [
-                        const Expanded(
+                        Expanded(
                           child: CopperCta(
-                            label: 'Caminhar',
+                            label: ctaLabel,
                             onTap: null,
                           ),
                         ),

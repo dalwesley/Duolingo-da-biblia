@@ -16,12 +16,11 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/layout_utils.dart';
-import '../utils/spiritual_growth.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/ui_primitives.dart';
-import '../widgets/user_avatar.dart';
 import 'login_screen.dart';
+import 'onboarding_screen.dart';
 
 const _genesisTrailSlug = 'genesis-1-11';
 
@@ -98,9 +97,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final sync = context.watch<SyncService>();
-    final backend = context.watch<BackendService>();
     final a = Appearance.of(context);
-    final growth = SpiritualGrowth.fromStreak(progress.streak);
 
     if (!_nameInitialized) {
       _nameInitialized = true;
@@ -124,15 +121,13 @@ class _SettingsScreenState extends State<SettingsScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.afterTopBar),
         ],
 
         _reveal(
           0,
           _ProfileHeader(
             progress: progress,
-            backend: backend,
-            growth: growth,
             a: a,
             nameController: _nameController,
             nameDirty: _nameDirty,
@@ -151,11 +146,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                 const CardHeader(label: 'Seu caminho'),
                 const SizedBox(height: AppSpace.md),
                 _fieldLabel(a, 'Ritmo diário'),
-                const SizedBox(height: 10),
+                const SizedBox(height: AppSpace.sm),
                 _dailyGoalPicker(progress, a),
                 _SettingsDivider(a),
                 _fieldLabel(a, 'Dificuldade · Gênesis 1–11'),
-                const SizedBox(height: 10),
+                const SizedBox(height: AppSpace.sm),
                 _difficultyPicker(progress, a),
               ],
             ),
@@ -173,11 +168,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                 const CardHeader(label: 'Experiência'),
                 const SizedBox(height: AppSpace.md),
                 _fieldLabel(a, 'Aparência'),
-                const SizedBox(height: 10),
+                const SizedBox(height: AppSpace.sm),
                 _themeGrid(progress, a),
                 _SettingsDivider(a),
                 _fieldLabel(a, 'Tamanho do texto'),
-                const SizedBox(height: 10),
+                const SizedBox(height: AppSpace.sm),
                 _fontScalePicker(progress, a),
                 _SettingsDivider(a),
                 _toggle(
@@ -270,7 +265,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                   ),
                 ],
-                const SizedBox(height: 14),
+                const SizedBox(height: AppSpace.md),
                 Row(
                   children: [
                     Expanded(
@@ -280,7 +275,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         onTap: () => _exportProgress(progress, sync),
                       ),
                     ),
-                    const SizedBox(width: 10),
+                    const SizedBox(width: AppSpace.sm),
                     Expanded(
                       child: _GhostAction(
                         label: 'Importar',
@@ -313,7 +308,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     color: a.textMuted(0.78),
                   ),
                 ),
-                const SizedBox(height: 14),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   'Traduções bíblicas',
                   style: AppTypography.label(
@@ -322,11 +317,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                     letterSpacing: 1.1,
                   ),
                 ),
-                const SizedBox(height: 8),
+                const SizedBox(height: AppSpace.sm),
                 for (final t in BibleService.catalog.where((t) => t.available))
                   if (t.attribution != null) ...[
                     Padding(
-                      padding: const EdgeInsets.only(bottom: 6),
+                      padding: const EdgeInsets.only(bottom: AppSpace.xs),
                       child: Text(
                         '${t.shortName} — ${t.attribution}',
                         style: AppTypography.body(
@@ -337,7 +332,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       ),
                     ),
                   ],
-                const SizedBox(height: 12),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   'Estudo (Strong)',
                   style: AppTypography.label(
@@ -346,7 +341,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     letterSpacing: 1.1,
                   ),
                 ),
-                const SizedBox(height: 6),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   BibleStudyService.attribution,
                   style: AppTypography.body(
@@ -374,12 +369,39 @@ class _SettingsScreenState extends State<SettingsScreen>
                 ),
               ),
               if (!_confirmReset)
-                _GhostAction(
-                  label: 'Resetar progresso',
-                  glyph: CinematicGlyph.fall,
-                  danger: true,
-                  expanded: true,
-                  onTap: () => setState(() => _confirmReset = true),
+                Column(
+                  children: [
+                    _GhostAction(
+                      label: 'Rever introdução',
+                      glyph: CinematicGlyph.path,
+                      expanded: true,
+                      onTap: () async {
+                        final backend = context.read<BackendService>();
+                        final league = context.read<LeagueService>();
+                        await progress.setHasSeenOnboarding(false);
+                        await backend.saveNow(
+                          progress,
+                          LeagueService.weekKey(),
+                          league: league,
+                        );
+                        if (!mounted) return;
+                        await Navigator.of(context).pushAndRemoveUntil(
+                          MaterialPageRoute<void>(
+                            builder: (_) => const OnboardingScreen(),
+                          ),
+                          (_) => false,
+                        );
+                      },
+                    ),
+                    const SizedBox(height: AppSpace.sm),
+                    _GhostAction(
+                      label: 'Resetar progresso',
+                      glyph: CinematicGlyph.fall,
+                      danger: true,
+                      expanded: true,
+                      onTap: () => setState(() => _confirmReset = true),
+                    ),
+                  ],
                 )
               else
                 GlassCard(
@@ -387,7 +409,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   child: Column(
                     children: [
                       Text(
-                        'Tem certeza? Todos os passos, dias caminhando e progresso serão apagados.',
+                        'Tem certeza? Todos os passos, dias caminhando e progresso serão apagados. A introdução volta a aparecer.',
                         style: AppTypography.body(
                           size: 13,
                           weight: FontWeight.w700,
@@ -395,7 +417,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                           height: 1.35,
                         ),
                       ),
-                      const SizedBox(height: 12),
+                      const SizedBox(height: AppSpace.md),
                       Row(
                         children: [
                           Expanded(
@@ -405,7 +427,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                                   setState(() => _confirmReset = false),
                             ),
                           ),
-                          const SizedBox(width: 8),
+                          const SizedBox(width: AppSpace.sm),
                           Expanded(
                             child: FilledButton(
                               onPressed: () async {
@@ -419,6 +441,12 @@ class _SettingsScreenState extends State<SettingsScreen>
                                 );
                                 if (!mounted) return;
                                 setState(() => _confirmReset = false);
+                                await Navigator.of(context).pushAndRemoveUntil(
+                                  MaterialPageRoute<void>(
+                                    builder: (_) => const OnboardingScreen(),
+                                  ),
+                                  (_) => false,
+                                );
                               },
                               style: FilledButton.styleFrom(
                                 backgroundColor: AppColors.error,
@@ -752,7 +780,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           ),
         ],
         if (google) ...[
-          const SizedBox(height: 12),
+          const SizedBox(height: AppSpace.md),
           _GhostAction(
             label: 'Sair da conta',
             glyph: CinematicGlyph.lock,
@@ -761,7 +789,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           ),
         ],
         if (backend.isActive && backend.lastCloudSaveAt != null) ...[
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.sm),
           Text(
             'Última sync · ${_shortDate(backend.lastCloudSaveAt!)}',
             style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
@@ -801,7 +829,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final league = context.read<LeagueService>();
     final json = sync.exportJson(progress, league: league);
     await SharePlus.instance.share(
-      ShareParams(text: json, subject: 'Backup Trilha'),
+      ShareParams(text: json, subject: 'Backup Steway'),
     );
     await sync.markSynced();
   }
@@ -1112,8 +1140,6 @@ class _GhostAction extends StatelessWidget {
 
 class _ProfileHeader extends StatelessWidget {
   final ProgressService progress;
-  final BackendService backend;
-  final SpiritualGrowth growth;
   final AppearanceStyle a;
   final TextEditingController nameController;
   final bool nameDirty;
@@ -1121,8 +1147,6 @@ class _ProfileHeader extends StatelessWidget {
 
   const _ProfileHeader({
     required this.progress,
-    required this.backend,
-    required this.growth,
     required this.a,
     required this.nameController,
     required this.nameDirty,
@@ -1136,68 +1160,6 @@ class _ProfileHeader extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            UserAvatar(
-              photoUrl: backend.userPhotoUrl,
-              name: progress.userName,
-              radius: 30,
-            ),
-            const SizedBox(width: AppSpace.md),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    progress.userName,
-                    style: AppTypography.display(
-                      size: 26,
-                      weight: FontWeight.w700,
-                      color: a.text,
-                      height: 1.05,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    growth.title,
-                    style: AppTypography.label(
-                      size: 11,
-                      letterSpacing: 0.8,
-                      color: AppColors.accent.withValues(alpha: 0.9),
-                    ),
-                  ),
-                  if (backend.userEmail != null) ...[
-                    const SizedBox(height: 4),
-                    Text(
-                      backend.userEmail!,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.6),
-                      ),
-                    ),
-                  ],
-                ],
-              ),
-            ),
-            CinematicIcon(
-              glyph: switch (growth.stage) {
-                GrowthStage.seed => CinematicGlyph.seed,
-                GrowthStage.sprout => CinematicGlyph.tree,
-                GrowthStage.sapling => CinematicGlyph.tree,
-                GrowthStage.olive => CinematicGlyph.tree,
-                GrowthStage.lamp => CinematicGlyph.lamp,
-              },
-              size: 40,
-              accent: growth.stage == GrowthStage.lamp
-                  ? AppColors.accent
-                  : AppColors.primaryLight,
-              glowing: false,
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.md),
         Row(
           children: [
             Expanded(

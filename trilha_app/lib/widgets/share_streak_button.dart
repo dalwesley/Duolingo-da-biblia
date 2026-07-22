@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
-import 'cinematic_icon.dart';
+import '../utils/appearance.dart';
 
-/// Compartilhar dias caminhando — encorajamento, não ostentação.
+/// Compartilhar a caminhada — funciona mesmo com streak 0.
 class ShareStreakButton extends StatelessWidget {
   final int streak;
   final String userName;
@@ -21,45 +21,62 @@ class ShareStreakButton extends StatelessWidget {
 
   Future<void> _share() async {
     HapticFeedback.lightImpact();
-    final days = streak == 1 ? '1 dia' : '$streak dias';
     final name = userName.trim().isEmpty ? '' : '\n— $userName';
-    final text = '''
-👣 Minha caminhada no Trilha: $days!
+    final String body;
+    if (streak > 0) {
+      final days = streak == 1 ? '1 dia' : '$streak dias';
+      body = '''
+👣 Minha caminhada no Steway: $days!
 
 Estou caminhando na Palavra — $steps passos até agora.$name
 
-Baixe o Trilha e caminhe comigo. 📖✨
-'''
-        .trim();
+Baixe o Steway e caminhe comigo. 📖✨
+''';
+    } else if (steps > 0) {
+      body = '''
+👣 Estou caminhando na Palavra no Steway — $steps passos até agora.$name
+
+Baixe o Steway e caminhe comigo. 📖✨
+''';
+    } else {
+      body = '''
+👣 Estou começando a caminhar na Palavra com o Steway.$name
+
+Baixe o Steway e caminhe comigo. 📖✨
+''';
+    }
     await SharePlus.instance.share(
-      ShareParams(text: text, subject: 'Minha caminhada no Trilha'),
+      ShareParams(text: body.trim(), subject: 'Minha caminhada no Steway'),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     if (compact) {
-      return SizedBox(
-        width: 34,
-        height: 34,
-        child: IconButton(
-          onPressed: streak > 0 ? _share : null,
-          tooltip: 'Compartilhar caminhada',
-          padding: EdgeInsets.zero,
-          constraints: const BoxConstraints.tightFor(width: 34, height: 34),
-          visualDensity: VisualDensity.compact,
-          icon: CinematicIcon(
-            glyph: CinematicGlyph.share,
-            size: 20,
-            accent: streak > 0 ? AppColors.accent : Colors.white38,
-            framed: false,
+      final a = Appearance.of(context);
+      return Tooltip(
+        message: 'Compartilhar caminhada',
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: _share,
+            borderRadius: BorderRadius.circular(AppRadii.sm),
+            child: SizedBox(
+              width: 36,
+              height: 36,
+              child: Icon(
+                Icons.ios_share_rounded,
+                size: 18,
+                color: a.text.withValues(alpha: 0.72),
+              ),
+            ),
           ),
         ),
       );
     }
 
     return GestureDetector(
-      onTap: streak > 0 ? _share : null,
+      onTap: _share,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
@@ -70,11 +87,10 @@ Baixe o Trilha e caminhe comigo. 📖✨
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.share,
+            const Icon(
+              Icons.ios_share_rounded,
               size: 16,
-              accent: AppColors.streak.withValues(alpha: streak > 0 ? 1 : 0.4),
-              framed: false,
+              color: AppColors.streak,
             ),
             const SizedBox(width: AppSpace.sm),
             Text(
@@ -82,7 +98,7 @@ Baixe o Trilha e caminhe comigo. 📖✨
               style: AppTypography.title(
                 size: 12,
                 weight: FontWeight.w800,
-                color: Colors.white.withValues(alpha: streak > 0 ? 0.9 : 0.4),
+                color: Colors.white.withValues(alpha: 0.9),
               ),
             ),
           ],

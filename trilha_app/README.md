@@ -1,4 +1,4 @@
-# Trilha App (Flutter)
+# Steway App (Flutter)
 
 App nativo para iOS e Android — aprenda a Bíblia em missões gamificadas.
 

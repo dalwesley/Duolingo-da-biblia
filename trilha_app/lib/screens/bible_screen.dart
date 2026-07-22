@@ -132,10 +132,28 @@ class _BibleScreenState extends State<BibleScreen> {
     );
   }
 
+  /// Root da aba / rota empurrada — nunca fica sem chrome.
+  Widget _rootTopBar() {
+    if (widget.topBar != null) return widget.topBar!;
+    final appearance = Appearance.of(context);
+    final nav = Navigator.of(context);
+    return TopBar(
+      inline: true,
+      immersive: true,
+      dark: appearance.onDark,
+      title: 'Bíblia',
+      subtitle: 'A Palavra, offline',
+      leadingGlyph: CinematicGlyph.book,
+      onBack: nav.canPop() ? () => nav.pop() : null,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    final translationId =
-        context.watch<ProgressService>().settings.bibleTranslationId;
+    final translationId = context
+        .watch<ProgressService>()
+        .settings
+        .bibleTranslationId;
     _ensureTranslation(translationId);
 
     final books = _books;
@@ -171,7 +189,7 @@ class _BibleScreenState extends State<BibleScreen> {
 
     if (_bookIndex == null) {
       return _BookPicker(
-        topBar: widget.topBar,
+        topBar: _rootTopBar(),
         books: books,
         onPick: (i) => setState(() => _bookIndex = i),
         onSearch: () => setState(() => _searching = true),
@@ -214,13 +232,13 @@ class _BibleScreenState extends State<BibleScreen> {
 }
 
 class _BookPicker extends StatelessWidget {
-  final Widget? topBar;
+  final Widget topBar;
   final List<BibleBook> books;
   final ValueChanged<int> onPick;
   final VoidCallback onSearch;
 
   const _BookPicker({
-    this.topBar,
+    required this.topBar,
     required this.books,
     required this.onPick,
     required this.onSearch,
@@ -231,47 +249,13 @@ class _BookPicker extends StatelessWidget {
     return ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.screen,
-        topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
         AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[
-          topBar!,
-          const SizedBox(height: AppSpace.md),
-        ] else ...[
-          Column(
-            children: [
-              Text(
-                'BÍBLIA',
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 2,
-                  color: AppColors.accent.withValues(alpha: 0.9),
-                ),
-              ),
-              const SizedBox(height: AppSpace.sm),
-              Text(
-                'Bíblia Sagrada',
-                style: AppTypography.display(
-                  size: 32,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: AppSpace.xs),
-              Text(
-                BibleService.translationName,
-                style: AppTypography.body(
-                  size: 12,
-                  color: Colors.white.withValues(alpha: 0.55),
-                ).copyWith(fontStyle: FontStyle.italic),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-        ],
+        topBar,
+        const SizedBox(height: AppSpace.afterTopBar),
         Material(
           color: Colors.transparent,
           child: InkWell(
@@ -285,9 +269,7 @@ class _BookPicker extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Appearance.of(context).cardFillSoft,
                 borderRadius: BorderRadius.circular(AppRadii.lg),
-                border: Border.all(
-                  color: Appearance.of(context).cardBorder,
-                ),
+                border: Border.all(color: Appearance.of(context).cardBorder),
               ),
               child: Row(
                 children: [
@@ -315,14 +297,14 @@ class _BookPicker extends StatelessWidget {
         ),
         const SizedBox(height: AppSpace.sm),
         const _TranslationPicker(),
-        const SizedBox(height: AppSpace.xl),
+        const SizedBox(height: AppSpace.section),
         _TestamentSection(
           title: 'ANTIGO TESTAMENTO',
           books: books.take(BibleService.oldTestamentCount).toList(),
           offset: 0,
           onPick: onPick,
         ),
-        const SizedBox(height: AppSpace.xl),
+        const SizedBox(height: AppSpace.section),
         _TestamentSection(
           title: 'NOVO TESTAMENTO',
           books: books.skip(BibleService.oldTestamentCount).toList(),
@@ -436,7 +418,9 @@ class _TranslationPicker extends StatelessWidget {
                                             alpha: 0.16,
                                           )
                                         : Colors.white.withValues(alpha: 0.06),
-                                    borderRadius: BorderRadius.circular(AppRadii.sm),
+                                    borderRadius: BorderRadius.circular(
+                                      AppRadii.sm,
+                                    ),
                                   ),
                                   child: Text(
                                     t.shortName,
@@ -527,9 +511,7 @@ class _TranslationPicker extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
-    final translation = BibleService.byId(
-      progress.settings.bibleTranslationId,
-    );
+    final translation = BibleService.byId(progress.settings.bibleTranslationId);
 
     return GlassCard(
       onTap: () => _open(context),
@@ -539,10 +521,7 @@ class _TranslationPicker extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SoftBadge(
-            text: translation.shortName,
-            accent: AppColors.accent,
-          ),
+          SoftBadge(text: translation.shortName, accent: AppColors.accent),
           const SizedBox(width: AppSpace.sm),
           Expanded(
             child: Column(
@@ -550,27 +529,17 @@ class _TranslationPicker extends StatelessWidget {
               children: [
                 Text(
                   translation.name,
-                  style: AppTypography.title(
-                    size: 14,
-                    color: a.text,
-                  ),
+                  style: AppTypography.title(size: 14, color: a.text),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   translation.blurb,
-                  style: AppTypography.body(
-                    size: 11,
-                    color: a.textMuted(0.55),
-                  ),
+                  style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
                 ),
               ],
             ),
           ),
-          Icon(
-            Icons.expand_more_rounded,
-            color: a.textMuted(0.45),
-            size: 22,
-          ),
+          Icon(Icons.expand_more_rounded, color: a.textMuted(0.45), size: 22),
         ],
       ),
     );
@@ -608,7 +577,10 @@ class _SearchPane extends StatelessWidget {
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.lg)],
+        if (topBar != null) ...[
+          topBar!,
+          const SizedBox(height: AppSpace.afterTopBar),
+        ],
         TextField(
           controller: controller,
           autofocus: true,
@@ -636,15 +608,11 @@ class _SearchPane extends StatelessWidget {
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: BorderSide(
-                color: Appearance.of(context).cardBorder,
-              ),
+              borderSide: BorderSide(color: Appearance.of(context).cardBorder),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: BorderSide(
-                color: Appearance.of(context).cardBorder,
-              ),
+              borderSide: BorderSide(color: Appearance.of(context).cardBorder),
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.lg),
@@ -753,12 +721,7 @@ class _TestamentSection extends StatelessWidget {
               ),
             ),
             const SizedBox(width: AppSpace.sm),
-            Expanded(
-              child: SectionLabel(
-                title,
-                color: a.sectionLabel,
-              ),
-            ),
+            Expanded(child: SectionLabel(title, color: a.sectionLabel)),
             Text(
               '${books.length}',
               style: AppTypography.body(
@@ -920,7 +883,10 @@ class _ChapterPicker extends StatelessWidget {
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.md)],
+        if (topBar != null) ...[
+          topBar!,
+          const SizedBox(height: AppSpace.afterTopBar),
+        ],
         if (topBar == null) ...[
           Center(
             child: Text(
@@ -945,7 +911,7 @@ class _ChapterPicker extends StatelessWidget {
             trackColor: Colors.white.withValues(alpha: 0.08),
           ),
         ],
-        const SizedBox(height: AppSpace.xl),
+        const SizedBox(height: AppSpace.section),
         Wrap(
           spacing: AppSpace.sm,
           runSpacing: AppSpace.sm,
@@ -1032,9 +998,7 @@ class BibleReaderView extends StatelessWidget {
     final next = (progress.settings.fontScale + delta).clamp(0.85, 1.35);
     if (next == progress.settings.fontScale) return;
     HapticFeedback.selectionClick();
-    await progress.updateSettings(
-      progress.settings.copyWith(fontScale: next),
-    );
+    await progress.updateSettings(progress.settings.copyWith(fontScale: next));
   }
 
   Future<void> _verseActions(
@@ -1180,7 +1144,9 @@ class BibleReaderView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final fontScale = context.select((ProgressService p) => p.settings.fontScale);
+    final fontScale = context.select(
+      (ProgressService p) => p.settings.fontScale,
+    );
     final alreadyRead = context.select(
       (ProgressService p) => p.hasReadBibleChapter(book.abbrev, chapter),
     );
@@ -1202,7 +1168,10 @@ class BibleReaderView extends StatelessWidget {
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[topBar!, const SizedBox(height: AppSpace.md)],
+        if (topBar != null) ...[
+          topBar!,
+          const SizedBox(height: AppSpace.afterTopBar),
+        ],
         // Página de leitura — contraste adaptado ao horário.
         Container(
           decoration: BoxDecoration(
@@ -1211,7 +1180,9 @@ class BibleReaderView extends StatelessWidget {
             border: Border.all(color: reading.pageBorder),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: reading.isDay ? 0.12 : 0.35),
+                color: Colors.black.withValues(
+                  alpha: reading.isDay ? 0.12 : 0.35,
+                ),
                 blurRadius: 24,
                 offset: const Offset(0, 10),
               ),
@@ -1287,8 +1258,7 @@ class BibleReaderView extends StatelessWidget {
                       chapter,
                       n,
                     );
-                    final saved =
-                        '|$chapterBmSig|'.contains('|$bmKey|');
+                    final saved = '|$chapterBmSig|'.contains('|$bmKey|');
                     return Material(
                       color: Colors.transparent,
                       child: InkWell(
@@ -1327,19 +1297,21 @@ class BibleReaderView extends StatelessWidget {
                           decoration: hl
                               ? BoxDecoration(
                                   color: reading.highlightFill,
-                                  borderRadius:
-                                      BorderRadius.circular(AppRadii.sm),
+                                  borderRadius: BorderRadius.circular(
+                                    AppRadii.sm,
+                                  ),
                                   border: Border.all(
                                     color: reading.highlightBorder,
                                   ),
                                 )
                               : saved
-                                  ? BoxDecoration(
-                                      color: reading.savedFill,
-                                      borderRadius:
-                                          BorderRadius.circular(AppRadii.sm),
-                                    )
-                                  : null,
+                              ? BoxDecoration(
+                                  color: reading.savedFill,
+                                  borderRadius: BorderRadius.circular(
+                                    AppRadii.sm,
+                                  ),
+                                )
+                              : null,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -1515,11 +1487,7 @@ class _NavChip extends StatelessWidget {
   final VoidCallback onTap;
   final BibleReadingStyle? reading;
 
-  const _NavChip({
-    required this.label,
-    required this.onTap,
-    this.reading,
-  });
+  const _NavChip({required this.label, required this.onTap, this.reading});
 
   @override
   Widget build(BuildContext context) {
@@ -1539,10 +1507,7 @@ class _NavChip extends StatelessWidget {
           border: Border.all(color: border),
         ),
         child: Center(
-          child: Text(
-            label,
-            style: AppTypography.title(size: 13, color: ink),
-          ),
+          child: Text(label, style: AppTypography.title(size: 13, color: ink)),
         ),
       ),
     );

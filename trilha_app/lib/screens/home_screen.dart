@@ -9,6 +9,7 @@ import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
+import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
@@ -17,6 +18,7 @@ import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_risk_banner.dart';
 import '../widgets/streak_week.dart';
+import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
@@ -67,6 +69,75 @@ class _HomeScreenState extends State<HomeScreen>
   Future<void> _load() async {
     final trails = await widget.repo.getTrails();
     if (mounted) setState(() => _trails = trails);
+  }
+
+  void _openBible([String? reference]) {
+    final mode = context.read<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (ctx) => Appearance(
+          mode: mode,
+          style: appearance,
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            body: ImmersiveBackground(
+              appearance: appearance,
+              child: reference == null || reference.isEmpty
+                  ? BibleScreen(
+                      topBar: TopBar(
+                        inline: true,
+                        immersive: true,
+                        dark: appearance.onDark,
+                        title: 'Bíblia',
+                        subtitle: 'A Palavra, offline',
+                        leadingGlyph: CinematicGlyph.book,
+                        onBack: () => Navigator.pop(ctx),
+                      ),
+                    )
+                  : BibleReaderScreen(reference: reference),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  void _openMemory() {
+    Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const MemoryScreen()));
+  }
+
+  /// Quests → ação certa (missão, Bíblia, memorizar).
+  void _onQuestTap(DailyQuest quest, {String? missionSlug}) {
+    switch (quest.id) {
+      case 'mission':
+      case 'accuracy':
+      case 'perfect':
+        if (missionSlug != null) {
+          widget.onOpenMission(missionSlug);
+        } else {
+          widget.onOpenTrilhas();
+        }
+        return;
+      case 'read':
+      case 'bookmark':
+        _openBible();
+        return;
+      case 'seasonal':
+        _openBible(LiturgicalCalendar.momentFor().focusRef);
+        return;
+      case 'memory':
+        _openMemory();
+        return;
+      default:
+        if (missionSlug != null) {
+          widget.onOpenMission(missionSlug);
+        } else {
+          widget.onOpenTrilhas();
+        }
+    }
   }
 
   Widget _reveal(int index, Widget child) {
@@ -126,7 +197,7 @@ class _HomeScreenState extends State<HomeScreen>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.afterTopBar),
         ],
         // Duolingo: status do dia primeiro (streak/meta), depois o CTA.
         if (progress.showStreakRiskBanner) ...[
@@ -153,6 +224,7 @@ class _HomeScreenState extends State<HomeScreen>
             userName: progress.userName,
             steps: progress.steps,
             atRisk: progress.isStreakAtRisk,
+            questsLeft: DailyQuestDefs.all.length - progress.questsCompletedToday,
           ),
         ),
         const SizedBox(height: AppSpace.section),
@@ -167,14 +239,24 @@ class _HomeScreenState extends State<HomeScreen>
                 ? () => widget.onOpenMission(current.slug)
                 : null,
             onExploreTrails: widget.onOpenTrilhas,
+            goalMet: goalMet,
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        _reveal(2, const DailyQuestsCard()),
-        if (active != null && prog != null) ...[
+        _reveal(
+          2,
+          DailyQuestsCard(
+            onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
+          ),
+        ),
+        if (progress.mistakeQuestionIds.isNotEmpty) ...[
+          const SizedBox(height: AppSpace.section),
+          _reveal(3, const _RevisitPracticeLink()),
+        ],
+        if (active != null && prog != null && goalMet) ...[
           const SizedBox(height: AppSpace.section),
           _reveal(
-            3,
+            4,
             _ActiveTrailLine(
               trail: active,
               done: prog.done,
@@ -183,21 +265,13 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ),
         ],
-        const SizedBox(height: AppSpace.section),
-        _reveal(4, const _MemoryPracticeLinks()),
         if (LiturgicalCalendar.isHighSeason) ...[
           const SizedBox(height: AppSpace.section),
           _reveal(
             5,
             LiturgicalBanner(
               onOpenBible: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => BibleReaderScreen(
-                      reference: LiturgicalCalendar.momentFor().focusRef,
-                    ),
-                  ),
-                );
+                _openBible(LiturgicalCalendar.momentFor().focusRef);
               },
             ),
           ),
@@ -207,69 +281,20 @@ class _HomeScreenState extends State<HomeScreen>
   }
 }
 
-/// Atalhos compactos — prática secundária, sem roubar o CTA.
-class _MemoryPracticeLinks extends StatelessWidget {
-  const _MemoryPracticeLinks();
+/// Só revisitar erros — Memorizar já tem card de quest.
+class _RevisitPracticeLink extends StatelessWidget {
+  const _RevisitPracticeLink();
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final hasPractice = progress.mistakeQuestionIds.isNotEmpty;
-
-    return Row(
-      children: [
-        Expanded(
-          child: _MiniPracticeChip(
-            title: 'Memorizar',
-            subtitle: progress.memoryMastered.isEmpty
-                ? 'No coração'
-                : '${progress.memoryMastered.length} firmes',
-            glyph: CinematicGlyph.scroll,
-            accent: AppColors.accent,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const MemoryScreen()),
-            ),
-          ),
-        ),
-        if (hasPractice) ...[
-          const SizedBox(width: AppSpace.sm + 2),
-          Expanded(
-            child: _MiniPracticeChip(
-              title: 'Revisitar',
-              subtitle: '${progress.mistakeQuestionIds.length} para reforçar',
-              glyph: CinematicGlyph.echo,
-              accent: AppColors.error,
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const PracticeScreen()),
-              ),
-            ),
-          ),
-        ],
-      ],
-    );
-  }
-}
-
-class _MiniPracticeChip extends StatelessWidget {
-  final String title;
-  final String subtitle;
-  final CinematicGlyph glyph;
-  final Color accent;
-  final VoidCallback onTap;
-
-  const _MiniPracticeChip({
-    required this.title,
-    required this.subtitle,
-    required this.glyph,
-    required this.accent,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final n = progress.mistakeQuestionIds.length;
+
     return GlassCard(
-      onTap: onTap,
+      onTap: () => Navigator.of(
+        context,
+      ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
       padding: const EdgeInsets.symmetric(
         horizontal: AppSpace.md,
         vertical: AppSpace.md,
@@ -277,9 +302,9 @@ class _MiniPracticeChip extends StatelessWidget {
       child: Row(
         children: [
           CinematicIcon(
-            glyph: glyph,
+            glyph: CinematicGlyph.echo,
             size: AppMetrics.leadingIcon,
-            accent: accent,
+            accent: AppColors.error,
             glowing: false,
           ),
           const SizedBox(width: AppSpace.sm + 2),
@@ -288,20 +313,22 @@ class _MiniPracticeChip extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  title,
+                  'Revisitar',
                   style: AppTypography.title(size: 13, color: a.text),
                 ),
                 Text(
-                  subtitle,
+                  '$n para reforçar',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(
-                    size: 11,
-                    color: a.textMuted(0.55),
-                  ),
+                  style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
                 ),
               ],
             ),
+          ),
+          Icon(
+            Icons.chevron_right_rounded,
+            size: 20,
+            color: a.textMuted(0.45),
           ),
         ],
       ),
@@ -321,6 +348,7 @@ class _DayPulse extends StatelessWidget {
   final String userName;
   final int steps;
   final bool atRisk;
+  final int questsLeft;
 
   const _DayPulse({
     required this.missionsToday,
@@ -333,6 +361,7 @@ class _DayPulse extends StatelessWidget {
     required this.userName,
     required this.steps,
     required this.atRisk,
+    this.questsLeft = 0,
   });
 
   @override
@@ -342,21 +371,35 @@ class _DayPulse extends StatelessWidget {
     final title = goalMet
         ? 'Meta de hoje cumprida'
         : atRisk
-            ? 'Salve sua sequência'
-            : playedToday
-                ? 'Meta de hoje'
-                : returningAfterGap
-                    ? 'Sua caminhada continua'
-                    : 'Meta de hoje';
-    final detail = goalMet
-        ? null
-        : atRisk
-            ? 'Faltam ${progress.streakRiskCountdown} · um passo basta'
-            : playedToday
-                ? '$missionsToday de $goal'
-                : returningAfterGap
-                    ? 'Um passo basta para reacender a chama'
-                    : 'Ainda sem passo hoje · meta $goal';
+        ? 'Alcance a caravana'
+        : playedToday
+        ? 'Meta de hoje'
+        : returningAfterGap
+        ? 'Sua caminhada continua'
+        : 'Meta de hoje';
+    final String detail;
+    if (goalMet) {
+      if (questsLeft > 0) {
+        detail = questsLeft == 1
+            ? 'Ainda há 1 missão diária · passos extras abaixo'
+            : 'Ainda há $questsLeft missões diárias · passos extras abaixo';
+      } else if (streak > 0) {
+        detail = streak == 1
+            ? 'Amanhã a caravana segue · 1 dia protegido'
+            : 'Amanhã a caravana segue · $streak dias protegidos';
+      } else {
+        detail = 'Amanhã um passo recomeça a caminhada';
+      }
+    } else if (atRisk) {
+      detail =
+          'Faltam ${progress.streakRiskCountdown} · um passo e você alcança';
+    } else if (playedToday) {
+      detail = '$missionsToday de $goal';
+    } else if (returningAfterGap) {
+      detail = 'Um passo basta para reacender a chama';
+    } else {
+      detail = 'Ainda sem passo hoje · meta $goal';
+    }
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -374,23 +417,23 @@ class _DayPulse extends StatelessWidget {
                       style: AppTypography.body(
                         size: 13,
                         weight: FontWeight.w800,
-                        color: atRisk
+                        color: goalMet
+                            ? AppColors.teal
+                            : atRisk
                             ? AppColors.streak
                             : a.text.withValues(alpha: 0.92),
                         height: 1.25,
                       ),
                     ),
-                    if (detail != null) ...[
-                      Text(
-                        detail,
-                        style: AppTypography.body(
-                          size: 12,
-                          weight: FontWeight.w600,
-                          color: a.textMuted(0.55),
-                          height: 1.3,
-                        ),
+                    Text(
+                      detail,
+                      style: AppTypography.body(
+                        size: 12,
+                        weight: FontWeight.w600,
+                        color: a.textMuted(0.55),
+                        height: 1.3,
                       ),
-                    ],
+                    ),
                   ],
                 ),
               ),
@@ -443,6 +486,7 @@ class _DayPulse extends StatelessWidget {
   }
 }
 
+/// Mapa da trilha — só após a meta (não compete com Caminhar).
 class _ActiveTrailLine extends StatelessWidget {
   final Trail trail;
   final int done;
@@ -459,50 +503,39 @@ class _ActiveTrailLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final visuals = TrailVisuals.forTrail(trail);
-    final pct = total > 0 ? done / total : 0.0;
     final a = Appearance.of(context);
 
     return GlassCard(
       onTap: onTap,
-      padding: AppMetrics.cardPadding,
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.md,
+        vertical: AppSpace.md,
+      ),
       child: Row(
         children: [
           CinematicIcon(
             glyph: CinematicGlyphResolver.forTrail(trail.slug),
-            size: 40,
+            size: AppMetrics.leadingIcon,
             accent: visuals.accent,
             glowing: false,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 10),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  trail.title,
-                  style: AppTypography.display(
-                    size: 18,
-                    color: a.text,
-                  ),
-                ),
-                const SizedBox(height: 6),
-                AppProgressBar(value: pct, color: visuals.glow),
-                const SizedBox(height: AppSpace.xs),
-                Text(
-                  'Abrir mapa · $done/$total missões',
-                  style: AppTypography.body(
-                    size: 11,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
-              ],
+            child: Text(
+              'Mapa · ${trail.title} · $done/$total',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w700,
+                color: a.text.withValues(alpha: 0.88),
+              ),
             ),
           ),
-          CinematicIcon(
-            glyph: CinematicGlyph.path,
+          Icon(
+            Icons.chevron_right_rounded,
             size: 20,
-            accent: visuals.accent.withValues(alpha: 0.8),
-            framed: false,
+            color: a.textMuted(0.45),
           ),
         ],
       ),
@@ -555,7 +588,7 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
       children: [
         if (widget.topBar != null) ...[
           widget.topBar!,
-          const SizedBox(height: AppSpace.section),
+          const SizedBox(height: AppSpace.afterTopBar),
         ],
         _ShimmerBox(controller: _shimmer, height: 88),
         const SizedBox(height: AppSpace.section),

@@ -9,7 +9,7 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Banner de risco — sequência em perigo até a meia-noite.
+/// Banner — o peregrino ficou para trás da caravana até a meia-noite.
 class StreakRiskBanner extends StatefulWidget {
   final VoidCallback? onContinue;
 
@@ -42,7 +42,6 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
     if (!progress.showStreakRiskBanner) return const SizedBox.shrink();
 
     final a = Appearance.of(context);
-    final streak = progress.streak;
     final countdown = progress.streakRiskCountdown;
     final freeze = progress.hasStreakFreeze;
 
@@ -64,7 +63,7 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Sequência em risco',
+                  'Você está ficando para trás',
                   style: AppTypography.title(
                     size: 14,
                     color: a.text,
@@ -73,8 +72,8 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
                 const SizedBox(height: 2),
                 Text(
                   freeze
-                      ? '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown. Um passo salva — ou o gelo cobre 1 falta.'
-                      : '$streak ${streak == 1 ? 'dia' : 'dias'} · faltam $countdown para não zerar.',
+                      ? 'A caravana segue · faltam $countdown. Um passo alcança — ou o gelo cobre 1 dia.'
+                      : 'A caravana segue sem você · faltam $countdown para alcançar o grupo.',
                   style: AppTypography.body(
                     size: 12,
                     height: 1.35,

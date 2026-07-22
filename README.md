@@ -1,4 +1,4 @@
-# Trilha — formação bíblica com hábito
+# Steway — formação bíblica com hábito
 
 App Flutter para aprender a Bíblia em missões diárias + painel admin no Firebase.
 

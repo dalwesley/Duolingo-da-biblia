@@ -115,107 +115,134 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
     final narrative = widget.narrative.split('\n').where((l) => l.trim().isNotEmpty).firstOrNull ??
         widget.narrative;
 
-    return Padding(
-      padding: EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.xs, AppSpace.screen, AppSpace.sm + bottom),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          FadeTransition(
-            opacity: CurvedAnimation(
-              parent: _stagger,
-              curve: const Interval(0, 0.4, curve: Curves.easeOut),
-            ),
-            child: SlideTransition(
-              position: Tween<Offset>(begin: const Offset(0, 0.08), end: Offset.zero).animate(
-                CurvedAnimation(
-                  parent: _stagger,
-                  curve: const Interval(0, 0.45, curve: Curves.easeOutCubic),
-                ),
-              ),
-              child: _ScenePrompt(
-                narrative: narrative,
-                question: widget.question.question,
-                verseRef: widget.question.verseRef,
-                verseSnippet: widget.verseSnippet,
-                accent: accent,
-                showHint: !locked,
-                hintUsed: widget.hintUsed,
-                onHint: widget.onHint,
-              ),
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        // Faixa full-bleed — de borda a borda do app.
+        FadeTransition(
+          opacity: CurvedAnimation(
+            parent: _stagger,
+            curve: const Interval(0, 0.35, curve: Curves.easeOut),
           ),
-          const SizedBox(height: AppSpace.section),
-          ...widget.question.options.asMap().entries.map((e) {
-            final i = e.key;
-            final opt = e.value;
-            final eliminated = widget.eliminatedIds.contains(opt.id);
-            final start = 0.22 + i * 0.1;
-            final curve = CurvedAnimation(
-              parent: _stagger,
-              curve: Interval(
-                start,
-                (start + 0.42).clamp(0.0, 1.0),
-                curve: Curves.easeOutCubic,
-              ),
-            );
-            return Padding(
-              padding: const EdgeInsets.only(bottom: AppSpace.sm),
-              child: FadeTransition(
-                opacity: curve,
-                child: SlideTransition(
-                  position: Tween<Offset>(
-                    begin: Offset(0.04 + i * 0.01, 0.08),
-                    end: Offset.zero,
-                  ).animate(curve),
-                  child: Opacity(
-                    opacity: eliminated ? 0.32 : 1,
-                    child: _ChoiceTile(
-                      letter: _letters[i.clamp(0, _letters.length - 1)],
-                      text: opt.text,
-                      state: eliminated ? _ChoiceState.dimmed : _state(opt.id),
-                      enabled: !locked && !eliminated,
-                      accent: accent,
-                      onTap: () => _pick(opt.id),
-                    ),
-                  ),
-                ),
-              ),
-            );
-          }),
-          const SizedBox(height: AppSpace.sm),
-          Center(
-            child: Container(
-              padding: const EdgeInsets.fromLTRB(AppSpace.section, AppSpace.sm, AppSpace.section, AppSpace.sm),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadii.md),
-                color: Colors.black.withValues(alpha: 0.32),
-                border: Border.all(
+          child: Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              AppSpace.sm,
+              AppSpace.screen,
+              AppSpace.md,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.black.withValues(alpha: 0.38),
+              border: Border(
+                bottom: BorderSide(
                   color: accent.withValues(alpha: 0.28),
                 ),
               ),
-              child: LampsBar(
-                current: widget.lamps,
-                accent: accent,
-                labeled: true,
-              ),
+            ),
+            child: LampsBar(
+              current: widget.lamps,
+              accent: accent,
+              labeled: true,
+              fullWidth: true,
             ),
           ),
-          if (!widget.showFeedback) ...[
-            const SizedBox(height: AppSpace.sm),
-            FadeTransition(
-              opacity: CurvedAnimation(
-                parent: _stagger,
-                curve: const Interval(0.55, 1, curve: Curves.easeOut),
+        ),
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            AppSpace.section,
+            AppSpace.screen,
+            AppSpace.sm + bottom,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              FadeTransition(
+                opacity: CurvedAnimation(
+                  parent: _stagger,
+                  curve: const Interval(0, 0.4, curve: Curves.easeOut),
+                ),
+                child: SlideTransition(
+                  position: Tween<Offset>(
+                    begin: const Offset(0, 0.08),
+                    end: Offset.zero,
+                  ).animate(
+                    CurvedAnimation(
+                      parent: _stagger,
+                      curve: const Interval(0, 0.45, curve: Curves.easeOutCubic),
+                    ),
+                  ),
+                  child: _ScenePrompt(
+                    narrative: narrative,
+                    question: widget.question.question,
+                    verseRef: widget.question.verseRef,
+                    verseSnippet: widget.verseSnippet,
+                    accent: accent,
+                    showHint: !locked,
+                    hintUsed: widget.hintUsed,
+                    onHint: widget.onHint,
+                  ),
+                ),
               ),
-              child: _ConfirmCta(
-                enabled: canConfirm,
-                accent: accent,
-                onTap: _confirm,
-              ),
-            ),
-          ],
-        ],
-      ),
+              const SizedBox(height: AppSpace.section),
+              ...widget.question.options.asMap().entries.map((e) {
+                final i = e.key;
+                final opt = e.value;
+                final eliminated = widget.eliminatedIds.contains(opt.id);
+                final start = 0.22 + i * 0.1;
+                final curve = CurvedAnimation(
+                  parent: _stagger,
+                  curve: Interval(
+                    start,
+                    (start + 0.42).clamp(0.0, 1.0),
+                    curve: Curves.easeOutCubic,
+                  ),
+                );
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: AppSpace.sm),
+                  child: FadeTransition(
+                    opacity: curve,
+                    child: SlideTransition(
+                      position: Tween<Offset>(
+                        begin: Offset(0.04 + i * 0.01, 0.08),
+                        end: Offset.zero,
+                      ).animate(curve),
+                      child: Opacity(
+                        opacity: eliminated ? 0.32 : 1,
+                        child: _ChoiceTile(
+                          letter: _letters[i.clamp(0, _letters.length - 1)],
+                          text: opt.text,
+                          state: eliminated
+                              ? _ChoiceState.dimmed
+                              : _state(opt.id),
+                          enabled: !locked && !eliminated,
+                          accent: accent,
+                          onTap: () => _pick(opt.id),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              }),
+              if (!widget.showFeedback) ...[
+                const SizedBox(height: AppSpace.sm),
+                FadeTransition(
+                  opacity: CurvedAnimation(
+                    parent: _stagger,
+                    curve: const Interval(0.55, 1, curve: Curves.easeOut),
+                  ),
+                  child: _ConfirmCta(
+                    enabled: canConfirm,
+                    accent: accent,
+                    onTap: _confirm,
+                  ),
+                ),
+              ],
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

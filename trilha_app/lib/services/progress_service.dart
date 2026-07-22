@@ -1225,6 +1225,7 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionsToday = 0;
+    hasSeenOnboarding = false;
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     playDates = [];

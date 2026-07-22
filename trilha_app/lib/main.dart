@@ -61,7 +61,7 @@ class TrilhaApp extends StatelessWidget {
         builder: (context, progress, _) {
           SoundService.instance.setEnabled(progress.settings.sound);
           return MaterialApp(
-            title: 'Trilha',
+            title: 'Steway',
             debugShowCheckedModeBanner: false,
             theme: AppTheme.dark,
             darkTheme: AppTheme.dark,

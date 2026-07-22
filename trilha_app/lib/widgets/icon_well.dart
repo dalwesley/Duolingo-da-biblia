@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Poço circular para ícones — limpo, sem aro metálico dourado.
+/// Poço circular — contraste alto para glifos sólidos no escuro.
 class IconWell extends StatelessWidget {
   final double size;
   final Color? accent;
@@ -21,35 +21,34 @@ class IconWell extends StatelessWidget {
     Color? accent,
     bool glowing = false,
   }) {
-    final tone = accent ?? AppColors.primaryLight;
-    final lift = Color.lerp(tone, const Color(0xFF2A3832), 0.55)!;
-    const deep = Color(0xFF101614);
+    final tone = accent ?? AppColors.accent;
+    final lift = Color.lerp(tone, const Color(0xFF3A4A40), 0.35)!;
+    const deep = Color(0xFF0C100E);
 
     return BoxDecoration(
       shape: BoxShape.circle,
       gradient: RadialGradient(
-        center: const Alignment(-0.35, -0.42),
-        radius: 1.15,
+        center: const Alignment(-0.32, -0.4),
+        radius: 1.1,
         colors: [
-          lift.withValues(alpha: 0.95),
-          deep.withValues(alpha: 0.98),
+          lift,
+          deep,
         ],
       ),
       border: Border.all(
-        color: Colors.white.withValues(alpha: 0.14),
-        width: 1,
+        color: Color.lerp(tone, Colors.white, 0.35)!.withValues(alpha: 0.55),
+        width: size * 0.035,
       ),
       boxShadow: [
         BoxShadow(
-          color: Colors.black.withValues(alpha: 0.28),
-          blurRadius: size * 0.14,
+          color: Colors.black.withValues(alpha: 0.35),
+          blurRadius: size * 0.16,
           offset: Offset(0, size * 0.05),
         ),
-        if (glowing)
-          BoxShadow(
-            color: tone.withValues(alpha: 0.2),
-            blurRadius: size * 0.3,
-          ),
+        BoxShadow(
+          color: tone.withValues(alpha: glowing ? 0.35 : 0.18),
+          blurRadius: size * (glowing ? 0.32 : 0.18),
+        ),
       ],
     );
   }

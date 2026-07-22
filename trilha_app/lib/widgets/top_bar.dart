@@ -129,8 +129,11 @@ class StreakBadge extends StatelessWidget {
   }
 }
 
-/// Altura do chrome inline (sem AppBar — evita espaço morto).
+/// Altura mínima do chrome inline (sem AppBar — evita espaço morto).
 const double kTopBarInlineHeight = 48;
+
+/// Escala de texto no chrome: a leitura escala até 1.35, a barra sobe só até aqui.
+const double kTopBarMaxTextScale = 1.2;
 
 class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -201,90 +204,109 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     final streak =
         showStats ? context.select((ProgressService p) => p.streak) : 0;
 
-    if (inline) {
-      return _InlineChrome(
-        appearance: appearance,
-        onDark: onDark,
-        title: title,
-        subtitle: subtitle,
-        personalGreeting: personalGreeting,
-        showAvatar: showAvatar,
-        photoUrl: photoUrl,
-        userName: userName,
-        onProfileTap: onProfileTap,
-        onBack: onBack,
-        leadingGlyph: leadingGlyph,
-        leadingIcon: leadingIcon,
-        showStats: showStats,
-        showLeading: showLeading,
-        showTrailingAvatar: showTrailingAvatar,
-        steps: steps,
-        streak: streak,
-      );
-    }
-
-    return AppBar(
-      primary: true,
-      automaticallyImplyLeading: false,
-      toolbarHeight: preferredSize.height,
-      backgroundColor: appearance.navBarFill.withValues(alpha: 1),
-      surfaceTintColor: Colors.transparent,
-      elevation: 8,
-      shadowColor: Colors.black.withValues(alpha: 0.35),
-      scrolledUnderElevation: 0,
-      clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(
-        borderRadius: const BorderRadius.vertical(
-          bottom: Radius.circular(AppRadii.xl),
-        ),
-        side: BorderSide(color: appearance.navBarBorder),
-      ),
-      leadingWidth: 56,
-      leading: onBack != null
-          ? IconButton(
-              onPressed: onBack,
-              padding: EdgeInsets.zero,
-              constraints: const BoxConstraints.tightFor(width: 36, height: 36),
-              visualDensity: VisualDensity.compact,
-              icon: const _BackGlyph(),
+    // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
+    final chrome = MediaQuery.withClampedTextScaling(
+      maxScaleFactor: kTopBarMaxTextScale,
+      child: inline
+          ? _InlineChrome(
+              appearance: appearance,
+              onDark: onDark,
+              title: title,
+              subtitle: subtitle,
+              personalGreeting: personalGreeting,
+              showAvatar: showAvatar,
+              photoUrl: photoUrl,
+              userName: userName,
+              onProfileTap: onProfileTap,
+              onBack: onBack,
+              leadingGlyph: leadingGlyph,
+              leadingIcon: leadingIcon,
+              showStats: showStats,
+              showLeading: showLeading,
+              showTrailingAvatar: showTrailingAvatar,
+              steps: steps,
+              streak: streak,
             )
-          : Padding(
-              padding: const EdgeInsets.only(left: 4),
-              child: Center(
-                child: _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
-              ),
-            ),
-      title: _TitleBlock(
-        title: title,
-        subtitle: subtitle,
-        personalGreeting: personalGreeting,
-        onDark: onDark,
-      ),
-      actions: showStats
-          ? [
-              TopBarStats(steps: steps, streak: streak),
-              const SizedBox(width: 8),
-            ]
-          : showTrailingAvatar
-          ? [
-              Padding(
-                padding: const EdgeInsets.only(right: 8),
-                child: Center(
-                  child: UserAvatar(
-                    photoUrl: photoUrl,
-                    name: userName,
-                    radius: 16,
-                  ),
+          : AppBar(
+              primary: true,
+              automaticallyImplyLeading: false,
+              toolbarHeight: _appBarToolbarHeight(context),
+              backgroundColor: appearance.navBarFill.withValues(alpha: 1),
+              surfaceTintColor: Colors.transparent,
+              elevation: 8,
+              shadowColor: Colors.black.withValues(alpha: 0.35),
+              scrolledUnderElevation: 0,
+              clipBehavior: Clip.antiAlias,
+              shape: RoundedRectangleBorder(
+                borderRadius: const BorderRadius.vertical(
+                  bottom: Radius.circular(AppRadii.xl),
                 ),
+                side: BorderSide(color: appearance.navBarBorder),
               ),
-            ]
-          : onBack != null
-          ? [
-              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
-              const SizedBox(width: 4),
-            ]
-          : null,
+              leadingWidth: 56,
+              leading: onBack != null
+                  ? IconButton(
+                      onPressed: onBack,
+                      padding: EdgeInsets.zero,
+                      constraints: const BoxConstraints.tightFor(
+                        width: 36,
+                        height: 36,
+                      ),
+                      visualDensity: VisualDensity.compact,
+                      icon: const _BackGlyph(),
+                    )
+                  : Padding(
+                      padding: const EdgeInsets.only(left: 4),
+                      child: Center(
+                        child: _MenuMark(
+                          glyph: leadingGlyph,
+                          icon: leadingIcon,
+                        ),
+                      ),
+                    ),
+              title: _TitleBlock(
+                title: title,
+                subtitle: subtitle,
+                personalGreeting: personalGreeting,
+                onDark: onDark,
+              ),
+              actions: showStats
+                  ? [
+                      TopBarStats(steps: steps, streak: streak),
+                      const SizedBox(width: 8),
+                    ]
+                  : showTrailingAvatar
+                  ? [
+                      Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: Center(
+                          child: UserAvatar(
+                            photoUrl: photoUrl,
+                            name: userName,
+                            radius: 16,
+                          ),
+                        ),
+                      ),
+                    ]
+                  : onBack != null
+                  ? [
+                      _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+                      const SizedBox(width: 4),
+                    ]
+                  : null,
+            ),
     );
+
+    return chrome;
+  }
+
+  double _appBarToolbarHeight(BuildContext context) {
+    final scale = MediaQuery.textScalerOf(context)
+        .clamp(maxScaleFactor: kTopBarMaxTextScale)
+        .scale(1);
+    final titleH = 20 * 1.15 * scale;
+    final subH = subtitle != null || personalGreeting ? 11 * 1.1 * scale : 0.0;
+    return (titleH + subH + 16).clamp(56.0, 72.0);
   }
 }
 
@@ -335,14 +357,15 @@ class _InlineChrome extends StatelessWidget {
       shadowColor: Colors.black.withValues(alpha: 0.35),
       borderRadius: BorderRadius.circular(AppRadii.xl),
       child: Container(
-        height: kTopBarInlineHeight,
-        padding: const EdgeInsets.symmetric(horizontal: 4),
+        constraints: const BoxConstraints(minHeight: kTopBarInlineHeight),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
           color: appearance.navBarFill.withValues(alpha: 1),
           borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: appearance.navBarBorder),
         ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (onBack != null) ...[
               GestureDetector(
@@ -463,11 +486,13 @@ class _TitleBlock extends StatelessWidget {
           if (subtitle != null)
             Text(
               subtitle!,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: AppTypography.body(
                 size: 11,
                 color: Colors.white.withValues(alpha: 0.6),
                 weight: FontWeight.w600,
-                height: 1.1,
+                height: 1.05,
               ).copyWith(letterSpacing: 0.3),
             ),
           Text(
@@ -476,7 +501,7 @@ class _TitleBlock extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: AppTypography.display(
               size: 20,
-              height: 1.15,
+              height: 1.05,
             ),
           ),
         ],
@@ -494,7 +519,7 @@ class _TitleBlock extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: AppTypography.display(
             size: 20,
-            height: 1.15,
+            height: 1.05,
             color: onDark ? Colors.white : AppColors.text,
           ),
         ),
@@ -505,7 +530,7 @@ class _TitleBlock extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: AppTypography.body(
               size: 11,
-              height: 1.1,
+              height: 1.05,
               color: onDark
                   ? Colors.white.withValues(alpha: 0.55)
                   : AppColors.textMuted,

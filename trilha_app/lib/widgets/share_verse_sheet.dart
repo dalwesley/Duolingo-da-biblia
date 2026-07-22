@@ -10,7 +10,7 @@ import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 
-/// Abre sheet para compartilhar um versículo (imagem com marca Trilha, ou texto).
+/// Abre sheet para compartilhar um versículo (imagem com marca Steway, ou texto).
 Future<void> showShareVerseSheet(
   BuildContext context, {
   required String bookName,
@@ -80,8 +80,8 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
       await SharePlus.instance.share(
         ShareParams(
           files: [XFile(file.path, mimeType: 'image/png')],
-          text: '$_ref — via Trilha',
-          subject: '$_ref — Trilha',
+          text: '$_ref — via Steway',
+          subject: '$_ref — Steway',
         ),
       );
       await _rememberShare();
@@ -98,11 +98,11 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
 — $_ref
 ${BibleService.translationName}
 
-Via Trilha
+Via Steway
 '''
         .trim();
     await SharePlus.instance.share(
-      ShareParams(text: body, subject: '$_ref — Trilha'),
+      ShareParams(text: body, subject: '$_ref — Steway'),
     );
     await _rememberShare();
   }
@@ -239,7 +239,7 @@ class ShareVerseCard extends StatelessWidget {
               ),
               const SizedBox(width: 8),
               Text(
-                'TRILHA',
+                'STEWAY',
                 style: AppTypography.label(
                   size: 12,
                   weight: FontWeight.w900,

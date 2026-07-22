@@ -10,22 +10,28 @@ class LampsBar extends StatelessWidget {
   final Color accent;
   final bool labeled;
 
+  /// Faixa larga (topo da pergunta) — ocupa a largura disponível.
+  final bool fullWidth;
+
   const LampsBar({
     super.key,
     required this.current,
     this.max = 5,
     this.accent = AppColors.accent,
     this.labeled = false,
+    this.fullWidth = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final icons = Row(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment:
+          fullWidth ? MainAxisAlignment.center : MainAxisAlignment.start,
+      mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
       children: List.generate(max, (i) {
         final on = i < current;
         return Padding(
-          padding: EdgeInsets.only(left: i == 0 ? 0 : 7),
+          padding: EdgeInsets.only(left: i == 0 ? 0 : (fullWidth ? 10 : 7)),
           child: AnimatedScale(
             scale: on ? 1 : 0.9,
             duration: const Duration(milliseconds: 240),
@@ -34,7 +40,7 @@ class LampsBar extends StatelessWidget {
               opacity: on ? 1 : 0.32,
               duration: const Duration(milliseconds: 220),
               child: CustomPaint(
-                size: const Size(20, 28),
+                size: Size(fullWidth ? 22 : 20, fullWidth ? 30 : 28),
                 painter: _LanternPainter(lit: on, color: accent),
               ),
             ),
@@ -45,46 +51,52 @@ class LampsBar extends StatelessWidget {
 
     if (!labeled) return icons;
 
+    final header = Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
+      children: [
+        CinematicIcon(
+          glyph: CinematicGlyph.lamp,
+          size: 14,
+          accent: accent.withValues(alpha: 0.9),
+          framed: false,
+        ),
+        const SizedBox(width: 6),
+        Text(
+          'Lâmpadas',
+          style: TextStyle(
+            fontSize: 11,
+            fontWeight: FontWeight.w800,
+            letterSpacing: 0.6,
+            color: Colors.white.withValues(alpha: 0.72),
+          ),
+        ),
+        const SizedBox(width: 8),
+        Text(
+          '$current/$max',
+          style: TextStyle(
+            fontSize: 12,
+            fontWeight: FontWeight.w900,
+            color: accent,
+          ),
+        ),
+      ],
+    );
+
     return Semantics(
       label: '$current de $max lâmpadas. Cada erro apaga uma.',
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment:
+            fullWidth ? CrossAxisAlignment.stretch : CrossAxisAlignment.center,
         children: [
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.lamp,
-                size: 14,
-                accent: accent.withValues(alpha: 0.9),
-                framed: false,
-              ),
-              const SizedBox(width: 6),
-              Text(
-                'Lâmpadas',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 0.6,
-                  color: Colors.white.withValues(alpha: 0.72),
-                ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                '$current/$max',
-                style: TextStyle(
-                  fontSize: 12,
-                  fontWeight: FontWeight.w900,
-                  color: accent,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 8),
+          header,
+          SizedBox(height: fullWidth ? 10 : 8),
           icons,
-          const SizedBox(height: 6),
+          SizedBox(height: fullWidth ? 8 : 6),
           Text(
             'Erro apaga uma · zerar encerra',
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 10,
               fontWeight: FontWeight.w600,
