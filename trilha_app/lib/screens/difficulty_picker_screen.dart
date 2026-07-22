@@ -230,32 +230,44 @@ class _DifficultyCard extends StatelessWidget {
           child: Row(
             children: [
               CinematicIcon(
-                  glyph: DifficultyVisuals.glyphFor(meta.difficulty),
-                  size: 58,
-                  accent: color,
-                  glowing: selected,
-                ),
-              const SizedBox(width: AppSpace.lg),
+                glyph: DifficultyVisuals.glyphFor(meta.difficulty),
+                size: 52,
+                accent: color,
+                glowing: selected,
+              ),
+              const SizedBox(width: AppSpace.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
+                    Wrap(
+                      spacing: AppSpace.sm,
+                      runSpacing: 4,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         Text(
                           meta.label,
-                          style: AppTypography.title(size: 20, color: Colors.white),
+                          style: AppTypography.title(
+                            size: 20,
+                            color: Colors.white,
+                          ),
                         ),
-                        const SizedBox(width: AppSpace.sm),
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: AppSpace.sm, vertical: 3),
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.sm,
+                            vertical: 3,
+                          ),
                           decoration: BoxDecoration(
                             color: color.withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(AppRadii.pill),
                           ),
                           child: Text(
                             xpLabel,
-                            style: AppTypography.label(size: 10, color: color, letterSpacing: 0.4),
+                            style: AppTypography.label(
+                              size: 10,
+                              color: color,
+                              letterSpacing: 0.4,
+                            ),
                           ),
                         ),
                       ],
@@ -263,7 +275,10 @@ class _DifficultyCard extends StatelessWidget {
                     const SizedBox(height: AppSpace.xs),
                     Text(
                       meta.subtitle,
-                      style: AppTypography.title(size: 12, color: color.withValues(alpha: 0.95)),
+                      style: AppTypography.title(
+                        size: 12,
+                        color: color.withValues(alpha: 0.95),
+                      ),
                     ),
                     const SizedBox(height: AppSpace.xs),
                     Text(
@@ -277,9 +292,10 @@ class _DifficultyCard extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(width: AppSpace.sm),
               CinematicIcon(
                 glyph: CinematicGlyph.rise,
-                size: 22,
+                size: 20,
                 accent: color,
                 framed: false,
               ),

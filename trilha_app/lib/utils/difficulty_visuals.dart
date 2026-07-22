@@ -10,7 +10,7 @@ class DifficultyVisuals {
   static Color accentFor(TrailDifficulty d) => switch (d) {
         TrailDifficulty.semente => AppColors.accent,
         TrailDifficulty.caminhada => AppColors.primaryLight,
-        TrailDifficulty.profundezas => AppColors.cedarDeep,
+        TrailDifficulty.profundezas => AppColors.sky,
       };
 
   static CinematicGlyph glyphFor(TrailDifficulty d) => switch (d) {
