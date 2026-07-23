@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
+import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
@@ -91,6 +92,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             total: widget.total,
           )
           .then((_) async {
+        AnalyticsService.instance.logLessonComplete(
+          missionSlug: widget.missionSlug,
+          trailSlug: widget.trailSlug,
+          correct: widget.correct,
+          total: widget.total,
+          steps: widget.steps,
+          isBoss: widget.isBoss,
+          isReplay: widget.isReplay,
+          perfect: widget.perfect,
+        );
         if (!mounted) return;
         if (widget.perfect) {
           SoundService.instance.playStreak();
@@ -269,12 +280,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         children: [
                           Text(
                             widget.perfect
-                                ? '+1 passo · caminhada perfeita'
+                                ? '+1 passo · lição perfeita'
                                 : widget.isReplay
-                                    ? 'Você revisitou este trecho'
+                                    ? 'Você revisitou esta lição'
                                     : isBoss
-                                        ? 'Você avançou no desafio'
-                                        : '+1 passo',
+                                        ? 'Desafio concluído'
+                                        : 'Missão concluída',
                             style: AppTypography.display(size: 28),
                           ),
                           const SizedBox(height: AppSpace.md),
@@ -284,7 +295,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     isBoss: isBoss,
                                     pct: pct,
                                   )
-                                : 'A Palavra iluminou mais um trecho da sua caminhada.\nContinue amanhã.',
+                                : MascotMessages.celebration(
+                                    isBoss: isBoss,
+                                    pct: pct,
+                                  ),
                           ),
                           if (_showGoalBanner) ...[
                             const SizedBox(height: AppSpace.section),
@@ -296,7 +310,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                 borderRadius: BorderRadius.circular(AppRadii.md),
                               ),
                               child: Text(
-                                '✦ Meta do dia alcançada. Sua caminhada segue firme.',
+                                '✦ Meta do dia alcançada. Sequência protegida.',
                                 textAlign: TextAlign.center,
                                 style: AppTypography.body(
                                   size: 13,

@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "seed": "node scripts/seed_content.mjs",
+    "expand:genesis": "node scripts/expand_genesis_complete.mjs",
+    "prepare:content": "node scripts/prepare_content.mjs",
+    "seed": "npm run prepare:content && node scripts/seed_content.mjs",
+    "seed:genesis": "npm run expand:genesis && npm run seed",
     "extract:studies": "node scripts/extract_mission_studies.mjs"
   },
   "dependencies": {

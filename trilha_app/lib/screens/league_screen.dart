@@ -444,7 +444,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             style: TextStyle(color: Colors.white),
           ),
           content: Text(
-            'A caminhada juntos com esta pessoa termina. Sem culpa — a Caravana continua.',
+            'A parceria com esta pessoa termina. A caravana continua.',
             style: TextStyle(color: a.textMuted(0.8)),
           ),
           actions: [
@@ -1694,8 +1694,8 @@ class _OutcomeBanner extends StatelessWidget {
         'Você ficou em ${league.pendingRank}º na ${league.tier.label}. Nova semana — continuem se animando.',
       ),
       LeagueOutcome.demoted => (
-        'Sua caminhada continua daqui',
-        'Você ficou em ${league.pendingRank}º. Na ${league.tier.label} há espaço para o próximo passo — sem vergonha, só graça.',
+        'Você desceu de caravana',
+        'Ficou em ${league.pendingRank}º. Na ${league.tier.label} dá para subir de novo — treine esta semana.',
       ),
     };
 

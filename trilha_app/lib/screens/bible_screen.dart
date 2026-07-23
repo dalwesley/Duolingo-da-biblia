@@ -1058,7 +1058,7 @@ class BibleReaderView extends StatelessWidget {
                     framed: false,
                   ),
                   title: Text(
-                    saved ? 'Remover dos favoritos' : 'Guardar no coração',
+                    saved ? 'Remover dos favoritos' : 'Salvar favorito',
                     style: AppTypography.title(size: 14, color: reading.ink),
                   ),
                   onTap: () async {

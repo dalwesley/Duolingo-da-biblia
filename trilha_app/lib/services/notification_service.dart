@@ -58,7 +58,7 @@ class NotificationService {
   void Function(ReminderAction action)? onAction;
 
   static const _channelId = 'trilha_habits';
-  static const _channelName = 'Lembretes da caminhada';
+  static const _channelName = 'Lembretes Steway';
   static const _channelDesc =
       'Meta diária, missões, prática, memorizar e favoritos';
 
@@ -146,8 +146,8 @@ class NotificationService {
         id: _idMorning,
         when: _nextSlot(10, 0),
         copy: const _ReminderCopy(
-          title: 'Seu próximo passo',
-          body: 'A caminhada continua amanhã. Um passo basta.',
+          title: 'Sua lição te espera',
+          body: 'Um passo por dia. A sequência continua amanhã.',
           action: ReminderAction.home,
           priority: 1,
         ),
@@ -203,7 +203,7 @@ class NotificationService {
 
     final daysAway = progress.daysSinceLastPlayed;
     final name = progress.userName.trim().isEmpty
-        ? 'peregrino'
+        ? 'aprendiz'
         : progress.userName.trim().split(' ').first;
     final streak = progress.streak;
 
@@ -213,10 +213,10 @@ class NotificationService {
         id: _idLost1,
         when: _daysFromNow(1, 10, 15),
         copy: _ReminderCopy(
-          title: 'A caravana sente sua falta',
+          title: 'Sua sequência sente sua falta',
           body: streak > 0
-              ? '$name, sua chama de $streak ${streak == 1 ? 'dia' : 'dias'} ainda brilha. Um passo e você alcança o grupo.'
-              : '$name, a caravana seguiu — mas o lugar ao seu lado continua aberto.',
+              ? '$name, sua sequência de $streak ${streak == 1 ? 'dia' : 'dias'} ainda vale. Uma lição e você retoma o ritmo.'
+              : '$name, a próxima lição te espera — um passo basta para recomeçar.',
           action: ReminderAction.home,
           priority: 110,
         ),
@@ -230,8 +230,8 @@ class NotificationService {
         copy: _ReminderCopy(
           title: 'Ainda dá tempo',
           body: progress.hasStreakFreeze
-              ? '$name, o gelo pode cobrir 1 dia. Volte hoje e proteja a caminhada.'
-              : '$name, um único passo reacende a chama. A caravana te espera.',
+              ? '$name, o gelo pode cobrir 1 dia. Volte hoje e proteja a sequência.'
+              : '$name, uma lição retoma a sequência. A caravana te espera.',
           action: ReminderAction.home,
           priority: 105,
         ),
@@ -246,7 +246,7 @@ class NotificationService {
         copy: _ReminderCopy(
           title: 'Última chamada',
           body:
-              '$name, faltam ${progress.streakRiskCountdown}. Um passo e a caravana te alcança.',
+              '$name, faltam ${progress.streakRiskCountdown}. Uma lição protege a sequência.',
           action: ReminderAction.home,
           priority: 130,
         ),
@@ -281,7 +281,7 @@ class NotificationService {
   List<_ReminderCopy> _buildHooks(ProgressService progress) {
     final hooks = <_ReminderCopy>[];
     final name = progress.userName.trim().isEmpty
-        ? 'peregrino'
+        ? 'aprendiz'
         : progress.userName.trim().split(' ').first;
     final goal = progress.settings.dailyGoal;
     final done = progress.walkedToday ? progress.missionsToday : 0;
@@ -298,18 +298,18 @@ class NotificationService {
       final returning = progress.isReturningAfterGap;
       hooks.add(_ReminderCopy(
         title: atRisk
-            ? 'A caravana segue'
+            ? 'Proteja a sequência'
             : returning
-                ? 'A caravana te espera'
+                ? 'Hora de retomar'
                 : streak > 0
-                    ? 'A caravana te espera'
+                    ? 'Continue a jornada'
                     : 'Meta de hoje',
         body: atRisk
-            ? '$name, você está ficando para trás na caravana. Faltam ${progress.streakRiskCountdown} — um passo e você alcança o grupo.'
+            ? '$name, a sequência está em risco. Faltam ${progress.streakRiskCountdown} — uma lição e você alcança o grupo.'
             : returning
-                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem passo. Um toque reacende a chama.'
+                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. Um passo retoma o ritmo.'
                 : streak > 0
-                    ? '$name, a caravana já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
+                    ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
                     : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
         action: ReminderAction.home,
         priority: atRisk
@@ -349,7 +349,7 @@ class NotificationService {
         title: 'Memorizar',
         body: memoryPending == 1
             ? 'Um versículo espera por você. Dois minutos bastam.'
-            : '$memoryPending versículos no deck. Memorizar fortalece a jornada.',
+            : '$memoryPending versículos no deck. Memorizar reforça o aprendizado.',
         action: ReminderAction.memory,
         priority: 55,
       ));
@@ -360,7 +360,7 @@ class NotificationService {
         title: 'Seus favoritos',
         body: favs == 1
             ? 'Você guardou um versículo. Que tal revisitá-lo agora?'
-            : 'Você tem $favs favoritos. Releia um e reacenda o fogo.',
+            : 'Você tem $favs favoritos. Releia um e treine a memória.',
         action: ReminderAction.favorites,
         priority: 40,
       ));

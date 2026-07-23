@@ -419,7 +419,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   String _difficultyLabel(String id) {
     return switch (id) {
       'semente' => 'Modo Semente',
-      'caminhada' => 'Modo Caminhada',
+      'caminhada' => 'Modo Rota',
       'profundezas' => 'Modo Profundezas',
       _ => id,
     };
@@ -450,6 +450,7 @@ class _TrailJourneyIntro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (difficultyLabel == null) return const SizedBox.shrink();
+    final a = Appearance.of(context);
 
     return Align(
       alignment: Alignment.centerLeft,
@@ -461,9 +462,10 @@ class _TrailJourneyIntro extends StatelessWidget {
             vertical: AppSpace.sm - 1,
           ),
           decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.08),
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
+            color: a.cardFill,
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(color: AppMetrics.accentBorder(alpha: 0.4)),
+            boxShadow: AppMetrics.cardShadow(),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -472,7 +474,7 @@ class _TrailJourneyIntro extends StatelessWidget {
                 difficultyLabel!,
                 style: AppTypography.label(
                   size: 12,
-                  color: Colors.white,
+                  color: a.text,
                   letterSpacing: 0.4,
                 ),
               ),
@@ -480,7 +482,7 @@ class _TrailJourneyIntro extends StatelessWidget {
                 '  ·  mudar',
                 style: AppTypography.label(
                   size: 11,
-                  color: AppColors.accent.withValues(alpha: 0.85),
+                  color: AppColors.accent.withValues(alpha: 0.9),
                   letterSpacing: 0.3,
                 ),
               ),
@@ -508,13 +510,15 @@ class _GenericTrailHero extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pct = total > 0 ? done / total : 0.0;
+    final a = Appearance.of(context);
     return Container(
       margin: const EdgeInsets.only(bottom: AppSpace.xl),
-      padding: const EdgeInsets.all(AppSpace.xl),
+      padding: AppMetrics.cardPadding,
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
+        color: a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+        border: Border.all(color: a.cardBorder),
+        boxShadow: AppMetrics.cardShadow(),
       ),
       child: Row(
         children: [
@@ -536,7 +540,7 @@ class _GenericTrailHero extends StatelessWidget {
                 AppProgressBar(
                   value: pct,
                   color: color,
-                  trackColor: color.withValues(alpha: 0.12),
+                  trackColor: a.progressTrack,
                 ),
               ],
             ),

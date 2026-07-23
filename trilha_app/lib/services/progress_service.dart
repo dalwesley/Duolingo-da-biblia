@@ -102,7 +102,7 @@ class ProgressService extends ChangeNotifier {
   int missionsToday = 0;
   bool hasSeenSplash = false;
   bool hasSeenOnboarding = false;
-  String userName = 'Peregrino';
+  String userName = 'Aprendiz';
   AppSettings settings = const AppSettings();
   Map<String, String> trailDifficulties = {};
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
@@ -223,7 +223,10 @@ class ProgressService extends ChangeNotifier {
         completed.isNotEmpty ||
         streak > 0 ||
         hasSeenOnboarding ||
-        (name != null && name.isNotEmpty && name != 'Peregrino');
+        (name != null &&
+            name.isNotEmpty &&
+            name != 'Aprendiz' &&
+            name != 'Peregrino');
     if (!hasAnything) return null;
 
     AppearanceMode appearance = AppearanceMode.automatic;
@@ -295,7 +298,7 @@ class ProgressService extends ChangeNotifier {
 
     return {
       'version': 2,
-      'userName': name ?? 'Peregrino',
+      'userName': name ?? 'Aprendiz',
       'xp': steps,
       'steps': steps,
       'streak': streak,
@@ -407,7 +410,7 @@ class ProgressService extends ChangeNotifier {
     completedMissions = [];
     missionsToday = 0;
     hasSeenOnboarding = false;
-    userName = 'Peregrino';
+    userName = 'Aprendiz';
     settings = const AppSettings();
     trailDifficulties = {};
     clearedTrailModes = {};
@@ -1333,7 +1336,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> setUserName(String name) async {
-    userName = name.trim().isEmpty ? 'Peregrino' : name.trim();
+    userName = name.trim().isEmpty ? 'Aprendiz' : name.trim();
     await _save();
     notifyListeners();
   }

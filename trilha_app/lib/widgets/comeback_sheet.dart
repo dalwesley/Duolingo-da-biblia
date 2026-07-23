@@ -7,7 +7,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Sheet de retorno — a caravana te espera + CTA para o próximo passo.
+/// Sheet de retorno — sequência em espera + CTA para a próxima lição.
 Future<void> showComebackSheet(
   BuildContext context, {
   required VoidCallback onContinue,
@@ -33,7 +33,7 @@ class _ComebackSheet extends StatelessWidget {
     final bottom = MediaQuery.paddingOf(context).bottom;
     final days = progress.daysSinceLastPlayed;
     final name = progress.userName.trim().isEmpty
-        ? 'peregrino'
+        ? 'aprendiz'
         : progress.userName.trim().split(' ').first;
     final daysLabel = days == 1 ? '1 dia' : '$days dias';
 
@@ -42,7 +42,6 @@ class _ComebackSheet extends StatelessWidget {
       padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
       decoration: BoxDecoration(
         color: a.cardFill,
-        gradient: a.cardGradient,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: a.cardBorder),
         boxShadow: AppTheme.cardShadow(elevated: true),
@@ -58,15 +57,15 @@ class _ComebackSheet extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'A caravana te espera',
+            'Sua sequência te espera',
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 20, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
             days >= 2
-                ? '$name, faz $daysLabel que a chama esfriou. Um passo basta — e você ganha +${ProgressService.comebackBonusSteps} passos de boas-vindas.'
-                : '$name, a caravana sentiu sua falta. Um passo reacende a chama — +${ProgressService.comebackBonusSteps} passos te esperam.',
+                ? '$name, faz $daysLabel sem uma lição. Um passo basta — e você ganha +${ProgressService.comebackBonusSteps} passos de boas-vindas.'
+                : '$name, a caravana sentiu sua falta. Uma lição retoma a sequência — +${ProgressService.comebackBonusSteps} passos te esperam.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -77,7 +76,7 @@ class _ComebackSheet extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Continuar a caminhada',
+            label: 'Continuar',
             onTap: () async {
               HapticFeedback.lightImpact();
               await progress.acknowledgeComeback();

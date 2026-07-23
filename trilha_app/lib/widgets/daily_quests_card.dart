@@ -30,7 +30,7 @@ class _QuestGroupMeta {
   });
 }
 
-/// Bônus diários — Caminhar é o CTA; isto é checklist extra.
+/// Bônus diários — Treinar é o CTA; isto é checklist extra.
 class DailyQuestsCard extends StatelessWidget {
   final void Function(DailyQuest quest)? onQuestTap;
 

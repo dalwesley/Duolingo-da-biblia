@@ -8,6 +8,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import '../firebase_options.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
+import 'analytics_service.dart';
 import 'league_service.dart';
 import 'progress_service.dart';
 
@@ -88,6 +89,10 @@ class BackendService extends ChangeNotifier {
         );
       }
       _firebaseReady = true;
+      await AnalyticsService.instance.init();
+      await AnalyticsService.instance.setUserId(
+        FirebaseAuth.instance.currentUser?.uid,
+      );
       await _ensureGoogleSignInInitialized();
 
       final auth = FirebaseAuth.instance;
@@ -450,7 +455,7 @@ class BackendService extends ChangeNotifier {
             uid: d.id,
             name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
                 ? d.data()['name'] as String
-                : 'Peregrino',
+                : 'Aprendiz',
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             isUser: d.id == _uid,
           ),
@@ -501,7 +506,7 @@ class BackendService extends ChangeNotifier {
               uid: d.id,
               name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
                   ? d.data()['name'] as String
-                  : 'Peregrino',
+                  : 'Aprendiz',
               steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             ),
       ];
@@ -527,7 +532,7 @@ class BackendService extends ChangeNotifier {
               uid: d.id,
               name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
                   ? d.data()['name'] as String
-                  : 'Peregrino',
+                  : 'Aprendiz',
               steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             ),
       ];
@@ -555,7 +560,7 @@ class BackendService extends ChangeNotifier {
     final guestId = data['guestId'] as String?;
     final hostName = (data['hostName'] as String?)?.trim().isNotEmpty == true
         ? data['hostName'] as String
-        : 'Peregrino';
+        : 'Aprendiz';
     final guestName = (data['guestName'] as String?)?.trim();
     final isHost = hostId == _uid;
     final awaiting = guestId == null || guestId.isEmpty;

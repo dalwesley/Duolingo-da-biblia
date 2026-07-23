@@ -1,7 +1,7 @@
 name: trilha_app
 description: Steway — aprenda a Bíblia em missões gamificadas.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ^3.12.0
@@ -26,6 +26,9 @@ dependencies:
   sqflite: ^2.4.3
   path: ^1.9.1
   home_widget: ^0.9.3
+  firebase_analytics: ^12.4.5
+  firebase_crashlytics: ^5.2.6
+  path_provider: ^2.1.6
 
 dev_dependencies:
   flutter_test:
@@ -37,7 +40,7 @@ flutter_launcher_icons:
   android: true
   ios: true
   image_path: assets/icon/app_icon.png
-  adaptive_icon_background: "#1E3D32"
+  adaptive_icon_background: "#081018"
   adaptive_icon_foreground: assets/icon/app_icon.png
 
 flutter:
@@ -47,6 +50,7 @@ flutter:
     - assets/data/genesis_questions.json
     - assets/data/exodo_questions.json
     - assets/data/ot_questions.json
+    - assets/data/nt_questions.json
     - assets/data/mission_studies.json
     - assets/data/bible_tb.json
     - assets/data/bible_jfaal.json

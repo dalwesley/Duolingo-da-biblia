@@ -218,7 +218,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                   immersive: true,
                   dark: appearance.onDark,
                   title: progress.userName,
-                  subtitle: 'Sua jornada, seu ritmo',
+                  subtitle: 'Seu progresso, seu ritmo',
                   onBack: () => Navigator.pop(ctx),
                   photoUrl: backend.userPhotoUrl,
                   showTrailingAvatar: true,
@@ -233,7 +233,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   }
 
   void _goToTrilhas() => setState(() {
-    _index = 2;
+    _index = 1;
     _frost.value = 0;
   });
 
@@ -253,22 +253,22 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       showLeading: true,
       leadingGlyph: switch (index) {
         0 => CinematicGlyph.home,
-        1 => CinematicGlyph.book,
-        2 => CinematicGlyph.path,
+        1 => CinematicGlyph.path,
+        2 => CinematicGlyph.book,
         3 => CinematicGlyph.people,
         _ => CinematicGlyph.tune,
       },
       title: switch (index) {
         0 => userName,
-        1 => 'Bíblia',
-        2 => 'Trilhas',
+        1 => 'Trilhas',
+        2 => 'Bíblia',
         3 => 'Juntos',
         _ => 'Config',
       },
       subtitle: switch (index) {
         0 => DayPhaseHelper.greeting(appearance.phase),
-        1 => 'A Palavra, offline',
-        2 => 'Escolha o caminho',
+        1 => 'Escolha o caminho',
+        2 => 'Leitura e estudo',
         3 => 'Companhia · Caravana · Salas',
         _ => 'Ritmo · Aparência · Conta',
       },
@@ -335,16 +335,16 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                 ),
                 ImmersiveBackground(
                   appearance: appearance,
-                  child: BibleScreen(
+                  child: TrilhasScreen(
+                    repo: _repo,
                     topBar: tabBar(1),
+                    portalsActive: _index == 1,
                   ),
                 ),
                 ImmersiveBackground(
                   appearance: appearance,
-                  child: TrilhasScreen(
-                    repo: _repo,
+                  child: BibleScreen(
                     topBar: tabBar(2),
-                    portalsActive: _index == 2,
                   ),
                 ),
                 ImmersiveBackground(

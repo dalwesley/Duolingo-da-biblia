@@ -104,7 +104,7 @@ class ImmersiveBackground extends StatelessWidget {
             ),
           ),
         ),
-        // Vinheta
+        // Vinheta leve — HUD, não cinema contemplativo
         Positioned.fill(
           child: IgnorePointer(
             child: DecoratedBox(
@@ -115,14 +115,10 @@ class ImmersiveBackground extends StatelessWidget {
                   colors: [
                     Colors.transparent,
                     Colors.black.withValues(
-                      alpha: night
-                          ? 0.32
-                          : phase == DayPhase.morning
-                              ? 0.18
-                              : 0.14,
+                      alpha: night ? 0.1 : 0.06,
                     ),
                   ],
-                  stops: const [0.5, 1.0],
+                  stops: const [0.55, 1.0],
                 ),
               ),
             ),
@@ -134,13 +130,16 @@ class ImmersiveBackground extends StatelessWidget {
   }
 }
 
-/// Painel unificado — usa Appearance (mesmo card em todas as abas).
+/// Painel sólido Steway — mesmo card em Home, onboarding, trilha, etc.
 class GlassCard extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
   final VoidCallback? onTap;
   final double radius;
   final bool elevated;
+  /// Borda açafrão + glow — card hero / ativo.
+  final bool accent;
+  final Color? color;
 
   const GlassCard({
     super.key,
@@ -149,6 +148,8 @@ class GlassCard extends StatelessWidget {
     this.onTap,
     this.radius = AppMetrics.cardRadius,
     this.elevated = false,
+    this.accent = false,
+    this.color,
   });
 
   @override
@@ -159,14 +160,17 @@ class GlassCard extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: style.cardFill,
-        gradient: style.cardGradient,
+        color: color ?? style.cardFill,
         border: Border.all(
-          color: elevated
-              ? style.cardBorder.withValues(alpha: 0.9)
+          color: accent
+              ? AppMetrics.accentBorder(alpha: elevated ? 0.55 : 0.42)
               : style.cardBorder,
+          width: accent ? 1.5 : 1,
         ),
-        boxShadow: AppTheme.cardShadow(elevated: elevated),
+        boxShadow: AppMetrics.cardShadow(
+          elevated: elevated || accent,
+          accent: accent,
+        ),
       ),
       child: child,
     );

@@ -44,6 +44,11 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+# Release signing
+android/key.properties
+*.keystore
+*.jks
+
 # Admin panel
 admin/node_modules/
 admin/dist/

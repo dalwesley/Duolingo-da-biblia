@@ -49,16 +49,17 @@ firebase deploy --only firestore:rules
 ```
 
 3. Entre no painel com esse e-mail/senha.
-4. Vá em **Importar** e envie:
-   - `../trilha_app/assets/data/trails.json`
-   - `../trilha_app/assets/data/genesis_questions.json`
-   - `../trilha_app/assets/data/mission_studies.json`
-
-Ou, com Anonymous Auth + regras liberadas temporariamente:
+4. Normaliza banks/estudos e publica tudo:
 
 ```bash
-npm run seed
+npm run prepare:content   # opcional (já roda dentro do seed)
+npm run seed              # sobe trails + genesis/exodo/ot/nt + studies
 ```
+
+Ou no painel **Importar**, envie:
+   - `trails.json`
+   - `genesis_questions.json`, `exodo_questions.json`, `ot_questions.json`, `nt_questions.json`
+   - `mission_studies.json`
 
 ## Deploy do painel
 

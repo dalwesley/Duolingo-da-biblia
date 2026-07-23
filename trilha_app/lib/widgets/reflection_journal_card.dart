@@ -8,7 +8,7 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Diário leve — últimas reflexões guardadas nas missões.
+/// Anotações de estudo — últimas respostas guardadas nas missões.
 class ReflectionJournalCard extends StatelessWidget {
   const ReflectionJournalCard({super.key});
 
@@ -23,7 +23,7 @@ class ReflectionJournalCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const CardHeader(label: 'Seu diário'),
+          const CardHeader(label: 'Anotações de estudo'),
           const SizedBox(height: AppSpace.md),
           if (items.isEmpty)
             Row(
@@ -41,12 +41,12 @@ class ReflectionJournalCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Nenhuma reflexão ainda',
+                        'Nenhuma anotação ainda',
                         style: AppTypography.title(size: 14, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'Ao terminar um passo da trilha, sua resposta fica registrada aqui.',
+                        'Ao fixar uma lição, sua resposta fica registrada aqui.',
                         style: AppTypography.body(
                           size: 12,
                           color: a.textMuted(0.55),
@@ -87,13 +87,13 @@ class ReflectionJournalCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      '“${e.value}”',
+                      e.value,
                       style: AppTypography.body(
                         size: 14,
                         height: 1.4,
                         weight: FontWeight.w600,
                         color: a.text.withValues(alpha: 0.9),
-                      ).copyWith(fontStyle: FontStyle.italic),
+                      ),
                     ),
                   ],
                 ),

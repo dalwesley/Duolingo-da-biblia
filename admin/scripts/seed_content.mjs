@@ -5,6 +5,8 @@
  *
  * Ou defina SEED_EMAIL / SEED_PASSWORD em admin/.env
  *
+ * Rode antes: npm run prepare:content  (normaliza banks + estudos + NT)
+ *
  * O uid precisa existir em admin_users/{uid} com role admin|editor
  * (rules de content_* só permitem escrita a content editors).
  *
@@ -43,6 +45,16 @@ function loadEnv() {
     }
   }
   return env;
+}
+
+function readJson(name) {
+  return JSON.parse(readFileSync(join(assetsRoot, name), 'utf8'));
+}
+
+function asQuestionList(data) {
+  if (Array.isArray(data)) return data;
+  if (data && Array.isArray(data.questions)) return data.questions;
+  return [];
 }
 
 async function batchWrite(db, colId, items, idKey) {
@@ -106,7 +118,6 @@ async function main() {
   if (!uid) throw new Error('Sem uid após autenticação');
   console.log('Autenticado:', uid);
 
-  // Garante perfil editor (rules: create próprio admin_users).
   await setDoc(
     doc(db, 'admin_users', uid),
     {
@@ -119,9 +130,7 @@ async function main() {
   );
   console.log('admin_users OK');
 
-  const trails = JSON.parse(
-    readFileSync(join(assetsRoot, 'trails.json'), 'utf8'),
-  );
+  const trails = readJson('trails.json');
   console.log(`Trilhas: ${trails.length}`);
   await batchWrite(
     db,
@@ -136,27 +145,53 @@ async function main() {
     'slug',
   );
 
-  const bank = JSON.parse(
-    readFileSync(join(assetsRoot, 'genesis_questions.json'), 'utf8'),
-  );
-  console.log(`Dificuldades: ${bank.difficulties.length}`);
-  await batchWrite(
-    db,
-    'content_difficulties',
-    bank.difficulties.map((d, i) => ({ ...d, id: d.id, order: i + 1 })),
-    'id',
-  );
-  console.log(`Perguntas: ${bank.questions.length}`);
+  const genesis = readJson('genesis_questions.json');
+  const difficulties = genesis.difficulties || [];
+  console.log(`Dificuldades: ${difficulties.length}`);
+  if (difficulties.length) {
+    await batchWrite(
+      db,
+      'content_difficulties',
+      difficulties.map((d, i) => ({ ...d, id: d.id, order: i + 1 })),
+      'id',
+    );
+  }
+
+  const bankFiles = [
+    'genesis_questions.json',
+    'exodo_questions.json',
+    'ot_questions.json',
+    'nt_questions.json',
+  ];
+  const seen = new Set();
+  const questions = [];
+  for (const file of bankFiles) {
+    const path = join(assetsRoot, file);
+    if (!existsSync(path)) {
+      console.log(`  (sem ${file})`);
+      continue;
+    }
+    const list = asQuestionList(readJson(file));
+    let added = 0;
+    for (const q of list) {
+      if (!q?.id || seen.has(q.id)) continue;
+      seen.add(q.id);
+      questions.push(q);
+      added += 1;
+    }
+    console.log(`  ${file}: +${added}`);
+  }
+  console.log(`Perguntas do banco: ${questions.length}`);
   await batchWrite(
     db,
     'content_bank_questions',
-    bank.questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
+    questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
     'id',
   );
 
   const studiesPath = join(assetsRoot, 'mission_studies.json');
   if (existsSync(studiesPath)) {
-    const data = JSON.parse(readFileSync(studiesPath, 'utf8'));
+    const data = readJson('mission_studies.json');
     const docs = Object.entries(data.studies || {}).map(([slug, s]) => ({
       ...s,
       id: slug,
@@ -180,6 +215,16 @@ async function main() {
       version: Date.now(),
       updatedAt: Timestamp.now(),
       seededAt: Timestamp.now(),
+    },
+    { merge: true },
+  );
+  // Fecha bootstrap de admin_users (create só enquanto este doc não existir).
+  await setDoc(
+    doc(db, 'content_meta', 'bootstrap_locked'),
+    {
+      locked: true,
+      lockedAt: Timestamp.now(),
+      note: 'Novos admin_users só via Console / admin existente',
     },
     { merge: true },
   );

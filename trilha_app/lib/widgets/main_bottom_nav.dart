@@ -24,8 +24,8 @@ class MainBottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     const tabs = [
       (glyph: CinematicGlyph.home, label: 'Hoje'),
-      (glyph: CinematicGlyph.book, label: 'Bíblia'),
       (glyph: CinematicGlyph.path, label: 'Trilhas'),
+      (glyph: CinematicGlyph.book, label: 'Bíblia'),
       (glyph: CinematicGlyph.people, label: 'Juntos'),
       (glyph: CinematicGlyph.tune, label: 'Config'),
     ];

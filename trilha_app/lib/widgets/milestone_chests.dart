@@ -35,7 +35,7 @@ class MilestoneChestsCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CardHeader(label: 'Baús da jornada'),
+            const CardHeader(label: 'Baús de progresso'),
             const SizedBox(height: AppSpace.xs),
             Text(
               'Recompensas ao avançar na trilha',

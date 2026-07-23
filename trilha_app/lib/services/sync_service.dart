@@ -68,7 +68,7 @@ class SyncService extends ChangeNotifier {
           'lastPlayedDate': data['lastPlayedDate'] as String?,
           'completedMissions': data['completedMissions'],
           'missionsToday': (data['missionsToday'] as num?)?.toInt() ?? 0,
-          'userName': data['userName'] as String? ?? 'Peregrino',
+          'userName': data['userName'] as String? ?? 'Aprendiz',
         };
       }
       return data;

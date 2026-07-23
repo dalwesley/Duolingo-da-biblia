@@ -72,7 +72,7 @@ class _StudyPanelState extends State<StudyPanel>
         ),
         children: [
           Text(
-            'PREPARE-SE',
+            'ESTUDO',
             textAlign: TextAlign.center,
             style: AppTypography.label(
               size: 11,
@@ -120,9 +120,9 @@ class _StudyPanelState extends State<StudyPanel>
                 Text(
                   study.passageRef,
                   textAlign: TextAlign.center,
-                  style: AppTypography.display(
-                    size: 26,
-                    weight: FontWeight.w700,
+                  style: AppTypography.title(
+                    size: 22,
+                    weight: FontWeight.w800,
                     color: Colors.white,
                     height: 1.15,
                   ),
@@ -137,14 +137,14 @@ class _StudyPanelState extends State<StudyPanel>
                       weight: FontWeight.w500,
                       color: Colors.white.withValues(alpha: 0.65),
                       height: 1.35,
-                    ).copyWith(fontStyle: FontStyle.italic),
+                    ),
                   ),
                 ],
                 const SizedBox(height: AppSpace.section),
                 Text(
                   '"${study.passageText}"',
                   textAlign: TextAlign.center,
-                  style: AppTypography.display(
+                  style: AppTypography.verse(
                     size: 18,
                     weight: FontWeight.w600,
                     fontStyle: FontStyle.italic,
@@ -271,7 +271,7 @@ class _StudyPanelState extends State<StudyPanel>
                 border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
               ),
               child: Text(
-                'Sua reflexão anterior: “${widget.priorReflection}”',
+                'Sua anotação anterior: “${widget.priorReflection}”',
                 style: AppTypography.body(
                   size: 13,
                   color: Colors.white.withValues(alpha: 0.65),
@@ -298,7 +298,7 @@ class _StudyPanelState extends State<StudyPanel>
                 ],
               ),
               child: Text(
-                'RESPONDER PERGUNTAS',
+                'COMEÇAR',
                 textAlign: TextAlign.center,
                 style: AppTypography.cta().copyWith(letterSpacing: 0.8),
               ),
@@ -382,13 +382,14 @@ class _StudyAction extends StatelessWidget {
   }
 }
 
-/// Reflexão pós-missão — consolidar aprendizado.
+/// Consolidação pós-missão — opcional, bônus de retenção.
 class ReflectionPanel extends StatefulWidget {
   final MissionStudy study;
   final Color accent;
   final int correct;
   final int total;
   final ValueChanged<String> onFinish;
+  final VoidCallback onSkip;
 
   const ReflectionPanel({
     super.key,
@@ -397,6 +398,7 @@ class ReflectionPanel extends StatefulWidget {
     required this.correct,
     required this.total,
     required this.onFinish,
+    required this.onSkip,
   });
 
   @override
@@ -441,18 +443,18 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            'O que você leva\ndesta passagem?',
+            'Fixar o que\nvocê aprendeu',
             textAlign: TextAlign.center,
             style: AppTypography.display(
               size: 28,
-              weight: FontWeight.w700,
+              weight: FontWeight.w800,
               color: Colors.white,
               height: 1.2,
             ),
           ),
           const SizedBox(height: AppSpace.sm),
           Text(
-            '$pct% de acertos',
+            '$pct% de clareza · opcional · +passos se guardar',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
@@ -467,7 +469,7 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
               size: 14,
               color: Colors.white.withValues(alpha: 0.7),
               height: 1.4,
-            ).copyWith(fontStyle: FontStyle.italic),
+            ),
           ),
           const SizedBox(height: 8),
           Expanded(
@@ -555,7 +557,9 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                         boxShadow: canSubmit
                             ? [
                                 BoxShadow(
-                                  color: AppColors.accent.withValues(alpha: 0.4),
+                                  color: AppColors.accent.withValues(
+                                    alpha: 0.4,
+                                  ),
                                   blurRadius: 14,
                                   offset: const Offset(0, 4),
                                 ),
@@ -563,10 +567,21 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                             : null,
                       ),
                       child: Text(
-                        'AVANÇAR',
+                        'GUARDAR E CONTINUAR',
                         textAlign: TextAlign.center,
                         style: AppTypography.cta().copyWith(letterSpacing: 0.5),
                       ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                TextButton(
+                  onPressed: widget.onSkip,
+                  child: Text(
+                    'Pular',
+                    style: AppTypography.body(
+                      weight: FontWeight.w700,
+                      color: Colors.white.withValues(alpha: 0.55),
                     ),
                   ),
                 ),

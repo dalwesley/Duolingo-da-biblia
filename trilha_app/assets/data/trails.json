@@ -1265,7 +1265,7 @@
   {
     "slug": "genesis-12-50",
     "title": "Gênesis 12–50",
-    "description": "Abraão, Isaque, Jacó e José — a família da promessa.",
+    "description": "Abraão, Isaque, Jacó e José — a promessa do começo ao Egito. Cobertura completa dos capítulos 12–50.",
     "icon": "🏕️",
     "order": 2,
     "unlockAfter": "genesis-1-11",
@@ -1278,37 +1278,91 @@
         "icon": "🌟",
         "missions": [
           {
-            "slug": "genesis-12-5-abraao-01-chamado-de-abrao",
-            "title": "Chamado de Abrão",
-            "subtitle": "",
-            "intro": "Deixa a terra e vai — a promessa começa com obediência.",
+            "slug": "gen12-01-chamado",
+            "title": "O chamado de Abrão",
+            "subtitle": "Gênesis 12",
+            "intro": "Deixa a terra, a parentela e a casa do pai — a promessa começa com um passo de fé.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-abraao-02-a-alianca-e-a-fe",
-            "title": "A aliança e a fé",
-            "subtitle": "",
-            "intro": "Estrelas no céu: descendência e bênção para as nações.",
+            "slug": "gen12-02-egito-e-lot",
+            "title": "Egito e a separação de Ló",
+            "subtitle": "Gênesis 12–13",
+            "intro": "Fome leva Abrão ao Egito; depois, ele e Ló se separam — Abrão fica com a promessa, Ló escolhe a planície.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-abraao-03-isaque-prometido",
-            "title": "Isaque prometido",
-            "subtitle": "",
-            "intro": "Riso e fidelidade: o filho da promessa nasce.",
+            "slug": "gen12-03-melquisedeque",
+            "title": "Guerra e Melquisedeque",
+            "subtitle": "Gênesis 14",
+            "intro": "Abrão resgata Ló e encontra Melquisedeque, rei de Salém — pão, vinho e bênção no nome do Deus Altíssimo.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-abraao-04-desafio-a-promessa",
-            "title": "Desafio: A promessa",
-            "subtitle": "",
-            "intro": "Revise o chamado, a aliança e a fé de Abraão.",
+            "slug": "gen12-04-alianca-estrelas",
+            "title": "A aliança das estrelas",
+            "subtitle": "Gênesis 15",
+            "intro": "Abrão crê — e isso lhe é imputado por justiça. Deus corta aliança: descendência como as estrelas.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-05-agar-ismael",
+            "title": "Agar e Ismael",
+            "subtitle": "Gênesis 16",
+            "intro": "Impaciência gera um atalho: Agar concebe Ismael. Deus vê a aflita — El-Roi.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-06-circuncisao",
+            "title": "Nomes novos e circuncisão",
+            "subtitle": "Gênesis 17",
+            "intro": "Abrão vira Abraão; Sarai vira Sara. A circuncisão sela a aliança — e Isaque é anunciado.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-07-sodoma",
+            "title": "Visitantes e Sodoma",
+            "subtitle": "Gênesis 18–19",
+            "intro": "Três visitantes; Abraão intercede. Sodoma cai — e Ló é tirado. A justiça de Deus e a misericórdia se encontram.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-08-isaque-nasce",
+            "title": "Isaque nasce",
+            "subtitle": "Gênesis 20–21",
+            "intro": "No tempo de Deus, Sara ri de alegria: Isaque nasce. Abimeleque e a aliança mostram que Deus guarda a promessa.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-09-moria",
+            "title": "Moriá — o filho oferecido",
+            "subtitle": "Gênesis 22",
+            "intro": "O teste máximo: oferecer Isaque. No monte, Deus provê o cordeiro. Jeová-Jiré.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-boss-abraao",
+            "title": "Desafio: Abraão",
+            "subtitle": "Gênesis 12–22",
+            "intro": "Do chamado a Moriá — una fé, aliança e provisão na jornada de Abraão.",
             "type": "boss",
             "xpReward": 80,
             "questions": []
@@ -1321,30 +1375,57 @@
         "icon": "⛺",
         "missions": [
           {
-            "slug": "genesis-12-5-jaco-01-isaque-e-rebeca",
+            "slug": "gen12-10-rebeca",
             "title": "Isaque e Rebeca",
-            "subtitle": "",
-            "intro": "A linha da promessa continua na próxima geração.",
+            "subtitle": "Gênesis 23–24",
+            "intro": "Sara descansa; o servo ora no poço — e Rebeca aparece. A linha da promessa continua na próxima geração.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-jaco-02-jaco-e-esau",
-            "title": "Jacó e Esaú",
-            "subtitle": "",
-            "intro": "Primogenitura, bênção e conflito entre irmãos.",
+            "slug": "gen12-11-esaue-jaco",
+            "title": "Esaú e Jacó",
+            "subtitle": "Gênesis 25–27",
+            "intro": "Dois povos no ventre. Isaque em Gerar; primogenitura trocada por um prato; bênção tomada com engano.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-jaco-03-betel-e-o-novo-nome",
-            "title": "Betel e o novo nome",
-            "subtitle": "",
-            "intro": "De Jacó a Israel — encontro com Deus.",
+            "slug": "gen12-12-betel",
+            "title": "Betel — a escada",
+            "subtitle": "Gênesis 28",
+            "intro": "Em fuga, Jacó sonha: escada entre céu e terra. Deus renova a promessa — este é Betel.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-13-labao",
+            "title": "Labão, Lia e Raquel",
+            "subtitle": "Gênesis 29–31",
+            "intro": "Anos em Harã: engano de Labão, Lia e Raquel, filhos das tribos — e a fuga de volta à terra.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-14-peniel",
+            "title": "Peniel — luta e novo nome",
+            "subtitle": "Gênesis 32–35",
+            "intro": "Jacó luta e vira Israel; encontra Esaú; a família volta a Betel — feridas e renovação no caminho.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-boss-jaco",
+            "title": "Desafio: Isaque e Jacó",
+            "subtitle": "Gênesis 25–32",
+            "intro": "Da rivalidade ao novo nome — una o fio de Isaque, Jacó e a promessa.",
+            "type": "boss",
+            "xpReward": 80,
             "questions": []
           }
         ]
@@ -1355,37 +1436,64 @@
         "icon": "👑",
         "missions": [
           {
-            "slug": "genesis-12-5-jose-01-sonhos-e-traicao",
+            "slug": "gen12-15-sonhos",
             "title": "Sonhos e traição",
-            "subtitle": "",
-            "intro": "O poço e o Egito: Deus na trama humana.",
+            "subtitle": "Gênesis 37–38",
+            "intro": "Túnica, sonhos e ciúme: José é vendido. Judá e Tamar também revelam a linha messiânica no meio do fracasso.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-jose-02-do-carcere-ao-palaci",
+            "slug": "gen12-16-potifar",
+            "title": "Potifar e a prisão",
+            "subtitle": "Gênesis 39",
+            "intro": "José prospera na casa de Potifar — e é acusado falsamente. Na prisão, o Senhor continua com ele.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-17-farao",
             "title": "Do cárcere ao palácio",
-            "subtitle": "",
-            "intro": "Interpretação, provisão e elevação.",
+            "subtitle": "Gênesis 40–41",
+            "intro": "Sonhos do copeiro, do padeiro e de Faraó. José interpreta — e é posto sobre o Egito.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-jose-03-reconciliacao",
-            "title": "Reconciliação",
-            "subtitle": "",
-            "intro": "O que intentaram para mal, Deus tornou em bem.",
+            "slug": "gen12-18-irmaos",
+            "title": "Os irmãos diante de José",
+            "subtitle": "Gênesis 42–44",
+            "intro": "A fome traz os irmãos ao Egito. José prova o coração deles — e Benjamim entra em cena.",
             "type": "lesson",
-            "xpReward": 50,
+            "xpReward": 55,
             "questions": []
           },
           {
-            "slug": "genesis-12-5-jose-04-desafio-jose",
+            "slug": "gen12-19-revelacao",
+            "title": "José se revela",
+            "subtitle": "Gênesis 45",
+            "intro": "“Eu sou José.” Choro, perdão e convite: Deus enviou-me adiante para preservar vidas.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-20-egito-bencao",
+            "title": "Jacó no Egito e a bênção",
+            "subtitle": "Gênesis 46–50",
+            "intro": "A família desce ao Egito. Jacó abençoa os filhos; José chora o pai — e afirma: Deus o sentido do mal em bem.",
+            "type": "lesson",
+            "xpReward": 55,
+            "questions": []
+          },
+          {
+            "slug": "gen12-boss-jose",
             "title": "Desafio: José",
-            "subtitle": "",
-            "intro": "A soberania de Deus na história de José.",
+            "subtitle": "Gênesis 37–50",
+            "intro": "Da cisterna ao palácio — una sonhos, sofrimento, perdão e providência.",
             "type": "boss",
             "xpReward": 80,
             "questions": []

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 
-/// Lâmpadas = vidas da missão (Sl 119:105).
+/// Lâmpadas = vidas da missão.
 /// Cada erro apaga uma; zerar encerra a cena.
 class LampsBar extends StatelessWidget {
   final int current;

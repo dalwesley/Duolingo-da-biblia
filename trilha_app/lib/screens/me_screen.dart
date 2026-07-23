@@ -14,7 +14,7 @@ import '../widgets/reflection_journal_card.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 
-/// Perfil / jornada — aberto pelo avatar na home.
+/// Perfil / progresso — aberto pelo avatar na home.
 class MeScreen extends StatefulWidget {
   final Widget? topBar;
 

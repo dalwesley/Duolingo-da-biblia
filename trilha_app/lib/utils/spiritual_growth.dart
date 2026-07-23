@@ -1,4 +1,4 @@
-/// Companion de hábito — a semente cresce com a sequência (vs. pet genérico).
+/// Companion de hábito — marcos da sequência diária (treino, não ritual).
 enum GrowthStage {
   seed,
   sprout,
@@ -27,8 +27,8 @@ class SpiritualGrowth {
     if (s <= 0) {
       return SpiritualGrowth(
         stage: GrowthStage.seed,
-        title: 'Semente',
-        subtitle: 'Dê um passo para germinar',
+        title: 'Iniciante',
+        subtitle: 'Complete uma lição para começar a sequência',
         streak: s,
         nextAt: 1,
       );
@@ -36,8 +36,8 @@ class SpiritualGrowth {
     if (s < 3) {
       return SpiritualGrowth(
         stage: GrowthStage.sprout,
-        title: 'Broto',
-        subtitle: 'A luz começa a aparecer — $s dia(s)',
+        title: 'Em ritmo',
+        subtitle: '$s dia(s) · meta: 3 dias seguidos',
         streak: s,
         nextAt: 3,
       );
@@ -45,8 +45,8 @@ class SpiritualGrowth {
     if (s < 7) {
       return SpiritualGrowth(
         stage: GrowthStage.sapling,
-        title: 'Muda',
-        subtitle: 'Raízes firmes — rumo a 7 dias',
+        title: 'Semana em construção',
+        subtitle: 'Rumo a 7 dias seguidos',
         streak: s,
         nextAt: 7,
       );
@@ -54,16 +54,16 @@ class SpiritualGrowth {
     if (s < 14) {
       return SpiritualGrowth(
         stage: GrowthStage.olive,
-        title: 'Oliveira',
-        subtitle: 'Fruto da constância — 14 dias acendem a lâmpada',
+        title: 'Duas semanas',
+        subtitle: 'Constância firme — próximo marco em 14 dias',
         streak: s,
         nextAt: 14,
       );
     }
     return SpiritualGrowth(
       stage: GrowthStage.lamp,
-      title: 'Lâmpada acesa',
-      subtitle: '“Lâmpada para os meus pés é a tua palavra”',
+      title: 'Sequência consolidada',
+      subtitle: '$s dias · o hábito está formado',
       streak: s,
       nextAt: s,
     );

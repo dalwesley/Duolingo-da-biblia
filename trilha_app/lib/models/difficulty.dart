@@ -8,7 +8,7 @@ enum TrailDifficulty {
 
   String get id => name;
 
-  /// Próximo modo (Semente → Caminhada → Profundezas).
+  /// Próximo modo (Semente → Rota → Profundezas).
   TrailDifficulty? get next {
     return switch (this) {
       TrailDifficulty.semente => TrailDifficulty.caminhada,
@@ -20,7 +20,7 @@ enum TrailDifficulty {
   String get labelPt {
     return switch (this) {
       TrailDifficulty.semente => 'Semente',
-      TrailDifficulty.caminhada => 'Caminhada',
+      TrailDifficulty.caminhada => 'Rota',
       TrailDifficulty.profundezas => 'Profundezas',
     };
   }

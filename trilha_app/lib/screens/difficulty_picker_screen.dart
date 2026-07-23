@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../models/difficulty.dart';
+import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/difficulty_visuals.dart';
@@ -49,6 +50,10 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
   Future<void> _choose(DifficultyMeta meta) async {
     HapticFeedback.mediumImpact();
     await context.read<ProgressService>().setTrailDifficulty(widget.trailSlug, meta.difficulty.id);
+    AnalyticsService.instance.logDifficultyPick(
+      trailSlug: widget.trailSlug,
+      difficulty: meta.difficulty.id,
+    );
     if (!mounted) return;
     widget.onSelected();
   }
@@ -126,13 +131,13 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                 ),
                                 const SizedBox(height: AppSpace.sm),
                                 Text(
-                                  'Escolha o modo\nda sua jornada',
+                                  'Escolha o modo\nde dificuldade',
                                   textAlign: TextAlign.center,
                                   style: AppTypography.display(size: 28, height: 1.15),
                                 ),
                                 const SizedBox(height: AppSpace.md),
                                 Text(
-                                  'Semente, Caminhada ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
+                                  'Semente, Rota ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
                                   textAlign: TextAlign.center,
                                   style: AppTypography.body(
                                     size: 13,

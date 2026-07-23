@@ -6,19 +6,50 @@ import 'cinematic_icon.dart';
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
 class AppMetrics {
   /// Altura única das barras de progresso lineares.
-  static const progressHeight = 4.0;
+  static const progressHeight = 5.0;
 
-  /// Padding padrão dos GlassCards de conteúdo.
+  /// Padding padrão dos cards de conteúdo.
   static const cardPadding = EdgeInsets.all(AppSpace.lg);
 
-  /// Raio padrão dos cards (alias de [AppRadii.lg]).
+  /// Padding compacto (listas / rows).
+  static const cardPaddingCompact = EdgeInsets.symmetric(
+    horizontal: AppSpace.lg,
+    vertical: AppSpace.md,
+  );
+
+  /// Raio padrão dos cards.
   static const cardRadius = AppRadii.lg;
+
+  /// Raio do card hero / destaque.
+  static const heroRadius = AppRadii.xl;
 
   /// Ícone leading em listas (quests, trilhas).
   static const leadingIcon = 34.0;
 
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
+
+  /// Borda padrão (branca suave).
+  static Color border(BuildContext context) => Appearance.of(context).cardBorder;
+
+  /// Borda de destaque (açafrão).
+  static Color accentBorder({double alpha = 0.45}) =>
+      AppColors.accent.withValues(alpha: alpha);
+
+  /// Sombra padrão de card.
+  static List<BoxShadow> cardShadow({bool elevated = false, bool accent = false}) => [
+        if (accent)
+          BoxShadow(
+            color: AppColors.accent.withValues(alpha: elevated ? 0.28 : 0.18),
+            blurRadius: elevated ? 22 : 16,
+            offset: const Offset(0, 8),
+          ),
+        BoxShadow(
+          color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
+          blurRadius: elevated ? 16 : 10,
+          offset: Offset(0, elevated ? 8 : 4),
+        ),
+      ];
 }
 
 /// Botão CTA açafrão — ação principal em cards e telas.
@@ -28,6 +59,7 @@ class CopperCta extends StatelessWidget {
   final CinematicGlyph? trailing;
   final bool expanded;
   final EdgeInsetsGeometry padding;
+  final bool showArrow;
 
   const CopperCta({
     super.key,
@@ -35,7 +67,8 @@ class CopperCta extends StatelessWidget {
     this.onTap,
     this.trailing = CinematicGlyph.path,
     this.expanded = true,
-    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 15),
+    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+    this.showArrow = false,
   });
 
   @override
@@ -44,12 +77,12 @@ class CopperCta extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
-        borderRadius: BorderRadius.circular(AppRadii.md),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         boxShadow: [
           BoxShadow(
-            color: AppColors.accentDark.withValues(alpha: 0.45),
-            offset: const Offset(0, 6),
-            blurRadius: 14,
+            color: AppColors.accent.withValues(alpha: 0.4),
+            offset: const Offset(0, 8),
+            blurRadius: 18,
           ),
         ],
       ),
@@ -57,8 +90,15 @@ class CopperCta extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
         children: [
-          Text(label.toUpperCase(), style: AppTypography.cta(size: 13)),
-          if (trailing != null) ...[
+          Text(label.toUpperCase(), style: AppTypography.cta(size: 14)),
+          if (showArrow) ...[
+            const SizedBox(width: 8),
+            const Icon(
+              Icons.arrow_forward_rounded,
+              size: 18,
+              color: AppColors.inkOnAccent,
+            ),
+          ] else if (trailing != null) ...[
             const SizedBox(width: 8),
             CinematicIcon(
               glyph: trailing!,

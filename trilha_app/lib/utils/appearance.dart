@@ -22,9 +22,9 @@ extension AppearanceModeX on AppearanceMode {
       };
 
   String get description => switch (this) {
-        AppearanceMode.morning => 'Aurora azul e chão quente',
-        AppearanceMode.afternoon => 'Sol alto, céu teal',
-        AppearanceMode.night => 'Tinta da noite',
+        AppearanceMode.morning => 'Azul de treino — manhã',
+        AppearanceMode.afternoon => 'Teal aberto — tarde',
+        AppearanceMode.night => 'HUD noturno de jogo',
         AppearanceMode.automatic => 'Muda conforme o horário',
       };
 
@@ -73,39 +73,33 @@ class AppearanceStyle {
       );
 
   Color get cardFill => switch (look) {
-        AppearanceLook.morning => AppColors.nightMid.withValues(alpha: 0.92),
-        AppearanceLook.afternoon => AppColors.nightMid.withValues(alpha: 0.9),
-        AppearanceLook.night => AppColors.night.withValues(alpha: 0.78),
+        AppearanceLook.morning => const Color(0xFF182838),
+        AppearanceLook.afternoon => const Color(0xFF143040),
+        AppearanceLook.night => AppColors.nightElevated,
       };
 
   Color get cardFillSoft => switch (look) {
-        AppearanceLook.morning => AppColors.nightLight.withValues(alpha: 0.82),
-        AppearanceLook.afternoon => AppColors.nightLight.withValues(alpha: 0.78),
-        AppearanceLook.night => AppColors.night.withValues(alpha: 0.65),
+        AppearanceLook.morning => const Color(0xFF1E3048),
+        AppearanceLook.afternoon => const Color(0xFF1A3A4C),
+        AppearanceLook.night => AppColors.nightLight,
       };
 
   Color get cardBorder => switch (look) {
-        AppearanceLook.morning => Colors.white.withValues(alpha: 0.2),
-        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.16),
+        AppearanceLook.morning => Colors.white.withValues(alpha: 0.14),
+        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.12),
         AppearanceLook.night => Colors.white.withValues(alpha: 0.1),
       };
 
-  LinearGradient? get cardGradient => LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        colors: [
-          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.1 : 0.08),
-          Colors.white.withValues(alpha: look == AppearanceLook.night ? 0.04 : 0.03),
-        ],
-      );
+  /// Painel sólido — sem lavagem de vidro.
+  LinearGradient? get cardGradient => null;
 
   Color get progressTrack =>
-      Colors.white.withValues(alpha: isDay ? 0.22 : 0.14);
+      Colors.white.withValues(alpha: isDay ? 0.2 : 0.14);
 
   Color get navBarFill => switch (look) {
-        AppearanceLook.night => AppColors.nightMid.withValues(alpha: 0.95),
-        AppearanceLook.morning => const Color(0xFF182438).withValues(alpha: 0.95),
-        AppearanceLook.afternoon => const Color(0xFF0E3040).withValues(alpha: 0.95),
+        AppearanceLook.night => AppColors.nightMid,
+        AppearanceLook.morning => const Color(0xFF182438),
+        AppearanceLook.afternoon => const Color(0xFF0E3040),
       };
 
   Color get navBarBorder => Colors.white.withValues(

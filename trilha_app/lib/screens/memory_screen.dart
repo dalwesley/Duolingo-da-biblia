@@ -150,7 +150,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                 immersive: true,
                 dark: true,
                 title: 'Memorizar',
-                subtitle: 'Guarde a Palavra',
+                subtitle: 'Fixe na memória',
                 onBack: () => Navigator.pop(context),
                 leadingGlyph: CinematicGlyph.scroll,
               ),
@@ -393,7 +393,7 @@ class _DonePane extends StatelessWidget {
               ),
             ),
             child: Text(
-              'Treinar de novo',
+              'Tentar de novo',
               style: AppTypography.cta(color: AppColors.inkOnAccent),
             ),
           ),

@@ -4,7 +4,7 @@ import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 
-/// Compartilhar a caminhada — funciona mesmo com streak 0.
+/// Compartilhar a sequência — funciona mesmo com streak 0.
 class ShareStreakButton extends StatelessWidget {
   final int streak;
   final String userName;
@@ -26,27 +26,27 @@ class ShareStreakButton extends StatelessWidget {
     if (streak > 0) {
       final days = streak == 1 ? '1 dia' : '$streak dias';
       body = '''
-👣 Minha caminhada no Steway: $days!
+🔥 $days no Steway!
 
-Estou caminhando na Palavra — $steps passos até agora.$name
+Estou aprendendo a Bíblia em missões curtas — $steps passos até agora.$name
 
-Baixe o Steway e caminhe comigo. 📖✨
+Baixe o Steway e venha junto.
 ''';
     } else if (steps > 0) {
       body = '''
-👣 Estou caminhando na Palavra no Steway — $steps passos até agora.$name
+🔥 Estou aprendendo a Bíblia no Steway — $steps passos até agora.$name
 
-Baixe o Steway e caminhe comigo. 📖✨
+Baixe o Steway e venha junto.
 ''';
     } else {
       body = '''
-👣 Estou começando a caminhar na Palavra com o Steway.$name
+🔥 Comecei a aprender a Bíblia com o Steway.$name
 
-Baixe o Steway e caminhe comigo. 📖✨
+Baixe o Steway e venha junto.
 ''';
     }
     await SharePlus.instance.share(
-      ShareParams(text: body.trim(), subject: 'Minha caminhada no Steway'),
+      ShareParams(text: body.trim(), subject: 'Minha sequência no Steway'),
     );
   }
 
@@ -55,7 +55,7 @@ Baixe o Steway e caminhe comigo. 📖✨
     if (compact) {
       final a = Appearance.of(context);
       return Tooltip(
-        message: 'Compartilhar caminhada',
+        message: 'Compartilhar sequência',
         child: Material(
           color: Colors.transparent,
           child: InkWell(

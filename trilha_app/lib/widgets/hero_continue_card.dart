@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
-import '../utils/trail_visuals.dart';
+import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// CTA da próxima missão — card dominante na home.
-class HeroContinueCard extends StatelessWidget {
+/// Palco da próxima lição — primeiro impacto da Home (não card flat).
+class HeroContinueCard extends StatefulWidget {
   final Mission? mission;
   final String trailTitle;
   final String trailSlug;
   final String trailColor;
   final VoidCallback? onTap;
   final VoidCallback? onExploreTrails;
-  /// Meta diária já cumprida — copy de “continue” em vez de urgência.
   final bool goalMet;
+  final int streak;
 
   const HeroContinueCard({
     super.key,
@@ -25,283 +26,307 @@ class HeroContinueCard extends StatelessWidget {
     this.onTap,
     this.onExploreTrails,
     this.goalMet = false,
+    this.streak = 0,
   });
 
   @override
-  Widget build(BuildContext context) {
-    final mission = this.mission;
-    if (mission == null) return _completedState();
+  State<HeroContinueCard> createState() => _HeroContinueCardState();
+}
 
-    final visuals = TrailVisuals.forSlug(trailSlug);
-    final stepLabel = goalMet ? 'Continue à frente' : 'Próximo passo';
-    final ctaLabel = goalMet ? 'Mais um passo' : 'Caminhar';
-    final hook = goalMet
-        ? 'Meta ok · um passo a mais fortalece a caravana'
-        : mission.isBoss
-        ? 'Desafio especial · mais passos na jornada'
-        : null;
+class _HeroContinueCardState extends State<HeroContinueCard>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _pulse;
+
+  @override
+  void initState() {
+    super.initState();
+    _pulse = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1600),
+    )..repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _pulse.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final mission = widget.mission;
+    if (mission == null) return _completedState(context);
+
+    final a = Appearance.of(context);
+    final stepLabel = widget.goalMet ? 'Mais uma lição' : 'Próxima lição';
+    final ctaLabel = widget.goalMet ? 'Seguir' : 'Continuar';
 
     return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.primary.withValues(alpha: 0.2),
-              blurRadius: 22,
-              offset: const Offset(0, 10),
+      onTap: () {
+        HapticFeedback.mediumImpact();
+        widget.onTap?.call();
+      },
+      child: AnimatedBuilder(
+        animation: _pulse,
+        builder: (context, _) {
+          final glow = 0.28 + 0.18 * _pulse.value;
+          return Container(
+            constraints: const BoxConstraints(minHeight: 300),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  a.cardFillSoft,
+                  a.cardFill,
+                  Color.lerp(a.cardFill, AppColors.primaryDark, 0.35)!,
+                ],
+              ),
+              border: Border.all(
+                color: AppMetrics.accentBorder(
+                  alpha: 0.35 + 0.2 * _pulse.value,
+                ),
+                width: 1.5,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.accent.withValues(alpha: glow * 0.55),
+                  blurRadius: 28,
+                  spreadRadius: -4,
+                  offset: const Offset(0, 10),
+                ),
+                ...AppMetrics.cardShadow(elevated: true),
+              ],
             ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          child: Stack(
-            children: [
-              // Fundo da missão
-              Positioned.fill(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        const Color(0xFF1E342C),
-                        AppColors.primaryDark,
-                        Color.lerp(visuals.accent, AppColors.night, 0.55)!,
-                      ],
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+              child: Stack(
+                children: [
+                  // Energia — órbita dourada
+                  Positioned(
+                    right: -60,
+                    top: -40,
+                    child: Container(
+                      width: 200,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: RadialGradient(
+                          colors: [
+                            AppColors.accent.withValues(alpha: 0.22 + 0.1 * _pulse.value),
+                            Colors.transparent,
+                          ],
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-              // Luz superior
-              Positioned(
-                right: -40,
-                top: -50,
-                child: Container(
-                  width: 200,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: RadialGradient(
-                      colors: [
-                        Colors.white.withValues(alpha: 0.18),
-                        Colors.transparent,
-                      ],
+                  Positioned(
+                    left: -50,
+                    bottom: -30,
+                    child: Container(
+                      width: 160,
+                      height: 160,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: RadialGradient(
+                          colors: [
+                            AppColors.primary.withValues(alpha: 0.35),
+                            Colors.transparent,
+                          ],
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
-              Positioned(
-                left: -40,
-                bottom: -50,
-                child: Container(
-                  width: 180,
-                  height: 180,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: RadialGradient(
-                      colors: [
-                        AppColors.accent.withValues(alpha: 0.22),
-                        Colors.transparent,
-                      ],
+                  Positioned(
+                    right: 8,
+                    top: 24,
+                    child: Opacity(
+                      opacity: 0.18,
+                      child: CinematicIcon.mission(
+                        mission.title,
+                        isBoss: mission.isBoss,
+                        size: 120,
+                        accent: AppColors.accent,
+                        glowing: false,
+                      ),
                     ),
                   ),
-                ),
-              ),
-              // Vinheta
-              Positioned.fill(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      center: const Alignment(0.4, -0.2),
-                      radius: 1.2,
-                      colors: [
-                        Colors.transparent,
-                        Colors.black.withValues(alpha: 0.35),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              // Glifo fantasma
-              Positioned(
-                right: 4,
-                top: 12,
-                child: Opacity(
-                  opacity: 0.4,
-                  child: CinematicIcon.mission(
-                    mission.title,
-                    isBoss: mission.isBoss,
-                    size: 100,
-                    accent: visuals.accent,
-                    glowing: false,
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(AppSpace.xl),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: AppSpace.md,
-                            vertical: 6,
+                        Row(
+                          children: [
+                            _Chip(
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  CinematicIcon(
+                                    glyph: CinematicGlyphResolver.forTrail(
+                                      widget.trailSlug,
+                                    ),
+                                    size: 16,
+                                    accent: AppColors.accent,
+                                    glowing: false,
+                                  ),
+                                  const SizedBox(width: 6),
+                                  Text(
+                                    widget.trailTitle.toUpperCase(),
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      letterSpacing: 1.1,
+                                      color: a.text.withValues(alpha: 0.92),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Spacer(),
+                            if (widget.streak > 0)
+                              _Chip(
+                                accent: true,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    const CinematicIcon(
+                                      glyph: CinematicGlyph.flame,
+                                      size: 14,
+                                      accent: AppColors.streak,
+                                      framed: false,
+                                    ),
+                                    const SizedBox(width: 5),
+                                    Text(
+                                      '${widget.streak}',
+                                      style: AppTypography.title(
+                                        size: 13,
+                                        color: AppColors.streak,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                          ],
+                        ),
+                        const SizedBox(height: 28),
+                        Text(
+                          stepLabel.toUpperCase(),
+                          style: AppTypography.label(
+                            size: 12,
+                            letterSpacing: 2.2,
+                            color: AppColors.accent,
                           ),
-                          decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.28),
-                            borderRadius: BorderRadius.circular(AppRadii.pill),
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.16),
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          mission.title,
+                          style: AppTypography.display(
+                            size: 34,
+                            height: 1.08,
+                            weight: FontWeight.w900,
+                            color: a.text,
+                          ),
+                        ),
+                        if (mission.isBoss) ...[
+                          const SizedBox(height: 10),
+                          Text(
+                            'Desafio especial · mais passos',
+                            style: AppTypography.body(
+                              size: 14,
+                              color: a.textMuted(0.65),
                             ),
                           ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              CinematicIcon(
-                                glyph: CinematicGlyphResolver.forTrail(trailSlug),
-                                size: 20,
-                                accent: AppColors.accent,
-                                glowing: false,
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                trailTitle.toUpperCase(),
-                                style: AppTypography.label(
-                                  size: 10,
-                                  letterSpacing: 1.1,
-                                  color: Colors.white.withValues(alpha: 0.9),
+                        ],
+                        const SizedBox(height: 28),
+                        // CTA full-bleed
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.symmetric(vertical: 18),
+                          decoration: BoxDecoration(
+                            gradient: AppGradients.gold,
+                            borderRadius: BorderRadius.circular(AppRadii.lg),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppColors.accent.withValues(
+                                  alpha: 0.45 + 0.25 * _pulse.value,
                                 ),
+                                blurRadius: 22,
+                                offset: const Offset(0, 8),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                ctaLabel.toUpperCase(),
+                                style: AppTypography.cta(size: 16),
+                              ),
+                              const SizedBox(width: 10),
+                              Icon(
+                                Icons.arrow_forward_rounded,
+                                size: 20,
+                                color: AppColors.inkOnAccent,
                               ),
                             ],
                           ),
                         ),
-                        if (mission.isBoss) ...[
-                          const SizedBox(width: AppSpace.sm),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 10,
-                              vertical: 6,
-                            ),
-                            decoration: BoxDecoration(
-                              gradient: AppGradients.gold,
-                              borderRadius: BorderRadius.circular(AppRadii.pill),
-                            ),
-                            child: Text(
-                              'DESAFIO',
-                              style: AppTypography.label(
-                                size: 9,
-                                letterSpacing: 1,
-                                color: AppColors.inkOnAccent,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                    const SizedBox(height: AppSpace.xl),
-                    SectionLabel(stepLabel),
-                    const SizedBox(height: AppSpace.sm),
-                    Text(
-                      mission.title,
-                      style: AppTypography.display(
-                        size: 30,
-                        height: 1.12,
-                      ),
-                    ),
-                    if (hook != null) ...[
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        hook,
-                        style: AppTypography.body(
-                          size: 13,
-                          color: Colors.white.withValues(alpha: 0.68),
-                          height: 1.3,
-                        ),
-                      ),
-                    ],
-                    const SizedBox(height: AppSpace.xxl),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: CopperCta(
-                            label: ctaLabel,
-                            onTap: null,
-                          ),
-                        ),
-                        const SizedBox(width: AppSpace.md),
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 15,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Colors.black.withValues(alpha: 0.3),
-                            borderRadius: BorderRadius.circular(AppRadii.md),
-                            border: Border.all(
-                              color: Colors.white.withValues(alpha: 0.18),
-                            ),
-                          ),
+                        const SizedBox(height: 12),
+                        Center(
                           child: Text(
-                            '+${mission.stepsReward} passos',
-                            style: AppTypography.title(
-                              size: 14,
-                              color: Colors.white,
+                            '+${mission.stepsReward} passos nesta lição',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w700,
+                              color: a.textMuted(0.55),
                             ),
                           ),
                         ),
                       ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
-          ),
-        ),
+            ),
+          );
+        },
       ),
     );
   }
 
-  Widget _completedState() {
+  Widget _completedState(BuildContext context) {
+    final a = Appearance.of(context);
     return GestureDetector(
-      onTap: onExploreTrails,
+      onTap: widget.onExploreTrails,
       child: Container(
-        padding: const EdgeInsets.all(AppRadii.xl),
+        padding: const EdgeInsets.all(28),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.xl),
-          gradient: const LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [AppColors.nightMid, AppColors.night],
-          ),
-          border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
+          color: a.cardFill,
+          border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
         ),
         child: Column(
           children: [
             const CinematicIcon(
-              glyph: CinematicGlyph.path,
-              size: 56,
+              glyph: CinematicGlyph.crown,
+              size: 64,
               accent: AppColors.accent,
-              glowing: false,
+              glowing: true,
             ),
-            const SizedBox(height: AppSpace.md + 2),
+            const SizedBox(height: 16),
             Text(
-              'Trecho concluído',
-              style: AppTypography.display(size: 26),
+              'Trilha concluída',
+              style: AppTypography.display(size: 28, color: a.text),
             ),
-            const SizedBox(height: AppSpace.sm),
+            const SizedBox(height: 8),
             Text(
-              'Escolha uma nova trilha e continue\nconhecendo a Cristo.',
+              'Escolha a próxima e continue aprendendo.',
               textAlign: TextAlign.center,
-              style: AppTypography.body(
-                color: Colors.white.withValues(alpha: 0.65),
-              ),
+              style: AppTypography.body(color: a.textMuted(0.6)),
             ),
-            if (onExploreTrails != null) ...[
-              const SizedBox(height: AppSpace.lg + 2),
+            if (widget.onExploreTrails != null) ...[
+              const SizedBox(height: 20),
               const CopperCta(
                 label: 'Explorar trilhas',
                 expanded: false,
@@ -311,6 +336,33 @@ class HeroContinueCard extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _Chip extends StatelessWidget {
+  final Widget child;
+  final bool accent;
+
+  const _Chip({required this.child, this.accent = false});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+      decoration: BoxDecoration(
+        color: accent
+            ? AppColors.streak.withValues(alpha: 0.12)
+            : a.cardFill,
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        border: Border.all(
+          color: accent
+              ? AppColors.streak.withValues(alpha: 0.4)
+              : a.cardBorder,
+        ),
+      ),
+      child: child,
     );
   }
 }

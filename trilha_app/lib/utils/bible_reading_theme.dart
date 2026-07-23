@@ -36,7 +36,7 @@ class BibleReadingStyle {
   static const baseSize = 21.0;
   static const lineHeight = 1.72;
 
-  TextStyle get verseStyle => AppTypography.display(
+  TextStyle get verseStyle => AppTypography.verse(
         size: baseSize,
         height: lineHeight,
         weight: FontWeight.w500,
@@ -55,7 +55,7 @@ class BibleReadingStyle {
         color: inkMuted,
       );
 
-  TextStyle get titleStyle => AppTypography.display(
+  TextStyle get titleStyle => AppTypography.verse(
         size: 28,
         weight: FontWeight.w700,
         color: ink,

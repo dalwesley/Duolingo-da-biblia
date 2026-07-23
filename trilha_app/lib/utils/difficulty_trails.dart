@@ -38,6 +38,10 @@ const difficultyBankTrails = {
   'zacarias',
   'malaquias',
   'periodo-intertestamentario',
+  // NT vivo (perguntas no banco com 3 modos)
+  'evangelhos',
+  'atos',
+  'apocalipse',
 };
 
 bool trailUsesDifficultyBank(String? trailSlug) {

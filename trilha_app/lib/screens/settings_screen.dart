@@ -1197,7 +1197,7 @@ class _ProfileHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Nome na jornada',
+                'Nome no app',
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.8,

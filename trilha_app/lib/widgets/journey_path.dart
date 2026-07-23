@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -438,20 +439,20 @@ class _HeroStationState extends State<_HeroStation>
   @override
   Widget build(BuildContext context) {
     final item = widget.item;
-    final visuals = TrailVisuals.forTrail(item.trail);
     final pct = item.total > 0 ? item.done / item.total : 0.0;
+    final a = Appearance.of(context);
     return AnimatedBuilder(
       animation: _breath,
       builder: (context, child) {
-        final glowStrength = 0.18 + (_breath.value * 0.12);
+        final glowStrength = 0.14 + (_breath.value * 0.1);
         return Container(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.xl),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
             boxShadow: [
               BoxShadow(
                 color: widget.glow.withValues(alpha: glowStrength),
-                blurRadius: 36,
-                offset: const Offset(0, 16),
+                blurRadius: 24,
+                offset: const Offset(0, 10),
               ),
             ],
           ),
@@ -462,54 +463,33 @@ class _HeroStationState extends State<_HeroStation>
         color: Colors.transparent,
         child: InkWell(
           onTap: widget.onTap,
-          borderRadius: BorderRadius.circular(AppRadii.xl),
+          borderRadius: BorderRadius.circular(AppRadii.lg),
           child: Ink(
-            height: 220,
+            height: 200,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.xl),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.lerp(visuals.cardGradient.colors.first, Colors.black, 0.15)!,
-                  Color.lerp(visuals.cardGradient.colors.last, AppColors.night, 0.2)!,
-                ],
-              ),
+              borderRadius: BorderRadius.circular(AppRadii.lg),
+              color: a.cardFill,
               border: Border.all(
-                color: widget.accent.withValues(alpha: 0.42),
-                width: 1.2,
+                color: AppMetrics.accentBorder(alpha: 0.45),
+                width: 1.5,
               ),
+              boxShadow: AppMetrics.cardShadow(elevated: true, accent: true),
             ),
             child: Stack(
               children: [
-                Positioned.fill(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(AppRadii.xl),
-                    child: CustomPaint(
-                      painter: _StationMoodPainter(
-                        accent: visuals.accent,
-                        glow: widget.glow,
-                        seed: item.trail.slug.hashCode,
-                        intense: true,
-                      ),
-                    ),
-                  ),
-                ),
-                // Film edge vignette
-                Positioned.fill(
-                  child: IgnorePointer(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.xl),
-                        gradient: RadialGradient(
-                          center: const Alignment(-0.2, -0.3),
-                          radius: 1.15,
-                          colors: [
-                            Colors.transparent,
-                            Colors.black.withValues(alpha: 0.45),
-                          ],
-                          stops: const [0.4, 1],
-                        ),
+                Positioned(
+                  right: -40,
+                  top: -30,
+                  child: Container(
+                    width: 160,
+                    height: 160,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: RadialGradient(
+                        colors: [
+                          widget.accent.withValues(alpha: 0.16),
+                          Colors.transparent,
+                        ],
                       ),
                     ),
                   ),
@@ -537,13 +517,13 @@ class _HeroStationState extends State<_HeroStation>
                             ),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(AppRadii.lg),
-                              color: widget.accent.withValues(alpha: 0.18),
+                              color: widget.accent.withValues(alpha: 0.14),
                               border: Border.all(
                                 color: widget.accent.withValues(alpha: 0.4),
                               ),
                             ),
                             child: Text(
-                              'NO CAMINHO',
+                              'AGORA',
                               style: AppTypography.label(
                                 size: 9,
                                 letterSpacing: 0.8,
@@ -556,7 +536,7 @@ class _HeroStationState extends State<_HeroStation>
                       const Spacer(),
                       Text(
                         item.trail.title,
-                        style: AppTypography.display(size: 30, height: 1.05),
+                        style: AppTypography.display(size: 28, height: 1.05),
                       ),
                       const SizedBox(height: AppSpace.sm),
                       Text(
@@ -566,7 +546,7 @@ class _HeroStationState extends State<_HeroStation>
                         style: AppTypography.body(
                           size: 13,
                           height: 1.35,
-                          color: Colors.white.withValues(alpha: 0.62),
+                          color: a.textMuted(0.55),
                         ),
                       ),
                       const SizedBox(height: AppSpace.lg),
@@ -574,7 +554,7 @@ class _HeroStationState extends State<_HeroStation>
                         AppProgressBar(
                           value: pct,
                           color: widget.accent,
-                          trackColor: Colors.white.withValues(alpha: 0.1),
+                          trackColor: a.progressTrack,
                         ),
                         const SizedBox(height: 10),
                       ],
@@ -586,12 +566,12 @@ class _HeroStationState extends State<_HeroStation>
                               style: AppTypography.body(
                                 size: 12,
                                 weight: FontWeight.w600,
-                                color: Colors.white.withValues(alpha: 0.5),
+                                color: a.textMuted(0.5),
                               ),
                             ),
                           const Spacer(),
                           Text(
-                            'ENTRAR →',
+                            'CONTINUAR →',
                             style: AppTypography.cta(size: 12, color: widget.accent),
                           ),
                         ],
@@ -644,19 +624,15 @@ class _QuietStation extends StatelessWidget {
           child: Ink(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Colors.white.withValues(alpha: isDone ? 0.07 : 0.05),
-                  Colors.white.withValues(alpha: 0.02),
-                ],
+              color: Appearance.of(context).cardFill.withValues(
+                alpha: isLocked ? 0.55 : 1,
               ),
               border: Border.all(
                 color: isDone
                     ? accent.withValues(alpha: 0.28)
-                    : Colors.white.withValues(alpha: 0.1),
+                    : Appearance.of(context).cardBorder,
               ),
+              boxShadow: AppMetrics.cardShadow(),
             ),
             child: Padding(
               padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.section, AppSpace.lg, AppSpace.section),
@@ -759,81 +735,4 @@ class _QuietStation extends StatelessWidget {
     if (n >= 1 && n <= map.length) return map[n - 1];
     return '$n';
   }
-}
-
-class _StationMoodPainter extends CustomPainter {
-  final Color accent;
-  final Color glow;
-  final int seed;
-  final bool intense;
-
-  _StationMoodPainter({
-    required this.accent,
-    required this.glow,
-    required this.seed,
-    required this.intense,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final rng = math.Random(seed);
-    // Soft light blooms
-    for (var i = 0; i < 3; i++) {
-      final cx = size.width * (0.55 + rng.nextDouble() * 0.4);
-      final cy = size.height * (0.1 + rng.nextDouble() * 0.5);
-      final r = size.width * (0.25 + rng.nextDouble() * 0.25);
-      canvas.drawCircle(
-        Offset(cx, cy),
-        r,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              (i.isEven ? accent : glow).withValues(alpha: intense ? 0.14 : 0.06),
-              Colors.transparent,
-            ],
-          ).createShader(Rect.fromCircle(center: Offset(cx, cy), radius: r)),
-      );
-    }
-
-    // Horizon haze
-    canvas.drawRect(
-      Rect.fromLTWH(0, size.height * 0.55, size.width, size.height * 0.45),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.transparent,
-            accent.withValues(alpha: 0.06),
-          ],
-        ).createShader(Rect.fromLTWH(0, size.height * 0.55, size.width, size.height * 0.45)),
-    );
-
-    // Distant hill silhouette
-    final hill = Path()
-      ..moveTo(0, size.height)
-      ..lineTo(0, size.height * 0.72)
-      ..quadraticBezierTo(
-        size.width * 0.25,
-        size.height * 0.58,
-        size.width * 0.5,
-        size.height * 0.7,
-      )
-      ..quadraticBezierTo(
-        size.width * 0.75,
-        size.height * 0.82,
-        size.width,
-        size.height * 0.64,
-      )
-      ..lineTo(size.width, size.height)
-      ..close();
-    canvas.drawPath(
-      hill,
-      Paint()..color = Colors.black.withValues(alpha: 0.22),
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant _StationMoodPainter old) =>
-      old.accent != accent || old.intense != intense;
 }

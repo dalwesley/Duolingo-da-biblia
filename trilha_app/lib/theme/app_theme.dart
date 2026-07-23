@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// Identidade Steway — **Lâmpada no horizonte**.
-/// Jogo de jornada: void oceânico + chama (CTA) + céu.
-/// Energia de game sem acid cyber; combina com versículo, mapa e lâmpadas.
+/// Identidade Steway — **Academia da Palavra**.
+/// Loop de treino (streak, missões, passos) + estudo real na missão.
+/// Dark HUD + chama (CTA); tipografia sagrada só no leitor bíblico.
 class AppColors {
-  /// Céu / caminho — chrome do app.
-  static const primary = Color(0xFF2A6BB0);
-  static const primaryLight = Color(0xFF6AADDF);
-  static const primaryDark = Color(0xFF081018);
+  /// Céu / chrome do treino — azul vivo de jogo.
+  static const primary = Color(0xFF3B8BEA);
+  static const primaryLight = Color(0xFF7EC4F5);
+  static const primaryDark = Color(0xFF0A1628);
 
-  /// Chama — CTAs, passos, conquista (lâmpada / Ps 119:105).
-  static const accent = Color(0xFFFFB300);
-  static const accentDark = Color(0xFFE09000);
+  /// Chama — CTAs, passos, conquista.
+  static const accent = Color(0xFFFFC107);
+  static const accentDark = Color(0xFFE0A000);
   static const accentSoft = Color(0xFFFFE6A8);
-  static const accentBright = Color(0xFFFFD24A);
+  static const accentBright = Color(0xFFFFE066);
 
   /// Texto sobre a chama.
   static const inkOnAccent = Color(0xFF1A1200);
@@ -32,11 +32,11 @@ class AppColors {
   static const error = Color(0xFFFF5C6A);
   static const errorSoft = Color(0xFFFFC0C8);
 
-  /// Noite do caminho — escura o bastante p/ HUD, azulada o bastante p/ bíblia.
-  static const night = Color(0xFF070B12);
-  static const nightMid = Color(0xFF0D1520);
-  static const nightLight = Color(0xFF172433);
-  static const nightElevated = Color(0xFF1E2C3C);
+  /// Noite do treino — HUD escuro azulado (não void contemplativo).
+  static const night = Color(0xFF0B1220);
+  static const nightMid = Color(0xFF121C2C);
+  static const nightLight = Color(0xFF1C2A40);
+  static const nightElevated = Color(0xFF243652);
   static const sheet = nightMid;
   static const sheetElevated = nightLight;
 
@@ -122,11 +122,28 @@ class AppGradients {
 
 /// Escala tipográfica unificada.
 class AppTypography {
+  /// Headlines de UI / jogo — sans forte.
   static TextStyle display({
     double size = 28,
-    FontWeight weight = FontWeight.w700,
+    FontWeight weight = FontWeight.w800,
     Color color = AppColors.textOnDark,
     double height = 1.1,
+    FontStyle fontStyle = FontStyle.normal,
+  }) =>
+      GoogleFonts.plusJakartaSans(
+        fontSize: size,
+        fontWeight: weight,
+        color: color,
+        height: height,
+        fontStyle: fontStyle,
+      );
+
+  /// Versículo / passagem — só leitura bíblica e citação de estudo.
+  static TextStyle verse({
+    double size = 21,
+    FontWeight weight = FontWeight.w600,
+    Color color = AppColors.textOnDark,
+    double height = 1.5,
     FontStyle fontStyle = FontStyle.normal,
   }) =>
       GoogleFonts.cormorantGaramond(
@@ -265,7 +282,7 @@ class AppTheme {
         displayLarge: AppTypography.display(size: 34),
         displayMedium: AppTypography.display(size: 28),
         displaySmall: AppTypography.display(size: 24),
-        headlineMedium: AppTypography.display(size: 22, weight: FontWeight.w600),
+        headlineMedium: AppTypography.display(size: 22, weight: FontWeight.w700),
         titleLarge: AppTypography.title(size: 20),
         titleMedium: AppTypography.title(size: 16),
         bodyLarge: AppTypography.body(size: 15),

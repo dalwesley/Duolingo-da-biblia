@@ -8,6 +8,7 @@ import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../services/analytics_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
@@ -189,6 +190,11 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     final hasStudy = !widget.practiceMode &&
         mission != null &&
         MissionStudy.forSlug(widget.missionSlug) != null;
+    AnalyticsService.instance.logLessonStart(
+      missionSlug: widget.missionSlug,
+      trailSlug: trailSlug,
+      difficulty: meta?.difficulty.id,
+    );
     setState(() {
       _baseMission = mission;
       _trailSlug = trailSlug;
@@ -363,7 +369,9 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   }
 
   Future<void> _completeReflection(String text) async {
-    await context.read<ProgressService>().saveReflection(widget.missionSlug, text);
+    final progress = context.read<ProgressService>();
+    await progress.saveReflection(widget.missionSlug, text);
+    await progress.grantBonusSteps(2);
     if (!mounted) return;
     _goToCelebration(forced: _outOfLamps);
   }
@@ -505,12 +513,12 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                               _Phase.quiz => _difficultyMeta != null
                                   ? 'Pergunta ${_questionIndex + 1}/$total'
                                   : 'Pergunta ${_questionIndex + 1} de $total',
-                              _Phase.reflection => 'Reflexão',
+                              _Phase.reflection => 'Anotar',
                             },
                             subtitle: switch (_phase) {
                               _Phase.intro => _difficultyMeta?.label ??
-                                  (mission.isBoss ? 'Desafio' : 'No caminho'),
-                              _Phase.study => _difficultyMeta?.label ?? 'Preparo',
+                                  (mission.isBoss ? 'Desafio' : 'Lição'),
+                              _Phase.study => _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
                                 _difficultyMeta?.label ?? mission.title,
                               _Phase.reflection => mission.title,
@@ -609,6 +617,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                         correct: _correctCount,
                         total: total,
                         onFinish: _completeReflection,
+                        onSkip: () => _goToCelebration(forced: _outOfLamps),
                       ),
                     )
                   else if (_phase == _Phase.intro)

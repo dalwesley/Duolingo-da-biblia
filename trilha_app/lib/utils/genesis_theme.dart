@@ -95,6 +95,48 @@ class GenesisModuleTheme {
           nodeBottom: const Color(0xFF243040),
           decor: const Color(0xFFC4B07A),
         ),
+      'Abraão' => _at(
+          narrative: 'Do chamado a Moriá — fé, aliança e provisão.',
+          verse: 'Gênesis 12–25',
+          sky: const [
+            Color(0xFF0A1018),
+            Color(0xFF1A2838),
+            Color(0xFF3A5068),
+            Color(0xFFD4A84B),
+          ],
+          stops: const [0.0, 0.3, 0.65, 1.0],
+          nodeTop: const Color(0xFF6A9AB8),
+          nodeBottom: const Color(0xFF1A3040),
+          decor: AppColors.accentBright,
+        ),
+      'Isaque e Jacó' => _at(
+          narrative: 'A promessa na família — rivalidade, Betel e novo nome.',
+          verse: 'Gênesis 24–35',
+          sky: const [
+            Color(0xFF081018),
+            Color(0xFF142830),
+            Color(0xFF2A5860),
+            Color(0xFF5AB8A0),
+          ],
+          stops: const [0.0, 0.3, 0.65, 1.0],
+          nodeTop: const Color(0xFF5AB8A8),
+          nodeBottom: const Color(0xFF0E3840),
+          decor: const Color(0xFF7AD0C0),
+        ),
+      'José' => _at(
+          narrative: 'Da cisterna ao palácio — providência que salva muitos.',
+          verse: 'Gênesis 37–50',
+          sky: const [
+            Color(0xFF0A0E18),
+            Color(0xFF1A2038),
+            Color(0xFF3A4568),
+            Color(0xFFE0A84A),
+          ],
+          stops: const [0.0, 0.32, 0.68, 1.0],
+          nodeTop: const Color(0xFF8A9AB8),
+          nodeBottom: const Color(0xFF182030),
+          decor: AppColors.accent,
+        ),
       'Opressão no Egito' => _at(
           narrative: 'Escravidão, clamor e o Deus que ouve.',
           verse: 'Êxodo 1–2',
@@ -223,6 +265,7 @@ class GenesisModuleTheme {
       case 'apocalipse':
         return TrailRealm.novoTestamento;
       case 'genesis-1-11':
+      case 'genesis-12-50':
       case 'exodo':
         return TrailRealm.antigoTestamento;
     }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
+import '../services/analytics_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -17,7 +18,6 @@ import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/league_risk_card.dart';
-import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/streak_risk_banner.dart';
@@ -28,7 +28,7 @@ import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
 
-/// Home — um único trabalho: o próximo passo na Palavra.
+/// Home — um único trabalho: a próxima lição.
 class HomeScreen extends StatefulWidget {
   final TrailRepository repo;
   final void Function(String slug) onOpenTrail;
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.initState();
     _fadeIn = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: const Duration(milliseconds: 620),
     )..forward();
     _load();
   }
@@ -75,7 +75,10 @@ class _HomeScreenState extends State<HomeScreen>
 
   Future<void> _load() async {
     final trails = await widget.repo.getTrails();
-    if (mounted) setState(() => _trails = trails);
+    if (mounted) {
+      setState(() => _trails = trails);
+      AnalyticsService.instance.logHomeView();
+    }
   }
 
   void _maybeShowComeback(ProgressService progress, {String? missionSlug}) {
@@ -181,10 +184,13 @@ class _HomeScreenState extends State<HomeScreen>
       opacity: curve,
       child: SlideTransition(
         position: Tween<Offset>(
-          begin: const Offset(0, 0.04),
+          begin: const Offset(0, 0.06),
           end: Offset.zero,
         ).animate(curve),
-        child: child,
+        child: ScaleTransition(
+          scale: Tween<double>(begin: 0.96, end: 1).animate(curve),
+          child: child,
+        ),
       ),
     );
   }
@@ -230,10 +236,27 @@ class _HomeScreenState extends State<HomeScreen>
           widget.topBar!,
           const SizedBox(height: AppSpace.afterTopBar),
         ],
-        // Duolingo: status do dia primeiro (streak/meta), depois o CTA.
+        // CTA primeiro — um trabalho dominante: a próxima missão.
+        _reveal(
+          0,
+          HeroContinueCard(
+            mission: current,
+            trailTitle: active?.title ?? '',
+            trailSlug: active?.slug ?? 'genesis-1-11',
+            trailColor: active?.color ?? '#1B3A5C',
+            onTap: current != null
+                ? () => widget.onOpenMission(current.slug)
+                : null,
+            onExploreTrails: widget.onOpenTrilhas,
+            goalMet: goalMet,
+            streak: progress.streak,
+          ),
+        ),
+        const SizedBox(height: AppSpace.section),
+        // Status do dia / streak (compacto, depois do CTA).
         if (progress.showStreakRiskBanner) ...[
           _reveal(
-            0,
+            1,
             StreakRiskBanner(
               onContinue: current != null
                   ? () => widget.onOpenMission(current.slug)
@@ -243,13 +266,11 @@ class _HomeScreenState extends State<HomeScreen>
           const SizedBox(height: AppSpace.section),
         ],
         if (progress.showStreakRepairOffer) ...[
-          _reveal(0, const StreakRepairBanner()),
+          _reveal(1, const StreakRepairBanner()),
           const SizedBox(height: AppSpace.section),
         ],
         _reveal(
-          progress.showStreakRiskBanner || progress.showStreakRepairOffer
-              ? 1
-              : 0,
+          1,
           _DayPulse(
             missionsToday: progress.missionsToday,
             goal: goal,
@@ -285,21 +306,6 @@ class _HomeScreenState extends State<HomeScreen>
         ),
         _reveal(
           2,
-          HeroContinueCard(
-            mission: current,
-            trailTitle: active?.title ?? '',
-            trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#1B3A5C',
-            onTap: current != null
-                ? () => widget.onOpenMission(current.slug)
-                : null,
-            onExploreTrails: widget.onOpenTrilhas,
-            goalMet: goalMet,
-          ),
-        ),
-        const SizedBox(height: AppSpace.section),
-        _reveal(
-          2,
           DailyQuestsCard(
             onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
           ),
@@ -317,17 +323,6 @@ class _HomeScreenState extends State<HomeScreen>
               done: prog.done,
               total: prog.total,
               onTap: () => widget.onOpenTrail(active.slug),
-            ),
-          ),
-        ],
-        if (LiturgicalCalendar.isHighSeason) ...[
-          const SizedBox(height: AppSpace.section),
-          _reveal(
-            5,
-            LiturgicalBanner(
-              onOpenBible: () {
-                _openBible(LiturgicalCalendar.momentFor().focusRef);
-              },
             ),
           ),
         ],
@@ -422,74 +417,61 @@ class _DayPulse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final progress = context.watch<ProgressService>();
-    final title = goalMet
-        ? 'Meta de hoje cumprida'
-        : atRisk
-        ? 'Alcance a caravana'
-        : playedToday
-        ? 'Meta de hoje'
-        : returningAfterGap
-        ? 'Sua caminhada continua'
-        : 'Meta de hoje';
     final String detail;
     if (goalMet) {
       if (questsLeft > 0) {
         detail = questsLeft == 1
-            ? 'Ainda há 1 missão diária · passos extras abaixo'
-            : 'Ainda há $questsLeft missões diárias · passos extras abaixo';
+            ? 'Ainda há 1 missão diária · passos extras'
+            : 'Ainda há $questsLeft missões diárias';
       } else if (streak > 0) {
         detail = streak == 1
-            ? 'Amanhã a caravana segue · 1 dia protegido'
-            : 'Amanhã a caravana segue · $streak dias protegidos';
+            ? 'Meta ok · 1 dia protegido'
+            : 'Meta ok · $streak dias protegidos';
       } else {
-        detail = 'Amanhã um passo recomeça a caminhada';
+        detail = 'Meta cumprida';
       }
     } else if (atRisk) {
-      detail =
-          'Faltam ${progress.streakRiskCountdown} · um passo e você alcança';
+      detail = 'Sequência em risco · continue agora';
     } else if (playedToday) {
-      detail = '$missionsToday de $goal';
+      detail = '$missionsToday de $goal na meta';
     } else if (returningAfterGap) {
-      detail = 'Um passo basta para reacender a chama';
+      detail = 'Retome com uma lição';
     } else {
-      detail = 'Ainda sem passo hoje · meta $goal';
+      detail = 'Meta de hoje · $goal lição${goal == 1 ? '' : 'ões'}';
     }
 
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
+              CinematicIcon(
+                glyph: atRisk ? CinematicGlyph.flame : CinematicGlyph.check,
+                size: 18,
+                accent: atRisk
+                    ? AppColors.streak
+                    : goalMet
+                        ? AppColors.teal
+                        : AppColors.accent,
+                framed: false,
+              ),
+              const SizedBox(width: 8),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: AppTypography.body(
-                        size: 13,
-                        weight: FontWeight.w800,
-                        color: goalMet
+                child: Text(
+                  detail,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w700,
+                    color: atRisk
+                        ? AppColors.streak
+                        : goalMet
                             ? AppColors.teal
-                            : atRisk
-                            ? AppColors.streak
-                            : a.text.withValues(alpha: 0.92),
-                        height: 1.25,
-                      ),
-                    ),
-                    Text(
-                      detail,
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w600,
-                        color: a.textMuted(0.55),
-                        height: 1.3,
-                      ),
-                    ),
-                  ],
+                            : a.text.withValues(alpha: 0.88),
+                  ),
                 ),
               ),
               SoftBadge(
@@ -499,32 +481,17 @@ class _DayPulse extends StatelessWidget {
               ),
             ],
           ),
-          if (streak > 0) ...[
-            const SizedBox(height: 10),
-            Row(
-              children: [
-                const StreakFreezeChip(),
-                if (atRisk && !progress.showStreakRiskBanner) ...[
-                  const SizedBox(width: 8),
-                  SoftBadge(
-                    text: progress.streakRiskCountdown,
-                    glyph: CinematicGlyph.calendar,
-                    accent: AppColors.streak,
-                  ),
-                ],
-              ],
-            ),
-          ],
           if (!returningAfterGap && !goalMet) ...[
-            const SizedBox(height: 12),
+            const SizedBox(height: 10),
             AppProgressBar(
               value: goalPct,
+              height: 5,
               color: atRisk ? AppColors.streak : AppColors.accent,
             ),
           ],
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const Expanded(child: StreakWeek()),
               ShareStreakButton(
@@ -541,7 +508,7 @@ class _DayPulse extends StatelessWidget {
   }
 }
 
-/// Mapa da trilha — só após a meta (não compete com Caminhar).
+/// Mapa da trilha — só após a meta (não compete com Treinar).
 class _ActiveTrailLine extends StatelessWidget {
   final Trail trail;
   final int done;

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'dart:async';
+import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
@@ -32,7 +34,9 @@ class _LoginScreenState extends State<LoginScreen> {
     final name = result.displayName?.trim();
     if (name != null &&
         name.isNotEmpty &&
-        (progress.userName == 'Peregrino' || progress.userName == 'Estudante')) {
+        (progress.userName == 'Aprendiz' ||
+            progress.userName == 'Peregrino' ||
+            progress.userName == 'Estudante')) {
       await progress.setUserName(name);
     }
 
@@ -66,9 +70,12 @@ class _LoginScreenState extends State<LoginScreen> {
     final result = await backend.signInWithGoogle();
     if (!mounted) return;
     if (!result.ok) {
+      unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() => _error = result.error ?? 'Falha no login com Google');
       return;
     }
+    unawaited(AnalyticsService.instance.logLogin(method: 'google'));
+    unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);
   }
 

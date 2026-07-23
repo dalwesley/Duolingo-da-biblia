@@ -7,6 +7,12 @@
 # Env
 .env
 .env.*
+!.env.example
+
+# Android release signing (nunca commitar)
+**/android/key.properties
+**/*.keystore
+**/*.jks
 
 # Logs
 npm-debug.log*

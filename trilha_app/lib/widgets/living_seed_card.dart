@@ -8,17 +8,17 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Companion emocional próprio do Steway — crescimento por streak, sem pet genérico.
+/// Marcos da sequência — progresso de hábito, sem pet genérico.
 class LivingSeedCard extends StatelessWidget {
   const LivingSeedCard({super.key});
 
   CinematicGlyph _glyph(GrowthStage stage) {
     return switch (stage) {
-      GrowthStage.seed => CinematicGlyph.seed,
-      GrowthStage.sprout => CinematicGlyph.tree,
-      GrowthStage.sapling => CinematicGlyph.tree,
-      GrowthStage.olive => CinematicGlyph.tree,
-      GrowthStage.lamp => CinematicGlyph.lamp,
+      GrowthStage.seed => CinematicGlyph.spark,
+      GrowthStage.sprout => CinematicGlyph.flame,
+      GrowthStage.sapling => CinematicGlyph.path,
+      GrowthStage.olive => CinematicGlyph.crown,
+      GrowthStage.lamp => CinematicGlyph.crown,
     };
   }
 
@@ -45,13 +45,13 @@ class LivingSeedCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Sua semente'),
+                const CardHeader(label: 'Sequência'),
                 const SizedBox(height: 2),
                 Text(
                   growth.title,
                   style: AppTypography.display(
                     size: 20,
-                    weight: FontWeight.w700,
+                    weight: FontWeight.w800,
                     color: a.text,
                     height: 1.1,
                   ),

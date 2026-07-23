@@ -84,7 +84,7 @@ class WeeklyQuestDefs {
   static const List<DailyQuest> all = [
     DailyQuest(
       id: 'w_missions',
-      title: 'Caminhada constante',
+      title: 'Sequência constante',
       subtitle: 'Dê 5 passos esta semana',
       target: 5,
       stepsReward: 80,
@@ -126,9 +126,9 @@ class TrailMilestone {
   String chestId(String trailSlug) => '$trailSlug:$percent';
 
   static const List<TrailMilestone> all = [
-    TrailMilestone(percent: 25, stepsReward: 40, title: 'Primeiros passos', subtitle: '25% da jornada'),
-    TrailMilestone(percent: 50, stepsReward: 70, title: 'Meio do caminho', subtitle: '50% da jornada'),
-    TrailMilestone(percent: 75, stepsReward: 100, title: 'Quase lá', subtitle: '75% da jornada'),
+    TrailMilestone(percent: 25, stepsReward: 40, title: 'Primeiros passos', subtitle: '25% da trilha'),
+    TrailMilestone(percent: 50, stepsReward: 70, title: 'Meio do caminho', subtitle: '50% da trilha'),
+    TrailMilestone(percent: 75, stepsReward: 100, title: 'Quase lá', subtitle: '75% da trilha'),
     TrailMilestone(percent: 100, stepsReward: 150, title: 'Jornada percorrida', subtitle: '100% — continue caminhando'),
   ];
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 
-/// Mascote Steway — pomba iluminada, sem emoji.
+/// Mascote Steway — spark de treino, sem emoji.
 class TrilhaMascot extends StatelessWidget {
   final double size;
   final bool glowing;
@@ -12,7 +12,7 @@ class TrilhaMascot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CinematicIcon(
-      glyph: CinematicGlyph.dove,
+      glyph: CinematicGlyph.spark,
       size: size,
       accent: AppColors.accent,
       glowing: glowing,

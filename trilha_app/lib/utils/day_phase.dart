@@ -23,28 +23,28 @@ class DayPhaseHelper {
     };
   }
 
-  /// Céus do caminho — aurora / sol alto / crepúsculo / tinta.
+  /// Céus de treino — azul de arena, sem crepúsculo litúrgico.
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF1A3058),
-            Color(0xFF3A6088),
-            Color(0xFF6A7888),
-            Color(0xFF8A6848),
+            Color(0xFF1A4A88),
+            Color(0xFF2A6AB0),
+            Color(0xFF1E5080),
+            Color(0xFF123050),
           ],
-          stops: [0.0, 0.32, 0.62, 1.0],
+          stops: [0.0, 0.35, 0.7, 1.0],
         ),
       DayPhase.afternoon => const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color(0xFF0C3A58),
-            Color(0xFF1A6A88),
-            Color(0xFF2A8898),
-            Color(0xFF1A5060),
+            Color(0xFF0E4A68),
+            Color(0xFF1A7A98),
+            Color(0xFF2A98A8),
+            Color(0xFF145060),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -52,10 +52,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF0C1428),
-            Color(0xFF1A2848),
-            Color(0xFF4A3858),
-            Color(0xFF6A4830),
+            Color(0xFF101828),
+            Color(0xFF1A3058),
+            Color(0xFF243868),
+            Color(0xFF152038),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -63,10 +63,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColors.night,
-            AppColors.night,
-            AppColors.nightMid,
-            AppColors.nightLight,
+            Color(0xFF0B1220),
+            Color(0xFF121C2C),
+            Color(0xFF1A2A44),
+            Color(0xFF122038),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
