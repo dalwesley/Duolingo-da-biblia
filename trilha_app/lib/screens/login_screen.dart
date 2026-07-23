@@ -171,7 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: busy ? null : _signIn,
                   style: FilledButton.styleFrom(
                     backgroundColor: Colors.white,
-                    foregroundColor: const Color(0xFF1A211C),
+                    foregroundColor: AppColors.inkOnAccent,
                     disabledBackgroundColor: Colors.white.withValues(alpha: 0.5),
                     padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
                     shape: RoundedRectangleBorder(
@@ -184,7 +184,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           width: 22,
                           child: CircularProgressIndicator(
                             strokeWidth: 2.4,
-                            color: Color(0xFF1A211C),
+                            color: AppColors.inkOnAccent,
                           ),
                         )
                       : Row(
@@ -196,7 +196,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               'Continuar com Google',
                               style: AppTypography.cta(
                                 size: 15,
-                                color: const Color(0xFF1A211C),
+                                color: AppColors.inkOnAccent,
                               ),
                             ),
                           ],

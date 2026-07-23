@@ -37,8 +37,8 @@ class StreakWeek extends StatelessWidget {
                     : frozen
                         ? LinearGradient(
                             colors: [
-                              const Color(0xFFA8D8EA),
-                              const Color(0xFF7EC8E3),
+                              AppColors.iceSoft,
+                              AppColors.ice,
                             ],
                           )
                         : null,
@@ -49,7 +49,7 @@ class StreakWeek extends StatelessWidget {
                   color: isToday
                       ? AppColors.accent
                       : frozen
-                          ? const Color(0xFF7EC8E3).withValues(alpha: 0.7)
+                          ? AppColors.ice.withValues(alpha: 0.7)
                           : Colors.white.withValues(alpha: active ? 0 : 0.12),
                   width: isToday ? 2 : 1,
                 ),
@@ -58,7 +58,7 @@ class StreakWeek extends StatelessWidget {
                     : frozen
                         ? [
                             BoxShadow(
-                              color: const Color(0xFF7EC8E3).withValues(alpha: 0.35),
+                              color: AppColors.ice.withValues(alpha: 0.35),
                               blurRadius: 8,
                             ),
                           ]
@@ -76,7 +76,7 @@ class StreakWeek extends StatelessWidget {
                         ? const CinematicIcon(
                             glyph: CinematicGlyph.frost,
                             size: 15,
-                            accent: Color(0xFF1A3A4A),
+                            accent: AppColors.iceDeep,
                             framed: false,
                           )
                         : Text(

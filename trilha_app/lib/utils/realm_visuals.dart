@@ -23,7 +23,7 @@ class RealmVisuals {
 
   static RealmVisuals of(TrailRealm realm) => switch (realm) {
         TrailRealm.antigoTestamento => const RealmVisuals(
-            sky: [Color(0xFF070B12), Color(0xFF0C1A2C), Color(0xFF1B3A5C)],
+            sky: [AppColors.night, AppColors.primaryDark, AppColors.primary],
             accent: AppColors.accent,
             glow: AppColors.primaryLight,
             glyph: CinematicGlyph.book,

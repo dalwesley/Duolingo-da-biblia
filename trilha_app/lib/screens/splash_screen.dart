@@ -185,7 +185,7 @@ class _SplashScreenState extends State<SplashScreen>
         systemNavigationBarIconBrightness: Brightness.light,
       ),
       child: Scaffold(
-        backgroundColor: const Color(0xFF050807),
+        backgroundColor: AppColors.night,
         body: AnimatedBuilder(
           animation: Listenable.merge([_master, _drift, _breathe]),
           builder: (context, _) {
@@ -234,7 +234,7 @@ class _SplashScreenState extends State<SplashScreen>
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  const ColoredBox(color: Color(0xFF050807)),
+                  const ColoredBox(color: AppColors.night),
 
                   // Mundo — névoa, colinas, horizonte
                   RepaintBoundary(
@@ -333,7 +333,7 @@ class _SplashScreenState extends State<SplashScreen>
                                   colors: [
                                     Colors.transparent,
                                     AppColors.accent.withValues(alpha: 0.75),
-                                    const Color(0xFFE8C9A0)
+                                    AppColors.accentSoft
                                         .withValues(alpha: 0.9),
                                     AppColors.accent.withValues(alpha: 0.75),
                                     Colors.transparent,
@@ -527,7 +527,7 @@ class _Mark extends StatelessWidget {
               child: CinematicIcon(
                 glyph: CinematicGlyph.book,
                 size: 42,
-                accent: Color(0xFFE8C9A0),
+                accent: AppColors.accentSoft,
                 framed: false,
                 glowing: false,
               ),
@@ -573,7 +573,7 @@ class _BreathLine extends StatelessWidget {
                           AppColors.accent.withValues(alpha: 0.35),
                           Color.lerp(
                             AppColors.accent,
-                            const Color(0xFFE8C9A0),
+                            AppColors.accentSoft,
                             0.45 + 0.2 * breath,
                           )!,
                           AppColors.accent.withValues(alpha: 0.55),
@@ -619,8 +619,8 @@ class _WorldPainter extends CustomPainter {
       a,
     )!;
     final skyMid = Color.lerp(
-      const Color(0xFF060A10),
-      const Color(0xFF0C1A2C),
+      AppColors.night,
+      AppColors.primaryDark,
       a * 0.85,
     )!;
     final skyLow = Color.lerp(
@@ -635,7 +635,7 @@ class _WorldPainter extends CustomPainter {
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [skyTop, skyMid, skyLow, const Color(0xFF060A10)],
+          colors: [skyTop, skyMid, skyLow, AppColors.night],
           stops: const [0.0, 0.35, 0.62, 1.0],
         ).createShader(Offset.zero & size),
     );
@@ -650,7 +650,7 @@ class _WorldPainter extends CustomPainter {
         ..shader = RadialGradient(
           colors: [
             Color.lerp(
-              const Color(0xFF4A7BA8),
+              AppColors.primaryLight,
               AppColors.accent,
               0.35,
             )!
@@ -677,7 +677,7 @@ class _WorldPainter extends CustomPainter {
           colors: [
             Colors.transparent,
             AppColors.accent.withValues(alpha: 0.14 * a),
-            const Color(0xFFE8C9A0).withValues(alpha: 0.06 * a),
+            AppColors.accentSoft.withValues(alpha: 0.06 * a),
             Colors.transparent,
           ],
         ).createShader(Rect.fromLTWH(0, horizonY - 30, size.width, 90)),
@@ -832,7 +832,7 @@ class _WorldPainter extends CustomPainter {
           colors: [
             AppColors.accent.withValues(alpha: 0.35 * atm),
             AppColors.accent.withValues(alpha: 0.18 * atm),
-            const Color(0xFFE8C9A0).withValues(alpha: 0.12 * atm),
+            AppColors.accentSoft.withValues(alpha: 0.12 * atm),
             Colors.transparent,
           ],
         ).createShader(Rect.fromPoints(start, end))

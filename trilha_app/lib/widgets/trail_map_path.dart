@@ -161,7 +161,7 @@ class _MissionSceneCard extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: unlocked
               ? [
-                  Color.lerp(bottom, const Color(0xFF05040A), completed ? 0.72 : 0.22)!
+                  Color.lerp(bottom, AppColors.night, completed ? 0.72 : 0.22)!
                       .withValues(alpha: _current ? 0.92 : completed ? 0.38 : 0.78),
                   Color.lerp(top, bottom, 0.62)!
                       .withValues(alpha: _current ? 0.62 : completed ? 0.16 : 0.48),

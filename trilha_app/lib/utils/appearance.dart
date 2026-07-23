@@ -103,9 +103,9 @@ class AppearanceStyle {
       Colors.white.withValues(alpha: isDay ? 0.22 : 0.14);
 
   Color get navBarFill => switch (look) {
-        AppearanceLook.night => AppColors.nightMid.withValues(alpha: 0.94),
-        AppearanceLook.morning => const Color(0xFF182438).withValues(alpha: 0.94),
-        AppearanceLook.afternoon => const Color(0xFF0E3040).withValues(alpha: 0.94),
+        AppearanceLook.night => AppColors.nightMid.withValues(alpha: 0.95),
+        AppearanceLook.morning => const Color(0xFF182438).withValues(alpha: 0.95),
+        AppearanceLook.afternoon => const Color(0xFF0E3040).withValues(alpha: 0.95),
       };
 
   Color get navBarBorder => Colors.white.withValues(

@@ -94,7 +94,7 @@ Future<void> showVersePreviewDialog(
     context: context,
     builder: (ctx) {
       return AlertDialog(
-        backgroundColor: const Color(0xFF1A221C),
+        backgroundColor: AppColors.sheet,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppRadii.md)),
         title: Text(
           refLabel,
@@ -170,7 +170,7 @@ Future<void> showVersePreviewDialog(
             },
             style: FilledButton.styleFrom(
               backgroundColor: AppColors.accent,
-              foregroundColor: const Color(0xFF1A221C),
+              foregroundColor: AppColors.sheet,
             ),
             child: Text(
               'Ir para o texto',
@@ -255,7 +255,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       height: height,
       margin: const EdgeInsets.fromLTRB(10, 0, 10, 10),
       decoration: BoxDecoration(
-        color: const Color(0xFF141C18),
+        color: AppColors.nightMid,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),

@@ -52,7 +52,7 @@ class _InviteQrSheet extends StatelessWidget {
         AppSpace.screen + bottom,
       ),
       decoration: BoxDecoration(
-        color: const Color(0xFF121816),
+        color: AppColors.night,
         borderRadius: BorderRadius.circular(AppRadii.xl),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
       ),
@@ -104,11 +104,11 @@ class _InviteQrSheet extends StatelessWidget {
                 gapless: true,
                 eyeStyle: const QrEyeStyle(
                   eyeShape: QrEyeShape.circle,
-                  color: Color(0xFF1E2A24),
+                  color: AppColors.nightLight,
                 ),
                 dataModuleStyle: const QrDataModuleStyle(
                   dataModuleShape: QrDataModuleShape.circle,
-                  color: Color(0xFF1E2A24),
+                  color: AppColors.nightLight,
                 ),
               ),
             ),

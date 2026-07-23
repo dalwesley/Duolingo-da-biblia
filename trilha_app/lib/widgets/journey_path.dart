@@ -472,7 +472,7 @@ class _HeroStationState extends State<_HeroStation>
                 end: Alignment.bottomRight,
                 colors: [
                   Color.lerp(visuals.cardGradient.colors.first, Colors.black, 0.15)!,
-                  Color.lerp(visuals.cardGradient.colors.last, const Color(0xFF05040A), 0.2)!,
+                  Color.lerp(visuals.cardGradient.colors.last, AppColors.night, 0.2)!,
                 ],
               ),
               border: Border.all(

@@ -868,7 +868,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                 width: double.infinity,
                 padding: EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.section, AppSpace.screen, AppSpace.lg + bottom),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF0A0E0C).withValues(alpha: 0.94),
+                  color: AppColors.night.withValues(alpha: 0.94),
                   border: Border(top: BorderSide(color: color.withValues(alpha: 0.7), width: 3)),
                 ),
                 child: Column(

@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../theme/app_theme.dart';
 
-/// Partículas douradas para celebração.
+/// Partículas de arena — volt, streak, cobalto.
 class ConfettiOverlay extends StatefulWidget {
   final bool active;
 
@@ -24,7 +25,7 @@ class _ConfettiOverlayState extends State<ConfettiOverlay> with SingleTickerProv
           delay: rng.nextDouble() * 0.4,
           speed: 0.5 + rng.nextDouble() * 0.8,
           size: 4 + rng.nextDouble() * 6,
-          color: [const Color(0xFFE8922A), const Color(0xFFF0B85A), Colors.white, const Color(0xFF4A7BA8)][i % 4],
+          color: [AppColors.accent, AppColors.accentBright, AppColors.primaryLight, AppColors.teal, AppColors.streak, Colors.white][i % 6],
         ));
     _controller = AnimationController(vsync: this, duration: const Duration(milliseconds: 2400))..forward();
   }

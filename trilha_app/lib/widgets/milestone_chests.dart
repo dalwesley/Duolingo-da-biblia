@@ -180,7 +180,7 @@ class _ChestOpenDialog extends StatelessWidget {
           gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Color(0xFF28332C), Color(0xFF121816)],
+            colors: [AppColors.nightElevated, AppColors.night],
           ),
           borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),

@@ -60,7 +60,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light,
       child: Scaffold(
-        backgroundColor: const Color(0xFF0A0E0C),
+        backgroundColor: AppColors.night,
         body: Stack(
           fit: StackFit.expand,
           children: [
@@ -69,7 +69,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xFF0C1A2C), Color(0xFF070B12), Color(0xFF05080E)],
+                  colors: [AppColors.primaryDark, AppColors.night, Color(0xFF05080E)],
                 ),
               ),
             ),

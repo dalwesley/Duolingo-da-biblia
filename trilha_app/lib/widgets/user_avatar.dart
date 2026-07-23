@@ -44,7 +44,7 @@ class UserAvatar extends StatelessWidget {
       ),
       child: CircleAvatar(
         radius: radius - 1.5,
-        backgroundColor: const Color(0xFF1E2A24),
+        backgroundColor: AppColors.nightLight,
         backgroundImage: photoUrl != null && photoUrl!.isNotEmpty
             ? NetworkImage(photoUrl!)
             : null,

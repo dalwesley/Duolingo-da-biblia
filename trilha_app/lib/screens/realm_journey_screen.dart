@@ -153,7 +153,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
     final visuals = RealmVisuals.of(widget.realm);
     showModalBottomSheet(
       context: context,
-      backgroundColor: const Color(0xFF121816),
+      backgroundColor: AppColors.night,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
       ),

@@ -63,34 +63,34 @@ class BibleReadingStyle {
 
   static BibleReadingStyle resolve(AppearanceStyle appearance) {
     if (appearance.isDay) {
-      return const BibleReadingStyle(
+      return BibleReadingStyle(
         isDay: true,
-        page: Color(0xFFF2F4F8),
-        pageBorder: Color(0xFFC8D0DC),
-        ink: Color(0xFF121820),
-        inkMuted: Color(0xFF4A5868),
-        verseNumber: Color(0xFF8A6030),
-        highlightFill: Color(0x33E8922A),
-        highlightBorder: Color(0x99E8922A),
-        savedFill: Color(0x18E8922A),
-        chrome: Color(0xFFE8ECF2),
-        chromeBorder: Color(0xFFB8C4D0),
-        chipFill: Color(0xFFDCE2EA),
+        page: AppColors.surface,
+        pageBorder: const Color(0xFFC8D0DC),
+        ink: AppColors.text,
+        inkMuted: AppColors.textMuted,
+        verseNumber: AppColors.sandDeep,
+        highlightFill: AppColors.accent.withValues(alpha: 0.22),
+        highlightBorder: AppColors.accentDark.withValues(alpha: 0.55),
+        savedFill: AppColors.accent.withValues(alpha: 0.1),
+        chrome: AppColors.textOnDark,
+        chromeBorder: const Color(0xFFB8C4D0),
+        chipFill: const Color(0xFFDCE2EA),
       );
     }
-    return const BibleReadingStyle(
+    return BibleReadingStyle(
       isDay: false,
-      page: Color(0xFF101820),
-      pageBorder: Color(0xFF243040),
-      ink: Color(0xFFE8ECF2),
-      inkMuted: Color(0xFF8A98A8),
-      verseNumber: Color(0xFFE0A84A),
-      highlightFill: Color(0x33E8922A),
-      highlightBorder: Color(0x66E8922A),
-      savedFill: Color(0x18E8922A),
-      chrome: Color(0xFF141C28),
-      chromeBorder: Color(0xFF2A3848),
-      chipFill: Color(0xFF1A2430),
+      page: AppColors.nightElevated,
+      pageBorder: AppColors.nightLight,
+      ink: AppColors.textOnDark,
+      inkMuted: AppColors.textMutedDark,
+      verseNumber: AppColors.accentBright,
+      highlightFill: AppColors.accent.withValues(alpha: 0.18),
+      highlightBorder: AppColors.accent.withValues(alpha: 0.4),
+      savedFill: AppColors.accent.withValues(alpha: 0.08),
+      chrome: AppColors.nightMid,
+      chromeBorder: const Color(0xFF2A2A3A),
+      chipFill: AppColors.nightLight,
     );
   }
 }

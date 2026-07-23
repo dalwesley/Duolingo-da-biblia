@@ -199,7 +199,7 @@ class _ComingSoonPortal extends StatelessWidget {
           gradient: const LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [Color(0xFF0E1620), Color(0xFF141C28), Color(0xFF070B12)],
+            colors: [AppColors.nightMid, Color(0xFF141C28), AppColors.night],
             stops: [0.0, 0.5, 1.0],
           ),
         ),

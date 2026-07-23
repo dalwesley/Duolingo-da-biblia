@@ -59,7 +59,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
           AppSpace.screen + bottom,
         ),
         decoration: BoxDecoration(
-          color: const Color(0xFF121816),
+          color: AppColors.night,
           borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
         ),

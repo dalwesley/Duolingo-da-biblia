@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../cinematic/cinematic_resolver.dart';
+import '../theme/app_theme.dart';
 
 /// Fundo atmosférico da Criação — camadas abstratas, sem figuras cartoon.
 /// A ideia: o mundo se revela em luz e cor, sem competir com a pergunta.
@@ -64,7 +65,7 @@ class _AtmospherePainter extends CustomPainter {
 
     // Base — noite profunda
     final night = Color.lerp(
-      const Color(0xFF05040A),
+      AppColors.night,
       const Color(0xFF0C1020),
       (1 - state.voidDepth).clamp(0.0, 1.0),
     )!;
@@ -134,7 +135,7 @@ class _AtmospherePainter extends CustomPainter {
           ..shader = RadialGradient(
             colors: [
               const Color(0xFFFFF6D8).withValues(alpha: state.light * 0.28),
-              const Color(0xFFE8B84B).withValues(alpha: state.light * 0.12),
+              AppColors.sand.withValues(alpha: state.light * 0.12),
               Colors.transparent,
             ],
             stops: const [0.0, 0.35, 1.0],
@@ -212,7 +213,7 @@ class _AtmospherePainter extends CustomPainter {
         Paint()
           ..shader = RadialGradient(
             colors: [
-              const Color(0xFFE8B84B).withValues(alpha: lifeGlow * 0.12),
+              AppColors.sand.withValues(alpha: lifeGlow * 0.12),
               Colors.transparent,
             ],
           ).createShader(Rect.fromCircle(center: c, radius: r)),

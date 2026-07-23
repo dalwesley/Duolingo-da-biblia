@@ -269,8 +269,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       end: Alignment.bottomCenter,
                       colors: [
                         backdrop,
-                        Color.lerp(backdrop, const Color(0xFF05040A), 0.55)!,
-                        const Color(0xFF05040A),
+                        Color.lerp(backdrop, AppColors.night, 0.55)!,
+                        AppColors.night,
                       ],
                     ),
                   ),

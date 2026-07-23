@@ -63,7 +63,7 @@ class GenesisModuleTheme {
           stops: const [0.0, 0.22, 0.48, 0.72, 1.0],
           nodeTop: const Color(0xFF5A8AB0),
           nodeBottom: const Color(0xFF0E2438),
-          decor: const Color(0xFFF0B85A),
+          decor: AppColors.accentBright,
         ),
       'O Jardim' => _at(
           narrative: 'O Éden — perfeição, tentação e a queda.',
@@ -122,7 +122,7 @@ class GenesisModuleTheme {
           stops: const [0.0, 0.35, 0.7, 1.0],
           nodeTop: const Color(0xFF4A98B8),
           nodeBottom: const Color(0xFF0E3040),
-          decor: const Color(0xFFF0B85A),
+          decor: AppColors.accentBright,
         ),
       'O Início' => _nt(
           narrative: 'O Verbo se fez carne — batismo e fidelidade no deserto.',
@@ -151,7 +151,7 @@ class GenesisModuleTheme {
           stops: const [0.0, 0.35, 0.7, 1.0],
           nodeTop: const Color(0xFFE8C4A8),
           nodeBottom: const Color(0xFF5C3A2A),
-          decor: const Color(0xFFF0B85A),
+          decor: AppColors.accentBright,
         ),
       'Cruz e Ressurreição' => _nt(
           narrative: 'Ceia, cruz e o túmulo vazio — o centro do evangelho.',
@@ -163,7 +163,7 @@ class GenesisModuleTheme {
             Color(0xFFE0A84A),
           ],
           stops: const [0.0, 0.4, 0.7, 1.0],
-          nodeTop: const Color(0xFFF0B85A),
+          nodeTop: AppColors.accentBright,
           nodeBottom: const Color(0xFF5C2A1A),
           decor: const Color(0xFFFFD56A),
         ),
@@ -174,7 +174,7 @@ class GenesisModuleTheme {
             Color(0xFF1A100E),
             Color(0xFF3D2818),
             Color(0xFF6B4A28),
-            Color(0xFFF0B85A),
+            AppColors.accentBright,
           ],
           stops: const [0.0, 0.35, 0.7, 1.0],
           nodeTop: const Color(0xFFFFE082),
@@ -188,12 +188,12 @@ class GenesisModuleTheme {
             Color(0xFF140C08),
             Color(0xFF3A2018),
             Color(0xFF6B3A28),
-            Color(0xFFE87848),
+            AppColors.ember,
           ],
           stops: const [0.0, 0.35, 0.7, 1.0],
-          nodeTop: const Color(0xFFE87848),
+          nodeTop: AppColors.ember,
           nodeBottom: const Color(0xFF6B2E1A),
-          decor: const Color(0xFFE8922A),
+          decor: AppColors.accent,
         ),
       _ => resolved == TrailRealm.novoTestamento
           ? _nt(
@@ -300,9 +300,9 @@ class GenesisModuleTheme {
 /// Céus padrão alinhados a [RealmVisuals] — fallback sem módulo conhecido.
 class RealmVisualsFallback {
   static const atSky = [
-    Color(0xFF070B12),
-    Color(0xFF0C1A2C),
-    Color(0xFF1B3A5C),
+    AppColors.night,
+    AppColors.primaryDark,
+    AppColors.primary,
   ];
   static const ntSky = [
     Color(0xFF180E10),

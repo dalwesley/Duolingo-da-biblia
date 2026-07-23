@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/app_theme.dart';
 
 enum DayPhase { morning, afternoon, evening, night }
 
@@ -22,18 +23,17 @@ class DayPhaseHelper {
     };
   }
 
-  /// Gradientes por fase — horizonte oceânico; escuro o bastante para texto claro.
-  /// Manhã = aurora azul-rosa; tarde = sol alto teal — bem distintos.
+  /// Céus do caminho — aurora / sol alto / crepúsculo / tinta.
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF1E2E52), // azul-hora fria
-            Color(0xFF355878),
-            Color(0xFF5A6878),
-            Color(0xFF6A5040), // chão quente de aurora
+            Color(0xFF1A3058),
+            Color(0xFF3A6088),
+            Color(0xFF6A7888),
+            Color(0xFF8A6848),
           ],
           stops: [0.0, 0.32, 0.62, 1.0],
         ),
@@ -41,10 +41,10 @@ class DayPhaseHelper {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color(0xFF0C3A52), // azul-teal aberto
-            Color(0xFF1A5A72),
-            Color(0xFF2A7888),
-            Color(0xFF1A4858),
+            Color(0xFF0C3A58),
+            Color(0xFF1A6A88),
+            Color(0xFF2A8898),
+            Color(0xFF1A5060),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -52,9 +52,9 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF0C1424),
-            Color(0xFF1A2840),
-            Color(0xFF3A3048),
+            Color(0xFF0C1428),
+            Color(0xFF1A2848),
+            Color(0xFF4A3858),
             Color(0xFF6A4830),
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
@@ -63,10 +63,10 @@ class DayPhaseHelper {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFF05080E),
-            Color(0xFF070B12),
-            Color(0xFF0E1620),
-            Color(0xFF142030),
+            AppColors.night,
+            AppColors.night,
+            AppColors.nightMid,
+            AppColors.nightLight,
           ],
           stops: [0.0, 0.35, 0.7, 1.0],
         ),
@@ -75,10 +75,10 @@ class DayPhaseHelper {
 
   static Color scaffoldBackground([DayPhase? phase]) {
     return switch (phase ?? current()) {
-      DayPhase.morning => const Color(0xFF355878),
-      DayPhase.afternoon => const Color(0xFF1A5A72),
-      DayPhase.evening => const Color(0xFF141C30),
-      DayPhase.night => const Color(0xFF080C14),
+      DayPhase.morning => const Color(0xFF3A6088),
+      DayPhase.afternoon => const Color(0xFF1A6A88),
+      DayPhase.evening => const Color(0xFF1A2848),
+      DayPhase.night => AppColors.night,
     };
   }
 }

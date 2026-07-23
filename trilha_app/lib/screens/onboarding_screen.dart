@@ -969,12 +969,12 @@ class _OnboardingSkyPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final top = Color.lerp(
       const Color(0xFF04060A),
-      const Color(0xFF0C1A2C),
+      AppColors.primaryDark,
       dawn * 0.75,
     )!;
     final mid = Color.lerp(
       const Color(0xFF0A121C),
-      const Color(0xFF1B3A5C),
+      AppColors.primary,
       dawn * 0.55,
     )!;
     canvas.drawRect(
@@ -983,7 +983,7 @@ class _OnboardingSkyPainter extends CustomPainter {
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [top, mid, const Color(0xFF060A10)],
+          colors: [top, mid, AppColors.night],
           stops: const [0.0, 0.48, 1.0],
         ).createShader(Offset.zero & size),
     );

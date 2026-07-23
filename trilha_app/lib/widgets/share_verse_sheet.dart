@@ -114,7 +114,7 @@ Via Steway
       margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
       padding: EdgeInsets.fromLTRB(18, 14, 18, 14 + bottom),
       decoration: BoxDecoration(
-        color: const Color(0xFF1A221E),
+        color: AppColors.sheet,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
@@ -220,7 +220,7 @@ class ShareVerseCard extends StatelessWidget {
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [Color(0xFF070B12), Color(0xFF0C1A2C), Color(0xFF0E1620)],
+          colors: [AppColors.night, AppColors.primaryDark, AppColors.nightMid],
         ),
         border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
       ),

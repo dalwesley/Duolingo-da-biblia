@@ -204,8 +204,8 @@ class _MemoryScreenState extends State<MemoryScreen> {
                                   begin: Alignment.topLeft,
                                   end: Alignment.bottomRight,
                                   colors: [
-                                    Color(0xFF1E2A24),
-                                    Color(0xFF121816),
+                                    AppColors.nightLight,
+                                    AppColors.night,
                                   ],
                                 ),
                                 border: Border.all(

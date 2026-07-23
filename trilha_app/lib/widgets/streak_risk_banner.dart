@@ -112,7 +112,7 @@ class StreakFreezeChip extends StatelessWidget {
     return SoftBadge(
       text: used ? 'Gelo salvou 1 dia' : 'Gelo pronto',
       glyph: CinematicGlyph.frost,
-      accent: used ? AppColors.teal : const Color(0xFF7EC8E3),
+      accent: used ? AppColors.teal : AppColors.ice,
       bordered: true,
     );
   }
