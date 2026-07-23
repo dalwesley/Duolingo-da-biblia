@@ -9,12 +9,15 @@ import '../services/content_catalog_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
-import '../widgets/cinematic_icon.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
+import '../widgets/immersive_background.dart';
+import '../widgets/stway_brand.dart';
 import 'login_screen.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
-/// Abertura Steway — impacto de jogo + promessa de aprendizado.
+/// Abertura STWAY — impacto de jogo + promessa de aprendizado.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -157,17 +160,25 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
+    final scaffoldBg = DayPhaseHelper.scaffoldBackground(appearance.phase);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.light,
-        systemNavigationBarColor: AppColors.night,
-        systemNavigationBarIconBrightness: Brightness.light,
-      ),
-      child: Scaffold(
-        backgroundColor: AppColors.night,
-        body: AnimatedBuilder(
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light,
+          systemNavigationBarColor: scaffoldBg,
+          systemNavigationBarIconBrightness: Brightness.light,
+        ),
+        child: Scaffold(
+          backgroundColor: scaffoldBg,
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: AnimatedBuilder(
           animation: Listenable.merge([_master, _pulse]),
           builder: (context, _) {
             final t = _master.value;
@@ -201,24 +212,6 @@ class _SplashScreenState extends State<SplashScreen>
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // Arena — azul vivo + energia dourada
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          const Color(0xFF0B1628),
-                          AppColors.night,
-                          Color.lerp(
-                            AppColors.primaryDark,
-                            const Color(0xFF1A3A68),
-                            0.55,
-                          )!,
-                        ],
-                      ),
-                    ),
-                  ),
                   Positioned(
                     top: size.height * 0.12,
                     left: size.width * 0.15,
@@ -280,43 +273,27 @@ class _SplashScreenState extends State<SplashScreen>
                         children: [
                           const Spacer(flex: 3),
 
-                          // Marca — medalhão de jogo
+                          // Marca — ícone da trilha
                           Opacity(
                             opacity: riseV,
                             child: Transform.scale(
                               scale: 0.7 + 0.3 * riseV,
                               child: Transform.translate(
                                 offset: Offset(0, 36 * (1 - riseV)),
-                                child: _BrandMark(pulse: pulse),
+                                child: StwayLogo(size: 112, pulse: pulse),
                               ),
                             ),
                           ),
 
-                          const SizedBox(height: 32),
+                          const SizedBox(height: 28),
 
                           Opacity(
                             opacity: titleV,
                             child: Transform.translate(
                               offset: Offset(0, 18 * (1 - titleV)),
-                              child: Text(
-                                'STEWAY',
-                                textAlign: TextAlign.center,
-                                style: AppTypography.display(
-                                  size: 52,
-                                  weight: FontWeight.w900,
-                                  color: Colors.white,
-                                  height: 0.95,
-                                ).copyWith(
-                                  letterSpacing: 10,
-                                  shadows: [
-                                    Shadow(
-                                      color: AppColors.accent.withValues(
-                                        alpha: 0.45 * titleV,
-                                      ),
-                                      blurRadius: 28,
-                                    ),
-                                  ],
-                                ),
+                              child: const StwayWordmark(
+                                fontSize: 48,
+                                letterSpacing: 6,
                               ),
                             ),
                           ),
@@ -329,24 +306,16 @@ class _SplashScreenState extends State<SplashScreen>
                               offset: Offset(0, 12 * (1 - tagV)),
                               child: Column(
                                 children: [
+                                  const StwayTagline(size: 11),
+                                  const SizedBox(height: 10),
                                   Text(
                                     'A Bíblia em missões',
                                     textAlign: TextAlign.center,
                                     style: AppTypography.title(
-                                      size: 18,
+                                      size: 16,
                                       weight: FontWeight.w700,
-                                      color: Colors.white.withValues(alpha: 0.92),
-                                    ),
-                                  ),
-                                  const SizedBox(height: 8),
-                                  Text(
-                                    'Aprenda · pratique · cresça na fé',
-                                    textAlign: TextAlign.center,
-                                    style: AppTypography.body(
-                                      size: 14,
-                                      weight: FontWeight.w600,
-                                      color: AppColors.accent.withValues(
-                                        alpha: 0.85,
+                                      color: Colors.white.withValues(
+                                        alpha: 0.92,
                                       ),
                                     ),
                                   ),
@@ -410,6 +379,8 @@ class _SplashScreenState extends State<SplashScreen>
             );
           },
         ),
+          ),
+        ),
       ),
     );
   }
@@ -433,80 +404,6 @@ class _Orb extends StatelessWidget {
             colors: [color, Colors.transparent],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class _BrandMark extends StatelessWidget {
-  final double pulse;
-
-  const _BrandMark({required this.pulse});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 128,
-      height: 128,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Container(
-            width: 128,
-            height: 128,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(
-                    alpha: 0.28 + 0.2 * pulse,
-                  ),
-                  blurRadius: 36 + 16 * pulse,
-                  spreadRadius: 2,
-                ),
-              ],
-            ),
-          ),
-          Container(
-            width: 96,
-            height: 96,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.lerp(AppColors.nightElevated, AppColors.primary, 0.35)!,
-                  AppColors.nightMid,
-                ],
-              ),
-              border: Border.all(
-                color: AppColors.accent.withValues(alpha: 0.55 + 0.25 * pulse),
-                width: 2,
-              ),
-            ),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Opacity(
-                  opacity: 0.35,
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.path,
-                    size: 54,
-                    accent: AppColors.primaryLight,
-                    framed: false,
-                  ),
-                ),
-                const CinematicIcon(
-                  glyph: CinematicGlyph.book,
-                  size: 40,
-                  accent: AppColors.accent,
-                  framed: false,
-                ),
-              ],
-            ),
-          ),
-        ],
       ),
     );
   }

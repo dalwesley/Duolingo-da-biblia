@@ -6,6 +6,7 @@ import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -59,10 +60,18 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
+
     if (_loading) {
-      return const Scaffold(
-        backgroundColor: AppColors.night,
-        body: Center(child: CircularProgressIndicator(color: AppColors.accent)),
+      return Scaffold(
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: const Center(
+            child: CircularProgressIndicator(color: AppColors.accent),
+          ),
+        ),
       );
     }
 
@@ -70,13 +79,12 @@ class _PracticeScreenState extends State<PracticeScreen> {
       return AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: Appearance(
-          mode: context.read<ProgressService>().settings.appearanceMode,
-          style: AppearanceStyle.resolve(
-            context.read<ProgressService>().settings.appearanceMode,
-          ),
+          mode: mode,
+          style: appearance,
           child: Scaffold(
-            backgroundColor: Colors.transparent,
+            backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
             body: ImmersiveBackground(
+              appearance: appearance,
               child: Column(
                 children: [
                   Padding(

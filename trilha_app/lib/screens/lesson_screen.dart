@@ -13,11 +13,14 @@ import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/difficulty_trails.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
+import '../widgets/immersive_background.dart';
 import '../widgets/study_panel.dart';
 import '../widgets/top_bar.dart';
 import '../screens/celebration_screen.dart';
@@ -425,10 +428,19 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
 
   @override
   Widget build(BuildContext context) {
+    final progressSvc = context.watch<ProgressService>();
+    final mode = progressSvc.settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
+
     if (_mission == null || _baseMission == null) {
-      return const Scaffold(
-        backgroundColor: AppColors.night,
-        body: Center(child: CircularProgressIndicator(color: AppColors.accent)),
+      return Scaffold(
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: const Center(
+            child: CircularProgressIndicator(color: AppColors.accent),
+          ),
+        ),
       );
     }
 
@@ -442,51 +454,60 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     };
     final accent = _theme.decorColor;
     final study = _study;
-    final priorReflection = context.read<ProgressService>().reflectionFor(widget.missionSlug);
+    final priorReflection = progressSvc.reflectionFor(widget.missionSlug);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
-      child: Scaffold(
-        backgroundColor: Colors.black,
-        body: Stack(
-          fit: StackFit.expand,
-          children: [
-            if (_cinematic)
-              AnimatedBuilder(
-                animation: _revealAnim,
-                builder: (context, _) => CinematicBackdrop(
-                  world: _displayWorld,
-                  revealing: _revealing,
-                  revealProgress: _revealAnim.value,
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light,
+        child: Scaffold(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: Stack(
+            fit: StackFit.expand,
+            children: [
+              if (_cinematic)
+                AnimatedBuilder(
+                  animation: _revealAnim,
+                  builder: (context, _) => CinematicBackdrop(
+                    world: _displayWorld,
+                    revealing: _revealing,
+                    revealProgress: _revealAnim.value,
+                  ),
+                )
+              else
+                Positioned.fill(
+                  child: AmbientAtmosphere(
+                    phase: appearance.phase,
+                    accent: accent,
+                    glow: _theme.decorColor,
+                  ),
                 ),
-              )
-            else
-              DecoratedBox(decoration: BoxDecoration(gradient: _theme.sky)),
-            Positioned.fill(
-              child: IgnorePointer(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: _cinematic
-                          ? [
-                              Colors.black.withValues(alpha: 0.12),
-                              Colors.transparent,
-                              Colors.black.withValues(alpha: 0.42),
-                            ]
-                          : [
-                              _theme.nodeCurrentBottom.withValues(alpha: 0.35),
-                              Colors.transparent,
-                              Colors.black.withValues(alpha: 0.45),
-                            ],
-                      stops: const [0, 0.4, 1],
+              Positioned.fill(
+                child: IgnorePointer(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: _cinematic
+                            ? [
+                                Colors.black.withValues(alpha: 0.12),
+                                Colors.transparent,
+                                Colors.black.withValues(alpha: 0.42),
+                              ]
+                            : [
+                                Colors.black.withValues(alpha: 0.18),
+                                Colors.transparent,
+                                Colors.black.withValues(alpha: 0.32),
+                              ],
+                        stops: const [0, 0.4, 1],
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
-            SafeArea(
+              SafeArea(
               bottom: false,
               child: CustomScrollView(
                 physics: const BouncingScrollPhysics(
@@ -679,6 +700,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
               ),
           ],
         ),
+      ),
       ),
     );
   }
@@ -911,7 +933,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                       ? CinematicGlyph.check
                                       : CinematicGlyph.book,
                               size: 26,
-                              accent: const Color(0xFF1A1200),
+                              accent: AppColors.inkOnAccent,
                               framed: false,
                             ),
                           ),

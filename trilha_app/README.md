@@ -1,4 +1,4 @@
-# Steway App (Flutter)
+# STWAY App (Flutter)
 
 App nativo para iOS e Android — aprenda a Bíblia em missões gamificadas.
 

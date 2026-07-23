@@ -1,4 +1,4 @@
-# Steway Admin
+# STWAY Admin
 
 Painel web (estilo Ipsat/Satélite) para gerenciar **trilhas**, **cenas**, **passos**, **perguntas** e **estudos (preparo)** no Firebase — sem precisar publicar nova versão do app.
 

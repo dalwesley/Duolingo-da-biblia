@@ -6,8 +6,11 @@ import '../models/difficulty.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../utils/difficulty_visuals.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
 
 /// Escolha cinematográfica de dificuldade ao iniciar a trilha de Gênesis.
 class DifficultyPickerScreen extends StatefulWidget {
@@ -61,125 +64,106 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
   @override
   Widget build(BuildContext context) {
     final items = _items;
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
-      child: Scaffold(
-        backgroundColor: AppColors.night,
-        body: Stack(
-          fit: StackFit.expand,
-          children: [
-            const DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [AppColors.primaryDark, AppColors.night, Color(0xFF05080E)],
-                ),
-              ),
-            ),
-            Positioned(
-              top: -80,
-              right: -40,
-              child: Container(
-                width: 260,
-                height: 260,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: RadialGradient(
-                    colors: [AppColors.accent.withValues(alpha: 0.2), Colors.transparent],
-                  ),
-                ),
-              ),
-            ),
-            SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.md, AppSpace.screen, AppSpace.xxl),
-                child: items == null
-                    ? const Center(child: CircularProgressIndicator(color: AppColors.accent))
-                    : Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: IconButton(
-                              onPressed: () => Navigator.pop(context),
-                              icon: Container(
-                                width: 40,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withValues(alpha: 0.1),
-                                  borderRadius: BorderRadius.circular(AppRadii.sm),
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light,
+        child: Scaffold(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: SafeArea(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.md, AppSpace.screen, AppSpace.xxl),
+                  child: items == null
+                      ? const Center(child: CircularProgressIndicator(color: AppColors.accent))
+                      : Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: IconButton(
+                                onPressed: () => Navigator.pop(context),
+                                icon: Container(
+                                  width: 40,
+                                  height: 40,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withValues(alpha: 0.1),
+                                    borderRadius: BorderRadius.circular(AppRadii.sm),
+                                  ),
+                                  child: const Icon(Icons.close_rounded, color: Colors.white),
                                 ),
-                                child: const Icon(Icons.close_rounded, color: Colors.white),
                               ),
                             ),
-                          ),
-                          const SizedBox(height: AppSpace.sm),
-                          FadeTransition(
-                            opacity: CurvedAnimation(parent: _enter, curve: const Interval(0, 0.4, curve: Curves.easeOut)),
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Antes de partir',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.label(
-                                    size: 13,
-                                    letterSpacing: 1.4,
-                                    color: AppColors.accent,
-                                  ),
-                                ),
-                                const SizedBox(height: AppSpace.sm),
-                                Text(
-                                  'Escolha o modo\nde dificuldade',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.display(size: 28, height: 1.15),
-                                ),
-                                const SizedBox(height: AppSpace.md),
-                                Text(
-                                  'Semente, Rota ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.body(
-                                    size: 13,
-                                    height: 1.4,
-                                    color: Colors.white70,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: AppSpace.xxl),
-                          Expanded(
-                            child: ListView.separated(
-                              itemCount: items.length,
-                              separatorBuilder: (_, _) => const SizedBox(height: AppSpace.section),
-                              itemBuilder: (context, i) {
-                                final meta = items[i];
-                                final start = 0.15 + i * 0.12;
-                                final curve = CurvedAnimation(
-                                  parent: _enter,
-                                  curve: Interval(start, (start + 0.45).clamp(0, 1), curve: Curves.easeOutCubic),
-                                );
-                                return FadeTransition(
-                                  opacity: curve,
-                                  child: SlideTransition(
-                                    position: Tween<Offset>(begin: const Offset(0, 0.12), end: Offset.zero).animate(curve),
-                                    child: _DifficultyCard(
-                                      meta: meta,
-                                      selected: _hover == meta.difficulty,
-                                      onTap: () => _choose(meta),
-                                      onHighlight: () => setState(() => _hover = meta.difficulty),
+                            const SizedBox(height: AppSpace.sm),
+                            FadeTransition(
+                              opacity: CurvedAnimation(parent: _enter, curve: const Interval(0, 0.4, curve: Curves.easeOut)),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Antes de partir',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.label(
+                                      size: 13,
+                                      letterSpacing: 1.4,
+                                      color: AppColors.accent,
                                     ),
                                   ),
-                                );
-                              },
+                                  const SizedBox(height: AppSpace.sm),
+                                  Text(
+                                    'Escolha o modo\nde dificuldade',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.display(size: 28, height: 1.15),
+                                  ),
+                                  const SizedBox(height: AppSpace.md),
+                                  Text(
+                                    'Semente, Rota ou Profundezas —\nas perguntas mudam com o modo.\nVocê pode subir de nível depois.',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.body(
+                                      size: 13,
+                                      height: 1.4,
+                                      color: Colors.white70,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
+                            const SizedBox(height: AppSpace.xxl),
+                            Expanded(
+                              child: ListView.separated(
+                                itemCount: items.length,
+                                separatorBuilder: (_, _) => const SizedBox(height: AppSpace.section),
+                                itemBuilder: (context, i) {
+                                  final meta = items[i];
+                                  final start = 0.15 + i * 0.12;
+                                  final curve = CurvedAnimation(
+                                    parent: _enter,
+                                    curve: Interval(start, (start + 0.45).clamp(0, 1), curve: Curves.easeOutCubic),
+                                  );
+                                  return FadeTransition(
+                                    opacity: curve,
+                                    child: SlideTransition(
+                                      position: Tween<Offset>(begin: const Offset(0, 0.12), end: Offset.zero).animate(curve),
+                                      child: _DifficultyCard(
+                                        meta: meta,
+                                        selected: _hover == meta.difficulty,
+                                        onTap: () => _choose(meta),
+                                        onHighlight: () => setState(() => _hover = meta.difficulty),
+                                      ),
+                                    ),
+                                  );
+                                },
+                              ),
+                            ),
+                          ],
+                        ),
+                ),
               ),
-            ),
-          ],
+          ),
         ),
       ),
     );

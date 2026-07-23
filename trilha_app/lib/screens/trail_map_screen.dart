@@ -7,11 +7,13 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../models/trail_catalog.dart';
 import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
+import '../widgets/immersive_background.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
@@ -134,35 +136,20 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       ? TrailRealm.fromId(_trail!.realmId)
       : TrailRealm.antigoTestamento;
 
-  Color _backdropFor(Trail trail, int activeModule) {
-    if (!_useThematicMap || trail.modules.isEmpty) {
-      return RealmVisualsFallback.atSky.first;
-    }
-    final title =
-        trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title;
-    return GenesisModuleTheme.forModule(
-      title,
-      realm: TrailRealm.fromId(trail.realmId),
-      trailSlug: trail.slug,
-    ).sky.colors.first;
-  }
-
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
 
     if (_trail == null || _checkingDifficulty) {
-      final loadingBg = _trail != null
-          ? GenesisModuleTheme.forModule(
-              _trail!.modules.isNotEmpty ? _trail!.modules.first.title : '',
-              realm: TrailRealm.fromId(_trail!.realmId),
-              trailSlug: _trail!.slug,
-            ).sky.colors.first
-          : RealmVisualsFallback.atSky.first;
+      final mode = progress.settings.appearanceMode;
+      final appearance = AppearanceStyle.resolve(mode);
       return Scaffold(
-        backgroundColor: loadingBg,
-        body: const Center(
-          child: CircularProgressIndicator(color: AppColors.accent),
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: const Center(
+            child: CircularProgressIndicator(color: AppColors.accent),
+          ),
         ),
       );
     }
@@ -173,12 +160,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final difficultyId = progress.difficultyForTrail(widget.slug);
 
     if (allSlugs.isEmpty) {
+      final mode = progress.settings.appearanceMode;
+      final appearance = AppearanceStyle.resolve(mode);
       return Appearance(
-        mode: progress.settings.appearanceMode,
-        style: AppearanceStyle.resolve(progress.settings.appearanceMode),
+        mode: mode,
+        style: appearance,
         child: Scaffold(
-          backgroundColor: AppColors.night,
-          body: ListView(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: ListView(
             padding: EdgeInsets.fromLTRB(
               AppSpace.screen,
               MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
@@ -224,13 +215,13 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
               ),
             ],
           ),
+          ),
         ),
       );
     }
 
     final activeModule = _activeModuleIndex(trail, progress.completedMissions);
     _maybeScrollToActive(activeModule);
-    final backdrop = _backdropFor(trail, activeModule);
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
@@ -256,27 +247,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       child: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
         child: Scaffold(
-          backgroundColor: backdrop,
-          body: Stack(
-            children: [
-              Positioned.fill(
-                child: AnimatedContainer(
-                  duration: const Duration(milliseconds: 700),
-                  curve: Curves.easeOutCubic,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        backdrop,
-                        Color.lerp(backdrop, AppColors.night, 0.55)!,
-                        AppColors.night,
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-              ListView(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: ListView(
                 controller: _scrollController,
                 padding: EdgeInsets.fromLTRB(
                   0,
@@ -408,8 +382,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     );
                   }),
                 ],
-              ),
-            ],
+            ),
           ),
         ),
       ),

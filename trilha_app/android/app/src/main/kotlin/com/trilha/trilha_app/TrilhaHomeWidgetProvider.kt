@@ -21,13 +21,13 @@ class TrilhaHomeWidgetProvider : HomeWidgetProvider() {
         val done = widgetData.getInt("missions_done", 0).coerceAtLeast(0)
         val goalMet = widgetData.getBoolean("goal_met", false)
         val atRisk = widgetData.getBoolean("streak_at_risk", false)
-        val statusLine = widgetData.getString("status_line", "Abra o Steway")
+        val statusLine = widgetData.getString("status_line", "Abra o Stway")
         val streakLabel = widgetData.getString("streak_label", "0 dias")
         val progressLabel = widgetData.getString("progress_label", "0/$goal missões")
 
         appWidgetIds.forEach { widgetId ->
             val views = RemoteViews(context.packageName, R.layout.trilha_home_widget).apply {
-                setTextViewText(R.id.widget_brand, "STEWAY")
+                setTextViewText(R.id.widget_brand, "STWAY")
                 setTextViewText(R.id.widget_streak_value, streak.toString())
                 setTextViewText(R.id.widget_streak_label, streakLabel)
                 setTextViewText(R.id.widget_progress_label, progressLabel)

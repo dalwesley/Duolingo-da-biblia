@@ -1,4 +1,3 @@
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -7,9 +6,11 @@ import '../models/trail_catalog.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
 import '../widgets/top_bar.dart';
 import 'trail_map_screen.dart';
@@ -29,26 +30,19 @@ class RealmJourneyScreen extends StatefulWidget {
   State<RealmJourneyScreen> createState() => _RealmJourneyScreenState();
 }
 
-class _RealmJourneyScreenState extends State<RealmJourneyScreen>
-    with SingleTickerProviderStateMixin {
+class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   final _scroll = ScrollController();
   final _currentKey = GlobalKey();
   bool _jumped = false;
-  late final AnimationController _world;
 
   @override
   void initState() {
     super.initState();
-    _world = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 18),
-    )..repeat();
     WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
   }
 
   @override
   void dispose() {
-    _world.dispose();
     _scroll.dispose();
     super.dispose();
   }
@@ -224,47 +218,12 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
       mode: mode,
       style: appearance,
       child: Scaffold(
-        backgroundColor: visuals.sky.first,
-        body: Stack(
-          children: [
-            // Living world atmosphere
-            Positioned.fill(
-              child: AnimatedBuilder(
-                animation: _world,
-                builder: (context, _) {
-                  return CustomPaint(
-                    painter: _RealmWorldPainter(
-                      sky: visuals.sky,
-                      accent: visuals.accent,
-                      glow: visuals.glow,
-                      phase: _world.value,
-                      seed: widget.realm.index * 91,
-                    ),
-                  );
-                },
-              ),
-            ),
-
-            // Edge vignette
-            Positioned.fill(
-              child: IgnorePointer(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      center: const Alignment(0, -0.15),
-                      radius: 1.2,
-                      colors: [
-                        Colors.transparent,
-                        Colors.black.withValues(alpha: 0.55),
-                      ],
-                      stops: const [0.42, 1],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            CustomScrollView(
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: Stack(
+            children: [
+              CustomScrollView(
               controller: _scroll,
               physics: const BouncingScrollPhysics(),
               slivers: [
@@ -315,6 +274,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen>
             ),
           ],
         ),
+        ),
       ),
     );
   }
@@ -340,7 +300,7 @@ class _JumpChip extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.lg),
-            color: const Color(0xEE121816),
+            color: AppColors.night.withValues(alpha: 0.93),
             border: Border.all(color: accent.withValues(alpha: 0.35)),
             boxShadow: [
               BoxShadow(
@@ -375,170 +335,4 @@ class _JumpChip extends StatelessWidget {
       ),
     );
   }
-}
-
-/// Céu, estrelas, colinas e luz — atmosfera da peregrinação.
-class _RealmWorldPainter extends CustomPainter {
-  final List<Color> sky;
-  final Color accent;
-  final Color glow;
-  final double phase;
-  final int seed;
-
-  _RealmWorldPainter({
-    required this.sky,
-    required this.accent,
-    required this.glow,
-    required this.phase,
-    required this.seed,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final rect = Offset.zero & size;
-
-    // Deep sky
-    canvas.drawRect(
-      rect,
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            sky[0],
-            sky.length > 1 ? sky[1] : sky[0],
-            sky.length > 2 ? sky[2] : sky.last,
-            Color.lerp(sky.last, Colors.black, 0.35)!,
-          ],
-          stops: const [0, 0.35, 0.7, 1],
-        ).createShader(rect),
-    );
-
-    final rng = math.Random(seed);
-
-    // Stars
-    for (var i = 0; i < 55; i++) {
-      final x = rng.nextDouble() * size.width;
-      final y = rng.nextDouble() * size.height * 0.55;
-      final twinkle = 0.35 + 0.65 * ((math.sin(phase * math.pi * 2 + i) + 1) / 2);
-      canvas.drawCircle(
-        Offset(x, y),
-        0.6 + rng.nextDouble() * 1.2,
-        Paint()..color = Colors.white.withValues(alpha: 0.15 + twinkle * 0.35),
-      );
-    }
-
-    // Soft god-ray / light shaft
-    final shaftX = size.width * (0.65 + 0.05 * math.sin(phase * math.pi * 2));
-    final shaft = Path()
-      ..moveTo(shaftX - 40, 0)
-      ..lineTo(shaftX + 40, 0)
-      ..lineTo(shaftX + 120, size.height * 0.7)
-      ..lineTo(shaftX - 80, size.height * 0.7)
-      ..close();
-    canvas.drawPath(
-      shaft,
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            glow.withValues(alpha: 0.07),
-            accent.withValues(alpha: 0.02),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromLTWH(0, 0, size.width, size.height * 0.7)),
-    );
-
-    // Ambient blooms
-    _bloom(canvas, Offset(size.width * 0.85, size.height * 0.12), size.width * 0.45,
-        glow.withValues(alpha: 0.16));
-    _bloom(canvas, Offset(size.width * 0.1, size.height * 0.35), size.width * 0.35,
-        accent.withValues(alpha: 0.08));
-
-    // Distant mountain layers
-    _hills(
-      canvas,
-      size,
-      baseY: size.height * 0.62,
-      amp: size.height * 0.08,
-      color: Colors.black.withValues(alpha: 0.18),
-      offset: phase * 12,
-      seed: seed + 1,
-    );
-    _hills(
-      canvas,
-      size,
-      baseY: size.height * 0.72,
-      amp: size.height * 0.11,
-      color: Colors.black.withValues(alpha: 0.28),
-      offset: phase * -8,
-      seed: seed + 2,
-    );
-    _hills(
-      canvas,
-      size,
-      baseY: size.height * 0.84,
-      amp: size.height * 0.1,
-      color: Color.lerp(sky.last, Colors.black, 0.55)!.withValues(alpha: 0.85),
-      offset: 0,
-      seed: seed + 3,
-    );
-
-    // Warm ground haze
-    canvas.drawRect(
-      Rect.fromLTWH(0, size.height * 0.75, size.width, size.height * 0.25),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.transparent,
-            accent.withValues(alpha: 0.06),
-            Colors.black.withValues(alpha: 0.35),
-          ],
-        ).createShader(
-          Rect.fromLTWH(0, size.height * 0.75, size.width, size.height * 0.25),
-        ),
-    );
-  }
-
-  void _bloom(Canvas canvas, Offset c, double r, Color color) {
-    canvas.drawCircle(
-      c,
-      r,
-      Paint()
-        ..shader = RadialGradient(
-          colors: [color, Colors.transparent],
-        ).createShader(Rect.fromCircle(center: c, radius: r)),
-    );
-  }
-
-  void _hills(
-    Canvas canvas,
-    Size size, {
-    required double baseY,
-    required double amp,
-    required Color color,
-    required double offset,
-    required int seed,
-  }) {
-    final rng = math.Random(seed);
-    final path = Path()..moveTo(-20, size.height);
-    path.lineTo(-20, baseY);
-    var x = -20.0;
-    while (x < size.width + 40) {
-      final peak = baseY - amp * (0.4 + rng.nextDouble() * 0.8);
-      final mid = x + 40 + rng.nextDouble() * 50;
-      path.quadraticBezierTo(mid + offset * 0.3, peak, x + 90, baseY);
-      x += 90;
-    }
-    path.lineTo(size.width + 20, size.height);
-    path.close();
-    canvas.drawPath(path, Paint()..color = color);
-  }
-
-  @override
-  bool shouldRepaint(covariant _RealmWorldPainter old) =>
-      old.phase != phase || old.accent != accent;
 }

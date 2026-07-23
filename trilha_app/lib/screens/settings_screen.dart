@@ -829,7 +829,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final league = context.read<LeagueService>();
     final json = sync.exportJson(progress, league: league);
     await SharePlus.instance.share(
-      ShareParams(text: json, subject: 'Backup Steway'),
+      ShareParams(text: json, subject: 'Backup Stway'),
     );
     await sync.markSynced();
   }

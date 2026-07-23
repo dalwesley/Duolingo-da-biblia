@@ -7,7 +7,9 @@ import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 
@@ -130,32 +132,38 @@ class _MemoryScreenState extends State<MemoryScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
-      child: Scaffold(
-        backgroundColor: AppColors.night,
-        body: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.fromLTRB(
-                AppSpace.screen,
-                MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-                AppSpace.screen,
-                0,
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light,
+        child: Scaffold(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                  AppSpace.screen,
+                  0,
+                ),
+                child: TopBar(
+                  inline: true,
+                  immersive: true,
+                  dark: true,
+                  title: 'Memorizar',
+                  subtitle: 'Fixe na memória',
+                  onBack: () => Navigator.pop(context),
+                  leadingGlyph: CinematicGlyph.scroll,
+                ),
               ),
-              child: TopBar(
-                inline: true,
-                immersive: true,
-                dark: true,
-                title: 'Memorizar',
-                subtitle: 'Fixe na memória',
-                onBack: () => Navigator.pop(context),
-                leadingGlyph: CinematicGlyph.scroll,
-              ),
-            ),
-            Expanded(
+              Expanded(
               child: _loading
                   ? const Center(
                       child: CircularProgressIndicator(
@@ -184,7 +192,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                             textAlign: TextAlign.center,
                             style: AppTypography.label(
                               size: 12,
-                              color: a.textMuted(0.5),
+                              color: appearance.textMuted(0.5),
                               letterSpacing: 0.4,
                             ),
                           ),
@@ -200,14 +208,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                               padding: const EdgeInsets.all(AppSpace.xxl),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(AppRadii.xl),
-                                gradient: const LinearGradient(
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
-                                  colors: [
-                                    AppColors.nightLight,
-                                    AppColors.night,
-                                  ],
-                                ),
+                                color: appearance.cardFill,
                                 border: Border.all(
                                   color: AppColors.accent.withValues(
                                     alpha: 0.35,
@@ -280,7 +281,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                           Expanded(
                             child: _ActionBtn(
                               label: 'Ainda não',
-                              color: const Color(0xFFFF8C8C),
+                              color: AppColors.error,
                               onTap: () => _answer(knew: false),
                             ),
                           ),
@@ -300,6 +301,8 @@ class _MemoryScreenState extends State<MemoryScreen> {
             ),
           ],
         ),
+        ),
+      ),
       ),
     );
   }

@@ -1012,7 +1012,7 @@ class BibleReaderView extends StatelessWidget {
     required String text,
     void Function(int bookIndex, int chapter, int verse)? onOpenVerse,
   }) async {
-    final saved = progress.isVerseBookmarked(book.abbrev, chapter, verse);
+    var saved = progress.isVerseBookmarked(book.abbrev, chapter, verse);
     await showModalBottomSheet<void>(
       context: context,
       backgroundColor: reading.page,
@@ -1020,122 +1020,138 @@ class BibleReaderView extends StatelessWidget {
         borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
       ),
       builder: (ctx) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              AppSpace.lg,
-              AppSpace.screen,
-              AppSpace.xl,
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  '${book.name} $chapter:$verse',
-                  style: AppTypography.label(
-                    size: 13,
-                    color: reading.verseNumber,
-                  ),
+        return StatefulBuilder(
+          builder: (ctx, setSheetState) {
+            return SafeArea(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  AppSpace.lg,
+                  AppSpace.screen,
+                  AppSpace.xl,
                 ),
-                const SizedBox(height: AppSpace.sm),
-                Text(
-                  text,
-                  maxLines: 4,
-                  overflow: TextOverflow.ellipsis,
-                  style: reading.verseStyle.copyWith(fontSize: 18, height: 1.4),
-                ),
-                const SizedBox(height: AppSpace.lg),
-                ListTile(
-                  contentPadding: EdgeInsets.zero,
-                  leading: CinematicIcon(
-                    glyph: CinematicGlyph.star,
-                    size: 24,
-                    accent: reading.verseNumber.withValues(
-                      alpha: saved ? 1 : 0.45,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Text(
+                      '${book.name} $chapter:$verse',
+                      style: AppTypography.label(
+                        size: 13,
+                        color: reading.verseNumber,
+                      ),
                     ),
-                    framed: false,
-                  ),
-                  title: Text(
-                    saved ? 'Remover dos favoritos' : 'Salvar favorito',
-                    style: AppTypography.title(size: 14, color: reading.ink),
-                  ),
-                  onTap: () async {
-                    Navigator.pop(ctx);
-                    final added = await progress.toggleBibleBookmark(
-                      book.abbrev,
-                      chapter,
-                      verse,
-                    );
-                    if (context.mounted) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            added
-                                ? 'Versículo favoritado'
-                                : 'Removido dos favoritos',
-                          ),
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      text,
+                      maxLines: 4,
+                      overflow: TextOverflow.ellipsis,
+                      style: reading.verseStyle.copyWith(
+                        fontSize: 18,
+                        height: 1.4,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.lg),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: CinematicIcon(
+                        glyph: CinematicGlyph.star,
+                        size: 24,
+                        accent: reading.verseNumber.withValues(
+                          alpha: saved ? 1 : 0.45,
                         ),
-                      );
-                    }
-                  },
+                        framed: false,
+                      ),
+                      title: Text(
+                        saved ? 'Remover dos favoritos' : 'Salvar favorito',
+                        style: AppTypography.title(
+                          size: 14,
+                          color: reading.ink,
+                        ),
+                      ),
+                      onTap: () async {
+                        final added = await progress.toggleBibleBookmark(
+                          book.abbrev,
+                          chapter,
+                          verse,
+                        );
+                        setSheetState(() => saved = added);
+                        if (context.mounted) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                added
+                                    ? 'Versículo favoritado'
+                                    : 'Removido dos favoritos',
+                              ),
+                            ),
+                          );
+                        }
+                      },
+                    ),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: CinematicIcon(
+                        glyph: CinematicGlyph.scroll,
+                        size: 24,
+                        accent: reading.verseNumber,
+                        framed: false,
+                      ),
+                      title: Text(
+                        'Estudar (Strong & originais)',
+                        style: AppTypography.title(
+                          size: 14,
+                          color: reading.ink,
+                        ),
+                      ),
+                      subtitle: Text(
+                        'Léxico, morfologia, concordância e refs',
+                        style: reading.metaStyle,
+                      ),
+                      onTap: () {
+                        Navigator.pop(ctx);
+                        showVerseStudySheet(
+                          context,
+                          bookIndex: bookIndex,
+                          bookName: book.name,
+                          chapter: chapter,
+                          verse: verse,
+                          text: text,
+                          onOpenRef: onOpenVerse,
+                        );
+                      },
+                    ),
+                    ListTile(
+                      contentPadding: EdgeInsets.zero,
+                      leading: CinematicIcon(
+                        glyph: CinematicGlyph.share,
+                        size: 24,
+                        accent: reading.inkMuted,
+                        framed: false,
+                      ),
+                      title: Text(
+                        'Compartilhar',
+                        style: AppTypography.title(
+                          size: 14,
+                          color: reading.ink,
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.pop(ctx);
+                        showShareVerseSheet(
+                          context,
+                          bookName: book.name,
+                          chapter: chapter,
+                          verse: verse,
+                          text: text,
+                        );
+                      },
+                    ),
+                  ],
                 ),
-                ListTile(
-                  contentPadding: EdgeInsets.zero,
-                  leading: CinematicIcon(
-                    glyph: CinematicGlyph.scroll,
-                    size: 24,
-                    accent: reading.verseNumber,
-                    framed: false,
-                  ),
-                  title: Text(
-                    'Estudar (Strong & originais)',
-                    style: AppTypography.title(size: 14, color: reading.ink),
-                  ),
-                  subtitle: Text(
-                    'Léxico, morfologia, concordância e refs',
-                    style: reading.metaStyle,
-                  ),
-                  onTap: () {
-                    Navigator.pop(ctx);
-                    showVerseStudySheet(
-                      context,
-                      bookIndex: bookIndex,
-                      bookName: book.name,
-                      chapter: chapter,
-                      verse: verse,
-                      text: text,
-                      onOpenRef: onOpenVerse,
-                    );
-                  },
-                ),
-                ListTile(
-                  contentPadding: EdgeInsets.zero,
-                  leading: CinematicIcon(
-                    glyph: CinematicGlyph.share,
-                    size: 24,
-                    accent: reading.inkMuted,
-                    framed: false,
-                  ),
-                  title: Text(
-                    'Compartilhar',
-                    style: AppTypography.title(size: 14, color: reading.ink),
-                  ),
-                  onTap: () {
-                    Navigator.pop(ctx);
-                    showShareVerseSheet(
-                      context,
-                      bookName: book.name,
-                      chapter: chapter,
-                      verse: verse,
-                      text: text,
-                    );
-                  },
-                ),
-              ],
-            ),
-          ),
+              ),
+            );
+          },
         );
       },
     );

@@ -58,7 +58,7 @@ class NotificationService {
   void Function(ReminderAction action)? onAction;
 
   static const _channelId = 'trilha_habits';
-  static const _channelName = 'Lembretes Steway';
+  static const _channelName = 'Lembretes Stway';
   static const _channelDesc =
       'Meta diária, missões, prática, memorizar e favoritos';
 
@@ -270,7 +270,7 @@ class NotificationService {
       when: _nextSlot(hour, minute),
       copy: const _ReminderCopy(
         title: 'Meta de hoje',
-        body: 'Ainda dá tempo de cumprir sua meta diária no Steway.',
+        body: 'Ainda dá tempo de cumprir sua meta diária no Stway.',
         action: ReminderAction.home,
         priority: 10,
       ),

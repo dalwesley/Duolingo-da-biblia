@@ -1,4 +1,4 @@
-# Release — Steway App
+# Release — STWAY App
 
 ## Pré-requisitos de produção
 
@@ -39,7 +39,7 @@ O AAB estará em `build/app/outputs/bundle/release/`.
 
 ## Play Store — Teste interno (beta fechado)
 
-1. [Google Play Console](https://play.google.com/console) → app "Steway"
+1. [Google Play Console](https://play.google.com/console) → app "STWAY"
 2. Envie o AAB em **Teste interno**
 3. Convide 10–20 testadores
 4. No Firebase Analytics, acompanhe: `app_open`, `login`, `home_view`, `lesson_start`, `lesson_complete`

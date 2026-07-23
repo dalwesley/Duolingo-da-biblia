@@ -7,7 +7,10 @@ import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
-import '../widgets/cinematic_icon.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
+import '../widgets/immersive_background.dart';
+import '../widgets/stway_brand.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
@@ -83,54 +86,47 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final backend = context.watch<BackendService>();
     final busy = backend.isGoogleBusy || backend.isInitializing;
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(gradient: AppGradients.cosmic),
-        child: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppSpace.xxl,
-              AppSpace.xxl,
-              AppSpace.xxl,
-              AppSpace.xxl,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                const Spacer(flex: 2),
-                const Center(
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.path,
-                    size: 72,
-                    accent: AppColors.accent,
-                    glowing: true,
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: Scaffold(
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(
+                AppSpace.xxl,
+                AppSpace.xxl,
+                AppSpace.xxl,
+                AppSpace.xxl,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Spacer(flex: 2),
+                  const Center(child: StwayLogo(size: 88)),
+                  const SizedBox(height: AppSpace.xxl),
+                  const Center(child: StwayWordmark(fontSize: 28, letterSpacing: 4)),
+                  const SizedBox(height: AppSpace.sm),
+                  const StwayTagline(size: 9),
+                  const SizedBox(height: AppSpace.xxl),
+                  Text(
+                    'Entre para continuar',
+                    textAlign: TextAlign.center,
+                    style: AppTypography.display(size: 32),
                   ),
-                ),
-                const SizedBox(height: AppSpace.xxl),
-                Text(
-                  'STEWAY',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.label(
-                    size: 13,
-                    letterSpacing: 3.2,
-                    color: AppColors.accent.withValues(alpha: 0.95),
+                  const SizedBox(height: AppSpace.md),
+                  Text(
+                    'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
+                    textAlign: TextAlign.center,
+                    style: AppTypography.body(
+                      color: Colors.white.withValues(alpha: 0.65),
+                    ),
                   ),
-                ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  'Entre para continuar',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.display(size: 36),
-                ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    color: Colors.white.withValues(alpha: 0.65),
-                  ),
-                ),
                 const Spacer(flex: 3),
                 if (_error != null) ...[
                   Container(
@@ -148,7 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w600,
-                        color: const Color(0xFFFFC9C9),
+                        color: AppColors.errorSoft,
                       ),
                     ),
                   ),
@@ -211,7 +207,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: AppSpace.lg),
                 Text(
-                  'É necessário entrar para usar o Steway.',
+                  'É necessário entrar para usar o Stway.',
                   textAlign: TextAlign.center,
                   style: AppTypography.label(
                     size: 11,
@@ -223,6 +219,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
+      ),
       ),
     );
   }

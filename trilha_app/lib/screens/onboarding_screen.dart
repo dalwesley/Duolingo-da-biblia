@@ -6,12 +6,14 @@ import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/stway_brand.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 
-/// Onboarding Steway — 4 passos no visual atual do app.
+/// Onboarding STWAY — 4 passos no visual atual do app.
 /// Promessa → motivo → ritmo → primeira trilha.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -169,17 +171,24 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: const SystemUiOverlayStyle(
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+      value: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
         statusBarIconBrightness: Brightness.light,
-        systemNavigationBarColor: AppColors.night,
+        systemNavigationBarColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
         systemNavigationBarIconBrightness: Brightness.light,
       ),
       child: Scaffold(
-        backgroundColor: AppColors.night,
-        body: AnimatedBuilder(
+        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+        body: ImmersiveBackground(
+          appearance: appearance,
+          child: AnimatedBuilder(
           animation: Listenable.merge([_enter, _pulse]),
           builder: (context, _) {
             final enter = Curves.easeOutCubic.transform(_enter.value);
@@ -188,19 +197,6 @@ class _OnboardingScreenState extends State<OnboardingScreen>
             return Stack(
               fit: StackFit.expand,
               children: [
-                const DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Color(0xFF0B1628),
-                        AppColors.night,
-                        Color(0xFF122038),
-                      ],
-                    ),
-                  ),
-                ),
                 Positioned(
                   top: size.height * 0.08,
                   right: -40,
@@ -277,6 +273,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
             );
           },
         ),
+        ),
+      ),
       ),
     );
   }
@@ -321,15 +319,9 @@ class _PromiseBeat extends StatelessWidget {
     return ListView(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
       children: [
-        Text(
-          'STEWAY',
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 12,
-            letterSpacing: 3,
-            color: AppColors.accent,
-          ),
-        ),
+        const Center(child: StwayWordmark(fontSize: 22, letterSpacing: 3.5)),
+        const SizedBox(height: 8),
+        const StwayTagline(size: 9),
         const SizedBox(height: 14),
         Text(
           'Aprenda a Bíblia\nem missões diárias',
@@ -518,7 +510,7 @@ class _WhyBeat extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          'O que te traz ao Steway?',
+          'O que te traz ao Stway?',
           textAlign: TextAlign.center,
           style: AppTypography.display(size: 26, height: 1.15),
         ),

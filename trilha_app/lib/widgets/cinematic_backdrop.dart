@@ -107,21 +107,24 @@ class _AtmospherePainter extends CustomPainter {
         ).createShader(Rect.fromCircle(center: auraCenter, radius: size.width * 0.6)),
     );
 
-    // Estrelas — só no terço superior, bem sutis
+    // Luminares — bloom suave (sem pontilhados de estrela)
     final starStrength = math.max(state.stars, state.voidDepth * 0.25);
     if (starStrength > 0.05) {
-      final rng = math.Random(42);
-      final count = (28 + starStrength * 40).round();
-      for (var i = 0; i < count; i++) {
-        final x = rng.nextDouble() * size.width;
-        final y = rng.nextDouble() * size.height * 0.38;
-        final twinkle = 0.55 + 0.45 * ((math.sin(time * math.pi * 2 + i * 0.7) + 1) / 2);
-        canvas.drawCircle(
-          Offset(x, y),
-          0.6 + rng.nextDouble() * 1.1,
-          Paint()..color = Colors.white.withValues(alpha: starStrength * 0.22 * twinkle),
-        );
-      }
+      final c = Offset(size.width * 0.5, size.height * 0.18);
+      final r = size.width * (0.4 + starStrength * 0.15);
+      canvas.drawCircle(
+        c,
+        r,
+        Paint()
+          ..shader = RadialGradient(
+            colors: [
+              Colors.white.withValues(alpha: starStrength * 0.1),
+              AppColors.primaryLight.withValues(alpha: starStrength * 0.06),
+              Colors.transparent,
+            ],
+            stops: const [0.0, 0.4, 1.0],
+          ).createShader(Rect.fromCircle(center: c, radius: r)),
+      );
     }
 
     // Luz — glow suave no alto
@@ -189,7 +192,7 @@ class _AtmospherePainter extends CustomPainter {
             colors: [
               lifeTint.withValues(alpha: horizon * 0.35),
               lifeTint.withValues(alpha: horizon * 0.7),
-              const Color(0xFF05080E).withValues(alpha: 0.95),
+              AppColors.night.withValues(alpha: 0.95),
             ],
             stops: const [0.0, 0.35, 1.0],
           ).createShader(Rect.fromLTRB(0, bandTop, size.width, size.height)),

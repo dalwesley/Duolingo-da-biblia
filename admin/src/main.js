@@ -37,7 +37,7 @@ function navigate(next) {
 
 function pageTitle() {
   if (route.startsWith('trail:')) return 'Editar trilha';
-  return NAV.find((n) => n.route === route)?.label || 'Steway Admin';
+  return NAV.find((n) => n.route === route)?.label || 'STWAY Admin';
 }
 
 function shell(content) {
@@ -63,7 +63,7 @@ function shell(content) {
           <div class="brand-lockup">
             <div class="brand-mark">📖</div>
             <div>
-              <h1>Steway</h1>
+              <h1>STWAY</h1>
               <p>Painel de conteúdo</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ function loginScreen(error = '') {
       <div class="login-hero">
         <div class="login-hero-inner">
           <div class="login-hero-mark">📖</div>
-          <h1>Steway Admin</h1>
+          <h1>STWAY Admin</h1>
           <p>Trilhas, perguntas e estudos no Firebase — sem republicar o app.</p>
         </div>
       </div>

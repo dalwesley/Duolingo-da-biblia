@@ -40,7 +40,7 @@ struct TrilhaProvider: TimelineProvider {
       streak: streak,
       streakLabel: data?.string(forKey: "streak_label") ?? "0 dias",
       progressLabel: data?.string(forKey: "progress_label") ?? "0/\(goal) missões",
-      statusLine: data?.string(forKey: "status_line") ?? "Abra o Steway",
+      statusLine: data?.string(forKey: "status_line") ?? "Abra o Stway",
       goalMet: data?.bool(forKey: "goal_met") ?? false,
       streakAtRisk: data?.bool(forKey: "streak_at_risk") ?? false,
       dailyGoal: goal,
@@ -88,7 +88,7 @@ struct TrilhaHomeWidgetEntryView: View {
 
       VStack(alignment: .leading, spacing: 0) {
         HStack {
-          Text("STEWAY")
+          Text("STWAY")
             .font(.system(size: 11, weight: .bold, design: .rounded))
             .kerning(1.4)
             .foregroundStyle(Color(red: 0.60, green: 0.64, blue: 0.61))
@@ -161,7 +161,7 @@ struct TrilhaHomeWidget: Widget {
         TrilhaHomeWidgetEntryView(entry: entry)
       }
     }
-    .configurationDisplayName("Steway")
+    .configurationDisplayName("STWAY")
     .description("Sua sequência e meta diária.")
     .supportedFamilies([.systemSmall, .systemMedium])
   }

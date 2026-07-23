@@ -26,27 +26,27 @@ class ShareStreakButton extends StatelessWidget {
     if (streak > 0) {
       final days = streak == 1 ? '1 dia' : '$streak dias';
       body = '''
-🔥 $days no Steway!
+🔥 $days no Stway!
 
 Estou aprendendo a Bíblia em missões curtas — $steps passos até agora.$name
 
-Baixe o Steway e venha junto.
+Baixe o Stway e venha junto.
 ''';
     } else if (steps > 0) {
       body = '''
-🔥 Estou aprendendo a Bíblia no Steway — $steps passos até agora.$name
+🔥 Estou aprendendo a Bíblia no Stway — $steps passos até agora.$name
 
-Baixe o Steway e venha junto.
+Baixe o Stway e venha junto.
 ''';
     } else {
       body = '''
-🔥 Comecei a aprender a Bíblia com o Steway.$name
+🔥 Comecei a aprender a Bíblia com o Stway.$name
 
-Baixe o Steway e venha junto.
+Baixe o Stway e venha junto.
 ''';
     }
     await SharePlus.instance.share(
-      ShareParams(text: body.trim(), subject: 'Minha sequência no Steway'),
+      ShareParams(text: body.trim(), subject: 'Minha sequência no Stway'),
     );
   }
 

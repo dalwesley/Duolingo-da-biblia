@@ -8,11 +8,14 @@ import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
@@ -186,36 +189,40 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         widget.total > 0 ? ((widget.correct / widget.total) * 100).round() : 100;
     final isBoss = widget.isBoss;
     final showModeUp = _nextMode != null && _nextMeta != null;
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final appearance = AppearanceStyle.resolve(mode);
 
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle.light,
-      child: Scaffold(
-        backgroundColor: AppColors.night,
-        body: Stack(
-          fit: StackFit.expand,
-          children: [
-            const DecoratedBox(
-              decoration: BoxDecoration(gradient: AppGradients.cosmic),
-            ),
-            const ConfettiOverlay(active: true),
-            Positioned(
-              top: -80,
-              right: -60,
-              child: Container(
-                width: 240,
-                height: 240,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: RadialGradient(
-                    colors: [
-                      AppColors.accent.withValues(alpha: 0.25),
-                      Colors.transparent,
-                    ],
+    return Appearance(
+      mode: mode,
+      style: appearance,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light,
+        child: Scaffold(
+          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: Stack(
+              fit: StackFit.expand,
+              children: [
+                const ConfettiOverlay(active: true),
+                Positioned(
+                  top: -80,
+                  right: -60,
+                  child: Container(
+                    width: 240,
+                    height: 240,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: RadialGradient(
+                        colors: [
+                          AppColors.accent.withValues(alpha: 0.25),
+                          Colors.transparent,
+                        ],
+                      ),
+                    ),
                   ),
                 ),
-              ),
-            ),
-            SafeArea(
+                SafeArea(
               child: Padding(
                 padding: const EdgeInsets.all(AppSpace.xxl),
                 child: Column(
@@ -410,6 +417,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               ),
             ),
           ],
+        ),
+          ),
         ),
       ),
     );

@@ -1,4 +1,4 @@
-# Steway — formação bíblica com hábito
+# STWAY — formação bíblica com hábito
 
 App Flutter para aprender a Bíblia em missões diárias + painel admin no Firebase.
 

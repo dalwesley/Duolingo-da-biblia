@@ -357,7 +357,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         children: [
           if (companions.canAdd)
             Expanded(
-              child: _OutlineAction(
+              child: _FilledAction(
                 label: 'Convidar',
                 onTap: companions.loading
                     ? null
@@ -367,7 +367,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           if (companions.canAdd) const SizedBox(width: AppSpace.sm),
           if (companions.canAdd)
             Expanded(
-              child: _OutlineAction(
+              child: _FilledAction(
                 label: 'Aceitar convite',
                 onTap: companions.loading
                     ? null
@@ -553,7 +553,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             title: room.name,
             subtitle: 'Escaneie o QR ou entre com o código',
             shareMessage:
-                'Entre na sala "${room.name}" no Steway com o código ${room.code}.',
+                'Entre na sala "${room.name}" no Stway com o código ${room.code}.',
           ),
           onLeave: () async {
             final ok = await _confirmLeave(context);
@@ -733,8 +733,13 @@ class _SegmentTabs extends StatelessWidget {
           duration: const Duration(milliseconds: 200),
           padding: const EdgeInsets.symmetric(vertical: 10),
           decoration: BoxDecoration(
-            gradient: selected ? AppGradients.gold : null,
             borderRadius: BorderRadius.circular(AppRadii.sm),
+            border: selected
+                ? Border.all(
+                    color: AppColors.accent.withValues(alpha: 0.45),
+                  )
+                : null,
+            color: selected ? Colors.white.withValues(alpha: 0.04) : null,
           ),
           child: Text(
             label,
@@ -742,7 +747,7 @@ class _SegmentTabs extends StatelessWidget {
             style: AppTypography.cta(
               size: 13,
               color: selected
-                  ? AppColors.inkOnAccent
+                  ? AppColors.accent
                   : Appearance.of(context).textMuted(0.7),
             ),
           ),
@@ -1734,7 +1739,7 @@ class _OutcomeBanner extends StatelessWidget {
                   size: 12,
                   height: 1.3,
                   color: outcome == LeagueOutcome.promoted
-                      ? const Color(0xFF5A4400)
+                      ? AppColors.medalInk
                       : a.textMuted(0.75),
                 ),
               ),
@@ -1873,9 +1878,9 @@ class _StandingRow extends StatelessWidget {
     final a = Appearance.of(context);
     final isTop3 = rank <= 3;
     final medal = switch (rank) {
-      1 => const Color(0xFFF5D78E),
-      2 => const Color(0xFFC8CEDC),
-      3 => const Color(0xFFD9995B),
+      1 => AppColors.medalGold,
+      2 => AppColors.medalSilver,
+      3 => AppColors.medalBronze,
       _ => null,
     };
 
@@ -2073,9 +2078,9 @@ class _CompanionsEmpty extends StatelessWidget {
           if (loading)
             const CircularProgressIndicator(color: AppColors.accent)
           else ...[
-            _OutlineAction(label: 'Convidar amigo', onTap: onInvite),
+            _FilledAction(label: 'Convidar amigo', onTap: onInvite),
             const SizedBox(height: 10),
-            _OutlineAction(label: 'Aceitar convite', onTap: onJoin),
+            _FilledAction(label: 'Aceitar convite', onTap: onJoin),
           ],
         ],
       ),
@@ -2228,6 +2233,46 @@ class _CompanionCard extends StatelessWidget {
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _FilledAction extends StatelessWidget {
+  final String label;
+  final VoidCallback? onTap;
+
+  const _FilledAction({required this.label, this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final enabled = onTap != null;
+    return GestureDetector(
+      onTap: onTap,
+      child: Opacity(
+        opacity: enabled ? 1 : 0.45,
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(vertical: 14),
+          decoration: BoxDecoration(
+            gradient: AppGradients.gold,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            boxShadow: enabled
+                ? [
+                    BoxShadow(
+                      color: AppColors.accent.withValues(alpha: 0.22),
+                      blurRadius: 18,
+                      offset: const Offset(0, 8),
+                    ),
+                  ]
+                : null,
+          ),
+          child: Text(
+            label,
+            textAlign: TextAlign.center,
+            style: AppTypography.cta(),
+          ),
+        ),
       ),
     );
   }

@@ -1,4 +1,4 @@
-# Roadmap Steway — formação bíblica com hábito
+# Roadmap STWAY — formação bíblica com hábito
 
 **Norte:** treino diário em português para aprender a Bíblia de verdade — missões curtas + estudo original offline.
 Não somos YouVersion (ler), nem Hallow (orar), nem trivia vazia.

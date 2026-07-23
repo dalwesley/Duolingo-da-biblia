@@ -503,13 +503,13 @@ class _ChoiceTile extends StatelessWidget {
         border = accent.withValues(alpha: 0.9);
         fill = Color.lerp(AppColors.nightMid, accent, 0.22)!;
         letterBg = accent;
-        letterFg = const Color(0xFF2A2100);
+        letterFg = AppColors.inkOnAccent;
         elevation = 1;
       case _ChoiceState.correct:
         border = accent;
         fill = Color.lerp(AppColors.nightMid, accent, 0.3)!;
         letterBg = accent;
-        letterFg = const Color(0xFF2A2100);
+        letterFg = AppColors.inkOnAccent;
         elevation = 1;
       case _ChoiceState.wrong:
         border = AppColors.error.withValues(alpha: 0.9);
@@ -519,13 +519,13 @@ class _ChoiceTile extends StatelessWidget {
         elevation = 0;
       case _ChoiceState.dimmed:
         border = Colors.white.withValues(alpha: 0.06);
-        fill = const Color(0xB012101C);
+        fill = AppColors.night.withValues(alpha: 0.69);
         letterBg = Colors.white.withValues(alpha: 0.06);
         letterFg = Colors.white.withValues(alpha: 0.28);
         elevation = 0;
       case _ChoiceState.idle:
         border = Colors.white.withValues(alpha: 0.14);
-        fill = const Color(0xCC12101C);
+        fill = AppColors.night.withValues(alpha: 0.8);
         letterBg = Colors.white.withValues(alpha: 0.08);
         letterFg = Colors.white.withValues(alpha: 0.7);
         elevation = 0;
