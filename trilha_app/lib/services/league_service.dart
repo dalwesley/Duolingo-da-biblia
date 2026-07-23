@@ -108,6 +108,18 @@ class LeagueService extends ChangeNotifier {
     return 8 - d.weekday;
   }
 
+  /// Zona de descida (últimos [demoteCount]).
+  bool isInDemotionZone(int rank) {
+    if (tierIndex <= 0 || rank <= 0) return false;
+    return rank > groupSize - demoteCount;
+  }
+
+  /// Perto da zona de descida (2 posições acima + a zona).
+  bool isNearDemotion(int rank) {
+    if (tierIndex <= 0 || rank <= 0) return false;
+    return rank > groupSize - demoteCount - 2;
+  }
+
   /// Dias restantes até o ranking mensal fechar (inclui hoje).
   static int daysLeftInMonth([DateTime? now]) {
     final d = now ?? DateTime.now();

@@ -91,6 +91,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyMemoryMastered = 'memoryMastered';
 
   static const maxLamps = 5;
+  static const comebackBonusSteps = 15;
+  static const minStreakForRepair = 3;
 
   /// Unidade do produto: passos (legado local/cloud ainda usa a chave `xp`).
   int steps = 0;
@@ -151,6 +153,17 @@ class ProgressService extends ChangeNotifier {
 
   /// True when daily goal was just crossed (UI one-shot).
   bool goalJustReached = false;
+
+  /// Reparo de sequência: 1× por mês civil (após faltar exatamente 1 dia).
+  bool streakRepairAvailable = true;
+  String? streakRepairMonth;
+  bool streakRepairPending = false;
+  int brokenStreak = 0;
+
+  /// Sheet de retorno — mostra no máx. 1× por dia civil.
+  String? lastComebackShownDate;
+  /// Bônus leve na 1ª missão após gap (ativado ao reconhecer o retorno).
+  bool comebackBonusPending = false;
 
   bool get isLoaded => _loaded;
 
@@ -423,6 +436,12 @@ class ProgressService extends ChangeNotifier {
     monthlySteps = 0;
     monthlyMonth = null;
     goalJustReached = false;
+    streakRepairAvailable = true;
+    streakRepairMonth = null;
+    streakRepairPending = false;
+    brokenStreak = 0;
+    lastComebackShownDate = null;
+    comebackBonusPending = false;
     notifyListeners();
   }
 
@@ -467,6 +486,36 @@ class ProgressService extends ChangeNotifier {
     if (streakFreezeWeek == null || streakFreezeWeek != week) {
       streakFreezeAvailable = true;
     }
+  }
+
+  /// 1 reparo de sequência por mês civil.
+  void _ensureStreakRepairMonth() {
+    final month = _monthKey();
+    if (streakRepairAvailable) return;
+    if (streakRepairMonth == null || streakRepairMonth != month) {
+      streakRepairAvailable = true;
+    }
+  }
+
+  /// Faltou exatamente 1 dia civil (ontem sem passo, último jogo anteontem).
+  bool get missedExactlyOneDay {
+    if (lastPlayedDate == null) return false;
+    return _dayAfterKey(lastPlayedDate!) == _yesterdayKey();
+  }
+
+  /// Dias civis desde o último passo (0 = hoje).
+  int get daysSinceLastPlayed {
+    if (lastPlayedDate == null) return 999;
+    final parts = lastPlayedDate!.split('-');
+    if (parts.length != 3) return 999;
+    final last = DateTime(
+      int.parse(parts[0]),
+      int.parse(parts[1]),
+      int.parse(parts[2]),
+    );
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    return today.difference(last).inDays.clamp(0, 999);
   }
 
   void _ensureMonthlyMonth() {
@@ -632,9 +681,12 @@ class ProgressService extends ChangeNotifier {
     if (lastPlayedDate == today) return;
 
     _ensureStreakFreezeWeek();
+    _ensureStreakRepairMonth();
 
     if (lastPlayedDate == _yesterdayKey()) {
       streak = streak + 1;
+      streakRepairPending = false;
+      brokenStreak = 0;
     } else if (lastPlayedDate != null && streakFreezeAvailable) {
       // Perdeu 1 dia — protege com congelamento.
       streakFreezeAvailable = false;
@@ -647,8 +699,25 @@ class ProgressService extends ChangeNotifier {
         }
       }
       streak = streak + 1; // continua a sequência após o dia protegido
+      streakRepairPending = false;
+      brokenStreak = 0;
+    } else if (lastPlayedDate != null &&
+        missedExactlyOneDay &&
+        streak >= minStreakForRepair &&
+        streakRepairAvailable) {
+      // Sem gelo: oferece reparo 1×/mês em vez de zerar na cara.
+      brokenStreak = streak;
+      streakRepairPending = true;
+      streak = 1;
     } else {
       streak = 1;
+      streakRepairPending = false;
+      brokenStreak = 0;
+    }
+
+    if (comebackBonusPending) {
+      _gainSteps(comebackBonusSteps);
+      comebackBonusPending = false;
     }
 
     lastPlayedDate = today;
@@ -731,6 +800,46 @@ class ProgressService extends ChangeNotifier {
       return false;
     }
     return true;
+  }
+
+  /// Mostrar sheet de retorno (no máx. 1× por dia).
+  bool get shouldShowComeback {
+    if (!isReturningAfterGap) return false;
+    return lastComebackShownDate != _todayKey();
+  }
+
+  /// Oferta de reparo ativa após a missão que “reiniciou” a sequência.
+  bool get showStreakRepairOffer =>
+      streakRepairPending && brokenStreak >= minStreakForRepair;
+
+  /// Marca o retorno como visto e agenda bônus na próxima missão do dia.
+  Future<void> acknowledgeComeback() async {
+    lastComebackShownDate = _todayKey();
+    if (isReturningAfterGap && !walkedToday) {
+      comebackBonusPending = true;
+    }
+    await _save();
+  }
+
+  /// Restaura a sequência quebrada (+ o dia de hoje). Consome o reparo do mês.
+  Future<bool> claimStreakRepair() async {
+    _ensureStreakRepairMonth();
+    if (!streakRepairPending || brokenStreak < minStreakForRepair) return false;
+    if (!walkedToday) return false;
+    streak = brokenStreak + 1;
+    streakRepairPending = false;
+    streakRepairAvailable = false;
+    streakRepairMonth = _monthKey();
+    brokenStreak = 0;
+    await _save();
+    return true;
+  }
+
+  Future<void> dismissStreakRepair() async {
+    if (!streakRepairPending) return;
+    streakRepairPending = false;
+    brokenStreak = 0;
+    await _save();
   }
 
   String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
@@ -1007,6 +1116,12 @@ class ProgressService extends ChangeNotifier {
       'streakFreezeAvailable': streakFreezeAvailable,
       'streakFreezeWeek': streakFreezeWeek,
       'frozenDates': frozenDates,
+      'streakRepairAvailable': streakRepairAvailable,
+      'streakRepairMonth': streakRepairMonth,
+      'streakRepairPending': streakRepairPending,
+      'brokenStreak': brokenStreak,
+      'lastComebackShownDate': lastComebackShownDate,
+      'comebackBonusPending': comebackBonusPending,
       'questDay': questDay,
       'questProgress': questProgressMap,
       'questClaimed': questClaimed,
@@ -1109,6 +1224,18 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('frozenDates')) {
         frozenDates = _asStringList(data['frozenDates']);
       }
+      streakRepairAvailable =
+          data['streakRepairAvailable'] as bool? ?? streakRepairAvailable;
+      streakRepairMonth =
+          data['streakRepairMonth'] as String? ?? streakRepairMonth;
+      streakRepairPending =
+          data['streakRepairPending'] as bool? ?? streakRepairPending;
+      brokenStreak =
+          (data['brokenStreak'] as num?)?.toInt() ?? brokenStreak;
+      lastComebackShownDate =
+          data['lastComebackShownDate'] as String? ?? lastComebackShownDate;
+      comebackBonusPending =
+          data['comebackBonusPending'] as bool? ?? comebackBonusPending;
       questDay = data['questDay'] as String? ?? questDay;
       if (data.containsKey('questProgress')) {
         questProgressMap = _asIntMap(data['questProgress']);
@@ -1184,10 +1311,13 @@ class ProgressService extends ChangeNotifier {
     // Repara gelo preso (false sem semana) e persiste se mudou.
     final freezeBefore = streakFreezeAvailable;
     _ensureStreakFreezeWeek();
+    final repairBefore = streakRepairAvailable;
+    _ensureStreakRepairMonth();
     await _autoClaimCompletedQuests();
     await BibleService.instance.setTranslation(settings.bibleTranslationId);
     _loaded = true;
-    if (freezeBefore != streakFreezeAvailable) {
+    if (freezeBefore != streakFreezeAvailable ||
+        repairBefore != streakRepairAvailable) {
       await _save();
     }
     notifyListeners();
@@ -1232,6 +1362,12 @@ class ProgressService extends ChangeNotifier {
     frozenDates = [];
     streakFreezeAvailable = true;
     streakFreezeWeek = null;
+    streakRepairAvailable = true;
+    streakRepairMonth = null;
+    streakRepairPending = false;
+    brokenStreak = 0;
+    lastComebackShownDate = null;
+    comebackBonusPending = false;
     questProgressMap = {};
     questClaimed = [];
     weeklyProgressMap = {};

@@ -14,6 +14,7 @@ import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
+import '../widgets/streak_repair_banner.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
 
@@ -350,6 +351,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                   ? () => _acceptNextMode(replayThisStep: false)
                                   : null,
                             ),
+                          ],
+                          if (progress.showStreakRepairOffer) ...[
+                            const SizedBox(height: AppSpace.lg),
+                            const StreakRepairCelebrationCard(),
                           ],
                         ],
                       ),

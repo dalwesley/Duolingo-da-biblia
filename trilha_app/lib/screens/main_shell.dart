@@ -150,6 +150,11 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           _index = 0;
           _frost.value = 0;
         });
+      case ReminderAction.league:
+        setState(() {
+          _index = 3;
+          _frost.value = 0;
+        });
       case ReminderAction.practice:
         setState(() {
           _index = 0;
@@ -322,6 +327,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                     onOpenTrail: _openTrail,
                     onOpenMission: _openMission,
                     onOpenTrilhas: _goToTrilhas,
+                    onOpenLeague: () => setState(() {
+                      _index = 3;
+                      _frost.value = 0;
+                    }),
                   ),
                 ),
                 ImmersiveBackground(

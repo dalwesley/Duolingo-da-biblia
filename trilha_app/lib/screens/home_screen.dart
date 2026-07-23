@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -11,11 +12,14 @@ import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/comeback_sheet.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/league_risk_card.dart';
 import '../widgets/liturgical_banner.dart';
 import '../widgets/share_streak_button.dart';
+import '../widgets/streak_repair_banner.dart';
 import '../widgets/streak_risk_banner.dart';
 import '../widgets/streak_week.dart';
 import '../widgets/top_bar.dart';
@@ -30,6 +34,7 @@ class HomeScreen extends StatefulWidget {
   final void Function(String slug) onOpenTrail;
   final void Function(String missionSlug) onOpenMission;
   final VoidCallback onOpenTrilhas;
+  final VoidCallback? onOpenLeague;
   final Widget? topBar;
 
   const HomeScreen({
@@ -38,6 +43,7 @@ class HomeScreen extends StatefulWidget {
     required this.onOpenTrail,
     required this.onOpenMission,
     required this.onOpenTrilhas,
+    this.onOpenLeague,
     this.topBar,
   });
 
@@ -49,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
   List<Trail>? _trails;
   late final AnimationController _fadeIn;
+  bool _comebackChecked = false;
 
   @override
   void initState() {
@@ -69,6 +76,28 @@ class _HomeScreenState extends State<HomeScreen>
   Future<void> _load() async {
     final trails = await widget.repo.getTrails();
     if (mounted) setState(() => _trails = trails);
+  }
+
+  void _maybeShowComeback(ProgressService progress, {String? missionSlug}) {
+    if (_comebackChecked) return;
+    if (!progress.shouldShowComeback) {
+      _comebackChecked = true;
+      return;
+    }
+    _comebackChecked = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      showComebackSheet(
+        context,
+        onContinue: () {
+          if (missionSlug != null) {
+            widget.onOpenMission(missionSlug);
+          } else {
+            widget.onOpenTrilhas();
+          }
+        },
+      );
+    });
   }
 
   void _openBible([String? reference]) {
@@ -184,6 +213,8 @@ class _HomeScreenState extends State<HomeScreen>
     final goalMet = progress.dailyGoalMet;
     final goalPct = goal > 0 ? progress.missionsToday / goal : 0.0;
 
+    _maybeShowComeback(progress, missionSlug: current?.slug);
+
     return ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.screen,
@@ -211,8 +242,14 @@ class _HomeScreenState extends State<HomeScreen>
           ),
           const SizedBox(height: AppSpace.section),
         ],
+        if (progress.showStreakRepairOffer) ...[
+          _reveal(0, const StreakRepairBanner()),
+          const SizedBox(height: AppSpace.section),
+        ],
         _reveal(
-          progress.showStreakRiskBanner ? 1 : 0,
+          progress.showStreakRiskBanner || progress.showStreakRepairOffer
+              ? 1
+              : 0,
           _DayPulse(
             missionsToday: progress.missionsToday,
             goal: goal,
@@ -228,6 +265,24 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         const SizedBox(height: AppSpace.section),
+        Builder(
+          builder: (context) {
+            final league = context.watch<LeagueService>();
+            if (!league.isLoaded) return const SizedBox.shrink();
+            final entries = league.standings(
+              userName: progress.userName,
+              userWeeklySteps: progress.weeklySteps,
+            );
+            final rank = league.userRank(entries);
+            if (!league.isNearDemotion(rank)) return const SizedBox.shrink();
+            return Column(
+              children: [
+                _reveal(2, LeagueRiskCard(onOpenLeague: widget.onOpenLeague)),
+                const SizedBox(height: AppSpace.section),
+              ],
+            );
+          },
+        ),
         _reveal(
           2,
           HeroContinueCard(

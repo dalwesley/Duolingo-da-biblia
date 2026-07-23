@@ -14,6 +14,7 @@ enum ReminderAction {
   memory,
   favorites,
   weekly,
+  league,
 }
 
 extension ReminderActionX on ReminderAction {
@@ -42,7 +43,7 @@ class _ReminderCopy {
   });
 }
 
-/// Lembretes estilo Duolingo — slots do dia com copy baseada no progresso.
+/// Lembretes estilo Duolingo — slots recorrentes + lost-learner D+1/D+2.
 class NotificationService {
   static final NotificationService instance = NotificationService._();
   NotificationService._();
@@ -66,6 +67,8 @@ class NotificationService {
   static const _idEvening = 102;
   static const _idWeekly = 103;
   static const _idSoft = 104;
+  static const _idLost1 = 105;
+  static const _idLost2 = 106;
   static const _legacyDaily = 1;
 
   static const _allIds = [
@@ -75,6 +78,8 @@ class NotificationService {
     _idEvening,
     _idWeekly,
     _idSoft,
+    _idLost1,
+    _idLost2,
   ];
 
   Future<void> init() async {
@@ -146,7 +151,9 @@ class NotificationService {
           action: ReminderAction.home,
           priority: 1,
         ),
+        daily: true,
       );
+      await _scheduleLostLearner(progress);
       return;
     }
 
@@ -164,7 +171,11 @@ class NotificationService {
 
     for (var i = 0; i < slots.length && i < hooks.length; i++) {
       final (id, at) = slots[i];
-      await _schedule(id: id, when: at, copy: hooks[i]);
+      // Slots principais repetem diariamente — não morrem se o app não abrir.
+      final daily = id == _idMorning ||
+          id == _idAfternoon ||
+          id == _idEvening;
+      await _schedule(id: id, when: at, copy: hooks[i], daily: daily);
     }
 
     final weeklyIncomplete =
@@ -178,6 +189,66 @@ class NotificationService {
           body: 'Ainda dá tempo de fechar as missões semanais.',
           action: ReminderAction.weekly,
           priority: 4,
+        ),
+      );
+    }
+
+    await _scheduleLostLearner(progress);
+  }
+
+  /// D+1 / D+2 — copy de ausência mesmo sem reabrir o app.
+  Future<void> _scheduleLostLearner(ProgressService progress) async {
+    if (progress.walkedToday) return;
+    if (progress.lastPlayedDate == null) return;
+
+    final daysAway = progress.daysSinceLastPlayed;
+    final name = progress.userName.trim().isEmpty
+        ? 'peregrino'
+        : progress.userName.trim().split(' ').first;
+    final streak = progress.streak;
+
+    // Já ausente ≥1 dia: agenda amanhã (D+1 a partir de agora) e depois.
+    if (daysAway >= 1) {
+      await _schedule(
+        id: _idLost1,
+        when: _daysFromNow(1, 10, 15),
+        copy: _ReminderCopy(
+          title: 'A caravana sente sua falta',
+          body: streak > 0
+              ? '$name, sua chama de $streak ${streak == 1 ? 'dia' : 'dias'} ainda brilha. Um passo e você alcança o grupo.'
+              : '$name, a caravana seguiu — mas o lugar ao seu lado continua aberto.',
+          action: ReminderAction.home,
+          priority: 110,
+        ),
+      );
+    }
+
+    if (daysAway >= 1) {
+      await _schedule(
+        id: _idLost2,
+        when: _daysFromNow(2, 19, 0),
+        copy: _ReminderCopy(
+          title: 'Ainda dá tempo',
+          body: progress.hasStreakFreeze
+              ? '$name, o gelo pode cobrir 1 dia. Volte hoje e proteja a caminhada.'
+              : '$name, um único passo reacende a chama. A caravana te espera.',
+          action: ReminderAction.home,
+          priority: 105,
+        ),
+      );
+    }
+
+    // Ainda no dia em risco (jogou ontem): reforço noturno one-shot.
+    if (progress.isStreakAtRisk && daysAway == 1) {
+      await _schedule(
+        id: _idSoft,
+        when: _nextSlot(20, 30),
+        copy: _ReminderCopy(
+          title: 'Última chamada',
+          body:
+              '$name, faltam ${progress.streakRiskCountdown}. Um passo e a caravana te alcança.',
+          action: ReminderAction.home,
+          priority: 130,
         ),
       );
     }
@@ -203,6 +274,7 @@ class NotificationService {
         action: ReminderAction.home,
         priority: 10,
       ),
+      daily: true,
     );
   }
 
@@ -223,19 +295,28 @@ class NotificationService {
     if (!progress.dailyGoalMet) {
       final left = (goal - done).clamp(1, goal);
       final atRisk = progress.isStreakAtRisk;
+      final returning = progress.isReturningAfterGap;
       hooks.add(_ReminderCopy(
         title: atRisk
             ? 'A caravana segue'
-            : streak > 0
+            : returning
                 ? 'A caravana te espera'
-                : 'Meta de hoje',
+                : streak > 0
+                    ? 'A caravana te espera'
+                    : 'Meta de hoje',
         body: atRisk
             ? '$name, você está ficando para trás na caravana. Faltam ${progress.streakRiskCountdown} — um passo e você alcança o grupo.'
-            : streak > 0
-                ? '$name, a caravana já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
-                : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
+            : returning
+                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem passo. Um toque reacende a chama.'
+                : streak > 0
+                    ? '$name, a caravana já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
+                    : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
         action: ReminderAction.home,
-        priority: atRisk ? 120 : 100,
+        priority: atRisk
+            ? 120
+            : returning
+                ? 115
+                : 100,
       ));
     }
 
@@ -318,6 +399,7 @@ class NotificationService {
     required int id,
     required tz.TZDateTime when,
     required _ReminderCopy copy,
+    bool daily = false,
   }) async {
     await _plugin.zonedSchedule(
       id,
@@ -340,6 +422,7 @@ class NotificationService {
         ),
       ),
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
+      matchDateTimeComponents: daily ? DateTimeComponents.time : null,
       payload: copy.action.payload,
     );
   }
@@ -354,6 +437,22 @@ class NotificationService {
     final now = tz.TZDateTime.now(tz.local);
     var scheduled =
         tz.TZDateTime(tz.local, now.year, now.month, now.day, hour, minute);
+    if (!scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
+      scheduled = scheduled.add(const Duration(days: 1));
+    }
+    return scheduled;
+  }
+
+  tz.TZDateTime _daysFromNow(int days, int hour, int minute) {
+    final now = tz.TZDateTime.now(tz.local);
+    var scheduled = tz.TZDateTime(
+      tz.local,
+      now.year,
+      now.month,
+      now.day,
+      hour,
+      minute,
+    ).add(Duration(days: days));
     if (!scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
       scheduled = scheduled.add(const Duration(days: 1));
     }
