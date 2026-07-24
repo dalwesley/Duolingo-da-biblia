@@ -102,21 +102,6 @@ class AnalyticsService {
         'difficulty': difficulty,
       });
 
-  Future<void> recordNonFatal(Object error, StackTrace stack, {String? reason}) async {
-    if (!_ready || kDebugMode) {
-      debugPrint('NonFatal: $reason $error');
-      return;
-    }
-    try {
-      await FirebaseCrashlytics.instance.recordError(
-        error,
-        stack,
-        reason: reason,
-        fatal: false,
-      );
-    } catch (_) {}
-  }
-
   Future<void> _log(String name, [Map<String, Object>? params]) async {
     if (!_ready) return;
     try {

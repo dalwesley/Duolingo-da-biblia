@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
 import '../utils/genesis_theme.dart';
-import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Capítulo full-bleed — céu da Home (manhã/tarde/noite) + cartão de título.
+/// Capítulo da trilha — cartão de título sobre o céu contínuo da tela.
 class GenesisModuleScenery extends StatelessWidget {
   final GenesisModuleTheme theme;
-  final String moduleIcon;
   final String moduleTitle;
   final int sectionIndex;
   final Widget child;
@@ -19,7 +16,6 @@ class GenesisModuleScenery extends StatelessWidget {
   const GenesisModuleScenery({
     super.key,
     required this.theme,
-    required this.moduleIcon,
     required this.moduleTitle,
     required this.sectionIndex,
     required this.child,
@@ -30,56 +26,23 @@ class GenesisModuleScenery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appearance = Appearance.of(context);
-
-    return Stack(
-      clipBehavior: Clip.none,
-      children: [
-        Positioned.fill(
-          child: AmbientAtmosphere(
-            phase: appearance.phase,
-            accent: theme.pathActive,
-            glow: theme.decorColor,
-            vignetteStrength: isActiveChapter ? 0.16 : 0.28,
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(18, 8, 18, 36),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _ChapterTitleCard(
+            title: moduleTitle,
+            sectionIndex: sectionIndex,
+            theme: theme,
+            highlighted: isActiveChapter,
+            missionsDone: missionsDone,
+            missionsTotal: missionsTotal,
           ),
-        ),
-        Positioned.fill(
-          child: IgnorePointer(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.black.withValues(alpha: 0.22),
-                    Colors.transparent,
-                    Colors.black.withValues(alpha: 0.32),
-                  ],
-                  stops: const [0, 0.22, 1],
-                ),
-              ),
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(18, 20, 18, 36),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              _ChapterTitleCard(
-                title: moduleTitle,
-                sectionIndex: sectionIndex,
-                theme: theme,
-                highlighted: isActiveChapter,
-                missionsDone: missionsDone,
-                missionsTotal: missionsTotal,
-              ),
-              SizedBox(height: isActiveChapter ? 28 : 18),
-              child,
-            ],
-          ),
-        ),
-      ],
+          SizedBox(height: isActiveChapter ? 28 : 18),
+          child,
+        ],
+      ),
     );
   }
 }
@@ -113,7 +76,7 @@ class _ChapterTitleCard extends StatelessWidget {
       curve: Curves.easeOutCubic,
       padding: EdgeInsets.fromLTRB(18, highlighted ? 18 : 14, 18, highlighted ? 18 : 14),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(22),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,

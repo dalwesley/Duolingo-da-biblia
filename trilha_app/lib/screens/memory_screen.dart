@@ -200,7 +200,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                           AppProgressBar(
                             value: (_index + (_revealed ? 0.5 : 0)) /
                                 _deck.length,
-                            trackColor: Colors.white12,
+                            trackColor: appearance.progressTrack,
                           ),
                           const SizedBox(height: AppSpace.xxl),
                           Expanded(
@@ -251,9 +251,7 @@ class _MemoryScreenState extends State<MemoryScreen> {
                                       fontStyle: _revealed
                                           ? FontStyle.normal
                                           : FontStyle.italic,
-                                      color: Colors.white.withValues(
-                                        alpha: 0.92,
-                                      ),
+                                      color: appearance.textMuted(0.92),
                                     ),
                                   ),
                                 ),
@@ -356,6 +354,7 @@ class _DonePane extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Padding(
       padding: const EdgeInsets.all(AppSpace.xxl),
       child: Column(
@@ -378,7 +377,7 @@ class _DonePane extends StatelessWidget {
             '$known firmes · $learning em progresso',
             textAlign: TextAlign.center,
             style: AppTypography.body(
-              color: Colors.white.withValues(alpha: 0.65),
+              color: a.textMuted(0.65),
             ),
           ),
           const SizedBox(height: AppSpace.xxl),
@@ -404,7 +403,7 @@ class _DonePane extends StatelessWidget {
             onPressed: onClose,
             child: Text(
               'Fechar',
-              style: AppTypography.body(color: Colors.white70),
+              style: AppTypography.body(color: a.textMuted(0.7)),
             ),
           ),
         ],

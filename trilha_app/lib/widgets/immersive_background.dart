@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
@@ -7,8 +8,6 @@ import 'ui_primitives.dart';
 /// Atmosfera Stway — gradiente, luz ambiente e vinheta.
 /// Sem montanhas, estrelas ou paisagem ilustrada.
 class AmbientAtmosphere extends StatelessWidget {
-  /// Céu custom (ex.: reino). Se null, usa a fase do dia.
-  final List<Color>? skyColors;
   final DayPhase? phase;
   final Color? accent;
   final Color? glow;
@@ -17,31 +16,11 @@ class AmbientAtmosphere extends StatelessWidget {
 
   const AmbientAtmosphere({
     super.key,
-    this.skyColors,
     this.phase,
     this.accent,
     this.glow,
     this.vignetteStrength = 0.1,
   });
-
-  LinearGradient _skyGradient(DayPhase resolvedPhase) {
-    final sky = skyColors;
-    if (sky != null && sky.isNotEmpty) {
-      final c0 = sky[0];
-      final c1 = sky.length > 1 ? sky[1] : sky[0];
-      final c2 = sky.length > 2
-          ? sky[2]
-          : Color.lerp(sky.last, AppColors.night, 0.2)!;
-      final c3 = Color.lerp(sky.last, AppColors.night, 0.45)!;
-      return LinearGradient(
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-        colors: [c0, c1, c2, c3],
-        stops: const [0.0, 0.35, 0.7, 1.0],
-      );
-    }
-    return DayPhaseHelper.backgroundGradient(resolvedPhase);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -51,20 +30,17 @@ class AmbientAtmosphere extends StatelessWidget {
         resolvedPhase == DayPhase.night || resolvedPhase == DayPhase.evening;
     final afternoon = resolvedPhase == DayPhase.afternoon;
 
-    // Acentos padrão acompanham a Home; overrides só para tintas sutis de UI.
     final glowColor = glow ??
-        (afternoon
-            ? AppColors.teal
-            : resolvedPhase == DayPhase.morning
-                ? AppColors.primaryLight
-                : AppColors.primaryLight);
+        (afternoon ? AppColors.teal : AppColors.primaryLight);
     final accentColor = accent ?? AppColors.accent;
 
     return Stack(
       fit: StackFit.expand,
       children: [
         DecoratedBox(
-          decoration: BoxDecoration(gradient: _skyGradient(resolvedPhase)),
+          decoration: BoxDecoration(
+            gradient: DayPhaseHelper.backgroundGradient(resolvedPhase),
+          ),
         ),
         Positioned(
           top: -100,
@@ -190,6 +166,56 @@ class ImmersiveBackground extends StatelessWidget {
         ),
         child,
       ],
+    );
+  }
+}
+
+/// Chrome Stway — mesmo envelope da Home (Appearance + system UI + céu).
+class ImmersiveScaffold extends StatelessWidget {
+  final AppearanceMode mode;
+  final AppearanceStyle style;
+  final Widget body;
+  final Widget? bottomNavigationBar;
+  final bool extendBody;
+
+  const ImmersiveScaffold({
+    super.key,
+    required this.mode,
+    required this.style,
+    required this.body,
+    this.bottomNavigationBar,
+    this.extendBody = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final scaffoldBg = DayPhaseHelper.scaffoldBackground(style.phase);
+    final statusLight =
+        style.onDark || style.look == AppearanceLook.morning;
+
+    return Appearance(
+      mode: mode,
+      style: style,
+      child: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness:
+              statusLight ? Brightness.light : Brightness.dark,
+          systemNavigationBarColor: Colors.transparent,
+          systemNavigationBarIconBrightness:
+              statusLight ? Brightness.light : Brightness.dark,
+          systemNavigationBarDividerColor: Colors.transparent,
+        ),
+        child: Scaffold(
+          backgroundColor: scaffoldBg,
+          extendBody: extendBody,
+          body: ImmersiveBackground(
+            appearance: style,
+            child: body,
+          ),
+          bottomNavigationBar: bottomNavigationBar,
+        ),
+      ),
     );
   }
 }

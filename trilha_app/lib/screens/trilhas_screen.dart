@@ -140,6 +140,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                       t,
                       trails,
                       progress.completedMissions,
+                      clearedTrailModes: progress.clearedTrailModes,
                     ) &&
                     t.missionSlugs.isNotEmpty &&
                     !t.comingSoon,
@@ -210,15 +211,13 @@ class _ComingSoonPortal extends StatelessWidget {
                 height: 84,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.white.withValues(alpha: 0.04),
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: 0.12),
-                  ),
+                  color: a.cardFillSoft,
+                  border: Border.all(color: a.cardBorder),
                 ),
                 child: Icon(
                   Icons.add_rounded,
                   size: 40,
-                  color: Colors.white.withValues(alpha: 0.38),
+                  color: a.textMuted(0.38),
                 ),
               ),
               const SizedBox(height: AppSpace.lg),
@@ -227,7 +226,7 @@ class _ComingSoonPortal extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: AppTypography.display(
                   size: 28,
-                  color: Colors.white.withValues(alpha: 0.45),
+                  color: a.textMuted(0.45),
                   height: 1.05,
                 ),
               ),
@@ -449,7 +448,7 @@ class _RealmPortalState extends State<_RealmPortal>
                         textAlign: TextAlign.center,
                         style: AppTypography.display(
                           size: 32,
-                          color: Colors.white,
+                          color: a.text,
                           height: 1.05,
                         ),
                       ),
@@ -462,7 +461,7 @@ class _RealmPortalState extends State<_RealmPortal>
                         style: AppTypography.body(
                           size: 13,
                           height: 1.35,
-                          color: Colors.white.withValues(alpha: 0.62),
+                          color: a.textMuted(0.62),
                         ),
                       ),
                       const Spacer(),
@@ -490,7 +489,7 @@ class _RealmPortalState extends State<_RealmPortal>
                             style: AppTypography.body(
                               size: 12,
                               weight: FontWeight.w700,
-                              color: Colors.white.withValues(alpha: 0.55),
+                              color: a.textMuted(0.55),
                             ),
                           ),
                           const Spacer(),

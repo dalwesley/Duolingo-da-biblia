@@ -354,7 +354,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     if (_useThematicMap && moduleTheme != null) {
                       return GenesisModuleScenery(
                         theme: moduleTheme,
-                        moduleIcon: mod.icon,
                         moduleTitle: mod.title,
                         sectionIndex: mi + 1,
                         isActiveChapter: isActive,
@@ -484,41 +483,36 @@ class _GenericTrailHero extends StatelessWidget {
   Widget build(BuildContext context) {
     final pct = total > 0 ? done / total : 0.0;
     final a = Appearance.of(context);
-    return Container(
-      margin: const EdgeInsets.only(bottom: AppSpace.xl),
-      padding: AppMetrics.cardPadding,
-      decoration: BoxDecoration(
-        color: a.cardFill,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: a.cardBorder),
-        boxShadow: AppMetrics.cardShadow(),
-      ),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyphResolver.forTrail(slug),
-            size: 56,
-            accent: color,
-          ),
-          const SizedBox(width: AppSpace.section),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  '$done de $total missões',
-                  style: AppTypography.title(size: 18, color: color),
-                ),
-                const SizedBox(height: AppSpace.sm),
-                AppProgressBar(
-                  value: pct,
-                  color: color,
-                  trackColor: a.progressTrack,
-                ),
-              ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.xl),
+      child: GlassCard(
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyphResolver.forTrail(slug),
+              size: 56,
+              accent: color,
             ),
-          ),
-        ],
+            const SizedBox(width: AppSpace.section),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    '$done de $total missões',
+                    style: AppTypography.title(size: 18, color: color),
+                  ),
+                  const SizedBox(height: AppSpace.sm),
+                  AppProgressBar(
+                    value: pct,
+                    color: color,
+                    trackColor: a.progressTrack,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -537,6 +531,7 @@ class _GenericModuleHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
       child: Row(
@@ -546,7 +541,7 @@ class _GenericModuleHeader extends StatelessWidget {
           const SizedBox(width: AppSpace.sm),
           Text(
             'Cena $index · $title',
-            style: AppTypography.title(size: 14, color: Colors.white),
+            style: AppTypography.title(size: 14, color: a.text),
           ),
         ],
       ),

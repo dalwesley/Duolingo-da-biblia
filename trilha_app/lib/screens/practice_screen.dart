@@ -122,7 +122,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                               'Nenhum erro guardado ainda.\nContinue as missões — quando errar, volta aqui.',
                               textAlign: TextAlign.center,
                               style: AppTypography.body(
-                                color: Colors.white70,
+                                color: appearance.textMuted(0.7),
                                 height: 1.5,
                               ),
                             ),

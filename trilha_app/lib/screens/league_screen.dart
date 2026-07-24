@@ -50,19 +50,17 @@ class _LeagueScreenState extends State<LeagueScreen>
     final league = context.read<LeagueService>();
     final backend = context.read<BackendService>();
     final rooms = context.read<RoomService>();
-    await league.settleWeekIfNeeded(
-      lastWeekSteps: progress.lastWeekSteps,
-      lastWeekKey: progress.lastWeekKey,
+    await backend.settleAndSyncLeague(
+      progress,
+      league,
+      roomCode: rooms.activeCode,
     );
     if (backend.isActive) {
       final week = LeagueService.weekKey();
-      await backend.saveNow(
-        progress,
+      final players = await backend.fetchWeekPlayers(
         week,
-        roomCode: rooms.activeCode,
-        league: league,
+        tier: league.tierIndex,
       );
-      final players = await backend.fetchWeekPlayers(week);
       final overallPlayers = await backend.fetchOverallPlayers();
       await rooms.syncIfNeeded();
       if (!mounted) return;
@@ -286,7 +284,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w600,
-                color: Colors.white.withValues(alpha: 0.55),
+                color: a.textMuted(0.55),
               ),
             ),
           ],
@@ -438,10 +436,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       builder: (ctx) {
         final a = Appearance.of(ctx);
         return AlertDialog(
-          backgroundColor: AppColors.nightMid,
-          title: const Text(
+          backgroundColor: a.cardFill,
+          title: Text(
             'Sair da companhia?',
-            style: TextStyle(color: Colors.white),
+            style: AppTypography.title(color: a.text),
           ),
           content: Text(
             'A parceria com esta pessoa termina. A caravana continua.',
@@ -672,10 +670,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       builder: (ctx) {
         final a = Appearance.of(ctx);
         return AlertDialog(
-          backgroundColor: AppColors.nightMid,
-          title: const Text(
+          backgroundColor: a.cardFill,
+          title: Text(
             'Sair da sala?',
-            style: TextStyle(color: Colors.white),
+            style: AppTypography.title(color: a.text),
           ),
           content: Text(
             'Você sai do ranking desta sala. Pode entrar de novo com o código.',
@@ -856,19 +854,12 @@ class _RoomsOfflineCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          GestureDetector(
+          CopperCta(
+            label: loading ? 'Conectando…' : 'Tentar de novo',
             onTap: loading ? null : onRetry,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 11),
-              decoration: BoxDecoration(
-                gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(AppRadii.md),
-              ),
-              child: Text(
-                loading ? 'Conectando…' : 'Tentar de novo',
-                style: AppTypography.cta(size: 13),
-              ),
-            ),
+            trailing: null,
+            expanded: false,
+            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 11),
           ),
           const SizedBox(height: 10),
           Text(
@@ -894,6 +885,7 @@ class _RoomsIntro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Column(
       children: [
         Text(
@@ -916,7 +908,7 @@ class _RoomsIntro extends StatelessWidget {
           style: AppTypography.body(
             size: 13,
             weight: FontWeight.w600,
-            color: Colors.white.withValues(alpha: 0.58),
+            color: a.textMuted(0.58),
           ),
         ),
       ],
@@ -993,28 +985,11 @@ class _RoomsEmptyState extends StatelessWidget {
           if (loading)
             const CircularProgressIndicator(color: AppColors.accent)
           else ...[
-            GestureDetector(
+            CopperCta(
+              label: 'Criar sala',
               onTap: onCreate,
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                decoration: BoxDecoration(
-                  gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.accent.withValues(alpha: 0.22),
-                      blurRadius: 18,
-                      offset: const Offset(0, 8),
-                    ),
-                  ],
-                ),
-                child: Text(
-                  'Criar sala',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.cta(),
-                ),
-              ),
+              trailing: null,
+              padding: const EdgeInsets.symmetric(vertical: 14),
             ),
             const SizedBox(height: 10),
             _OutlineAction(label: 'Entrar com código', onTap: onJoin),
@@ -1046,13 +1021,14 @@ class _RoomBenefit extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Expanded(
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.045),
+          color: a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+          border: Border.all(color: a.cardBorder),
         ),
         child: Column(
           children: [
@@ -1161,7 +1137,7 @@ class _RoomHeader extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
               decoration: BoxDecoration(
-                color: Colors.white.withValues(alpha: 0.055),
+                color: a.cardFillSoft,
                 borderRadius: BorderRadius.circular(AppRadii.md),
                 border: Border.all(
                   color: AppColors.accent.withValues(alpha: 0.32),
@@ -1313,7 +1289,7 @@ class _RoomIconButton extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.045),
+          color: a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: a.cardBorder),
         ),
@@ -1360,12 +1336,12 @@ class _RoomStatChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
         decoration: BoxDecoration(
           gradient: accent ? AppGradients.gold : null,
-          color: accent ? null : Colors.white.withValues(alpha: 0.045),
+          color: accent ? null : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: accent
                 ? Colors.white.withValues(alpha: 0.45)
-                : Colors.white.withValues(alpha: 0.08),
+                : a.cardBorder,
           ),
         ),
         child: Column(
@@ -1478,7 +1454,7 @@ class _CaravanaHeroCard extends StatelessWidget {
                     style: AppTypography.body(
                       size: 13,
                       weight: FontWeight.w800,
-                      color: Colors.white.withValues(alpha: 0.9),
+                      color: a.textMuted(0.9),
                     ),
                   ),
                 ),
@@ -1541,7 +1517,7 @@ class _TierLadder extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: reached ? AppGradients.gold : null,
-                  color: reached ? null : Colors.white.withValues(alpha: 0.07),
+                  color: reached ? null : a.cardFillSoft,
                   border: Border.all(
                     color: isCurrent
                         ? Colors.white.withValues(alpha: 0.85)
@@ -1629,7 +1605,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return AlertDialog(
-      backgroundColor: AppColors.nightMid,
+      backgroundColor: a.cardFill,
       title: Text(
         widget.title,
         style: AppTypography.display(size: 24),
@@ -1919,7 +1895,7 @@ class _StandingRow extends StatelessWidget {
               style: AppTypography.title(
                 size: 14,
                 weight: FontWeight.w900,
-                color: entry.isUser ? AppColors.inkOnAccent : Colors.white,
+                color: entry.isUser ? AppColors.inkOnAccent : a.text,
               ),
             ),
           ),
@@ -2247,32 +2223,13 @@ class _FilledAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final enabled = onTap != null;
-    return GestureDetector(
-      onTap: onTap,
-      child: Opacity(
-        opacity: enabled ? 1 : 0.45,
-        child: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(vertical: 14),
-          decoration: BoxDecoration(
-            gradient: AppGradients.gold,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            boxShadow: enabled
-                ? [
-                    BoxShadow(
-                      color: AppColors.accent.withValues(alpha: 0.22),
-                      blurRadius: 18,
-                      offset: const Offset(0, 8),
-                    ),
-                  ]
-                : null,
-          ),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: AppTypography.cta(),
-          ),
-        ),
+    return Opacity(
+      opacity: enabled ? 1 : 0.45,
+      child: CopperCta(
+        label: label,
+        onTap: onTap,
+        trailing: null,
+        padding: const EdgeInsets.symmetric(vertical: 14),
       ),
     );
   }

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/daily_quest.dart';
+import '../models/difficulty.dart';
 import '../utils/appearance.dart';
 import 'bible_service.dart';
 
@@ -151,6 +152,10 @@ class ProgressService extends ChangeNotifier {
   String? monthlyMonth;
   bool _loaded = false;
 
+  /// Primeira abertura neste aparelho (antes do splash marcar visto).
+  /// Garante Aparência = Automático em toda instalação nova.
+  bool _freshInstall = false;
+
   /// True when daily goal was just crossed (UI one-shot).
   bool goalJustReached = false;
 
@@ -207,6 +212,11 @@ class ProgressService extends ChangeNotifier {
     // Splash visto: preferência de aparelho (não é progresso do usuário).
     final prefs = await SharedPreferences.getInstance();
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
+    _freshInstall = !hasSeenSplash;
+    // Instalação nova → sempre Automático (não herda Tarde/Noite de sessão anterior).
+    if (_freshInstall) {
+      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
+    }
     _loaded = true;
     notifyListeners();
   }
@@ -690,8 +700,10 @@ class ProgressService extends ChangeNotifier {
       streak = streak + 1;
       streakRepairPending = false;
       brokenStreak = 0;
-    } else if (lastPlayedDate != null && streakFreezeAvailable) {
-      // Perdeu 1 dia — protege com congelamento.
+    } else if (lastPlayedDate != null &&
+        missedExactlyOneDay &&
+        streakFreezeAvailable) {
+      // Perdeu exatamente 1 dia — protege com congelamento.
       streakFreezeAvailable = false;
       streakFreezeWeek = _weekMondayKey();
       final gap = _dayAfterKey(lastPlayedDate!);
@@ -849,8 +861,35 @@ class ProgressService extends ChangeNotifier {
 
   bool hasDifficultyForTrail(String trailSlug) => trailDifficulties.containsKey(trailSlug);
 
-  Future<void> setTrailDifficulty(String trailSlug, String difficultyId) async {
+  /// Semente sempre liberada. Demais modos exigem ter concluído o anterior.
+  bool isDifficultyUnlocked(String trailSlug, TrailDifficulty d) {
+    if (d == TrailDifficulty.semente) return true;
+    final prev = switch (d) {
+      TrailDifficulty.caminhada => TrailDifficulty.semente,
+      TrailDifficulty.profundezas => TrailDifficulty.caminhada,
+      TrailDifficulty.semente => null,
+    };
+    return prev != null && hasClearedMode(trailSlug, prev.id);
+  }
+
+  /// Troca o modo da trilha. Se já havia outro modo e [missionSlugs] for
+  /// passado, zera o progresso desses passos — cada modo recomeça do início.
+  Future<void> setTrailDifficulty(
+    String trailSlug,
+    String difficultyId, {
+    List<String> missionSlugs = const [],
+  }) async {
+    final d = TrailDifficulty.fromId(difficultyId) ?? TrailDifficulty.semente;
+    if (!isDifficultyUnlocked(trailSlug, d)) return;
+    final prev = trailDifficulties[trailSlug];
     trailDifficulties = {...trailDifficulties, trailSlug: difficultyId};
+    if (prev != null && prev != difficultyId && missionSlugs.isNotEmpty) {
+      final drop = missionSlugs.toSet();
+      completedMissions = [
+        for (final s in completedMissions)
+          if (!drop.contains(s)) s,
+      ];
+    }
     await _save();
     notifyListeners();
   }
@@ -1035,13 +1074,15 @@ class ProgressService extends ChangeNotifier {
     return reward.round().clamp(10, baseSteps * 2);
   }
 
-  Future<void> completeMission(
+  /// Retorna os passos efetivamente concedidos (já com fator de replay).
+  Future<int> completeMission(
     String slug,
     int rewardSteps, {
     bool isReplay = false,
     int correct = 0,
     int total = 0,
   }) async {
+    var awarded = 0;
     await _batch(() async {
       _ensureQuestDay();
       final today = _todayKey();
@@ -1057,9 +1098,9 @@ class ProgressService extends ChangeNotifier {
         }
       }
 
-      final award =
+      awarded =
           isReplay ? (rewardSteps * 0.35).round().clamp(5, rewardSteps) : rewardSteps;
-      _gainSteps(award);
+      _gainSteps(awarded);
 
       if (!alreadyToday) {
         _recordSession();
@@ -1073,17 +1114,20 @@ class ProgressService extends ChangeNotifier {
 
       goalJustReached = !wasGoalMet && missionsToday >= settings.dailyGoal;
 
-      await _bumpQuest('mission');
-      if (total > 0 && correct / total >= 0.8) await _bumpQuest('accuracy');
-      if (total > 0 && correct >= total) await _bumpQuest('perfect');
+      // Revisões não avançam quests — evita farm por replay.
+      if (!isReplay) {
+        await _bumpQuest('mission');
+        if (total > 0 && correct / total >= 0.8) await _bumpQuest('accuracy');
+        if (total > 0 && correct >= total) await _bumpQuest('perfect');
 
-      // Semanais
-      await _bumpWeekly('w_missions');
-      await _bumpWeekly('w_days', absolute: daysPlayedThisWeek);
-      if (total > 0 && correct >= total) await _bumpWeekly('w_perfect');
+        await _bumpWeekly('w_missions');
+        await _bumpWeekly('w_days', absolute: daysPlayedThisWeek);
+        if (total > 0 && correct >= total) await _bumpWeekly('w_perfect');
+      }
 
       await _save();
     });
+    return awarded;
   }
 
   void clearGoalJustReached() {
@@ -1296,6 +1340,7 @@ class ProgressService extends ChangeNotifier {
           dailyGoal: (s['dailyGoal'] as num?)?.toInt() ?? settings.dailyGoal,
           appearanceMode: AppearanceModeX.fromStorage(
             s['appearanceMode'] as String?,
+            legacyDarkMode: s['darkMode'] as bool?,
           ),
           bibleTranslationId:
               s['bibleTranslationId'] as String? ?? settings.bibleTranslationId,
@@ -1305,6 +1350,12 @@ class ProgressService extends ChangeNotifier {
               .clamp(0.85, 1.35),
         );
       }
+    }
+
+    // Instalação nova neste aparelho: Automático prevalece sobre a nuvem.
+    if (_freshInstall) {
+      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
+      _freshInstall = false;
     }
 
     _ensureMissionsDay();

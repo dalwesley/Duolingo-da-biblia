@@ -8,9 +8,9 @@ import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/day_phase.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
+import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
@@ -43,12 +43,8 @@ class _LoginScreenState extends State<LoginScreen> {
       await progress.setUserName(name);
     }
 
-    final saved = await backend.saveNow(
-      progress,
-      LeagueService.weekKey(),
-      league: league,
-    );
-    if (saved) await progress.clearLegacyLocalPrefs();
+    await backend.settleAndSyncLeague(progress, league);
+    await progress.clearLegacyLocalPrefs();
     if (!mounted) return;
 
     final next = progress.hasSeenOnboarding
@@ -88,138 +84,100 @@ class _LoginScreenState extends State<LoginScreen> {
     final busy = backend.isGoogleBusy || backend.isInitializing;
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
+    final a = appearance;
 
-    return Appearance(
+    return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      child: Scaffold(
-        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
-        body: ImmersiveBackground(
-          appearance: appearance,
-          child: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpace.xxl,
-                AppSpace.xxl,
-                AppSpace.xxl,
-                AppSpace.xxl,
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            AppSpace.xxl,
+            AppSpace.screen,
+            AppSpace.screen,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              const Spacer(flex: 2),
+              const Center(child: StwayLogo(size: 88)),
+              const SizedBox(height: AppSpace.xxl),
+              const Center(
+                child: StwayWordmark(fontSize: 28, letterSpacing: 4),
               ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Spacer(flex: 2),
-                  const Center(child: StwayLogo(size: 88)),
-                  const SizedBox(height: AppSpace.xxl),
-                  const Center(child: StwayWordmark(fontSize: 28, letterSpacing: 4)),
-                  const SizedBox(height: AppSpace.sm),
-                  const StwayTagline(size: 9),
-                  const SizedBox(height: AppSpace.xxl),
-                  Text(
-                    'Entre para continuar',
-                    textAlign: TextAlign.center,
-                    style: AppTypography.display(size: 32),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  Text(
-                    'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
+              const SizedBox(height: AppSpace.sm),
+              const StwayTagline(size: 9),
+              const SizedBox(height: AppSpace.xxl),
+              Text(
+                'Entre para continuar',
+                textAlign: TextAlign.center,
+                style: AppTypography.display(size: 32),
+              ),
+              const SizedBox(height: AppSpace.md),
+              Text(
+                'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
+                textAlign: TextAlign.center,
+                style: AppTypography.body(color: a.textMuted(0.65)),
+              ),
+              const Spacer(flex: 3),
+              if (_error != null) ...[
+                GlassCard(
+                  color: AppColors.error.withValues(alpha: 0.15),
+                  padding: const EdgeInsets.all(AppSpace.md),
+                  child: Text(
+                    _error!,
                     textAlign: TextAlign.center,
                     style: AppTypography.body(
-                      color: Colors.white.withValues(alpha: 0.65),
+                      size: 12,
+                      weight: FontWeight.w600,
+                      color: AppColors.errorSoft,
                     ),
                   ),
-                const Spacer(flex: 3),
-                if (_error != null) ...[
-                  Container(
-                    padding: const EdgeInsets.all(AppSpace.md),
-                    decoration: BoxDecoration(
-                      color: AppColors.error.withValues(alpha: 0.15),
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                      border: Border.all(
-                        color: AppColors.error.withValues(alpha: 0.4),
-                      ),
-                    ),
-                    child: Text(
-                      _error!,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w600,
-                        color: AppColors.errorSoft,
-                      ),
-                    ),
+                ),
+                const SizedBox(height: AppSpace.md),
+              ],
+              if (!backend.isFirebaseReady && !backend.isInitializing) ...[
+                OutlinedButton.icon(
+                  onPressed: busy ? null : () => backend.retry(),
+                  icon: const Icon(Icons.refresh_rounded, size: 18),
+                  label: Text(
+                    'Tentar reconectar',
+                    style: AppTypography.cta(color: Colors.white70),
                   ),
-                  const SizedBox(height: AppSpace.md),
-                ],
-                if (!backend.isFirebaseReady && !backend.isInitializing) ...[
-                  OutlinedButton.icon(
-                    onPressed: busy ? null : () => backend.retry(),
-                    icon: const Icon(Icons.refresh_rounded, size: 18),
-                    label: Text(
-                      'Tentar reconectar',
-                      style: AppTypography.cta(color: Colors.white70),
-                    ),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: Colors.white70,
-                      side: BorderSide(
-                        color: Colors.white.withValues(alpha: 0.2),
-                      ),
-                      padding: const EdgeInsets.symmetric(
-                        vertical: AppSpace.md,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                ],
-                FilledButton(
-                  onPressed: busy ? null : _signIn,
-                  style: FilledButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: AppColors.inkOnAccent,
-                    disabledBackgroundColor: Colors.white.withValues(alpha: 0.5),
-                    padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
+                  style: OutlinedButton.styleFrom(
+                    foregroundColor: Colors.white70,
+                    side: BorderSide(color: a.cardBorder),
+                    padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(AppRadii.lg),
                     ),
                   ),
-                  child: busy
-                      ? const SizedBox(
-                          height: 22,
-                          width: 22,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2.4,
-                            color: AppColors.inkOnAccent,
-                          ),
-                        )
-                      : Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            const Icon(Icons.g_mobiledata_rounded, size: 28),
-                            const SizedBox(width: AppSpace.xs),
-                            Text(
-                              'Continuar com Google',
-                              style: AppTypography.cta(
-                                size: 15,
-                                color: AppColors.inkOnAccent,
-                              ),
-                            ),
-                          ],
-                        ),
                 ),
-                const SizedBox(height: AppSpace.lg),
-                Text(
-                  'É necessário entrar para usar o Stway.',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.label(
-                    size: 11,
-                    letterSpacing: 0,
-                    color: Colors.white.withValues(alpha: 0.4),
-                  ),
-                ),
+                const SizedBox(height: AppSpace.sm),
               ],
-            ),
+              Opacity(
+                opacity: busy ? 0.55 : 1,
+                child: CopperCta(
+                  label: busy ? 'Entrando…' : 'Continuar com Google',
+                  onTap: busy ? null : _signIn,
+                  trailing: null,
+                  showArrow: false,
+                ),
+              ),
+              const SizedBox(height: AppSpace.lg),
+              Text(
+                'É necessário entrar para usar o Stway.',
+                textAlign: TextAlign.center,
+                style: AppTypography.label(
+                  size: 11,
+                  letterSpacing: 0,
+                  color: a.textMuted(0.4),
+                ),
+              ),
+            ],
           ),
         ),
-      ),
       ),
     );
   }

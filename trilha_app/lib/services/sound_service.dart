@@ -65,9 +65,4 @@ class SoundService {
       await SystemSound.play(fallback);
     }
   }
-
-  void dispose() {
-    _player?.dispose();
-    _player = null;
-  }
 }

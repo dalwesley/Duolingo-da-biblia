@@ -3,38 +3,24 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Glifos e gradientes por trilha — família oceano/açafrão/clay/slate.
+/// Glifos e acentos por trilha — família oceano/açafrão/clay/slate.
 class TrailVisuals {
   final CinematicGlyph glyph;
   final LinearGradient iconGradient;
-  final LinearGradient cardGradient;
   final Color accent;
   final Color glow;
 
   const TrailVisuals({
     required this.glyph,
     required this.iconGradient,
-    required this.cardGradient,
     required this.accent,
     required this.glow,
   });
-
-  /// Compat — preferir [glyph] + [CinematicIcon].
-  IconData get icon => Icons.menu_book_rounded;
 
   static TrailVisuals forTrail(Trail trail) {
     final specific = _bySlug[trail.slug];
     if (specific != null) return specific;
     return _byCategory(trail.categoryId, trail.color);
-  }
-
-  static TrailVisuals forSlug(String slug, {Color? fallbackAccent}) {
-    return _bySlug[slug] ??
-        _palette(
-          CinematicGlyph.book,
-          fallbackAccent ?? AppColors.primaryLight,
-          fallbackAccent ?? AppColors.primary,
-        );
   }
 
   static TrailVisuals _byCategory(String categoryId, String hexColor) {
@@ -69,14 +55,6 @@ class TrailVisuals {
         end: Alignment.bottomRight,
         colors: [light, dark],
       ),
-      cardGradient: LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        colors: [
-          Color.lerp(dark, Colors.black, 0.35)!,
-          Color.lerp(dark, Colors.black, 0.7)!,
-        ],
-      ),
       accent: light,
       glow: dark,
     );
@@ -98,6 +76,5 @@ class TrailVisuals {
     'hebraico': _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
     'grego': _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
     'romanos': _palette(CinematicGlyph.scales, AppColors.clay, AppColors.clayDeep),
-    'cristologia': _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
   };
 }

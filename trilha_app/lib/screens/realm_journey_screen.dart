@@ -47,7 +47,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     super.dispose();
   }
 
-  List<JourneyPathItem> _buildItems(List<String> completed) {
+  List<JourneyPathItem> _buildItems(
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
     final realmTrails = widget.allTrails
         .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
         .toList()
@@ -62,8 +65,12 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     final items = <JourneyPathItem>[];
 
     for (final trail in realmTrails) {
-      final unlocked =
-          TrailProgress.isTrailUnlocked(trail, widget.allTrails, completed);
+      final unlocked = TrailProgress.isTrailUnlocked(
+        trail,
+        widget.allTrails,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+      );
       final done = TrailProgress.isTrailCompleted(trail, completed);
       final prog = TrailProgress.getProgress(trail, completed);
       final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
@@ -147,7 +154,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     final visuals = RealmVisuals.of(widget.realm);
     showModalBottomSheet(
       context: context,
-      backgroundColor: AppColors.night,
+      backgroundColor: Appearance.of(context).cardFill,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
       ),
@@ -209,7 +216,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final visuals = RealmVisuals.of(widget.realm);
-    final items = _buildItems(progress.completedMissions);
+    final items = _buildItems(
+      progress.completedMissions,
+      clearedTrailModes: progress.clearedTrailModes,
+    );
     final bottom = MediaQuery.of(context).padding.bottom;
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);

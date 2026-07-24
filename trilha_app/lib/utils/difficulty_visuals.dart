@@ -18,10 +18,4 @@ class DifficultyVisuals {
         TrailDifficulty.caminhada => CinematicGlyph.path,
         TrailDifficulty.profundezas => CinematicGlyph.depths,
       };
-
-  static Color accentForId(String id) =>
-      accentFor(TrailDifficulty.fromId(id) ?? TrailDifficulty.semente);
-
-  static CinematicGlyph glyphForId(String id) =>
-      glyphFor(TrailDifficulty.fromId(id) ?? TrailDifficulty.semente);
 }

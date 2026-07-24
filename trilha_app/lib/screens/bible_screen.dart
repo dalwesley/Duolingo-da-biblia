@@ -927,7 +927,8 @@ class _ChapterPicker extends StatelessWidget {
                   width: 48,
                   height: 48,
                   decoration: BoxDecoration(
-                    gradient: read ? AppGradients.gold : a.cardGradient,
+                    color: read ? null : a.cardFillSoft,
+                    gradient: read ? AppGradients.gold : null,
                     borderRadius: BorderRadius.circular(AppRadii.pill),
                     border: Border.all(
                       color: read
@@ -1517,8 +1518,7 @@ class _NavChip extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
         decoration: BoxDecoration(
-          color: fill,
-          gradient: fill == null ? a.cardGradient : null,
+          color: fill ?? a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.pill),
           border: Border.all(color: border),
         ),

@@ -57,7 +57,7 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
             accent: AppColors.streak,
             glowing: false,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: AppSpace.md),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +69,7 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
                     color: a.text,
                   ),
                 ),
-                const SizedBox(height: 2),
+                const SizedBox(height: AppSpace.xs),
                 Text(
                   freeze
                       ? 'A caravana segue · faltam $countdown. Um passo alcança — ou o gelo cobre 1 dia.'
@@ -84,7 +84,7 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
               ],
             ),
           ),
-          const SizedBox(width: 8),
+          const SizedBox(width: AppSpace.sm),
           CinematicIcon(
             glyph: CinematicGlyph.path,
             size: 20,
@@ -93,27 +93,6 @@ class _StreakRiskBannerState extends State<StreakRiskBanner> {
           ),
         ],
       ),
-    );
-  }
-}
-
-/// Chip do congelamento semanal.
-class StreakFreezeChip extends StatelessWidget {
-  const StreakFreezeChip({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final used = progress.streakFreezeUsedThisWeek;
-
-    // Sem streak ainda: não polui a home.
-    if (progress.streak <= 0 && !used) return const SizedBox.shrink();
-
-    return SoftBadge(
-      text: used ? 'Gelo salvou 1 dia' : 'Gelo pronto',
-      glyph: CinematicGlyph.frost,
-      accent: used ? AppColors.teal : AppColors.ice,
-      bordered: true,
     );
   }
 }

@@ -38,32 +38,6 @@ class CreationWorldState {
       humanity: humanity > other.humanity ? humanity : other.humanity,
     );
   }
-
-  CreationWorldState copyWith({
-    double? voidDepth,
-    double? spirit,
-    double? waters,
-    double? light,
-    double? land,
-    double? plants,
-    double? fish,
-    double? birds,
-    double? stars,
-    double? humanity,
-  }) {
-    return CreationWorldState(
-      voidDepth: voidDepth ?? this.voidDepth,
-      spirit: spirit ?? this.spirit,
-      waters: waters ?? this.waters,
-      light: light ?? this.light,
-      land: land ?? this.land,
-      plants: plants ?? this.plants,
-      fish: fish ?? this.fish,
-      birds: birds ?? this.birds,
-      stars: stars ?? this.stars,
-      humanity: humanity ?? this.humanity,
-    );
-  }
 }
 
 /// Uma batida cinematográfica por pergunta.

@@ -207,6 +207,7 @@ class _HomeScreenState extends State<HomeScreen>
     final active = TrailProgress.findActiveTrail(
       trails,
       progress.completedMissions,
+      clearedTrailModes: progress.clearedTrailModes,
     );
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)

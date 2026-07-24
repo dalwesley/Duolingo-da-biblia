@@ -19,6 +19,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
+import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
 
@@ -53,6 +54,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _saved = false;
   bool _showGoalBanner = false;
   bool _trailComplete = false;
+  int _awardedSteps = 0;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -85,6 +87,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     super.didChangeDependencies();
     if (!_saved) {
       _saved = true;
+      _awardedSteps = widget.isReplay
+          ? (widget.steps * 0.35).round().clamp(5, widget.steps)
+          : widget.steps;
       final progress = context.read<ProgressService>();
       progress
           .completeMission(
@@ -94,13 +99,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             correct: widget.correct,
             total: widget.total,
           )
-          .then((_) async {
+          .then((awarded) async {
+        if (mounted && awarded > 0) {
+          setState(() => _awardedSteps = awarded);
+        }
         AnalyticsService.instance.logLessonComplete(
           missionSlug: widget.missionSlug,
           trailSlug: widget.trailSlug,
           correct: widget.correct,
           total: widget.total,
-          steps: widget.steps,
+          steps: awarded > 0 ? awarded : _awardedSteps,
           isBoss: widget.isBoss,
           isReplay: widget.isReplay,
           perfect: widget.perfect,
@@ -139,11 +147,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       await progress.markTrailModeCleared(widget.trailSlug, current.id);
     }
 
-    // Sugere próximo modo: ao concluir a trilha, ou após um passo com boa clareza.
-    final pct =
-        widget.total > 0 ? (widget.correct / widget.total) : 1.0;
-    final shouldSuggest = complete || (!widget.isReplay && pct >= 0.6);
-    if (!shouldSuggest) return;
+    // Sugere próximo modo só após concluir a trilha neste modo.
+    if (!complete) return;
 
     final meta = await QuestionBank.instance.metaFor(next);
     if (!mounted) return;
@@ -160,7 +165,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (next == null) return;
     HapticFeedback.mediumImpact();
     final progress = context.read<ProgressService>();
-    await progress.setTrailDifficulty(widget.trailSlug, next.id);
+    final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
+    if (!mounted) return;
+    await progress.setTrailDifficulty(
+      widget.trailSlug,
+      next.id,
+      missionSlugs: trail?.missionSlugs ?? const [],
+    );
     if (!mounted) return;
 
     if (replayThisStep) {
@@ -168,7 +179,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         MaterialPageRoute(
           builder: (_) => LessonScreen(
             missionSlug: widget.missionSlug,
-            practiceMode: true,
           ),
         ),
       );
@@ -236,12 +246,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                           width: 40,
                           height: 40,
                           decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.12),
+                            color: appearance.cardFillSoft,
                             borderRadius: BorderRadius.circular(AppRadii.sm),
                           ),
-                          child: const Icon(
+                          child: Icon(
                             Icons.close_rounded,
-                            color: Colors.white,
+                            color: appearance.text,
                           ),
                         ),
                       ),
@@ -333,7 +343,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                               Expanded(
                                 child: _StatCard(
                                   glyph: CinematicGlyph.path,
-                                  value: '+${widget.steps}',
+                                  value: '+$_awardedSteps',
                                   label: 'Passos',
                                   color: AppColors.accent,
                                 ),
@@ -389,8 +399,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                       ),
                       const SizedBox(height: AppSpace.md),
                     ],
-                    _GoldButton(
+                    CopperCta(
                       label: 'CONTINUAR A CAMINHADA',
+                      trailing: null,
                       onTap: () {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(
@@ -408,7 +419,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         'Voltar ao início',
                         style: AppTypography.body(
                           weight: FontWeight.w700,
-                          color: Colors.white.withValues(alpha: 0.7),
+                          color: appearance.textMuted(0.7),
                         ),
                       ),
                     ),
@@ -444,14 +455,10 @@ class _ModeUpgradeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
+    final a = Appearance.of(context);
+    return GlassCard(
+      accent: true,
       padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.lg, AppSpace.lg, AppSpace.section),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
-      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -460,7 +467,7 @@ class _ModeUpgradeCard extends StatelessWidget {
                 ? 'Modo $currentLabel concluído'
                 : 'Bom passo em $currentLabel',
             textAlign: TextAlign.center,
-            style: AppTypography.title(size: 14, color: Colors.white),
+            style: AppTypography.title(size: 14, color: a.text),
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
@@ -471,26 +478,17 @@ class _ModeUpgradeCard extends StatelessWidget {
             style: AppTypography.body(
               size: 13,
               height: 1.35,
-              color: Colors.white.withValues(alpha: 0.72),
+              color: a.textMuted(0.72),
             ),
           ),
           const SizedBox(height: AppSpace.md),
-          GestureDetector(
+          CopperCta(
+            label: trailComplete
+                ? 'REVISAR UM PASSO EM $nextLabel'
+                : 'TENTAR EM $nextLabel',
+            trailing: null,
+            padding: const EdgeInsets.symmetric(vertical: 13),
             onTap: onTryStep,
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 13),
-              decoration: BoxDecoration(
-                gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(AppRadii.sm),
-              ),
-              child: Text(
-                trailComplete
-                    ? 'REVISAR UM PASSO EM ${nextLabel.toUpperCase()}'
-                    : 'TENTAR EM ${nextLabel.toUpperCase()}',
-                textAlign: TextAlign.center,
-                style: AppTypography.cta(size: 12),
-              ),
-            ),
           ),
           if (onSwitchTrail != null) ...[
             const SizedBox(height: AppSpace.sm),
@@ -501,7 +499,7 @@ class _ModeUpgradeCard extends StatelessWidget {
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
-                  color: Colors.white.withValues(alpha: 0.75),
+                  color: a.textMuted(0.75),
                 ),
               ),
             ),
@@ -527,13 +525,10 @@ class _StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final a = Appearance.of(context);
+    return GlassCard(
       padding: const EdgeInsets.symmetric(vertical: AppSpace.section, horizontal: AppSpace.sm),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
-      ),
+      radius: AppRadii.md,
       child: Column(
         children: [
           CinematicIcon(
@@ -545,7 +540,7 @@ class _StatCard extends StatelessWidget {
           const SizedBox(height: AppSpace.xs),
           Text(
             value,
-            style: AppTypography.title(size: 16, color: Colors.white),
+            style: AppTypography.title(size: 16, color: a.text),
           ),
           Text(
             label,
@@ -553,44 +548,10 @@ class _StatCard extends StatelessWidget {
               size: 10,
               weight: FontWeight.w600,
               letterSpacing: 0.4,
-              color: Colors.white.withValues(alpha: 0.55),
+              color: a.textMuted(0.55),
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class _GoldButton extends StatelessWidget {
-  final String label;
-  final VoidCallback onTap;
-
-  const _GoldButton({required this.label, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
-        decoration: BoxDecoration(
-          gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.4),
-              blurRadius: 16,
-              offset: const Offset(0, 6),
-            ),
-          ],
-        ),
-        child: Text(
-          label,
-          textAlign: TextAlign.center,
-          style: AppTypography.cta(size: 14),
-        ),
       ),
     );
   }

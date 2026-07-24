@@ -16,14 +16,12 @@ class LiturgicalMoment {
   final String title;
   final String subtitle;
   final String focusRef;
-  final String accentHex;
 
   const LiturgicalMoment({
     required this.season,
     required this.title,
     required this.subtitle,
     required this.focusRef,
-    required this.accentHex,
   });
 }
 
@@ -83,7 +81,6 @@ class LiturgicalCalendar {
         title: 'Advento',
         subtitle: 'Tempo de espera e preparação',
         focusRef: 'Isaías 9:6',
-        accentHex: '#5B7C99',
       );
     }
     if ((!day.isBefore(christmasStart) && day.year == year) ||
@@ -93,7 +90,6 @@ class LiturgicalCalendar {
         title: 'Natal',
         subtitle: 'O Verbo se fez carne',
         focusRef: 'João 1:14',
-        accentHex: '#D4A84B',
       );
     }
     if (!day.isBefore(ashWednesday) && day.isBefore(palmSunday)) {
@@ -102,7 +98,6 @@ class LiturgicalCalendar {
         title: 'Quaresma',
         subtitle: 'Deserto, jejum e retorno',
         focusRef: 'Joel 2:12',
-        accentHex: '#8B5E3C',
       );
     }
     if (!day.isBefore(palmSunday) && day.isBefore(easter)) {
@@ -111,7 +106,6 @@ class LiturgicalCalendar {
         title: 'Semana Santa',
         subtitle: 'Da cruz à espera da ressurreição',
         focusRef: 'Isaías 53:5',
-        accentHex: '#A63D40',
       );
     }
     if (!day.isBefore(easter) && day.isBefore(pentecost)) {
@@ -120,7 +114,6 @@ class LiturgicalCalendar {
         title: 'Páscoa',
         subtitle: 'Cristo ressuscitou',
         focusRef: '1 Coríntios 15:20',
-        accentHex: '#E8B84B',
       );
     }
     if (day.year == pentecost.year &&
@@ -131,7 +124,6 @@ class LiturgicalCalendar {
         title: 'Pentecostes',
         subtitle: 'O Espírito é derramado',
         focusRef: 'Atos 2:1–4',
-        accentHex: '#C45C26',
       );
     }
 
@@ -140,7 +132,6 @@ class LiturgicalCalendar {
       title: 'Tempo comum',
       subtitle: 'Crescimento na Palavra, dia a dia',
       focusRef: 'Salmos 119:105',
-      accentHex: '#1B3A5C',
     );
   }
 
@@ -157,7 +148,4 @@ class LiturgicalCalendar {
       icon: '✝️',
     );
   }
-
-  static bool get isHighSeason =>
-      momentFor().season != LiturgicalSeason.ordinary;
 }

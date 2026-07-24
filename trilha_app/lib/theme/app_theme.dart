@@ -8,51 +8,17 @@ import 'app_colors.dart';
 /// Tema STWAY — tipografia, raios, espaçamento e ThemeData.
 /// Cores: ver [AppColors] em `app_colors.dart` (fonte única).
 class AppGradients {
-  static const cosmic = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [AppColors.night, AppColors.primaryDark, AppColors.nightMid],
-  );
-
   static const hero = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
     colors: [AppColors.primaryDark, AppColors.primary, AppColors.primaryLight],
   );
 
-  /// Chama — CTAs e badges (alias histórico: gold).
+  /// CTA / caminho — creme da trilha.
   static const gold = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [AppColors.accentBright, AppColors.accent, AppColors.accentDark],
-  );
-
-  static const copper = gold;
-
-  static const dawn = LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [AppColors.nightMid, AppColors.nightLight, AppColors.surface],
-    stops: [0.0, 0.45, 1.0],
-  );
-
-  static const sheet = LinearGradient(
-    begin: Alignment.topCenter,
-    end: Alignment.bottomCenter,
-    colors: [AppColors.nightElevated, AppColors.nightMid],
-  );
-
-  static const glass = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [Color(0x33FFFFFF), Color(0x14FFFFFF)],
-  );
-
-  /// Horizonte — azul → chama.
-  static const plasma = LinearGradient(
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-    colors: [AppColors.primary, AppColors.accent],
   );
 }
 
@@ -143,6 +109,7 @@ class AppTypography {
 
 /// Raios padronizados.
 class AppRadii {
+  static const xs = 8.0;
   static const sm = 12.0;
   static const md = 16.0;
   static const lg = 24.0;
@@ -162,32 +129,9 @@ class AppSpace {
   static const screen = 20.0;
   static const section = 16.0;
   static const afterTopBar = section;
-  static const underTopBar = 72.0;
 }
 
 class AppTheme {
-  static ThemeData get light {
-    final base = ThemeData(
-      useMaterial3: true,
-      brightness: Brightness.light,
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: AppColors.primary,
-        primary: AppColors.primary,
-        secondary: AppColors.accent,
-        surface: AppColors.surface,
-        error: AppColors.error,
-      ),
-      scaffoldBackgroundColor: AppColors.surface,
-    );
-
-    return base.copyWith(
-      textTheme: GoogleFonts.plusJakartaSansTextTheme(base.textTheme).apply(
-        bodyColor: AppColors.text,
-        displayColor: AppColors.text,
-      ),
-    );
-  }
-
   static ThemeData get dark {
     final base = ThemeData(
       useMaterial3: true,
@@ -274,9 +218,9 @@ class AppTheme {
 
   static List<BoxShadow> cardShadow({bool elevated = false}) => [
         BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.24 : 0.16),
-          blurRadius: elevated ? 18 : 12,
-          offset: Offset(0, elevated ? 8 : 5),
+          color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
+          blurRadius: elevated ? 16 : 10,
+          offset: Offset(0, elevated ? 8 : 4),
         ),
       ];
 }

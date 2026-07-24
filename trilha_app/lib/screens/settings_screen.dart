@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../data/question_bank.dart';
+import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -40,6 +41,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   bool _nameInitialized = false;
   bool _nameDirty = false;
   List<DifficultyMeta>? _difficulties;
+  List<String> _genesisMissionSlugs = const [];
   late final AnimationController _entrance;
 
   @override
@@ -62,7 +64,13 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Future<void> _loadDifficulties() async {
     final items = await QuestionBank.instance.getDifficulties();
-    if (mounted) setState(() => _difficulties = items);
+    final trail = await TrailRepository().getTrailBySlug(_genesisTrailSlug);
+    if (mounted) {
+      setState(() {
+        _difficulties = items;
+        _genesisMissionSlugs = trail?.missionSlugs ?? const [];
+      });
+    }
   }
 
   @override
@@ -641,12 +649,52 @@ class _SettingsScreenState extends State<SettingsScreen>
           _DifficultyRow(
             meta: items[i],
             selected: selectedId == items[i].difficulty.id,
+            locked: !progress.isDifficultyUnlocked(
+              _genesisTrailSlug,
+              items[i].difficulty,
+            ),
+            cleared: progress.hasClearedMode(
+              _genesisTrailSlug,
+              items[i].difficulty.id,
+            ),
             onTap: () {
+              final meta = items[i];
+              if (!progress.isDifficultyUnlocked(
+                _genesisTrailSlug,
+                meta.difficulty,
+              )) {
+                HapticFeedback.selectionClick();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      'Conclua o modo anterior para liberar ${meta.label}.',
+                      style: AppTypography.body(color: AppColors.textOnDark),
+                    ),
+                    backgroundColor: AppColors.nightElevated,
+                  ),
+                );
+                return;
+              }
               HapticFeedback.selectionClick();
+              final prev = progress.difficultyForTrail(_genesisTrailSlug);
               progress.setTrailDifficulty(
                 _genesisTrailSlug,
-                items[i].difficulty.id,
+                meta.difficulty.id,
+                missionSlugs: _genesisMissionSlugs,
               );
+              if (prev != null &&
+                  prev != meta.difficulty.id &&
+                  _genesisMissionSlugs.isNotEmpty) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      'Progresso da trilha reiniciado neste modo.',
+                      style: AppTypography.body(color: AppColors.textOnDark),
+                    ),
+                    backgroundColor: AppColors.nightElevated,
+                  ),
+                );
+              }
             },
           ),
         ],
@@ -810,6 +858,8 @@ class _SettingsScreenState extends State<SettingsScreen>
       return;
     }
     progress.resetMemoryToDefaults();
+    await context.read<LeagueService>().resetForLogout();
+    if (!mounted) return;
     Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
@@ -998,72 +1048,85 @@ class _SegmentCell extends StatelessWidget {
 class _DifficultyRow extends StatelessWidget {
   final DifficultyMeta meta;
   final bool selected;
+  final bool locked;
+  final bool cleared;
   final VoidCallback onTap;
 
   const _DifficultyRow({
     required this.meta,
     required this.selected,
+    required this.locked,
+    required this.cleared,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-          decoration: BoxDecoration(
-            color: selected
-                ? AppColors.accent.withValues(alpha: 0.12)
-                : Colors.transparent,
-            borderRadius: BorderRadius.circular(AppRadii.sm),
-          ),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: DifficultyVisuals.glyphFor(meta.difficulty),
-                size: AppMetrics.leadingIcon,
-                accent: selected ? AppColors.accent : a.textMuted(0.75),
-                framed: false,
-                glowing: false,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      meta.label,
-                      style: AppTypography.title(
-                        size: 14,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      meta.subtitle,
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        color: a.textMuted(selected ? 0.75 : 0.6),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              if (selected)
-                const CinematicIcon(
-                  glyph: CinematicGlyph.check,
-                  size: 20,
-                  accent: AppColors.accent,
+    return Opacity(
+      opacity: locked ? 0.45 : 1,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
+            decoration: BoxDecoration(
+              color: selected
+                  ? AppColors.accent.withValues(alpha: 0.12)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+            ),
+            child: Row(
+              children: [
+                CinematicIcon(
+                  glyph: locked
+                      ? CinematicGlyph.lock
+                      : DifficultyVisuals.glyphFor(meta.difficulty),
+                  size: AppMetrics.leadingIcon,
+                  accent: selected ? AppColors.accent : a.textMuted(0.75),
                   framed: false,
+                  glowing: false,
                 ),
-            ],
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        meta.label,
+                        style: AppTypography.title(
+                          size: 14,
+                          color: a.text,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        locked
+                            ? 'Conclua o modo anterior para liberar'
+                            : cleared
+                                ? 'Concluído · ${meta.subtitle}'
+                                : meta.subtitle,
+                        style: AppTypography.body(
+                          size: 12,
+                          height: 1.3,
+                          color: a.textMuted(selected ? 0.75 : 0.6),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                if (selected)
+                  const CinematicIcon(
+                    glyph: CinematicGlyph.check,
+                    size: 20,
+                    accent: AppColors.accent,
+                    framed: false,
+                  ),
+              ],
+            ),
           ),
         ),
       ),

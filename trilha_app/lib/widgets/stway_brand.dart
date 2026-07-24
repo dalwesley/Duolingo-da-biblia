@@ -41,7 +41,7 @@ class StwayLogo extends StatelessWidget {
   }
 }
 
-/// Wordmark STWAY — letras brancas, “A” em chevron dourado (sem travessão).
+/// Wordmark STWAY — letras creme, “A” em chevron sálvia (sem travessão).
 class StwayWordmark extends StatelessWidget {
   final double fontSize;
   final double letterSpacing;
@@ -60,8 +60,8 @@ class StwayWordmark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final letters = letterColor ?? Colors.white;
-    final chevron = aColor ?? AppColors.accent;
+    final letters = letterColor ?? AppColors.textOnDark;
+    final chevron = aColor ?? AppColors.primaryLight;
     final style = AppTypography.display(
       size: fontSize,
       weight: weight,
@@ -130,7 +130,7 @@ class StwayTagline extends StatelessWidget {
       style: AppTypography.label(
         size: size,
         letterSpacing: 1.6,
-        color: color ?? AppColors.accent.withValues(alpha: 0.85),
+        color: color ?? AppColors.primaryLight.withValues(alpha: 0.9),
       ),
     );
   }

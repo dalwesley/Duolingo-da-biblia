@@ -6,7 +6,6 @@ import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
@@ -53,12 +52,11 @@ enum _Why {
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   static const _beats = _Beat.values;
 
   final _nameController = TextEditingController();
   late final AnimationController _enter;
-  late final AnimationController _pulse;
 
   int _index = 0;
   int _dailyGoal = 1;
@@ -70,16 +68,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   void initState() {
     super.initState();
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
     _enter = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 480),
     )..forward();
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1600),
-    )..repeat(reverse: true);
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -97,12 +90,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   void dispose() {
     _enter.dispose();
-    _pulse.dispose();
     _nameController.dispose();
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
     super.dispose();
   }
 
@@ -138,16 +126,15 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     final name = _nameController.text.trim();
     if (name.isNotEmpty) await progress.setUserName(name);
     await progress.updateSettings(
-      progress.settings.copyWith(dailyGoal: _dailyGoal),
+      progress.settings.copyWith(
+        dailyGoal: _dailyGoal,
+        appearanceMode: AppearanceMode.automatic,
+      ),
     );
     await progress.setHasSeenOnboarding(true);
     await backend.saveNow(progress, LeagueService.weekKey(), league: league);
 
     if (!mounted) return;
-    SystemChrome.setEnabledSystemUIMode(
-      SystemUiMode.manual,
-      overlays: SystemUiOverlay.values,
-    );
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
@@ -170,116 +157,87 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.sizeOf(context);
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
-    return Appearance(
+    return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      child: AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.light,
-        systemNavigationBarColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
-        systemNavigationBarIconBrightness: Brightness.light,
-      ),
-      child: Scaffold(
-        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
-        body: ImmersiveBackground(
-          appearance: appearance,
-          child: AnimatedBuilder(
-          animation: Listenable.merge([_enter, _pulse]),
-          builder: (context, _) {
-            final enter = Curves.easeOutCubic.transform(_enter.value);
-            final pulse = _pulse.value;
+      body: AnimatedBuilder(
+        animation: _enter,
+        builder: (context, _) {
+          final enter = Curves.easeOutCubic.transform(_enter.value);
 
-            return Stack(
-              fit: StackFit.expand,
+          return SafeArea(
+            child: Column(
               children: [
-                Positioned(
-                  top: size.height * 0.08,
-                  right: -40,
-                  child: _GlowOrb(
-                    size: 220,
-                    color: AppColors.primary.withValues(
-                      alpha: 0.2 + 0.08 * pulse,
-                    ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpace.screen,
+                    8,
+                    8,
+                    0,
                   ),
-                ),
-                Positioned(
-                  bottom: size.height * 0.22,
-                  left: -50,
-                  child: _GlowOrb(
-                    size: 200,
-                    color: AppColors.accent.withValues(
-                      alpha: 0.12 + 0.08 * pulse,
-                    ),
-                  ),
-                ),
-
-                SafeArea(
-                  child: Column(
+                  child: Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 8, 8, 0),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: _StepDots(
-                                index: _index,
-                                total: _beats.length,
-                              ),
-                            ),
-                            TextButton(
-                              onPressed: _finishing ? null : _finish,
-                              child: Text(
-                                'Pular',
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
-                                  color: Colors.white.withValues(alpha: 0.45),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
                       Expanded(
-                        child: Opacity(
-                          opacity: enter,
-                          child: Transform.translate(
-                            offset: Offset(0, 16 * (1 - enter)),
-                            child: Transform.scale(
-                              scale: 0.97 + 0.03 * enter,
-                              child: _buildBeat(pulse),
-                            ),
-                          ),
+                        child: _StepDots(
+                          index: _index,
+                          total: _beats.length,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(20, 8, 20, 20),
-                        child: _PrimaryCta(
-                          label: _ctaLabel,
-                          enabled: _ctaEnabled && !_finishing,
-                          loading: _finishing,
-                          onTap: _goNext,
+                      TextButton(
+                        onPressed: _finishing ? null : _finish,
+                        child: Text(
+                          'Pular',
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w700,
+                            color: Appearance.of(context).textMuted(0.45),
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
+                Expanded(
+                  child: Opacity(
+                    opacity: enter,
+                    child: Transform.translate(
+                      offset: Offset(0, 16 * (1 - enter)),
+                      child: Transform.scale(
+                        scale: 0.97 + 0.03 * enter,
+                        child: _buildBeat(),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpace.screen,
+                    8,
+                    AppSpace.screen,
+                    AppSpace.screen,
+                  ),
+                  child: Opacity(
+                    opacity: _ctaEnabled && !_finishing ? 1 : 0.4,
+                    child: CopperCta(
+                      label: _finishing ? 'Abrindo…' : _ctaLabel,
+                      onTap: _ctaEnabled && !_finishing ? _goNext : null,
+                      showArrow: true,
+                      trailing: null,
+                    ),
+                  ),
+                ),
               ],
-            );
-          },
-        ),
-        ),
-      ),
+            ),
+          );
+        },
       ),
     );
   }
 
-  Widget _buildBeat(double pulse) {
+  Widget _buildBeat() {
     return switch (_beat) {
       _Beat.promise => const _PromiseBeat(),
       _Beat.why => _WhyBeat(
@@ -317,7 +275,7 @@ class _PromiseBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
       children: [
         const Center(child: StwayWordmark(fontSize: 22, letterSpacing: 3.5)),
         const SizedBox(height: 8),
@@ -496,8 +454,9 @@ class _WhyBeat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
       children: [
         Text(
           'SEU OBJETIVO',
@@ -520,7 +479,7 @@ class _WhyBeat extends StatelessWidget {
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 13,
-            color: Colors.white.withValues(alpha: 0.5),
+            color: a.textMuted(0.5),
           ),
         ),
         const SizedBox(height: 18),
@@ -580,7 +539,7 @@ class _RhythmBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
       children: [
         Text(
           'SEU RITMO',
@@ -668,7 +627,7 @@ class _RhythmBeat extends StatelessWidget {
                           style: AppTypography.display(
                             size: 28,
                             weight: FontWeight.w900,
-                            color: on ? AppColors.accent : Colors.white70,
+                            color: on ? AppColors.accent : a.textMuted(0.7),
                             height: 1,
                           ),
                         ),
@@ -680,7 +639,7 @@ class _RhythmBeat extends StatelessWidget {
                             weight: FontWeight.w700,
                             color: on
                                 ? AppColors.accent.withValues(alpha: 0.95)
-                                : Colors.white54,
+                                : a.textMuted(0.54),
                           ),
                         ),
                       ],
@@ -724,7 +683,7 @@ class _ThresholdBeat extends StatelessWidget {
     final a = Appearance.of(context);
     final greeting = name.isEmpty ? 'Aprendiz' : name;
     return ListView(
-      padding: const EdgeInsets.fromLTRB(20, 4, 20, 8),
+      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
       children: [
         Text(
           'TUDO PRONTO',
@@ -752,7 +711,7 @@ class _ThresholdBeat extends StatelessWidget {
           accent: true,
           elevated: true,
           radius: AppMetrics.heroRadius,
-          padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: const EdgeInsets.all(AppSpace.screen),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -847,27 +806,6 @@ class _ThresholdBeat extends StatelessWidget {
           subtitle: 'Cada lição alimenta seu progresso',
         ),
       ],
-    );
-  }
-}
-
-class _GlowOrb extends StatelessWidget {
-  final double size;
-  final Color color;
-
-  const _GlowOrb({required this.size, required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: Container(
-        width: size,
-        height: size,
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          gradient: RadialGradient(colors: [color, Colors.transparent]),
-        ),
-      ),
     );
   }
 }
@@ -990,6 +928,7 @@ class _StepDots extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Row(
       children: List.generate(total, (i) {
         final on = i <= index;
@@ -1000,81 +939,12 @@ class _StepDots extends StatelessWidget {
           width: current ? 22 : 8,
           height: 8,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
             gradient: on ? AppGradients.gold : null,
-            color: on ? null : Colors.white.withValues(alpha: 0.15),
+            color: on ? null : a.progressTrack,
           ),
         );
       }),
-    );
-  }
-}
-
-class _PrimaryCta extends StatelessWidget {
-  final String label;
-  final bool enabled;
-  final bool loading;
-  final VoidCallback onTap;
-
-  const _PrimaryCta({
-    required this.label,
-    required this.enabled,
-    required this.loading,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Opacity(
-      opacity: enabled ? 1 : 0.4,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: enabled ? onTap : null,
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          child: Ink(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 18),
-            decoration: BoxDecoration(
-              gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.4),
-                  offset: const Offset(0, 8),
-                  blurRadius: 18,
-                ),
-              ],
-            ),
-            child: loading
-                ? const Center(
-                    child: SizedBox(
-                      width: 22,
-                      height: 22,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2.2,
-                        color: AppColors.inkOnAccent,
-                      ),
-                    ),
-                  )
-                : Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        label.toUpperCase(),
-                        style: AppTypography.cta(size: 15),
-                      ),
-                      const SizedBox(width: 8),
-                      const Icon(
-                        Icons.arrow_forward_rounded,
-                        size: 20,
-                        color: AppColors.inkOnAccent,
-                      ),
-                    ],
-                  ),
-          ),
-        ),
-      ),
     );
   }
 }

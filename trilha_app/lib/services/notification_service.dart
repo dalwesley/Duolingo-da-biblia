@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
@@ -85,7 +86,7 @@ class NotificationService {
   Future<void> init() async {
     if (_initialized || !_available) return;
     tz_data.initializeTimeZones();
-    _configureLocalTimezone();
+    await _configureLocalTimezone();
 
     try {
       const android = AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -470,7 +471,15 @@ class NotificationService {
     return scheduled;
   }
 
-  void _configureLocalTimezone() {
+  /// Alinha lembretes ao fuso do aparelho (mesmo critério do progresso diário).
+  Future<void> _configureLocalTimezone() async {
+    try {
+      final info = await FlutterTimezone.getLocalTimezone();
+      tz.setLocalLocation(tz.getLocation(info.identifier));
+      return;
+    } catch (_) {
+      /* tenta fallback */
+    }
     try {
       tz.setLocalLocation(tz.getLocation('America/Sao_Paulo'));
     } catch (_) {

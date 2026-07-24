@@ -17,6 +17,7 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/difficulty_trails.dart';
+import '../utils/trail_progress.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
@@ -133,6 +134,47 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
 
     if (!mounted) return;
     final progress = context.read<ProgressService>();
+
+    // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
+    if (!widget.practiceMode &&
+        widget.missionOverride == null &&
+        mission != null &&
+        trailSlug != null) {
+      final trails = await _repo.getTrails();
+      final trail = trails.where((t) => t.slug == trailSlug).firstOrNull;
+      if (trail != null) {
+        final unlockedTrail = TrailProgress.isTrailUnlocked(
+          trail,
+          trails,
+          progress.completedMissions,
+          clearedTrailModes: progress.clearedTrailModes,
+        );
+        final unlockedMission = TrailProgress.isMissionUnlocked(
+          widget.missionSlug,
+          trail.missionSlugs,
+          progress.completedMissions,
+        );
+        final alreadyDone =
+            progress.isMissionCompleted(widget.missionSlug);
+        if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
+          if (!mounted) return;
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'Este passo ainda está bloqueado.',
+                style: AppTypography.body(color: AppColors.textOnDark),
+              ),
+              backgroundColor: AppColors.nightElevated,
+            ),
+          );
+          Navigator.of(context).pop();
+          return;
+        }
+      }
+    }
+
+    if (!mounted) return;
+
     final usesBank = trailUsesDifficultyBank(trailSlug) &&
         QuestionBank.instance.hasBankForTrail(trailSlug);
 

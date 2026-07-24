@@ -20,15 +20,21 @@ class TrailProgress {
     return slugs.every(completed.contains);
   }
 
+  /// Trilha liberada se não há pré-requisito, se a pré-requisito está
+  /// completa em [completed], ou se já foi concluída em algum modo
+  /// ([clearedTrailModes]) — evita re-bloquear ao trocar dificuldade.
   static bool isTrailUnlocked(
     Trail trail,
     List<Trail> allTrails,
-    List<String> completed,
-  ) {
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
     if (trail.unlockAfter == null) return true;
-    final prereq = allTrails.where((t) => t.slug == trail.unlockAfter).firstOrNull;
+    final prereq =
+        allTrails.where((t) => t.slug == trail.unlockAfter).firstOrNull;
     if (prereq == null) return true;
-    return isTrailCompleted(prereq, completed);
+    if (isTrailCompleted(prereq, completed)) return true;
+    return (clearedTrailModes[prereq.slug] ?? const []).isNotEmpty;
   }
 
   static Mission? getCurrentMission(Trail trail, List<String> completed) {
@@ -45,10 +51,21 @@ class TrailProgress {
     return null;
   }
 
-  static Trail? findActiveTrail(List<Trail> trails, List<String> completed) {
+  static Trail? findActiveTrail(
+    List<Trail> trails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
     for (final trail in trails) {
       if (trail.comingSoon || trail.missionSlugs.isEmpty) continue;
-      if (!isTrailUnlocked(trail, trails, completed)) continue;
+      if (!isTrailUnlocked(
+        trail,
+        trails,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+      )) {
+        continue;
+      }
       if (!isTrailCompleted(trail, completed)) return trail;
     }
     return trails.where((t) => t.missionSlugs.isNotEmpty).firstOrNull;

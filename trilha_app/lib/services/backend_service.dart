@@ -274,11 +274,20 @@ class BackendService extends ChangeNotifier {
         _payload(progress, league: league),
         SetOptions(merge: true),
       );
-      batch.set(_db.doc('leagues/$week/players/$_uid'), {
+      final tier = league?.tierIndex ?? 0;
+      final playerPayload = {
         'name': progress.userName,
         'xp': progress.weeklySteps,
+        'tier': tier,
         'updatedAt': FieldValue.serverTimestamp(),
-      });
+      };
+      // Ranking por divisão (tier).
+      batch.set(
+        _db.doc('leagues/$week/tiers/$tier/players/$_uid'),
+        playerPayload,
+      );
+      // Dual-write legado (migração) — inclui tier para filtro.
+      batch.set(_db.doc('leagues/$week/players/$_uid'), playerPayload);
       final month = LeagueService.monthKey();
       batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
         'name': progress.userName,
@@ -490,29 +499,86 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Jogadores reais da liga desta semana (exclui o próprio usuário).
-  Future<List<CloudPlayer>> fetchWeekPlayers(String week, {int limit = 30}) async {
+  /// Jogadores reais da liga desta semana nesta divisão (exclui o próprio usuário).
+  Future<List<CloudPlayer>> fetchWeekPlayers(
+    String week, {
+    required int tier,
+    int limit = 30,
+  }) async {
     if (!isActive) return const [];
     try {
-      final snap = await _db
-          .collection('leagues/$week/players')
+      final tierSnap = await _db
+          .collection('leagues/$week/tiers/$tier/players')
           .orderBy('xp', descending: true)
           .limit(limit)
           .get();
+      if (tierSnap.docs.isNotEmpty) {
+        return _mapCloudPlayers(tierSnap.docs);
+      }
+      // Fallback legado: board flat, filtra por tier quando presente.
+      final legacy = await _db
+          .collection('leagues/$week/players')
+          .orderBy('xp', descending: true)
+          .limit(limit * 2)
+          .get();
       return [
-        for (final d in snap.docs)
+        for (final d in legacy.docs)
           if (d.id != _uid)
-            CloudPlayer(
-              uid: d.id,
-              name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
-                  ? d.data()['name'] as String
-                  : 'Aprendiz',
-              steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
-            ),
-      ];
+            if ((d.data()['tier'] as num?)?.toInt() == tier ||
+                d.data()['tier'] == null)
+              CloudPlayer(
+                uid: d.id,
+                name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
+                    ? d.data()['name'] as String
+                    : 'Aprendiz',
+                steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
+              ),
+      ].take(limit).toList();
     } catch (e) {
       debugPrint('Falha ao buscar liga na nuvem: $e');
       return const [];
+    }
+  }
+
+  List<CloudPlayer> _mapCloudPlayers(List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
+    return [
+      for (final d in docs)
+        if (d.id != _uid)
+          CloudPlayer(
+            uid: d.id,
+            name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
+                ? d.data()['name'] as String
+                : 'Aprendiz',
+            steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
+          ),
+    ];
+  }
+
+  /// Fecha a semana da caravana (se preciso) e sincroniza tier/outcome na nuvem.
+  Future<void> settleAndSyncLeague(
+    ProgressService progress,
+    LeagueService league, {
+    String? roomCode,
+  }) async {
+    final closed = league.processedWeek;
+    final current = LeagueService.weekKey();
+    var peerSteps = const <int>[];
+    if (isActive && closed != null && closed != current) {
+      final peers = await fetchWeekPlayers(closed, tier: league.tierIndex);
+      peerSteps = [for (final p in peers) p.steps];
+    }
+    await league.settleWeekIfNeeded(
+      lastWeekSteps: progress.lastWeekSteps,
+      lastWeekKey: progress.lastWeekKey,
+      peerSteps: peerSteps,
+    );
+    if (isActive) {
+      await saveNow(
+        progress,
+        LeagueService.weekKey(),
+        roomCode: roomCode,
+        league: league,
+      );
     }
   }
 

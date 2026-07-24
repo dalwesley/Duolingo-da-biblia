@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../services/backend_service.dart';
@@ -139,7 +138,23 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) _handleReminderAction(pending);
       _syncReminders();
+      // Fecha semana da caravana mesmo sem abrir a aba Liga.
+      unawaited(_settleLeagueOnResume());
     }
+  }
+
+  Future<void> _settleLeagueOnResume() async {
+    if (!mounted) return;
+    final progress = _progressRef;
+    if (progress == null) return;
+    final backend = context.read<BackendService>();
+    final league = context.read<LeagueService>();
+    final rooms = context.read<RoomService>();
+    await backend.settleAndSyncLeague(
+      progress,
+      league,
+      roomCode: rooms.activeCode,
+    );
   }
 
   void _handleReminderAction(ReminderAction action) {
@@ -286,9 +301,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final photoUrl = context.select((BackendService b) => b.userPhotoUrl);
     final appearance = AppearanceStyle.resolve(mode);
     _lastLook = appearance.look;
-    final homeBg = DayPhaseHelper.scaffoldBackground(appearance.phase);
-    final statusLight =
-        appearance.onDark || appearance.look == AppearanceLook.morning;
 
     Widget tabBar(int index) => _tabTopBar(
           index: index,
@@ -297,82 +309,51 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           appearance: appearance,
         );
 
-    return Appearance(
+    return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle(
-          statusBarColor: Colors.transparent,
-          statusBarIconBrightness: statusLight
-              ? Brightness.light
-              : Brightness.dark,
-          systemNavigationBarColor: Colors.transparent,
-          systemNavigationBarIconBrightness: statusLight
-              ? Brightness.light
-              : Brightness.dark,
-          systemNavigationBarDividerColor: Colors.transparent,
-        ),
-        child: Scaffold(
-          backgroundColor: homeBg,
-          extendBody: true,
-          body: _frost.attach(
-            IndexedStack(
-              index: _index,
-              children: [
-                ImmersiveBackground(
-                  appearance: appearance,
-                  child: HomeScreen(
-                    repo: _repo,
-                    topBar: tabBar(0),
-                    onOpenTrail: _openTrail,
-                    onOpenMission: _openMission,
-                    onOpenTrilhas: _goToTrilhas,
-                    onOpenLeague: () => setState(() {
-                      _index = 3;
-                      _frost.value = 0;
-                    }),
-                  ),
-                ),
-                ImmersiveBackground(
-                  appearance: appearance,
-                  child: TrilhasScreen(
-                    repo: _repo,
-                    topBar: tabBar(1),
-                    portalsActive: _index == 1,
-                  ),
-                ),
-                ImmersiveBackground(
-                  appearance: appearance,
-                  child: BibleScreen(
-                    topBar: tabBar(2),
-                  ),
-                ),
-                ImmersiveBackground(
-                  appearance: appearance,
-                  child: LeagueScreen(
-                    topBar: tabBar(3),
-                  ),
-                ),
-                ImmersiveBackground(
-                  appearance: appearance,
-                  child: SettingsScreen(
-                    topBar: tabBar(4),
-                  ),
-                ),
-              ],
+      extendBody: true,
+      body: _frost.attach(
+        IndexedStack(
+          index: _index,
+          children: [
+            HomeScreen(
+              repo: _repo,
+              topBar: tabBar(0),
+              onOpenTrail: _openTrail,
+              onOpenMission: _openMission,
+              onOpenTrilhas: _goToTrilhas,
+              onOpenLeague: () => setState(() {
+                _index = 3;
+                _frost.value = 0;
+              }),
             ),
-          ),
-          bottomNavigationBar: MainBottomNav(
-            currentIndex: _index,
-            onTap: (i) => setState(() {
-              _index = i;
-              _frost.value = 0;
-            }),
-            immersive: true,
-            dark: appearance.onDark,
-            appearance: appearance,
-          ),
+            TrilhasScreen(
+              repo: _repo,
+              topBar: tabBar(1),
+              portalsActive: _index == 1,
+            ),
+            BibleScreen(
+              topBar: tabBar(2),
+            ),
+            LeagueScreen(
+              topBar: tabBar(3),
+            ),
+            SettingsScreen(
+              topBar: tabBar(4),
+            ),
+          ],
         ),
+      ),
+      bottomNavigationBar: MainBottomNav(
+        currentIndex: _index,
+        onTap: (i) => setState(() {
+          _index = i;
+          _frost.value = 0;
+        }),
+        immersive: true,
+        dark: appearance.onDark,
+        appearance: appearance,
       ),
     );
   }

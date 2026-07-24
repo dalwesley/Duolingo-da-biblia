@@ -29,9 +29,6 @@ class AppMetrics {
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
 
-  /// Borda padrão (branca suave).
-  static Color border(BuildContext context) => Appearance.of(context).cardBorder;
-
   /// Borda de destaque (açafrão).
   static Color accentBorder({double alpha = 0.45}) =>
       AppColors.accent.withValues(alpha: alpha);
@@ -67,7 +64,10 @@ class CopperCta extends StatelessWidget {
     this.onTap,
     this.trailing = CinematicGlyph.path,
     this.expanded = true,
-    this.padding = const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+    this.padding = const EdgeInsets.symmetric(
+      horizontal: AppSpace.lg,
+      vertical: AppSpace.lg,
+    ),
     this.showArrow = false,
   });
 
@@ -177,14 +177,12 @@ class SectionLabel extends StatelessWidget {
 class CountBadge extends StatelessWidget {
   final String text;
   final Color? color;
-  final Color? background;
   final bool filled;
 
   const CountBadge(
     this.text, {
     super.key,
     this.color,
-    this.background,
     this.filled = true,
   });
 
@@ -194,9 +192,7 @@ class CountBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
       decoration: BoxDecoration(
-        color: filled
-            ? (background ?? ink.withValues(alpha: 0.14))
-            : Colors.transparent,
+        color: filled ? ink.withValues(alpha: 0.14) : Colors.transparent,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: filled ? null : Border.all(color: ink.withValues(alpha: 0.28)),
       ),
@@ -213,10 +209,9 @@ class CountBadge extends StatelessWidget {
   }
 }
 
-/// Chip/badge suave com ícone brand ou Material (legacy).
+/// Chip/badge suave com glifo brand.
 class SoftBadge extends StatelessWidget {
   final String text;
-  final IconData? icon;
   final CinematicGlyph? glyph;
   final Color? accent;
   final Color? textColor;
@@ -225,7 +220,6 @@ class SoftBadge extends StatelessWidget {
   const SoftBadge({
     super.key,
     required this.text,
-    this.icon,
     this.glyph,
     this.accent,
     this.textColor,
@@ -255,9 +249,6 @@ class SoftBadge extends StatelessWidget {
               accent: tone.withValues(alpha: 0.95),
               framed: false,
             ),
-            const SizedBox(width: 4),
-          ] else if (icon != null) ...[
-            Icon(icon, size: AppMetrics.chipIcon, color: tone.withValues(alpha: 0.95)),
             const SizedBox(width: 4),
           ],
           Text(

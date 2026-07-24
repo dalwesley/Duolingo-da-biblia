@@ -21,13 +21,6 @@ extension AppearanceModeX on AppearanceMode {
         AppearanceMode.automatic => 'Automático',
       };
 
-  String get description => switch (this) {
-        AppearanceMode.morning => 'Azul de treino — manhã',
-        AppearanceMode.afternoon => 'Teal aberto — tarde',
-        AppearanceMode.night => 'HUD noturno de jogo',
-        AppearanceMode.automatic => 'Muda conforme o horário',
-      };
-
   CinematicGlyph get glyph => switch (this) {
         AppearanceMode.morning => CinematicGlyph.sun,
         AppearanceMode.afternoon => CinematicGlyph.spark,
@@ -60,9 +53,6 @@ class AppearanceStyle {
 
   bool get onDark => true;
 
-  Color get backdropText => AppColors.textOnDark;
-  Color get backdropMuted =>
-      AppColors.textOnDark.withValues(alpha: isDay ? 0.88 : 0.78);
   Color get sectionLabel =>
       AppColors.textOnDark.withValues(alpha: isDay ? 0.85 : 0.72);
 
@@ -73,14 +63,14 @@ class AppearanceStyle {
       );
 
   Color get cardFill => switch (look) {
-        AppearanceLook.morning => const Color(0xFF182838),
-        AppearanceLook.afternoon => const Color(0xFF143040),
+        AppearanceLook.morning => AppColors.cardMorning,
+        AppearanceLook.afternoon => AppColors.cardAfternoon,
         AppearanceLook.night => AppColors.nightElevated,
       };
 
   Color get cardFillSoft => switch (look) {
-        AppearanceLook.morning => const Color(0xFF1E3048),
-        AppearanceLook.afternoon => const Color(0xFF1A3A4C),
+        AppearanceLook.morning => AppColors.cardMorningSoft,
+        AppearanceLook.afternoon => AppColors.cardAfternoonSoft,
         AppearanceLook.night => AppColors.nightLight,
       };
 
@@ -90,16 +80,13 @@ class AppearanceStyle {
         AppearanceLook.night => Colors.white.withValues(alpha: 0.1),
       };
 
-  /// Painel sólido — sem lavagem de vidro.
-  LinearGradient? get cardGradient => null;
-
   Color get progressTrack =>
       Colors.white.withValues(alpha: isDay ? 0.2 : 0.14);
 
   Color get navBarFill => switch (look) {
         AppearanceLook.night => AppColors.nightMid,
-        AppearanceLook.morning => const Color(0xFF182438),
-        AppearanceLook.afternoon => const Color(0xFF0E3040),
+        AppearanceLook.morning => const Color(0xFF132321),
+        AppearanceLook.afternoon => const Color(0xFF0E2A26),
       };
 
   Color get navBarBorder => Colors.white.withValues(

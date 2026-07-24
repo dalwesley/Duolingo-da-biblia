@@ -83,17 +83,6 @@ class HomeWidgetService {
     );
   }
 
-  /// Android 8+: pede para fixar o widget na tela inicial (quando o launcher suporte).
-  static Future<void> requestPinIfSupported() async {
-    if (!Platform.isAndroid) return;
-    final supported = await HomeWidget.isRequestPinWidgetSupported();
-    if (supported != true) return;
-    await HomeWidget.requestPinWidget(
-      androidName: _androidProvider,
-      qualifiedAndroidName: 'com.trilha.trilha_app.$_androidProvider',
-    );
-  }
-
   static String _statusLine({
     required bool goalMet,
     required bool atRisk,

@@ -37,7 +37,17 @@ service cloud.firestore {
     }
 
     // Liga semanal: qualquer autenticado lê; só o dono escreve o próprio ranking.
+    // Legado flat (migração).
     match /leagues/{week}/players/{uid} {
+      allow read: if isSignedIn();
+      allow write: if isSignedIn()
+        && request.auth.uid == uid
+        && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
+        && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps));
+    }
+
+    // Liga semanal por divisão (tier 0..4).
+    match /leagues/{week}/tiers/{tier}/players/{uid} {
       allow read: if isSignedIn();
       allow write: if isSignedIn()
         && request.auth.uid == uid

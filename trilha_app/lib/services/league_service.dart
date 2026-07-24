@@ -22,14 +22,6 @@ extension LeagueTierX on LeagueTier {
         LeagueTier.cedro => 'Cedro',
         LeagueTier.estrela => 'Estrela',
       };
-
-  String get verse => switch (this) {
-        LeagueTier.semente => '“A semente é a palavra de Deus.” — Lc 8:11',
-        LeagueTier.videira => '“Eu sou a videira, vós as varas.” — Jo 15:5',
-        LeagueTier.oliveira => '“Sou como a oliveira verde na casa de Deus.” — Sl 52:8',
-        LeagueTier.cedro => '“O justo crescerá como o cedro no Líbano.” — Sl 92:12',
-        LeagueTier.estrela => '“Os que ensinam brilharão como as estrelas.” — Dn 12:3',
-      };
 }
 
 /// Resultado da semana anterior, aguardando o usuário ver.
@@ -182,11 +174,16 @@ class LeagueService extends ChangeNotifier {
     notifyListeners();
   }
 
+  String? get processedWeek => _processedWeek;
+
   /// Fecha a semana anterior se virou a semana. [lastWeekSteps] é o XP final do
   /// usuário na semana [lastWeekKey] (vindos do ProgressService).
+  /// [peerSteps] = XP dos outros jogadores reais daquela semana/tier (mesma
+  /// população do ranking live); bots completam o grupo de 20.
   Future<void> settleWeekIfNeeded({
     required int lastWeekSteps,
     required String? lastWeekKey,
+    List<int> peerSteps = const [],
   }) async {
     final current = weekKey();
     if (_processedWeek == current) return;
@@ -203,12 +200,16 @@ class LeagueService extends ChangeNotifier {
     // XP do usuário na semana fechada (0 se o registro não bate).
     final userXp = (lastWeekKey == closedWeek) ? lastWeekSteps : 0;
 
-    // Ranking final da semana fechada, com os mesmos bots daquela semana.
+    // Mesma regra do live: peers reais + bots até 19 + usuário.
     final weekEnd = _weekStart(closedWeek).add(const Duration(days: 7));
-    final bots = _botsForWeek(closedWeek, tierIndex);
-    final finalXp = bots.map((b) => _botXpAt(b, closedWeek, weekEnd)).toList()
-      ..add(userXp);
-    finalXp.sort((a, b) => b.compareTo(a));
+    final peer = peerSteps.take(groupSize - 1).toList();
+    final botsNeeded = groupSize - 1 - peer.length;
+    final bots = _botsForWeek(closedWeek, tierIndex).take(botsNeeded);
+    final finalXp = <int>[
+      ...peer,
+      for (final b in bots) _botXpAt(b, closedWeek, weekEnd),
+      userXp,
+    ]..sort((a, b) => b.compareTo(a));
     final rank = finalXp.indexOf(userXp) + 1;
 
     var outcome = LeagueOutcome.stayed;
@@ -231,6 +232,21 @@ class LeagueService extends ChangeNotifier {
   Future<void> dismissOutcome() async {
     pendingOutcome = null;
     await _persist();
+    notifyListeners();
+  }
+
+  /// Limpa estado local (logout / troca de conta).
+  Future<void> resetForLogout() async {
+    tierIndex = 0;
+    pendingOutcome = null;
+    pendingRank = 0;
+    _processedWeek = null;
+    _cloudHydrated = false;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyTier);
+    await prefs.remove(_keyProcessedWeek);
+    await prefs.remove(_keyOutcome);
+    await prefs.remove(_keyOutcomeRank);
     notifyListeners();
   }
 
