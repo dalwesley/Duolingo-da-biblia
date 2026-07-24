@@ -454,7 +454,7 @@ class _TrailJourneyIntro extends StatelessWidget {
                 '  ·  mudar',
                 style: AppTypography.label(
                   size: 11,
-                  color: AppColors.accent.withValues(alpha: 0.9),
+                  color: AppColors.accent,
                   letterSpacing: 0.3,
                 ),
               ),

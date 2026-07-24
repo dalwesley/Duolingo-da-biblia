@@ -311,7 +311,7 @@ class _JumpChip extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.lg),
             color: AppColors.night.withValues(alpha: 0.93),
-            border: Border.all(color: accent.withValues(alpha: 0.35)),
+            border: Border.all(color: accent.withValues(alpha: 0.7)),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withValues(alpha: 0.4),

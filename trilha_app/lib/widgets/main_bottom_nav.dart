@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
-/// Nav inferior — glifos brand + label; ativo em açafrão sobre azure suave.
+/// Nav inferior — glifos brand + label; ativo no amarelo do CTA.
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -48,21 +49,13 @@ class MainBottomNav extends StatelessWidget {
             color: style.navBarFill,
             borderRadius: BorderRadius.circular(AppRadii.lg),
             border: Border.all(color: style.navBarBorder),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.22),
-                blurRadius: 18,
-                offset: const Offset(0, 8),
-              ),
-            ],
+            boxShadow: AppMetrics.cardShadow(elevated: true),
           ),
           child: Row(
             children: List.generate(tabs.length, (i) {
               final active = currentIndex == i;
               final tab = tabs[i];
-              final color = active
-                  ? AppColors.accent
-                  : Colors.white.withValues(alpha: 0.4);
+              final color = active ? AppColors.accent : style.iconMuted;
 
               return Expanded(
                 child: InkWell(
@@ -80,10 +73,10 @@ class MainBottomNav extends StatelessWidget {
                         ),
                         decoration: active
                             ? BoxDecoration(
-                                color: AppColors.primaryLight.withValues(alpha: 0.28),
+                                color: AppMetrics.accentFill(alpha: 0.16),
                                 borderRadius: BorderRadius.circular(AppRadii.sm),
                                 border: Border.all(
-                                  color: AppColors.accent.withValues(alpha: 0.35),
+                                  color: AppMetrics.accentBorder(alpha: 0.7),
                                 ),
                               )
                             : null,

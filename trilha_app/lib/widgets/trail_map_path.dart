@@ -148,8 +148,9 @@ class _MissionSceneCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = theme?.decorColor ?? AppColors.accent;
+    // Chrome de UI = mesmo amarelo do CTA Continuar (pathActive / accent).
     final gold = theme?.pathActive ?? AppColors.accent;
+    final accent = gold;
 
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
@@ -164,9 +165,9 @@ class _MissionSceneCard extends StatelessWidget {
             : a.cardFill.withValues(alpha: 0.55),
         border: Border.all(
           color: _current
-              ? AppMetrics.accentBorder(alpha: 0.5)
+              ? AppColors.accent
               : completed
-                  ? gold.withValues(alpha: 0.18)
+                  ? gold.withValues(alpha: 0.28)
                   : a.cardBorder,
           width: _current ? 1.5 : 1,
         ),
@@ -192,7 +193,7 @@ class _MissionSceneCard extends StatelessWidget {
                   ),
                 ),
                 color: _current
-                    ? AppColors.accent.withValues(alpha: 0.1)
+                    ? AppColors.accent.withValues(alpha: 0.12)
                     : null,
               ),
               child: Column(
@@ -205,7 +206,7 @@ class _MissionSceneCard extends StatelessWidget {
                       height: 1,
                       color: unlocked
                           ? (_current
-                              ? accent
+                              ? AppColors.accent
                               : a.text.withValues(
                                   alpha: completed ? 0.35 : 0.75,
                                 ))
@@ -217,7 +218,7 @@ class _MissionSceneCard extends StatelessWidget {
                     Container(
                       width: 18,
                       height: 1.5,
-                      color: accent.withValues(alpha: 0.7),
+                      color: AppColors.accent,
                     ),
                   ],
                 ],
@@ -249,9 +250,9 @@ class _MissionSceneCard extends StatelessWidget {
                             weight: FontWeight.w700,
                             letterSpacing: 1.6,
                             color: _current
-                                ? accent.withValues(alpha: 0.95)
+                                ? AppColors.accent
                                 : completed
-                                    ? gold.withValues(alpha: 0.45)
+                                    ? gold.withValues(alpha: 0.55)
                                     : a.textMuted(unlocked ? 0.45 : 0.28),
                           ),
                         ),
@@ -280,7 +281,7 @@ class _MissionSceneCard extends StatelessWidget {
                             mission.title,
                             isBoss: mission.isBoss,
                             size: _current ? 42 : 34,
-                            accent: accent,
+                            accent: AppColors.accent,
                             glowing: _current,
                           ),
                         ),

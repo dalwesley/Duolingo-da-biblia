@@ -149,22 +149,23 @@ class CinematicGlyphResolver {
       CinematicGlyph.cosmos || CinematicGlyph.depths => AppColors.cedarDeep,
       CinematicGlyph.tree || CinematicGlyph.seed => AppColors.cedar,
       CinematicGlyph.flood || CinematicGlyph.sea || CinematicGlyph.tears => AppColors.sky,
-      CinematicGlyph.flame || CinematicGlyph.fall => AppColors.ember,
+      // Chama de UI = amarelo do CTA (não ember laranja).
+      CinematicGlyph.flame || CinematicGlyph.fall => AppColors.accent,
       CinematicGlyph.heart || CinematicGlyph.dove => AppColors.clay,
       CinematicGlyph.crown || CinematicGlyph.gem || CinematicGlyph.lamp => AppColors.accent,
-      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => AppColors.sand,
+      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => AppColors.accent,
       CinematicGlyph.scales || CinematicGlyph.path || CinematicGlyph.target => AppColors.accent,
-      CinematicGlyph.humanity => AppColors.accentSoft,
+      CinematicGlyph.humanity => AppColors.accent,
       CinematicGlyph.echo => AppColors.clay,
       CinematicGlyph.book || CinematicGlyph.scroll || CinematicGlyph.calendar || CinematicGlyph.check =>
-        accent ?? AppColors.primaryLight,
+        accent ?? AppColors.accent,
       CinematicGlyph.tune || CinematicGlyph.share => accent ?? AppColors.accent,
       CinematicGlyph.lock => AppColors.textMutedDark,
       CinematicGlyph.search => AppColors.slate,
       CinematicGlyph.shield => AppColors.cedar,
       CinematicGlyph.mail => AppColors.clay,
       CinematicGlyph.frost => AppColors.sky,
-      CinematicGlyph.qr || CinematicGlyph.copy => accent ?? AppColors.primaryLight,
+      CinematicGlyph.qr || CinematicGlyph.copy => accent ?? AppColors.accent,
       CinematicGlyph.podium || CinematicGlyph.rise => AppColors.accent,
       CinematicGlyph.demote => AppColors.error,
       CinematicGlyph.people => AppColors.clay,
@@ -309,7 +310,16 @@ class _GlyphPainter extends CustomPainter {
     final c = Offset(size.width / 2, size.height / 2);
     final s = size.shortestSide;
 
-    _ink = Color.lerp(color, Colors.white, color.computeLuminance() < 0.35 ? 0.45 : 0.15)!;
+    // Amarelo de marca fica sólido (sem lerp → “dourado”).
+    final isBrandYellow = color.toARGB32() == AppColors.accent.toARGB32() ||
+        color.toARGB32() == AppColors.accentBright.toARGB32();
+    _ink = isBrandYellow
+        ? color
+        : Color.lerp(
+            color,
+            Colors.white,
+            color.computeLuminance() < 0.35 ? 0.45 : 0.15,
+          )!;
     _solid = Paint()..color = _ink;
     _soft = Paint()..color = _ink.withValues(alpha: 0.55);
 

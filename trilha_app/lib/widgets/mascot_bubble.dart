@@ -25,15 +25,21 @@ class MascotBubble extends StatelessWidget {
                 topRight: Radius.circular(16),
                 bottomRight: Radius.circular(16),
               ),
-              border: Border.all(color: dark ? AppColors.accent.withValues(alpha: 0.25) : Colors.black.withValues(alpha: 0.08)),
+              border: Border.all(
+                color: dark
+                    ? AppColors.accent.withValues(alpha: 0.65)
+                    : Colors.black.withValues(alpha: 0.08),
+              ),
             ),
             child: Text(
               message,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.w700,
+              style: AppTypography.body(
+                size: 14,
+                weight: FontWeight.w700,
                 height: 1.35,
-                color: dark ? Colors.white.withValues(alpha: 0.9) : AppColors.text,
+                color: dark
+                    ? AppColors.textOnDark.withValues(alpha: 0.92)
+                    : AppColors.text,
               ),
             ),
           ),

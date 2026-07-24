@@ -109,7 +109,7 @@ Future<void> showVersePreviewDialog(
               ? Text(
                   'Versículo indisponível nesta tradução.',
                   style: AppTypography.body(
-                    color: Colors.white.withValues(alpha: 0.65),
+                    color: AppColors.textOnDark.withValues(alpha: 0.65),
                     height: 1.35,
                   ),
                 )
@@ -134,7 +134,7 @@ Future<void> showVersePreviewDialog(
                           size: 18,
                           height: 1.4,
                           weight: FontWeight.w600,
-                          color: Colors.white.withValues(alpha: 0.92),
+                          color: AppColors.textOnDark.withValues(alpha: 0.92),
                         ),
                       ),
                     ],
@@ -143,7 +143,7 @@ Future<void> showVersePreviewDialog(
                       BibleService.translationName,
                       style: AppTypography.body(
                         size: 11,
-                        color: Colors.white.withValues(alpha: 0.4),
+                        color: AppColors.textOnDark.withValues(alpha: 0.4),
                       ),
                     ),
                   ],
@@ -157,7 +157,7 @@ Future<void> showVersePreviewDialog(
               'Fechar',
               style: AppTypography.title(
                 weight: FontWeight.w700,
-                color: Colors.white.withValues(alpha: 0.65),
+                color: AppColors.textOnDark.withValues(alpha: 0.65),
               ),
             ),
           ),
@@ -170,11 +170,14 @@ Future<void> showVersePreviewDialog(
             },
             style: FilledButton.styleFrom(
               backgroundColor: AppColors.accent,
-              foregroundColor: AppColors.sheet,
+              foregroundColor: AppColors.inkOnAccent,
             ),
             child: Text(
               'Ir para o texto',
-              style: AppTypography.title(weight: FontWeight.w800),
+              style: AppTypography.title(
+                weight: FontWeight.w800,
+                color: AppColors.inkOnAccent,
+              ),
             ),
           ),
         ],
@@ -257,7 +260,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       decoration: BoxDecoration(
         color: AppColors.nightMid,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
+        border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.1)),
       ),
       child: Column(
         children: [
@@ -266,7 +269,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
             width: 36,
             height: 4,
             decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.25),
+              color: AppColors.textOnDark.withValues(alpha: 0.25),
               borderRadius: BorderRadius.circular(2),
             ),
           ),
@@ -283,7 +286,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                         style: AppTypography.display(
                           size: 26,
                           weight: FontWeight.w700,
-                          color: Colors.white,
+                          color: AppColors.textOnDark,
                         ),
                       ),
                       Text(
@@ -301,7 +304,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   onPressed: () => Navigator.pop(context),
                   icon: Icon(
                     Icons.close_rounded,
-                    color: Colors.white.withValues(alpha: 0.6),
+                    color: AppColors.textOnDark.withValues(alpha: 0.6),
                   ),
                 ),
               ],
@@ -317,7 +320,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                 size: 18,
                 height: 1.35,
                 weight: FontWeight.w600,
-                color: Colors.white.withValues(alpha: 0.88),
+                color: AppColors.textOnDark.withValues(alpha: 0.88),
               ),
             ),
           ),
@@ -342,7 +345,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                             : 'Não foi possível carregar o estudo.',
                         textAlign: TextAlign.center,
                         style: AppTypography.body(
-                          color: Colors.white.withValues(alpha: 0.7),
+                          color: AppColors.textOnDark.withValues(alpha: 0.7),
                           height: 1.4,
                         ),
                       ),
@@ -355,7 +358,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     child: Text(
                       'Sem dados de originais para este versículo.',
                       style: AppTypography.body(
-                        color: Colors.white.withValues(alpha: 0.55),
+                        color: AppColors.textOnDark.withValues(alpha: 0.55),
                       ),
                     ),
                   );
@@ -404,7 +407,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                         'Toque numa palavra para ver Strong, morfologia e concordância.',
                         style: AppTypography.body(
                           size: 12,
-                          color: Colors.white.withValues(alpha: 0.45),
+                          color: AppColors.textOnDark.withValues(alpha: 0.45),
                         ),
                       ),
                       const SizedBox(height: 16),
@@ -450,7 +453,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                                       vertical: 10,
                                     ),
                                     decoration: BoxDecoration(
-                                      color: Colors.white.withValues(alpha: 0.05),
+                                      color: AppColors.textOnDark.withValues(alpha: 0.05),
                                       borderRadius: BorderRadius.circular(AppRadii.sm),
                                       border: Border.all(
                                         color: Colors.white.withValues(
@@ -464,7 +467,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                                           child: Text(
                                             label,
                                             style: AppTypography.title(
-                                              color: Colors.white,
+                                              color: AppColors.textOnDark,
                                               weight: FontWeight.w700,
                                               size: 13,
                                             ),
@@ -503,7 +506,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                       style: AppTypography.body(
                         size: 10,
                         height: 1.35,
-                        color: Colors.white.withValues(alpha: 0.32),
+                        color: AppColors.textOnDark.withValues(alpha: 0.32),
                       ),
                     ),
                   ],
@@ -523,7 +526,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
         size: 12,
         weight: FontWeight.w900,
         letterSpacing: 0.4,
-        color: Colors.white.withValues(alpha: 0.55),
+        color: AppColors.textOnDark.withValues(alpha: 0.55),
       ),
     );
   }
@@ -570,7 +573,7 @@ class _TokenChip extends StatelessWidget {
                 style: AppTypography.title(
                   size: rtl ? 18 : 15,
                   weight: FontWeight.w700,
-                  color: Colors.white.withValues(alpha: 0.95),
+                  color: AppColors.textOnDark.withValues(alpha: 0.95),
                 ),
               ),
               const SizedBox(height: 2),
@@ -617,7 +620,7 @@ class _StrongPanel extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.accent.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.25)),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.7)),
       ),
       child: loading
           ? const Padding(
@@ -658,7 +661,7 @@ class _StrongPanel extends StatelessWidget {
                         style: AppTypography.title(
                           size: 15,
                           weight: FontWeight.w800,
-                          color: Colors.white,
+                          color: AppColors.textOnDark,
                         ),
                       ),
                     ),
@@ -683,7 +686,7 @@ class _StrongPanel extends StatelessWidget {
                     style: AppTypography.label(
                       size: 11,
                       weight: FontWeight.w800,
-                      color: Colors.white.withValues(alpha: 0.45),
+                      color: AppColors.textOnDark.withValues(alpha: 0.45),
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -692,7 +695,7 @@ class _StrongPanel extends StatelessWidget {
                     style: AppTypography.body(
                       size: 13,
                       height: 1.4,
-                      color: Colors.white.withValues(alpha: 0.82),
+                      color: AppColors.textOnDark.withValues(alpha: 0.82),
                     ),
                   ),
                 ],
@@ -702,7 +705,7 @@ class _StrongPanel extends StatelessWidget {
                   style: AppTypography.label(
                     size: 12,
                     weight: FontWeight.w900,
-                    color: Colors.white.withValues(alpha: 0.55),
+                    color: AppColors.textOnDark.withValues(alpha: 0.55),
                   ),
                 ),
                 const SizedBox(height: 8),
@@ -722,7 +725,7 @@ class _StrongPanel extends StatelessWidget {
                         title: Text(
                           '$name ${h.chapter}:${h.verse}',
                           style: AppTypography.title(
-                            color: Colors.white,
+                            color: AppColors.textOnDark,
                             weight: FontWeight.w700,
                             size: 13,
                           ),
@@ -732,13 +735,13 @@ class _StrongPanel extends StatelessWidget {
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.body(
-                            color: Colors.white.withValues(alpha: 0.45),
+                            color: AppColors.textOnDark.withValues(alpha: 0.45),
                             size: 12,
                           ),
                         ),
                         trailing: Icon(
                           Icons.chevron_right_rounded,
-                          color: Colors.white.withValues(alpha: 0.3),
+                          color: AppColors.textOnDark.withValues(alpha: 0.3),
                         ),
                         onTap: () => onOpenHit(h),
                       );
@@ -762,7 +765,7 @@ class _StrongPanel extends StatelessWidget {
               style: AppTypography.title(
                 size: 12,
                 weight: FontWeight.w800,
-                color: Colors.white.withValues(alpha: 0.4),
+                color: AppColors.textOnDark.withValues(alpha: 0.4),
               ),
             ),
             TextSpan(
@@ -770,7 +773,7 @@ class _StrongPanel extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w600,
-                color: Colors.white.withValues(alpha: 0.9),
+                color: AppColors.textOnDark.withValues(alpha: 0.9),
               ),
             ),
           ],

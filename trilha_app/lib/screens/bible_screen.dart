@@ -398,12 +398,12 @@ class _TranslationPicker extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: isSelected
                                   ? AppColors.accent.withValues(alpha: 0.14)
-                                  : Colors.white.withValues(alpha: 0.05),
+                                  : AppColors.textOnDark.withValues(alpha: 0.05),
                               borderRadius: BorderRadius.circular(AppRadii.md),
                               border: Border.all(
                                 color: isSelected
-                                    ? AppColors.accent.withValues(alpha: 0.45)
-                                    : Colors.white.withValues(alpha: 0.1),
+                                    ? AppColors.accent.withValues(alpha: 0.7)
+                                    : AppColors.textOnDark.withValues(alpha: 0.1),
                               ),
                             ),
                             child: Row(

@@ -31,7 +31,6 @@ class _SplashScreenState extends State<SplashScreen>
   late final AnimationController _master;
   late final AnimationController _pulse;
 
-  bool _readyToExit = false;
   bool _exiting = false;
   bool _isReturnVisit = false;
   bool _hitClimax = false;
@@ -111,17 +110,17 @@ class _SplashScreenState extends State<SplashScreen>
     }
 
     if (!mounted) return;
-    setState(() => _readyToExit = true);
-    await Future<void>.delayed(const Duration(milliseconds: 280));
-    if (!mounted) return;
+    // Mantém a splash visível por baixo do fade — evita flash do
+    // windowBackground nativo (verde/teal) entre splash e onboarding.
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(
+        opaque: true,
         pageBuilder: (_, __, ___) => next,
         transitionsBuilder: (_, a, __, c) => FadeTransition(
           opacity: CurvedAnimation(parent: a, curve: Curves.easeOutCubic),
           child: c,
         ),
-        transitionDuration: const Duration(milliseconds: 520),
+        transitionDuration: const Duration(milliseconds: 420),
       ),
     );
   }
@@ -145,7 +144,8 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    // Mesmo céu do onboarding — evita salto de fase/cor na transição.
+    const mode = AppearanceMode.morning;
     final appearance = AppearanceStyle.resolve(mode);
 
     return ImmersiveScaffold(
@@ -156,7 +156,6 @@ class _SplashScreenState extends State<SplashScreen>
         builder: (context, _) {
           final t = _master.value;
           final pulse = _pulse.value;
-          final exitFade = _readyToExit ? 0.0 : 1.0;
 
           final rise = CurvedAnimation(
             parent: _master,
@@ -180,103 +179,100 @@ class _SplashScreenState extends State<SplashScreen>
           final tagV = tag.value.clamp(0.0, 1.0);
           final barV = bar.value.clamp(0.0, 1.0);
 
-          return Opacity(
-            opacity: exitFade,
-            child: SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: AppSpace.xxxl,
-                ),
-                child: Column(
-                  children: [
-                    const Spacer(flex: 3),
-                    Opacity(
-                      opacity: riseV,
-                      child: Transform.scale(
-                        scale: 0.7 + 0.3 * riseV,
-                        child: Transform.translate(
-                          offset: Offset(0, 36 * (1 - riseV)),
-                          child: StwayLogo(size: 112, pulse: pulse),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 28),
-                    Opacity(
-                      opacity: titleV,
+          return SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpace.xxxl,
+              ),
+              child: Column(
+                children: [
+                  const Spacer(flex: 3),
+                  Opacity(
+                    opacity: riseV,
+                    child: Transform.scale(
+                      scale: 0.7 + 0.3 * riseV,
                       child: Transform.translate(
-                        offset: Offset(0, 18 * (1 - titleV)),
-                        child: const StwayWordmark(
-                          fontSize: 48,
-                          letterSpacing: 6,
-                        ),
+                        offset: Offset(0, 36 * (1 - riseV)),
+                        child: StwayLogo(size: 112, pulse: pulse),
                       ),
                     ),
-                    const SizedBox(height: 14),
-                    Opacity(
-                      opacity: tagV,
-                      child: Transform.translate(
-                        offset: Offset(0, 12 * (1 - tagV)),
-                        child: Column(
-                          children: [
-                            const StwayTagline(size: 11),
-                            const SizedBox(height: 10),
-                            Text(
-                              'A Bíblia em missões',
-                              textAlign: TextAlign.center,
-                              style: AppTypography.title(
-                                size: 16,
-                                weight: FontWeight.w700,
-                                color: Colors.white.withValues(alpha: 0.92),
-                              ),
-                            ),
-                          ],
-                        ),
+                  ),
+                  const SizedBox(height: 28),
+                  Opacity(
+                    opacity: titleV,
+                    child: Transform.translate(
+                      offset: Offset(0, 18 * (1 - titleV)),
+                      child: const StwayWordmark(
+                        fontSize: 48,
+                        letterSpacing: 6,
                       ),
                     ),
-                    const Spacer(flex: 4),
-                    Opacity(
-                      opacity: barV,
+                  ),
+                  const SizedBox(height: 14),
+                  Opacity(
+                    opacity: tagV,
+                    child: Transform.translate(
+                      offset: Offset(0, 12 * (1 - tagV)),
                       child: Column(
                         children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(AppRadii.pill),
-                            child: SizedBox(
-                              height: 5,
-                              width: size.width * 0.42,
-                              child: Stack(
-                                fit: StackFit.expand,
-                                children: [
-                                  ColoredBox(
-                                    color: Colors.white.withValues(alpha: 0.1),
-                                  ),
-                                  FractionallySizedBox(
-                                    alignment: Alignment.centerLeft,
-                                    widthFactor: t.clamp(0.08, 1.0),
-                                    child: const DecoratedBox(
-                                      decoration: BoxDecoration(
-                                        gradient: AppGradients.gold,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          const SizedBox(height: 14),
+                          const StwayTagline(size: 11),
+                          const SizedBox(height: 10),
                           Text(
-                            'Preparando sua jornada…',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 1.4,
-                              color: Colors.white.withValues(alpha: 0.35),
+                            'A Bíblia em missões',
+                            textAlign: TextAlign.center,
+                            style: AppTypography.title(
+                              size: 16,
+                              weight: FontWeight.w700,
+                              color: AppColors.textOnDark.withValues(alpha: 0.92),
                             ),
                           ),
                         ],
                       ),
                     ),
-                    const SizedBox(height: 36),
-                  ],
-                ),
+                  ),
+                  const Spacer(flex: 4),
+                  Opacity(
+                    opacity: barV,
+                    child: Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(AppRadii.pill),
+                          child: SizedBox(
+                            height: 5,
+                            width: size.width * 0.42,
+                            child: Stack(
+                              fit: StackFit.expand,
+                              children: [
+                                ColoredBox(
+                                  color: AppColors.textOnDark.withValues(alpha: 0.1),
+                                ),
+                                FractionallySizedBox(
+                                  alignment: Alignment.centerLeft,
+                                  widthFactor: t.clamp(0.08, 1.0),
+                                  child: const DecoratedBox(
+                                    decoration: BoxDecoration(
+                                      gradient: AppGradients.gold,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 14),
+                        Text(
+                          'Preparando sua jornada…',
+                          style: AppTypography.label(
+                            size: 10,
+                            letterSpacing: 1.4,
+                            color: AppColors.textOnDark.withValues(alpha: 0.35),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 36),
+                ],
               ),
             ),
           );

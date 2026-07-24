@@ -155,7 +155,7 @@ class _ChestTile extends StatelessWidget {
               style: AppTypography.label(
                 size: 9,
                 weight: FontWeight.w700,
-                color: Colors.white.withValues(alpha: 0.45),
+                color: AppColors.textOnDark.withValues(alpha: 0.45),
               ),
             ),
           ],
@@ -202,7 +202,7 @@ class _ChestOpenDialog extends StatelessWidget {
               style: AppTypography.title(
                 size: 22,
                 weight: FontWeight.w900,
-                color: Colors.white,
+                color: AppColors.textOnDark,
               ),
             ),
             const SizedBox(height: AppSpace.sm),
@@ -211,7 +211,7 @@ class _ChestOpenDialog extends StatelessWidget {
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 13,
-                color: Colors.white.withValues(alpha: 0.65),
+                color: AppColors.textOnDark.withValues(alpha: 0.65),
               ),
             ),
             const SizedBox(height: 18),
@@ -236,7 +236,7 @@ class _ChestOpenDialog extends StatelessWidget {
               child: Text(
                 'Continuar',
                 style: AppTypography.title(
-                  color: Colors.white,
+                  color: AppColors.textOnDark,
                   weight: FontWeight.w800,
                 ),
               ),

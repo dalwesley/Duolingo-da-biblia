@@ -29,15 +29,19 @@ class AppMetrics {
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
 
-  /// Borda de destaque (açafrão).
-  static Color accentBorder({double alpha = 0.45}) =>
+  /// Borda de destaque — amarelo do CTA (nunca ≤0.5: vira “dourado”).
+  static Color accentBorder({double alpha = 0.85}) =>
+      AppColors.accent.withValues(alpha: alpha.clamp(0.55, 1.0));
+
+  /// Fill suave sobre accent (chips) — borda separada via [accentBorder].
+  static Color accentFill({double alpha = 0.14}) =>
       AppColors.accent.withValues(alpha: alpha);
 
-  /// Sombra padrão de card.
+  /// Sombra padrão de card / nav / poço.
   static List<BoxShadow> cardShadow({bool elevated = false, bool accent = false}) => [
         if (accent)
           BoxShadow(
-            color: AppColors.accent.withValues(alpha: elevated ? 0.28 : 0.18),
+            color: AppColors.accent.withValues(alpha: elevated ? 0.32 : 0.22),
             blurRadius: elevated ? 22 : 16,
             offset: const Offset(0, 8),
           ),
@@ -45,6 +49,20 @@ class AppMetrics {
           color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
           blurRadius: elevated ? 16 : 10,
           offset: Offset(0, elevated ? 8 : 4),
+        ),
+      ];
+
+  /// Glow de CTA / badge ouro.
+  static List<BoxShadow> accentGlow({
+    double blur = 18,
+    double alpha = 0.4,
+    Offset offset = const Offset(0, 8),
+  }) =>
+      [
+        BoxShadow(
+          color: AppColors.accent.withValues(alpha: alpha),
+          offset: offset,
+          blurRadius: blur,
         ),
       ];
 }
@@ -78,13 +96,7 @@ class CopperCta extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.4),
-            offset: const Offset(0, 8),
-            blurRadius: 18,
-          ),
-        ],
+        boxShadow: AppMetrics.accentGlow(),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -194,7 +206,11 @@ class CountBadge extends StatelessWidget {
       decoration: BoxDecoration(
         color: filled ? ink.withValues(alpha: 0.14) : Colors.transparent,
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: filled ? null : Border.all(color: ink.withValues(alpha: 0.28)),
+        border: Border.all(
+          color: filled
+              ? ink.withValues(alpha: 0.55)
+              : ink.withValues(alpha: 0.7),
+        ),
       ),
       child: Text(
         text,
@@ -230,13 +246,18 @@ class SoftBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final tone = accent ?? AppColors.accent;
+    final isBrand = tone.toARGB32() == AppColors.accent.toARGB32();
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: tone.withValues(alpha: 0.1),
+        color: tone.withValues(alpha: 0.12),
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: bordered
-            ? Border.all(color: tone.withValues(alpha: 0.22))
+            ? Border.all(
+                color: isBrand
+                    ? AppMetrics.accentBorder(alpha: 0.65)
+                    : tone.withValues(alpha: 0.55),
+              )
             : null,
       ),
       child: Row(
@@ -246,7 +267,7 @@ class SoftBadge extends StatelessWidget {
             CinematicIcon(
               glyph: glyph!,
               size: AppMetrics.chipIcon,
-              accent: tone.withValues(alpha: 0.95),
+              accent: tone,
               framed: false,
             ),
             const SizedBox(width: 4),
@@ -256,7 +277,7 @@ class SoftBadge extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w800,
-              color: textColor ?? a.text.withValues(alpha: 0.9),
+              color: textColor ?? a.text,
               height: 1,
             ),
           ),

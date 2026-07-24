@@ -89,14 +89,14 @@ class _ChapterTitleCard extends StatelessWidget {
         ),
         border: Border.all(
           color: highlighted
-              ? theme.decorColor.withValues(alpha: 0.55)
+              ? AppColors.accent
               : Colors.white.withValues(alpha: 0.12),
           width: highlighted ? 1.4 : 1,
         ),
         boxShadow: [
           if (highlighted)
             BoxShadow(
-              color: theme.decorColor.withValues(alpha: 0.22),
+              color: AppColors.accent.withValues(alpha: 0.22),
               blurRadius: 28,
               offset: const Offset(0, 12),
             )
@@ -125,7 +125,7 @@ class _ChapterTitleCard extends StatelessWidget {
                           size: 10,
                           weight: FontWeight.w700,
                           letterSpacing: 2.6,
-                          color: theme.decorColor.withValues(alpha: 0.5),
+                          color: AppColors.accent.withValues(alpha: 0.85),
                         ),
                       ),
                       const SizedBox(height: AppSpace.sm),
@@ -149,7 +149,7 @@ class _ChapterTitleCard extends StatelessWidget {
                       style: AppTypography.display(
                         size: 18,
                         weight: FontWeight.w500,
-                        color: theme.decorColor.withValues(alpha: 0.45),
+                        color: AppColors.accent.withValues(alpha: 0.85),
                       ),
                     ),
                   ),
@@ -172,14 +172,14 @@ class _ChapterTitleCard extends StatelessWidget {
                 size: 12,
                 weight: FontWeight.w700,
                 letterSpacing: 0.3,
-                color: theme.decorColor.withValues(alpha: 0.88),
+                color: AppColors.accent,
               ),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
               AppProgressBar(
                 value: pct,
-                color: theme.pathActive,
+                color: AppColors.accent,
                 trackColor: Colors.white.withValues(alpha: 0.1),
               ),
             ],

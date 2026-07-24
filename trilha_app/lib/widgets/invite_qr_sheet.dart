@@ -54,7 +54,7 @@ class _InviteQrSheet extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.night,
         borderRadius: BorderRadius.circular(AppRadii.xl),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.3)),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.65)),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,

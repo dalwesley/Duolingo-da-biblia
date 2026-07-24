@@ -75,27 +75,33 @@ class AppearanceStyle {
       };
 
   Color get cardBorder => switch (look) {
-        AppearanceLook.morning => Colors.white.withValues(alpha: 0.14),
-        AppearanceLook.afternoon => Colors.white.withValues(alpha: 0.12),
-        AppearanceLook.night => Colors.white.withValues(alpha: 0.1),
+        AppearanceLook.morning => AppColors.textOnDark.withValues(alpha: 0.14),
+        AppearanceLook.afternoon => AppColors.textOnDark.withValues(alpha: 0.12),
+        AppearanceLook.night => AppColors.textOnDark.withValues(alpha: 0.1),
       };
 
   Color get progressTrack =>
-      Colors.white.withValues(alpha: isDay ? 0.2 : 0.14);
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.2 : 0.14);
 
   Color get navBarFill => switch (look) {
         AppearanceLook.night => AppColors.nightMid,
-        AppearanceLook.morning => const Color(0xFF132321),
-        AppearanceLook.afternoon => const Color(0xFF0E2A26),
+        AppearanceLook.morning => AppColors.cardMorning,
+        AppearanceLook.afternoon => AppColors.cardAfternoon,
       };
 
-  Color get navBarBorder => Colors.white.withValues(
+  Color get navBarBorder => AppColors.textOnDark.withValues(
         alpha: switch (look) {
           AppearanceLook.night => 0.1,
-          AppearanceLook.morning => 0.2,
-          AppearanceLook.afternoon => 0.16,
+          AppearanceLook.morning => 0.16,
+          AppearanceLook.afternoon => 0.14,
         },
       );
+
+  /// Ícone/tab inativo — nunca `Colors.white` cru.
+  Color get iconMuted => textOnDarkInactive;
+
+  Color get textOnDarkInactive =>
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.45 : 0.4);
 
   static AppearanceStyle resolve(AppearanceMode mode, [DateTime? now]) {
     final clock = now ?? DateTime.now();

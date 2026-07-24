@@ -494,7 +494,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       _Phase.quiz => (_questionIndex + (_showFeedback ? 1 : 0)) / total,
       _Phase.reflection => 0.95,
     };
-    final accent = _theme.decorColor;
+    final accent = _theme.pathActive;
     final study = _study;
     final priorReflection = progressSvc.reflectionFor(widget.missionSlug);
 
@@ -522,7 +522,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                   child: AmbientAtmosphere(
                     phase: appearance.phase,
                     accent: accent,
-                    glow: _theme.decorColor,
+                    glow: _theme.pathActive,
                   ),
                 ),
               Positioned.fill(
@@ -601,7 +601,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                                 fit: StackFit.expand,
                                 children: [
                                   ColoredBox(
-                                    color: Colors.white.withValues(alpha: 0.1),
+                                    color: AppColors.textOnDark.withValues(alpha: 0.1),
                                   ),
                                   FractionallySizedBox(
                                     alignment: Alignment.centerLeft,
@@ -775,7 +775,7 @@ class _IntroPanel extends StatelessWidget {
             mission.title,
             isBoss: mission.isBoss,
             size: 118,
-            accent: theme.decorColor,
+            accent: theme.pathActive,
             animate: true,
           ),
           const SizedBox(height: 24),
@@ -792,7 +792,7 @@ class _IntroPanel extends StatelessWidget {
               style: AppTypography.body(
                 size: 15,
                 height: 1.35,
-                color: Colors.white.withValues(alpha: 0.7),
+                color: AppColors.textOnDark.withValues(alpha: 0.7),
               ),
             ),
           ],
@@ -804,7 +804,7 @@ class _IntroPanel extends StatelessWidget {
             style: AppTypography.body(
               size: 13,
               weight: FontWeight.w600,
-              color: Colors.white.withValues(alpha: 0.62),
+              color: AppColors.textOnDark.withValues(alpha: 0.62),
             ),
           ),
           if (difficultyMeta != null) ...[
@@ -812,9 +812,9 @@ class _IntroPanel extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
               decoration: BoxDecoration(
-                color: theme.decorColor.withValues(alpha: 0.18),
+                color: theme.pathActive.withValues(alpha: 0.18),
                 borderRadius: BorderRadius.circular(AppRadii.pill),
-                border: Border.all(color: theme.decorColor.withValues(alpha: 0.4)),
+                border: Border.all(color: theme.pathActive.withValues(alpha: 0.4)),
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -822,13 +822,13 @@ class _IntroPanel extends StatelessWidget {
                   CinematicIcon(
                     glyph: CinematicGlyphResolver.forDifficulty(difficultyMeta!.difficulty.id),
                     size: 22,
-                    accent: theme.decorColor,
+                    accent: theme.pathActive,
                     glowing: false,
                   ),
                   const SizedBox(width: 8),
                   Text(
                     difficultyMeta!.label,
-                    style: AppTypography.title(size: 12, color: theme.decorColor),
+                    style: AppTypography.title(size: 12, color: theme.pathActive),
                   ),
                 ],
               ),
@@ -843,7 +843,7 @@ class _IntroPanel extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w600,
-              color: Colors.white.withValues(alpha: 0.5),
+              color: AppColors.textOnDark.withValues(alpha: 0.5),
             ),
           ),
           const SizedBox(height: AppSpace.section),
@@ -852,7 +852,7 @@ class _IntroPanel extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.28),
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+              border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.12)),
             ),
             child: Text(
               mission.intro,
@@ -860,7 +860,7 @@ class _IntroPanel extends StatelessWidget {
               style: AppTypography.body(
                 size: 15,
                 height: 1.55,
-                color: Colors.white.withValues(alpha: 0.9),
+                color: AppColors.textOnDark.withValues(alpha: 0.9),
               ),
             ),
           ),
@@ -870,7 +870,7 @@ class _IntroPanel extends StatelessWidget {
                 ? 'CAMINHAR NO TEXTO'
                 : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
             onTap: onStart,
-            accent: theme.decorColor,
+            accent: theme.pathActive,
           ),
           const SizedBox(height: AppSpace.xl),
         ],
@@ -999,7 +999,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                       style: AppTypography.body(
                         size: 15,
                         height: 1.5,
-                        color: Colors.white.withValues(alpha: 0.92),
+                        color: AppColors.textOnDark.withValues(alpha: 0.92),
                       ),
                     ),
                     if (!outOfLamps && (widget.verseText != null || question.verseRef != null)) ...[
@@ -1026,7 +1026,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                 style: AppTypography.body(
                                   size: 14,
                                   height: 1.45,
-                                  color: Colors.white.withValues(alpha: 0.9),
+                                  color: AppColors.textOnDark.withValues(alpha: 0.9),
                                 ).copyWith(fontStyle: FontStyle.italic),
                               ),
                             ],
@@ -1096,7 +1096,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                 style: AppTypography.body(
                                   size: 13,
                                   weight: FontWeight.w700,
-                                  color: Colors.white.withValues(alpha: 0.85),
+                                  color: AppColors.textOnDark.withValues(alpha: 0.85),
                                 ),
                               ),
                             ),
@@ -1151,11 +1151,11 @@ class _GoldButton extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: darkText
-                ? [Color.lerp(accent, Colors.white, 0.25)!, accent, Color.lerp(accent, Colors.black, 0.15)!]
-                : [accent, Color.lerp(accent, AppColors.primaryDark, 0.35)!],
-          ),
+          gradient: darkText
+              ? AppGradients.gold
+              : LinearGradient(
+                  colors: [accent, Color.lerp(accent, AppColors.primaryDark, 0.35)!],
+                ),
           borderRadius: BorderRadius.circular(AppRadii.md),
           boxShadow: [BoxShadow(color: accent.withValues(alpha: 0.45), offset: const Offset(0, 4), blurRadius: 12)],
         ),

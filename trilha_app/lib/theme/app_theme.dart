@@ -14,7 +14,7 @@ class AppGradients {
     colors: [AppColors.primaryDark, AppColors.primary, AppColors.primaryLight],
   );
 
-  /// CTA / caminho — creme da trilha.
+  /// Chama — CTAs e badges (alias histórico: gold).
   static const gold = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
@@ -216,6 +216,7 @@ class AppTheme {
         BoxShadow(color: color.withValues(alpha: 0.06), blurRadius: blur * 1.4, spreadRadius: 1),
       ];
 
+  /// Sombra neutra — preferir [AppMetrics.cardShadow] quando houver accent/elevação.
   static List<BoxShadow> cardShadow({bool elevated = false}) => [
         BoxShadow(
           color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),

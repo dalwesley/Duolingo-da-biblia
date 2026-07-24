@@ -1030,13 +1030,11 @@ class _SegmentCell extends StatelessWidget {
           gradient: selected ? AppGradients.gold : null,
           borderRadius: BorderRadius.circular(AppRadii.sm),
           boxShadow: selected
-              ? [
-                  BoxShadow(
-                    color: AppColors.accentDark.withValues(alpha: 0.35),
-                    blurRadius: 10,
-                    offset: const Offset(0, 4),
-                  ),
-                ]
+              ? AppMetrics.accentGlow(
+                  blur: 10,
+                  alpha: 0.35,
+                  offset: const Offset(0, 4),
+                )
               : null,
         ),
         child: child,

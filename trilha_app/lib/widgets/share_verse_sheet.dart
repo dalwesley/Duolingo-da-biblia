@@ -222,7 +222,7 @@ class ShareVerseCard extends StatelessWidget {
           end: Alignment.bottomRight,
           colors: [AppColors.night, AppColors.primaryDark, AppColors.nightMid],
         ),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.7)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

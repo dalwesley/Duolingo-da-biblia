@@ -85,16 +85,14 @@ class _HeroContinueCardState extends State<HeroContinueCard>
               ),
               border: Border.all(
                 color: AppMetrics.accentBorder(
-                  alpha: 0.35 + 0.2 * _pulse.value,
+                  alpha: 0.7 + 0.25 * _pulse.value,
                 ),
                 width: 1.5,
               ),
               boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: glow * 0.55),
-                  blurRadius: 28,
-                  spreadRadius: -4,
-                  offset: const Offset(0, 10),
+                ...AppMetrics.accentGlow(
+                  blur: 28,
+                  alpha: glow * 0.45,
                 ),
                 ...AppMetrics.cardShadow(elevated: true),
               ],
@@ -279,7 +277,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             style: AppTypography.body(
                               size: 13,
                               weight: FontWeight.w700,
-                              color: a.textMuted(0.55),
+                              color: AppColors.accent.withValues(alpha: 0.9),
                             ),
                           ),
                         ),

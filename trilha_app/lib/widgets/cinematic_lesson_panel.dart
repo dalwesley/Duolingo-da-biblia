@@ -285,7 +285,7 @@ class _ScenePrompt extends StatelessWidget {
                 Colors.black.withValues(alpha: 0.3),
               ],
             ),
-            border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
+            border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.14)),
             boxShadow: [
               BoxShadow(
                 color: accent.withValues(alpha: 0.12),
@@ -306,7 +306,7 @@ class _ScenePrompt extends StatelessWidget {
                   weight: FontWeight.w500,
                   fontStyle: FontStyle.italic,
                   height: 1.3,
-                  color: Colors.white.withValues(alpha: 0.55),
+                  color: AppColors.textOnDark.withValues(alpha: 0.55),
                 ),
               ),
               const SizedBox(height: AppSpace.sm),
@@ -384,7 +384,7 @@ class _ScenePrompt extends StatelessWidget {
                                 size: 12,
                                 weight: FontWeight.w600,
                                 height: 1.35,
-                                color: Colors.white.withValues(alpha: 0.72),
+                                color: AppColors.textOnDark.withValues(alpha: 0.72),
                               ).copyWith(fontStyle: FontStyle.italic),
                             ),
                           ],
@@ -395,7 +395,7 @@ class _ScenePrompt extends StatelessWidget {
                               size: 10,
                               weight: FontWeight.w700,
                               letterSpacing: 0.4,
-                              color: Colors.white.withValues(alpha: 0.45),
+                              color: AppColors.textOnDark.withValues(alpha: 0.45),
                             ),
                           ),
                         ],
@@ -664,7 +664,7 @@ class _ConfirmCta extends StatelessWidget {
           textAlign: TextAlign.center,
           style: enabled
               ? AppTypography.cta(size: 14)
-              : AppTypography.cta(size: 14, color: Colors.white.withValues(alpha: 0.38)),
+              : AppTypography.cta(size: 14, color: AppColors.textOnDark.withValues(alpha: 0.38)),
         ),
       ),
     );

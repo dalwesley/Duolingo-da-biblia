@@ -19,7 +19,7 @@ class AppSettings {
     this.sound = true,
     this.notifications = true,
     this.dailyGoal = 1,
-    this.appearanceMode = AppearanceMode.automatic,
+    this.appearanceMode = AppearanceMode.morning,
     this.bibleTranslationId = BibleService.defaultTranslationId,
     this.fontScale = 1.0,
   });
@@ -213,9 +213,9 @@ class ProgressService extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
     _freshInstall = !hasSeenSplash;
-    // Instalação nova → sempre Automático (não herda Tarde/Noite de sessão anterior).
+    // Instalação nova → Manhã (céu estável; usuário pode mudar em Ajustes).
     if (_freshInstall) {
-      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
+      settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
     }
     _loaded = true;
     notifyListeners();
@@ -1352,9 +1352,9 @@ class ProgressService extends ChangeNotifier {
       }
     }
 
-    // Instalação nova neste aparelho: Automático prevalece sobre a nuvem.
+    // Instalação nova neste aparelho: Manhã prevalece sobre a nuvem.
     if (_freshInstall) {
-      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
+      settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
       _freshInstall = false;
     }
 

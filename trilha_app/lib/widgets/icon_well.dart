@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Poço circular — contraste alto para glifos sólidos no escuro.
+/// Poço circular — fundo navy + borda no amarelo do CTA (sem gradiente dourado).
 class IconWell extends StatelessWidget {
   final double size;
   final Color? accent;
@@ -22,22 +22,13 @@ class IconWell extends StatelessWidget {
     bool glowing = false,
   }) {
     final tone = accent ?? AppColors.accent;
-    final lift = Color.lerp(tone, const Color(0xFF3A4A40), 0.35)!;
-    const deep = Color(0xFF0C100E);
 
     return BoxDecoration(
       shape: BoxShape.circle,
-      gradient: RadialGradient(
-        center: const Alignment(-0.32, -0.4),
-        radius: 1.1,
-        colors: [
-          lift,
-          deep,
-        ],
-      ),
+      color: AppColors.nightElevated,
       border: Border.all(
-        color: Color.lerp(tone, Colors.white, 0.35)!.withValues(alpha: 0.55),
-        width: size * 0.035,
+        color: tone,
+        width: (size * 0.04).clamp(1.2, 2.0),
       ),
       boxShadow: [
         BoxShadow(
@@ -45,10 +36,11 @@ class IconWell extends StatelessWidget {
           blurRadius: size * 0.16,
           offset: Offset(0, size * 0.05),
         ),
-        BoxShadow(
-          color: tone.withValues(alpha: glowing ? 0.35 : 0.18),
-          blurRadius: size * (glowing ? 0.32 : 0.18),
-        ),
+        if (glowing)
+          BoxShadow(
+            color: tone.withValues(alpha: 0.32),
+            blurRadius: size * 0.32,
+          ),
       ],
     );
   }

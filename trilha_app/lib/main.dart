@@ -67,13 +67,17 @@ class TrilhaApp extends StatelessWidget {
             darkTheme: AppTheme.dark,
             themeMode: ThemeMode.dark,
             builder: (context, child) {
-              return MediaQuery(
-                data: MediaQuery.of(context).copyWith(
-                  textScaler: TextScaler.linear(
-                    progress.settings.fontScale.clamp(0.85, 1.35),
+              // Fundo estável atrás das rotas — evita flash do window nativo.
+              return ColoredBox(
+                color: AppColors.night,
+                child: MediaQuery(
+                  data: MediaQuery.of(context).copyWith(
+                    textScaler: TextScaler.linear(
+                      progress.settings.fontScale.clamp(0.85, 1.35),
+                    ),
                   ),
+                  child: child ?? const SizedBox.shrink(),
                 ),
-                child: child ?? const SizedBox.shrink(),
               );
             },
             home: const SplashScreen(),

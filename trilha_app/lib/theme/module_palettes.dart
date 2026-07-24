@@ -21,31 +21,31 @@ class ModulePalettes {
   static const creation = ModuleSwatch(
     nodeTop: Color(0xFF5A8AB0),
     nodeBottom: Color(0xFF0E2438),
-    decor: AppColors.accentBright,
+    decor: AppColors.accent,
   );
 
   static const garden = ModuleSwatch(
     nodeTop: Color(0xFF4AB8A8),
     nodeBottom: Color(0xFF0E3840),
-    decor: Color(0xFF7AD0C0),
+    decor: AppColors.accent,
   );
 
   static const afterEden = ModuleSwatch(
     nodeTop: Color(0xFF8A9AB0),
     nodeBottom: Color(0xFF243040),
-    decor: Color(0xFFC4B07A),
+    decor: AppColors.accent,
   );
 
   static const abraham = ModuleSwatch(
     nodeTop: Color(0xFF6A9AB8),
     nodeBottom: Color(0xFF1A3040),
-    decor: AppColors.accentBright,
+    decor: AppColors.accent,
   );
 
   static const isaacJacob = ModuleSwatch(
     nodeTop: Color(0xFF5AB8A8),
     nodeBottom: Color(0xFF0E3840),
-    decor: Color(0xFF7AD0C0),
+    decor: AppColors.accent,
   );
 
   static const joseph = ModuleSwatch(
@@ -57,37 +57,37 @@ class ModulePalettes {
   static const oppression = ModuleSwatch(
     nodeTop: Color(0xFF6A8098),
     nodeBottom: Color(0xFF182030),
-    decor: Color(0xFFB8A878),
+    decor: AppColors.accent,
   );
 
   static const liberation = ModuleSwatch(
     nodeTop: Color(0xFF4A98B8),
     nodeBottom: Color(0xFF0E3040),
-    decor: AppColors.accentBright,
+    decor: AppColors.accent,
   );
 
   static const beginning = ModuleSwatch(
     nodeTop: Color(0xFFFFAB91),
     nodeBottom: Color(0xFF8B3A2A),
-    decor: Color(0xFFFFAB91),
+    decor: AppColors.accent,
   );
 
   static const teaching = ModuleSwatch(
     nodeTop: Color(0xFFE8C4A8),
     nodeBottom: Color(0xFF5C3A2A),
-    decor: AppColors.accentBright,
+    decor: AppColors.accent,
   );
 
   static const cross = ModuleSwatch(
-    nodeTop: AppColors.accentBright,
+    nodeTop: AppColors.accent,
     nodeBottom: Color(0xFF5C2A1A),
-    decor: Color(0xFFFFD56A),
+    decor: AppColors.accent,
   );
 
   static const church = ModuleSwatch(
-    nodeTop: Color(0xFFFFE082),
+    nodeTop: AppColors.accent,
     nodeBottom: Color(0xFF8B6914),
-    decor: Color(0xFFFFE082),
+    decor: AppColors.accent,
   );
 
   static const hope = ModuleSwatch(

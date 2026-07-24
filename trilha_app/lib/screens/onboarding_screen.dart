@@ -128,7 +128,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     await progress.updateSettings(
       progress.settings.copyWith(
         dailyGoal: _dailyGoal,
-        appearanceMode: AppearanceMode.automatic,
+        appearanceMode: AppearanceMode.morning,
       ),
     );
     await progress.setHasSeenOnboarding(true);
@@ -157,7 +157,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   @override
   Widget build(BuildContext context) {
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    // Onboarding fixo em Manhã — evita salto de cor ao abrir a 1ª lição
+    // (Automático à noite mudaria o céu no MainShell).
+    const mode = AppearanceMode.morning;
     final appearance = AppearanceStyle.resolve(mode);
 
     return ImmersiveScaffold(

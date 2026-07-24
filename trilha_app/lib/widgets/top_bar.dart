@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'icon_well.dart';
+import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 class FrostController extends ValueNotifier<double> {
@@ -62,12 +63,11 @@ class StepsBadge extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.35),
-            blurRadius: 10,
-          ),
-        ],
+        boxShadow: AppMetrics.accentGlow(
+          blur: 10,
+          alpha: 0.35,
+          offset: Offset.zero,
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -99,12 +99,13 @@ class StreakBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.1),
+        color: AppColors.textOnDark.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: AppColors.streak.withValues(alpha: 0.45)),
+        border: Border.all(color: AppColors.streak.withValues(alpha: 0.55)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -120,7 +121,7 @@ class StreakBadge extends StatelessWidget {
             '$value',
             style: AppTypography.title(
               size: 13,
-              color: Colors.white,
+              color: a.text,
             ),
           ),
         ],
@@ -422,12 +423,13 @@ class _BackGlyph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconWell(
+    return const IconWell(
       size: 36,
-      child: const Icon(
+      accent: AppColors.accent,
+      child: Icon(
         Icons.arrow_back_rounded,
         size: 18,
-        color: Colors.white,
+        color: AppColors.accent,
       ),
     );
   }
@@ -490,7 +492,7 @@ class _TitleBlock extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: AppTypography.body(
                 size: 11,
-                color: Colors.white.withValues(alpha: 0.6),
+                color: AppColors.textOnDark.withValues(alpha: 0.6),
                 weight: FontWeight.w600,
                 height: 1.05,
               ).copyWith(letterSpacing: 0.3),
@@ -520,7 +522,7 @@ class _TitleBlock extends StatelessWidget {
           style: AppTypography.display(
             size: 20,
             height: 1.05,
-            color: onDark ? Colors.white : AppColors.text,
+            color: onDark ? AppColors.textOnDark : AppColors.text,
           ),
         ),
         if (subtitle != null)
@@ -532,7 +534,7 @@ class _TitleBlock extends StatelessWidget {
               size: 11,
               height: 1.05,
               color: onDark
-                  ? Colors.white.withValues(alpha: 0.55)
+                  ? AppColors.textOnDark.withValues(alpha: 0.55)
                   : AppColors.textMuted,
             ),
           ),

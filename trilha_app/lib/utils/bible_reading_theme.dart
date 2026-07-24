@@ -66,15 +66,15 @@ class BibleReadingStyle {
       return BibleReadingStyle(
         isDay: true,
         page: AppColors.surface,
-        pageBorder: const Color(0xFFC8D0DC),
+        pageBorder: AppColors.textMuted.withValues(alpha: 0.35),
         ink: AppColors.text,
         inkMuted: AppColors.textMuted,
-        verseNumber: AppColors.sandDeep,
+        verseNumber: AppColors.accentDark,
         highlightFill: AppColors.accent.withValues(alpha: 0.22),
-        highlightBorder: AppColors.accentDark.withValues(alpha: 0.55),
+        highlightBorder: AppColors.accent,
         savedFill: AppColors.accent.withValues(alpha: 0.1),
         chrome: AppColors.textOnDark,
-        chromeBorder: const Color(0xFFB8C4D0),
+        chromeBorder: AppColors.textMuted.withValues(alpha: 0.4),
         chipFill: const Color(0xFFDCE2EA),
       );
     }
@@ -84,12 +84,12 @@ class BibleReadingStyle {
       pageBorder: AppColors.nightLight,
       ink: AppColors.textOnDark,
       inkMuted: AppColors.textMutedDark,
-      verseNumber: AppColors.accentBright,
+      verseNumber: AppColors.accent,
       highlightFill: AppColors.accent.withValues(alpha: 0.18),
-      highlightBorder: AppColors.accent.withValues(alpha: 0.4),
+      highlightBorder: AppColors.accent.withValues(alpha: 0.7),
       savedFill: AppColors.accent.withValues(alpha: 0.08),
       chrome: AppColors.nightMid,
-      chromeBorder: const Color(0xFF2A2A3A),
+      chromeBorder: AppColors.nightElevated,
       chipFill: AppColors.nightLight,
     );
   }

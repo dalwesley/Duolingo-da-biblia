@@ -253,7 +253,7 @@ class GlassCard extends StatelessWidget {
         color: color ?? style.cardFill,
         border: Border.all(
           color: accent
-              ? AppMetrics.accentBorder(alpha: elevated ? 0.55 : 0.42)
+              ? AppMetrics.accentBorder(alpha: elevated ? 0.9 : 0.75)
               : style.cardBorder,
           width: accent ? 1.5 : 1,
         ),
