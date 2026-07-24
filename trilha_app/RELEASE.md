@@ -2,27 +2,37 @@
 
 ## Pré-requisitos de produção
 
-- [ ] Keystore de release em máquina segura (não commitado)
-- [ ] `android/key.properties` preenchido (ver `key.properties.example`)
+- [x] Keystore de release em máquina segura (não commitado) — `~/.stway/stway-release.keystore`
+- [x] `android/key.properties` preenchido (gitignored; ver `key.properties.example`)
 - [ ] Firebase Crashlytics + Analytics ativos no Console
-- [ ] SHA-1/SHA-256 do keystore no Firebase (Google Sign-In)
+- [ ] SHA-1/SHA-256 do keystore no Firebase (Google Sign-In) — ver fingerprints abaixo
 - [ ] `firestore.rules` publicados (`firebase deploy --only firestore:rules`)
 - [ ] Conteúdo seeded (`cd admin && npm run seed`)
 - [ ] iOS: `GoogleService-Info.plist` + `flutterfire configure` (ainda pendente)
 
-## Build de release (Android)
+### Fingerprints do upload key (cole no Firebase → Project settings → Android app)
 
-1. Crie um keystore (uma vez):
-```bash
-keytool -genkey -v -keystore ~/steway-release.keystore -alias steway -keyalg RSA -keysize 2048 -validity 10000
+```
+SHA-1:   22:07:64:79:DE:62:17:88:8B:B0:E0:9F:9C:26:44:A1:E9:1B:B5:71
+SHA-256: 88:73:25:4D:9D:17:5F:B0:32:E2:C2:A8:EA:62:17:3C:67:70:B3:56:0C:4E:F9:EB:D7:73:BA:AE:62:97:E9:43
 ```
 
-2. Crie `trilha_app/android/key.properties` (não commitar):
+Credenciais locais: `~/.stway/release-credentials.txt` (guarde no password manager e apague o arquivo).
+
+## Build de release (Android)
+
+1. Keystore (já criado nesta máquina):
+```bash
+# Localização: ~/.stway/stway-release.keystore
+# Alias: stway
+```
+
+2. `trilha_app/android/key.properties` (não commitar) — já configurado localmente:
 ```properties
 storePassword=SUA_SENHA
 keyPassword=SUA_SENHA
-keyAlias=steway
-storeFile=/caminho/absoluto/para/steway-release.keystore
+keyAlias=stway
+storeFile=/Users/SEU_USER/.stway/stway-release.keystore
 ```
 
 Sem `key.properties`, o Gradle usa signing **debug** (só para `flutter run --release` local).
@@ -35,7 +45,7 @@ dart run flutter_launcher_icons
 flutter build appbundle --release
 ```
 
-O AAB estará em `build/app/outputs/bundle/release/`.
+O AAB estará em `build/app/outputs/bundle/release/app-release.aab`.
 
 ## Play Store — Teste interno (beta fechado)
 

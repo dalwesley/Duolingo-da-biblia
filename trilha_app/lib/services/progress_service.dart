@@ -209,9 +209,10 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> load() async {
     // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
-    // Splash visto: preferência de aparelho (não é progresso do usuário).
+    // Splash + onboarding: gates de aparelho (não dependem da nuvem no boot).
     final prefs = await SharedPreferences.getInstance();
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
+    hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
     _freshInstall = !hasSeenSplash;
     // Instalação nova → Manhã (céu estável; usuário pode mudar em Ajustes).
     if (_freshInstall) {
@@ -364,6 +365,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Remove chaves de progresso locais (após migrar/hidratar da nuvem).
+  /// Mantém [_keyHasSeenOnboarding] — gate de aparelho (como splash).
   Future<void> clearLegacyLocalPrefs() async {
     final prefs = await SharedPreferences.getInstance();
     const keys = [
@@ -372,7 +374,6 @@ class ProgressService extends ChangeNotifier {
       _keyLastPlayed,
       _keyCompleted,
       _keyMissionsToday,
-      _keyHasSeenOnboarding,
       _keyUserName,
       _keySound,
       _keyNotifications,
@@ -413,7 +414,8 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Zera memória da sessão (logout) — não toca na nuvem.
-  void resetMemoryToDefaults() {
+  /// Limpa o gate local de onboarding (é por aparelho+conta na prática).
+  Future<void> resetMemoryToDefaults() async {
     steps = 0;
     streak = 0;
     lastPlayedDate = null;
@@ -455,6 +457,8 @@ class ProgressService extends ChangeNotifier {
     brokenStreak = 0;
     lastComebackShownDate = null;
     comebackBonusPending = false;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyHasSeenOnboarding);
     notifyListeners();
   }
 
@@ -1136,6 +1140,8 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> setHasSeenOnboarding(bool value) async {
     hasSeenOnboarding = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyHasSeenOnboarding, value);
     await _save();
     notifyListeners();
   }
@@ -1252,10 +1258,23 @@ class ProgressService extends ChangeNotifier {
           weeklySteps;
     }
 
-    if (version >= 2) {
-      if (data.containsKey('hasSeenOnboarding')) {
-        hasSeenOnboarding = data['hasSeenOnboarding'] == true;
+    // Onboarding: qualquer versão. False + progresso = race antiga na splash
+    // (save assíncrono gravava false depois do finish) — recupera.
+    if (data.containsKey('hasSeenOnboarding')) {
+      final cloudSeen = data['hasSeenOnboarding'] == true;
+      if (cloudSeen) {
+        hasSeenOnboarding = true;
+      } else if (completedMissions.isNotEmpty || steps > 0) {
+        hasSeenOnboarding = true;
+      } else {
+        hasSeenOnboarding = false;
       }
+    } else if (!hasSeenOnboarding &&
+        (completedMissions.isNotEmpty || steps > 0)) {
+      hasSeenOnboarding = true;
+    }
+
+    if (version >= 2) {
       lastWeekSteps = (data['lastWeekSteps'] as num?)?.toInt() ??
           (data['lastWeekXp'] as num?)?.toInt() ??
           lastWeekSteps;
@@ -1357,6 +1376,10 @@ class ProgressService extends ChangeNotifier {
       settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
       _freshInstall = false;
     }
+
+    // Espelha o gate no aparelho (sobrevive a falha de rede no próximo boot).
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyHasSeenOnboarding, hasSeenOnboarding);
 
     _ensureMissionsDay();
     _ensureQuestDay();

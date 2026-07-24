@@ -208,7 +208,6 @@ class _QuestGroupPanel extends StatelessWidget {
                   _QuestRow(
                     quest: quests[i],
                     progress: progress,
-                    accent: meta.accent,
                     onTap: onQuestTap,
                   ),
                 ],
@@ -224,13 +223,11 @@ class _QuestGroupPanel extends StatelessWidget {
 class _QuestRow extends StatelessWidget {
   final DailyQuest quest;
   final ProgressService progress;
-  final Color accent;
   final void Function(DailyQuest quest)? onTap;
 
   const _QuestRow({
     required this.quest,
     required this.progress,
-    required this.accent,
     this.onTap,
   });
 
@@ -261,6 +258,9 @@ class _QuestRow extends StatelessWidget {
               CinematicIcon(
                 glyph: CinematicGlyphResolver.forQuest(q.id),
                 size: 28,
+                accent: claimed
+                    ? AppColors.teal
+                    : CinematicGlyphResolver.accentForQuest(q.id),
                 glowing: false,
               ),
               const SizedBox(width: 10),
@@ -295,7 +295,9 @@ class _QuestRow extends StatelessWidget {
                     const SizedBox(height: 5),
                     AppProgressBar(
                       value: pct,
-                      color: claimed ? AppColors.teal : accent,
+                      color: claimed
+                          ? AppColors.teal
+                          : CinematicGlyphResolver.accentForQuest(q.id),
                     ),
                   ],
                 ),

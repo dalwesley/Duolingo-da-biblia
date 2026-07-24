@@ -384,14 +384,6 @@ class _SettingsScreenState extends State<SettingsScreen>
                       glyph: CinematicGlyph.path,
                       expanded: true,
                       onTap: () async {
-                        final backend = context.read<BackendService>();
-                        final league = context.read<LeagueService>();
-                        await progress.setHasSeenOnboarding(false);
-                        await backend.saveNow(
-                          progress,
-                          LeagueService.weekKey(),
-                          league: league,
-                        );
                         if (!mounted) return;
                         await Navigator.of(context).pushAndRemoveUntil(
                           MaterialPageRoute<void>(
@@ -857,7 +849,7 @@ class _SettingsScreenState extends State<SettingsScreen>
       );
       return;
     }
-    progress.resetMemoryToDefaults();
+    await progress.resetMemoryToDefaults();
     await context.read<LeagueService>().resetForLogout();
     if (!mounted) return;
     Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(

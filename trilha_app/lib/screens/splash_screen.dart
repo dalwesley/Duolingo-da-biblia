@@ -96,17 +96,22 @@ class _SplashScreenState extends State<SplashScreen>
       final league = context.read<LeagueService>();
       await backend.hydrateProgress(progress, league: league);
       if (!mounted) return;
-      unawaited(() async {
-        await backend.settleAndSyncLeague(progress, league);
-        await progress.clearLegacyLocalPrefs();
-      }());
-      unawaited(ContentCatalogService.instance.ensureLoaded());
-      unawaited(AnalyticsService.instance.setUserId(backend.uid));
-      unawaited(AnalyticsService.instance.logAppOpen());
-
       next = progress.hasSeenOnboarding
           ? const MainShell()
           : const OnboardingScreen();
+
+      // Só sincroniza liga/progresso se já passou do onboarding.
+      // Senão o save assíncrono pode gravar hasSeenOnboarding:false
+      // depois do finish() e reabrir a intro no próximo boot.
+      if (progress.hasSeenOnboarding) {
+        unawaited(() async {
+          await backend.settleAndSyncLeague(progress, league);
+          await progress.clearLegacyLocalPrefs();
+        }());
+      }
+      unawaited(ContentCatalogService.instance.ensureLoaded());
+      unawaited(AnalyticsService.instance.setUserId(backend.uid));
+      unawaited(AnalyticsService.instance.logAppOpen());
     }
 
     if (!mounted) return;

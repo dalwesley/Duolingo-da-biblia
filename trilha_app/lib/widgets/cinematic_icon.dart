@@ -143,22 +143,44 @@ class CinematicGlyphResolver {
     };
   }
 
+  /// Cor por quest — home/jogo: cada bônus com identidade própria.
+  static Color accentForQuest(String id) {
+    return switch (id) {
+      'mission' => AppColors.accent,
+      'accuracy' => AppColors.teal,
+      'perfect' => AppColors.sand,
+      'read' => AppColors.cedar,
+      'bookmark' => AppColors.sky,
+      'seasonal' => AppColors.primaryLight,
+      'memory' => AppColors.clay,
+      'w_missions' => AppColors.accent,
+      'w_days' => AppColors.ember,
+      'w_perfect' => AppColors.medalGold,
+      _ => AppColors.accent,
+    };
+  }
+
   static Color paletteFor(CinematicGlyph glyph, {Color? accent}) {
     return switch (glyph) {
-      CinematicGlyph.sun || CinematicGlyph.spark || CinematicGlyph.star => AppColors.accent,
+      CinematicGlyph.sun || CinematicGlyph.spark => AppColors.accent,
+      CinematicGlyph.star => AppColors.sky,
       CinematicGlyph.cosmos || CinematicGlyph.depths => AppColors.cedarDeep,
       CinematicGlyph.tree || CinematicGlyph.seed => AppColors.cedar,
       CinematicGlyph.flood || CinematicGlyph.sea || CinematicGlyph.tears => AppColors.sky,
-      // Chama de UI = amarelo do CTA (não ember laranja).
-      CinematicGlyph.flame || CinematicGlyph.fall => AppColors.accent,
+      CinematicGlyph.flame => AppColors.ember,
+      CinematicGlyph.fall => AppColors.ember,
       CinematicGlyph.heart || CinematicGlyph.dove => AppColors.clay,
-      CinematicGlyph.crown || CinematicGlyph.gem || CinematicGlyph.lamp => AppColors.accent,
-      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => AppColors.accent,
-      CinematicGlyph.scales || CinematicGlyph.path || CinematicGlyph.target => AppColors.accent,
-      CinematicGlyph.humanity => AppColors.accent,
+      CinematicGlyph.crown || CinematicGlyph.lamp => AppColors.sand,
+      CinematicGlyph.gem => AppColors.medalGold,
+      CinematicGlyph.chain || CinematicGlyph.mountain || CinematicGlyph.tower => AppColors.slate,
+      CinematicGlyph.scales || CinematicGlyph.path => AppColors.accent,
+      CinematicGlyph.target => AppColors.teal,
+      CinematicGlyph.humanity => AppColors.clay,
       CinematicGlyph.echo => AppColors.clay,
-      CinematicGlyph.book || CinematicGlyph.scroll || CinematicGlyph.calendar || CinematicGlyph.check =>
-        accent ?? AppColors.accent,
+      CinematicGlyph.book => accent ?? AppColors.accent,
+      CinematicGlyph.scroll => accent ?? AppColors.cedar,
+      CinematicGlyph.calendar => accent ?? AppColors.primaryLight,
+      CinematicGlyph.check => accent ?? AppColors.teal,
       CinematicGlyph.tune || CinematicGlyph.share => accent ?? AppColors.accent,
       CinematicGlyph.lock => AppColors.textMutedDark,
       CinematicGlyph.search => AppColors.slate,

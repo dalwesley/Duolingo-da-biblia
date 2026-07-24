@@ -359,34 +359,70 @@ class _PromiseBeat extends StatelessWidget {
                   height: 1.15,
                 ),
               ),
-              const SizedBox(height: 14),
-              const CopperCta(
-                label: 'Continuar',
-                showArrow: true,
-                trailing: null,
-                padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+              const SizedBox(height: 8),
+              Text(
+                'Sua primeira missão te espera.',
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w600,
+                  color: a.textMuted(0.55),
+                ),
               ),
             ],
           ),
         ),
-        const SizedBox(height: 14),
-        const _FeatureRow(
-          glyph: CinematicGlyph.path,
-          title: 'Missões curtas',
-          subtitle: 'Perguntas + feedback, no seu tempo',
+        const SizedBox(height: 22),
+        const _FeatureList(
+          items: [
+            (
+              glyph: CinematicGlyph.path,
+              title: 'Missões curtas',
+              subtitle: 'Perguntas + feedback, no seu tempo',
+            ),
+            (
+              glyph: CinematicGlyph.book,
+              title: 'Estudo na passagem',
+              subtitle: 'Contexto e Bíblia offline a um toque',
+            ),
+            (
+              glyph: CinematicGlyph.flame,
+              title: 'Sequência diária',
+              subtitle: 'Hábito que sustenta o aprendizado',
+            ),
+          ],
         ),
-        const SizedBox(height: 10),
-        const _FeatureRow(
-          glyph: CinematicGlyph.book,
-          title: 'Estudo na passagem',
-          subtitle: 'Contexto e Bíblia offline a um toque',
-        ),
-        const SizedBox(height: 10),
-        const _FeatureRow(
-          glyph: CinematicGlyph.flame,
-          title: 'Sequência diária',
-          subtitle: 'Hábito que sustenta o aprendizado',
-        ),
+      ],
+    );
+  }
+}
+
+/// Lista informativa — sem card/borda, para não parecer botão.
+class _FeatureList extends StatelessWidget {
+  final List<({CinematicGlyph glyph, String title, String subtitle})> items;
+
+  const _FeatureList({required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      children: [
+        for (var i = 0; i < items.length; i++) ...[
+          if (i > 0)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: Divider(
+                height: 1,
+                thickness: 1,
+                color: a.text.withValues(alpha: 0.08),
+              ),
+            ),
+          _FeatureRow(
+            glyph: items[i].glyph,
+            title: items[i].title,
+            subtitle: items[i].subtitle,
+          ),
+        ],
       ],
     );
   }
@@ -406,44 +442,36 @@ class _FeatureRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
-      child: Row(
-        children: [
-          Container(
-            width: AppMetrics.leadingIcon + 6,
-            height: AppMetrics.leadingIcon + 6,
-            decoration: BoxDecoration(
-              color: AppColors.accent.withValues(alpha: 0.14),
-              borderRadius: BorderRadius.circular(AppRadii.sm),
-            ),
-            child: Center(
-              child: CinematicIcon(
-                glyph: glyph,
-                size: 22,
-                accent: AppColors.accent,
-                framed: false,
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 2),
+          child: CinematicIcon(
+            glyph: glyph,
+            size: 20,
+            accent: AppColors.accent,
+            framed: false,
+          ),
+        ),
+        const SizedBox(width: 14),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                title,
+                style: AppTypography.title(size: 14, color: a.text),
               ),
-            ),
+              const SizedBox(height: 2),
+              Text(
+                subtitle,
+                style: AppTypography.body(size: 12, color: a.textMuted(0.5)),
+              ),
+            ],
           ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: AppTypography.title(size: 14, color: a.text),
-                ),
-                Text(
-                  subtitle,
-                  style: AppTypography.body(size: 12, color: a.textMuted(0.5)),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -457,65 +485,58 @@ class _WhyBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return ListView(
+    return Padding(
       padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
-      children: [
-        Text(
-          'SEU OBJETIVO',
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
+      child: Column(
+        children: [
+          Text(
+            'Qual o seu objetivo?',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 26, height: 1.15),
           ),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          'O que te traz ao Stway?',
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 26, height: 1.15),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          'Isso ajuda a ajustar o ritmo das missões.',
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            color: a.textMuted(0.5),
-          ),
-        ),
-        const SizedBox(height: 18),
-        ..._Why.values.map((w) {
-          final on = selected == w;
-          return Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: _ChoiceCard(
-              glyph: w.glyph,
-              label: w.label,
-              selected: on,
-              onTap: () => onSelect(w),
+          const SizedBox(height: 6),
+          Text(
+            'Escolha o que você espera dessa jornada.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              color: a.textMuted(0.5),
             ),
-          );
-        }),
-        AnimatedOpacity(
-          duration: const Duration(milliseconds: 220),
-          opacity: selected == null ? 0 : 1,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 4),
-            child: GlassCard(
-              child: Text(
-                selected?.echo ?? '',
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 14,
-                  weight: FontWeight.w600,
-                  color: AppColors.accent.withValues(alpha: 0.95),
+          ),
+          const SizedBox(height: 18),
+          ..._Why.values.map((w) {
+            final on = selected == w;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: _ChoiceCard(
+                glyph: w.glyph,
+                label: w.label,
+                selected: on,
+                onTap: () => onSelect(w),
+              ),
+            );
+          }),
+          Expanded(
+            child: AnimatedOpacity(
+              duration: const Duration(milliseconds: 220),
+              opacity: selected == null ? 0 : 1,
+              child: Center(
+                child: GlassCard(
+                  child: Text(
+                    selected?.echo ?? '',
+                    textAlign: TextAlign.center,
+                    style: AppTypography.body(
+                      size: 14,
+                      weight: FontWeight.w600,
+                      color: AppColors.accent.withValues(alpha: 0.95),
+                    ),
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -540,131 +561,141 @@ class _RhythmBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return ListView(
+    return Padding(
       padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
-      children: [
-        Text(
-          'SEU RITMO',
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
-          ),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          'Personalize sua jornada',
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 26, height: 1.15),
-        ),
-        const SizedBox(height: 18),
-        Text(
-          'Nome',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.2,
-            color: a.textMuted(0.45),
-          ),
-        ),
-        const SizedBox(height: 8),
-        GlassCard(
-          padding: EdgeInsets.zero,
-          child: TextField(
-            controller: controller,
-            textCapitalization: TextCapitalization.words,
-            style: AppTypography.title(size: 16, color: a.text),
-            cursorColor: AppColors.accent,
-            decoration: InputDecoration(
-              hintText: 'Como te chamamos?',
-              hintStyle: TextStyle(color: a.textMuted(0.35)),
-              filled: true,
-              fillColor: Colors.transparent,
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 18,
-                vertical: 16,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+            child: Text(
+              'SEU RITMO',
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.8,
+                color: AppColors.accent,
               ),
-              border: InputBorder.none,
             ),
           ),
-        ),
-        const SizedBox(height: 20),
-        Text(
-          'Meta diária',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.2,
-            color: a.textMuted(0.45),
+          const SizedBox(height: 8),
+          Center(
+            child: Text(
+              'Personalize sua jornada',
+              textAlign: TextAlign.center,
+              style: AppTypography.display(size: 26, height: 1.15),
+            ),
           ),
-        ),
-        const SizedBox(height: 8),
-        Row(
-          children: [1, 2, 3].map((g) {
-            final on = dailyGoal == g;
-            return Expanded(
-              child: Padding(
-                padding: EdgeInsets.only(right: g < 3 ? 10 : 0),
-                child: GestureDetector(
-                  onTap: () => onGoal(g),
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
-                    padding: const EdgeInsets.symmetric(vertical: 16),
-                    decoration: BoxDecoration(
-                      color: on
-                          ? AppColors.accent.withValues(alpha: 0.16)
-                          : a.cardFill,
-                      borderRadius: BorderRadius.circular(AppRadii.lg),
-                      border: Border.all(
+          const SizedBox(height: 18),
+          Text(
+            'Nome',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 1.2,
+              color: a.textMuted(0.45),
+            ),
+          ),
+          const SizedBox(height: 8),
+          GlassCard(
+            padding: EdgeInsets.zero,
+            child: TextField(
+              controller: controller,
+              textCapitalization: TextCapitalization.words,
+              style: AppTypography.title(size: 16, color: a.text),
+              cursorColor: AppColors.accent,
+              decoration: InputDecoration(
+                hintText: 'Como te chamamos?',
+                hintStyle: TextStyle(color: a.textMuted(0.35)),
+                filled: true,
+                fillColor: Colors.transparent,
+                contentPadding: const EdgeInsets.symmetric(
+                  horizontal: 18,
+                  vertical: 16,
+                ),
+                border: InputBorder.none,
+              ),
+            ),
+          ),
+          const SizedBox(height: 20),
+          Text(
+            'Meta diária',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 1.2,
+              color: a.textMuted(0.45),
+            ),
+          ),
+          const SizedBox(height: 8),
+          Row(
+            children: [1, 2, 3].map((g) {
+              final on = dailyGoal == g;
+              return Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(right: g < 3 ? 10 : 0),
+                  child: GestureDetector(
+                    onTap: () => onGoal(g),
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 200),
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      decoration: BoxDecoration(
                         color: on
-                            ? AppMetrics.accentBorder(alpha: 0.75)
-                            : a.cardBorder,
-                        width: on ? 1.5 : 1,
+                            ? AppColors.accent.withValues(alpha: 0.16)
+                            : a.cardFill,
+                        borderRadius: BorderRadius.circular(AppRadii.lg),
+                        border: Border.all(
+                          color: on
+                              ? AppMetrics.accentBorder(alpha: 0.75)
+                              : a.cardBorder,
+                          width: on ? 1.5 : 1,
+                        ),
+                        boxShadow: AppMetrics.cardShadow(accent: on),
                       ),
-                      boxShadow: AppMetrics.cardShadow(accent: on),
-                    ),
-                    child: Column(
-                      children: [
-                        Text(
-                          '$g',
-                          style: AppTypography.display(
-                            size: 28,
-                            weight: FontWeight.w900,
-                            color: on ? AppColors.accent : a.textMuted(0.7),
-                            height: 1,
+                      child: Column(
+                        children: [
+                          Text(
+                            '$g',
+                            style: AppTypography.display(
+                              size: 28,
+                              weight: FontWeight.w900,
+                              color: on ? AppColors.accent : a.textMuted(0.7),
+                              height: 1,
+                            ),
                           ),
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          g == 1 ? 'lição' : 'lições',
-                          style: AppTypography.body(
-                            size: 11,
-                            weight: FontWeight.w700,
-                            color: on
-                                ? AppColors.accent.withValues(alpha: 0.95)
-                                : a.textMuted(0.54),
+                          const SizedBox(height: 4),
+                          Text(
+                            g == 1 ? 'lição' : 'lições',
+                            style: AppTypography.body(
+                              size: 11,
+                              weight: FontWeight.w700,
+                              color: on
+                                  ? AppColors.accent.withValues(alpha: 0.95)
+                                  : a.textMuted(0.54),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
+              );
+            }).toList(),
+          ),
+          Expanded(
+            child: Center(
+              child: GlassCard(
+                child: Text(
+                  _goalEcho,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w600,
+                    color: AppColors.accent.withValues(alpha: 0.9),
+                  ),
+                ),
               ),
-            );
-          }).toList(),
-        ),
-        const SizedBox(height: 14),
-        GlassCard(
-          child: Text(
-            _goalEcho,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w600,
-              color: AppColors.accent.withValues(alpha: 0.9),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -680,133 +711,244 @@ class _ThresholdBeat extends StatelessWidget {
     required this.dailyGoal,
   });
 
+  String get _goalLabel =>
+      dailyGoal == 1 ? '1 lição/dia' : '$dailyGoal lições/dia';
+
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final greeting = name.isEmpty ? 'Aprendiz' : name;
-    return ListView(
+    return Padding(
       padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
-      children: [
-        Text(
-          'TUDO PRONTO',
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
+      child: Column(
+        children: [
+          Text(
+            'TUDO PRONTO',
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 1.8,
+              color: AppColors.accent,
+            ),
           ),
-        ),
-        const SizedBox(height: 8),
-        Text(
-          '$greeting, vamos começar',
-          textAlign: TextAlign.center,
-          style: AppTypography.display(size: 26, height: 1.15),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          'Sua primeira trilha já está preparada.',
-          textAlign: TextAlign.center,
-          style: AppTypography.body(size: 13, color: a.textMuted(0.5)),
-        ),
-        const SizedBox(height: 20),
-        GlassCard(
-          accent: true,
-          elevated: true,
-          radius: AppMetrics.heroRadius,
-          padding: const EdgeInsets.all(AppSpace.screen),
-          child: Column(
+          const SizedBox(height: 8),
+          Text(
+            '$greeting, a jornada\ncomeça agora',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 28, height: 1.12),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            why?.echo ?? 'Sua primeira trilha já está preparada.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w600,
+              color: a.textMuted(0.55),
+            ),
+          ),
+          const SizedBox(height: 22),
+          GlassCard(
+            accent: true,
+            elevated: true,
+            radius: AppMetrics.heroRadius,
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
+                      decoration: BoxDecoration(
+                        color: a.cardFillSoft,
+                        borderRadius: BorderRadius.circular(AppRadii.pill),
+                        border: Border.all(color: a.cardBorder),
+                      ),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          const CinematicIcon(
+                            glyph: CinematicGlyph.path,
+                            size: 16,
+                            accent: AppColors.accent,
+                            framed: false,
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            'GÊNESIS 1–11',
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 1.1,
+                              color: a.text.withValues(alpha: 0.9),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const Spacer(),
+                    const CinematicIcon(
+                      glyph: CinematicGlyph.book,
+                      size: 34,
+                      accent: AppColors.accent,
+                      framed: false,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  'PRIMEIRA LIÇÃO',
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 1.4,
+                    color: AppColors.accent,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  'Quem criou o mundo?',
+                  style: AppTypography.display(
+                    size: 24,
+                    weight: FontWeight.w900,
+                    height: 1.15,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  'Do começo — no princípio de tudo',
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w600,
+                    color: a.textMuted(0.55),
+                  ),
+                ),
+                const SizedBox(height: 16),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    _Chip(
+                      label: why?.label ?? 'Jornada',
+                      glyph: why?.glyph ?? CinematicGlyph.path,
+                    ),
+                    _Chip(
+                      label: _goalLabel,
+                      glyph: CinematicGlyph.flame,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Center(
+              child: _JourneySteps(
+                steps: const [
+                  (
+                    number: '1',
+                    title: 'Leia a passagem',
+                    subtitle: 'Contexto curto, Bíblia offline',
+                  ),
+                  (
+                    number: '2',
+                    title: 'Responda as missões',
+                    subtitle: 'Perguntas + feedback imediato',
+                  ),
+                  (
+                    number: '3',
+                    title: 'Volte amanhã',
+                    subtitle: 'A sequência sustenta o hábito',
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _JourneySteps extends StatelessWidget {
+  final List<({String number, String title, String subtitle})> steps;
+
+  const _JourneySteps({required this.steps});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        for (var i = 0; i < steps.length; i++) ...[
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 6,
-                    ),
-                    decoration: BoxDecoration(
-                      color: a.cardFillSoft,
-                      borderRadius: BorderRadius.circular(AppRadii.pill),
-                      border: Border.all(color: a.cardBorder),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const CinematicIcon(
-                          glyph: CinematicGlyph.path,
-                          size: 16,
-                          accent: AppColors.accent,
-                          framed: false,
+              SizedBox(
+                width: 28,
+                child: Column(
+                  children: [
+                    Container(
+                      width: 28,
+                      height: 28,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.accent.withValues(alpha: 0.16),
+                        border: Border.all(
+                          color: AppMetrics.accentBorder(alpha: 0.65),
                         ),
-                        const SizedBox(width: 6),
-                        Text(
-                          'GÊNESIS 1–11',
-                          style: AppTypography.label(
-                            size: 10,
-                            letterSpacing: 1.1,
-                            color: a.text.withValues(alpha: 0.9),
-                          ),
+                      ),
+                      child: Text(
+                        steps[i].number,
+                        style: AppTypography.label(
+                          size: 12,
+                          color: AppColors.accent,
                         ),
-                      ],
+                      ),
                     ),
-                  ),
-                  const Spacer(),
-                  const CinematicIcon(
-                    glyph: CinematicGlyph.book,
-                    size: 36,
-                    accent: AppColors.accent,
-                    framed: false,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 18),
-              Text(
-                'PRIMEIRA LIÇÃO',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 1.4,
-                  color: AppColors.accent,
+                    if (i < steps.length - 1)
+                      Container(
+                        width: 1.5,
+                        height: 22,
+                        margin: const EdgeInsets.symmetric(vertical: 4),
+                        color: AppColors.accent.withValues(alpha: 0.28),
+                      ),
+                  ],
                 ),
               ),
-              const SizedBox(height: 6),
-              Text(
-                'Do começo — no princípio de tudo',
-                style: AppTypography.display(
-                  size: 22,
-                  weight: FontWeight.w900,
-                  height: 1.15,
+              const SizedBox(width: 14),
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.only(
+                    bottom: i < steps.length - 1 ? 4 : 0,
+                    top: 3,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        steps[i].title,
+                        style: AppTypography.title(size: 14, color: a.text),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        steps[i].subtitle,
+                        style: AppTypography.body(
+                          size: 12,
+                          color: a.textMuted(0.5),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              const SizedBox(height: 16),
-              Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: [
-                  _Chip(
-                    label: why?.label ?? 'Jornada',
-                    glyph: why?.glyph ?? CinematicGlyph.path,
-                  ),
-                  _Chip(
-                    label: '$dailyGoal lição${dailyGoal > 1 ? 'ões' : ''}/dia',
-                    glyph: CinematicGlyph.flame,
-                  ),
-                ],
               ),
             ],
           ),
-        ),
-        const SizedBox(height: 14),
-        const _FeatureRow(
-          glyph: CinematicGlyph.check,
-          title: 'Estudo curto antes das perguntas',
-          subtitle: 'Você vê a passagem e depois pratica',
-        ),
-        const SizedBox(height: 10),
-        const _FeatureRow(
-          glyph: CinematicGlyph.path,
-          title: 'Passos e sequência',
-          subtitle: 'Cada lição alimenta seu progresso',
-        ),
+        ],
       ],
     );
   }

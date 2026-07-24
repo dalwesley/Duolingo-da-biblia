@@ -9,24 +9,24 @@ import 'package:flutter/material.dart';
 /// Chrome (regra):
 /// - Fundo: Appearance / DayPhase / night*
 /// - Texto: textOnDark / Appearance.text|textMuted
-/// - Amarelo sólido: [accent] (#FFC107) — nunca accentBright/sand/ember em labels
+/// - Amarelo sólido: [accent] (#F7BB01) — nunca accentBright/sand/ember em labels
 /// - CTA: AppGradients.gold + inkOnAccent
 /// - Borda accent: alpha ≥ 0.55 (senão vira “dourado”)
 class AppColors {
   AppColors._();
 
-  // Marca
+  // Marca — alinhada ao ícone (azul trilha) + amarelo do “A” / tagline
   static const primary = Color(0xFF3B8BEA);
   static const primaryLight = Color(0xFF7EC4F5);
-  static const primaryDark = Color(0xFF0A1628);
+  static const primaryDark = Color(0xFF050C18);
 
-  /// CTA / conquista (chama) — sólido = meio do botão Continuar.
+  /// CTA / conquista — amarelo do wordmark STWAY (#F7BB01).
   /// Gradiente: [accentBright] → [accent] → [accentDark] via [AppGradients.gold].
-  static const accent = Color(0xFFFFC107);
-  static const accentDark = Color(0xFFE0A000);
+  static const accent = Color(0xFFF7BB01);
+  static const accentDark = Color(0xFFD4A000);
   static const accentSoft = Color(0xFFFFE6A8);
   /// Só topo do gradiente CTA — não usar como amarelo sólido de UI.
-  static const accentBright = Color(0xFFFFE066);
+  static const accentBright = Color(0xFFFFD54A);
   static const inkOnAccent = Color(0xFF1A1200);
 
   static const teal = Color(0xFF2DD4BF);

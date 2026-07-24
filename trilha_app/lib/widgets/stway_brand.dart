@@ -75,14 +75,14 @@ class StwayWordmark extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text('ST', style: style),
+        SizedBox(width: letterSpacing * 0.55),
+        Text('W', style: style),
         SizedBox(width: letterSpacing * 0.35),
         CustomPaint(
           size: Size(aSize * 0.95, aSize),
           painter: _ChevronAPainter(color: chevron),
         ),
         SizedBox(width: letterSpacing * 0.35),
-        Text('W', style: style),
-        SizedBox(width: letterSpacing * 0.55),
         Text('Y', style: style),
       ],
     );
