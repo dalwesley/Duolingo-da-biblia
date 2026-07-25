@@ -135,7 +135,7 @@ class CinematicGlyphResolver {
       'read' => CinematicGlyph.scroll,
       'bookmark' => CinematicGlyph.star,
       'seasonal' => CinematicGlyph.calendar,
-      'memory' => CinematicGlyph.spark,
+      'memory' => CinematicGlyph.heart,
       'w_missions' => CinematicGlyph.calendar,
       'w_days' => CinematicGlyph.flame,
       'w_perfect' => CinematicGlyph.gem,
