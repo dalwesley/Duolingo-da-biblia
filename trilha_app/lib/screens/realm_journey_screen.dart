@@ -252,6 +252,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                       title: widget.realm.label,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.path,
+                      chromeAccent: AppColors.sand,
                     ),
                   ),
                 ),

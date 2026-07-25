@@ -75,4 +75,14 @@ class AppColors {
   static const ember = Color(0xFFFF7A45);
   static const emberDeep = Color(0xFFB84820);
   static const sky = Color(0xFF6AB0D8);
+
+  /// Chrome da aba (nav + leading) — amarelo só em Hoje / CTA / conquista.
+  /// Trilhas (areia) ≠ Bíblia (cedar): frio vs quente, sem colisão.
+  static Color tabChrome(int index) => switch (index) {
+        0 => accent, // Hoje
+        1 => sand, // Trilhas — caminho / bronze
+        2 => cedar, // Bíblia — palavra / teal
+        3 => clay, // Juntos
+        _ => slate, // Config
+      };
 }

@@ -11,6 +11,7 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
+import '../utils/trail_visuals.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/immersive_background.dart';
@@ -185,6 +186,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                 subtitle: 'Em breve',
                 onBack: () => Navigator.pop(context),
                 leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
+                chromeAccent: TrailVisuals.forTrail(trail).accent,
               ),
               const SizedBox(height: AppSpace.xxxl),
               Center(
@@ -272,6 +274,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                           eyebrow ?? '${prog.done}/${prog.total} missões',
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: headerGlyph,
+                      chromeAccent: TrailVisuals.forTrail(trail).accent,
                     ),
                   ),
                   if (_useThematicMap)

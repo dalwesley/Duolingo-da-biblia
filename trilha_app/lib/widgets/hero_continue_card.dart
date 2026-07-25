@@ -68,8 +68,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final stepLabel = widget.goalMet ? 'Mais uma lição' : 'Próxima lição';
     final ctaLabel = widget.goalMet ? 'Seguir' : 'Continuar';
     final rewardColor = mission.isBoss ? AppColors.sand : trailAccent;
-    // Contorno/glow do palco = amarelo do CTA (não a cor da trilha).
-    final brandAccent = AppColors.accent;
+    // Contorno do palco = cor da trilha; amarelo só no CTA.
+    final stageAccent = trailAccent;
 
     return GestureDetector(
       onTap: () {
@@ -95,18 +95,18 @@ class _HeroContinueCardState extends State<HeroContinueCard>
               ),
               border: Border.all(
                 color: AppMetrics.accentBorder(
-                  alpha: 0.7 + 0.25 * _pulse.value,
-                  color: brandAccent,
+                  alpha: 0.55 + 0.2 * _pulse.value,
+                  color: stageAccent,
                 ),
                 width: 1.5,
               ),
               boxShadow: [
                 ...AppMetrics.accentGlow(
                   blur: 28,
-                  alpha: glow * 0.45,
-                  color: brandAccent,
+                  alpha: glow * 0.38,
+                  color: stageAccent,
                 ),
-                ...AppMetrics.cardShadow(elevated: true, tint: brandAccent),
+                ...AppMetrics.cardShadow(elevated: true, tint: stageAccent),
               ],
             ),
             child: ClipRRect(

@@ -124,6 +124,7 @@ class _HomeScreenState extends State<HomeScreen>
                         title: 'Bíblia',
                         subtitle: 'A Palavra, offline',
                         leadingGlyph: CinematicGlyph.book,
+                        chromeAccent: AppColors.cedar,
                         onBack: () => Navigator.pop(ctx),
                       ),
                     )
@@ -443,44 +444,40 @@ class _DayPulse extends StatelessWidget {
         ? AppColors.streak
         : goalMet
             ? AppColors.teal
-            : AppColors.accent;
+            : AppColors.primaryLight;
 
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: AppMetrics.cardPaddingCompact,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              CinematicIcon(
-                glyph: atRisk ? CinematicGlyph.flame : CinematicGlyph.check,
-                size: AppMetrics.leadingIcon,
-                accent: pulseTone,
-                glowing: false,
-              ),
-              const SizedBox(width: AppSpace.sm + 2),
               Expanded(
                 child: Text(
                   detail,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.title(
-                    size: 14,
-                    color: atRisk || goalMet
-                        ? pulseTone
-                        : a.text,
+                    size: 13,
+                    color: atRisk
+                        ? AppColors.streak
+                        : goalMet
+                            ? AppColors.teal
+                            : a.text.withValues(alpha: 0.88),
                   ),
                 ),
               ),
-              SoftBadge(
-                text: streak == 1 ? '1 dia' : '$streak dias',
-                glyph: CinematicGlyph.flame,
-                accent: AppColors.streak,
-              ),
+              if (atRisk)
+                SoftBadge(
+                  text: streak == 1 ? '1 dia' : '$streak dias',
+                  glyph: CinematicGlyph.flame,
+                  accent: AppColors.streak,
+                ),
             ],
           ),
           if (!returningAfterGap && !goalMet) ...[
-            const SizedBox(height: AppSpace.md),
+            const SizedBox(height: AppSpace.sm),
             AppProgressBar(
               value: goalPct,
               height: AppMetrics.progressHeight,

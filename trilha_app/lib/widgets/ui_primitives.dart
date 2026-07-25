@@ -160,7 +160,7 @@ class AppProgressBar extends StatelessWidget {
         value: value.clamp(0.0, 1.0),
         minHeight: height,
         backgroundColor: trackColor ?? a.progressTrack,
-        color: color ?? AppColors.accent,
+        color: color ?? AppColors.primaryLight,
       ),
     );
   }

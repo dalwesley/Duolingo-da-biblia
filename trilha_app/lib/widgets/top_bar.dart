@@ -174,6 +174,10 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Avatar à direita (ex.: perfil com botão voltar).
   final bool showTrailingAvatar;
 
+  /// Cor do leading/back — por aba (Hoje=amarelo, Bíblia=cedar…).
+  /// Amarelo fica em CTA e badges de conquista ([StepsBadge]).
+  final Color? chromeAccent;
+
   const TopBar({
     super.key,
     required this.title,
@@ -192,6 +196,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.showStats = false,
     this.showLeading = true,
     this.showTrailingAvatar = false,
+    this.chromeAccent,
   });
 
   @override
@@ -211,6 +216,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
         showStats ? context.select((ProgressService p) => p.streak) : 0;
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
+    final mark = chromeAccent ?? AppColors.accent;
     final chrome = MediaQuery.withClampedTextScaling(
       maxScaleFactor: kTopBarMaxTextScale,
       child: inline
@@ -232,6 +238,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               showTrailingAvatar: showTrailingAvatar,
               steps: steps,
               streak: streak,
+              chromeAccent: mark,
             )
           : AppBar(
               primary: true,
@@ -259,7 +266,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                         height: 36,
                       ),
                       visualDensity: VisualDensity.compact,
-                      icon: const _BackGlyph(),
+                      icon: _BackGlyph(accent: mark),
                     )
                   : Padding(
                       padding: const EdgeInsets.only(left: 4),
@@ -267,6 +274,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                         child: _MenuMark(
                           glyph: leadingGlyph,
                           icon: leadingIcon,
+                          accent: mark,
                         ),
                       ),
                     ),
@@ -296,7 +304,11 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                     ]
                   : onBack != null
                   ? [
-                      _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+                      _MenuMark(
+                        glyph: leadingGlyph,
+                        icon: leadingIcon,
+                        accent: mark,
+                      ),
                       const SizedBox(width: 4),
                     ]
                   : null,
@@ -334,6 +346,7 @@ class _InlineChrome extends StatelessWidget {
   final bool showTrailingAvatar;
   final int steps;
   final int streak;
+  final Color chromeAccent;
 
   const _InlineChrome({
     required this.appearance,
@@ -353,6 +366,7 @@ class _InlineChrome extends StatelessWidget {
     required this.showTrailingAvatar,
     required this.steps,
     required this.streak,
+    required this.chromeAccent,
   });
 
   @override
@@ -377,7 +391,7 @@ class _InlineChrome extends StatelessWidget {
               GestureDetector(
                 onTap: onBack,
                 behavior: HitTestBehavior.opaque,
-                child: const _BackGlyph(),
+                child: _BackGlyph(accent: chromeAccent),
               ),
               const SizedBox(width: 8),
             ] else if (showAvatar) ...[
@@ -389,7 +403,11 @@ class _InlineChrome extends StatelessWidget {
               ),
               const SizedBox(width: 10),
             ] else if (showLeading) ...[
-              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+              _MenuMark(
+                glyph: leadingGlyph,
+                icon: leadingIcon,
+                accent: chromeAccent,
+              ),
               const SizedBox(width: 8),
             ] else ...[
               const SizedBox(width: 10),
@@ -414,7 +432,11 @@ class _InlineChrome extends StatelessWidget {
               ),
             ] else if (onBack != null && showLeading) ...[
               const SizedBox(width: 8),
-              _MenuMark(glyph: leadingGlyph, icon: leadingIcon),
+              _MenuMark(
+                glyph: leadingGlyph,
+                icon: leadingIcon,
+                accent: chromeAccent,
+              ),
             ],
           ],
         ),
@@ -424,17 +446,19 @@ class _InlineChrome extends StatelessWidget {
 }
 
 class _BackGlyph extends StatelessWidget {
-  const _BackGlyph();
+  final Color accent;
+
+  const _BackGlyph({this.accent = AppColors.accent});
 
   @override
   Widget build(BuildContext context) {
-    return const IconWell(
+    return IconWell(
       size: 36,
-      accent: AppColors.accent,
+      accent: accent,
       child: Icon(
         Icons.arrow_back_rounded,
         size: 18,
-        color: AppColors.accent,
+        color: accent,
       ),
     );
   }
@@ -444,10 +468,12 @@ class _BackGlyph extends StatelessWidget {
 class _MenuMark extends StatelessWidget {
   final CinematicGlyph glyph;
   final IconData? icon;
+  final Color accent;
 
   const _MenuMark({
     this.glyph = CinematicGlyph.spark,
     this.icon,
+    this.accent = AppColors.accent,
   });
 
   @override
@@ -456,14 +482,14 @@ class _MenuMark extends StatelessWidget {
     if (icon != null) {
       return IconWell(
         size: size,
-        accent: AppColors.accent,
-        child: Icon(icon, size: size * 0.48, color: AppColors.accent),
+        accent: accent,
+        child: Icon(icon, size: size * 0.48, color: accent),
       );
     }
     return CinematicIcon(
       glyph: glyph,
       size: size,
-      accent: AppColors.accent,
+      accent: accent,
       glowing: false,
     );
   }

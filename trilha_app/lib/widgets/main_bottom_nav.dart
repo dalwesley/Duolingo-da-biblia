@@ -4,7 +4,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Nav inferior — glifos brand + label; ativo no amarelo do CTA.
+/// Nav inferior — glifo + label; ativo com cor da aba (não só amarelo).
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -55,7 +55,8 @@ class MainBottomNav extends StatelessWidget {
             children: List.generate(tabs.length, (i) {
               final active = currentIndex == i;
               final tab = tabs[i];
-              final color = active ? AppColors.accent : style.iconMuted;
+              final tone = AppColors.tabChrome(i);
+              final color = active ? tone : style.iconMuted;
 
               return Expanded(
                 child: InkWell(
@@ -73,10 +74,16 @@ class MainBottomNav extends StatelessWidget {
                         ),
                         decoration: active
                             ? BoxDecoration(
-                                color: AppMetrics.accentFill(alpha: 0.16),
+                                color: AppMetrics.accentFill(
+                                  alpha: 0.16,
+                                  color: tone,
+                                ),
                                 borderRadius: BorderRadius.circular(AppRadii.sm),
                                 border: Border.all(
-                                  color: AppMetrics.accentBorder(alpha: 0.7),
+                                  color: AppMetrics.accentBorder(
+                                    alpha: 0.7,
+                                    color: tone,
+                                  ),
                                 ),
                               )
                             : null,

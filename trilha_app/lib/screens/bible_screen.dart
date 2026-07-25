@@ -129,6 +129,7 @@ class _BibleScreenState extends State<BibleScreen> {
       subtitle: subtitle,
       onBack: onBack,
       leadingGlyph: CinematicGlyph.book,
+      chromeAccent: AppColors.cedar,
     );
   }
 
@@ -144,6 +145,7 @@ class _BibleScreenState extends State<BibleScreen> {
       title: 'Bíblia',
       subtitle: 'A Palavra, offline',
       leadingGlyph: CinematicGlyph.book,
+      chromeAccent: AppColors.cedar,
       onBack: nav.canPop() ? () => nav.pop() : null,
     );
   }
@@ -159,7 +161,7 @@ class _BibleScreenState extends State<BibleScreen> {
     final books = _books;
     if (books == null) {
       return const Center(
-        child: CircularProgressIndicator(color: AppColors.accent),
+        child: CircularProgressIndicator(color: AppColors.cedar),
       );
     }
 
@@ -276,7 +278,7 @@ class _BookPicker extends StatelessWidget {
                   CinematicIcon(
                     glyph: CinematicGlyph.search,
                     size: 20,
-                    accent: AppColors.accent.withValues(alpha: 0.9),
+                    accent: AppColors.cedar.withValues(alpha: 0.9),
                     framed: false,
                   ),
                   const SizedBox(width: AppSpace.sm),
@@ -397,12 +399,12 @@ class _TranslationPicker extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? AppColors.accent.withValues(alpha: 0.14)
+                                  ? AppColors.cedar.withValues(alpha: 0.14)
                                   : AppColors.textOnDark.withValues(alpha: 0.05),
                               borderRadius: BorderRadius.circular(AppRadii.md),
                               border: Border.all(
                                 color: isSelected
-                                    ? AppColors.accent.withValues(alpha: 0.7)
+                                    ? AppColors.cedar.withValues(alpha: 0.7)
                                     : AppColors.textOnDark.withValues(alpha: 0.1),
                               ),
                             ),
@@ -414,7 +416,7 @@ class _TranslationPicker extends StatelessWidget {
                                   alignment: Alignment.center,
                                   decoration: BoxDecoration(
                                     color: enabled
-                                        ? AppColors.accent.withValues(
+                                        ? AppColors.cedar.withValues(
                                             alpha: 0.16,
                                           )
                                         : Colors.white.withValues(alpha: 0.06),
@@ -427,7 +429,7 @@ class _TranslationPicker extends StatelessWidget {
                                     style: AppTypography.label(
                                       size: 12,
                                       color: enabled
-                                          ? AppColors.accent
+                                          ? AppColors.cedar
                                           : Colors.white.withValues(
                                               alpha: 0.35,
                                             ),
@@ -468,7 +470,7 @@ class _TranslationPicker extends StatelessWidget {
                                   const CinematicIcon(
                                     glyph: CinematicGlyph.check,
                                     size: 20,
-                                    accent: AppColors.accent,
+                                    accent: AppColors.cedar,
                                     framed: false,
                                   )
                                 else if (!enabled)
@@ -521,7 +523,7 @@ class _TranslationPicker extends StatelessWidget {
       ),
       child: Row(
         children: [
-          SoftBadge(text: translation.shortName, accent: AppColors.accent),
+          SoftBadge(text: translation.shortName, accent: AppColors.cedar),
           const SizedBox(width: AppSpace.sm),
           Expanded(
             child: Column(
@@ -589,7 +591,7 @@ class _SearchPane extends StatelessWidget {
             weight: FontWeight.w600,
             color: Appearance.of(context).text,
           ),
-          cursorColor: AppColors.accent,
+          cursorColor: AppColors.cedar,
           decoration: InputDecoration(
             hintText: 'Ex.: Apocalipse, amor, fé…',
             hintStyle: AppTypography.body(
@@ -616,7 +618,7 @@ class _SearchPane extends StatelessWidget {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: const BorderSide(color: AppColors.accent),
+              borderSide: const BorderSide(color: AppColors.cedar),
             ),
           ),
           onChanged: onChanged,
@@ -626,7 +628,7 @@ class _SearchPane extends StatelessWidget {
           const Padding(
             padding: EdgeInsets.only(top: AppSpace.xxl),
             child: Center(
-              child: CircularProgressIndicator(color: AppColors.accent),
+              child: CircularProgressIndicator(color: AppColors.cedar),
             ),
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
@@ -656,7 +658,7 @@ class _SearchPane extends StatelessWidget {
                       h.isBook ? 'Livro' : h.citation,
                       style: AppTypography.label(
                         size: 12,
-                        color: AppColors.accent,
+                        color: AppColors.cedar,
                       ),
                     ),
                     const SizedBox(height: AppSpace.xs),
@@ -716,7 +718,7 @@ class _TestamentSection extends StatelessWidget {
               width: 3,
               height: 14,
               decoration: BoxDecoration(
-                color: AppColors.accent,
+                color: AppColors.cedar,
                 borderRadius: BorderRadius.circular(2),
               ),
             ),
@@ -803,7 +805,7 @@ class _BookRow extends StatelessWidget {
                       style: AppTypography.label(
                         size: abbrev.length > 3 ? 10 : 12,
                         letterSpacing: 0.3,
-                        color: AppColors.accent,
+                        color: AppColors.cedar,
                       ),
                     ),
                   ),
@@ -1589,7 +1591,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
               : (_book == null
                     ? const Center(
                         child: CircularProgressIndicator(
-                          color: AppColors.accent,
+                          color: AppColors.cedar,
                         ),
                       )
                     : BibleReaderView(
@@ -1601,6 +1603,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                           subtitle: 'Capítulo $_chapter',
                           onBack: () => Navigator.of(context).pop(),
                           leadingGlyph: CinematicGlyph.book,
+                          chromeAccent: AppColors.cedar,
                         ),
                         book: _book!,
                         bookIndex: _ref!.bookIndex,

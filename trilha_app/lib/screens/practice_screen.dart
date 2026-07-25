@@ -102,6 +102,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       subtitle: 'Reforce as passagens',
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.echo,
+                      chromeAccent: AppColors.clay,
                     ),
                   ),
                   Expanded(

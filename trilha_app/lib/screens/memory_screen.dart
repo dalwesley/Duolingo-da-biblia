@@ -192,6 +192,7 @@ class _MemoryScreenState extends State<MemoryScreen>
                     subtitle: 'Fixe na memória',
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyph.heart,
+                    chromeAccent: AppColors.clay,
                   ),
                 ),
                 Expanded(

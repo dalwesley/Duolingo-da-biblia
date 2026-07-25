@@ -10,6 +10,7 @@ import '../services/league_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
+import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../widgets/app_update_sheet.dart';
@@ -275,6 +276,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       photoUrl: photoUrl,
       onProfileTap: index == 0 ? _openProfile : null,
       showLeading: true,
+      chromeAccent: AppColors.tabChrome(index),
       leadingGlyph: switch (index) {
         0 => CinematicGlyph.home,
         1 => CinematicGlyph.path,
