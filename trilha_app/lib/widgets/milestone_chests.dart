@@ -258,6 +258,7 @@ class WeeklyQuestsCard extends StatelessWidget {
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
+      tint: AppColors.primaryLight,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -265,6 +266,7 @@ class WeeklyQuestsCard extends StatelessWidget {
             label: 'Passos da semana',
             trailing: CountBadge(
               '${progress.weeklyQuestsCompleted}/${WeeklyQuestDefs.all.length}',
+              color: AppColors.primaryLight,
             ),
           ),
           const SizedBox(height: 12),
@@ -273,6 +275,9 @@ class WeeklyQuestsCard extends StatelessWidget {
             final claimed = progress.isWeeklyQuestClaimed(q.id);
             final done = claimed || value >= q.target;
             final pct = (value / q.target).clamp(0.0, 1.0);
+            final tone = claimed
+                ? AppColors.teal
+                : CinematicGlyphResolver.accentForQuest(q.id);
 
             return Padding(
               padding: const EdgeInsets.only(bottom: 10),
@@ -281,6 +286,7 @@ class WeeklyQuestsCard extends StatelessWidget {
                   CinematicIcon(
                     glyph: CinematicGlyphResolver.forQuest(q.id),
                     size: 34,
+                    accent: tone,
                     glowing: false,
                   ),
                   const SizedBox(width: 10),
@@ -311,7 +317,8 @@ class WeeklyQuestsCard extends StatelessWidget {
                         const SizedBox(height: 6),
                         AppProgressBar(
                           value: pct,
-                          color: claimed ? AppColors.teal : AppColors.primaryLight,
+                          color: tone,
+                          trackColor: tone.withValues(alpha: 0.14),
                         ),
                       ],
                     ),
@@ -327,8 +334,8 @@ class WeeklyQuestsCard extends StatelessWidget {
                   else
                     CountBadge(
                       '+${q.stepsReward}',
-                      filled: false,
-                      color: a.textMuted(0.55),
+                      filled: true,
+                      color: tone,
                     ),
                 ],
               ),

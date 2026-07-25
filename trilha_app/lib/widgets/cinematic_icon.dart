@@ -129,13 +129,13 @@ class CinematicGlyphResolver {
 
   static CinematicGlyph forQuest(String id) {
     return switch (id) {
-      'mission' => CinematicGlyph.book,
+      'mission' => CinematicGlyph.seed,
       'accuracy' => CinematicGlyph.target,
       'perfect' => CinematicGlyph.crown,
       'read' => CinematicGlyph.scroll,
       'bookmark' => CinematicGlyph.star,
       'seasonal' => CinematicGlyph.calendar,
-      'memory' => CinematicGlyph.heart,
+      'memory' => CinematicGlyph.spark,
       'w_missions' => CinematicGlyph.calendar,
       'w_days' => CinematicGlyph.flame,
       'w_perfect' => CinematicGlyph.gem,
@@ -143,7 +143,7 @@ class CinematicGlyphResolver {
     };
   }
 
-  /// Cor por quest — home/jogo: cada bônus com identidade própria.
+  /// Cor por quest — identidade própria, alinhada à família da seção.
   static Color accentForQuest(String id) {
     return switch (id) {
       'mission' => AppColors.accent,

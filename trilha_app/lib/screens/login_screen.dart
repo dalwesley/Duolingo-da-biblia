@@ -66,13 +66,19 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => _error = null);
     HapticFeedback.lightImpact();
 
+    // ignore: avoid_print — acompanha login em flutter run --release
+    print('[STWAY:Auth] LoginScreen: tap Continuar com Google');
     final result = await backend.signInWithGoogle();
     if (!mounted) return;
     if (!result.ok) {
+      // ignore: avoid_print
+      print('[STWAY:Auth] LoginScreen: fail → ${result.error}');
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() => _error = result.error ?? 'Falha no login com Google');
       return;
     }
+    // ignore: avoid_print
+    print('[STWAY:Auth] LoginScreen: ok → ${result.email}');
     unawaited(AnalyticsService.instance.logLogin(method: 'google'));
     unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);

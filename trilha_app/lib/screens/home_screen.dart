@@ -346,10 +346,7 @@ class _RevisitPracticeLink extends StatelessWidget {
       onTap: () => Navigator.of(
         context,
       ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpace.md,
-        vertical: AppSpace.md,
-      ),
+      padding: AppMetrics.cardPaddingCompact,
       child: Row(
         children: [
           CinematicIcon(
@@ -365,13 +362,14 @@ class _RevisitPracticeLink extends StatelessWidget {
               children: [
                 Text(
                   'Revisitar',
-                  style: AppTypography.title(size: 13, color: a.text),
+                  style: AppTypography.title(size: 14, color: a.text),
                 ),
+                const SizedBox(height: 2),
                 Text(
                   '$n para reforçar',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
+                  style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
                 ),
               ],
             ),
@@ -438,11 +436,17 @@ class _DayPulse extends StatelessWidget {
     } else if (returningAfterGap) {
       detail = 'Retome com uma lição';
     } else {
-      detail = 'Meta de hoje · $goal lição${goal == 1 ? '' : 'ões'}';
+      detail = goal == 1 ? 'Meta de hoje · 1 lição' : 'Meta de hoje · $goal lições';
     }
 
+    final pulseTone = atRisk
+        ? AppColors.streak
+        : goalMet
+            ? AppColors.teal
+            : AppColors.accent;
+
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(14, 12, 10, 12),
+      padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -450,47 +454,41 @@ class _DayPulse extends StatelessWidget {
             children: [
               CinematicIcon(
                 glyph: atRisk ? CinematicGlyph.flame : CinematicGlyph.check,
-                size: 18,
-                accent: atRisk
-                    ? AppColors.streak
-                    : goalMet
-                        ? AppColors.teal
-                        : AppColors.accent,
-                framed: false,
+                size: AppMetrics.leadingIcon,
+                accent: pulseTone,
+                glowing: false,
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: AppSpace.sm + 2),
               Expanded(
                 child: Text(
                   detail,
-                  maxLines: 1,
+                  maxLines: 2,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w700,
-                    color: atRisk
-                        ? AppColors.streak
-                        : goalMet
-                            ? AppColors.teal
-                            : a.text.withValues(alpha: 0.88),
+                  style: AppTypography.title(
+                    size: 14,
+                    color: atRisk || goalMet
+                        ? pulseTone
+                        : a.text,
                   ),
                 ),
               ),
               SoftBadge(
                 text: streak == 1 ? '1 dia' : '$streak dias',
                 glyph: CinematicGlyph.flame,
-                accent: atRisk ? AppColors.streak : AppColors.accent,
+                accent: AppColors.streak,
               ),
             ],
           ),
           if (!returningAfterGap && !goalMet) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: AppSpace.md),
             AppProgressBar(
               value: goalPct,
-              height: 5,
-              color: atRisk ? AppColors.streak : AppColors.accent,
+              height: AppMetrics.progressHeight,
+              color: pulseTone,
+              trackColor: pulseTone.withValues(alpha: 0.14),
             ),
           ],
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.md),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -530,10 +528,7 @@ class _ActiveTrailLine extends StatelessWidget {
 
     return GlassCard(
       onTap: onTap,
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpace.md,
-        vertical: AppSpace.md,
-      ),
+      padding: AppMetrics.cardPaddingCompact,
       child: Row(
         children: [
           CinematicIcon(
@@ -542,17 +537,13 @@ class _ActiveTrailLine extends StatelessWidget {
             accent: visuals.accent,
             glowing: false,
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: AppSpace.sm + 2),
           Expanded(
             child: Text(
               'Mapa · ${trail.title} · $done/$total',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w700,
-                color: a.text.withValues(alpha: 0.88),
-              ),
+              style: AppTypography.title(size: 14, color: a.text),
             ),
           ),
           Icon(

@@ -149,8 +149,8 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
-    // Mesmo céu do onboarding — evita salto de fase/cor na transição.
-    const mode = AppearanceMode.morning;
+    // Usa a aparência salva no aparelho (mesma do restante do app).
+    final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
     return ImmersiveScaffold(

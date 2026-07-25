@@ -125,22 +125,37 @@ class BackendService extends ChangeNotifier {
 
   Future<void> _ensureGoogleSignInInitialized() async {
     if (_googleInitialized) return;
+    _authLog(
+      'initialize GoogleSignIn serverClientId=${DefaultFirebaseOptions.googleWebClientId}',
+    );
     await _google.initialize(
       serverClientId: DefaultFirebaseOptions.googleWebClientId,
     );
     _googleInitialized = true;
+    _authLog('GoogleSignIn initialized ok');
+  }
+
+  /// Logs visíveis em release via `adb logcat | grep STWAY:Auth`.
+  static void _authLog(String message) {
+    // ignore: avoid_print — intencional para depurar login em --release
+    print('[STWAY:Auth] $message');
   }
 
   /// Login com Google. Se já houver sessão anônima, tenta vincular a conta
   /// (preserva o uid). Se a conta Google já existir, entra nela.
   Future<GoogleSignInResult> signInWithGoogle() async {
+    _authLog(
+      'signIn start firebaseReady=$_firebaseReady '
+      'googleInit=$_googleInitialized '
+      'currentUid=${Firebase.apps.isEmpty ? null : FirebaseAuth.instance.currentUser?.uid} '
+      'project=${DefaultFirebaseOptions.android.projectId}',
+    );
     if (!_firebaseReady) {
       await init();
       if (!_firebaseReady) {
-        return GoogleSignInResult(
-          ok: false,
-          error: lastError ?? 'Firebase ainda não está pronto.',
-        );
+        final err = lastError ?? 'Firebase ainda não está pronto.';
+        _authLog('abort: Firebase not ready → $err');
+        return GoogleSignInResult(ok: false, error: err);
       }
     }
 
@@ -150,14 +165,20 @@ class BackendService extends ChangeNotifier {
 
     try {
       await _ensureGoogleSignInInitialized();
+      _authLog('calling authenticate()…');
       final googleUser = await _google.authenticate();
       final idToken = googleUser.authentication.idToken;
+      _authLog(
+        'authenticate ok email=${googleUser.email} '
+        'displayName=${googleUser.displayName} '
+        'idTokenLen=${idToken?.length ?? 0}',
+      );
       if (idToken == null || idToken.isEmpty) {
-        return const GoogleSignInResult(
-          ok: false,
-          error:
-              'Google não retornou idToken. Confira se o provedor Google está ativo no Firebase e se o SHA-1 do app está cadastrado.',
-        );
+        const err =
+            'Google não retornou idToken. Confira se o provedor Google está ativo no Firebase e se o SHA-1 do app está cadastrado.';
+        lastError = err;
+        _authLog('fail: empty idToken (SHA-1 / OAuth client?)');
+        return const GoogleSignInResult(ok: false, error: err);
       }
 
       final credential = GoogleAuthProvider.credential(idToken: idToken);
@@ -166,47 +187,117 @@ class BackendService extends ChangeNotifier {
       UserCredential cred;
 
       if (current != null && current.isAnonymous) {
+        _authLog('linking credential to anonymous uid=${current.uid}');
         try {
-          cred = await current.linkWithCredential(credential);
+          cred = await _firebaseAuthWithRetry(
+            () => current.linkWithCredential(credential),
+            label: 'linkWithCredential',
+          );
         } on FirebaseAuthException catch (e) {
           if (e.code == 'credential-already-in-use' ||
               e.code == 'email-already-in-use') {
             // Conta Google já existe: troca para ela.
+            _authLog(
+              'link failed ${e.code} — signInWithCredential instead',
+            );
             await _google.signOut();
-            cred = await auth.signInWithCredential(credential);
+            cred = await _firebaseAuthWithRetry(
+              () => auth.signInWithCredential(credential),
+              label: 'signInWithCredential',
+            );
           } else {
             rethrow;
           }
         }
       } else {
-        cred = await auth.signInWithCredential(credential);
+        _authLog('signInWithCredential (no anonymous session)');
+        cred = await _firebaseAuthWithRetry(
+          () => auth.signInWithCredential(credential),
+          label: 'signInWithCredential',
+        );
       }
 
       _applyUser(cred.user);
       notifyListeners();
+      _authLog(
+        'success uid=${cred.user?.uid} email=${cred.user?.email} '
+        'providers=${cred.user?.providerData.map((p) => p.providerId).toList()}',
+      );
       return GoogleSignInResult(
         ok: true,
         displayName: cred.user?.displayName ?? googleUser.displayName,
         email: cred.user?.email ?? googleUser.email,
       );
     } on GoogleSignInException catch (e) {
+      _authLog(
+        'GoogleSignInException code=${e.code.name} '
+        'description=${e.description} details=${e.details}',
+      );
       if (e.code == GoogleSignInExceptionCode.canceled) {
-        return const GoogleSignInResult(ok: false, error: 'Login cancelado.');
+        // Em release/loja, "canceled" costuma ser SHA/OAuth — não só o usuário fechando.
+        lastError =
+            'Login cancelado. [${e.code.name}] ${e.description ?? ''}'.trim();
+        return GoogleSignInResult(ok: false, error: lastError);
       }
-      lastError = 'Google Sign-In: ${e.description ?? e.code.name}';
+      lastError =
+          'Google Sign-In [${e.code.name}]: ${e.description ?? e.code.name}'
+          '${e.details != null ? ' (${e.details})' : ''}';
       return GoogleSignInResult(ok: false, error: lastError);
     } on FirebaseAuthException catch (e) {
       lastError = _authErrorMessage(e);
-      debugPrint('Google Auth falhou: ${e.code} — ${e.message}');
+      _authLog(
+        'FirebaseAuthException code=${e.code} message=${e.message} '
+        'plugin=${e.plugin} details=${e.toString()}',
+      );
       return GoogleSignInResult(ok: false, error: lastError);
-    } catch (e) {
+    } catch (e, st) {
       lastError = e.toString();
-      debugPrint('Google Sign-In falhou: $e');
+      _authLog('unexpected error: $e\n$st');
       return GoogleSignInResult(ok: false, error: lastError);
     } finally {
       _googleBusy = false;
       notifyListeners();
     }
+  }
+
+  /// Firebase Auth às vezes falha com reset de conexão (rede transitória).
+  static bool _isTransientAuthNetworkError(FirebaseAuthException e) {
+    final msg = (e.message ?? '').toLowerCase();
+    if (e.code == 'network-request-failed') return true;
+    if (e.code != 'unknown' && e.code != 'internal-error') return false;
+    return msg.contains('connection reset') ||
+        msg.contains('connection refused') ||
+        msg.contains('broken pipe') ||
+        msg.contains('timed out') ||
+        msg.contains('timeout') ||
+        msg.contains('i/o error') ||
+        msg.contains('failed to connect') ||
+        msg.contains('software caused connection abort');
+  }
+
+  Future<UserCredential> _firebaseAuthWithRetry(
+    Future<UserCredential> Function() action, {
+    required String label,
+    int maxAttempts = 3,
+  }) async {
+    FirebaseAuthException? last;
+    for (var attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        _authLog('$label attempt $attempt/$maxAttempts');
+        return await action();
+      } on FirebaseAuthException catch (e) {
+        last = e;
+        final retry = _isTransientAuthNetworkError(e) && attempt < maxAttempts;
+        _authLog(
+          '$label failed attempt=$attempt code=${e.code} '
+          'message=${e.message} retry=$retry',
+        );
+        if (!retry) rethrow;
+        final delayMs = 400 * (1 << (attempt - 1)); // 400, 800
+        await Future<void>.delayed(Duration(milliseconds: delayMs));
+      }
+    }
+    throw last!;
   }
 
   /// Sai do Google e encerra a sessão (volta à tela de login).
@@ -231,6 +322,14 @@ class BackendService extends ChangeNotifier {
   }
 
   static String _authErrorMessage(FirebaseAuthException e) {
+    final msg = (e.message ?? '').toLowerCase();
+    final looksLikeNetwork = e.code == 'network-request-failed' ||
+        msg.contains('connection reset') ||
+        msg.contains('i/o error') ||
+        msg.contains('timed out') ||
+        msg.contains('timeout') ||
+        msg.contains('failed to connect');
+
     return switch (e.code) {
       'operation-not-allowed' || 'admin-restricted-operation' =>
         'Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.',
@@ -242,6 +341,8 @@ class BackendService extends ChangeNotifier {
         'Já existe uma conta com este e-mail usando outro método de login.',
       'invalid-credential' =>
         'Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.',
+      _ when looksLikeNetwork =>
+        'Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.',
       _ => 'Erro de Auth (${e.code}): ${e.message ?? e.code}',
     };
   }

@@ -230,6 +230,8 @@ class GlassCard extends StatelessWidget {
   /// Borda açafrão + glow — card hero / ativo.
   final bool accent;
   final Color? color;
+  /// Tinta de seção (bíblia, memória, risco…) — fill + borda coloridos.
+  final Color? tint;
 
   const GlassCard({
     super.key,
@@ -240,26 +242,35 @@ class GlassCard extends StatelessWidget {
     this.elevated = false,
     this.accent = false,
     this.color,
+    this.tint,
   });
 
   @override
   Widget build(BuildContext context) {
     final style = Appearance.of(context);
+    final fill = color ??
+        (tint != null
+            ? Color.lerp(style.cardFill, tint, 0.14)!
+            : style.cardFill);
+    final borderColor = accent
+        ? AppMetrics.accentBorder(alpha: elevated ? 0.9 : 0.75)
+        : tint != null
+            ? tint!.withValues(alpha: 0.4)
+            : style.cardBorder;
 
     final content = Container(
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: color ?? style.cardFill,
+        color: fill,
         border: Border.all(
-          color: accent
-              ? AppMetrics.accentBorder(alpha: elevated ? 0.9 : 0.75)
-              : style.cardBorder,
-          width: accent ? 1.5 : 1,
+          color: borderColor,
+          width: accent || tint != null ? 1.5 : 1,
         ),
         boxShadow: AppMetrics.cardShadow(
-          elevated: elevated || accent,
+          elevated: elevated || accent || tint != null,
           accent: accent,
+          tint: tint,
         ),
       ),
       child: child,

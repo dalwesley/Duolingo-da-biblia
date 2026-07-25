@@ -99,13 +99,18 @@ class StreakBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: AppColors.textOnDark.withValues(alpha: 0.08),
+        color: AppColors.streak.withValues(alpha: 0.16),
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: AppColors.streak.withValues(alpha: 0.55)),
+        border: Border.all(color: AppColors.streak.withValues(alpha: 0.65)),
+        boxShadow: AppMetrics.accentGlow(
+          blur: 8,
+          alpha: 0.22,
+          offset: Offset.zero,
+          color: AppColors.streak,
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -121,7 +126,7 @@ class StreakBadge extends StatelessWidget {
             '$value',
             style: AppTypography.title(
               size: 13,
-              color: a.text,
+              color: AppColors.streak,
             ),
           ),
         ],

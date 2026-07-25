@@ -86,6 +86,26 @@ export async function getCatalogMeta() {
   return getDocById(COL.meta, 'catalog');
 }
 
+export async function getAppRelease() {
+  return getDocById(COL.meta, 'app_release');
+}
+
+/** Publica versão do app nas lojas (sem bump do catálogo de conteúdo). */
+export async function saveAppRelease(data) {
+  const payload = {
+    enabled: data.enabled !== false,
+    latestVersion: String(data.latestVersion || '').trim(),
+    latestBuild: Number(data.latestBuild) || 0,
+    minBuild: Number(data.minBuild) || 0,
+    androidStoreUrl: String(data.androidStoreUrl || '').trim(),
+    iosStoreUrl: String(data.iosStoreUrl || '').trim(),
+    message: String(data.message || '').trim(),
+    updatedAt: Timestamp.now(),
+  };
+  await setDoc(doc(db, COL.meta, 'app_release'), payload, { merge: true });
+  return payload;
+}
+
 /** Grava em lotes de até 400 (limite Firestore ~500). */
 export async function batchSet(colId, items, idKey = 'id') {
   const chunkSize = 400;

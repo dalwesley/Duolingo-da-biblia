@@ -316,7 +316,7 @@ class _JourneySeals extends StatelessWidget {
       children: [
         Expanded(
           child: _Seal(
-            glyph: CinematicGlyph.spark,
+            glyph: CinematicGlyph.rise,
             value: '$steps',
             label: 'Passos',
             accent: AppColors.accent,

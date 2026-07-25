@@ -209,17 +209,53 @@ class ProgressService extends ChangeNotifier {
 
   Future<void> load() async {
     // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
-    // Splash + onboarding: gates de aparelho (não dependem da nuvem no boot).
+    // Splash + onboarding + aparência: gates/prefs de aparelho.
     final prefs = await SharedPreferences.getInstance();
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
     _freshInstall = !hasSeenSplash;
-    // Instalação nova → Manhã (céu estável; usuário pode mudar em Ajustes).
-    if (_freshInstall) {
+    settings = _settingsFromPrefs(prefs);
+    // Instalação nova sem preferência salva → Manhã.
+    if (_freshInstall && prefs.getString(_keyAppearanceMode) == null) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
+      await prefs.setString(
+        _keyAppearanceMode,
+        AppearanceMode.morning.storageKey,
+      );
     }
     _loaded = true;
     notifyListeners();
+  }
+
+  AppSettings _settingsFromPrefs(SharedPreferences prefs) {
+    return AppSettings(
+      sound: prefs.getBool(_keySound) ?? true,
+      notifications: prefs.getBool(_keyNotifications) ?? true,
+      dailyGoal: prefs.getInt(_keyDailyGoal) ?? 1,
+      appearanceMode: AppearanceModeX.fromStorage(
+        prefs.getString(_keyAppearanceMode),
+        legacyDarkMode: prefs.getBool(_keyDarkMode),
+      ),
+      bibleTranslationId: prefs.getString(_keyBibleTranslation) ??
+          BibleService.defaultTranslationId,
+      fontScale: (prefs.getDouble(_keyFontScale) ??
+              prefs.getDouble(_keyBibleFontScale) ??
+              1.0)
+          .clamp(0.85, 1.35),
+    );
+  }
+
+  Future<void> _persistSettingsLocal() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keySound, settings.sound);
+    await prefs.setBool(_keyNotifications, settings.notifications);
+    await prefs.setInt(_keyDailyGoal, settings.dailyGoal);
+    await prefs.setString(
+      _keyAppearanceMode,
+      settings.appearanceMode.storageKey,
+    );
+    await prefs.setString(_keyBibleTranslation, settings.bibleTranslationId);
+    await prefs.setDouble(_keyFontScale, settings.fontScale);
   }
 
   /// Lê snapshot legado em SharedPreferences (migração única → nuvem).
@@ -365,7 +401,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Remove chaves de progresso locais (após migrar/hidratar da nuvem).
-  /// Mantém [_keyHasSeenOnboarding] — gate de aparelho (como splash).
+  /// Mantém gates de aparelho e preferências de UI (aparência, som, etc.).
   Future<void> clearLegacyLocalPrefs() async {
     final prefs = await SharedPreferences.getInstance();
     const keys = [
@@ -375,14 +411,7 @@ class ProgressService extends ChangeNotifier {
       _keyCompleted,
       _keyMissionsToday,
       _keyUserName,
-      _keySound,
-      _keyNotifications,
-      _keyDailyGoal,
-      _keyDarkMode,
-      _keyAppearanceMode,
-      _keyBibleTranslation,
-      _keyFontScale,
-      _keyBibleFontScale,
+      // settings (sound/notifications/dailyGoal/appearance/…) ficam no aparelho
       _keyTrailDifficulty,
       _keyClearedTrailModes,
       _keyUsedQuestions,
@@ -1371,14 +1400,21 @@ class ProgressService extends ChangeNotifier {
       }
     }
 
-    // Instalação nova neste aparelho: Manhã prevalece sobre a nuvem.
-    if (_freshInstall) {
+    // Preferência local de aparência vence a nuvem neste aparelho (já lida em
+    // [load]). Só força Manhã na 1ª abertura sem chave salva.
+    final prefs = await SharedPreferences.getInstance();
+    final localAppearance = prefs.getString(_keyAppearanceMode);
+    if (localAppearance != null) {
+      settings = settings.copyWith(
+        appearanceMode: AppearanceModeX.fromStorage(localAppearance),
+      );
+    } else if (_freshInstall) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
-      _freshInstall = false;
     }
+    _freshInstall = false;
+    await _persistSettingsLocal();
 
     // Espelha o gate no aparelho (sobrevive a falha de rede no próximo boot).
-    final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_keyHasSeenOnboarding, hasSeenOnboarding);
 
     _ensureMissionsDay();
@@ -1422,6 +1458,7 @@ class ProgressService extends ChangeNotifier {
     if (translationChanged) {
       await BibleService.instance.setTranslation(settings.bibleTranslationId);
     }
+    await _persistSettingsLocal();
     await _save();
     notifyListeners();
   }

@@ -29,19 +29,26 @@ class AppMetrics {
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
 
-  /// Borda de destaque — amarelo do CTA (nunca ≤0.5: vira “dourado”).
-  static Color accentBorder({double alpha = 0.85}) =>
-      AppColors.accent.withValues(alpha: alpha.clamp(0.55, 1.0));
+  /// Borda de destaque — amarelo do CTA por padrão (nunca ≤0.5: vira “dourado”).
+  static Color accentBorder({double alpha = 0.85, Color? color}) =>
+      (color ?? AppColors.accent).withValues(alpha: alpha.clamp(0.55, 1.0));
 
   /// Fill suave sobre accent (chips) — borda separada via [accentBorder].
-  static Color accentFill({double alpha = 0.14}) =>
-      AppColors.accent.withValues(alpha: alpha);
+  static Color accentFill({double alpha = 0.14, Color? color}) =>
+      (color ?? AppColors.accent).withValues(alpha: alpha);
 
   /// Sombra padrão de card / nav / poço.
-  static List<BoxShadow> cardShadow({bool elevated = false, bool accent = false}) => [
-        if (accent)
+  static List<BoxShadow> cardShadow({
+    bool elevated = false,
+    bool accent = false,
+    Color? tint,
+  }) =>
+      [
+        if (accent || tint != null)
           BoxShadow(
-            color: AppColors.accent.withValues(alpha: elevated ? 0.32 : 0.22),
+            color: (tint ?? AppColors.accent).withValues(
+              alpha: elevated ? 0.32 : 0.22,
+            ),
             blurRadius: elevated ? 22 : 16,
             offset: const Offset(0, 8),
           ),
@@ -52,15 +59,16 @@ class AppMetrics {
         ),
       ];
 
-  /// Glow de CTA / badge ouro.
+  /// Glow de CTA / badge — [color] opcional (streak, trilha, etc.).
   static List<BoxShadow> accentGlow({
     double blur = 18,
     double alpha = 0.4,
     Offset offset = const Offset(0, 8),
+    Color? color,
   }) =>
       [
         BoxShadow(
-          color: AppColors.accent.withValues(alpha: alpha),
+          color: (color ?? AppColors.accent).withValues(alpha: alpha),
           offset: offset,
           blurRadius: blur,
         ),

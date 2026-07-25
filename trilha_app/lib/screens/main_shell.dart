@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/home_widget_service.dart';
@@ -11,6 +12,7 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
@@ -74,7 +76,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           if (mounted) _openTrail(trail);
         });
       }
+      unawaited(_maybePromptAppUpdate());
     });
+  }
+
+  Future<void> _maybePromptAppUpdate() async {
+    final status = await AppUpdateService.checkForPrompt();
+    if (!mounted || status == null) return;
+    await showAppUpdateSheet(context, status);
   }
 
   void _syncReminders() {

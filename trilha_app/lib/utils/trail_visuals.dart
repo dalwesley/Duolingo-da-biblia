@@ -23,6 +23,17 @@ class TrailVisuals {
     return _byCategory(trail.categoryId, trail.color);
   }
 
+  /// Home hero / chrome sem o [Trail] completo.
+  static TrailVisuals forSlug(
+    String slug, {
+    String categoryId = '',
+    String color = '#1B3A5C',
+  }) {
+    final specific = _bySlug[slug];
+    if (specific != null) return specific;
+    return _byCategory(categoryId, color);
+  }
+
   static TrailVisuals _byCategory(String categoryId, String hexColor) {
     final accent = _parseColor(hexColor) ?? AppColors.primaryLight;
     return switch (categoryId) {

@@ -218,6 +218,25 @@ async function main() {
     },
     { merge: true },
   );
+
+  // Versão do app nas lojas — o cliente compara build local com latestBuild/minBuild.
+  await setDoc(
+    doc(db, 'content_meta', 'app_release'),
+    {
+      enabled: true,
+      latestVersion: '1.0.2',
+      latestBuild: 3,
+      minBuild: 1,
+      androidStoreUrl:
+        'https://play.google.com/store/apps/details?id=com.trilha.trilha_app',
+      iosStoreUrl: 'https://apps.apple.com/br/search?term=STWAY',
+      message:
+        'Uma nova versão do STWAY está pronta — melhorias e correções te esperam.',
+      updatedAt: Timestamp.now(),
+    },
+    { merge: true },
+  );
+
   // Fecha bootstrap de admin_users (create só enquanto este doc não existir).
   await setDoc(
     doc(db, 'content_meta', 'bootstrap_locked'),

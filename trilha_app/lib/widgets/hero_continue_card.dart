@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -58,8 +59,17 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     if (mission == null) return _completedState(context);
 
     final a = Appearance.of(context);
+    final visuals = TrailVisuals.forSlug(
+      widget.trailSlug,
+      color: widget.trailColor,
+    );
+    final trailAccent = visuals.accent;
+    final trailGlow = visuals.glow;
     final stepLabel = widget.goalMet ? 'Mais uma lição' : 'Próxima lição';
     final ctaLabel = widget.goalMet ? 'Seguir' : 'Continuar';
+    final rewardColor = mission.isBoss ? AppColors.sand : trailAccent;
+    // Contorno/glow do palco = amarelo do CTA (não a cor da trilha).
+    final brandAccent = AppColors.accent;
 
     return GestureDetector(
       onTap: () {
@@ -78,14 +88,15 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  a.cardFillSoft,
+                  Color.lerp(a.cardFillSoft, trailAccent, 0.12)!,
                   a.cardFill,
-                  Color.lerp(a.cardFill, AppColors.primaryDark, 0.35)!,
+                  Color.lerp(a.cardFill, trailGlow, 0.28)!,
                 ],
               ),
               border: Border.all(
                 color: AppMetrics.accentBorder(
                   alpha: 0.7 + 0.25 * _pulse.value,
+                  color: brandAccent,
                 ),
                 width: 1.5,
               ),
@@ -93,15 +104,15 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                 ...AppMetrics.accentGlow(
                   blur: 28,
                   alpha: glow * 0.45,
+                  color: brandAccent,
                 ),
-                ...AppMetrics.cardShadow(elevated: true),
+                ...AppMetrics.cardShadow(elevated: true, tint: brandAccent),
               ],
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
               child: Stack(
                 children: [
-                  // Energia — órbita dourada
                   Positioned(
                     right: -60,
                     top: -40,
@@ -112,7 +123,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         shape: BoxShape.circle,
                         gradient: RadialGradient(
                           colors: [
-                            AppColors.accent.withValues(alpha: 0.22 + 0.1 * _pulse.value),
+                            trailAccent.withValues(
+                              alpha: 0.28 + 0.12 * _pulse.value,
+                            ),
                             Colors.transparent,
                           ],
                         ),
@@ -129,7 +142,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         shape: BoxShape.circle,
                         gradient: RadialGradient(
                           colors: [
-                            AppColors.primary.withValues(alpha: 0.35),
+                            trailGlow.withValues(alpha: 0.4),
                             Colors.transparent,
                           ],
                         ),
@@ -140,12 +153,12 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                     right: 8,
                     top: 24,
                     child: Opacity(
-                      opacity: 0.18,
+                      opacity: 0.22,
                       child: CinematicIcon.mission(
                         mission.title,
                         isBoss: mission.isBoss,
                         size: 120,
-                        accent: AppColors.accent,
+                        accent: trailAccent,
                         glowing: false,
                       ),
                     ),
@@ -158,15 +171,14 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         Row(
                           children: [
                             _Chip(
+                              tone: trailAccent,
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   CinematicIcon(
-                                    glyph: CinematicGlyphResolver.forTrail(
-                                      widget.trailSlug,
-                                    ),
+                                    glyph: visuals.glyph,
                                     size: 16,
-                                    accent: AppColors.accent,
+                                    accent: trailAccent,
                                     glowing: false,
                                   ),
                                   const SizedBox(width: 6),
@@ -184,7 +196,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             const Spacer(),
                             if (widget.streak > 0)
                               _Chip(
-                                accent: true,
+                                tone: AppColors.streak,
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
@@ -213,7 +225,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                           style: AppTypography.label(
                             size: 12,
                             letterSpacing: 2.2,
-                            color: AppColors.accent,
+                            color: trailAccent,
                           ),
                         ),
                         const SizedBox(height: 10),
@@ -232,12 +244,13 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             'Desafio especial · mais passos',
                             style: AppTypography.body(
                               size: 14,
-                              color: a.textMuted(0.65),
+                              weight: FontWeight.w700,
+                              color: AppColors.sand.withValues(alpha: 0.9),
                             ),
                           ),
                         ],
                         const SizedBox(height: 28),
-                        // CTA full-bleed
+                        // CTA full-bleed — amarelo de marca
                         Container(
                           width: double.infinity,
                           padding: const EdgeInsets.symmetric(vertical: 18),
@@ -272,12 +285,25 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         ),
                         const SizedBox(height: 12),
                         Center(
-                          child: Text(
-                            '+${mission.stepsReward} passos nesta lição',
-                            style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w700,
-                              color: AppColors.accent.withValues(alpha: 0.9),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 12,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              color: rewardColor.withValues(alpha: 0.14),
+                              borderRadius: BorderRadius.circular(AppRadii.pill),
+                              border: Border.all(
+                                color: rewardColor.withValues(alpha: 0.55),
+                              ),
+                            ),
+                            child: Text(
+                              '+${mission.stepsReward} passos nesta lição',
+                              style: AppTypography.body(
+                                size: 13,
+                                weight: FontWeight.w800,
+                                color: rewardColor,
+                              ),
                             ),
                           ),
                         ),
@@ -340,23 +366,24 @@ class _HeroContinueCardState extends State<HeroContinueCard>
 
 class _Chip extends StatelessWidget {
   final Widget child;
-  final bool accent;
+  final Color? tone;
 
-  const _Chip({required this.child, this.accent = false});
+  const _Chip({required this.child, this.tone});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final ink = tone;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
       decoration: BoxDecoration(
-        color: accent
-            ? AppColors.streak.withValues(alpha: 0.12)
+        color: ink != null
+            ? ink.withValues(alpha: 0.14)
             : a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
-          color: accent
-              ? AppColors.streak.withValues(alpha: 0.4)
+          color: ink != null
+              ? ink.withValues(alpha: 0.5)
               : a.cardBorder,
         ),
       ),

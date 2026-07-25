@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
+import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
@@ -17,6 +19,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/ui_primitives.dart';
@@ -43,6 +46,8 @@ class _SettingsScreenState extends State<SettingsScreen>
   List<DifficultyMeta>? _difficulties;
   List<String> _genesisMissionSlugs = const [];
   late final AnimationController _entrance;
+  String? _versionLabel;
+  bool _checkingUpdate = false;
 
   @override
   void initState() {
@@ -52,7 +57,45 @@ class _SettingsScreenState extends State<SettingsScreen>
       duration: const Duration(milliseconds: 850),
     )..forward();
     _loadDifficulties();
+    _loadVersionLabel();
     _nameController.addListener(_onNameChanged);
+  }
+
+  Future<void> _loadVersionLabel() async {
+    final info = await PackageInfo.fromPlatform();
+    if (!mounted) return;
+    setState(() => _versionLabel = '${info.version} (${info.buildNumber})');
+  }
+
+  Future<void> _checkForUpdates() async {
+    if (_checkingUpdate) return;
+    setState(() => _checkingUpdate = true);
+    try {
+      final status = await AppUpdateService.check(ignoreSnooze: true);
+      if (!mounted) return;
+      setState(() => _versionLabel = status.localLabel);
+
+      if (status.updateAvailable) {
+        await showAppUpdateSheet(context, status);
+        return;
+      }
+
+      if (!mounted) return;
+      final msg = !status.remoteReachable
+          ? status.message
+          : 'Você está na versão mais recente · ${status.localLabel}';
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            msg,
+            style: AppTypography.body(size: 13, color: Colors.white),
+          ),
+          backgroundColor: AppColors.nightElevated,
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _checkingUpdate = false);
+    }
   }
 
   void _onNameChanged() {
@@ -315,6 +358,39 @@ class _SettingsScreenState extends State<SettingsScreen>
                     height: 1.4,
                     color: a.textMuted(0.78),
                   ),
+                ),
+                const SizedBox(height: AppSpace.md),
+                Row(
+                  children: [
+                    CinematicIcon(
+                      glyph: CinematicGlyph.spark,
+                      size: 18,
+                      accent: AppColors.accent,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        _versionLabel == null
+                            ? 'Versão…'
+                            : 'Versão $_versionLabel',
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w700,
+                          color: a.text.withValues(alpha: 0.9),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpace.sm),
+                _GhostAction(
+                  label: _checkingUpdate
+                      ? 'Verificando…'
+                      : 'Verificar atualizações',
+                  glyph: CinematicGlyph.rise,
+                  expanded: true,
+                  onTap: _checkingUpdate ? null : _checkForUpdates,
                 ),
                 const SizedBox(height: AppSpace.md),
                 Text(

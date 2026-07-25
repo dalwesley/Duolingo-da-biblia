@@ -14,11 +14,21 @@ class LivingSeedCard extends StatelessWidget {
 
   CinematicGlyph _glyph(GrowthStage stage) {
     return switch (stage) {
-      GrowthStage.seed => CinematicGlyph.spark,
+      GrowthStage.seed => CinematicGlyph.seed,
       GrowthStage.sprout => CinematicGlyph.flame,
       GrowthStage.sapling => CinematicGlyph.path,
-      GrowthStage.olive => CinematicGlyph.crown,
+      GrowthStage.olive => CinematicGlyph.tree,
       GrowthStage.lamp => CinematicGlyph.crown,
+    };
+  }
+
+  Color _accent(GrowthStage stage) {
+    return switch (stage) {
+      GrowthStage.seed => AppColors.cedar,
+      GrowthStage.sprout => AppColors.ember,
+      GrowthStage.sapling => AppColors.accent,
+      GrowthStage.olive => AppColors.cedar,
+      GrowthStage.lamp => AppColors.accent,
     };
   }
 
@@ -35,9 +45,7 @@ class LivingSeedCard extends StatelessWidget {
           CinematicIcon(
             glyph: _glyph(growth.stage),
             size: 52,
-            accent: growth.stage == GrowthStage.lamp
-                ? AppColors.accent
-                : AppColors.primaryLight,
+            accent: _accent(growth.stage),
             glowing: false,
           ),
           const SizedBox(width: 14),
