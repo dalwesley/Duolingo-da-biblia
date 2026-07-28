@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'dart:async';
 import '../services/analytics_service.dart';
@@ -24,6 +25,19 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   String? _error;
+  String? _versionLabel;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadVersionLabel();
+  }
+
+  Future<void> _loadVersionLabel() async {
+    final info = await PackageInfo.fromPlatform();
+    if (!mounted) return;
+    setState(() => _versionLabel = 'v${info.version}');
+  }
 
   Future<void> _continueAfterLogin(
     ProgressService progress,
@@ -122,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: AppSpace.md),
               Text(
-                'Sua conta Google é a fonte da verdade: passos, dias e missões ficam no Firebase.',
+                'Sua conta guarda seus passos, dias e missões — assim nada se perde entre aparelhos.',
                 textAlign: TextAlign.center,
                 style: AppTypography.body(color: a.textMuted(0.65)),
               ),
@@ -181,6 +195,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   color: a.textMuted(0.4),
                 ),
               ),
+              if (_versionLabel != null) ...[
+                const SizedBox(height: AppSpace.md),
+                Text(
+                  _versionLabel!,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0.8,
+                    color: a.textMuted(0.28),
+                  ),
+                ),
+              ],
             ],
           ),
         ),

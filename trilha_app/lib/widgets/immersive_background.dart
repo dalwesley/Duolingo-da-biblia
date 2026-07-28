@@ -148,8 +148,15 @@ class _Orb extends StatelessWidget {
 class ImmersiveBackground extends StatelessWidget {
   final Widget child;
   final AppearanceStyle? appearance;
+  /// Se definido, substitui [AmbientAtmosphere] (ex.: imagem da splash).
+  final Widget? background;
 
-  const ImmersiveBackground({super.key, required this.child, this.appearance});
+  const ImmersiveBackground({
+    super.key,
+    required this.child,
+    this.appearance,
+    this.background,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -160,10 +167,11 @@ class ImmersiveBackground extends StatelessWidget {
     return Stack(
       fit: StackFit.expand,
       children: [
-        AmbientAtmosphere(
-          phase: phase,
-          vignetteStrength: night ? 0.1 : 0.06,
-        ),
+        background ??
+            AmbientAtmosphere(
+              phase: phase,
+              vignetteStrength: night ? 0.1 : 0.06,
+            ),
         child,
       ],
     );
@@ -177,6 +185,8 @@ class ImmersiveScaffold extends StatelessWidget {
   final Widget body;
   final Widget? bottomNavigationBar;
   final bool extendBody;
+  /// Fundo custom (ex.: arte da splash). Null = atmosfera padrão.
+  final Widget? background;
 
   const ImmersiveScaffold({
     super.key,
@@ -185,6 +195,7 @@ class ImmersiveScaffold extends StatelessWidget {
     required this.body,
     this.bottomNavigationBar,
     this.extendBody = false,
+    this.background,
   });
 
   @override
@@ -211,6 +222,7 @@ class ImmersiveScaffold extends StatelessWidget {
           extendBody: extendBody,
           body: ImmersiveBackground(
             appearance: style,
+            background: background,
             child: body,
           ),
           bottomNavigationBar: bottomNavigationBar,

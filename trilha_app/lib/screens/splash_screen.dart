@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
@@ -25,8 +26,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with TickerProviderStateMixin {
-  static const _firstDuration = Duration(milliseconds: 2800);
-  static const _returnDuration = Duration(milliseconds: 1500);
+  static const _firstDuration = Duration(milliseconds: 4000);
+  static const _returnDuration = Duration(milliseconds: 4000);
 
   late final AnimationController _master;
   late final AnimationController _pulse;
@@ -34,6 +35,7 @@ class _SplashScreenState extends State<SplashScreen>
   bool _exiting = false;
   bool _isReturnVisit = false;
   bool _hitClimax = false;
+  String? _versionLabel;
 
   @override
   void initState() {
@@ -45,7 +47,14 @@ class _SplashScreenState extends State<SplashScreen>
       duration: const Duration(milliseconds: 1400),
     )..repeat(reverse: true);
 
+    _loadVersionLabel();
     _boot();
+  }
+
+  Future<void> _loadVersionLabel() async {
+    final info = await PackageInfo.fromPlatform();
+    if (!mounted) return;
+    setState(() => _versionLabel = 'v${info.version}');
   }
 
   Future<void> _boot() async {
@@ -156,6 +165,16 @@ class _SplashScreenState extends State<SplashScreen>
     return ImmersiveScaffold(
       mode: mode,
       style: appearance,
+      background: const ColoredBox(
+        color: AppColors.primaryDark,
+        child: SizedBox.expand(
+          child: Image(
+            image: AssetImage('assets/icon/splash_bg.png'),
+            fit: BoxFit.cover,
+            alignment: Alignment.center,
+          ),
+        ),
+      ),
       body: AnimatedBuilder(
         animation: Listenable.merge([_master, _pulse]),
         builder: (context, _) {
@@ -273,6 +292,17 @@ class _SplashScreenState extends State<SplashScreen>
                             color: AppColors.textOnDark.withValues(alpha: 0.35),
                           ),
                         ),
+                        if (_versionLabel != null) ...[
+                          const SizedBox(height: 10),
+                          Text(
+                            _versionLabel!,
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 0.8,
+                              color: AppColors.textOnDark.withValues(alpha: 0.28),
+                            ),
+                          ),
+                        ],
                       ],
                     ),
                   ),

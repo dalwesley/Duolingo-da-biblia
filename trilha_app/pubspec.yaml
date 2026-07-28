@@ -1,7 +1,7 @@
 name: trilha_app
 description: STWAY — aprenda a Bíblia em missões gamificadas.
 publish_to: 'none'
-version: 1.0.5+5
+version: 1.0.6+6
 
 environment:
   sdk: ^3.12.0
@@ -51,6 +51,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icon/app_icon.png
+    - assets/icon/splash_bg.png
     - assets/data/trails.json
     - assets/data/genesis_questions.json
     - assets/data/exodo_questions.json
