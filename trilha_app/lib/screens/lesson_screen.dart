@@ -178,20 +178,14 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     final usesBank = trailUsesDifficultyBank(trailSlug) &&
         QuestionBank.instance.hasBankForTrail(trailSlug);
 
-    // Se abriu passo direto sem escolher profundidade, força o picker.
+    // Se abriu passo direto sem modo, garante um (auto Semente se for o único).
     if (usesBank && trailSlug != null && !progress.hasDifficultyForTrail(trailSlug)) {
-      await Navigator.of(context).push(
-        PageRouteBuilder(
-          opaque: true,
-          pageBuilder: (_, _, _) => DifficultyPickerScreen(
-            trailSlug: trailSlug,
-            onSelected: () => Navigator.of(context).pop(),
-          ),
-          transitionsBuilder: (_, anim, _, child) => FadeTransition(opacity: anim, child: child),
-        ),
+      final ok = await DifficultyPickerScreen.ensureSelected(
+        context,
+        trailSlug: trailSlug,
       );
       if (!mounted) return;
-      if (!context.read<ProgressService>().hasDifficultyForTrail(trailSlug)) {
+      if (!ok) {
         Navigator.of(context).pop();
         return;
       }
@@ -228,7 +222,6 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
         }
       }
       if (bankQs.isNotEmpty) questions = bankQs;
-      await freshProgress.markQuestionsUsed(ids);
     }
 
     if (!mounted) return;
@@ -375,6 +368,9 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     if (_mission == null) return;
     final total = _mission!.questions.length;
     final progress = context.read<ProgressService>();
+    if (!widget.practiceMode && _pickedIds.isNotEmpty) {
+      progress.markQuestionsUsed(_pickedIds);
+    }
     final isReplay = widget.practiceMode ||
         (_baseMission != null && progress.isMissionCompleted(_baseMission!.slug));
     final steps = ProgressService.computeLessonSteps(

@@ -24,6 +24,49 @@ class DifficultyPickerScreen extends StatefulWidget {
     required this.onSelected,
   });
 
+  /// Garante um modo na trilha. Se só um estiver liberado, aplica sem UI.
+  /// Retorna `false` se o usuário cancelou o picker sem escolher.
+  static Future<bool> ensureSelected(
+    BuildContext context, {
+    required String trailSlug,
+  }) async {
+    final progress = context.read<ProgressService>();
+    if (progress.hasDifficultyForTrail(trailSlug)) return true;
+
+    final unlocked = progress.unlockedDifficulties(trailSlug);
+    if (unlocked.length <= 1) {
+      final id = unlocked.isEmpty
+          ? TrailDifficulty.semente.id
+          : unlocked.first.id;
+      final trail = await TrailRepository().getTrailBySlug(trailSlug);
+      if (!context.mounted) return false;
+      await progress.setTrailDifficulty(
+        trailSlug,
+        id,
+        missionSlugs: trail?.missionSlugs ?? const [],
+      );
+      AnalyticsService.instance.logDifficultyPick(
+        trailSlug: trailSlug,
+        difficulty: id,
+      );
+      return true;
+    }
+
+    await Navigator.of(context).push(
+      PageRouteBuilder(
+        opaque: true,
+        pageBuilder: (_, _, _) => DifficultyPickerScreen(
+          trailSlug: trailSlug,
+          onSelected: () => Navigator.of(context).pop(),
+        ),
+        transitionsBuilder: (_, anim, _, child) =>
+            FadeTransition(opacity: anim, child: child),
+      ),
+    );
+    if (!context.mounted) return false;
+    return context.read<ProgressService>().hasDifficultyForTrail(trailSlug);
+  }
+
   @override
   State<DifficultyPickerScreen> createState() => _DifficultyPickerScreenState();
 }

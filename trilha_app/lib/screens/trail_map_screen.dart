@@ -55,26 +55,14 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     setState(() => _trail = trail);
 
     if (trailUsesDifficultyBank(widget.slug)) {
-      final progress = context.read<ProgressService>();
-      if (!progress.hasDifficultyForTrail(widget.slug)) {
-        await Navigator.of(context).push(
-          PageRouteBuilder(
-            opaque: true,
-            pageBuilder: (_, _, _) => DifficultyPickerScreen(
-              trailSlug: widget.slug,
-              onSelected: () => Navigator.of(context).pop(),
-            ),
-            transitionsBuilder: (_, anim, _, child) =>
-                FadeTransition(opacity: anim, child: child),
-          ),
-        );
-        if (!mounted) return;
-        if (!context.read<ProgressService>().hasDifficultyForTrail(
-          widget.slug,
-        )) {
-          Navigator.of(context).pop();
-          return;
-        }
+      final ok = await DifficultyPickerScreen.ensureSelected(
+        context,
+        trailSlug: widget.slug,
+      );
+      if (!mounted) return;
+      if (!ok) {
+        Navigator.of(context).pop();
+        return;
       }
     }
 
@@ -119,6 +107,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   }
 
   Future<void> _changeDifficulty() async {
+    final progress = context.read<ProgressService>();
+    // Sem escolha real (só Semente), não abre o picker.
+    if (!progress.hasDifficultyChoice(widget.slug)) return;
     await Navigator.of(context).push(
       PageRouteBuilder(
         opaque: true,
@@ -292,9 +283,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         difficultyLabel: trailUsesDifficultyBank(widget.slug)
                             ? _difficultyLabel(difficultyId ?? 'semente')
                             : null,
-                        onDifficultyTap: trailUsesDifficultyBank(widget.slug)
-                            ? _changeDifficulty
-                            : null,
+                        onDifficultyTap:
+                            trailUsesDifficultyBank(widget.slug) &&
+                                    progress.hasDifficultyChoice(widget.slug)
+                                ? _changeDifficulty
+                                : null,
                       ),
                     )
                   else
@@ -453,14 +446,15 @@ class _TrailJourneyIntro extends StatelessWidget {
                   letterSpacing: 0.4,
                 ),
               ),
-              Text(
-                '  ·  mudar',
-                style: AppTypography.label(
-                  size: 11,
-                  color: AppColors.accent,
-                  letterSpacing: 0.3,
+              if (onDifficultyTap != null)
+                Text(
+                  '  ·  mudar',
+                  style: AppTypography.label(
+                    size: 11,
+                    color: AppColors.accent,
+                    letterSpacing: 0.3,
+                  ),
                 ),
-              ),
             ],
           ),
         ),

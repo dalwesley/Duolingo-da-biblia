@@ -37,6 +37,15 @@ class QuestionBank {
     return cached.any((q) => q.trailSlug == trailSlug);
   }
 
+  /// Perguntas do banco pertencentes ao passo [section] (slug da missão).
+  /// Aceita match exato em `section` ou id que contenha o slug (legado/Firestore).
+  static bool matchesMissionSection(BankQuestion q, String section) {
+    if (section.isEmpty) return false;
+    if (q.section == section) return true;
+    // IDs no formato genesis--sem-gen-01-criador-01 / exodo-sem-exo-01-opressao-01
+    return q.id.contains('-$section-') || q.id.endsWith('-$section');
+  }
+
   Future<List<String>> pickIdsForMission({
     required TrailDifficulty difficulty,
     required String? moduleTitle,
@@ -57,16 +66,19 @@ class QuestionBank {
     final pool = questions
         .where((q) => q.difficulty == difficulty && q.trailSlug == trail)
         .toList();
-    final unusedSection = pool
-        .where((q) => q.section == resolvedSection && !usedIds.contains(q.id))
+
+    // Só o passo atual — nunca misturar capítulos/missões da mesma trilha.
+    final sectionPool =
+        pool.where((q) => matchesMissionSection(q, resolvedSection)).toList();
+
+    final unused = sectionPool
+        .where((q) => !usedIds.contains(q.id))
         .toList()
       ..shuffle(_rng);
-    final unusedOther = pool
-        .where((q) => q.section != resolvedSection && !usedIds.contains(q.id))
+    final usedInSection = sectionPool
+        .where((q) => usedIds.contains(q.id))
         .toList()
       ..shuffle(_rng);
-    final usedFallback =
-        pool.where((q) => usedIds.contains(q.id)).toList()..shuffle(_rng);
 
     final ids = <String>[];
     void take(List<BankQuestion> from) {
@@ -77,9 +89,9 @@ class QuestionBank {
       }
     }
 
-    take(unusedSection);
-    take(unusedOther);
-    take(usedFallback);
+    take(unused);
+    // Replay / pool esgotado: reutiliza só perguntas deste passo.
+    take(usedInSection);
     return ids;
   }
 

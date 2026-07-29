@@ -2,14 +2,21 @@ import { COL, listCollection, removeDoc, saveDoc } from './db.js';
 import { confirmAction, escapeHtml, setLoading, showToast } from './ui.js';
 
 const DIFFS = ['semente', 'caminhada', 'profundezas'];
-const SECTIONS = [
-  'criacao',
-  'jardim',
-  'depois',
-  'opressao',
-  'libertacao',
-  'deserto',
+const TRAILS = [
+  'genesis-1-11',
+  'exodo',
+  'evangelhos',
+  'atos',
+  'apocalipse',
 ];
+
+/** Seção = slug do passo (ex.: gen-01-criador). Lista dinâmica + exemplos. */
+function sectionOptions(items, current) {
+  const fromData = [...new Set(items.map((q) => q.section).filter(Boolean))].sort();
+  const set = new Set(fromData);
+  if (current && !set.has(current)) fromData.unshift(current);
+  return fromData;
+}
 
 export async function renderBankPage(root) {
   root.innerHTML = `<div class="page-header"><h1>Banco de perguntas</h1></div><div class="card"><p>Carregando…</p></div>`;
@@ -31,12 +38,13 @@ export async function renderBankPage(root) {
   }
 
   function render() {
+    const sections = sectionOptions(items, filterSection);
     const list = filtered();
     root.innerHTML = `
       <div class="page-header row-between">
         <div>
           <h1>Banco de perguntas</h1>
-          <p class="page-sub">Banco por trilha e nível (Gênesis, Êxodo…) — ${items.length} no total</p>
+          <p class="page-sub">Seção = slug do passo (ex. gen-01-criador) — ${items.length} no total</p>
         </div>
         <button type="button" class="btn btn-primary" id="btn-new-q">+ Pergunta</button>
       </div>
@@ -48,7 +56,7 @@ export async function renderBankPage(root) {
         </select>
         <select id="f-sec">
           <option value="">Todas seções</option>
-          ${SECTIONS.map((s) => `<option value="${s}" ${filterSection === s ? 'selected' : ''}>${s}</option>`).join('')}
+          ${sections.map((s) => `<option value="${escapeHtml(s)}" ${filterSection === s ? 'selected' : ''}>${escapeHtml(s)}</option>`).join('')}
         </select>
       </div>
       <div class="card">
@@ -111,7 +119,8 @@ export async function renderBankPage(root) {
     const q = existing || {
       id: '',
       difficulty: 'semente',
-      section: 'criacao',
+      section: 'gen-01-criador',
+      trail: 'genesis-1-11',
       question: '',
       options: [
         { id: 'a', text: '' },
@@ -125,6 +134,7 @@ export async function renderBankPage(root) {
       verseRef: '',
       reveal: '',
     };
+    const sectionList = sectionOptions(items, q.section);
 
     modal.innerHTML = `
       <div class="modal-backdrop">
@@ -134,12 +144,16 @@ export async function renderBankPage(root) {
           <div class="form-grid">
             <label>ID<input id="bq-id" value="${escapeHtml(q.id)}" ${isNew ? '' : 'disabled'} /></label>
             <label>Trilha<select id="bq-trail">
-              ${['genesis-1-11', 'exodo'].map((t) => `<option value="${t}" ${(q.trail || q.trailSlug || 'genesis-1-11') === t ? 'selected' : ''}>${t}</option>`).join('')}
+              ${TRAILS.map((t) => `<option value="${t}" ${(q.trail || q.trailSlug || 'genesis-1-11') === t ? 'selected' : ''}>${t}</option>`).join('')}
             </select></label>
             <label>Dificuldade<select id="bq-diff">${DIFFS.map((d) => `<option ${q.difficulty === d ? 'selected' : ''}>${d}</option>`).join('')}</select></label>
-            <label>Seção<select id="bq-sec">${SECTIONS.map((s) => `<option ${q.section === s ? 'selected' : ''}>${s}</option>`).join('')}</select></label>
+            <label>Seção (slug do passo)
+              <input id="bq-sec" list="bq-sec-list" value="${escapeHtml(q.section || '')}" placeholder="ex.: gen-01-criador" />
+              <datalist id="bq-sec-list">${sectionList.map((s) => `<option value="${escapeHtml(s)}"></option>`).join('')}</datalist>
+            </label>
             <label>Versículo<input id="bq-verse" value="${escapeHtml(q.verseRef || '')}" /></label>
           </div>
+          <p class="muted" style="margin:0 0 var(--space-3)">A seção deve ser o slug do passo na trilha (não use criacao/jardim/depois).</p>
           <label>Pergunta<textarea id="bq-q" rows="3">${escapeHtml(q.question || '')}</textarea></label>
           <div class="form-grid">
             ${['a', 'b', 'c', 'd'].map((id) => {
@@ -173,6 +187,11 @@ export async function renderBankPage(root) {
         showToast('ID obrigatório', 'error');
         return;
       }
+      const section = (document.getElementById('bq-sec').value || '').trim();
+      if (!section) {
+        showToast('Seção (slug do passo) obrigatória', 'error');
+        return;
+      }
       const correct = document.getElementById('bq-correct').value;
       const options = ['a', 'b', 'c', 'd'].map((oid) => ({
         id: oid,
@@ -186,7 +205,7 @@ export async function renderBankPage(root) {
         id,
         trail: document.getElementById('bq-trail').value,
         difficulty: document.getElementById('bq-diff').value,
-        section: document.getElementById('bq-sec').value,
+        section,
         question: document.getElementById('bq-q').value,
         options,
         correctOptionId: correct,

@@ -905,6 +905,15 @@ class ProgressService extends ChangeNotifier {
     return prev != null && hasClearedMode(trailSlug, prev.id);
   }
 
+  List<TrailDifficulty> unlockedDifficulties(String trailSlug) => [
+        for (final d in TrailDifficulty.values)
+          if (isDifficultyUnlocked(trailSlug, d)) d,
+      ];
+
+  /// Há escolha real de modo (2+ liberados). Caso contrário, Semente é o único caminho.
+  bool hasDifficultyChoice(String trailSlug) =>
+      unlockedDifficulties(trailSlug).length > 1;
+
   /// Troca o modo da trilha. Se já havia outro modo e [missionSlugs] for
   /// passado, zera o progresso desses passos — cada modo recomeça do início.
   Future<void> setTrailDifficulty(
@@ -945,8 +954,11 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> markQuestionsUsed(List<String> ids) async {
+    if (ids.isEmpty) return;
     final next = {...usedQuestionIds, ...ids}.toList();
-    usedQuestionIds = next.length > 120 ? next.sublist(next.length - 120) : next;
+    // Cap generoso: cobre várias trilhas × modos sem “esquecer” IDs cedo
+    // e reintroduzir perguntas já vistas no meio do progresso.
+    usedQuestionIds = next.length > 400 ? next.sublist(next.length - 400) : next;
     await _save();
     notifyListeners();
   }
