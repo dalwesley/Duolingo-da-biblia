@@ -1,20 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 
-/// Sheet para aceitar convite: digitar código ou escanear QR.
-Future<String?> showAcceptInviteSheet(BuildContext context) {
+/// Sheet para aceitar convite: colar código (clipboard), digitar ou escanear QR.
+Future<String?> showAcceptInviteSheet(
+  BuildContext context, {
+  String? initialCode,
+}) {
   return showModalBottomSheet<String>(
     context: context,
     backgroundColor: Colors.transparent,
     isScrollControlled: true,
-    builder: (ctx) => const _AcceptInviteSheet(),
+    builder: (ctx) => _AcceptInviteSheet(initialCode: initialCode),
   );
 }
 
 class _AcceptInviteSheet extends StatefulWidget {
-  const _AcceptInviteSheet();
+  final String? initialCode;
+
+  const _AcceptInviteSheet({this.initialCode});
 
   @override
   State<_AcceptInviteSheet> createState() => _AcceptInviteSheetState();
@@ -24,13 +31,36 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   final _controller = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    final seed = InviteDeepLinkService.extractCompanionCode(widget.initialCode);
+    if (seed != null) {
+      _controller.text = seed;
+    } else {
+      _tryClipboard();
+    }
+  }
+
+  Future<void> _tryClipboard() async {
+    try {
+      final data = await Clipboard.getData(Clipboard.kTextPlain);
+      final code = InviteDeepLinkService.extractCompanionCode(data?.text);
+      if (!mounted || code == null || _controller.text.isNotEmpty) return;
+      setState(() => _controller.text = code);
+    } catch (_) {}
+  }
+
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
 
   void _submit([String? raw]) {
-    final code = (raw ?? _controller.text).trim().toUpperCase();
+    final code = InviteDeepLinkService.extractCompanionCode(
+          raw ?? _controller.text,
+        ) ??
+        (raw ?? _controller.text).trim().toUpperCase();
     if (code.isEmpty) return;
     Navigator.pop(context, code);
   }
@@ -89,7 +119,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             ),
             const SizedBox(height: AppSpace.xs),
             Text(
-              'Escaneie o QR ou digite o código do amigo',
+              'Se você copiou o código no WhatsApp, ele já aparece aqui',
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 12,
@@ -99,7 +129,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             const SizedBox(height: AppSpace.screen),
             TextField(
               controller: _controller,
-              autofocus: true,
+              autofocus: _controller.text.isEmpty,
               textCapitalization: TextCapitalization.characters,
               textAlign: TextAlign.center,
               maxLength: 8,
@@ -215,11 +245,10 @@ class _QrScanPageState extends State<_QrScanPage> {
     for (final barcode in capture.barcodes) {
       final raw = barcode.rawValue?.trim();
       if (raw == null || raw.isEmpty) continue;
-      final match = RegExp(r'[A-Z0-9]{4,8}', caseSensitive: false)
-          .firstMatch(raw.toUpperCase());
-      if (match == null) continue;
+      final code = InviteDeepLinkService.extractCompanionCode(raw);
+      if (code == null) continue;
       _handled = true;
-      Navigator.pop(context, match.group(0));
+      Navigator.pop(context, code);
       return;
     }
   }

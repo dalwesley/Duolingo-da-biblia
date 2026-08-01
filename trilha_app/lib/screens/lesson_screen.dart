@@ -48,7 +48,8 @@ class LessonScreen extends StatefulWidget {
   State<LessonScreen> createState() => _LessonScreenState();
 }
 
-class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMixin {
+class _LessonScreenState extends State<LessonScreen>
+    with TickerProviderStateMixin {
   final _repo = TrailRepository();
   Mission? _baseMission;
   Mission? _mission;
@@ -81,9 +82,18 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   @override
   void initState() {
     super.initState();
-    _revealAnim = AnimationController(vsync: this, duration: const Duration(milliseconds: 850));
-    _questionEnter = AnimationController(vsync: this, duration: const Duration(milliseconds: 520));
-    _impactFlash = AnimationController(vsync: this, duration: const Duration(milliseconds: 700));
+    _revealAnim = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 850),
+    );
+    _questionEnter = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 520),
+    );
+    _impactFlash = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 700),
+    );
     _load();
   }
 
@@ -100,7 +110,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     if (widget.missionOverride != null) {
       final override = widget.missionOverride!;
       if (!mounted) return;
-      final hasStudy = !widget.practiceMode &&
+      final hasStudy =
+          !widget.practiceMode &&
           MissionStudy.forSlug(widget.missionSlug) != null;
       setState(() {
         _baseMission = override;
@@ -154,8 +165,7 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
           trail.missionSlugs,
           progress.completedMissions,
         );
-        final alreadyDone =
-            progress.isMissionCompleted(widget.missionSlug);
+        final alreadyDone = progress.isMissionCompleted(widget.missionSlug);
         if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
           if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
@@ -175,11 +185,14 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
 
     if (!mounted) return;
 
-    final usesBank = trailUsesDifficultyBank(trailSlug) &&
+    final usesBank =
+        trailUsesDifficultyBank(trailSlug) &&
         QuestionBank.instance.hasBankForTrail(trailSlug);
 
     // Se abriu passo direto sem modo, garante um (auto Semente se for o único).
-    if (usesBank && trailSlug != null && !progress.hasDifficultyForTrail(trailSlug)) {
+    if (usesBank &&
+        trailSlug != null &&
+        !progress.hasDifficultyForTrail(trailSlug)) {
       final ok = await DifficultyPickerScreen.ensureSelected(
         context,
         trailSlug: trailSlug,
@@ -199,8 +212,11 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     if (mission != null && usesBank && trailSlug != null) {
       if (!mounted) return;
       final freshProgress = context.read<ProgressService>();
-      final diffId = freshProgress.difficultyForTrail(trailSlug) ?? TrailDifficulty.semente.id;
-      final difficulty = TrailDifficulty.fromId(diffId) ?? TrailDifficulty.semente;
+      final diffId =
+          freshProgress.difficultyForTrail(trailSlug) ??
+          TrailDifficulty.semente.id;
+      final difficulty =
+          TrailDifficulty.fromId(diffId) ?? TrailDifficulty.semente;
       meta = await QuestionBank.instance.metaFor(difficulty);
       // 5 perguntas por passo no modo escolhido (pool dedicado ao slug do passo).
       const count = 5;
@@ -225,7 +241,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     }
 
     if (!mounted) return;
-    final hasStudy = !widget.practiceMode &&
+    final hasStudy =
+        !widget.practiceMode &&
         mission != null &&
         MissionStudy.forSlug(widget.missionSlug) != null;
     AnalyticsService.instance.logLessonStart(
@@ -250,7 +267,10 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
           subtitle: mission.subtitle,
           intro: mission.intro,
           type: mission.type,
-          stepsReward: _scaledSteps(mission.stepsReward, meta?.stepsMultiplier ?? 1),
+          stepsReward: _scaledSteps(
+            mission.stepsReward,
+            meta?.stepsMultiplier ?? 1,
+          ),
           questions: questions,
         );
       }
@@ -261,13 +281,14 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
 
   Question get _question => _mission!.questions[_questionIndex];
 
-  bool get _cinematic => CinematicResolver.isCinematicMission(_trailSlug, _moduleTitle);
+  bool get _cinematic =>
+      CinematicResolver.isCinematicMission(_trailSlug, _moduleTitle);
 
   GenesisModuleTheme get _theme => GenesisModuleTheme.forModule(
-        _moduleTitle ?? '',
-        realm: TrailRealm.fromId(_realmId),
-        trailSlug: _trailSlug,
-      );
+    _moduleTitle ?? '',
+    realm: TrailRealm.fromId(_realmId),
+    trailSlug: _trailSlug,
+  );
 
   String get _correctOptionText {
     final q = _question;
@@ -278,13 +299,13 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       _questionIndex < _revealTags.length ? _revealTags[_questionIndex] : null;
 
   CinematicBeat get _beat => CinematicResolver.forQuestion(
-        missionSlug: widget.missionSlug,
-        questionIndex: _questionIndex,
-        correctOptionText: _correctOptionText,
-        questionText: _question.question,
-        revealTag: _currentRevealTag,
-        moduleTitle: _moduleTitle,
-      );
+    missionSlug: widget.missionSlug,
+    questionIndex: _questionIndex,
+    correctOptionText: _correctOptionText,
+    questionText: _question.question,
+    revealTag: _currentRevealTag,
+    moduleTitle: _moduleTitle,
+  );
 
   CreationWorldState get _displayWorld {
     if (!_cinematic) return _world;
@@ -297,7 +318,12 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   }
 
   Future<void> _select(String optionId) async {
-    if (_selected != null || _phase != _Phase.quiz || _showFeedback || _busy || _outOfLamps) return;
+    if (_selected != null ||
+        _phase != _Phase.quiz ||
+        _showFeedback ||
+        _busy ||
+        _outOfLamps)
+      return;
     if (_eliminated.contains(optionId)) return;
     _busy = true;
     final correct = optionId == _question.correctOptionId;
@@ -305,13 +331,17 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
       SoundService.instance.playCorrect();
       HapticFeedback.lightImpact();
       if (_questionIndex < _pickedIds.length) {
-        await context.read<ProgressService>().clearMistake(_pickedIds[_questionIndex]);
+        await context.read<ProgressService>().clearMistake(
+          _pickedIds[_questionIndex],
+        );
       }
     } else {
       SoundService.instance.playWrong();
       HapticFeedback.mediumImpact();
       if (_questionIndex < _pickedIds.length) {
-        await context.read<ProgressService>().recordMistake(_pickedIds[_questionIndex]);
+        await context.read<ProgressService>().recordMistake(
+          _pickedIds[_questionIndex],
+        );
       }
     }
 
@@ -348,7 +378,9 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
   void _useHint() {
     if (_hintUsed || _selected != null || _showFeedback) return;
     HapticFeedback.selectionClick();
-    final wrong = _question.options.where((o) => o.id != _question.correctOptionId).toList();
+    final wrong = _question.options
+        .where((o) => o.id != _question.correctOptionId)
+        .toList();
     if (wrong.isEmpty) return;
     wrong.shuffle();
     setState(() {
@@ -371,8 +403,10 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
     if (!widget.practiceMode && _pickedIds.isNotEmpty) {
       progress.markQuestionsUsed(_pickedIds);
     }
-    final isReplay = widget.practiceMode ||
-        (_baseMission != null && progress.isMissionCompleted(_baseMission!.slug));
+    final isReplay =
+        widget.practiceMode ||
+        (_baseMission != null &&
+            progress.isMissionCompleted(_baseMission!.slug));
     final steps = ProgressService.computeLessonSteps(
       baseSteps: _mission!.stepsReward,
       correct: _correctCount,
@@ -390,7 +424,10 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
           trailSlug: _trailSlug ?? 'genesis-1-11',
           isBoss: _mission!.isBoss,
           isReplay: isReplay,
-          perfect: !forced && _correctCount == total && _lamps == ProgressService.maxLamps,
+          perfect:
+              !forced &&
+              _correctCount == total &&
+              _lamps == ProgressService.maxLamps,
         ),
       ),
     );
@@ -565,14 +602,16 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                             title: switch (_phase) {
                               _Phase.intro => mission.title,
                               _Phase.study => mission.title,
-                              _Phase.quiz => _difficultyMeta != null
-                                  ? 'Pergunta ${_questionIndex + 1}/$total'
-                                  : 'Pergunta ${_questionIndex + 1} de $total',
+                              _Phase.quiz =>
+                                _difficultyMeta != null
+                                    ? 'Pergunta ${_questionIndex + 1}/$total'
+                                    : 'Pergunta ${_questionIndex + 1} de $total',
                               _Phase.reflection => 'Anotar',
                             },
                             subtitle: switch (_phase) {
-                              _Phase.intro => _difficultyMeta?.label ??
-                                  (mission.isBoss ? 'Desafio' : 'Lição'),
+                              _Phase.intro =>
+                                _difficultyMeta?.label ??
+                                    (mission.isBoss ? 'Desafio' : 'Lição'),
                               _Phase.study =>
                                 _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
@@ -594,8 +633,9 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                                 fit: StackFit.expand,
                                 children: [
                                   ColoredBox(
-                                    color: AppColors.textOnDark
-                                        .withValues(alpha: 0.1),
+                                    color: AppColors.textOnDark.withValues(
+                                      alpha: 0.1,
+                                    ),
                                   ),
                                   FractionallySizedBox(
                                     alignment: Alignment.centerLeft,
@@ -626,32 +666,30 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                     Expanded(
                       child: switch (_phase) {
                         _Phase.quiz => CinematicLessonPanel(
-                            key: ValueKey(
-                              'q-$_questionIndex-${_pickedIds.length}',
-                            ),
-                            narrative: _beat.narrative,
-                            question: _question,
-                            selected: _selected,
-                            isCorrect: _isCorrect,
-                            showFeedback: _showFeedback,
-                            onSelect: _select,
-                            accent: accent,
-                            encouragement: null,
-                            hintUsed: _hintUsed,
-                            eliminatedIds: _eliminated,
-                            onHint: _useHint,
-                            outOfLamps: _outOfLamps,
-                            lamps: _lamps,
-                            verseSnippet: () {
-                              final v = MissionStudy.verseText(
-                                _question.verseRef,
-                              );
-                              if (v == null) return null;
-                              return v.length > 72
-                                  ? '${v.substring(0, 70)}…'
-                                  : v;
-                            }(),
+                          key: ValueKey(
+                            'q-$_questionIndex-${_pickedIds.length}',
                           ),
+                          narrative: _beat.narrative,
+                          question: _question,
+                          selected: _selected,
+                          isCorrect: _isCorrect,
+                          showFeedback: _showFeedback,
+                          onSelect: _select,
+                          accent: accent,
+                          encouragement: null,
+                          hintUsed: _hintUsed,
+                          eliminatedIds: _eliminated,
+                          onHint: _useHint,
+                          outOfLamps: _outOfLamps,
+                          lamps: _lamps,
+                          verseSnippet: () {
+                            final v = MissionStudy.verseText(
+                              _question.verseRef,
+                            );
+                            if (v == null) return null;
+                            return v.length > 72 ? '${v.substring(0, 70)}…' : v;
+                          }(),
+                        ),
                         _Phase.study when study != null =>
                           SingleChildScrollView(
                             physics: const BouncingScrollPhysics(),
@@ -664,74 +702,73 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                               onContinue: _startQuiz,
                             ),
                           ),
-                        _Phase.reflection when study != null =>
-                          ReflectionPanel(
-                            key: const ValueKey('reflection'),
-                            study: study,
-                            accent: accent,
-                            correct: _correctCount,
-                            total: total,
-                            onFinish: _completeReflection,
-                            onSkip: () =>
-                                _goToCelebration(forced: _outOfLamps),
-                          ),
+                        _Phase.reflection when study != null => ReflectionPanel(
+                          key: const ValueKey('reflection'),
+                          study: study,
+                          accent: accent,
+                          correct: _correctCount,
+                          total: total,
+                          onFinish: _completeReflection,
+                          onSkip: () => _goToCelebration(forced: _outOfLamps),
+                        ),
                         _Phase.intro => _IntroPanel(
-                            key: const ValueKey('intro'),
-                            mission: mission,
-                            theme: _theme,
-                            difficultyMeta: _difficultyMeta,
-                            hasStudy: _hasStudy,
-                            onStart: _startStudyOrQuiz,
-                          ),
+                          key: const ValueKey('intro'),
+                          mission: mission,
+                          theme: _theme,
+                          difficultyMeta: _difficultyMeta,
+                          hasStudy: _hasStudy,
+                          onStart: _startStudyOrQuiz,
+                        ),
                         _ => const SizedBox.shrink(),
                       },
                     ),
                   ],
                 ),
               ),
-            if (_phase == _Phase.quiz)
-              AnimatedBuilder(
-                animation: _impactFlash,
-                builder: (context, _) {
-                  if (_impactFlash.value <= 0 || _impactFlash.value >= 1) {
-                    return const SizedBox.shrink();
-                  }
-                  return Positioned.fill(
-                    child: IgnorePointer(
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                          gradient: RadialGradient(
-                            center: const Alignment(0, -0.2),
-                            radius: 1.1,
-                            colors: [
-                              (_impactPositive ? accent : AppColors.error)
-                                  .withValues(
-                                alpha: (1 - _impactFlash.value) *
-                                    (_impactPositive ? 0.28 : 0.22),
-                              ),
-                              Colors.transparent,
-                            ],
+              if (_phase == _Phase.quiz)
+                AnimatedBuilder(
+                  animation: _impactFlash,
+                  builder: (context, _) {
+                    if (_impactFlash.value <= 0 || _impactFlash.value >= 1) {
+                      return const SizedBox.shrink();
+                    }
+                    return Positioned.fill(
+                      child: IgnorePointer(
+                        child: DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: RadialGradient(
+                              center: const Alignment(0, -0.2),
+                              radius: 1.1,
+                              colors: [
+                                (_impactPositive ? accent : AppColors.error)
+                                    .withValues(
+                                      alpha:
+                                          (1 - _impactFlash.value) *
+                                          (_impactPositive ? 0.28 : 0.22),
+                                    ),
+                                Colors.transparent,
+                              ],
+                            ),
                           ),
                         ),
                       ),
-                    ),
-                  );
-                },
-              ),
-            if (_showFeedback && _selected != null && _isCorrect != null)
-              _FeedbackOverlay(
-                question: _question,
-                selected: _selected!,
-                isCorrect: _isCorrect!,
-                isLast: _outOfLamps || _questionIndex >= total - 1,
-                accent: accent,
-                outOfLamps: _outOfLamps,
-                verseText: MissionStudy.verseText(_question.verseRef),
-                onContinue: _continue,
-              ),
-          ],
+                    );
+                  },
+                ),
+              if (_showFeedback && _selected != null && _isCorrect != null)
+                _FeedbackOverlay(
+                  question: _question,
+                  selected: _selected!,
+                  isCorrect: _isCorrect!,
+                  isLast: _outOfLamps || _questionIndex >= total - 1,
+                  accent: accent,
+                  outOfLamps: _outOfLamps,
+                  verseText: MissionStudy.verseText(_question.verseRef),
+                  onContinue: _continue,
+                ),
+            ],
+          ),
         ),
-      ),
       ),
     );
   }
@@ -803,13 +840,17 @@ class _IntroPanel extends StatelessWidget {
               decoration: BoxDecoration(
                 color: theme.pathActive.withValues(alpha: 0.18),
                 borderRadius: BorderRadius.circular(AppRadii.pill),
-                border: Border.all(color: theme.pathActive.withValues(alpha: 0.4)),
+                border: Border.all(
+                  color: theme.pathActive.withValues(alpha: 0.4),
+                ),
               ),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   CinematicIcon(
-                    glyph: CinematicGlyphResolver.forDifficulty(difficultyMeta!.difficulty.id),
+                    glyph: CinematicGlyphResolver.forDifficulty(
+                      difficultyMeta!.difficulty.id,
+                    ),
                     size: 22,
                     accent: theme.pathActive,
                     glowing: false,
@@ -817,7 +858,10 @@ class _IntroPanel extends StatelessWidget {
                   const SizedBox(width: 8),
                   Text(
                     difficultyMeta!.label,
-                    style: AppTypography.title(size: 12, color: theme.pathActive),
+                    style: AppTypography.title(
+                      size: 12,
+                      color: theme.pathActive,
+                    ),
                   ),
                 ],
               ),
@@ -841,7 +885,9 @@ class _IntroPanel extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.28),
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.12)),
+              border: Border.all(
+                color: AppColors.textOnDark.withValues(alpha: 0.12),
+              ),
             ),
             child: Text(
               mission.intro,
@@ -903,15 +949,19 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
     final accent = widget.accent;
     final feedback = isCorrect
         ? question.feedbackCorrect
-        : question.feedbackWrong[widget.selected] ?? 'Volte ao versículo — o texto responde.';
+        : question.feedbackWrong[widget.selected] ??
+              'Volte ao versículo — o texto responde.';
     final color = isCorrect ? accent : AppColors.error;
     final bottom = MediaQuery.of(context).padding.bottom;
     final title = outOfLamps
         ? 'Lâmpadas apagadas'
         : isCorrect
-            ? 'Correto!'
-            : 'Você tropeçou';
-    final needsReread = !isCorrect && !outOfLamps && (widget.verseText != null || question.verseRef != null);
+        ? 'Correto!'
+        : 'Você tropeçou';
+    final needsReread =
+        !isCorrect &&
+        !outOfLamps &&
+        (widget.verseText != null || question.verseRef != null);
     final canContinue = !needsReread || _reread;
 
     return Positioned.fill(
@@ -922,193 +972,228 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
           tween: Tween(begin: 1, end: 0),
           duration: const Duration(milliseconds: 280),
           curve: Curves.easeOutCubic,
-          builder: (context, value, child) => Transform.translate(offset: Offset(0, value * 100), child: child),
+          builder: (context, value, child) =>
+              Transform.translate(offset: Offset(0, value * 100), child: child),
           child: ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
+            borderRadius: const BorderRadius.vertical(
+              top: Radius.circular(AppRadii.xl),
+            ),
             child: Container(
-                width: double.infinity,
-                padding: EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.section, AppSpace.screen, AppSpace.lg + bottom),
-                decoration: BoxDecoration(
-                  color: AppColors.night.withValues(alpha: 0.94),
-                  border: Border(top: BorderSide(color: color.withValues(alpha: 0.7), width: 3)),
+              width: double.infinity,
+              padding: EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                AppSpace.section,
+                AppSpace.screen,
+                AppSpace.lg + bottom,
+              ),
+              decoration: BoxDecoration(
+                color: AppColors.night.withValues(alpha: 0.94),
+                border: Border(
+                  top: BorderSide(
+                    color: color.withValues(alpha: 0.7),
+                    width: 3,
+                  ),
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 48,
-                          height: 48,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            gradient: LinearGradient(
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                              colors: [
-                                Color.lerp(color, Colors.white, 0.25)!,
-                                color,
-                              ],
-                            ),
-                            boxShadow: [
-                              BoxShadow(color: color.withValues(alpha: 0.4), blurRadius: 16),
-                            ],
-                          ),
-                          child: Center(
-                            child: CinematicIcon(
-                              glyph: outOfLamps
-                                  ? CinematicGlyph.frost
-                                  : isCorrect
-                                      ? CinematicGlyph.check
-                                      : CinematicGlyph.book,
-                              size: 26,
-                              accent: AppColors.inkOnAccent,
-                              framed: false,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: AppSpace.section),
-                        Expanded(
-                          child: Text(
-                            title,
-                            style: AppTypography.display(size: 22, color: color),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: AppSpace.section),
-                    Text(
-                      outOfLamps
-                          ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva passos parciais. Levante-se e continue caminhando.'
-                          : isCorrect
-                              ? feedback
-                              : 'Levante-se.\nContinue caminhando.\n\n$feedback',
-                      style: AppTypography.body(
-                        size: 15,
-                        height: 1.5,
-                        color: AppColors.textOnDark.withValues(alpha: 0.92),
-                      ),
-                    ),
-                    if (!outOfLamps && (widget.verseText != null || question.verseRef != null)) ...[
-                      const SizedBox(height: AppSpace.md),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    children: [
                       Container(
-                        padding: const EdgeInsets.all(AppSpace.section),
+                        width: 48,
+                        height: 48,
                         decoration: BoxDecoration(
-                          color: color.withValues(alpha: 0.12),
-                          borderRadius: BorderRadius.circular(AppRadii.sm),
-                          border: Border.all(color: color.withValues(alpha: 0.35)),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            if (question.verseRef != null)
-                              Text(
-                                question.verseRef!,
-                                style: AppTypography.label(size: 11, color: color, letterSpacing: 0.6),
-                              ),
-                            if (widget.verseText != null) ...[
-                              const SizedBox(height: AppSpace.xs),
-                              Text(
-                                '"${widget.verseText}"',
-                                style: AppTypography.body(
-                                  size: 14,
-                                  height: 1.45,
-                                  color: AppColors.textOnDark.withValues(alpha: 0.9),
-                                ).copyWith(fontStyle: FontStyle.italic),
-                              ),
+                          shape: BoxShape.circle,
+                          gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Color.lerp(color, Colors.white, 0.25)!,
+                              color,
                             ],
-                            if (question.verseRef != null) ...[
-                              const SizedBox(height: AppSpace.sm),
-                              GestureDetector(
-                                onTap: () {
-                                  Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                      builder: (_) => BibleReaderScreen(
-                                        reference: question.verseRef!,
-                                      ),
-                                    ),
-                                  );
-                                },
-                                child: Row(
-                                  children: [
-                                    CinematicIcon(
-                                      glyph: CinematicGlyph.book,
-                                      size: 16,
-                                      accent: color,
-                                      framed: false,
-                                    ),
-                                    const SizedBox(width: AppSpace.xs),
-                                    Text(
-                                      'Abrir na Bíblia',
-                                      style: AppTypography.cta(size: 12, color: color),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ],
-                        ),
-                      ),
-                    ],
-                    if (needsReread) ...[
-                      const SizedBox(height: AppSpace.md),
-                      GestureDetector(
-                        onTap: () => setState(() => _reread = !_reread),
-                        child: Row(
-                          children: [
-                            AnimatedContainer(
-                              duration: const Duration(milliseconds: 180),
-                              width: 22,
-                              height: 22,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(6),
-                                color: _reread ? color : Colors.transparent,
-                                border: Border.all(color: color.withValues(alpha: 0.8), width: 2),
-                              ),
-                              child: _reread
-                                  ? Center(
-                                      child: CinematicIcon(
-                                        glyph: CinematicGlyph.check,
-                                        size: 14,
-                                        accent: Colors.white,
-                                        framed: false,
-                                      ),
-                                    )
-                                  : null,
-                            ),
-                            const SizedBox(width: AppSpace.sm),
-                            Expanded(
-                              child: Text(
-                                'Reli o versículo com atenção',
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
-                                  color: AppColors.textOnDark.withValues(alpha: 0.85),
-                                ),
-                              ),
+                          ),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withValues(alpha: 0.25),
+                              blurRadius: 8,
+                              offset: const Offset(0, 3),
                             ),
                           ],
                         ),
+                        child: Center(
+                          child: CinematicIcon(
+                            glyph: outOfLamps
+                                ? CinematicGlyph.frost
+                                : isCorrect
+                                ? CinematicGlyph.check
+                                : CinematicGlyph.book,
+                            size: 26,
+                            accent: AppColors.inkOnAccent,
+                            framed: false,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: AppSpace.section),
+                      Expanded(
+                        child: Text(
+                          title,
+                          style: AppTypography.display(size: 22, color: color),
+                        ),
                       ),
                     ],
-                    const SizedBox(height: AppSpace.lg),
-                    Opacity(
-                      opacity: canContinue ? 1 : 0.45,
-                      child: _GoldButton(
-                        label: canContinue
-                            ? (outOfLamps
-                                ? 'ENCERRAR COM PASSOS PARCIAIS'
-                                : widget.isLast
-                                    ? 'SEGUIR'
-                                    : 'CONTINUAR')
-                            : 'MARQUE QUE RELÊU',
-                        onTap: canContinue ? widget.onContinue : () {},
+                  ),
+                  const SizedBox(height: AppSpace.section),
+                  Text(
+                    outOfLamps
+                        ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva passos parciais. Levante-se e continue caminhando.'
+                        : isCorrect
+                        ? feedback
+                        : 'Levante-se.\nContinue caminhando.\n\n$feedback',
+                    style: AppTypography.body(
+                      size: 15,
+                      height: 1.5,
+                      color: AppColors.textOnDark.withValues(alpha: 0.92),
+                    ),
+                  ),
+                  if (!outOfLamps &&
+                      (widget.verseText != null ||
+                          question.verseRef != null)) ...[
+                    const SizedBox(height: AppSpace.md),
+                    Container(
+                      padding: const EdgeInsets.all(AppSpace.section),
+                      decoration: BoxDecoration(
+                        color: color.withValues(alpha: 0.12),
+                        borderRadius: BorderRadius.circular(AppRadii.sm),
+                        border: Border.all(
+                          color: color.withValues(alpha: 0.35),
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (question.verseRef != null)
+                            Text(
+                              question.verseRef!,
+                              style: AppTypography.label(
+                                size: 11,
+                                color: color,
+                                letterSpacing: 0.6,
+                              ),
+                            ),
+                          if (widget.verseText != null) ...[
+                            const SizedBox(height: AppSpace.xs),
+                            Text(
+                              '"${widget.verseText}"',
+                              style: AppTypography.body(
+                                size: 14,
+                                height: 1.45,
+                                color: AppColors.textOnDark.withValues(
+                                  alpha: 0.9,
+                                ),
+                              ).copyWith(fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                          if (question.verseRef != null) ...[
+                            const SizedBox(height: AppSpace.sm),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) => BibleReaderScreen(
+                                      reference: question.verseRef!,
+                                    ),
+                                  ),
+                                );
+                              },
+                              child: Row(
+                                children: [
+                                  CinematicIcon(
+                                    glyph: CinematicGlyph.book,
+                                    size: 16,
+                                    accent: color,
+                                    framed: false,
+                                  ),
+                                  const SizedBox(width: AppSpace.xs),
+                                  Text(
+                                    'Abrir na Bíblia',
+                                    style: AppTypography.cta(
+                                      size: 12,
+                                      color: color,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ],
                       ),
                     ),
                   ],
-                ),
+                  if (needsReread) ...[
+                    const SizedBox(height: AppSpace.md),
+                    GestureDetector(
+                      onTap: () => setState(() => _reread = !_reread),
+                      child: Row(
+                        children: [
+                          AnimatedContainer(
+                            duration: const Duration(milliseconds: 180),
+                            width: 22,
+                            height: 22,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(6),
+                              color: _reread ? color : Colors.transparent,
+                              border: Border.all(
+                                color: color.withValues(alpha: 0.8),
+                                width: 2,
+                              ),
+                            ),
+                            child: _reread
+                                ? Center(
+                                    child: CinematicIcon(
+                                      glyph: CinematicGlyph.check,
+                                      size: 14,
+                                      accent: Colors.white,
+                                      framed: false,
+                                    ),
+                                  )
+                                : null,
+                          ),
+                          const SizedBox(width: AppSpace.sm),
+                          Expanded(
+                            child: Text(
+                              'Reli o versículo com atenção',
+                              style: AppTypography.body(
+                                size: 13,
+                                weight: FontWeight.w700,
+                                color: AppColors.textOnDark.withValues(
+                                  alpha: 0.85,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: AppSpace.lg),
+                  Opacity(
+                    opacity: canContinue ? 1 : 0.45,
+                    child: _GoldButton(
+                      label: canContinue
+                          ? (outOfLamps
+                                ? 'ENCERRAR COM PASSOS PARCIAIS'
+                                : widget.isLast
+                                ? 'SEGUIR'
+                                : 'CONTINUAR')
+                          : 'MARQUE QUE RELÊU',
+                      onTap: canContinue ? widget.onContinue : () {},
+                    ),
+                  ),
+                ],
               ),
+            ),
           ),
         ),
       ),
@@ -1120,10 +1205,7 @@ class _GoldButton extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
 
-  const _GoldButton({
-    required this.label,
-    required this.onTap,
-  });
+  const _GoldButton({required this.label, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -1135,13 +1217,6 @@ class _GoldButton extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: AppGradients.gold,
           borderRadius: BorderRadius.circular(AppRadii.md),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.45),
-              offset: const Offset(0, 4),
-              blurRadius: 12,
-            ),
-          ],
         ),
         child: Text(
           label,
@@ -1152,4 +1227,3 @@ class _GoldButton extends StatelessWidget {
     );
   }
 }
-

@@ -7,6 +7,7 @@ import 'services/backend_service.dart';
 import 'services/companion_service.dart';
 import 'services/league_service.dart';
 import 'services/home_widget_service.dart';
+import 'services/invite_deep_link_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
 import 'services/room_service.dart';
@@ -21,6 +22,7 @@ void main() async {
   await SoundService.instance.init();
   await NotificationService.instance.init();
   await HomeWidgetService.init();
+  await InviteDeepLinkService.instance.init();
 
   runApp(const TrilhaApp());
 }

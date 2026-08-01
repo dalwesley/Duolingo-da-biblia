@@ -5,22 +5,28 @@ import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
+import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
+import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/companion_formed_sheet.dart';
+import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
 
 class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
+  /// Quando a aba Juntos está visível — processa deep link pendente.
+  final bool active;
 
-  const LeagueScreen({super.key, this.topBar});
+  const LeagueScreen({super.key, this.topBar, this.active = true});
 
   @override
   State<LeagueScreen> createState() => _LeagueScreenState();
@@ -31,8 +37,9 @@ class _LeagueScreenState extends State<LeagueScreen>
   late final AnimationController _enter;
   List<LeagueEntry> _realPlayers = const [];
   List<LeagueEntry> _overallPlayers = const [];
-  int _tab = 0; // 0 = companhia, 1 = caravana, 2 = salas
-  bool _overallRanking = false;
+  int _tab = 0; // 0 = caravana, 1 = companhia, 2 = salas
+  bool _overallRanking = true;
+  bool _handlingInvite = false;
 
   @override
   void initState() {
@@ -41,7 +48,37 @@ class _LeagueScreenState extends State<LeagueScreen>
       vsync: this,
       duration: const Duration(milliseconds: 900),
     )..forward();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _settle());
+    InviteDeepLinkService.instance.addListener(_onPendingInvite);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _settle();
+      if (widget.active) _consumePendingInvite();
+    });
+  }
+
+  @override
+  void didUpdateWidget(covariant LeagueScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.active && !oldWidget.active) {
+      _consumePendingInvite();
+    }
+  }
+
+  void _onPendingInvite() {
+    if (!mounted || !widget.active) return;
+    _consumePendingInvite();
+  }
+
+  Future<void> _consumePendingInvite() async {
+    if (!mounted || _handlingInvite) return;
+    final code = InviteDeepLinkService.instance.takePendingCompanionCode();
+    if (code == null) return;
+    _handlingInvite = true;
+    setState(() => _tab = 1);
+    try {
+      await _joinCompanionWithCode(context, code, confirm: true);
+    } finally {
+      _handlingInvite = false;
+    }
   }
 
   Future<void> _settle() async {
@@ -84,6 +121,7 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   @override
   void dispose() {
+    InviteDeepLinkService.instance.removeListener(_onPendingInvite);
     _enter.dispose();
     super.dispose();
   }
@@ -130,9 +168,9 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
         const SizedBox(height: AppSpace.section),
         if (_tab == 0)
-          ..._buildCompanions(context)
-        else if (_tab == 1)
           ..._buildLeague(context)
+        else if (_tab == 1)
+          ..._buildCompanions(context)
         else
           ..._buildRooms(context),
       ],
@@ -267,27 +305,26 @@ class _LeagueScreenState extends State<LeagueScreen>
       ];
     }
 
+    final active = companions.companions
+        .where((c) => !c.awaitingPartner)
+        .toList();
+    final togetherToday =
+        active.where((c) => c.bothWalkedToday).length;
+    final bestStreak = companions.companions.isEmpty
+        ? 0
+        : companions.companions
+            .map((c) => c.sharedDays)
+            .reduce((a, b) => a > b ? a : b);
+
     final list = <Widget>[
       _reveal(
         1,
-        Column(
-          children: [
-            Text(
-              'Andem juntos',
-              textAlign: TextAlign.center,
-              style: AppTypography.display(size: 28),
-            ),
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              'Convide até ${CompanionService.maxCompanions} pessoas.\nSem ranking entre vocês — só presença.',
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w600,
-                color: a.textMuted(0.55),
-              ),
-            ),
-          ],
+        _CompanhiaHeroCard(
+          companionCount: companions.companions.length,
+          activeCount: active.length,
+          togetherToday: togetherToday,
+          bestStreak: bestStreak,
+          maxSlots: CompanionService.maxCompanions,
         ),
       ),
       const SizedBox(height: AppSpace.section),
@@ -324,6 +361,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           (2 + i).clamp(0, 8),
           _CompanionCard(
             companion: companions.companions[i],
+            myName: progress.userName,
             onCopy: () async {
               await Clipboard.setData(
                 ClipboardData(text: companions.companions[i].code),
@@ -333,8 +371,11 @@ class _LeagueScreenState extends State<LeagueScreen>
                 context,
               ).showSnackBar(const SnackBar(content: Text('Código copiado')));
             },
-            onShowQr: () =>
-                showInviteQrSheet(context, code: companions.companions[i].code),
+            onShowQr: () => showInviteQrSheet(
+              context,
+              code: companions.companions[i].code,
+              inviterName: progress.userName,
+            ),
             onLeave: () async {
               final ok = await _confirmLeaveCompanion(context);
               if (ok == true && context.mounted) {
@@ -405,28 +446,56 @@ class _LeagueScreenState extends State<LeagueScreen>
       );
       return;
     }
-    await Clipboard.setData(ClipboardData(text: created.code));
+    await Clipboard.setData(
+      ClipboardData(text: InviteDeepLinkService.companionUri(created.code)),
+    );
     if (!context.mounted) return;
-    await showInviteQrSheet(context, code: created.code);
+    await showInviteQrSheet(
+      context,
+      code: created.code,
+      inviterName: progress.userName,
+    );
   }
 
   Future<void> _joinCompanion(BuildContext context) async {
     final code = await showAcceptInviteSheet(context);
     if (code == null || code.isEmpty || !context.mounted) return;
-    final ok = await context.read<CompanionService>().joinWithCode(
+    await _joinCompanionWithCode(context, code, confirm: false);
+  }
+
+  Future<void> _joinCompanionWithCode(
+    BuildContext context,
+    String code, {
+    required bool confirm,
+  }) async {
+    if (confirm) {
+      final ok = await showCompanionInviteConfirmSheet(context, code: code);
+      if (!ok || !context.mounted) return;
+    }
+    final service = context.read<CompanionService>();
+    final joinedOk = await service.joinWithCode(
       code,
       context.read<ProgressService>(),
     );
     if (!context.mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          ok
-              ? 'Companhia formada — caminhem juntos'
-              : (context.read<CompanionService>().lastError ??
-                    'Não foi possível entrar'),
+    if (!joinedOk) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(service.lastError ?? 'Não foi possível entrar'),
         ),
-      ),
+      );
+      return;
+    }
+    WalkCompanion? joined;
+    for (final c in service.companions) {
+      if (c.code.toUpperCase() == code.trim().toUpperCase()) {
+        joined = c;
+        break;
+      }
+    }
+    await showCompanionFormedSheet(
+      context,
+      partnerName: joined?.displayName,
     );
   }
 
@@ -550,8 +619,11 @@ class _LeagueScreenState extends State<LeagueScreen>
             code: room.code,
             title: room.name,
             subtitle: 'Escaneie o QR ou entre com o código',
+            companionMode: false,
+            inviterName: progress.userName,
             shareMessage:
-                'Entre na sala "${room.name}" no Stway com o código ${room.code}.',
+                'Entre na sala "${room.name}" no Stway com o código ${room.code}.\n\n'
+                'Ainda não tem o app? Baixe: ${AppUpdateService.androidStoreUrl}',
           ),
           onLeave: () async {
             final ok = await _confirmLeave(context);
@@ -572,10 +644,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
       ],
       const SizedBox(height: AppSpace.section),
-      SectionLabel(
-        'Ranking da sala',
-        color: a.textMuted(0.7),
-      ),
+      SectionLabel('Ranking da sala', color: a.textMuted(0.7)),
       const SizedBox(height: AppSpace.sm),
       if (rooms.loading)
         const Padding(
@@ -714,8 +783,8 @@ class _SegmentTabs extends StatelessWidget {
       radius: AppRadii.md,
       child: Row(
         children: [
-          _seg(context, 0, 'Companhia'),
-          _seg(context, 1, 'Caravana'),
+          _seg(context, 0, 'Caravana'),
+          _seg(context, 1, 'Companhia'),
           _seg(context, 2, 'Salas'),
         ],
       ),
@@ -733,9 +802,7 @@ class _SegmentTabs extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.sm),
             border: selected
-                ? Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.45),
-                  )
+                ? Border.all(color: AppColors.accent.withValues(alpha: 0.45))
                 : null,
             color: selected ? Colors.white.withValues(alpha: 0.04) : null,
           ),
@@ -775,8 +842,8 @@ class _RankingPeriodTabs extends StatelessWidget {
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _item(context, label: 'Semana', value: false),
             _item(context, label: 'Geral', value: true),
+            _item(context, label: 'Semana', value: false),
           ],
         ),
       ),
@@ -835,7 +902,6 @@ class _RoomsOfflineCard extends StatelessWidget {
             size: 40,
             accent: AppColors.accent,
             glowing: false,
-            framed: false,
           ),
           const SizedBox(height: 14),
           Text(
@@ -937,11 +1003,10 @@ class _RoomsEmptyState extends StatelessWidget {
       child: Column(
         children: [
           const CinematicIcon(
-            glyph: CinematicGlyph.dove,
-            size: 38,
+            glyph: CinematicGlyph.people,
+            size: 48,
             accent: AppColors.accent,
-            glowing: false,
-            framed: false,
+            glowing: true,
           ),
           const SizedBox(height: 14),
           Text(
@@ -964,19 +1029,22 @@ class _RoomsEmptyState extends StatelessWidget {
             children: [
               _RoomBenefit(
                 glyph: CinematicGlyph.lock,
-                label: 'Privada',
+                label: 'Só o grupo',
+                detail: 'Entra com código',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
-                glyph: CinematicGlyph.share,
-                label: 'Código',
+                glyph: CinematicGlyph.people,
+                label: 'Convide',
+                detail: 'Envie o código',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.podium,
-                label: 'Semanal',
+                label: 'Ranking',
+                detail: 'Placar da semana',
                 color: a.textMuted(0.78),
               ),
             ],
@@ -1011,11 +1079,13 @@ class _RoomsEmptyState extends StatelessWidget {
 class _RoomBenefit extends StatelessWidget {
   final CinematicGlyph glyph;
   final String label;
+  final String detail;
   final Color color;
 
   const _RoomBenefit({
     required this.glyph,
     required this.label,
+    required this.detail,
     required this.color,
   });
 
@@ -1024,7 +1094,7 @@ class _RoomBenefit extends StatelessWidget {
     final a = Appearance.of(context);
     return Expanded(
       child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
         decoration: BoxDecoration(
           color: a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
@@ -1041,9 +1111,22 @@ class _RoomBenefit extends StatelessWidget {
             const SizedBox(height: 5),
             Text(
               label,
-              style: AppTypography.label(
-                letterSpacing: 0,
-                color: color,
+              textAlign: TextAlign.center,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.label(letterSpacing: 0, color: color),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              detail,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 10,
+                height: 1.2,
+                weight: FontWeight.w600,
+                color: a.textMuted(0.48),
               ),
             ),
           ],
@@ -1089,11 +1172,10 @@ class _RoomHeader extends StatelessWidget {
           Row(
             children: [
               const CinematicIcon(
-                glyph: CinematicGlyph.dove,
-                size: 38,
+                glyph: CinematicGlyph.people,
+                size: 42,
                 accent: AppColors.accent,
-                glowing: false,
-                framed: false,
+                glowing: true,
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -1339,9 +1421,7 @@ class _RoomStatChip extends StatelessWidget {
           color: accent ? null : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
-            color: accent
-                ? Colors.white.withValues(alpha: 0.45)
-                : a.cardBorder,
+            color: accent ? Colors.white.withValues(alpha: 0.45) : a.cardBorder,
           ),
         ),
         child: Column(
@@ -1409,10 +1489,7 @@ class _CaravanaHeroCard extends StatelessWidget {
                 ? 'Passos de toda a jornada'
                 : 'Quem mais caminhou nesta caravana',
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              height: 1.35,
-              color: a.textMuted(0.65),
-            ),
+            style: AppTypography.body(height: 1.35, color: a.textMuted(0.65)),
           ),
           const SizedBox(height: 16),
           Container(
@@ -1508,38 +1585,21 @@ class _TierLadder extends StatelessWidget {
         final tier = LeagueTier.values[i];
         final reached = i <= currentIndex;
         final isCurrent = i == currentIndex;
+        final glyph = switch (tier) {
+          LeagueTier.semente => CinematicGlyph.seed,
+          LeagueTier.videira => CinematicGlyph.tree,
+          LeagueTier.oliveira => CinematicGlyph.mountain,
+          LeagueTier.cedro => CinematicGlyph.crown,
+          LeagueTier.estrela => CinematicGlyph.star,
+        };
         return Expanded(
           child: Column(
             children: [
-              Container(
-                width: isCurrent ? 34 : 28,
-                height: isCurrent ? 34 : 28,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: reached ? AppGradients.gold : null,
-                  color: reached ? null : a.cardFillSoft,
-                  border: Border.all(
-                    color: isCurrent
-                        ? Colors.white.withValues(alpha: 0.85)
-                        : Colors.white.withValues(alpha: reached ? 0.2 : 0.1),
-                    width: isCurrent ? 1.5 : 1,
-                  ),
-                ),
-                child: Center(
-                  child: CinematicIcon(
-                    glyph: switch (tier) {
-                      LeagueTier.semente => CinematicGlyph.seed,
-                      LeagueTier.videira => CinematicGlyph.tree,
-                      LeagueTier.oliveira => CinematicGlyph.mountain,
-                      LeagueTier.cedro => CinematicGlyph.crown,
-                      LeagueTier.estrela => CinematicGlyph.star,
-                    },
-                    size: isCurrent ? 17 : 14,
-                    accent: reached ? AppColors.inkOnAccent : a.textMuted(0.35),
-                    glowing: false,
-                    framed: false,
-                  ),
-                ),
+              CinematicIcon(
+                glyph: glyph,
+                size: isCurrent ? 36 : 30,
+                accent: reached ? AppColors.accent : a.textMuted(0.35),
+                glowing: false,
               ),
               const SizedBox(height: 4),
               Text(
@@ -1606,10 +1666,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
     final a = Appearance.of(context);
     return AlertDialog(
       backgroundColor: a.cardFill,
-      title: Text(
-        widget.title,
-        style: AppTypography.display(size: 24),
-      ),
+      title: Text(widget.title, style: AppTypography.display(size: 24)),
       content: TextField(
         controller: _controller,
         autofocus: true,
@@ -1646,10 +1703,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
             backgroundColor: AppColors.accent,
             foregroundColor: AppColors.inkOnAccent,
           ),
-          child: Text(
-            widget.confirmLabel,
-            style: AppTypography.cta(),
-          ),
+          child: Text(widget.confirmLabel, style: AppTypography.cta()),
         ),
       ],
     );
@@ -1724,35 +1778,35 @@ class _OutcomeBanner extends StatelessWidget {
         ),
         const SizedBox(width: 8),
         TextButton(
-            onPressed: () async {
-              if (outcome == LeagueOutcome.promoted) {
-                await context.read<ProgressService>().grantBonusSteps(
-                  LeagueService.promotionBonusXp,
-                );
-              }
-              await league.dismissOutcome();
-              if (!context.mounted) return;
-              final progress = context.read<ProgressService>();
-              final backend = context.read<BackendService>();
-              final rooms = context.read<RoomService>();
-              await backend.saveNow(
-                progress,
-                LeagueService.weekKey(),
-                roomCode: rooms.activeCode,
-                league: league,
+          onPressed: () async {
+            if (outcome == LeagueOutcome.promoted) {
+              await context.read<ProgressService>().grantBonusSteps(
+                LeagueService.promotionBonusXp,
               );
-            },
-            child: Text(
-              outcome == LeagueOutcome.promoted ? 'Coletar' : 'Ok',
-              style: AppTypography.cta(
-                color: outcome == LeagueOutcome.promoted
-                    ? AppColors.inkOnAccent
-                    : AppColors.accent,
-              ),
+            }
+            await league.dismissOutcome();
+            if (!context.mounted) return;
+            final progress = context.read<ProgressService>();
+            final backend = context.read<BackendService>();
+            final rooms = context.read<RoomService>();
+            await backend.saveNow(
+              progress,
+              LeagueService.weekKey(),
+              roomCode: rooms.activeCode,
+              league: league,
+            );
+          },
+          child: Text(
+            outcome == LeagueOutcome.promoted ? 'Coletar' : 'Ok',
+            style: AppTypography.cta(
+              color: outcome == LeagueOutcome.promoted
+                  ? AppColors.inkOnAccent
+                  : AppColors.accent,
             ),
           ),
-        ],
-      );
+        ),
+      ],
+    );
 
     if (outcome == LeagueOutcome.promoted) {
       return Container(
@@ -1862,31 +1916,47 @@ class _StandingRow extends StatelessWidget {
 
     final row = Row(
       children: [
-        SizedBox(
-          width: 26,
-          child: Text(
-            '$rank',
-            style: AppTypography.title(
-              size: isTop3 ? 16 : 13,
-              weight: FontWeight.w900,
-              color: entry.isUser
-                  ? AppColors.inkOnAccent
-                  : (medal ?? a.textMuted(0.6)),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              '${entry.steps}',
+              style: AppTypography.body(
+                size: 14,
+                weight: FontWeight.w900,
+                color: entry.isUser
+                    ? AppColors.inkOnAccent
+                    : AppColors.accent.withValues(alpha: 0.95),
+              ),
             ),
-          ),
+            Text(
+              'passos',
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 0,
+                color: entry.isUser
+                    ? AppColors.inkOnAccent.withValues(alpha: 0.7)
+                    : a.textMuted(0.5),
+              ),
+            ),
+          ],
         ),
+        const SizedBox(width: 10),
         Container(
-          width: 34,
-          height: 34,
+          width: 36,
+          height: 36,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: entry.isUser
                 ? Colors.white.withValues(alpha: 0.35)
                 : AppColors.primaryLight.withValues(alpha: 0.3),
             border: Border.all(
-              color: entry.isUser
-                  ? Colors.white.withValues(alpha: 0.6)
-                  : Colors.white.withValues(alpha: 0.15),
+              color: medal != null && !entry.isUser
+                  ? medal.withValues(alpha: 0.55)
+                  : entry.isUser
+                      ? Colors.white.withValues(alpha: 0.6)
+                      : Colors.white.withValues(alpha: 0.15),
+              width: medal != null ? 1.5 : 1,
             ),
           ),
           child: Center(
@@ -1902,25 +1972,36 @@ class _StandingRow extends StatelessWidget {
         ),
         const SizedBox(width: 10),
         Expanded(
-          child: Text(
-            entry.isUser ? '${entry.name} (você)' : entry.name,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              weight: entry.isUser ? FontWeight.w900 : FontWeight.w600,
-              color: entry.isUser ? AppColors.inkOnAccent : a.text,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                entry.isUser ? '${entry.name} (você)' : entry.name,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  weight: entry.isUser ? FontWeight.w900 : FontWeight.w600,
+                  color: entry.isUser ? AppColors.inkOnAccent : a.text,
+                ),
+              ),
+              if (isTop3)
+                Text(
+                  switch (rank) {
+                    1 => 'Líder da caravana',
+                    2 => 'Quase no topo',
+                    _ => 'Pódio',
+                  },
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0,
+                    color: entry.isUser
+                        ? AppColors.inkOnAccent.withValues(alpha: 0.75)
+                        : (medal ?? a.textMuted(0.45)),
+                  ),
+                ),
+            ],
           ),
         ),
-        Text(
-          '${entry.steps} passos',
-          style: AppTypography.body(
-            size: 13,
-            weight: FontWeight.w800,
-            color: entry.isUser
-                ? AppColors.inkOnAccent
-                : AppColors.accent.withValues(alpha: 0.9),
-          ),
-        ),
+        _RankBadge(rank: rank, onUserRow: entry.isUser),
       ],
     );
 
@@ -1957,6 +2038,120 @@ class _StandingRow extends StatelessWidget {
   }
 }
 
+/// Badge de posição — pódio com medalha cheia; demais em cápsula uniforme.
+class _RankBadge extends StatelessWidget {
+  final int rank;
+  final bool onUserRow;
+
+  const _RankBadge({required this.rank, required this.onUserRow});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+
+    if (rank <= 3) {
+      final fill = switch (rank) {
+        1 => AppColors.medalGold,
+        2 => AppColors.medalSilver,
+        _ => AppColors.medalBronze,
+      };
+      final ink = switch (rank) {
+        1 => AppColors.medalInk,
+        2 => const Color(0xFF2A3140),
+        _ => const Color(0xFF3A2410),
+      };
+      final size = rank == 1 ? 34.0 : 32.0;
+
+      return SizedBox(
+        width: 36,
+        height: 36,
+        child: Center(
+          child: Container(
+            width: size,
+            height: size,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.lerp(fill, Colors.white, 0.32)!,
+                  fill,
+                  Color.lerp(fill, Colors.black, 0.2)!,
+                ],
+                stops: const [0.0, 0.48, 1.0],
+              ),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.6),
+                width: 1.5,
+              ),
+              boxShadow: [
+                if (rank == 1)
+                  BoxShadow(
+                    color: fill.withValues(alpha: 0.5),
+                    blurRadius: 12,
+                    offset: const Offset(0, 2),
+                  ),
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.28),
+                  blurRadius: 5,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: Center(
+              child: Text(
+                '$rank',
+                style: AppTypography.title(
+                  size: rank == 1 ? 16 : 14,
+                  weight: FontWeight.w900,
+                  color: ink,
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    // 4º+ — cápsula alinhada ao tamanho do pódio
+    return SizedBox(
+      width: 36,
+      height: 36,
+      child: Center(
+        child: Container(
+          constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
+          padding: EdgeInsets.symmetric(horizontal: rank >= 10 ? 7 : 0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(999),
+            color: onUserRow
+                ? Colors.white.withValues(alpha: 0.28)
+                : Colors.white.withValues(alpha: 0.08),
+            border: Border.all(
+              color: onUserRow
+                  ? Colors.white.withValues(alpha: 0.55)
+                  : AppColors.accent.withValues(alpha: 0.28),
+              width: 1.2,
+            ),
+          ),
+          child: Center(
+            child: Text(
+              '$rank',
+              style: AppTypography.title(
+                size: rank >= 100 ? 10 : (rank >= 10 ? 12 : 13),
+                weight: FontWeight.w900,
+                color: onUserRow
+                    ? AppColors.inkOnAccent
+                    : a.textMuted(0.82),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _CompanionsOfflineCard extends StatelessWidget {
   final String? error;
   final bool loading;
@@ -1980,7 +2175,6 @@ class _CompanionsOfflineCard extends StatelessWidget {
             size: 40,
             accent: AppColors.accent,
             glowing: false,
-            framed: false,
           ),
           const SizedBox(height: 14),
           Text(
@@ -1992,10 +2186,7 @@ class _CompanionsOfflineCard extends StatelessWidget {
           Text(
             error ?? 'Entre com Google para caminhar com alguém de verdade.',
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              color: a.textMuted(0.7),
-            ),
+            style: AppTypography.body(size: 13, color: a.textMuted(0.7)),
           ),
           const SizedBox(height: 16),
           if (loading)
@@ -2035,6 +2226,13 @@ class _CompanionsEmpty extends StatelessWidget {
       padding: const EdgeInsets.all(AppSpace.xl),
       child: Column(
         children: [
+          const CinematicIcon(
+            glyph: CinematicGlyph.path,
+            size: 44,
+            accent: AppColors.accent,
+            glowing: false,
+          ),
+          const SizedBox(height: 14),
           Text(
             'Quem caminha ao seu lado?',
             textAlign: TextAlign.center,
@@ -2042,13 +2240,38 @@ class _CompanionsEmpty extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Convide um amigo ou entre com um código. Quando os dois dão um passo no dia, a companhia avança.',
+            'Até 3 pares. Sem disputa — o foco é presença: quando os dois dão um passo no dia, a companhia avança.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
               height: 1.45,
               color: a.textMuted(0.65),
             ),
+          ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(
+                child: _CompanhiaPerk(
+                  glyph: CinematicGlyph.flame,
+                  label: 'Dias juntos',
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _CompanhiaPerk(
+                  glyph: CinematicGlyph.seed,
+                  label: 'Marcos',
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: _CompanhiaPerk(
+                  glyph: CinematicGlyph.people,
+                  label: 'Presença',
+                ),
+              ),
+            ],
           ),
           const SizedBox(height: 20),
           if (loading)
@@ -2064,14 +2287,215 @@ class _CompanionsEmpty extends StatelessWidget {
   }
 }
 
+class _CompanhiaPerk extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final String label;
+
+  const _CompanhiaPerk({required this.glyph, required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 6),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+      ),
+      child: Column(
+        children: [
+          CinematicIcon(
+            glyph: glyph,
+            size: 22,
+            accent: AppColors.accent,
+            framed: false,
+          ),
+          const SizedBox(height: 6),
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0,
+              weight: FontWeight.w700,
+              color: a.textMuted(0.7),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CompanhiaHeroCard extends StatelessWidget {
+  final int companionCount;
+  final int activeCount;
+  final int togetherToday;
+  final int bestStreak;
+  final int maxSlots;
+
+  const _CompanhiaHeroCard({
+    required this.companionCount,
+    required this.activeCount,
+    required this.togetherToday,
+    required this.bestStreak,
+    required this.maxSlots,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final hasAny = companionCount > 0;
+    final goldLine = !hasAny
+        ? 'Até $maxSlots amigos íntimos'
+        : bestStreak > 0
+            ? '$bestStreak ${bestStreak == 1 ? 'dia' : 'dias'} juntos'
+            : togetherToday > 0
+                ? '$togetherToday caminharam hoje'
+                : '$activeCount de $companionCount ativos';
+
+    final goldSub = !hasAny
+        ? 'Convide alguém e andem lado a lado'
+        : bestStreak > 0
+            ? togetherToday > 0
+                ? '$togetherToday juntos hoje · sem disputa, só presença'
+                : 'Sem disputa — só presença compartilhada'
+            : 'Quando os dois caminham, o dia conta';
+
+    return GlassCard(
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+      child: Column(
+        children: [
+          Text(
+            'Andem juntos',
+            style: AppTypography.display(size: 26, height: 1.1),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            'Companhia é compromisso. Caravana é classificação.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(height: 1.35, color: a.textMuted(0.65)),
+          ),
+          const SizedBox(height: 16),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+            decoration: BoxDecoration(
+              color: AppColors.accent.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              border: Border.all(
+                color: AppColors.accent.withValues(alpha: 0.35),
+              ),
+            ),
+            child: Column(
+              children: [
+                Text(
+                  goldLine,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.title(
+                    size: 18,
+                    weight: FontWeight.w800,
+                    color: AppColors.accent,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  goldSub,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w600,
+                    color: a.textMuted(0.65),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (hasAny) ...[
+            const SizedBox(height: 14),
+            Row(
+              children: [
+                Expanded(
+                  child: _CompanhiaStatChip(
+                    label: 'Hoje',
+                    value: '$togetherToday/$activeCount',
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: _CompanhiaStatChip(
+                    label: 'Vagas',
+                    value: '$companionCount/$maxSlots',
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: _CompanhiaStatChip(
+                    label: 'Recorde',
+                    value: bestStreak > 0 ? '${bestStreak}d' : '—',
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _CompanhiaStatChip extends StatelessWidget {
+  final String label;
+  final String value;
+
+  const _CompanhiaStatChip({required this.label, required this.value});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+      ),
+      child: Column(
+        children: [
+          Text(
+            value,
+            style: AppTypography.title(
+              size: 16,
+              weight: FontWeight.w900,
+              color: AppColors.accent,
+            ),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            label,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0,
+              color: a.textMuted(0.55),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _CompanionCard extends StatelessWidget {
   final WalkCompanion companion;
+  final String myName;
   final VoidCallback onCopy;
   final VoidCallback onLeave;
   final VoidCallback onShowQr;
 
   const _CompanionCard({
     required this.companion,
+    required this.myName,
     required this.onCopy,
     required this.onLeave,
     required this.onShowQr,
@@ -2080,58 +2504,28 @@ class _CompanionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final partnerLabel = companion.awaitingPartner
+        ? 'Convite'
+        : (companion.displayName.isEmpty ? 'Companheiro' : companion.displayName);
+    final myLabel = myName.trim().isEmpty ? 'Você' : myName.trim().split(' ').first;
+
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
       elevated: companion.bothWalkedToday,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             children: [
-              Container(
-                width: 42,
-                height: 42,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: AppGradients.gold,
-                ),
-                child: Center(
-                  child: Text(
-                    companion.displayName.isEmpty
-                        ? '?'
-                        : companion.displayName[0].toUpperCase(),
-                    style: AppTypography.title(
-                      weight: FontWeight.w900,
-                      color: AppColors.inkOnAccent,
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 12),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      companion.awaitingPartner
-                          ? 'Convite aberto'
-                          : companion.displayName,
-                      style: AppTypography.title(
-                        size: 16,
-                        weight: FontWeight.w900,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      companion.statusLine,
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        color: a.textMuted(0.7),
-                      ),
-                    ),
-                  ],
+                child: Text(
+                  companion.awaitingPartner ? 'Convite aberto' : partnerLabel,
+                  style: AppTypography.title(
+                    size: 16,
+                    weight: FontWeight.w900,
+                    color: a.text,
+                  ),
                 ),
               ),
               if (companion.sharedDays > 0)
@@ -2144,36 +2538,138 @@ class _CompanionCard extends StatelessWidget {
                     color: AppColors.streak.withValues(alpha: 0.15),
                     borderRadius: BorderRadius.circular(AppRadii.sm),
                   ),
-                  child: Text(
-                    '${companion.sharedDays}d',
-                    style: AppTypography.body(
-                      size: 13,
-                      weight: FontWeight.w900,
-                      color: AppColors.streak,
-                    ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const CinematicIcon(
+                        glyph: CinematicGlyph.flame,
+                        size: 14,
+                        accent: AppColors.streak,
+                        framed: false,
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        '${companion.sharedDays}d juntos',
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w900,
+                          color: AppColors.streak,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
             ],
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 6),
+          Text(
+            companion.statusLine,
+            style: AppTypography.body(
+              size: 12,
+              height: 1.3,
+              color: a.textMuted(0.7),
+            ),
+          ),
+          if (!companion.awaitingPartner) ...[
+            const SizedBox(height: 14),
+            Row(
+              children: [
+                Expanded(
+                  child: _PresencePill(
+                    name: myLabel,
+                    walked: companion.iWalkedToday,
+                    highlight: companion.waitingOnMe,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8),
+                  child: CinematicIcon(
+                    glyph: companion.bothWalkedToday
+                        ? CinematicGlyph.star
+                        : CinematicGlyph.path,
+                    size: 18,
+                    accent: companion.bothWalkedToday
+                        ? AppColors.accent
+                        : a.textMuted(0.4),
+                    framed: false,
+                  ),
+                ),
+                Expanded(
+                  child: _PresencePill(
+                    name: partnerLabel,
+                    walked: companion.theyWalkedToday,
+                    highlight: companion.waitingOnThem,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 14),
+            Row(
+              children: [
+                Text(
+                  'Marco ${companion.nextMilestone}d',
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 0,
+                    weight: FontWeight.w700,
+                    color: a.textMuted(0.55),
+                  ),
+                ),
+                const Spacer(),
+                Text(
+                  '${companion.sharedDays}/${companion.nextMilestone}',
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 0,
+                    weight: FontWeight.w800,
+                    color: AppColors.accent.withValues(alpha: 0.9),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 6),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(4),
+              child: LinearProgressIndicator(
+                value: companion.milestoneProgress,
+                minHeight: 6,
+                backgroundColor: Colors.white.withValues(alpha: 0.08),
+                valueColor: AlwaysStoppedAnimation<Color>(
+                  companion.bothWalkedToday
+                      ? AppColors.accent
+                      : AppColors.accent.withValues(alpha: 0.65),
+                ),
+              ),
+            ),
+          ],
+          const SizedBox(height: 4),
           Row(
             children: [
-              Expanded(
-                child: GestureDetector(
-                  onTap: onCopy,
-                  child: Text(
-                    'Código ${companion.code}',
-                    style: AppTypography.label(
-                      size: 12,
-                      letterSpacing: 1.2,
-                      color: AppColors.accent.withValues(alpha: 0.9),
+              if (companion.awaitingPartner) ...[
+                Expanded(
+                  child: GestureDetector(
+                    onTap: onCopy,
+                    child: Text(
+                      'Código ${companion.code}',
+                      style: AppTypography.label(
+                        size: 12,
+                        letterSpacing: 1.2,
+                        color: AppColors.accent.withValues(alpha: 0.9),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              if (companion.awaitingPartner)
                 TextButton(
                   onPressed: onShowQr,
+                  style: TextButton.styleFrom(
+                    minimumSize: Size.zero,
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    visualDensity: VisualDensity.compact,
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                      vertical: 6,
+                    ),
+                  ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -2195,8 +2691,19 @@ class _CompanionCard extends StatelessWidget {
                     ],
                   ),
                 ),
+              ] else
+                const Spacer(),
               TextButton(
                 onPressed: onLeave,
+                style: TextButton.styleFrom(
+                  minimumSize: Size.zero,
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  visualDensity: VisualDensity.compact,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 8,
+                    vertical: 6,
+                  ),
+                ),
                 child: Text(
                   'Sair',
                   style: AppTypography.body(
@@ -2207,6 +2714,89 @@ class _CompanionCard extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PresencePill extends StatelessWidget {
+  final String name;
+  final bool walked;
+  final bool highlight;
+
+  const _PresencePill({
+    required this.name,
+    required this.walked,
+    required this.highlight,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final initial = name.isEmpty ? '?' : name[0].toUpperCase();
+    return Container(
+      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+      decoration: BoxDecoration(
+        color: walked
+            ? AppColors.accent.withValues(alpha: 0.12)
+            : Colors.white.withValues(alpha: 0.04),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(
+          color: walked
+              ? AppColors.accent.withValues(alpha: 0.45)
+              : highlight
+                  ? AppColors.streak.withValues(alpha: 0.45)
+                  : Colors.white.withValues(alpha: 0.1),
+          width: walked || highlight ? 1.4 : 1,
+        ),
+      ),
+      child: Column(
+        children: [
+          Container(
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: walked ? AppGradients.gold : null,
+              color: walked ? null : a.cardFillSoft,
+            ),
+            child: Center(
+              child: Text(
+                initial,
+                style: AppTypography.title(
+                  size: 14,
+                  weight: FontWeight.w900,
+                  color: walked ? AppColors.inkOnAccent : a.textMuted(0.7),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            name,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
+              color: a.text,
+            ),
+          ),
+          const SizedBox(height: 2),
+          Text(
+            walked ? 'Caminhou' : (highlight ? 'Esperando' : 'Ainda não'),
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0,
+              weight: FontWeight.w700,
+              color: walked
+                  ? AppColors.accent
+                  : highlight
+                      ? AppColors.streak
+                      : a.textMuted(0.5),
+            ),
           ),
         ],
       ),

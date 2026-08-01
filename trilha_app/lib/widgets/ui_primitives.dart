@@ -5,8 +5,8 @@ import 'cinematic_icon.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
 class AppMetrics {
-  /// Altura única das barras de progresso lineares.
-  static const progressHeight = 5.0;
+  /// Altura das barras de progresso (chunky / 3D).
+  static const progressHeight = 14.0;
 
   /// Padding padrão dos cards de conteúdo.
   static const cardPadding = EdgeInsets.all(AppSpace.lg);
@@ -24,7 +24,7 @@ class AppMetrics {
   static const heroRadius = AppRadii.xl;
 
   /// Ícone leading em listas (quests, trilhas).
-  static const leadingIcon = 34.0;
+  static const leadingIcon = 44.0;
 
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
@@ -37,42 +37,26 @@ class AppMetrics {
   static Color accentFill({double alpha = 0.14, Color? color}) =>
       (color ?? AppColors.accent).withValues(alpha: alpha);
 
-  /// Sombra padrão de card / nav / poço.
+  /// Sombra neutra sóbria — sem glow colorido.
   static List<BoxShadow> cardShadow({
     bool elevated = false,
     bool accent = false,
     Color? tint,
-  }) =>
-      [
-        if (accent || tint != null)
-          BoxShadow(
-            color: (tint ?? AppColors.accent).withValues(
-              alpha: elevated ? 0.32 : 0.22,
-            ),
-            blurRadius: elevated ? 22 : 16,
-            offset: const Offset(0, 8),
-          ),
-        BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
-          blurRadius: elevated ? 16 : 10,
-          offset: Offset(0, elevated ? 8 : 4),
-        ),
-      ];
+  }) => [
+    BoxShadow(
+      color: Colors.black.withValues(alpha: elevated ? 0.22 : 0.14),
+      blurRadius: elevated ? 12 : 8,
+      offset: Offset(0, elevated ? 5 : 3),
+    ),
+  ];
 
-  /// Glow de CTA / badge — [color] opcional (streak, trilha, etc.).
+  /// Sem sombra — CTAs flat.
   static List<BoxShadow> accentGlow({
-    double blur = 18,
-    double alpha = 0.4,
-    Offset offset = const Offset(0, 8),
+    double blur = 8,
+    double alpha = 0.12,
+    Offset offset = const Offset(0, 3),
     Color? color,
-  }) =>
-      [
-        BoxShadow(
-          color: (color ?? AppColors.accent).withValues(alpha: alpha),
-          offset: offset,
-          blurRadius: blur,
-        ),
-      ];
+  }) => const [];
 }
 
 /// Botão CTA açafrão — ação principal em cards e telas.
@@ -104,7 +88,6 @@ class CopperCta extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        boxShadow: AppMetrics.accentGlow(),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -136,12 +119,15 @@ class CopperCta extends StatelessWidget {
   }
 }
 
-/// Barra de progresso fina padronizada.
+/// Barra de progresso chunky 3D — fill claro + faixa escura embaixo.
 class AppProgressBar extends StatelessWidget {
   final double value;
   final Color? color;
   final Color? trackColor;
   final double height;
+
+  /// Tom mais escuro da “base” 3D. Null = deriva de [color].
+  final Color? depthColor;
 
   const AppProgressBar({
     super.key,
@@ -149,18 +135,69 @@ class AppProgressBar extends StatelessWidget {
     this.color,
     this.trackColor,
     this.height = AppMetrics.progressHeight,
+    this.depthColor,
   });
+
+  static Color _depthOf(Color c) {
+    final hsl = HSLColor.fromColor(c);
+    return hsl
+        .withLightness((hsl.lightness * 0.72).clamp(0.0, 1.0))
+        .withSaturation((hsl.saturation * 1.05).clamp(0.0, 1.0))
+        .toColor();
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadii.pill),
-      child: LinearProgressIndicator(
-        value: value.clamp(0.0, 1.0),
-        minHeight: height,
-        backgroundColor: trackColor ?? a.progressTrack,
-        color: color ?? AppColors.primaryLight,
+    final fill = color ?? AppColors.accent;
+    final depth = depthColor ?? _depthOf(fill);
+    final track = trackColor ?? a.progressTrack;
+    final t = value.clamp(0.0, 1.0);
+    final lip = (height * 0.28).clamp(3.0, 5.0);
+
+    return SizedBox(
+      height: height,
+      width: double.infinity,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final fillWidth = constraints.maxWidth * t;
+            return Stack(
+              fit: StackFit.expand,
+              children: [
+                ColoredBox(color: track),
+                if (fillWidth > 0)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: SizedBox(
+                      width: fillWidth,
+                      height: height,
+                      child: DecoratedBox(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(AppRadii.pill),
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Color.lerp(fill, Colors.white, 0.18)!,
+                              fill,
+                              depth,
+                            ],
+                            stops: [
+                              0.0,
+                              ((height - lip) / height).clamp(0.45, 0.78),
+                              1.0,
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            );
+          },
+        ),
       ),
     );
   }
@@ -172,12 +209,7 @@ class SectionLabel extends StatelessWidget {
   final Color? color;
   final double size;
 
-  const SectionLabel(
-    this.text, {
-    super.key,
-    this.color,
-    this.size = 11,
-  });
+  const SectionLabel(this.text, {super.key, this.color, this.size = 11});
 
   @override
   Widget build(BuildContext context) {
@@ -199,12 +231,7 @@ class CountBadge extends StatelessWidget {
   final Color? color;
   final bool filled;
 
-  const CountBadge(
-    this.text, {
-    super.key,
-    this.color,
-    this.filled = true,
-  });
+  const CountBadge(this.text, {super.key, this.color, this.filled = true});
 
   @override
   Widget build(BuildContext context) {
@@ -300,11 +327,7 @@ class CardHeader extends StatelessWidget {
   final String label;
   final Widget? trailing;
 
-  const CardHeader({
-    super.key,
-    required this.label,
-    this.trailing,
-  });
+  const CardHeader({super.key, required this.label, this.trailing});
 
   @override
   Widget build(BuildContext context) {

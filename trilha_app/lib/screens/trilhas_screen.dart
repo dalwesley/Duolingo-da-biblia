@@ -121,7 +121,12 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         : scrollPaddingBelowNav(context);
 
     return ListView(
-      padding: EdgeInsets.fromLTRB(AppSpace.screen, topPad, AppSpace.screen, bottomPad),
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        topPad,
+        AppSpace.screen,
+        bottomPad,
+      ),
       physics: const BouncingScrollPhysics(),
       children: [
         if (widget.topBar != null) ...[
@@ -195,10 +200,7 @@ class _ComingSoonPortal extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.xl),
-          border: Border.all(
-            color: a.cardBorder,
-            width: 1.2,
-          ),
+          border: Border.all(color: a.cardBorder, width: 1.2),
           color: a.cardFill,
         ),
         child: Padding(
@@ -269,37 +271,8 @@ class _RealmPortal extends StatefulWidget {
   State<_RealmPortal> createState() => _RealmPortalState();
 }
 
-class _RealmPortalState extends State<_RealmPortal>
-    with SingleTickerProviderStateMixin {
+class _RealmPortalState extends State<_RealmPortal> {
   bool _pressed = false;
-  late final AnimationController _breath;
-
-  @override
-  void initState() {
-    super.initState();
-    _breath = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 3200),
-    );
-    if (widget.animate) _breath.repeat(reverse: true);
-  }
-
-  @override
-  void didUpdateWidget(covariant _RealmPortal oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (widget.animate == oldWidget.animate) return;
-    if (widget.animate) {
-      _breath.repeat(reverse: true);
-    } else {
-      _breath.stop();
-    }
-  }
-
-  @override
-  void dispose() {
-    _breath.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -316,30 +289,15 @@ class _RealmPortalState extends State<_RealmPortal>
       child: AnimatedScale(
         scale: _pressed ? 0.978 : 1,
         duration: const Duration(milliseconds: 120),
-        child: AnimatedBuilder(
-          animation: _breath,
-          builder: (context, child) {
-            final pulse = _breath.value;
-            return Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadii.xl),
-                boxShadow: [
-                  BoxShadow(
-                    color: visuals.glow.withValues(alpha: 0.16 + pulse * 0.14),
-                    blurRadius: 28 + pulse * 12,
-                    offset: const Offset(0, 16),
-                  ),
-                  ...AppMetrics.cardShadow(elevated: true),
-                ],
-              ),
-              child: child,
-            );
-          },
+        child: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppRadii.xl),
+            boxShadow: AppMetrics.cardShadow(elevated: true),
+          ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(AppRadii.xl),
             child: Stack(
               children: [
-                // Superfície de card — distinta do céu da Home
                 Positioned.fill(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -347,16 +305,15 @@ class _RealmPortalState extends State<_RealmPortal>
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          Color.lerp(a.cardFillSoft, visuals.glow, 0.18)!,
+                          Color.lerp(a.cardFillSoft, visuals.accent, 0.08)!,
                           a.cardFill,
-                          Color.lerp(a.cardFill, Colors.black, 0.22)!,
+                          Color.lerp(a.cardFill, Colors.black, 0.18)!,
                         ],
                         stops: const [0.0, 0.45, 1.0],
                       ),
                     ),
                   ),
                 ),
-                // Tint do reino no canto
                 Positioned.fill(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -364,7 +321,7 @@ class _RealmPortalState extends State<_RealmPortal>
                         center: const Alignment(0.85, -0.75),
                         radius: 1.05,
                         colors: [
-                          visuals.accent.withValues(alpha: 0.22),
+                          visuals.accent.withValues(alpha: 0.1),
                           Colors.transparent,
                         ],
                       ),
@@ -550,11 +507,7 @@ class _RealmSeal extends StatelessWidget {
   final Color accent;
   final double size;
 
-  const _RealmSeal({
-    required this.glyph,
-    required this.accent,
-    this.size = 84,
-  });
+  const _RealmSeal({required this.glyph, required this.accent, this.size = 84});
 
   @override
   Widget build(BuildContext context) {
@@ -562,7 +515,7 @@ class _RealmSeal extends StatelessWidget {
       glyph: glyph,
       size: size,
       accent: accent,
-      glowing: true,
+      glowing: false,
     );
   }
 }

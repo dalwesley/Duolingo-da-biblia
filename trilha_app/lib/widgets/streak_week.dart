@@ -20,7 +20,10 @@ class StreakWeek extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: List.generate(7, (i) {
         final day = DateTime(monday.year, monday.month, monday.day + i);
-        final isToday = day.year == today.year && day.month == today.month && day.day == today.day;
+        final isToday =
+            day.year == today.year &&
+            day.month == today.month &&
+            day.day == today.day;
         final active = progress.playedOnDate(day);
         final frozen = progress.wasFrozenOnDate(day);
 
@@ -35,13 +38,8 @@ class StreakWeek extends StatelessWidget {
                 gradient: active
                     ? AppGradients.gold
                     : frozen
-                        ? LinearGradient(
-                            colors: [
-                              AppColors.iceSoft,
-                              AppColors.ice,
-                            ],
-                          )
-                        : null,
+                    ? LinearGradient(colors: [AppColors.iceSoft, AppColors.ice])
+                    : null,
                 color: active || frozen
                     ? null
                     : Colors.white.withValues(alpha: 0.06),
@@ -49,20 +47,11 @@ class StreakWeek extends StatelessWidget {
                   color: isToday
                       ? AppColors.accent
                       : frozen
-                          ? AppColors.ice.withValues(alpha: 0.7)
-                          : Colors.white.withValues(alpha: active ? 0 : 0.12),
+                      ? AppColors.ice.withValues(alpha: 0.7)
+                      : Colors.white.withValues(alpha: active ? 0 : 0.12),
                   width: isToday ? 2 : 1,
                 ),
-                boxShadow: active
-                    ? [BoxShadow(color: AppColors.accent.withValues(alpha: 0.4), blurRadius: 10)]
-                    : frozen
-                        ? [
-                            BoxShadow(
-                              color: AppColors.ice.withValues(alpha: 0.35),
-                              blurRadius: 8,
-                            ),
-                          ]
-                        : null,
+                boxShadow: null,
               ),
               child: Center(
                 child: active
@@ -73,23 +62,23 @@ class StreakWeek extends StatelessWidget {
                         framed: false,
                       )
                     : frozen
-                        ? const CinematicIcon(
-                            glyph: CinematicGlyph.frost,
-                            size: 15,
-                            accent: AppColors.iceDeep,
-                            framed: false,
-                          )
-                        : Text(
-                            labels[i],
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 0,
-                              weight: FontWeight.w700,
-                              color: isToday
-                                  ? AppColors.accent.withValues(alpha: 0.95)
-                                  : a.textMuted(0.4),
-                            ),
-                          ),
+                    ? const CinematicIcon(
+                        glyph: CinematicGlyph.frost,
+                        size: 15,
+                        accent: AppColors.iceDeep,
+                        framed: false,
+                      )
+                    : Text(
+                        labels[i],
+                        style: AppTypography.label(
+                          size: 10,
+                          letterSpacing: 0,
+                          weight: FontWeight.w700,
+                          color: isToday
+                              ? AppColors.accent.withValues(alpha: 0.95)
+                              : a.textMuted(0.4),
+                        ),
+                      ),
               ),
             ),
             SizedBox(

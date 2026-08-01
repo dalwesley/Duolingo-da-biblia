@@ -39,10 +39,7 @@ class MilestoneChestsCard extends StatelessWidget {
             const SizedBox(height: AppSpace.xs),
             Text(
               'Recompensas ao avançar na trilha',
-              style: AppTypography.body(
-                size: 11,
-                color: a.textMuted(0.55),
-              ),
+              style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
             ),
             const SizedBox(height: 14),
             Row(
@@ -70,7 +67,11 @@ class MilestoneChestsCard extends StatelessWidget {
     );
   }
 
-  Future<void> _openChest(BuildContext context, ProgressService progress, TrailMilestone m) async {
+  Future<void> _openChest(
+    BuildContext context,
+    ProgressService progress,
+    TrailMilestone m,
+  ) async {
     HapticFeedback.mediumImpact();
     final ok = await progress.claimChest(m.chestId(trailSlug), m.stepsReward);
     if (!ok || !context.mounted) return;
@@ -110,19 +111,30 @@ class _ChestTile extends StatelessWidget {
               ? LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [AppColors.accent.withValues(alpha: 0.35), AppColors.accent.withValues(alpha: 0.08)],
+                  colors: [
+                    AppColors.accent.withValues(alpha: 0.35),
+                    AppColors.accent.withValues(alpha: 0.08),
+                  ],
                 )
               : null,
-          color: glow ? null : Colors.white.withValues(alpha: claimed ? 0.04 : 0.06),
+          color: glow
+              ? null
+              : Colors.white.withValues(alpha: claimed ? 0.04 : 0.06),
           border: Border.all(
             color: claimed
                 ? AppColors.teal.withValues(alpha: 0.45)
                 : glow
-                    ? AppColors.accent
-                    : Colors.white.withValues(alpha: 0.12),
+                ? AppColors.accent
+                : Colors.white.withValues(alpha: 0.12),
           ),
           boxShadow: glow
-              ? [BoxShadow(color: AppColors.accent.withValues(alpha: 0.35), blurRadius: 14)]
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.22),
+                    blurRadius: 10,
+                    offset: const Offset(0, 3),
+                  ),
+                ]
               : null,
         ),
         child: Column(
@@ -131,15 +143,14 @@ class _ChestTile extends StatelessWidget {
               glyph: claimed
                   ? CinematicGlyph.gem
                   : unlocked
-                      ? CinematicGlyph.crown
-                      : CinematicGlyph.lock,
+                  ? CinematicGlyph.crown
+                  : CinematicGlyph.lock,
               size: 26,
               accent: claimed
                   ? AppColors.teal
                   : unlocked
-                      ? AppColors.accent
-                      : Colors.white38,
-              framed: false,
+                  ? AppColors.accent
+                  : Colors.white38,
             ),
             const SizedBox(height: 6),
             Text(
@@ -151,7 +162,11 @@ class _ChestTile extends StatelessWidget {
               ),
             ),
             Text(
-              claimed ? 'Aberto' : unlocked ? 'Abrir' : 'Trancado',
+              claimed
+                  ? 'Aberto'
+                  : unlocked
+                  ? 'Abrir'
+                  : 'Trancado',
               style: AppTypography.label(
                 size: 9,
                 weight: FontWeight.w700,
@@ -184,7 +199,7 @@ class _ChestOpenDialog extends StatelessWidget {
           ),
           borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),
-          boxShadow: AppTheme.glow(AppColors.accent, blur: 28),
+          boxShadow: AppMetrics.cardShadow(elevated: true),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -192,8 +207,15 @@ class _ChestOpenDialog extends StatelessWidget {
             Container(
               width: 72,
               height: 72,
-              decoration: const BoxDecoration(shape: BoxShape.circle, gradient: AppGradients.gold),
-              child: const Icon(Icons.card_giftcard_rounded, size: 36, color: AppColors.inkOnAccent),
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: AppGradients.gold,
+              ),
+              child: const Icon(
+                Icons.card_giftcard_rounded,
+                size: 36,
+                color: AppColors.inkOnAccent,
+              ),
             ),
             const SizedBox(height: 18),
             Text(
@@ -296,13 +318,18 @@ class WeeklyQuestsCard extends StatelessWidget {
                       children: [
                         Text(
                           q.title,
-                          style: AppTypography.title(
-                            size: 13,
-                            weight: FontWeight.w800,
-                            color: a.text.withValues(alpha: claimed ? 0.45 : 0.95),
-                          ).copyWith(
-                            decoration: claimed ? TextDecoration.lineThrough : null,
-                          ),
+                          style:
+                              AppTypography.title(
+                                size: 13,
+                                weight: FontWeight.w800,
+                                color: a.text.withValues(
+                                  alpha: claimed ? 0.45 : 0.95,
+                                ),
+                              ).copyWith(
+                                decoration: claimed
+                                    ? TextDecoration.lineThrough
+                                    : null,
+                              ),
                         ),
                         const SizedBox(height: 2),
                         Text(
@@ -329,14 +356,9 @@ class WeeklyQuestsCard extends StatelessWidget {
                       glyph: CinematicGlyph.check,
                       size: 22,
                       accent: AppColors.teal,
-                      framed: false,
                     )
                   else
-                    CountBadge(
-                      '+${q.stepsReward}',
-                      filled: true,
-                      color: tone,
-                    ),
+                    CountBadge('+${q.stepsReward}', filled: true, color: tone),
                 ],
               ),
             );

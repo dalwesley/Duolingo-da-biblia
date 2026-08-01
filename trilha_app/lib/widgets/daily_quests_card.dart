@@ -16,6 +16,7 @@ class _QuestGroupMeta {
   final String label;
   final String hint;
   final Color accent;
+
   /// Header abre o destino (Bíblia / Memorizar). Missões = só checklist.
   final bool headerOpensDest;
 
@@ -108,29 +109,43 @@ class _QuestGroupPanel extends StatelessWidget {
     this.onQuestTap,
   });
 
+  bool _isDone(DailyQuest q) =>
+      progress.isQuestClaimed(q.id) ||
+      progress.questProgress(q.id) >= q.target;
+
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+
+    // Pendentes sobem — o que ainda dá passos fica acima da dobra.
+    final ordered = [...quests]
+      ..sort((a, b) {
+        final da = _isDone(a);
+        final db = _isDone(b);
+        if (da == db) return 0;
+        return da ? 1 : -1;
+      });
+
     DailyQuest? next;
-    for (final q in quests) {
-      if (!progress.isQuestClaimed(q.id) &&
-          progress.questProgress(q.id) < q.target) {
+    for (final q in ordered) {
+      if (!_isDone(q)) {
         next = q;
         break;
       }
     }
-    next ??= quests.isEmpty ? null : quests.first;
+    next ??= ordered.isEmpty ? null : ordered.first;
     final openQuest = next;
     final canOpenHeader =
         meta.headerOpensDest && onQuestTap != null && openQuest != null;
 
-    final doneCount = quests
-        .where(
-          (q) =>
-              progress.isQuestClaimed(q.id) ||
-              progress.questProgress(q.id) >= q.target,
-        )
-        .length;
+    final doneCount = quests.where(_isDone).length;
+    final allDone = doneCount == quests.length && quests.isNotEmpty;
+
+    final subtitle = meta.headerOpensDest
+        ? meta.hint
+        : allDone
+        ? 'Tudo feito · ${meta.hint}'
+        : '$doneCount/${quests.length} · ${meta.hint}';
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -159,18 +174,25 @@ class _QuestGroupPanel extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          meta.headerOpensDest
-                              ? meta.hint
-                              : '$doneCount/${quests.length} · ${meta.hint}',
+                          subtitle,
                           style: AppTypography.body(
                             size: 12,
-                            color: a.textMuted(0.55),
+                            color: allDone
+                                ? meta.accent.withValues(alpha: 0.85)
+                                : a.textMuted(0.55),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  if (canOpenHeader)
+                  if (allDone)
+                    CinematicIcon(
+                      glyph: CinematicGlyph.check,
+                      size: 22,
+                      accent: meta.accent,
+                      framed: false,
+                    )
+                  else if (canOpenHeader)
                     Icon(
                       Icons.chevron_right_rounded,
                       size: 20,
@@ -186,11 +208,11 @@ class _QuestGroupPanel extends StatelessWidget {
             thickness: 1,
             color: a.cardBorder.withValues(alpha: 0.45),
           ),
-          const SizedBox(height: AppSpace.sm),
-          for (var i = 0; i < quests.length; i++) ...[
-            if (i > 0) const SizedBox(height: AppSpace.xs),
+          const SizedBox(height: AppSpace.xs),
+          for (var i = 0; i < ordered.length; i++) ...[
+            if (i > 0) const SizedBox(height: 2),
             _QuestRow(
-              quest: quests[i],
+              quest: ordered[i],
               progress: progress,
               onTap: onQuestTap,
             ),
@@ -206,11 +228,7 @@ class _QuestRow extends StatelessWidget {
   final ProgressService progress;
   final void Function(DailyQuest quest)? onTap;
 
-  const _QuestRow({
-    required this.quest,
-    required this.progress,
-    this.onTap,
-  });
+  const _QuestRow({required this.quest, required this.progress, this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -219,7 +237,7 @@ class _QuestRow extends StatelessWidget {
     final value = progress.questProgress(q.id);
     final claimed = progress.isQuestClaimed(q.id);
     final done = claimed || value >= q.target;
-    final pct = (value / q.target).clamp(0.0, 1.0);
+    final pct = done ? 1.0 : (value / q.target).clamp(0.0, 1.0);
     final canTap = onTap != null && !claimed;
     final tone = CinematicGlyphResolver.accentForQuest(q.id);
 
@@ -234,8 +252,9 @@ class _QuestRow extends StatelessWidget {
             : null,
         borderRadius: BorderRadius.circular(AppRadii.sm),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: AppSpace.xs),
+          padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CinematicIcon(
                 glyph: CinematicGlyphResolver.forQuest(q.id),
@@ -243,7 +262,7 @@ class _QuestRow extends StatelessWidget {
                 accent: tone,
                 glowing: false,
               ),
-              const SizedBox(width: AppSpace.sm + 2),
+              const SizedBox(width: AppSpace.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -251,51 +270,46 @@ class _QuestRow extends StatelessWidget {
                     Text(
                       q.title,
                       style: AppTypography.title(
-                        size: 13,
-                        color: a.text.withValues(
-                          alpha: claimed ? 0.45 : 0.95,
-                        ),
-                      ).copyWith(
-                        decoration:
-                            claimed ? TextDecoration.lineThrough : null,
+                        size: 15,
+                        color: a.text.withValues(alpha: 0.98),
                       ),
                     ),
-                    const SizedBox(height: 2),
+                    const SizedBox(height: 3),
                     Text(
-                      claimed
+                      done
                           ? 'Concluída'
                           : '${value.clamp(0, q.target)}/${q.target} · ${q.subtitle}',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
-                        size: 11,
-                        color: a.textMuted(0.5),
+                        size: 12,
+                        weight: FontWeight.w700,
+                        color: done ? tone : a.textMuted(0.55),
                       ),
                     ),
-                    const SizedBox(height: AppSpace.xs),
+                    const SizedBox(height: AppSpace.sm),
                     AppProgressBar(
                       value: pct,
-                      height: AppMetrics.progressHeight,
+                      height: 10,
                       color: tone,
-                      trackColor: tone.withValues(alpha: 0.14),
+                      trackColor: tone.withValues(alpha: 0.18),
+                      depthColor: done
+                          ? Color.lerp(tone, Colors.black, 0.18)!
+                          : null,
                     ),
                   ],
                 ),
               ),
-              const SizedBox(width: AppSpace.sm),
+              const SizedBox(width: AppSpace.md),
               if (done)
                 CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 20,
+                  size: 22,
                   accent: tone,
                   framed: false,
                 )
               else
-                CountBadge(
-                  '+${q.stepsReward}',
-                  filled: true,
-                  color: tone,
-                ),
+                CountBadge('+${q.stepsReward}', filled: true, color: tone),
             ],
           ),
         ),

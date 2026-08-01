@@ -9,6 +9,7 @@ import 'package:share_plus/share_plus.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import 'stway_brand.dart';
 
 /// Abre sheet para compartilhar um versículo (imagem com marca Stway, ou texto).
 Future<void> showShareVerseSheet(
@@ -53,6 +54,22 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
   bool _busy = false;
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      precacheImage(
+        const AssetImage('assets/icon/splash_bg.png'),
+        context,
+      );
+      precacheImage(
+        const AssetImage('assets/icon/app_icon.png'),
+        context,
+      );
+    });
+  }
 
   Future<void> _rememberShare() async {
     if (!mounted) return;
@@ -212,71 +229,117 @@ class ShareVerseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        gradient: const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [AppColors.night, AppColors.primaryDark, AppColors.nightMid],
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(AppRadii.lg),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(minHeight: 300),
+        child: Stack(
+          children: [
+            const Positioned.fill(
+              child: ColoredBox(color: AppColors.primaryDark),
+            ),
+            // Trilha da splash só como detalhe — bem suave.
+            Positioned.fill(
+              child: Opacity(
+                opacity: 0.38,
+                child: Image.asset(
+                  'assets/icon/splash_bg.png',
+                  fit: BoxFit.cover,
+                  alignment: const Alignment(0, -0.12),
+                  filterQuality: FilterQuality.high,
+                ),
+              ),
+            ),
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.black.withValues(alpha: 0.22),
+                      Colors.transparent,
+                      Colors.black.withValues(alpha: 0.32),
+                    ],
+                    stops: const [0, 0.45, 1],
+                  ),
+                ),
+              ),
+            ),
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.lg),
+                  border: Border.all(
+                    color: AppColors.accent.withValues(alpha: 0.65),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(22, 20, 22, 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      const StwayLogo(size: 30),
+                      const SizedBox(width: 10),
+                      StwayWordmark(
+                        fontSize: 15,
+                        letterSpacing: 2.4,
+                        letterColor: Colors.white.withValues(alpha: 0.95),
+                        aColor: AppColors.accent,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 22),
+                  Text(
+                    '“$text”',
+                    style: AppTypography.display(
+                      size: 22,
+                      height: 1.35,
+                      weight: FontWeight.w600,
+                      color: Colors.white.withValues(alpha: 0.96),
+                    ).copyWith(
+                      shadows: [
+                        Shadow(
+                          color: Colors.black.withValues(alpha: 0.55),
+                          blurRadius: 12,
+                          offset: const Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 22),
+                  Text(
+                    '$bookName $chapter:$verse',
+                    style: AppTypography.title(
+                      size: 13,
+                      weight: FontWeight.w800,
+                      color: AppColors.accent.withValues(alpha: 0.95),
+                    ).copyWith(
+                      shadows: [
+                        Shadow(
+                          color: Colors.black.withValues(alpha: 0.45),
+                          blurRadius: 8,
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.xs),
+                  Text(
+                    BibleService.translationName,
+                    style: AppTypography.body(
+                      size: 11,
+                      color: Colors.white.withValues(alpha: 0.55),
+                    ).copyWith(fontStyle: FontStyle.italic),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.7)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Container(
-                width: 8,
-                height: 8,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.accent,
-                ),
-              ),
-              const SizedBox(width: 8),
-              Text(
-                'STWAY',
-                style: AppTypography.label(
-                  size: 12,
-                  weight: FontWeight.w900,
-                  letterSpacing: 2.2,
-                  color: AppColors.accent.withValues(alpha: 0.95),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 18),
-          Text(
-            '“$text”',
-            style: AppTypography.display(
-              size: 22,
-              height: 1.35,
-              weight: FontWeight.w600,
-              color: Colors.white.withValues(alpha: 0.95),
-            ),
-          ),
-          const SizedBox(height: 18),
-          Text(
-            '$bookName $chapter:$verse',
-            style: AppTypography.title(
-              size: 13,
-              weight: FontWeight.w800,
-              color: AppColors.accent.withValues(alpha: 0.95),
-            ),
-          ),
-          const SizedBox(height: AppSpace.xs),
-          Text(
-            BibleService.translationName,
-            style: AppTypography.body(
-              size: 11,
-              color: Colors.white.withValues(alpha: 0.45),
-            ).copyWith(fontStyle: FontStyle.italic),
-          ),
-        ],
       ),
     );
   }

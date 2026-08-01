@@ -203,75 +203,73 @@ class _MemoryScreenState extends State<MemoryScreen>
                           ),
                         )
                       : _finished
-                          ? _DonePane(
-                              known: _known,
-                              learning: _learning,
-                              onAgain: _load,
-                              onClose: () => Navigator.pop(context),
-                            )
-                          : Padding(
-                              padding: EdgeInsets.fromLTRB(
-                                AppSpace.screen,
-                                AppSpace.sm,
-                                AppSpace.screen,
-                                AppSpace.xxl +
-                                    MediaQuery.viewPaddingOf(context).bottom,
+                      ? _DonePane(
+                          known: _known,
+                          learning: _learning,
+                          onAgain: _load,
+                          onClose: () => Navigator.pop(context),
+                        )
+                      : Padding(
+                          padding: EdgeInsets.fromLTRB(
+                            AppSpace.screen,
+                            AppSpace.sm,
+                            AppSpace.screen,
+                            AppSpace.xxl +
+                                MediaQuery.viewPaddingOf(context).bottom,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              _ProgressHeader(
+                                index: _index,
+                                total: _deck.length,
+                                revealed: _revealed,
+                                trackColor: appearance.progressTrack,
                               ),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.stretch,
-                                children: [
-                                  _ProgressHeader(
-                                    index: _index,
-                                    total: _deck.length,
-                                    revealed: _revealed,
-                                    trackColor: appearance.progressTrack,
-                                  ),
-                                  const SizedBox(height: AppSpace.xl),
-                                  Expanded(
-                                    child: _FlashCard(
-                                      verse: _current,
-                                      revealed: _revealed,
-                                      appearance: appearance,
-                                      pulse: _pulse,
-                                      reveal: _reveal,
-                                      onReveal: _revealCard,
+                              const SizedBox(height: AppSpace.xl),
+                              Expanded(
+                                child: _FlashCard(
+                                  verse: _current,
+                                  revealed: _revealed,
+                                  appearance: appearance,
+                                  pulse: _pulse,
+                                  reveal: _reveal,
+                                  onReveal: _revealCard,
+                                ),
+                              ),
+                              const SizedBox(height: AppSpace.lg),
+                              AnimatedSwitcher(
+                                duration: const Duration(milliseconds: 240),
+                                switchInCurve: Curves.easeOutCubic,
+                                switchOutCurve: Curves.easeInCubic,
+                                transitionBuilder: (child, anim) {
+                                  return FadeTransition(
+                                    opacity: anim,
+                                    child: SlideTransition(
+                                      position: Tween<Offset>(
+                                        begin: const Offset(0, 0.12),
+                                        end: Offset.zero,
+                                      ).animate(anim),
+                                      child: child,
                                     ),
-                                  ),
-                                  const SizedBox(height: AppSpace.lg),
-                                  AnimatedSwitcher(
-                                    duration: const Duration(milliseconds: 240),
-                                    switchInCurve: Curves.easeOutCubic,
-                                    switchOutCurve: Curves.easeInCubic,
-                                    transitionBuilder: (child, anim) {
-                                      return FadeTransition(
-                                        opacity: anim,
-                                        child: SlideTransition(
-                                          position: Tween<Offset>(
-                                            begin: const Offset(0, 0.12),
-                                            end: Offset.zero,
-                                          ).animate(anim),
-                                          child: child,
-                                        ),
-                                      );
-                                    },
-                                    child: _revealed
-                                        ? _AnswerRow(
-                                            key: const ValueKey('answers'),
-                                            onLearning: () =>
-                                                _answer(knew: false),
-                                            onKnown: () =>
-                                                _answer(knew: true),
-                                          )
-                                        : CopperCta(
-                                            key: const ValueKey('reveal'),
-                                            label: 'Revelar',
-                                            trailing: CinematicGlyph.spark,
-                                            onTap: _revealCard,
-                                          ),
-                                  ),
-                                ],
+                                  );
+                                },
+                                child: _revealed
+                                    ? _AnswerRow(
+                                        key: const ValueKey('answers'),
+                                        onLearning: () => _answer(knew: false),
+                                        onKnown: () => _answer(knew: true),
+                                      )
+                                    : CopperCta(
+                                        key: const ValueKey('reveal'),
+                                        label: 'Revelar',
+                                        trailing: CinematicGlyph.spark,
+                                        onTap: _revealCard,
+                                      ),
                               ),
-                            ),
+                            ],
+                          ),
+                        ),
                 ),
               ],
             ),
@@ -373,10 +371,7 @@ class _FlashCard extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [
-                    appearance.cardFillSoft,
-                    appearance.cardFill,
-                  ],
+                  colors: [appearance.cardFillSoft, appearance.cardFill],
                 ),
                 border: Border.all(
                   color: AppMetrics.accentBorder(alpha: revealed ? 0.7 : 0.55),
@@ -396,7 +391,7 @@ class _FlashCard extends StatelessWidget {
                     glyph: CinematicGlyph.heart,
                     size: 44,
                     accent: AppColors.clay,
-                    glowing: true,
+                    glowing: false,
                   ),
                   const SizedBox(height: AppSpace.lg),
                   Text(
@@ -462,11 +457,7 @@ class _HiddenBody extends StatelessWidget {
   final double pulse;
   final Color muted;
 
-  const _HiddenBody({
-    super.key,
-    required this.pulse,
-    required this.muted,
-  });
+  const _HiddenBody({super.key, required this.pulse, required this.muted});
 
   @override
   Widget build(BuildContext context) {
@@ -526,11 +517,7 @@ class _RevealedBody extends StatelessWidget {
   final String text;
   final Color color;
 
-  const _RevealedBody({
-    super.key,
-    required this.text,
-    required this.color,
-  });
+  const _RevealedBody({super.key, required this.text, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -625,10 +612,7 @@ class _ActionBtn extends StatelessWidget {
                 framed: false,
               ),
               const SizedBox(width: 8),
-              Text(
-                label,
-                style: AppTypography.cta(size: 14, color: color),
-              ),
+              Text(label, style: AppTypography.cta(size: 14, color: color)),
             ],
           ),
         ),
@@ -662,7 +646,7 @@ class _DonePane extends StatelessWidget {
           const CinematicIcon(
             glyph: CinematicGlyph.spark,
             size: 72,
-            glowing: true,
+            glowing: false,
           ),
           const SizedBox(height: AppSpace.xl),
           Text(
@@ -674,9 +658,7 @@ class _DonePane extends StatelessWidget {
           Text(
             '$known firmes · $learning em progresso',
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              color: a.textMuted(0.65),
-            ),
+            style: AppTypography.body(color: a.textMuted(0.65)),
           ),
           const SizedBox(height: AppSpace.xxl),
           CopperCta(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Poço circular — fundo navy + borda na cor da seção (alpha estável).
+/// Poço circular — fill suave + borda na cor (padrão tipo Duo, cores STWAY).
 class IconWell extends StatelessWidget {
   final double size;
   final Color? accent;
@@ -22,32 +22,14 @@ class IconWell extends StatelessWidget {
     bool glowing = false,
   }) {
     final tone = accent ?? AppColors.accent;
-    // Mesma regra de AppMetrics.accentBorder (alpha ≥ 0.55).
-    final border = tone.withValues(alpha: 0.85);
 
     return BoxDecoration(
       shape: BoxShape.circle,
-      color: Color.lerp(
-        AppColors.nightElevated,
-        tone,
-        0.12,
-      )!,
+      color: tone.withValues(alpha: 0.16),
       border: Border.all(
-        color: border,
-        width: (size * 0.045).clamp(1.4, 2.2),
+        color: tone.withValues(alpha: 0.9),
+        width: (size * 0.05).clamp(2.0, 2.8),
       ),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.35),
-          blurRadius: size * 0.16,
-          offset: Offset(0, size * 0.05),
-        ),
-        if (glowing)
-          BoxShadow(
-            color: tone.withValues(alpha: 0.32),
-            blurRadius: size * 0.32,
-          ),
-      ],
     );
   }
 

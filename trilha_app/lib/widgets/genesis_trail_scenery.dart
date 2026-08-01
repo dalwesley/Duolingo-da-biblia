@@ -74,17 +74,28 @@ class _ChapterTitleCard extends StatelessWidget {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 420),
       curve: Curves.easeOutCubic,
-      padding: EdgeInsets.fromLTRB(18, highlighted ? 18 : 14, 18, highlighted ? 18 : 14),
+      padding: EdgeInsets.fromLTRB(
+        18,
+        highlighted ? 18 : 14,
+        18,
+        highlighted ? 18 : 14,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadii.lg),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Color.lerp(theme.nodeCurrentBottom, Colors.black, 0.35)!
-                .withValues(alpha: highlighted ? 0.72 : 0.55),
-            Color.lerp(theme.nodeCurrentTop, theme.nodeCurrentBottom, 0.55)!
-                .withValues(alpha: highlighted ? 0.55 : 0.38),
+            Color.lerp(
+              theme.nodeCurrentBottom,
+              Colors.black,
+              0.35,
+            )!.withValues(alpha: highlighted ? 0.72 : 0.55),
+            Color.lerp(
+              theme.nodeCurrentTop,
+              theme.nodeCurrentBottom,
+              0.55,
+            )!.withValues(alpha: highlighted ? 0.55 : 0.38),
           ],
         ),
         border: Border.all(
@@ -93,20 +104,6 @@ class _ChapterTitleCard extends StatelessWidget {
               : Colors.white.withValues(alpha: 0.12),
           width: highlighted ? 1.4 : 1,
         ),
-        boxShadow: [
-          if (highlighted)
-            BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.22),
-              blurRadius: 28,
-              offset: const Offset(0, 12),
-            )
-          else
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.28),
-              blurRadius: 18,
-              offset: const Offset(0, 8),
-            ),
-        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -143,14 +140,28 @@ class _ChapterTitleCard extends StatelessWidget {
                 ),
                 if (total > 0)
                   Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(
-                      '$done · $total',
-                      style: AppTypography.display(
-                        size: 18,
-                        weight: FontWeight.w500,
-                        color: AppColors.accent.withValues(alpha: 0.85),
-                      ),
+                    padding: const EdgeInsets.only(top: 2),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          '$done de $total',
+                          style: AppTypography.display(
+                            size: 16,
+                            weight: FontWeight.w600,
+                            color: AppColors.accent.withValues(alpha: 0.9),
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          done >= total ? 'concluída' : 'passos',
+                          style: AppTypography.label(
+                            size: 9,
+                            letterSpacing: 0.8,
+                            color: Colors.white.withValues(alpha: 0.45),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
               ],
@@ -181,6 +192,15 @@ class _ChapterTitleCard extends StatelessWidget {
                 value: pct,
                 color: AppColors.accent,
                 trackColor: Colors.white.withValues(alpha: 0.1),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                '$done de $total passos',
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w600,
+                  color: Colors.white.withValues(alpha: 0.5),
+                ),
               ),
             ],
           ],

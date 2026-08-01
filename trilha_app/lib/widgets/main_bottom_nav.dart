@@ -4,7 +4,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Nav inferior — glifo + label; ativo com cor da aba (não só amarelo).
+/// Nav inferior — mesmo poço circular da AppBar (`CinematicIcon` framed).
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -47,8 +47,8 @@ class MainBottomNav extends StatelessWidget {
             bottomInset > 0 ? bottomInset + 6 : AppSpace.md,
           ),
           child: Container(
-            constraints: const BoxConstraints(minHeight: 64),
-            padding: const EdgeInsets.symmetric(vertical: 6),
+            constraints: const BoxConstraints(minHeight: 72),
+            padding: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
               color: style.navBarFill,
               borderRadius: BorderRadius.circular(AppRadii.lg),
@@ -70,38 +70,13 @@ class MainBottomNav extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        AnimatedContainer(
-                          duration: const Duration(milliseconds: 220),
-                          curve: Curves.easeOutCubic,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 5,
-                          ),
-                          decoration: active
-                              ? BoxDecoration(
-                                  color: AppMetrics.accentFill(
-                                    alpha: 0.16,
-                                    color: tone,
-                                  ),
-                                  borderRadius:
-                                      BorderRadius.circular(AppRadii.sm),
-                                  border: Border.all(
-                                    color: AppMetrics.accentBorder(
-                                      alpha: 0.7,
-                                      color: tone,
-                                    ),
-                                  ),
-                                )
-                              : null,
-                          child: CinematicIcon(
-                            glyph: tab.glyph,
-                            size: 22,
-                            accent: color,
-                            glowing: false,
-                            framed: false,
-                          ),
+                        CinematicIcon(
+                          glyph: tab.glyph,
+                          size: 32,
+                          accent: color,
+                          glowing: false,
                         ),
-                        const SizedBox(height: 2),
+                        const SizedBox(height: 4),
                         Text(
                           tab.label,
                           maxLines: 1,

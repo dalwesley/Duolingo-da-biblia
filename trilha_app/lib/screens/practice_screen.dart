@@ -82,7 +82,9 @@ class _PracticeScreenState extends State<PracticeScreen> {
           mode: mode,
           style: appearance,
           child: Scaffold(
-            backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
+            backgroundColor: DayPhaseHelper.scaffoldBackground(
+              appearance.phase,
+            ),
             body: ImmersiveBackground(
               appearance: appearance,
               child: Column(
@@ -116,7 +118,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                               glyph: CinematicGlyph.echo,
                               size: 56,
                               accent: AppColors.accent,
-                              glowing: true,
+                              glowing: false,
                             ),
                             const SizedBox(height: AppSpace.section),
                             Text(

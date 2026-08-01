@@ -171,19 +171,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    AppSpace.screen,
-                    8,
-                    8,
-                    0,
-                  ),
+                  padding: const EdgeInsets.fromLTRB(AppSpace.screen, 8, 8, 0),
                   child: Row(
                     children: [
                       Expanded(
-                        child: _StepDots(
-                          index: _index,
-                          total: _beats.length,
-                        ),
+                        child: _StepDots(index: _index, total: _beats.length),
                       ),
                       TextButton(
                         onPressed: _finishing ? null : _finish,
@@ -274,7 +266,12 @@ class _PromiseBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return ListView(
-      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
       children: [
         const Center(child: StwayWordmark(fontSize: 22, letterSpacing: 3.5)),
         const SizedBox(height: 8),
@@ -456,10 +453,7 @@ class _FeatureRow extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                title,
-                style: AppTypography.title(size: 14, color: a.text),
-              ),
+              Text(title, style: AppTypography.title(size: 14, color: a.text)),
               const SizedBox(height: 2),
               Text(
                 subtitle,
@@ -483,7 +477,12 @@ class _WhyBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Padding(
-      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
       child: Column(
         children: [
           Text(
@@ -495,10 +494,7 @@ class _WhyBeat extends StatelessWidget {
           Text(
             'Escolha o que você espera dessa jornada.',
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              color: a.textMuted(0.5),
-            ),
+            style: AppTypography.body(size: 13, color: a.textMuted(0.5)),
           ),
           const SizedBox(height: 18),
           ..._Why.values.map((w) {
@@ -559,7 +555,12 @@ class _RhythmBeat extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Padding(
-      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -716,7 +717,12 @@ class _ThresholdBeat extends StatelessWidget {
     final a = Appearance.of(context);
     final greeting = name.isEmpty ? 'Aprendiz' : name;
     return Padding(
-      padding: const EdgeInsets.fromLTRB(AppSpace.screen, 4, AppSpace.screen, 8),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
       child: Column(
         children: [
           Text(
@@ -791,7 +797,6 @@ class _ThresholdBeat extends StatelessWidget {
                       glyph: CinematicGlyph.book,
                       size: 34,
                       accent: AppColors.accent,
-                      framed: false,
                     ),
                   ],
                 ),
@@ -831,10 +836,7 @@ class _ThresholdBeat extends StatelessWidget {
                       label: why?.label ?? 'Jornada',
                       glyph: why?.glyph ?? CinematicGlyph.path,
                     ),
-                    _Chip(
-                      label: _goalLabel,
-                      glyph: CinematicGlyph.flame,
-                    ),
+                    _Chip(label: _goalLabel, glyph: CinematicGlyph.flame),
                   ],
                 ),
               ],

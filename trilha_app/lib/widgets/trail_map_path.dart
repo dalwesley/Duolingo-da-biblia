@@ -4,7 +4,6 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/genesis_theme.dart';
 import 'cinematic_icon.dart';
-import 'ui_primitives.dart';
 
 /// Sequência editorial de cenas — tipografia no lugar de ícones de app.
 class TrailMapPath extends StatelessWidget {
@@ -38,7 +37,8 @@ class TrailMapPath extends StatelessWidget {
     if (missions.isEmpty) return const SizedBox.shrink();
 
     final gold = theme?.pathActive ?? AppColors.accent;
-    final inactive = theme?.pathInactive ?? Colors.white.withValues(alpha: 0.15);
+    final inactive =
+        theme?.pathInactive ?? Colors.white.withValues(alpha: 0.15);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -99,14 +99,7 @@ class _SceneConnector extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: color.withValues(alpha: active ? 0.9 : 0.35),
-                boxShadow: active
-                    ? [
-                        BoxShadow(
-                          color: activeColor.withValues(alpha: 0.35),
-                          blurRadius: 8,
-                        ),
-                      ]
-                    : null,
+                boxShadow: null,
               ),
             ),
             Container(
@@ -159,21 +152,15 @@ class _MissionSceneCard extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadii.lg),
         color: unlocked
-            ? (completed
-                ? a.cardFill.withValues(alpha: 0.72)
-                : a.cardFill)
+            ? (completed ? a.cardFill.withValues(alpha: 0.72) : a.cardFill)
             : a.cardFill.withValues(alpha: 0.55),
         border: Border.all(
           color: _current
               ? AppColors.accent
               : completed
-                  ? gold.withValues(alpha: 0.28)
-                  : a.cardBorder,
+              ? gold.withValues(alpha: 0.28)
+              : a.cardBorder,
           width: _current ? 1.5 : 1,
-        ),
-        boxShadow: AppMetrics.cardShadow(
-          elevated: _current,
-          accent: _current,
         ),
       ),
       child: IntrinsicHeight(
@@ -187,9 +174,7 @@ class _MissionSceneCard extends StatelessWidget {
               decoration: BoxDecoration(
                 border: Border(
                   right: BorderSide(
-                    color: a.cardBorder.withValues(
-                      alpha: unlocked ? 0.9 : 0.5,
-                    ),
+                    color: a.cardBorder.withValues(alpha: unlocked ? 0.9 : 0.5),
                   ),
                 ),
                 color: _current
@@ -206,20 +191,16 @@ class _MissionSceneCard extends StatelessWidget {
                       height: 1,
                       color: unlocked
                           ? (_current
-                              ? AppColors.accent
-                              : a.text.withValues(
-                                  alpha: completed ? 0.35 : 0.75,
-                                ))
+                                ? AppColors.accent
+                                : a.text.withValues(
+                                    alpha: completed ? 0.35 : 0.75,
+                                  ))
                           : a.text.withValues(alpha: 0.28),
                     ),
                   ),
                   if (_current) ...[
                     const SizedBox(height: 8),
-                    Container(
-                      width: 18,
-                      height: 1.5,
-                      color: AppColors.accent,
-                    ),
+                    Container(width: 18, height: 1.5, color: AppColors.accent),
                   ],
                 ],
               ),
@@ -241,10 +222,10 @@ class _MissionSceneCard extends StatelessWidget {
                           mission.isBoss
                               ? 'DESAFIO'
                               : _current
-                                  ? 'PRÓXIMA LIÇÃO'
-                                  : completed
-                                      ? 'CONCLUÍDO'
-                                      : 'PASSO',
+                              ? 'PRÓXIMA LIÇÃO'
+                              : completed
+                              ? 'CONCLUÍDO'
+                              : 'PASSO',
                           style: AppTypography.label(
                             size: 10,
                             weight: FontWeight.w700,
@@ -252,8 +233,8 @@ class _MissionSceneCard extends StatelessWidget {
                             color: _current
                                 ? AppColors.accent
                                 : completed
-                                    ? gold.withValues(alpha: 0.55)
-                                    : a.textMuted(unlocked ? 0.45 : 0.28),
+                                ? gold.withValues(alpha: 0.55)
+                                : a.textMuted(unlocked ? 0.45 : 0.28),
                           ),
                         ),
                         if (!unlocked) ...[
@@ -274,15 +255,13 @@ class _MissionSceneCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Opacity(
-                          opacity: unlocked
-                              ? (completed ? 0.45 : 1)
-                              : 0.35,
+                          opacity: unlocked ? (completed ? 0.45 : 1) : 0.35,
                           child: CinematicIcon.mission(
                             mission.title,
                             isBoss: mission.isBoss,
                             size: _current ? 42 : 34,
                             accent: AppColors.accent,
-                            glowing: _current,
+                            glowing: false,
                           ),
                         ),
                         const SizedBox(width: 12),

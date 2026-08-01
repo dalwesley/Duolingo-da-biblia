@@ -400,12 +400,16 @@ class _TranslationPicker extends StatelessWidget {
                             decoration: BoxDecoration(
                               color: isSelected
                                   ? AppColors.cedar.withValues(alpha: 0.14)
-                                  : AppColors.textOnDark.withValues(alpha: 0.05),
+                                  : AppColors.textOnDark.withValues(
+                                      alpha: 0.05,
+                                    ),
                               borderRadius: BorderRadius.circular(AppRadii.md),
                               border: Border.all(
                                 color: isSelected
                                     ? AppColors.cedar.withValues(alpha: 0.7)
-                                    : AppColors.textOnDark.withValues(alpha: 0.1),
+                                    : AppColors.textOnDark.withValues(
+                                        alpha: 0.1,
+                                      ),
                               ),
                             ),
                             child: Row(
@@ -937,14 +941,6 @@ class _ChapterPicker extends StatelessWidget {
                           ? AppColors.accent.withValues(alpha: 0.7)
                           : a.cardBorder,
                     ),
-                    boxShadow: read
-                        ? [
-                            BoxShadow(
-                              color: AppColors.accent.withValues(alpha: 0.28),
-                              blurRadius: 10,
-                            ),
-                          ]
-                        : null,
                   ),
                   child: Center(
                     child: Text(
@@ -1063,7 +1059,6 @@ class BibleReaderView extends StatelessWidget {
                         accent: reading.verseNumber.withValues(
                           alpha: saved ? 1 : 0.45,
                         ),
-                        framed: false,
                       ),
                       title: Text(
                         saved ? 'Remover dos favoritos' : 'Salvar favorito',
@@ -1098,7 +1093,6 @@ class BibleReaderView extends StatelessWidget {
                         glyph: CinematicGlyph.scroll,
                         size: 24,
                         accent: reading.verseNumber,
-                        framed: false,
                       ),
                       title: Text(
                         'Estudar (Strong & originais)',
@@ -1130,7 +1124,6 @@ class BibleReaderView extends StatelessWidget {
                         glyph: CinematicGlyph.share,
                         size: 24,
                         accent: reading.inkMuted,
-                        framed: false,
                       ),
                       title: Text(
                         'Compartilhar',
@@ -1197,15 +1190,6 @@ class BibleReaderView extends StatelessWidget {
             color: reading.page,
             borderRadius: BorderRadius.circular(AppRadii.lg),
             border: Border.all(color: reading.pageBorder),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(
-                  alpha: reading.isDay ? 0.12 : 0.35,
-                ),
-                blurRadius: 24,
-                offset: const Offset(0, 10),
-              ),
-            ],
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1418,15 +1402,6 @@ class BibleReaderView extends StatelessWidget {
               border: alreadyRead
                   ? Border.all(color: reading.pageBorder)
                   : null,
-              boxShadow: alreadyRead
-                  ? null
-                  : [
-                      BoxShadow(
-                        color: AppColors.accent.withValues(alpha: 0.4),
-                        blurRadius: 14,
-                        offset: const Offset(0, 5),
-                      ),
-                    ],
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,

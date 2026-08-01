@@ -6,6 +6,7 @@ import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/home_widget_service.dart';
+import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
@@ -67,6 +68,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         });
       }
     });
+    InviteDeepLinkService.instance.addListener(_onInviteDeepLink);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       _progressRef = context.read<ProgressService>();
@@ -87,6 +89,22 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         });
       }
       unawaited(_maybePromptAppUpdate());
+      _openJuntosIfInvitePending();
+    });
+  }
+
+  void _onInviteDeepLink() {
+    if (!mounted) return;
+    _openJuntosIfInvitePending();
+  }
+
+  void _openJuntosIfInvitePending() {
+    final links = InviteDeepLinkService.instance;
+    final openTab = links.takeWantJuntosTab();
+    if (!openTab && links.pendingCompanionCode == null) return;
+    setState(() {
+      _index = 3;
+      _frost.value = 0;
     });
   }
 
@@ -106,6 +124,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         NotificationService.instance.syncFromProgress(progress);
         HomeWidgetService.syncFromProgress(progress);
       }
+
       progress.addListener(once);
       return;
     }
@@ -194,17 +213,17 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           _index = 0;
           _frost.value = 0;
         });
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const PracticeScreen()),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const PracticeScreen()));
       case ReminderAction.memory:
         setState(() {
           _index = 0;
           _frost.value = 0;
         });
-        Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => const MemoryScreen()),
-        );
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const MemoryScreen()));
       case ReminderAction.favorites:
       case ReminderAction.weekly:
         _openProfile();
@@ -218,6 +237,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _phaseTimer?.cancel();
     _frost.dispose();
     _progressRef?.removeListener(_onProgressChanged);
+    InviteDeepLinkService.instance.removeListener(_onInviteDeepLink);
     NotificationService.instance.onAction = null;
     super.dispose();
   }
@@ -304,7 +324,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
         1 => 'Escolha o caminho',
         2 => 'Leitura e estudo',
-        3 => 'Companhia · Caravana · Salas',
+        3 => 'Caravana · Companhia · Salas',
         _ => 'Ritmo · Aparência · Conta',
       },
     );
@@ -323,11 +343,11 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _lastLook = appearance.look;
 
     Widget tabBar(int index) => _tabTopBar(
-          index: index,
-          userName: userName,
-          photoUrl: photoUrl,
-          appearance: appearance,
-        );
+      index: index,
+      userName: userName,
+      photoUrl: photoUrl,
+      appearance: appearance,
+    );
 
     return ImmersiveScaffold(
       mode: mode,
@@ -353,15 +373,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               topBar: tabBar(1),
               portalsActive: _index == 1,
             ),
-            BibleScreen(
-              topBar: tabBar(2),
-            ),
+            BibleScreen(topBar: tabBar(2)),
             LeagueScreen(
               topBar: tabBar(3),
+              active: _index == 3,
             ),
-            SettingsScreen(
-              topBar: tabBar(4),
-            ),
+            SettingsScreen(topBar: tabBar(4)),
           ],
         ),
       ),

@@ -31,14 +31,13 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.1,
     FontStyle fontStyle = FontStyle.normal,
-  }) =>
-      GoogleFonts.plusJakartaSans(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        height: height,
-        fontStyle: fontStyle,
-      );
+  }) => GoogleFonts.plusJakartaSans(
+    fontSize: size,
+    fontWeight: weight,
+    color: color,
+    height: height,
+    fontStyle: fontStyle,
+  );
 
   /// Versículo / passagem — só leitura bíblica e citação de estudo.
   static TextStyle verse({
@@ -47,64 +46,59 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.5,
     FontStyle fontStyle = FontStyle.normal,
-  }) =>
-      GoogleFonts.cormorantGaramond(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        height: height,
-        fontStyle: fontStyle,
-      );
+  }) => GoogleFonts.cormorantGaramond(
+    fontSize: size,
+    fontWeight: weight,
+    color: color,
+    height: height,
+    fontStyle: fontStyle,
+  );
 
   static TextStyle title({
     double size = 18,
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.textOnDark,
     double height = 1.2,
-  }) =>
-      GoogleFonts.plusJakartaSans(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        height: height,
-      );
+  }) => GoogleFonts.plusJakartaSans(
+    fontSize: size,
+    fontWeight: weight,
+    color: color,
+    height: height,
+  );
 
   static TextStyle body({
     double size = 14,
     FontWeight weight = FontWeight.w500,
     Color color = AppColors.textOnDark,
     double height = 1.4,
-  }) =>
-      GoogleFonts.plusJakartaSans(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        height: height,
-      );
+  }) => GoogleFonts.plusJakartaSans(
+    fontSize: size,
+    fontWeight: weight,
+    color: color,
+    height: height,
+  );
 
   static TextStyle label({
     double size = 11,
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.accent,
     double letterSpacing = 1.4,
-  }) =>
-      GoogleFonts.plusJakartaSans(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        letterSpacing: letterSpacing,
-      );
+  }) => GoogleFonts.plusJakartaSans(
+    fontSize: size,
+    fontWeight: weight,
+    color: color,
+    letterSpacing: letterSpacing,
+  );
 
   static TextStyle cta({
     double size = 14,
     Color color = AppColors.inkOnAccent,
-  }) =>
-      GoogleFonts.plusJakartaSans(
-        fontSize: size,
-        fontWeight: FontWeight.w900,
-        color: color,
-        letterSpacing: 0.4,
-      );
+  }) => GoogleFonts.plusJakartaSans(
+    fontSize: size,
+    fontWeight: FontWeight.w900,
+    color: color,
+    letterSpacing: 0.4,
+  );
 }
 
 /// Raios padronizados.
@@ -162,7 +156,10 @@ class AppTheme {
         displayLarge: AppTypography.display(size: 34),
         displayMedium: AppTypography.display(size: 28),
         displaySmall: AppTypography.display(size: 24),
-        headlineMedium: AppTypography.display(size: 22, weight: FontWeight.w700),
+        headlineMedium: AppTypography.display(
+          size: 22,
+          weight: FontWeight.w700,
+        ),
         titleLarge: AppTypography.title(size: 20),
         titleMedium: AppTypography.title(size: 16),
         bodyLarge: AppTypography.body(size: 15),
@@ -211,17 +208,20 @@ class AppTheme {
     return Color(int.parse('FF$value', radix: 16));
   }
 
-  static List<BoxShadow> glow(Color color, {double blur = 20}) => [
-        BoxShadow(color: color.withValues(alpha: 0.16), blurRadius: blur, spreadRadius: 0),
-        BoxShadow(color: color.withValues(alpha: 0.06), blurRadius: blur * 1.4, spreadRadius: 1),
-      ];
+  static List<BoxShadow> glow(Color color, {double blur = 12}) => [
+    BoxShadow(
+      color: Colors.black.withValues(alpha: 0.2),
+      blurRadius: blur.clamp(6, 14),
+      offset: const Offset(0, 4),
+    ),
+  ];
 
   /// Sombra neutra — preferir [AppMetrics.cardShadow] quando houver accent/elevação.
   static List<BoxShadow> cardShadow({bool elevated = false}) => [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
-          blurRadius: elevated ? 16 : 10,
-          offset: Offset(0, elevated ? 8 : 4),
-        ),
-      ];
+    BoxShadow(
+      color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
+      blurRadius: elevated ? 16 : 10,
+      offset: Offset(0, elevated ? 8 : 4),
+    ),
+  ];
 }

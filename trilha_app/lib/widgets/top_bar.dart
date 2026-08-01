@@ -32,11 +32,7 @@ class TopBarStats extends StatelessWidget {
   final int steps;
   final int streak;
 
-  const TopBarStats({
-    super.key,
-    required this.steps,
-    required this.streak,
-  });
+  const TopBarStats({super.key, required this.steps, required this.streak});
 
   @override
   Widget build(BuildContext context) {
@@ -63,11 +59,6 @@ class StepsBadge extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        boxShadow: AppMetrics.accentGlow(
-          blur: 10,
-          alpha: 0.35,
-          offset: Offset.zero,
-        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -81,10 +72,7 @@ class StepsBadge extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             '$value',
-            style: AppTypography.title(
-              size: 13,
-              color: AppColors.inkOnAccent,
-            ),
+            style: AppTypography.title(size: 13, color: AppColors.inkOnAccent),
           ),
         ],
       ),
@@ -102,15 +90,9 @@ class StreakBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: AppColors.streak.withValues(alpha: 0.16),
+        color: AppColors.streak.withValues(alpha: 0.14),
         borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: AppColors.streak.withValues(alpha: 0.65)),
-        boxShadow: AppMetrics.accentGlow(
-          blur: 8,
-          alpha: 0.22,
-          offset: Offset.zero,
-          color: AppColors.streak,
-        ),
+        border: Border.all(color: AppColors.streak.withValues(alpha: 0.55)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -124,10 +106,7 @@ class StreakBadge extends StatelessWidget {
           const SizedBox(width: 4),
           Text(
             '$value',
-            style: AppTypography.title(
-              size: 13,
-              color: AppColors.streak,
-            ),
+            style: AppTypography.title(size: 13, color: AppColors.streak),
           ),
         ],
       ),
@@ -200,9 +179,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   });
 
   @override
-  Size get preferredSize => Size.fromHeight(
-    inline ? kTopBarInlineHeight : 56,
-  );
+  Size get preferredSize => Size.fromHeight(inline ? kTopBarInlineHeight : 56);
 
   @override
   Widget build(BuildContext context) {
@@ -210,10 +187,12 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     final onDark = immersive || dark || onBack != null;
     final showAvatar = personalGreeting && onProfileTap != null;
     final userName = context.select((ProgressService p) => p.userName);
-    final steps =
-        showStats ? context.select((ProgressService p) => p.steps) : 0;
-    final streak =
-        showStats ? context.select((ProgressService p) => p.streak) : 0;
+    final steps = showStats
+        ? context.select((ProgressService p) => p.steps)
+        : 0;
+    final streak = showStats
+        ? context.select((ProgressService p) => p.streak)
+        : 0;
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
     final mark = chromeAccent ?? AppColors.accent;
@@ -319,9 +298,9 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   double _appBarToolbarHeight(BuildContext context) {
-    final scale = MediaQuery.textScalerOf(context)
-        .clamp(maxScaleFactor: kTopBarMaxTextScale)
-        .scale(1);
+    final scale = MediaQuery.textScalerOf(
+      context,
+    ).clamp(maxScaleFactor: kTopBarMaxTextScale).scale(1);
     final titleH = 20 * 1.15 * scale;
     final subH = subtitle != null || personalGreeting ? 11 * 1.1 * scale : 0.0;
     return (titleH + subH + 16).clamp(56.0, 72.0);
@@ -425,11 +404,7 @@ class _InlineChrome extends StatelessWidget {
               TopBarStats(steps: steps, streak: streak),
             ] else if (showTrailingAvatar) ...[
               const SizedBox(width: 8),
-              UserAvatar(
-                photoUrl: photoUrl,
-                name: userName,
-                radius: 16,
-              ),
+              UserAvatar(photoUrl: photoUrl, name: userName, radius: 16),
             ] else if (onBack != null && showLeading) ...[
               const SizedBox(width: 8),
               _MenuMark(
@@ -455,11 +430,7 @@ class _BackGlyph extends StatelessWidget {
     return IconWell(
       size: 36,
       accent: accent,
-      child: Icon(
-        Icons.arrow_back_rounded,
-        size: 18,
-        color: accent,
-      ),
+      child: Icon(Icons.arrow_back_rounded, size: 18, color: accent),
     );
   }
 }
@@ -532,10 +503,7 @@ class _TitleBlock extends StatelessWidget {
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: AppTypography.display(
-              size: 20,
-              height: 1.05,
-            ),
+            style: AppTypography.display(size: 20, height: 1.05),
           ),
         ],
       );

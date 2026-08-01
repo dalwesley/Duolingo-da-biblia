@@ -283,7 +283,8 @@ class _HomeScreenState extends State<HomeScreen>
             userName: progress.userName,
             steps: progress.steps,
             atRisk: progress.isStreakAtRisk,
-            questsLeft: DailyQuestDefs.all.length - progress.questsCompletedToday,
+            questsLeft:
+                DailyQuestDefs.all.length - progress.questsCompletedToday,
           ),
         ),
         const SizedBox(height: AppSpace.section),
@@ -374,11 +375,7 @@ class _RevisitPracticeLink extends StatelessWidget {
               ],
             ),
           ),
-          Icon(
-            Icons.chevron_right_rounded,
-            size: 20,
-            color: a.textMuted(0.45),
-          ),
+          Icon(Icons.chevron_right_rounded, size: 20, color: a.textMuted(0.45)),
         ],
       ),
     );
@@ -436,14 +433,16 @@ class _DayPulse extends StatelessWidget {
     } else if (returningAfterGap) {
       detail = 'Retome com uma lição';
     } else {
-      detail = goal == 1 ? 'Meta de hoje · 1 lição' : 'Meta de hoje · $goal lições';
+      detail = goal == 1
+          ? 'Meta de hoje · 1 lição'
+          : 'Meta de hoje · $goal lições';
     }
 
     final pulseTone = atRisk
         ? AppColors.streak
         : goalMet
-            ? AppColors.teal
-            : AppColors.primaryLight;
+        ? AppColors.teal
+        : AppColors.primaryLight;
 
     return GlassCard(
       padding: AppMetrics.cardPaddingCompact,
@@ -462,8 +461,8 @@ class _DayPulse extends StatelessWidget {
                     color: atRisk
                         ? AppColors.streak
                         : goalMet
-                            ? AppColors.teal
-                            : a.text.withValues(alpha: 0.88),
+                        ? AppColors.teal
+                        : a.text.withValues(alpha: 0.88),
                   ),
                 ),
               ),
@@ -542,11 +541,7 @@ class _ActiveTrailLine extends StatelessWidget {
               style: AppTypography.title(size: 14, color: a.text),
             ),
           ),
-          Icon(
-            Icons.chevron_right_rounded,
-            size: 20,
-            color: a.textMuted(0.45),
-          ),
+          Icon(Icons.chevron_right_rounded, size: 20, color: a.textMuted(0.45)),
         ],
       ),
     );

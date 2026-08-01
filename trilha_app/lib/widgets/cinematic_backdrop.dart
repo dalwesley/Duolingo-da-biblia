@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import '../cinematic/cinematic_resolver.dart';
 import '../theme/app_theme.dart';
 
-/// Fundo atmosférico da Criação — camadas abstratas, sem figuras cartoon.
-/// A ideia: o mundo se revela em luz e cor, sem competir com a pergunta.
+/// Fundo atmosférico da Criação — flat/sóbrio, sem bloom nem ponto de luz.
 class CinematicBackdrop extends StatefulWidget {
   final CreationWorldState world;
   final double revealProgress;
@@ -23,20 +22,50 @@ class CinematicBackdrop extends StatefulWidget {
 
 class _CinematicBackdropState extends State<CinematicBackdrop> {
   CreationWorldState get _display {
-    if (widget.revealing == null || widget.revealProgress <= 0) return widget.world;
+    if (widget.revealing == null || widget.revealProgress <= 0) {
+      return widget.world;
+    }
     final t = Curves.easeOutCubic.transform(widget.revealProgress);
     final r = widget.revealing!;
     return CreationWorldState(
       voidDepth: _lerp(widget.world.voidDepth, r.voidDepth, t),
-      spirit: _lerp(widget.world.spirit, math.max(widget.world.spirit, r.spirit), t),
-      waters: _lerp(widget.world.waters, math.max(widget.world.waters, r.waters), t),
-      light: _lerp(widget.world.light, math.max(widget.world.light, r.light), t),
+      spirit: _lerp(
+        widget.world.spirit,
+        math.max(widget.world.spirit, r.spirit),
+        t,
+      ),
+      waters: _lerp(
+        widget.world.waters,
+        math.max(widget.world.waters, r.waters),
+        t,
+      ),
+      light: _lerp(
+        widget.world.light,
+        math.max(widget.world.light, r.light),
+        t,
+      ),
       land: _lerp(widget.world.land, math.max(widget.world.land, r.land), t),
-      plants: _lerp(widget.world.plants, math.max(widget.world.plants, r.plants), t),
+      plants: _lerp(
+        widget.world.plants,
+        math.max(widget.world.plants, r.plants),
+        t,
+      ),
       fish: _lerp(widget.world.fish, math.max(widget.world.fish, r.fish), t),
-      birds: _lerp(widget.world.birds, math.max(widget.world.birds, r.birds), t),
-      stars: _lerp(widget.world.stars, math.max(widget.world.stars, r.stars), t),
-      humanity: _lerp(widget.world.humanity, math.max(widget.world.humanity, r.humanity), t),
+      birds: _lerp(
+        widget.world.birds,
+        math.max(widget.world.birds, r.birds),
+        t,
+      ),
+      stars: _lerp(
+        widget.world.stars,
+        math.max(widget.world.stars, r.stars),
+        t,
+      ),
+      humanity: _lerp(
+        widget.world.humanity,
+        math.max(widget.world.humanity, r.humanity),
+        t,
+      ),
     );
   }
 
@@ -46,7 +75,7 @@ class _CinematicBackdropState extends State<CinematicBackdrop> {
   Widget build(BuildContext context) {
     return RepaintBoundary(
       child: CustomPaint(
-        painter: _AtmospherePainter(state: _display, time: 0.25),
+        painter: _AtmospherePainter(state: _display),
         size: Size.infinite,
       ),
     );
@@ -55,15 +84,11 @@ class _CinematicBackdropState extends State<CinematicBackdrop> {
 
 class _AtmospherePainter extends CustomPainter {
   final CreationWorldState state;
-  final double time;
 
-  _AtmospherePainter({required this.state, required this.time});
+  _AtmospherePainter({required this.state});
 
   @override
   void paint(Canvas canvas, Size size) {
-    final breath = (math.sin(time * math.pi * 2) + 1) / 2;
-
-    // Base — noite profunda
     final night = Color.lerp(
       AppColors.night,
       const Color(0xFF0C1020),
@@ -71,11 +96,14 @@ class _AtmospherePainter extends CustomPainter {
     )!;
     canvas.drawRect(Offset.zero & size, Paint()..color = night);
 
-    // Céu superior — responde à luz / espírito
     final skyTop = Color.lerp(
       const Color(0xFF0A1010),
-      Color.lerp(const Color(0xFF1A3040), const Color(0xFF3A6A70), state.light * 0.7)!,
-      (state.light * 0.55 + state.spirit * 0.25).clamp(0.0, 1.0),
+      Color.lerp(
+        const Color(0xFF1A3040),
+        const Color(0xFF2A4A50),
+        state.light * 0.5,
+      )!,
+      (state.light * 0.4 + state.spirit * 0.15).clamp(0.0, 1.0),
     )!;
     canvas.drawRect(
       Offset.zero & size,
@@ -83,88 +111,16 @@ class _AtmospherePainter extends CustomPainter {
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [
-            skyTop,
-            night,
-            const Color(0xFF030208),
-          ],
+          colors: [skyTop, night, const Color(0xFF030208)],
           stops: const [0.0, 0.42, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Aura ambiente — evita fundo “morto” mesmo no vazio
-    final auraCenter = Offset(size.width * 0.5, size.height * 0.32);
-    canvas.drawCircle(
-      auraCenter,
-      size.width * (0.55 + 0.04 * breath),
-      Paint()
-        ..shader = RadialGradient(
-          colors: [
-            Color.lerp(const Color(0xFF2A4A3C), const Color(0xFFD4A84B), state.light * 0.4)!
-                .withValues(alpha: 0.08 + 0.06 * breath + state.spirit * 0.08),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromCircle(center: auraCenter, radius: size.width * 0.6)),
-    );
-
-    // Luminares — bloom suave (sem pontilhados de estrela)
-    final starStrength = math.max(state.stars, state.voidDepth * 0.25);
-    if (starStrength > 0.05) {
-      final c = Offset(size.width * 0.5, size.height * 0.18);
-      final r = size.width * (0.4 + starStrength * 0.15);
-      canvas.drawCircle(
-        c,
-        r,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              Colors.white.withValues(alpha: starStrength * 0.1),
-              AppColors.primaryLight.withValues(alpha: starStrength * 0.06),
-              Colors.transparent,
-            ],
-            stops: const [0.0, 0.4, 1.0],
-          ).createShader(Rect.fromCircle(center: c, radius: r)),
-      );
-    }
-
-    // Luz — glow suave no alto
-    if (state.light > 0.04) {
-      final center = Offset(size.width * 0.5, size.height * 0.12);
-      final radius = size.width * (0.55 + state.light * 0.35 + breath * 0.03);
-      canvas.drawCircle(
-        center,
-        radius,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              const Color(0xFFFFF6D8).withValues(alpha: state.light * 0.28),
-              AppColors.sand.withValues(alpha: state.light * 0.12),
-              Colors.transparent,
-            ],
-            stops: const [0.0, 0.35, 1.0],
-          ).createShader(Rect.fromCircle(center: center, radius: radius)),
-      );
-    }
-
-    // Presença — véu de luz suave (dourado / branco quente)
-    if (state.spirit > 0.04) {
-      final c = Offset(size.width * 0.5, size.height * 0.05);
-      final r = size.width * 0.5 * state.spirit;
-      canvas.drawCircle(
-        c,
-        r,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              const Color(0xFFF5E6C8).withValues(alpha: state.spirit * 0.14),
-              Colors.transparent,
-            ],
-          ).createShader(Rect.fromCircle(center: c, radius: r)),
-      );
-    }
-
-    // Horizonte / águas — banda inferior abstrata
-    final horizon = (state.waters * 0.55 + state.land * 0.35 + state.fish * 0.15).clamp(0.0, 1.0);
+    final horizon =
+        (state.waters * 0.55 + state.land * 0.35 + state.fish * 0.15).clamp(
+          0.0,
+          1.0,
+        );
     if (horizon > 0.04) {
       final bandTop = size.height * (0.58 - state.land * 0.04);
       final waterColor = Color.lerp(
@@ -190,40 +146,15 @@ class _AtmospherePainter extends CustomPainter {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              lifeTint.withValues(alpha: horizon * 0.35),
-              lifeTint.withValues(alpha: horizon * 0.7),
+              lifeTint.withValues(alpha: horizon * 0.3),
+              lifeTint.withValues(alpha: horizon * 0.6),
               AppColors.night.withValues(alpha: 0.95),
             ],
             stops: const [0.0, 0.35, 1.0],
           ).createShader(Rect.fromLTRB(0, bandTop, size.width, size.height)),
       );
-
-      // Linha de horizonte suave
-      canvas.drawRect(
-        Rect.fromLTWH(0, bandTop, size.width, 1.5),
-        Paint()..color = Colors.white.withValues(alpha: horizon * 0.08),
-      );
     }
 
-    // Humanidade / vida — só um brilho âmbar discreto no horizonte (sem silhueta)
-    final lifeGlow = (state.humanity * 0.7 + state.plants * 0.25 + state.birds * 0.15).clamp(0.0, 1.0);
-    if (lifeGlow > 0.05) {
-      final c = Offset(size.width * 0.5, size.height * 0.52);
-      final r = size.width * 0.28;
-      canvas.drawCircle(
-        c,
-        r,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              AppColors.sand.withValues(alpha: lifeGlow * 0.12),
-              Colors.transparent,
-            ],
-          ).createShader(Rect.fromCircle(center: c, radius: r)),
-      );
-    }
-
-    // Escurece a zona das opções — legibilidade primeiro
     canvas.drawRect(
       Offset.zero & size,
       Paint()
@@ -231,31 +162,15 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.black.withValues(alpha: 0.15),
-            Colors.black.withValues(alpha: 0.45),
-            Colors.black.withValues(alpha: 0.72),
+            Colors.black.withValues(alpha: 0.12),
+            Colors.black.withValues(alpha: 0.4),
+            Colors.black.withValues(alpha: 0.7),
           ],
           stops: const [0.0, 0.38, 1.0],
-        ).createShader(Offset.zero & size),
-    );
-
-    // Vinheta lateral leve
-    canvas.drawRect(
-      Offset.zero & size,
-      Paint()
-        ..shader = RadialGradient(
-          center: const Alignment(0, -0.15),
-          radius: 1.15,
-          colors: [
-            Colors.transparent,
-            Colors.black.withValues(alpha: 0.4),
-          ],
-          stops: const [0.55, 1.0],
         ).createShader(Offset.zero & size),
     );
   }
 
   @override
-  bool shouldRepaint(covariant _AtmospherePainter old) =>
-      old.time != time || old.state != state;
+  bool shouldRepaint(covariant _AtmospherePainter old) => old.state != state;
 }

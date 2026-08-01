@@ -10,7 +10,6 @@ class StwayLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final p = pulse ?? 0.0;
     return Container(
       width: size,
       height: size,
@@ -18,14 +17,9 @@ class StwayLogo extends StatelessWidget {
         borderRadius: BorderRadius.circular(size * 0.22),
         boxShadow: [
           BoxShadow(
-            color: AppColors.primaryLight.withValues(alpha: 0.22 + 0.14 * p),
-            blurRadius: 28 + 12 * p,
-            spreadRadius: 1,
-          ),
-          BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.1 + 0.08 * p),
-            blurRadius: 36 + 16 * p,
-            spreadRadius: 0,
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: 12,
+            offset: const Offset(0, 4),
           ),
         ],
       ),

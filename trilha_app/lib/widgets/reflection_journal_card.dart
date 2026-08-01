@@ -33,7 +33,6 @@ class ReflectionJournalCard extends StatelessWidget {
                   glyph: CinematicGlyph.scroll,
                   size: 22,
                   accent: AppColors.primaryLight.withValues(alpha: 0.95),
-                  framed: false,
                 ),
                 const SizedBox(width: AppSpace.sm),
                 Expanded(

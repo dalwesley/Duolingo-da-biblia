@@ -178,29 +178,31 @@ class _PathStation extends StatelessWidget {
         children: [
           SizedBox(
             width: 42,
-            child: Column(
-              children: [
-                _RailBeacon(
-                  accent: accent,
-                  glow: glow,
-                  isCurrent: isCurrent,
-                  isDone: isDone,
-                  isLocked: isLocked,
-                ),
-                if (!isLast)
-                  Expanded(
-                    child: CustomPaint(
-                      painter: _RailPainter(
-                        color: railActive
-                            ? accent.withValues(alpha: 0.55)
-                            : Colors.white.withValues(alpha: 0.14),
-                        active: railActive,
-                        seed: item.trail.slug.hashCode ^ item.chapterIndex,
-                      ),
-                      child: const SizedBox(width: 42),
-                    ),
+            child: ClipRect(
+              child: Column(
+                children: [
+                  _RailBeacon(
+                    accent: accent,
+                    glow: glow,
+                    isCurrent: isCurrent,
+                    isDone: isDone,
+                    isLocked: isLocked,
                   ),
-              ],
+                  if (!isLast)
+                    Expanded(
+                      child: CustomPaint(
+                        painter: _RailPainter(
+                          color: railActive
+                              ? accent
+                              : Colors.white.withValues(alpha: 0.2),
+                          active: railActive,
+                          seed: item.trail.slug.hashCode ^ item.chapterIndex,
+                        ),
+                        child: const SizedBox(width: 42),
+                      ),
+                    ),
+                ],
+              ),
             ),
           ),
           const SizedBox(width: 12),
@@ -214,11 +216,7 @@ class _PathStation extends StatelessWidget {
                       glow: glow,
                       onTap: onTap,
                     )
-                  : _QuietStation(
-                      item: item,
-                      accent: accent,
-                      onTap: onTap,
-                    ),
+                  : _QuietStation(item: item, accent: accent, onTap: onTap),
             ),
           ),
         ],
@@ -244,39 +242,22 @@ class _RailBeacon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = isCurrent ? 18.0 : 12.0;
+    final size = isCurrent ? 16.0 : 10.0;
     return SizedBox(
-      height: isCurrent ? 28 : 22,
+      height: isCurrent ? 26 : 20,
       child: Center(
         child: Container(
           width: size,
           height: size,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            gradient: isDone || isCurrent
-                ? LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [accent, Color.lerp(accent, Colors.black, 0.25)!],
-                  )
-                : null,
             color: isDone || isCurrent
-                ? null
+                ? accent
                 : Colors.white.withValues(alpha: isLocked ? 0.12 : 0.22),
             border: Border.all(
-              color: isCurrent
-                  ? Colors.white.withValues(alpha: 0.55)
-                  : Colors.white.withValues(alpha: 0.15),
-              width: isCurrent ? 1.5 : 1,
+              color: isCurrent ? accent : Colors.white.withValues(alpha: 0.15),
+              width: 1.5,
             ),
-            boxShadow: [
-              if (isCurrent)
-                BoxShadow(
-                  color: glow.withValues(alpha: 0.55),
-                  blurRadius: 16,
-                  spreadRadius: 1,
-                ),
-            ],
           ),
           child: isDone
               ? Center(
@@ -299,11 +280,7 @@ class _RailPainter extends CustomPainter {
   final bool active;
   final int seed;
 
-  _RailPainter({
-    required this.color,
-    required this.active,
-    required this.seed,
-  });
+  _RailPainter({required this.color, required this.active, required this.seed});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -313,19 +290,12 @@ class _RailPainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = active ? 2.4 : 1.7
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round;
+      ..strokeWidth = active ? 1.6 : 1.4
+      ..strokeCap = StrokeCap.butt
+      ..strokeJoin = StrokeJoin.round
+      ..isAntiAlias = true;
 
     if (active) {
-      canvas.drawPath(
-        path,
-        Paint()
-          ..color = color.withValues(alpha: 0.25)
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 7
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
-      );
       _drawDashed(canvas, path, paint, dash: 10, gap: 4);
     } else {
       _drawDashed(canvas, path, paint, dash: 5.5, gap: 5.5);
@@ -400,7 +370,7 @@ class _RailPainter extends CustomPainter {
       old.color != color || old.active != active || old.seed != seed;
 }
 
-class _HeroStation extends StatefulWidget {
+class _HeroStation extends StatelessWidget {
   final JourneyPathItem item;
   final Color accent;
   final Color glow;
@@ -414,170 +384,110 @@ class _HeroStation extends StatefulWidget {
   });
 
   @override
-  State<_HeroStation> createState() => _HeroStationState();
-}
-
-class _HeroStationState extends State<_HeroStation>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _breath;
-
-  @override
-  void initState() {
-    super.initState();
-    _breath = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 2800),
-    )..repeat(reverse: true);
-  }
-
-  @override
-  void dispose() {
-    _breath.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final item = widget.item;
     final pct = item.total > 0 ? item.done / item.total : 0.0;
     final a = Appearance.of(context);
-    return AnimatedBuilder(
-      animation: _breath,
-      builder: (context, child) {
-        final glowStrength = 0.14 + (_breath.value * 0.1);
-        return Container(
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: Ink(
+          height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.lg),
-            boxShadow: [
-              BoxShadow(
-                color: widget.glow.withValues(alpha: glowStrength),
-                blurRadius: 24,
-                offset: const Offset(0, 10),
-              ),
-            ],
-          ),
-          child: child,
-        );
-      },
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: widget.onTap,
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          child: Ink(
-            height: 200,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              color: a.cardFill,
-              border: Border.all(
-                color: AppMetrics.accentBorder(alpha: 0.45),
-                width: 1.5,
-              ),
-              boxShadow: AppMetrics.cardShadow(elevated: true, accent: true),
+            color: a.cardFill,
+            border: Border.all(
+              color: AppMetrics.accentBorder(alpha: 0.45),
+              width: 1.5,
             ),
-            child: Stack(
+          ),
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.xl,
+              AppSpace.lg,
+              AppSpace.xl,
+              AppSpace.lg,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Positioned(
-                  right: -40,
-                  top: -30,
-                  child: Container(
-                    width: 160,
-                    height: 160,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: RadialGradient(
-                        colors: [
-                          widget.accent.withValues(alpha: 0.16),
-                          Colors.transparent,
-                        ],
+                Row(
+                  children: [
+                    Text(
+                      'CENA ${_roman(item.chapterIndex)}',
+                      style: AppTypography.label(
+                        size: 10,
+                        letterSpacing: 2.4,
+                        color: accent.withValues(alpha: 0.9),
                       ),
                     ),
+                    const Spacer(),
+                    Container(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 9,
+                        vertical: 4,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(AppRadii.lg),
+                        color: accent.withValues(alpha: 0.14),
+                        border: Border.all(
+                          color: accent.withValues(alpha: 0.4),
+                        ),
+                      ),
+                      child: Text(
+                        'AGORA',
+                        style: AppTypography.label(
+                          size: 9,
+                          letterSpacing: 0.8,
+                          color: accent,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const Spacer(),
+                Text(
+                  item.trail.title,
+                  style: AppTypography.display(size: 28, height: 1.05),
+                ),
+                const SizedBox(height: AppSpace.sm),
+                Text(
+                  item.trail.description,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.35,
+                    color: a.textMuted(0.55),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(AppSpace.xl, AppSpace.lg, AppSpace.xl, AppSpace.lg),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Text(
-                            'CENA ${_roman(item.chapterIndex)}',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 2.4,
-                              color: widget.accent.withValues(alpha: 0.9),
-                            ),
-                          ),
-                          const Spacer(),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 9,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(AppRadii.lg),
-                              color: widget.accent.withValues(alpha: 0.14),
-                              border: Border.all(
-                                color: widget.accent.withValues(alpha: 0.4),
-                              ),
-                            ),
-                            child: Text(
-                              'AGORA',
-                              style: AppTypography.label(
-                                size: 9,
-                                letterSpacing: 0.8,
-                                color: widget.accent,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const Spacer(),
-                      Text(
-                        item.trail.title,
-                        style: AppTypography.display(size: 28, height: 1.05),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        item.trail.description,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          height: 1.35,
-                          color: a.textMuted(0.55),
-                        ),
-                      ),
-                      const SizedBox(height: AppSpace.lg),
-                      if (item.total > 0) ...[
-                        AppProgressBar(
-                          value: pct,
-                          color: widget.accent,
-                          trackColor: a.progressTrack,
-                        ),
-                        const SizedBox(height: 10),
-                      ],
-                      Row(
-                        children: [
-                          if (item.total > 0)
-                            Text(
-                              '${item.done} de ${item.total} passos',
-                              style: AppTypography.body(
-                                size: 12,
-                                weight: FontWeight.w600,
-                                color: a.textMuted(0.5),
-                              ),
-                            ),
-                          const Spacer(),
-                          Text(
-                            'CONTINUAR →',
-                            style: AppTypography.cta(size: 12, color: widget.accent),
-                          ),
-                        ],
-                      ),
-                    ],
+                const SizedBox(height: AppSpace.lg),
+                if (item.total > 0) ...[
+                  AppProgressBar(
+                    value: pct,
+                    color: accent,
+                    trackColor: a.progressTrack,
                   ),
+                  const SizedBox(height: 10),
+                ],
+                Row(
+                  children: [
+                    if (item.total > 0)
+                      Text(
+                        '${item.done} de ${item.total} passos',
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w600,
+                          color: a.textMuted(0.5),
+                        ),
+                      ),
+                    const Spacer(),
+                    Text(
+                      'CONTINUAR →',
+                      style: AppTypography.cta(size: 12, color: accent),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -588,8 +498,28 @@ class _HeroStationState extends State<_HeroStation>
   }
 
   static String _roman(int n) {
-    const map = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X',
-        'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX'];
+    const map = [
+      'I',
+      'II',
+      'III',
+      'IV',
+      'V',
+      'VI',
+      'VII',
+      'VIII',
+      'IX',
+      'X',
+      'XI',
+      'XII',
+      'XIII',
+      'XIV',
+      'XV',
+      'XVI',
+      'XVII',
+      'XVIII',
+      'XIX',
+      'XX',
+    ];
     if (n >= 1 && n <= map.length) return map[n - 1];
     return '$n';
   }
@@ -624,18 +554,22 @@ class _QuietStation extends StatelessWidget {
           child: Ink(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              color: Appearance.of(context).cardFill.withValues(
-                alpha: isLocked ? 0.55 : 1,
-              ),
+              color: Appearance.of(
+                context,
+              ).cardFill.withValues(alpha: isLocked ? 0.55 : 1),
               border: Border.all(
                 color: isDone
                     ? accent.withValues(alpha: 0.28)
                     : Appearance.of(context).cardBorder,
               ),
-              boxShadow: AppMetrics.cardShadow(),
             ),
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.section, AppSpace.lg, AppSpace.section),
+              padding: const EdgeInsets.fromLTRB(
+                AppSpace.lg,
+                AppSpace.section,
+                AppSpace.lg,
+                AppSpace.section,
+              ),
               child: Row(
                 children: [
                   Container(
@@ -643,9 +577,7 @@ class _QuietStation extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(AppRadii.sm),
-                      gradient: isLocked
-                          ? null
-                          : visuals.iconGradient,
+                      gradient: isLocked ? null : visuals.iconGradient,
                       color: isLocked
                           ? Colors.white.withValues(alpha: 0.06)
                           : null,
@@ -658,12 +590,14 @@ class _QuietStation extends StatelessWidget {
                             glyph: isDone
                                 ? CinematicGlyph.check
                                 : isLocked
-                                    ? CinematicGlyph.lock
-                                    : CinematicGlyph.calendar,
+                                ? CinematicGlyph.lock
+                                : CinematicGlyph.calendar,
                             size: 22,
                             accent: isDone
                                 ? accent
-                                : Colors.white.withValues(alpha: isLocked ? 0.4 : 0.9),
+                                : Colors.white.withValues(
+                                    alpha: isLocked ? 0.4 : 0.9,
+                                  ),
                             framed: false,
                           )
                         : CinematicIcon(
@@ -689,7 +623,9 @@ class _QuietStation extends StatelessWidget {
                           style: AppTypography.display(
                             size: 20,
                             height: 1.1,
-                            color: Colors.white.withValues(alpha: isLocked ? 0.65 : 0.92),
+                            color: Colors.white.withValues(
+                              alpha: isLocked ? 0.65 : 0.92,
+                            ),
                           ),
                         ),
                         const SizedBox(height: AppSpace.xs),
@@ -697,12 +633,12 @@ class _QuietStation extends StatelessWidget {
                           isDone
                               ? 'Concluída'
                               : isSoon
-                                  ? 'Em breve neste caminho'
-                                  : isLocked
-                                      ? 'Ainda além do horizonte'
-                                      : item.total > 0
-                                          ? '${item.done}/${item.total} passos'
-                                          : item.trail.description,
+                              ? 'Em breve neste caminho'
+                              : isLocked
+                              ? 'Ainda além do horizonte'
+                              : item.total > 0
+                              ? '${item.done}/${item.total} passos'
+                              : item.trail.description,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.body(
@@ -730,8 +666,28 @@ class _QuietStation extends StatelessWidget {
   }
 
   static String _roman(int n) {
-    const map = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X',
-        'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX'];
+    const map = [
+      'I',
+      'II',
+      'III',
+      'IV',
+      'V',
+      'VI',
+      'VII',
+      'VIII',
+      'IX',
+      'X',
+      'XI',
+      'XII',
+      'XIII',
+      'XIV',
+      'XV',
+      'XVI',
+      'XVII',
+      'XVIII',
+      'XIX',
+      'XX',
+    ];
     if (n >= 1 && n <= map.length) return map[n - 1];
     return '$n';
   }

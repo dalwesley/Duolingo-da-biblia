@@ -62,10 +62,13 @@ class AppUpdateService {
   static const _snoozeKey = 'app_update_snooze_until_ms';
   static const _snoozeDays = 3;
 
-  static const _androidStoreDefault =
+  static const androidStoreUrl =
       'https://play.google.com/store/apps/details?id=com.trilha.trilha_app';
-  static const _iosStoreDefault =
+  static const iosStoreUrl =
       'https://apps.apple.com/br/search?term=STWAY';
+
+  static const _androidStoreDefault = androidStoreUrl;
+  static const _iosStoreDefault = iosStoreUrl;
 
   static const _defaultMessage =
       'Uma nova versão do STWAY está pronta — melhorias e correções te esperam.';

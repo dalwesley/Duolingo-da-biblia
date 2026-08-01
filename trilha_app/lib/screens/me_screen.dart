@@ -18,10 +18,7 @@ import 'bible_screen.dart';
 class MeScreen extends StatefulWidget {
   final Widget? topBar;
 
-  const MeScreen({
-    super.key,
-    this.topBar,
-  });
+  const MeScreen({super.key, this.topBar});
 
   @override
   State<MeScreen> createState() => _MeScreenState();
@@ -103,9 +100,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
     final books = await BibleService.instance.books();
     if (!mounted) return;
     setState(() {
-      _namesByAbbrev = {
-        for (final b in books) b.abbrev.toLowerCase(): b.name,
-      };
+      _namesByAbbrev = {for (final b in books) b.abbrev.toLowerCase(): b.name};
     });
   }
 
@@ -125,9 +120,9 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
       padding: const EdgeInsets.only(top: AppSpace.md),
       child: GlassCard(
         onTap: bookmarks.isEmpty
-            ? () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const BibleScreen()),
-                )
+            ? () => Navigator.of(
+                context,
+              ).push(MaterialPageRoute(builder: (_) => const BibleScreen()))
             : null,
         padding: AppMetrics.cardPadding,
         child: Column(
@@ -147,7 +142,6 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                     glyph: CinematicGlyph.star,
                     size: 22,
                     accent: AppColors.accent.withValues(alpha: 0.95),
-                    framed: false,
                   ),
                   const SizedBox(width: AppSpace.sm),
                   Expanded(
@@ -194,8 +188,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                       child: InkWell(
                         onTap: () => Navigator.of(context).push(
                           MaterialPageRoute(
-                            builder: (_) =>
-                                BibleReaderScreen(reference: label),
+                            builder: (_) => BibleReaderScreen(reference: label),
                           ),
                         ),
                         child: Padding(
@@ -207,8 +200,9 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                               CinematicIcon(
                                 glyph: CinematicGlyph.star,
                                 size: 18,
-                                accent:
-                                    AppColors.accent.withValues(alpha: 0.95),
+                                accent: AppColors.accent.withValues(
+                                  alpha: 0.95,
+                                ),
                                 framed: false,
                               ),
                               const SizedBox(width: AppSpace.sm),
@@ -265,10 +259,7 @@ class _SharedVersesSection extends StatelessWidget {
             if (refs.isEmpty)
               Text(
                 'Versículos que você compartilhar aparecem aqui — só a referência.',
-                style: AppTypography.body(
-                  size: 12,
-                  color: a.textMuted(0.55),
-                ),
+                style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
               )
             else
               Wrap(

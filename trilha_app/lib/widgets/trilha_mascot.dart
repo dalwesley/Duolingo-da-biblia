@@ -7,7 +7,7 @@ class TrilhaMascot extends StatelessWidget {
   final double size;
   final bool glowing;
 
-  const TrilhaMascot({super.key, this.size = 56, this.glowing = true});
+  const TrilhaMascot({super.key, this.size = 56, this.glowing = false});
 
   @override
   Widget build(BuildContext context) {

@@ -7,8 +7,8 @@ import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Palco da próxima lição — primeiro impacto da Home (não card flat).
-class HeroContinueCard extends StatefulWidget {
+/// Próxima lição — card sóbrio, sem glow pulsante.
+class HeroContinueCard extends StatelessWidget {
   final Mission? mission;
   final String trailTitle;
   final String trailSlug;
@@ -29,262 +29,130 @@ class HeroContinueCard extends StatefulWidget {
   });
 
   @override
-  State<HeroContinueCard> createState() => _HeroContinueCardState();
-}
-
-class _HeroContinueCardState extends State<HeroContinueCard>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _pulse;
-
-  @override
-  void initState() {
-    super.initState();
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1600),
-    )..repeat(reverse: true);
-  }
-
-  @override
-  void dispose() {
-    _pulse.dispose();
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final mission = widget.mission;
+    final mission = this.mission;
     if (mission == null) return _completedState(context);
 
     final a = Appearance.of(context);
-    final visuals = TrailVisuals.forSlug(
-      widget.trailSlug,
-      color: widget.trailColor,
-    );
+    final visuals = TrailVisuals.forSlug(trailSlug, color: trailColor);
     final trailAccent = visuals.accent;
-    final trailGlow = visuals.glow;
-    final stepLabel = widget.goalMet ? 'Mais uma lição' : 'Próxima lição';
-    final ctaLabel = widget.goalMet ? 'Seguir' : 'Continuar';
+    final stepLabel = goalMet ? 'Mais uma lição' : 'Próxima lição';
+    final ctaLabel = goalMet ? 'Seguir' : 'Continuar';
     final rewardColor = mission.isBoss ? AppColors.sand : trailAccent;
-    // Contorno do palco = cor da trilha; amarelo só no CTA.
-    final stageAccent = trailAccent;
 
     return GestureDetector(
       onTap: () {
         HapticFeedback.mediumImpact();
-        widget.onTap?.call();
+        onTap?.call();
       },
-      child: AnimatedBuilder(
-        animation: _pulse,
-        builder: (context, _) {
-          final glow = 0.28 + 0.18 * _pulse.value;
-          return Container(
-            constraints: const BoxConstraints(minHeight: 300),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.lerp(a.cardFillSoft, trailAccent, 0.12)!,
-                  a.cardFill,
-                  Color.lerp(a.cardFill, trailGlow, 0.28)!,
-                ],
-              ),
-              border: Border.all(
-                color: AppMetrics.accentBorder(
-                  alpha: 0.55 + 0.2 * _pulse.value,
-                  color: stageAccent,
+      child: Container(
+        constraints: const BoxConstraints(minHeight: 280),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+          color: a.cardFill,
+          border: Border.all(
+            color: AppMetrics.accentBorder(alpha: 0.55, color: trailAccent),
+            width: 1.25,
+          ),
+          boxShadow: AppMetrics.cardShadow(elevated: true),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _Chip(
+                tone: trailAccent,
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    CinematicIcon(
+                      glyph: visuals.glyph,
+                      size: 16,
+                      accent: trailAccent,
+                      glowing: false,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 6),
+                    Text(
+                      trailTitle.toUpperCase(),
+                      style: AppTypography.label(
+                        size: 10,
+                        letterSpacing: 1.1,
+                        color: a.text.withValues(alpha: 0.88),
+                      ),
+                    ),
+                  ],
                 ),
-                width: 1.5,
               ),
-              boxShadow: [
-                ...AppMetrics.accentGlow(
-                  blur: 28,
-                  alpha: glow * 0.38,
-                  color: stageAccent,
+              const SizedBox(height: 24),
+              Text(
+                stepLabel.toUpperCase(),
+                style: AppTypography.label(
+                  size: 12,
+                  letterSpacing: 1.6,
+                  color: trailAccent,
                 ),
-                ...AppMetrics.cardShadow(elevated: true, tint: stageAccent),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                mission.title,
+                style: AppTypography.display(
+                  size: 32,
+                  height: 1.1,
+                  weight: FontWeight.w900,
+                  color: a.text,
+                ),
+              ),
+              if (mission.isBoss) ...[
+                const SizedBox(height: 10),
+                Text(
+                  'Desafio especial · mais passos',
+                  style: AppTypography.body(
+                    size: 14,
+                    weight: FontWeight.w700,
+                    color: AppColors.sand.withValues(alpha: 0.9),
+                  ),
+                ),
               ],
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-              child: Stack(
-                children: [
-                  Positioned(
-                    right: -60,
-                    top: -40,
-                    child: Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        gradient: RadialGradient(
-                          colors: [
-                            trailAccent.withValues(
-                              alpha: 0.28 + 0.12 * _pulse.value,
-                            ),
-                            Colors.transparent,
-                          ],
-                        ),
-                      ),
+              const SizedBox(height: 24),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                decoration: BoxDecoration(
+                  gradient: AppGradients.gold,
+                  borderRadius: BorderRadius.circular(AppRadii.lg),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      ctaLabel.toUpperCase(),
+                      style: AppTypography.cta(size: 16),
                     ),
-                  ),
-                  Positioned(
-                    left: -50,
-                    bottom: -30,
-                    child: Container(
-                      width: 160,
-                      height: 160,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        gradient: RadialGradient(
-                          colors: [
-                            trailGlow.withValues(alpha: 0.4),
-                            Colors.transparent,
-                          ],
-                        ),
-                      ),
+                    const SizedBox(width: 10),
+                    const Icon(
+                      Icons.arrow_forward_rounded,
+                      size: 20,
+                      color: AppColors.inkOnAccent,
                     ),
-                  ),
-                  Positioned(
-                    right: 8,
-                    top: 24,
-                    child: Opacity(
-                      opacity: 0.22,
-                      child: CinematicIcon.mission(
-                        mission.title,
-                        isBoss: mission.isBoss,
-                        size: 120,
-                        accent: trailAccent,
-                        glowing: false,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _Chip(
-                          tone: trailAccent,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              CinematicIcon(
-                                glyph: visuals.glyph,
-                                size: 16,
-                                accent: trailAccent,
-                                glowing: false,
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                widget.trailTitle.toUpperCase(),
-                                style: AppTypography.label(
-                                  size: 10,
-                                  letterSpacing: 1.1,
-                                  color: a.text.withValues(alpha: 0.92),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 28),
-                        Text(
-                          stepLabel.toUpperCase(),
-                          style: AppTypography.label(
-                            size: 12,
-                            letterSpacing: 2.2,
-                            color: trailAccent,
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          mission.title,
-                          style: AppTypography.display(
-                            size: 34,
-                            height: 1.08,
-                            weight: FontWeight.w900,
-                            color: a.text,
-                          ),
-                        ),
-                        if (mission.isBoss) ...[
-                          const SizedBox(height: 10),
-                          Text(
-                            'Desafio especial · mais passos',
-                            style: AppTypography.body(
-                              size: 14,
-                              weight: FontWeight.w700,
-                              color: AppColors.sand.withValues(alpha: 0.9),
-                            ),
-                          ),
-                        ],
-                        const SizedBox(height: 28),
-                        // CTA full-bleed — amarelo de marca
-                        Container(
-                          width: double.infinity,
-                          padding: const EdgeInsets.symmetric(vertical: 18),
-                          decoration: BoxDecoration(
-                            gradient: AppGradients.gold,
-                            borderRadius: BorderRadius.circular(AppRadii.lg),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.accent.withValues(
-                                  alpha: 0.45 + 0.25 * _pulse.value,
-                                ),
-                                blurRadius: 22,
-                                offset: const Offset(0, 8),
-                              ),
-                            ],
-                          ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                ctaLabel.toUpperCase(),
-                                style: AppTypography.cta(size: 16),
-                              ),
-                              const SizedBox(width: 10),
-                              Icon(
-                                Icons.arrow_forward_rounded,
-                                size: 20,
-                                color: AppColors.inkOnAccent,
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        Center(
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 12,
-                              vertical: 5,
-                            ),
-                            decoration: BoxDecoration(
-                              color: rewardColor.withValues(alpha: 0.14),
-                              borderRadius: BorderRadius.circular(AppRadii.pill),
-                              border: Border.all(
-                                color: rewardColor.withValues(alpha: 0.55),
-                              ),
-                            ),
-                            child: Text(
-                              '+${mission.stepsReward} passos nesta lição',
-                              style: AppTypography.body(
-                                size: 13,
-                                weight: FontWeight.w800,
-                                color: rewardColor,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          );
-        },
+              const SizedBox(height: 12),
+              Center(
+                child: Text(
+                  '+${mission.stepsReward} passos nesta lição',
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w800,
+                    color: rewardColor,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -292,21 +160,22 @@ class _HeroContinueCardState extends State<HeroContinueCard>
   Widget _completedState(BuildContext context) {
     final a = Appearance.of(context);
     return GestureDetector(
-      onTap: widget.onExploreTrails,
+      onTap: onExploreTrails,
       child: Container(
         padding: const EdgeInsets.all(28),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.xl),
           color: a.cardFill,
-          border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
+          border: Border.all(color: AppColors.accent.withValues(alpha: 0.4)),
+          boxShadow: AppMetrics.cardShadow(),
         ),
         child: Column(
           children: [
             const CinematicIcon(
               glyph: CinematicGlyph.crown,
-              size: 64,
+              size: 56,
               accent: AppColors.accent,
-              glowing: true,
+              glowing: false,
             ),
             const SizedBox(height: 16),
             Text(
@@ -319,7 +188,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
               textAlign: TextAlign.center,
               style: AppTypography.body(color: a.textMuted(0.6)),
             ),
-            if (widget.onExploreTrails != null) ...[
+            if (onExploreTrails != null) ...[
               const SizedBox(height: 20),
               const CopperCta(
                 label: 'Explorar trilhas',
@@ -347,14 +216,10 @@ class _Chip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
       decoration: BoxDecoration(
-        color: ink != null
-            ? ink.withValues(alpha: 0.14)
-            : a.cardFill,
+        color: ink != null ? ink.withValues(alpha: 0.12) : a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
-          color: ink != null
-              ? ink.withValues(alpha: 0.5)
-              : a.cardBorder,
+          color: ink != null ? ink.withValues(alpha: 0.45) : a.cardBorder,
         ),
       ),
       child: child,

@@ -569,10 +569,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   Widget _fieldLabel(AppearanceStyle a, String title) {
-    return Text(
-      title,
-      style: AppTypography.title(size: 14, color: a.text),
-    );
+    return Text(title, style: AppTypography.title(size: 14, color: a.text));
   }
 
   void _saveName(ProgressService progress) {
@@ -706,65 +703,141 @@ class _SettingsScreenState extends State<SettingsScreen>
       );
     }
 
+    DifficultyMeta? selectedMeta;
+    for (final m in items) {
+      if (m.difficulty.id == selectedId) {
+        selectedMeta = m;
+        break;
+      }
+    }
+    selectedMeta ??= items.isEmpty ? null : items.first;
+
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        for (var i = 0; i < items.length; i++) ...[
-          if (i > 0)
-            Divider(
-              height: 1,
-              thickness: 1,
-              color: a.cardBorder.withValues(alpha: 0.45),
-            ),
-          _DifficultyRow(
-            meta: items[i],
-            selected: selectedId == items[i].difficulty.id,
-            locked: !progress.isDifficultyUnlocked(
-              _genesisTrailSlug,
-              items[i].difficulty,
-            ),
-            cleared: progress.hasClearedMode(
-              _genesisTrailSlug,
-              items[i].difficulty.id,
-            ),
-            onTap: () {
-              final meta = items[i];
-              if (!progress.isDifficultyUnlocked(
-                _genesisTrailSlug,
-                meta.difficulty,
-              )) {
-                HapticFeedback.selectionClick();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      'Conclua o modo anterior para liberar ${meta.label}.',
-                      style: AppTypography.body(color: AppColors.textOnDark),
-                    ),
-                    backgroundColor: AppColors.nightElevated,
+        _SegmentTrack(
+          child: Row(
+            children: [
+              for (final meta in items)
+                Expanded(
+                  child: Builder(
+                    builder: (context) {
+                      final locked = !progress.isDifficultyUnlocked(
+                        _genesisTrailSlug,
+                        meta.difficulty,
+                      );
+                      final selected = selectedId == meta.difficulty.id;
+                      final cleared = progress.hasClearedMode(
+                        _genesisTrailSlug,
+                        meta.difficulty.id,
+                      );
+                      return _SegmentCell(
+                        selected: selected && !locked,
+                        onTap: () {
+                          if (locked) {
+                            HapticFeedback.selectionClick();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Conclua o modo anterior para liberar ${meta.label}.',
+                                  style: AppTypography.body(
+                                    color: AppColors.textOnDark,
+                                  ),
+                                ),
+                                backgroundColor: AppColors.nightElevated,
+                              ),
+                            );
+                            return;
+                          }
+                          HapticFeedback.selectionClick();
+                          final prev = progress.difficultyForTrail(
+                            _genesisTrailSlug,
+                          );
+                          progress.setTrailDifficulty(
+                            _genesisTrailSlug,
+                            meta.difficulty.id,
+                            missionSlugs: _genesisMissionSlugs,
+                          );
+                          if (prev != null &&
+                              prev != meta.difficulty.id &&
+                              _genesisMissionSlugs.isNotEmpty) {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'Progresso da trilha reiniciado neste modo.',
+                                  style: AppTypography.body(
+                                    color: AppColors.textOnDark,
+                                  ),
+                                ),
+                                backgroundColor: AppColors.nightElevated,
+                              ),
+                            );
+                          }
+                        },
+                        child: Opacity(
+                          opacity: locked ? 0.45 : 1,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              CinematicIcon(
+                                glyph: locked
+                                    ? CinematicGlyph.lock
+                                    : DifficultyVisuals.glyphFor(
+                                        meta.difficulty,
+                                      ),
+                                size: 18,
+                                accent: selected && !locked
+                                    ? AppColors.inkOnAccent
+                                    : a.textMuted(0.75),
+                                framed: false,
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                meta.label,
+                                textAlign: TextAlign.center,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.label(
+                                  size: 11,
+                                  letterSpacing: 0.2,
+                                  color: selected && !locked
+                                      ? AppColors.inkOnAccent
+                                      : a.textMuted(0.85),
+                                ),
+                              ),
+                              if (cleared && !locked) ...[
+                                const SizedBox(height: 2),
+                                Text(
+                                  'OK',
+                                  style: AppTypography.label(
+                                    size: 9,
+                                    letterSpacing: 0.4,
+                                    color: selected
+                                        ? AppColors.inkOnAccent.withValues(
+                                            alpha: 0.75,
+                                          )
+                                        : AppColors.accent.withValues(
+                                            alpha: 0.8,
+                                          ),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
-                );
-                return;
-              }
-              HapticFeedback.selectionClick();
-              final prev = progress.difficultyForTrail(_genesisTrailSlug);
-              progress.setTrailDifficulty(
-                _genesisTrailSlug,
-                meta.difficulty.id,
-                missionSlugs: _genesisMissionSlugs,
-              );
-              if (prev != null &&
-                  prev != meta.difficulty.id &&
-                  _genesisMissionSlugs.isNotEmpty) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text(
-                      'Progresso da trilha reiniciado neste modo.',
-                      style: AppTypography.body(color: AppColors.textOnDark),
-                    ),
-                    backgroundColor: AppColors.nightElevated,
-                  ),
-                );
-              }
-            },
+                ),
+            ],
+          ),
+        ),
+        if (selectedMeta != null) ...[
+          const SizedBox(height: AppSpace.sm),
+          Text(
+            selectedMeta.subtitle,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(size: 12, color: a.textMuted(0.6)),
           ),
         ],
       ],
@@ -982,11 +1055,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     }
     await progress.applyFromCloud(parsed);
     await league.applyFromCloud(parsed);
-    await backend.saveNow(
-      progress,
-      LeagueService.weekKey(),
-      league: league,
-    );
+    await backend.saveNow(progress, LeagueService.weekKey(), league: league);
     await sync.markSynced();
     if (mounted) {
       ScaffoldMessenger.of(
@@ -1017,10 +1086,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 const SizedBox(height: 2),
                 Text(
                   desc,
-                  style: AppTypography.body(
-                    size: 12,
-                    color: a.textMuted(0.62),
-                  ),
+                  style: AppTypography.body(size: 12, color: a.textMuted(0.62)),
                 ),
               ],
             ),
@@ -1098,104 +1164,8 @@ class _SegmentCell extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: selected ? AppGradients.gold : null,
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          boxShadow: selected
-              ? AppMetrics.accentGlow(
-                  blur: 10,
-                  alpha: 0.35,
-                  offset: const Offset(0, 4),
-                )
-              : null,
         ),
         child: child,
-      ),
-    );
-  }
-}
-
-class _DifficultyRow extends StatelessWidget {
-  final DifficultyMeta meta;
-  final bool selected;
-  final bool locked;
-  final bool cleared;
-  final VoidCallback onTap;
-
-  const _DifficultyRow({
-    required this.meta,
-    required this.selected,
-    required this.locked,
-    required this.cleared,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Opacity(
-      opacity: locked ? 0.45 : 1,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
-            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 12),
-            decoration: BoxDecoration(
-              color: selected
-                  ? AppColors.accent.withValues(alpha: 0.12)
-                  : Colors.transparent,
-              borderRadius: BorderRadius.circular(AppRadii.sm),
-            ),
-            child: Row(
-              children: [
-                CinematicIcon(
-                  glyph: locked
-                      ? CinematicGlyph.lock
-                      : DifficultyVisuals.glyphFor(meta.difficulty),
-                  size: AppMetrics.leadingIcon,
-                  accent: selected ? AppColors.accent : a.textMuted(0.75),
-                  framed: false,
-                  glowing: false,
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        meta.label,
-                        style: AppTypography.title(
-                          size: 14,
-                          color: a.text,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        locked
-                            ? 'Conclua o modo anterior para liberar'
-                            : cleared
-                                ? 'Concluído · ${meta.subtitle}'
-                                : meta.subtitle,
-                        style: AppTypography.body(
-                          size: 12,
-                          height: 1.3,
-                          color: a.textMuted(selected ? 0.75 : 0.6),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                if (selected)
-                  const CinematicIcon(
-                    glyph: CinematicGlyph.check,
-                    size: 20,
-                    accent: AppColors.accent,
-                    framed: false,
-                  ),
-              ],
-            ),
-          ),
-        ),
       ),
     );
   }

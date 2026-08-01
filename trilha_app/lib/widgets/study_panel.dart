@@ -113,7 +113,9 @@ class _StudyPanelState extends State<StudyPanel>
                   Colors.white.withValues(alpha: 0.04),
                 ],
               ),
-              border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.14)),
+              border: Border.all(
+                color: AppColors.textOnDark.withValues(alpha: 0.14),
+              ),
             ),
             child: Column(
               children: [
@@ -202,12 +204,7 @@ class _StudyPanelState extends State<StudyPanel>
               padding: const EdgeInsets.all(AppSpace.section),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                gradient: LinearGradient(
-                  colors: [
-                    accent.withValues(alpha: 0.22),
-                    accent.withValues(alpha: 0.06),
-                  ],
-                ),
+                color: accent.withValues(alpha: 0.08),
                 border: Border.all(color: accent.withValues(alpha: 0.35)),
               ),
               child: Row(
@@ -249,7 +246,9 @@ class _StudyPanelState extends State<StudyPanel>
                             style: AppTypography.body(
                               size: 13,
                               height: 1.35,
-                              color: AppColors.textOnDark.withValues(alpha: 0.78),
+                              color: AppColors.textOnDark.withValues(
+                                alpha: 0.78,
+                              ),
                             ),
                           ),
                         ],
@@ -268,7 +267,9 @@ class _StudyPanelState extends State<StudyPanel>
               decoration: BoxDecoration(
                 color: AppColors.textOnDark.withValues(alpha: 0.05),
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.08)),
+                border: Border.all(
+                  color: AppColors.textOnDark.withValues(alpha: 0.08),
+                ),
               ),
               child: Text(
                 'Sua anotação anterior: “${widget.priorReflection}”',
@@ -289,13 +290,6 @@ class _StudyPanelState extends State<StudyPanel>
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.accent.withValues(alpha: 0.45),
-                    blurRadius: 16,
-                    offset: const Offset(0, 6),
-                  ),
-                ],
               ),
               child: Text(
                 'COMEÇAR',
@@ -554,17 +548,6 @@ class _ReflectionPanelState extends State<ReflectionPanel> {
                       decoration: BoxDecoration(
                         gradient: AppGradients.gold,
                         borderRadius: BorderRadius.circular(AppRadii.md),
-                        boxShadow: canSubmit
-                            ? [
-                                BoxShadow(
-                                  color: AppColors.accent.withValues(
-                                    alpha: 0.4,
-                                  ),
-                                  blurRadius: 14,
-                                  offset: const Offset(0, 4),
-                                ),
-                              ]
-                            : null,
                       ),
                       child: Text(
                         'GUARDAR E CONTINUAR',

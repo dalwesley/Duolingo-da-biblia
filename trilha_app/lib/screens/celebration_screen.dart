@@ -107,54 +107,46 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       parent: _entrance,
       curve: const Interval(0.28, 0.58, curve: Curves.easeOut),
     );
-    _titleSlide = Tween<Offset>(
-      begin: const Offset(0, 0.18),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _entrance,
-        curve: const Interval(0.28, 0.62, curve: Curves.easeOutCubic),
-      ),
-    );
+    _titleSlide = Tween<Offset>(begin: const Offset(0, 0.18), end: Offset.zero)
+        .animate(
+          CurvedAnimation(
+            parent: _entrance,
+            curve: const Interval(0.28, 0.62, curve: Curves.easeOutCubic),
+          ),
+        );
     _bodyOpacity = CurvedAnimation(
       parent: _entrance,
       curve: const Interval(0.38, 0.68, curve: Curves.easeOut),
     );
-    _bodySlide = Tween<Offset>(
-      begin: const Offset(0, 0.12),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _entrance,
-        curve: const Interval(0.38, 0.72, curve: Curves.easeOutCubic),
-      ),
-    );
+    _bodySlide = Tween<Offset>(begin: const Offset(0, 0.12), end: Offset.zero)
+        .animate(
+          CurvedAnimation(
+            parent: _entrance,
+            curve: const Interval(0.38, 0.72, curve: Curves.easeOutCubic),
+          ),
+        );
     _statsOpacity = CurvedAnimation(
       parent: _entrance,
       curve: const Interval(0.48, 0.78, curve: Curves.easeOut),
     );
-    _statsSlide = Tween<Offset>(
-      begin: const Offset(0, 0.2),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _entrance,
-        curve: const Interval(0.48, 0.82, curve: Curves.easeOutCubic),
-      ),
-    );
+    _statsSlide = Tween<Offset>(begin: const Offset(0, 0.2), end: Offset.zero)
+        .animate(
+          CurvedAnimation(
+            parent: _entrance,
+            curve: const Interval(0.48, 0.82, curve: Curves.easeOutCubic),
+          ),
+        );
     _ctaOpacity = CurvedAnimation(
       parent: _entrance,
       curve: const Interval(0.62, 1.0, curve: Curves.easeOut),
     );
-    _ctaSlide = Tween<Offset>(
-      begin: const Offset(0, 0.28),
-      end: Offset.zero,
-    ).animate(
-      CurvedAnimation(
-        parent: _entrance,
-        curve: const Interval(0.62, 1.0, curve: Curves.easeOutCubic),
-      ),
-    );
+    _ctaSlide = Tween<Offset>(begin: const Offset(0, 0.28), end: Offset.zero)
+        .animate(
+          CurvedAnimation(
+            parent: _entrance,
+            curve: const Interval(0.62, 1.0, curve: Curves.easeOutCubic),
+          ),
+        );
     _countProgress = CurvedAnimation(
       parent: _count,
       curve: Curves.easeOutCubic,
@@ -192,43 +184,43 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             total: widget.total,
           )
           .then((awarded) async {
-        if (mounted && awarded > 0) {
-          setState(() => _awardedSteps = awarded);
-        }
-        // Grava na hora — o debounce de 2s perdia o dia ao reiniciar o app.
-        if (mounted) {
-          final backend = context.read<BackendService>();
-          final league = context.read<LeagueService>();
-          final room = context.read<RoomService>().activeCode;
-          await backend.saveNow(
-            progress,
-            LeagueService.weekKey(),
-            roomCode: room,
-            league: league,
-          );
-        }
-        AnalyticsService.instance.logLessonComplete(
-          missionSlug: widget.missionSlug,
-          trailSlug: widget.trailSlug,
-          correct: widget.correct,
-          total: widget.total,
-          steps: awarded > 0 ? awarded : _awardedSteps,
-          isBoss: widget.isBoss,
-          isReplay: widget.isReplay,
-          perfect: widget.perfect,
-        );
-        if (!mounted) return;
-        if (widget.perfect) {
-          SoundService.instance.playStreak();
-        } else {
-          SoundService.instance.playComplete(boss: widget.isBoss);
-        }
-        if (progress.goalJustReached) {
-          setState(() => _showGoalBanner = true);
-          progress.clearGoalJustReached();
-        }
-        await _resolveModeSuggestion(progress);
-      });
+            if (mounted && awarded > 0) {
+              setState(() => _awardedSteps = awarded);
+            }
+            // Grava na hora — o debounce de 2s perdia o dia ao reiniciar o app.
+            if (mounted) {
+              final backend = context.read<BackendService>();
+              final league = context.read<LeagueService>();
+              final room = context.read<RoomService>().activeCode;
+              await backend.saveNow(
+                progress,
+                LeagueService.weekKey(),
+                roomCode: room,
+                league: league,
+              );
+            }
+            AnalyticsService.instance.logLessonComplete(
+              missionSlug: widget.missionSlug,
+              trailSlug: widget.trailSlug,
+              correct: widget.correct,
+              total: widget.total,
+              steps: awarded > 0 ? awarded : _awardedSteps,
+              isBoss: widget.isBoss,
+              isReplay: widget.isReplay,
+              perfect: widget.perfect,
+            );
+            if (!mounted) return;
+            if (widget.perfect) {
+              SoundService.instance.playStreak();
+            } else {
+              SoundService.instance.playComplete(boss: widget.isBoss);
+            }
+            if (progress.goalJustReached) {
+              setState(() => _showGoalBanner = true);
+              progress.clearGoalJustReached();
+            }
+            await _resolveModeSuggestion(progress);
+          });
     }
   }
 
@@ -238,13 +230,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (!QuestionBank.instance.hasBankForTrail(widget.trailSlug)) return;
 
     final currentId =
-        progress.difficultyForTrail(widget.trailSlug) ?? TrailDifficulty.semente.id;
-    final current = TrailDifficulty.fromId(currentId) ?? TrailDifficulty.semente;
+        progress.difficultyForTrail(widget.trailSlug) ??
+        TrailDifficulty.semente.id;
+    final current =
+        TrailDifficulty.fromId(currentId) ?? TrailDifficulty.semente;
     final next = current.next;
     if (next == null) return;
 
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
-    final complete = trail != null &&
+    final complete =
+        trail != null &&
         TrailProgress.isTrailCompleted(trail, progress.completedMissions);
 
     if (complete) {
@@ -281,18 +276,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (replayThisStep) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => LessonScreen(
-            missionSlug: widget.missionSlug,
-          ),
+          builder: (_) => LessonScreen(missionSlug: widget.missionSlug),
         ),
       );
       return;
     }
 
     Navigator.of(context).pushReplacement(
-      MaterialPageRoute(
-        builder: (_) => TrailMapScreen(slug: widget.trailSlug),
-      ),
+      MaterialPageRoute(builder: (_) => TrailMapScreen(slug: widget.trailSlug)),
     );
   }
 
@@ -318,8 +309,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final pct =
-        widget.total > 0 ? ((widget.correct / widget.total) * 100).round() : 100;
+    final pct = widget.total > 0
+        ? ((widget.correct / widget.total) * 100).round()
+        : 100;
     final isBoss = widget.isBoss;
     final showModeUp = _nextMode != null && _nextMeta != null;
     final mode = context.watch<ProgressService>().settings.appearanceMode;
@@ -373,7 +365,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             builder: (context, child) {
                               final breath =
                                   (math.sin(_pulse.value * math.pi * 2) + 1) /
-                                      2;
+                                  2;
                               return _HeroEmblem(
                                 accent: heroAccent,
                                 perfect: widget.perfect,
@@ -428,8 +420,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     ),
                                     decoration: BoxDecoration(
                                       gradient: AppGradients.gold,
-                                      borderRadius:
-                                          BorderRadius.circular(AppRadii.md),
+                                      borderRadius: BorderRadius.circular(
+                                        AppRadii.md,
+                                      ),
                                       boxShadow: AppTheme.glow(
                                         AppColors.accent,
                                         blur: 22,
@@ -459,10 +452,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                               animation: _countProgress,
                               builder: (context, _) {
                                 final t = _countProgress.value;
-                                final stepsShown =
-                                    (_awardedSteps * t).round();
-                                final streakShown =
-                                    (progress.streak * t).round();
+                                final stepsShown = (_awardedSteps * t).round();
+                                final streakShown = (progress.streak * t)
+                                    .round();
                                 final pctShown = (pct * t).round();
                                 return Row(
                                   children: [
@@ -510,15 +502,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             opacity: _statsOpacity,
                             child: _ModeUpgradeCard(
                               trailComplete: _trailComplete,
-                              currentLabel:
-                                  _currentMode?.labelPt ?? 'Semente',
+                              currentLabel: _currentMode?.labelPt ?? 'Semente',
                               nextLabel: _nextMeta!.label,
                               nextSubtitle: _nextMeta!.subtitle,
                               onTryStep: () =>
                                   _acceptNextMode(replayThisStep: true),
                               onSwitchTrail: _trailComplete
-                                  ? () =>
-                                      _acceptNextMode(replayThisStep: false)
+                                  ? () => _acceptNextMode(replayThisStep: false)
                                   : null,
                             ),
                           ),
@@ -548,19 +538,18 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                 AnimatedBuilder(
                                   animation: _pulse,
                                   builder: (context, child) {
-                                    final breath = (math.sin(
-                                              _pulse.value * math.pi * 2,
-                                            ) +
+                                    final breath =
+                                        (math.sin(_pulse.value * math.pi * 2) +
                                             1) /
                                         2;
                                     return DecoratedBox(
                                       decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(AppRadii.lg),
+                                        borderRadius: BorderRadius.circular(
+                                          AppRadii.lg,
+                                        ),
                                         boxShadow: [
                                           BoxShadow(
-                                            color: AppColors.accent
-                                                .withValues(
+                                            color: AppColors.accent.withValues(
                                               alpha: 0.18 + breath * 0.14,
                                             ),
                                             blurRadius: 18 + breath * 10,
@@ -587,8 +576,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                 ),
                                 const SizedBox(height: AppSpace.sm),
                                 TextButton(
-                                  onPressed: () => Navigator.of(context)
-                                      .popUntil((r) => r.isFirst),
+                                  onPressed: () => Navigator.of(
+                                    context,
+                                  ).popUntil((r) => r.isFirst),
                                   child: Text(
                                     'Voltar ao início',
                                     style: AppTypography.body(
@@ -661,8 +651,9 @@ class _HeroEmblem extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  (perfect ? AppColors.accentBright : accent)
-                      .withValues(alpha: 0.22 + breath * 0.1),
+                  (perfect ? AppColors.accentBright : accent).withValues(
+                    alpha: 0.22 + breath * 0.1,
+                  ),
                   Colors.transparent,
                 ],
               ),
@@ -680,8 +671,9 @@ class _HeroEmblem extends StatelessWidget {
                   blur: 32 + breath * 12,
                 ),
                 BoxShadow(
-                  color: (perfect ? AppColors.accent : accent)
-                      .withValues(alpha: 0.35 + breath * 0.2),
+                  color: (perfect ? AppColors.accent : accent).withValues(
+                    alpha: 0.35 + breath * 0.2,
+                  ),
                   blurRadius: 28 + breath * 16,
                   spreadRadius: 2,
                 ),
@@ -724,7 +716,9 @@ class _CelebrationAtmospherePainter extends CustomPainter {
       Paint()
         ..shader = RadialGradient(
           colors: [
-            (perfect ? gold : accent).withValues(alpha: (0.22 + breath * 0.08) * a),
+            (perfect ? gold : accent).withValues(
+              alpha: (0.22 + breath * 0.08) * a,
+            ),
             (perfect ? gold : accent).withValues(alpha: 0.06 * a),
             Colors.transparent,
           ],
@@ -756,9 +750,14 @@ class _CelebrationAtmospherePainter extends CustomPainter {
       final angle = -math.pi / 2 + i * (math.pi * 2 / 10) + breath * 0.08;
       final len = size.width * (0.22 + (i.isEven ? 0.1 : 0.04));
       final inner = size.width * 0.09;
-      final p1 = center + Offset(math.cos(angle) * inner, math.sin(angle) * inner);
-      final p2 = center +
-          Offset(math.cos(angle) * (inner + len), math.sin(angle) * (inner + len));
+      final p1 =
+          center + Offset(math.cos(angle) * inner, math.sin(angle) * inner);
+      final p2 =
+          center +
+          Offset(
+            math.cos(angle) * (inner + len),
+            math.sin(angle) * (inner + len),
+          );
       rayPaint.shader = LinearGradient(
         colors: [
           Colors.white.withValues(alpha: 0.18 * a * (0.6 + breath * 0.4)),
@@ -924,13 +923,10 @@ class _StatCard extends StatelessWidget {
               size: 20,
               accent: color,
               framed: false,
-              glowing: true,
+              glowing: false,
             ),
             const SizedBox(height: AppSpace.xs),
-            Text(
-              value,
-              style: AppTypography.title(size: 16, color: a.text),
-            ),
+            Text(value, style: AppTypography.title(size: 16, color: a.text)),
             Text(
               label,
               style: AppTypography.label(

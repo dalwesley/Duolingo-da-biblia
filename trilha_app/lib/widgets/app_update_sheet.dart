@@ -54,7 +54,7 @@ class _AppUpdateSheet extends StatelessWidget {
               glyph: _force ? CinematicGlyph.shield : CinematicGlyph.spark,
               size: 56,
               accent: accent,
-              glowing: true,
+              glowing: false,
             ),
             const SizedBox(height: 14),
             Text(
@@ -118,7 +118,10 @@ class _AppUpdateSheet extends StatelessWidget {
                     SnackBar(
                       content: Text(
                         'Não deu para abrir a loja. Tente pelo link: ${status.storeUrl}',
-                        style: AppTypography.body(size: 13, color: Colors.white),
+                        style: AppTypography.body(
+                          size: 13,
+                          color: Colors.white,
+                        ),
                       ),
                       backgroundColor: AppColors.nightElevated,
                     ),
