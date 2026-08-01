@@ -45,6 +45,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   final _frost = FrostController();
   Timer? _phaseTimer;
   AppearanceLook? _lastLook;
+  DayPhase? _lastClockPhase;
 
   ProgressService? _progressRef;
 
@@ -52,11 +53,19 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
+    _lastClockPhase = DayPhaseHelper.current();
     _phaseTimer = Timer.periodic(const Duration(minutes: 1), (_) {
       if (!mounted) return;
       final mode = context.read<ProgressService>().settings.appearanceMode;
       final look = AppearanceStyle.resolve(mode).look;
-      if (look != _lastLook) setState(() => _lastLook = look);
+      final clockPhase = DayPhaseHelper.current();
+      // Look (tema) ou fase do relógio (saudação) mudou.
+      if (look != _lastLook || clockPhase != _lastClockPhase) {
+        setState(() {
+          _lastLook = look;
+          _lastClockPhase = clockPhase;
+        });
+      }
     });
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -292,7 +301,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         _ => 'Config',
       },
       subtitle: switch (index) {
-        0 => DayPhaseHelper.greeting(appearance.phase),
+        0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
         1 => 'Escolha o caminho',
         2 => 'Leitura e estudo',
         3 => 'Companhia · Caravana · Salas',

@@ -25,12 +25,11 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   static const _firstDuration = Duration(milliseconds: 4000);
   static const _returnDuration = Duration(milliseconds: 4000);
 
   late final AnimationController _master;
-  late final AnimationController _pulse;
 
   bool _exiting = false;
   bool _isReturnVisit = false;
@@ -42,10 +41,6 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
 
     _master = AnimationController(vsync: this, duration: _firstDuration);
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1400),
-    )..repeat(reverse: true);
 
     _loadVersionLabel();
     _boot();
@@ -103,7 +98,7 @@ class _SplashScreenState extends State<SplashScreen>
       next = const LoginScreen();
     } else {
       final league = context.read<LeagueService>();
-      await backend.hydrateProgress(progress, league: league);
+      final hydrate = await backend.hydrateProgress(progress, league: league);
       if (!mounted) return;
       next = progress.hasSeenOnboarding
           ? const MainShell()
@@ -112,7 +107,9 @@ class _SplashScreenState extends State<SplashScreen>
       // Só sincroniza liga/progresso se já passou do onboarding.
       // Senão o save assíncrono pode gravar hasSeenOnboarding:false
       // depois do finish() e reabrir a intro no próximo boot.
-      if (progress.hasSeenOnboarding) {
+      // Também não grava se o hydrate falhou (evita zerar a nuvem).
+      if (progress.hasSeenOnboarding &&
+          hydrate != BackendService.hydrateFailed) {
         unawaited(() async {
           await backend.settleAndSyncLeague(progress, league);
           await progress.clearLegacyLocalPrefs();
@@ -143,7 +140,6 @@ class _SplashScreenState extends State<SplashScreen>
   void dispose() {
     _master.removeListener(_onMasterTick);
     _master.dispose();
-    _pulse.dispose();
     super.dispose();
   }
 
@@ -176,29 +172,23 @@ class _SplashScreenState extends State<SplashScreen>
         ),
       ),
       body: AnimatedBuilder(
-        animation: Listenable.merge([_master, _pulse]),
+        animation: _master,
         builder: (context, _) {
           final t = _master.value;
-          final pulse = _pulse.value;
 
-          final rise = CurvedAnimation(
-            parent: _master,
-            curve: _i(0.0, 0.55, curve: Curves.easeOutBack),
-          );
           final title = CurvedAnimation(
             parent: _master,
-            curve: _i(0.28, 0.62),
+            curve: _i(0.0, 0.45, curve: Curves.easeOutBack),
           );
           final tag = CurvedAnimation(
             parent: _master,
-            curve: _i(0.42, 0.75),
+            curve: _i(0.22, 0.58),
           );
           final bar = CurvedAnimation(
             parent: _master,
             curve: _i(0.55, 1.0, curve: Curves.easeOut),
           );
 
-          final riseV = rise.value.clamp(0.0, 1.0);
           final titleV = title.value.clamp(0.0, 1.0);
           final tagV = tag.value.clamp(0.0, 1.0);
           final barV = bar.value.clamp(0.0, 1.0);
@@ -210,22 +200,11 @@ class _SplashScreenState extends State<SplashScreen>
               ),
               child: Column(
                 children: [
-                  const Spacer(flex: 3),
-                  Opacity(
-                    opacity: riseV,
-                    child: Transform.scale(
-                      scale: 0.7 + 0.3 * riseV,
-                      child: Transform.translate(
-                        offset: Offset(0, 36 * (1 - riseV)),
-                        child: StwayLogo(size: 112, pulse: pulse),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 28),
+                  const SizedBox(height: 48),
                   Opacity(
                     opacity: titleV,
                     child: Transform.translate(
-                      offset: Offset(0, 18 * (1 - titleV)),
+                      offset: Offset(0, 24 * (1 - titleV)),
                       child: const StwayWordmark(
                         fontSize: 48,
                         letterSpacing: 6,
@@ -254,7 +233,7 @@ class _SplashScreenState extends State<SplashScreen>
                       ),
                     ),
                   ),
-                  const Spacer(flex: 4),
+                  const Spacer(),
                   Opacity(
                     opacity: barV,
                     child: Column(

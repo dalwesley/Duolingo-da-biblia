@@ -251,7 +251,6 @@ class _HomeScreenState extends State<HomeScreen>
                 : null,
             onExploreTrails: widget.onOpenTrilhas,
             goalMet: goalMet,
-            streak: progress.streak,
           ),
         ),
         const SizedBox(height: AppSpace.section),

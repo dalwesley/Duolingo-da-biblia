@@ -16,7 +16,6 @@ class HeroContinueCard extends StatefulWidget {
   final VoidCallback? onTap;
   final VoidCallback? onExploreTrails;
   final bool goalMet;
-  final int streak;
 
   const HeroContinueCard({
     super.key,
@@ -27,7 +26,6 @@ class HeroContinueCard extends StatefulWidget {
     this.onTap,
     this.onExploreTrails,
     this.goalMet = false,
-    this.streak = 0,
   });
 
   @override
@@ -168,56 +166,28 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            _Chip(
-                              tone: trailAccent,
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  CinematicIcon(
-                                    glyph: visuals.glyph,
-                                    size: 16,
-                                    accent: trailAccent,
-                                    glowing: false,
-                                  ),
-                                  const SizedBox(width: 6),
-                                  Text(
-                                    widget.trailTitle.toUpperCase(),
-                                    style: AppTypography.label(
-                                      size: 10,
-                                      letterSpacing: 1.1,
-                                      color: a.text.withValues(alpha: 0.92),
-                                    ),
-                                  ),
-                                ],
+                        _Chip(
+                          tone: trailAccent,
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              CinematicIcon(
+                                glyph: visuals.glyph,
+                                size: 16,
+                                accent: trailAccent,
+                                glowing: false,
                               ),
-                            ),
-                            const Spacer(),
-                            if (widget.streak > 0)
-                              _Chip(
-                                tone: AppColors.streak,
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    const CinematicIcon(
-                                      glyph: CinematicGlyph.flame,
-                                      size: 14,
-                                      accent: AppColors.streak,
-                                      framed: false,
-                                    ),
-                                    const SizedBox(width: 5),
-                                    Text(
-                                      '${widget.streak}',
-                                      style: AppTypography.title(
-                                        size: 13,
-                                        color: AppColors.streak,
-                                      ),
-                                    ),
-                                  ],
+                              const SizedBox(width: 6),
+                              Text(
+                                widget.trailTitle.toUpperCase(),
+                                style: AppTypography.label(
+                                  size: 10,
+                                  letterSpacing: 1.1,
+                                  color: a.text.withValues(alpha: 0.92),
                                 ),
                               ),
-                          ],
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 28),
                         Text(

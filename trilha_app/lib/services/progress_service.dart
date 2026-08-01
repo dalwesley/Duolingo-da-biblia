@@ -19,7 +19,7 @@ class AppSettings {
     this.sound = true,
     this.notifications = true,
     this.dailyGoal = 1,
-    this.appearanceMode = AppearanceMode.morning,
+    this.appearanceMode = AppearanceMode.automatic,
     this.bibleTranslationId = BibleService.defaultTranslationId,
     this.fontScale = 1.0,
   });
@@ -90,6 +90,8 @@ class ProgressService extends ChangeNotifier {
   static const _keySharedVerses = 'sharedVerses';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
+  /// Espelho local do progresso (não é limpo pelo clearLegacy).
+  static const _keyProgressCache = 'progressSessionCache';
 
   static const maxLamps = 5;
   static const comebackBonusSteps = 15;
@@ -104,6 +106,15 @@ class ProgressService extends ChangeNotifier {
   bool hasSeenSplash = false;
   bool hasSeenOnboarding = false;
   String userName = 'Aprendiz';
+
+  /// Nomes padrão de onboarding/legado — não devem sobrescrever um nome real.
+  static const placeholderUserNames = {'Aprendiz', 'Peregrino', 'Estudante'};
+
+  static bool isPlaceholderUserName(String? name) {
+    final trimmed = name?.trim() ?? '';
+    return trimmed.isEmpty || placeholderUserNames.contains(trimmed);
+  }
+
   AppSettings settings = const AppSettings();
   Map<String, String> trailDifficulties = {};
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
@@ -152,6 +163,10 @@ class ProgressService extends ChangeNotifier {
   String? monthlyMonth;
   bool _loaded = false;
 
+  /// Só persiste na nuvem depois de hidratar com sucesso (ou usuário novo).
+  /// Evita sobrescrever `users/{uid}` com zeros se o hydrate falhar.
+  bool _cloudReadyToPersist = false;
+
   /// Primeira abertura neste aparelho (antes do splash marcar visto).
   /// Garante Aparência = Automático em toda instalação nova.
   bool _freshInstall = false;
@@ -171,6 +186,36 @@ class ProgressService extends ChangeNotifier {
   bool comebackBonusPending = false;
 
   bool get isLoaded => _loaded;
+  bool get canPersistCloud => _cloudReadyToPersist;
+
+  /// Progresso real nesta sessão (missão, passos ou dia jogado).
+  bool get hasSessionProgress =>
+      steps > 0 ||
+      completedMissions.isNotEmpty ||
+      playDates.isNotEmpty ||
+      lastPlayedDate != null;
+
+  void markCloudHydrated() {
+    _cloudReadyToPersist = true;
+  }
+
+  /// Espelho em SharedPreferences — recupera se a nuvem falhar/atrasar.
+  Future<void> persistLocalCache() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyProgressCache, jsonEncode(toCloudMap()));
+  }
+
+  Future<Map<String, dynamic>?> readLocalCache() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_keyProgressCache);
+    if (raw == null || raw.isEmpty) return null;
+    try {
+      final data = jsonDecode(raw);
+      if (data is Map<String, dynamic>) return data;
+      if (data is Map) return Map<String, dynamic>.from(data);
+    } catch (_) {}
+    return null;
+  }
 
   String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
 
@@ -187,12 +232,6 @@ class ProgressService extends ChangeNotifier {
       int.parse(parts[2]),
     ).add(const Duration(days: 1));
     return d.toIso8601String().substring(0, 10);
-  }
-
-  String _weekKey() {
-    final now = DateTime.now();
-    final start = now.subtract(Duration(days: now.weekday - 1));
-    return start.toIso8601String().substring(0, 10);
   }
 
   String _weekMondayKey([DateTime? now]) {
@@ -215,12 +254,12 @@ class ProgressService extends ChangeNotifier {
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
     _freshInstall = !hasSeenSplash;
     settings = _settingsFromPrefs(prefs);
-    // Instalação nova sem preferência salva → Manhã.
+    // Instalação nova sem preferência salva → Automático (segue o horário).
     if (_freshInstall && prefs.getString(_keyAppearanceMode) == null) {
-      settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
+      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
       await prefs.setString(
         _keyAppearanceMode,
-        AppearanceMode.morning.storageKey,
+        AppearanceMode.automatic.storageKey,
       );
     }
     _loaded = true;
@@ -270,10 +309,7 @@ class ProgressService extends ChangeNotifier {
         completed.isNotEmpty ||
         streak > 0 ||
         hasSeenOnboarding ||
-        (name != null &&
-            name.isNotEmpty &&
-            name != 'Aprendiz' &&
-            name != 'Peregrino');
+        (name != null && !isPlaceholderUserName(name));
     if (!hasAnything) return null;
 
     AppearanceMode appearance = AppearanceMode.automatic;
@@ -452,6 +488,7 @@ class ProgressService extends ChangeNotifier {
     missionsToday = 0;
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
+    _cloudReadyToPersist = false;
     settings = const AppSettings();
     trailDifficulties = {};
     clearedTrailModes = {};
@@ -508,13 +545,19 @@ class ProgressService extends ChangeNotifier {
   }
 
   void _ensureWeeklyWeek() {
-    final week = _weekKey();
-    if (weeklyWeek != week) {
-      // Fecha a semana anterior guardando o XP final (usado pela liga).
-      if (weeklyWeek != null) {
-        lastWeekSteps = weeklySteps;
-        lastWeekKey = weeklyWeek;
-      }
+    final week = _weekMondayKey();
+    if (weeklyWeek == week) {
+      _ensureStreakFreezeWeek();
+      return;
+    }
+    if (weeklyWeek == null) {
+      // Primeira atribuição (doc antigo / sessão nova): não zera passos
+      // já carregados da nuvem ou ganhos nesta sessão.
+      weeklyWeek = week;
+    } else {
+      // Virada real de semana civil.
+      lastWeekSteps = weeklySteps;
+      lastWeekKey = weeklyWeek;
       weeklyWeek = week;
       weeklyProgressMap = {};
       weeklyClaimed = [];
@@ -1172,6 +1215,8 @@ class ProgressService extends ChangeNotifier {
 
       await _save();
     });
+    // Espelho local imediato — não depende do save na nuvem.
+    await persistLocalCache();
     return awarded;
   }
 
@@ -1250,22 +1295,38 @@ class ProgressService extends ChangeNotifier {
 
   static Map<String, int> _asIntMap(dynamic v) {
     if (v is! Map) return {};
-    return v.map((k, val) => MapEntry(k.toString(), (val as num).toInt()));
+    final out = <String, int>{};
+    for (final entry in v.entries) {
+      final val = entry.value;
+      if (val is num) {
+        out[entry.key.toString()] = val.toInt();
+      } else if (val is String) {
+        final parsed = int.tryParse(val);
+        if (parsed != null) out[entry.key.toString()] = parsed;
+      }
+      // Ignora tipos inesperados (ex.: string de semana misturada no mapa).
+    }
+    return out;
   }
 
   static Map<String, String> _asStringMap(dynamic v) {
     if (v is! Map) return {};
-    return v.map((k, val) => MapEntry(k.toString(), val.toString()));
+    return {
+      for (final e in v.entries)
+        if (e.value != null) e.key.toString(): e.value.toString(),
+    };
   }
 
   static Map<String, List<String>> _asStringListMap(dynamic v) {
     if (v is! Map) return {};
-    return v.map(
-      (k, val) => MapEntry(
-        k.toString(),
-        [for (final e in (val as List? ?? const [])) e.toString()],
-      ),
-    );
+    final out = <String, List<String>>{};
+    for (final e in v.entries) {
+      final val = e.value;
+      if (val is List) {
+        out[e.key.toString()] = [for (final x in val) x.toString()];
+      }
+    }
+    return out;
   }
 
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
@@ -1273,30 +1334,74 @@ class ProgressService extends ChangeNotifier {
     final version = (data['version'] as num?)?.toInt() ?? 1;
 
     if (data.containsKey('xp') || data.containsKey('steps')) {
-      steps = (data['steps'] as num?)?.toInt() ??
-          (data['xp'] as num?)?.toInt() ??
-          steps;
+      final cloudSteps = (data['steps'] as num?)?.toInt() ??
+          (data['xp'] as num?)?.toInt();
+      if (cloudSteps != null) {
+        // Nunca regride passos locais se a nuvem veio atrasada/zerada.
+        steps = cloudSteps > steps ? cloudSteps : steps;
+      }
     }
     if (data.containsKey('streak')) {
-      streak = (data['streak'] as num?)?.toInt() ?? streak;
+      final cloudStreak = (data['streak'] as num?)?.toInt();
+      if (cloudStreak != null && cloudStreak > streak) {
+        streak = cloudStreak;
+      }
     }
     if (data.containsKey('lastPlayedDate')) {
-      lastPlayedDate = data['lastPlayedDate'] as String?;
+      final cloudLast = (data['lastPlayedDate'] as String?)?.trim();
+      // null/vazio na nuvem não apaga um dia já registrado nesta sessão.
+      if (cloudLast != null && cloudLast.isNotEmpty) {
+        lastPlayedDate = cloudLast;
+      }
     }
     if (data.containsKey('completedMissions')) {
-      completedMissions = _asStringList(data['completedMissions']);
+      final cloudMissions = _asStringList(data['completedMissions']);
+      if (cloudMissions.isEmpty && completedMissions.isNotEmpty) {
+        // mantém local
+      } else if (completedMissions.isEmpty) {
+        completedMissions = cloudMissions;
+      } else {
+        completedMissions = {...completedMissions, ...cloudMissions}.toList();
+      }
     }
     if (data.containsKey('missionsToday')) {
-      missionsToday = (data['missionsToday'] as num?)?.toInt() ?? missionsToday;
+      final cloudToday = (data['missionsToday'] as num?)?.toInt();
+      if (cloudToday != null && cloudToday > missionsToday) {
+        missionsToday = cloudToday;
+      }
     }
     if (data.containsKey('userName')) {
       final name = (data['userName'] as String?)?.trim();
-      if (name != null && name.isNotEmpty) userName = name;
+      if (name != null && name.isNotEmpty) {
+        // Placeholder na nuvem (race antiga) não apaga um nome real em memória.
+        if (!isPlaceholderUserName(name) || isPlaceholderUserName(userName)) {
+          userName = name;
+        }
+      }
     }
     if (data.containsKey('weeklySteps') || data.containsKey('weeklyXp')) {
-      weeklySteps = (data['weeklySteps'] as num?)?.toInt() ??
-          (data['weeklyXp'] as num?)?.toInt() ??
-          weeklySteps;
+      final cloudWeekly = (data['weeklySteps'] as num?)?.toInt() ??
+          (data['weeklyXp'] as num?)?.toInt();
+      if (cloudWeekly != null && cloudWeekly > weeklySteps) {
+        weeklySteps = cloudWeekly;
+      }
+    }
+    if (data.containsKey('weeklyWeek')) {
+      weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
+    }
+    if (data.containsKey('playDates')) {
+      final cloudDates = _asStringList(data['playDates']);
+      // União — evita perder dias locais se a nuvem veio atrasada/vazia.
+      if (cloudDates.isEmpty && playDates.isNotEmpty) {
+        // mantém local
+      } else if (playDates.isEmpty) {
+        playDates = cloudDates;
+      } else {
+        final merged = {...playDates, ...cloudDates}.toList()..sort();
+        playDates = merged.length > 60
+            ? merged.sublist(merged.length - 60)
+            : merged;
+      }
     }
 
     // Onboarding: qualquer versão. False + progresso = race antiga na splash
@@ -1320,7 +1425,6 @@ class ProgressService extends ChangeNotifier {
           (data['lastWeekXp'] as num?)?.toInt() ??
           lastWeekSteps;
       lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
-      weeklyWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
       monthlySteps =
           (data['monthlySteps'] as num?)?.toInt() ?? monthlySteps;
       monthlyMonth = data['monthlyMonth'] as String? ?? monthlyMonth;
@@ -1380,9 +1484,6 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('mistakeQuestionIds')) {
         mistakeQuestionIds = _asStringList(data['mistakeQuestionIds']);
       }
-      if (data.containsKey('playDates')) {
-        playDates = _asStringList(data['playDates']);
-      }
       if (data.containsKey('trailDifficulties')) {
         trailDifficulties = _asStringMap(data['trailDifficulties']);
       }
@@ -1413,7 +1514,7 @@ class ProgressService extends ChangeNotifier {
     }
 
     // Preferência local de aparência vence a nuvem neste aparelho (já lida em
-    // [load]). Só força Manhã na 1ª abertura sem chave salva.
+    // [load]). Só força Automático na 1ª abertura sem chave salva.
     final prefs = await SharedPreferences.getInstance();
     final localAppearance = prefs.getString(_keyAppearanceMode);
     if (localAppearance != null) {
@@ -1421,7 +1522,7 @@ class ProgressService extends ChangeNotifier {
         appearanceMode: AppearanceModeX.fromStorage(localAppearance),
       );
     } else if (_freshInstall) {
-      settings = settings.copyWith(appearanceMode: AppearanceMode.morning);
+      settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
     }
     _freshInstall = false;
     await _persistSettingsLocal();
@@ -1461,6 +1562,19 @@ class ProgressService extends ChangeNotifier {
     userName = name.trim().isEmpty ? 'Aprendiz' : name.trim();
     await _save();
     notifyListeners();
+  }
+
+  /// Se o apelido ainda é placeholder, usa o nome da conta Google.
+  /// Recupera casos em que a nuvem gravou "Aprendiz" por race de sync.
+  Future<bool> ensureUserNameFromAuth(String? displayName) async {
+    if (!isPlaceholderUserName(userName)) return false;
+    final raw = displayName?.trim();
+    if (raw == null || raw.isEmpty) return false;
+    // Primeiro nome — mesmo critério do onboarding.
+    final preferred = raw.split(RegExp(r'\s+')).first.trim();
+    if (preferred.isEmpty || isPlaceholderUserName(preferred)) return false;
+    await setUserName(preferred);
+    return true;
   }
 
   Future<void> updateSettings(AppSettings newSettings) async {

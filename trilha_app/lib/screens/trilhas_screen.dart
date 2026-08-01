@@ -189,10 +189,10 @@ class _ComingSoonPortal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final sealSize = _portalSealSize(context);
     return Opacity(
       opacity: 0.42,
       child: Container(
-        height: 286,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.xl),
           border: Border.all(
@@ -205,10 +205,11 @@ class _ComingSoonPortal extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpace.xxl),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                width: 84,
-                height: 84,
+                width: sealSize,
+                height: sealSize,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: a.cardFillSoft,
@@ -216,7 +217,7 @@ class _ComingSoonPortal extends StatelessWidget {
                 ),
                 child: Icon(
                   Icons.add_rounded,
-                  size: 40,
+                  size: sealSize * 0.48,
                   color: a.textMuted(0.38),
                 ),
               ),
@@ -236,6 +237,15 @@ class _ComingSoonPortal extends StatelessWidget {
       ),
     );
   }
+}
+
+const double _kPortalSealSize = 84;
+
+double _portalSealSize(BuildContext context) {
+  final scale = MediaQuery.textScalerOf(context).scale(1);
+  if (scale <= 1.05) return _kPortalSealSize;
+  // Libera espaço vertical quando a fonte sobe — evita card desproporcional.
+  return (_kPortalSealSize / scale).clamp(64.0, _kPortalSealSize);
 }
 
 class _RealmPortal extends StatefulWidget {
@@ -296,6 +306,7 @@ class _RealmPortalState extends State<_RealmPortal>
     final visuals = RealmVisuals.of(widget.realm);
     final hasProgress = widget.unlockedCount > 0;
     final a = Appearance.of(context);
+    final sealSize = _portalSealSize(context);
 
     return GestureDetector(
       onTapDown: (_) => setState(() => _pressed = true),
@@ -310,7 +321,6 @@ class _RealmPortalState extends State<_RealmPortal>
           builder: (context, child) {
             final pulse = _breath.value;
             return Container(
-              height: 286,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadii.xl),
                 boxShadow: [
@@ -328,62 +338,69 @@ class _RealmPortalState extends State<_RealmPortal>
           child: ClipRRect(
             borderRadius: BorderRadius.circular(AppRadii.xl),
             child: Stack(
-              fit: StackFit.expand,
               children: [
                 // Superfície de card — distinta do céu da Home
-                DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Color.lerp(a.cardFillSoft, visuals.glow, 0.18)!,
-                        a.cardFill,
-                        Color.lerp(a.cardFill, Colors.black, 0.22)!,
-                      ],
-                      stops: const [0.0, 0.45, 1.0],
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          Color.lerp(a.cardFillSoft, visuals.glow, 0.18)!,
+                          a.cardFill,
+                          Color.lerp(a.cardFill, Colors.black, 0.22)!,
+                        ],
+                        stops: const [0.0, 0.45, 1.0],
+                      ),
                     ),
                   ),
                 ),
                 // Tint do reino no canto
-                DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: RadialGradient(
-                      center: const Alignment(0.85, -0.75),
-                      radius: 1.05,
-                      colors: [
-                        visuals.accent.withValues(alpha: 0.22),
-                        Colors.transparent,
-                      ],
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: RadialGradient(
+                        center: const Alignment(0.85, -0.75),
+                        radius: 1.05,
+                        colors: [
+                          visuals.accent.withValues(alpha: 0.22),
+                          Colors.transparent,
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 // Vinheta inferior para o rodapé
-                DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        Colors.black.withValues(alpha: 0.18),
-                        Colors.black.withValues(alpha: 0.38),
-                      ],
-                      stops: const [0.5, 0.78, 1],
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.transparent,
+                          Colors.black.withValues(alpha: 0.18),
+                          Colors.black.withValues(alpha: 0.38),
+                        ],
+                        stops: const [0.5, 0.78, 1],
+                      ),
                     ),
                   ),
                 ),
                 // Moldura
-                DecoratedBox(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadii.xl),
-                    border: Border.all(
-                      color: visuals.accent.withValues(alpha: 0.42),
-                      width: 1.4,
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.xl),
+                      border: Border.all(
+                        color: visuals.accent.withValues(alpha: 0.42),
+                        width: 1.4,
+                      ),
                     ),
                   ),
                 ),
-                // Cartaz central
+                // Cartaz central — altura acompanha a escala da fonte
                 Padding(
                   padding: const EdgeInsets.fromLTRB(
                     AppSpace.xxl,
@@ -392,11 +409,12 @@ class _RealmPortalState extends State<_RealmPortal>
                     AppSpace.xl,
                   ),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       _RealmSeal(
                         glyph: visuals.glyph,
                         accent: visuals.accent,
-                        size: 84,
+                        size: sealSize,
                       ),
                       const SizedBox(height: AppSpace.lg),
                       Row(
@@ -420,9 +438,11 @@ class _RealmPortalState extends State<_RealmPortal>
                             ),
                             child: Text(
                               visuals.eyebrow,
+                              textAlign: TextAlign.center,
+                              softWrap: false,
                               style: AppTypography.label(
                                 size: 10,
-                                letterSpacing: 2.4,
+                                letterSpacing: 1.6,
                                 color: visuals.accent,
                               ),
                             ),
@@ -456,15 +476,13 @@ class _RealmPortalState extends State<_RealmPortal>
                       Text(
                         visuals.tagline,
                         textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
                         style: AppTypography.body(
                           size: 13,
                           height: 1.35,
                           color: a.textMuted(0.62),
                         ),
                       ),
-                      const Spacer(),
+                      const SizedBox(height: AppSpace.xxxl),
                       Container(
                         width: 40,
                         height: 2,
@@ -482,17 +500,21 @@ class _RealmPortalState extends State<_RealmPortal>
                       const SizedBox(height: AppSpace.md),
                       Row(
                         children: [
-                          Text(
-                            hasProgress
-                                ? '${widget.completedCount}/${widget.trailCount} concluídas'
-                                : '${widget.trailCount} trilhas',
-                            style: AppTypography.body(
-                              size: 12,
-                              weight: FontWeight.w700,
-                              color: a.textMuted(0.55),
+                          Flexible(
+                            child: Text(
+                              hasProgress
+                                  ? '${widget.completedCount}/${widget.trailCount} concluídas'
+                                  : '${widget.trailCount} trilhas',
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w700,
+                                color: a.textMuted(0.55),
+                              ),
                             ),
                           ),
-                          const Spacer(),
+                          const SizedBox(width: AppSpace.sm),
                           Text(
                             'ABRIR TRILHA',
                             style: AppTypography.label(

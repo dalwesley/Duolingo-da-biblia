@@ -865,23 +865,31 @@ class _GlyphPainter extends CustomPainter {
     }
   }
 
+  /// Faísca ✦ — eixos ortogonais (não em X, pra não parecer erro/fechar).
   void _spark(Canvas canvas, Offset c, double s) {
+    void diamond(double angle, double outer, double halfW) {
+      final tip = c + Offset(math.cos(angle) * outer, math.sin(angle) * outer);
+      final perp = Offset(-math.sin(angle), math.cos(angle)) * halfW;
+      final path = Path()
+        ..moveTo(c.dx, c.dy)
+        ..lineTo(tip.dx + perp.dx, tip.dy + perp.dy)
+        ..lineTo(tip.dx, tip.dy)
+        ..lineTo(tip.dx - perp.dx, tip.dy - perp.dy)
+        ..close();
+      canvas.drawPath(path, _solid);
+    }
+
+    // Cruz principal (N/S/L/O) — lê como sparkle, não como ✕.
+    for (var i = 0; i < 4; i++) {
+      final a = i * math.pi / 2 - math.pi / 2;
+      diamond(a, s * (i.isEven ? 0.4 : 0.4), s * 0.09);
+    }
+    // Pontas menores nos diagonais — brilho, sem virar X grosso.
     for (var i = 0; i < 4; i++) {
       final a = i * math.pi / 2 - math.pi / 4;
-      final inner = s * 0.06;
-      final outer = s * 0.38;
-      final p1 = c + Offset(math.cos(a) * inner, math.sin(a) * inner);
-      final p2 = c + Offset(math.cos(a) * outer, math.sin(a) * outer);
-      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.08;
-      final ray = Path()
-        ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
-        ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
-        ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
-        ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
-        ..close();
-      canvas.drawPath(ray, _solid);
+      diamond(a, s * 0.2, s * 0.045);
     }
-    canvas.drawCircle(c, s * 0.1, _solid);
+    canvas.drawCircle(c, s * 0.07, _solid);
   }
 
   void _heart(Canvas canvas, Offset c, double s) {

@@ -77,10 +77,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       final name = context.read<ProgressService>().userName.trim();
-      if (name.isNotEmpty &&
-          name != 'Aprendiz' &&
-          name != 'Peregrino' &&
-          name != 'Estudante' &&
+      if (!ProgressService.isPlaceholderUserName(name) &&
           _nameController.text.isEmpty) {
         _nameController.text = name.split(' ').first;
       }

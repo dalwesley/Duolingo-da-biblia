@@ -46,6 +46,7 @@ class DayPhaseHelper {
     return DayPhase.night;
   }
 
+  /// Saudação pelo horário do aparelho (independente do tema visual).
   static String greeting([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => 'Bom dia',

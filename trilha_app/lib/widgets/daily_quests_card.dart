@@ -221,9 +221,7 @@ class _QuestRow extends StatelessWidget {
     final done = claimed || value >= q.target;
     final pct = (value / q.target).clamp(0.0, 1.0);
     final canTap = onTap != null && !claimed;
-    final tone = claimed
-        ? AppColors.teal
-        : CinematicGlyphResolver.accentForQuest(q.id);
+    final tone = CinematicGlyphResolver.accentForQuest(q.id);
 
     return Material(
       color: Colors.transparent,
@@ -286,10 +284,10 @@ class _QuestRow extends StatelessWidget {
               ),
               const SizedBox(width: AppSpace.sm),
               if (done)
-                const CinematicIcon(
+                CinematicIcon(
                   glyph: CinematicGlyph.check,
                   size: 20,
-                  accent: AppColors.teal,
+                  accent: tone,
                   framed: false,
                 )
               else

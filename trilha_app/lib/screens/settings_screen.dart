@@ -41,7 +41,6 @@ class _SettingsScreenState extends State<SettingsScreen>
     with SingleTickerProviderStateMixin {
   final _nameController = TextEditingController();
   bool _confirmReset = false;
-  bool _nameInitialized = false;
   bool _nameDirty = false;
   List<DifficultyMeta>? _difficulties;
   List<String> _genesisMissionSlugs = const [];
@@ -150,10 +149,12 @@ class _SettingsScreenState extends State<SettingsScreen>
     final sync = context.watch<SyncService>();
     final a = Appearance.of(context);
 
-    if (!_nameInitialized) {
-      _nameInitialized = true;
+    // Mantém o campo alinhado ao progresso (ex.: nome restaurado do Google),
+    // sem sobrescrever enquanto o usuário edita.
+    if (!_nameDirty && _nameController.text != progress.userName) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
+        if (!mounted || _nameDirty) return;
+        if (_nameController.text == progress.userName) return;
         _nameController.text = progress.userName;
         setState(() => _nameDirty = false);
       });

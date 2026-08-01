@@ -108,141 +108,196 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.of(context).padding.bottom;
     final accent = widget.accent;
-    final locked = widget.showFeedback || widget.selected != null || widget.outOfLamps;
+    final locked =
+        widget.showFeedback || widget.selected != null || widget.outOfLamps;
     final canConfirm = _picked != null && !locked;
-    final narrative = widget.narrative.split('\n').where((l) => l.trim().isNotEmpty).firstOrNull ??
-        widget.narrative;
+    final narrative =
+        widget.narrative.split('\n').where((l) => l.trim().isNotEmpty).firstOrNull ??
+            widget.narrative;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        // Faixa full-bleed — de borda a borda do app.
-        FadeTransition(
-          opacity: CurvedAnimation(
-            parent: _stagger,
-            curve: const Interval(0, 0.35, curve: Curves.easeOut),
-          ),
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              AppSpace.sm,
-              AppSpace.screen,
-              AppSpace.md,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: 0.38),
-              border: Border(
-                bottom: BorderSide(
-                  color: accent.withValues(alpha: 0.28),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final h = constraints.maxHeight;
+        final compact = h < 680;
+        final tight = h < 580;
+        final gap = tight
+            ? AppSpace.xs
+            : compact
+                ? AppSpace.sm
+                : AppSpace.section;
+        final sidePad = tight ? AppSpace.md : AppSpace.screen;
+        final optionPad = tight ? 8.0 : compact ? 10.0 : 13.0;
+        final questionSize = tight ? 20.0 : compact ? 23.0 : 26.0;
+        final showVerseSnippet = !tight && widget.verseSnippet != null;
+        final lampsCompact = compact;
+
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            FadeTransition(
+              opacity: CurvedAnimation(
+                parent: _stagger,
+                curve: const Interval(0, 0.35, curve: Curves.easeOut),
+              ),
+              child: Container(
+                width: double.infinity,
+                padding: EdgeInsets.fromLTRB(
+                  sidePad,
+                  lampsCompact ? 4 : AppSpace.sm,
+                  sidePad,
+                  lampsCompact ? 6 : AppSpace.md,
+                ),
+                color: Colors.black.withValues(alpha: 0.38),
+                child: LampsBar(
+                  current: widget.lamps,
+                  accent: accent,
+                  labeled: true,
+                  fullWidth: true,
+                  compact: lampsCompact,
                 ),
               ),
             ),
-            child: LampsBar(
-              current: widget.lamps,
-              accent: accent,
-              labeled: true,
-              fullWidth: true,
-            ),
-          ),
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            AppSpace.section,
-            AppSpace.screen,
-            AppSpace.sm + bottom,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              FadeTransition(
-                opacity: CurvedAnimation(
-                  parent: _stagger,
-                  curve: const Interval(0, 0.4, curve: Curves.easeOut),
-                ),
-                child: SlideTransition(
-                  position: Tween<Offset>(
-                    begin: const Offset(0, 0.08),
-                    end: Offset.zero,
-                  ).animate(
-                    CurvedAnimation(
-                      parent: _stagger,
-                      curve: const Interval(0, 0.45, curve: Curves.easeOutCubic),
+            Expanded(
+              child: LayoutBuilder(
+                builder: (context, bodyConstraints) {
+                  final body = Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      sidePad,
+                      gap,
+                      sidePad,
+                      tight ? AppSpace.sm : AppSpace.md,
                     ),
-                  ),
-                  child: _ScenePrompt(
-                    narrative: narrative,
-                    question: widget.question.question,
-                    verseRef: widget.question.verseRef,
-                    verseSnippet: widget.verseSnippet,
-                    accent: accent,
-                    showHint: !locked,
-                    hintUsed: widget.hintUsed,
-                    onHint: widget.onHint,
-                  ),
-                ),
-              ),
-              const SizedBox(height: AppSpace.section),
-              ...widget.question.options.asMap().entries.map((e) {
-                final i = e.key;
-                final opt = e.value;
-                final eliminated = widget.eliminatedIds.contains(opt.id);
-                final start = 0.22 + i * 0.1;
-                final curve = CurvedAnimation(
-                  parent: _stagger,
-                  curve: Interval(
-                    start,
-                    (start + 0.42).clamp(0.0, 1.0),
-                    curve: Curves.easeOutCubic,
-                  ),
-                );
-                return Padding(
-                  padding: const EdgeInsets.only(bottom: AppSpace.sm),
-                  child: FadeTransition(
-                    opacity: curve,
-                    child: SlideTransition(
-                      position: Tween<Offset>(
-                        begin: Offset(0.04 + i * 0.01, 0.08),
-                        end: Offset.zero,
-                      ).animate(curve),
-                      child: Opacity(
-                        opacity: eliminated ? 0.32 : 1,
-                        child: _ChoiceTile(
-                          letter: _letters[i.clamp(0, _letters.length - 1)],
-                          text: opt.text,
-                          state: eliminated
-                              ? _ChoiceState.dimmed
-                              : _state(opt.id),
-                          enabled: !locked && !eliminated,
-                          accent: accent,
-                          onTap: () => _pick(opt.id),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        FadeTransition(
+                          opacity: CurvedAnimation(
+                            parent: _stagger,
+                            curve: const Interval(
+                              0,
+                              0.4,
+                              curve: Curves.easeOut,
+                            ),
+                          ),
+                          child: SlideTransition(
+                            position: Tween<Offset>(
+                              begin: const Offset(0, 0.08),
+                              end: Offset.zero,
+                            ).animate(
+                              CurvedAnimation(
+                                parent: _stagger,
+                                curve: const Interval(
+                                  0,
+                                  0.45,
+                                  curve: Curves.easeOutCubic,
+                                ),
+                              ),
+                            ),
+                            child: _ScenePrompt(
+                              narrative: narrative,
+                              question: widget.question.question,
+                              verseRef: widget.question.verseRef,
+                              verseSnippet: showVerseSnippet
+                                  ? widget.verseSnippet
+                                  : null,
+                              accent: accent,
+                              showHint: !locked,
+                              hintUsed: widget.hintUsed,
+                              onHint: widget.onHint,
+                              questionSize: questionSize,
+                              compact: compact,
+                            ),
+                          ),
                         ),
-                      ),
+                        SizedBox(height: gap),
+                        ...widget.question.options.asMap().entries.map((e) {
+                          final i = e.key;
+                          final opt = e.value;
+                          final eliminated =
+                              widget.eliminatedIds.contains(opt.id);
+                          final start = 0.22 + i * 0.1;
+                          final curve = CurvedAnimation(
+                            parent: _stagger,
+                            curve: Interval(
+                              start,
+                              (start + 0.42).clamp(0.0, 1.0),
+                              curve: Curves.easeOutCubic,
+                            ),
+                          );
+                          return Padding(
+                            padding: EdgeInsets.only(
+                              bottom: i == widget.question.options.length - 1
+                                  ? 0
+                                  : (tight ? 4 : AppSpace.sm),
+                            ),
+                            child: FadeTransition(
+                              opacity: curve,
+                              child: SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: Offset(0.04 + i * 0.01, 0.08),
+                                  end: Offset.zero,
+                                ).animate(curve),
+                                child: Opacity(
+                                  opacity: eliminated ? 0.32 : 1,
+                                  child: _ChoiceTile(
+                                    letter: _letters[
+                                        i.clamp(0, _letters.length - 1)],
+                                    text: opt.text,
+                                    state: eliminated
+                                        ? _ChoiceState.dimmed
+                                        : _state(opt.id),
+                                    enabled: !locked && !eliminated,
+                                    accent: accent,
+                                    onTap: () => _pick(opt.id),
+                                    verticalPad: optionPad,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          );
+                        }),
+                        if (!widget.showFeedback) ...[
+                          SizedBox(
+                            height: tight ? AppSpace.sm : AppSpace.md,
+                          ),
+                          FadeTransition(
+                            opacity: CurvedAnimation(
+                              parent: _stagger,
+                              curve: const Interval(
+                                0.55,
+                                1,
+                                curve: Curves.easeOut,
+                              ),
+                            ),
+                            child: _ConfirmCta(
+                              enabled: canConfirm,
+                              accent: accent,
+                              onTap: _confirm,
+                              compact: compact,
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
-                  ),
-                );
-              }),
-              if (!widget.showFeedback) ...[
-                const SizedBox(height: AppSpace.sm),
-                FadeTransition(
-                  opacity: CurvedAnimation(
-                    parent: _stagger,
-                    curve: const Interval(0.55, 1, curve: Curves.easeOut),
-                  ),
-                  child: _ConfirmCta(
-                    enabled: canConfirm,
-                    accent: accent,
-                    onTap: _confirm,
-                  ),
-                ),
-              ],
-            ],
-          ),
-        ),
-      ],
+                  );
+
+                  // Escala para caber — zero scroll em qualquer altura.
+                  return FittedBox(
+                    fit: BoxFit.scaleDown,
+                    alignment: Alignment.topCenter,
+                    child: SizedBox(
+                      width: bodyConstraints.maxWidth,
+                      child: body,
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
@@ -256,6 +311,8 @@ class _ScenePrompt extends StatelessWidget {
   final bool showHint;
   final bool hintUsed;
   final VoidCallback? onHint;
+  final double questionSize;
+  final bool compact;
 
   const _ScenePrompt({
     required this.narrative,
@@ -266,128 +323,150 @@ class _ScenePrompt extends StatelessWidget {
     required this.showHint,
     required this.hintUsed,
     required this.onHint,
+    this.questionSize = 26,
+    this.compact = false,
   });
 
   @override
   Widget build(BuildContext context) {
+    final pad = compact ? AppSpace.md : AppSpace.lg;
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: Container(
-          padding: const EdgeInsets.fromLTRB(AppSpace.lg, AppSpace.lg, AppSpace.lg, AppSpace.section),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                Colors.white.withValues(alpha: 0.12),
-                Colors.white.withValues(alpha: 0.05),
-                Colors.black.withValues(alpha: 0.3),
-              ],
-            ),
-            border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.14)),
-            boxShadow: [
-              BoxShadow(
-                color: accent.withValues(alpha: 0.12),
-                blurRadius: 28,
-                offset: const Offset(0, 10),
-              ),
+        width: double.infinity,
+        padding: EdgeInsets.fromLTRB(
+          pad,
+          pad,
+          pad,
+          compact ? AppSpace.md : AppSpace.section,
+        ),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.white.withValues(alpha: 0.12),
+              Colors.white.withValues(alpha: 0.05),
+              Colors.black.withValues(alpha: 0.3),
             ],
           ),
-          child: Column(
-            children: [
-              Text(
-                narrative,
-                textAlign: TextAlign.center,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.display(
-                  size: 15,
-                  weight: FontWeight.w500,
-                  fontStyle: FontStyle.italic,
-                  height: 1.3,
-                  color: AppColors.textOnDark.withValues(alpha: 0.55),
+          border: Border.all(
+            color: AppColors.textOnDark.withValues(alpha: 0.14),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: accent.withValues(alpha: 0.12),
+              blurRadius: 28,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              narrative,
+              textAlign: TextAlign.center,
+              maxLines: compact ? 1 : 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.display(
+                size: compact ? 13 : 15,
+                weight: FontWeight.w500,
+                fontStyle: FontStyle.italic,
+                height: 1.3,
+                color: AppColors.textOnDark.withValues(alpha: 0.55),
+              ),
+            ),
+            SizedBox(height: compact ? AppSpace.xs : AppSpace.sm),
+            Container(
+              width: 36,
+              height: 1.5,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppRadii.pill),
+                gradient: LinearGradient(
+                  colors: [
+                    accent.withValues(alpha: 0),
+                    accent.withValues(alpha: 0.85),
+                    accent.withValues(alpha: 0),
+                  ],
                 ),
               ),
-              const SizedBox(height: AppSpace.sm),
-              Container(
-                width: 36,
-                height: 1.5,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                  gradient: LinearGradient(
-                    colors: [
-                      accent.withValues(alpha: 0),
-                      accent.withValues(alpha: 0.85),
-                      accent.withValues(alpha: 0),
-                    ],
-                  ),
-                ),
+            ),
+            SizedBox(height: compact ? AppSpace.sm : AppSpace.md),
+            Text(
+              question,
+              textAlign: TextAlign.center,
+              maxLines: compact ? 3 : 4,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.display(
+                size: questionSize,
+                weight: FontWeight.w600,
+                height: 1.22,
               ),
-              const SizedBox(height: AppSpace.md),
-              Text(
-                question,
-                textAlign: TextAlign.center,
-                style: AppTypography.display(size: 26, weight: FontWeight.w600, height: 1.22),
-              ),
-              if (verseRef != null) ...[
-                const SizedBox(height: AppSpace.section),
-                Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () => showVerseStudyFromReference(context, verseRef!),
-                    borderRadius: BorderRadius.circular(AppRadii.sm),
-                    child: Ink(
-                      width: double.infinity,
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpace.section,
-                        vertical: AppSpace.sm,
+            ),
+            if (verseRef != null) ...[
+              SizedBox(height: compact ? AppSpace.sm : AppSpace.section),
+              Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () =>
+                      showVerseStudyFromReference(context, verseRef!),
+                  borderRadius: BorderRadius.circular(AppRadii.sm),
+                  child: Ink(
+                    width: double.infinity,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: AppSpace.section,
+                      vertical: compact ? 6 : AppSpace.sm,
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.sm),
+                      color: accent.withValues(alpha: 0.1),
+                      border: Border.all(
+                        color: accent.withValues(alpha: 0.28),
                       ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.sm),
-                        color: accent.withValues(alpha: 0.1),
-                        border: Border.all(
-                          color: accent.withValues(alpha: 0.28),
-                        ),
-                      ),
-                      child: Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                verseRef!,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.label(
-                                  size: 11,
-                                  color: accent,
-                                  letterSpacing: 0.6,
-                                ),
-                              ),
-                              const SizedBox(width: AppSpace.xs),
-                              CinematicIcon(
-                                glyph: CinematicGlyph.scroll,
-                                size: 14,
-                                accent: accent.withValues(alpha: 0.9),
-                                framed: false,
-                              ),
-                            ],
-                          ),
-                          if (verseSnippet != null) ...[
-                            const SizedBox(height: AppSpace.xs),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
                             Text(
-                              '“$verseSnippet”',
+                              verseRef!,
                               textAlign: TextAlign.center,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: AppTypography.body(
-                                size: 12,
-                                weight: FontWeight.w600,
-                                height: 1.35,
-                                color: AppColors.textOnDark.withValues(alpha: 0.72),
-                              ).copyWith(fontStyle: FontStyle.italic),
+                              style: AppTypography.label(
+                                size: 11,
+                                color: accent,
+                                letterSpacing: 0.6,
+                              ),
+                            ),
+                            const SizedBox(width: AppSpace.xs),
+                            CinematicIcon(
+                              glyph: CinematicGlyph.scroll,
+                              size: 14,
+                              accent: accent.withValues(alpha: 0.9),
+                              framed: false,
                             ),
                           ],
+                        ),
+                        if (verseSnippet != null) ...[
+                          const SizedBox(height: AppSpace.xs),
+                          Text(
+                            '“$verseSnippet”',
+                            textAlign: TextAlign.center,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.body(
+                              size: 12,
+                              weight: FontWeight.w600,
+                              height: 1.35,
+                              color: AppColors.textOnDark
+                                  .withValues(alpha: 0.72),
+                            ).copyWith(fontStyle: FontStyle.italic),
+                          ),
+                        ],
+                        if (!compact) ...[
                           const SizedBox(height: AppSpace.xs),
                           Text(
                             'Tocar para estudar',
@@ -395,29 +474,31 @@ class _ScenePrompt extends StatelessWidget {
                               size: 10,
                               weight: FontWeight.w700,
                               letterSpacing: 0.4,
-                              color: AppColors.textOnDark.withValues(alpha: 0.45),
+                              color: AppColors.textOnDark
+                                  .withValues(alpha: 0.45),
                             ),
                           ),
                         ],
-                      ),
+                      ],
                     ),
                   ),
                 ),
-              ],
-              if (showHint) ...[
-                const SizedBox(height: AppSpace.sm),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: _WhisperChip(
-                    used: hintUsed,
-                    accent: accent,
-                    onTap: onHint,
-                  ),
-                ),
-              ],
+              ),
             ],
-          ),
+            if (showHint) ...[
+              SizedBox(height: compact ? 4 : AppSpace.sm),
+              Align(
+                alignment: Alignment.centerRight,
+                child: _WhisperChip(
+                  used: hintUsed,
+                  accent: accent,
+                  onTap: onHint,
+                ),
+              ),
+            ],
+          ],
         ),
+      ),
     );
   }
 }
@@ -480,6 +561,7 @@ class _ChoiceTile extends StatelessWidget {
   final bool enabled;
   final Color accent;
   final VoidCallback onTap;
+  final double verticalPad;
 
   const _ChoiceTile({
     required this.letter,
@@ -488,6 +570,7 @@ class _ChoiceTile extends StatelessWidget {
     required this.enabled,
     required this.accent,
     required this.onTap,
+    this.verticalPad = 13,
   });
 
   @override
@@ -532,6 +615,7 @@ class _ChoiceTile extends StatelessWidget {
     }
 
     final active = state == _ChoiceState.picked || state == _ChoiceState.correct;
+    final letterSize = verticalPad < 10 ? 30.0 : 36.0;
 
     return Material(
       color: Colors.transparent,
@@ -545,24 +629,40 @@ class _ChoiceTile extends StatelessWidget {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             curve: Curves.easeOutCubic,
-            padding: const EdgeInsets.fromLTRB(AppSpace.md, 13, AppSpace.section, 13),
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.md,
+              verticalPad,
+              AppSpace.section,
+              verticalPad,
+            ),
             decoration: BoxDecoration(
               color: fill,
               borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(color: border, width: active || state == _ChoiceState.wrong ? 1.7 : 1),
+              border: Border.all(
+                color: border,
+                width: active || state == _ChoiceState.wrong ? 1.7 : 1,
+              ),
               boxShadow: [
                 if (active)
-                  BoxShadow(color: accent.withValues(alpha: 0.28), blurRadius: 18, offset: const Offset(0, 6)),
+                  BoxShadow(
+                    color: accent.withValues(alpha: 0.28),
+                    blurRadius: 18,
+                    offset: const Offset(0, 6),
+                  ),
                 if (elevation > 0)
-                  BoxShadow(color: Colors.black.withValues(alpha: 0.25), blurRadius: 12, offset: const Offset(0, 6)),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.25),
+                    blurRadius: 12,
+                    offset: const Offset(0, 6),
+                  ),
               ],
             ),
             child: Row(
               children: [
                 AnimatedContainer(
                   duration: const Duration(milliseconds: 180),
-                  width: 36,
-                  height: 36,
+                  width: letterSize,
+                  height: letterSize,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
@@ -570,15 +670,25 @@ class _ChoiceTile extends StatelessWidget {
                         ? LinearGradient(
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
-                            colors: [Color.lerp(letterBg, Colors.white, 0.25)!, letterBg],
+                            colors: [
+                              Color.lerp(letterBg, Colors.white, 0.25)!,
+                              letterBg,
+                            ],
                           )
                         : null,
                     color: active ? null : letterBg,
                     border: Border.all(
-                      color: active ? Colors.white.withValues(alpha: 0.25) : Colors.white.withValues(alpha: 0.08),
+                      color: active
+                          ? Colors.white.withValues(alpha: 0.25)
+                          : Colors.white.withValues(alpha: 0.08),
                     ),
                     boxShadow: active
-                        ? [BoxShadow(color: accent.withValues(alpha: 0.45), blurRadius: 10)]
+                        ? [
+                            BoxShadow(
+                              color: accent.withValues(alpha: 0.45),
+                              blurRadius: 10,
+                            ),
+                          ]
                         : null,
                   ),
                   child: Text(
@@ -590,11 +700,15 @@ class _ChoiceTile extends StatelessWidget {
                 Expanded(
                   child: Text(
                     text,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: AppTypography.body(
-                      size: 16,
+                      size: verticalPad < 10 ? 14 : 16,
                       weight: FontWeight.w700,
                       height: 1.3,
-                      color: Colors.white.withValues(alpha: state == _ChoiceState.dimmed ? 0.35 : 0.95),
+                      color: Colors.white.withValues(
+                        alpha: state == _ChoiceState.dimmed ? 0.35 : 0.95,
+                      ),
                     ),
                   ),
                 ),
@@ -606,7 +720,11 @@ class _ChoiceTile extends StatelessWidget {
                     framed: false,
                   )
                 else if (state == _ChoiceState.wrong)
-                  const Icon(Icons.close_rounded, color: AppColors.error, size: 22)
+                  const Icon(
+                    Icons.close_rounded,
+                    color: AppColors.error,
+                    size: 22,
+                  )
                 else if (state == _ChoiceState.picked)
                   CinematicIcon(
                     glyph: CinematicGlyph.rise,
@@ -627,11 +745,13 @@ class _ConfirmCta extends StatelessWidget {
   final bool enabled;
   final Color accent;
   final VoidCallback onTap;
+  final bool compact;
 
   const _ConfirmCta({
     required this.enabled,
     required this.accent,
     required this.onTap,
+    this.compact = false,
   });
 
   @override
@@ -641,13 +761,15 @@ class _ConfirmCta extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 220),
         width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 17),
+        padding: EdgeInsets.symmetric(vertical: compact ? 13 : 17),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.md),
           gradient: enabled ? AppGradients.gold : null,
           color: enabled ? null : Colors.white.withValues(alpha: 0.08),
           border: Border.all(
-            color: enabled ? Colors.white.withValues(alpha: 0.2) : Colors.white.withValues(alpha: 0.08),
+            color: enabled
+                ? Colors.white.withValues(alpha: 0.2)
+                : Colors.white.withValues(alpha: 0.08),
           ),
           boxShadow: enabled
               ? [
@@ -664,7 +786,10 @@ class _ConfirmCta extends StatelessWidget {
           textAlign: TextAlign.center,
           style: enabled
               ? AppTypography.cta(size: 14)
-              : AppTypography.cta(size: 14, color: AppColors.textOnDark.withValues(alpha: 0.38)),
+              : AppTypography.cta(
+                  size: 14,
+                  color: AppColors.textOnDark.withValues(alpha: 0.38),
+                ),
         ),
       ),
     );

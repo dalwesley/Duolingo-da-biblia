@@ -141,8 +141,8 @@ class BackendService extends ChangeNotifier {
     print('[STWAY:Auth] $message');
   }
 
-  /// Login com Google. Se já houver sessão anônima, tenta vincular a conta
-  /// (preserva o uid). Se a conta Google já existir, entra nela.
+  /// Login nativo com Google + Firebase (idToken).
+  /// O SHA real da Play (`45:E8:CB:89…`) precisa estar no Firebase.
   Future<GoogleSignInResult> signInWithGoogle() async {
     _authLog(
       'signIn start firebaseReady=$_firebaseReady '
@@ -165,6 +165,11 @@ class BackendService extends ChangeNotifier {
 
     try {
       await _ensureGoogleSignInInitialized();
+      // Limpa sessão Google residual (cache de falhas SHA antigas).
+      try {
+        await _google.signOut();
+      } catch (_) {}
+
       _authLog('calling authenticate()…');
       final googleUser = await _google.authenticate();
       final idToken = googleUser.authentication.idToken;
@@ -175,9 +180,9 @@ class BackendService extends ChangeNotifier {
       );
       if (idToken == null || idToken.isEmpty) {
         const err =
-            'Google não retornou idToken. Confira se o provedor Google está ativo no Firebase e se o SHA-1 do app está cadastrado.';
+            'Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.';
         lastError = err;
-        _authLog('fail: empty idToken (SHA-1 / OAuth client?)');
+        _authLog('fail: empty idToken');
         return const GoogleSignInResult(ok: false, error: err);
       }
 
@@ -196,10 +201,7 @@ class BackendService extends ChangeNotifier {
         } on FirebaseAuthException catch (e) {
           if (e.code == 'credential-already-in-use' ||
               e.code == 'email-already-in-use') {
-            // Conta Google já existe: troca para ela.
-            _authLog(
-              'link failed ${e.code} — signInWithCredential instead',
-            );
+            _authLog('link failed ${e.code} — signInWithCredential instead');
             await _google.signOut();
             cred = await _firebaseAuthWithRetry(
               () => auth.signInWithCredential(credential),
@@ -210,7 +212,7 @@ class BackendService extends ChangeNotifier {
           }
         }
       } else {
-        _authLog('signInWithCredential (no anonymous session)');
+        _authLog('signInWithCredential…');
         cred = await _firebaseAuthWithRetry(
           () => auth.signInWithCredential(credential),
           label: 'signInWithCredential',
@@ -234,7 +236,6 @@ class BackendService extends ChangeNotifier {
         'description=${e.description} details=${e.details}',
       );
       if (e.code == GoogleSignInExceptionCode.canceled) {
-        // Em release/loja, "canceled" costuma ser SHA/OAuth — não só o usuário fechando.
         lastError =
             'Login cancelado. [${e.code.name}] ${e.description ?? ''}'.trim();
         return GoogleSignInResult(ok: false, error: lastError);
@@ -300,7 +301,7 @@ class BackendService extends ChangeNotifier {
     throw last!;
   }
 
-  /// Sai do Google e encerra a sessão (volta à tela de login).
+  /// Encerra a sessão (volta à tela de login).
   Future<bool> signOutGoogle() async {
     if (!_firebaseReady) return false;
     _googleBusy = true;
@@ -367,14 +368,53 @@ class BackendService extends ChangeNotifier {
     String? roomCode,
     LeagueService? league,
   }) async {
-    if (!isActive) return false;
+    if (!isActive) {
+      _authLog('saveNow skipped — backend inactive');
+      return false;
+    }
+    if (!progress.canPersistCloud) {
+      // Hidratação falhou: ainda assim grava se o usuário já progrediu nesta sessão.
+      if (!progress.hasSessionProgress) {
+        _authLog('saveNow skipped — cloud not hydrated yet');
+        return false;
+      }
+      progress.markCloudHydrated();
+      _authLog('saveNow: hydrate pending but session has progress — persisting');
+    }
+    // Evita gravar placeholder se a conta Google tem nome.
+    if (ProgressService.isPlaceholderUserName(progress.userName)) {
+      await progress.ensureUserNameFromAuth(userDisplayName);
+    }
+
+    // Espelho local ANTES da nuvem — sobrevive a kill/hot restart.
+    await progress.persistLocalCache();
+
     try {
-      final batch = _db.batch();
-      batch.set(
-        _db.doc('users/$_uid'),
+      // 1) Progresso do usuário — nunca depende do ranking.
+      await _db.doc('users/$_uid').set(
         _payload(progress, league: league),
         SetOptions(merge: true),
       );
+      lastCloudSaveAt = DateTime.now();
+      notifyListeners();
+      _authLog(
+        'saveNow user ok uid=$_uid week=$week '
+        'steps=${progress.steps} streak=${progress.streak} '
+        'missions=${progress.completedMissions.length} '
+        'weeklySteps=${progress.weeklySteps} '
+        'weeklyWeek=${progress.weeklyWeek} '
+        'playDates=${progress.playDates.length} '
+        'lastPlayed=${progress.lastPlayedDate}',
+      );
+    } catch (e) {
+      _authLog('saveNow USER FAILED uid=$_uid: $e');
+      debugPrint('Falha ao salvar progresso na nuvem: $e');
+      return false;
+    }
+
+    // 2) Rankings — best-effort (falha aqui não apaga o save do usuário).
+    try {
+      final batch = _db.batch();
       final tier = league?.tierIndex ?? 0;
       final playerPayload = {
         'name': progress.userName,
@@ -382,12 +422,10 @@ class BackendService extends ChangeNotifier {
         'tier': tier,
         'updatedAt': FieldValue.serverTimestamp(),
       };
-      // Ranking por divisão (tier).
       batch.set(
         _db.doc('leagues/$week/tiers/$tier/players/$_uid'),
         playerPayload,
       );
-      // Dual-write legado (migração) — inclui tier para filtro.
       batch.set(_db.doc('leagues/$week/players/$_uid'), playerPayload);
       final month = LeagueService.monthKey();
       batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
@@ -408,40 +446,133 @@ class BackendService extends ChangeNotifier {
         }, SetOptions(merge: true));
       }
       await batch.commit();
-      lastCloudSaveAt = DateTime.now();
-      notifyListeners();
-      return true;
     } catch (e) {
-      debugPrint('Falha ao salvar na nuvem: $e');
-      return false;
+      _authLog('saveNow rankings FAILED (user ok): $e');
+      debugPrint('Falha ao salvar rankings: $e');
     }
+    return true;
   }
+
+  /// Resultado de [hydrateProgress].
+  /// - [fromCloud]: doc `users/{uid}` aplicado
+  /// - [fromLegacy]: migração local
+  /// - [empty]: sem nuvem nem legado (usuário novo)
+  /// - [failed]: erro — NÃO deve sobrescrever a nuvem com defaults
+  static const hydrateFromCloud = 'cloud';
+  static const hydrateFromLegacy = 'legacy';
+  static const hydrateEmpty = 'empty';
+  static const hydrateFailed = 'failed';
 
   /// Carrega o progresso do Firebase (fonte da verdade) para a memória da sessão.
   /// Se a nuvem estiver vazia, tenta migrar dados legados do aparelho uma vez.
-  /// Retorna true se havia documento na nuvem.
-  Future<bool> hydrateProgress(
+  /// Retorna um dos códigos [hydrateFromCloud]/[hydrateFailed].
+  Future<String> hydrateProgress(
     ProgressService progress, {
     LeagueService? league,
   }) async {
-    if (!isActive) return false;
+    if (!isActive) return hydrateFailed;
     try {
       final data = await fetchBackup();
       if (data != null) {
+        _authLog(
+          'hydrate cloud keys=${data.keys.length} '
+          'steps=${data['steps'] ?? data['xp']} '
+          'streak=${data['streak']} '
+          'missions=${(data['completedMissions'] as List?)?.length ?? 0} '
+          'weeklySteps=${data['weeklySteps'] ?? data['weeklyXp']} '
+          'weeklyWeek=${data['weeklyWeek']} '
+          'lastPlayed=${data['lastPlayedDate']} '
+          'userName=${data['userName']}',
+        );
         await progress.applyFromCloud(data);
+        // Se a nuvem veio vazia/atrasada, recupera espelho local mais rico.
+        final local = await progress.readLocalCache();
+        if (local != null && _localCacheRicher(local, progress)) {
+          _authLog(
+            'hydrate: merging richer local cache '
+            '(local missions=${(local['completedMissions'] as List?)?.length ?? 0} '
+            'steps=${local['steps'] ?? local['xp']})',
+          );
+          await progress.applyFromCloud(local);
+        }
         if (league != null) await league.applyFromCloud(data);
         await progress.clearLegacyLocalPrefs();
-        return true;
+        await progress.persistLocalCache();
+        final restored =
+            await progress.ensureUserNameFromAuth(userDisplayName);
+        progress.markCloudHydrated();
+        _authLog(
+          'hydrate ok steps=${progress.steps} streak=${progress.streak} '
+          'missions=${progress.completedMissions.length} '
+          'weeklySteps=${progress.weeklySteps} week=${progress.weeklyWeek} '
+          'playDates=${progress.playDates.length} '
+          'userName=${progress.userName}'
+          '${restored ? ' (restored from Google)' : ''}',
+        );
+        return hydrateFromCloud;
+      }
+      _authLog('hydrate: no cloud doc — trying local cache / legacy');
+      final local = await progress.readLocalCache();
+      if (local != null) {
+        await progress.applyFromCloud(local);
+        await progress.ensureUserNameFromAuth(userDisplayName);
+        progress.markCloudHydrated();
+        _authLog(
+          'hydrate local-cache ok steps=${progress.steps} '
+          'missions=${progress.completedMissions.length}',
+        );
+        return hydrateFromLegacy;
       }
       final legacy = await progress.readLegacyLocalSnapshot();
       if (legacy != null) {
         await progress.applyFromCloud(legacy);
+        await progress.ensureUserNameFromAuth(userDisplayName);
+        progress.markCloudHydrated();
+        _authLog(
+          'hydrate legacy ok steps=${progress.steps} '
+          'missions=${progress.completedMissions.length} '
+          'userName=${progress.userName}',
+        );
+        return hydrateFromLegacy;
       }
-      return false;
-    } catch (e) {
+      await progress.ensureUserNameFromAuth(userDisplayName);
+      progress.markCloudHydrated(); // usuário novo — defaults ok para gravar
+      return hydrateEmpty;
+    } catch (e, st) {
+      _authLog('hydrate FAILED: $e\n$st');
       debugPrint('Falha ao hidratar progresso: $e');
-      return false;
+      // Tenta espelho local para não perder a sessão anterior.
+      try {
+        final local = await progress.readLocalCache();
+        if (local != null) {
+          await progress.applyFromCloud(local);
+          progress.markCloudHydrated();
+          _authLog(
+            'hydrate FAILED but restored local cache '
+            'missions=${progress.completedMissions.length}',
+          );
+        }
+      } catch (_) {}
+      return hydrateFailed;
     }
+  }
+
+  /// Cache local tem mais progresso que o estado atual (nuvem vazia/atrasada).
+  bool _localCacheRicher(Map<String, dynamic> local, ProgressService progress) {
+    final localSteps = (local['steps'] as num?)?.toInt() ??
+        (local['xp'] as num?)?.toInt() ??
+        0;
+    final localMissions = (local['completedMissions'] as List?)?.length ?? 0;
+    final localPlays = (local['playDates'] as List?)?.length ?? 0;
+    if (localMissions > progress.completedMissions.length) return true;
+    if (localSteps > progress.steps) return true;
+    if (localPlays > progress.playDates.length) return true;
+    final localLast = (local['lastPlayedDate'] as String?)?.trim();
+    if ((localLast != null && localLast.isNotEmpty) &&
+        (progress.lastPlayedDate == null || progress.lastPlayedDate!.isEmpty)) {
+      return true;
+    }
+    return false;
   }
 
   /// Agenda um backup (chamado a cada mudança de progresso; agrupa rajadas).

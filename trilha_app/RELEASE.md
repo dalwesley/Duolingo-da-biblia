@@ -5,27 +5,39 @@
 - [x] Keystore de release em máquina segura (não commitado) — `~/.stway/stway-release.keystore`
 - [x] `android/key.properties` preenchido (gitignored; ver `key.properties.example`)
 - [ ] Firebase Crashlytics + Analytics ativos no Console
-- [ ] SHA-1/SHA-256 no Firebase (Google Sign-In) — **upload key + App signing key da Play** (ver abaixo)
+- [x] SHA-1/SHA-256 no Firebase (Google Sign-In) — **upload key + App signing key real da Play** (ver abaixo)
 - [ ] `firestore.rules` publicados (`firebase deploy --only firestore:rules`)
 - [ ] Conteúdo seeded (`cd admin && npm run seed`)
 - [ ] iOS: `GoogleService-Info.plist` + `flutterfire configure` (ainda pendente)
 
 ### Fingerprints Android (Firebase → Project settings → Android app)
 
-Sem esses SHA no Firebase, o Google Sign-In no app da Play (teste interno / produção) falha com **"Login cancelado."** O `google-services.json` commitado hoje só tem o SHA de **debug**.
+Sem esses SHA no Firebase, o Google Sign-In no app da Play falha com **"Login cancelado. [16] Account reauth failed"** ou **`invalid-cert-hash`**.
 
-**1. Upload key** (keystore `~/.stway/stway-release.keystore`):
+Confira o SHA **do APK instalado** (Play re-assina; o valor da Console às vezes confunde com chave pós-quântica / anterior):
+
+```bash
+adb pull "$(adb shell pm path com.trilha.trilha_app | sed 's/package://')" /tmp/stway.apk
+apksigner verify --print-certs /tmp/stway.apk
+```
+
+**1. Upload key** (keystore `~/.stway/stway-release.keystore` — builds locais / AAB enviado):
 
 ```
 SHA-1:   22:07:64:79:DE:62:17:88:8B:B0:E0:9F:9C:26:44:A1:E9:1B:B5:71
 SHA-256: 88:73:25:4D:9D:17:5F:B0:32:E2:C2:A8:EA:62:17:3C:67:70:B3:56:0C:4E:F9:EB:D7:73:BA:AE:62:97:E9:43
 ```
 
-**2. App signing key da Play** (obrigatório para builds da loja):
+**2. App signing key da Play** (obrigatório — o que o celular recebe da loja; validado em 29/jul/2026):
 
-Play Console → STWAY → Configuração → Integridade do app → Assinatura do app → copie SHA-1 e SHA-256 de **Assinatura de apps do Google Play** e cole no Firebase também.
+```
+SHA-1:   45:E8:CB:89:4B:6D:41:C7:DB:0A:D9:A4:EA:66:36:34:FF:E8:C8:19
+SHA-256: 26:BB:D8:CE:0E:2D:FA:D4:5C:3C:B8:CE:A4:D7:9B:89:6F:26:46:C4:7F:1A:22:CE:F6:04:40:3E:44:67:25:C3
+```
 
-Depois: baixe de novo o `google-services.json`, substitua `android/app/google-services.json`, e aguarde ~5–15 min (propagação OAuth). Não precisa subir novo AAB só por causa do SHA.
+> Não use um SHA “clássico” da Console se ele não bater com o `apksigner` do APK instalado.
+
+Depois de cadastrar: baixe de novo o `google-services.json`, substitua `android/app/google-services.json`, e aguarde ~5–15 min (propagação OAuth). Não precisa subir novo AAB só por causa do SHA.
 
 Credenciais locais: `~/.stway/release-credentials.txt` (guarde no password manager e apague o arquivo).
 

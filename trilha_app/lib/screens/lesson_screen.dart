@@ -546,14 +546,10 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                 ),
               ),
               SafeArea(
-              bottom: false,
-              child: CustomScrollView(
-                physics: const BouncingScrollPhysics(
-                  parent: AlwaysScrollableScrollPhysics(),
-                ),
-                slivers: [
-                  SliverToBoxAdapter(
-                    child: Padding(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Padding(
                       padding: const EdgeInsets.fromLTRB(
                         AppSpace.screen,
                         AppSpace.sm,
@@ -577,7 +573,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                             subtitle: switch (_phase) {
                               _Phase.intro => _difficultyMeta?.label ??
                                   (mission.isBoss ? 'Desafio' : 'Lição'),
-                              _Phase.study => _difficultyMeta?.label ?? 'Estudo',
+                              _Phase.study =>
+                                _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
                                 _difficultyMeta?.label ?? mission.title,
                               _Phase.reflection => mission.title,
@@ -597,7 +594,8 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                                 fit: StackFit.expand,
                                 children: [
                                   ColoredBox(
-                                    color: AppColors.textOnDark.withValues(alpha: 0.1),
+                                    color: AppColors.textOnDark
+                                        .withValues(alpha: 0.1),
                                   ),
                                   FractionallySizedBox(
                                     alignment: Alignment.centerLeft,
@@ -625,77 +623,72 @@ class _LessonScreenState extends State<LessonScreen> with TickerProviderStateMix
                         ],
                       ),
                     ),
-                  ),
-                  if (_phase == _Phase.quiz)
-                    SliverToBoxAdapter(
-                      child: CinematicLessonPanel(
-                        key: ValueKey(
-                          'q-$_questionIndex-${_pickedIds.length}',
-                        ),
-                        narrative: _beat.narrative,
-                        question: _question,
-                        selected: _selected,
-                        isCorrect: _isCorrect,
-                        showFeedback: _showFeedback,
-                        onSelect: _select,
-                        accent: accent,
-                        encouragement: null,
-                        hintUsed: _hintUsed,
-                        eliminatedIds: _eliminated,
-                        onHint: _useHint,
-                        outOfLamps: _outOfLamps,
-                        lamps: _lamps,
-                        verseSnippet: () {
-                          final v =
-                              MissionStudy.verseText(_question.verseRef);
-                          if (v == null) return null;
-                          return v.length > 72
-                              ? '${v.substring(0, 70)}…'
-                              : v;
-                        }(),
-                      ),
-                    )
-                  else if (_phase == _Phase.study && study != null)
-                    SliverToBoxAdapter(
-                      child: StudyPanel(
-                        key: const ValueKey('study'),
-                        study: study,
-                        accent: accent,
-                        priorReflection: priorReflection,
-                        missionIntro: mission.intro,
-                        onContinue: _startQuiz,
-                      ),
-                    )
-                  else if (_phase == _Phase.reflection && study != null)
-                    SliverFillRemaining(
-                      hasScrollBody: false,
-                      child: ReflectionPanel(
-                        key: const ValueKey('reflection'),
-                        study: study,
-                        accent: accent,
-                        correct: _correctCount,
-                        total: total,
-                        onFinish: _completeReflection,
-                        onSkip: () => _goToCelebration(forced: _outOfLamps),
-                      ),
-                    )
-                  else if (_phase == _Phase.intro)
-                    SliverFillRemaining(
-                      hasScrollBody: false,
-                      child: _IntroPanel(
-                        key: const ValueKey('intro'),
-                        mission: mission,
-                        theme: _theme,
-                        difficultyMeta: _difficultyMeta,
-                        hasStudy: _hasStudy,
-                        onStart: _startStudyOrQuiz,
-                      ),
-                    )
-                  else
-                    const SliverToBoxAdapter(child: SizedBox.shrink()),
-                ],
+                    Expanded(
+                      child: switch (_phase) {
+                        _Phase.quiz => CinematicLessonPanel(
+                            key: ValueKey(
+                              'q-$_questionIndex-${_pickedIds.length}',
+                            ),
+                            narrative: _beat.narrative,
+                            question: _question,
+                            selected: _selected,
+                            isCorrect: _isCorrect,
+                            showFeedback: _showFeedback,
+                            onSelect: _select,
+                            accent: accent,
+                            encouragement: null,
+                            hintUsed: _hintUsed,
+                            eliminatedIds: _eliminated,
+                            onHint: _useHint,
+                            outOfLamps: _outOfLamps,
+                            lamps: _lamps,
+                            verseSnippet: () {
+                              final v = MissionStudy.verseText(
+                                _question.verseRef,
+                              );
+                              if (v == null) return null;
+                              return v.length > 72
+                                  ? '${v.substring(0, 70)}…'
+                                  : v;
+                            }(),
+                          ),
+                        _Phase.study when study != null =>
+                          SingleChildScrollView(
+                            physics: const BouncingScrollPhysics(),
+                            child: StudyPanel(
+                              key: const ValueKey('study'),
+                              study: study,
+                              accent: accent,
+                              priorReflection: priorReflection,
+                              missionIntro: mission.intro,
+                              onContinue: _startQuiz,
+                            ),
+                          ),
+                        _Phase.reflection when study != null =>
+                          ReflectionPanel(
+                            key: const ValueKey('reflection'),
+                            study: study,
+                            accent: accent,
+                            correct: _correctCount,
+                            total: total,
+                            onFinish: _completeReflection,
+                            onSkip: () =>
+                                _goToCelebration(forced: _outOfLamps),
+                          ),
+                        _Phase.intro => _IntroPanel(
+                            key: const ValueKey('intro'),
+                            mission: mission,
+                            theme: _theme,
+                            difficultyMeta: _difficultyMeta,
+                            hasStudy: _hasStudy,
+                            onStart: _startStudyOrQuiz,
+                          ),
+                        _ => const SizedBox.shrink(),
+                      },
+                    ),
+                  ],
+                ),
               ),
-            ),
             if (_phase == _Phase.quiz)
               AnimatedBuilder(
                 animation: _impactFlash,
@@ -866,7 +859,6 @@ class _IntroPanel extends StatelessWidget {
                 ? 'CAMINHAR NO TEXTO'
                 : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
             onTap: onStart,
-            accent: theme.pathActive,
           ),
           const SizedBox(height: AppSpace.xl),
         ],
@@ -1112,8 +1104,6 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                                     : 'CONTINUAR')
                             : 'MARQUE QUE RELÊU',
                         onTap: canContinue ? widget.onContinue : () {},
-                        accent: isCorrect && !outOfLamps ? accent : AppColors.primaryLight,
-                        darkText: isCorrect && !outOfLamps,
                       ),
                     ),
                   ],
@@ -1129,14 +1119,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
 class _GoldButton extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
-  final Color accent;
-  final bool darkText;
 
   const _GoldButton({
     required this.label,
     required this.onTap,
-    required this.accent,
-    this.darkText = true,
   });
 
   @override
@@ -1147,21 +1133,20 @@ class _GoldButton extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 16),
         decoration: BoxDecoration(
-          gradient: darkText
-              ? AppGradients.gold
-              : LinearGradient(
-                  colors: [accent, Color.lerp(accent, AppColors.primaryDark, 0.35)!],
-                ),
+          gradient: AppGradients.gold,
           borderRadius: BorderRadius.circular(AppRadii.md),
-          boxShadow: [BoxShadow(color: accent.withValues(alpha: 0.45), offset: const Offset(0, 4), blurRadius: 12)],
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.accent.withValues(alpha: 0.45),
+              offset: const Offset(0, 4),
+              blurRadius: 12,
+            ),
+          ],
         ),
         child: Text(
           label,
           textAlign: TextAlign.center,
-          style: AppTypography.cta(
-            size: 15,
-            color: darkText ? AppColors.inkOnAccent : Colors.white,
-          ),
+          style: AppTypography.cta(size: 15),
         ),
       ),
     );

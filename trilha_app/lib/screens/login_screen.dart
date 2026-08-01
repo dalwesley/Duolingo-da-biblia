@@ -44,20 +44,17 @@ class _LoginScreenState extends State<LoginScreen> {
     BackendService backend,
     GoogleSignInResult result,
   ) async {
-    // Firebase é a fonte da verdade.
     final league = context.read<LeagueService>();
-    await backend.hydrateProgress(progress, league: league);
+    final hydrate = await backend.hydrateProgress(progress, league: league);
 
-    final name = result.displayName?.trim();
-    if (name != null &&
-        name.isNotEmpty &&
-        (progress.userName == 'Aprendiz' ||
-            progress.userName == 'Peregrino' ||
-            progress.userName == 'Estudante')) {
-      await progress.setUserName(name);
+    // hydrate já tenta o displayName da sessão; reforça com o do login.
+    await progress.ensureUserNameFromAuth(
+      result.displayName ?? backend.userDisplayName,
+    );
+
+    if (hydrate != BackendService.hydrateFailed) {
+      await backend.settleAndSyncLeague(progress, league);
     }
-
-    await backend.settleAndSyncLeague(progress, league);
     await progress.clearLegacyLocalPrefs();
     if (!mounted) return;
 
