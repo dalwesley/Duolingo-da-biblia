@@ -95,6 +95,16 @@ class ProgressService extends ChangeNotifier {
   static const _keyProgressCacheUid = 'progressSessionCacheUid';
 
   static const maxLamps = 5;
+  /// Boss: menos margem de erro.
+  static const bossMaxLamps = 3;
+  static const normalQuestionCount = 5;
+  static const bossQuestionCount = 8;
+
+  static int lampsForMission({required bool isBoss}) =>
+      isBoss ? bossMaxLamps : maxLamps;
+
+  static int questionCountForMission({required bool isBoss}) =>
+      isBoss ? bossQuestionCount : normalQuestionCount;
   static const comebackBonusSteps = 15;
   static const minStreakForRepair = 3;
 

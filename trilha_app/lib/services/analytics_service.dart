@@ -102,6 +102,27 @@ class AnalyticsService {
         'difficulty': difficulty,
       });
 
+  Future<void> logQuestionAnswered({
+    required String missionSlug,
+    required int questionIndex,
+    required bool correct,
+    required bool hintUsed,
+    String? trailSlug,
+    String? questionId,
+    String? difficulty,
+    bool isBoss = false,
+  }) =>
+      _log('question_answered', {
+        'mission_slug': missionSlug,
+        'question_index': questionIndex,
+        'correct': correct,
+        'hint_used': hintUsed,
+        'is_boss': isBoss,
+        'trail_slug': ?trailSlug,
+        'question_id': ?questionId,
+        'difficulty': ?difficulty,
+      });
+
   Future<void> _log(String name, [Map<String, Object>? params]) async {
     if (!_ready) return;
     try {

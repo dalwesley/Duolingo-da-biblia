@@ -203,7 +203,7 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
                                   ? widget.verseSnippet
                                   : null,
                               accent: accent,
-                              showHint: !locked,
+                              showHint: !locked && widget.onHint != null,
                               hintUsed: widget.hintUsed,
                               onHint: widget.onHint,
                               questionSize: questionSize,

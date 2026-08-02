@@ -1497,10 +1497,11 @@ class _CaravanaHeroCard extends StatelessWidget {
           const SizedBox(height: 16),
           Container(
             width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
             decoration: BoxDecoration(
-              gradient: AppGradients.gold,
+              color: a.cardFillSoft,
               borderRadius: BorderRadius.circular(AppRadii.md),
+              border: Border.all(color: a.cardBorder),
             ),
             child: Column(
               children: [
@@ -1509,7 +1510,7 @@ class _CaravanaHeroCard extends StatelessWidget {
                   style: AppTypography.title(
                     size: 22,
                     weight: FontWeight.w900,
-                    color: AppColors.inkOnAccent,
+                    color: AppColors.accent,
                   ),
                 ),
                 const SizedBox(height: 2),
@@ -1517,8 +1518,8 @@ class _CaravanaHeroCard extends StatelessWidget {
                   '$steps passos${overall ? ' no total' : ' esta semana'}',
                   style: AppTypography.body(
                     size: 13,
-                    weight: FontWeight.w700,
-                    color: AppColors.inkOnAccent.withValues(alpha: 0.85),
+                    weight: FontWeight.w600,
+                    color: a.textMuted(0.7),
                   ),
                 ),
               ],

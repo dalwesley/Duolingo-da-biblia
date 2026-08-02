@@ -53,7 +53,7 @@ class QuestionBank {
     required List<String> usedIds,
     String? trailSlug,
     String? section,
-    @Deprecated('Contagem fixa via count; mantido por compatibilidade')
+    /// Boss usa [count] maior (ex. 8); flag só documenta a intenção do caller.
     bool isBoss = false,
   }) async {
     final questions = await _questions();
@@ -62,7 +62,9 @@ class QuestionBank {
         (section != null && section.isNotEmpty)
             ? section
             : moduleTitleToSection(moduleTitle, trailSlug: trail);
-    final target = count;
+    final target = count > 0
+        ? count
+        : (isBoss ? 8 : 5);
     final pool = questions
         .where((q) => q.difficulty == difficulty && q.trailSlug == trail)
         .toList();

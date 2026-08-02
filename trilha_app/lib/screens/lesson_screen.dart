@@ -17,6 +17,7 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/difficulty_trails.dart';
+import '../utils/question_feedback.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
@@ -121,6 +122,7 @@ class _LessonScreenState extends State<LessonScreen>
         _pickedIds = widget.questionIdsOverride ?? [];
         _revealTags = List.filled(override.questions.length, null);
         _mission = override;
+        _lamps = ProgressService.lampsForMission(isBoss: override.isBoss);
         if (hasStudy) _phase = _Phase.study;
       });
       return;
@@ -218,8 +220,9 @@ class _LessonScreenState extends State<LessonScreen>
       final difficulty =
           TrailDifficulty.fromId(diffId) ?? TrailDifficulty.semente;
       meta = await QuestionBank.instance.metaFor(difficulty);
-      // 5 perguntas por passo no modo escolhido (pool dedicado ao slug do passo).
-      const count = 5;
+      final count = ProgressService.questionCountForMission(
+        isBoss: mission.isBoss,
+      );
       ids = await QuestionBank.instance.pickIdsForMission(
         difficulty: difficulty,
         moduleTitle: moduleTitle,
@@ -227,7 +230,7 @@ class _LessonScreenState extends State<LessonScreen>
         count: count,
         usedIds: freshProgress.usedQuestionIds,
         trailSlug: trailSlug,
-        isBoss: false,
+        isBoss: mission.isBoss,
       );
       final bankQs = <Question>[];
       for (final id in ids) {
@@ -258,6 +261,7 @@ class _LessonScreenState extends State<LessonScreen>
       _pickedIds = ids;
       _revealTags = tags;
       _difficultyMeta = meta;
+      _lamps = ProgressService.lampsForMission(isBoss: mission?.isBoss ?? false);
       // Com estudo: um só preparo (título + passagem). Sem: intro clássica.
       if (hasStudy) _phase = _Phase.study;
       if (mission != null) {
@@ -276,6 +280,9 @@ class _LessonScreenState extends State<LessonScreen>
       }
     });
   }
+
+  int get _maxLamps =>
+      ProgressService.lampsForMission(isBoss: _mission?.isBoss ?? false);
 
   int _scaledSteps(int base, double multiplier) => (base * multiplier).round();
 
@@ -322,11 +329,25 @@ class _LessonScreenState extends State<LessonScreen>
         _phase != _Phase.quiz ||
         _showFeedback ||
         _busy ||
-        _outOfLamps)
+        _outOfLamps) {
       return;
+    }
     if (_eliminated.contains(optionId)) return;
     _busy = true;
     final correct = optionId == _question.correctOptionId;
+    final questionId = _questionIndex < _pickedIds.length
+        ? _pickedIds[_questionIndex]
+        : '${widget.missionSlug}_q$_questionIndex';
+    AnalyticsService.instance.logQuestionAnswered(
+      missionSlug: widget.missionSlug,
+      trailSlug: _trailSlug,
+      questionId: questionId,
+      questionIndex: _questionIndex,
+      correct: correct,
+      hintUsed: _hintUsed,
+      difficulty: _difficultyMeta?.difficulty.id,
+      isBoss: _mission?.isBoss ?? false,
+    );
     if (correct) {
       SoundService.instance.playCorrect();
       HapticFeedback.lightImpact();
@@ -354,7 +375,7 @@ class _LessonScreenState extends State<LessonScreen>
       if (correct) {
         _correctCount++;
       } else {
-        _lamps = (_lamps - 1).clamp(0, ProgressService.maxLamps);
+        _lamps = (_lamps - 1).clamp(0, _maxLamps);
         if (_lamps == 0) _outOfLamps = true;
       }
       // Feedback sheet só após o beat visual
@@ -376,6 +397,7 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   void _useHint() {
+    if (_mission?.isBoss == true) return;
     if (_hintUsed || _selected != null || _showFeedback) return;
     HapticFeedback.selectionClick();
     final wrong = _question.options
@@ -407,12 +429,13 @@ class _LessonScreenState extends State<LessonScreen>
         widget.practiceMode ||
         (_baseMission != null &&
             progress.isMissionCompleted(_baseMission!.slug));
+    final maxLamps = _maxLamps;
     final steps = ProgressService.computeLessonSteps(
       baseSteps: _mission!.stepsReward,
       correct: _correctCount,
       total: forced ? _answeredCount.clamp(1, total) : total,
       lampsLeft: _lamps,
-      maxLamps: ProgressService.maxLamps,
+      maxLamps: maxLamps,
     );
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
@@ -427,7 +450,7 @@ class _LessonScreenState extends State<LessonScreen>
           perfect:
               !forced &&
               _correctCount == total &&
-              _lamps == ProgressService.maxLamps,
+              _lamps == maxLamps,
         ),
       ),
     );
@@ -679,7 +702,7 @@ class _LessonScreenState extends State<LessonScreen>
                           encouragement: null,
                           hintUsed: _hintUsed,
                           eliminatedIds: _eliminated,
-                          onHint: _useHint,
+                          onHint: mission.isBoss ? null : _useHint,
                           outOfLamps: _outOfLamps,
                           lamps: _lamps,
                           verseSnippet: () {
@@ -949,8 +972,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
     final accent = widget.accent;
     final feedback = isCorrect
         ? question.feedbackCorrect
-        : question.feedbackWrong[widget.selected] ??
-              'Volte ao versículo — o texto responde.';
+        : QuestionFeedback.wrongMessage(question, widget.selected);
+    final selectedText =
+        QuestionFeedback.optionText(question, widget.selected);
+    final correctText = QuestionFeedback.correctOptionText(question);
     final color = isCorrect ? accent : AppColors.error;
     final bottom = MediaQuery.of(context).padding.bottom;
     final title = outOfLamps
@@ -1048,15 +1073,54 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                   Text(
                     outOfLamps
                         ? 'Suas lâmpadas se apagaram. Revise os erros depois — ainda assim você leva passos parciais. Levante-se e continue caminhando.'
-                        : isCorrect
-                        ? feedback
-                        : 'Levante-se.\nContinue caminhando.\n\n$feedback',
+                        : feedback,
                     style: AppTypography.body(
                       size: 15,
                       height: 1.5,
                       color: AppColors.textOnDark.withValues(alpha: 0.92),
                     ),
                   ),
+                  if (!outOfLamps &&
+                      !isCorrect &&
+                      selectedText != null &&
+                      correctText != null) ...[
+                    const SizedBox(height: AppSpace.md),
+                    Container(
+                      padding: const EdgeInsets.all(AppSpace.section),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withValues(alpha: 0.06),
+                        borderRadius: BorderRadius.circular(AppRadii.sm),
+                        border: Border.all(
+                          color: Colors.white.withValues(alpha: 0.12),
+                        ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Sua resposta: $selectedText',
+                            style: AppTypography.body(
+                              size: 13,
+                              height: 1.4,
+                              color: AppColors.textOnDark.withValues(
+                                alpha: 0.7,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: AppSpace.xs),
+                          Text(
+                            'Resposta certa: $correctText',
+                            style: AppTypography.body(
+                              size: 14,
+                              weight: FontWeight.w700,
+                              height: 1.4,
+                              color: accent.withValues(alpha: 0.95),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                   if (!outOfLamps &&
                       (widget.verseText != null ||
                           question.verseRef != null)) ...[
