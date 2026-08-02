@@ -90,8 +90,9 @@ class ProgressService extends ChangeNotifier {
   static const _keySharedVerses = 'sharedVerses';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
-  /// Espelho local do progresso (não é limpo pelo clearLegacy).
+  /// Espelho local do progresso (escopo por uid; limpo no logout).
   static const _keyProgressCache = 'progressSessionCache';
+  static const _keyProgressCacheUid = 'progressSessionCacheUid';
 
   static const maxLamps = 5;
   static const comebackBonusSteps = 15;
@@ -167,6 +168,13 @@ class ProgressService extends ChangeNotifier {
   /// Evita sobrescrever `users/{uid}` com zeros se o hydrate falhar.
   bool _cloudReadyToPersist = false;
 
+  /// UID dono do espelho local — impede merge entre contas no mesmo aparelho.
+  String? _cacheUid;
+
+  /// Códigos de companhia / sala ativos (sync em `users/{uid}`).
+  List<String> companionCodes = [];
+  String? activeRoomCode;
+
   /// Primeira abertura neste aparelho (antes do splash marcar visto).
   /// Garante Aparência = Automático em toda instalação nova.
   bool _freshInstall = false;
@@ -187,6 +195,7 @@ class ProgressService extends ChangeNotifier {
 
   bool get isLoaded => _loaded;
   bool get canPersistCloud => _cloudReadyToPersist;
+  String? get cacheUid => _cacheUid;
 
   /// Progresso real nesta sessão (missão, passos ou dia jogado).
   bool get hasSessionProgress =>
@@ -199,14 +208,37 @@ class ProgressService extends ChangeNotifier {
     _cloudReadyToPersist = true;
   }
 
+  /// Impede saves até um hydrate bem-sucedido (erro de rede / logout).
+  void markCloudNotReady() {
+    _cloudReadyToPersist = false;
+  }
+
+  /// Associa o espelho local à conta autenticada.
+  void bindCacheUid(String? uid) {
+    _cacheUid = (uid != null && uid.isNotEmpty) ? uid : null;
+  }
+
   /// Espelho em SharedPreferences — recupera se a nuvem falhar/atrasar.
   Future<void> persistLocalCache() async {
+    final uid = _cacheUid;
+    if (uid == null || uid.isEmpty) return;
     final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyProgressCacheUid, uid);
     await prefs.setString(_keyProgressCache, jsonEncode(toCloudMap()));
   }
 
-  Future<Map<String, dynamic>?> readLocalCache() async {
+  /// Lê o espelho só se pertencer a [forUid] (ou ao uid ligado).
+  Future<Map<String, dynamic>?> readLocalCache({String? forUid}) async {
+    final uid = forUid ?? _cacheUid;
+    if (uid == null || uid.isEmpty) return null;
     final prefs = await SharedPreferences.getInstance();
+    final cachedUid = prefs.getString(_keyProgressCacheUid);
+    // Cache legado sem uid — descarta (evita contaminação entre contas).
+    if (cachedUid == null || cachedUid.isEmpty) {
+      await prefs.remove(_keyProgressCache);
+      return null;
+    }
+    if (cachedUid != uid) return null;
     final raw = prefs.getString(_keyProgressCache);
     if (raw == null || raw.isEmpty) return null;
     try {
@@ -215,6 +247,12 @@ class ProgressService extends ChangeNotifier {
       if (data is Map) return Map<String, dynamic>.from(data);
     } catch (_) {}
     return null;
+  }
+
+  Future<void> clearLocalCache() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyProgressCache);
+    await prefs.remove(_keyProgressCacheUid);
   }
 
   String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
@@ -489,6 +527,9 @@ class ProgressService extends ChangeNotifier {
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
     _cloudReadyToPersist = false;
+    _cacheUid = null;
+    companionCodes = [];
+    activeRoomCode = null;
     settings = const AppSettings();
     trailDifficulties = {};
     clearedTrailModes = {};
@@ -525,6 +566,7 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
+    await clearLocalCache();
     notifyListeners();
   }
 
@@ -609,10 +651,14 @@ class ProgressService extends ChangeNotifier {
 
   void _ensureMonthlyMonth() {
     final month = _monthKey();
-    if (monthlyMonth != month) {
+    if (monthlyMonth == month) return;
+    if (monthlyMonth == null) {
+      // Primeira atribuição (doc antigo): não zera passos já carregados.
       monthlyMonth = month;
-      monthlySteps = 0;
+      return;
     }
+    monthlyMonth = month;
+    monthlySteps = 0;
   }
 
   /// Soma passos totais + contadores semanal e mensal de uma vez.
@@ -724,7 +770,7 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Persiste na nuvem via listeners (MainShell / saveNow). Sem disco local.
+  /// Persiste espelho local; a nuvem segue via listeners (MainShell / saveNow).
   bool _batching = false;
 
   @override
@@ -734,6 +780,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> _save({bool notify = true}) async {
+    await persistLocalCache();
     if (notify) notifyListeners();
   }
 
@@ -1278,6 +1325,8 @@ class ProgressService extends ChangeNotifier {
       'trailDifficulties': trailDifficulties,
       'clearedTrailModes': clearedTrailModes,
       'missionReflections': missionReflections,
+      'companionCodes': companionCodes,
+      'activeRoomCode': activeRoomCode,
       'settings': {
         'sound': settings.sound,
         'notifications': settings.notifications,
@@ -1329,6 +1378,26 @@ class ProgressService extends ChangeNotifier {
     return out;
   }
 
+  static Map<String, int> _mergeIntMapsMax(
+    Map<String, int> local,
+    Map<String, int> cloud,
+  ) {
+    if (cloud.isEmpty) return local;
+    if (local.isEmpty) return cloud;
+    final out = Map<String, int>.from(local);
+    for (final e in cloud.entries) {
+      final cur = out[e.key] ?? 0;
+      if (e.value > cur) out[e.key] = e.value;
+    }
+    return out;
+  }
+
+  static List<String> _unionStringLists(List<String> a, List<String> b) {
+    if (b.isEmpty) return a;
+    if (a.isEmpty) return b;
+    return {...a, ...b}.toList();
+  }
+
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
@@ -1349,9 +1418,12 @@ class ProgressService extends ChangeNotifier {
     }
     if (data.containsKey('lastPlayedDate')) {
       final cloudLast = (data['lastPlayedDate'] as String?)?.trim();
-      // null/vazio na nuvem não apaga um dia já registrado nesta sessão.
+      // null/vazio na nuvem não apaga; só avança se a data da nuvem for mais nova.
       if (cloudLast != null && cloudLast.isNotEmpty) {
-        lastPlayedDate = cloudLast;
+        final local = lastPlayedDate?.trim();
+        if (local == null || local.isEmpty || cloudLast.compareTo(local) > 0) {
+          lastPlayedDate = cloudLast;
+        }
       }
     }
     if (data.containsKey('completedMissions')) {
@@ -1425,15 +1497,20 @@ class ProgressService extends ChangeNotifier {
           (data['lastWeekXp'] as num?)?.toInt() ??
           lastWeekSteps;
       lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
-      monthlySteps =
-          (data['monthlySteps'] as num?)?.toInt() ?? monthlySteps;
+      final cloudMonthly = (data['monthlySteps'] as num?)?.toInt();
+      if (cloudMonthly != null && cloudMonthly > monthlySteps) {
+        monthlySteps = cloudMonthly;
+      }
       monthlyMonth = data['monthlyMonth'] as String? ?? monthlyMonth;
       streakFreezeAvailable =
           data['streakFreezeAvailable'] as bool? ?? streakFreezeAvailable;
       streakFreezeWeek =
           data['streakFreezeWeek'] as String? ?? streakFreezeWeek;
       if (data.containsKey('frozenDates')) {
-        frozenDates = _asStringList(data['frozenDates']);
+        frozenDates = _unionStringLists(
+          frozenDates,
+          _asStringList(data['frozenDates']),
+        );
       }
       streakRepairAvailable =
           data['streakRepairAvailable'] as bool? ?? streakRepairAvailable;
@@ -1447,51 +1524,144 @@ class ProgressService extends ChangeNotifier {
           data['lastComebackShownDate'] as String? ?? lastComebackShownDate;
       comebackBonusPending =
           data['comebackBonusPending'] as bool? ?? comebackBonusPending;
-      questDay = data['questDay'] as String? ?? questDay;
-      if (data.containsKey('questProgress')) {
-        questProgressMap = _asIntMap(data['questProgress']);
+
+      // Quests diárias: só mescla se o dia da nuvem for hoje (senão _ensure zera).
+      final today = _todayKey();
+      final cloudQuestDay = data['questDay'] as String?;
+      if (cloudQuestDay == today) {
+        if (questDay != today) {
+          questDay = today;
+          questProgressMap = {};
+          questClaimed = [];
+        }
+        if (data.containsKey('questProgress')) {
+          questProgressMap = _mergeIntMapsMax(
+            questProgressMap,
+            _asIntMap(data['questProgress']),
+          );
+        }
+        if (data.containsKey('questClaimed')) {
+          questClaimed = _unionStringLists(
+            questClaimed,
+            _asStringList(data['questClaimed']),
+          );
+        }
+      } else if (questDay != today && cloudQuestDay != null) {
+        questDay = cloudQuestDay;
+        if (data.containsKey('questProgress')) {
+          questProgressMap = _asIntMap(data['questProgress']);
+        }
+        if (data.containsKey('questClaimed')) {
+          questClaimed = _asStringList(data['questClaimed']);
+        }
       }
-      if (data.containsKey('questClaimed')) {
-        questClaimed = _asStringList(data['questClaimed']);
-      }
-      if (data.containsKey('weeklyProgress')) {
+
+      final cloudWeek = data['weeklyWeek'] as String? ?? weeklyWeek;
+      final currentWeek = _weekMondayKey();
+      if (cloudWeek == currentWeek || weeklyWeek == currentWeek) {
+        if (data.containsKey('weeklyProgress')) {
+          weeklyProgressMap = _mergeIntMapsMax(
+            weeklyProgressMap,
+            _asIntMap(data['weeklyProgress']),
+          );
+        }
+        if (data.containsKey('weeklyClaimed')) {
+          weeklyClaimed = _unionStringLists(
+            weeklyClaimed,
+            _asStringList(data['weeklyClaimed']),
+          );
+        }
+        if (cloudWeek == currentWeek) weeklyWeek = cloudWeek;
+      } else if (data.containsKey('weeklyProgress')) {
         weeklyProgressMap = _asIntMap(data['weeklyProgress']);
+        if (data.containsKey('weeklyClaimed')) {
+          weeklyClaimed = _asStringList(data['weeklyClaimed']);
+        }
       }
-      if (data.containsKey('weeklyClaimed')) {
-        weeklyClaimed = _asStringList(data['weeklyClaimed']);
-      }
+
       if (data.containsKey('claimedChests')) {
-        claimedChests = _asStringList(data['claimedChests']);
+        claimedChests = _unionStringLists(
+          claimedChests,
+          _asStringList(data['claimedChests']),
+        );
       }
       if (data.containsKey('readBibleChapters')) {
-        readBibleChapters = _asStringList(data['readBibleChapters']);
+        readBibleChapters = _unionStringLists(
+          readBibleChapters,
+          _asStringList(data['readBibleChapters']),
+        );
       }
       if (data.containsKey('bibleBookmarks')) {
-        bibleBookmarks = _asStringList(data['bibleBookmarks']);
+        bibleBookmarks = _unionStringLists(
+          bibleBookmarks,
+          _asStringList(data['bibleBookmarks']),
+        );
       }
       if (data.containsKey('sharedVerses')) {
-        sharedVerses = _asStringList(data['sharedVerses']);
+        sharedVerses = _unionStringLists(
+          sharedVerses,
+          _asStringList(data['sharedVerses']),
+        );
       }
       if (data.containsKey('memoryScores')) {
-        memoryScores = _asIntMap(data['memoryScores']);
+        memoryScores = _mergeIntMapsMax(
+          memoryScores,
+          _asIntMap(data['memoryScores']),
+        );
       }
       if (data.containsKey('memoryMastered')) {
-        memoryMastered = _asStringList(data['memoryMastered']);
+        memoryMastered = _unionStringLists(
+          memoryMastered,
+          _asStringList(data['memoryMastered']),
+        );
       }
       if (data.containsKey('usedQuestionIds')) {
-        usedQuestionIds = _asStringList(data['usedQuestionIds']);
+        usedQuestionIds = _unionStringLists(
+          usedQuestionIds,
+          _asStringList(data['usedQuestionIds']),
+        );
       }
       if (data.containsKey('mistakeQuestionIds')) {
-        mistakeQuestionIds = _asStringList(data['mistakeQuestionIds']);
+        mistakeQuestionIds = _unionStringLists(
+          mistakeQuestionIds,
+          _asStringList(data['mistakeQuestionIds']),
+        );
       }
       if (data.containsKey('trailDifficulties')) {
-        trailDifficulties = _asStringMap(data['trailDifficulties']);
+        trailDifficulties = {
+          ...trailDifficulties,
+          ..._asStringMap(data['trailDifficulties']),
+        };
       }
       if (data.containsKey('clearedTrailModes')) {
-        clearedTrailModes = _asStringListMap(data['clearedTrailModes']);
+        final cloudModes = _asStringListMap(data['clearedTrailModes']);
+        if (clearedTrailModes.isEmpty) {
+          clearedTrailModes = cloudModes;
+        } else {
+          final merged = Map<String, List<String>>.from(clearedTrailModes);
+          for (final e in cloudModes.entries) {
+            merged[e.key] = _unionStringLists(merged[e.key] ?? const [], e.value);
+          }
+          clearedTrailModes = merged;
+        }
       }
       if (data.containsKey('missionReflections')) {
-        missionReflections = _asStringMap(data['missionReflections']);
+        missionReflections = {
+          ...missionReflections,
+          ..._asStringMap(data['missionReflections']),
+        };
+      }
+      if (data.containsKey('companionCodes')) {
+        companionCodes = _unionStringLists(
+          companionCodes,
+          _asStringList(data['companionCodes']),
+        );
+      }
+      if (data.containsKey('activeRoomCode')) {
+        final room = (data['activeRoomCode'] as String?)?.trim();
+        if (room != null && room.isNotEmpty) {
+          activeRoomCode = room;
+        }
       }
       final s = data['settings'];
       if (s is Map) {
@@ -1547,6 +1717,18 @@ class ProgressService extends ChangeNotifier {
       await _save();
     }
     notifyListeners();
+  }
+
+  Future<void> setSyncedCompanionCodes(List<String> codes) async {
+    companionCodes = List<String>.from(codes);
+    await _save();
+  }
+
+  Future<void> setSyncedRoomCode(String? code) async {
+    final next = (code == null || code.isEmpty) ? null : code.trim().toUpperCase();
+    if (activeRoomCode == next) return;
+    activeRoomCode = next;
+    await _save();
   }
 
   bool isMissionCompleted(String slug) => completedMissions.contains(slug);

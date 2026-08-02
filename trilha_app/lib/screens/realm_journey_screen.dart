@@ -233,12 +233,9 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
           appearance: appearance,
           child: Stack(
             children: [
-              CustomScrollView(
-              controller: _scroll,
-              physics: const BouncingScrollPhysics(),
-              slivers: [
-                SliverToBoxAdapter(
-                  child: Padding(
+              Column(
+                children: [
+                  Padding(
                     padding: EdgeInsets.fromLTRB(
                       AppSpace.screen,
                       MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
@@ -255,36 +252,48 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                       chromeAccent: AppColors.sand,
                     ),
                   ),
-                ),
-                SliverToBoxAdapter(
-                  child: SizedBox(height: AppSpace.lg),
-                ),
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(16, 12, 20, 140 + bottom),
-                    child: JourneyPath(
-                      items: items,
-                      accent: visuals.accent,
-                      glow: visuals.glow,
-                      currentKey: _currentKey,
-                      onTap: _onNodeTap,
+                  Expanded(
+                    child: CustomScrollView(
+                      controller: _scroll,
+                      physics: const BouncingScrollPhysics(),
+                      slivers: [
+                        SliverToBoxAdapter(
+                          child: SizedBox(height: AppSpace.lg),
+                        ),
+                        SliverToBoxAdapter(
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              16,
+                              12,
+                              20,
+                              140 + bottom,
+                            ),
+                            child: JourneyPath(
+                              items: items,
+                              accent: visuals.accent,
+                              glow: visuals.glow,
+                              currentKey: _currentKey,
+                              onTap: _onNodeTap,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-              ],
-            ),
-
-            // Soft jump control — not a loud FAB
-            Positioned(
-              right: 18,
-              bottom: 28 + bottom,
-              child: _JumpChip(
-                accent: visuals.accent,
-                onTap: _jumpToCurrent,
+                ],
               ),
-            ),
-          ],
-        ),
+
+              // Soft jump control — not a loud FAB
+              Positioned(
+                right: 18,
+                bottom: 28 + bottom,
+                child: _JumpChip(
+                  accent: visuals.accent,
+                  onTap: _jumpToCurrent,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

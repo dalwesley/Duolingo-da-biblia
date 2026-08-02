@@ -5,8 +5,10 @@ import 'package:provider/provider.dart';
 import 'dart:async';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
+import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/immersive_background.dart';
@@ -52,10 +54,26 @@ class _LoginScreenState extends State<LoginScreen> {
       result.displayName ?? backend.userDisplayName,
     );
 
-    if (hydrate != BackendService.hydrateFailed) {
-      await backend.settleAndSyncLeague(progress, league);
+    if (hydrate == BackendService.hydrateFailed) {
+      if (!mounted) return;
+      setState(() {
+        _error =
+            'Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.';
+      });
+      // Mantém sessão Google mas não entra no app até hydrate ok.
+      return;
     }
+
+    await backend.settleAndSyncLeague(progress, league);
     await progress.clearLegacyLocalPrefs();
+
+    if (!mounted) return;
+    final companions = context.read<CompanionService>();
+    await companions.applyCloudCodes(progress.companionCodes, progress);
+    if (!mounted) return;
+    final rooms = context.read<RoomService>();
+    await rooms.applyCloudCode(progress.activeRoomCode, progress: progress);
+
     if (!mounted) return;
 
     final next = progress.hasSeenOnboarding

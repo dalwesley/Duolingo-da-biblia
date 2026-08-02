@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
@@ -10,6 +11,7 @@ import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
+import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
@@ -1000,7 +1002,14 @@ class _SettingsScreenState extends State<SettingsScreen>
       return;
     }
     await progress.resetMemoryToDefaults();
+    if (!mounted) return;
     await context.read<LeagueService>().resetForLogout();
+    // Limpa códigos locais de companhia/sala (evita herdar na próxima conta).
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('companionCodes');
+    await prefs.remove('activeRoomCode');
+    if (!mounted) return;
+    context.read<CompanionService>().markCloudUnsynced();
     if (!mounted) return;
     Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
       PageRouteBuilder(
@@ -1055,6 +1064,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     }
     await progress.applyFromCloud(parsed);
     await league.applyFromCloud(parsed);
+    progress.bindCacheUid(backend.uid);
+    progress.markCloudHydrated();
     await backend.saveNow(progress, LeagueService.weekKey(), league: league);
     await sync.markSynced();
     if (mounted) {

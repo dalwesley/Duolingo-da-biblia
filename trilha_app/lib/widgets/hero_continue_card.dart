@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../cinematic/cinematic_resolver.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/trail_visuals.dart';
+import 'cinematic_backdrop.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Próxima lição — card sóbrio, sem glow pulsante.
+/// Próxima lição — card com atmosfera da trilha.
 class HeroContinueCard extends StatelessWidget {
   final Mission? mission;
   final String trailTitle;
@@ -39,6 +41,11 @@ class HeroContinueCard extends StatelessWidget {
     final stepLabel = goalMet ? 'Mais uma lição' : 'Próxima lição';
     final ctaLabel = goalMet ? 'Seguir' : 'Continuar';
     final rewardColor = mission.isBoss ? AppColors.sand : trailAccent;
+    final world = CinematicResolver.ambientForHome(
+      trailSlug: trailSlug,
+      missionTitle: mission.title,
+      missionSlug: mission.slug,
+    );
 
     return GestureDetector(
       onTap: () {
@@ -46,108 +53,146 @@ class HeroContinueCard extends StatelessWidget {
         onTap?.call();
       },
       child: Container(
-        constraints: const BoxConstraints(minHeight: 280),
+        constraints: const BoxConstraints(minHeight: 300),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-          color: a.cardFill,
           border: Border.all(
             color: AppMetrics.accentBorder(alpha: 0.55, color: trailAccent),
             width: 1.25,
           ),
           boxShadow: AppMetrics.cardShadow(elevated: true),
         ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
+          child: Stack(
             children: [
-              _Chip(
-                tone: trailAccent,
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    CinematicIcon(
-                      glyph: visuals.glyph,
-                      size: 16,
-                      accent: trailAccent,
-                      glowing: false,
-                      framed: false,
+              Positioned.fill(
+                child: CinematicBackdrop(world: world),
+              ),
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.black.withValues(alpha: 0.18),
+                        Colors.black.withValues(alpha: 0.42),
+                        Color.lerp(a.cardFill, Colors.black, 0.35)!
+                            .withValues(alpha: 0.88),
+                      ],
+                      stops: const [0.0, 0.45, 1.0],
                     ),
-                    const SizedBox(width: 6),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _Chip(
+                      tone: trailAccent,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          CinematicIcon(
+                            glyph: visuals.glyph,
+                            size: 16,
+                            accent: trailAccent,
+                            glowing: false,
+                            framed: false,
+                          ),
+                          const SizedBox(width: 6),
+                          Text(
+                            trailTitle.toUpperCase(),
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 1.1,
+                              color: a.text.withValues(alpha: 0.88),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 28),
                     Text(
-                      trailTitle.toUpperCase(),
+                      stepLabel.toUpperCase(),
                       style: AppTypography.label(
-                        size: 10,
-                        letterSpacing: 1.1,
-                        color: a.text.withValues(alpha: 0.88),
+                        size: 12,
+                        letterSpacing: 1.6,
+                        color: trailAccent,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+                    Text(
+                      mission.title,
+                      style: AppTypography.display(
+                        size: 32,
+                        height: 1.1,
+                        weight: FontWeight.w900,
+                        color: a.text,
+                      ),
+                    ),
+                    if (mission.subtitle.trim().isNotEmpty) ...[
+                      const SizedBox(height: 8),
+                      Text(
+                        mission.subtitle.trim(),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 14,
+                          weight: FontWeight.w600,
+                          color: a.text.withValues(alpha: 0.72),
+                        ),
+                      ),
+                    ] else if (mission.isBoss) ...[
+                      const SizedBox(height: 10),
+                      Text(
+                        'Desafio especial · mais passos',
+                        style: AppTypography.body(
+                          size: 14,
+                          weight: FontWeight.w700,
+                          color: AppColors.sand.withValues(alpha: 0.9),
+                        ),
+                      ),
+                    ],
+                    const SizedBox(height: 28),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      decoration: BoxDecoration(
+                        gradient: AppGradients.gold,
+                        borderRadius: BorderRadius.circular(AppRadii.lg),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            ctaLabel.toUpperCase(),
+                            style: AppTypography.cta(size: 16),
+                          ),
+                          const SizedBox(width: 10),
+                          const Icon(
+                            Icons.arrow_forward_rounded,
+                            size: 20,
+                            color: AppColors.inkOnAccent,
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    Center(
+                      child: Text(
+                        '+${mission.stepsReward} passos nesta lição',
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w800,
+                          color: rewardColor,
+                        ),
                       ),
                     ),
                   ],
-                ),
-              ),
-              const SizedBox(height: 24),
-              Text(
-                stepLabel.toUpperCase(),
-                style: AppTypography.label(
-                  size: 12,
-                  letterSpacing: 1.6,
-                  color: trailAccent,
-                ),
-              ),
-              const SizedBox(height: 10),
-              Text(
-                mission.title,
-                style: AppTypography.display(
-                  size: 32,
-                  height: 1.1,
-                  weight: FontWeight.w900,
-                  color: a.text,
-                ),
-              ),
-              if (mission.isBoss) ...[
-                const SizedBox(height: 10),
-                Text(
-                  'Desafio especial · mais passos',
-                  style: AppTypography.body(
-                    size: 14,
-                    weight: FontWeight.w700,
-                    color: AppColors.sand.withValues(alpha: 0.9),
-                  ),
-                ),
-              ],
-              const SizedBox(height: 24),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                decoration: BoxDecoration(
-                  gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(AppRadii.lg),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      ctaLabel.toUpperCase(),
-                      style: AppTypography.cta(size: 16),
-                    ),
-                    const SizedBox(width: 10),
-                    const Icon(
-                      Icons.arrow_forward_rounded,
-                      size: 20,
-                      color: AppColors.inkOnAccent,
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 12),
-              Center(
-                child: Text(
-                  '+${mission.stepsReward} passos nesta lição',
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w800,
-                    color: rewardColor,
-                  ),
                 ),
               ),
             ],
@@ -216,10 +261,14 @@ class _Chip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
       decoration: BoxDecoration(
-        color: ink != null ? ink.withValues(alpha: 0.12) : a.cardFill,
+        color: ink != null
+            ? Colors.black.withValues(alpha: 0.35)
+            : a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
-          color: ink != null ? ink.withValues(alpha: 0.45) : a.cardBorder,
+          color: ink != null
+              ? ink.withValues(alpha: 0.55)
+              : a.cardBorder,
         ),
       ),
       child: child,

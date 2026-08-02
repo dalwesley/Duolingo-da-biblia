@@ -381,6 +381,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               if (ok == true && context.mounted) {
                 await context.read<CompanionService>().leave(
                   companions.companions[i].code,
+                  progress: progress,
                 );
               }
             },
@@ -628,7 +629,9 @@ class _LeagueScreenState extends State<LeagueScreen>
           onLeave: () async {
             final ok = await _confirmLeave(context);
             if (ok == true && context.mounted) {
-              await context.read<RoomService>().leaveRoom();
+              await context.read<RoomService>().leaveRoom(
+                    progress: context.read<ProgressService>(),
+                  );
             }
           },
           onRefresh: () => rooms.refreshMembers(),

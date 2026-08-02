@@ -5,9 +5,11 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
+import '../services/companion_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/immersive_background.dart';
@@ -99,6 +101,20 @@ class _SplashScreenState extends State<SplashScreen>
     } else {
       final league = context.read<LeagueService>();
       final hydrate = await backend.hydrateProgress(progress, league: league);
+      if (!mounted) return;
+
+      if (hydrate != BackendService.hydrateFailed) {
+        if (!mounted) return;
+        final companions = context.read<CompanionService>();
+        await companions.applyCloudCodes(progress.companionCodes, progress);
+        if (!mounted) return;
+        final rooms = context.read<RoomService>();
+        await rooms.applyCloudCode(
+          progress.activeRoomCode,
+          progress: progress,
+        );
+      }
+
       if (!mounted) return;
       next = progress.hasSeenOnboarding
           ? const MainShell()

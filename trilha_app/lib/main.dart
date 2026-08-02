@@ -52,8 +52,12 @@ class TrilhaApp extends StatelessWidget {
           create: (ctx) => CompanionService(ctx.read<BackendService>())..init(),
           update: (_, backend, previous) {
             final companions = previous ?? CompanionService(backend);
-            if (backend.isActive) {
+            // Só refresca quando a sessão fica ativa (não a cada saveNow).
+            if (backend.isActive && !companions.cloudSynced) {
               companions.refresh();
+            }
+            if (!backend.isActive) {
+              companions.markCloudUnsynced();
             }
             return companions;
           },

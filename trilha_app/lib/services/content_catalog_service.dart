@@ -82,7 +82,10 @@ class ContentCatalogService {
 
   Future<List<DifficultyMeta>> getDifficulties() async {
     await ensureLoaded();
-    return List.unmodifiable(_difficulties ?? const []);
+    final items = List<DifficultyMeta>.from(_difficulties ?? const []);
+    // Semente → Rota → Profundezas (ordem do enum TrailDifficulty).
+    items.sort((a, b) => a.difficulty.index.compareTo(b.difficulty.index));
+    return List.unmodifiable(items);
   }
 
   Future<List<BankQuestion>> getBankQuestions() async {

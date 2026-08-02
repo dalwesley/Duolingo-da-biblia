@@ -16,6 +16,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
+import '../widgets/home_word_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/league_risk_card.dart';
 import '../widgets/share_streak_button.dart';
@@ -254,10 +255,18 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         const SizedBox(height: AppSpace.section),
+        _reveal(
+          1,
+          HomeWordCard(
+            mission: current,
+            onOpen: (ref) => _openBible(ref),
+          ),
+        ),
+        const SizedBox(height: AppSpace.section),
         // Status do dia / streak (compacto, depois do CTA).
         if (progress.showStreakRiskBanner) ...[
           _reveal(
-            1,
+            2,
             StreakRiskBanner(
               onContinue: current != null
                   ? () => widget.onOpenMission(current.slug)
@@ -267,11 +276,11 @@ class _HomeScreenState extends State<HomeScreen>
           const SizedBox(height: AppSpace.section),
         ],
         if (progress.showStreakRepairOffer) ...[
-          _reveal(1, const StreakRepairBanner()),
+          _reveal(2, const StreakRepairBanner()),
           const SizedBox(height: AppSpace.section),
         ],
         _reveal(
-          1,
+          2,
           _DayPulse(
             missionsToday: progress.missionsToday,
             goal: goal,
@@ -300,26 +309,26 @@ class _HomeScreenState extends State<HomeScreen>
             if (!league.isNearDemotion(rank)) return const SizedBox.shrink();
             return Column(
               children: [
-                _reveal(2, LeagueRiskCard(onOpenLeague: widget.onOpenLeague)),
+                _reveal(3, LeagueRiskCard(onOpenLeague: widget.onOpenLeague)),
                 const SizedBox(height: AppSpace.section),
               ],
             );
           },
         ),
         _reveal(
-          2,
+          3,
           DailyQuestsCard(
             onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
           ),
         ),
         if (progress.mistakeQuestionIds.isNotEmpty) ...[
           const SizedBox(height: AppSpace.section),
-          _reveal(3, const _RevisitPracticeLink()),
+          _reveal(4, const _RevisitPracticeLink()),
         ],
         if (active != null && prog != null && goalMet) ...[
           const SizedBox(height: AppSpace.section),
           _reveal(
-            4,
+            5,
             _ActiveTrailLine(
               trail: active,
               done: prog.done,

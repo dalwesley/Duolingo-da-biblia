@@ -36,6 +36,26 @@ class GoogleSignInResult {
   });
 }
 
+/// Resultado tipado de leitura de `users/{uid}` — não confunde erro com ausência.
+class UserBackupResult {
+  final Map<String, dynamic>? data;
+  final String? error;
+  final bool missing;
+
+  const UserBackupResult._({this.data, this.error, this.missing = false});
+
+  const UserBackupResult.found(Map<String, dynamic> data)
+      : this._(data: data);
+
+  const UserBackupResult.missing() : this._(missing: true);
+
+  const UserBackupResult.error(String message) : this._(error: message);
+
+  bool get hasDocument => data != null;
+  bool get isError => error != null;
+  bool get isMissing => missing;
+}
+
 /// Backend Firebase. Quando configurado, ativa:
 ///   - login obrigatório com Google
 ///   - backup do progresso em `users/{uid}`
@@ -53,6 +73,11 @@ class BackendService extends ChangeNotifier {
   String? lastError;
   DateTime? lastCloudSaveAt;
   Timer? _debounce;
+  StreamSubscription<User?>? _authSub;
+
+  /// Serializa writes; gerações descartam saves obsoletos.
+  Future<void> _saveChain = Future<void>.value();
+  int _saveGeneration = 0;
 
   bool get isActive => _available && _uid != null;
   bool get isFirebaseReady => _firebaseReady;
@@ -103,6 +128,16 @@ class BackendService extends ChangeNotifier {
         user = null;
       }
       _applyUser(user);
+      await _authSub?.cancel();
+      _authSub = auth.authStateChanges().listen((u) {
+        final wasActive = isActive;
+        if (u != null && u.isAnonymous) {
+          _applyUser(null);
+        } else {
+          _applyUser(u);
+        }
+        if (wasActive != isActive) notifyListeners();
+      });
     } catch (e) {
       _firebaseReady = false;
       _available = false;
@@ -373,21 +408,53 @@ class BackendService extends ChangeNotifier {
       return false;
     }
     if (!progress.canPersistCloud) {
-      // Hidratação falhou: ainda assim grava se o usuário já progrediu nesta sessão.
-      if (!progress.hasSessionProgress) {
-        _authLog('saveNow skipped — cloud not hydrated yet');
-        return false;
-      }
-      progress.markCloudHydrated();
-      _authLog('saveNow: hydrate pending but session has progress — persisting');
+      _authLog('saveNow skipped — cloud not hydrated yet');
+      return false;
     }
+
+    final generation = ++_saveGeneration;
+    final completer = Completer<bool>();
+    _saveChain = _saveChain.then((_) async {
+      if (generation != _saveGeneration) {
+        _authLog('saveNow skipped — superseded gen=$generation');
+        completer.complete(false);
+        return;
+      }
+      final ok = await _saveNowBody(
+        progress,
+        week,
+        roomCode: roomCode,
+        league: league,
+        generation: generation,
+      );
+      completer.complete(ok);
+    }).catchError((Object e, StackTrace st) {
+      _authLog('saveNow chain error: $e\n$st');
+      if (!completer.isCompleted) completer.complete(false);
+    });
+    return completer.future;
+  }
+
+  Future<bool> _saveNowBody(
+    ProgressService progress,
+    String week, {
+    String? roomCode,
+    LeagueService? league,
+    required int generation,
+  }) async {
+    if (!isActive || !progress.canPersistCloud) return false;
+    if (generation != _saveGeneration) return false;
+
     // Evita gravar placeholder se a conta Google tem nome.
     if (ProgressService.isPlaceholderUserName(progress.userName)) {
       await progress.ensureUserNameFromAuth(userDisplayName);
     }
 
     // Espelho local ANTES da nuvem — sobrevive a kill/hot restart.
+    progress.bindCacheUid(_uid);
     await progress.persistLocalCache();
+
+    if (generation != _saveGeneration) return false;
 
     try {
       // 1) Progresso do usuário — nunca depende do ranking.
@@ -395,8 +462,9 @@ class BackendService extends ChangeNotifier {
         _payload(progress, league: league),
         SetOptions(merge: true),
       );
+      if (generation != _saveGeneration) return false;
       lastCloudSaveAt = DateTime.now();
-      notifyListeners();
+      // Não notifyListeners aqui — evita refresh em cascata (companions).
       _authLog(
         'saveNow user ok uid=$_uid week=$week '
         'steps=${progress.steps} streak=${progress.streak} '
@@ -438,8 +506,9 @@ class BackendService extends ChangeNotifier {
         'xp': progress.steps,
         'updatedAt': FieldValue.serverTimestamp(),
       });
-      if (roomCode != null && roomCode.isNotEmpty) {
-        batch.set(_db.doc('rooms/$roomCode/members/$_uid'), {
+      final effectiveRoom = roomCode ?? progress.activeRoomCode;
+      if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
+        batch.set(_db.doc('rooms/$effectiveRoom/members/$_uid'), {
           'name': progress.userName,
           'xp': progress.weeklySteps,
           'updatedAt': FieldValue.serverTimestamp(),
@@ -470,10 +539,32 @@ class BackendService extends ChangeNotifier {
     ProgressService progress, {
     LeagueService? league,
   }) async {
-    if (!isActive) return hydrateFailed;
+    if (!isActive) {
+      progress.markCloudNotReady();
+      return hydrateFailed;
+    }
+    progress.bindCacheUid(_uid);
+    progress.markCloudNotReady();
     try {
-      final data = await fetchBackup();
-      if (data != null) {
+      final backup = await fetchBackupResult();
+      if (backup.isError) {
+        _authLog('hydrate FAILED (fetch error): ${backup.error}');
+        // Tenta espelho local da MESMA conta — não marca ready para nuvem.
+        final local = await progress.readLocalCache(forUid: _uid);
+        if (local != null) {
+          await progress.applyFromCloud(local);
+          await progress.ensureUserNameFromAuth(userDisplayName);
+          _authLog(
+            'hydrate FAILED but restored local cache '
+            'missions=${progress.completedMissions.length}',
+          );
+        }
+        // Sem markCloudHydrated — impede wipe na nuvem.
+        return hydrateFailed;
+      }
+
+      if (backup.hasDocument) {
+        final data = backup.data!;
         _authLog(
           'hydrate cloud keys=${data.keys.length} '
           'steps=${data['steps'] ?? data['xp']} '
@@ -485,8 +576,8 @@ class BackendService extends ChangeNotifier {
           'userName=${data['userName']}',
         );
         await progress.applyFromCloud(data);
-        // Se a nuvem veio vazia/atrasada, recupera espelho local mais rico.
-        final local = await progress.readLocalCache();
+        // Se a nuvem veio vazia/atrasada, recupera espelho local mais rico (mesmo uid).
+        final local = await progress.readLocalCache(forUid: _uid);
         if (local != null && _localCacheRicher(local, progress)) {
           _authLog(
             'hydrate: merging richer local cache '
@@ -511,8 +602,9 @@ class BackendService extends ChangeNotifier {
         );
         return hydrateFromCloud;
       }
+
       _authLog('hydrate: no cloud doc — trying local cache / legacy');
-      final local = await progress.readLocalCache();
+      final local = await progress.readLocalCache(forUid: _uid);
       if (local != null) {
         await progress.applyFromCloud(local);
         await progress.ensureUserNameFromAuth(userDisplayName);
@@ -541,18 +633,17 @@ class BackendService extends ChangeNotifier {
     } catch (e, st) {
       _authLog('hydrate FAILED: $e\n$st');
       debugPrint('Falha ao hidratar progresso: $e');
-      // Tenta espelho local para não perder a sessão anterior.
       try {
-        final local = await progress.readLocalCache();
+        final local = await progress.readLocalCache(forUid: _uid);
         if (local != null) {
           await progress.applyFromCloud(local);
-          progress.markCloudHydrated();
           _authLog(
             'hydrate FAILED but restored local cache '
             'missions=${progress.completedMissions.length}',
           );
         }
       } catch (_) {}
+      progress.markCloudNotReady();
       return hydrateFailed;
     }
   }
@@ -583,6 +674,7 @@ class BackendService extends ChangeNotifier {
     LeagueService? league,
   }) {
     if (!isActive) return;
+    if (!progress.canPersistCloud) return;
     _debounce?.cancel();
     _debounce = Timer(const Duration(seconds: 2), () {
       saveNow(progress, week, roomCode: roomCode, league: league);
@@ -610,15 +702,21 @@ class BackendService extends ChangeNotifier {
       for (var attempt = 0; attempt < 8; attempt++) {
         final code = _generateRoomCode();
         final ref = _db.doc('rooms/$code');
-        final existing = await ref.get();
-        if (existing.exists) continue;
+        try {
+          await _db.runTransaction((tx) async {
+            final existing = await tx.get(ref);
+            if (existing.exists) throw StateError('taken');
+            tx.set(ref, {
+              'name': trimmed,
+              'ownerId': _uid,
+              'ownerName': userName,
+              'createdAt': FieldValue.serverTimestamp(),
+            });
+          });
+        } on StateError {
+          continue;
+        }
 
-        await ref.set({
-          'name': trimmed,
-          'ownerId': _uid,
-          'ownerName': userName,
-          'createdAt': FieldValue.serverTimestamp(),
-        });
         await ref.collection('members').doc(_uid).set({
           'name': userName,
           'xp': weeklySteps,
@@ -720,14 +818,27 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Restaura o backup da nuvem (retorna null se não houver).
+  /// Prefira [fetchBackupResult] quando precisar distinguir erro de doc ausente.
   Future<Map<String, dynamic>?> fetchBackup() async {
-    if (!isActive) return null;
+    final result = await fetchBackupResult();
+    if (result.isError || !result.hasDocument) return null;
+    return result.data;
+  }
+
+  /// Distingue documento ausente de falha de rede/permissão.
+  Future<UserBackupResult> fetchBackupResult() async {
+    if (!isActive) {
+      return const UserBackupResult.error('backend inactive');
+    }
     try {
       final doc = await _db.doc('users/$_uid').get();
-      return doc.data();
+      if (!doc.exists || doc.data() == null) {
+        return const UserBackupResult.missing();
+      }
+      return UserBackupResult.found(doc.data()!);
     } catch (e) {
       debugPrint('Falha ao restaurar da nuvem: $e');
-      return null;
+      return UserBackupResult.error(e.toString());
     }
   }
 
@@ -892,19 +1003,25 @@ class BackendService extends ChangeNotifier {
       for (var attempt = 0; attempt < 8; attempt++) {
         final code = _generateRoomCode();
         final ref = _db.doc('companies/$code');
-        final existing = await ref.get();
-        if (existing.exists) continue;
-        await ref.set({
-          'hostId': _uid,
-          'hostName': userName,
-          'guestId': null,
-          'guestName': null,
-          'sharedDays': 0,
-          'lastSharedDate': null,
-          'hostLastWalk': null,
-          'guestLastWalk': null,
-          'createdAt': FieldValue.serverTimestamp(),
-        });
+        try {
+          await _db.runTransaction((tx) async {
+            final existing = await tx.get(ref);
+            if (existing.exists) throw StateError('taken');
+            tx.set(ref, {
+              'hostId': _uid,
+              'hostName': userName,
+              'guestId': null,
+              'guestName': null,
+              'sharedDays': 0,
+              'lastSharedDate': null,
+              'hostLastWalk': null,
+              'guestLastWalk': null,
+              'createdAt': FieldValue.serverTimestamp(),
+            });
+          });
+        } on StateError {
+          continue;
+        }
         return _companionFromDoc(code, {
           'hostId': _uid,
           'hostName': userName,
@@ -927,24 +1044,32 @@ class BackendService extends ChangeNotifier {
     if (normalized.length < 4) return null;
     try {
       final ref = _db.doc('companies/$normalized');
-      final doc = await ref.get();
-      if (!doc.exists || doc.data() == null) return null;
-      final data = doc.data()!;
-      final hostId = data['hostId'] as String? ?? '';
-      if (hostId == _uid) {
-        return _companionFromDoc(normalized, data);
-      }
-      final guestId = data['guestId'] as String?;
-      if (guestId != null && guestId.isNotEmpty && guestId != _uid) {
-        return null; // já tem parceiro
-      }
-      await ref.set({
-        'guestId': _uid,
-        'guestName': userName,
-        'updatedAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+      await _db.runTransaction((tx) async {
+        final doc = await tx.get(ref);
+        if (!doc.exists || doc.data() == null) {
+          throw StateError('missing');
+        }
+        final data = doc.data()!;
+        final hostId = data['hostId'] as String? ?? '';
+        if (hostId == _uid) return;
+        final guestId = data['guestId'] as String?;
+        if (guestId != null && guestId.isNotEmpty && guestId != _uid) {
+          throw StateError('full');
+        }
+        if (guestId == _uid) return;
+        tx.set(ref, {
+          'guestId': _uid,
+          'guestName': userName,
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+      });
       final refreshed = await ref.get();
-      return _companionFromDoc(normalized, refreshed.data() ?? data);
+      if (!refreshed.exists || refreshed.data() == null) return null;
+      return _companionFromDoc(normalized, refreshed.data()!);
+    } on StateError catch (e) {
+      if (e.message == 'missing' || e.message == 'full') return null;
+      debugPrint('Falha ao entrar na companhia: $e');
+      return null;
     } catch (e) {
       debugPrint('Falha ao entrar na companhia: $e');
       return null;
@@ -979,37 +1104,39 @@ class BackendService extends ChangeNotifier {
       final code = raw.trim().toUpperCase();
       try {
         final ref = _db.doc('companies/$code');
-        final doc = await ref.get();
-        if (!doc.exists || doc.data() == null) continue;
-        final data = Map<String, dynamic>.from(doc.data()!);
-        final hostId = data['hostId'] as String? ?? '';
-        final guestId = data['guestId'] as String?;
-        final isHost = hostId == _uid;
-        if (!isHost && guestId != _uid) continue;
+        await _db.runTransaction((tx) async {
+          final doc = await tx.get(ref);
+          if (!doc.exists || doc.data() == null) return;
+          final data = Map<String, dynamic>.from(doc.data()!);
+          final hostId = data['hostId'] as String? ?? '';
+          final guestId = data['guestId'] as String?;
+          final isHost = hostId == _uid;
+          if (!isHost && guestId != _uid) return;
 
-        final updates = <String, dynamic>{
-          if (isHost) 'hostLastWalk': today else 'guestLastWalk': today,
-          if (isHost) 'hostName': userName else 'guestName': userName,
-          'updatedAt': FieldValue.serverTimestamp(),
-        };
+          final updates = <String, dynamic>{
+            if (isHost) 'hostLastWalk': today else 'guestLastWalk': today,
+            if (isHost) 'hostName': userName else 'guestName': userName,
+            'updatedAt': FieldValue.serverTimestamp(),
+          };
 
-        final hostWalk = isHost ? today : data['hostLastWalk'] as String?;
-        final guestWalk = isHost ? data['guestLastWalk'] as String? : today;
-        final bothToday = hostWalk == today && guestWalk == today;
-        if (bothToday && guestId != null && guestId.isNotEmpty) {
-          final lastShared = data['lastSharedDate'] as String?;
-          if (lastShared != today) {
-            var days = (data['sharedDays'] as num?)?.toInt() ?? 0;
-            if (lastShared == yesterday) {
-              days += 1;
-            } else {
-              days = 1;
+          final hostWalk = isHost ? today : data['hostLastWalk'] as String?;
+          final guestWalk = isHost ? data['guestLastWalk'] as String? : today;
+          final bothToday = hostWalk == today && guestWalk == today;
+          if (bothToday && guestId != null && guestId.isNotEmpty) {
+            final lastShared = data['lastSharedDate'] as String?;
+            if (lastShared != today) {
+              var days = (data['sharedDays'] as num?)?.toInt() ?? 0;
+              if (lastShared == yesterday) {
+                days += 1;
+              } else {
+                days = 1;
+              }
+              updates['sharedDays'] = days;
+              updates['lastSharedDate'] = today;
             }
-            updates['sharedDays'] = days;
-            updates['lastSharedDate'] = today;
           }
-        }
-        await ref.set(updates, SetOptions(merge: true));
+          tx.set(ref, updates, SetOptions(merge: true));
+        });
       } catch (e) {
         debugPrint('Falha ao publicar caminhada $code: $e');
       }
@@ -1057,6 +1184,7 @@ class BackendService extends ChangeNotifier {
   @override
   void dispose() {
     _debounce?.cancel();
+    unawaited(_authSub?.cancel());
     super.dispose();
   }
 }

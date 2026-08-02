@@ -17,11 +17,17 @@ class CompanionService extends ChangeNotifier {
   bool loading = false;
   String? lastError;
   bool _loaded = false;
+  bool _cloudSynced = false;
 
   CompanionService(this.backend);
 
   bool get isLoaded => _loaded;
   bool get canAdd => companions.length < maxCompanions;
+  bool get cloudSynced => _cloudSynced;
+
+  void markCloudUnsynced() {
+    _cloudSynced = false;
+  }
 
   Future<void> init() async {
     await refresh();
@@ -34,15 +40,40 @@ class CompanionService extends ChangeNotifier {
     return prefs.getStringList(_keyCodes) ?? const [];
   }
 
-  Future<void> _saveCodes(List<String> codes) async {
+  Future<void> _saveCodes(
+    List<String> codes, {
+    ProgressService? progress,
+  }) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_keyCodes, codes);
+    if (progress != null) {
+      await progress.setSyncedCompanionCodes(codes);
+    }
+  }
+
+  /// Une códigos da nuvem com o aparelho (troca de device).
+  Future<void> applyCloudCodes(
+    List<String> cloudCodes,
+    ProgressService progress,
+  ) async {
+    final local = await _loadCodes();
+    final merged = <String>{
+      ...local,
+      for (final c in cloudCodes)
+        if (c.trim().isNotEmpty) c.trim().toUpperCase(),
+    }.toList();
+    final capped = merged.length > maxCompanions
+        ? merged.sublist(0, maxCompanions)
+        : merged;
+    await _saveCodes(capped, progress: progress);
+    await refresh();
   }
 
   Future<void> refresh() async {
     final codes = await _loadCodes();
     if (codes.isEmpty) {
       companions = const [];
+      _cloudSynced = backend.isActive;
       notifyListeners();
       return;
     }
@@ -59,6 +90,7 @@ class CompanionService extends ChangeNotifier {
             isHost: true,
           ),
       ];
+      _cloudSynced = false;
       notifyListeners();
       return;
     }
@@ -75,6 +107,7 @@ class CompanionService extends ChangeNotifier {
     if (valid.length != codes.length) await _saveCodes(valid);
     companions = out;
     loading = false;
+    _cloudSynced = true;
     notifyListeners();
   }
 
@@ -102,7 +135,7 @@ class CompanionService extends ChangeNotifier {
       return null;
     }
     final codes = [...await _loadCodes(), created.code];
-    await _saveCodes(codes);
+    await _saveCodes(codes, progress: progress);
     await refresh();
     for (final c in companions) {
       if (c.code == created.code) return c;
@@ -136,7 +169,7 @@ class CompanionService extends ChangeNotifier {
     }
     final codes = await _loadCodes();
     if (!codes.contains(joined.code)) {
-      await _saveCodes([...codes, joined.code]);
+      await _saveCodes([...codes, joined.code], progress: progress);
     }
     await refresh();
     return true;
@@ -153,13 +186,13 @@ class CompanionService extends ChangeNotifier {
     await refresh();
   }
 
-  Future<void> leave(String code) async {
+  Future<void> leave(String code, {ProgressService? progress}) async {
     lastError = null;
     if (backend.isActive) {
       await backend.leaveCompanion(code);
     }
     final codes = [for (final c in await _loadCodes()) if (c != code) c];
-    await _saveCodes(codes);
+    await _saveCodes(codes, progress: progress);
     await refresh();
   }
 

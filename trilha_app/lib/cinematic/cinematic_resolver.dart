@@ -110,6 +110,39 @@ class CinematicResolver {
     return trailSlug == 'genesis-1-11';
   }
 
+  /// Atmosfera do hero na home — deriva do título da missão / trilha.
+  static CreationWorldState ambientForHome({
+    required String trailSlug,
+    required String missionTitle,
+    String? missionSlug,
+  }) {
+    final fromTitle = revealKeyFromCorrectText(missionTitle);
+    if (fromTitle != null) {
+      return stateForReveal(fromTitle, amount: 0.88);
+    }
+    if (missionSlug != null) {
+      final fromSlug = revealKeyFromCorrectText(missionSlug.replaceAll('-', ' '));
+      if (fromSlug != null) {
+        return stateForReveal(fromSlug, amount: 0.8);
+      }
+    }
+    if (isCinematicMission(trailSlug, null)) {
+      return const CreationWorldState(
+        voidDepth: 0.55,
+        light: 0.42,
+        waters: 0.32,
+        land: 0.38,
+        plants: 0.2,
+      );
+    }
+    return const CreationWorldState(
+      voidDepth: 0.72,
+      light: 0.32,
+      waters: 0.22,
+      stars: 0.12,
+    );
+  }
+
   static CinematicBeat forQuestion({
     required String missionSlug,
     required int questionIndex,
