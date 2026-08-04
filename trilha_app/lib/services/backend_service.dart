@@ -843,44 +843,73 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Jogadores reais da liga desta semana nesta divisão (exclui o próprio usuário).
+  ///
+  /// Mescla `tiers/{tier}/players` com o board flat legado — senão quem já
+  /// gravou no path novo “esconde” os demais e a lista fica diferente por login.
   Future<List<CloudPlayer>> fetchWeekPlayers(
     String week, {
     required int tier,
     int limit = 30,
   }) async {
     if (!isActive) return const [];
+    final byUid = <String, CloudPlayer>{};
+
+    void put(CloudPlayer p) {
+      final prev = byUid[p.uid];
+      if (prev == null || p.steps > prev.steps) {
+        byUid[p.uid] = p;
+      } else if (prev.steps == p.steps &&
+          ProgressService.isPlaceholderUserName(prev.name) &&
+          !ProgressService.isPlaceholderUserName(p.name)) {
+        byUid[p.uid] = p;
+      }
+    }
+
     try {
       final tierSnap = await _db
           .collection('leagues/$week/tiers/$tier/players')
           .orderBy('xp', descending: true)
           .limit(limit)
           .get();
-      if (tierSnap.docs.isNotEmpty) {
-        return _mapCloudPlayers(tierSnap.docs);
+      for (final p in _mapCloudPlayers(tierSnap.docs)) {
+        put(p);
       }
-      // Fallback legado: board flat, filtra por tier quando presente.
+    } catch (e) {
+      debugPrint('Liga tier/$tier falhou: $e');
+    }
+
+    try {
       final legacy = await _db
           .collection('leagues/$week/players')
           .orderBy('xp', descending: true)
           .limit(limit * 2)
           .get();
-      return [
-        for (final d in legacy.docs)
-          if (d.id != _uid)
-            if ((d.data()['tier'] as num?)?.toInt() == tier ||
-                d.data()['tier'] == null)
-              CloudPlayer(
-                uid: d.id,
-                name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
-                    ? d.data()['name'] as String
-                    : 'Aprendiz',
-                steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
-              ),
-      ].take(limit).toList();
+      for (final d in legacy.docs) {
+        if (d.id == _uid) continue;
+        final data = d.data();
+        final docTier = (data['tier'] as num?)?.toInt();
+        // Sem tier (legado antigo) entra em qualquer divisão na migração.
+        if (docTier != null && docTier != tier) continue;
+        put(
+          CloudPlayer(
+            uid: d.id,
+            name: (data['name'] as String?)?.trim().isNotEmpty == true
+                ? data['name'] as String
+                : 'Aprendiz',
+            steps: (data['xp'] as num?)?.toInt() ?? 0,
+          ),
+        );
+      }
     } catch (e) {
-      debugPrint('Falha ao buscar liga na nuvem: $e');
-      return const [];
+      debugPrint('Liga flat legado falhou: $e');
     }
+
+    final list = byUid.values.toList()
+      ..sort((a, b) {
+        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+        return a.name.compareTo(b.name);
+      });
+    return list.take(limit).toList();
   }
 
   List<CloudPlayer> _mapCloudPlayers(List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
@@ -927,12 +956,14 @@ class BackendService extends ChangeNotifier {
 
   /// Jogadores reais do ranking geral (exclui o próprio usuário).
   ///
-  /// Fonte principal: `users/` (progresso sincronizado). Espelho
-  /// `overallPlayers` entra como complemento (versões antigas / falha parcial).
+  /// Prefere o espelho leve `overallPlayers` (ordenado por xp). `users/` entra
+  /// só como complemento — docs cheios sem orderBy falhavam em aparelhos
+  /// lentos e devolviam um recorte arbitrário (listas diferentes por login).
   Future<List<CloudPlayer>> fetchOverallPlayers({int limit = 50}) async {
     if (!isActive) return const [];
     try {
       final byUid = <String, CloudPlayer>{};
+      final fetchLimit = limit + 5;
 
       void ingest(QueryDocumentSnapshot<Map<String, dynamic>> d) {
         if (d.id == _uid) return;
@@ -956,22 +987,40 @@ class BackendService extends ChangeNotifier {
       }
 
       try {
-        final usersSnap = await _db.collection('users').limit(100).get();
-        for (final d in usersSnap.docs) {
-          ingest(d);
-        }
-      } catch (e) {
-        debugPrint('Ranking geral via users/ falhou: $e');
-      }
-
-      try {
-        final overallSnap =
-            await _db.collection('overallPlayers').limit(100).get();
+        final overallSnap = await _db
+            .collection('overallPlayers')
+            .orderBy('xp', descending: true)
+            .limit(fetchLimit)
+            .get();
         for (final d in overallSnap.docs) {
           ingest(d);
         }
       } catch (e) {
-        debugPrint('Ranking geral via overallPlayers falhou: $e');
+        debugPrint('Ranking geral via overallPlayers (orderBy) falhou: $e');
+        try {
+          final overallSnap =
+              await _db.collection('overallPlayers').limit(fetchLimit).get();
+          for (final d in overallSnap.docs) {
+            ingest(d);
+          }
+        } catch (e2) {
+          debugPrint('Ranking geral via overallPlayers falhou: $e2');
+        }
+      }
+
+      if (byUid.length < limit) {
+        try {
+          final usersSnap = await _db
+              .collection('users')
+              .orderBy('steps', descending: true)
+              .limit(fetchLimit)
+              .get();
+          for (final d in usersSnap.docs) {
+            ingest(d);
+          }
+        } catch (e) {
+          debugPrint('Ranking geral via users/ falhou: $e');
+        }
       }
 
       final list = byUid.values.toList()

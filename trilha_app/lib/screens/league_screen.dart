@@ -40,6 +40,10 @@ class _LeagueScreenState extends State<LeagueScreen>
   int _tab = 0; // 0 = caravana, 1 = companhia, 2 = salas
   bool _overallRanking = true;
   bool _handlingInvite = false;
+  bool _playersLoading = false;
+  bool _playersLoadedOnce = false;
+  String? _playersError;
+  Future<void>? _settleInFlight;
 
   @override
   void initState() {
@@ -60,6 +64,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     super.didUpdateWidget(oldWidget);
     if (widget.active && !oldWidget.active) {
       _consumePendingInvite();
+      // Recarrega ranking ao abrir a aba — evita lista vazia se o 1º fetch
+      // rodou antes do backend estar pronto ou falhou em silêncio.
+      _settle();
     }
   }
 
@@ -81,18 +88,37 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
   }
 
-  Future<void> _settle() async {
+  Future<void> _settle() {
+    return _settleInFlight ??= _settleBody().whenComplete(() {
+      _settleInFlight = null;
+    });
+  }
+
+  Future<void> _settleBody() async {
     if (!mounted) return;
-    final progress = context.read<ProgressService>();
-    final league = context.read<LeagueService>();
-    final backend = context.read<BackendService>();
-    final rooms = context.read<RoomService>();
-    await backend.settleAndSyncLeague(
-      progress,
-      league,
-      roomCode: rooms.activeCode,
-    );
-    if (backend.isActive) {
+    setState(() {
+      _playersLoading = true;
+      _playersError = null;
+    });
+    try {
+      final progress = context.read<ProgressService>();
+      final league = context.read<LeagueService>();
+      final backend = context.read<BackendService>();
+      final rooms = context.read<RoomService>();
+      await backend.settleAndSyncLeague(
+        progress,
+        league,
+        roomCode: rooms.activeCode,
+      );
+      if (!backend.isActive) {
+        if (!mounted) return;
+        setState(() {
+          _playersLoading = false;
+          _playersError = backend.lastError ??
+              'Entre com Google para ver a caravana ao vivo.';
+        });
+        return;
+      }
       final week = LeagueService.weekKey();
       final players = await backend.fetchWeekPlayers(
         week,
@@ -115,6 +141,17 @@ class _LeagueScreenState extends State<LeagueScreen>
           for (final p in overallPlayers)
             LeagueEntry(name: p.name, steps: p.steps),
         ];
+        _playersLoading = false;
+        _playersLoadedOnce = true;
+        _playersError = null;
+      });
+    } catch (e) {
+      debugPrint('Falha ao carregar caravana: $e');
+      if (!mounted) return;
+      setState(() {
+        _playersLoading = false;
+        _playersError =
+            'Não foi possível carregar a caravana. Puxe para atualizar.';
       });
     }
   }
@@ -148,32 +185,37 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        widget.topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        AppSpace.screen,
-        scrollPaddingBelowNav(context),
-      ),
-      children: [
-        if (widget.topBar != null) ...[
-          widget.topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
-        _reveal(
-          0,
-          _SegmentTabs(index: _tab, onChanged: (i) => setState(() => _tab = i)),
+    return RefreshIndicator(
+      color: AppColors.accent,
+      onRefresh: _settle,
+      child: ListView(
+        physics: const AlwaysScrollableScrollPhysics(),
+        padding: EdgeInsets.fromLTRB(
+          AppSpace.screen,
+          widget.topBar == null
+              ? AppSpace.sm
+              : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+          AppSpace.screen,
+          scrollPaddingBelowNav(context),
         ),
-        const SizedBox(height: AppSpace.section),
-        if (_tab == 0)
-          ..._buildLeague(context)
-        else if (_tab == 1)
-          ..._buildCompanions(context)
-        else
-          ..._buildRooms(context),
-      ],
+        children: [
+          if (widget.topBar != null) ...[
+            widget.topBar!,
+            const SizedBox(height: AppSpace.afterTopBar),
+          ],
+          _reveal(
+            0,
+            _SegmentTabs(index: _tab, onChanged: (i) => setState(() => _tab = i)),
+          ),
+          const SizedBox(height: AppSpace.section),
+          if (_tab == 0)
+            ..._buildLeague(context)
+          else if (_tab == 1)
+            ..._buildCompanions(context)
+          else
+            ..._buildRooms(context),
+        ],
+      ),
     );
   }
 
@@ -182,6 +224,17 @@ class _LeagueScreenState extends State<LeagueScreen>
     final league = context.watch<LeagueService>();
 
     if (!league.isLoaded) {
+      return [
+        const Padding(
+          padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
+          child: Center(
+            child: CircularProgressIndicator(color: AppColors.accent),
+          ),
+        ),
+      ];
+    }
+
+    if (_playersLoading && !_playersLoadedOnce) {
       return [
         const Padding(
           padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
@@ -232,6 +285,14 @@ class _LeagueScreenState extends State<LeagueScreen>
         const SizedBox(height: AppSpace.md),
         _reveal(3, _OutcomeBanner(league: league)),
       ],
+      if (_playersError != null) ...[
+        const SizedBox(height: AppSpace.md),
+        Text(
+          _playersError!,
+          textAlign: TextAlign.center,
+          style: AppTypography.body(size: 12, color: AppColors.error),
+        ),
+      ],
       const SizedBox(height: AppSpace.section),
       SectionLabel(
         overall ? 'Classificação geral' : 'Classificação da semana',
@@ -239,6 +300,25 @@ class _LeagueScreenState extends State<LeagueScreen>
       ),
       const SizedBox(height: AppSpace.sm),
     ];
+
+    if (entries.length <= 1 && !_playersLoading) {
+      children.add(
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
+          child: Text(
+            overall
+                ? 'Ainda poucos peregrinos no ranking geral.\nPuxe para atualizar — ou caminhe hoje e volte.'
+                : 'Nesta divisão da caravana ainda há pouca gente.\nContinue a missão — o grupo cresce com quem caminha.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.4,
+              color: a.textMuted(0.7),
+            ),
+          ),
+        ),
+      );
+    }
 
     for (var i = 0; i < entries.length; i++) {
       final rank = i + 1;

@@ -11,6 +11,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 Trabalho em curso (ainda não versionado em release).
 
+### Fixed
+- Caravana: lista de pessoas inconsistente entre logins — mescla `tiers/` + board legado; ranking geral prioriza `overallPlayers` com `orderBy`; reload ao abrir a aba e pull-to-refresh
+
 ---
 
 ## [1.0.16] — 2026-08-03
