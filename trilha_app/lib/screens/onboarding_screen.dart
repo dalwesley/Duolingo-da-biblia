@@ -278,17 +278,17 @@ class _PromiseBeat extends StatelessWidget {
         const StwayTagline(size: 9),
         const SizedBox(height: 14),
         Text(
-          'Aprenda a Bíblia\nem missões diárias',
+          'Missão de 3 minutos.\nLâmpadas. Streak. Bíblia.',
           textAlign: TextAlign.center,
           style: AppTypography.display(
-            size: 30,
+            size: 28,
             height: 1.12,
             weight: FontWeight.w900,
           ),
         ),
         const SizedBox(height: 10),
         Text(
-          'Jogo de hábito · estudo real · fé com clareza',
+          'Treino diário — não trivia, não só leitura',
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 13,
@@ -337,7 +337,7 @@ class _PromiseBeat extends StatelessWidget {
               ),
               const SizedBox(height: 14),
               Text(
-                'PRÓXIMA LIÇÃO',
+                'MISSÃO PRONTA',
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 1.4,
@@ -355,11 +355,11 @@ class _PromiseBeat extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                'Sua primeira missão te espera.',
+                '5 lâmpadas · +passos · ~3 min',
                 style: AppTypography.body(
                   size: 13,
-                  weight: FontWeight.w600,
-                  color: a.textMuted(0.55),
+                  weight: FontWeight.w700,
+                  color: AppColors.sand,
                 ),
               ),
             ],
@@ -369,19 +369,19 @@ class _PromiseBeat extends StatelessWidget {
         const _FeatureList(
           items: [
             (
-              glyph: CinematicGlyph.path,
-              title: 'Missões curtas',
-              subtitle: 'Perguntas + feedback, no seu tempo',
-            ),
-            (
-              glyph: CinematicGlyph.book,
-              title: 'Estudo na passagem',
-              subtitle: 'Contexto e Bíblia offline a um toque',
-            ),
-            (
               glyph: CinematicGlyph.flame,
-              title: 'Sequência diária',
-              subtitle: 'Hábito que sustenta o aprendizado',
+              title: 'Streak + gelo',
+              subtitle: 'Proteja a sequência — um dia por semana',
+            ),
+            (
+              glyph: CinematicGlyph.lamp,
+              title: 'Lâmpadas e bosses',
+              subtitle: 'Errar custa. Perfeito vira combo',
+            ),
+            (
+              glyph: CinematicGlyph.people,
+              title: 'Caravana',
+              subtitle: 'Ranking semanal com quem caminha de verdade',
             ),
           ],
         ),

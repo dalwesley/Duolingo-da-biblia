@@ -6,7 +6,6 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'icon_well.dart';
-import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 class FrostController extends ValueNotifier<double> {
@@ -427,10 +426,11 @@ class _BackGlyph extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconWell(
+    return CinematicIcon(
+      glyph: CinematicGlyph.back,
       size: 36,
       accent: accent,
-      child: Icon(Icons.arrow_back_rounded, size: 18, color: accent),
+      glowing: false,
     );
   }
 }

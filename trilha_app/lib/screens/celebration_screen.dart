@@ -20,6 +20,7 @@ import '../utils/trail_progress.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/living_seed_card.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
@@ -59,6 +60,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _showGoalBanner = false;
   bool _trailComplete = false;
   int _awardedSteps = 0;
+  int _leagueRank = 0;
+  bool _nearPromote = false;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -198,6 +201,30 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 roomCode: room,
                 league: league,
               );
+              // Placar da caravana no fim da missão.
+              try {
+                final peers = await backend.fetchWeekPlayers(
+                  LeagueService.weekKey(),
+                  tier: league.tierIndex,
+                );
+                final entries = league.standings(
+                  userName: progress.userName,
+                  userWeeklySteps: progress.weeklySteps,
+                  realPlayers: [
+                    for (final p in peers)
+                      LeagueEntry(name: p.name, steps: p.steps),
+                  ],
+                );
+                final rank = league.userRank(entries);
+                if (mounted) {
+                  setState(() {
+                    _leagueRank = rank;
+                    _nearPromote = rank > 0 &&
+                        rank <= LeagueService.promoteCount &&
+                        league.tierIndex < LeagueTier.values.length - 1;
+                  });
+                }
+              } catch (_) {}
             }
             AnalyticsService.instance.logLessonComplete(
               missionSlug: widget.missionSlug,
@@ -300,10 +327,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   String get _headline {
-    if (widget.perfect) return '+1 passo · lição perfeita';
-    if (widget.isReplay) return 'Você revisitou esta lição';
-    if (widget.isBoss) return 'Desafio concluído';
-    return 'Missão concluída';
+    if (widget.perfect) return 'COMBO PERFEITO';
+    if (widget.isReplay) return 'Revisão no placar';
+    if (widget.isBoss) return 'BOSS DERROTADO';
+    return 'MISSÃO NO PLACAR';
   }
 
   @override
@@ -409,8 +436,45 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                   message: MascotMessages.celebration(
                                     isBoss: isBoss,
                                     pct: pct,
+                                    perfect: widget.perfect,
+                                    leagueRank: _leagueRank > 0
+                                        ? _leagueRank
+                                        : null,
+                                    nearPromote: _nearPromote,
                                   ),
                                 ),
+                                if (widget.perfect ||
+                                    widget.isBoss ||
+                                    _leagueRank > 0) ...[
+                                  const SizedBox(height: AppSpace.md),
+                                  Wrap(
+                                    spacing: 8,
+                                    runSpacing: 8,
+                                    alignment: WrapAlignment.center,
+                                    children: [
+                                      if (widget.perfect)
+                                        const _ComboChip(
+                                          label: 'PERFEITA',
+                                          color: AppColors.accent,
+                                        ),
+                                      if (widget.isBoss)
+                                        const _ComboChip(
+                                          label: 'BOSS',
+                                          color: AppColors.sand,
+                                        ),
+                                      if (_nearPromote)
+                                        const _ComboChip(
+                                          label: 'QUASE SOBE',
+                                          color: AppColors.ember,
+                                        )
+                                      else if (_leagueRank > 0)
+                                        _ComboChip(
+                                          label: '$_leagueRankº CARAVANA',
+                                          color: AppColors.teal,
+                                        ),
+                                    ],
+                                  ),
+                                ],
                                 if (_showGoalBanner) ...[
                                   const SizedBox(height: AppSpace.section),
                                   Container(
@@ -429,7 +493,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                     ),
                                     child: Text(
-                                      '✦ Meta do dia alcançada. Sequência protegida.',
+                                      '✦ Meta do dia · streak protegida · +combo',
                                       textAlign: TextAlign.center,
                                       style: AppTypography.body(
                                         size: 13,
@@ -496,6 +560,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             ),
                           ),
                         ),
+                        if (widget.perfect) ...[
+                          const SizedBox(height: AppSpace.md),
+                          FadeTransition(
+                            opacity: _statsOpacity,
+                            child: LivingSeedCard(
+                              perfectRecent: true,
+                              compact: true,
+                            ),
+                          ),
+                        ],
                         if (showModeUp) ...[
                           const SizedBox(height: AppSpace.lg),
                           FadeTransition(
@@ -937,6 +1011,34 @@ class _StatCard extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ComboChip extends StatelessWidget {
+  final String label;
+  final Color color;
+
+  const _ComboChip({required this.label, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: color.withValues(alpha: 0.2),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        border: Border.all(color: color.withValues(alpha: 0.7)),
+      ),
+      child: Text(
+        label,
+        style: AppTypography.label(
+          size: 10,
+          letterSpacing: 1.0,
+          weight: FontWeight.w900,
+          color: color,
         ),
       ),
     );

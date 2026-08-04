@@ -511,6 +511,7 @@ class BackendService extends ChangeNotifier {
         batch.set(_db.doc('rooms/$effectiveRoom/members/$_uid'), {
           'name': progress.userName,
           'xp': progress.weeklySteps,
+          'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
       }
@@ -720,6 +721,7 @@ class BackendService extends ChangeNotifier {
         await ref.collection('members').doc(_uid).set({
           'name': userName,
           'xp': weeklySteps,
+          'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
           'joinedAt': FieldValue.serverTimestamp(),
           'updatedAt': FieldValue.serverTimestamp(),
         });
@@ -755,6 +757,7 @@ class BackendService extends ChangeNotifier {
       await ref.collection('members').doc(_uid).set({
         'name': userName,
         'xp': weeklySteps,
+        'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
         'joinedAt': FieldValue.serverTimestamp(),
         'updatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
@@ -797,6 +800,7 @@ class BackendService extends ChangeNotifier {
                 : 'Aprendiz',
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             isUser: d.id == _uid,
+            lastWalk: d.data()['lastWalk'] as String?,
           ),
       ];
     } catch (e) {

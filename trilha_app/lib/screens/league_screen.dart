@@ -281,10 +281,6 @@ class _LeagueScreenState extends State<LeagueScreen>
           tierIndex: league.tierIndex,
         ),
       ),
-      if (!overall && league.pendingOutcome != null) ...[
-        const SizedBox(height: AppSpace.md),
-        _reveal(3, _OutcomeBanner(league: league)),
-      ],
       if (_playersError != null) ...[
         const SizedBox(height: AppSpace.md),
         Text(
@@ -326,7 +322,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         children.add(
           _ZoneLabel(
             text:
-                'SOBEM · ${LeagueTier.values[league.tierIndex + 1].shortLabel.toUpperCase()}',
+                'ZONA DE SUBIDA · ${LeagueTier.values[league.tierIndex + 1].shortLabel.toUpperCase()}',
             up: true,
           ),
         );
@@ -337,7 +333,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         children.add(
           _ZoneLabel(
             text:
-                'DESCEM · ${LeagueTier.values[league.tierIndex - 1].shortLabel.toUpperCase()}',
+                'ZONA DE DESCIDA · ${LeagueTier.values[league.tierIndex - 1].shortLabel.toUpperCase()}',
             up: false,
           ),
         );
@@ -715,6 +711,30 @@ class _LeagueScreenState extends State<LeagueScreen>
             }
           },
           onRefresh: () => rooms.refreshMembers(),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        _RoomWeekPulse(
+          members: members,
+          roomCode: room.code,
+          walkedToday: progress.walkedToday,
+          onClaim: () async {
+            final week = LeagueService.weekKey();
+            final chestId = 'room-pulse-$week-${room.code}';
+            final ok = await progress.claimChest(chestId, 15);
+            if (!context.mounted) return;
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text(
+                  ok
+                      ? 'Baú da sala · +15 passos'
+                      : 'Baú já coletado nesta semana',
+                ),
+              ),
+            );
+          },
         ),
       ),
       const SizedBox(height: AppSpace.md),
@@ -1214,6 +1234,112 @@ class _RoomBenefit extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _RoomWeekPulse extends StatelessWidget {
+  final List<RoomMember> members;
+  final String roomCode;
+  final bool walkedToday;
+  final VoidCallback onClaim;
+
+  const _RoomWeekPulse({
+    required this.members,
+    required this.roomCode,
+    required this.walkedToday,
+    required this.onClaim,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final a = Appearance.of(context);
+    final total = members.length;
+    final active = members.where((m) => m.walkedThisWeek).length;
+    final today = members.where((m) => m.walkedToday()).length;
+    final week = LeagueService.weekKey();
+    final chestId = 'room-pulse-$week-$roomCode';
+    final claimed = progress.isChestClaimed(chestId);
+    final ready = !claimed &&
+        walkedToday &&
+        total > 0 &&
+        active * 2 >= total; // ≥50% caminhou na semana
+
+    return GlassCard(
+      padding: AppMetrics.cardPadding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.people,
+                size: 28,
+                accent: AppColors.accent,
+                glowing: false,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Pulso da semana',
+                      style: AppTypography.display(
+                        size: 18,
+                        weight: FontWeight.w800,
+                        color: a.text,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      total == 0
+                          ? 'Convide alguém para a sala'
+                          : '$active de $total caminharam · $today hoje',
+                      style: AppTypography.body(
+                        size: 13,
+                        color: a.textMuted(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          if (total > 0) ...[
+            const SizedBox(height: 12),
+            AppProgressBar(
+              value: (active / total).clamp(0.0, 1.0),
+              color: AppColors.accent,
+            ),
+          ],
+          const SizedBox(height: 14),
+          if (claimed)
+            Text(
+              'Baú da sala já coletado nesta semana',
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.textMuted(0.55),
+              ),
+            )
+          else
+            Opacity(
+              opacity: ready ? 1 : 0.55,
+              child: CopperCta(
+                label: ready
+                    ? 'Abrir baú do grupo · +15'
+                    : walkedToday
+                        ? 'Baú libera com metade do grupo'
+                        : 'Caminhe hoje para liberar o baú',
+                onTap: ready ? onClaim : null,
+                expanded: true,
+              ),
+            ),
+        ],
       ),
     );
   }
@@ -1791,121 +1917,6 @@ class _TextInputDialogState extends State<_TextInputDialog> {
         ),
       ],
     );
-  }
-}
-
-class _OutcomeBanner extends StatelessWidget {
-  final LeagueService league;
-
-  const _OutcomeBanner({required this.league});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final outcome = league.pendingOutcome!;
-    final (title, message) = switch (outcome) {
-      LeagueOutcome.promoted => (
-        'Você avançou de caravana',
-        'Ficou em ${league.pendingRank}º e agora caminha na ${league.tier.label}. +${LeagueService.promotionBonusXp} passos de encorajamento!',
-      ),
-      LeagueOutcome.stayed => (
-        'Semana da caravana encerrada',
-        'Você ficou em ${league.pendingRank}º na ${league.tier.label}. Nova semana — continuem se animando.',
-      ),
-      LeagueOutcome.demoted => (
-        'Você desceu de caravana',
-        'Ficou em ${league.pendingRank}º. Na ${league.tier.label} dá para subir de novo — treine esta semana.',
-      ),
-    };
-
-    final content = Row(
-      children: [
-        CinematicIcon(
-          glyph: outcome == LeagueOutcome.promoted
-              ? CinematicGlyph.crown
-              : CinematicGlyph.path,
-          size: 34,
-          accent: outcome == LeagueOutcome.promoted
-              ? AppColors.inkOnAccent
-              : AppColors.accent,
-          glowing: false,
-          framed: false,
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title,
-                style: AppTypography.title(
-                  size: 15,
-                  weight: FontWeight.w900,
-                  color: outcome == LeagueOutcome.promoted
-                      ? AppColors.inkOnAccent
-                      : a.text,
-                ),
-              ),
-              const SizedBox(height: 3),
-              Text(
-                message,
-                style: AppTypography.body(
-                  size: 12,
-                  height: 1.3,
-                  color: outcome == LeagueOutcome.promoted
-                      ? AppColors.medalInk
-                      : a.textMuted(0.75),
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(width: 8),
-        TextButton(
-          onPressed: () async {
-            if (outcome == LeagueOutcome.promoted) {
-              await context.read<ProgressService>().grantBonusSteps(
-                LeagueService.promotionBonusXp,
-              );
-            }
-            await league.dismissOutcome();
-            if (!context.mounted) return;
-            final progress = context.read<ProgressService>();
-            final backend = context.read<BackendService>();
-            final rooms = context.read<RoomService>();
-            await backend.saveNow(
-              progress,
-              LeagueService.weekKey(),
-              roomCode: rooms.activeCode,
-              league: league,
-            );
-          },
-          child: Text(
-            outcome == LeagueOutcome.promoted ? 'Coletar' : 'Ok',
-            style: AppTypography.cta(
-              color: outcome == LeagueOutcome.promoted
-                  ? AppColors.inkOnAccent
-                  : AppColors.accent,
-            ),
-          ),
-        ),
-      ],
-    );
-
-    if (outcome == LeagueOutcome.promoted) {
-      return Container(
-        padding: AppMetrics.cardPadding,
-        decoration: BoxDecoration(
-          gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          border: Border.all(color: a.cardBorder),
-          boxShadow: AppTheme.cardShadow(elevated: true),
-        ),
-        child: content,
-      );
-    }
-
-    return GlassCard(padding: AppMetrics.cardPadding, child: content);
   }
 }
 

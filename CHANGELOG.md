@@ -11,8 +11,29 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 Trabalho em curso (ainda não versionado em release).
 
+---
+
+## [1.0.17] — 2026-08-04
+
+### Added
+- Game juice: HUD na home (meta/sequência/lâmpadas/gelo), Living Seed reativo, micro-modo “completar verso”, pulso semanal + baú nas Salas
+- Celebração com placar (combo, rank na Caravana, “quase sobe”)
+- Card **Sequência** na home — dias seguidos, status (risco/gelo/em dia), próximo marco e compartilhar
+
+### Changed
+- Ícones: lâmpada do HUD unificada com a lanterna das perguntas; glifos (check, gelo, trilha, elos, voltar, config) no mesmo peso sólido
+- Micro-modo “completar verso” cinematográfico: tipografia de verso, cena em glass, slots com pulso, flash de revelação e word bank staggered
+- Resultado da caravana (subir/descer/ficar) coleta na Home; promoção abre celebração com confete ao tocar Coletar
+- Card “continuar” da home com 3 faces cinematográficas animadas: em risco = empoeirado; congelado só após o gelo cobrir 1 dia; em dia = luz viva; CTAs “Continuar caminhada” / “Retomar caminhada”
+- CTA da missão pronta: **Entrar** (em vez de “Começar run”); badges da trilha e das lâmpadas empilhados (sem misturar streak)
+- Lembretes de atraso no tom “comendo poeira / ficando pra trás” (slots diários + D+1/D+2 + reforço noturno)
+- Onboarding game-first: missão · lâmpadas · streak · Bíblia
+
 ### Fixed
 - Caravana: lista de pessoas inconsistente entre logins — mescla `tiers/` + board legado; ranking geral prioriza `overallPlayers` com `orderBy`; reload ao abrir a aba e pull-to-refresh
+
+### Removed
+- `RunStatusStrip` (substituído pelo header unificado da home)
 
 ---
 

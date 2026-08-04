@@ -124,13 +124,16 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 ### Diferenciais (roubar melhorado)
 - [ ] **Áudio da missão** (MVP): passagem narrada + 1 insight do preparo — commute BR; não hub de oração
 - [ ] **Selos de personagem da trilha** (Abrão, Moisés…): 1 fato teológico + versículo âncora — heróis Bible Way sem skin shop
-- [ ] **Living Seed elevado**: reações à streak / risco / missão perfeita — companion Ascend com metáfora bíblica (já existe base)
+- [x] **Living Seed elevado**: reações à streak / risco / missão perfeita — companion Ascend com metáfora bíblica (já existe base)
 - [ ] **Campanha litúrgica piloto** (Advento ou Quaresma): quest + trilha curta em massa — #Pray40 do Hallow, no DNA STWAY
-- [ ] **Pulso semanal nas Salas**: quem caminhou, baú de grupo — Clubs/Crusades sem chat tóxico
+- [x] **Pulso semanal nas Salas**: quem caminhou + baú de grupo (+15 passos)
+- [x] **Micro-modo cognitivo** na missão: completar verso (~20s) após o quiz
+- [x] **Home/onboarding game-first**: HUD + missão pronta; estudo (Palavra) depois do loop
+- [x] **Celebração placar**: combo / rank Caravana / quase promove
 
 ### Identidade
 - [ ] Ícone/mascote com mais energia de jogo (iteração visual) — sem battle pass cosmético
-- [ ] Posicionamento nítido: *formação bíblica em passos diários, com prática que sai do app* — não “Duolingo + BibleProject + YouVersion” no mesmo fluxo
+- [x] Posicionamento nítido na superfície: *missão · lâmpadas · streak · Bíblia* (onboarding/home)
 
 ---
 

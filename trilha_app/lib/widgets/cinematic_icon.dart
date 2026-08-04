@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'icon_well.dart';
+import 'lantern_glyph.dart';
 
 /// Símbolos da marca — silhuetas sólidas, sem emoji.
 enum CinematicGlyph {
@@ -48,6 +49,7 @@ enum CinematicGlyph {
   demote,
   people,
   home,
+  back,
 }
 
 class CinematicGlyphResolver {
@@ -223,6 +225,7 @@ class CinematicGlyphResolver {
       CinematicGlyph.demote => AppColors.error,
       CinematicGlyph.people => AppColors.clay,
       CinematicGlyph.home => AppColors.accent,
+      CinematicGlyph.back => accent ?? AppColors.accent,
     };
   }
 }
@@ -416,6 +419,8 @@ class _GlyphPainter extends CustomPainter {
         _people(canvas, c, s);
       case CinematicGlyph.home:
         _home(canvas, c, s);
+      case CinematicGlyph.back:
+        _back(canvas, c, s);
     }
   }
 
@@ -722,23 +727,34 @@ class _GlyphPainter extends CustomPainter {
   }
 
   void _chain(Canvas canvas, Offset c, double s) {
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.16, -s * 0.1),
-        width: s * 0.28,
-        height: s * 0.38,
-      ),
-      _stroke(s * 0.1),
-    );
-    canvas.drawOval(
-      Rect.fromCenter(
-        center: c + Offset(s * 0.16, s * 0.1),
-        width: s * 0.28,
-        height: s * 0.38,
-      ),
-      _stroke(s * 0.1),
-    );
-    canvas.drawCircle(c, s * 0.05, _solid);
+    // Elos sólidos (anel com miolo) — sem stroke fino.
+    void link(Offset o, double rot) {
+      canvas.save();
+      canvas.translate(o.dx, o.dy);
+      canvas.rotate(rot);
+      final outer = Path()
+        ..addRRect(
+          RRect.fromRectAndRadius(
+            Rect.fromCenter(center: Offset.zero, width: s * 0.28, height: s * 0.4),
+            Radius.circular(s * 0.14),
+          ),
+        );
+      final inner = Path()
+        ..addRRect(
+          RRect.fromRectAndRadius(
+            Rect.fromCenter(center: Offset.zero, width: s * 0.12, height: s * 0.24),
+            Radius.circular(s * 0.06),
+          ),
+        );
+      canvas.drawPath(
+        Path.combine(PathOperation.difference, outer, inner),
+        _solid,
+      );
+      canvas.restore();
+    }
+
+    link(c + Offset(-s * 0.12, -s * 0.08), -0.35);
+    link(c + Offset(s * 0.12, s * 0.08), 0.35);
   }
 
   void _flame(Canvas canvas, Offset c, double s) {
@@ -946,9 +962,9 @@ class _GlyphPainter extends CustomPainter {
     canvas.drawPath(right, _soft);
   }
 
-  /// Caminho em S com marcos — lê como trilha, não como `/`.
+  /// Trilha em S — fita sólida com marcos (mesmo peso da lanterna).
   void _path(Canvas canvas, Offset c, double s) {
-    final trail = Path()
+    final spine = Path()
       ..moveTo(c.dx - s * 0.3, c.dy + s * 0.3)
       ..quadraticBezierTo(
         c.dx - s * 0.34,
@@ -962,14 +978,21 @@ class _GlyphPainter extends CustomPainter {
         c.dx + s * 0.22,
         c.dy - s * 0.32,
       );
-    canvas.drawPath(trail, _stroke(s * 0.1));
-    // Marcos no caminho (início → meio → destino).
+    canvas.drawPath(
+      spine,
+      Paint()
+        ..color = _ink
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = s * 0.16
+        ..strokeCap = StrokeCap.round
+        ..strokeJoin = StrokeJoin.round,
+    );
     for (final o in [
       Offset(-0.26, 0.26),
       Offset(-0.02, -0.02),
       Offset(0.2, -0.28),
     ]) {
-      canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.065, _solid);
+      canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.08, _solid);
     }
   }
 
@@ -1041,6 +1064,18 @@ class _GlyphPainter extends CustomPainter {
         ),
       );
     canvas.drawPath(Path.combine(PathOperation.difference, wall, door), _soft);
+  }
+
+  void _back(Canvas canvas, Offset c, double s) {
+    final chevron = Path()
+      ..moveTo(c.dx + s * 0.14, c.dy - s * 0.26)
+      ..lineTo(c.dx - s * 0.18, c.dy)
+      ..lineTo(c.dx + s * 0.14, c.dy + s * 0.26)
+      ..lineTo(c.dx + s * 0.02, c.dy + s * 0.14)
+      ..lineTo(c.dx - s * 0.08, c.dy)
+      ..lineTo(c.dx + s * 0.02, c.dy - s * 0.14)
+      ..close();
+    canvas.drawPath(chevron, _solid);
   }
 
   void _depths(Canvas canvas, Offset c, double s) {
@@ -1188,62 +1223,33 @@ class _GlyphPainter extends CustomPainter {
     canvas.drawPath(facet, _soft);
   }
 
+  /// Lanterna clássica — mesma forma das vidas na pergunta.
   void _lamp(Canvas canvas, Offset c, double s) {
-    final bowl = Path()
-      ..moveTo(c.dx - s * 0.3, c.dy + s * 0.08)
-      ..quadraticBezierTo(
-        c.dx - s * 0.28,
-        c.dy + s * 0.28,
-        c.dx,
-        c.dy + s * 0.3,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.28,
-        c.dy + s * 0.28,
-        c.dx + s * 0.34,
-        c.dy + s * 0.04,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.14,
-        c.dy + s * 0.1,
-        c.dx - s * 0.3,
-        c.dy + s * 0.08,
-      )
-      ..close();
-    canvas.drawPath(bowl, _solid);
-    final flame = Path()
-      ..moveTo(c.dx + s * 0.3, c.dy + s * 0.02)
-      ..quadraticBezierTo(
-        c.dx + s * 0.22,
-        c.dy - s * 0.2,
-        c.dx + s * 0.3,
-        c.dy - s * 0.32,
-      )
-      ..quadraticBezierTo(
-        c.dx + s * 0.36,
-        c.dy - s * 0.16,
-        c.dx + s * 0.3,
-        c.dy + s * 0.02,
-      )
-      ..close();
-    canvas.drawPath(flame, _solid);
-    _rect(
-      canvas,
-      Rect.fromCenter(
-        center: c + Offset(-s * 0.08, s * 0.3),
-        width: s * 0.16,
-        height: s * 0.06,
-      ),
-      s * 0.02,
-    );
+    canvas.save();
+    canvas.translate(c.dx - s * 0.5, c.dy - s * 0.5);
+    LanternGlyph.paintSolid(canvas, Size(s, s), _ink);
+    canvas.restore();
   }
 
   void _check(Canvas canvas, Offset c, double s) {
-    final path = Path()
-      ..moveTo(c.dx - s * 0.24, c.dy)
-      ..lineTo(c.dx - s * 0.04, c.dy + s * 0.2)
-      ..lineTo(c.dx + s * 0.28, c.dy - s * 0.22);
-    canvas.drawPath(path, _stroke(s * 0.1));
+    // Disco sólido + check grosso — mesmo peso visual da lanterna.
+    canvas.drawCircle(c, s * 0.36, _solid);
+    final markInk = _ink.computeLuminance() > 0.42
+        ? Color.lerp(_ink, const Color(0xFF1A1208), 0.72)!
+        : Colors.white.withValues(alpha: 0.92);
+    final mark = Path()
+      ..moveTo(c.dx - s * 0.16, c.dy + s * 0.02)
+      ..lineTo(c.dx - s * 0.02, c.dy + s * 0.16)
+      ..lineTo(c.dx + s * 0.2, c.dy - s * 0.14);
+    canvas.drawPath(
+      mark,
+      Paint()
+        ..color = markInk
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = s * 0.11
+        ..strokeCap = StrokeCap.round
+        ..strokeJoin = StrokeJoin.round,
+    );
   }
 
   void _echo(Canvas canvas, Offset c, double s) {
@@ -1268,14 +1274,14 @@ class _GlyphPainter extends CustomPainter {
         canvas,
         Rect.fromCenter(
           center: Offset(c.dx, y),
-          width: s * 0.62,
-          height: s * 0.08,
+          width: s * 0.66,
+          height: s * 0.11,
         ),
-        s * 0.03,
+        s * 0.055,
       );
       canvas.drawCircle(
         c + Offset(s * knobs[i], s * rows[i]),
-        s * 0.09,
+        s * 0.11,
         _solid,
       );
     }
@@ -1371,35 +1377,37 @@ class _GlyphPainter extends CustomPainter {
     canvas.drawPath(flap, _soft);
   }
 
+  /// Floco de gelo — pontas em diamante (não parece #).
   void _frost(Canvas canvas, Offset c, double s) {
+    canvas.drawCircle(c, s * 0.1, _solid);
     for (var i = 0; i < 6; i++) {
       final a = i * math.pi / 3;
-      final end = c + Offset(math.cos(a) * s * 0.36, math.sin(a) * s * 0.36);
-      _rect(
-        canvas,
-        Rect.fromCenter(
-          center: c + Offset(math.cos(a) * s * 0.18, math.sin(a) * s * 0.18),
-          width: s * 0.08,
-          height: s * 0.36,
-        ),
-        s * 0.02,
-      );
-      final mid = c + Offset(math.cos(a) * s * 0.18, math.sin(a) * s * 0.18);
-      final p = a + math.pi / 2;
-      final branch = Path()
-        ..moveTo(
-          mid.dx + math.cos(p) * s * 0.08,
-          mid.dy + math.sin(p) * s * 0.08,
-        )
-        ..lineTo(end.dx, end.dy)
-        ..lineTo(
-          mid.dx - math.cos(p) * s * 0.08,
-          mid.dy - math.sin(p) * s * 0.08,
-        )
+      final tip = c + Offset(math.cos(a) * s * 0.36, math.sin(a) * s * 0.36);
+      final mid = c + Offset(math.cos(a) * s * 0.2, math.sin(a) * s * 0.2);
+      final perp = Offset(-math.sin(a), math.cos(a));
+      final arm = Path()
+        ..moveTo(c.dx + perp.dx * s * 0.05, c.dy + perp.dy * s * 0.05)
+        ..lineTo(mid.dx + perp.dx * s * 0.07, mid.dy + perp.dy * s * 0.07)
+        ..lineTo(tip.dx, tip.dy)
+        ..lineTo(mid.dx - perp.dx * s * 0.07, mid.dy - perp.dy * s * 0.07)
+        ..lineTo(c.dx - perp.dx * s * 0.05, c.dy - perp.dy * s * 0.05)
         ..close();
-      canvas.drawPath(branch, _solid);
+      canvas.drawPath(arm, i.isEven ? _solid : _soft);
+      // Ramos laterais curtos
+      final branchA = a + 0.45;
+      final branchB = a - 0.45;
+      for (final ba in [branchA, branchB]) {
+        final bTip =
+            mid + Offset(math.cos(ba) * s * 0.12, math.sin(ba) * s * 0.12);
+        final bp = Offset(-math.sin(ba), math.cos(ba));
+        final branch = Path()
+          ..moveTo(mid.dx, mid.dy)
+          ..lineTo(bTip.dx + bp.dx * s * 0.04, bTip.dy + bp.dy * s * 0.04)
+          ..lineTo(bTip.dx - bp.dx * s * 0.04, bTip.dy - bp.dy * s * 0.04)
+          ..close();
+        canvas.drawPath(branch, _solid);
+      }
     }
-    canvas.drawCircle(c, s * 0.06, _solid);
   }
 
   void _share(Canvas canvas, Offset c, double s) {

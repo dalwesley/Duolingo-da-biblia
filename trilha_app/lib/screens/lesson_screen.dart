@@ -27,11 +27,13 @@ import '../widgets/immersive_background.dart';
 import '../widgets/question_report_sheet.dart';
 import '../widgets/study_panel.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/verse_fill_panel.dart';
+import '../data/memory_verses.dart';
 import '../screens/celebration_screen.dart';
 import '../screens/bible_screen.dart';
 import '../screens/difficulty_picker_screen.dart';
 
-enum _Phase { intro, study, quiz, reflection }
+enum _Phase { intro, study, quiz, micro, reflection }
 
 class LessonScreen extends StatefulWidget {
   final String missionSlug;
@@ -459,6 +461,43 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   void _finishLesson({bool forced = false}) {
+    // Micro-modo de memória antes da reflexão / celebração (não em force fail).
+    if (!forced && !widget.practiceMode && _canOfferMicro()) {
+      setState(() {
+        _showFeedback = false;
+        _selected = null;
+        _isCorrect = null;
+        _phase = _Phase.micro;
+      });
+      return;
+    }
+    _afterMicro(forced: forced);
+  }
+
+  bool _canOfferMicro() {
+    final study = _study;
+    if (study != null && study.passageText.trim().length >= 20) return true;
+    return MemoryVerseCatalog.curated.isNotEmpty;
+  }
+
+  ({String reference, String text}) _microVerse() {
+    final study = _study;
+    if (study != null && study.passageText.trim().length >= 20) {
+      return (reference: study.passageRef, text: study.passageText.trim());
+    }
+    final v = MemoryVerseCatalog.curated.first;
+    return (reference: v.reference, text: v.text);
+  }
+
+  Future<void> _completeMicro(bool correct) async {
+    if (correct) {
+      await context.read<ProgressService>().grantBonusSteps(2);
+    }
+    if (!mounted) return;
+    _afterMicro(forced: _outOfLamps);
+  }
+
+  void _afterMicro({bool forced = false}) {
     if (_hasStudy && !widget.practiceMode) {
       setState(() {
         _showFeedback = false;
@@ -550,6 +589,7 @@ class _LessonScreenState extends State<LessonScreen>
       _Phase.intro => 0.0,
       _Phase.study => 0.08,
       _Phase.quiz => (_questionIndex + (_showFeedback ? 1 : 0)) / total,
+      _Phase.micro => 0.88,
       _Phase.reflection => 0.95,
     };
     final accent = _theme.pathActive;
@@ -631,6 +671,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _difficultyMeta != null
                                     ? 'Pergunta ${_questionIndex + 1}/$total'
                                     : 'Pergunta ${_questionIndex + 1} de $total',
+                              _Phase.micro => 'Memória',
                               _Phase.reflection => 'Anotar',
                             },
                             subtitle: switch (_phase) {
@@ -641,6 +682,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
                                 _difficultyMeta?.label ?? mission.title,
+                              _Phase.micro => 'A palavra ecoa · ~20s',
                               _Phase.reflection => mission.title,
                             },
                             onBack: () => Navigator.pop(context),
@@ -736,6 +778,16 @@ class _LessonScreenState extends State<LessonScreen>
                           onFinish: _completeReflection,
                           onSkip: () => _goToCelebration(forced: _outOfLamps),
                         ),
+                        _Phase.micro => () {
+                          final v = _microVerse();
+                          return VerseFillPanel(
+                            key: const ValueKey('micro'),
+                            reference: v.reference,
+                            verseText: v.text,
+                            accent: accent,
+                            onDone: _completeMicro,
+                          );
+                        }(),
                         _Phase.intro => _IntroPanel(
                           key: const ValueKey('intro'),
                           mission: mission,

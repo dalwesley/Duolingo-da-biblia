@@ -47,11 +47,22 @@ class RoomMember {
   final String name;
   final int steps;
   final bool isUser;
+  /// YYYY-MM-DD da última caminhada sincronizada (se houver).
+  final String? lastWalk;
 
   const RoomMember({
     required this.uid,
     required this.name,
     required this.steps,
     this.isUser = false,
+    this.lastWalk,
   });
+
+  bool get walkedThisWeek => steps > 0;
+
+  bool walkedToday([DateTime? now]) {
+    final d = now ?? DateTime.now();
+    final key = d.toIso8601String().substring(0, 10);
+    return lastWalk == key;
+  }
 }

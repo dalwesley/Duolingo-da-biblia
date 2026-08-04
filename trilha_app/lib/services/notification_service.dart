@@ -6,6 +6,7 @@ import 'package:timezone/timezone.dart' as tz;
 
 import '../data/memory_verses.dart';
 import '../models/daily_quest.dart';
+import '../utils/dust_copy.dart';
 import 'progress_service.dart';
 
 /// Ação ao tocar na notificação (deep link leve).
@@ -214,10 +215,13 @@ class NotificationService {
         id: _idLost1,
         when: _daysFromNow(1, 10, 15),
         copy: _ReminderCopy(
-          title: 'Sua sequência sente sua falta',
-          body: streak > 0
-              ? '$name, sua sequência de $streak ${streak == 1 ? 'dia' : 'dias'} ainda vale. Uma lição e você retoma o ritmo.'
-              : '$name, a próxima lição te espera — um passo basta para recomeçar.',
+          title: DustCopy.lostAwayTitle(daysAway: daysAway),
+          body: DustCopy.lostAwayBody(
+            name: name,
+            streak: streak,
+            daysAway: daysAway,
+            hasFreeze: progress.hasStreakFreeze,
+          ),
           action: ReminderAction.home,
           priority: 110,
         ),
@@ -229,10 +233,13 @@ class NotificationService {
         id: _idLost2,
         when: _daysFromNow(2, 19, 0),
         copy: _ReminderCopy(
-          title: 'Ainda dá tempo',
-          body: progress.hasStreakFreeze
-              ? '$name, o gelo pode cobrir 1 dia. Volte hoje e proteja a sequência.'
-              : '$name, uma lição retoma a sequência. A caravana te espera.',
+          title: DustCopy.lostAwayTitle(daysAway: daysAway + 1),
+          body: DustCopy.lostAwayBody(
+            name: name,
+            streak: streak,
+            daysAway: daysAway + 1,
+            hasFreeze: progress.hasStreakFreeze,
+          ),
           action: ReminderAction.home,
           priority: 105,
         ),
@@ -245,9 +252,12 @@ class NotificationService {
         id: _idSoft,
         when: _nextSlot(20, 30),
         copy: _ReminderCopy(
-          title: 'Última chamada',
-          body:
-              '$name, faltam ${progress.streakRiskCountdown}. Uma lição protege a sequência.',
+          title: DustCopy.atRiskTitle(lateEvening: true),
+          body: DustCopy.eveningSoftBody(
+            name: name,
+            countdown: progress.streakRiskCountdown,
+            hasFreeze: progress.hasStreakFreeze,
+          ),
           action: ReminderAction.home,
           priority: 130,
         ),
@@ -299,16 +309,23 @@ class NotificationService {
       final returning = progress.isReturningAfterGap;
       hooks.add(_ReminderCopy(
         title: atRisk
-            ? 'Proteja a sequência'
+            ? DustCopy.atRiskTitle(
+                lateEvening: DateTime.now().hour >= 19,
+              )
             : returning
                 ? 'Hora de retomar'
                 : streak > 0
                     ? 'Continue a jornada'
                     : 'Meta de hoje',
         body: atRisk
-            ? '$name, a sequência está em risco. Faltam ${progress.streakRiskCountdown} — uma lição e você alcança o grupo.'
+            ? DustCopy.atRiskBody(
+                name: name,
+                countdown: progress.streakRiskCountdown,
+                hasFreeze: progress.hasStreakFreeze,
+                streak: streak,
+              )
             : returning
-                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. Um passo retoma o ritmo.'
+                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. A trilha empoeira — um passo limpa o caminho.'
                 : streak > 0
                     ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
                     : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
