@@ -260,6 +260,66 @@ class _StudyPanelState extends State<StudyPanel>
             ),
           ],
 
+          if (study.relatedVerses.isNotEmpty) ...[
+            const SizedBox(height: AppSpace.section),
+            Text(
+              'CONECTANDO AS ESCRITURAS',
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 10,
+                weight: FontWeight.w900,
+                letterSpacing: 1.4,
+                color: accent.withValues(alpha: 0.9),
+              ),
+            ),
+            const SizedBox(height: AppSpace.sm),
+            ...study.relatedVerses.map((v) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: GestureDetector(
+                  onTap: () => showVerseStudyFromReference(context, v.reference),
+                  child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.md),
+                      color: Colors.white.withValues(alpha: 0.05),
+                      border: Border.all(
+                        color: Colors.white.withValues(alpha: 0.12),
+                      ),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          v.reference,
+                          style: AppTypography.label(
+                            size: 13,
+                            weight: FontWeight.w800,
+                            color: AppColors.textOnDark,
+                          ),
+                        ),
+                        if (v.reason.isNotEmpty) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            v.reason,
+                            style: AppTypography.body(
+                              size: 13,
+                              height: 1.35,
+                              color: AppColors.textOnDark.withValues(
+                                alpha: 0.68,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ],
+
           if (widget.priorReflection != null) ...[
             const SizedBox(height: 14),
             Container(

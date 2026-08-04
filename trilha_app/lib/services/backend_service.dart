@@ -926,25 +926,60 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Jogadores reais do ranking geral (exclui o próprio usuário).
-  Future<List<CloudPlayer>> fetchOverallPlayers({int limit = 30}) async {
+  ///
+  /// Fonte principal: `users/` (progresso sincronizado). Espelho
+  /// `overallPlayers` entra como complemento (versões antigas / falha parcial).
+  Future<List<CloudPlayer>> fetchOverallPlayers({int limit = 50}) async {
     if (!isActive) return const [];
     try {
-      final snap = await _db
-          .collection('overallPlayers')
-          .orderBy('xp', descending: true)
-          .limit(limit)
-          .get();
-      return [
-        for (final d in snap.docs)
-          if (d.id != _uid)
-            CloudPlayer(
-              uid: d.id,
-              name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
-                  ? d.data()['name'] as String
-                  : 'Aprendiz',
-              steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
-            ),
-      ];
+      final byUid = <String, CloudPlayer>{};
+
+      void ingest(QueryDocumentSnapshot<Map<String, dynamic>> d) {
+        if (d.id == _uid) return;
+        final data = d.data();
+        final steps = (data['steps'] as num?)?.toInt() ??
+            (data['xp'] as num?)?.toInt() ??
+            0;
+        final rawName = (data['userName'] as String?)?.trim().isNotEmpty == true
+            ? data['userName'] as String
+            : (data['name'] as String?)?.trim().isNotEmpty == true
+                ? data['name'] as String
+                : 'Aprendiz';
+        final prev = byUid[d.id];
+        if (prev == null || steps > prev.steps) {
+          byUid[d.id] = CloudPlayer(uid: d.id, name: rawName, steps: steps);
+        } else if (prev.steps == steps &&
+            ProgressService.isPlaceholderUserName(prev.name) &&
+            !ProgressService.isPlaceholderUserName(rawName)) {
+          byUid[d.id] = CloudPlayer(uid: d.id, name: rawName, steps: steps);
+        }
+      }
+
+      try {
+        final usersSnap = await _db.collection('users').limit(100).get();
+        for (final d in usersSnap.docs) {
+          ingest(d);
+        }
+      } catch (e) {
+        debugPrint('Ranking geral via users/ falhou: $e');
+      }
+
+      try {
+        final overallSnap =
+            await _db.collection('overallPlayers').limit(100).get();
+        for (final d in overallSnap.docs) {
+          ingest(d);
+        }
+      } catch (e) {
+        debugPrint('Ranking geral via overallPlayers falhou: $e');
+      }
+
+      final list = byUid.values.toList()
+        ..sort((a, b) {
+          if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+          return a.name.compareTo(b.name);
+        });
+      return list.take(limit).toList();
     } catch (e) {
       debugPrint('Falha ao buscar ranking geral: $e');
       return const [];

@@ -20,6 +20,7 @@ export const COL = {
   difficulties: 'content_difficulties',
   studies: 'content_mission_studies',
   meta: 'content_meta',
+  reports: 'content_question_reports',
 };
 
 function sortByOrder(items) {

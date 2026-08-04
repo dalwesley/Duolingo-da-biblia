@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/bible_chronology.dart';
+import '../models/bible_reading_plan.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -15,6 +17,7 @@ import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/verse_study_sheet.dart';
+import 'bible_reading_plan_screen.dart';
 
 /// Aba Bíblia — navegação livro → capítulo → leitura, tudo offline.
 class BibleScreen extends StatefulWidget {
@@ -195,6 +198,13 @@ class _BibleScreenState extends State<BibleScreen> {
         books: books,
         onPick: (i) => setState(() => _bookIndex = i),
         onSearch: () => setState(() => _searching = true),
+        onOpenPlan: () {
+          Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const BibleReadingPlanScreen(),
+            ),
+          );
+        },
       );
     }
 
@@ -238,16 +248,23 @@ class _BookPicker extends StatelessWidget {
   final List<BibleBook> books;
   final ValueChanged<int> onPick;
   final VoidCallback onSearch;
+  final VoidCallback onOpenPlan;
 
   const _BookPicker({
     required this.topBar,
     required this.books,
     required this.onPick,
     required this.onSearch,
+    required this.onOpenPlan,
   });
 
   @override
   Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final order = progress.bibleBrowseOrder;
+    final plan = progress.bibleReadingPlan;
+    final a = Appearance.of(context);
+
     return ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.screen,
@@ -269,9 +286,9 @@ class _BookPicker extends StatelessWidget {
                 vertical: AppSpace.md,
               ),
               decoration: BoxDecoration(
-                color: Appearance.of(context).cardFillSoft,
+                color: a.cardFillSoft,
                 borderRadius: BorderRadius.circular(AppRadii.lg),
-                border: Border.all(color: Appearance.of(context).cardBorder),
+                border: Border.all(color: a.cardBorder),
               ),
               child: Row(
                 children: [
@@ -288,7 +305,7 @@ class _BookPicker extends StatelessWidget {
                       style: AppTypography.body(
                         size: 14,
                         weight: FontWeight.w600,
-                        color: Appearance.of(context).textMuted(0.55),
+                        color: a.textMuted(0.55),
                       ),
                     ),
                   ),
@@ -299,19 +316,268 @@ class _BookPicker extends StatelessWidget {
         ),
         const SizedBox(height: AppSpace.sm),
         const _TranslationPicker(),
-        const SizedBox(height: AppSpace.section),
-        _TestamentSection(
-          title: 'ANTIGO TESTAMENTO',
-          books: books.take(BibleService.oldTestamentCount).toList(),
-          offset: 0,
-          onPick: onPick,
+        const SizedBox(height: AppSpace.sm),
+        _PlanEntryCard(plan: plan, onOpen: onOpenPlan),
+        const SizedBox(height: AppSpace.md),
+        _BrowseOrderToggle(
+          value: order,
+          onChanged: (o) =>
+              context.read<ProgressService>().setBibleBrowseOrder(o),
         ),
         const SizedBox(height: AppSpace.section),
-        _TestamentSection(
-          title: 'NOVO TESTAMENTO',
-          books: books.skip(BibleService.oldTestamentCount).toList(),
-          offset: BibleService.oldTestamentCount,
+        if (order == BibleReadingOrder.canonical) ...[
+          _TestamentSection(
+            title: 'ANTIGO TESTAMENTO',
+            books: books.take(BibleService.oldTestamentCount).toList(),
+            offset: 0,
+            onPick: onPick,
+          ),
+          const SizedBox(height: AppSpace.section),
+          _TestamentSection(
+            title: 'NOVO TESTAMENTO',
+            books: books.skip(BibleService.oldTestamentCount).toList(),
+            offset: BibleService.oldTestamentCount,
+            onPick: onPick,
+          ),
+        ] else
+          ..._chronologicalSections(books, onPick),
+      ],
+    );
+  }
+
+  List<Widget> _chronologicalSections(
+    List<BibleBook> books,
+    ValueChanged<int> onPick,
+  ) {
+    final ordered = BibleChronology.chronologicalIndices([
+      for (final b in books) (abbrev: b.abbrev, name: b.name),
+    ]);
+
+    final byEra = <String, List<({BibleBook book, int index})>>{};
+    for (final e in ordered) {
+      byEra.putIfAbsent(e.eraId, () => []);
+      byEra[e.eraId]!.add((book: books[e.bookIndex], index: e.bookIndex));
+    }
+
+    final widgets = <Widget>[];
+    for (final era in BibleChronology.eras) {
+      final entries = byEra[era.id];
+      if (entries == null || entries.isEmpty) continue;
+      if (widgets.isNotEmpty) {
+        widgets.add(const SizedBox(height: AppSpace.section));
+      }
+      widgets.add(
+        _ChronoEraSection(
+          era: era,
+          entries: entries,
           onPick: onPick,
+        ),
+      );
+    }
+    return widgets;
+  }
+}
+
+class _PlanEntryCard extends StatelessWidget {
+  final BibleReadingPlan plan;
+  final VoidCallback onOpen;
+
+  const _PlanEntryCard({required this.plan, required this.onOpen});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final subtitle = plan.active
+        ? (plan.doneToday
+            ? 'Porção de hoje concluída · ${plan.order.shortLabel}'
+            : 'Continuar · ${plan.minutesPerDay} min · ${plan.order.shortLabel}')
+        : 'Canônica ou cronológica · no tempo que você tem';
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onOpen,
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: Ink(
+          padding: const EdgeInsets.all(AppSpace.md),
+          decoration: BoxDecoration(
+            color: AppColors.cedar.withValues(alpha: 0.12),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            border: Border.all(
+              color: AppColors.cedar.withValues(alpha: 0.45),
+            ),
+          ),
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.book,
+                size: 22,
+                accent: AppColors.cedar,
+                framed: false,
+              ),
+              const SizedBox(width: AppSpace.sm),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      plan.active ? 'Plano de leitura' : 'Criar plano de leitura',
+                      style: AppTypography.title(
+                        size: 15,
+                        weight: FontWeight.w800,
+                        color: a.text,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      subtitle,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textMuted(0.65),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(
+                Icons.chevron_right_rounded,
+                size: 20,
+                color: Colors.white.withValues(alpha: 0.35),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _BrowseOrderToggle extends StatelessWidget {
+  final BibleReadingOrder value;
+  final ValueChanged<BibleReadingOrder> onChanged;
+
+  const _BrowseOrderToggle({required this.value, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        SectionLabel('Ordem dos livros', color: a.sectionLabel),
+        const SizedBox(height: AppSpace.sm),
+        Row(
+          children: [
+            for (final o in BibleReadingOrder.values) ...[
+              if (o != BibleReadingOrder.values.first) const SizedBox(width: 8),
+              Expanded(
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () => onChanged(o),
+                    borderRadius: BorderRadius.circular(AppRadii.pill),
+                    child: Ink(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      decoration: BoxDecoration(
+                        color: value == o
+                            ? AppColors.cedar.withValues(alpha: 0.22)
+                            : a.cardFillSoft,
+                        borderRadius: BorderRadius.circular(AppRadii.pill),
+                        border: Border.all(
+                          color: value == o
+                              ? AppColors.cedar.withValues(alpha: 0.7)
+                              : a.cardBorder,
+                        ),
+                      ),
+                      child: Text(
+                        o.shortLabel,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w800,
+                          color: value == o ? AppColors.cedar : a.text,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _ChronoEraSection extends StatelessWidget {
+  final BibleEra era;
+  final List<({BibleBook book, int index})> entries;
+  final ValueChanged<int> onPick;
+
+  const _ChronoEraSection({
+    required this.era,
+    required this.entries,
+    required this.onPick,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Container(
+              width: 3,
+              height: 14,
+              decoration: BoxDecoration(
+                color: AppColors.cedar,
+                borderRadius: BorderRadius.circular(2),
+              ),
+            ),
+            const SizedBox(width: AppSpace.sm),
+            Expanded(
+              child: SectionLabel(era.title, color: a.sectionLabel),
+            ),
+            Text(
+              '${entries.length}',
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.textMuted(0.45),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Padding(
+          padding: const EdgeInsets.only(left: 11),
+          child: Text(
+            era.blurb,
+            style: AppTypography.body(
+              size: 12,
+              color: a.textMuted(0.55),
+            ),
+          ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        GlassCard(
+          padding: EdgeInsets.zero,
+          radius: AppRadii.lg,
+          child: Column(
+            children: List.generate(entries.length, (i) {
+              final isLast = i == entries.length - 1;
+              return _BookRow(
+                book: entries[i].book,
+                onTap: () => onPick(entries[i].index),
+                showDivider: !isLast,
+                isFirst: i == 0,
+                isLast: isLast,
+              );
+            }),
+          ),
         ),
       ],
     );

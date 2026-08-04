@@ -34,7 +34,7 @@ flutter run -d <device-id>
 
 ## Conteúdo das trilhas
 
-O app lê trilhas do Firestore (`content_trails`), com cache local e fallback em `assets/data/trails.json`.
+O app lê trilhas do Firestore (`content_trails`), com cache em disco. Currículo não vem empacotado no app.
 
 Para editar / publicar conteúdo, use o painel em `../admin/`.
 

@@ -26,9 +26,10 @@ service cloud.firestore {
       return field is int && field >= 0 && field < 100000000;
     }
 
-    // Cada usuário só lê/escreve o próprio progresso.
+    // Progresso: qualquer autenticado lê (ranking geral precisa de nome/passos
+    // dos outros). Escrita só do dono.
     match /users/{uid} {
-      allow read: if isSignedIn() && request.auth.uid == uid;
+      allow read: if isSignedIn();
       allow write: if isSignedIn()
         && request.auth.uid == uid
         && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps))
@@ -128,6 +129,29 @@ service cloud.firestore {
     match /content_meta/{id} {
       allow read: if true;
       allow write: if isContentEditor();
+    }
+
+    // Relatos de erro em perguntas (usuários autenticados criam; editores revisam).
+    match /content_question_reports/{id} {
+      allow read: if isContentEditor();
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'open'
+        && request.resource.data.category in [
+          'theological', 'interpretation', 'wrong_answer',
+          'feedback', 'typo', 'other'
+        ]
+        && request.resource.data.questionId is string
+        && request.resource.data.questionId.size() > 0
+        && request.resource.data.questionId.size() < 200
+        && request.resource.data.questionText is string
+        && request.resource.data.questionText.size() < 600
+        && request.resource.data.missionSlug is string
+        && request.resource.data.missionSlug.size() < 120
+        && (!('comment' in request.resource.data)
+            || (request.resource.data.comment is string
+                && request.resource.data.comment.size() <= 800));
+      allow update, delete: if isContentEditor();
     }
 
     // Perfis do painel admin.

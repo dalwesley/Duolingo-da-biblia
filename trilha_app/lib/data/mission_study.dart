@@ -1,8 +1,22 @@
 import '../services/content_catalog_service.dart';
 
 /// Conteúdo de estudo por missão — profundidade além do quiz.
-/// Fonte: Firestore → cache → `assets/data/mission_studies.json`
+/// Fonte: Firestore → cache em disco
 /// (via [ContentCatalogService]).
+class RelatedVerse {
+  final String reference;
+  final String reason;
+
+  const RelatedVerse({required this.reference, required this.reason});
+
+  factory RelatedVerse.fromMap(Map<String, dynamic> map) {
+    return RelatedVerse(
+      reference: map['reference'] as String? ?? '',
+      reason: map['reason'] as String? ?? '',
+    );
+  }
+}
+
 class MissionStudy {
   final String passageRef;
   final String passageText;
@@ -11,6 +25,7 @@ class MissionStudy {
   final String keywordGloss;
   final String focusQuestion;
   final List<String> reflectionPrompts;
+  final List<RelatedVerse> relatedVerses;
 
   const MissionStudy({
     required this.passageRef,
@@ -20,6 +35,7 @@ class MissionStudy {
     required this.keywordGloss,
     required this.focusQuestion,
     required this.reflectionPrompts,
+    this.relatedVerses = const [],
   });
 
   factory MissionStudy.fromMap(Map<String, dynamic> remote) {
@@ -32,6 +48,11 @@ class MissionStudy {
       focusQuestion: remote['focusQuestion'] as String? ?? '',
       reflectionPrompts: (remote['reflectionPrompts'] as List? ?? [])
           .map((e) => e.toString())
+          .toList(),
+      relatedVerses: (remote['relatedVerses'] as List? ?? [])
+          .whereType<Map>()
+          .map((e) => RelatedVerse.fromMap(Map<String, dynamic>.from(e)))
+          .where((v) => v.reference.isNotEmpty)
           .toList(),
     );
   }

@@ -158,14 +158,17 @@ async function main() {
   }
 
   const bankFiles = [
-    'genesis_questions.json',
-    'exodo_questions.json',
-    'ot_questions.json',
-    'nt_questions.json',
+    ['genesis_questions.json', 'genesis-1-11'],
+    ['exodo_questions.json', 'exodo'],
+    ['ot_questions.json', null],
+    ['nt_questions.json', null],
+    ['sermao_questions.json', 'sermao-do-monte'],
+    ['epistolas_questions.json', null],
+    ['buracos_questions.json', null],
   ];
   const seen = new Set();
   const questions = [];
-  for (const file of bankFiles) {
+  for (const [file, defaultTrail] of bankFiles) {
     const path = join(assetsRoot, file);
     if (!existsSync(path)) {
       console.log(`  (sem ${file})`);
@@ -176,6 +179,9 @@ async function main() {
     for (const q of list) {
       if (!q?.id || seen.has(q.id)) continue;
       seen.add(q.id);
+      if (!q.trail && !q.trailSlug && defaultTrail) {
+        q.trail = defaultTrail;
+      }
       questions.push(q);
       added += 1;
     }
@@ -224,8 +230,8 @@ async function main() {
     doc(db, 'content_meta', 'app_release'),
     {
       enabled: true,
-      latestVersion: '1.0.2',
-      latestBuild: 3,
+      latestVersion: '1.0.14',
+      latestBuild: 14,
       minBuild: 1,
       androidStoreUrl:
         'https://play.google.com/store/apps/details?id=com.trilha.trilha_app',

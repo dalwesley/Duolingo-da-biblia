@@ -8,6 +8,7 @@ import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../models/question_report.dart';
 import '../services/analytics_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
@@ -23,6 +24,7 @@ import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/question_report_sheet.dart';
 import '../widgets/study_panel.dart';
 import '../widgets/top_bar.dart';
 import '../screens/celebration_screen.dart';
@@ -781,12 +783,19 @@ class _LessonScreenState extends State<LessonScreen>
               if (_showFeedback && _selected != null && _isCorrect != null)
                 _FeedbackOverlay(
                   question: _question,
+                  questionId: _questionIndex < _pickedIds.length
+                      ? _pickedIds[_questionIndex]
+                      : '${widget.missionSlug}_q$_questionIndex',
                   selected: _selected!,
                   isCorrect: _isCorrect!,
                   isLast: _outOfLamps || _questionIndex >= total - 1,
                   accent: accent,
                   outOfLamps: _outOfLamps,
                   verseText: MissionStudy.verseText(_question.verseRef),
+                  missionSlug: widget.missionSlug,
+                  trailSlug: _trailSlug,
+                  difficulty: _difficultyMeta?.difficulty.id,
+                  practiceMode: widget.practiceMode,
                   onContinue: _continue,
                 ),
             ],
@@ -938,23 +947,33 @@ class _IntroPanel extends StatelessWidget {
 
 class _FeedbackOverlay extends StatefulWidget {
   final Question question;
+  final String questionId;
   final String selected;
   final bool isCorrect;
   final bool isLast;
   final Color accent;
   final bool outOfLamps;
   final String? verseText;
+  final String missionSlug;
+  final String? trailSlug;
+  final String? difficulty;
+  final bool practiceMode;
   final VoidCallback onContinue;
 
   const _FeedbackOverlay({
     required this.question,
+    required this.questionId,
     required this.selected,
     required this.isCorrect,
     required this.isLast,
     required this.accent,
     required this.onContinue,
+    required this.missionSlug,
     this.outOfLamps = false,
     this.verseText,
+    this.trailSlug,
+    this.difficulty,
+    this.practiceMode = false,
   });
 
   @override
@@ -963,6 +982,42 @@ class _FeedbackOverlay extends StatefulWidget {
 
 class _FeedbackOverlayState extends State<_FeedbackOverlay> {
   bool _reread = false;
+  bool _reported = false;
+
+  Future<void> _openReport() async {
+    if (_reported) return;
+    HapticFeedback.selectionClick();
+    final sent = await showQuestionReportSheet(
+      context,
+      buildDraft: (category, comment) => QuestionReportDraft(
+        questionId: widget.questionId,
+        questionText: widget.question.question,
+        verseRef: widget.question.verseRef,
+        selectedOptionId: widget.selected,
+        selectedOptionText:
+            QuestionFeedback.optionText(widget.question, widget.selected),
+        correctOptionId: widget.question.correctOptionId,
+        correctOptionText: QuestionFeedback.correctOptionText(widget.question),
+        userWasCorrect: widget.isCorrect,
+        missionSlug: widget.missionSlug,
+        trailSlug: widget.trailSlug,
+        difficulty: widget.difficulty,
+        practiceMode: widget.practiceMode,
+        category: category,
+        comment: comment,
+      ),
+    );
+    if (!mounted) return;
+    if (sent) {
+      setState(() => _reported = true);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Obrigado — vamos revisar com cuidado.'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -1255,6 +1310,24 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                       onTap: canContinue ? widget.onContinue : () {},
                     ),
                   ),
+                  if (!outOfLamps) ...[
+                    const SizedBox(height: AppSpace.sm),
+                    TextButton(
+                      onPressed: _reported ? null : _openReport,
+                      child: Text(
+                        _reported
+                            ? 'Relato enviado'
+                            : 'Relatar problema nesta pergunta',
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w600,
+                          color: AppColors.textOnDark.withValues(
+                            alpha: _reported ? 0.35 : 0.55,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),

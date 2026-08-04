@@ -2,6 +2,7 @@ import { didAnonFail, getAnonFailMessage, getUser, isAuthenticated, logOut, mapA
 import { renderDashboard } from './dashboard-page.js';
 import { renderBankPage } from './bank-page.js';
 import { renderImportPage } from './import-page.js';
+import { renderReportsPage } from './reports-page.js';
 import { renderStudiesPage } from './studies-page.js';
 import { renderTrailEditor, renderTrailsList } from './trails-page.js';
 import {
@@ -26,6 +27,7 @@ const NAV = [
   { route: 'trails', label: 'Trilhas', icon: '🗺️', hint: 'Conteúdo principal' },
   { route: 'bank', label: 'Perguntas', icon: '❓', hint: 'Banco' },
   { route: 'studies', label: 'Estudos', icon: '📖', hint: 'Preparo' },
+  { route: 'reports', label: 'Relatos', icon: '⚑', hint: 'Erros reportados' },
   { route: 'import', label: 'Importar', icon: '⬆️', hint: 'JSON' },
 ];
 
@@ -177,6 +179,7 @@ async function renderPage() {
   if (route.startsWith('trail:')) return renderTrailEditor(page, route.slice(6), navigate);
   if (route === 'bank') return renderBankPage(page);
   if (route === 'studies') return renderStudiesPage(page);
+  if (route === 'reports') return renderReportsPage(page);
   if (route === 'import') return renderImportPage(page);
   page.innerHTML = `<div class="card"><p>Rota desconhecida.</p></div>`;
 }

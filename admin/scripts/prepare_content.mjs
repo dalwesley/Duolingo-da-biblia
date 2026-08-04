@@ -196,6 +196,16 @@ function extractNtBank(trails) {
     }
   }
 
+  // Não apagar banco NT denso já existente se as missões não têm perguntas embutidas.
+  if (out.length === 0) {
+    const existing = bankQuestions('nt_questions.json');
+    if (existing.length > 0) {
+      console.log(
+        `✓ nt_questions.json: preservado (${existing.length}; trails sem embutidas)`,
+      );
+      return existing.length;
+    }
+  }
   writeJson('nt_questions.json', { questions: out });
   console.log(`✓ nt_questions.json: ${out.length} (NT vivo, ≥5/seção/dificuldade quando possível)`);
   return out;
@@ -362,7 +372,16 @@ function buildVerseMap(questions) {
   return bySection;
 }
 
-const HANDCRAFTED_PREFIXES = ['gen-', 'gen12-', 'exo-', 'evg-', 'ato-', 'apo-'];
+const HANDCRAFTED_PREFIXES = [
+  'gen-',
+  'gen12-',
+  'exo-',
+  'evg-',
+  'ato-',
+  'apo-',
+  'sm-',
+  'cp-',
+];
 
 function isHandcrafted(slug) {
   return HANDCRAFTED_PREFIXES.some((p) => slug.startsWith(p));

@@ -78,6 +78,7 @@ function emptyStudy() {
     keywordGloss: '',
     focusQuestion: '',
     reflectionPrompts: [],
+    relatedVerses: [],
   };
 }
 
@@ -137,6 +138,7 @@ function ensureStructure(draft, studyMap = {}) {
               keywordGloss: remote.keywordGloss || '',
               focusQuestion: remote.focusQuestion || '',
               reflectionPrompts: remote.reflectionPrompts || [],
+              relatedVerses: remote.relatedVerses || [],
             }
           : emptyStudy();
       }
@@ -619,6 +621,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
             keywordGloss: ms._study.keywordGloss || '',
             focusQuestion: ms._study.focusQuestion || '',
             reflectionPrompts: ms._study.reflectionPrompts || [],
+            relatedVerses: ms._study.relatedVerses || [],
           });
         }
       }

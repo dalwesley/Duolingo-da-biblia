@@ -54,6 +54,12 @@ export async function renderDashboard(root) {
           <span>Textos do preparo</span>
           <em>${studies} estudos</em>
         </button>
+        <button type="button" class="ez-action" data-route="reports">
+          <span class="ez-action-icon">⚑</span>
+          <strong>Relatos</strong>
+          <span>Erros teológicos e de conteúdo</span>
+          <em>Revisão da comunidade</em>
+        </button>
         <button type="button" class="ez-action" data-route="import">
           <span class="ez-action-icon">⬆️</span>
           <strong>Importar</strong>

@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -35,21 +34,8 @@ class LeagueEntry {
   const LeagueEntry({required this.name, required this.steps, this.isUser = false});
 }
 
-class _LeagueBot {
-  final String name;
-
-  /// XP que o bot terá ao fim da semana.
-  final int weeklyTarget;
-
-  /// Expoente do ritmo: <1 começa rápido, >1 acelera no fim.
-  final double pace;
-
-  const _LeagueBot(this.name, this.weeklyTarget, this.pace);
-}
-
-/// Caravana semanal: 19 companheiros determinísticos por semana + o
-/// usuário, ranqueados por passos ganhos na semana. Tier e settlement
-/// sincronizam no Firestore (users/{uid}); bots completam o grupo de 20.
+/// Caravana semanal: jogadores reais do Firestore + o usuário, ranqueados
+/// por passos. Tier e settlement sincronizam em users/{uid}.
 class LeagueService extends ChangeNotifier {
   static const _keyTier = 'leagueTier';
   static const _keyProcessedWeek = 'leagueProcessedWeek';
@@ -60,15 +46,6 @@ class LeagueService extends ChangeNotifier {
   static const promoteCount = 7;
   static const demoteCount = 5;
   static const promotionBonusXp = 50;
-
-  static const _names = [
-    'Ana Beatriz', 'Samuel R.', 'Débora', 'Lucas M.', 'Rebeca',
-    'Ester L.', 'Davi Luiz', 'Joana P.', 'Miguel', 'Sarah C.',
-    'Calebe', 'Isabela', 'Pedro H.', 'Lídia', 'Mateus V.',
-    'Raquel S.', 'Tiago N.', 'Priscila', 'Elias J.', 'Marta',
-    'Rute A.', 'Abner', 'Noemi', 'Otniel', 'Talita F.',
-    'Bruno E.', 'Carol D.', 'Felipe G.', 'Vitória', 'Gabriel T.',
-  ];
 
   int tierIndex = 0;
   LeagueOutcome? pendingOutcome;
@@ -91,8 +68,6 @@ class LeagueService extends ChangeNotifier {
     final d = now ?? DateTime.now();
     return '${d.year}-${d.month.toString().padLeft(2, '0')}';
   }
-
-  static DateTime _weekStart(String key) => DateTime.parse(key);
 
   /// Dias restantes até a caravana fechar (domingo inclui hoje).
   static int daysLeft([DateTime? now]) {
@@ -178,8 +153,7 @@ class LeagueService extends ChangeNotifier {
 
   /// Fecha a semana anterior se virou a semana. [lastWeekSteps] é o XP final do
   /// usuário na semana [lastWeekKey] (vindos do ProgressService).
-  /// [peerSteps] = XP dos outros jogadores reais daquela semana/tier (mesma
-  /// população do ranking live); bots completam o grupo de 20.
+  /// [peerSteps] = XP dos outros jogadores reais daquela semana/tier.
   Future<void> settleWeekIfNeeded({
     required int lastWeekSteps,
     required String? lastWeekKey,
@@ -200,14 +174,9 @@ class LeagueService extends ChangeNotifier {
     // XP do usuário na semana fechada (0 se o registro não bate).
     final userXp = (lastWeekKey == closedWeek) ? lastWeekSteps : 0;
 
-    // Mesma regra do live: peers reais + bots até 19 + usuário.
-    final weekEnd = _weekStart(closedWeek).add(const Duration(days: 7));
     final peer = peerSteps.take(groupSize - 1).toList();
-    final botsNeeded = groupSize - 1 - peer.length;
-    final bots = _botsForWeek(closedWeek, tierIndex).take(botsNeeded);
     final finalXp = <int>[
       ...peer,
-      for (final b in bots) _botXpAt(b, closedWeek, weekEnd),
       userXp,
     ]..sort((a, b) => b.compareTo(a));
     final rank = finalXp.indexOf(userXp) + 1;
@@ -265,117 +234,41 @@ class LeagueService extends ChangeNotifier {
     }
   }
 
-  /// Classificação atual da semana: usuário + jogadores reais da nuvem (se
-  /// houver) + bots completando o grupo de 20, XP decrescente.
+  /// Classificação da semana: só jogadores reais da nuvem + o usuário.
   List<LeagueEntry> standings({
     required String userName,
     required int userWeeklySteps,
     List<LeagueEntry> realPlayers = const [],
-    DateTime? now,
   }) {
-    final week = weekKey(now);
-    final at = now ?? DateTime.now();
     final real = realPlayers.take(groupSize - 1).toList();
-    final botsNeeded = groupSize - 1 - real.length;
-    final bots = _botsForWeek(week, tierIndex).take(botsNeeded);
     final entries = [
       ...real,
-      for (final b in bots)
-        LeagueEntry(name: b.name, steps: _botXpAt(b, week, at)),
       LeagueEntry(name: userName, steps: userWeeklySteps, isUser: true),
-    ]..sort((a, b) {
-        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
-        // Empate: usuário fica na frente (gentileza de produto).
-        if (a.isUser) return -1;
-        if (b.isUser) return 1;
-        return a.name.compareTo(b.name);
-      });
+    ]..sort(_compareEntries);
     return entries;
   }
 
-  /// Classificação geral (passos totais da jornada). Sem promoção/rebaixamento.
+  /// Classificação geral (passos totais). Só pessoas reais do Firebase.
   List<LeagueEntry> overallStandings({
     required String userName,
     required int userTotalSteps,
     List<LeagueEntry> realPlayers = const [],
   }) {
-    final real = realPlayers.take(groupSize - 1).toList();
-    final botsNeeded = groupSize - 1 - real.length;
-    final bots = _botsForOverall(tierIndex).take(botsNeeded);
     final entries = [
-      ...real,
-      for (final b in bots) LeagueEntry(name: b.name, steps: b.weeklyTarget),
+      ...realPlayers,
       LeagueEntry(name: userName, steps: userTotalSteps, isUser: true),
-    ]..sort((a, b) {
-        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
-        if (a.isUser) return -1;
-        if (b.isUser) return 1;
-        return a.name.compareTo(b.name);
-      });
+    ]..sort(_compareEntries);
     return entries;
   }
 
   int userRank(List<LeagueEntry> entries) =>
       entries.indexWhere((e) => e.isUser) + 1;
 
-  // ---- Simulação determinística -------------------------------------------
-
-  static int _seedFor(String week, int tier) =>
-      week.hashCode ^ (tier * 0x9E3779B9);
-
-  static List<_LeagueBot> _botsForWeek(String week, int tier) {
-    final rng = Random(_seedFor(week, tier));
-    final pool = [..._names]..shuffle(rng);
-    final picked = pool.take(groupSize - 1).toList();
-    final tierBoost = 1.0 + tier * 0.45;
-
-    return List.generate(picked.length, (i) {
-      // Distribuição: poucos muito ativos, maioria moderada, alguns quase parados.
-      final roll = rng.nextDouble();
-      final double target;
-      if (roll < 0.15) {
-        target = (420 + rng.nextInt(320)) * tierBoost; // grinders
-      } else if (roll < 0.65) {
-        target = (140 + rng.nextInt(220)) * tierBoost; // regulares
-      } else {
-        target = (25 + rng.nextInt(90)) * tierBoost; // casuais
-      }
-      final pace = 0.75 + rng.nextDouble() * 0.6;
-      return _LeagueBot(picked[i], target.round(), pace);
-    });
-  }
-
-  static List<_LeagueBot> _botsForOverall(int tier) {
-    final rng = Random(0x0FEA11 ^ (tier * 0x9E3779B9));
-    final pool = [..._names]..shuffle(rng);
-    final picked = pool.take(groupSize - 1).toList();
-    final tierBoost = 1.0 + tier * 0.35;
-    return List.generate(picked.length, (i) {
-      final roll = rng.nextDouble();
-      final double target;
-      if (roll < 0.15) {
-        target = (12000 + rng.nextInt(18000)) * tierBoost;
-      } else if (roll < 0.65) {
-        target = (3500 + rng.nextInt(7000)) * tierBoost;
-      } else {
-        target = (600 + rng.nextInt(2800)) * tierBoost;
-      }
-      return _LeagueBot(picked[i], target.round(), 1.0);
-    });
-  }
-
-  /// XP do bot em um instante da semana (curva de ritmo + variação diária).
-  static int _botXpAt(_LeagueBot bot, String week, DateTime at) {
-    final start = _weekStart(week);
-    final total = const Duration(days: 7).inMinutes;
-    final elapsed = at.difference(start).inMinutes.clamp(0, total);
-    final fraction = elapsed / total;
-    if (fraction <= 0) return 0;
-
-    var xp = bot.weeklyTarget * pow(fraction, bot.pace);
-    // Passos diários: bots "jogam" em blocos, não continuamente.
-    final daySeed = Random(bot.name.hashCode ^ at.day);
-    xp *= 0.92 + daySeed.nextDouble() * 0.08;
-    return xp.round();
+  static int _compareEntries(LeagueEntry a, LeagueEntry b) {
+    if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+    // Empate: usuário fica na frente (gentileza de produto).
+    if (a.isUser) return -1;
+    if (b.isUser) return 1;
+    return a.name.compareTo(b.name);
   }
 }

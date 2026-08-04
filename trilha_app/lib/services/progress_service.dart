@@ -1,9 +1,11 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../models/bible_reading_plan.dart';
 import '../models/daily_quest.dart';
 import '../models/difficulty.dart';
 import '../utils/appearance.dart';
+import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
 
 class AppSettings {
@@ -88,6 +90,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyReadBibleChapters = 'readBibleChapters';
   static const _keyBibleBookmarks = 'bibleBookmarks';
   static const _keySharedVerses = 'sharedVerses';
+  static const _keyBibleBrowseOrder = 'bibleBrowseOrder';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
   /// Espelho local do progresso (escopo por uid; limpo no logout).
@@ -149,6 +152,12 @@ class ProgressService extends ChangeNotifier {
 
   /// Capítulos lidos na Bíblia ("abbrev:capítulo", ex.: "gn:1").
   List<String> readBibleChapters = [];
+
+  /// Plano de leitura (canônico ou cronológico) pelo tempo disponível.
+  BibleReadingPlan bibleReadingPlan = BibleReadingPlan.inactive;
+
+  /// Preferência da lista de livros na aba Bíblia (não é o plano).
+  BibleReadingOrder bibleBrowseOrder = BibleReadingOrder.canonical;
 
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
@@ -302,6 +311,9 @@ class ProgressService extends ChangeNotifier {
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
     _freshInstall = !hasSeenSplash;
     settings = _settingsFromPrefs(prefs);
+    bibleBrowseOrder = BibleReadingOrder.fromStorage(
+      prefs.getString(_keyBibleBrowseOrder),
+    );
     // Instalação nova sem preferência salva → Automático (segue o horário).
     if (_freshInstall && prefs.getString(_keyAppearanceMode) == null) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
@@ -343,6 +355,7 @@ class ProgressService extends ChangeNotifier {
     );
     await prefs.setString(_keyBibleTranslation, settings.bibleTranslationId);
     await prefs.setDouble(_keyFontScale, settings.fontScale);
+    await prefs.setString(_keyBibleBrowseOrder, bibleBrowseOrder.storageKey);
   }
 
   /// Lê snapshot legado em SharedPreferences (migração única → nuvem).
@@ -560,6 +573,7 @@ class ProgressService extends ChangeNotifier {
     readBibleChapters = [];
     bibleBookmarks = [];
     sharedVerses = [];
+    bibleReadingPlan = BibleReadingPlan.inactive;
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
@@ -695,6 +709,98 @@ class ProgressService extends ChangeNotifier {
     }
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
+  }
+
+  Future<void> setBibleBrowseOrder(BibleReadingOrder order) async {
+    if (bibleBrowseOrder == order) return;
+    bibleBrowseOrder = order;
+    await _persistSettingsLocal();
+    notifyListeners();
+  }
+
+  Future<void> startBibleReadingPlan({
+    required BibleReadingOrder order,
+    required int minutesPerDay,
+  }) async {
+    final today = _todayKey();
+    final seq =
+        await BibleReadingPlanService.instance.buildSequence(order);
+    final readKeys = readBibleChapters.toSet();
+    final cursor = BibleReadingPlanService.instance.firstUnreadCursor(
+      seq,
+      readKeys,
+    );
+    bibleReadingPlan = BibleReadingPlan(
+      active: true,
+      order: order,
+      minutesPerDay: minutesPerDay.clamp(5, 120),
+      cursor: cursor,
+      lastCompletedDay: null,
+      completedDays: 0,
+      startedAt: today,
+    );
+    await _save();
+    notifyListeners();
+  }
+
+  /// Avança o cursor do plano por cima de capítulos já lidos na Bíblia.
+  Future<int> syncBibleReadingPlanWithReadChapters() async {
+    if (!bibleReadingPlan.active) return 0;
+    final seq = await BibleReadingPlanService.instance
+        .buildSequence(bibleReadingPlan.order);
+    final next = BibleReadingPlanService.instance.firstUnreadCursor(
+      seq,
+      readBibleChapters.toSet(),
+      from: bibleReadingPlan.cursor,
+    );
+    final skipped = next - bibleReadingPlan.cursor;
+    if (skipped <= 0) return 0;
+    bibleReadingPlan = bibleReadingPlan.copyWith(cursor: next);
+    await _save();
+    notifyListeners();
+    return skipped;
+  }
+
+  Future<void> updateBibleReadingPlanMinutes(int minutesPerDay) async {
+    if (!bibleReadingPlan.active) return;
+    bibleReadingPlan = bibleReadingPlan.copyWith(
+      minutesPerDay: minutesPerDay.clamp(5, 120),
+    );
+    await _save();
+    notifyListeners();
+  }
+
+  /// Avança o cursor após concluir a porção do dia.
+  Future<void> completeBibleReadingPortion({
+    required int toCursor,
+    required List<({String abbrev, int chapter})> chapters,
+  }) async {
+    if (!bibleReadingPlan.active) return;
+    for (final c in chapters) {
+      final key = bibleChapterKey(c.abbrev, c.chapter);
+      if (!readBibleChapters.contains(key)) {
+        readBibleChapters = [...readBibleChapters, key];
+      }
+    }
+    await _bumpQuest('read');
+    await _bumpQuest('seasonal');
+    final today = _todayKey();
+    final already = bibleReadingPlan.lastCompletedDay == today;
+    bibleReadingPlan = bibleReadingPlan.copyWith(
+      cursor: toCursor,
+      lastCompletedDay: today,
+      completedDays: already
+          ? bibleReadingPlan.completedDays
+          : bibleReadingPlan.completedDays + 1,
+    );
+    await _save();
+    notifyListeners();
+  }
+
+  Future<void> clearBibleReadingPlan() async {
+    bibleReadingPlan = BibleReadingPlan.inactive;
+    await _save();
+    notifyListeners();
   }
 
   static String bibleChapterKey(String bookAbbrev, int chapter) =>
@@ -1327,6 +1433,7 @@ class ProgressService extends ChangeNotifier {
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
       'sharedVerses': sharedVerses,
+      'bibleReadingPlan': bibleReadingPlan.toMap(),
       'memoryScores': memoryScores,
       'memoryMastered': memoryMastered,
       'usedQuestionIds': usedQuestionIds,
@@ -1613,6 +1720,17 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['sharedVerses']),
         );
       }
+      if (data.containsKey('bibleReadingPlan')) {
+        final remote = BibleReadingPlan.fromMap(data['bibleReadingPlan']);
+        // Mantém o plano local se estiver mais avançado no mesmo modo.
+        if (!bibleReadingPlan.active ||
+            (remote.active &&
+                remote.order == bibleReadingPlan.order &&
+                remote.cursor >= bibleReadingPlan.cursor) ||
+            (remote.active && !bibleReadingPlan.active)) {
+          bibleReadingPlan = remote;
+        }
+      }
       if (data.containsKey('memoryScores')) {
         memoryScores = _mergeIntMapsMax(
           memoryScores,
@@ -1809,6 +1927,7 @@ class ProgressService extends ChangeNotifier {
     readBibleChapters = [];
     bibleBookmarks = [];
     sharedVerses = [];
+    bibleReadingPlan = BibleReadingPlan.inactive;
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;

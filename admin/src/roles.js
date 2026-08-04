@@ -62,6 +62,12 @@ export function canAccessRoute(routeKey) {
   }
   if (routeKey === 'bank') return Boolean(cachedProfile.permissions?.bank);
   if (routeKey === 'studies') return Boolean(cachedProfile.permissions?.studies);
+  // Relatos: quem edita perguntas ou trilhas precisa ver.
+  if (routeKey === 'reports') {
+    return Boolean(
+      cachedProfile.permissions?.bank || cachedProfile.permissions?.trails,
+    );
+  }
   return false;
 }
 

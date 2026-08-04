@@ -77,8 +77,12 @@ export async function renderStudiesPage(root) {
       keywordGloss: '',
       focusQuestion: '',
       reflectionPrompts: ['', '', ''],
+      relatedVerses: [],
     };
     const prompts = (s.reflectionPrompts || []).join('\n');
+    const related = (s.relatedVerses || [])
+      .map((v) => `${v.reference || ''} | ${v.reason || ''}`.trim())
+      .join('\n');
 
     modal.innerHTML = `
       <div class="modal-backdrop">
@@ -95,6 +99,7 @@ export async function renderStudiesPage(root) {
           </div>
           <label>Pergunta foco<input id="st-focus" value="${escapeHtml(s.focusQuestion || '')}" /></label>
           <label>Prompts de reflexão (um por linha)<textarea id="st-prompts" rows="4">${escapeHtml(prompts)}</textarea></label>
+          <label>Conexões bíblicas (uma por linha: referência | motivo)<textarea id="st-related" rows="4" placeholder="Oséias 6:6 | Deus deseja misericórdia…">${escapeHtml(related)}</textarea></label>
           <div class="modal-actions">
             <button type="button" class="btn btn-secondary" id="cancel">Cancelar</button>
             <button type="button" class="btn btn-primary" id="st-save">Salvar</button>
@@ -117,6 +122,19 @@ export async function renderStudiesPage(root) {
         showToast('Slug obrigatório', 'error');
         return;
       }
+      const relatedVerses = document
+        .getElementById('st-related')
+        .value.split('\n')
+        .map((l) => l.trim())
+        .filter(Boolean)
+        .map((line) => {
+          const [reference, ...rest] = line.split('|');
+          return {
+            reference: (reference || '').trim(),
+            reason: rest.join('|').trim(),
+          };
+        })
+        .filter((v) => v.reference);
       const payload = {
         slug: id,
         passageRef: document.getElementById('st-ref').value,
@@ -130,6 +148,7 @@ export async function renderStudiesPage(root) {
           .value.split('\n')
           .map((l) => l.trim())
           .filter(Boolean),
+        relatedVerses,
       };
       setLoading(true);
       try {
