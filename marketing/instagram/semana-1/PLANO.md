@@ -1,29 +1,21 @@
 # Plano Instagram — Semana 1 (STWAY)
 
-Tema: **lançar a conta + educar + gerar desejo**.  
-Tom: direto, bíblico, sem “coach spiritual” genérico.
+Tema: **acordar a consciência cristã + lançar desejo pelo app**.  
+Tom: direto, bíblico, confrontador com graça — sem coach espiritual genérico.
 
 ## Bio
 
 **Nome do perfil:** `STWAY`  
 **Nome de exibição:** `STWAY · Bíblia em missões`
 
-**Bio (opção forte)**
+**Bio**
 ```
 A Bíblia em missões diárias.
 
-Aprenda · memorize · avance na trilha.
-Formação bíblica com hábito — sem enrolação.
+Ler. Memorizar. Avançar.
+Um passo por dia na Palavra.
 
 Em breve no iOS e Android
-```
-
-**Alternativa mais curta**
-```
-Missões diárias pra aprender a Bíblia.
-Trilhas · quizzes · hábito que fica.
-
-Baixe em breve
 ```
 
 **Link na bio:** landing / waitlist / App Store quando tiver  
@@ -35,156 +27,250 @@ Baixe em breve
 
 Pasta: `marketing/instagram/semana-1/`
 
-| Dia | Arquivo | Tema |
-|-----|---------|------|
-| Seg | `01-segunda-apresentacao.png` | Apresentação |
-| Ter | `02-terca-problema.png` | Problema |
-| Qua | `03-quarta-como-funciona.png` | Como funciona |
-| Qui | `04-quinta-genesis.png` | Conteúdo (Gênesis) |
-| Sex | `05-sexta-produto.png` | Bastidores / produto |
-| Sáb | `06-sabado-enquete.png` | Enquete |
-| Dom | `07-domingo-cta.png` | CTA lançamento |
-
-Tagline atual na arte de segunda:
-```
-um passo.
-uma jornada.
-uma comunidade.
-```
+| Dia | Arquivo | Tema | Frase da arte |
+|-----|---------|------|---------------|
+| Seg | `01-segunda-apresentacao.png` | Confrontação | A Bíblia fechada não muda ninguém. |
+| Ter | `02-terca-problema.png` | Consciência | Você ora. Mas conhece a Palavra? |
+| Qua | `03-quarta-como-funciona.png` | Escritura | O povo perece por falta de conhecimento. |
+| Qui | `04-quinta-genesis.png` | Discipulado | Discipulado começa na Palavra. |
+| Sex | `05-sexta-produto.png` | Chamado | Missão do dia: abrir a Bíblia. |
+| Sáb | `06-sabado-enquete.png` | Enquete | Se a Bíblia sumisse… você sentiria falta? |
+| Dom | `07-domingo-cta.png` | CTA | Um dia. Um passo. Uma Missão. |
 
 ---
 
 ## Postagens
 
-### Segunda — Apresentação
-**Visual:** logo STWAY + fundo escuro (#050C18)  
+### Segunda — Confrontação (apresentação)
+**Visual:** frase forte + logo STWAY  
 **Arquivo:** `01-segunda-apresentacao.png`
+
+**Arte:**
+```
+A Bíblia fechada
+não muda ninguém.
+```
+Sub: `Abra. Estude. Viva.`
 
 **Legenda:**
 ```
-A Bíblia não precisa ser um livro parado na prateleira.
+A Bíblia na prateleira não transforma coração.
+Nem intenção. Nem “um dia eu leio”.
 
-STWAY transforma o aprendizado em missões diárias:
-você lê, responde, avança na trilha — e cria hábito.
+Só a Palavra aberta — lida, estudada, vivida.
+
+STWAY transforma isso em missões diárias:
+você lê, responde, memoriza e avança na trilha.
+
+Porque cristão sem Escritura
+é discípulo sem mapa.
 
 Bem-vindo. Sua primeira missão te espera.
 
-#STWAY #Biblia #FormacaoBiblica
+#STWAY #Biblia #PalavraDeDeus
 ```
 
-### Terça — Problema
-**Visual:** frase grande na tela  
+---
+
+### Terça — Consciência
+**Visual:** pergunta que incomoda  
 **Arquivo:** `02-terca-problema.png`
 
+**Arte:**
+```
+Você ora.
+Mas conhece a Palavra?
+```
+Sub: `Fé precisa de fundamento.`
+
 **Legenda:**
 ```
-Você já tentou “ler a Bíblia todo dia”
-e parou na segunda semana?
+Você louva.
+Você pede.
+Você compartilha versículo pronto.
 
-Não é falta de fé.
-É falta de ritmo.
+Mas quando foi a última vez
+que você ESTUDOU a Bíblia de verdade?
 
-STWAY foi feito pra isso:
-missões curtas, progresso claro, um passo por vez.
+Não é cobrança.
+É convite.
 
-#Habito #BibliaDiaria #STWAY
+Porque fé sem Escritura
+vira opinião.
+
+STWAY existe pra isso:
+missões curtas, progresso claro, um passo por dia.
+
+#ConscienciaCrista #BibliaDiaria #STWAY
 ```
 
-### Quarta — Como funciona
-**Visual:** mockup do app (home / missão)  
+---
+
+### Quarta — Escritura (Os 4:6)
+**Visual:** versículo + impacto  
 **Arquivo:** `03-quarta-como-funciona.png`
 
+**Arte:**
+```
+“O meu povo está sendo
+destruído, porque lhe falta
+o conhecimento.”
+```
+Sub: `Oséias 4:6`
+
 **Legenda:**
 ```
-Como o STWAY funciona:
+Não é falta de culto.
+Não é falta de louvor.
+É falta de conhecimento da Palavra.
 
+Deus não escondeu o diagnóstico.
+A pergunta é: o que você vai fazer com ele?
+
+No STWAY:
 1. Escolha uma trilha (ex: Gênesis)
 2. Faça a missão do dia
 3. Responda, memorize, avance
 4. Volte amanhã
 
-Aprendizado bíblico com cara de jornada —
-não de lista interminável.
+Conhecer a Bíblia não é hobby cristão.
+É sobrevivência espiritual.
 
-#AppCristao #TrilhaBiblica #STWAY
+#Oseias46 #Escritura #STWAY
 ```
 
-### Quinta — Conteúdo bíblico (prova de valor)
-**Visual:** versículo + arte simples (ex. Gn 1:1 ou Gn 3:15)  
+---
+
+### Quinta — Discipulado
+**Visual:** frase de discipulado  
 **Arquivo:** `04-quinta-genesis.png`
+
+**Arte:**
+```
+Discipulado
+começa na Palavra.
+```
+Sub: `Não no feeling. Na Escritura.`
 
 **Legenda:**
 ```
-“No princípio…”
+Seguir Jesus sem conhecer a Escritura
+é caminhar no escuro chamando de fé.
+
+Discipulado de verdade começa assim:
+abrir a Bíblia. Todo dia. Com intenção.
 
 A trilha de Gênesis no STWAY não é só quiz.
-É contexto, pergunta, feedback — e a Bíblia ao alcance.
+É contexto, pergunta, feedback —
+e a Palavra ao alcance da mão.
 
-Porque conhecer a Escritura muda como você vê tudo.
+Porque quem conhece a Escritura
+enxerga o mundo diferente.
 
 Qual livro você quer aprender primeiro?
 Comenta aí.
 
-#Genesis #EstudoBiblico #STWAY
+#Discipulado #Genesis #STWAY
 ```
 
-### Sexta — Bastidores / produto
-**Visual:** screenshot da trilha ou onboarding  
+---
+
+### Sexta — Chamado / produto
+**Visual:** missão do dia  
 **Arquivo:** `05-sexta-produto.png`
+
+**Arte:**
+```
+Missão do dia:
+abrir a Bíblia.
+```
+Sub: `Sem desculpa. Sem amanhã.`
 
 **Legenda:**
 ```
+Não precisa de mais um sermão salvo.
+Precisa de um hábito santo.
+
 Por trás do STWAY:
+• Trilhas cinematográficas
+• Missões diárias
+• Bíblia offline
+• Progresso que você sente
 
-Trilhas cinematográficas.
-Missões diárias.
-Bíblia offline.
-Progresso que você sente.
+Estamos construindo um app pra quem
+cansou de adiar o estudo da Palavra.
 
-Estamos construindo um app pra quem quer
-conhecer a Bíblia de verdade — e continuar.
+Se isso te incomodou um pouco —
+bom. Consciência viva ainda responde.
 
-Salva esse post se isso faz sentido pra você.
+Salva. Segue. Em breve.
 
 #EmBreve #AppBiblico #STWAY
 ```
 
-### Sábado — Engajamento
-**Visual:** pergunta em tipografia forte  
+---
+
+### Sábado — Enquete (consciência)
+**Visual:** pergunta pesada  
 **Arquivo:** `06-sabado-enquete.png`
+
+**Arte:**
+```
+Se a Bíblia sumisse
+da sua vida por 30 dias…
+você sentiria falta?
+```
+Sub: `Responde com sinceridade.`
 
 **Legenda:**
 ```
-Pergunta sincera:
+Pergunta sem filtro:
 
-O que mais te impede de estudar a Bíblia com constância?
+Se a Bíblia sumisse da sua vida por 30 dias…
 
-A) Tempo
-B) Não sei por onde começar
-C) Esqueço
-D) Acho difícil
+A) Quase não notaria
+B) Sentiria, mas seguiria normal
+C) Ia doer de verdade
+D) Já está sumida há mais tempo que isso
 
 Responde com a letra.
-A gente está construindo o STWAY olhando pra isso.
+Sem vergonha — com consciência.
+
+A gente está construindo o STWAY
+exatamente pra quem escolheu C ou D
+e quer mudar isso.
 
 #Pesquisa #Biblia #STWAY
 ```
 
-### Domingo — Inspiração + CTA
-**Visual:** cena calma + logo  
+---
+
+### Domingo — CTA
+**Visual:** jornada + logo  
 **Arquivo:** `07-domingo-cta.png`
+
+**Arte:**
+```
+Um dia.
+Um passo.
+Uma Missão.
+```
+Sub: `É assim que grandes jornadas começam.`
 
 **Legenda:**
 ```
-Um dia. Uma missão. Um passo.
+Um dia. Um passo. Uma Missão.
 
-A formação bíblica não nasce de um sprint —
-nasce do retorno diário.
+Grandes jornadas com Deus
+não começam no culto perfeito.
+Começam no retorno diário à Palavra.
 
-Se você quer aprender a Bíblia com ritmo,
+Se você sente o peso de conhecer a Bíblia
+e ainda não encontrou ritmo —
 o STWAY está chegando.
 
 Segue pra acompanhar o lançamento.
+Sua próxima missão pode começar em breve.
 
 #Domingo #MissoesDiarias #STWAY
 ```
@@ -195,10 +281,10 @@ Segue pra acompanhar o lançamento.
 
 | Dia | Story |
 |-----|--------|
-| Seg | “Conta nova · quem é o STWAY” + enquete “já estudou Bíblia no celular?” |
-| Ter | Antes/depois: “vontade vs hábito” |
-| Qua | 3 slides: como funciona |
-| Qui | Quiz rápido (1 pergunta de Gênesis) |
-| Sex | Peek do app |
-| Sáb | Caixinha de perguntas |
-| Dom | “Missão de domingo: leia 1 capítulo hoje” |
+| Seg | “A Bíblia fechada não muda ninguém” + enquete “sua Bíblia está aberta ou na prateleira?” |
+| Ter | “Você ora. Mas conhece a Palavra?” + sticker de reação |
+| Qua | Oséias 4:6 em 1 slide + “isso te confrontou?” |
+| Qui | Quiz: “Discipulado começa onde?” (Palavra / culto / feeling) |
+| Sex | Peek do app + “missão do dia: abrir a Bíblia” |
+| Sáb | Caixinha: “o que te impede de estudar a Bíblia?” |
+| Dom | “Missão de domingo: leia 1 capítulo hoje. Depois conta.” |
