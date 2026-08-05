@@ -359,7 +359,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           children: [
             HomeScreen(
               repo: _repo,
-              onOpenTrail: _openTrail,
               onOpenMission: _openMission,
               onOpenTrilhas: _goToTrilhas,
               onOpenProfile: _openProfile,

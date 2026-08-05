@@ -11,7 +11,6 @@ import '../utils/dust_copy.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
-import '../utils/trail_visuals.dart';
 import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
@@ -22,7 +21,6 @@ import '../widgets/home_word_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/league_outcome_card.dart';
 import '../widgets/league_risk_card.dart';
-import '../widgets/sequencia_card.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/streak_week.dart';
 import '../widgets/top_bar.dart';
@@ -34,7 +32,6 @@ import 'practice_screen.dart';
 /// Home — um único trabalho: a próxima lição.
 class HomeScreen extends StatefulWidget {
   final TrailRepository repo;
-  final void Function(String slug) onOpenTrail;
   final void Function(String missionSlug) onOpenMission;
   final VoidCallback onOpenTrilhas;
   final VoidCallback? onOpenLeague;
@@ -44,7 +41,6 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({
     super.key,
     required this.repo,
-    required this.onOpenTrail,
     required this.onOpenMission,
     required this.onOpenTrilhas,
     this.onOpenLeague,
@@ -218,9 +214,6 @@ class _HomeScreenState extends State<HomeScreen>
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
         : null;
-    final prog = active != null
-        ? TrailProgress.getProgress(active, progress.completedMissions)
-        : null;
     final goal = progress.settings.dailyGoal;
     final playedToday = progress.walkedToday;
     final goalMet = progress.dailyGoalMet;
@@ -286,16 +279,6 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        // Sequência — dias seguidos (fora do card da missão).
-        _reveal(
-          2,
-          SequenciaCard(
-            onTap: current != null
-                ? () => widget.onOpenMission(current.slug)
-                : widget.onOpenTrilhas,
-          ),
-        ),
-        const SizedBox(height: AppSpace.section),
         if (progress.showStreakRepairOffer) ...[
           _reveal(2, const StreakRepairBanner()),
           const SizedBox(height: AppSpace.section),
@@ -352,18 +335,6 @@ class _HomeScreenState extends State<HomeScreen>
         if (progress.mistakeQuestionIds.isNotEmpty) ...[
           const SizedBox(height: AppSpace.section),
           _reveal(4, const _RevisitPracticeLink()),
-        ],
-        if (active != null && prog != null && goalMet) ...[
-          const SizedBox(height: AppSpace.section),
-          _reveal(
-            5,
-            _ActiveTrailLine(
-              trail: active,
-              done: prog.done,
-              total: prog.total,
-              onTap: () => widget.onOpenTrail(active.slug),
-            ),
-          ),
         ],
       ],
     );
@@ -506,52 +477,6 @@ class _DayPulse extends StatelessWidget {
           ],
           const SizedBox(height: AppSpace.md),
           const StreakWeek(),
-        ],
-      ),
-    );
-  }
-}
-
-/// Mapa da trilha — só após a meta (não compete com Treinar).
-class _ActiveTrailLine extends StatelessWidget {
-  final Trail trail;
-  final int done;
-  final int total;
-  final VoidCallback onTap;
-
-  const _ActiveTrailLine({
-    required this.trail,
-    required this.done,
-    required this.total,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final visuals = TrailVisuals.forTrail(trail);
-    final a = Appearance.of(context);
-
-    return GlassCard(
-      onTap: onTap,
-      padding: AppMetrics.cardPaddingCompact,
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyphResolver.forTrail(trail.slug),
-            size: AppMetrics.leadingIcon,
-            accent: visuals.accent,
-            glowing: false,
-          ),
-          const SizedBox(width: AppSpace.sm + 2),
-          Expanded(
-            child: Text(
-              'Mapa · ${trail.title} · $done/$total',
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.title(size: 14, color: a.text),
-            ),
-          ),
-          Icon(Icons.chevron_right_rounded, size: 20, color: a.textMuted(0.45)),
         ],
       ),
     );

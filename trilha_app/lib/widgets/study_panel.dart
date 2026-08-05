@@ -363,9 +363,9 @@ class _StudyPanelState extends State<StudyPanel>
             'Leia o trecho quando puder — a passagem contextualiza as respostas.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
-              size: 11,
-              height: 1.35,
-              color: AppColors.textOnDark.withValues(alpha: 0.4),
+              size: 13,
+              height: 1.4,
+              color: AppColors.textOnDark.withValues(alpha: 0.55),
             ),
           ),
         ],
