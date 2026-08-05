@@ -50,9 +50,20 @@ class MainBottomNav extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 72),
             padding: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
-              color: style.navBarFill,
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  Color.lerp(style.navBarFill, Colors.white, 0.05)!,
+                  style.navBarFill,
+                  Color.lerp(style.navBarFill, Colors.black, 0.12)!,
+                ],
+              ),
               borderRadius: BorderRadius.circular(AppRadii.lg),
-              border: Border.all(color: style.navBarBorder),
+              border: Border.all(
+                color: style.navBarBorder,
+                width: AppMetrics.cardBorderWidth,
+              ),
               boxShadow: AppMetrics.cardShadow(elevated: true),
             ),
             child: Row(

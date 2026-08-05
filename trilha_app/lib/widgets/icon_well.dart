@@ -25,11 +25,18 @@ class IconWell extends StatelessWidget {
 
     return BoxDecoration(
       shape: BoxShape.circle,
-      color: tone.withValues(alpha: 0.16),
+      color: tone.withValues(alpha: 0.2),
       border: Border.all(
-        color: tone.withValues(alpha: 0.9),
-        width: (size * 0.05).clamp(2.0, 2.8),
+        color: tone.withValues(alpha: 0.95),
+        width: (size * 0.07).clamp(2.2, 3.2),
       ),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.black.withValues(alpha: 0.35),
+          offset: const Offset(0, 2),
+          blurRadius: 0,
+        ),
+      ],
     );
   }
 

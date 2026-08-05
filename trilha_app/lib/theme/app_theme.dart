@@ -7,6 +7,8 @@ import 'app_colors.dart';
 
 /// Tema STWAY — tipografia, raios, espaçamento e ThemeData.
 /// Cores: ver [AppColors] em `app_colors.dart` (fonte única).
+///
+/// Visual ~70% game: Exo 2 (HUD/títulos) + Nunito (corpo), raios de painel.
 class AppGradients {
   static const hero = LinearGradient(
     begin: Alignment.topLeft,
@@ -22,21 +24,22 @@ class AppGradients {
   );
 }
 
-/// Escala tipográfica unificada.
+/// Escala tipográfica unificada — HUD de jogo sem mudar copy.
 class AppTypography {
-  /// Headlines de UI / jogo — sans forte.
+  /// Headlines de UI / jogo — geometric game.
   static TextStyle display({
     double size = 28,
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.textOnDark,
     double height = 1.1,
     FontStyle fontStyle = FontStyle.normal,
-  }) => GoogleFonts.plusJakartaSans(
+  }) => GoogleFonts.exo2(
     fontSize: size,
     fontWeight: weight,
     color: color,
     height: height,
     fontStyle: fontStyle,
+    letterSpacing: -0.3,
   );
 
   /// Versículo / passagem — só leitura bíblica e citação de estudo.
@@ -59,19 +62,20 @@ class AppTypography {
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.textOnDark,
     double height = 1.2,
-  }) => GoogleFonts.plusJakartaSans(
+  }) => GoogleFonts.exo2(
     fontSize: size,
     fontWeight: weight,
     color: color,
     height: height,
+    letterSpacing: -0.2,
   );
 
   static TextStyle body({
     double size = 14,
-    FontWeight weight = FontWeight.w500,
+    FontWeight weight = FontWeight.w600,
     Color color = AppColors.textOnDark,
     double height = 1.4,
-  }) => GoogleFonts.plusJakartaSans(
+  }) => GoogleFonts.nunito(
     fontSize: size,
     fontWeight: weight,
     color: color,
@@ -82,8 +86,8 @@ class AppTypography {
     double size = 11,
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.accent,
-    double letterSpacing = 1.4,
-  }) => GoogleFonts.plusJakartaSans(
+    double letterSpacing = 1.6,
+  }) => GoogleFonts.exo2(
     fontSize: size,
     fontWeight: weight,
     color: color,
@@ -93,21 +97,21 @@ class AppTypography {
   static TextStyle cta({
     double size = 14,
     Color color = AppColors.inkOnAccent,
-  }) => GoogleFonts.plusJakartaSans(
+  }) => GoogleFonts.exo2(
     fontSize: size,
     fontWeight: FontWeight.w900,
     color: color,
-    letterSpacing: 0.4,
+    letterSpacing: 1.0,
   );
 }
 
-/// Raios padronizados.
+/// Raios padronizados — painéis de jogo (menos “blob”, mais HUD).
 class AppRadii {
-  static const xs = 8.0;
-  static const sm = 12.0;
-  static const md = 16.0;
-  static const lg = 24.0;
-  static const xl = 28.0;
+  static const xs = 6.0;
+  static const sm = 10.0;
+  static const md = 14.0;
+  static const lg = 16.0;
+  static const xl = 20.0;
   static const pill = 999.0;
 }
 
@@ -146,13 +150,13 @@ class AppTheme {
       canvasColor: AppColors.nightMid,
     );
 
-    final jakarta = GoogleFonts.plusJakartaSansTextTheme(base.textTheme).apply(
+    final bodyTheme = GoogleFonts.nunitoTextTheme(base.textTheme).apply(
       bodyColor: AppColors.textOnDark,
       displayColor: AppColors.textOnDark,
     );
 
     return base.copyWith(
-      textTheme: jakarta.copyWith(
+      textTheme: bodyTheme.copyWith(
         displayLarge: AppTypography.display(size: 34),
         displayMedium: AppTypography.display(size: 28),
         displaySmall: AppTypography.display(size: 24),
@@ -172,11 +176,11 @@ class AppTheme {
         fillColor: AppColors.nightLight,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.16)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          borderSide: const BorderSide(color: AppColors.primaryLight, width: 2),
+          borderSide: const BorderSide(color: AppColors.accent, width: 2),
         ),
       ),
       cardTheme: CardThemeData(
@@ -184,6 +188,10 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
+          side: BorderSide(
+            color: AppColors.textOnDark.withValues(alpha: 0.14),
+            width: 1.5,
+          ),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -192,7 +200,7 @@ class AppTheme {
           foregroundColor: AppColors.inkOnAccent,
           elevation: 0,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppRadii.pill),
+            borderRadius: BorderRadius.circular(AppRadii.md),
           ),
         ),
       ),
@@ -210,7 +218,7 @@ class AppTheme {
 
   static List<BoxShadow> glow(Color color, {double blur = 12}) => [
     BoxShadow(
-      color: Colors.black.withValues(alpha: 0.2),
+      color: Colors.black.withValues(alpha: 0.28),
       blurRadius: blur.clamp(6, 14),
       offset: const Offset(0, 4),
     ),
@@ -219,9 +227,14 @@ class AppTheme {
   /// Sombra neutra — preferir [AppMetrics.cardShadow] quando houver accent/elevação.
   static List<BoxShadow> cardShadow({bool elevated = false}) => [
     BoxShadow(
-      color: Colors.black.withValues(alpha: elevated ? 0.32 : 0.22),
-      blurRadius: elevated ? 16 : 10,
-      offset: Offset(0, elevated ? 8 : 4),
+      color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.4),
+      offset: Offset(0, elevated ? 5 : 4),
+      blurRadius: 0,
+    ),
+    BoxShadow(
+      color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
+      blurRadius: elevated ? 18 : 12,
+      offset: Offset(0, elevated ? 10 : 6),
     ),
   ];
 }

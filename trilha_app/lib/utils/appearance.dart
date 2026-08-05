@@ -75,13 +75,13 @@ class AppearanceStyle {
       };
 
   Color get cardBorder => switch (look) {
-        AppearanceLook.morning => AppColors.textOnDark.withValues(alpha: 0.14),
-        AppearanceLook.afternoon => AppColors.textOnDark.withValues(alpha: 0.12),
-        AppearanceLook.night => AppColors.textOnDark.withValues(alpha: 0.1),
+        AppearanceLook.morning => AppColors.textOnDark.withValues(alpha: 0.2),
+        AppearanceLook.afternoon => AppColors.textOnDark.withValues(alpha: 0.18),
+        AppearanceLook.night => AppColors.textOnDark.withValues(alpha: 0.16),
       };
 
   Color get progressTrack =>
-      AppColors.textOnDark.withValues(alpha: isDay ? 0.2 : 0.14);
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.24 : 0.18);
 
   Color get navBarFill => switch (look) {
         AppearanceLook.night => AppColors.nightMid,
@@ -91,9 +91,9 @@ class AppearanceStyle {
 
   Color get navBarBorder => AppColors.textOnDark.withValues(
         alpha: switch (look) {
-          AppearanceLook.night => 0.1,
-          AppearanceLook.morning => 0.16,
-          AppearanceLook.afternoon => 0.14,
+          AppearanceLook.night => 0.16,
+          AppearanceLook.morning => 0.2,
+          AppearanceLook.afternoon => 0.18,
         },
       );
 

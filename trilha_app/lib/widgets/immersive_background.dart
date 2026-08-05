@@ -113,7 +113,7 @@ class ImmersiveScaffold extends StatelessWidget {
   }
 }
 
-/// Painel sólido Stway — mesmo card em Home, onboarding, trilha, etc.
+/// Painel sólido Stway — cards de jogo (lip duro + borda HUD).
 class GlassCard extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
@@ -142,24 +142,39 @@ class GlassCard extends StatelessWidget {
     final fill =
         color ??
         (tint != null
-            ? Color.lerp(style.cardFill, tint, 0.1)!
+            ? Color.lerp(style.cardFill, tint, 0.12)!
             : style.cardFill);
     final borderColor = accent
-        ? AppMetrics.accentBorder(alpha: elevated ? 0.75 : 0.6)
+        ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
         : tint != null
-        ? tint!.withValues(alpha: 0.35)
+        ? tint!.withValues(alpha: 0.45)
         : style.cardBorder;
 
     final content = Container(
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: fill,
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.lerp(fill, Colors.white, 0.07)!,
+            fill,
+            Color.lerp(fill, Colors.black, 0.14)!,
+          ],
+          stops: const [0.0, 0.45, 1.0],
+        ),
         border: Border.all(
           color: borderColor,
-          width: accent || tint != null ? 1.25 : 1,
+          width: accent || tint != null
+              ? AppMetrics.cardBorderWidth + 0.25
+              : AppMetrics.cardBorderWidth,
         ),
-        boxShadow: AppMetrics.cardShadow(elevated: elevated),
+        boxShadow: AppMetrics.cardShadow(
+          elevated: elevated,
+          accent: accent,
+          tint: tint,
+        ),
       ),
       child: child,
     );

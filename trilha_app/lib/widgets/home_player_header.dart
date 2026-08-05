@@ -40,12 +40,21 @@ class HomePlayerHeader extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
       decoration: BoxDecoration(
-        color: a.cardFill,
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.lerp(a.cardFill, Colors.white, 0.06)!,
+            a.cardFill,
+            Color.lerp(a.cardFill, Colors.black, 0.12)!,
+          ],
+        ),
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(
           color: atRisk
-              ? AppColors.error.withValues(alpha: 0.45)
+              ? AppColors.error.withValues(alpha: 0.55)
               : a.cardBorder,
+          width: AppMetrics.cardBorderWidth,
         ),
         boxShadow: AppMetrics.cardShadow(),
       ),

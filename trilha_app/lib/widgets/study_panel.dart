@@ -3,6 +3,7 @@ import '../data/mission_study.dart';
 import '../screens/bible_screen.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 import 'verse_study_sheet.dart';
 
 /// Preparo curto antes das perguntas — contexto + passagem, sem rito longo.
@@ -350,11 +351,16 @@ class _StudyPanelState extends State<StudyPanel>
               decoration: BoxDecoration(
                 gradient: AppGradients.gold,
                 borderRadius: BorderRadius.circular(AppRadii.md),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.22),
+                  width: 1.25,
+                ),
+                boxShadow: AppMetrics.accentGlow(),
               ),
               child: Text(
                 'COMEÇAR',
                 textAlign: TextAlign.center,
-                style: AppTypography.cta().copyWith(letterSpacing: 0.8),
+                style: AppTypography.cta(size: 15).copyWith(letterSpacing: 1.0),
               ),
             ),
           ),

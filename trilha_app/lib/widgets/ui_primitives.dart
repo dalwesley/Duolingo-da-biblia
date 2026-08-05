@@ -6,7 +6,7 @@ import 'cinematic_icon.dart';
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
 class AppMetrics {
   /// Altura das barras de progresso (chunky / 3D).
-  static const progressHeight = 14.0;
+  static const progressHeight = 16.0;
 
   /// Padding padrão dos cards de conteúdo.
   static const cardPadding = EdgeInsets.all(AppSpace.lg);
@@ -24,39 +24,68 @@ class AppMetrics {
   static const heroRadius = AppRadii.xl;
 
   /// Ícone leading em listas (quests, trilhas).
-  static const leadingIcon = 44.0;
+  static const leadingIcon = 40.0;
 
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
+
+  /// Espessura de borda dos painéis.
+  static const cardBorderWidth = 1.75;
 
   /// Borda de destaque — amarelo do CTA por padrão (nunca ≤0.5: vira “dourado”).
   static Color accentBorder({double alpha = 0.85, Color? color}) =>
       (color ?? AppColors.accent).withValues(alpha: alpha.clamp(0.55, 1.0));
 
   /// Fill suave sobre accent (chips) — borda separada via [accentBorder].
-  static Color accentFill({double alpha = 0.14, Color? color}) =>
+  static Color accentFill({double alpha = 0.18, Color? color}) =>
       (color ?? AppColors.accent).withValues(alpha: alpha);
 
-  /// Sombra neutra sóbria — sem glow colorido.
+  /// Sombra de painel de jogo — lip duro embaixo + soft ambient.
   static List<BoxShadow> cardShadow({
     bool elevated = false,
     bool accent = false,
     Color? tint,
+  }) {
+    final lip = elevated ? 5.0 : 4.0;
+    return [
+      BoxShadow(
+        color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.42),
+        offset: Offset(0, lip),
+        blurRadius: 0,
+      ),
+      if (accent || tint != null)
+        BoxShadow(
+          color: (tint ?? AppColors.accent).withValues(alpha: 0.14),
+          blurRadius: elevated ? 18 : 12,
+          offset: Offset(0, elevated ? 8 : 5),
+        )
+      else
+        BoxShadow(
+          color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
+          blurRadius: elevated ? 18 : 12,
+          offset: Offset(0, elevated ? 10 : 6),
+        ),
+    ];
+  }
+
+  /// Glow suave de CTA / accent.
+  static List<BoxShadow> accentGlow({
+    double blur = 10,
+    double alpha = 0.22,
+    Offset offset = const Offset(0, 4),
+    Color? color,
   }) => [
     BoxShadow(
-      color: Colors.black.withValues(alpha: elevated ? 0.22 : 0.14),
-      blurRadius: elevated ? 12 : 8,
-      offset: Offset(0, elevated ? 5 : 3),
+      color: Colors.black.withValues(alpha: 0.35),
+      offset: const Offset(0, 4),
+      blurRadius: 0,
+    ),
+    BoxShadow(
+      color: (color ?? AppColors.accent).withValues(alpha: alpha),
+      blurRadius: blur,
+      offset: offset,
     ),
   ];
-
-  /// Sem sombra — CTAs flat.
-  static List<BoxShadow> accentGlow({
-    double blur = 8,
-    double alpha = 0.12,
-    Offset offset = const Offset(0, 3),
-    Color? color,
-  }) => const [];
 }
 
 /// Painel de cena na lição (estudo / pergunta / memória) — glass translúcido.
@@ -87,19 +116,20 @@ class ScenePanel extends StatelessWidget {
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Colors.white.withValues(alpha: 0.12),
-              Colors.white.withValues(alpha: 0.05),
-              Colors.black.withValues(alpha: 0.3),
+              Colors.white.withValues(alpha: 0.14),
+              Colors.white.withValues(alpha: 0.06),
+              Colors.black.withValues(alpha: 0.34),
             ],
           ),
           border: Border.all(
-            color: AppColors.textOnDark.withValues(alpha: 0.14),
+            color: AppColors.textOnDark.withValues(alpha: 0.2),
+            width: AppMetrics.cardBorderWidth,
           ),
           boxShadow: [
             BoxShadow(
-              color: accent.withValues(alpha: 0.12),
-              blurRadius: 28,
-              offset: const Offset(0, 10),
+              color: accent.withValues(alpha: 0.16),
+              blurRadius: 22,
+              offset: const Offset(0, 8),
             ),
             ...AppMetrics.cardShadow(elevated: true),
           ],
@@ -138,13 +168,18 @@ class CopperCta extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.22),
+          width: 1.25,
+        ),
+        boxShadow: AppMetrics.accentGlow(),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
         children: [
-          Text(label.toUpperCase(), style: AppTypography.cta(size: 14)),
+          Text(label.toUpperCase(), style: AppTypography.cta(size: 15)),
           if (showArrow) ...[
             const SizedBox(width: 8),
             const Icon(
@@ -288,14 +323,15 @@ class CountBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     final ink = color ?? AppColors.accent;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
       decoration: BoxDecoration(
-        color: filled ? ink.withValues(alpha: 0.14) : Colors.transparent,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
+        color: filled ? ink.withValues(alpha: 0.18) : Colors.transparent,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
         border: Border.all(
           color: filled
-              ? ink.withValues(alpha: 0.55)
-              : ink.withValues(alpha: 0.7),
+              ? ink.withValues(alpha: 0.7)
+              : ink.withValues(alpha: 0.8),
+          width: 1.5,
         ),
       ),
       child: Text(
@@ -336,13 +372,14 @@ class SoftBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: tone.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
+        color: tone.withValues(alpha: 0.16),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
         border: bordered
             ? Border.all(
                 color: isBrand
-                    ? AppMetrics.accentBorder(alpha: 0.65)
-                    : tone.withValues(alpha: 0.55),
+                    ? AppMetrics.accentBorder(alpha: 0.75)
+                    : tone.withValues(alpha: 0.65),
+                width: 1.5,
               )
             : null,
       ),
