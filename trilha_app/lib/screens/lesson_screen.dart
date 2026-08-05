@@ -606,21 +606,32 @@ class _LessonScreenState extends State<LessonScreen>
           body: Stack(
             fit: StackFit.expand,
             children: [
+              // Sempre o céu da aparência (Manhã/Tarde/Noite) — igual trilha/home.
+              Positioned.fill(
+                child: AmbientAtmosphere(
+                  phase: appearance.phase,
+                  accent: accent,
+                  glow: _theme.pathActive,
+                ),
+              ),
+              // Missões cinematográficas: véu sutil da cena, sem apagar o tema.
               if (_cinematic)
-                AnimatedBuilder(
-                  animation: _revealAnim,
-                  builder: (context, _) => CinematicBackdrop(
-                    world: _displayWorld,
-                    revealing: _revealing,
-                    revealProgress: _revealAnim.value,
-                  ),
-                )
-              else
                 Positioned.fill(
-                  child: AmbientAtmosphere(
-                    phase: appearance.phase,
-                    accent: accent,
-                    glow: _theme.pathActive,
+                  child: IgnorePointer(
+                    child: AnimatedBuilder(
+                      animation: _revealAnim,
+                      builder: (context, _) => Opacity(
+                        opacity: (0.18 +
+                                _displayWorld.voidDepth * 0.12 +
+                                _displayWorld.light * 0.08)
+                            .clamp(0.12, 0.38),
+                        child: CinematicBackdrop(
+                          world: _displayWorld,
+                          revealing: _revealing,
+                          revealProgress: _revealAnim.value,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
               Positioned.fill(
@@ -630,17 +641,11 @@ class _LessonScreenState extends State<LessonScreen>
                       gradient: LinearGradient(
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
-                        colors: _cinematic
-                            ? [
-                                Colors.black.withValues(alpha: 0.12),
-                                Colors.transparent,
-                                Colors.black.withValues(alpha: 0.42),
-                              ]
-                            : [
-                                Colors.black.withValues(alpha: 0.18),
-                                Colors.transparent,
-                                Colors.black.withValues(alpha: 0.32),
-                              ],
+                        colors: [
+                          Colors.black.withValues(alpha: 0.1),
+                          Colors.transparent,
+                          Colors.black.withValues(alpha: 0.38),
+                        ],
                         stops: const [0, 0.4, 1],
                       ),
                     ),
