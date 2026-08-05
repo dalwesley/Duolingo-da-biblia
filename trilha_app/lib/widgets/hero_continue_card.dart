@@ -16,7 +16,7 @@ import 'hero_card_atmosphere.dart';
 import 'ui_primitives.dart';
 
 /// Próxima missão — CTA único. Três faces cinematográficas:
-/// gelo à postos · atrasado/empoeirado · em dia.
+/// em risco = poeira + teia · gelo usado = congelado · em dia = vidro limpo.
 class HeroContinueCard extends StatefulWidget {
   final Mission? mission;
   final String trailTitle;
@@ -142,10 +142,24 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
             ...AppMetrics.cardShadow(elevated: true),
             BoxShadow(
               color: style.glow,
-              blurRadius: mood == HeroCardMood.alive ? 14 : 22,
-              offset: const Offset(0, 6),
-              spreadRadius: mood == HeroCardMood.frozen ? 1 : 0,
+              blurRadius: switch (mood) {
+                HeroCardMood.alive => 28,
+                HeroCardMood.frozen => 26,
+                HeroCardMood.dusty => 18,
+              },
+              offset: const Offset(0, 8),
+              spreadRadius: switch (mood) {
+                HeroCardMood.alive => 0,
+                HeroCardMood.frozen => 2,
+                HeroCardMood.dusty => 0,
+              },
             ),
+            if (mood == HeroCardMood.alive)
+              BoxShadow(
+                color: Colors.white.withValues(alpha: 0.08),
+                blurRadius: 1,
+                offset: const Offset(0, -1),
+              ),
           ],
         ),
         child: ClipRRect(
@@ -165,11 +179,30 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: _scrimColors(mood, a.cardFill),
-                      stops: const [0.0, 0.45, 1.0],
+                      stops: const [0.0, 0.4, 1.0],
                     ),
                   ),
                 ),
               ),
+              // Camada de vidro — só em dia (frosted glass tint)
+              if (mood == HeroCardMood.alive)
+                Positioned.fill(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors: [
+                          Colors.white.withValues(alpha: 0.07),
+                          Colors.white.withValues(alpha: 0.02),
+                          Colors.transparent,
+                          AppColors.primaryLight.withValues(alpha: 0.04),
+                        ],
+                        stops: const [0.0, 0.2, 0.65, 1.0],
+                      ),
+                    ),
+                  ),
+                ),
               Positioned.fill(
                 child: HeroCardAtmosphere(mood: mood),
               ),
@@ -250,9 +283,13 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                         size: 32,
                         height: 1.1,
                         weight: FontWeight.w900,
-                        color: mood == HeroCardMood.dusty
-                            ? const Color(0xFFE8DCC8).withValues(alpha: 0.9)
-                            : a.text,
+                        color: switch (mood) {
+                          HeroCardMood.dusty =>
+                            const Color(0xFFE8DCC8).withValues(alpha: 0.88),
+                          HeroCardMood.frozen =>
+                            const Color(0xFFE8F6FC).withValues(alpha: 0.95),
+                          HeroCardMood.alive => a.text,
+                        },
                       ),
                     ),
                     if (riskLine != null) ...[
@@ -317,21 +354,23 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
   List<Color> _scrimColors(HeroCardMood mood, Color cardFill) {
     return switch (mood) {
       HeroCardMood.frozen => [
-          AppColors.iceDeep.withValues(alpha: 0.28),
-          Colors.black.withValues(alpha: 0.38),
-          Color.lerp(cardFill, AppColors.iceDeep, 0.45)!
-              .withValues(alpha: 0.9),
+          AppColors.iceDeep.withValues(alpha: 0.35),
+          Color.lerp(Colors.black, AppColors.iceDeep, 0.35)!
+              .withValues(alpha: 0.48),
+          Color.lerp(cardFill, AppColors.iceDeep, 0.55)!
+              .withValues(alpha: 0.92),
         ],
       HeroCardMood.dusty => [
-          const Color(0xFF4A3218).withValues(alpha: 0.5),
-          const Color(0xFF1A1008).withValues(alpha: 0.55),
-          Color.lerp(cardFill, const Color(0xFF120A06), 0.65)!
-              .withValues(alpha: 0.94),
+          const Color(0xFF4A3218).withValues(alpha: 0.58),
+          const Color(0xFF1A1008).withValues(alpha: 0.62),
+          Color.lerp(cardFill, const Color(0xFF120A06), 0.7)!
+              .withValues(alpha: 0.95),
         ],
+      // Scrim mais leve no topo — deixa o vidro / reflexo aparecer
       HeroCardMood.alive => [
-          Colors.black.withValues(alpha: 0.14),
-          Colors.black.withValues(alpha: 0.36),
-          Color.lerp(cardFill, Colors.black, 0.3)!.withValues(alpha: 0.86),
+          Colors.black.withValues(alpha: 0.06),
+          Colors.black.withValues(alpha: 0.28),
+          Color.lerp(cardFill, Colors.black, 0.22)!.withValues(alpha: 0.82),
         ],
     };
   }
@@ -395,10 +434,12 @@ class _CtaBar extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
+            Color(0xFFE0F6FC),
             Color(0xFFB8E8F5),
             AppColors.ice,
             Color(0xFF3A8AAA),
           ],
+          stops: [0.0, 0.35, 0.7, 1.0],
         ),
       HeroCardMood.dusty => const LinearGradient(
           begin: Alignment.topCenter,
@@ -423,28 +464,74 @@ class _CtaBar extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: gradient,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        boxShadow: mood == HeroCardMood.frozen
-            ? [
-                BoxShadow(
-                  color: AppColors.ice.withValues(alpha: 0.35),
-                  blurRadius: 12,
-                  offset: const Offset(0, 4),
-                ),
-              ]
-            : null,
+        border: mood == HeroCardMood.alive
+            ? Border.all(color: Colors.white.withValues(alpha: 0.35))
+            : mood == HeroCardMood.frozen
+                ? Border.all(color: Colors.white.withValues(alpha: 0.45))
+                : null,
+        boxShadow: switch (mood) {
+          HeroCardMood.frozen => [
+              BoxShadow(
+                color: AppColors.ice.withValues(alpha: 0.45),
+                blurRadius: 16,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          HeroCardMood.alive => [
+              BoxShadow(
+                color: AppColors.accent.withValues(alpha: 0.4),
+                blurRadius: 18,
+                offset: const Offset(0, 5),
+              ),
+            ],
+          HeroCardMood.dusty => [
+              BoxShadow(
+                color: const Color(0xFF6B4A28).withValues(alpha: 0.35),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
+              ),
+            ],
+        },
       ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Stack(
+        alignment: Alignment.center,
         children: [
-          Text(
-            label.toUpperCase(),
-            style: AppTypography.cta(size: 16).copyWith(color: ink),
-          ),
-          const SizedBox(width: 10),
-          Icon(
-            Icons.arrow_forward_rounded,
-            size: 20,
-            color: ink,
+          // Specular no CTA — reforça leitura de vidro / gelo
+          if (mood == HeroCardMood.alive || mood == HeroCardMood.frozen)
+            Positioned(
+              top: 0,
+              left: 16,
+              right: 16,
+              child: Container(
+                height: 1.5,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(2),
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.transparent,
+                      Colors.white.withValues(
+                        alpha: mood == HeroCardMood.frozen ? 0.7 : 0.55,
+                      ),
+                      Colors.transparent,
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                label.toUpperCase(),
+                style: AppTypography.cta(size: 16).copyWith(color: ink),
+              ),
+              const SizedBox(width: 10),
+              Icon(
+                Icons.arrow_forward_rounded,
+                size: 20,
+                color: ink,
+              ),
+            ],
           ),
         ],
       ),

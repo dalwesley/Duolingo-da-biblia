@@ -671,7 +671,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _difficultyMeta != null
                                     ? 'Pergunta ${_questionIndex + 1}/$total'
                                     : 'Pergunta ${_questionIndex + 1} de $total',
-                              _Phase.micro => 'Memória',
+                              _Phase.micro => 'Bônus',
                               _Phase.reflection => 'Anotar',
                             },
                             subtitle: switch (_phase) {
@@ -682,7 +682,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
                                 _difficultyMeta?.label ?? mission.title,
-                              _Phase.micro => 'A palavra ecoa · ~20s',
+                              _Phase.micro => 'Complete o verso',
                               _Phase.reflection => mission.title,
                             },
                             onBack: () => Navigator.pop(context),
@@ -1086,10 +1086,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
     final color = isCorrect ? accent : AppColors.error;
     final bottom = MediaQuery.of(context).padding.bottom;
     final title = outOfLamps
-        ? 'Lâmpadas apagadas'
+        ? 'Sem lâmpadas'
         : isCorrect
-        ? 'Correto!'
-        : 'Você tropeçou';
+        ? 'Acertou!'
+        : 'Errou!';
     final needsReread =
         !isCorrect &&
         !outOfLamps &&

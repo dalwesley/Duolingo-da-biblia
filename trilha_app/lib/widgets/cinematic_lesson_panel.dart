@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
-import 'lamps_bar.dart';
+import 'lantern_glyph.dart';
+import 'ui_primitives.dart';
 import 'verse_study_sheet.dart';
 
 /// Painel de pergunta cinematográfico — cena, não quiz genérico.
@@ -112,9 +113,6 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
     final locked =
         widget.showFeedback || widget.selected != null || widget.outOfLamps;
     final canConfirm = _picked != null && !locked;
-    final narrative =
-        widget.narrative.split('\n').where((l) => l.trim().isNotEmpty).firstOrNull ??
-            widget.narrative;
 
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -129,35 +127,10 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
         final sidePad = tight ? AppSpace.md : AppSpace.screen;
         final optionPad = tight ? 8.0 : compact ? 10.0 : 13.0;
         final questionSize = tight ? 20.0 : compact ? 23.0 : 26.0;
-        final showVerseSnippet = !tight && widget.verseSnippet != null;
-        final lampsCompact = compact;
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            FadeTransition(
-              opacity: CurvedAnimation(
-                parent: _stagger,
-                curve: const Interval(0, 0.35, curve: Curves.easeOut),
-              ),
-              child: Container(
-                width: double.infinity,
-                padding: EdgeInsets.fromLTRB(
-                  sidePad,
-                  lampsCompact ? 4 : AppSpace.sm,
-                  sidePad,
-                  lampsCompact ? 6 : AppSpace.md,
-                ),
-                color: Colors.black.withValues(alpha: 0.38),
-                child: LampsBar(
-                  current: widget.lamps,
-                  accent: accent,
-                  labeled: true,
-                  fullWidth: true,
-                  compact: lampsCompact,
-                ),
-              ),
-            ),
             Expanded(
               child: LayoutBuilder(
                 builder: (context, bodyConstraints) {
@@ -195,19 +168,16 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
                                 ),
                               ),
                             ),
-                            child: _ScenePrompt(
-                              narrative: narrative,
+                            child: _ChallengePrompt(
                               question: widget.question.question,
                               verseRef: widget.question.verseRef,
-                              verseSnippet: showVerseSnippet
-                                  ? widget.verseSnippet
-                                  : null,
                               accent: accent,
                               showHint: !locked && widget.onHint != null,
                               hintUsed: widget.hintUsed,
                               onHint: widget.onHint,
                               questionSize: questionSize,
                               compact: compact,
+                              lamps: widget.lamps,
                             ),
                           ),
                         ),
@@ -271,12 +241,28 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
                                 curve: Curves.easeOut,
                               ),
                             ),
-                            child: _ConfirmCta(
-                              enabled: canConfirm,
-                              accent: accent,
-                              onTap: _confirm,
-                              compact: compact,
-                            ),
+                            child: canConfirm
+                                ? CopperCta(
+                                    label: 'Verificar',
+                                    onTap: _confirm,
+                                    trailing: CinematicGlyph.check,
+                                    padding: EdgeInsets.symmetric(
+                                      vertical: compact ? 14 : AppSpace.lg,
+                                      horizontal: AppSpace.lg,
+                                    ),
+                                  )
+                                : Opacity(
+                                    opacity: 0.45,
+                                    child: CopperCta(
+                                      label: 'Toque uma opção',
+                                      onTap: null,
+                                      trailing: null,
+                                      padding: EdgeInsets.symmetric(
+                                        vertical: compact ? 14 : AppSpace.lg,
+                                        horizontal: AppSpace.lg,
+                                      ),
+                                    ),
+                                  ),
                           ),
                         ],
                       ],
@@ -302,213 +288,134 @@ class _CinematicLessonPanelState extends State<CinematicLessonPanel>
   }
 }
 
-class _ScenePrompt extends StatelessWidget {
-  final String narrative;
+class _ChallengePrompt extends StatelessWidget {
   final String question;
   final String? verseRef;
-  final String? verseSnippet;
   final Color accent;
   final bool showHint;
   final bool hintUsed;
   final VoidCallback? onHint;
   final double questionSize;
   final bool compact;
+  final int lamps;
 
-  const _ScenePrompt({
-    required this.narrative,
+  const _ChallengePrompt({
     required this.question,
     required this.verseRef,
-    required this.verseSnippet,
     required this.accent,
     required this.showHint,
     required this.hintUsed,
     required this.onHint,
+    required this.lamps,
     this.questionSize = 26,
     this.compact = false,
   });
 
   @override
   Widget build(BuildContext context) {
-    final pad = compact ? AppSpace.md : AppSpace.lg;
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadii.lg),
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.fromLTRB(
-          pad,
-          pad,
-          pad,
-          compact ? AppSpace.md : AppSpace.section,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          question,
+          textAlign: TextAlign.center,
+          maxLines: compact ? 4 : 5,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.display(
+            size: questionSize,
+            weight: FontWeight.w800,
+            height: 1.22,
+          ),
         ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.white.withValues(alpha: 0.12),
-              Colors.white.withValues(alpha: 0.05),
-              Colors.black.withValues(alpha: 0.3),
-            ],
-          ),
-          border: Border.all(
-            color: AppColors.textOnDark.withValues(alpha: 0.14),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: accent.withValues(alpha: 0.12),
-              blurRadius: 28,
-              offset: const Offset(0, 10),
+        if (verseRef != null) ...[
+          const SizedBox(height: 8),
+          Center(
+            child: GestureDetector(
+              onTap: () => showVerseStudyFromReference(context, verseRef!),
+              child: Text(
+                verseRef!,
+                textAlign: TextAlign.center,
+                style: AppTypography.label(
+                  size: 11,
+                  letterSpacing: 0.4,
+                  color: accent.withValues(alpha: 0.9),
+                ),
+              ),
             ),
-          ],
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
+          ),
+        ],
+        SizedBox(height: compact ? 14 : 16),
+        // Mecânicas separadas: vidas ≠ dica
+        Row(
           children: [
-            Text(
-              narrative,
-              textAlign: TextAlign.center,
-              maxLines: compact ? 1 : 2,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.display(
-                size: compact ? 13 : 15,
-                weight: FontWeight.w500,
-                fontStyle: FontStyle.italic,
-                height: 1.3,
-                color: AppColors.textOnDark.withValues(alpha: 0.55),
+            _LivesHud(current: lamps, accent: accent),
+            const Spacer(),
+            if (showHint)
+              _HintChip(
+                used: hintUsed,
+                accent: accent,
+                onTap: onHint,
               ),
-            ),
-            SizedBox(height: compact ? AppSpace.xs : AppSpace.sm),
-            Container(
-              width: 36,
-              height: 1.5,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-                gradient: LinearGradient(
-                  colors: [
-                    accent.withValues(alpha: 0),
-                    accent.withValues(alpha: 0.85),
-                    accent.withValues(alpha: 0),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: compact ? AppSpace.sm : AppSpace.md),
-            Text(
-              question,
-              textAlign: TextAlign.center,
-              maxLines: compact ? 3 : 4,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.display(
-                size: questionSize,
-                weight: FontWeight.w600,
-                height: 1.22,
-              ),
-            ),
-            if (verseRef != null) ...[
-              SizedBox(height: compact ? AppSpace.sm : AppSpace.section),
-              Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () =>
-                      showVerseStudyFromReference(context, verseRef!),
-                  borderRadius: BorderRadius.circular(AppRadii.sm),
-                  child: Ink(
-                    width: double.infinity,
-                    padding: EdgeInsets.symmetric(
-                      horizontal: AppSpace.section,
-                      vertical: compact ? 6 : AppSpace.sm,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadii.sm),
-                      color: accent.withValues(alpha: 0.1),
-                      border: Border.all(
-                        color: accent.withValues(alpha: 0.28),
-                      ),
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              verseRef!,
-                              textAlign: TextAlign.center,
-                              style: AppTypography.label(
-                                size: 11,
-                                color: accent,
-                                letterSpacing: 0.6,
-                              ),
-                            ),
-                            const SizedBox(width: AppSpace.xs),
-                            CinematicIcon(
-                              glyph: CinematicGlyph.scroll,
-                              size: 14,
-                              accent: accent.withValues(alpha: 0.9),
-                              framed: false,
-                            ),
-                          ],
-                        ),
-                        if (verseSnippet != null) ...[
-                          const SizedBox(height: AppSpace.xs),
-                          Text(
-                            '“$verseSnippet”',
-                            textAlign: TextAlign.center,
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.body(
-                              size: 12,
-                              weight: FontWeight.w600,
-                              height: 1.35,
-                              color: AppColors.textOnDark
-                                  .withValues(alpha: 0.72),
-                            ).copyWith(fontStyle: FontStyle.italic),
-                          ),
-                        ],
-                        if (!compact) ...[
-                          const SizedBox(height: AppSpace.xs),
-                          Text(
-                            'Tocar para estudar',
-                            style: AppTypography.label(
-                              size: 10,
-                              weight: FontWeight.w700,
-                              letterSpacing: 0.4,
-                              color: AppColors.textOnDark
-                                  .withValues(alpha: 0.45),
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ],
-            if (showHint) ...[
-              SizedBox(height: compact ? 4 : AppSpace.sm),
-              Align(
-                alignment: Alignment.centerRight,
-                child: _WhisperChip(
-                  used: hintUsed,
-                  accent: accent,
-                  onTap: onHint,
-                ),
-              ),
-            ],
           ],
         ),
+      ],
+    );
+  }
+}
+
+/// Vidas da missão — cada erro apaga uma lanterna.
+class _LivesHud extends StatelessWidget {
+  final int current;
+  final Color accent;
+
+  const _LivesHud({
+    required this.current,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    const max = 5;
+    return Semantics(
+      label: '$current de $max vidas. Cada erro apaga uma.',
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            'Vidas',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.8,
+              color: AppColors.textOnDark.withValues(alpha: 0.55),
+            ),
+          ),
+          const SizedBox(width: 8),
+          for (var i = 0; i < max; i++) ...[
+            if (i > 0) const SizedBox(width: 4),
+            Opacity(
+              opacity: i < current ? 1 : 0.28,
+              child: CustomPaint(
+                size: const Size(13, 18),
+                painter: LanternPainter(lit: i < current, color: accent),
+              ),
+            ),
+          ],
+        ],
       ),
     );
   }
 }
 
-class _WhisperChip extends StatelessWidget {
+class _HintChip extends StatelessWidget {
   final bool used;
   final Color accent;
   final VoidCallback? onTap;
 
-  const _WhisperChip({required this.used, required this.accent, required this.onTap});
+  const _HintChip({
+    required this.used,
+    required this.accent,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -518,27 +425,31 @@ class _WhisperChip extends StatelessWidget {
         onTap: used ? null : onTap,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: AppSpace.md, vertical: 7),
+          duration: const Duration(milliseconds: 180),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.pill),
-            color: used ? Colors.white.withValues(alpha: 0.05) : accent.withValues(alpha: 0.12),
+            color: used
+                ? Colors.white.withValues(alpha: 0.05)
+                : AppMetrics.accentFill(color: accent, alpha: 0.14),
             border: Border.all(
-              color: used ? Colors.white.withValues(alpha: 0.1) : accent.withValues(alpha: 0.4),
+              color: used
+                  ? Colors.white.withValues(alpha: 0.1)
+                  : AppMetrics.accentBorder(color: accent, alpha: 0.65),
+              width: 1.4,
             ),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.echo,
-                size: 14,
-                accent: used ? Colors.white38 : accent,
-                framed: false,
+              Icon(
+                Icons.lightbulb_outline_rounded,
+                size: 15,
+                color: used ? Colors.white38 : accent,
               ),
-              const SizedBox(width: AppSpace.xs),
+              const SizedBox(width: 5),
               Text(
-                used ? 'Sussurro usado' : 'Sussurro',
+                used ? 'Usada' : 'Dica',
                 style: AppTypography.title(
                   size: 12,
                   color: used ? Colors.white38 : accent,
@@ -579,217 +490,117 @@ class _ChoiceTile extends StatelessWidget {
     final Color fill;
     final Color letterBg;
     final Color letterFg;
-    final double elevation;
+    final Color textColor;
 
     switch (state) {
       case _ChoiceState.picked:
-        border = accent.withValues(alpha: 0.9);
-        fill = Color.lerp(AppColors.nightMid, accent, 0.22)!;
+        border = AppMetrics.accentBorder(color: accent, alpha: 0.9);
+        fill = AppMetrics.accentFill(color: accent, alpha: 0.16);
         letterBg = accent;
         letterFg = AppColors.inkOnAccent;
-        elevation = 1;
+        textColor = AppColors.textOnDark;
       case _ChoiceState.correct:
         border = accent;
-        fill = Color.lerp(AppColors.nightMid, accent, 0.3)!;
+        fill = AppMetrics.accentFill(color: accent, alpha: 0.22);
         letterBg = accent;
         letterFg = AppColors.inkOnAccent;
-        elevation = 1;
+        textColor = AppColors.textOnDark;
       case _ChoiceState.wrong:
-        border = AppColors.error.withValues(alpha: 0.9);
-        fill = Color.lerp(AppColors.nightMid, AppColors.error, 0.22)!;
+        border = AppColors.error.withValues(alpha: 0.85);
+        fill = AppColors.error.withValues(alpha: 0.14);
         letterBg = AppColors.error;
         letterFg = Colors.white;
-        elevation = 0;
+        textColor = AppColors.textOnDark;
       case _ChoiceState.dimmed:
-        border = Colors.white.withValues(alpha: 0.06);
-        fill = AppColors.night.withValues(alpha: 0.69);
+        border = Colors.white.withValues(alpha: 0.08);
+        fill = Colors.white.withValues(alpha: 0.03);
         letterBg = Colors.white.withValues(alpha: 0.06);
         letterFg = Colors.white.withValues(alpha: 0.28);
-        elevation = 0;
+        textColor = Colors.white.withValues(alpha: 0.35);
       case _ChoiceState.idle:
-        border = Colors.white.withValues(alpha: 0.14);
-        fill = AppColors.night.withValues(alpha: 0.8);
-        letterBg = Colors.white.withValues(alpha: 0.08);
-        letterFg = Colors.white.withValues(alpha: 0.7);
-        elevation = 0;
+        border = Colors.white.withValues(alpha: 0.16);
+        fill = Colors.white.withValues(alpha: 0.06);
+        letterBg = Colors.white.withValues(alpha: 0.1);
+        letterFg = Colors.white.withValues(alpha: 0.8);
+        textColor = Colors.white.withValues(alpha: 0.95);
     }
 
-    final active = state == _ChoiceState.picked || state == _ChoiceState.correct;
-    final letterSize = verticalPad < 10 ? 30.0 : 36.0;
+    final emphasized =
+        state == _ChoiceState.picked ||
+        state == _ChoiceState.correct ||
+        state == _ChoiceState.wrong;
+    final letterSize = verticalPad < 10 ? 30.0 : 34.0;
 
     return Material(
       color: Colors.transparent,
       child: InkWell(
         onTap: enabled ? onTap : null,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: AnimatedScale(
-          scale: active ? 1.015 : 1,
-          duration: const Duration(milliseconds: 200),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
           curve: Curves.easeOutCubic,
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
-            curve: Curves.easeOutCubic,
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.md,
-              verticalPad,
-              AppSpace.section,
-              verticalPad,
+          padding: EdgeInsets.fromLTRB(14, verticalPad, 16, verticalPad),
+          decoration: BoxDecoration(
+            color: fill,
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            border: Border.all(
+              color: border,
+              width: emphasized ? 1.7 : 1.3,
             ),
-            decoration: BoxDecoration(
-              color: fill,
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
-                color: border,
-                width: active || state == _ChoiceState.wrong ? 1.7 : 1,
+            boxShadow: state == _ChoiceState.picked
+                ? AppMetrics.cardShadow(elevated: true)
+                : null,
+          ),
+          child: Row(
+            children: [
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 180),
+                width: letterSize,
+                height: letterSize,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: letterBg,
+                  border: Border.all(
+                    color: Colors.white.withValues(
+                      alpha: emphasized ? 0.2 : 0.08,
+                    ),
+                  ),
+                ),
+                child: Text(
+                  letter,
+                  style: AppTypography.title(size: 13, color: letterFg),
+                ),
               ),
-              boxShadow: [
-                if (active)
-                  BoxShadow(
-                    color: accent.withValues(alpha: 0.28),
-                    blurRadius: 18,
-                    offset: const Offset(0, 6),
-                  ),
-                if (elevation > 0)
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.25),
-                    blurRadius: 12,
-                    offset: const Offset(0, 6),
-                  ),
-              ],
-            ),
-            child: Row(
-              children: [
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 180),
-                  width: letterSize,
-                  height: letterSize,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: active
-                        ? LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [
-                              Color.lerp(letterBg, Colors.white, 0.25)!,
-                              letterBg,
-                            ],
-                          )
-                        : null,
-                    color: active ? null : letterBg,
-                    border: Border.all(
-                      color: active
-                          ? Colors.white.withValues(alpha: 0.25)
-                          : Colors.white.withValues(alpha: 0.08),
-                    ),
-                    boxShadow: active
-                        ? [
-                            BoxShadow(
-                              color: accent.withValues(alpha: 0.45),
-                              blurRadius: 10,
-                            ),
-                          ]
-                        : null,
-                  ),
-                  child: Text(
-                    letter,
-                    style: AppTypography.title(size: 14, color: letterFg),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Text(
+                  text,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: verticalPad < 10 ? 14 : 16,
+                    weight: FontWeight.w700,
+                    height: 1.3,
+                    color: textColor,
                   ),
                 ),
-                const SizedBox(width: AppSpace.section),
-                Expanded(
-                  child: Text(
-                    text,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: verticalPad < 10 ? 14 : 16,
-                      weight: FontWeight.w700,
-                      height: 1.3,
-                      color: Colors.white.withValues(
-                        alpha: state == _ChoiceState.dimmed ? 0.35 : 0.95,
-                      ),
-                    ),
-                  ),
+              ),
+              if (state == _ChoiceState.correct)
+                CinematicIcon(
+                  glyph: CinematicGlyph.check,
+                  size: 20,
+                  accent: accent,
+                  framed: false,
+                )
+              else if (state == _ChoiceState.wrong)
+                const Icon(
+                  Icons.close_rounded,
+                  color: AppColors.error,
+                  size: 20,
                 ),
-                if (state == _ChoiceState.correct)
-                  CinematicIcon(
-                    glyph: CinematicGlyph.check,
-                    size: 22,
-                    accent: accent,
-                    framed: false,
-                  )
-                else if (state == _ChoiceState.wrong)
-                  const Icon(
-                    Icons.close_rounded,
-                    color: AppColors.error,
-                    size: 22,
-                  )
-                else if (state == _ChoiceState.picked)
-                  CinematicIcon(
-                    glyph: CinematicGlyph.rise,
-                    size: 18,
-                    accent: accent.withValues(alpha: 0.8),
-                    framed: false,
-                  ),
-              ],
-            ),
+            ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _ConfirmCta extends StatelessWidget {
-  final bool enabled;
-  final Color accent;
-  final VoidCallback onTap;
-  final bool compact;
-
-  const _ConfirmCta({
-    required this.enabled,
-    required this.accent,
-    required this.onTap,
-    this.compact = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: enabled ? onTap : null,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
-        width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: compact ? 13 : 17),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          gradient: enabled ? AppGradients.gold : null,
-          color: enabled ? null : Colors.white.withValues(alpha: 0.08),
-          border: Border.all(
-            color: enabled
-                ? Colors.white.withValues(alpha: 0.2)
-                : Colors.white.withValues(alpha: 0.08),
-          ),
-          boxShadow: enabled
-              ? [
-                  BoxShadow(
-                    color: accent.withValues(alpha: 0.4),
-                    blurRadius: 22,
-                    offset: const Offset(0, 8),
-                  ),
-                ]
-              : null,
-        ),
-        child: Text(
-          enabled ? 'CONFIRMAR RESPOSTA' : 'ESCOLHA UMA OPÇÃO',
-          textAlign: TextAlign.center,
-          style: enabled
-              ? AppTypography.cta(size: 14)
-              : AppTypography.cta(
-                  size: 14,
-                  color: AppColors.textOnDark.withValues(alpha: 0.38),
-                ),
         ),
       ),
     );

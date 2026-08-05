@@ -1,8 +1,8 @@
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
-import 'ui_primitives.dart';
 
 /// Humor cinematográfico do card de continuar.
 enum HeroCardMood {
@@ -12,7 +12,7 @@ enum HeroCardMood {
   /// Em risco, mas ainda dá tempo — pó, sépia, filme velho.
   dusty,
 
-  /// Em dia — vitalidade quente, luz viva.
+  /// Em dia — vidro limpo, reflexo, luz viva.
   alive,
 }
 
@@ -36,7 +36,7 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
     super.initState();
     _pulse = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 4800),
+      duration: const Duration(milliseconds: 5200),
     )..repeat();
     _specs = _buildSpecs(widget.mood);
   }
@@ -52,18 +52,18 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
   List<_Spec> _buildSpecs(HeroCardMood mood) {
     final rng = math.Random(mood.index * 97 + 11);
     final count = switch (mood) {
-      HeroCardMood.frozen => 28,
-      HeroCardMood.dusty => 42,
-      HeroCardMood.alive => 22,
+      HeroCardMood.frozen => 36,
+      HeroCardMood.dusty => 58,
+      HeroCardMood.alive => 18,
     };
     return List.generate(count, (i) {
       return _Spec(
         x: rng.nextDouble(),
         y: rng.nextDouble(),
         size: switch (mood) {
-          HeroCardMood.frozen => 2.2 + rng.nextDouble() * 4.5,
-          HeroCardMood.dusty => 1.2 + rng.nextDouble() * 2.8,
-          HeroCardMood.alive => 1.6 + rng.nextDouble() * 3.2,
+          HeroCardMood.frozen => 2.4 + rng.nextDouble() * 5.2,
+          HeroCardMood.dusty => 1.4 + rng.nextDouble() * 3.4,
+          HeroCardMood.alive => 1.8 + rng.nextDouble() * 3.6,
         },
         speed: 0.35 + rng.nextDouble() * 0.85,
         phase: rng.nextDouble(),
@@ -142,10 +142,12 @@ class _AtmospherePainter extends CustomPainter {
     }
   }
 
+  // ─── GELO ─────────────────────────────────────────────────────────────
+
   void _paintFrozen(Canvas canvas, Size size) {
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
 
-    // Grade gelada
+    // Filme de gelo — lavagem ciano densa
     canvas.drawRect(
       Offset.zero & size,
       Paint()
@@ -153,30 +155,52 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppColors.iceSoft.withValues(alpha: 0.22 + breathe * 0.06),
-            AppColors.iceDeep.withValues(alpha: 0.45),
-            const Color(0xFF0A1A28).withValues(alpha: 0.55),
+            AppColors.iceSoft.withValues(alpha: 0.38 + breathe * 0.08),
+            AppColors.ice.withValues(alpha: 0.28),
+            AppColors.iceDeep.withValues(alpha: 0.62),
+            const Color(0xFF061018).withValues(alpha: 0.72),
           ],
-          stops: const [0.0, 0.45, 1.0],
+          stops: const [0.0, 0.28, 0.62, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Geada nos cantos
-    _frostCorner(canvas, size, Alignment.topLeft, breathe);
-    _frostCorner(canvas, size, Alignment.topRight, breathe);
-    _frostCorner(canvas, size, Alignment.bottomLeft, breathe * 0.7);
+    // Geada grossa nos cantos + bordas
+    _frostCorner(canvas, size, Alignment.topLeft, breathe, 0.55);
+    _frostCorner(canvas, size, Alignment.topRight, breathe, 0.62);
+    _frostCorner(canvas, size, Alignment.bottomLeft, breathe * 0.75, 0.48);
+    _frostCorner(canvas, size, Alignment.bottomRight, breathe * 0.55, 0.38);
+
+    // Camada de geada na borda superior (vidro congelado)
+    canvas.drawRect(
+      Rect.fromLTWH(0, 0, size.width, size.height * 0.22),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.white.withValues(alpha: 0.32 + breathe * 0.08),
+            AppColors.iceSoft.withValues(alpha: 0.14),
+            Colors.transparent,
+          ],
+        ).createShader(
+          Rect.fromLTWH(0, 0, size.width, size.height * 0.22),
+        ),
+    );
+
+    // Rachaduras de gelo (padrão cristalino)
+    _drawIceCracks(canvas, size, breathe);
 
     // Cristais flutuando
     for (final s in specs) {
       final cycle = (t * s.speed + s.phase) % 1.0;
       final y = (s.y + cycle * 0.55) % 1.2 - 0.1;
       final x = (s.x + math.sin((t + s.phase) * math.pi * 2) * s.drift) % 1.0;
-      final alpha = (0.25 + 0.55 * (1 - (cycle - 0.5).abs() * 2))
-          .clamp(0.0, 0.85);
+      final alpha =
+          (0.3 + 0.55 * (1 - (cycle - 0.5).abs() * 2)).clamp(0.0, 0.9);
       final c = Color.lerp(
         AppColors.iceSoft,
         Colors.white,
-        s.kind.isEven ? 0.55 : 0.2,
+        s.kind.isEven ? 0.65 : 0.25,
       )!;
       final paint = Paint()..color = c.withValues(alpha: alpha);
       final ox = x * size.width;
@@ -185,29 +209,95 @@ class _AtmospherePainter extends CustomPainter {
       canvas.translate(ox, oy);
       canvas.rotate(cycle * math.pi + s.phase * math.pi);
       if (s.kind == 0 || s.kind == 2) {
-        _drawCrystal(canvas, s.size, paint);
+        _drawCrystal(canvas, s.size * 1.15, paint);
       } else {
-        canvas.drawCircle(Offset.zero, s.size * 0.35, paint);
+        canvas.drawCircle(Offset.zero, s.size * 0.4, paint);
       }
       canvas.restore();
     }
 
-    // Brilho de borda interna
+    // Brilho frio varrendo (reflexo no gelo)
+    final sweep = (t * 0.55) % 1.0;
+    final sweepX = size.width * (sweep * 1.4 - 0.2);
+    canvas.save();
+    canvas.clipRRect(
+      RRect.fromRectAndRadius(
+        Offset.zero & size,
+        const Radius.circular(26),
+      ),
+    );
+    canvas.drawRect(
+      Rect.fromLTWH(sweepX - 28, 0, 56, size.height),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [
+            Colors.transparent,
+            Colors.white.withValues(alpha: 0.14 + breathe * 0.05),
+            AppColors.iceSoft.withValues(alpha: 0.08),
+            Colors.transparent,
+          ],
+        ).createShader(Rect.fromLTWH(sweepX - 28, 0, 56, size.height)),
+    );
+    canvas.restore();
+
+    // Borda de cristal
     final inset = Rect.fromLTWH(1.5, 1.5, size.width - 3, size.height - 3);
     canvas.drawRRect(
       RRect.fromRectAndRadius(inset, const Radius.circular(26)),
       Paint()
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.4
+        ..strokeWidth = 1.8
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColors.iceSoft.withValues(alpha: 0.55 + breathe * 0.25),
-            AppColors.ice.withValues(alpha: 0.15),
-            AppColors.iceSoft.withValues(alpha: 0.35),
+            Colors.white.withValues(alpha: 0.7 + breathe * 0.2),
+            AppColors.iceSoft.withValues(alpha: 0.55),
+            AppColors.ice.withValues(alpha: 0.25),
+            AppColors.iceSoft.withValues(alpha: 0.45),
           ],
         ).createShader(inset),
+    );
+  }
+
+  void _drawIceCracks(Canvas canvas, Size size, double breathe) {
+    final crack = Paint()
+      ..color = Colors.white.withValues(alpha: 0.16 + breathe * 0.06)
+      ..strokeWidth = 1.15
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
+
+    final soft = Paint()
+      ..color = AppColors.iceSoft.withValues(alpha: 0.1)
+      ..strokeWidth = 2.4
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
+
+    // Fractal leve a partir do canto superior direito
+    final origin = Offset(size.width * 0.92, size.height * 0.08);
+    void branch(Offset from, double angle, double len, int depth) {
+      if (depth <= 0 || len < 8) return;
+      final to = Offset(
+        from.dx + math.cos(angle) * len,
+        from.dy + math.sin(angle) * len,
+      );
+      canvas.drawLine(from, to, soft);
+      canvas.drawLine(from, to, crack);
+      branch(to, angle - 0.55, len * 0.62, depth - 1);
+      branch(to, angle + 0.42, len * 0.55, depth - 1);
+      if (depth >= 2) {
+        branch(to, angle + 0.05, len * 0.48, depth - 2);
+      }
+    }
+
+    branch(origin, math.pi * 0.72, size.shortestSide * 0.28, 4);
+    branch(
+      Offset(size.width * 0.08, size.height * 0.12),
+      math.pi * 0.28,
+      size.shortestSide * 0.18,
+      3,
     );
   }
 
@@ -216,42 +306,44 @@ class _AtmospherePainter extends CustomPainter {
     Size size,
     Alignment align,
     double breathe,
+    double strength,
   ) {
     final cx = align.x < 0 ? 0.0 : size.width;
     final cy = align.y < 0 ? 0.0 : size.height;
-    final radius = size.shortestSide * (0.42 + breathe * 0.04);
+    final radius = size.shortestSide * (0.48 + breathe * 0.04) * strength * 1.35;
     canvas.drawCircle(
       Offset(cx, cy),
       radius,
       Paint()
         ..shader = RadialGradient(
           colors: [
-            AppColors.iceSoft.withValues(alpha: 0.38),
-            AppColors.ice.withValues(alpha: 0.12),
+            Colors.white.withValues(alpha: 0.42 * strength),
+            AppColors.iceSoft.withValues(alpha: 0.28 * strength),
+            AppColors.ice.withValues(alpha: 0.1 * strength),
             Colors.transparent,
           ],
-          stops: const [0.0, 0.45, 1.0],
+          stops: const [0.0, 0.28, 0.55, 1.0],
         ).createShader(
           Rect.fromCircle(center: Offset(cx, cy), radius: radius),
         ),
     );
 
-    // Veios de gelo
+    // Veios de gelo densos
     final vein = Paint()
-      ..color = Colors.white.withValues(alpha: 0.18 + breathe * 0.08)
-      ..strokeWidth = 1.1
+      ..color = Colors.white.withValues(alpha: 0.22 + breathe * 0.1)
+      ..strokeWidth = 1.25
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
     final dirX = align.x < 0 ? 1.0 : -1.0;
     final dirY = align.y < 0 ? 1.0 : -1.0;
-    for (var i = 0; i < 5; i++) {
-      final a = 0.18 + i * 0.12;
+    for (var i = 0; i < 7; i++) {
+      final a = 0.14 + i * 0.1;
       final path = Path()
         ..moveTo(cx, cy)
-        ..lineTo(cx + dirX * radius * a, cy + dirY * radius * a * 0.35)
+        ..lineTo(cx + dirX * radius * a, cy + dirY * radius * a * 0.32)
         ..lineTo(
-          cx + dirX * radius * a * 0.7,
-          cy + dirY * radius * (a + 0.08),
+          cx + dirX * radius * a * 0.72,
+          cy + dirY * radius * (a + 0.07),
         );
       canvas.drawPath(path, vein);
     }
@@ -273,13 +365,23 @@ class _AtmospherePainter extends CustomPainter {
         ..strokeWidth = 0.8
         ..style = PaintingStyle.stroke,
     );
+    canvas.drawLine(
+      Offset(-s * 0.35, 0),
+      Offset(s * 0.35, 0),
+      Paint()
+        ..color = paint.color.withValues(alpha: paint.color.a * 0.7)
+        ..strokeWidth = 0.7
+        ..style = PaintingStyle.stroke,
+    );
   }
 
+  // ─── POEIRA / TEIA ────────────────────────────────────────────────────
+
   void _paintDusty(Canvas canvas, Size size) {
-    final flicker = 0.94 + 0.06 * math.sin(t * math.pi * 11);
+    final flicker = 0.92 + 0.08 * math.sin(t * math.pi * 11);
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
 
-    // Lavagem de terra / pergaminho velho
+    // Lavagem de terra / pergaminho velho — bem opaca
     canvas.drawRect(
       Offset.zero & size,
       Paint()
@@ -287,11 +389,11 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF5C3D22).withValues(alpha: 0.55 * flicker),
-            const Color(0xFF2A1A0E).withValues(alpha: 0.48),
-            const Color(0xFF120A06).withValues(alpha: 0.72),
+            const Color(0xFF6A4528).withValues(alpha: 0.62 * flicker),
+            const Color(0xFF2E1C10).withValues(alpha: 0.55),
+            const Color(0xFF0E0804).withValues(alpha: 0.78),
           ],
-          stops: const [0.0, 0.45, 1.0],
+          stops: const [0.0, 0.42, 1.0],
         ).createShader(Offset.zero & size),
     );
 
@@ -302,23 +404,41 @@ class _AtmospherePainter extends CustomPainter {
       Alignment(-0.6, 0.75),
       Alignment(0.75, 0.85),
       Alignment(0.1, 0.2),
+      Alignment(-0.2, -0.15),
     ]) {
       final cx = (spot.x * 0.5 + 0.5) * size.width;
       final cy = (spot.y * 0.5 + 0.5) * size.height;
-      final r = size.shortestSide * (0.28 + breathe * 0.03);
+      final r = size.shortestSide * (0.3 + breathe * 0.035);
       canvas.drawCircle(
         Offset(cx, cy),
         r,
         Paint()
           ..shader = RadialGradient(
             colors: [
-              const Color(0xFF8A6840).withValues(alpha: 0.28),
-              const Color(0xFF4A3218).withValues(alpha: 0.1),
+              const Color(0xFF9A7850).withValues(alpha: 0.34),
+              const Color(0xFF5A3A1C).withValues(alpha: 0.14),
               Colors.transparent,
             ],
           ).createShader(Rect.fromCircle(center: Offset(cx, cy), radius: r)),
       );
     }
+
+    // Poeira acumulada nas bordas inferiores
+    canvas.drawRect(
+      Rect.fromLTWH(0, size.height * 0.62, size.width, size.height * 0.38),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.transparent,
+            const Color(0xFF8A6840).withValues(alpha: 0.18),
+            const Color(0xFF5A3A18).withValues(alpha: 0.42),
+          ],
+        ).createShader(
+          Rect.fromLTWH(0, size.height * 0.62, size.width, size.height * 0.38),
+        ),
+    );
 
     // Vinheta gasta
     canvas.drawRect(
@@ -326,48 +446,58 @@ class _AtmospherePainter extends CustomPainter {
       Paint()
         ..shader = RadialGradient(
           center: const Alignment(0, -0.05),
-          radius: 1.2,
+          radius: 1.15,
           colors: [
             Colors.transparent,
-            const Color(0xFF1A1008).withValues(alpha: 0.4),
-            Colors.black.withValues(alpha: 0.7),
+            const Color(0xFF1A1008).withValues(alpha: 0.45),
+            Colors.black.withValues(alpha: 0.78),
           ],
-          stops: const [0.3, 0.7, 1.0],
+          stops: const [0.25, 0.65, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Teias nos cantos superiores + aranha descendo
+    // Teias grandes e legíveis
     _drawCornerWeb(
       canvas,
-      origin: Offset(size.width - 6, 6),
-      radius: size.shortestSide * 0.42,
+      origin: Offset(size.width - 4, 4),
+      radius: size.shortestSide * 0.52,
       flipX: true,
-      alpha: 0.42,
+      alpha: 0.58,
     );
     _drawCornerWeb(
       canvas,
-      origin: const Offset(6, 8),
-      radius: size.shortestSide * 0.3,
+      origin: const Offset(4, 6),
+      radius: size.shortestSide * 0.36,
       flipX: false,
-      alpha: 0.34,
+      alpha: 0.48,
+    );
+    // Teia menor no canto inferior esquerdo
+    _drawCornerWeb(
+      canvas,
+      origin: Offset(8, size.height - 6),
+      radius: size.shortestSide * 0.22,
+      flipX: false,
+      flipY: true,
+      alpha: 0.32,
     );
     _drawDescendingSpider(canvas, size, breathe);
 
-    // Poeira leve flutuando (quase transparente)
+    // Poeira densa flutuando
     for (final s in specs) {
-      final cycle = (t * s.speed * 0.45 + s.phase) % 1.0;
+      final cycle = (t * s.speed * 0.4 + s.phase) % 1.0;
       final y = 1.08 - ((s.y + cycle) % 1.2);
       final x = (s.x +
               math.sin((t * 0.55 + s.phase) * math.pi * 2) * s.drift * 1.6) %
           1.0;
-      final alpha = (0.06 + 0.12 * math.sin(cycle * math.pi)).clamp(0.0, 0.18);
+      final alpha =
+          (0.1 + 0.22 * math.sin(cycle * math.pi)).clamp(0.0, 0.32);
       final dust = Color.lerp(
         const Color(0xFFB8956A),
         const Color(0xFFE8D4B0),
         s.kind / 3,
       )!;
       final pos = Offset(x * size.width, y * size.height);
-      final r = s.size * (0.7 + 0.35 * breatheNoise(s.phase));
+      final r = s.size * (0.85 + 0.4 * breatheNoise(s.phase));
       canvas.drawCircle(
         pos,
         r,
@@ -376,16 +506,16 @@ class _AtmospherePainter extends CustomPainter {
       if (s.kind == 0) {
         canvas.drawCircle(
           pos.translate(r * 0.6, -r * 0.3),
-          r * 0.4,
-          Paint()..color = dust.withValues(alpha: alpha * 0.5 * flicker),
+          r * 0.45,
+          Paint()..color = dust.withValues(alpha: alpha * 0.55 * flicker),
         );
       }
     }
 
     // Riscos de filme / arranhões
     final scratch = Paint()
-      ..color = const Color(0xFFD4B896).withValues(alpha: 0.07 + 0.04 * flicker)
-      ..strokeWidth = 1.1;
+      ..color = const Color(0xFFD4B896).withValues(alpha: 0.09 + 0.05 * flicker)
+      ..strokeWidth = 1.15;
     final scratchX = size.width * ((t * 2.9) % 1.0);
     canvas.drawLine(
       Offset(scratchX, 0),
@@ -397,23 +527,23 @@ class _AtmospherePainter extends CustomPainter {
       Offset(scratchX2, 0),
       Offset(scratchX2 - 2, size.height),
       scratch
-        ..color = const Color(0xFFC4A070).withValues(alpha: 0.05),
+        ..color = const Color(0xFFC4A070).withValues(alpha: 0.06),
     );
 
-    // Borda de barro (sem rachadura)
+    // Borda de barro
     final inset = Rect.fromLTWH(2, 2, size.width - 4, size.height - 4);
     canvas.drawRRect(
       RRect.fromRectAndRadius(inset, const Radius.circular(26)),
       Paint()
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 2.2
+        ..strokeWidth = 2.4
         ..shader = LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFFC4A070).withValues(alpha: 0.55 + breathe * 0.12),
-            const Color(0xFF6B4A28).withValues(alpha: 0.45),
-            const Color(0xFFA87840).withValues(alpha: 0.5),
+            const Color(0xFFC4A070).withValues(alpha: 0.6 + breathe * 0.12),
+            const Color(0xFF6B4A28).withValues(alpha: 0.5),
+            const Color(0xFFA87840).withValues(alpha: 0.55),
           ],
         ).createShader(inset),
     );
@@ -425,48 +555,54 @@ class _AtmospherePainter extends CustomPainter {
     required double radius,
     required bool flipX,
     required double alpha,
+    bool flipY = false,
   }) {
     final silk = Paint()
-      ..color = Colors.white.withValues(alpha: alpha)
-      ..strokeWidth = 1.25
+      ..color = const Color(0xFFE8E0D0).withValues(alpha: alpha)
+      ..strokeWidth = 1.35
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..isAntiAlias = true;
 
     final silkSoft = Paint()
-      ..color = Colors.white.withValues(alpha: alpha * 0.7)
-      ..strokeWidth = 0.95
+      ..color = const Color(0xFFD8D0C0).withValues(alpha: alpha * 0.72)
+      ..strokeWidth = 1.0
       ..style = PaintingStyle.stroke
       ..isAntiAlias = true;
 
-    // Contorno suave atrás — teia mais legível no fundo escuro
     final halo = Paint()
-      ..color = Colors.black.withValues(alpha: alpha * 0.25)
-      ..strokeWidth = 2.2
+      ..color = Colors.black.withValues(alpha: alpha * 0.35)
+      ..strokeWidth = 2.6
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..isAntiAlias = true;
 
+    final sx = flipX ? -1.0 : 1.0;
+    final sy = flipY ? -1.0 : 1.0;
+
     // Raios do canto
-    const rays = 8;
+    const rays = 9;
     for (var i = 0; i < rays; i++) {
       final a = (i / (rays - 1)) * (math.pi / 2);
-      final dx = math.cos(a) * radius * (flipX ? -1 : 1);
-      final dy = math.sin(a) * radius;
+      // Leve ondulação — teia orgânica
+      final wobble = 1.0 + 0.04 * math.sin(i * 1.7 + t * math.pi * 2);
+      final dx = math.cos(a) * radius * sx * wobble;
+      final dy = math.sin(a) * radius * sy * wobble;
       final end = origin.translate(dx, dy);
       canvas.drawLine(origin, end, halo);
       canvas.drawLine(origin, end, silk);
     }
 
-    // Arcos concêntricos
-    for (var ring = 1; ring <= 5; ring++) {
-      final r = radius * (ring / 5.1);
+    // Arcos concêntricos irregulares
+    for (var ring = 1; ring <= 6; ring++) {
+      final r = radius * (ring / 6.2);
       final path = Path();
       var first = true;
-      for (var i = 0; i <= 20; i++) {
-        final a = (i / 20) * (math.pi / 2);
-        final dx = math.cos(a) * r * (flipX ? -1 : 1);
-        final dy = math.sin(a) * r;
+      for (var i = 0; i <= 24; i++) {
+        final a = (i / 24) * (math.pi / 2);
+        final wobble = 1.0 + 0.06 * math.sin(i * 0.9 + ring * 1.3);
+        final dx = math.cos(a) * r * sx * wobble;
+        final dy = math.sin(a) * r * sy * wobble;
         final p = origin.translate(dx, dy);
         if (first) {
           path.moveTo(p.dx, p.dy);
@@ -475,56 +611,55 @@ class _AtmospherePainter extends CustomPainter {
           path.lineTo(p.dx, p.dy);
         }
       }
-      canvas.drawPath(path, halo..strokeWidth = 2.0);
+      canvas.drawPath(path, halo..strokeWidth = 2.2);
       canvas.drawPath(path, ring.isEven ? silk : silkSoft);
     }
   }
 
   void _drawDescendingSpider(Canvas canvas, Size size, double breathe) {
-    // Âncora na teia do canto superior direito
-    final anchor = Offset(size.width - 28, 18);
-    // Desce e sobe lentamente pela linha
-    final drop = 0.18 + 0.14 * (0.5 + 0.5 * math.sin(t * math.pi * 2 - 0.4));
-    final sway = math.sin(t * math.pi * 2 * 0.7) * 4.5;
+    final anchor = Offset(size.width - 32, 22);
+    final drop = 0.2 + 0.16 * (0.5 + 0.5 * math.sin(t * math.pi * 2 - 0.4));
+    final sway = math.sin(t * math.pi * 2 * 0.7) * 5.5;
     final spider = Offset(
       anchor.dx + sway,
       anchor.dy + size.height * drop,
     );
 
     final thread = Paint()
-      ..color = Colors.white.withValues(alpha: 0.4)
-      ..strokeWidth = 1.1
+      ..color = const Color(0xFFE8E0D0).withValues(alpha: 0.5)
+      ..strokeWidth = 1.2
       ..style = PaintingStyle.stroke
       ..isAntiAlias = true;
     canvas.drawLine(anchor, spider, thread);
 
-    // Corpo
-    final body = Paint()..color = const Color(0xFF2A2218).withValues(alpha: 0.95);
-    final bodySoft = Paint()..color = const Color(0xFF4A3A28).withValues(alpha: 0.9);
+    final body =
+        Paint()..color = const Color(0xFF1A140E).withValues(alpha: 0.96);
+    final bodySoft =
+        Paint()..color = const Color(0xFF3A2E20).withValues(alpha: 0.95);
+    // Abdômen + cefalotórax um pouco maiores
     canvas.drawOval(
-      Rect.fromCenter(center: spider.translate(0, 2.2), width: 7.5, height: 9),
+      Rect.fromCenter(center: spider.translate(0, 2.6), width: 9, height: 11),
       body,
     );
-    canvas.drawCircle(spider.translate(0, -2.8), 3.2, bodySoft);
+    canvas.drawCircle(spider.translate(0, -3.2), 3.8, bodySoft);
 
-    // Pernas — levemente animadas
     final legPaint = Paint()
-      ..color = const Color(0xFF1A140E).withValues(alpha: 0.92)
-      ..strokeWidth = 1.15
+      ..color = const Color(0xFF120E08).withValues(alpha: 0.95)
+      ..strokeWidth = 1.3
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
-    final kick = math.sin(t * math.pi * 2 * 1.4 + breathe) * 0.12;
+    final kick = math.sin(t * math.pi * 2 * 1.4 + breathe) * 0.14;
     for (var side in [-1.0, 1.0]) {
       for (var i = 0; i < 4; i++) {
         final base = -0.55 + i * 0.35 + kick * side;
-        final hip = spider.translate(side * 2.2, -1.5 + i * 1.6);
+        final hip = spider.translate(side * 2.6, -1.8 + i * 1.8);
         final mid = hip.translate(
-          side * (6.5 + i * 0.4) * math.cos(base),
-          3.5 + i * 0.8,
+          side * (7.5 + i * 0.45) * math.cos(base),
+          4.0 + i * 0.9,
         );
         final tip = mid.translate(
-          side * (5.5 - i * 0.3) * math.cos(base + 0.4),
-          4.2,
+          side * (6.2 - i * 0.3) * math.cos(base + 0.4),
+          4.8,
         );
         canvas.drawLine(hip, mid, legPaint);
         canvas.drawLine(mid, tip, legPaint);
@@ -535,92 +670,208 @@ class _AtmospherePainter extends CustomPainter {
   double breatheNoise(double phase) =>
       0.5 + 0.5 * math.sin((t + phase) * math.pi * 2);
 
+  // ─── VIDRO / EM DIA ───────────────────────────────────────────────────
+
   void _paintAlive(Canvas canvas, Size size) {
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
+    final sheen = (t * 0.7) % 1.0;
 
-    // Luz viva do alto
+    // Base de vidro — leve tint azul-cristal + claridade
     canvas.drawRect(
       Offset.zero & size,
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.white.withValues(alpha: 0.1 + breathe * 0.04),
+            AppColors.primaryLight.withValues(alpha: 0.06),
+            Colors.transparent,
+            AppColors.accent.withValues(alpha: 0.04),
+          ],
+          stops: const [0.0, 0.25, 0.7, 1.0],
+        ).createShader(Offset.zero & size),
+    );
+
+    // Reflexo especular diagonal (vidro polido)
+    canvas.save();
+    canvas.clipRRect(
+      RRect.fromRectAndRadius(
+        Offset.zero & size,
+        const Radius.circular(26),
+      ),
+    );
+
+    // Faixa de brilho que varre o card
+    final bandX = size.width * (sheen * 1.6 - 0.3);
+    final bandPath = Path()
+      ..moveTo(bandX - 18, 0)
+      ..lineTo(bandX + 42, 0)
+      ..lineTo(bandX + 8, size.height)
+      ..lineTo(bandX - 52, size.height)
+      ..close();
+    canvas.drawPath(
+      bandPath,
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: [
+            Colors.transparent,
+            Colors.white.withValues(alpha: 0.04),
+            Colors.white.withValues(alpha: 0.22 + breathe * 0.06),
+            Colors.white.withValues(alpha: 0.06),
+            Colors.transparent,
+          ],
+          stops: const [0.0, 0.28, 0.5, 0.72, 1.0],
+        ).createShader(Rect.fromLTWH(bandX - 52, 0, 94, size.height)),
+    );
+
+    // Highlight de bisel no topo (aresta de vidro)
+    canvas.drawRRect(
+      RRect.fromRectAndCorners(
+        Rect.fromLTWH(8, 5, size.width - 16, 2.2),
+        topLeft: const Radius.circular(2),
+        topRight: const Radius.circular(2),
+      ),
+      Paint()
+        ..shader = LinearGradient(
+          colors: [
+            Colors.transparent,
+            Colors.white.withValues(alpha: 0.55 + breathe * 0.2),
+            Colors.white.withValues(alpha: 0.7),
+            Colors.transparent,
+          ],
+          stops: const [0.0, 0.25, 0.7, 1.0],
+        ).createShader(Rect.fromLTWH(8, 5, size.width - 16, 2.2)),
+    );
+
+    // Borda interna esquerda (luz lateral)
+    canvas.drawRect(
+      Rect.fromLTWH(4, 12, 1.4, size.height - 28),
       Paint()
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            AppColors.accent.withValues(alpha: 0.14 + breathe * 0.05),
-            AppColors.primary.withValues(alpha: 0.08),
+            Colors.white.withValues(alpha: 0.35),
+            Colors.white.withValues(alpha: 0.08),
             Colors.transparent,
           ],
-          stops: const [0.0, 0.35, 0.75],
-        ).createShader(Offset.zero & size),
+        ).createShader(Rect.fromLTWH(4, 12, 1.4, size.height - 28)),
     );
 
-    // Aurora suave no canto
+    canvas.restore();
+
+    // Aurora quente no canto superior direito
     canvas.drawCircle(
-      Offset(size.width * 0.85, size.height * 0.15),
-      size.shortestSide * 0.55,
+      Offset(size.width * 0.88, size.height * 0.12),
+      size.shortestSide * 0.58,
       Paint()
         ..shader = RadialGradient(
           colors: [
-            AppColors.accentBright.withValues(alpha: 0.18 + breathe * 0.06),
-            AppColors.primaryLight.withValues(alpha: 0.06),
+            AppColors.accentBright.withValues(alpha: 0.28 + breathe * 0.1),
+            AppColors.accent.withValues(alpha: 0.12),
+            AppColors.primaryLight.withValues(alpha: 0.04),
             Colors.transparent,
           ],
+          stops: const [0.0, 0.35, 0.6, 1.0],
         ).createShader(
           Rect.fromCircle(
-            center: Offset(size.width * 0.85, size.height * 0.15),
-            radius: size.shortestSide * 0.55,
+            center: Offset(size.width * 0.88, size.height * 0.12),
+            radius: size.shortestSide * 0.58,
           ),
         ),
     );
 
-    // Faíscas subindo
+    // Caústicos / manchas de luz no vidro
+    for (var i = 0; i < 5; i++) {
+      final phase = (t + i * 0.17) % 1.0;
+      final cx = size.width * (0.15 + i * 0.18 + 0.04 * math.sin(phase * math.pi * 2));
+      final cy = size.height * (0.25 + 0.12 * math.cos(phase * math.pi * 2 + i));
+      final r = size.shortestSide * (0.08 + 0.04 * math.sin(phase * math.pi));
+      canvas.drawOval(
+        Rect.fromCenter(center: Offset(cx, cy), width: r * 2.4, height: r),
+        Paint()
+          ..shader = RadialGradient(
+            colors: [
+              Colors.white.withValues(alpha: 0.1 + breathe * 0.04),
+              Colors.white.withValues(alpha: 0.02),
+              Colors.transparent,
+            ],
+          ).createShader(
+            Rect.fromCenter(center: Offset(cx, cy), width: r * 2.4, height: r),
+          ),
+      );
+    }
+
+    // Partículas de luz — faíscas limpas
     for (final s in specs) {
       final cycle = (t * s.speed + s.phase) % 1.0;
       final y = 1.1 - cycle * 1.25;
       final x = (s.x + math.sin((t + s.phase) * math.pi * 2) * s.drift) % 1.0;
-      final alpha = (math.sin(cycle * math.pi) * 0.7).clamp(0.0, 0.75);
+      final alpha = (math.sin(cycle * math.pi) * 0.85).clamp(0.0, 0.9);
       final c = switch (s.kind) {
         0 => AppColors.accentBright,
         1 => Colors.white,
         2 => AppColors.primaryLight,
-        _ => AppColors.sand,
+        _ => AppColors.accentSoft,
       };
       final paint = Paint()..color = c.withValues(alpha: alpha);
       final ox = x * size.width;
       final oy = y * size.height;
       if (s.kind == 0) {
-        canvas.drawRRect(
-          RRect.fromRectAndRadius(
-            Rect.fromCenter(
-              center: Offset(ox, oy),
-              width: s.size * 0.4,
-              height: s.size * 2.2,
-            ),
-            const Radius.circular(2),
-          ),
-          paint,
+        // Cruz de brilho (sparkle)
+        final spark = Paint()
+          ..color = c.withValues(alpha: alpha)
+          ..strokeWidth = 1.2
+          ..strokeCap = StrokeCap.round;
+        canvas.drawLine(
+          Offset(ox, oy - s.size * 1.4),
+          Offset(ox, oy + s.size * 1.4),
+          spark,
         );
+        canvas.drawLine(
+          Offset(ox - s.size * 1.0, oy),
+          Offset(ox + s.size * 1.0, oy),
+          spark,
+        );
+        canvas.drawCircle(Offset(ox, oy), s.size * 0.25, paint);
       } else {
-        canvas.drawCircle(Offset(ox, oy), s.size * 0.4, paint);
+        canvas.drawCircle(Offset(ox, oy), s.size * 0.45, paint);
       }
     }
 
-    // Borda dourada viva
-    final inset = Rect.fromLTWH(1.5, 1.5, size.width - 3, size.height - 3);
+    // Borda de vidro — highlight + sombra interna
+    final inset = Rect.fromLTWH(1.2, 1.2, size.width - 2.4, size.height - 2.4);
+    final rrect = RRect.fromRectAndRadius(inset, const Radius.circular(26));
+
+    // Glow externo suave na borda
     canvas.drawRRect(
-      RRect.fromRectAndRadius(inset, const Radius.circular(26)),
+      rrect,
       Paint()
         ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.35
-        ..shader = LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            AppColors.accentBright.withValues(alpha: 0.55 + breathe * 0.2),
-            AppColors.accent.withValues(alpha: 0.2),
-            AppColors.primaryLight.withValues(alpha: 0.4),
+        ..strokeWidth = 3.2
+        ..color = AppColors.accentBright.withValues(alpha: 0.12 + breathe * 0.06)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
+    );
+
+    canvas.drawRRect(
+      rrect,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1.6
+        ..shader = ui.Gradient.linear(
+          inset.topLeft,
+          inset.bottomRight,
+          [
+            Colors.white.withValues(alpha: 0.75 + breathe * 0.15),
+            AppColors.accentBright.withValues(alpha: 0.55),
+            AppColors.primaryLight.withValues(alpha: 0.35),
+            Colors.white.withValues(alpha: 0.4),
           ],
-        ).createShader(inset),
+          const [0.0, 0.3, 0.7, 1.0],
+        ),
     );
   }
 
@@ -642,33 +893,39 @@ class HeroCardColorGrade extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (mood == HeroCardMood.alive) return child;
-
     final matrix = switch (mood) {
       HeroCardMood.frozen => _freezeMatrix,
       HeroCardMood.dusty => _dustMatrix,
-      HeroCardMood.alive => null,
+      // Clareza + contraste — vidro limpo
+      HeroCardMood.alive => _glassMatrix,
     };
-    if (matrix == null) return child;
     return ColorFiltered(
       colorFilter: ColorFilter.matrix(matrix),
       child: child,
     );
   }
 
-  /// Leve empurrão pro ciano / frio no backdrop (conteúdo fica por cima).
+  /// Leve empurrão pro ciano / frio no backdrop.
   static const _freezeMatrix = <double>[
-    0.85, 0.05, 0.15, 0, 8,
-    0.05, 0.90, 0.18, 0, 12,
-    0.05, 0.12, 1.15, 0, 22,
+    0.78, 0.05, 0.2, 0, 12,
+    0.05, 0.88, 0.22, 0, 16,
+    0.05, 0.15, 1.22, 0, 28,
     0, 0, 0, 1, 0,
   ];
 
-  /// Sépia forte — pergaminho / terra, sem vermelho.
+  /// Sépia forte — pergaminho / terra.
   static const _dustMatrix = <double>[
-    0.48, 0.42, 0.12, 0, 18,
-    0.32, 0.38, 0.10, 0, 8,
-    0.12, 0.18, 0.16, 0, 0,
+    0.45, 0.4, 0.1, 0, 22,
+    0.3, 0.35, 0.08, 0, 10,
+    0.1, 0.15, 0.14, 0, 0,
+    0, 0, 0, 1, 0,
+  ];
+
+  /// Contraste + saturação leve — limpo como vidro.
+  static const _glassMatrix = <double>[
+    1.08, -0.02, -0.02, 0, 6,
+    -0.02, 1.06, -0.01, 0, 4,
+    -0.01, -0.01, 1.1, 0, 8,
     0, 0, 0, 1, 0,
   ];
 }
@@ -697,25 +954,25 @@ class HeroCardMoodStyle {
   }) {
     return switch (mood) {
       HeroCardMood.frozen => HeroCardMoodStyle(
-          border: AppColors.ice.withValues(alpha: 0.85),
-          borderWidth: 1.85,
-          glow: AppColors.ice.withValues(alpha: 0.28),
+          border: AppColors.iceSoft.withValues(alpha: 0.9),
+          borderWidth: 2.0,
+          glow: AppColors.ice.withValues(alpha: 0.4),
           label: AppColors.iceSoft,
-          footer: AppColors.iceSoft.withValues(alpha: 0.92),
+          footer: AppColors.iceSoft.withValues(alpha: 0.95),
           stepLabel: 'Protegido pelo gelo',
         ),
       HeroCardMood.dusty => HeroCardMoodStyle(
-          border: const Color(0xFFA87840).withValues(alpha: 0.85),
-          borderWidth: 2.0,
-          glow: const Color(0xFF6B4A28).withValues(alpha: 0.35),
+          border: const Color(0xFFB88848).withValues(alpha: 0.9),
+          borderWidth: 2.2,
+          glow: const Color(0xFF6B4A28).withValues(alpha: 0.4),
           label: const Color(0xFFD4B896),
           footer: const Color(0xFFC4A070),
           stepLabel: 'Ficando para trás',
         ),
       HeroCardMood.alive => HeroCardMoodStyle(
-          border: AppMetrics.accentBorder(alpha: 0.55, color: trailAccent),
-          borderWidth: 1.25,
-          glow: trailAccent.withValues(alpha: 0.12),
+          border: Colors.white.withValues(alpha: 0.45),
+          borderWidth: 1.5,
+          glow: trailAccent.withValues(alpha: 0.28),
           label: trailAccent,
           footer: trailAccent,
           stepLabel: 'Em dia',

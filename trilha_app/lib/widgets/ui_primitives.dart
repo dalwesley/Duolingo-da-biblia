@@ -59,6 +59,57 @@ class AppMetrics {
   }) => const [];
 }
 
+/// Painel de cena na lição (estudo / pergunta / memória) — glass translúcido.
+class ScenePanel extends StatelessWidget {
+  final Widget child;
+  final Color accent;
+  final EdgeInsetsGeometry padding;
+  final double radius;
+
+  const ScenePanel({
+    super.key,
+    required this.child,
+    required this.accent,
+    this.padding = const EdgeInsets.all(AppSpace.lg),
+    this.radius = AppRadii.lg,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(radius),
+      child: Container(
+        width: double.infinity,
+        padding: padding,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(radius),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.white.withValues(alpha: 0.12),
+              Colors.white.withValues(alpha: 0.05),
+              Colors.black.withValues(alpha: 0.3),
+            ],
+          ),
+          border: Border.all(
+            color: AppColors.textOnDark.withValues(alpha: 0.14),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: accent.withValues(alpha: 0.12),
+              blurRadius: 28,
+              offset: const Offset(0, 10),
+            ),
+            ...AppMetrics.cardShadow(elevated: true),
+          ],
+        ),
+        child: child,
+      ),
+    );
+  }
+}
+
 /// Botão CTA açafrão — ação principal em cards e telas.
 class CopperCta extends StatelessWidget {
   final String label;

@@ -11,6 +11,11 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 Trabalho em curso (ainda não versionado em release).
 
+### Changed
+- Perguntas/memória mais game: badge DESAFIO/BÔNUS, sem narrativa itálica, Dica (não Sussurro), tiles 3D, VERIFICAR, feedback Acertou!/Errou!, vidas no HUD
+- Card CTA da home: em risco = poeira + teias + aranha; gelo usado = geada/cristais; em dia = vidro limpo com reflexo e bisel
+- Memória: pontuação do verso (reticências → frases), blank preserva vírgula/ponto, header sem título duplicado
+
 ---
 
 ## [1.0.17] — 2026-08-04

@@ -72,7 +72,7 @@ class LampsBar extends StatelessWidget {
         ),
         const SizedBox(width: 6),
         Text(
-          'Lâmpadas',
+          'Vidas',
           style: TextStyle(
             fontSize: 11,
             fontWeight: FontWeight.w800,

@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
-/// Micro-modo (~20s): completar palavras faltando no versículo — cena, não quiz.
+/// Micro-modo (~20s): completar palavras do versículo — cena, alinhada ao estudo.
 class VerseFillPanel extends StatefulWidget {
   final String reference;
   final String verseText;
@@ -39,17 +40,13 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   @override
   void initState() {
     super.initState();
-    _words = widget.verseText
-        .replaceAll(RegExp(r'[“”"…]'), '')
-        .split(RegExp(r'\s+'))
-        .where((w) => w.trim().isNotEmpty)
-        .toList();
+    _words = _tokenizeVerse(widget.verseText);
     _blankIndexes = _pickBlanks(_words);
     _options = _buildOptions(_words, _blankIndexes);
 
     _stagger = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 980),
+      duration: const Duration(milliseconds: 900),
     )..forward();
     _pulse = AnimationController(
       vsync: this,
@@ -59,6 +56,34 @@ class _VerseFillPanelState extends State<VerseFillPanel>
       vsync: this,
       duration: const Duration(milliseconds: 720),
     );
+  }
+
+  /// Ellipsis de trecho → pontuação legível; preserva vírgulas/pontos nos tokens.
+  static List<String> _tokenizeVerse(String raw) {
+    var t = raw.trim();
+    t = t.replaceAll(RegExp(r'[“”"]'), '');
+    // "astuta… Disse" → "astuta. Disse"
+    t = t.replaceAll(RegExp(r'\s*…\s*'), '. ');
+    t = t.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (t.isNotEmpty && !RegExp(r'[.!?…]$').hasMatch(t)) {
+      t = '$t.';
+    }
+    // Evita ". ."
+    t = t.replaceAll(RegExp(r'\.\s*\.'), '.');
+    return t
+        .split(RegExp(r'\s+'))
+        .where((w) => w.trim().isNotEmpty)
+        .toList();
+  }
+
+  static String _trailingPunct(String w) {
+    final m = RegExp(r'[^\wÀ-ÿ\-]+$').firstMatch(w);
+    return m?.group(0) ?? '';
+  }
+
+  static String _leadingPunct(String w) {
+    final m = RegExp(r'^[^\wÀ-ÿ\-]+').firstMatch(w);
+    return m?.group(0) ?? '';
   }
 
   @override
@@ -71,28 +96,63 @@ class _VerseFillPanelState extends State<VerseFillPanel>
 
   static List<int> _pickBlanks(List<String> words) {
     if (words.length < 3) return words.isEmpty ? const [] : [0];
+    final stop = {
+      'pois',
+      'para',
+      'como',
+      'quando',
+      'onde',
+      'então',
+      'entao',
+      'dele',
+      'dela',
+      'eles',
+      'elas',
+      'este',
+      'esta',
+      'isso',
+      'aqui',
+      'ali',
+      'seu',
+      'sua',
+      'seus',
+      'suas',
+      'pelo',
+      'pela',
+      'nos',
+      'nas',
+      'dos',
+      'das',
+    };
     final candidates = <int>[];
     for (var i = 0; i < words.length; i++) {
-      final clean = words[i].replaceAll(RegExp(r'[^\wÀ-ÿ]'), '');
-      if (clean.length >= 4) candidates.add(i);
+      final clean = _cleanWord(words[i]);
+      if (clean.length < 4) continue;
+      if (stop.contains(clean.toLowerCase())) continue;
+      // Não blanka só pontuação
+      if (clean.isEmpty) continue;
+      candidates.add(i);
     }
-    if (candidates.isEmpty) {
-      return [words.length ~/ 2];
-    }
+    if (candidates.isEmpty) return [words.length ~/ 2];
     candidates.shuffle(math.Random(words.length * 17));
     final n = words.length >= 10 ? 3 : (words.length >= 6 ? 2 : 1);
-    final picked = candidates.take(n).toList()..sort();
+    final picked = <int>[];
+    for (final i in candidates) {
+      if (picked.any((p) => (p - i).abs() < 2)) continue;
+      picked.add(i);
+      if (picked.length >= n) break;
+    }
+    if (picked.isEmpty) picked.add(candidates.first);
+    picked.sort();
     return picked;
   }
 
   static List<String> _buildOptions(List<String> words, List<int> blanks) {
-    final answers = [
-      for (final i in blanks) _cleanWord(words[i]),
-    ];
+    final answers = [for (final i in blanks) _cleanWord(words[i])];
     final decoys = <String>[];
     final pool = words
         .map(_cleanWord)
-        .where((w) => w.length >= 3 && !answers.contains(w))
+        .where((w) => w.length >= 4 && !answers.contains(w))
         .toSet()
         .toList();
     pool.shuffle(math.Random(blanks.length + 3));
@@ -201,7 +261,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                         colors: [
                           flashColor.withValues(
                             alpha: (1 - _revealFlash.value) *
-                                (_correct ? 0.32 : 0.24),
+                                (_correct ? 0.28 : 0.2),
                           ),
                           Colors.transparent,
                         ],
@@ -226,27 +286,11 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       parent: _stagger,
                       curve: const Interval(0, 0.35, curve: Curves.easeOut),
                     ),
-                    child: SlideTransition(
-                      position: Tween<Offset>(
-                        begin: const Offset(0, 0.06),
-                        end: Offset.zero,
-                      ).animate(
-                        CurvedAnimation(
-                          parent: _stagger,
-                          curve: const Interval(
-                            0,
-                            0.4,
-                            curve: Curves.easeOutCubic,
-                          ),
-                        ),
-                      ),
                       child: _MemoryHeader(
                         accent: accent,
                         filled: _filledCount,
                         total: _blankIndexes.length,
-                        compact: compact,
                       ),
-                    ),
                   ),
                   SizedBox(height: gap),
                   Expanded(
@@ -259,33 +303,18 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                           curve: Curves.easeOut,
                         ),
                       ),
-                      child: SlideTransition(
-                        position: Tween<Offset>(
-                          begin: const Offset(0, 0.08),
-                          end: Offset.zero,
-                        ).animate(
-                          CurvedAnimation(
-                            parent: _stagger,
-                            curve: const Interval(
-                              0.12,
-                              0.58,
-                              curve: Curves.easeOutCubic,
-                            ),
-                          ),
-                        ),
-                        child: _VerseStage(
-                          words: _words,
-                          blankIndexes: _blankIndexes,
-                          picked: _picked,
-                          revealed: _revealed,
-                          accent: accent,
-                          reference: widget.reference,
-                          activeBlank: active,
-                          pulse: _pulse,
-                          compact: compact,
-                          onClear: _clearSlot,
-                          cleanWord: _cleanWord,
-                        ),
+                      child: _VerseStage(
+                        words: _words,
+                        blankIndexes: _blankIndexes,
+                        picked: _picked,
+                        revealed: _revealed,
+                        accent: accent,
+                        reference: widget.reference,
+                        activeBlank: active,
+                        pulse: _pulse,
+                        compact: compact,
+                        onClear: _clearSlot,
+                        cleanWord: _cleanWord,
                       ),
                     ),
                   ),
@@ -303,10 +332,10 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       child: Column(
                         children: [
                           Text(
-                            'Toque na ordem · ~20s',
+                            'Toque na ordem',
                             style: AppTypography.label(
                               size: 10,
-                              letterSpacing: 1.2,
+                              letterSpacing: 1.0,
                               color: AppColors.textOnDark.withValues(
                                 alpha: 0.42,
                               ),
@@ -330,7 +359,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                                 ),
                             ],
                           ),
-                          SizedBox(height: compact ? 6 : 10),
+                          SizedBox(height: compact ? 4 : 8),
                           TextButton(
                             onPressed: () => widget.onDone(false),
                             child: Text(
@@ -356,6 +385,15 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       child: _RevealBanner(
                         correct: _correct,
                         accent: accent,
+                        corrections: [
+                          for (final i in _blankIndexes)
+                            if ((_picked[i] ?? '').toLowerCase() !=
+                                _cleanWord(_words[i]).toLowerCase())
+                              (
+                                got: _picked[i] ?? '—',
+                                expected: _cleanWord(_words[i]),
+                              ),
+                        ],
                         onContinue: () => widget.onDone(_correct),
                       ),
                     ),
@@ -373,83 +411,57 @@ class _MemoryHeader extends StatelessWidget {
   final Color accent;
   final int filled;
   final int total;
-  final bool compact;
 
   const _MemoryHeader({
     required this.accent,
     required this.filled,
     required this.total,
-    required this.compact,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.heart,
-              size: compact ? 16 : 18,
-              accent: accent,
-              framed: false,
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          decoration: BoxDecoration(
+            color: AppMetrics.accentFill(color: accent, alpha: 0.18),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(
+              color: AppMetrics.accentBorder(color: accent, alpha: 0.7),
+              width: 1.5,
             ),
-            const SizedBox(width: 8),
-            Text(
-              'A palavra ecoa',
-              style: AppTypography.display(
-                size: compact ? 13 : 15,
-                weight: FontWeight.w500,
-                fontStyle: FontStyle.italic,
-                height: 1.2,
-                color: AppColors.textOnDark.withValues(alpha: 0.55),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(Icons.flash_on_rounded, size: 14, color: accent),
+              const SizedBox(width: 4),
+              Text(
+                'BÔNUS',
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 1.1,
+                  color: accent,
+                ),
               ),
-            ),
-          ],
-        ),
-        SizedBox(height: compact ? 6 : 10),
-        Text(
-          'Completar o verso',
-          textAlign: TextAlign.center,
-          style: AppTypography.display(
-            size: compact ? 22 : 26,
-            weight: FontWeight.w700,
-            height: 1.15,
+            ],
           ),
         ),
-        SizedBox(height: compact ? 8 : 12),
+        const Spacer(),
         Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             for (var i = 0; i < total; i++) ...[
-              if (i > 0) const SizedBox(width: 8),
+              if (i > 0) const SizedBox(width: 6),
               AnimatedContainer(
-                duration: const Duration(milliseconds: 280),
-                curve: Curves.easeOutCubic,
-                width: i < filled ? 22 : 8,
+                duration: const Duration(milliseconds: 220),
+                width: i < filled ? 18 : 8,
                 height: 8,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
-                  gradient: i < filled
-                      ? LinearGradient(
-                          colors: [
-                            Color.lerp(accent, Colors.white, 0.35)!,
-                            accent,
-                          ],
-                        )
-                      : null,
                   color: i < filled
-                      ? null
-                      : AppColors.textOnDark.withValues(alpha: 0.18),
-                  boxShadow: i < filled
-                      ? [
-                          BoxShadow(
-                            color: accent.withValues(alpha: 0.45),
-                            blurRadius: 10,
-                          ),
-                        ]
-                      : null,
+                      ? accent
+                      : AppColors.textOnDark.withValues(alpha: 0.2),
                 ),
               ),
             ],
@@ -489,254 +501,254 @@ class _VerseStage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pad = compact ? AppSpace.md : AppSpace.lg;
-
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadii.lg),
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.fromLTRB(
-          pad,
-          pad,
-          pad,
-          compact ? AppSpace.md : AppSpace.section,
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(compact ? 16 : 18),
+      decoration: BoxDecoration(
+        color: AppColors.nightElevated,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.18),
+          width: 2,
         ),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.white.withValues(alpha: 0.12),
-              Colors.white.withValues(alpha: 0.05),
-              Colors.black.withValues(alpha: 0.32),
-            ],
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.45),
+            blurRadius: 0,
+            offset: const Offset(0, 4),
           ),
-          border: Border.all(
-            color: AppColors.textOnDark.withValues(alpha: 0.14),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: accent.withValues(alpha: 0.14),
-              blurRadius: 32,
-              offset: const Offset(0, 12),
-            ),
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.35),
-              blurRadius: 24,
-              offset: const Offset(0, 10),
-            ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Text(
-              reference.toUpperCase(),
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.4,
-                color: accent,
-              ),
-            ),
-            SizedBox(height: compact ? 8 : 12),
-            Center(
-              child: Container(
-                width: 40,
-                height: 1.5,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                  gradient: LinearGradient(
-                    colors: [
-                      accent.withValues(alpha: 0),
-                      accent.withValues(alpha: 0.9),
-                      accent.withValues(alpha: 0),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(height: compact ? 12 : 18),
-            Expanded(
-              child: Center(
-                child: SingleChildScrollView(
-                  physics: const BouncingScrollPhysics(),
-                  child: Wrap(
-                    spacing: 6,
-                    runSpacing: compact ? 10 : 14,
-                    alignment: WrapAlignment.center,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      for (var i = 0; i < words.length; i++)
-                        if (blankIndexes.contains(i))
-                          _BlankSlot(
-                            value: picked[i],
-                            ordinal: blankIndexes.indexOf(i) + 1,
-                            revealed: revealed,
-                            correct: revealed &&
-                                (picked[i]?.toLowerCase() ==
-                                    cleanWord(words[i]).toLowerCase()),
-                            active: activeBlank == i && !revealed,
-                            accent: accent,
-                            pulse: pulse,
-                            onTap: () => onClear(i),
-                          )
-                        else
-                          Text(
-                            words[i],
-                            style: AppTypography.verse(
-                              size: compact ? 18 : 21,
-                              weight: FontWeight.w600,
-                              height: 1.55,
-                              color: AppColors.textOnDark.withValues(
-                                alpha: 0.92,
-                              ),
-                            ),
-                          ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+        ],
       ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            reference,
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 0.6,
+              color: accent,
+            ),
+          ),
+          SizedBox(height: compact ? 12 : 14),
+          Expanded(
+            child: Center(
+              child: SingleChildScrollView(
+                physics: const BouncingScrollPhysics(),
+                child: Wrap(
+                  spacing: 5,
+                  runSpacing: compact ? 8 : 12,
+                  alignment: WrapAlignment.center,
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  children: [
+                    for (var i = 0; i < words.length; i++)
+                      if (blankIndexes.contains(i))
+                        _BlankToken(
+                          value: picked[i],
+                          token: words[i],
+                          revealed: revealed,
+                          correct: revealed &&
+                              (picked[i]?.toLowerCase() ==
+                                  cleanWord(words[i]).toLowerCase()),
+                          active: activeBlank == i && !revealed,
+                          accent: accent,
+                          pulse: pulse,
+                          fontSize: compact ? 18.0 : 21.0,
+                          onTap: () => onClear(i),
+                          cleanWord: cleanWord,
+                          leadingPunct: _VerseFillPanelState._leadingPunct,
+                          trailingPunct: _VerseFillPanelState._trailingPunct,
+                        )
+                      else
+                        Text(
+                          words[i],
+                          style: AppTypography.display(
+                            size: compact ? 18 : 21,
+                            weight: FontWeight.w700,
+                            height: 1.45,
+                          ),
+                        ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BlankToken extends StatelessWidget {
+  final String? value;
+  final String token;
+  final bool revealed;
+  final bool correct;
+  final bool active;
+  final Color accent;
+  final AnimationController pulse;
+  final double fontSize;
+  final VoidCallback onTap;
+  final String Function(String) cleanWord;
+  final String Function(String) leadingPunct;
+  final String Function(String) trailingPunct;
+
+  const _BlankToken({
+    required this.value,
+    required this.token,
+    required this.revealed,
+    required this.correct,
+    required this.active,
+    required this.accent,
+    required this.pulse,
+    required this.fontSize,
+    required this.onTap,
+    required this.cleanWord,
+    required this.leadingPunct,
+    required this.trailingPunct,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final expected = cleanWord(token);
+    final lead = leadingPunct(token);
+    final trail = trailingPunct(token);
+    final bodyStyle = AppTypography.display(
+      size: fontSize,
+      weight: FontWeight.w700,
+      height: 1.45,
+    );
+
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
+      children: [
+        if (lead.isNotEmpty) Text(lead, style: bodyStyle),
+        _BlankSlot(
+          value: value,
+          expected: expected,
+          revealed: revealed,
+          correct: correct,
+          active: active,
+          accent: accent,
+          pulse: pulse,
+          fontSize: fontSize,
+          onTap: onTap,
+        ),
+        if (trail.isNotEmpty) Text(trail, style: bodyStyle),
+      ],
     );
   }
 }
 
 class _BlankSlot extends StatelessWidget {
   final String? value;
-  final int ordinal;
+  final String expected;
   final bool revealed;
   final bool correct;
   final bool active;
   final Color accent;
   final AnimationController pulse;
+  final double fontSize;
   final VoidCallback onTap;
 
   const _BlankSlot({
     required this.value,
-    required this.ordinal,
+    required this.expected,
     required this.revealed,
     required this.correct,
     required this.active,
     required this.accent,
     required this.pulse,
+    required this.fontSize,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     final filled = value != null;
-    final Color border;
-    final Color fill;
-    if (revealed) {
-      border = correct ? accent : AppColors.error;
-      fill = (correct ? accent : AppColors.error).withValues(alpha: 0.22);
-    } else if (filled) {
-      border = accent.withValues(alpha: 0.85);
-      fill = accent.withValues(alpha: 0.18);
-    } else if (active) {
-      border = accent;
-      fill = accent.withValues(alpha: 0.12);
+
+    final probe = TextPainter(
+      text: TextSpan(
+        text: filled ? value! : expected,
+        style: AppTypography.display(size: fontSize, weight: FontWeight.w800),
+      ),
+      textDirection: TextDirection.ltr,
+    )..layout();
+    final minW = math.max(40.0, probe.width);
+
+    Widget slot;
+    if (!filled) {
+      final lineColor = active
+          ? accent
+          : AppColors.textOnDark.withValues(alpha: 0.4);
+      slot = SizedBox(
+        width: minW,
+        height: fontSize * 1.45,
+        child: Align(
+          alignment: Alignment.bottomCenter,
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 180),
+            height: active ? 3 : 2.5,
+            width: minW,
+            margin: const EdgeInsets.only(bottom: 2),
+            decoration: BoxDecoration(
+              color: lineColor,
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+            ),
+          ),
+        ),
+      );
+    } else if (revealed && !correct) {
+      slot = Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            value!,
+            style: AppTypography.display(
+              size: fontSize,
+              weight: FontWeight.w800,
+              height: 1.2,
+              color: AppColors.error,
+            ).copyWith(decoration: TextDecoration.lineThrough),
+          ),
+          Text(
+            expected,
+            style: AppTypography.display(
+              size: fontSize * 0.85,
+              weight: FontWeight.w800,
+              height: 1.15,
+              color: accent,
+            ),
+          ),
+        ],
+      );
     } else {
-      border = AppColors.textOnDark.withValues(alpha: 0.22);
-      fill = Colors.white.withValues(alpha: 0.05);
+      slot = GestureDetector(
+        onTap: revealed ? null : onTap,
+        child: Text(
+          value!,
+          style: AppTypography.display(
+            size: fontSize,
+            weight: FontWeight.w800,
+            height: 1.45,
+            color: accent,
+          ),
+        ),
+      );
     }
 
-    Widget chip = GestureDetector(
-      onTap: filled && !revealed ? onTap : null,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
-        curve: Curves.easeOutCubic,
-        constraints: const BoxConstraints(minWidth: 72),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-        decoration: BoxDecoration(
-          color: fill,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          border: Border.all(
-            color: border,
-            width: active || revealed || filled ? 1.7 : 1.2,
-          ),
-          boxShadow: [
-            if (active || (filled && !revealed))
-              BoxShadow(
-                color: accent.withValues(alpha: active ? 0.4 : 0.22),
-                blurRadius: active ? 16 : 10,
-                offset: const Offset(0, 4),
-              ),
-            if (revealed && correct)
-              BoxShadow(
-                color: accent.withValues(alpha: 0.35),
-                blurRadius: 14,
-              ),
-          ],
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (!filled && !revealed) ...[
-              Container(
-                width: 16,
-                height: 16,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: (active ? accent : AppColors.textOnDark)
-                      .withValues(alpha: active ? 0.9 : 0.2),
-                ),
-                child: Text(
-                  '$ordinal',
-                  style: AppTypography.label(
-                    size: 9,
-                    letterSpacing: 0,
-                    color: active
-                        ? AppColors.inkOnAccent
-                        : AppColors.textOnDark.withValues(alpha: 0.7),
-                  ),
-                ),
-              ),
-              const SizedBox(width: 8),
-            ],
-            Text(
-              value ?? '····',
-              style: AppTypography.verse(
-                size: 18,
-                weight: FontWeight.w700,
-                color: filled
-                    ? AppColors.textOnDark
-                    : AppColors.textOnDark.withValues(
-                        alpha: active ? 0.55 : 0.35,
-                      ),
-              ),
-            ),
-            if (revealed) ...[
-              const SizedBox(width: 6),
-              Icon(
-                correct ? Icons.check_rounded : Icons.close_rounded,
-                size: 16,
-                color: correct ? accent : AppColors.error,
-              ),
-            ],
-          ],
-        ),
-      ),
-    );
-
-    if (!active || revealed) return chip;
+    if (!active || revealed || filled) return slot;
 
     return AnimatedBuilder(
       animation: pulse,
       builder: (context, child) {
         final t = Curves.easeInOut.transform(pulse.value);
-        return Transform.scale(
-          scale: 1 + t * 0.035,
-          child: child,
-        );
+        return Opacity(opacity: 0.75 + t * 0.25, child: child);
       },
-      child: chip,
+      child: slot,
     );
   }
 }
@@ -776,7 +788,7 @@ class _WordChip extends StatelessWidget {
       opacity: curve,
       child: SlideTransition(
         position: Tween<Offset>(
-          begin: Offset(0, 0.12 + index * 0.02),
+          begin: Offset(0, 0.1 + index * 0.015),
           end: Offset.zero,
         ).animate(curve),
         child: Material(
@@ -786,31 +798,31 @@ class _WordChip extends StatelessWidget {
             borderRadius: BorderRadius.circular(AppRadii.md),
             child: AnimatedOpacity(
               duration: const Duration(milliseconds: 200),
-              opacity: used ? 0.28 : 1,
+              opacity: used ? 0.3 : 1,
               child: AnimatedContainer(
                 duration: const Duration(milliseconds: 200),
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 16,
+                  horizontal: 14,
                   vertical: 12,
                 ),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
+                  borderRadius: BorderRadius.circular(14),
                   color: used
                       ? Colors.white.withValues(alpha: 0.04)
-                      : Color.lerp(AppColors.night, accent, 0.12),
+                      : AppColors.nightElevated,
                   border: Border.all(
                     color: used
                         ? Colors.white.withValues(alpha: 0.08)
-                        : accent.withValues(alpha: 0.55),
-                    width: used ? 1 : 1.4,
+                        : Colors.white.withValues(alpha: 0.2),
+                    width: 2,
                   ),
                   boxShadow: used
                       ? null
                       : [
                           BoxShadow(
-                            color: accent.withValues(alpha: 0.18),
-                            blurRadius: 12,
-                            offset: const Offset(0, 4),
+                            color: Colors.black.withValues(alpha: 0.45),
+                            blurRadius: 0,
+                            offset: const Offset(0, 3),
                           ),
                         ],
                 ),
@@ -820,7 +832,7 @@ class _WordChip extends StatelessWidget {
                     size: 15,
                     weight: FontWeight.w800,
                     color: AppColors.textOnDark.withValues(
-                      alpha: used ? 0.45 : 0.95,
+                      alpha: used ? 0.45 : 0.98,
                     ),
                   ),
                 ),
@@ -837,15 +849,19 @@ class _RevealBanner extends StatelessWidget {
   final bool correct;
   final Color accent;
   final VoidCallback onContinue;
+  final List<({String got, String expected})> corrections;
 
   const _RevealBanner({
     required this.correct,
     required this.accent,
     required this.onContinue,
+    required this.corrections,
   });
 
   @override
   Widget build(BuildContext context) {
+    final color = correct ? accent : AppColors.error;
+
     return Column(
       children: [
         Container(
@@ -855,32 +871,16 @@ class _RevealBanner extends StatelessWidget {
             vertical: AppSpace.md,
           ),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: correct
-                  ? [
-                      accent.withValues(alpha: 0.22),
-                      accent.withValues(alpha: 0.08),
-                    ]
-                  : [
-                      AppColors.error.withValues(alpha: 0.18),
-                      AppColors.sand.withValues(alpha: 0.08),
-                    ],
-            ),
-            border: Border.all(
-              color: (correct ? accent : AppColors.error).withValues(
-                alpha: 0.45,
-              ),
-            ),
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            color: color.withValues(alpha: 0.12),
+            border: Border.all(color: color.withValues(alpha: 0.45)),
           ),
           child: Row(
             children: [
               CinematicIcon(
-                glyph: correct ? CinematicGlyph.check : CinematicGlyph.echo,
+                glyph: correct ? CinematicGlyph.check : CinematicGlyph.book,
                 size: 22,
-                accent: correct ? accent : AppColors.sand,
+                accent: color,
                 framed: false,
               ),
               const SizedBox(width: 12),
@@ -889,20 +889,22 @@ class _RevealBanner extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      correct ? 'Combo de memória' : 'Quase — o verso fica',
-                      style: AppTypography.title(
-                        size: 15,
-                        color: correct ? accent : AppColors.sand,
-                      ),
+                      correct ? 'Acertou!' : 'Errou!',
+                      style: AppTypography.title(size: 18, color: color),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       correct
-                          ? '+2 passos na trilha'
-                          : 'A palavra ainda ecoa em você',
+                          ? '+2 passos'
+                          : corrections.isEmpty
+                              ? 'Veja a palavra certa'
+                              : corrections
+                                  .map((c) => '${c.got} → ${c.expected}')
+                                  .join(' · '),
                       style: AppTypography.body(
-                        size: 12,
-                        color: AppColors.textOnDark.withValues(alpha: 0.55),
+                        size: 13,
+                        weight: FontWeight.w700,
+                        color: AppColors.textOnDark.withValues(alpha: 0.65),
                       ),
                     ),
                   ],
@@ -912,31 +914,10 @@ class _RevealBanner extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 12),
-        GestureDetector(
+        CopperCta(
+          label: correct ? 'Seguir' : 'Continuar',
           onTap: onContinue,
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              gradient: AppGradients.gold,
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.2),
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: accent.withValues(alpha: 0.4),
-                  blurRadius: 22,
-                  offset: const Offset(0, 8),
-                ),
-              ],
-            ),
-            child: Text(
-              correct ? 'SEGUIR' : 'CONTINUAR',
-              textAlign: TextAlign.center,
-              style: AppTypography.cta(size: 14),
-            ),
-          ),
+          trailing: CinematicGlyph.path,
         ),
       ],
     );
