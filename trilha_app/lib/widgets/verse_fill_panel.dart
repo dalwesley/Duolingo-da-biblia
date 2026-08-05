@@ -62,14 +62,17 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   static List<String> _tokenizeVerse(String raw) {
     var t = raw.trim();
     t = t.replaceAll(RegExp(r'[“”"]'), '');
+    // Marcadores de excerto nas bordas (…texto… / .texto.)
+    t = t.replaceAll(RegExp(r'^[\s.…]+'), '');
+    t = t.replaceAll(RegExp(r'[\s.…]+$'), '');
     // "astuta… Disse" → "astuta. Disse"
     t = t.replaceAll(RegExp(r'\s*…\s*'), '. ');
     t = t.replaceAll(RegExp(r'\s+'), ' ').trim();
-    if (t.isNotEmpty && !RegExp(r'[.!?…]$').hasMatch(t)) {
-      t = '$t.';
-    }
     // Evita ". ."
     t = t.replaceAll(RegExp(r'\.\s*\.'), '.');
+    if (t.isNotEmpty && !RegExp(r'[.!?]$').hasMatch(t)) {
+      t = '$t.';
+    }
     return t
         .split(RegExp(r'\s+'))
         .where((w) => w.trim().isNotEmpty)
