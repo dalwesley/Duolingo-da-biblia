@@ -145,7 +145,7 @@ class HomePlayerHeader extends StatelessWidget {
                         ? AppColors.ice
                         : a.textMuted(0.45),
                     label: progress.streakFreezeAvailable ? '1' : '0',
-                    hint: 'gelo',
+                    hint: progress.streakFreezeAvailable ? 'livre' : 'usado',
                   ),
                 ),
               ],
