@@ -53,7 +53,7 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
     final rng = math.Random(mood.index * 97 + 11);
     final count = switch (mood) {
       HeroCardMood.frozen => 36,
-      HeroCardMood.dusty => 58,
+      HeroCardMood.dusty => 80,
       HeroCardMood.alive => 18,
     };
     return List.generate(count, (i) {
@@ -378,10 +378,10 @@ class _AtmospherePainter extends CustomPainter {
   // ─── POEIRA / TEIA ────────────────────────────────────────────────────
 
   void _paintDusty(Canvas canvas, Size size) {
-    final flicker = 0.92 + 0.08 * math.sin(t * math.pi * 11);
+    final flicker = 0.9 + 0.1 * math.sin(t * math.pi * 9);
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
 
-    // Lavagem de terra / pergaminho velho — bem opaca
+    // Véu de terra leve — suja sem apagar o texto (camada fica por cima)
     canvas.drawRect(
       Offset.zero & size,
       Paint()
@@ -389,277 +389,432 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            const Color(0xFF6A4528).withValues(alpha: 0.62 * flicker),
-            const Color(0xFF2E1C10).withValues(alpha: 0.55),
-            const Color(0xFF0E0804).withValues(alpha: 0.78),
+            const Color(0xFF5A3820).withValues(alpha: 0.22 * flicker),
+            const Color(0xFF241610).withValues(alpha: 0.12),
+            const Color(0xFF0A0604).withValues(alpha: 0.26),
           ],
           stops: const [0.0, 0.42, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Manchas de umidade / pó acumulado
+    // Manchas / mofo — densas nos cantos
     for (final spot in const [
-      Alignment(-0.85, -0.7),
-      Alignment(0.9, -0.55),
-      Alignment(-0.6, 0.75),
-      Alignment(0.75, 0.85),
-      Alignment(0.1, 0.2),
-      Alignment(-0.2, -0.15),
+      (Alignment(-0.92, -0.78), 0.44, 0.55),
+      (Alignment(0.94, -0.6), 0.52, 0.58),
+      (Alignment(-0.72, 0.84), 0.4, 0.5),
+      (Alignment(0.82, 0.9), 0.46, 0.52),
+      (Alignment(0.15, -0.5), 0.3, 0.22),
+      (Alignment(-0.4, 0.35), 0.28, 0.14),
+      (Alignment(0.5, 0.25), 0.26, 0.12),
     ]) {
-      final cx = (spot.x * 0.5 + 0.5) * size.width;
-      final cy = (spot.y * 0.5 + 0.5) * size.height;
-      final r = size.shortestSide * (0.3 + breathe * 0.035);
+      final (align, scale, strength) = spot;
+      final cx = (align.x * 0.5 + 0.5) * size.width;
+      final cy = (align.y * 0.5 + 0.5) * size.height;
+      final r = size.shortestSide * (scale + breathe * 0.03);
       canvas.drawCircle(
         Offset(cx, cy),
         r,
         Paint()
           ..shader = RadialGradient(
             colors: [
-              const Color(0xFF9A7850).withValues(alpha: 0.34),
-              const Color(0xFF5A3A1C).withValues(alpha: 0.14),
+              const Color(0xFF8A6840).withValues(alpha: 0.4 * strength),
+              const Color(0xFF4A3018).withValues(alpha: 0.16 * strength),
               Colors.transparent,
             ],
           ).createShader(Rect.fromCircle(center: Offset(cx, cy), radius: r)),
       );
     }
 
-    // Poeira acumulada nas bordas inferiores
+    _drawGrimeStreaks(canvas, size, breathe);
+    _drawWearCracks(canvas, size, breathe);
+
+    // Poeira acumulada só na borda inferior
     canvas.drawRect(
-      Rect.fromLTWH(0, size.height * 0.62, size.width, size.height * 0.38),
+      Rect.fromLTWH(0, size.height * 0.7, size.width, size.height * 0.3),
       Paint()
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
             Colors.transparent,
-            const Color(0xFF8A6840).withValues(alpha: 0.18),
-            const Color(0xFF5A3A18).withValues(alpha: 0.42),
+            const Color(0xFF8A6840).withValues(alpha: 0.16),
+            const Color(0xFF3A2410).withValues(alpha: 0.36),
           ],
         ).createShader(
-          Rect.fromLTWH(0, size.height * 0.62, size.width, size.height * 0.38),
+          Rect.fromLTWH(0, size.height * 0.7, size.width, size.height * 0.3),
         ),
     );
 
-    // Vinheta gasta
+    // Vinheta — cantos mortos
     canvas.drawRect(
       Offset.zero & size,
       Paint()
         ..shader = RadialGradient(
-          center: const Alignment(0, -0.05),
-          radius: 1.15,
+          center: const Alignment(0, -0.06),
+          radius: 1.08,
           colors: [
             Colors.transparent,
-            const Color(0xFF1A1008).withValues(alpha: 0.45),
-            Colors.black.withValues(alpha: 0.78),
+            const Color(0xFF140C06).withValues(alpha: 0.3),
+            Colors.black.withValues(alpha: 0.58),
           ],
-          stops: const [0.25, 0.65, 1.0],
+          stops: const [0.2, 0.6, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    // Teias grandes e legíveis
+    // Uma teia só — canto superior direito, seda limpa
     _drawCornerWeb(
       canvas,
-      origin: Offset(size.width - 4, 4),
-      radius: size.shortestSide * 0.52,
-      flipX: true,
-      alpha: 0.58,
-    );
-    _drawCornerWeb(
-      canvas,
-      origin: const Offset(4, 6),
-      radius: size.shortestSide * 0.36,
-      flipX: false,
-      alpha: 0.48,
-    );
-    // Teia menor no canto inferior esquerdo
-    _drawCornerWeb(
-      canvas,
-      origin: Offset(8, size.height - 6),
-      radius: size.shortestSide * 0.22,
-      flipX: false,
-      flipY: true,
-      alpha: 0.32,
+      origin: Offset(size.width - 1, 1),
+      radius: size.shortestSide * 0.34,
+      startAngle: math.pi / 2, // baixo → esquerda
+      alpha: 0.34,
     );
     _drawDescendingSpider(canvas, size, breathe);
 
-    // Poeira densa flutuando
+    // Poeira flutuando
     for (final s in specs) {
-      final cycle = (t * s.speed * 0.4 + s.phase) % 1.0;
-      final y = 1.08 - ((s.y + cycle) % 1.2);
+      final cycle = (t * s.speed * 0.35 + s.phase) % 1.0;
+      final y = 1.1 - ((s.y + cycle) % 1.25);
       final x = (s.x +
-              math.sin((t * 0.55 + s.phase) * math.pi * 2) * s.drift * 1.6) %
+              math.sin((t * 0.5 + s.phase) * math.pi * 2) * s.drift * 1.7) %
           1.0;
       final alpha =
-          (0.1 + 0.22 * math.sin(cycle * math.pi)).clamp(0.0, 0.32);
+          (0.04 + 0.1 * math.sin(cycle * math.pi)).clamp(0.0, 0.14);
       final dust = Color.lerp(
-        const Color(0xFFB8956A),
-        const Color(0xFFE8D4B0),
+        const Color(0xFFA88858),
+        const Color(0xFFE0C898),
         s.kind / 3,
       )!;
       final pos = Offset(x * size.width, y * size.height);
-      final r = s.size * (0.85 + 0.4 * breatheNoise(s.phase));
+      final r = s.size * (1.0 + 0.45 * breatheNoise(s.phase));
       canvas.drawCircle(
         pos,
         r,
         Paint()..color = dust.withValues(alpha: alpha * flicker),
       );
-      if (s.kind == 0) {
+      if (s.kind == 0 || s.kind == 2) {
         canvas.drawCircle(
-          pos.translate(r * 0.6, -r * 0.3),
-          r * 0.45,
-          Paint()..color = dust.withValues(alpha: alpha * 0.55 * flicker),
+          pos.translate(r * 0.65, -r * 0.3),
+          r * 0.48,
+          Paint()..color = dust.withValues(alpha: alpha * 0.4 * flicker),
         );
       }
     }
 
-    // Riscos de filme / arranhões
-    final scratch = Paint()
-      ..color = const Color(0xFFD4B896).withValues(alpha: 0.09 + 0.05 * flicker)
-      ..strokeWidth = 1.15;
-    final scratchX = size.width * ((t * 2.9) % 1.0);
-    canvas.drawLine(
-      Offset(scratchX, 0),
-      Offset(scratchX + 3, size.height),
-      scratch,
-    );
-    final scratchX2 = size.width * ((t * 1.7 + 0.55) % 1.0);
-    canvas.drawLine(
-      Offset(scratchX2, 0),
-      Offset(scratchX2 - 2, size.height),
-      scratch
-        ..color = const Color(0xFFC4A070).withValues(alpha: 0.06),
-    );
+    _drawFilmGrain(canvas, size, flicker);
 
-    // Borda de barro
-    final inset = Rect.fromLTWH(2, 2, size.width - 4, size.height - 4);
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(inset, const Radius.circular(26)),
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 2.4
-        ..shader = LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            const Color(0xFFC4A070).withValues(alpha: 0.6 + breathe * 0.12),
-            const Color(0xFF6B4A28).withValues(alpha: 0.5),
-            const Color(0xFFA87840).withValues(alpha: 0.55),
-          ],
-        ).createShader(inset),
+    // Arranhões
+    for (var i = 0; i < 3; i++) {
+      final scratchX = size.width * ((t * (1.5 + i * 0.6) + i * 0.2) % 1.0);
+      canvas.drawLine(
+        Offset(scratchX, 0),
+        Offset(scratchX + (i.isEven ? 3.5 : -2.5), size.height),
+        Paint()
+          ..color = const Color(0xFFD4B896).withValues(
+            alpha: (0.07 + i * 0.025) * flicker,
+          )
+          ..strokeWidth = 1.2,
+      );
+    }
+
+    _drawWornBorder(canvas, size, breathe);
+  }
+
+  void _drawGrimeStreaks(Canvas canvas, Size size, double breathe) {
+    final seeds = <(double, double, double, double)>[
+      (0.08, 0.0, 0.12, 0.4),
+      (0.22, 0.02, 0.18, 0.52),
+      (0.74, 0.0, 0.8, 0.36),
+      (0.9, 0.03, 0.94, 0.46),
+      (0.14, 0.55, 0.2, 0.96),
+      (0.82, 0.52, 0.88, 0.94),
+    ];
+    for (var i = 0; i < seeds.length; i++) {
+      final (x0, y0, x1, y1) = seeds[i];
+      final wobble = 0.012 * math.sin(t * math.pi * 2 + i);
+      final path = Path()
+        ..moveTo(size.width * x0, size.height * y0)
+        ..cubicTo(
+          size.width * (x0 + wobble),
+          size.height * ((y0 + y1) * 0.35),
+          size.width * (x1 - wobble),
+          size.height * ((y0 + y1) * 0.7),
+          size.width * x1,
+          size.height * y1,
+        );
+      canvas.drawPath(
+        path,
+        Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeCap = StrokeCap.round
+          ..strokeWidth = 2.2 + (i % 3) * 1.0
+          ..color = const Color(0xFF3A2814).withValues(
+            alpha: 0.2 + breathe * 0.05 + (i % 2) * 0.04,
+          )
+          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.1),
+      );
+    }
+  }
+
+  void _drawWearCracks(Canvas canvas, Size size, double breathe) {
+    final crack = Paint()
+      ..color = const Color(0xFF1A1008).withValues(alpha: 0.4 + breathe * 0.08)
+      ..strokeWidth = 1.25
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
+    final soft = Paint()
+      ..color = const Color(0xFF6B4A28).withValues(alpha: 0.18)
+      ..strokeWidth = 2.4
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round;
+
+    void branch(Offset from, double angle, double len, int depth) {
+      if (depth <= 0 || len < 6) return;
+      final to = Offset(
+        from.dx + math.cos(angle) * len,
+        from.dy + math.sin(angle) * len,
+      );
+      canvas.drawLine(from, to, soft);
+      canvas.drawLine(from, to, crack);
+      branch(to, angle - 0.48, len * 0.58, depth - 1);
+      branch(to, angle + 0.38, len * 0.5, depth - 1);
+    }
+
+    branch(
+      Offset(size.width * 0.1, size.height * 0.16),
+      math.pi * 0.35,
+      size.shortestSide * 0.2,
+      3,
+    );
+    branch(
+      Offset(size.width * 0.8, size.height * 0.58),
+      math.pi * 1.15,
+      size.shortestSide * 0.18,
+      3,
     );
   }
 
+  void _drawFilmGrain(Canvas canvas, Size size, double flicker) {
+    final rng = math.Random(((t * 36).floor() + 17));
+    final paint = Paint();
+    for (var i = 0; i < 72; i++) {
+      final x = rng.nextDouble() * size.width;
+      final y = rng.nextDouble() * size.height;
+      paint.color = (rng.nextBool()
+              ? const Color(0xFFE8D4B0)
+              : const Color(0xFF2A1C10))
+          .withValues(alpha: (0.035 + rng.nextDouble() * 0.08) * flicker);
+      canvas.drawRect(
+        Rect.fromLTWH(x, y, 1.1 + rng.nextDouble() * 1.6, 1.0),
+        paint,
+      );
+    }
+  }
+
+  void _drawWornBorder(Canvas canvas, Size size, double breathe) {
+    final inset = Rect.fromLTWH(2, 2, size.width - 4, size.height - 4);
+    final rrect = RRect.fromRectAndRadius(inset, const Radius.circular(26));
+
+    canvas.drawRRect(
+      rrect,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 4.2
+        ..color = const Color(0xFF4A3010).withValues(alpha: 0.5)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2.8),
+    );
+
+    final worn = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2.4
+      ..strokeCap = StrokeCap.round
+      ..shader = LinearGradient(
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [
+          const Color(0xFFA88850).withValues(alpha: 0.4 + breathe * 0.08),
+          const Color(0xFF5A3A18).withValues(alpha: 0.65),
+          const Color(0xFF8A6840).withValues(alpha: 0.35),
+          const Color(0xFF3A2810).withValues(alpha: 0.6),
+        ],
+      ).createShader(inset);
+
+    final path = Path()..addRRect(rrect);
+    for (final metric in path.computeMetrics()) {
+      var d = 0.0;
+      var on = true;
+      while (d < metric.length) {
+        final len = on ? 13.0 + (d % 8) : 5.0 + (d % 4);
+        final next = (d + len).clamp(0.0, metric.length);
+        if (on) canvas.drawPath(metric.extractPath(d, next), worn);
+        d = next;
+        on = !on;
+      }
+    }
+
+    // Fuligem nos cantos lascados
+    canvas.drawCircle(
+      Offset(size.width * 0.94, 10),
+      20,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [
+            const Color(0xFF0A0604).withValues(alpha: 0.75),
+            Colors.transparent,
+          ],
+        ).createShader(
+          Rect.fromCircle(center: Offset(size.width * 0.94, 10), radius: 20),
+        ),
+    );
+    canvas.drawCircle(
+      Offset(8, size.height * 0.9),
+      16,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [
+            const Color(0xFF0A0604).withValues(alpha: 0.7),
+            Colors.transparent,
+          ],
+        ).createShader(
+          Rect.fromCircle(center: Offset(8, size.height * 0.9), radius: 16),
+        ),
+    );
+  }
+
+  /// Teia de canto — orb web clássica (raios + arcos), seda fina.
   void _drawCornerWeb(
     Canvas canvas, {
     required Offset origin,
     required double radius,
-    required bool flipX,
+    required double startAngle,
     required double alpha,
-    bool flipY = false,
+    double sweep = math.pi / 2,
   }) {
-    final silk = Paint()
-      ..color = const Color(0xFFE8E0D0).withValues(alpha: alpha)
-      ..strokeWidth = 1.35
+    const rayCount = 6;
+    const ringCount = 4;
+
+    final glow = Paint()
+      ..color = const Color(0xFFE8E0D0).withValues(alpha: alpha * 0.2)
+      ..strokeWidth = 1.8
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
+      ..isAntiAlias = true
+      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.2);
+
+    final silk = Paint()
+      ..color = const Color(0xFFE4DCC8).withValues(alpha: alpha)
+      ..strokeWidth = 0.7
+      ..style = PaintingStyle.stroke
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
 
     final silkSoft = Paint()
-      ..color = const Color(0xFFD8D0C0).withValues(alpha: alpha * 0.72)
-      ..strokeWidth = 1.0
-      ..style = PaintingStyle.stroke
-      ..isAntiAlias = true;
-
-    final halo = Paint()
-      ..color = Colors.black.withValues(alpha: alpha * 0.35)
-      ..strokeWidth = 2.6
+      ..color = const Color(0xFFD4CCB8).withValues(alpha: alpha * 0.65)
+      ..strokeWidth = 0.55
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round
       ..isAntiAlias = true;
 
-    final sx = flipX ? -1.0 : 1.0;
-    final sy = flipY ? -1.0 : 1.0;
+    Offset polar(double angle, double r) => Offset(
+          origin.dx + math.cos(angle) * r,
+          origin.dy + math.sin(angle) * r,
+        );
 
-    // Raios do canto
-    const rays = 9;
-    for (var i = 0; i < rays; i++) {
-      final a = (i / (rays - 1)) * (math.pi / 2);
-      // Leve ondulação — teia orgânica
-      final wobble = 1.0 + 0.04 * math.sin(i * 1.7 + t * math.pi * 2);
-      final dx = math.cos(a) * radius * sx * wobble;
-      final dy = math.sin(a) * radius * sy * wobble;
-      final end = origin.translate(dx, dy);
-      canvas.drawLine(origin, end, halo);
-      canvas.drawLine(origin, end, silk);
+    // Raios
+    for (var i = 0; i < rayCount; i++) {
+      final a = startAngle + sweep * (i / (rayCount - 1));
+      final len = radius * (0.88 + (i.isEven ? 0.08 : 0.0));
+      final end = polar(a, len);
+      // Leve curva de tensão
+      final ctrl = polar(a, len * 0.5).translate(
+        math.cos(a + math.pi / 2) * 1.4,
+        math.sin(a + math.pi / 2) * 1.4,
+      );
+      final path = Path()
+        ..moveTo(origin.dx, origin.dy)
+        ..quadraticBezierTo(ctrl.dx, ctrl.dy, end.dx, end.dy);
+      canvas.drawPath(path, glow);
+      canvas.drawPath(path, i == 0 || i == rayCount - 1 ? silk : silkSoft);
     }
 
-    // Arcos concêntricos irregulares
-    for (var ring = 1; ring <= 6; ring++) {
-      final r = radius * (ring / 6.2);
-      final path = Path();
-      var first = true;
-      for (var i = 0; i <= 24; i++) {
-        final a = (i / 24) * (math.pi / 2);
-        final wobble = 1.0 + 0.06 * math.sin(i * 0.9 + ring * 1.3);
-        final dx = math.cos(a) * r * sx * wobble;
-        final dy = math.sin(a) * r * sy * wobble;
-        final p = origin.translate(dx, dy);
-        if (first) {
-          path.moveTo(p.dx, p.dy);
-          first = false;
-        } else {
-          path.lineTo(p.dx, p.dy);
-        }
-      }
-      canvas.drawPath(path, halo..strokeWidth = 2.2);
-      canvas.drawPath(path, ring.isEven ? silk : silkSoft);
+    // Anéis concêntricos (arcos reais)
+    for (var ring = 1; ring <= ringCount; ring++) {
+      final r = radius * (0.22 + (ring / ringCount) * 0.7);
+      final rect = Rect.fromCircle(center: origin, radius: r);
+      canvas.drawArc(
+        rect,
+        startAngle,
+        sweep,
+        false,
+        Paint()
+          ..color = const Color(0xFFE8E0D0).withValues(alpha: alpha * 0.16)
+          ..strokeWidth = 1.6
+          ..style = PaintingStyle.stroke
+          ..strokeCap = StrokeCap.round
+          ..isAntiAlias = true
+          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.0),
+      );
+      canvas.drawArc(
+        rect,
+        startAngle,
+        sweep,
+        false,
+        Paint()
+          ..color = const Color(0xFFE4DCC8).withValues(
+            alpha: alpha * (ring.isOdd ? 0.7 : 0.9),
+          )
+          ..strokeWidth = ring == ringCount ? 0.65 : 0.5
+          ..style = PaintingStyle.stroke
+          ..strokeCap = StrokeCap.round
+          ..isAntiAlias = true,
+      );
     }
   }
 
   void _drawDescendingSpider(Canvas canvas, Size size, double breathe) {
-    final anchor = Offset(size.width - 32, 22);
-    final drop = 0.2 + 0.16 * (0.5 + 0.5 * math.sin(t * math.pi * 2 - 0.4));
-    final sway = math.sin(t * math.pi * 2 * 0.7) * 5.5;
+    final anchor = Offset(size.width - 18, 8);
+    final drop = 0.14 + 0.1 * (0.5 + 0.5 * math.sin(t * math.pi * 2 - 0.4));
+    final sway = math.sin(t * math.pi * 2 * 0.7) * 3.5;
     final spider = Offset(
       anchor.dx + sway,
       anchor.dy + size.height * drop,
     );
 
     final thread = Paint()
-      ..color = const Color(0xFFE8E0D0).withValues(alpha: 0.5)
-      ..strokeWidth = 1.2
+      ..color = const Color(0xFFE4DCC8).withValues(alpha: 0.32)
+      ..strokeWidth = 0.7
       ..style = PaintingStyle.stroke
       ..isAntiAlias = true;
     canvas.drawLine(anchor, spider, thread);
 
     final body =
-        Paint()..color = const Color(0xFF1A140E).withValues(alpha: 0.96);
+        Paint()..color = const Color(0xFF1A140E).withValues(alpha: 0.85);
     final bodySoft =
-        Paint()..color = const Color(0xFF3A2E20).withValues(alpha: 0.95);
-    // Abdômen + cefalotórax um pouco maiores
+        Paint()..color = const Color(0xFF3A2E20).withValues(alpha: 0.8);
     canvas.drawOval(
-      Rect.fromCenter(center: spider.translate(0, 2.6), width: 9, height: 11),
+      Rect.fromCenter(center: spider.translate(0, 1.6), width: 5.5, height: 7),
       body,
     );
-    canvas.drawCircle(spider.translate(0, -3.2), 3.8, bodySoft);
+    canvas.drawCircle(spider.translate(0, -2.0), 2.4, bodySoft);
 
     final legPaint = Paint()
-      ..color = const Color(0xFF120E08).withValues(alpha: 0.95)
-      ..strokeWidth = 1.3
+      ..color = const Color(0xFF120E08).withValues(alpha: 0.75)
+      ..strokeWidth = 0.8
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
-    final kick = math.sin(t * math.pi * 2 * 1.4 + breathe) * 0.14;
+    final kick = math.sin(t * math.pi * 2 * 1.4 + breathe) * 0.1;
     for (var side in [-1.0, 1.0]) {
       for (var i = 0; i < 4; i++) {
         final base = -0.55 + i * 0.35 + kick * side;
-        final hip = spider.translate(side * 2.6, -1.8 + i * 1.8);
+        final hip = spider.translate(side * 1.6, -1.0 + i * 1.1);
         final mid = hip.translate(
-          side * (7.5 + i * 0.45) * math.cos(base),
-          4.0 + i * 0.9,
+          side * (4.5 + i * 0.3) * math.cos(base),
+          2.4 + i * 0.55,
         );
         final tip = mid.translate(
-          side * (6.2 - i * 0.3) * math.cos(base + 0.4),
-          4.8,
+          side * (3.6 - i * 0.2) * math.cos(base + 0.4),
+          2.8,
         );
         canvas.drawLine(hip, mid, legPaint);
         canvas.drawLine(mid, tip, legPaint);
@@ -913,11 +1068,11 @@ class HeroCardColorGrade extends StatelessWidget {
     0, 0, 0, 1, 0,
   ];
 
-  /// Sépia forte — pergaminho / terra.
+  /// Sépia escura — abandono / terra.
   static const _dustMatrix = <double>[
-    0.45, 0.4, 0.1, 0, 22,
-    0.3, 0.35, 0.08, 0, 10,
-    0.1, 0.15, 0.14, 0, 0,
+    0.4, 0.36, 0.08, 0, 10,
+    0.26, 0.3, 0.06, 0, 4,
+    0.08, 0.12, 0.12, 0, -4,
     0, 0, 0, 1, 0,
   ];
 
@@ -962,11 +1117,11 @@ class HeroCardMoodStyle {
           stepLabel: 'Protegido pelo gelo',
         ),
       HeroCardMood.dusty => HeroCardMoodStyle(
-          border: const Color(0xFFB88848).withValues(alpha: 0.95),
-          borderWidth: 2.5,
-          glow: const Color(0xFF6B4A28).withValues(alpha: 0.45),
-          label: const Color(0xFFD4B896),
-          footer: const Color(0xFFC4A070),
+          border: const Color(0xFF6B4A28).withValues(alpha: 0.7),
+          borderWidth: 1.6,
+          glow: const Color(0xFF1A1008).withValues(alpha: 0.5),
+          label: const Color(0xFFB89868),
+          footer: const Color(0xFF9A7850),
           stepLabel: 'Ficando para trás',
         ),
       HeroCardMood.alive => HeroCardMoodStyle(

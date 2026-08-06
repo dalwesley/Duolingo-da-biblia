@@ -203,9 +203,11 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                     ),
                   ),
                 ),
-              Positioned.fill(
-                child: HeroCardAtmosphere(mood: mood),
-              ),
+              // Gelo / vivo: atmosfera atrás. Dusty sobe por cima do conteúdo.
+              if (mood != HeroCardMood.dusty)
+                Positioned.fill(
+                  child: HeroCardAtmosphere(mood: mood),
+                ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
                 child: Column(
@@ -216,6 +218,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                       children: [
                         _Chip(
                           tone: trailAccent,
+                          worn: mood == HeroCardMood.dusty,
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -234,7 +237,11 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                                 style: AppTypography.label(
                                   size: 10,
                                   letterSpacing: 1.1,
-                                  color: a.text.withValues(alpha: 0.88),
+                                  color: a.text.withValues(
+                                    alpha: mood == HeroCardMood.dusty
+                                        ? 0.68
+                                        : 0.88,
+                                  ),
                                 ),
                               ),
                             ],
@@ -243,6 +250,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                         const SizedBox(height: 8),
                         _Chip(
                           tone: AppColors.accent,
+                          worn: mood == HeroCardMood.dusty,
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -259,7 +267,11 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                                 style: AppTypography.label(
                                   size: 9,
                                   letterSpacing: 0.9,
-                                  color: a.text.withValues(alpha: 0.9),
+                                  color: a.text.withValues(
+                                    alpha: mood == HeroCardMood.dusty
+                                        ? 0.7
+                                        : 0.9,
+                                  ),
                                 ),
                               ),
                             ],
@@ -285,7 +297,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                         weight: FontWeight.w900,
                         color: switch (mood) {
                           HeroCardMood.dusty =>
-                            const Color(0xFFE8DCC8).withValues(alpha: 0.88),
+                            const Color(0xFFC8B498).withValues(alpha: 0.76),
                           HeroCardMood.frozen =>
                             const Color(0xFFE8F6FC).withValues(alpha: 0.95),
                           HeroCardMood.alive => a.text,
@@ -344,6 +356,10 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                   ],
                 ),
               ),
+              if (mood == HeroCardMood.dusty)
+                Positioned.fill(
+                  child: HeroCardAtmosphere(mood: mood),
+                ),
             ],
           ),
         ),
@@ -361,10 +377,10 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
               .withValues(alpha: 0.92),
         ],
       HeroCardMood.dusty => [
-          const Color(0xFF4A3218).withValues(alpha: 0.58),
-          const Color(0xFF1A1008).withValues(alpha: 0.62),
-          Color.lerp(cardFill, const Color(0xFF120A06), 0.7)!
-              .withValues(alpha: 0.95),
+          const Color(0xFF3A2410).withValues(alpha: 0.7),
+          const Color(0xFF140C06).withValues(alpha: 0.76),
+          Color.lerp(cardFill, const Color(0xFF0A0604), 0.82)!
+              .withValues(alpha: 0.96),
         ],
       // Scrim mais leve no topo — deixa o vidro / reflexo aparecer
       HeroCardMood.alive => [
@@ -445,9 +461,9 @@ class _CtaBar extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color(0xFFE8C888),
-            Color(0xFFC4A050),
+            Color(0xFFB89858),
             Color(0xFF8A6830),
+            Color(0xFF5A4018),
           ],
         ),
       HeroCardMood.alive => AppGradients.gold,
@@ -468,7 +484,9 @@ class _CtaBar extends StatelessWidget {
             ? Border.all(color: Colors.white.withValues(alpha: 0.35))
             : mood == HeroCardMood.frozen
                 ? Border.all(color: Colors.white.withValues(alpha: 0.45))
-                : null,
+                : Border.all(
+                    color: const Color(0xFF4A3010).withValues(alpha: 0.65),
+                  ),
         boxShadow: switch (mood) {
           HeroCardMood.frozen => [
               BoxShadow(
@@ -486,9 +504,14 @@ class _CtaBar extends StatelessWidget {
             ],
           HeroCardMood.dusty => [
               BoxShadow(
-                color: const Color(0xFF6B4A28).withValues(alpha: 0.35),
-                blurRadius: 10,
+                color: Colors.black.withValues(alpha: 0.5),
                 offset: const Offset(0, 4),
+                blurRadius: 0,
+              ),
+              BoxShadow(
+                color: const Color(0xFF1A1008).withValues(alpha: 0.45),
+                blurRadius: 10,
+                offset: const Offset(0, 5),
               ),
             ],
         },
@@ -518,6 +541,23 @@ class _CtaBar extends StatelessWidget {
                 ),
               ),
             ),
+          if (mood == HeroCardMood.dusty)
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.lg),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      const Color(0xFF3A2810).withValues(alpha: 0.25),
+                      Colors.transparent,
+                      const Color(0xFF1A1008).withValues(alpha: 0.3),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -542,8 +582,9 @@ class _CtaBar extends StatelessWidget {
 class _Chip extends StatelessWidget {
   final Widget child;
   final Color? tone;
+  final bool worn;
 
-  const _Chip({required this.child, this.tone});
+  const _Chip({required this.child, this.tone, this.worn = false});
 
   @override
   Widget build(BuildContext context) {
@@ -552,14 +593,18 @@ class _Chip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
       decoration: BoxDecoration(
-        color: ink != null
-            ? Colors.black.withValues(alpha: 0.35)
-            : a.cardFill,
+        color: worn
+            ? const Color(0xFF1A1008).withValues(alpha: 0.55)
+            : ink != null
+                ? Colors.black.withValues(alpha: 0.35)
+                : a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
-          color: ink != null
-              ? ink.withValues(alpha: 0.55)
-              : a.cardBorder,
+          color: worn
+              ? const Color(0xFF6B4A28).withValues(alpha: 0.5)
+              : ink != null
+                  ? ink.withValues(alpha: 0.55)
+                  : a.cardBorder,
         ),
       ),
       child: child,
