@@ -45,13 +45,20 @@ class HeroContinueCard extends StatefulWidget {
   State<HeroContinueCard> createState() => _HeroContinueCardState();
 }
 
-class _HeroContinueCardState extends State<HeroContinueCard> {
+class _HeroContinueCardState extends State<HeroContinueCard>
+    with SingleTickerProviderStateMixin {
   Timer? _tick;
+  late final AnimationController _pulseController;
+  bool _pressed = false;
 
   @override
   void initState() {
     super.initState();
     _syncTick(widget.atRisk);
+    _pulseController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1500),
+    )..repeat(reverse: true);
   }
 
   @override
@@ -74,6 +81,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
   @override
   void dispose() {
     _tick?.cancel();
+    _pulseController.dispose();
     super.dispose();
   }
 
@@ -136,244 +144,394 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
             ? 'Em dia'
             : 'Missão pronta',
     };
+    final dailyGoal = progress.settings.dailyGoal;
+    final dailyGoalRatio = dailyGoal > 0
+        ? (progress.missionsToday / dailyGoal).clamp(0.0, 1.0).toDouble()
+        : 0.0;
+    final progressLabel = dailyGoal > 0
+        ? '${progress.missionsToday}/$dailyGoal'
+        : '${progress.missionsToday} passos';
+    final progressHint = widget.goalMet
+        ? 'meta alcançada · siga para a próxima missão'
+        : walkedToday
+        ? 'uma boa caminhada hoje · continue'
+        : 'pronto para entrar em ação';
 
     return GestureDetector(
-      onTap: () {
+      onTapDown: (_) => setState(() => _pressed = true),
+      onTapUp: (_) {
+        setState(() => _pressed = false);
         HapticFeedback.mediumImpact();
         widget.onTap?.call();
       },
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 520),
+      onTapCancel: () => setState(() => _pressed = false),
+      child: AnimatedScale(
+        scale: _pressed ? 0.986 : 1.0,
+        duration: const Duration(milliseconds: 120),
         curve: Curves.easeOutCubic,
-        constraints: const BoxConstraints(minHeight: 300),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-          border: Border.all(color: style.border, width: style.borderWidth),
-          boxShadow: [
-            ...AppMetrics.cardShadow(elevated: true),
-            BoxShadow(
-              color: style.glow,
-              blurRadius: switch (mood) {
-                HeroCardMood.alive => 28,
-                HeroCardMood.frozen => 26,
-                HeroCardMood.dusty => 18,
-              },
-              offset: const Offset(0, 8),
-              spreadRadius: switch (mood) {
-                HeroCardMood.alive => 0,
-                HeroCardMood.frozen => 2,
-                HeroCardMood.dusty => 0,
-              },
-            ),
-            if (mood == HeroCardMood.alive)
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 520),
+          curve: Curves.easeOutCubic,
+          constraints: const BoxConstraints(minHeight: 300),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+            border: Border.all(color: style.border, width: style.borderWidth),
+            boxShadow: [
+              ...AppMetrics.cardShadow(elevated: true),
               BoxShadow(
-                color: Colors.white.withValues(alpha: 0.08),
-                blurRadius: 1,
-                offset: const Offset(0, -1),
+                color: style.glow,
+                blurRadius: switch (mood) {
+                  HeroCardMood.alive => 28,
+                  HeroCardMood.frozen => 26,
+                  HeroCardMood.dusty => 18,
+                },
+                offset: const Offset(0, 8),
+                spreadRadius: switch (mood) {
+                  HeroCardMood.alive => 0,
+                  HeroCardMood.frozen => 2,
+                  HeroCardMood.dusty => 0,
+                },
               ),
-          ],
-        ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
-          child: Stack(
-            children: [
-              Positioned.fill(
-                child: HeroCardColorGrade(
-                  mood: mood,
-                  child: CinematicBackdrop(world: world),
+              if (mood == HeroCardMood.alive)
+                BoxShadow(
+                  color: Colors.white.withValues(alpha: 0.08),
+                  blurRadius: 1,
+                  offset: const Offset(0, -1),
                 ),
-              ),
-              Positioned.fill(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: _scrimColors(mood, a.cardFill),
-                      stops: const [0.0, 0.4, 1.0],
-                    ),
+            ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
+            child: Stack(
+              children: [
+                Positioned.fill(
+                  child: HeroCardColorGrade(
+                    mood: mood,
+                    child: CinematicBackdrop(world: world),
                   ),
                 ),
-              ),
-              // Camada de vidro — só em dia (frosted glass tint)
-              if (mood == HeroCardMood.alive)
                 Positioned.fill(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          Colors.white.withValues(alpha: 0.07),
-                          Colors.white.withValues(alpha: 0.02),
-                          Colors.transparent,
-                          AppColors.primaryLight.withValues(alpha: 0.04),
-                        ],
-                        stops: const [0.0, 0.2, 0.65, 1.0],
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: _scrimColors(mood, a.cardFill),
+                        stops: const [0.0, 0.4, 1.0],
                       ),
                     ),
                   ),
                 ),
-              // Gelo / vivo: atmosfera atrás. Dusty sobe por cima do conteúdo.
-              if (mood != HeroCardMood.dusty)
-                Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        _Chip(
-                          tone: trailAccent,
-                          worn: mood == HeroCardMood.dusty,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              CinematicIcon(
-                                glyph: visuals.glyph,
-                                size: 16,
-                                accent: trailAccent,
-                                glowing: false,
-                                framed: false,
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                widget.trailTitle.toUpperCase(),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.label(
-                                  size: 10,
-                                  letterSpacing: 1.1,
-                                  color: a.text.withValues(
-                                    alpha: mood == HeroCardMood.dusty
-                                        ? 0.68
-                                        : 0.88,
+                // Camada de vidro — só em dia (frosted glass tint)
+                if (mood == HeroCardMood.alive)
+                  Positioned.fill(
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            Colors.white.withValues(alpha: 0.07),
+                            Colors.white.withValues(alpha: 0.02),
+                            Colors.transparent,
+                            AppColors.primaryLight.withValues(alpha: 0.04),
+                          ],
+                          stops: const [0.0, 0.2, 0.65, 1.0],
+                        ),
+                      ),
+                    ),
+                  ),
+                // Gelo / vivo: atmosfera atrás. Dusty sobe por cima do conteúdo.
+                if (mood != HeroCardMood.dusty)
+                  Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          _Chip(
+                            tone: trailAccent,
+                            worn: mood == HeroCardMood.dusty,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                // Pulso sutil no ícone para reforçar vida/energia
+                                AnimatedBuilder(
+                                  animation: _pulseController,
+                                  builder: (context, child) {
+                                    final pulseVal =
+                                        1.0 + (_pulseController.value * 0.06);
+                                    final effective = mood == HeroCardMood.alive
+                                        ? pulseVal
+                                        : 1.0;
+                                    return Transform.scale(
+                                      scale: effective,
+                                      alignment: Alignment.center,
+                                      child: CinematicIcon(
+                                        glyph: visuals.glyph,
+                                        size: 16,
+                                        accent: trailAccent,
+                                        glowing: false,
+                                        framed: false,
+                                      ),
+                                    );
+                                  },
+                                ),
+                                const SizedBox(width: 6),
+                                Text(
+                                  widget.trailTitle.toUpperCase(),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.label(
+                                    size: 10,
+                                    letterSpacing: 1.1,
+                                    color: a.text.withValues(
+                                      alpha: mood == HeroCardMood.dusty
+                                          ? 0.68
+                                          : 0.88,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          _Chip(
+                            tone: AppColors.accent,
+                            worn: mood == HeroCardMood.dusty,
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                AnimatedBuilder(
+                                  animation: _pulseController,
+                                  builder: (context, child) {
+                                    final pulseVal =
+                                        1.0 + (_pulseController.value * 0.06);
+                                    final effective = mood == HeroCardMood.alive
+                                        ? pulseVal
+                                        : 1.0;
+                                    return Transform.scale(
+                                      scale: effective,
+                                      alignment: Alignment.center,
+                                      child: const CinematicIcon(
+                                        glyph: CinematicGlyph.lamp,
+                                        size: 14,
+                                        accent: AppColors.accent,
+                                        glowing: false,
+                                        framed: false,
+                                      ),
+                                    );
+                                  },
+                                ),
+                                const SizedBox(width: 5),
+                                Text(
+                                  '${widget.lampsReady} LÂMPADAS',
+                                  style: AppTypography.label(
+                                    size: 9,
+                                    letterSpacing: 0.9,
+                                    color: a.text.withValues(
+                                      alpha: mood == HeroCardMood.dusty
+                                          ? 0.7
+                                          : 0.9,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 24),
+                      Text(
+                        stepLabel.toUpperCase(),
+                        style: AppTypography.label(
+                          size: 12,
+                          letterSpacing: 1.6,
+                          color: style.label,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        mission.title,
+                        style: AppTypography.display(
+                          size: 32,
+                          height: 1.1,
+                          weight: FontWeight.w900,
+                          color: switch (mood) {
+                            HeroCardMood.dusty => const Color(
+                              0xFFC8B498,
+                            ).withValues(alpha: 0.76),
+                            HeroCardMood.frozen => const Color(
+                              0xFFE8F6FC,
+                            ).withValues(alpha: 0.95),
+                            HeroCardMood.alive => a.text,
+                          },
+                        ),
+                      ),
+                      if (riskLine != null) ...[
+                        const SizedBox(height: 10),
+                        Text(
+                          riskLine,
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w700,
+                            height: 1.35,
+                            color: style.label.withValues(alpha: 0.92),
                           ),
                         ),
+                      ] else if (mission.subtitle.trim().isNotEmpty) ...[
                         const SizedBox(height: 8),
-                        _Chip(
-                          tone: AppColors.accent,
-                          worn: mood == HeroCardMood.dusty,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              const CinematicIcon(
-                                glyph: CinematicGlyph.lamp,
-                                size: 14,
-                                accent: AppColors.accent,
-                                glowing: false,
-                                framed: false,
-                              ),
-                              const SizedBox(width: 5),
-                              Text(
-                                '${widget.lampsReady} LÂMPADAS',
-                                style: AppTypography.label(
-                                  size: 9,
-                                  letterSpacing: 0.9,
-                                  color: a.text.withValues(
-                                    alpha: mood == HeroCardMood.dusty
-                                        ? 0.7
-                                        : 0.9,
-                                  ),
-                                ),
-                              ),
-                            ],
+                        Text(
+                          mission.subtitle.trim(),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 14,
+                            weight: FontWeight.w600,
+                            color: a.text.withValues(alpha: 0.72),
+                          ),
+                        ),
+                      ] else if (mission.isBoss) ...[
+                        const SizedBox(height: 10),
+                        Text(
+                          'Boss · menos lâmpadas · mais passos',
+                          style: AppTypography.body(
+                            size: 14,
+                            weight: FontWeight.w700,
+                            color: AppColors.sand.withValues(alpha: 0.9),
                           ),
                         ),
                       ],
-                    ),
-                    const SizedBox(height: 24),
-                    Text(
-                      stepLabel.toUpperCase(),
-                      style: AppTypography.label(
-                        size: 12,
-                        letterSpacing: 1.6,
-                        color: style.label,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      mission.title,
-                      style: AppTypography.display(
-                        size: 32,
-                        height: 1.1,
-                        weight: FontWeight.w900,
-                        color: switch (mood) {
-                          HeroCardMood.dusty => const Color(
-                            0xFFC8B498,
-                          ).withValues(alpha: 0.76),
-                          HeroCardMood.frozen => const Color(
-                            0xFFE8F6FC,
-                          ).withValues(alpha: 0.95),
-                          HeroCardMood.alive => a.text,
-                        },
-                      ),
-                    ),
-                    if (riskLine != null) ...[
-                      const SizedBox(height: 10),
-                      Text(
-                        riskLine,
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w700,
-                          height: 1.35,
-                          color: style.label.withValues(alpha: 0.92),
+                      const SizedBox(height: 20),
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withValues(alpha: 0.055),
+                          borderRadius: BorderRadius.circular(AppRadii.md),
+                          border: Border.all(
+                            color: Colors.white.withValues(alpha: 0.12),
+                            width: 1,
+                          ),
+                        ),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text(
+                                        'Progresso do dia',
+                                        style: AppTypography.label(
+                                          size: 10,
+                                          letterSpacing: 1.15,
+                                          color: a.text.withValues(alpha: 0.82),
+                                        ),
+                                      ),
+                                      const Spacer(),
+                                      Text(
+                                        progressLabel,
+                                        style: AppTypography.body(
+                                          size: 12,
+                                          weight: FontWeight.w800,
+                                          color: style.footer,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  const SizedBox(height: 8),
+                                  AppProgressBar(
+                                    value: dailyGoalRatio,
+                                    color: style.footer,
+                                    trackColor: Colors.white.withValues(
+                                      alpha: 0.08,
+                                    ),
+                                    height: 10,
+                                  ),
+                                  const SizedBox(height: 6),
+                                  Text(
+                                    progressHint,
+                                    style: AppTypography.body(
+                                      size: 12,
+                                      weight: FontWeight.w700,
+                                      color: a.text.withValues(alpha: 0.74),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(width: 10),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 10,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                color: rewardColor.withValues(alpha: 0.16),
+                                borderRadius: BorderRadius.circular(
+                                  AppRadii.pill,
+                                ),
+                                border: Border.all(
+                                  color: rewardColor.withValues(alpha: 0.3),
+                                ),
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(
+                                    Icons.auto_awesome_rounded,
+                                    size: 14,
+                                    color: rewardColor,
+                                  ),
+                                  const SizedBox(width: 5),
+                                  Text(
+                                    '+${mission.stepsReward}',
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      letterSpacing: 0.8,
+                                      color: rewardColor,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                    ] else if (mission.subtitle.trim().isNotEmpty) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        mission.subtitle.trim(),
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 14,
-                          weight: FontWeight.w600,
-                          color: a.text.withValues(alpha: 0.72),
-                        ),
+                      const SizedBox(height: 14),
+                      _CtaBar(
+                        label: ctaLabel,
+                        mood: mood,
+                        pulseAnimation: _pulseController,
                       ),
-                    ] else if (mission.isBoss) ...[
-                      const SizedBox(height: 10),
-                      Text(
-                        'Boss · menos lâmpadas · mais passos',
-                        style: AppTypography.body(
-                          size: 14,
-                          weight: FontWeight.w700,
-                          color: AppColors.sand.withValues(alpha: 0.9),
+                      const SizedBox(height: 12),
+                      Center(
+                        child: Text(
+                          mood == HeroCardMood.dusty
+                              ? '+${mission.stepsReward} passos · protege a sequência'
+                              : widget.goalMet
+                              ? '+${mission.stepsReward} passos · além da meta'
+                              : walkedToday
+                              ? '+${mission.stepsReward} passos · fecha a meta'
+                              : '+${mission.stepsReward} passos · ~3 min',
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w800,
+                            color: rewardColor,
+                          ),
                         ),
                       ),
                     ],
-                    const SizedBox(height: 24),
-                    _CtaBar(label: ctaLabel, mood: mood),
-                    const SizedBox(height: 12),
-                    Center(
-                      child: Text(
-                        mood == HeroCardMood.dusty
-                            ? '+${mission.stepsReward} passos · protege a sequência'
-                            : widget.goalMet
-                            ? '+${mission.stepsReward} passos · além da meta'
-                            : walkedToday
-                            ? '+${mission.stepsReward} passos · fecha a meta'
-                            : '+${mission.stepsReward} passos · ~3 min',
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w800,
-                          color: rewardColor,
-                        ),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-              if (mood == HeroCardMood.dusty)
-                Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
-            ],
+                if (mood == HeroCardMood.dusty)
+                  Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
+              ],
+            ),
           ),
         ),
       ),
@@ -458,13 +616,14 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
 class _CtaBar extends StatelessWidget {
   final String label;
   final HeroCardMood mood;
+  final Animation<double>? pulseAnimation;
 
-  const _CtaBar({required this.label, required this.mood});
+  const _CtaBar({required this.label, required this.mood, this.pulseAnimation});
 
   @override
   Widget build(BuildContext context) {
     if (mood == HeroCardMood.alive) {
-      return _AliveShineCta(label: label);
+      return _AliveShineCta(label: label, pulseAnimation: pulseAnimation);
     }
 
     final gradient = switch (mood) {
@@ -565,16 +724,47 @@ class _CtaBar extends StatelessWidget {
                 ),
               ),
             ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                label.toUpperCase(),
-                style: AppTypography.cta(size: 16).copyWith(color: ink),
-              ),
-              const SizedBox(width: 10),
-              Icon(Icons.arrow_forward_rounded, size: 20, color: ink),
-            ],
+          // Adiciona shimmer sutil quando vivo
+          AnimatedBuilder(
+            animation: pulseAnimation ?? AlwaysStoppedAnimation(0.0),
+            builder: (context, child) {
+              if (mood == HeroCardMood.alive) {
+                final pulseValue = pulseAnimation?.value ?? 0.0;
+                final slide = (pulseValue * 1.8) - 0.4;
+                return ShaderMask(
+                  shaderCallback: (rect) {
+                    return LinearGradient(
+                      colors: [
+                        Colors.white.withValues(alpha: 0.0),
+                        Colors.white.withValues(alpha: 0.55),
+                        Colors.white.withValues(alpha: 0.0),
+                      ],
+                      stops: [
+                        (slide - 0.18).clamp(0.0, 1.0),
+                        slide.clamp(0.0, 1.0),
+                        (slide + 0.18).clamp(0.0, 1.0),
+                      ],
+                      begin: Alignment(-1 - slide, 0),
+                      end: Alignment(1 - slide, 0),
+                    ).createShader(rect);
+                  },
+                  blendMode: BlendMode.srcATop,
+                  child: child,
+                );
+              }
+              return child!;
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  label.toUpperCase(),
+                  style: AppTypography.cta(size: 16).copyWith(color: ink),
+                ),
+                const SizedBox(width: 10),
+                Icon(Icons.arrow_forward_rounded, size: 20, color: ink),
+              ],
+            ),
           ),
         ],
       ),
@@ -582,11 +772,12 @@ class _CtaBar extends StatelessWidget {
   }
 }
 
-/// CTA em dia — limpo, luminoso: o inverso do botão empoeirado.
+/// CTA em dia — portal/ritual, com identidade própria e menos “botão genérico”.
 class _AliveShineCta extends StatelessWidget {
   final String label;
+  final Animation<double>? pulseAnimation;
 
-  const _AliveShineCta({required this.label});
+  const _AliveShineCta({required this.label, this.pulseAnimation});
 
   @override
   Widget build(BuildContext context) {

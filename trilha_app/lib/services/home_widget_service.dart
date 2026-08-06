@@ -11,7 +11,7 @@ class HomeWidgetService {
 
   static const _androidProvider = 'TrilhaHomeWidgetProvider';
   static const _iosKind = 'TrilhaHomeWidget';
-  static const _appGroupId = 'group.com.trilha.trilhaApp';
+  static const _appGroupId = 'group.com.dalwesley.stway';
   static const _debounce = Duration(seconds: 2);
 
   static Timer? _timer;

@@ -1,7 +1,7 @@
 import SwiftUI
 import WidgetKit
 
-private let widgetGroupId = "group.com.trilha.trilhaApp"
+private let widgetGroupId = "group.com.dalwesley.stway"
 
 struct TrilhaEntry: TimelineEntry {
   let date: Date
