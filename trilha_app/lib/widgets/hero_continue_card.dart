@@ -87,16 +87,22 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
     final trailAccent = visuals.accent;
     final progress = context.watch<ProgressService>();
     final hasFreeze = progress.hasStreakFreeze;
+    final walkedToday = progress.walkedToday;
     final mood = resolveHeroCardMood(
       atRisk: widget.atRisk,
       freezeUsedThisWeek: progress.streakFreezeUsedThisWeek,
     );
     final style = HeroCardMoodStyle.of(mood, trailAccent: trailAccent);
 
+    // Em dia: não “Entrar” de novo — reconhece o passo já dado.
     final ctaLabel = switch (mood) {
       HeroCardMood.frozen => 'Retomar caminhada',
       HeroCardMood.dusty => 'Continuar caminhada',
-      HeroCardMood.alive => widget.goalMet ? 'Seguir' : 'Entrar',
+      HeroCardMood.alive => widget.goalMet
+          ? 'Avançar'
+          : walkedToday
+              ? 'Continuar'
+              : 'Entrar',
     };
     final rewardColor = mission.isBoss ? AppColors.sand : style.footer;
     final world = CinematicResolver.ambientForHome(
@@ -119,8 +125,11 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
     final stepLabel = switch (mood) {
       HeroCardMood.frozen => style.stepLabel,
       HeroCardMood.dusty => style.stepLabel,
-      HeroCardMood.alive =>
-        widget.goalMet ? 'Mais uma missão' : 'Missão pronta',
+      HeroCardMood.alive => widget.goalMet
+          ? 'Além da meta'
+          : walkedToday
+              ? 'Em dia'
+              : 'Missão pronta',
     };
 
     return GestureDetector(
@@ -345,7 +354,11 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                       child: Text(
                         mood == HeroCardMood.dusty
                             ? '+${mission.stepsReward} passos · protege a sequência'
-                            : '+${mission.stepsReward} passos · ~3 min',
+                            : widget.goalMet
+                                ? '+${mission.stepsReward} passos · além da meta'
+                                : walkedToday
+                                    ? '+${mission.stepsReward} passos · fecha a meta'
+                                    : '+${mission.stepsReward} passos · ~3 min',
                         style: AppTypography.body(
                           size: 13,
                           weight: FontWeight.w800,
