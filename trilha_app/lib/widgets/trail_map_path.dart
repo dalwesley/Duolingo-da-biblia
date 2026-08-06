@@ -44,21 +44,44 @@ class TrailMapPath extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         for (var i = 0; i < missions.length; i++) ...[
-          if (i > 0)
-            _SceneConnector(
-              active: _completed(missions[i - 1].slug),
-              activeColor: gold,
-              inactiveColor: inactive,
+          Padding(
+            padding: EdgeInsets.only(
+              top: i == 0 ? 0 : AppSpace.sm,
+              bottom: i == missions.length - 1 ? 0 : 0,
             ),
-          _MissionSceneCard(
-            mission: missions[i],
-            index: startGlobalIndex + i + 1,
-            completed: _completed(missions[i].slug),
-            unlocked: _unlocked(missions[i].slug),
-            theme: theme,
-            onTap: _unlocked(missions[i].slug)
-                ? () => onMissionTap?.call(missions[i].slug)
-                : null,
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  SizedBox(
+                    width: 50,
+                    child: _TrailMapStepRail(
+                      activeAbove: i > 0 && _completed(missions[i - 1].slug),
+                      activeBelow: _completed(missions[i].slug),
+                      completed: _completed(missions[i].slug),
+                      unlocked: _unlocked(missions[i].slug),
+                      activeColor: gold,
+                      inactiveColor: inactive,
+                      showTop: i > 0,
+                      showBottom: i < missions.length - 1,
+                    ),
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: _MissionSceneCard(
+                      mission: missions[i],
+                      index: startGlobalIndex + i + 1,
+                      completed: _completed(missions[i].slug),
+                      unlocked: _unlocked(missions[i].slug),
+                      theme: theme,
+                      onTap: _unlocked(missions[i].slug)
+                          ? () => onMissionTap?.call(missions[i].slug)
+                          : null,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ],
@@ -81,38 +104,134 @@ class _SceneConnector extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = active ? activeColor : inactiveColor;
     return SizedBox(
-      height: 22,
-      child: Center(
-        child: Column(
-          children: [
-            Container(
-              width: 2,
-              height: 6,
-              decoration: BoxDecoration(
-                color: color.withValues(alpha: active ? 0.7 : 0.35),
-                borderRadius: BorderRadius.circular(1),
-              ),
-            ),
-            Container(
-              width: 7,
-              height: 7,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: color.withValues(alpha: active ? 0.9 : 0.35),
-                boxShadow: null,
-              ),
-            ),
-            Container(
-              width: 2,
-              height: 6,
-              decoration: BoxDecoration(
-                color: color.withValues(alpha: active ? 0.7 : 0.35),
-                borderRadius: BorderRadius.circular(1),
-              ),
-            ),
-          ],
+      width: 24,
+      child: CustomPaint(
+        painter: _SceneConnectorPainter(
+          color: color.withValues(alpha: active ? 0.7 : 0.35),
         ),
       ),
+    );
+  }
+}
+
+class _SceneConnectorPainter extends CustomPainter {
+  final Color color;
+
+  _SceneConnectorPainter({required this.color});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round;
+
+    final path = Path();
+    final midX = size.width / 2;
+    final variance = size.width * 0.6;
+
+    path.moveTo(midX, 0);
+    path.cubicTo(
+      midX + variance * 0.2,
+      size.height * 0.18,
+      midX - variance * 0.3,
+      size.height * 0.35,
+      midX + variance * 0.1,
+      size.height * 0.5,
+    );
+    path.cubicTo(
+      midX + variance * 0.35,
+      size.height * 0.65,
+      midX - variance * 0.15,
+      size.height * 0.82,
+      midX,
+      size.height,
+    );
+
+    const dashLength = 6.0;
+    const gap = 6.0;
+    for (final metric in path.computeMetrics()) {
+      var distance = 0.0;
+      while (distance < metric.length) {
+        final next = (distance + dashLength).clamp(0.0, metric.length);
+        canvas.drawPath(metric.extractPath(distance, next), paint);
+        distance = next + gap;
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _SceneConnectorPainter old) {
+    return old.color != color;
+  }
+}
+
+class _TrailMapStepRail extends StatelessWidget {
+  final bool activeAbove;
+  final bool activeBelow;
+  final bool completed;
+  final bool unlocked;
+  final Color activeColor;
+  final Color inactiveColor;
+  final bool showTop;
+  final bool showBottom;
+
+  const _TrailMapStepRail({
+    required this.activeAbove,
+    required this.activeBelow,
+    required this.completed,
+    required this.unlocked,
+    required this.activeColor,
+    required this.inactiveColor,
+    required this.showTop,
+    required this.showBottom,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final dotColor = completed
+        ? activeColor
+        : unlocked
+        ? activeColor.withValues(alpha: 0.85)
+        : inactiveColor.withValues(alpha: 0.35);
+
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        if (showTop)
+          Expanded(
+            child: _SceneConnector(
+              active: activeAbove,
+              activeColor: activeColor,
+              inactiveColor: inactiveColor,
+            ),
+          ),
+        Container(
+          width: 12,
+          height: 12,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: dotColor,
+            boxShadow: [
+              if (completed || unlocked)
+                BoxShadow(
+                  color: activeColor.withValues(alpha: 0.22),
+                  blurRadius: 8,
+                  spreadRadius: 0,
+                ),
+            ],
+          ),
+        ),
+        if (showBottom)
+          Expanded(
+            child: _SceneConnector(
+              active: activeBelow,
+              activeColor: activeColor,
+              inactiveColor: inactiveColor,
+            ),
+          ),
+      ],
     );
   }
 }

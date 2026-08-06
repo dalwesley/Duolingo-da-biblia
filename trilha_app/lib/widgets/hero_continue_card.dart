@@ -83,7 +83,10 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
     if (mission == null) return _completedState(context);
 
     final a = Appearance.of(context);
-    final visuals = TrailVisuals.forSlug(widget.trailSlug, color: widget.trailColor);
+    final visuals = TrailVisuals.forSlug(
+      widget.trailSlug,
+      color: widget.trailColor,
+    );
     final trailAccent = visuals.accent;
     final progress = context.watch<ProgressService>();
     final hasFreeze = progress.hasStreakFreeze;
@@ -98,11 +101,12 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
     final ctaLabel = switch (mood) {
       HeroCardMood.frozen => 'Retomar caminhada',
       HeroCardMood.dusty => 'Continuar caminhada',
-      HeroCardMood.alive => widget.goalMet
-          ? 'Avançar'
-          : walkedToday
-              ? 'Continuar'
-              : 'Entrar',
+      HeroCardMood.alive =>
+        widget.goalMet
+            ? 'Avançar'
+            : walkedToday
+            ? 'Continuar'
+            : 'Entrar',
     };
     final rewardColor = mission.isBoss ? AppColors.sand : style.footer;
     final world = CinematicResolver.ambientForHome(
@@ -116,20 +120,21 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
       HeroCardMood.frozen =>
         'O gelo cobriu 1 dia nesta semana · sequência preservada',
       HeroCardMood.dusty => DustCopy.heroRiskLine(
-          countdown: countdown,
-          hasFreeze: hasFreeze,
-        ),
+        countdown: countdown,
+        hasFreeze: hasFreeze,
+      ),
       HeroCardMood.alive => null,
     };
 
     final stepLabel = switch (mood) {
       HeroCardMood.frozen => style.stepLabel,
       HeroCardMood.dusty => style.stepLabel,
-      HeroCardMood.alive => widget.goalMet
-          ? 'Além da meta'
-          : walkedToday
-              ? 'Em dia'
-              : 'Missão pronta',
+      HeroCardMood.alive =>
+        widget.goalMet
+            ? 'Além da meta'
+            : walkedToday
+            ? 'Em dia'
+            : 'Missão pronta',
     };
 
     return GestureDetector(
@@ -143,10 +148,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
         constraints: const BoxConstraints(minHeight: 300),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-          border: Border.all(
-            color: style.border,
-            width: style.borderWidth,
-          ),
+          border: Border.all(color: style.border, width: style.borderWidth),
           boxShadow: [
             ...AppMetrics.cardShadow(elevated: true),
             BoxShadow(
@@ -214,9 +216,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                 ),
               // Gelo / vivo: atmosfera atrás. Dusty sobe por cima do conteúdo.
               if (mood != HeroCardMood.dusty)
-                Positioned.fill(
-                  child: HeroCardAtmosphere(mood: mood),
-                ),
+                Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
               Padding(
                 padding: const EdgeInsets.fromLTRB(22, 22, 22, 22),
                 child: Column(
@@ -305,10 +305,12 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                         height: 1.1,
                         weight: FontWeight.w900,
                         color: switch (mood) {
-                          HeroCardMood.dusty =>
-                            const Color(0xFFC8B498).withValues(alpha: 0.76),
-                          HeroCardMood.frozen =>
-                            const Color(0xFFE8F6FC).withValues(alpha: 0.95),
+                          HeroCardMood.dusty => const Color(
+                            0xFFC8B498,
+                          ).withValues(alpha: 0.76),
+                          HeroCardMood.frozen => const Color(
+                            0xFFE8F6FC,
+                          ).withValues(alpha: 0.95),
                           HeroCardMood.alive => a.text,
                         },
                       ),
@@ -355,10 +357,10 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                         mood == HeroCardMood.dusty
                             ? '+${mission.stepsReward} passos · protege a sequência'
                             : widget.goalMet
-                                ? '+${mission.stepsReward} passos · além da meta'
-                                : walkedToday
-                                    ? '+${mission.stepsReward} passos · fecha a meta'
-                                    : '+${mission.stepsReward} passos · ~3 min',
+                            ? '+${mission.stepsReward} passos · além da meta'
+                            : walkedToday
+                            ? '+${mission.stepsReward} passos · fecha a meta'
+                            : '+${mission.stepsReward} passos · ~3 min',
                         style: AppTypography.body(
                           size: 13,
                           weight: FontWeight.w800,
@@ -370,9 +372,7 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
                 ),
               ),
               if (mood == HeroCardMood.dusty)
-                Positioned.fill(
-                  child: HeroCardAtmosphere(mood: mood),
-                ),
+                Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
             ],
           ),
         ),
@@ -383,24 +383,29 @@ class _HeroContinueCardState extends State<HeroContinueCard> {
   List<Color> _scrimColors(HeroCardMood mood, Color cardFill) {
     return switch (mood) {
       HeroCardMood.frozen => [
-          AppColors.iceDeep.withValues(alpha: 0.35),
-          Color.lerp(Colors.black, AppColors.iceDeep, 0.35)!
-              .withValues(alpha: 0.48),
-          Color.lerp(cardFill, AppColors.iceDeep, 0.55)!
-              .withValues(alpha: 0.92),
-        ],
+        AppColors.iceDeep.withValues(alpha: 0.35),
+        Color.lerp(
+          Colors.black,
+          AppColors.iceDeep,
+          0.35,
+        )!.withValues(alpha: 0.48),
+        Color.lerp(cardFill, AppColors.iceDeep, 0.55)!.withValues(alpha: 0.92),
+      ],
       HeroCardMood.dusty => [
-          const Color(0xFF3A2410).withValues(alpha: 0.7),
-          const Color(0xFF140C06).withValues(alpha: 0.76),
-          Color.lerp(cardFill, const Color(0xFF0A0604), 0.82)!
-              .withValues(alpha: 0.96),
-        ],
+        const Color(0xFF3A2410).withValues(alpha: 0.7),
+        const Color(0xFF140C06).withValues(alpha: 0.76),
+        Color.lerp(
+          cardFill,
+          const Color(0xFF0A0604),
+          0.82,
+        )!.withValues(alpha: 0.96),
+      ],
       // Scrim mais leve no topo — deixa o vidro / reflexo aparecer
       HeroCardMood.alive => [
-          Colors.black.withValues(alpha: 0.06),
-          Colors.black.withValues(alpha: 0.28),
-          Color.lerp(cardFill, Colors.black, 0.22)!.withValues(alpha: 0.82),
-        ],
+        Colors.black.withValues(alpha: 0.06),
+        Colors.black.withValues(alpha: 0.28),
+        Color.lerp(cardFill, Colors.black, 0.22)!.withValues(alpha: 0.82),
+      ],
     };
   }
 
@@ -458,27 +463,27 @@ class _CtaBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (mood == HeroCardMood.alive) {
+      return _AliveShineCta(label: label);
+    }
+
     final gradient = switch (mood) {
       HeroCardMood.frozen => const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color(0xFFE0F6FC),
-            Color(0xFFB8E8F5),
-            AppColors.ice,
-            Color(0xFF3A8AAA),
-          ],
-          stops: [0.0, 0.35, 0.7, 1.0],
-        ),
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          Color(0xFFE0F6FC),
+          Color(0xFFB8E8F5),
+          AppColors.ice,
+          Color(0xFF3A8AAA),
+        ],
+        stops: [0.0, 0.35, 0.7, 1.0],
+      ),
       HeroCardMood.dusty => const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color(0xFFB89858),
-            Color(0xFF8A6830),
-            Color(0xFF5A4018),
-          ],
-        ),
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [Color(0xFFB89858), Color(0xFF8A6830), Color(0xFF5A4018)],
+      ),
       HeroCardMood.alive => AppGradients.gold,
     };
     final ink = switch (mood) {
@@ -493,47 +498,38 @@ class _CtaBar extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: gradient,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: mood == HeroCardMood.alive
-            ? Border.all(color: Colors.white.withValues(alpha: 0.35))
-            : mood == HeroCardMood.frozen
-                ? Border.all(color: Colors.white.withValues(alpha: 0.45))
-                : Border.all(
-                    color: const Color(0xFF4A3010).withValues(alpha: 0.65),
-                  ),
+        border: mood == HeroCardMood.frozen
+            ? Border.all(color: Colors.white.withValues(alpha: 0.45))
+            : Border.all(
+                color: const Color(0xFF4A3010).withValues(alpha: 0.65),
+              ),
         boxShadow: switch (mood) {
           HeroCardMood.frozen => [
-              BoxShadow(
-                color: AppColors.ice.withValues(alpha: 0.45),
-                blurRadius: 16,
-                offset: const Offset(0, 4),
-              ),
-            ],
-          HeroCardMood.alive => [
-              BoxShadow(
-                color: AppColors.accent.withValues(alpha: 0.4),
-                blurRadius: 18,
-                offset: const Offset(0, 5),
-              ),
-            ],
+            BoxShadow(
+              color: AppColors.ice.withValues(alpha: 0.45),
+              blurRadius: 16,
+              offset: const Offset(0, 4),
+            ),
+          ],
           HeroCardMood.dusty => [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.5),
-                offset: const Offset(0, 4),
-                blurRadius: 0,
-              ),
-              BoxShadow(
-                color: const Color(0xFF1A1008).withValues(alpha: 0.45),
-                blurRadius: 10,
-                offset: const Offset(0, 5),
-              ),
-            ],
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.5),
+              offset: const Offset(0, 4),
+              blurRadius: 0,
+            ),
+            BoxShadow(
+              color: const Color(0xFF1A1008).withValues(alpha: 0.45),
+              blurRadius: 10,
+              offset: const Offset(0, 5),
+            ),
+          ],
+          HeroCardMood.alive => const [],
         },
       ),
       child: Stack(
         alignment: Alignment.center,
         children: [
-          // Specular no CTA — reforça leitura de vidro / gelo
-          if (mood == HeroCardMood.alive || mood == HeroCardMood.frozen)
+          if (mood == HeroCardMood.frozen)
             Positioned(
               top: 0,
               left: 16,
@@ -545,9 +541,7 @@ class _CtaBar extends StatelessWidget {
                   gradient: LinearGradient(
                     colors: [
                       Colors.transparent,
-                      Colors.white.withValues(
-                        alpha: mood == HeroCardMood.frozen ? 0.7 : 0.55,
-                      ),
+                      Colors.white.withValues(alpha: 0.7),
                       Colors.transparent,
                     ],
                   ),
@@ -579,14 +573,98 @@ class _CtaBar extends StatelessWidget {
                 style: AppTypography.cta(size: 16).copyWith(color: ink),
               ),
               const SizedBox(width: 10),
-              Icon(
-                Icons.arrow_forward_rounded,
-                size: 20,
-                color: ink,
-              ),
+              Icon(Icons.arrow_forward_rounded, size: 20, color: ink),
             ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// CTA em dia — limpo, luminoso: o inverso do botão empoeirado.
+class _AliveShineCta extends StatelessWidget {
+  final String label;
+
+  const _AliveShineCta({required this.label});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.accentBright.withValues(alpha: 0.55),
+            blurRadius: 22,
+            offset: const Offset(0, 4),
+            spreadRadius: 1,
+          ),
+          BoxShadow(
+            color: AppColors.accent.withValues(alpha: 0.35),
+            blurRadius: 36,
+            offset: const Offset(0, 10),
+          ),
+        ],
+      ),
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 16),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFFFFF0A8),
+              AppColors.accentBright,
+              AppColors.accent,
+              Color(0xFFE0A800),
+            ],
+            stops: [0.0, 0.28, 0.7, 1.0],
+          ),
+        ),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // Brilho suave atravessando a face
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.lg - 1),
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.white.withValues(alpha: 0.22),
+                      Colors.white.withValues(alpha: 0.05),
+                      Colors.transparent,
+                      Colors.white.withValues(alpha: 0.08),
+                    ],
+                    stops: const [0.0, 0.22, 0.55, 1.0],
+                  ),
+                ),
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  label.toUpperCase(),
+                  style: AppTypography.cta(
+                    size: 16,
+                  ).copyWith(color: AppColors.inkOnAccent, letterSpacing: 1.2),
+                ),
+                const SizedBox(width: 10),
+                Icon(
+                  Icons.arrow_forward_rounded,
+                  size: 20,
+                  color: AppColors.inkOnAccent.withValues(alpha: 0.9),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -609,15 +687,15 @@ class _Chip extends StatelessWidget {
         color: worn
             ? const Color(0xFF1A1008).withValues(alpha: 0.55)
             : ink != null
-                ? Colors.black.withValues(alpha: 0.35)
-                : a.cardFill,
+            ? Colors.black.withValues(alpha: 0.35)
+            : a.cardFill,
         borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
           color: worn
               ? const Color(0xFF6B4A28).withValues(alpha: 0.5)
               : ink != null
-                  ? ink.withValues(alpha: 0.55)
-                  : a.cardBorder,
+              ? ink.withValues(alpha: 0.55)
+              : a.cardBorder,
         ),
       ),
       child: child,
