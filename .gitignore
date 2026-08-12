@@ -4,6 +4,10 @@
 .vscode/
 *.pem
 
+# Cursor / agent skill installs (local tooling, not app code)
+.agents/
+skills-lock.json
+
 # Env
 .env
 .env.*
