@@ -25,6 +25,7 @@ import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
 import '../widgets/exercise_panel.dart';
+import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/question_report_sheet.dart';
 import '../widgets/study_panel.dart';
@@ -241,8 +242,9 @@ class _LessonScreenState extends State<LessonScreen>
         .toList(growable: false);
     final pilotExercises = PilotTrainings.forSlug(widget.missionSlug);
     // Piloto local vence catálogo remoto (evita Firestore stale durante o experimento).
-    final resolvedExercises =
-        pilotExercises.isNotEmpty ? pilotExercises : catalogExercises;
+    final resolvedExercises = pilotExercises.isNotEmpty
+        ? pilotExercises
+        : catalogExercises;
     final usesExercises = resolvedExercises.isNotEmpty && !widget.practiceMode;
 
     if (mission != null && usesBank && trailSlug != null && !usesExercises) {
@@ -306,10 +308,11 @@ class _LessonScreenState extends State<LessonScreen>
       _revealTags = tags;
       _exercises = usesExercises
           ? resolvedExercises
-              .where((e) => e.type != ExerciseType.insight)
-              .toList()
+                .where((e) => e.type != ExerciseType.insight)
+                .toList()
           : <Exercise>[];
-      _closingInsight = resolvedExercises
+      _closingInsight =
+          resolvedExercises
               .where((e) => e.type == ExerciseType.insight)
               .map((e) => e.prompt.trim())
               .where((s) => s.isNotEmpty)
@@ -322,13 +325,16 @@ class _LessonScreenState extends State<LessonScreen>
       _mistakeInSession = false;
       _reviewInserted = false;
       _difficultyMeta = meta;
-      _lamps = ProgressService.lampsForMission(isBoss: mission?.isBoss ?? false);
+      _lamps = ProgressService.lampsForMission(
+        isBoss: mission?.isBoss ?? false,
+      );
       // Com estudo legado: preparo antes do quiz.
       // Com motor v2: não spoilar — o texto entra nos exercícios.
       if (hasStudy) _phase = _Phase.study;
       if (usesExercises) _phase = _Phase.intro;
       if (mission != null) {
-        final insight = mission.centralInsight ??
+        final insight =
+            mission.centralInsight ??
             (usesExercises && pilotExercises.isNotEmpty
                 ? PilotTrainings.insightText
                 : null);
@@ -337,9 +343,7 @@ class _LessonScreenState extends State<LessonScreen>
           slug: mission.slug,
           title: mission.title,
           subtitle: usesExercises ? '~3 min' : mission.subtitle,
-          intro: usePilotHook
-              ? PilotTrainings.hookNote
-              : mission.intro,
+          intro: usePilotHook ? PilotTrainings.hookNote : mission.intro,
           type: mission.type,
           stepsReward: _scaledSteps(
             mission.stepsReward,
@@ -350,11 +354,13 @@ class _LessonScreenState extends State<LessonScreen>
           objective: mission.objective,
           centralInsight: insight,
           hookRef: usePilotHook ? PilotTrainings.hookRef : mission.hookRef,
-          hookVerse:
-              usePilotHook ? PilotTrainings.hookVerse : mission.hookVerse,
+          hookVerse: usePilotHook
+              ? PilotTrainings.hookVerse
+              : mission.hookVerse,
           hookNote: usePilotHook ? PilotTrainings.hookNote : mission.hookNote,
-          hookThread:
-              usePilotHook ? PilotTrainings.hookThread : mission.hookThread,
+          hookThread: usePilotHook
+              ? PilotTrainings.hookThread
+              : mission.hookThread,
         );
       }
     });
@@ -501,10 +507,7 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _selectExercise(String optionId) async {
-    if (_selected != null ||
-        _phase != _Phase.quiz ||
-        _showFeedback ||
-        _busy) {
+    if (_selected != null || _phase != _Phase.quiz || _showFeedback || _busy) {
       return;
     }
     final ex = _exercise;
@@ -618,7 +621,10 @@ class _LessonScreenState extends State<LessonScreen>
 
   void _pushCelebration({required bool forced}) {
     if (_mission == null) return;
-    final total = (_usesExercises ? _scoredItemCount : _itemCount).clamp(1, 999);
+    final total = (_usesExercises ? _scoredItemCount : _itemCount).clamp(
+      1,
+      999,
+    );
     final progress = context.read<ProgressService>();
     if (!widget.practiceMode && _pickedIds.isNotEmpty) {
       progress.markQuestionsUsed(_pickedIds);
@@ -645,10 +651,7 @@ class _LessonScreenState extends State<LessonScreen>
           trailSlug: _trailSlug ?? 'genesis-1-11',
           isBoss: _mission!.isBoss,
           isReplay: isReplay,
-          perfect:
-              !forced &&
-              _correctCount == total &&
-              _lamps == maxLamps,
+          perfect: !forced && _correctCount == total && _lamps == maxLamps,
         ),
       ),
     );
@@ -727,9 +730,7 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     // Erro → tenta de novo (exceto insight).
-    if (_usesExercises &&
-        _isCorrect == false &&
-        !_exercise.type.isRevealOnly) {
+    if (_usesExercises && _isCorrect == false && !_exercise.type.isRevealOnly) {
       setState(() {
         _showFeedback = false;
         _selected = null;
@@ -753,9 +754,7 @@ class _LessonScreenState extends State<LessonScreen>
       });
       _questionEnter.forward(from: 0);
       _applyAmbientForQuestion();
-    } else if (_usesExercises &&
-        _mistakeInSession &&
-        !_reviewInserted) {
+    } else if (_usesExercises && _mistakeInSession && !_reviewInserted) {
       final rev = PilotTrainings.reviewForSlug(widget.missionSlug);
       if (rev != null) {
         setState(() {
@@ -847,10 +846,11 @@ class _LessonScreenState extends State<LessonScreen>
                     child: AnimatedBuilder(
                       animation: _revealAnim,
                       builder: (context, _) => Opacity(
-                        opacity: (0.18 +
-                                _displayWorld.voidDepth * 0.12 +
-                                _displayWorld.light * 0.08)
-                            .clamp(0.12, 0.38),
+                        opacity:
+                            (0.18 +
+                                    _displayWorld.voidDepth * 0.12 +
+                                    _displayWorld.light * 0.08)
+                                .clamp(0.12, 0.38),
                         child: CinematicBackdrop(
                           world: _displayWorld,
                           revealing: _revealing,
@@ -898,11 +898,12 @@ class _LessonScreenState extends State<LessonScreen>
                             title: switch (_phase) {
                               _Phase.intro => mission.title,
                               _Phase.study => mission.title,
-                              _Phase.quiz => _usesExercises
-                                  ? '${_questionIndex + 1}/$total'
-                                  : (_difficultyMeta != null
-                                      ? 'Pergunta ${_questionIndex + 1}/$total'
-                                      : 'Pergunta ${_questionIndex + 1} de $total'),
+                              _Phase.quiz =>
+                                _usesExercises
+                                    ? '${_questionIndex + 1}/$total'
+                                    : (_difficultyMeta != null
+                                          ? 'Pergunta ${_questionIndex + 1}/$total'
+                                          : 'Pergunta ${_questionIndex + 1} de $total'),
                               _Phase.micro => 'Bônus',
                               _Phase.reflection => 'Anotar',
                               _Phase.insight => 'Hoje',
@@ -951,7 +952,8 @@ class _LessonScreenState extends State<LessonScreen>
                           lamps: _lamps,
                           index: _questionIndex,
                           total: total,
-                          insightFallback: mission.centralInsight ??
+                          insightFallback:
+                              mission.centralInsight ??
                               PilotTrainings.insightText,
                         ),
                         _Phase.quiz => CinematicLessonPanel(
@@ -1026,43 +1028,56 @@ class _LessonScreenState extends State<LessonScreen>
                           child: Column(
                             children: [
                               const Spacer(flex: 2),
-                              Text(
-                                'HOJE',
-                                style: AppTypography.label(
-                                  size: 12,
-                                  color: accent,
-                                ),
+                              CinematicIcon(
+                                glyph: CinematicGlyph.spark,
+                                size: 36,
+                                accent: accent,
+                                framed: false,
                               ),
                               const SizedBox(height: AppSpace.md),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Divider(
+                                      color: accent.withValues(alpha: 0.4),
+                                      height: 1,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 12,
+                                    ),
+                                    child: Text(
+                                      'HOJE',
+                                      style: AppTypography.label(
+                                        size: 12,
+                                        letterSpacing: 2.2,
+                                        color: accent,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Divider(
+                                      color: accent.withValues(alpha: 0.4),
+                                      height: 1,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: AppSpace.lg),
                               Text(
                                 _closingInsight,
                                 textAlign: TextAlign.center,
                                 style: AppTypography.display(
-                                  size: 24,
-                                  height: 1.3,
+                                  size: 26,
+                                  height: 1.32,
                                 ),
                               ),
                               const Spacer(flex: 3),
-                              SizedBox(
-                                width: double.infinity,
-                                height: 52,
-                                child: FilledButton(
-                                  onPressed: () => _pushCelebration(
-                                    forced: _celebrationForced,
-                                  ),
-                                  style: FilledButton.styleFrom(
-                                    backgroundColor: accent,
-                                    foregroundColor: AppColors.inkOnAccent,
-                                    shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(
-                                        AppRadii.pill,
-                                      ),
-                                    ),
-                                  ),
-                                  child: Text(
-                                    'SEGUIR',
-                                    style: AppTypography.cta(size: 15),
-                                  ),
+                              CopperCta(
+                                label: 'Seguir',
+                                onTap: () => _pushCelebration(
+                                  forced: _celebrationForced,
                                 ),
                               ),
                               const SizedBox(height: AppSpace.sm),
@@ -1111,9 +1126,9 @@ class _LessonScreenState extends State<LessonScreen>
                         exercise: _exercise,
                         selected: _selected!,
                         isCorrect: _isCorrect!,
-                        isLast: _outOfLamps ||
-                            (_isCorrect == true &&
-                                _questionIndex >= total - 1),
+                        isLast:
+                            _outOfLamps ||
+                            (_isCorrect == true && _questionIndex >= total - 1),
                         accent: accent,
                         outOfLamps: _outOfLamps,
                         onContinue: _continue,
@@ -1193,8 +1208,8 @@ class _IntroPanel extends StatelessWidget {
             usesExercises
                 ? '~3 min'
                 : (mission.isBoss
-                    ? 'Desafio · $itemCount perguntas · +${mission.stepsReward} passos'
-                    : '$itemCount perguntas · +${mission.stepsReward} passos'),
+                      ? 'Desafio · $itemCount perguntas · +${mission.stepsReward} passos'
+                      : '$itemCount perguntas · +${mission.stepsReward} passos'),
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w600,
@@ -1206,29 +1221,53 @@ class _IntroPanel extends StatelessWidget {
             if (verse.isNotEmpty)
               Container(
                 width: double.infinity,
-                padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+                padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                 decoration: BoxDecoration(
-                  color: Colors.black.withValues(alpha: 0.28),
-                  borderRadius: BorderRadius.circular(AppRadii.lg),
-                  border: Border.all(
-                    color: theme.pathActive.withValues(alpha: 0.35),
+                  borderRadius: BorderRadius.circular(18),
+                  gradient: const LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [Color(0xFF2A3D5C), Color(0xFF1C2A42)],
                   ),
+                  border: Border.all(
+                    color: theme.pathActive.withValues(alpha: 0.45),
+                    width: 1.5,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.45),
+                      offset: const Offset(0, 5),
+                      blurRadius: 0,
+                    ),
+                  ],
                 ),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    if (ref.isNotEmpty)
+                    Container(
+                      width: 36,
+                      height: 3,
+                      decoration: BoxDecoration(
+                        color: theme.pathActive,
+                        borderRadius: BorderRadius.circular(99),
+                      ),
+                    ),
+                    if (ref.isNotEmpty) ...[
+                      const SizedBox(height: 12),
                       Text(
-                        ref.toUpperCase(),
+                        ref,
+                        textAlign: TextAlign.center,
                         style: AppTypography.label(
-                          size: 10,
-                          color: theme.pathActive.withValues(alpha: 0.9),
+                          size: 11,
+                          letterSpacing: 1.4,
+                          color: theme.pathActive,
                         ),
                       ),
-                    if (ref.isNotEmpty) const SizedBox(height: 8),
+                    ],
+                    const SizedBox(height: 12),
                     Text(
                       verse,
-                      style: AppTypography.verse(size: 20, height: 1.35),
+                      textAlign: TextAlign.center,
+                      style: AppTypography.verse(size: 22, height: 1.4),
                     ),
                   ],
                 ),
@@ -1272,12 +1311,12 @@ class _IntroPanel extends StatelessWidget {
             ),
           ],
           const Spacer(flex: 2),
-          _GoldButton(
+          CopperCta(
             label: usesExercises
-                ? 'COMEÇAR'
+                ? 'Começar'
                 : hasStudy
-                    ? 'CAMINHAR NO TEXTO'
-                    : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
+                ? 'Caminhar no texto'
+                : (mission.isBoss ? 'Aceitar desafio' : 'Entrar no caminho'),
             onTap: onStart,
           ),
           const SizedBox(height: AppSpace.xl),
@@ -1306,9 +1345,7 @@ class _IntroFact extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.textOnDark.withValues(alpha: 0.05),
         borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(
-          color: AppColors.textOnDark.withValues(alpha: 0.1),
-        ),
+        border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.1)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1381,8 +1418,10 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
         questionText: widget.question.question,
         verseRef: widget.question.verseRef,
         selectedOptionId: widget.selected,
-        selectedOptionText:
-            QuestionFeedback.optionText(widget.question, widget.selected),
+        selectedOptionText: QuestionFeedback.optionText(
+          widget.question,
+          widget.selected,
+        ),
         correctOptionId: widget.question.correctOptionId,
         correctOptionText: QuestionFeedback.correctOptionText(widget.question),
         userWasCorrect: widget.isCorrect,
@@ -1415,8 +1454,7 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
     final feedback = isCorrect
         ? question.feedbackCorrect
         : QuestionFeedback.wrongMessage(question, widget.selected);
-    final selectedText =
-        QuestionFeedback.optionText(question, widget.selected);
+    final selectedText = QuestionFeedback.optionText(question, widget.selected);
     final correctText = QuestionFeedback.correctOptionText(question);
     final color = isCorrect ? accent : AppColors.error;
     final bottom = MediaQuery.of(context).padding.bottom;
@@ -1752,51 +1790,77 @@ class _ExerciseFeedbackOverlay extends StatelessWidget {
     final title = outOfLamps
         ? 'Sem lâmpadas'
         : isCorrect
-            ? 'Acertou!'
-            : 'Quase';
+        ? 'Acertou!'
+        : 'Quase';
     final cta = outOfLamps
         ? 'ENCERRAR COM PASSOS PARCIAIS'
         : isCorrect
-            ? (isLast ? 'SEGUIR' : 'CONTINUAR')
-            : 'TENTAR DE NOVO';
+        ? (isLast ? 'SEGUIR' : 'CONTINUAR')
+        : 'TENTAR DE NOVO';
 
     return Positioned.fill(
       child: Container(
-        color: Colors.black.withValues(alpha: 0.4),
+        color: Colors.black.withValues(alpha: 0.55),
         alignment: Alignment.bottomCenter,
         child: TweenAnimationBuilder<double>(
           tween: Tween(begin: 1, end: 0),
-          duration: const Duration(milliseconds: 280),
-          curve: Curves.easeOutCubic,
+          duration: const Duration(milliseconds: 420),
+          curve: Curves.easeOutBack,
           builder: (context, value, child) =>
-              Transform.translate(offset: Offset(0, value * 100), child: child),
+              Transform.translate(offset: Offset(0, value * 120), child: child),
           child: ClipRRect(
-            borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(AppRadii.xl),
-            ),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
             child: Container(
               width: double.infinity,
               padding: EdgeInsets.fromLTRB(
                 AppSpace.screen,
-                AppSpace.section,
+                AppSpace.lg,
                 AppSpace.screen,
                 AppSpace.lg + bottom,
               ),
               decoration: BoxDecoration(
-                color: AppColors.night.withValues(alpha: 0.94),
-                border: Border(
-                  top: BorderSide(color: color.withValues(alpha: 0.7), width: 3),
-                ),
+                color: AppColors.night,
+                border: Border(top: BorderSide(color: color, width: 3.5)),
               ),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Text(title, style: AppTypography.display(size: 22, color: color)),
-                  const SizedBox(height: AppSpace.sm),
+                  Row(
+                    children: [
+                      Container(
+                        width: 52,
+                        height: 52,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: color,
+                        ),
+                        child: Center(
+                          child: CinematicIcon(
+                            glyph: outOfLamps
+                                ? CinematicGlyph.frost
+                                : isCorrect
+                                ? CinematicGlyph.check
+                                : CinematicGlyph.book,
+                            size: 26,
+                            accent: AppColors.inkOnAccent,
+                            framed: false,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Text(
+                          title,
+                          style: AppTypography.display(size: 28, color: color),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.md),
                   Text(
                     feedback,
-                    style: AppTypography.body(size: 15, height: 1.45),
+                    style: AppTypography.body(size: 16, height: 1.45),
                   ),
                   if (!isCorrect &&
                       !outOfLamps &&
@@ -1818,12 +1882,13 @@ class _ExerciseFeedbackOverlay extends StatelessWidget {
                       exercise.reference!,
                       style: AppTypography.label(
                         size: 11,
-                        color: accent.withValues(alpha: 0.85),
+                        letterSpacing: 1.2,
+                        color: accent,
                       ),
                     ),
                   ],
                   const SizedBox(height: AppSpace.lg),
-                  _GoldButton(label: cta, onTap: onContinue),
+                  CopperCta(label: cta, onTap: onContinue),
                 ],
               ),
             ),
@@ -1842,21 +1907,6 @@ class _GoldButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        decoration: BoxDecoration(
-          gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-        ),
-        child: Text(
-          label,
-          textAlign: TextAlign.center,
-          style: AppTypography.cta(size: 15),
-        ),
-      ),
-    );
+    return CopperCta(label: label, onTap: onTap);
   }
 }

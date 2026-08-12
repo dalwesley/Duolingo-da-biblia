@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
 import 'lamps_bar.dart';
 import 'ui_primitives.dart';
 
@@ -16,8 +17,8 @@ class _ActSkin {
   static const afterChrome = AppSpace.lg;
   static const afterHero = AppSpace.md;
   static const cueSize = 24.0;
-  static const verseSize = 21.0;
-  static const noteSize = 18.0;
+  static const verseSize = 22.0;
+  static const noteSize = 16.0;
   static const badge = 32.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
@@ -131,7 +132,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     super.initState();
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 420),
+      duration: const Duration(milliseconds: 720),
     )..forward();
     _resetLocal();
   }
@@ -161,6 +162,23 @@ class _ExercisePanelState extends State<ExercisePanel>
   void dispose() {
     _enter.dispose();
     super.dispose();
+  }
+
+  Widget _in(double start, double end, Widget child) {
+    final curve = CurvedAnimation(
+      parent: _enter,
+      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    );
+    return FadeTransition(
+      opacity: curve,
+      child: SlideTransition(
+        position: Tween<Offset>(
+          begin: const Offset(0, 0.05),
+          end: Offset.zero,
+        ).animate(curve),
+        child: child,
+      ),
+    );
   }
 
   bool get _locked =>
@@ -225,19 +243,20 @@ class _ExercisePanelState extends State<ExercisePanel>
     final hero = _fieldHero(ex);
     final response = _responseSurface(ex, options);
 
-    return FadeTransition(
-      opacity: CurvedAnimation(parent: _enter, curve: Curves.easeOut),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(
-          AppSpace.screen,
-          AppSpace.sm,
-          AppSpace.screen,
-          AppSpace.md,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            if (cue.isNotEmpty) ...[
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        AppSpace.sm,
+        AppSpace.screen,
+        AppSpace.md,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (cue.isNotEmpty)
+            _in(
+              0,
+              0.38,
               Text(
                 cue,
                 textAlign: TextAlign.center,
@@ -246,39 +265,49 @@ class _ExercisePanelState extends State<ExercisePanel>
                   height: 1.22,
                 ),
               ),
-            ],
-            if (_showNote(ex)) ...[
-              const SizedBox(height: AppSpace.md),
+            ),
+          if (_showNote(ex)) ...[
+            const SizedBox(height: AppSpace.md),
+            _in(
+              0.1,
+              0.5,
               _ContextNote(
                 label: (ex.noteLabel ?? 'Contexto').trim(),
                 text: ex.note!.trim(),
                 accent: widget.accent,
               ),
-            ],
-            const SizedBox(height: _ActSkin.afterChrome),
-            if (hero != null)
-              Expanded(child: hero)
-            else if (response.isNotEmpty)
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    const Spacer(),
-                    ...response,
-                    const Spacer(),
-                  ],
-                ),
-              )
-            else
-              const Spacer(),
-            if (hero != null && response.isNotEmpty) ...[
-              const SizedBox(height: _ActSkin.afterHero),
-              ...response,
-            ],
-            const SizedBox(height: AppSpace.md),
-            _footer(ex, canConfirm),
+            ),
           ],
-        ),
+          const SizedBox(height: _ActSkin.afterChrome),
+          if (hero != null)
+            Expanded(child: _in(0.18, 0.62, hero))
+          else if (response.isNotEmpty)
+            Expanded(
+              child: _in(
+                0.28,
+                0.78,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [const Spacer(), ...response, const Spacer()],
+                ),
+              ),
+            )
+          else
+            const Spacer(),
+          if (hero != null && response.isNotEmpty) ...[
+            const SizedBox(height: _ActSkin.afterHero),
+            _in(
+              0.4,
+              0.88,
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: response,
+              ),
+            ),
+          ],
+          const SizedBox(height: AppSpace.md),
+          _in(0.55, 1, _footer(ex, canConfirm)),
+        ],
       ),
     );
   }
@@ -414,21 +443,22 @@ class _ExercisePanelState extends State<ExercisePanel>
       case ExerciseType.match:
         return _matchBody(ex);
       case ExerciseType.complete:
-        return _chipBank(options);
+        return _optionBank(options);
       default:
-        return _chipBank(options, stacked: !_hasVerseStage(ex));
+        return _optionBank(options, stacked: !_hasVerseStage(ex));
     }
   }
 
-  Widget _chipFor(QuestionOption o) => _BankChip(
-        label: o.text,
-        state: _state(o.id),
-        accent: widget.accent,
-        enabled: !widget.eliminatedIds.contains(o.id),
-        onTap: widget.eliminatedIds.contains(o.id)
-            ? null
-            : () => _pickChoice(o.id),
-      );
+  Widget _tileFor(QuestionOption o, int i) {
+    final eliminated = widget.eliminatedIds.contains(o.id);
+    return _OptionTile(
+      letter: _kLetters[i.clamp(0, _kLetters.length - 1)],
+      text: o.text,
+      state: _state(o.id),
+      accent: widget.accent,
+      onTap: eliminated ? null : () => _pickChoice(o.id),
+    );
+  }
 
   bool _hasVerseStage(Exercise ex) {
     return (ex.passageText ?? '').trim().isNotEmpty ||
@@ -437,19 +467,14 @@ class _ExercisePanelState extends State<ExercisePanel>
         ex.passageB != null;
   }
 
-  List<Widget> _chipBank(
-    List<QuestionOption> options, {
-    bool stacked = false,
-  }) {
+  List<Widget> _optionBank(List<QuestionOption> options, {bool stacked = false}) {
     if (options.isEmpty) return const [];
     if (stacked) {
       return [
         for (var i = 0; i < options.length; i++)
           Padding(
-            padding: EdgeInsets.only(
-              bottom: i == options.length - 1 ? 0 : 8,
-            ),
-            child: _chipFor(options[i]),
+            padding: EdgeInsets.only(bottom: i == options.length - 1 ? 0 : 8),
+            child: _tileFor(options[i], i),
           ),
       ];
     }
@@ -461,11 +486,11 @@ class _ExercisePanelState extends State<ExercisePanel>
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Expanded(child: _chipFor(options[i])),
-                const SizedBox(width: 8),
+                Expanded(child: _tileFor(options[i], i)),
+                const SizedBox(width: _ActSkin.gap),
                 Expanded(
                   child: i + 1 < options.length
-                      ? _chipFor(options[i + 1])
+                      ? _tileFor(options[i + 1], i + 1)
                       : const SizedBox.shrink(),
                 ),
               ],
@@ -488,7 +513,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     if (hasInText) return const [];
     final chips = ex.effectiveOptions;
     if (chips.isEmpty) return const [];
-    return _chipBank(chips);
+    return _optionBank(chips);
   }
 
   List<Widget> _orderBody(List<QuestionOption> options) {
@@ -710,10 +735,13 @@ class _TapSpan {
   const _TapSpan(this.text, [this.optionId]);
 }
 
-TextStyle _verseWordStyle({Color? color}) => AppTypography.display(
+TextStyle _verseWordStyle({
+  Color? color,
+  FontWeight weight = FontWeight.w600,
+}) => AppTypography.verse(
   size: _ActSkin.verseSize,
-  weight: FontWeight.w700,
-  height: 1.45,
+  weight: weight,
+  height: 1.5,
   color: color ?? AppColors.textOnDark,
 );
 
@@ -778,15 +806,29 @@ class _ContextNote extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          label.toUpperCase(),
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            color: accent.withValues(alpha: 0.9),
-          ),
+        Row(
+          children: [
+            Expanded(
+              child: Divider(color: accent.withValues(alpha: 0.35), height: 1),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10),
+              child: Text(
+                label.toUpperCase(),
+                textAlign: TextAlign.center,
+                style: AppTypography.label(
+                  size: 11,
+                  letterSpacing: 1.8,
+                  color: accent,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Divider(color: accent.withValues(alpha: 0.35), height: 1),
+            ),
+          ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 10),
         Text(
           text,
           textAlign: TextAlign.center,
@@ -794,7 +836,7 @@ class _ContextNote extends StatelessWidget {
             size: _ActSkin.noteSize,
             height: 1.45,
             weight: FontWeight.w600,
-            color: AppColors.textOnDark.withValues(alpha: 0.84),
+            color: AppColors.textOnDark.withValues(alpha: 0.82),
           ),
         ),
       ],
@@ -819,46 +861,102 @@ class _Manuscript extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: double.infinity,
-      padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
       decoration: BoxDecoration(
-        color: AppColors.nightElevated,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.18),
-          width: 2,
-        ),
+        borderRadius: BorderRadius.circular(18),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.45),
+            color: Colors.black.withValues(alpha: 0.55),
             blurRadius: 0,
-            offset: const Offset(0, 4),
+            offset: const Offset(0, 6),
           ),
         ],
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (ref.isNotEmpty) ...[
-            Text(
-              ref,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 0.6,
-                color: accent,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18),
+        child: Stack(
+          children: [
+            const Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0xFF2A3D5C),
+                      Color(0xFF1C2A42),
+                      Color(0xFF101828),
+                    ],
+                  ),
+                ),
               ),
             ),
-            const SizedBox(height: 14),
+            Positioned.fill(
+              child: IgnorePointer(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(
+                      color: Color.lerp(
+                        accent,
+                        Colors.white,
+                        0.4,
+                      )!.withValues(alpha: 0.42),
+                      width: 1.5,
+                    ),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.transparent,
+                        Colors.black.withValues(alpha: 0.22),
+                      ],
+                      stops: const [0.65, 1],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Center(
+                    child: Container(
+                      width: 36,
+                      height: 3,
+                      decoration: BoxDecoration(
+                        color: accent,
+                        borderRadius: BorderRadius.circular(99),
+                      ),
+                    ),
+                  ),
+                  if (ref.isNotEmpty) ...[
+                    const SizedBox(height: 14),
+                    Text(
+                      ref,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.label(
+                        size: 11,
+                        letterSpacing: 1.4,
+                        color: accent,
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 14),
+                  Expanded(
+                    child: Center(
+                      child: SingleChildScrollView(
+                        physics: const BouncingScrollPhysics(),
+                        child: SizedBox(width: double.infinity, child: child),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
-          Expanded(
-            child: Center(
-              child: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(),
-                child: SizedBox(width: double.infinity, child: child),
-              ),
-            ),
-          ),
-        ],
+        ),
       ),
     );
   }
@@ -1132,13 +1230,13 @@ class _VerseMark extends StatelessWidget {
 
     if (placeholder && !filled) {
       return SizedBox(
-        width: 88,
-        height: _ActSkin.verseSize * 1.45,
+        width: 96,
+        height: _ActSkin.verseSize * 1.5,
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 2.5,
-            margin: const EdgeInsets.only(bottom: 2),
+            height: 3,
+            margin: const EdgeInsets.only(bottom: 3),
             decoration: BoxDecoration(
               color: accent,
               borderRadius: BorderRadius.circular(AppRadii.pill),
@@ -1150,16 +1248,11 @@ class _VerseMark extends StatelessWidget {
 
     final child = Text(
       text,
-      style: AppTypography.display(
-        size: _ActSkin.verseSize,
-        weight: FontWeight.w800,
-        height: 1.45,
-        color: color,
-      ),
+      style: _verseWordStyle(color: color, weight: FontWeight.w700),
     );
 
     if (onTap == null) return child;
-    return GestureDetector(onTap: enabled ? onTap : null, child: child);
+    return _PressScale(onTap: enabled ? onTap : null, child: child);
   }
 }
 
@@ -1181,29 +1274,42 @@ class _InsightView extends StatelessWidget {
       child: Column(
         children: [
           const Spacer(flex: 2),
-          Text('HOJE', style: AppTypography.label(size: 12, color: accent)),
+          CinematicIcon(
+            glyph: CinematicGlyph.spark,
+            size: 36,
+            accent: accent,
+            framed: false,
+          ),
           const SizedBox(height: AppSpace.md),
+          Row(
+            children: [
+              Expanded(
+                child: Divider(color: accent.withValues(alpha: 0.4), height: 1),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Text(
+                  'HOJE',
+                  style: AppTypography.label(
+                    size: 12,
+                    letterSpacing: 2.2,
+                    color: accent,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Divider(color: accent.withValues(alpha: 0.4), height: 1),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
           Text(
             text,
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, height: 1.3),
+            style: AppTypography.display(size: 26, height: 1.32),
           ),
           const Spacer(flex: 3),
-          SizedBox(
-            width: double.infinity,
-            height: 52,
-            child: FilledButton(
-              onPressed: onContinue,
-              style: FilledButton.styleFrom(
-                backgroundColor: accent,
-                foregroundColor: AppColors.inkOnAccent,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                ),
-              ),
-              child: Text('SEGUIR', style: AppTypography.cta(size: 15)),
-            ),
-          ),
+          CopperCta(label: 'Seguir', onTap: onContinue),
           const SizedBox(height: AppSpace.lg),
         ],
       ),
@@ -1241,82 +1347,37 @@ class _PassageBlock extends StatelessWidget {
   }
 }
 
-class _BankChip extends StatelessWidget {
-  final String label;
-  final _OptState state;
-  final Color accent;
-  final bool enabled;
+class _PressScale extends StatefulWidget {
+  final Widget child;
   final VoidCallback? onTap;
 
-  const _BankChip({
-    required this.label,
-    required this.state,
-    required this.accent,
-    this.enabled = true,
-    this.onTap,
-  });
+  const _PressScale({required this.child, this.onTap});
+
+  @override
+  State<_PressScale> createState() => _PressScaleState();
+}
+
+class _PressScaleState extends State<_PressScale> {
+  bool _down = false;
 
   @override
   Widget build(BuildContext context) {
-    final hot =
-        state == _OptState.picked ||
-        state == _OptState.correct ||
-        state == _OptState.wrong;
-    final dim = state == _OptState.dimmed || !enabled;
-    final border = switch (state) {
-      _OptState.correct || _OptState.picked => accent,
-      _OptState.wrong => AppColors.error,
-      _ => Colors.white.withValues(alpha: dim ? 0.08 : 0.2),
-    };
-    final fill = switch (state) {
-      _OptState.correct => accent.withValues(alpha: 0.18),
-      _OptState.picked => accent.withValues(alpha: 0.12),
-      _OptState.wrong => AppColors.error.withValues(alpha: 0.12),
-      _ => dim ? Colors.white.withValues(alpha: 0.04) : AppColors.nightElevated,
-    };
-
-    return Opacity(
-      opacity: dim ? 0.3 : 1,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: enabled ? onTap : null,
-          borderRadius: BorderRadius.circular(14),
-          child: AnimatedContainer(
-            duration: _ActSkin.anim,
-            width: double.infinity,
-            alignment: Alignment.center,
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              color: fill,
-              border: Border.all(color: border, width: 2),
-              boxShadow: hot || dim
-                  ? null
-                  : [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.45),
-                        blurRadius: 0,
-                        offset: const Offset(0, 3),
-                      ),
-                    ],
-            ),
-            child: Text(
-              label,
-              textAlign: TextAlign.center,
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 14,
-                height: 1.25,
-                weight: FontWeight.w800,
-                color: AppColors.textOnDark.withValues(
-                  alpha: dim ? 0.45 : 0.98,
-                ),
-              ),
-            ),
-          ),
-        ),
+    return GestureDetector(
+      onTapDown: widget.onTap == null
+          ? null
+          : (_) => setState(() => _down = true),
+      onTapUp: widget.onTap == null
+          ? null
+          : (_) => setState(() => _down = false),
+      onTapCancel: widget.onTap == null
+          ? null
+          : () => setState(() => _down = false),
+      onTap: widget.onTap,
+      child: AnimatedScale(
+        scale: _down ? 0.96 : 1,
+        duration: const Duration(milliseconds: 90),
+        curve: Curves.easeOut,
+        child: widget.child,
       ),
     );
   }
@@ -1344,64 +1405,65 @@ class _OptionTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(_ActSkin.radius),
-        child: AnimatedContainer(
-          duration: _ActSkin.anim,
-          curve: Curves.easeOutCubic,
-          padding: _ActSkin.pad,
-          decoration: BoxDecoration(
-            color: skin.fill,
-            borderRadius: BorderRadius.circular(_ActSkin.radius),
-            border: Border.all(
-              color: skin.border,
-              width: skin.hot ? 1.7 : 1.15,
-            ),
-            boxShadow: state == _OptState.picked
-                ? [
-                    BoxShadow(
-                      color: accent.withValues(alpha: 0.18),
-                      blurRadius: 16,
-                      offset: const Offset(0, 8),
-                    ),
-                  ]
-                : null,
-          ),
-          child: Row(
-            children: [
-              Container(
-                width: _ActSkin.badge,
-                height: _ActSkin.badge,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: skin.badge,
-                ),
-                child: Text(
-                  letter,
-                  style: AppTypography.title(size: 13, color: skin.badgeFg),
-                ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  text,
-                  textAlign: textAlign,
-                  style: AppTypography.body(
-                    size: 15,
-                    height: 1.3,
-                    weight: FontWeight.w700,
-                    color: skin.text,
-                  ),
-                ),
-              ),
-              if (trailing != null)
-                SizedBox(width: _ActSkin.badge, child: trailing),
+    return _PressScale(
+      onTap: onTap,
+      child: AnimatedContainer(
+        duration: _ActSkin.anim,
+        curve: Curves.easeOutCubic,
+        width: double.infinity,
+        alignment: Alignment.centerLeft,
+        padding: _ActSkin.pad,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(_ActSkin.radius),
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.lerp(skin.fill, Colors.white, 0.1)!,
+              skin.fill,
+              Color.lerp(skin.fill, Colors.black, 0.16)!,
             ],
           ),
+          border: Border.all(color: skin.border, width: skin.hot ? 2 : 1.4),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.45),
+              blurRadius: 0,
+              offset: const Offset(0, 4),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: _ActSkin.badge,
+              height: _ActSkin.badge,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: skin.badge,
+              ),
+              child: Text(
+                letter,
+                style: AppTypography.title(size: 13, color: skin.badgeFg),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                text,
+                textAlign: textAlign,
+                style: AppTypography.body(
+                  size: 15,
+                  height: 1.3,
+                  weight: FontWeight.w700,
+                  color: skin.text,
+                ),
+              ),
+            ),
+            if (trailing != null)
+              SizedBox(width: _ActSkin.badge, child: trailing),
+          ],
         ),
       ),
     );

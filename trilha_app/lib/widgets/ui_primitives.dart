@@ -53,22 +53,15 @@ class AppMetrics {
         offset: Offset(0, lip),
         blurRadius: 0,
       ),
-      if (accent || tint != null)
-        BoxShadow(
-          color: (tint ?? AppColors.accent).withValues(alpha: 0.14),
-          blurRadius: elevated ? 18 : 12,
-          offset: Offset(0, elevated ? 8 : 5),
-        )
-      else
-        BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
-          blurRadius: elevated ? 18 : 12,
-          offset: Offset(0, elevated ? 10 : 6),
-        ),
+      BoxShadow(
+        color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
+        blurRadius: elevated ? 18 : 12,
+        offset: Offset(0, elevated ? 10 : 6),
+      ),
     ];
   }
 
-  /// Glow suave de CTA / accent.
+  /// Lip 3D do CTA — sem glow colorido.
   static List<BoxShadow> accentGlow({
     double blur = 10,
     double alpha = 0.22,
@@ -79,11 +72,6 @@ class AppMetrics {
       color: Colors.black.withValues(alpha: 0.35),
       offset: const Offset(0, 4),
       blurRadius: 0,
-    ),
-    BoxShadow(
-      color: (color ?? AppColors.accent).withValues(alpha: alpha),
-      blurRadius: blur,
-      offset: offset,
     ),
   ];
 }
