@@ -1,3 +1,7 @@
+import 'exercise.dart';
+
+export 'exercise.dart';
+
 class QuestionOption {
   final String id;
   final String text;
@@ -50,6 +54,15 @@ class Mission {
   final String type;
   final int stepsReward;
   final List<Question> questions;
+  /// Learning Engine v2 — se não vazio, o player tipado tem prioridade sobre o banco.
+  final List<Exercise> exercises;
+  final String? objective;
+  final String? centralInsight;
+  /// Entrada bíblica (≤ ~5 s): verso + nota de contexto/curiosidade + fio de conexão.
+  final String? hookRef;
+  final String? hookVerse;
+  final String? hookNote;
+  final String? hookThread;
 
   const Mission({
     required this.slug,
@@ -59,11 +72,29 @@ class Mission {
     required this.type,
     required this.stepsReward,
     required this.questions,
+    this.exercises = const [],
+    this.objective,
+    this.centralInsight,
+    this.hookRef,
+    this.hookVerse,
+    this.hookNote,
+    this.hookThread,
   });
 
   bool get isBoss => type == 'boss';
 
+  bool get hasExercises => exercises.any((e) => e.hasPlayableContent);
+
+  bool get hasBibleHook =>
+      (hookVerse ?? '').trim().isNotEmpty || (hookNote ?? '').trim().isNotEmpty;
+
   factory Mission.fromJson(Map<String, dynamic> json) {
+    final entrance = json['entrance'];
+    Map<String, dynamic>? entranceMap;
+    if (entrance is Map) {
+      entranceMap = Map<String, dynamic>.from(entrance);
+    }
+
     return Mission(
       slug: json['slug'] as String,
       title: json['title'] as String,
@@ -74,6 +105,17 @@ class Mission {
       questions: (json['questions'] as List? ?? [])
           .map((e) => Question.fromJson(e as Map<String, dynamic>))
           .toList(),
+      exercises: (json['exercises'] as List? ?? [])
+          .whereType<Map>()
+          .map((e) => Exercise.fromJson(Map<String, dynamic>.from(e)))
+          .toList(),
+      objective: json['objective'] as String?,
+      centralInsight: json['centralInsight'] as String?,
+      hookRef: json['hookRef'] as String? ?? entranceMap?['ref'] as String?,
+      hookVerse: json['hookVerse'] as String? ?? entranceMap?['verse'] as String?,
+      hookNote: json['hookNote'] as String? ?? entranceMap?['note'] as String?,
+      hookThread:
+          json['hookThread'] as String? ?? entranceMap?['thread'] as String?,
     );
   }
 }

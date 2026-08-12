@@ -288,7 +288,7 @@ class _PromiseBeat extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Text(
-          'Treino diário — não trivia, não só leitura',
+          'Hábito diário — não trivia, não só leitura',
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 13,

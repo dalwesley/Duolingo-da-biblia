@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
 import '../data/mission_study.dart';
+import '../data/pilot_trainings.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
@@ -23,6 +24,7 @@ import '../utils/trail_progress.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cinematic_lesson_panel.dart';
+import '../widgets/exercise_panel.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/question_report_sheet.dart';
 import '../widgets/study_panel.dart';
@@ -33,7 +35,7 @@ import '../screens/celebration_screen.dart';
 import '../screens/bible_screen.dart';
 import '../screens/difficulty_picker_screen.dart';
 
-enum _Phase { intro, study, quiz, micro, reflection }
+enum _Phase { intro, study, quiz, micro, reflection, insight }
 
 class LessonScreen extends StatefulWidget {
   final String missionSlug;
@@ -63,6 +65,11 @@ class _LessonScreenState extends State<LessonScreen>
   String? _realmId;
   List<String> _pickedIds = [];
   List<String?> _revealTags = [];
+  List<Exercise> _exercises = [];
+  String _closingInsight = '';
+  bool _celebrationForced = false;
+  bool _mistakeInSession = false;
+  bool _reviewInserted = false;
   DifficultyMeta? _difficultyMeta;
 
   _Phase _phase = _Phase.intro;
@@ -125,9 +132,23 @@ class _LessonScreenState extends State<LessonScreen>
         _realmId = 'antigo-testamento';
         _pickedIds = widget.questionIdsOverride ?? [];
         _revealTags = List.filled(override.questions.length, null);
+        _exercises = List<Exercise>.from(
+          override.hasExercises
+              ? override.exercises.where((e) => e.hasPlayableContent)
+              : PilotTrainings.forSlug(widget.missionSlug),
+        );
+        _mistakeInSession = false;
+        _reviewInserted = false;
         _mission = override;
         _lamps = ProgressService.lampsForMission(isBoss: override.isBoss);
-        if (hasStudy) _phase = _Phase.study;
+        if (hasStudy &&
+            !(override.hasExercises ||
+                PilotTrainings.forSlug(widget.missionSlug).isNotEmpty)) {
+          _phase = _Phase.study;
+        } else if (override.hasExercises ||
+            PilotTrainings.forSlug(widget.missionSlug).isNotEmpty) {
+          _phase = _Phase.intro;
+        }
       });
       return;
     }
@@ -215,7 +236,16 @@ class _LessonScreenState extends State<LessonScreen>
     var tags = <String?>[];
     DifficultyMeta? meta;
 
-    if (mission != null && usesBank && trailSlug != null) {
+    final catalogExercises = (mission?.exercises ?? const <Exercise>[])
+        .where((e) => e.hasPlayableContent)
+        .toList(growable: false);
+    final pilotExercises = PilotTrainings.forSlug(widget.missionSlug);
+    // Piloto local vence catálogo remoto (evita Firestore stale durante o experimento).
+    final resolvedExercises =
+        pilotExercises.isNotEmpty ? pilotExercises : catalogExercises;
+    final usesExercises = resolvedExercises.isNotEmpty && !widget.practiceMode;
+
+    if (mission != null && usesBank && trailSlug != null && !usesExercises) {
       if (!mounted) return;
       final freshProgress = context.read<ProgressService>();
       final diffId =
@@ -245,6 +275,16 @@ class _LessonScreenState extends State<LessonScreen>
         }
       }
       if (bankQs.isNotEmpty) questions = bankQs;
+    } else if (usesExercises && usesBank && trailSlug != null) {
+      // Ainda resolve meta de dificuldade para XP/label, sem puxar banco.
+      if (!mounted) return;
+      final freshProgress = context.read<ProgressService>();
+      final diffId =
+          freshProgress.difficultyForTrail(trailSlug) ??
+          TrailDifficulty.caminhada.id;
+      final difficulty =
+          TrailDifficulty.fromId(diffId) ?? TrailDifficulty.caminhada;
+      meta = await QuestionBank.instance.metaFor(difficulty);
     }
 
     if (!mounted) return;
@@ -264,22 +304,57 @@ class _LessonScreenState extends State<LessonScreen>
       _realmId = realmId;
       _pickedIds = ids;
       _revealTags = tags;
+      _exercises = usesExercises
+          ? resolvedExercises
+              .where((e) => e.type != ExerciseType.insight)
+              .toList()
+          : <Exercise>[];
+      _closingInsight = resolvedExercises
+              .where((e) => e.type == ExerciseType.insight)
+              .map((e) => e.prompt.trim())
+              .where((s) => s.isNotEmpty)
+              .firstOrNull ??
+          mission?.centralInsight ??
+          (usesExercises && pilotExercises.isNotEmpty
+              ? PilotTrainings.insightText
+              : '');
+      _celebrationForced = false;
+      _mistakeInSession = false;
+      _reviewInserted = false;
       _difficultyMeta = meta;
       _lamps = ProgressService.lampsForMission(isBoss: mission?.isBoss ?? false);
-      // Com estudo: um só preparo (título + passagem). Sem: intro clássica.
+      // Com estudo legado: preparo antes do quiz.
+      // Com motor v2: não spoilar — o texto entra nos exercícios.
       if (hasStudy) _phase = _Phase.study;
+      if (usesExercises) _phase = _Phase.intro;
       if (mission != null) {
+        final insight = mission.centralInsight ??
+            (usesExercises && pilotExercises.isNotEmpty
+                ? PilotTrainings.insightText
+                : null);
+        final usePilotHook = usesExercises && pilotExercises.isNotEmpty;
         _mission = Mission(
           slug: mission.slug,
           title: mission.title,
-          subtitle: mission.subtitle,
-          intro: mission.intro,
+          subtitle: usesExercises ? '~3 min' : mission.subtitle,
+          intro: usePilotHook
+              ? PilotTrainings.hookNote
+              : mission.intro,
           type: mission.type,
           stepsReward: _scaledSteps(
             mission.stepsReward,
             meta?.stepsMultiplier ?? 1,
           ),
           questions: questions,
+          exercises: usesExercises ? resolvedExercises : mission.exercises,
+          objective: mission.objective,
+          centralInsight: insight,
+          hookRef: usePilotHook ? PilotTrainings.hookRef : mission.hookRef,
+          hookVerse:
+              usePilotHook ? PilotTrainings.hookVerse : mission.hookVerse,
+          hookNote: usePilotHook ? PilotTrainings.hookNote : mission.hookNote,
+          hookThread:
+              usePilotHook ? PilotTrainings.hookThread : mission.hookThread,
         );
       }
     });
@@ -292,7 +367,20 @@ class _LessonScreenState extends State<LessonScreen>
 
   Question get _question => _mission!.questions[_questionIndex];
 
+  bool get _usesExercises => _exercises.isNotEmpty;
+
+  int get _itemCount =>
+      _usesExercises ? _exercises.length : (_mission?.questions.length ?? 0);
+
+  int get _scoredItemCount {
+    if (!_usesExercises) return _mission?.questions.length ?? 0;
+    return _exercises.where((e) => !e.type.isRevealOnly).length;
+  }
+
+  Exercise get _exercise => _exercises[_questionIndex];
+
   bool get _cinematic =>
+      !_usesExercises &&
       CinematicResolver.isCinematicMission(_trailSlug, _moduleTitle);
 
   GenesisModuleTheme get _theme => GenesisModuleTheme.forModule(
@@ -302,6 +390,14 @@ class _LessonScreenState extends State<LessonScreen>
   );
 
   String get _correctOptionText {
+    if (_usesExercises) {
+      final ex = _exercise;
+      final id = ex.resolvedCorrectAnswer;
+      for (final o in ex.effectiveOptions) {
+        if (o.id == id) return o.text;
+      }
+      return id;
+    }
     final q = _question;
     return q.options.firstWhere((o) => o.id == q.correctOptionId).text;
   }
@@ -329,6 +425,10 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _select(String optionId) async {
+    if (_usesExercises) {
+      await _selectExercise(optionId);
+      return;
+    }
     if (_selected != null ||
         _phase != _Phase.quiz ||
         _showFeedback ||
@@ -400,10 +500,89 @@ class _LessonScreenState extends State<LessonScreen>
     _busy = false;
   }
 
+  Future<void> _selectExercise(String optionId) async {
+    if (_selected != null ||
+        _phase != _Phase.quiz ||
+        _showFeedback ||
+        _busy) {
+      return;
+    }
+    final ex = _exercise;
+    if (!ex.type.isRevealOnly && _outOfLamps) return;
+    if (_eliminated.contains(optionId)) return;
+    _busy = true;
+
+    if (ex.type.isRevealOnly) {
+      SoundService.instance.playCorrect();
+      HapticFeedback.lightImpact();
+      setState(() {
+        _selected = optionId;
+        _isCorrect = true;
+        _showFeedback = false;
+      });
+      _busy = false;
+      _finishLesson();
+      return;
+    }
+
+    final correct = ex.checkAnswer(optionId);
+    AnalyticsService.instance.logQuestionAnswered(
+      missionSlug: widget.missionSlug,
+      trailSlug: _trailSlug,
+      questionId: ex.id.isNotEmpty
+          ? ex.id
+          : '${widget.missionSlug}_e$_questionIndex',
+      questionIndex: _questionIndex,
+      correct: correct,
+      hintUsed: _hintUsed,
+      difficulty: _difficultyMeta?.difficulty.id,
+      isBoss: _mission?.isBoss ?? false,
+    );
+    if (correct) {
+      SoundService.instance.playCorrect();
+      HapticFeedback.lightImpact();
+    } else {
+      SoundService.instance.playWrong();
+      HapticFeedback.mediumImpact();
+      _mistakeInSession = true;
+    }
+
+    _impactPositive = correct;
+    _impactFlash.forward(from: 0);
+    setState(() {
+      _selected = optionId;
+      _isCorrect = correct;
+      if (correct) {
+        _correctCount++;
+      } else {
+        _lamps = (_lamps - 1).clamp(0, _maxLamps);
+        if (_lamps == 0) _outOfLamps = true;
+      }
+      _showFeedback = false;
+    });
+
+    await Future.delayed(Duration(milliseconds: correct ? 280 : 320));
+    if (mounted) setState(() => _showFeedback = true);
+    _busy = false;
+  }
+
   void _useHint() {
     if (_mission?.isBoss == true) return;
     if (_hintUsed || _selected != null || _showFeedback) return;
     HapticFeedback.selectionClick();
+    if (_usesExercises) {
+      final ex = _exercise;
+      final wrong = ex.effectiveOptions
+          .where((o) => o.id != ex.resolvedCorrectAnswer)
+          .toList();
+      if (wrong.isEmpty) return;
+      wrong.shuffle();
+      setState(() {
+        _hintUsed = true;
+        _eliminated = {wrong.first.id};
+      });
+      return;
+    }
     final wrong = _question.options
         .where((o) => o.id != _question.correctOptionId)
         .toList();
@@ -424,7 +603,22 @@ class _LessonScreenState extends State<LessonScreen>
 
   void _goToCelebration({required bool forced}) {
     if (_mission == null) return;
-    final total = _mission!.questions.length;
+    if (_closingInsight.trim().isNotEmpty && _phase != _Phase.insight) {
+      setState(() {
+        _celebrationForced = forced;
+        _showFeedback = false;
+        _selected = null;
+        _isCorrect = null;
+        _phase = _Phase.insight;
+      });
+      return;
+    }
+    _pushCelebration(forced: forced);
+  }
+
+  void _pushCelebration({required bool forced}) {
+    if (_mission == null) return;
+    final total = (_usesExercises ? _scoredItemCount : _itemCount).clamp(1, 999);
     final progress = context.read<ProgressService>();
     if (!widget.practiceMode && _pickedIds.isNotEmpty) {
       progress.markQuestionsUsed(_pickedIds);
@@ -532,10 +726,26 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
-    if (_questionIndex < _mission!.questions.length - 1) {
+    // Erro → tenta de novo (exceto insight).
+    if (_usesExercises &&
+        _isCorrect == false &&
+        !_exercise.type.isRevealOnly) {
       setState(() {
         _showFeedback = false;
-        _questionIndex++;
+        _selected = null;
+        _isCorrect = null;
+        _hintUsed = false;
+        _eliminated = {};
+      });
+      _questionEnter.forward(from: 0);
+      return;
+    }
+
+    if (_questionIndex < _itemCount - 1) {
+      final next = _questionIndex + 1;
+      setState(() {
+        _showFeedback = false;
+        _questionIndex = next;
         _selected = null;
         _isCorrect = null;
         _hintUsed = false;
@@ -543,12 +753,35 @@ class _LessonScreenState extends State<LessonScreen>
       });
       _questionEnter.forward(from: 0);
       _applyAmbientForQuestion();
+    } else if (_usesExercises &&
+        _mistakeInSession &&
+        !_reviewInserted) {
+      final rev = PilotTrainings.reviewForSlug(widget.missionSlug);
+      if (rev != null) {
+        setState(() {
+          _exercises = [..._exercises, rev];
+          _reviewInserted = true;
+          _showFeedback = false;
+          _questionIndex = _exercises.length - 1;
+          _selected = null;
+          _isCorrect = null;
+          _hintUsed = false;
+          _eliminated = {};
+        });
+        _questionEnter.forward(from: 0);
+        return;
+      }
+      _finishLesson();
     } else {
       _finishLesson();
     }
   }
 
   void _startStudyOrQuiz() {
+    if (_usesExercises) {
+      _startQuiz();
+      return;
+    }
     if (_hasStudy) {
       setState(() => _phase = _Phase.study);
       return;
@@ -584,14 +817,7 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     final mission = _mission!;
-    final total = mission.questions.length;
-    final progress = switch (_phase) {
-      _Phase.intro => 0.0,
-      _Phase.study => 0.08,
-      _Phase.quiz => (_questionIndex + (_showFeedback ? 1 : 0)) / total,
-      _Phase.micro => 0.88,
-      _Phase.reflection => 0.95,
-    };
+    final total = _itemCount.clamp(1, 999);
     final accent = _theme.pathActive;
     final study = _study;
     final priorReflection = progressSvc.reflectionFor(widget.missionSlug);
@@ -672,12 +898,14 @@ class _LessonScreenState extends State<LessonScreen>
                             title: switch (_phase) {
                               _Phase.intro => mission.title,
                               _Phase.study => mission.title,
-                              _Phase.quiz =>
-                                _difficultyMeta != null
-                                    ? 'Pergunta ${_questionIndex + 1}/$total'
-                                    : 'Pergunta ${_questionIndex + 1} de $total',
+                              _Phase.quiz => _usesExercises
+                                  ? '${_questionIndex + 1}/$total'
+                                  : (_difficultyMeta != null
+                                      ? 'Pergunta ${_questionIndex + 1}/$total'
+                                      : 'Pergunta ${_questionIndex + 1} de $total'),
                               _Phase.micro => 'Bônus',
                               _Phase.reflection => 'Anotar',
+                              _Phase.insight => 'Hoje',
                             },
                             subtitle: switch (_phase) {
                               _Phase.intro =>
@@ -686,49 +914,18 @@ class _LessonScreenState extends State<LessonScreen>
                               _Phase.study =>
                                 _difficultyMeta?.label ?? 'Estudo',
                               _Phase.quiz =>
-                                _difficultyMeta?.label ?? mission.title,
+                                _difficultyMeta?.label ??
+                                    (_usesExercises
+                                        ? _exercise.type.labelPt
+                                        : mission.title),
                               _Phase.micro => 'Complete o verso',
                               _Phase.reflection => mission.title,
+                              _Phase.insight => 'O que ficou',
                             },
                             onBack: () => Navigator.pop(context),
                             leadingGlyph: CinematicGlyphResolver.forMission(
                               mission.title,
                               isBoss: mission.isBoss,
-                            ),
-                          ),
-                          const SizedBox(height: 10),
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(999),
-                            child: SizedBox(
-                              height: 4,
-                              child: Stack(
-                                fit: StackFit.expand,
-                                children: [
-                                  ColoredBox(
-                                    color: AppColors.textOnDark.withValues(
-                                      alpha: 0.1,
-                                    ),
-                                  ),
-                                  FractionallySizedBox(
-                                    alignment: Alignment.centerLeft,
-                                    widthFactor: progress.clamp(0.0, 1.0),
-                                    child: DecoratedBox(
-                                      decoration: BoxDecoration(
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            Color.lerp(
-                                              accent,
-                                              Colors.white,
-                                              0.25,
-                                            )!,
-                                            accent,
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
                             ),
                           ),
                           const SizedBox(height: 8),
@@ -737,6 +934,26 @@ class _LessonScreenState extends State<LessonScreen>
                     ),
                     Expanded(
                       child: switch (_phase) {
+                        _Phase.quiz when _usesExercises => ExercisePanel(
+                          key: ValueKey('ex-$_questionIndex-${_exercise.id}'),
+                          exercise: _exercise,
+                          selected: _selected,
+                          isCorrect: _isCorrect,
+                          showFeedback: _showFeedback,
+                          onSelect: _select,
+                          accent: accent,
+                          hintUsed: _hintUsed,
+                          eliminatedIds: _eliminated,
+                          onHint: mission.isBoss || !_exercise.supportsHint
+                              ? null
+                              : _useHint,
+                          outOfLamps: _outOfLamps,
+                          lamps: _lamps,
+                          index: _questionIndex,
+                          total: total,
+                          insightFallback: mission.centralInsight ??
+                              PilotTrainings.insightText,
+                        ),
                         _Phase.quiz => CinematicLessonPanel(
                           key: ValueKey(
                             'q-$_questionIndex-${_pickedIds.length}',
@@ -797,9 +1014,60 @@ class _LessonScreenState extends State<LessonScreen>
                           key: const ValueKey('intro'),
                           mission: mission,
                           theme: _theme,
-                          difficultyMeta: _difficultyMeta,
                           hasStudy: _hasStudy,
+                          itemCount: total,
+                          usesExercises: _usesExercises,
                           onStart: _startStudyOrQuiz,
+                        ),
+                        _Phase.insight => Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.screen,
+                          ),
+                          child: Column(
+                            children: [
+                              const Spacer(flex: 2),
+                              Text(
+                                'HOJE',
+                                style: AppTypography.label(
+                                  size: 12,
+                                  color: accent,
+                                ),
+                              ),
+                              const SizedBox(height: AppSpace.md),
+                              Text(
+                                _closingInsight,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.display(
+                                  size: 24,
+                                  height: 1.3,
+                                ),
+                              ),
+                              const Spacer(flex: 3),
+                              SizedBox(
+                                width: double.infinity,
+                                height: 52,
+                                child: FilledButton(
+                                  onPressed: () => _pushCelebration(
+                                    forced: _celebrationForced,
+                                  ),
+                                  style: FilledButton.styleFrom(
+                                    backgroundColor: accent,
+                                    foregroundColor: AppColors.inkOnAccent,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(
+                                        AppRadii.pill,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Text(
+                                    'SEGUIR',
+                                    style: AppTypography.cta(size: 15),
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: AppSpace.sm),
+                            ],
+                          ),
                         ),
                         _ => const SizedBox.shrink(),
                       },
@@ -838,23 +1106,35 @@ class _LessonScreenState extends State<LessonScreen>
                   },
                 ),
               if (_showFeedback && _selected != null && _isCorrect != null)
-                _FeedbackOverlay(
-                  question: _question,
-                  questionId: _questionIndex < _pickedIds.length
-                      ? _pickedIds[_questionIndex]
-                      : '${widget.missionSlug}_q$_questionIndex',
-                  selected: _selected!,
-                  isCorrect: _isCorrect!,
-                  isLast: _outOfLamps || _questionIndex >= total - 1,
-                  accent: accent,
-                  outOfLamps: _outOfLamps,
-                  verseText: MissionStudy.verseText(_question.verseRef),
-                  missionSlug: widget.missionSlug,
-                  trailSlug: _trailSlug,
-                  difficulty: _difficultyMeta?.difficulty.id,
-                  practiceMode: widget.practiceMode,
-                  onContinue: _continue,
-                ),
+                _usesExercises
+                    ? _ExerciseFeedbackOverlay(
+                        exercise: _exercise,
+                        selected: _selected!,
+                        isCorrect: _isCorrect!,
+                        isLast: _outOfLamps ||
+                            (_isCorrect == true &&
+                                _questionIndex >= total - 1),
+                        accent: accent,
+                        outOfLamps: _outOfLamps,
+                        onContinue: _continue,
+                      )
+                    : _FeedbackOverlay(
+                        question: _question,
+                        questionId: _questionIndex < _pickedIds.length
+                            ? _pickedIds[_questionIndex]
+                            : '${widget.missionSlug}_q$_questionIndex',
+                        selected: _selected!,
+                        isCorrect: _isCorrect!,
+                        isLast: _outOfLamps || _questionIndex >= total - 1,
+                        accent: accent,
+                        outOfLamps: _outOfLamps,
+                        verseText: MissionStudy.verseText(_question.verseRef),
+                        missionSlug: widget.missionSlug,
+                        trailSlug: _trailSlug,
+                        difficulty: _difficultyMeta?.difficulty.id,
+                        practiceMode: widget.practiceMode,
+                        onContinue: _continue,
+                      ),
             ],
           ),
         ),
@@ -866,21 +1146,30 @@ class _LessonScreenState extends State<LessonScreen>
 class _IntroPanel extends StatelessWidget {
   final Mission mission;
   final GenesisModuleTheme theme;
-  final DifficultyMeta? difficultyMeta;
   final bool hasStudy;
+  final int itemCount;
+  final bool usesExercises;
   final VoidCallback onStart;
 
   const _IntroPanel({
     super.key,
     required this.mission,
     required this.theme,
-    required this.difficultyMeta,
     required this.hasStudy,
+    required this.itemCount,
+    required this.usesExercises,
     required this.onStart,
   });
 
   @override
   Widget build(BuildContext context) {
+    final verse = (mission.hookVerse ?? '').trim();
+    final ref = (mission.hookRef ?? '').trim();
+    final note = (mission.hookNote ?? '').trim();
+    final thread = (mission.hookThread ?? '').trim();
+    final fallbackIntro = mission.intro.trim();
+    final bibleFirst = verse.isNotEmpty || note.isNotEmpty;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
@@ -889,79 +1178,23 @@ class _IntroPanel extends StatelessWidget {
           CinematicIcon.mission(
             mission.title,
             isBoss: mission.isBoss,
-            size: 118,
+            size: 96,
             accent: theme.pathActive,
             animate: true,
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 18),
           Text(
             mission.title,
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 28),
+            style: AppTypography.display(size: 26),
           ),
-          if (mission.subtitle.isNotEmpty) ...[
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              mission.subtitle,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 15,
-                height: 1.35,
-                color: AppColors.textOnDark.withValues(alpha: 0.7),
-              ),
-            ),
-          ],
-          const SizedBox(height: AppSpace.sm),
+          const SizedBox(height: 6),
           Text(
-            mission.isBoss
-                ? 'Desafio · ${mission.questions.length} perguntas · +${mission.stepsReward} passos'
-                : '${mission.questions.length} perguntas · +${mission.stepsReward} passos',
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w600,
-              color: AppColors.textOnDark.withValues(alpha: 0.62),
-            ),
-          ),
-          if (difficultyMeta != null) ...[
-            const SizedBox(height: AppSpace.sm),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-              decoration: BoxDecoration(
-                color: theme.pathActive.withValues(alpha: 0.18),
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-                border: Border.all(
-                  color: theme.pathActive.withValues(alpha: 0.4),
-                ),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyphResolver.forDifficulty(
-                      difficultyMeta!.difficulty.id,
-                    ),
-                    size: 22,
-                    accent: theme.pathActive,
-                    glowing: false,
-                  ),
-                  const SizedBox(width: 8),
-                  Text(
-                    difficultyMeta!.label,
-                    style: AppTypography.title(
-                      size: 12,
-                      color: theme.pathActive,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-          const SizedBox(height: AppSpace.md),
-          Text(
-            hasStudy
-                ? 'Estudo → perguntas → reflexão · 5 lâmpadas'
-                : '5 lâmpadas · erro apaga uma · dica remove uma opção',
-            textAlign: TextAlign.center,
+            usesExercises
+                ? '~3 min'
+                : (mission.isBoss
+                    ? 'Desafio · $itemCount perguntas · +${mission.stepsReward} passos'
+                    : '$itemCount perguntas · +${mission.stepsReward} passos'),
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w600,
@@ -969,33 +1202,130 @@ class _IntroPanel extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpace.section),
-          Container(
-            padding: const EdgeInsets.all(AppSpace.xl),
-            decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: 0.28),
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              border: Border.all(
-                color: AppColors.textOnDark.withValues(alpha: 0.12),
+          if (bibleFirst) ...[
+            if (verse.isNotEmpty)
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+                decoration: BoxDecoration(
+                  color: Colors.black.withValues(alpha: 0.28),
+                  borderRadius: BorderRadius.circular(AppRadii.lg),
+                  border: Border.all(
+                    color: theme.pathActive.withValues(alpha: 0.35),
+                  ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (ref.isNotEmpty)
+                      Text(
+                        ref.toUpperCase(),
+                        style: AppTypography.label(
+                          size: 10,
+                          color: theme.pathActive.withValues(alpha: 0.9),
+                        ),
+                      ),
+                    if (ref.isNotEmpty) const SizedBox(height: 8),
+                    Text(
+                      verse,
+                      style: AppTypography.verse(size: 20, height: 1.35),
+                    ),
+                  ],
+                ),
+              ),
+            if (note.isNotEmpty) ...[
+              const SizedBox(height: AppSpace.md),
+              _IntroFact(
+                label: 'Contexto',
+                text: note,
+                accent: theme.pathActive,
+              ),
+            ],
+            if (thread.isNotEmpty) ...[
+              const SizedBox(height: AppSpace.sm),
+              _IntroFact(
+                label: 'Conexão',
+                text: thread,
+                accent: theme.pathActive,
+              ),
+            ],
+          ] else if (fallbackIntro.isNotEmpty) ...[
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.all(AppSpace.xl),
+              decoration: BoxDecoration(
+                color: Colors.black.withValues(alpha: 0.28),
+                borderRadius: BorderRadius.circular(AppRadii.lg),
+                border: Border.all(
+                  color: AppColors.textOnDark.withValues(alpha: 0.12),
+                ),
+              ),
+              child: Text(
+                fallbackIntro,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 15,
+                  height: 1.5,
+                  color: AppColors.textOnDark.withValues(alpha: 0.9),
+                ),
               ),
             ),
-            child: Text(
-              mission.intro,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 15,
-                height: 1.55,
-                color: AppColors.textOnDark.withValues(alpha: 0.9),
-              ),
-            ),
-          ),
+          ],
           const Spacer(flex: 2),
           _GoldButton(
-            label: hasStudy
-                ? 'CAMINHAR NO TEXTO'
-                : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
+            label: usesExercises
+                ? 'COMEÇAR'
+                : hasStudy
+                    ? 'CAMINHAR NO TEXTO'
+                    : (mission.isBoss ? 'ACEITAR DESAFIO' : 'ENTRAR NO CAMINHO'),
             onTap: onStart,
           ),
           const SizedBox(height: AppSpace.xl),
+        ],
+      ),
+    );
+  }
+}
+
+class _IntroFact extends StatelessWidget {
+  final String label;
+  final String text;
+  final Color accent;
+
+  const _IntroFact({
+    required this.label,
+    required this.text,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      decoration: BoxDecoration(
+        color: AppColors.textOnDark.withValues(alpha: 0.05),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(
+          color: AppColors.textOnDark.withValues(alpha: 0.1),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            label.toUpperCase(),
+            style: AppTypography.label(size: 10, color: accent),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            text,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.4,
+              color: AppColors.textOnDark.withValues(alpha: 0.88),
+            ),
+          ),
         ],
       ),
     );
@@ -1385,6 +1715,115 @@ class _FeedbackOverlayState extends State<_FeedbackOverlay> {
                       ),
                     ),
                   ],
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _ExerciseFeedbackOverlay extends StatelessWidget {
+  final Exercise exercise;
+  final String selected;
+  final bool isCorrect;
+  final bool isLast;
+  final Color accent;
+  final bool outOfLamps;
+  final VoidCallback onContinue;
+
+  const _ExerciseFeedbackOverlay({
+    required this.exercise,
+    required this.selected,
+    required this.isCorrect,
+    required this.isLast,
+    required this.accent,
+    required this.onContinue,
+    this.outOfLamps = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final color = isCorrect ? accent : AppColors.error;
+    final bottom = MediaQuery.of(context).padding.bottom;
+    final feedback = exercise.feedbackFor(selected, correct: isCorrect);
+    final title = outOfLamps
+        ? 'Sem lâmpadas'
+        : isCorrect
+            ? 'Acertou!'
+            : 'Quase';
+    final cta = outOfLamps
+        ? 'ENCERRAR COM PASSOS PARCIAIS'
+        : isCorrect
+            ? (isLast ? 'SEGUIR' : 'CONTINUAR')
+            : 'TENTAR DE NOVO';
+
+    return Positioned.fill(
+      child: Container(
+        color: Colors.black.withValues(alpha: 0.4),
+        alignment: Alignment.bottomCenter,
+        child: TweenAnimationBuilder<double>(
+          tween: Tween(begin: 1, end: 0),
+          duration: const Duration(milliseconds: 280),
+          curve: Curves.easeOutCubic,
+          builder: (context, value, child) =>
+              Transform.translate(offset: Offset(0, value * 100), child: child),
+          child: ClipRRect(
+            borderRadius: const BorderRadius.vertical(
+              top: Radius.circular(AppRadii.xl),
+            ),
+            child: Container(
+              width: double.infinity,
+              padding: EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                AppSpace.section,
+                AppSpace.screen,
+                AppSpace.lg + bottom,
+              ),
+              decoration: BoxDecoration(
+                color: AppColors.night.withValues(alpha: 0.94),
+                border: Border(
+                  top: BorderSide(color: color.withValues(alpha: 0.7), width: 3),
+                ),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Text(title, style: AppTypography.display(size: 22, color: color)),
+                  const SizedBox(height: AppSpace.sm),
+                  Text(
+                    feedback,
+                    style: AppTypography.body(size: 15, height: 1.45),
+                  ),
+                  if (!isCorrect &&
+                      !outOfLamps &&
+                      (exercise.retryHint?.trim().isNotEmpty ?? false) &&
+                      feedback != exercise.retryHint!.trim()) ...[
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      exercise.retryHint!,
+                      style: AppTypography.body(
+                        size: 13,
+                        color: AppColors.textOnDark.withValues(alpha: 0.7),
+                      ),
+                    ),
+                  ],
+                  if (exercise.reference != null &&
+                      exercise.reference!.trim().isNotEmpty) ...[
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      exercise.reference!,
+                      style: AppTypography.label(
+                        size: 11,
+                        color: accent.withValues(alpha: 0.85),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: AppSpace.lg),
+                  _GoldButton(label: cta, onTap: onContinue),
                 ],
               ),
             ),

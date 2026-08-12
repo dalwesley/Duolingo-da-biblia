@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 
-/// Mascote Stway — spark de treino, sem emoji.
+/// Mascote Stway — spark de prática, sem emoji.
 class TrilhaMascot extends StatelessWidget {
   final double size;
   final bool glowing;

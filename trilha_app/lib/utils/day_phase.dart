@@ -56,7 +56,7 @@ class DayPhaseHelper {
     };
   }
 
-  /// Céus de treino — azul de arena, sem crepúsculo litúrgico.
+  /// Céus de prática — azul de arena, sem crepúsculo litúrgico.
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(

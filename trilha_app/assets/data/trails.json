@@ -32,10 +32,265 @@
           {
             "slug": "gen-03-imagem",
             "title": "Imagem de Deus",
-            "intro": "De todos os seres criados, apenas o ser humano foi feito à imagem e semelhança de Deus. Isso define nosso valor e propósito.",
+            "intro": "No antigo Oriente, “imagem do deus” era título de reis. Gênesis dá isso a homem e mulher — toda a humanidade.",
             "type": "lesson",
             "xpReward": 50,
-            "questions": []
+            "questions": [],
+            "objective": "Observar quem recebe a imagem; notar o mandato; frear leitura externa; conectar Cl 1.",
+            "centralInsight": "A dignidade humana não é conquista: é presente — homem e mulher, sob Deus, com responsabilidade.",
+            "exercises": [
+              {
+                "id": "gen-03-imagem-e01",
+                "type": "true_false",
+                "skill": "observe",
+                "beat": "Hipótese",
+                "prompt": "Tudo que tem fôlego foi feito à imagem de Deus.",
+                "correctAnswer": "false",
+                "feedback": {
+                  "correct": "Certo. O texto é mais preciso — vamos ver.",
+                  "wrong": {
+                    "true": "Quase. Gênesis 1 é específico. Veja o próximo ato."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e02",
+                "type": "tap",
+                "skill": "observe",
+                "beat": "Toque",
+                "reference": "Gênesis 1:27",
+                "passageText": "À imagem de Deus o criou; homem e mulher os criou.",
+                "cue": "Toque no texto: quem recebe a imagem",
+                "prompt": "Toque no texto: quem recebe a imagem",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "homem e mulher"
+                  },
+                  {
+                    "id": "b",
+                    "text": "todos os animais"
+                  },
+                  {
+                    "id": "c",
+                    "text": "somente Adão"
+                  },
+                  {
+                    "id": "d",
+                    "text": "os anjos"
+                  }
+                ],
+                "correctAnswer": "a",
+                "feedback": {
+                  "correct": "Isso — homem e mulher.",
+                  "wrong": {
+                    "b": "Não está no versículo.",
+                    "c": "O texto une os dois.",
+                    "d": "Não aparece aqui."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e03",
+                "type": "choice",
+                "skill": "observe",
+                "beat": "Escolha",
+                "reference": "Gênesis 1:26",
+                "passageText": "Façamos o homem à nossa imagem, conforme a nossa semelhança; e domine sobre os peixes do mar, sobre as aves dos céus, sobre os animais domésticos, sobre toda a terra e sobre todo réptil que rasteja sobre a terra.",
+                "cue": "O que vem junto com a imagem?",
+                "prompt": "O que vem junto com a imagem?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Cuidar da criação"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Construir um templo"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Dominar outros povos"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Descansar no 7º dia"
+                  }
+                ],
+                "correctAnswer": "a",
+                "feedback": {
+                  "correct": "Imagem e cuidado vêm juntos.",
+                  "wrong": {
+                    "b": "Não está em 1:26.",
+                    "c": "O mandato é sobre a criação.",
+                    "d": "Isso é outro trecho."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e04",
+                "type": "order",
+                "skill": "understand",
+                "beat": "Ordene",
+                "cue": "Monte a sequência do capítulo",
+                "prompt": "Monte a sequência do capítulo",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Cria o humano"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Dá a imagem"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Chama a cuidar"
+                  }
+                ],
+                "correctAnswer": "a,b,c",
+                "correctOrder": [
+                  "a",
+                  "b",
+                  "c"
+                ],
+                "feedback": {
+                  "correct": "Criado → imagem → cuidado.",
+                  "wrong": {
+                    "default": "Pense na ordem do capítulo."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e05",
+                "type": "choice",
+                "skill": "interpret",
+                "beat": "Freio",
+                "cue": "O que Gênesis 1 não diz?",
+                "prompt": "O que Gênesis 1 não diz?",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "Humanos à imagem de Deus"
+                  },
+                  {
+                    "id": "b",
+                    "text": "Homem e mulher criados"
+                  },
+                  {
+                    "id": "c",
+                    "text": "Imagem = razão + emoção + vontade"
+                  },
+                  {
+                    "id": "d",
+                    "text": "Há chamado ligado à criação"
+                  }
+                ],
+                "correctAnswer": "c",
+                "feedback": {
+                  "correct": "Essa lista não está no texto.",
+                  "wrong": {
+                    "a": "Isso o texto diz.",
+                    "b": "Isso o texto diz.",
+                    "d": "O mandato está no texto."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e06",
+                "type": "tap",
+                "skill": "connect",
+                "beat": "Conecte",
+                "cue": "Toque a palavra que une os dois textos",
+                "prompt": "Toque a palavra que une os dois textos",
+                "passageA": {
+                  "ref": "Gn 1:27",
+                  "text": "À imagem de Deus o criou…"
+                },
+                "passageB": {
+                  "ref": "Cl 1:15",
+                  "text": "Este é a imagem do Deus invisível…"
+                },
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "criação"
+                  },
+                  {
+                    "id": "b",
+                    "text": "imagem"
+                  },
+                  {
+                    "id": "c",
+                    "text": "mulher"
+                  },
+                  {
+                    "id": "d",
+                    "text": "invisível"
+                  }
+                ],
+                "correctAnswer": "b",
+                "feedback": {
+                  "correct": "“Imagem” — em Colossenses, fala de Cristo.",
+                  "wrong": {
+                    "a": "Não é a ponte principal.",
+                    "c": "Só em Gênesis.",
+                    "d": "Só em Colossenses."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-e07",
+                "type": "complete",
+                "skill": "observe",
+                "beat": "Complete",
+                "template": "à imagem de Deus… ___ e ___",
+                "prompt": "",
+                "options": [
+                  {
+                    "id": "a",
+                    "text": "homem e mulher"
+                  },
+                  {
+                    "id": "b",
+                    "text": "céu e terra"
+                  },
+                  {
+                    "id": "c",
+                    "text": "dia e noite"
+                  },
+                  {
+                    "id": "d",
+                    "text": "bem e mal"
+                  }
+                ],
+                "correctAnswer": "a",
+                "feedback": {
+                  "correct": "Homem e mulher.",
+                  "wrong": {
+                    "default": "Relê Gênesis 1:27."
+                  }
+                }
+              },
+              {
+                "id": "gen-03-imagem-insight",
+                "type": "insight",
+                "skill": "apply",
+                "beat": "Insight",
+                "prompt": "A dignidade humana não é conquista: é presente — homem e mulher, sob Deus, com responsabilidade.",
+                "correctAnswer": "insight",
+                "feedback": {
+                  "correct": ""
+                }
+              }
+            ],
+            "subtitle": "~3 min",
+            "entrance": {
+              "ref": "Gênesis 1:27",
+              "verse": "À imagem de Deus o criou; homem e mulher os criou.",
+              "note": "No antigo Oriente, “imagem do deus” era título de reis. Gênesis dá isso a homem e mulher — toda a humanidade.",
+              "thread": "A mesma palavra reaparece no Novo Testamento falando de Cristo."
+            }
           },
           {
             "slug": "gen-04-descanso",

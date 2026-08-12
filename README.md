@@ -2,7 +2,13 @@
 
 App Flutter para aprender a Bíblia em missões diárias + painel admin no Firebase.
 
-Norte e checklist: [`ROADMAP.md`](ROADMAP.md).
+**Academia da Palavra:** Duolingo no loop · escola no conteúdo.
+
+| Doc | Conteúdo |
+|-----|----------|
+| [`docs/PRODUTO.md`](docs/PRODUTO.md) | Visão, usuários, features, glossário |
+| [`docs/TECNICA.md`](docs/TECNICA.md) | Arquitetura, stack, Firestore, sync |
+| [`ROADMAP.md`](ROADMAP.md) | Norte, checklist e prioridades |
 
 ## Projetos
 

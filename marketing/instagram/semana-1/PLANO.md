@@ -36,6 +36,7 @@ Pasta: `marketing/instagram/semana-1/`
 | Sex | `05-sexta-produto.png` | Chamado | Missão do dia: abrir a Bíblia. |
 | Sáb | `06-sabado-enquete.png` | Enquete | Se a Bíblia sumisse… você sentiria falta? |
 | Dom | `07-domingo-cta.png` | CTA | Um dia. Um passo. Uma Missão. |
+| Extra | `08-constancia.png` | Hábito | Pequenos passos diários. · Josué 1:8 |
 
 ---
 
@@ -273,6 +274,43 @@ Segue pra acompanhar o lançamento.
 Sua próxima missão pode começar em breve.
 
 #Domingo #MissoesDiarias #STWAY
+```
+
+---
+
+### Extra — Constância / hábito
+**Visual:** jornada + Josué 1:8  
+**Arquivo:** `08-constancia.png`
+
+**Arte:**
+```
+Pequenos passos diários.
+```
+Sub: `“Medita nele de dia e de noite.”`  
+Citação: `Josué 1:8`
+
+**Legenda:**
+```
+Às vezes parece difícil mudar de hábito.
+Ainda mais quando o hábito é estudar a Bíblia.
+
+Você começa. Para. Promete. Adia.
+E a culpa fica.
+
+“Não se aparte da tua boca o livro desta lei;
+antes medita nele de dia e de noite…”
+— Josué 1:8
+
+Por isso o STWAY está sendo desenvolvido.
+
+Não pra te cobrar o plano perfeito.
+Pra te dar pequenos passos diários:
+uma missão curta, clara, que cabe no dia —
+até a Palavra virar ritmo, não esforço.
+
+Em breve no iOS e Android.
+
+#Josue18 #Habito #Biblia #STWAY
 ```
 
 ---

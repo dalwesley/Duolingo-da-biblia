@@ -1,6 +1,6 @@
 import 'dust_copy.dart';
 
-/// Companion de hábito — marcos da sequência diária (treino, não ritual).
+/// Companion de hábito — marcos da sequência diária (prática, não ritual).
 enum GrowthStage {
   seed,
   sprout,

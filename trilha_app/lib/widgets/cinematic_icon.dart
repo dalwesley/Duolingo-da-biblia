@@ -24,6 +24,7 @@ enum CinematicGlyph {
   scroll,
   seed,
   path,
+  fork,
   depths,
   spark,
   heart,
@@ -206,7 +207,9 @@ class CinematicGlyphResolver {
       CinematicGlyph.chain ||
       CinematicGlyph.mountain ||
       CinematicGlyph.tower => AppColors.slate,
-      CinematicGlyph.scales || CinematicGlyph.path => AppColors.accent,
+      CinematicGlyph.scales ||
+      CinematicGlyph.path ||
+      CinematicGlyph.fork => AppColors.accent,
       CinematicGlyph.target => AppColors.teal,
       CinematicGlyph.humanity => AppColors.clay,
       CinematicGlyph.echo => AppColors.clay,
@@ -371,6 +374,8 @@ class _GlyphPainter extends CustomPainter {
         _seed(canvas, c, s);
       case CinematicGlyph.path:
         _path(canvas, c, s);
+      case CinematicGlyph.fork:
+        _fork(canvas, c, s);
       case CinematicGlyph.depths:
         _depths(canvas, c, s);
       case CinematicGlyph.spark:
@@ -994,6 +999,45 @@ class _GlyphPainter extends CustomPainter {
     ]) {
       canvas.drawCircle(c + Offset(o.dx * s, o.dy * s), s * 0.08, _solid);
     }
+  }
+
+  /// Dois caminhos — hipótese V/F.
+  void _fork(Canvas canvas, Offset c, double s) {
+    final stroke = Paint()
+      ..color = _ink
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = s * 0.15
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round;
+    canvas.drawLine(
+      Offset(c.dx, c.dy + s * 0.34),
+      Offset(c.dx, c.dy + s * 0.02),
+      stroke,
+    );
+    canvas.drawPath(
+      Path()
+        ..moveTo(c.dx, c.dy + s * 0.02)
+        ..quadraticBezierTo(
+          c.dx - s * 0.04,
+          c.dy - s * 0.12,
+          c.dx - s * 0.28,
+          c.dy - s * 0.32,
+        ),
+      stroke,
+    );
+    canvas.drawPath(
+      Path()
+        ..moveTo(c.dx, c.dy + s * 0.02)
+        ..quadraticBezierTo(
+          c.dx + s * 0.04,
+          c.dy - s * 0.12,
+          c.dx + s * 0.28,
+          c.dy - s * 0.32,
+        ),
+      stroke,
+    );
+    canvas.drawCircle(Offset(c.dx - s * 0.28, c.dy - s * 0.32), s * 0.075, _solid);
+    canvas.drawCircle(Offset(c.dx + s * 0.28, c.dy - s * 0.32), s * 0.075, _solid);
   }
 
   void _people(Canvas canvas, Offset c, double s) {

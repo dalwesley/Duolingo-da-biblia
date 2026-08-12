@@ -502,22 +502,6 @@ class _AtmospherePainter extends CustomPainter {
     }
 
     _drawFilmGrain(canvas, size, flicker);
-
-    // Arranhões
-    for (var i = 0; i < 3; i++) {
-      final scratchX = size.width * ((t * (1.5 + i * 0.6) + i * 0.2) % 1.0);
-      canvas.drawLine(
-        Offset(scratchX, 0),
-        Offset(scratchX + (i.isEven ? 3.5 : -2.5), size.height),
-        Paint()
-          ..color = const Color(0xFFD4B896).withValues(
-            alpha: (0.07 + i * 0.025) * flicker,
-          )
-          ..strokeWidth = 1.2,
-      );
-    }
-
-    _drawWornBorder(canvas, size, breathe);
   }
 
   void _drawGrimeStreaks(Canvas canvas, Size size, double breathe) {
@@ -609,76 +593,6 @@ class _AtmospherePainter extends CustomPainter {
         paint,
       );
     }
-  }
-
-  void _drawWornBorder(Canvas canvas, Size size, double breathe) {
-    final inset = Rect.fromLTWH(2, 2, size.width - 4, size.height - 4);
-    final rrect = RRect.fromRectAndRadius(inset, const Radius.circular(26));
-
-    canvas.drawRRect(
-      rrect,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 4.2
-        ..color = const Color(0xFF4A3010).withValues(alpha: 0.5)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2.8),
-    );
-
-    final worn = Paint()
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.4
-      ..strokeCap = StrokeCap.round
-      ..shader = LinearGradient(
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-        colors: [
-          const Color(0xFFA88850).withValues(alpha: 0.4 + breathe * 0.08),
-          const Color(0xFF5A3A18).withValues(alpha: 0.65),
-          const Color(0xFF8A6840).withValues(alpha: 0.35),
-          const Color(0xFF3A2810).withValues(alpha: 0.6),
-        ],
-      ).createShader(inset);
-
-    final path = Path()..addRRect(rrect);
-    for (final metric in path.computeMetrics()) {
-      var d = 0.0;
-      var on = true;
-      while (d < metric.length) {
-        final len = on ? 13.0 + (d % 8) : 5.0 + (d % 4);
-        final next = (d + len).clamp(0.0, metric.length);
-        if (on) canvas.drawPath(metric.extractPath(d, next), worn);
-        d = next;
-        on = !on;
-      }
-    }
-
-    // Fuligem nos cantos lascados
-    canvas.drawCircle(
-      Offset(size.width * 0.94, 10),
-      20,
-      Paint()
-        ..shader = RadialGradient(
-          colors: [
-            const Color(0xFF0A0604).withValues(alpha: 0.75),
-            Colors.transparent,
-          ],
-        ).createShader(
-          Rect.fromCircle(center: Offset(size.width * 0.94, 10), radius: 20),
-        ),
-    );
-    canvas.drawCircle(
-      Offset(8, size.height * 0.9),
-      16,
-      Paint()
-        ..shader = RadialGradient(
-          colors: [
-            const Color(0xFF0A0604).withValues(alpha: 0.7),
-            Colors.transparent,
-          ],
-        ).createShader(
-          Rect.fromCircle(center: Offset(8, size.height * 0.9), radius: 16),
-        ),
-    );
   }
 
   /// Teia de canto — orb web clássica (raios + arcos), seda fina.
@@ -829,7 +743,6 @@ class _AtmospherePainter extends CustomPainter {
 
   void _paintAlive(Canvas canvas, Size size) {
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
-    final sheen = (t * 0.7) % 1.0;
 
     // Base de vidro — leve tint azul-cristal + claridade
     canvas.drawRect(
@@ -848,38 +761,12 @@ class _AtmospherePainter extends CustomPainter {
         ).createShader(Offset.zero & size),
     );
 
-    // Reflexo especular diagonal (vidro polido)
     canvas.save();
     canvas.clipRRect(
       RRect.fromRectAndRadius(
         Offset.zero & size,
         const Radius.circular(26),
       ),
-    );
-
-    // Faixa de brilho que varre o card
-    final bandX = size.width * (sheen * 1.6 - 0.3);
-    final bandPath = Path()
-      ..moveTo(bandX - 18, 0)
-      ..lineTo(bandX + 42, 0)
-      ..lineTo(bandX + 8, size.height)
-      ..lineTo(bandX - 52, size.height)
-      ..close();
-    canvas.drawPath(
-      bandPath,
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [
-            Colors.transparent,
-            Colors.white.withValues(alpha: 0.04),
-            Colors.white.withValues(alpha: 0.22 + breathe * 0.06),
-            Colors.white.withValues(alpha: 0.06),
-            Colors.transparent,
-          ],
-          stops: const [0.0, 0.28, 0.5, 0.72, 1.0],
-        ).createShader(Rect.fromLTWH(bandX - 52, 0, 94, size.height)),
     );
 
     // Highlight de bisel no topo (aresta de vidro)
