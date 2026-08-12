@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -873,50 +875,17 @@ class _Manuscript extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(18),
-        child: Stack(
-          children: [
-            const Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color(0xFF2A3D5C),
-                      Color(0xFF1C2A42),
-                      Color(0xFF101828),
-                    ],
-                  ),
-                ),
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+              color: AppColors.nightElevated.withValues(alpha: 0.72),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.08),
+                width: 1,
               ),
             ),
-            Positioned.fill(
-              child: IgnorePointer(
-                child: DecoratedBox(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(18),
-                    border: Border.all(
-                      color: Color.lerp(
-                        accent,
-                        Colors.white,
-                        0.4,
-                      )!.withValues(alpha: 0.42),
-                      width: 1.5,
-                    ),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        Colors.black.withValues(alpha: 0.22),
-                      ],
-                      stops: const [0.65, 1],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
+            child: Padding(
               padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -955,7 +924,7 @@ class _Manuscript extends StatelessWidget {
                 ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -1415,16 +1384,8 @@ class _OptionTile extends StatelessWidget {
         padding: _ActSkin.pad,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(_ActSkin.radius),
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color.lerp(skin.fill, Colors.white, 0.1)!,
-              skin.fill,
-              Color.lerp(skin.fill, Colors.black, 0.16)!,
-            ],
-          ),
-          border: Border.all(color: skin.border, width: skin.hot ? 2 : 1.4),
+          color: skin.fill,
+          border: Border.all(color: skin.border, width: skin.hot ? 1.6 : 1),
           boxShadow: [
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.45),

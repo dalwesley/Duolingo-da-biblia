@@ -100,27 +100,12 @@ class ScenePanel extends StatelessWidget {
         padding: padding,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius),
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              Colors.white.withValues(alpha: 0.14),
-              Colors.white.withValues(alpha: 0.06),
-              Colors.black.withValues(alpha: 0.34),
-            ],
-          ),
+          color: AppColors.nightElevated.withValues(alpha: 0.72),
           border: Border.all(
-            color: AppColors.textOnDark.withValues(alpha: 0.2),
-            width: AppMetrics.cardBorderWidth,
+            color: Colors.white.withValues(alpha: 0.08),
+            width: 1,
           ),
-          boxShadow: [
-            BoxShadow(
-              color: accent.withValues(alpha: 0.16),
-              blurRadius: 22,
-              offset: const Offset(0, 8),
-            ),
-            ...AppMetrics.cardShadow(elevated: true),
-          ],
+          boxShadow: AppMetrics.cardShadow(elevated: true),
         ),
         child: child,
       ),
@@ -157,10 +142,6 @@ class CopperCta extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: AppGradients.gold,
         borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.22),
-          width: 1.25,
-        ),
         boxShadow: AppMetrics.accentGlow(),
       ),
       child: Row(
@@ -227,7 +208,6 @@ class AppProgressBar extends StatelessWidget {
     final depth = depthColor ?? _depthOf(fill);
     final track = trackColor ?? a.progressTrack;
     final t = value.clamp(0.0, 1.0);
-    final lip = (height * 0.28).clamp(3.0, 5.0);
 
     return SizedBox(
       height: height,
@@ -253,16 +233,7 @@ class AppProgressBar extends StatelessWidget {
                           gradient: LinearGradient(
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
-                            colors: [
-                              Color.lerp(fill, Colors.white, 0.18)!,
-                              fill,
-                              depth,
-                            ],
-                            stops: [
-                              0.0,
-                              ((height - lip) / height).clamp(0.45, 0.78),
-                              1.0,
-                            ],
+                            colors: [fill, depth],
                           ),
                         ),
                       ),

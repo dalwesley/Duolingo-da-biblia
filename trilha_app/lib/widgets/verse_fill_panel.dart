@@ -508,11 +508,11 @@ class _VerseStage extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.all(compact ? 16 : 18),
       decoration: BoxDecoration(
-        color: AppColors.nightElevated,
+        color: AppColors.nightElevated.withValues(alpha: 0.78),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(
-          color: Colors.white.withValues(alpha: 0.18),
-          width: 2,
+          color: Colors.white.withValues(alpha: 0.08),
+          width: 1,
         ),
         boxShadow: [
           BoxShadow(
@@ -814,10 +814,8 @@ class _WordChip extends StatelessWidget {
                       ? Colors.white.withValues(alpha: 0.04)
                       : AppColors.nightElevated,
                   border: Border.all(
-                    color: used
-                        ? Colors.white.withValues(alpha: 0.08)
-                        : Colors.white.withValues(alpha: 0.2),
-                    width: 2,
+                    color: Colors.white.withValues(alpha: used ? 0.06 : 0.08),
+                    width: 1,
                   ),
                   boxShadow: used
                       ? null

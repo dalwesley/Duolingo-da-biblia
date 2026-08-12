@@ -1224,14 +1224,10 @@ class _IntroPanel extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
-                  gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [Color(0xFF2A3D5C), Color(0xFF1C2A42)],
-                  ),
+                  color: AppColors.nightElevated.withValues(alpha: 0.78),
                   border: Border.all(
-                    color: theme.pathActive.withValues(alpha: 0.45),
-                    width: 1.5,
+                    color: Colors.white.withValues(alpha: 0.08),
+                    width: 1,
                   ),
                   boxShadow: [
                     BoxShadow(

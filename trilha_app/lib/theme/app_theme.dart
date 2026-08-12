@@ -16,11 +16,11 @@ class AppGradients {
     colors: [AppColors.primaryDark, AppColors.primary, AppColors.primaryLight],
   );
 
-  /// Chama — CTAs e badges (alias histórico: gold).
+  /// Chama fosca — CTAs sem topo brilhante.
   static const gold = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [AppColors.accentBright, AppColors.accent, AppColors.accentDark],
+    colors: [AppColors.accent, AppColors.accentDark],
   );
 }
 
