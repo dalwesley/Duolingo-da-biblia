@@ -19,11 +19,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'Firebase Options for iOS not configured yet. '
-          'Add an iOS app in the Firebase Console and run flutterfire configure, '
-          'or download GoogleService-Info.plist into ios/Runner/.',
-        );
+        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'Firebase Options for macOS not configured yet. '
@@ -42,6 +38,15 @@ class DefaultFirebaseOptions {
     messagingSenderId: '397918013314',
     projectId: 'trilha-biblia',
     storageBucket: 'trilha-biblia.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA7RsQ9BaTGcuRSe_qBbuROBSb-Ybgz-lw',
+    appId: '1:397918013314:ios:9ae052b33810756552f19b',
+    messagingSenderId: '397918013314',
+    projectId: 'trilha-biblia',
+    storageBucket: 'trilha-biblia.firebasestorage.app',
+    iosBundleId: 'com.dalwesley.stway',
   );
 
   /// OAuth Web Client ID (type 3) — necessário para Google Sign-In + Firebase.
