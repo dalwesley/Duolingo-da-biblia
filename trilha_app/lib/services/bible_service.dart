@@ -274,4 +274,26 @@ class BibleService {
     if (verse < 1 || verse > verses.length) return null;
     return verses[verse - 1];
   }
+
+  /// Texto completo da passagem ("Gênesis 1:1–2"), versículos unidos por espaço.
+  Future<String?> passageText(String reference) async {
+    final ref = await resolve(reference);
+    if (ref == null) return null;
+    final list = await books();
+    if (ref.bookIndex < 0 || ref.bookIndex >= list.length) return null;
+    final chapters = list[ref.bookIndex].chapters;
+    if (ref.chapter < 1 || ref.chapter > chapters.length) return null;
+    final verses = chapters[ref.chapter - 1];
+    final start = ref.verseStart ?? 1;
+    final end = ref.verseEnd ?? ref.verseStart ?? verses.length;
+    if (start < 1 || start > verses.length) return null;
+    final stop = end.clamp(start, verses.length);
+    final parts = <String>[];
+    for (var v = start; v <= stop; v++) {
+      final t = verses[v - 1].trim();
+      if (t.isNotEmpty) parts.add(t);
+    }
+    if (parts.isEmpty) return null;
+    return parts.join(' ');
+  }
 }

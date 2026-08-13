@@ -186,7 +186,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                   ),
                                   const SizedBox(height: AppSpace.md),
                                   Text(
-                                    'Semente, Rota ou Profundezas —\nas perguntas mudam com o modo.\nConclua um modo para liberar o próximo.',
+                                    'Semente, Rota ou Profundezas —\noperações diferentes sobre o mesmo texto.\nConclua um modo para liberar o próximo.',
                                     textAlign: TextAlign.center,
                                     style: AppTypography.body(
                                       size: 13,

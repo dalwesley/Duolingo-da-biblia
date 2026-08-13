@@ -5,6 +5,7 @@ import '../models/bible_reading_plan.dart';
 import '../models/daily_quest.dart';
 import '../models/difficulty.dart';
 import '../utils/appearance.dart';
+import '../utils/catalog_access.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
 
@@ -96,12 +97,17 @@ class ProgressService extends ChangeNotifier {
   /// Espelho local do progresso (escopo por uid; limpo no logout).
   static const _keyProgressCache = 'progressSessionCache';
   static const _keyProgressCacheUid = 'progressSessionCacheUid';
+  /// Coorte D7: primeiro open / primeira missão (ISO date YYYY-MM-DD).
+  static const _keyFirstOpenDate = 'cohortFirstOpenDate';
+  static const _keyFirstLessonDate = 'cohortFirstLessonDate';
+  static const _keyFirstLessonTrail = 'cohortFirstLessonTrail';
+  static const _keyFirstOpenAtMs = 'cohortFirstOpenAtMs';
 
   static const maxLamps = 5;
   /// Boss: menos margem de erro.
   static const bossMaxLamps = 3;
-  static const normalQuestionCount = 5;
-  static const bossQuestionCount = 8;
+  static const normalQuestionCount = 8;
+  static const bossQuestionCount = 10;
 
   static int lampsForMission({required bool isBoss}) =>
       isBoss ? bossMaxLamps : maxLamps;
@@ -193,6 +199,12 @@ class ProgressService extends ChangeNotifier {
   /// Códigos de companhia / sala ativos (sync em `users/{uid}`).
   List<String> companionCodes = [];
   String? activeRoomCode;
+
+  /// Coorte de retenção (D7) — datas locais YYYY-MM-DD + epoch do 1º open.
+  String? firstOpenDate;
+  String? firstLessonDate;
+  String? firstLessonTrailSlug;
+  int? firstOpenAtMs;
 
   /// Primeira abertura neste aparelho (antes do splash marcar visto).
   /// Garante Aparência = Automático em toda instalação nova.
@@ -309,6 +321,10 @@ class ProgressService extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
+    firstOpenDate = prefs.getString(_keyFirstOpenDate);
+    firstLessonDate = prefs.getString(_keyFirstLessonDate);
+    firstLessonTrailSlug = prefs.getString(_keyFirstLessonTrail);
+    firstOpenAtMs = prefs.getInt(_keyFirstOpenAtMs);
     _freshInstall = !hasSeenSplash;
     settings = _settingsFromPrefs(prefs);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
@@ -553,6 +569,10 @@ class ProgressService extends ChangeNotifier {
     _cacheUid = null;
     companionCodes = [];
     activeRoomCode = null;
+    firstOpenDate = null;
+    firstLessonDate = null;
+    firstLessonTrailSlug = null;
+    firstOpenAtMs = null;
     settings = const AppSettings();
     trailDifficulties = {};
     clearedTrailModes = {};
@@ -590,6 +610,10 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
+    await prefs.remove(_keyFirstOpenDate);
+    await prefs.remove(_keyFirstLessonDate);
+    await prefs.remove(_keyFirstLessonTrail);
+    await prefs.remove(_keyFirstOpenAtMs);
     await clearLocalCache();
     notifyListeners();
   }
@@ -1102,6 +1126,7 @@ class ProgressService extends ChangeNotifier {
 
   /// Semente sempre liberada. Demais modos exigem ter concluído o anterior.
   bool isDifficultyUnlocked(String trailSlug, TrailDifficulty d) {
+    if (CatalogAccess.openAllForTesting) return true;
     if (d == TrailDifficulty.semente) return true;
     final prev = switch (d) {
       TrailDifficulty.caminhada => TrailDifficulty.semente,
@@ -1395,6 +1420,66 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Garante coorte D0 (primeiro open) e devolve métricas para `retention_pulse`.
+  Future<({int daysSinceFirstOpen, int? daysSinceFirstLesson, String? cohortTrail})>
+      ensureCohortAndPulse() async {
+    final prefs = await SharedPreferences.getInstance();
+    final today = _todayKey();
+    var changed = false;
+    if (firstOpenDate == null || firstOpenDate!.isEmpty) {
+      firstOpenDate = prefs.getString(_keyFirstOpenDate) ?? today;
+      firstOpenAtMs =
+          prefs.getInt(_keyFirstOpenAtMs) ?? DateTime.now().millisecondsSinceEpoch;
+      changed = true;
+    }
+    if (firstLessonDate == null || firstLessonDate!.isEmpty) {
+      firstLessonDate = prefs.getString(_keyFirstLessonDate);
+      firstLessonTrailSlug = prefs.getString(_keyFirstLessonTrail);
+    }
+    await prefs.setString(_keyFirstOpenDate, firstOpenDate!);
+    if (firstOpenAtMs != null) {
+      await prefs.setInt(_keyFirstOpenAtMs, firstOpenAtMs!);
+    }
+    if (changed) await _save();
+    return (
+      daysSinceFirstOpen: _daysBetween(firstOpenDate!, today),
+      daysSinceFirstLesson: firstLessonDate == null || firstLessonDate!.isEmpty
+          ? null
+          : _daysBetween(firstLessonDate!, today),
+      cohortTrail: firstLessonTrailSlug,
+    );
+  }
+
+  /// Marca a 1ª missão da conta. Retorna TTV em segundos se for a primeira.
+  Future<int?> markFirstLessonIfNeeded({
+    required String trailSlug,
+    required String missionSlug,
+  }) async {
+    if (firstLessonDate != null && firstLessonDate!.isNotEmpty) return null;
+    final today = _todayKey();
+    firstLessonDate = today;
+    firstLessonTrailSlug = trailSlug;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyFirstLessonDate, today);
+    await prefs.setString(_keyFirstLessonTrail, trailSlug);
+    await _save();
+    notifyListeners();
+    final openMs = firstOpenAtMs ?? DateTime.now().millisecondsSinceEpoch;
+    final ttv = ((DateTime.now().millisecondsSinceEpoch - openMs) / 1000)
+        .round()
+        .clamp(0, 86400);
+    return ttv;
+  }
+
+  static int _daysBetween(String fromYmd, String toYmd) {
+    DateTime parse(String s) {
+      final p = s.split('-');
+      return DateTime(int.parse(p[0]), int.parse(p[1]), int.parse(p[2]));
+    }
+
+    return parse(toYmd).difference(parse(fromYmd)).inDays;
+  }
+
   /// Snapshot completo para Firebase (fonte da verdade).
   Map<String, dynamic> toCloudMap() {
     return {
@@ -1444,6 +1529,10 @@ class ProgressService extends ChangeNotifier {
       'missionReflections': missionReflections,
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
+      'firstOpenDate': firstOpenDate,
+      'firstLessonDate': firstLessonDate,
+      'firstLessonTrailSlug': firstLessonTrailSlug,
+      'firstOpenAtMs': firstOpenAtMs,
       'settings': {
         'sound': settings.sound,
         'notifications': settings.notifications,
@@ -1789,6 +1878,30 @@ class ProgressService extends ChangeNotifier {
         final room = (data['activeRoomCode'] as String?)?.trim();
         if (room != null && room.isNotEmpty) {
           activeRoomCode = room;
+        }
+      }
+      if (data.containsKey('firstOpenDate')) {
+        final v = data['firstOpenDate'] as String?;
+        if (v != null && v.isNotEmpty) {
+          if (firstOpenDate == null || firstOpenDate!.isEmpty || v.compareTo(firstOpenDate!) < 0) {
+            firstOpenDate = v;
+          }
+        }
+      }
+      if (data.containsKey('firstLessonDate')) {
+        final v = data['firstLessonDate'] as String?;
+        if (v != null && v.isNotEmpty) {
+          if (firstLessonDate == null || firstLessonDate!.isEmpty || v.compareTo(firstLessonDate!) < 0) {
+            firstLessonDate = v;
+            firstLessonTrailSlug =
+                data['firstLessonTrailSlug'] as String? ?? firstLessonTrailSlug;
+          }
+        }
+      }
+      if (data.containsKey('firstOpenAtMs')) {
+        final ms = (data['firstOpenAtMs'] as num?)?.toInt();
+        if (ms != null && (firstOpenAtMs == null || ms < firstOpenAtMs!)) {
+          firstOpenAtMs = ms;
         }
       }
       final s = data['settings'];

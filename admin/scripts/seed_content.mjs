@@ -5,11 +5,20 @@
  *
  * Ou defina SEED_EMAIL / SEED_PASSWORD em admin/.env
  *
- * Rode antes: npm run prepare:content  (normaliza banks + estudos + NT)
+ * Spark (free) = ~20k writes/dia (reset ~00:00 Pacific / ~04:00 BRT).
+ * Full seed (~6.5k Qs + trails + studies) ≈ 7–8k writes — 2–3 seeds/dia
+ * esgotam a cota. Se RESOURCE_EXHAUSTED: espere o reset ou use Blaze.
  *
- * O uid precisa existir em admin_users/{uid} com role admin|editor
- * (rules de content_* só permitem escrita a content editors).
+ * Opções:
+ *   SEED_ONLY=bank          — só content_bank_questions
+ *   SEED_ONLY=sermao        — só banco do Sermão (~465 writes)
+ *   SEED_ONLY=trails        — só trilhas
+ *   SEED_BANKS=sermao,genesis — subset de arquivos do banco
+ *   SEED_BANKS=ot            — AT (ot_questions.json); remove órfãos dessas trilhas
+ *   SEED_CHUNK=80           — docs por batch (default 80; máx 400)
+ *   SEED_PAUSE_MS=400       — pausa entre batches
  *
+ * Rode antes: npm run prepare:content
  * Preferir o painel "Importar" quando já logado como admin.
  */
 import { readFileSync, existsSync } from 'fs';
@@ -23,8 +32,12 @@ import {
 } from 'firebase/auth';
 import {
   getFirestore,
+  collection,
   doc,
+  getDocs,
+  query,
   setDoc,
+  where,
   writeBatch,
   Timestamp,
 } from 'firebase/firestore';
@@ -57,11 +70,46 @@ function asQuestionList(data) {
   return [];
 }
 
-async function batchWrite(db, colId, items, idKey) {
-  const chunk = 400;
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function isQuotaError(err) {
+  const code = err?.code || err?.message || '';
+  return (
+    String(code).includes('resource-exhausted') ||
+    String(code).includes('RESOURCE_EXHAUSTED') ||
+    String(err?.message || '').includes('Quota exceeded')
+  );
+}
+
+async function commitWithRetry(batch, label, { maxAttempts = 8 } = {}) {
+  let delay = 5000;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      await batch.commit();
+      return;
+    } catch (err) {
+      if (!isQuotaError(err) || attempt === maxAttempts) throw err;
+      console.warn(
+        `  ⚠ cota/rate (${label}) — tentativa ${attempt}/${maxAttempts}, espera ${Math.round(delay / 1000)}s…`,
+      );
+      await sleep(delay);
+      delay = Math.min(delay * 2, 120000);
+    }
+  }
+}
+
+async function batchWrite(db, colId, items, idKey, env = {}) {
+  const chunk = Math.min(
+    400,
+    Math.max(20, Number(env.SEED_CHUNK || 80) || 80),
+  );
+  const pauseMs = Math.max(0, Number(env.SEED_PAUSE_MS || 400) || 400);
   for (let i = 0; i < items.length; i += chunk) {
+    const slice = items.slice(i, i + chunk);
     const batch = writeBatch(db);
-    for (const item of items.slice(i, i + chunk)) {
+    for (const item of slice) {
       const id = String(item[idKey]);
       const { id: _d, ...data } = item;
       batch.set(
@@ -70,9 +118,70 @@ async function batchWrite(db, colId, items, idKey) {
         { merge: true },
       );
     }
-    await batch.commit();
+    const label = `${colId} ${Math.min(i + chunk, items.length)}/${items.length}`;
+    await commitWithRetry(batch, label);
     console.log(`  … ${Math.min(i + chunk, items.length)}/${items.length}`);
+    if (pauseMs && i + chunk < items.length) await sleep(pauseMs);
   }
+}
+
+async function deleteOrphanBankQuestions(db, keepIds, trails, env = {}) {
+  if (!trails.length) return;
+  const chunk = Math.min(
+    400,
+    Math.max(20, Number(env.SEED_CHUNK || 80) || 80),
+  );
+  const pauseMs = Math.max(0, Number(env.SEED_PAUSE_MS || 400) || 400);
+  let removed = 0;
+  for (const trail of trails) {
+    const snap = await getDocs(
+      query(
+        collection(db, 'content_bank_questions'),
+        where('trail', '==', trail),
+      ),
+    );
+    const orphans = snap.docs.filter((d) => !keepIds.has(d.id));
+    for (let i = 0; i < orphans.length; i += chunk) {
+      const slice = orphans.slice(i, i + chunk);
+      const batch = writeBatch(db);
+      for (const d of slice) batch.delete(d.ref);
+      await commitWithRetry(
+        batch,
+        `órfãos ${trail} ${Math.min(i + chunk, orphans.length)}/${orphans.length}`,
+      );
+      removed += slice.length;
+      if (pauseMs && i + chunk < orphans.length) await sleep(pauseMs);
+    }
+  }
+  console.log(`  órfãos removidos: ${removed}`);
+}
+
+async function deleteOrphanStudies(db, keepSlugs, env = {}) {
+  const chunk = Math.min(
+    400,
+    Math.max(20, Number(env.SEED_CHUNK || 80) || 80),
+  );
+  const pauseMs = Math.max(0, Number(env.SEED_PAUSE_MS || 400) || 400);
+  const snap = await getDocs(collection(db, 'content_mission_studies'));
+  const orphans = snap.docs.filter((d) => !keepSlugs.has(d.id));
+  if (!orphans.length) {
+    console.log('  estudos órfãos: 0');
+    return 0;
+  }
+  let removed = 0;
+  for (let i = 0; i < orphans.length; i += chunk) {
+    const slice = orphans.slice(i, i + chunk);
+    const batch = writeBatch(db);
+    for (const d of slice) batch.delete(d.ref);
+    await commitWithRetry(
+      batch,
+      `estudos órfãos ${Math.min(i + chunk, orphans.length)}/${orphans.length}`,
+    );
+    removed += slice.length;
+    if (pauseMs && i + chunk < orphans.length) await sleep(pauseMs);
+  }
+  console.log(`  estudos órfãos removidos: ${removed}`);
+  return removed;
 }
 
 async function authenticate(auth, env) {
@@ -118,145 +227,214 @@ async function main() {
   if (!uid) throw new Error('Sem uid após autenticação');
   console.log('Autenticado:', uid);
 
-  await setDoc(
-    doc(db, 'admin_users', uid),
-    {
-      email: auth.currentUser.email || env.SEED_EMAIL || '',
-      role: 'admin',
-      permissions: { trails: true, bank: true, studies: true },
-      updatedAt: Timestamp.now(),
-    },
-    { merge: true },
-  );
-  console.log('admin_users OK');
+  const only = (env.SEED_ONLY || '').trim().toLowerCase();
+  const doTrails = !only || only === 'trails' || only === 'full';
+  const doBank =
+    !only || only === 'bank' || only === 'sermao' || only === 'full';
+  const doStudies = !only || only === 'studies' || only === 'full';
+  const doMeta =
+    !only ||
+    only === 'meta' ||
+    only === 'full' ||
+    only === 'bank' ||
+    only === 'sermao' ||
+    only === 'trails' ||
+    only === 'studies';
 
-  const trails = readJson('trails.json');
-  console.log(`Trilhas: ${trails.length}`);
-  await batchWrite(
-    db,
-    'content_trails',
-    trails.map((t, i) => ({
-      ...t,
-      id: t.slug,
-      slug: t.slug,
-      order: t.order ?? i + 1,
-      isActive: true,
-    })),
-    'slug',
-  );
+  if (only) console.log(`SEED_ONLY=${only}`);
 
-  const genesis = readJson('genesis_questions.json');
-  const difficulties = genesis.difficulties || [];
-  console.log(`Dificuldades: ${difficulties.length}`);
-  if (difficulties.length) {
+  try {
+    await setDoc(
+      doc(db, 'admin_users', uid),
+      {
+        email: auth.currentUser.email || env.SEED_EMAIL || '',
+        role: 'admin',
+        permissions: { trails: true, bank: true, studies: true },
+        updatedAt: Timestamp.now(),
+      },
+      { merge: true },
+    );
+    console.log('admin_users OK');
+  } catch (err) {
+    if (isQuotaError(err)) {
+      console.warn(
+        'admin_users: cota — seguindo (doc provavelmente já existe).',
+      );
+    } else {
+      throw err;
+    }
+  }
+
+  if (doTrails) {
+    const trails = readJson('trails.json');
+    console.log(`Trilhas: ${trails.length}`);
     await batchWrite(
       db,
-      'content_difficulties',
-      difficulties.map((d, i) => ({ ...d, id: d.id, order: i + 1 })),
-      'id',
+      'content_trails',
+      trails.map((t, i) => ({
+        ...t,
+        id: t.slug,
+        slug: t.slug,
+        order: t.order ?? i + 1,
+        isActive: true,
+      })),
+      'slug',
+      env,
     );
   }
 
-  const bankFiles = [
-    ['genesis_questions.json', 'genesis-1-11'],
-    ['exodo_questions.json', 'exodo'],
-    ['ot_questions.json', null],
-    ['nt_questions.json', null],
-    ['sermao_questions.json', 'sermao-do-monte'],
-    ['epistolas_questions.json', null],
-    ['buracos_questions.json', null],
-  ];
-  const seen = new Set();
-  const questions = [];
-  for (const [file, defaultTrail] of bankFiles) {
-    const path = join(assetsRoot, file);
-    if (!existsSync(path)) {
-      console.log(`  (sem ${file})`);
-      continue;
-    }
-    const list = asQuestionList(readJson(file));
-    let added = 0;
-    for (const q of list) {
-      if (!q?.id || seen.has(q.id)) continue;
-      seen.add(q.id);
-      if (!q.trail && !q.trailSlug && defaultTrail) {
-        q.trail = defaultTrail;
-      }
-      questions.push(q);
-      added += 1;
-    }
-    console.log(`  ${file}: +${added}`);
-  }
-  console.log(`Perguntas do banco: ${questions.length}`);
-  await batchWrite(
-    db,
-    'content_bank_questions',
-    questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
-    'id',
-  );
-
-  const studiesPath = join(assetsRoot, 'mission_studies.json');
-  if (existsSync(studiesPath)) {
-    const data = readJson('mission_studies.json');
-    const docs = Object.entries(data.studies || {}).map(([slug, s]) => ({
-      ...s,
-      id: slug,
-      slug,
-    }));
-    console.log(`Estudos: ${docs.length}`);
-    await batchWrite(db, 'content_mission_studies', docs, 'slug');
-    if (data.verses) {
-      await setDoc(
-        doc(db, 'content_meta', 'verses'),
-        { verses: data.verses, updatedAt: Timestamp.now() },
-        { merge: true },
+  if (doBank) {
+    const genesis = readJson('genesis_questions.json');
+    const difficulties = genesis.difficulties || [];
+    if ((!only || only === 'full' || only === 'bank') && difficulties.length) {
+      console.log(`Dificuldades: ${difficulties.length}`);
+      await batchWrite(
+        db,
+        'content_difficulties',
+        difficulties.map((d, i) => ({ ...d, id: d.id, order: i + 1 })),
+        'id',
+        env,
       );
-      console.log('Versículos OK');
+    }
+
+    const allBankFiles = [
+      ['genesis_questions.json', 'genesis-1-11', 'genesis'],
+      ['exodo_questions.json', 'exodo', 'exodo'],
+      ['ot_questions.json', null, 'ot'],
+      ['nt_questions.json', null, 'nt'],
+      ['sermao_questions.json', 'sermao-do-monte', 'sermao'],
+      ['epistolas_questions.json', null, 'epistolas'],
+      ['buracos_questions.json', null, 'buracos'],
+    ];
+    const bankFilter = (env.SEED_BANKS || '')
+      .split(',')
+      .map((s) => s.trim().toLowerCase())
+      .filter(Boolean);
+    const bankFiles =
+      only === 'sermao'
+        ? allBankFiles.filter(([, , key]) => key === 'sermao')
+        : bankFilter.length
+          ? allBankFiles.filter(([, , key]) => bankFilter.includes(key))
+          : allBankFiles;
+
+    const seen = new Set();
+    const questions = [];
+    for (const [file, defaultTrail] of bankFiles) {
+      const path = join(assetsRoot, file);
+      if (!existsSync(path)) {
+        console.log(`  (sem ${file})`);
+        continue;
+      }
+      const list = asQuestionList(readJson(file));
+      let added = 0;
+      for (const q of list) {
+        if (!q?.id || seen.has(q.id)) continue;
+        seen.add(q.id);
+        if (!q.trail && !q.trailSlug && defaultTrail) {
+          q.trail = defaultTrail;
+        }
+        questions.push(q);
+        added += 1;
+      }
+      console.log(`  ${file}: +${added}`);
+    }
+    console.log(`Perguntas do banco: ${questions.length}`);
+    await batchWrite(
+      db,
+      'content_bank_questions',
+      questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
+      'id',
+      env,
+    );
+
+    if (bankFilter.length) {
+      const keepIds = new Set(questions.map((q) => String(q.id)));
+      const trails = [
+        ...new Set(questions.map((q) => q.trail || q.trailSlug).filter(Boolean)),
+      ];
+      await deleteOrphanBankQuestions(db, keepIds, trails, env);
     }
   }
 
-  await setDoc(
-    doc(db, 'content_meta', 'catalog'),
-    {
-      version: Date.now(),
-      updatedAt: Timestamp.now(),
-      seededAt: Timestamp.now(),
-    },
-    { merge: true },
-  );
+  if (doStudies) {
+    const studiesPath = join(assetsRoot, 'mission_studies.json');
+    if (existsSync(studiesPath)) {
+      const data = readJson('mission_studies.json');
+      const docs = Object.entries(data.studies || {}).map(([slug, s]) => ({
+        ...s,
+        id: slug,
+        slug,
+      }));
+      console.log(`Estudos: ${docs.length}`);
+      await batchWrite(db, 'content_mission_studies', docs, 'slug', env);
+      const keepSlugs = new Set(docs.map((d) => String(d.slug || d.id)));
+      await deleteOrphanStudies(db, keepSlugs, env);
+      if (data.verses) {
+        await setDoc(
+          doc(db, 'content_meta', 'verses'),
+          { verses: data.verses, updatedAt: Timestamp.now() },
+          { merge: true },
+        );
+        console.log('Versículos OK');
+      }
+    }
+  }
 
-  // Versão do app nas lojas — o cliente compara build local com latestBuild/minBuild.
-  await setDoc(
-    doc(db, 'content_meta', 'app_release'),
-    {
-      enabled: true,
-      latestVersion: '1.0.14',
-      latestBuild: 14,
-      minBuild: 1,
-      androidStoreUrl:
-        'https://play.google.com/store/apps/details?id=com.trilha.trilha_app',
-      iosStoreUrl: 'https://apps.apple.com/br/search?term=STWAY',
-      message:
-        'Uma nova versão do STWAY está pronta — melhorias e correções te esperam.',
-      updatedAt: Timestamp.now(),
-    },
-    { merge: true },
-  );
+  if (doMeta) {
+    await setDoc(
+      doc(db, 'content_meta', 'catalog'),
+      {
+        version: Date.now(),
+        updatedAt: Timestamp.now(),
+        seededAt: Timestamp.now(),
+      },
+      { merge: true },
+    );
 
-  // Fecha bootstrap de admin_users (create só enquanto este doc não existir).
-  await setDoc(
-    doc(db, 'content_meta', 'bootstrap_locked'),
-    {
-      locked: true,
-      lockedAt: Timestamp.now(),
-      note: 'Novos admin_users só via Console / admin existente',
-    },
-    { merge: true },
-  );
+    await setDoc(
+      doc(db, 'content_meta', 'app_release'),
+      {
+        enabled: true,
+        latestVersion: '1.0.14',
+        latestBuild: 14,
+        minBuild: 1,
+        androidStoreUrl:
+          'https://play.google.com/store/apps/details?id=com.trilha.trilha_app',
+        iosStoreUrl: 'https://apps.apple.com/br/search?term=STWAY',
+        message:
+          'Uma nova versão do STWAY está pronta — melhorias e correções te esperam.',
+        updatedAt: Timestamp.now(),
+      },
+      { merge: true },
+    );
+
+    await setDoc(
+      doc(db, 'content_meta', 'bootstrap_locked'),
+      {
+        locked: true,
+        lockedAt: Timestamp.now(),
+        note: 'Novos admin_users só via Console / admin existente',
+      },
+      { merge: true },
+    );
+  }
+
   console.log('Catálogo atualizado. Seed concluído.');
 }
 
-main().catch((err) => {
-  console.error(err.message || err);
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+  if (isQuotaError(err)) {
+    console.error(
+      'Cota Firestore esgotada (Spark ≈ 20k writes/dia).\n' +
+        'Espere o reset (~00:00 Pacific / ~04:00 BRT) ou ative Blaze.\n' +
+        'Enquanto isso, para a vitrine:\n' +
+        '  SEED_ONLY=sermao node scripts/seed_content.mjs\n' +
+        '(só ~465 writes — roda quando sobrar cota).',
+    );
+  } else {
+    console.error(err.message || err);
+  }
   process.exit(1);
 });

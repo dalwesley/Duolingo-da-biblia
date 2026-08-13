@@ -3,7 +3,23 @@
 **Atualizado:** ago/2026  
 **Versão do app:** 1.0.19  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
-**Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)
+**Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
+**Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
+**Contrato de sessão (implementado):** [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · técnico: [`TECNICA.md`](TECNICA.md) · D7: [`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)
+
+---
+
+## Estado do produto (honestidade)
+
+| Camada | Situação |
+|--------|----------|
+| **Shell de sessão** | Pronto — entrada → gestos mistos → insight → saída |
+| **Conteúdo no Firebase** | Alinhado ao local (~6.5k perguntas, 84 trilhas) |
+| **UI / UX** | Tema escuro cinemático, 5 tabs, painéis de jogo — polish ainda abaixo de YouVersion/Hallow |
+| **Escola no conteúdo** | Gestos + skills no banco; profundezas ainda pedem edição humana |
+| Strong | Offline na aba Bíblia **e** no treino (toque na referência do ato → Estudar) |
+| **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); falta execução com 10–20 testers |
+| **Monetização** | Sem IAP |
 
 ---
 
@@ -56,7 +72,7 @@ Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em 
 ### Fluxo principal
 
 ```
-Splash → Login (Google) → Onboarding (1ª vez)
+Splash → Login (Google / Apple no iOS) → Onboarding (1ª vez)
   → Hoje: continuar treino
   → Mapa da trilha → Dificuldade → Treino → Celebração
   → (opcional) Bíblia / Prática / Memória / Juntos
@@ -66,14 +82,14 @@ Onboarding em 4 beats: promessa → por quê → ritmo → primeira trilha (Gên
 
 ### Loop de treino
 
-1. Usuário entra no treino (legado UX ainda pode dizer “missão”)  
-2. Tenta / observa o texto / recebe feedback — não “aula longa → quiz”  
-3. 3–8 exercícios tipados (lâmpadas = vidas)  
-4. Erro com correção + motivo + nova chance; acerto gera **passos**  
-5. Celebração + progresso na nuvem  
+1. Entrada curta (título · verso · contexto/conexão · Começar)  
+2. Atos tipados no mesmo shell (V/F, toque, escolher, ordenar, completar, conectar) — **8** padrão · boss **10**  
+3. Erro com correção em 1 linha + nova chance; acerto gera **passos**  
+4. Se errou: micro-review (outro gesto) opcional  
+5. Insight (“Hoje: …”) → saída (passos / streak; micro bônus de verso opcional)  
 6. Bosses = revisão / interleaving do módulo  
 
-Detalhe pedagógico: [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md).
+Composer monta a sessão **só do banco** Firestore. Detalhe: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md).
 
 ### Moeda / retenção
 
@@ -122,16 +138,28 @@ Não são “fácil / médio / difícil” em obscuridade — são **operações
 ### Bíblia e Strong
 
 - Traduções offline (TB, Almeida JFA)  
-- Toque no versículo → **Estudar**: Strong, morfologia, concordância, referências cruzadas  
+- Aba Bíblia: toque no versículo → **Estudar** (Strong, morfologia, concordância)  
+- **No treino:** toque na referência do palco (`Gn 1:27 · ESTUDAR`) → mesmo sheet, sem sair da sessão  
 - Fonte: STEPBible / openbible.info (CC BY)  
 - Strong serve interpretação contextual — não “significado secreto”
 
-### Pilotos
+### Conteúdo e “pilotos”
 
-| Piloto | Status |
-|--------|--------|
-| **Imagem de Deus** (`gen-03-imagem`) — motor v2 | Spec em [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) |
-| Sermão do Monte | 6 cenas / 31 missões (legado); migrar após validar piloto |
+Não há mais treino especial embutido. `gen-03-imagem` e o restante usam o mesmo pipeline (`content_bank_questions` + composer).
+
+| Item | Status |
+|------|--------|
+| Banco tipado + skills | Seedado; gestos mistos no player |
+| Objective / insight / hooks nas missões | Presentes no catálogo |
+| Spec histórica Imagem de Deus | [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) |
+| Sermão do Monte e demais trilhas | No Firebase; qualidade editorial varia |
+
+### UI / UX (resumo)
+
+- **Visual:** tema escuro noturno, accent azul + CTA amarelo, painéis elevados, fundo imersivo / cinemático em Gênesis  
+- **Padrão:** 5 tabs (Hoje · Trilhas · Bíblia · Juntos · Config); mapa de trilha; picker de dificuldade  
+- **Força:** sessão curta com gestos variados no mesmo shell  
+- **Fraqueza vs. mercado:** polish/escala de marca; densidade visual de “game HUD” pode obscurecer a sensação de “escola”  
 
 ---
 

@@ -54,7 +54,8 @@ class Mission {
   final String type;
   final int stepsReward;
   final List<Question> questions;
-  /// Learning Engine v2 — se não vazio, o player tipado tem prioridade sobre o banco.
+  /// Learning Engine v2 — preservado no modelo para admin/legado;
+  /// o runtime monta a sessão só pelo banco (`SessionComposer`).
   final List<Exercise> exercises;
   final String? objective;
   final String? centralInsight;

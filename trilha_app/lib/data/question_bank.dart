@@ -2,6 +2,7 @@ import 'dart:math';
 
 import '../models/difficulty.dart';
 import '../services/content_catalog_service.dart';
+import '../services/progress_service.dart';
 
 class QuestionBank {
   static QuestionBank? _instance;
@@ -64,7 +65,9 @@ class QuestionBank {
             : moduleTitleToSection(moduleTitle, trailSlug: trail);
     final target = count > 0
         ? count
-        : (isBoss ? 8 : 5);
+        : (isBoss
+            ? ProgressService.bossQuestionCount
+            : ProgressService.normalQuestionCount);
     final pool = questions
         .where((q) => q.difficulty == difficulty && q.trailSlug == trail)
         .toList();
@@ -97,6 +100,29 @@ class QuestionBank {
     return ids;
   }
 
+  /// Todas as perguntas do passo × dificuldade (para o composer montar a mixagem).
+  Future<List<BankQuestion>> listForMission({
+    required TrailDifficulty difficulty,
+    required String? moduleTitle,
+    String? trailSlug,
+    String? section,
+  }) async {
+    final questions = await _questions();
+    final trail = trailSlug ?? 'genesis-1-11';
+    final resolvedSection =
+        (section != null && section.isNotEmpty)
+            ? section
+            : moduleTitleToSection(moduleTitle, trailSlug: trail);
+    return questions
+        .where(
+          (q) =>
+              q.difficulty == difficulty &&
+              q.trailSlug == trail &&
+              matchesMissionSection(q, resolvedSection),
+        )
+        .toList();
+  }
+
   BankQuestion? byId(String id) {
     final questions = ContentCatalogService.instance.bankQuestionsCache;
     if (questions == null) return null;
@@ -106,4 +132,7 @@ class QuestionBank {
       return null;
     }
   }
+
+  List<BankQuestion> get bankQuestionsCacheOrEmpty =>
+      ContentCatalogService.instance.bankQuestionsCache ?? const [];
 }

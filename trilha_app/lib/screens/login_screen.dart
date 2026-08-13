@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -17,7 +18,7 @@ import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
 
-/// Porta de entrada — exige conta Google antes de usar o app.
+/// Porta de entrada — exige conta (Google; Apple no iOS) antes de usar o app.
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -28,6 +29,9 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   String? _error;
   String? _versionLabel;
+
+  bool get _showApple =>
+      !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
 
   @override
   void initState() {
@@ -44,7 +48,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Future<void> _continueAfterLogin(
     ProgressService progress,
     BackendService backend,
-    GoogleSignInResult result,
+    AuthSignInResult result,
   ) async {
     final league = context.read<LeagueService>();
     final hydrate = await backend.hydrateProgress(progress, league: league);
@@ -60,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
         _error =
             'Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.';
       });
-      // Mantém sessão Google mas não entra no app até hydrate ok.
+      // Mantém sessão mas não entra no app até hydrate ok.
       return;
     }
 
@@ -89,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Future<void> _signIn() async {
+  Future<void> _signInWithGoogle() async {
     final progress = context.read<ProgressService>();
     final backend = context.read<BackendService>();
     setState(() => _error = null);
@@ -113,10 +117,34 @@ class _LoginScreenState extends State<LoginScreen> {
     await _continueAfterLogin(progress, backend, result);
   }
 
+  Future<void> _signInWithApple() async {
+    final progress = context.read<ProgressService>();
+    final backend = context.read<BackendService>();
+    setState(() => _error = null);
+    HapticFeedback.lightImpact();
+
+    // ignore: avoid_print
+    print('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
+    final result = await backend.signInWithApple();
+    if (!mounted) return;
+    if (!result.ok) {
+      // ignore: avoid_print
+      print('[STWAY:Auth] LoginScreen: Apple fail → ${result.error}');
+      unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
+      setState(() => _error = result.error ?? 'Falha no login com Apple');
+      return;
+    }
+    // ignore: avoid_print
+    print('[STWAY:Auth] LoginScreen: Apple ok → ${result.email}');
+    unawaited(AnalyticsService.instance.logLogin(method: 'apple'));
+    unawaited(AnalyticsService.instance.setUserId(backend.uid));
+    await _continueAfterLogin(progress, backend, result);
+  }
+
   @override
   Widget build(BuildContext context) {
     final backend = context.watch<BackendService>();
-    final busy = backend.isGoogleBusy || backend.isInitializing;
+    final busy = backend.isAuthBusy || backend.isInitializing;
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
     final a = appearance;
@@ -191,11 +219,34 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: AppSpace.sm),
               ],
+              if (_showApple) ...[
+                Opacity(
+                  opacity: busy ? 0.55 : 1,
+                  child: OutlinedButton.icon(
+                    onPressed: busy ? null : _signInWithApple,
+                    icon: const Icon(Icons.apple, size: 22),
+                    label: Text(
+                      busy ? 'Entrando…' : 'Continuar com Apple',
+                      style: AppTypography.cta(color: Colors.white),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: Colors.black.withValues(alpha: 0.55),
+                      side: BorderSide(color: a.cardBorder),
+                      padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(AppRadii.lg),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpace.sm),
+              ],
               Opacity(
                 opacity: busy ? 0.55 : 1,
                 child: CopperCta(
                   label: busy ? 'Entrando…' : 'Continuar com Google',
-                  onTap: busy ? null : _signIn,
+                  onTap: busy ? null : _signInWithGoogle,
                   trailing: null,
                   showArrow: false,
                 ),

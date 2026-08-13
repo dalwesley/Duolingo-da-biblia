@@ -8,6 +8,7 @@ import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 import 'lamps_bar.dart';
 import 'ui_primitives.dart';
+import 'verse_study_sheet.dart';
 
 /// Player dos micro-atos.
 ///
@@ -241,6 +242,14 @@ class _ExercisePanelState extends State<ExercisePanel>
         : _picked != null && !_locked;
     final options = ex.effectiveOptions;
     final cue = ex.displayCue;
+    // V/F: prompt é o palco — não repetir como pergunta.
+    final showQuestion = cue.isNotEmpty &&
+        !(ex.type == ExerciseType.trueFalse && cue == ex.prompt.trim());
+    final questionIsLongChoice = showQuestion &&
+        (ex.type == ExerciseType.choice ||
+            ex.type == ExerciseType.textSupported ||
+            ex.type == ExerciseType.bestInterpretation) &&
+        cue.length > 72;
 
     final hero = _fieldHero(ex);
     final response = _responseSurface(ex, options);
@@ -255,19 +264,40 @@ class _ExercisePanelState extends State<ExercisePanel>
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (cue.isNotEmpty)
-            _in(
-              0,
-              0.38,
-              Text(
-                cue,
-                textAlign: TextAlign.center,
-                style: AppTypography.display(
-                  size: _ActSkin.cueSize,
-                  height: 1.22,
-                ),
+          _in(
+            0,
+            0.28,
+            Text(
+              ex.instructionVerb.toUpperCase(),
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.6,
+                color: widget.accent,
               ),
             ),
+          ),
+          if (showQuestion) ...[
+            const SizedBox(height: 8),
+            _in(
+              0.05,
+              0.4,
+              Text(
+                cue,
+                textAlign: TextAlign.left,
+                style: questionIsLongChoice
+                    ? AppTypography.body(
+                        size: 18,
+                        height: 1.28,
+                        weight: FontWeight.w600,
+                        color: AppColors.textOnDark,
+                      )
+                    : AppTypography.display(
+                        size: _ActSkin.cueSize,
+                        height: 1.22,
+                      ),
+              ),
+            ),
+          ],
           if (_showNote(ex)) ...[
             const SizedBox(height: AppSpace.md),
             _in(
@@ -453,12 +483,16 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   Widget _tileFor(QuestionOption o, int i) {
     final eliminated = widget.eliminatedIds.contains(o.id);
-    return _OptionTile(
-      letter: _kLetters[i.clamp(0, _kLetters.length - 1)],
-      text: o.text,
-      state: _state(o.id),
-      accent: widget.accent,
-      onTap: eliminated ? null : () => _pickChoice(o.id),
+    return Opacity(
+      opacity: eliminated ? 0.38 : 1,
+      child: _OptionTile(
+        letter: _kLetters[i.clamp(0, _kLetters.length - 1)],
+        text: o.text,
+        state: eliminated ? _OptState.dimmed : _state(o.id),
+        accent: widget.accent,
+        struck: eliminated,
+        onTap: eliminated ? null : () => _pickChoice(o.id),
+      ),
     );
   }
 
@@ -846,6 +880,66 @@ class _ContextNote extends StatelessWidget {
   }
 }
 
+/// Referência tocável → sheet Strong (sem conflitar com toque de resposta no verso).
+class _StudyRefChip extends StatelessWidget {
+  final String reference;
+  final Color accent;
+  final bool compact;
+
+  const _StudyRefChip({
+    required this.reference,
+    required this.accent,
+    this.compact = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final ref = reference.trim();
+    if (ref.isEmpty) return const SizedBox.shrink();
+
+    return Center(
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          borderRadius: BorderRadius.circular(99),
+          onTap: () {
+            HapticFeedback.selectionClick();
+            showVerseStudyFromReference(context, ref);
+          },
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: compact ? 8 : 12,
+              vertical: compact ? 4 : 6,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  ref,
+                  style: AppTypography.label(
+                    size: compact ? 11 : 11,
+                    letterSpacing: compact ? 0.6 : 1.4,
+                    color: accent,
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  'ESTUDAR',
+                  style: AppTypography.label(
+                    size: 9,
+                    letterSpacing: 1.2,
+                    color: accent.withValues(alpha: 0.72),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _Manuscript extends StatelessWidget {
   final Color accent;
   final Widget child;
@@ -902,15 +996,7 @@ class _Manuscript extends StatelessWidget {
                   ),
                   if (ref.isNotEmpty) ...[
                     const SizedBox(height: 14),
-                    Text(
-                      ref,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.label(
-                        size: 11,
-                        letterSpacing: 1.4,
-                        color: accent,
-                      ),
-                    ),
+                    _StudyRefChip(reference: ref, accent: accent),
                   ],
                   const SizedBox(height: 14),
                   Expanded(
@@ -1047,15 +1133,7 @@ class _BridgePassages extends StatelessWidget {
     return Column(
       children: [
         if (ref.isNotEmpty) ...[
-          Text(
-            ref,
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 0.6,
-              color: accent,
-            ),
-          ),
+          _StudyRefChip(reference: ref, accent: accent, compact: true),
           const SizedBox(height: 12),
         ],
         _TappableVerse(
@@ -1149,9 +1227,11 @@ class _TappableVerse extends StatelessWidget {
         children.add(
           _VerseMark(
             text: s.text,
-            state: highlightId == s.optionId
-                ? _OptState.picked
-                : stateFor(s.optionId!),
+            state: eliminatedIds.contains(s.optionId)
+                ? _OptState.dimmed
+                : highlightId == s.optionId
+                    ? _OptState.picked
+                    : stateFor(s.optionId!),
             accent: accent,
             enabled: !locked && !eliminatedIds.contains(s.optionId),
             onTap: () => onTapOption(s.optionId!),
@@ -1360,6 +1440,7 @@ class _OptionTile extends StatelessWidget {
   final VoidCallback? onTap;
   final Widget? trailing;
   final TextAlign textAlign;
+  final bool struck;
 
   const _OptionTile({
     required this.letter,
@@ -1369,6 +1450,7 @@ class _OptionTile extends StatelessWidget {
     this.onTap,
     this.trailing,
     this.textAlign = TextAlign.start,
+    this.struck = false,
   });
 
   @override
@@ -1419,6 +1501,11 @@ class _OptionTile extends StatelessWidget {
                   height: 1.3,
                   weight: FontWeight.w700,
                   color: skin.text,
+                ).copyWith(
+                  decoration: struck
+                      ? TextDecoration.lineThrough
+                      : TextDecoration.none,
+                  decorationColor: skin.text,
                 ),
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/trail.dart';
+import 'package:trilha_app/utils/catalog_access.dart';
 import 'package:trilha_app/utils/trail_progress.dart';
 
 void main() {
@@ -25,7 +26,16 @@ void main() {
 
   test('first mission is always unlocked', () {
     expect(TrailProgress.isMissionUnlocked('m1', trail.missionSlugs, []), isTrue);
-    expect(TrailProgress.isMissionUnlocked('m2', trail.missionSlugs, []), isFalse);
+  });
+
+  test('mission unlock respects sequence when catalog gated', () {
+    final unlocked =
+        TrailProgress.isMissionUnlocked('m2', trail.missionSlugs, []);
+    if (CatalogAccess.openAllForTesting) {
+      expect(unlocked, isTrue);
+    } else {
+      expect(unlocked, isFalse);
+    }
   });
 
   test('progress calculates correctly', () {
@@ -35,7 +45,7 @@ void main() {
     expect(prog.pct, 50);
   });
 
-  test('trail unlock requires prerequisite completion', () {
+  test('trail unlock requires prerequisite when catalog gated', () {
     final trails = [
       trail,
       Trail(
@@ -50,7 +60,15 @@ void main() {
         modules: [],
       ),
     ];
-    expect(TrailProgress.isTrailUnlocked(trails[1], trails, []), isFalse);
-    expect(TrailProgress.isTrailUnlocked(trails[1], trails, ['m1', 'm2']), isTrue);
+    final locked = TrailProgress.isTrailUnlocked(trails[1], trails, []);
+    final afterDone =
+        TrailProgress.isTrailUnlocked(trails[1], trails, ['m1', 'm2']);
+    if (CatalogAccess.openAllForTesting) {
+      expect(locked, isTrue);
+      expect(afterDone, isTrue);
+    } else {
+      expect(locked, isFalse);
+      expect(afterDone, isTrue);
+    }
   });
 }

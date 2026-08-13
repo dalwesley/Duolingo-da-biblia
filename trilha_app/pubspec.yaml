@@ -1,5 +1,5 @@
 name: trilha_app
-description: STWAY — aprenda a Bíblia em missões gamificadas.
+description: STWAY — academia da Palavra. Treino diário para ler as Escrituras.
 publish_to: 'none'
 version: 1.0.19+19
 
@@ -53,8 +53,9 @@ flutter:
   assets:
     - assets/icon/app_icon.png
     - assets/icon/splash_bg.png
-    # Currículo (trilhas/cenas/perguntas/estudos) vem só do Firestore + cache.
-    # JSONs em assets/data/ continuam no repo para seed do admin — não vão no bundle.
+    # Currículo remoto: Firestore. Gênesis empacotado só como bootstrap
+    # quando o cache/nuvem ainda não tem gestos (order/connect).
+    - assets/data/genesis_questions.json
     - assets/data/bible_tb.json
     - assets/data/bible_jfaal.json
     - assets/data/bible_study.sqlite.gz

@@ -46,6 +46,30 @@ class AnalyticsService {
 
   Future<void> logAppOpen() => _log('app_open');
 
+  /// Pulso de retenção (D1/D7) — chamar em aberturas autenticadas.
+  Future<void> logRetentionPulse({
+    required int daysSinceFirstOpen,
+    required int? daysSinceFirstLesson,
+    String? cohortTrail,
+  }) =>
+      _log('retention_pulse', {
+        'days_since_first_open': daysSinceFirstOpen,
+        'days_since_first_lesson': ?daysSinceFirstLesson,
+        'cohort_trail': ?(cohortTrail?.isNotEmpty == true ? cohortTrail : null),
+      });
+
+  /// Primeira missão concluída da conta (base de TTV / coorte D7).
+  Future<void> logFirstLessonComplete({
+    required String missionSlug,
+    required String trailSlug,
+    required int ttvSeconds,
+  }) =>
+      _log('first_lesson_complete', {
+        'mission_slug': missionSlug,
+        'trail_slug': trailSlug,
+        'ttv_seconds': ttvSeconds,
+      });
+
   Future<void> logLogin({required String method}) => _log(
         'login',
         {'method': method},
@@ -121,6 +145,34 @@ class AnalyticsService {
         'trail_slug': ?trailSlug,
         'question_id': ?questionId,
         'difficulty': ?difficulty,
+      });
+
+  Future<void> logExerciseStart({
+    required String missionSlug,
+    required String type,
+    required String skill,
+    required int index,
+  }) =>
+      _log('exercise_start', {
+        'mission_slug': missionSlug,
+        'type': type,
+        'skill': skill,
+        'index': index,
+      });
+
+  Future<void> logExerciseComplete({
+    required String missionSlug,
+    required String type,
+    required String skill,
+    required int index,
+    required bool correct,
+  }) =>
+      _log('exercise_complete', {
+        'mission_slug': missionSlug,
+        'type': type,
+        'skill': skill,
+        'index': index,
+        'correct': correct,
       });
 
   Future<void> _log(String name, [Map<String, Object>? params]) async {

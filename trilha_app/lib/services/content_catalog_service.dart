@@ -3,15 +3,16 @@ import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 
-/// Carrega currículo (trilhas, banco, estudos) só do Firestore, com cache em disco.
-/// Sem assets empacotados: novas trilhas/cenas/perguntas não exigem update do app.
-/// Primeira abertura (ou cache vazio) precisa de rede.
+/// Currículo via Firestore + cache em disco.
+/// Bootstrap: se o banco remoto/cache não tiver gestos `order`, mescla
+/// `assets/data/genesis_questions.json` (evita sessão sem arrastar).
 class ContentCatalogService {
   ContentCatalogService._();
   static final ContentCatalogService instance = ContentCatalogService._();
@@ -21,6 +22,7 @@ class ContentCatalogService {
   static const _fileBank = 'content_bank.json';
   static const _fileStudies = 'content_studies.json';
   static const _fileVerses = 'content_verses.json';
+  static const _assetGenesisBank = 'assets/data/genesis_questions.json';
 
   // Legado SharedPreferences (migrado uma vez e apagado).
   static const _legacyTrailsKey = 'content_trails_json';
@@ -68,6 +70,7 @@ class ContentCatalogService {
     try {
       await _loadFromPrefs();
       await _refreshFromFirestore();
+      await _mergeGenesisAssetBank();
       _trails ??= const [];
       _bankQuestions ??= const [];
       _difficulties ??= const [];
@@ -145,6 +148,75 @@ class ContentCatalogService {
     } catch (e) {
       debugPrint('ContentCatalog read $name failed: $e');
       return null;
+    }
+  }
+
+  /// Mescla `genesis_questions.json` do asset por id (gestos order/connect/…).
+  /// O banco remoto/cache antigo muitas vezes só tem V/F+choice em Gênesis 1–11.
+  Future<void> _mergeGenesisAssetBank() async {
+    try {
+      final raw = await rootBundle.loadString(_assetGenesisBank);
+      final data = jsonDecode(raw);
+      final list = data is Map
+          ? (data['questions'] as List? ?? const [])
+          : (data is List ? data : const []);
+      final fromAsset = <BankQuestion>[];
+      for (final e in list) {
+        if (e is! Map) continue;
+        fromAsset.add(
+          BankQuestion.fromJson(Map<String, dynamic>.from(e)),
+        );
+      }
+      if (fromAsset.isEmpty) return;
+
+      final current = _bankQuestions;
+      if (current == null || current.isEmpty) {
+        _bankQuestions = fromAsset;
+        debugPrint(
+          'ContentCatalog: bootstrap bank from asset (${fromAsset.length} Qs)',
+        );
+        return;
+      }
+
+      final byId = {for (final q in current) q.id: q};
+      final assetIds = <String>{};
+      var changed = 0;
+      for (final q in fromAsset) {
+        assetIds.add(q.id);
+        final prev = byId[q.id];
+        if (prev == null ||
+            prev.type != q.type ||
+            prev.correctAnswer != q.correctAnswer) {
+          changed += 1;
+        }
+        byId[q.id] = q;
+      }
+
+      // Remove V/F (e outros) legados do Firestore na mesma seção×diff —
+      // eram quase todos `false` e furavam o asset.
+      final assetKeys = {
+        for (final q in fromAsset) '${q.section}::${q.difficulty.id}',
+      };
+      final before = byId.length;
+      byId.removeWhere((id, q) {
+        if (q.trailSlug != 'genesis-1-11' && q.trailSlug != 'genesis') {
+          return false;
+        }
+        final key = '${q.section}::${q.difficulty.id}';
+        if (!assetKeys.contains(key)) return false;
+        return !assetIds.contains(id);
+      });
+      final removed = before - byId.length;
+
+      _bankQuestions = byId.values.toList();
+      if (changed > 0 || removed > 0) {
+        debugPrint(
+          'ContentCatalog: genesis asset merge '
+          '($changed updates, $removed stale removals)',
+        );
+      }
+    } catch (e) {
+      debugPrint('ContentCatalog asset bank merge failed: $e');
     }
   }
 

@@ -6,7 +6,21 @@
 **Atualizado:** agosto/2026  
 **Status:** Diretriz central do produto  
 
-Docs relacionadas: [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md) · piloto [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) · contrato de sessão [`SESSAO_TREINO.md`](SESSAO_TREINO.md)
+Docs relacionadas: [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md) · contrato de sessão [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · pitch [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)
+
+### Implementação (ago/2026) — o que este doc *exige* vs. o que o app *faz*
+
+| Exigência deste engine | No app hoje |
+|------------------------|-------------|
+| Sessão única com atos tipados + insight | **Sim** (`LessonScreen` + composer) |
+| Gestos além de MCQ | **Sim** (V/F, toque, order, complete, connect…) |
+| Competências (`skill`) | Tag + analytics; **sem** modelo adaptativo |
+| 3 profundidades como operações | UI + banco; **conteúdo** ainda uneven |
+| Strong / morfologia no estudo | **Sim** — aba Bíblia + ref tocável no palco do treino |
+| Currículo progressivo | Catálogo Firebase; unlock bypass em builds de teste |
+| Revisão espaçada / banco de exercícios tipados | Micro-review in-session; sem `content_exercises` |
+
+Este arquivo continua sendo o **norte pedagógico**. O que já foi construído no código está em [`SESSAO_TREINO.md`](SESSAO_TREINO.md) e [`TECNICA.md`](TECNICA.md).
 
 ---
 

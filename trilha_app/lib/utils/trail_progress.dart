@@ -1,4 +1,5 @@
 import '../models/trail.dart';
+import 'catalog_access.dart';
 
 class TrailProgress {
   static List<String> missionSlugs(Trail trail) => trail.missionSlugs;
@@ -29,6 +30,7 @@ class TrailProgress {
     List<String> completed, {
     Map<String, List<String>> clearedTrailModes = const {},
   }) {
+    if (CatalogAccess.openAllForTesting) return true;
     if (trail.unlockAfter == null) return true;
     final prereq =
         allTrails.where((t) => t.slug == trail.unlockAfter).firstOrNull;
@@ -76,6 +78,7 @@ class TrailProgress {
     List<String> allSlugs,
     List<String> completed,
   ) {
+    if (CatalogAccess.openAllForTesting) return true;
     final index = allSlugs.indexOf(missionSlug);
     if (index <= 0) return true;
     return completed.contains(allSlugs[index - 1]);

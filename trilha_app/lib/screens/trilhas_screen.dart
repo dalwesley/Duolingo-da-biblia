@@ -98,6 +98,112 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     );
   }
 
+  void _showTeologiaSoonSheet() {
+    HapticFeedback.selectionClick();
+    final visuals = RealmVisuals.of(TrailRealm.teologia);
+    final a = Appearance.of(context);
+    showModalBottomSheet(
+      context: context,
+      backgroundColor: a.cardFill,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
+      ),
+      builder: (ctx) {
+        return Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.xxl,
+            AppSpace.lg,
+            AppSpace.xxl,
+            AppSpace.xxl + MediaQuery.of(ctx).padding.bottom,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 36,
+                height: 3,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: 0.18),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(height: AppSpace.xxl),
+              Text(
+                'Teologia',
+                style: AppTypography.display(size: 26, color: a.text),
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                'Hermenêutica, línguas originais e dogmática — em preparação.',
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 14,
+                  height: 1.4,
+                  color: a.textMuted(0.72),
+                ),
+              ),
+              const SizedBox(height: AppSpace.lg),
+              Text(
+                'Em breve',
+                style: AppTypography.label(
+                  size: 12,
+                  letterSpacing: 1.2,
+                  color: visuals.accent,
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _realmPortal({
+    required int revealIndex,
+    required TrailRealm realm,
+    required List<Trail> trails,
+    required ProgressService progress,
+    bool locked = false,
+    VoidCallback? onTapOverride,
+  }) {
+    final realmTrails =
+        trails.where((t) => TrailRealm.fromId(t.realmId) == realm).toList();
+    final unlocked = realmTrails
+        .where(
+          (t) =>
+              TrailProgress.isTrailUnlocked(
+                t,
+                trails,
+                progress.completedMissions,
+                clearedTrailModes: progress.clearedTrailModes,
+              ) &&
+              t.missionSlugs.isNotEmpty &&
+              !t.comingSoon,
+        )
+        .length;
+    final completed = realmTrails
+        .where(
+          (t) => TrailProgress.isTrailCompleted(t, progress.completedMissions),
+        )
+        .length;
+
+    return _reveal(
+      revealIndex,
+      Padding(
+        padding: const EdgeInsets.only(bottom: AppSpace.section),
+        child: _RealmPortal(
+          realm: realm,
+          trailCount: realmTrails.length,
+          unlockedCount: unlocked,
+          completedCount: completed,
+          animate: widget.portalsActive && !locked,
+          locked: locked,
+          onTap: onTapOverride ?? () => _openRealm(realm),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
@@ -133,54 +239,35 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           widget.topBar!,
           const SizedBox(height: AppSpace.afterTopBar),
         ],
-        ...TrailRealm.values.asMap().entries.map((e) {
-          final realm = e.value;
-          final realmTrails = trails
-              .where((t) => TrailRealm.fromId(t.realmId) == realm)
-              .toList();
-          final unlocked = realmTrails
-              .where(
-                (t) =>
-                    TrailProgress.isTrailUnlocked(
-                      t,
-                      trails,
-                      progress.completedMissions,
-                      clearedTrailModes: progress.clearedTrailModes,
-                    ) &&
-                    t.missionSlugs.isNotEmpty &&
-                    !t.comingSoon,
-              )
-              .length;
-          final completed = realmTrails
-              .where(
-                (t) => TrailProgress.isTrailCompleted(
-                  t,
-                  progress.completedMissions,
-                ),
-              )
-              .length;
-
-          return _reveal(
-            (widget.asPushedPage ? 0 : 1) + e.key,
-            Padding(
-              padding: const EdgeInsets.only(bottom: AppSpace.section),
-              child: _RealmPortal(
-                realm: realm,
-                trailCount: realmTrails.length,
-                unlockedCount: unlocked,
-                completedCount: completed,
-                animate: widget.portalsActive,
-                onTap: () => _openRealm(realm),
+        ...TrailRealm.values
+            .where((r) => r != TrailRealm.teologia)
+            .toList()
+            .asMap()
+            .entries
+            .map(
+              (e) => _realmPortal(
+                revealIndex: (widget.asPushedPage ? 0 : 1) + e.key,
+                realm: e.value,
+                trails: trails,
+                progress: progress,
               ),
             ),
-          );
-        }),
         _reveal(
-          (widget.asPushedPage ? 0 : 1) + TrailRealm.values.length,
+          (widget.asPushedPage ? 0 : 1) +
+              TrailRealm.values.length -
+              1,
           const Padding(
             padding: EdgeInsets.only(bottom: AppSpace.section),
             child: _ComingSoonPortal(),
           ),
+        ),
+        _realmPortal(
+          revealIndex: (widget.asPushedPage ? 0 : 1) + TrailRealm.values.length,
+          realm: TrailRealm.teologia,
+          trails: trails,
+          progress: progress,
+          locked: true,
+          onTapOverride: _showTeologiaSoonSheet,
         ),
       ],
     );
@@ -256,6 +343,7 @@ class _RealmPortal extends StatefulWidget {
   final int unlockedCount;
   final int completedCount;
   final bool animate;
+  final bool locked;
   final VoidCallback onTap;
 
   const _RealmPortal({
@@ -264,6 +352,7 @@ class _RealmPortal extends StatefulWidget {
     required this.unlockedCount,
     required this.completedCount,
     required this.animate,
+    this.locked = false,
     required this.onTap,
   });
 
@@ -281,7 +370,9 @@ class _RealmPortalState extends State<_RealmPortal> {
     final a = Appearance.of(context);
     final sealSize = _portalSealSize(context);
 
-    return GestureDetector(
+    return Opacity(
+      opacity: widget.locked ? 0.42 : 1,
+      child: GestureDetector(
       onTapDown: (_) => setState(() => _pressed = true),
       onTapUp: (_) => setState(() => _pressed = false),
       onTapCancel: () => setState(() => _pressed = false),
@@ -459,9 +550,11 @@ class _RealmPortalState extends State<_RealmPortal> {
                         children: [
                           Flexible(
                             child: Text(
-                              hasProgress
-                                  ? '${widget.completedCount}/${widget.trailCount} concluídas'
-                                  : '${widget.trailCount} trilhas',
+                              widget.locked
+                                  ? 'Em preparação'
+                                  : hasProgress
+                                      ? '${widget.completedCount}/${widget.trailCount} concluídas'
+                                      : '${widget.trailCount} trilhas',
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: AppTypography.body(
@@ -473,7 +566,7 @@ class _RealmPortalState extends State<_RealmPortal> {
                           ),
                           const SizedBox(width: AppSpace.sm),
                           Text(
-                            'ABRIR TRILHA',
+                            widget.locked ? 'EM BREVE' : 'ABRIR TRILHA',
                             style: AppTypography.label(
                               size: 11,
                               letterSpacing: 1.4,
@@ -496,6 +589,7 @@ class _RealmPortalState extends State<_RealmPortal> {
             ),
           ),
         ),
+      ),
       ),
     );
   }

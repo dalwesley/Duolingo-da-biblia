@@ -91,6 +91,12 @@ function emptyStep(n = 1, title = '') {
     type: 'lesson',
     xpReward: 50,
     questions: [],
+    exercises: [],
+    hookRef: '',
+    hookVerse: '',
+    hookNote: '',
+    centralInsight: '',
+    objective: '',
   };
 }
 
@@ -451,11 +457,33 @@ export async function renderTrailEditor(root, trailId, navigate) {
             <p class="simple-kicker">Passo ${pad(idx)}</p>
             ${field('Título', `<input id="f-title" value="${escapeHtml(ms.title || '')}" placeholder="Ex.: Quem criou o mundo?" />`)}
             ${field(
+              'Objetivo observável',
+              `<input id="f-objective" value="${escapeHtml(ms.objective || '')}" placeholder="Ex.: Identificar quem recebe a imagem em Gn 1:27" />`,
+              'O que o aprendiz deve conseguir fazer ao terminar.',
+            )}
+            ${field(
+              'Insight (Hoje:)',
+              `<input id="f-insight" maxlength="140" value="${escapeHtml(ms.centralInsight || '')}" placeholder="Frase ≤140 caracteres — o que ficou" />`,
+            )}
+            ${field(
               'Descritivo',
               `<textarea id="f-intro" rows="2" placeholder="Uma ou duas frases para contextualizar…">${escapeHtml(ms.intro || '')}</textarea>`,
             )}
             ${field(
-              'Versículo base',
+              'Verso âncora (ref)',
+              `<input id="f-hook-ref" value="${escapeHtml(ms.hookRef || study.passageRef || '')}" placeholder="Ex.: Gênesis 1:27" />`,
+              'Um ou dois versos — não um capítulo.',
+            )}
+            ${field(
+              'Texto curto do verso',
+              `<textarea id="f-hook-verse" rows="2" placeholder="Trecho ≤ ~40 palavras">${escapeHtml(ms.hookVerse || study.passageText || '')}</textarea>`,
+            )}
+            ${field(
+              'Nota de entrada (contexto OU conexão)',
+              `<textarea id="f-hook-note" rows="2" placeholder="Um bloco, ≤2 linhas. Não os dois.">${escapeHtml(ms.hookNote || study.context || '')}</textarea>`,
+            )}
+            ${field(
+              'Versículo base (estudo)',
               `<input id="st-ref" value="${escapeHtml(study.passageRef || '')}" placeholder="Ex.: Gênesis 1:1–2" />`,
             )}
             ${field(
@@ -557,6 +585,12 @@ export async function renderTrailEditor(root, trailId, navigate) {
     if (root.querySelector('#f-title')) {
       ms.title = root.querySelector('#f-title')?.value || ms.title;
       ms.intro = root.querySelector('#f-intro')?.value || '';
+      ms.objective = root.querySelector('#f-objective')?.value || '';
+      ms.centralInsight = root.querySelector('#f-insight')?.value || '';
+      ms.hookRef = root.querySelector('#f-hook-ref')?.value || '';
+      ms.hookVerse = root.querySelector('#f-hook-verse')?.value || '';
+      ms.hookNote = root.querySelector('#f-hook-note')?.value || '';
+      ms.hookThread = '';
       if (!ms.slug || String(ms.slug).startsWith('passo-')) {
         const s = slugify(ms.title);
         if (s) ms.slug = s;
@@ -704,7 +738,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
     });
 
     root.querySelectorAll(
-      '#f-title, #f-intro, #st-ref, #st-text, #st-kw, #t-title, #t-desc, #t-icon, #t-realm, #t-category, #t-soon, textarea[data-q-text], input[data-q-opt], input[data-q-correct], input[type="radio"]',
+      '#f-title, #f-intro, #f-objective, #f-insight, #f-hook-ref, #f-hook-verse, #f-hook-note, #st-ref, #st-text, #st-kw, #t-title, #t-desc, #t-icon, #t-realm, #t-category, #t-soon, textarea[data-q-text], input[data-q-opt], input[data-q-correct], input[type="radio"]',
     ).forEach((el) => {
       el.addEventListener('input', markDirty);
       el.addEventListener('change', () => {

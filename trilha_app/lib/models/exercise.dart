@@ -60,44 +60,43 @@ enum ExerciseType {
   }
 
   String get wireId => switch (this) {
-        ExerciseType.trueFalse => 'true_false',
-        ExerciseType.findInText => 'find_in_text',
-        ExerciseType.textSupported => 'text_supported',
-        ExerciseType.bestInterpretation => 'best_interpretation',
-        _ => name,
-      };
+    ExerciseType.trueFalse => 'true_false',
+    ExerciseType.findInText => 'find_in_text',
+    ExerciseType.textSupported => 'text_supported',
+    ExerciseType.bestInterpretation => 'best_interpretation',
+    _ => name,
+  };
 
   String get labelPt => switch (this) {
-        ExerciseType.trueFalse => 'Verdadeiro / Falso',
-        ExerciseType.findInText => 'No texto',
-        ExerciseType.tap => 'Toque',
-        ExerciseType.connect => 'Conecte',
-        ExerciseType.textSupported => 'O texto diz',
-        ExerciseType.choice => 'Escolha',
-        ExerciseType.order => 'Ordene',
-        ExerciseType.match => 'Emparelhe',
-        ExerciseType.complete => 'Complete',
-        ExerciseType.insight => 'Insight',
-        ExerciseType.explain => 'Explique',
-        ExerciseType.classify => 'Classifique',
-        ExerciseType.review => 'Revisão',
-        ExerciseType.bestInterpretation => 'Interpretação',
-      };
+    ExerciseType.trueFalse => 'Verdadeiro / Falso',
+    ExerciseType.findInText => 'No texto',
+    ExerciseType.tap => 'Toque',
+    ExerciseType.connect => 'Conecte',
+    ExerciseType.textSupported => 'O texto diz',
+    ExerciseType.choice => 'Escolha',
+    ExerciseType.order => 'Ordene',
+    ExerciseType.match => 'Emparelhe',
+    ExerciseType.complete => 'Complete',
+    ExerciseType.insight => 'Insight',
+    ExerciseType.explain => 'Explique',
+    ExerciseType.classify => 'Classifique',
+    ExerciseType.review => 'Revisão',
+    ExerciseType.bestInterpretation => 'Interpretação',
+  };
 
   bool get isPlayable => switch (this) {
-        ExerciseType.choice ||
-        ExerciseType.trueFalse ||
-        ExerciseType.findInText ||
-        ExerciseType.tap ||
-        ExerciseType.connect ||
-        ExerciseType.textSupported ||
-        ExerciseType.order ||
-        ExerciseType.match ||
-        ExerciseType.complete ||
-        ExerciseType.insight =>
-          true,
-        _ => false,
-      };
+    ExerciseType.choice ||
+    ExerciseType.trueFalse ||
+    ExerciseType.findInText ||
+    ExerciseType.tap ||
+    ExerciseType.connect ||
+    ExerciseType.textSupported ||
+    ExerciseType.order ||
+    ExerciseType.match ||
+    ExerciseType.complete ||
+    ExerciseType.insight => true,
+    _ => false,
+  };
 
   /// Não consome lâmpada / não conta como quiz.
   bool get isRevealOnly => this == ExerciseType.insight;
@@ -123,6 +122,7 @@ class Exercise {
   final ExerciseType type;
   final String skill;
   final String prompt;
+
   /// Instrução curta de tarefa (secundária). Se vazia, UI deriva do prompt.
   final String? cue;
   final String? reference;
@@ -136,15 +136,20 @@ class Exercise {
   final ExercisePassage? passageA;
   final ExercisePassage? passageB;
   final String? beat;
+
   /// Nota bíblica (contexto / curiosidade) — aparece no ato, sem spoiler.
   final String? note;
   final String? noteLabel;
+
   /// Instrução explícita do que fazer (acima do contexto/texto).
   final String? instruction;
+
   /// Ordem correta dos ids (gesto order).
   final List<String> correctOrder;
+
   /// Template com `___` (gesto complete).
   final String? template;
+
   /// Pares corretos leftId→rightId (gesto match), serializado "a:x,b:y".
   final Map<String, String> correctPairs;
   final List<QuestionOption> matchLeft;
@@ -234,31 +239,32 @@ class Exercise {
       ExerciseType.order => 'Arraste as peças na ordem certa.',
       ExerciseType.match => 'Ligue cada item ao seu par.',
       ExerciseType.complete => 'Complete a lacuna com a opção certa.',
-      ExerciseType.connect =>
-        'Compare os textos e toque a palavra que os une.',
+      ExerciseType.connect => 'Compare os textos e toque a palavra que os une.',
       _ => 'Responda com base no que o texto diz.',
     };
   }
 
   String get instructionVerb => switch (type) {
-        ExerciseType.trueFalse => 'Decida',
-        ExerciseType.tap || ExerciseType.findInText =>
-          (passageA != null && passageB != null) ? 'Conecte' : 'Observe',
-        ExerciseType.order => 'Ordene',
-        ExerciseType.complete => 'Complete',
-        ExerciseType.connect || ExerciseType.match => 'Conecte',
-        ExerciseType.choice ||
-        ExerciseType.textSupported ||
-        ExerciseType.bestInterpretation =>
-          'Escolha',
-        _ => 'Responda',
-      };
+    ExerciseType.trueFalse => 'Decida',
+    ExerciseType.tap || ExerciseType.findInText =>
+      (passageA != null && passageB != null) ? 'Conecte' : 'Observe',
+    ExerciseType.order => 'Ordene',
+    ExerciseType.complete => 'Complete',
+    ExerciseType.connect || ExerciseType.match => 'Conecte',
+    ExerciseType.choice ||
+    ExerciseType.textSupported ||
+    ExerciseType.bestInterpretation => 'Escolha',
+    _ => 'Responda',
+  };
 
   /// Opções cujo texto aparece no trecho (toque no versículo).
   List<QuestionOption> optionsEmbeddedIn(String passage) {
     final lower = passage.toLowerCase();
     return effectiveOptions
-        .where((o) => o.text.trim().isNotEmpty && lower.contains(o.text.toLowerCase()))
+        .where(
+          (o) =>
+              o.text.trim().isNotEmpty && lower.contains(o.text.toLowerCase()),
+        )
         .toList()
       ..sort((a, b) => b.text.length.compareTo(a.text.length));
   }
@@ -302,8 +308,7 @@ class Exercise {
     String? retryHint = json['retryHint'] as String?;
 
     if (feedback is Map) {
-      feedbackCorrect =
-          (feedback['correct'] as String?) ?? feedbackCorrect;
+      feedbackCorrect = (feedback['correct'] as String?) ?? feedbackCorrect;
       final wrong = feedback['wrong'];
       if (wrong is Map) {
         feedbackWrong = wrong.map(
@@ -370,7 +375,10 @@ class Exercise {
       }
     } else if (correctAnswer.contains(',') && type == ExerciseType.order) {
       correctOrder.addAll(
-        correctAnswer.split(',').map((s) => s.trim()).where((s) => s.isNotEmpty),
+        correctAnswer
+            .split(',')
+            .map((s) => s.trim())
+            .where((s) => s.isNotEmpty),
       );
     }
 
@@ -389,9 +397,8 @@ class Exercise {
       id: (json['id'] as String?) ?? '',
       type: type,
       skill: (json['skill'] as String?) ?? 'observe',
-      prompt: (json['prompt'] as String?) ??
-          (json['question'] as String?) ??
-          '',
+      prompt:
+          (json['prompt'] as String?) ?? (json['question'] as String?) ?? '',
       cue: json['cue'] as String?,
       reference: json['reference'] as String? ?? json['verseRef'] as String?,
       passageText: json['passageText'] as String?,
@@ -451,7 +458,10 @@ class Exercise {
   bool checkAnswer(String answer) {
     if (type.isRevealOnly) return true;
     if (type == ExerciseType.order) {
-      final got = answer.split(',').map((s) => s.trim()).where((s) => s.isNotEmpty);
+      final got = answer
+          .split(',')
+          .map((s) => s.trim())
+          .where((s) => s.isNotEmpty);
       final want = correctOrder.isNotEmpty
           ? correctOrder
           : correctAnswer.split(',').map((s) => s.trim()).toList();
@@ -484,9 +494,7 @@ class Exercise {
       return prompt.trim().isEmpty ? 'Seguir.' : '';
     }
     if (correct) {
-      return feedbackCorrect.trim().isEmpty
-          ? 'Isso.'
-          : feedbackCorrect.trim();
+      return feedbackCorrect.trim().isEmpty ? 'Isso.' : feedbackCorrect.trim();
     }
     final specific = feedbackWrong[selectedId] ?? feedbackWrong['default'];
     if (specific != null && specific.trim().isNotEmpty) {

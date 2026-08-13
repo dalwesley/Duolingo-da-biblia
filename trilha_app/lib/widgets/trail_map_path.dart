@@ -3,6 +3,7 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/genesis_theme.dart';
+import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
 
 /// Sequência editorial de cenas — tipografia no lugar de ícones de app.
@@ -26,11 +27,8 @@ class TrailMapPath extends StatelessWidget {
 
   bool _completed(String slug) => completedMissions.contains(slug);
 
-  bool _unlocked(String slug) {
-    final index = allSlugs.indexOf(slug);
-    if (index <= 0) return true;
-    return completedMissions.contains(allSlugs[index - 1]);
-  }
+  bool _unlocked(String slug) =>
+      TrailProgress.isMissionUnlocked(slug, allSlugs, completedMissions);
 
   @override
   Widget build(BuildContext context) {

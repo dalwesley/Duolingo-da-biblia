@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -105,11 +107,26 @@ class _LeagueScreenState extends State<LeagueScreen>
       final league = context.read<LeagueService>();
       final backend = context.read<BackendService>();
       final rooms = context.read<RoomService>();
-      await backend.settleAndSyncLeague(
-        progress,
-        league,
-        roomCode: rooms.activeCode,
-      );
+
+      // Backend ainda inicializando — espera curto antes de decidir offline.
+      final readyDeadline = DateTime.now().add(const Duration(seconds: 6));
+      while (backend.isInitializing && DateTime.now().isBefore(readyDeadline)) {
+        await Future<void>.delayed(const Duration(milliseconds: 50));
+        if (!mounted) return;
+      }
+
+      try {
+        await backend
+            .settleAndSyncLeague(
+              progress,
+              league,
+              roomCode: rooms.activeCode,
+            )
+            .timeout(const Duration(seconds: 12));
+      } on TimeoutException {
+        debugPrint('settleAndSyncLeague timeout — segue sem bloquear a UI');
+      }
+
       if (!backend.isActive) {
         if (!mounted) return;
         setState(() {
@@ -119,19 +136,15 @@ class _LeagueScreenState extends State<LeagueScreen>
         });
         return;
       }
+
       final week = LeagueService.weekKey();
-      final players = await backend.fetchWeekPlayers(
-        week,
-        tier: league.tierIndex,
-      );
-      final overallPlayers = await backend.fetchOverallPlayers();
-      await rooms.syncIfNeeded();
-      if (!mounted) return;
-      final companionSvc = context.read<CompanionService>();
-      await companionSvc.refresh();
-      if (progress.walkedToday) {
-        await companionSvc.syncWalksIfNeeded(progress);
-      }
+      final fetched = await Future.wait<List<CloudPlayer>>([
+        backend.fetchWeekPlayers(week, tier: league.tierIndex),
+        backend.fetchOverallPlayers(),
+      ]).timeout(const Duration(seconds: 12));
+      final players = fetched[0];
+      final overallPlayers = fetched[1];
+
       if (!mounted) return;
       setState(() {
         _realPlayers = [
@@ -145,6 +158,18 @@ class _LeagueScreenState extends State<LeagueScreen>
         _playersLoadedOnce = true;
         _playersError = null;
       });
+
+      // Salas/companhia não devem travar o spinner da Caravana.
+      final companionSvc = context.read<CompanionService>();
+      unawaited(_syncSideTabs(rooms, companionSvc, progress));
+    } on TimeoutException catch (e) {
+      debugPrint('Falha ao carregar caravana (timeout): $e');
+      if (!mounted) return;
+      setState(() {
+        _playersLoading = false;
+        _playersError =
+            'A caravana demorou para responder. Puxe para atualizar.';
+      });
     } catch (e) {
       debugPrint('Falha ao carregar caravana: $e');
       if (!mounted) return;
@@ -153,6 +178,24 @@ class _LeagueScreenState extends State<LeagueScreen>
         _playersError =
             'Não foi possível carregar a caravana. Puxe para atualizar.';
       });
+    }
+  }
+
+  Future<void> _syncSideTabs(
+    RoomService rooms,
+    CompanionService companionSvc,
+    ProgressService progress,
+  ) async {
+    try {
+      await rooms.syncIfNeeded().timeout(const Duration(seconds: 10));
+      await companionSvc.refresh().timeout(const Duration(seconds: 10));
+      if (progress.walkedToday) {
+        await companionSvc
+            .syncWalksIfNeeded(progress)
+            .timeout(const Duration(seconds: 10));
+      }
+    } catch (e) {
+      debugPrint('Falha ao sincronizar salas/companhia: $e');
     }
   }
 

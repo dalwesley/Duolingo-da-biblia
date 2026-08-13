@@ -21,20 +21,23 @@ class CloudPlayer {
   const CloudPlayer({required this.uid, required this.name, required this.steps});
 }
 
-/// Resultado de uma tentativa de login com Google.
-class GoogleSignInResult {
+/// Resultado de uma tentativa de login (Google ou Apple).
+class AuthSignInResult {
   final bool ok;
   final String? error;
   final String? displayName;
   final String? email;
 
-  const GoogleSignInResult({
+  const AuthSignInResult({
     required this.ok,
     this.error,
     this.displayName,
     this.email,
   });
 }
+
+/// @nodoc Compat — mesmo tipo que [AuthSignInResult].
+typedef GoogleSignInResult = AuthSignInResult;
 
 /// Resultado tipado de leitura de `users/{uid}` — não confunde erro com ausência.
 class UserBackupResult {
@@ -57,7 +60,7 @@ class UserBackupResult {
 }
 
 /// Backend Firebase. Quando configurado, ativa:
-///   - login obrigatório com Google
+///   - login obrigatório (Google; Apple no iOS)
 ///   - backup do progresso em `users/{uid}`
 ///   - liga real em `leagues/{semana}/players/{uid}`
 ///   - salas privadas em `rooms/{code}`
@@ -82,6 +85,7 @@ class BackendService extends ChangeNotifier {
   bool get isActive => _available && _uid != null;
   bool get isFirebaseReady => _firebaseReady;
   bool get isInitializing => _initializing;
+  bool get isAuthBusy => _googleBusy;
   bool get isGoogleBusy => _googleBusy;
   String? get uid => _uid;
 
@@ -93,6 +97,14 @@ class BackendService extends ChangeNotifier {
     if (user == null) return false;
     return user.providerData.any((p) => p.providerId == 'google.com');
   }
+
+  bool get isAppleSignedIn {
+    final user = currentUser;
+    if (user == null) return false;
+    return user.providerData.any((p) => p.providerId == 'apple.com');
+  }
+
+  bool get isSignedIn => isGoogleSignedIn || isAppleSignedIn;
 
   bool get isAnonymous => currentUser?.isAnonymous ?? false;
 
@@ -260,7 +272,7 @@ class BackendService extends ChangeNotifier {
         'success uid=${cred.user?.uid} email=${cred.user?.email} '
         'providers=${cred.user?.providerData.map((p) => p.providerId).toList()}',
       );
-      return GoogleSignInResult(
+      return AuthSignInResult(
         ok: true,
         displayName: cred.user?.displayName ?? googleUser.displayName,
         email: cred.user?.email ?? googleUser.email,
@@ -273,23 +285,111 @@ class BackendService extends ChangeNotifier {
       if (e.code == GoogleSignInExceptionCode.canceled) {
         lastError =
             'Login cancelado. [${e.code.name}] ${e.description ?? ''}'.trim();
-        return GoogleSignInResult(ok: false, error: lastError);
+        return AuthSignInResult(ok: false, error: lastError);
       }
       lastError =
           'Google Sign-In [${e.code.name}]: ${e.description ?? e.code.name}'
           '${e.details != null ? ' (${e.details})' : ''}';
-      return GoogleSignInResult(ok: false, error: lastError);
+      return AuthSignInResult(ok: false, error: lastError);
     } on FirebaseAuthException catch (e) {
       lastError = _authErrorMessage(e);
       _authLog(
         'FirebaseAuthException code=${e.code} message=${e.message} '
         'plugin=${e.plugin} details=${e.toString()}',
       );
-      return GoogleSignInResult(ok: false, error: lastError);
+      return AuthSignInResult(ok: false, error: lastError);
     } catch (e, st) {
       lastError = e.toString();
       _authLog('unexpected error: $e\n$st');
-      return GoogleSignInResult(ok: false, error: lastError);
+      return AuthSignInResult(ok: false, error: lastError);
+    } finally {
+      _googleBusy = false;
+      notifyListeners();
+    }
+  }
+
+  /// Login com Apple (iOS/macOS) via Firebase Auth provider nativo.
+  /// Requer: Sign in with Apple no App ID + provider Apple no Firebase Console.
+  Future<AuthSignInResult> signInWithApple() async {
+    _authLog(
+      'signInWithApple start firebaseReady=$_firebaseReady '
+      'currentUid=${Firebase.apps.isEmpty ? null : FirebaseAuth.instance.currentUser?.uid}',
+    );
+    if (!_firebaseReady) {
+      await init();
+      if (!_firebaseReady) {
+        final err = lastError ?? 'Firebase ainda não está pronto.';
+        _authLog('abort Apple: Firebase not ready → $err');
+        return AuthSignInResult(ok: false, error: err);
+      }
+    }
+
+    _googleBusy = true;
+    lastError = null;
+    notifyListeners();
+
+    try {
+      final appleProvider = AppleAuthProvider();
+      appleProvider.addScope('email');
+      appleProvider.addScope('name');
+
+      final auth = FirebaseAuth.instance;
+      final current = auth.currentUser;
+      late UserCredential cred;
+
+      if (current != null && current.isAnonymous) {
+        _authLog('linking Apple to anonymous uid=${current.uid}');
+        try {
+          cred = await _firebaseAuthWithRetry(
+            () => current.linkWithProvider(appleProvider),
+            label: 'linkWithProvider(apple)',
+          );
+        } on FirebaseAuthException catch (e) {
+          if (e.code == 'credential-already-in-use' ||
+              e.code == 'email-already-in-use' ||
+              e.code == 'provider-already-linked') {
+            _authLog('Apple link failed ${e.code} — signInWithProvider');
+            cred = await _firebaseAuthWithRetry(
+              () => auth.signInWithProvider(appleProvider),
+              label: 'signInWithProvider(apple)',
+            );
+          } else {
+            rethrow;
+          }
+        }
+      } else {
+        cred = await _firebaseAuthWithRetry(
+          () => auth.signInWithProvider(appleProvider),
+          label: 'signInWithProvider(apple)',
+        );
+      }
+
+      _applyUser(cred.user);
+      notifyListeners();
+      _authLog(
+        'Apple success uid=${cred.user?.uid} email=${cred.user?.email} '
+        'providers=${cred.user?.providerData.map((p) => p.providerId).toList()}',
+      );
+      return AuthSignInResult(
+        ok: true,
+        displayName: cred.user?.displayName,
+        email: cred.user?.email,
+      );
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'canceled' || e.code == 'web-context-canceled') {
+        lastError = 'Login com Apple cancelado.';
+        _authLog('Apple canceled: ${e.code}');
+        return AuthSignInResult(ok: false, error: lastError);
+      }
+      lastError = _authErrorMessage(e);
+      _authLog(
+        'Apple FirebaseAuthException code=${e.code} message=${e.message}',
+      );
+      return AuthSignInResult(ok: false, error: lastError);
+    } catch (e, st) {
+      lastError = e.toString();
+      _authLog('Apple unexpected error: $e\n$st');
+      return AuthSignInResult(ok: false, error: lastError);
     } finally {
       _googleBusy = false;
       notifyListeners();
@@ -458,10 +558,15 @@ class BackendService extends ChangeNotifier {
 
     try {
       // 1) Progresso do usuário — nunca depende do ranking.
-      await _db.doc('users/$_uid').set(
-        _payload(progress, league: league),
-        SetOptions(merge: true),
-      );
+      // Timeout evita travar a cadeia _saveChain (e a aba Caravana) se a
+      // rede/Firestore não responde.
+      await _db
+          .doc('users/$_uid')
+          .set(
+            _payload(progress, league: league),
+            SetOptions(merge: true),
+          )
+          .timeout(const Duration(seconds: 12));
       if (generation != _saveGeneration) return false;
       lastCloudSaveAt = DateTime.now();
       // Não notifyListeners aqui — evita refresh em cascata (companions).
@@ -474,6 +579,10 @@ class BackendService extends ChangeNotifier {
         'playDates=${progress.playDates.length} '
         'lastPlayed=${progress.lastPlayedDate}',
       );
+    } on TimeoutException catch (e) {
+      _authLog('saveNow USER TIMEOUT uid=$_uid: $e');
+      debugPrint('Timeout ao salvar progresso na nuvem: $e');
+      return false;
     } catch (e) {
       _authLog('saveNow USER FAILED uid=$_uid: $e');
       debugPrint('Falha ao salvar progresso na nuvem: $e');
@@ -515,7 +624,10 @@ class BackendService extends ChangeNotifier {
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
       }
-      await batch.commit();
+      await batch.commit().timeout(const Duration(seconds: 12));
+    } on TimeoutException catch (e) {
+      _authLog('saveNow rankings TIMEOUT (user ok): $e');
+      debugPrint('Timeout ao salvar rankings: $e');
     } catch (e) {
       _authLog('saveNow rankings FAILED (user ok): $e');
       debugPrint('Falha ao salvar rankings: $e');

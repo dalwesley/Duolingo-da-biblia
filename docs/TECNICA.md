@@ -11,8 +11,8 @@
 ```
 ┌─────────────────────┐         ┌──────────────────────┐
 │  trilha_app (Flutter)│         │  admin (Vite + JS)   │
-│  Google Sign-In      │         │  Email/Password      │
-│  ContentCatalog      │◄───────►│  CMS + seed scripts  │
+│  Google + Apple Sign-In │         │  Email/Password      │
+│  ContentCatalog      │◄───────►│  CMS + seed scripts  │ 
 │  Progress / Social   │         │  Relatos / Release   │
 └──────────┬──────────┘         └──────────┬───────────┘
            │                               │
@@ -24,6 +24,10 @@
 ```
 
 Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`content_meta/catalog.version`) e cacheia em disco. Mudanças de conteúdo **não exigem** release na loja.
+
+JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
+
+**Estado ago/2026:** catálogo local ≈ remoto (~6538 perguntas, 84 trilhas, 431 estudos). `OPEN_ALL_TRAILS` default `false` (loja); testers: `--dart-define=OPEN_ALL_TRAILS=true`. Login: Google + Apple (iOS).
 
 ---
 
@@ -47,7 +51,7 @@ Não há app Next.js na raiz (ver `AGENTS.md`).
 |--------|---------|
 | UI | Material 3, tema escuro (`AppTheme.dark`), `google_fonts` |
 | Estado | Provider + `ChangeNotifier` |
-| Auth | Firebase Auth + **Google Sign-In** (obrigatório) |
+| Auth | Firebase Auth + Google Sign-In + Apple (iOS) |
 | Backend | Cloud Firestore |
 | Analytics | Firebase Analytics + Crashlytics (off em debug) |
 | Local | SharedPreferences, JSON em disco (catálogo), sqflite (Strong) |
@@ -127,7 +131,7 @@ Currículo **não** é o primary package do app (JSONs em `assets/data/` servem 
 | | Status |
 |--|--------|
 | Android | Caminho de release documentado (`com.trilha.trilha_app`) |
-| iOS | Display name STWAY; Firebase/`firebase_options` ainda pendente para iOS |
+| iOS | Display name STWAY; `firebase_options.ios` (`com.dalwesley.stway`) |
 
 Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 
@@ -208,7 +212,22 @@ Regras: `firestore.rules` (`isAdmin`, `isContentEditor`).
 ## Learning Engine v2 — schema e migração
 
 Diretriz: [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md).  
-Piloto: [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md).
+Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
+
+### O que já roda no app (fase shell)
+
+| Peça | Estado |
+|------|--------|
+| `SessionComposer` só banco | feito — 8 atos / boss 10; gestos diversos; skill do banco |
+| `LessonScreen` modo único | feito — entrada → atos → micro opcional → insight → celebração |
+| `ExercisePanel` gestos MVP | feito — V/F, toque, choice, order, complete, connect |
+| Analytics `exercise_*` + skill | feito |
+| CMS bank (type/skill/palco) + trails (objective/insight/hook) | feito |
+| `skill` tagueado no banco | feito (heurística + seed) |
+| Strong / morfologia | feito **na aba Bíblia** e **no treino** (toque na ref do palco → sheet Strong) |
+| `content_exercises` / `skillEstimates` | **não** — fases futuras |
+| Monetização / IAP | **não** |
+| Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
 
 ### Hierarquia de dados (alvo)
 
@@ -217,8 +236,10 @@ JORNADA (progressão narrativa — doc / roadmap)
   └── content_trails/{trailSlug}
         └── modules[]          # CENA
               └── missions[]   # TREINO (slug estável = progresso)
-                    └── exercises[] | questions[]  # EXERCÍCIO
+                    └── exercises[] | questions[]  # EXERCÍCIO (legado embed)
 ```
+
+Runtime atual: atos vêm de **`content_bank_questions`** filtrados por `section` = slug da missão. `missions[].exercises` **não** alimenta o composer.
 
 `missions[].slug` permanece a chave de progresso (`ProgressService`). “Missão” no código = **treino** no produto.
 
@@ -295,35 +316,41 @@ Bump de catálogo: qualquer save continua via `bumpCatalogVersion()`.
 ### Compatibilidade no app
 
 ```text
-LessonScreen / motor
-  ├── se mission.exercises?.isNotEmpty → ExercisePlayer (tipos)
-  └── senão → fluxo legado (study → quiz MCQ → micro → reflection)
+SessionComposer → List<Exercise>
+LessonScreen (shell único)
+  entrada → ExercisePanel (atos) → insight → (micro) → saída
+
+Banco MCQ / questions[] → Exercise tipado (`true_false` · `tap` · `complete` · `choice`) via `SessionComposer`
 ```
+
+Contrato: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.1 — **modo único**, vários gestos.
 
 | Camada | Mudança |
 |--------|---------|
-| `models/trail.dart` | `Mission` + campos v2; classe `Exercise`; `Question` permanece |
-| `models/difficulty.dart` / bank | `BankQuestion.type`, `skill`; parser ignora tipos desconhecidos |
-| `lesson_screen.dart` | Branch exercises vs legado |
-| Novos widgets | Um widget por `type` (reuso; sem UI artesanal por passagem) |
-| `study_panel.dart` | Pode ler `centralInsight` / `connections` do treino |
-| Analytics | `exercise_start/complete` + `skill` + `type` |
+| `services/session_composer.dart` | Só banco; 8 atos; 2º Escolher ≤ 40%; skill preservada |
+| `models/trail.dart` | `Mission` + campos hook/objective/insight; `exercises[]` legado |
+| `lesson_screen.dart` | Sempre `ExercisePanel`; entrada = verso curto + 1 nota |
+| `exercise_panel.dart` | Esqueleto verbo · pergunta · nota · palco · ação |
+| `utils/catalog_access.dart` | `OPEN_ALL_TRAILS` via dart-define (default **false**) |
+| Analytics | `exercise_start` / `exercise_complete` + `skill` + `type` |
 
-### Admin
+### Admin / seed
 
-| Arquivo | Mudança |
-|---------|---------|
-| `trails-page.js` | `emptyStep` → campos de treino; editor de `exercises[]` |
-| `bank-page.js` | Seletor `type` + `skill`; validação por tipo |
-| `studies-page.js` | Até migração: manter; depois fundir no editor de treino |
-| Checklist | Espelhar [`LEARNING_ENGINE.md` §43](LEARNING_ENGINE.md) antes de publicar |
+| Script / superfície | Papel |
+|---------------------|------|
+| `prepare_content.mjs` | normaliza assets locais |
+| `migrate_session_pattern.mjs` | tipa gestos, stamp hooks/insight/objective |
+| `enrich_content.mjs` | skills + profundezas heurísticas |
+| `seed_content.mjs` | sobe Firestore (`SEED_ONLY`, `SEED_BANKS`, chunk) |
+| `trails-page.js` / `bank-page.js` | editores CMS |
 
 ### Fases de implementação
 
-1. **Schema + CMS + piloto** — campos no treino; tipos `choice` / `true_false` / `connect` / `order` / `find_in_text` / `text_supported`  
-2. **Player** — `ExercisePanel` + branch em `LessonScreen`; legado intacto; piloto `gen-03-imagem` via `PilotTrainings` (fallback) e `exercises` em `trails.json`  
-3. **Banco `content_exercises`** + revisão/interleaving  
-4. **`skillEstimates`** + seleção adaptativa leve  
+1. ~~Schema + CMS + shell sessão~~ — **feito**  
+2. ~~Player banco-only~~ — **feito**  
+3. **Editorial** — profundezas distintas; prova D7 com testers  
+4. **`content_exercises`** + revisão/interleaving  
+5. **`skillEstimates`** + seleção adaptativa leve  
 
 Não criar componente novo sem necessidade pedagógica recorrente ([§12](LEARNING_ENGINE.md)).
 
@@ -333,8 +360,10 @@ Não criar componente novo sem necessidade pedagógica recorrente ([§12](LEARNI
 
 Eventos principais (ver `RELEASE.md` / `AnalyticsService`):
 
-`app_open` → `login` → `home_view` → `difficulty_pick` → `lesson_start` → `lesson_complete`  
-(+ eventos de pergunta / relatos conforme instrumentação)
+`app_open` → `login` → `home_view` → `difficulty_pick` → `lesson_start` → `exercise_start` / `exercise_complete` → `lesson_complete`  
+Retenção: `first_lesson_complete` (TTV) · `retention_pulse` (`days_since_first_open` / `days_since_first_lesson` / `cohort_trail`)  
+Protocolo de teste: [`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md). 
+(+ `question_answered` e relatos conforme instrumentação)
 
 ---
 
@@ -355,18 +384,18 @@ Eventos principais (ver `RELEASE.md` / `AnalyticsService`):
 ```bash
 # App
 cd trilha_app && flutter pub get && flutter run
+# Testers (catálogo aberto):
+flutter run --dart-define=OPEN_ALL_TRAILS=true
+# Loja (default já fechado):
 flutter build apk --release
+flutter build ipa --release
 
 # Admin
 cd admin && cp .env.example .env && npm install && npm run dev
-npm run seed                  # sobe conteúdo para Firestore
+npm run seed                  # prepare + migrate + enrich + seed Firestore
+# Lotes / cota Spark:
+SEED_ONLY=bank SEED_BANKS=genesis SEED_CHUNK=80 node scripts/seed_content.mjs
 npm run build && cd .. && firebase deploy --only hosting
-
-# Regras
-firebase deploy --only firestore:rules
-
-# Regenerar DB Strong
-cd trilha_app && python3 scripts/build_bible_study_db.py
 ```
 
 ---
@@ -401,7 +430,9 @@ Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA
 
 - Produto: [`docs/PRODUTO.md`](PRODUTO.md)  
 - Learning Engine: [`docs/LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
-- Piloto Imagem de Deus: [`docs/pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md)  
+- Sessão: [`docs/SESSAO_TREINO.md`](SESSAO_TREINO.md)  
+- Pitch: [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
+- Referência gen-03: [`docs/pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md)  
 - Roadmap / norte: [`ROADMAP.md`](../ROADMAP.md)  
 - Monetização (plano): [`MONETIZATION.md`](../MONETIZATION.md)  
 - Changelog: [`CHANGELOG.md`](../CHANGELOG.md)  

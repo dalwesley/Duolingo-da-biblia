@@ -94,7 +94,7 @@ Base existente: `room_service` + superfícies novas no admin.
 | Feature igreja | Valor |
 |----------------|-------|
 | Painel do líder (progresso da sala) | Por que paga |
-| Trilhas “da igreja” (conteúdo custom via admin) | Diferencial |
+| Trilhas “da igreja” (conteúdo custom) | Diferencial — MVP radar: trilha **privada da sala** (MCQ embutido, fora de `content_trails`); não UGC público |
 | Assentos / convites ilimitados na sala | Limite free: 1 sala, N membros |
 | Relatório semanal do grupo | Retenção B2B |
 

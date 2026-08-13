@@ -78,6 +78,19 @@ class BankQuestion {
   final Map<String, String> feedbackWrong;
   final String? verseRef;
   final String? reveal;
+  final ExerciseType type;
+  final String? prompt;
+  final String? cue;
+  final String? correctAnswer;
+  final String? passageText;
+  final String? template;
+  final ExercisePassage? passageA;
+  final ExercisePassage? passageB;
+  final List<String> correctOrder;
+  final String? note;
+  final String? noteLabel;
+  final String? beat;
+  final String? skill;
 
   const BankQuestion({
     required this.id,
@@ -91,6 +104,19 @@ class BankQuestion {
     required this.feedbackWrong,
     this.verseRef,
     this.reveal,
+    this.type = ExerciseType.choice,
+    this.prompt,
+    this.cue,
+    this.correctAnswer,
+    this.passageText,
+    this.template,
+    this.passageA,
+    this.passageB,
+    this.correctOrder = const [],
+    this.note,
+    this.noteLabel,
+    this.beat,
+    this.skill,
   });
 
   factory BankQuestion.fromJson(Map<String, dynamic> json) {
@@ -100,24 +126,58 @@ class BankQuestion {
         : id.startsWith('g-')
             ? 'genesis-1-11'
             : 'genesis-1-11';
+    final options = (json['options'] as List? ?? [])
+        .whereType<Map>()
+        .map((e) => QuestionOption.fromJson(Map<String, dynamic>.from(e)))
+        .toList();
+    final wrongRaw = json['feedbackWrong'];
+    ExercisePassage? parsePassage(dynamic raw) {
+      if (raw is! Map) return null;
+      final text = (raw['text'] ?? '').toString();
+      if (text.trim().isEmpty) return null;
+      return ExercisePassage(
+        ref: (raw['ref'] ?? '').toString(),
+        text: text,
+      );
+    }
+
+    final order = <String>[];
+    final rawOrder = json['correctOrder'];
+    if (rawOrder is List) {
+      for (final o in rawOrder) {
+        if (o != null) order.add(o.toString());
+      }
+    }
+
     return BankQuestion(
       id: id,
       trailSlug: json['trail'] as String? ??
           json['trailSlug'] as String? ??
           inferredTrail,
       difficulty: TrailDifficulty.fromId(json['difficulty'] as String) ?? TrailDifficulty.semente,
-      section: json['section'] as String,
-      question: json['question'] as String,
-      options: (json['options'] as List)
-          .map((e) => QuestionOption.fromJson(e as Map<String, dynamic>))
-          .toList(),
-      correctOptionId: json['correctOptionId'] as String,
-      feedbackCorrect: json['feedbackCorrect'] as String,
-      feedbackWrong: (json['feedbackWrong'] as Map<String, dynamic>).map(
-        (k, v) => MapEntry(k, v as String),
-      ),
+      section: json['section'] as String? ?? '',
+      question: json['question'] as String? ?? '',
+      options: options,
+      correctOptionId: json['correctOptionId'] as String? ?? 'a',
+      feedbackCorrect: json['feedbackCorrect'] as String? ?? 'Correto.',
+      feedbackWrong: wrongRaw is Map
+          ? wrongRaw.map((k, v) => MapEntry(k.toString(), v?.toString() ?? ''))
+          : const {},
       verseRef: json['verseRef'] as String?,
       reveal: json['reveal'] == null || json['reveal'] == 'null' ? null : json['reveal'] as String?,
+      type: ExerciseType.fromId(json['type'] as String?),
+      prompt: json['prompt'] as String?,
+      cue: json['cue'] as String?,
+      correctAnswer: json['correctAnswer'] as String?,
+      passageText: json['passageText'] as String?,
+      template: json['template'] as String?,
+      passageA: parsePassage(json['passageA']),
+      passageB: parsePassage(json['passageB']),
+      correctOrder: order,
+      note: json['note'] as String?,
+      noteLabel: json['noteLabel'] as String?,
+      beat: json['beat'] as String?,
+      skill: json['skill'] as String?,
     );
   }
 

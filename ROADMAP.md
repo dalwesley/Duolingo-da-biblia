@@ -73,6 +73,8 @@ Mapa real (fonte: `trails.json` / Firebase):
 Foco: **publicar no Firebase + usuários reais**. Buracos estruturais do caminho e studies do Sermão fechados no asset local.
 
 - [x] **Seed** trails + studies + banks no Firebase (`seed_content.mjs` — ago/2026)
+- [x] **Catálogo:** default fechado (loja); teste com `--dart-define=OPEN_ALL_TRAILS=true`
+- [x] Protocolo D7 + eventos `retention_pulse` / `first_lesson_complete` — [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md)
 - [ ] Medir time-to-value: onboarding → 1ª missão concluída em &lt;2 min
 - [ ] Teste com 10–20 pessoas reais; anotar abandono e frase espontânea do app
 - [ ] Pipeline semanal no admin: ajustes via Relatos sem release
@@ -144,6 +146,7 @@ Ver `MONETIZATION.md`. Não shipar Pro antes do hábito provar valor.
 - [ ] STWAY Pro (gates: gelo, lâmpadas, Strong, Profundezas) + trial pós 3ª missão / 1º gelo
 - [ ] Soft paywalls nos pontos A–F do MONETIZATION.md
 - [ ] Plano Igreja piloto (1–3 líderes): Salas + progresso do grupo + códigos presente Pro
+- [ ] Radar (após Igreja): trilha privada da sala / líder — MCQ embutido, fora do catálogo público; **não** UGC aberto
 - [ ] Opcional: 1 minuto de oração pós-celebração (não aba Hallow)
 
 ### Motor de etapas configuráveis (só se retenção pedir)

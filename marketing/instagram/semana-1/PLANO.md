@@ -221,7 +221,8 @@ Se a Bíblia sumisse
 da sua vida por 30 dias…
 você sentiria falta?
 ```
-Sub: `Responde com sinceridade.`
+Sub: `Responde com sinceridade.`  
+Rodapé: wordmark `STWAY` (A chevron amarelo `#F7BB01`) + slogan `UM PASSO. UMA JORNADA. UMA COMUNIDADE.`
 
 **Legenda:**
 ```

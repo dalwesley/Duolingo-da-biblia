@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -236,6 +237,19 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               isReplay: widget.isReplay,
               perfect: widget.perfect,
             );
+            final ttv = await progress.markFirstLessonIfNeeded(
+              trailSlug: widget.trailSlug,
+              missionSlug: widget.missionSlug,
+            );
+            if (ttv != null) {
+              unawaited(
+                AnalyticsService.instance.logFirstLessonComplete(
+                  missionSlug: widget.missionSlug,
+                  trailSlug: widget.trailSlug,
+                  ttvSeconds: ttv,
+                ),
+              );
+            }
             if (!mounted) return;
             if (widget.perfect) {
               SoundService.instance.playStreak();

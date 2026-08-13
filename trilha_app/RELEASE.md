@@ -74,13 +74,23 @@ O AAB estará em `build/app/outputs/bundle/release/app-release.aab`.
 1. [Google Play Console](https://play.google.com/console) → app "STWAY"
 2. Envie o AAB em **Teste interno**
 3. Convide 10–20 testadores
-4. No Firebase Analytics, acompanhe: `app_open`, `login`, `home_view`, `lesson_start`, `lesson_complete`
+4. No Firebase Analytics, acompanhe: `app_open`, `login`, `first_lesson_complete`, `retention_pulse`, `lesson_complete`
+5. Protocolo humano: [`docs/D7_TESTER_PROTOCOLO.md`](../docs/D7_TESTER_PROTOCOLO.md)
+
+### iOS — Sign in with Apple
+
+- [ ] Firebase Console → Authentication → Sign-in method → **Apple** habilitado
+- [x] Entitlement `com.apple.developer.applesignin` em `Runner.entitlements`
+- [ ] Apple Developer → App ID `com.dalwesley.stway` com capability Sign In with Apple
+- Build loja: **não** passar `OPEN_ALL_TRAILS=true` (default já é fechado)
 
 ## Telemetria (funil D1/D7)
 
 Eventos em `AnalyticsService`:
 - `app_open` — splash autenticado
-- `login` / `login_failed`
+- `login` / `login_failed` (`method`: google|apple)
+- `retention_pulse` — `days_since_first_open`, `days_since_first_lesson`, `cohort_trail`
+- `first_lesson_complete` — `ttv_seconds`, `trail_slug`, `mission_slug`
 - `home_view`
 - `difficulty_pick`
 - `lesson_start` / `lesson_complete`

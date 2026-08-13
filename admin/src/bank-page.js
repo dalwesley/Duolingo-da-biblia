@@ -62,19 +62,20 @@ export async function renderBankPage(root) {
       <div class="card">
         <div class="table-wrap">
           <table class="data-table">
-            <thead><tr><th>ID</th><th>Dificuldade</th><th>Seção</th><th>Pergunta</th><th></th></tr></thead>
+            <thead><tr><th>ID</th><th>Gesto</th><th>Dificuldade</th><th>Seção</th><th>Pergunta</th><th></th></tr></thead>
             <tbody>
               ${list.slice(0, 200).map((q) => `
                 <tr>
                   <td><code>${escapeHtml(q.id)}</code></td>
+                  <td>${escapeHtml(q.type || 'choice')}</td>
                   <td>${escapeHtml(q.difficulty || '')}</td>
                   <td>${escapeHtml(q.section || '')}</td>
-                  <td>${escapeHtml((q.question || '').slice(0, 80))}</td>
+                  <td>${escapeHtml((q.prompt || q.question || '').slice(0, 80))}</td>
                   <td class="td-actions">
                     <button type="button" class="btn btn-sm btn-secondary" data-edit="${escapeHtml(q.id)}">Editar</button>
                     <button type="button" class="btn btn-sm btn-danger" data-del="${escapeHtml(q.id)}">Excluir</button>
                   </td>
-                </tr>`).join('') || '<tr><td colspan="5">Nenhuma pergunta.</td></tr>'}
+                </tr>`).join('') || '<tr><td colspan="6">Nenhuma pergunta.</td></tr>'}
             </tbody>
           </table>
         </div>
@@ -116,12 +117,20 @@ export async function renderBankPage(root) {
   function openEditor(existing) {
     const modal = document.getElementById('modal');
     const isNew = !existing;
+    const SKILLS = ['observe','understand','contextualize','interpret','connect','synthesize','theologize','apply'];
     const q = existing || {
       id: '',
       difficulty: 'semente',
       section: 'gen-01-criador',
       trail: 'genesis-1-11',
+      type: 'choice',
+      skill: 'observe',
       question: '',
+      prompt: '',
+      cue: '',
+      passageText: '',
+      template: '',
+      correctAnswer: '',
       options: [
         { id: 'a', text: '' },
         { id: 'b', text: '' },
@@ -152,9 +161,22 @@ export async function renderBankPage(root) {
               <datalist id="bq-sec-list">${sectionList.map((s) => `<option value="${escapeHtml(s)}"></option>`).join('')}</datalist>
             </label>
             <label>Versículo<input id="bq-verse" value="${escapeHtml(q.verseRef || '')}" /></label>
+            <label>Gesto<select id="bq-type">
+              ${['choice','true_false','tap','complete','order','connect'].map((t) =>
+                `<option value="${t}" ${(q.type || 'choice') === t ? 'selected' : ''}>${t}</option>`
+              ).join('')}
+            </select></label>
+            <label>Competência<select id="bq-skill">
+              ${SKILLS.map((s) => `<option value="${s}" ${(q.skill || 'observe') === s ? 'selected' : ''}>${s}</option>`).join('')}
+            </select></label>
           </div>
           <p class="muted" style="margin:0 0 var(--space-3)">A seção deve ser o slug do passo na trilha (não use criacao/jardim/depois).</p>
           <label>Pergunta<textarea id="bq-q" rows="3">${escapeHtml(q.question || '')}</textarea></label>
+          <label>Prompt / afirmação (V/F e palco)<textarea id="bq-prompt" rows="2">${escapeHtml(q.prompt || '')}</textarea></label>
+          <label>Cue (instrução curta)<input id="bq-cue" value="${escapeHtml(q.cue || '')}" /></label>
+          <label>Palco — texto do verso (toque / escolha)<textarea id="bq-passage" rows="2">${escapeHtml(q.passageText || '')}</textarea></label>
+          <label>Template com ___ (completar)<input id="bq-template" value="${escapeHtml(q.template || '')}" /></label>
+          <label>Resposta (V/F: true/false; ou id da opção)<input id="bq-answer" value="${escapeHtml(q.correctAnswer || q.correctOptionId || '')}" /></label>
           <div class="form-grid">
             ${['a', 'b', 'c', 'd'].map((id) => {
               const opt = (q.options || []).find((o) => o.id === id) || { text: '' };
@@ -206,7 +228,14 @@ export async function renderBankPage(root) {
         trail: document.getElementById('bq-trail').value,
         difficulty: document.getElementById('bq-diff').value,
         section,
+        type: document.getElementById('bq-type')?.value || existing?.type || 'choice',
+        skill: document.getElementById('bq-skill')?.value || existing?.skill || 'observe',
         question: document.getElementById('bq-q').value,
+        prompt: document.getElementById('bq-prompt')?.value || undefined,
+        cue: document.getElementById('bq-cue')?.value || undefined,
+        correctAnswer: document.getElementById('bq-answer')?.value || undefined,
+        passageText: document.getElementById('bq-passage')?.value || undefined,
+        template: document.getElementById('bq-template')?.value || undefined,
         options,
         correctOptionId: correct,
         feedbackCorrect: document.getElementById('bq-ok').value,
@@ -214,6 +243,11 @@ export async function renderBankPage(root) {
         verseRef: document.getElementById('bq-verse').value,
         reveal: document.getElementById('bq-reveal').value || null,
         order: existing?.order ?? items.length + 1,
+        passageA: existing?.passageA,
+        passageB: existing?.passageB,
+        correctOrder: existing?.correctOrder,
+        note: existing?.note,
+        beat: existing?.beat,
       };
       setLoading(true);
       try {

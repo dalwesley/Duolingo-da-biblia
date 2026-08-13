@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import { spawnSync } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataRoot = join(__dirname, '..', '..', 'trilha_app', 'assets', 'data');
@@ -390,15 +391,18 @@ function isHandcrafted(slug) {
 function generateMissingStudies(trails, studiesDoc, bankQs) {
   const byName = buildBibleIndex();
   const verseBySection = buildVerseMap(bankQs);
-  // Preserva estudos densos manuais; regenera o resto.
-  const studies = {};
-  for (const [slug, study] of Object.entries(studiesDoc.studies || {})) {
-    if (isHandcrafted(slug)) studies[slug] = study;
-  }
+  // Preserva estudos existentes; só preenche lacunas.
+  const studies = { ...(studiesDoc.studies || {}) };
   const verses = { ...(studiesDoc.verses || {}) };
   let added = 0;
 
-  const targetRealms = new Set(['antigo-testamento', 'novo-testamento']);
+  const targetRealms = new Set([
+    'antigo-testamento',
+    'novo-testamento',
+    'vida-crista',
+    'discipulado',
+    'teologia',
+  ]);
   for (const trail of trails) {
     if (!targetRealms.has(trail.realm)) continue;
     if (trail.comingSoon) continue;
@@ -439,6 +443,21 @@ function generateMissingStudies(trails, studiesDoc, bankQs) {
             'Como o Espírito ou o Reino aparecem neste passo?',
             'O que isso muda na sua caminhada hoje?',
           ],
+          'vida-crista': [
+            'O que este treino pede na prática?',
+            'Onde isso confronta ou conforta sua rotina?',
+            'Como isso se liga ao evangelho?',
+          ],
+          discipulado: [
+            'O que muda quando você ouve Jesus aqui?',
+            'Qual atitude o Reino está formando?',
+            'Como isso se vê na vida comunitária?',
+          ],
+          teologia: [
+            'O que este conceito revela sobre Deus?',
+            'Como isso organiza a leitura da Bíblia?',
+            'Onde você já viu isso na Escritura?',
+          ],
         };
 
         studies[slug] = {
@@ -471,25 +490,73 @@ function generateMissingStudies(trails, studiesDoc, bankQs) {
   return added;
 }
 
+function dedupeBankQuestions(name) {
+  const path = join(dataRoot, name);
+  if (!existsSync(path)) return 0;
+  const raw = readJson(name);
+  const wrapped = !Array.isArray(raw);
+  const questions = wrapped ? raw.questions || [] : raw;
+  const seen = new Set();
+  const out = [];
+  let removed = 0;
+  for (const q of questions) {
+    const id = String(q?.id || '');
+    if (!id || seen.has(id)) {
+      removed += 1;
+      continue;
+    }
+    seen.add(id);
+    out.push(q);
+  }
+  if (removed > 0) {
+    if (wrapped) writeJson(name, { ...raw, questions: out });
+    else writeJson(name, out);
+    console.log(`✓ ${name}: dedupe −${removed} (→ ${out.length})`);
+  }
+  return removed;
+}
+
 function main() {
+  const studiesOnly = process.argv.includes('--studies-only');
+
   console.log('Preparando conteúdo em', dataRoot);
 
   normalizeBankFile('exodo_questions.json');
   normalizeBankFile('ot_questions.json');
+  dedupeBankQuestions('ot_questions.json');
 
   const trails = readJson('trails.json');
-  extractNtBank(trails);
+  if (!studiesOnly) {
+    extractNtBank(trails);
+  }
 
   const allBank = [
     ...bankQuestions('genesis_questions.json'),
     ...bankQuestions('exodo_questions.json'),
     ...bankQuestions('ot_questions.json'),
     ...bankQuestions('nt_questions.json'),
+    ...bankQuestions('epistolas_questions.json'),
+    ...bankQuestions('buracos_questions.json'),
+    ...bankQuestions('sermao_questions.json'),
   ];
   console.log(`Banco unificado (local): ${allBank.length} perguntas`);
 
   const studiesDoc = readJson('mission_studies.json');
   generateMissingStudies(trails, studiesDoc, allBank);
+
+  if (studiesOnly) {
+    console.log('Pronto (estudos only).');
+    return;
+  }
+
+  const migrated = spawnSync(
+    process.execPath,
+    [join(__dirname, 'migrate_session_pattern.mjs')],
+    { stdio: 'inherit' },
+  );
+  if (migrated.status !== 0) {
+    throw new Error('migrate_session_pattern falhou');
+  }
 
   console.log('Pronto.');
 }

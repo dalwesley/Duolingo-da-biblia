@@ -95,21 +95,29 @@ class LeagueService extends ChangeNotifier {
   }
 
   Future<void> init() async {
-    final prefs = await SharedPreferences.getInstance();
-    // Cloud (hydrate) tem prioridade se ja chegou enquanto o prefs carregava.
-    if (_cloudHydrated) return;
-    tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, LeagueTier.values.length - 1);
-    _processedWeek = prefs.getString(_keyProcessedWeek);
-    final rawOutcome = prefs.getString(_keyOutcome);
-    if (rawOutcome != null) {
-      for (final o in LeagueOutcome.values) {
-        if (o.name == rawOutcome) pendingOutcome = o;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      // Cloud (hydrate) tem prioridade se ja chegou enquanto o prefs carregava.
+      if (_cloudHydrated) return;
+      tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, LeagueTier.values.length - 1);
+      _processedWeek = prefs.getString(_keyProcessedWeek);
+      final rawOutcome = prefs.getString(_keyOutcome);
+      if (rawOutcome != null) {
+        for (final o in LeagueOutcome.values) {
+          if (o.name == rawOutcome) pendingOutcome = o;
+        }
+        pendingRank = prefs.getInt(_keyOutcomeRank) ?? 0;
       }
-      pendingRank = prefs.getInt(_keyOutcomeRank) ?? 0;
+      if (_cloudHydrated) return;
+    } catch (e) {
+      debugPrint('LeagueService.init falhou: $e');
+    } finally {
+      // Nunca deixar a aba Caravana em spinner eterno.
+      if (!_loaded && !_cloudHydrated) {
+        _loaded = true;
+        notifyListeners();
+      }
     }
-    if (_cloudHydrated) return;
-    _loaded = true;
-    notifyListeners();
   }
 
   /// Campos persistidos em users/{uid} junto com o progresso.
@@ -211,6 +219,7 @@ class LeagueService extends ChangeNotifier {
     pendingRank = 0;
     _processedWeek = null;
     _cloudHydrated = false;
+    _loaded = true;
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyTier);
     await prefs.remove(_keyProcessedWeek);

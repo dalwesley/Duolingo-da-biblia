@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "expand:genesis": "node scripts/expand_genesis_complete.mjs",
     "prepare:content": "node scripts/prepare_content.mjs",
-    "seed": "npm run prepare:content && node scripts/seed_content.mjs",
+    "migrate:session": "node scripts/migrate_session_pattern.mjs",
+    "enrich:content": "node scripts/enrich_content.mjs",
+    "seed": "npm run prepare:content && npm run migrate:session && npm run enrich:content && node scripts/seed_content.mjs",
     "seed:genesis": "npm run expand:genesis && npm run seed",
     "extract:studies": "node scripts/extract_mission_studies.mjs"
   },

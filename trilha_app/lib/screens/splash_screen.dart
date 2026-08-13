@@ -134,6 +134,14 @@ class _SplashScreenState extends State<SplashScreen>
       unawaited(ContentCatalogService.instance.ensureLoaded());
       unawaited(AnalyticsService.instance.setUserId(backend.uid));
       unawaited(AnalyticsService.instance.logAppOpen());
+      unawaited(() async {
+        final pulse = await progress.ensureCohortAndPulse();
+        await AnalyticsService.instance.logRetentionPulse(
+          daysSinceFirstOpen: pulse.daysSinceFirstOpen,
+          daysSinceFirstLesson: pulse.daysSinceFirstLesson,
+          cohortTrail: pulse.cohortTrail,
+        );
+      }());
     }
 
     if (!mounted) return;
