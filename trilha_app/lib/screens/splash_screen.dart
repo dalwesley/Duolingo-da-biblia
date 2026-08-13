@@ -109,10 +109,7 @@ class _SplashScreenState extends State<SplashScreen>
         await companions.applyCloudCodes(progress.companionCodes, progress);
         if (!mounted) return;
         final rooms = context.read<RoomService>();
-        await rooms.applyCloudCode(
-          progress.activeRoomCode,
-          progress: progress,
-        );
+        await rooms.applyCloudCode(progress.activeRoomCode, progress: progress);
       }
 
       if (!mounted) return;
@@ -150,8 +147,8 @@ class _SplashScreenState extends State<SplashScreen>
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         opaque: true,
-        pageBuilder: (_, __, ___) => next,
-        transitionsBuilder: (_, a, __, c) => FadeTransition(
+        pageBuilder: (_, _, _) => next,
+        transitionsBuilder: (_, a, _, c) => FadeTransition(
           opacity: CurvedAnimation(parent: a, curve: Curves.easeOutCubic),
           child: c,
         ),
@@ -204,10 +201,7 @@ class _SplashScreenState extends State<SplashScreen>
             parent: _master,
             curve: _i(0.0, 0.45, curve: Curves.easeOutBack),
           );
-          final tag = CurvedAnimation(
-            parent: _master,
-            curve: _i(0.22, 0.58),
-          );
+          final tag = CurvedAnimation(parent: _master, curve: _i(0.22, 0.58));
           final bar = CurvedAnimation(
             parent: _master,
             curve: _i(0.55, 1.0, curve: Curves.easeOut),
@@ -219,9 +213,7 @@ class _SplashScreenState extends State<SplashScreen>
 
           return SafeArea(
             child: Padding(
-              padding: const EdgeInsets.symmetric(
-                horizontal: AppSpace.xxxl,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: AppSpace.xxxl),
               child: Column(
                 children: [
                   const SizedBox(height: 48),
@@ -250,7 +242,9 @@ class _SplashScreenState extends State<SplashScreen>
                             style: AppTypography.title(
                               size: 16,
                               weight: FontWeight.w700,
-                              color: AppColors.textOnDark.withValues(alpha: 0.92),
+                              color: AppColors.textOnDark.withValues(
+                                alpha: 0.92,
+                              ),
                             ),
                           ),
                         ],
@@ -271,7 +265,9 @@ class _SplashScreenState extends State<SplashScreen>
                               fit: StackFit.expand,
                               children: [
                                 ColoredBox(
-                                  color: AppColors.textOnDark.withValues(alpha: 0.1),
+                                  color: AppColors.textOnDark.withValues(
+                                    alpha: 0.1,
+                                  ),
                                 ),
                                 FractionallySizedBox(
                                   alignment: Alignment.centerLeft,
@@ -302,7 +298,9 @@ class _SplashScreenState extends State<SplashScreen>
                             style: AppTypography.label(
                               size: 10,
                               letterSpacing: 0.8,
-                              color: AppColors.textOnDark.withValues(alpha: 0.28),
+                              color: AppColors.textOnDark.withValues(
+                                alpha: 0.28,
+                              ),
                             ),
                           ),
                         ],

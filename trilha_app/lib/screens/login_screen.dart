@@ -30,8 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
   String? _error;
   String? _versionLabel;
 
-  bool get _showApple =>
-      !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
+  bool get _showApple => !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
 
   @override
   void initState() {
@@ -85,8 +84,8 @@ class _LoginScreenState extends State<LoginScreen> {
         : const OnboardingScreen();
     Navigator.of(context).pushReplacement(
       PageRouteBuilder(
-        pageBuilder: (_, __, ___) => next,
-        transitionsBuilder: (_, a, __, c) =>
+        pageBuilder: (_, _, _) => next,
+        transitionsBuilder: (_, a, _, c) =>
             FadeTransition(opacity: a, child: c),
         transitionDuration: const Duration(milliseconds: 480),
       ),
@@ -233,7 +232,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       foregroundColor: Colors.white,
                       backgroundColor: Colors.black.withValues(alpha: 0.55),
                       side: BorderSide(color: a.cardBorder),
-                      padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: AppSpace.md,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(AppRadii.lg),
                       ),
