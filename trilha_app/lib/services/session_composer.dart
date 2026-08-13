@@ -99,6 +99,17 @@ class SessionComposer {
     return a == 'true';
   }
 
+  /// Id base sem sufixo de síntese (`__vftrue`).
+  static String _vfBaseId(String id) =>
+      id.endsWith('__vftrue') ? id.substring(0, id.length - 8) : id;
+
+  /// Chave de enunciado V/F — evita verdadeiro+falso do mesmo ato na sessão.
+  static String _vfStemKey(BankQuestion q) {
+    final stem = q.question.trim().toLowerCase();
+    if (stem.isNotEmpty) return 'stem:$stem';
+    return 'id:${_vfBaseId(q.id)}';
+  }
+
   /// Se o pool só tem V/F falso (Firestore legado), monta um verdadeiro a partir do feedback.
   static BankQuestion _vfAsTrue(BankQuestion q) {
     final m = RegExp(r'[“"]([^”"]+)[”"]').firstMatch(q.feedbackCorrect);
@@ -113,7 +124,7 @@ class SessionComposer {
             ? '$stem: $quoted.'
             : (RegExp(r'[.!?]$').hasMatch(quoted) ? quoted : '$quoted.');
     return BankQuestion(
-      id: '${q.id}__vftrue',
+      id: '${_vfBaseId(q.id)}__vftrue',
       trailSlug: q.trailSlug,
       difficulty: q.difficulty,
       section: q.section,
@@ -316,6 +327,7 @@ class SessionComposer {
 
   /// Primeiro 1 de cada gesto; depois preenche até [max] (2º Escolher ≤ 40%).
   /// V/F: alterna verdadeiro/falso (evita Firestore legado só-falso).
+  /// Nunca repete o mesmo enunciado V/F (verdadeiro + falso do mesmo ato).
   static List<BankQuestion> pickDiverseBankQuestions({
     required List<BankQuestion> pool,
     required Set<String> usedIds,
@@ -334,10 +346,34 @@ class SessionComposer {
     final random = rng ?? Random(missionSlug.hashCode);
     final picked = <BankQuestion>[];
     final seenIds = <String>{};
+    final seenVfStems = <String>{};
+
+    bool vfAvailable(BankQuestion q) {
+      if (seenIds.contains(q.id)) return false;
+      if (seenIds.contains(_vfBaseId(q.id))) return false;
+      if (seenIds.contains('${_vfBaseId(q.id)}__vftrue')) return false;
+      if (seenVfStems.contains(_vfStemKey(q))) return false;
+      return true;
+    }
+
+    void markPicked(BankQuestion q) {
+      picked.add(q);
+      seenIds.add(q.id);
+      if (q.type == ExerciseType.trueFalse) {
+        final base = _vfBaseId(q.id);
+        seenIds.add(base);
+        seenIds.add('${base}__vftrue');
+        seenVfStems.add(_vfStemKey(q));
+      }
+    }
 
     BankQuestion? bestFor(ExerciseType type) {
       final matches = pool.where((q) {
-        if (seenIds.contains(q.id)) return false;
+        if (type == ExerciseType.trueFalse) {
+          if (!vfAvailable(q)) return false;
+        } else if (seenIds.contains(q.id)) {
+          return false;
+        }
         if (type == ExerciseType.tap) {
           return q.type == ExerciseType.tap || q.type == ExerciseType.findInText;
         }
@@ -359,7 +395,9 @@ class SessionComposer {
           if (trues.isNotEmpty) return trues[random.nextInt(trues.length)];
           if (falses.isNotEmpty &&
               picked.every((q) => q.type != ExerciseType.trueFalse)) {
-            return _vfAsTrue(falses.first);
+            final source = falses.first;
+            if (!vfAvailable(source)) return null;
+            return _vfAsTrue(source);
           }
         } else {
           if (falses.isNotEmpty) return falses[random.nextInt(falses.length)];
@@ -376,9 +414,14 @@ class SessionComposer {
     for (final t in types) {
       if (picked.length >= max) break;
       final q = bestFor(t);
-      if (q == null || seenIds.contains(q.id)) continue;
-      picked.add(q);
-      seenIds.add(q.id);
+      if (q == null) continue;
+      if (q.type == ExerciseType.trueFalse) {
+        if (seenVfStems.contains(_vfStemKey(q))) continue;
+        if (seenIds.contains(_vfBaseId(q.id))) continue;
+      } else if (seenIds.contains(q.id)) {
+        continue;
+      }
+      markPicked(q);
     }
 
     const fillOrder = <ExerciseType>[
@@ -406,9 +449,14 @@ class SessionComposer {
           if (n >= 2) continue;
         }
         final q = bestFor(t);
-        if (q == null || seenIds.contains(q.id)) continue;
-        picked.add(q);
-        seenIds.add(q.id);
+        if (q == null) continue;
+        if (q.type == ExerciseType.trueFalse) {
+          if (seenVfStems.contains(_vfStemKey(q))) continue;
+          if (seenIds.contains(_vfBaseId(q.id))) continue;
+        } else if (seenIds.contains(q.id)) {
+          continue;
+        }
+        markPicked(q);
         added = true;
         break;
       }

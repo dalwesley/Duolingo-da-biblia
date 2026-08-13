@@ -19,6 +19,8 @@ import '../widgets/accept_invite_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/companion_formed_sheet.dart';
 import '../widgets/companion_invite_confirm_sheet.dart';
+import '../widgets/companion_nudge_sheet.dart';
+import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -79,7 +81,11 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   Future<void> _consumePendingInvite() async {
     if (!mounted || _handlingInvite) return;
-    final code = InviteDeepLinkService.instance.takePendingCompanionCode();
+    final links = InviteDeepLinkService.instance;
+    if (links.takeWantCompanhiaTab()) {
+      setState(() => _tab = 1);
+    }
+    final code = links.takePendingCompanionCode();
     if (code == null) return;
     _handlingInvite = true;
     setState(() => _tab = 1);
@@ -189,11 +195,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     try {
       await rooms.syncIfNeeded().timeout(const Duration(seconds: 10));
       await companionSvc.refresh().timeout(const Duration(seconds: 10));
-      if (progress.walkedToday) {
-        await companionSvc
-            .syncWalksIfNeeded(progress)
-            .timeout(const Duration(seconds: 10));
-      }
+      await companionSvc
+          .syncPresence(progress)
+          .timeout(const Duration(seconds: 10));
     } catch (e) {
       debugPrint('Falha ao sincronizar salas/companhia: $e');
     }
@@ -495,6 +499,11 @@ class _LeagueScreenState extends State<LeagueScreen>
               code: companions.companions[i].code,
               inviterName: progress.userName,
             ),
+            onNudge: () => showCompanionNudgeSheet(
+              context,
+              companion: companions.companions[i],
+              myName: progress.userName,
+            ),
             onLeave: () async {
               final ok = await _confirmLeaveCompanion(context);
               if (ok == true && context.mounted) {
@@ -540,8 +549,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     list.add(
       TextButton(
         onPressed: () async {
-          await companions.syncWalksIfNeeded(progress);
-          await companions.refresh();
+          await companions.syncPresence(progress);
         },
         child: Text(
           'Atualizar presença',
@@ -2630,6 +2638,7 @@ class _CompanionCard extends StatelessWidget {
   final VoidCallback onCopy;
   final VoidCallback onLeave;
   final VoidCallback onShowQr;
+  final VoidCallback? onNudge;
 
   const _CompanionCard({
     required this.companion,
@@ -2637,6 +2646,7 @@ class _CompanionCard extends StatelessWidget {
     required this.onCopy,
     required this.onLeave,
     required this.onShowQr,
+    this.onNudge,
   });
 
   @override
@@ -2646,6 +2656,15 @@ class _CompanionCard extends StatelessWidget {
         ? 'Convite'
         : (companion.displayName.isEmpty ? 'Companheiro' : companion.displayName);
     final myLabel = myName.trim().isEmpty ? 'Você' : myName.trim().split(' ').first;
+    final away = companion.theyDaysAway;
+    final showAwayBadge = !companion.awaitingPartner &&
+        away != null &&
+        away >= 1 &&
+        !companion.theyWalkedToday;
+    final insight = companion.insightLine;
+    final canNudge = onNudge != null &&
+        !companion.awaitingPartner &&
+        (companion.waitingOnThem || (away != null && away >= 1));
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
@@ -2666,6 +2685,26 @@ class _CompanionCard extends StatelessWidget {
                   ),
                 ),
               ),
+              if (showAwayBadge)
+                Container(
+                  margin: const EdgeInsets.only(right: 8),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 6,
+                  ),
+                  decoration: BoxDecoration(
+                    color: AppColors.clay.withValues(alpha: 0.18),
+                    borderRadius: BorderRadius.circular(AppRadii.sm),
+                  ),
+                  child: Text(
+                    away == 1 ? '1d fora' : '${away}d fora',
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w900,
+                      color: AppColors.clay,
+                    ),
+                  ),
+                ),
               if (companion.sharedDays > 0)
                 Container(
                   padding: const EdgeInsets.symmetric(
@@ -2708,6 +2747,18 @@ class _CompanionCard extends StatelessWidget {
               color: a.textMuted(0.7),
             ),
           ),
+          if (insight != null) ...[
+            const SizedBox(height: 4),
+            Text(
+              insight,
+              style: AppTypography.body(
+                size: 12,
+                height: 1.3,
+                weight: FontWeight.w700,
+                color: AppColors.accent.withValues(alpha: 0.85),
+              ),
+            ),
+          ],
           if (!companion.awaitingPartner) ...[
             const SizedBox(height: 14),
             Row(
@@ -2717,6 +2768,10 @@ class _CompanionCard extends StatelessWidget {
                     name: myLabel,
                     walked: companion.iWalkedToday,
                     highlight: companion.waitingOnMe,
+                    dusty: false,
+                    subtitle: companion.myWeeklySteps > 0
+                        ? '${companion.myWeeklySteps} passos'
+                        : null,
                   ),
                 ),
                 Padding(
@@ -2737,6 +2792,12 @@ class _CompanionCard extends StatelessWidget {
                     name: partnerLabel,
                     walked: companion.theyWalkedToday,
                     highlight: companion.waitingOnThem,
+                    dusty: companion.theyAreDusty,
+                    subtitle: companion.theirWeeklySteps > 0
+                        ? '${companion.theirWeeklySteps} passos'
+                        : (showAwayBadge
+                            ? (away == 1 ? 'ontem' : '${away}d atrás')
+                            : null),
                   ),
                 ),
               ],
@@ -2776,6 +2837,34 @@ class _CompanionCard extends StatelessWidget {
                   companion.bothWalkedToday
                       ? AppColors.accent
                       : AppColors.accent.withValues(alpha: 0.65),
+                ),
+              ),
+            ),
+          ],
+          if (canNudge) ...[
+            const SizedBox(height: 12),
+            SizedBox(
+              width: double.infinity,
+              child: OutlinedButton(
+                onPressed: onNudge,
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: AppColors.streak,
+                  side: BorderSide(
+                    color: AppColors.streak.withValues(alpha: 0.55),
+                  ),
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(AppRadii.md),
+                  ),
+                ),
+                child: Text(
+                  'Animar ${partnerLabel.split(' ').first}',
+                  style: AppTypography.label(
+                    size: 13,
+                    letterSpacing: 0.4,
+                    weight: FontWeight.w800,
+                    color: AppColors.streak,
+                  ),
                 ),
               ),
             ),
@@ -2863,81 +2952,143 @@ class _PresencePill extends StatelessWidget {
   final String name;
   final bool walked;
   final bool highlight;
+  final bool dusty;
+  final String? subtitle;
 
   const _PresencePill({
     required this.name,
     required this.walked,
     required this.highlight,
+    this.dusty = false,
+    this.subtitle,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final initial = name.isEmpty ? '?' : name[0].toUpperCase();
-    return Container(
-      padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-      decoration: BoxDecoration(
-        color: walked
-            ? AppColors.accent.withValues(alpha: 0.12)
-            : Colors.white.withValues(alpha: 0.04),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(
-          color: walked
-              ? AppColors.accent.withValues(alpha: 0.45)
-              : highlight
-                  ? AppColors.streak.withValues(alpha: 0.45)
-                  : Colors.white.withValues(alpha: 0.1),
-          width: walked || highlight ? 1.4 : 1,
-        ),
-      ),
-      child: Column(
+    final status = walked
+        ? 'Caminhou'
+        : dusty
+            ? 'Na poeira'
+            : (highlight ? 'Esperando' : 'Ainda não');
+    final dustBorder = const Color(0xFFC4A070);
+    final dustFill = const Color(0xFF3A2410);
+
+    final pill = ClipRRect(
+      borderRadius: BorderRadius.circular(AppRadii.md),
+      child: Stack(
         children: [
           Container(
-            width: 36,
-            height: 36,
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
             decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              gradient: walked ? AppGradients.gold : null,
-              color: walked ? null : a.cardFillSoft,
-            ),
-            child: Center(
-              child: Text(
-                initial,
-                style: AppTypography.title(
-                  size: 14,
-                  weight: FontWeight.w900,
-                  color: walked ? AppColors.inkOnAccent : a.textMuted(0.7),
-                ),
+              color: walked
+                  ? AppColors.accent.withValues(alpha: 0.12)
+                  : dusty
+                      ? dustFill.withValues(alpha: 0.55)
+                      : Colors.white.withValues(alpha: 0.04),
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              border: Border.all(
+                color: walked
+                    ? AppColors.accent.withValues(alpha: 0.45)
+                    : dusty
+                        ? dustBorder.withValues(alpha: 0.55)
+                        : highlight
+                            ? AppColors.streak.withValues(alpha: 0.45)
+                            : Colors.white.withValues(alpha: 0.1),
+                width: walked || highlight || dusty ? 1.4 : 1,
               ),
             ),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            name,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w800,
-              color: a.text,
+            child: Column(
+              children: [
+                Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: walked ? AppGradients.gold : null,
+                    color: walked
+                        ? null
+                        : dusty
+                            ? const Color(0xFF2A1A0C)
+                            : a.cardFillSoft,
+                  ),
+                  child: Center(
+                    child: Text(
+                      initial,
+                      style: AppTypography.title(
+                        size: 14,
+                        weight: FontWeight.w900,
+                        color: walked
+                            ? AppColors.inkOnAccent
+                            : dusty
+                                ? const Color(0xFFE8C48A).withValues(alpha: 0.75)
+                                : a.textMuted(0.7),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 6),
+                Text(
+                  name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w800,
+                    color: dusty
+                        ? Colors.white.withValues(alpha: 0.78)
+                        : a.text,
+                  ),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  status,
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0,
+                    weight: FontWeight.w700,
+                    color: walked
+                        ? AppColors.accent
+                        : dusty
+                            ? dustBorder
+                            : highlight
+                                ? AppColors.streak
+                                : a.textMuted(0.5),
+                  ),
+                ),
+                if (subtitle != null) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle!,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.label(
+                      size: 9,
+                      letterSpacing: 0,
+                      weight: FontWeight.w600,
+                      color: dusty
+                          ? dustBorder.withValues(alpha: 0.75)
+                          : a.textMuted(0.55),
+                    ),
+                  ),
+                ],
+              ],
             ),
           ),
-          const SizedBox(height: 2),
-          Text(
-            walked ? 'Caminhou' : (highlight ? 'Esperando' : 'Ainda não'),
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 0,
-              weight: FontWeight.w700,
-              color: walked
-                  ? AppColors.accent
-                  : highlight
-                      ? AppColors.streak
-                      : a.textMuted(0.5),
+          if (dusty)
+            const Positioned.fill(
+              child: HeroCardAtmosphere(mood: HeroCardMood.dusty),
             ),
-          ),
         ],
       ),
+    );
+
+    if (!dusty) return pill;
+    return HeroCardColorGrade(
+      mood: HeroCardMood.dusty,
+      child: pill,
     );
   }
 }

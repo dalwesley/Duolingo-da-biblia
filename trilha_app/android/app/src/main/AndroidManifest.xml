@@ -33,12 +33,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <!-- Convite de companhia: stway://companhia/CODIGO -->
+            <!-- Abrir Juntos: stway://juntos -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="stway" android:host="companhia"/>
                 <data android:scheme="stway" android:host="c"/>
+                <data android:scheme="stway" android:host="juntos"/>
             </intent-filter>
         </activity>
         <receiver

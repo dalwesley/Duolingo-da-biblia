@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/bible_canonical_groups.dart';
 import '../data/bible_chronology.dart';
 import '../models/bible_reading_plan.dart';
 import '../services/bible_service.dart';
@@ -264,17 +265,30 @@ class _BookPicker extends StatelessWidget {
     final order = progress.bibleBrowseOrder;
     final plan = progress.bibleReadingPlan;
     final a = Appearance.of(context);
+    final topPad = MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
 
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        AppSpace.screen,
-        scrollPaddingBelowNav(context),
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        topBar,
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            topPad,
+            AppSpace.screen,
+            0,
+          ),
+          child: topBar,
+        ),
         const SizedBox(height: AppSpace.afterTopBar),
+        Expanded(
+          child: ListView(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              0,
+              AppSpace.screen,
+              scrollPaddingBelowNav(context),
+            ),
+            children: [
         Material(
           color: Colors.transparent,
           child: InkWell(
@@ -325,24 +339,44 @@ class _BookPicker extends StatelessWidget {
               context.read<ProgressService>().setBibleBrowseOrder(o),
         ),
         const SizedBox(height: AppSpace.section),
-        if (order == BibleReadingOrder.canonical) ...[
-          _TestamentSection(
-            title: 'ANTIGO TESTAMENTO',
-            books: books.take(BibleService.oldTestamentCount).toList(),
-            offset: 0,
-            onPick: onPick,
-          ),
-          const SizedBox(height: AppSpace.section),
-          _TestamentSection(
-            title: 'NOVO TESTAMENTO',
-            books: books.skip(BibleService.oldTestamentCount).toList(),
-            offset: BibleService.oldTestamentCount,
-            onPick: onPick,
-          ),
-        ] else
+        if (order == BibleReadingOrder.canonical)
+          ..._canonicalSections(books, onPick)
+        else
           ..._chronologicalSections(books, onPick),
+            ],
+          ),
+        ),
       ],
     );
+  }
+
+  List<Widget> _canonicalSections(
+    List<BibleBook> books,
+    ValueChanged<int> onPick,
+  ) {
+    const otEnd = BibleService.oldTestamentCount; // 39
+    final otGroups = BibleCanonicalGroups.groups
+        .where((g) => g.endIndex < otEnd)
+        .toList();
+    final ntGroups = BibleCanonicalGroups.groups
+        .where((g) => g.startIndex >= otEnd)
+        .toList();
+
+    return [
+      _CanonTestamentCard(
+        title: 'ANTIGO TESTAMENTO',
+        groups: otGroups,
+        books: books,
+        onPick: onPick,
+      ),
+      const SizedBox(height: AppSpace.section),
+      _CanonTestamentCard(
+        title: 'NOVO TESTAMENTO',
+        groups: ntGroups,
+        books: books,
+        onPick: onPick,
+      ),
+    ];
   }
 
   List<Widget> _chronologicalSections(
@@ -839,61 +873,58 @@ class _SearchPane extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    final a = Appearance.of(context);
+    final topPad = topBar == null
+        ? AppSpace.sm
+        : MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
+
+    final searchField = TextField(
+      controller: controller,
+      autofocus: true,
+      style: AppTypography.body(
+        size: 14,
+        weight: FontWeight.w600,
+        color: a.text,
+      ),
+      cursorColor: AppColors.cedar,
+      decoration: InputDecoration(
+        hintText: 'Ex.: Apocalipse, amor, fé…',
+        hintStyle: AppTypography.body(color: a.textMuted(0.4)),
+        filled: true,
+        fillColor: a.cardFillSoft,
+        prefixIcon: Padding(
+          padding: const EdgeInsets.all(AppSpace.md),
+          child: CinematicIcon(
+            glyph: CinematicGlyph.search,
+            size: 20,
+            accent: a.textMuted(0.55),
+            framed: false,
+          ),
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          borderSide: BorderSide(color: a.cardBorder),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          borderSide: BorderSide(color: a.cardBorder),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          borderSide: const BorderSide(color: AppColors.cedar),
+        ),
+      ),
+      onChanged: onChanged,
+    );
+
+    final results = ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.screen,
-        topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        AppSpace.lg,
         AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[
-          topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
-        TextField(
-          controller: controller,
-          autofocus: true,
-          style: AppTypography.body(
-            size: 14,
-            weight: FontWeight.w600,
-            color: Appearance.of(context).text,
-          ),
-          cursorColor: AppColors.cedar,
-          decoration: InputDecoration(
-            hintText: 'Ex.: Apocalipse, amor, fé…',
-            hintStyle: AppTypography.body(
-              color: Appearance.of(context).textMuted(0.4),
-            ),
-            filled: true,
-            fillColor: Appearance.of(context).cardFillSoft,
-            prefixIcon: Padding(
-              padding: const EdgeInsets.all(AppSpace.md),
-              child: CinematicIcon(
-                glyph: CinematicGlyph.search,
-                size: 20,
-                accent: Appearance.of(context).textMuted(0.55),
-                framed: false,
-              ),
-            ),
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: BorderSide(color: Appearance.of(context).cardBorder),
-            ),
-            enabledBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: BorderSide(color: Appearance.of(context).cardBorder),
-            ),
-            focusedBorder: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              borderSide: const BorderSide(color: AppColors.cedar),
-            ),
-          ),
-          onChanged: onChanged,
-        ),
-        const SizedBox(height: AppSpace.lg),
         if (busy)
           const Padding(
             padding: EdgeInsets.only(top: AppSpace.xxl),
@@ -914,7 +945,6 @@ class _SearchPane extends StatelessWidget {
           )
         else
           ...hits.map((h) {
-            final a = Appearance.of(context);
             return Padding(
               padding: const EdgeInsets.only(bottom: AppSpace.sm),
               child: GlassCard(
@@ -960,25 +990,110 @@ class _SearchPane extends StatelessWidget {
           }),
       ],
     );
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (topBar != null) ...[
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              topPad,
+              AppSpace.screen,
+              0,
+            ),
+            child: topBar!,
+          ),
+          const SizedBox(height: AppSpace.afterTopBar),
+        ] else
+          SizedBox(height: topPad),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+          child: searchField,
+        ),
+        Expanded(child: results),
+      ],
+    );
   }
 }
 
-class _TestamentSection extends StatelessWidget {
+class _CanonTestamentCard extends StatelessWidget {
   final String title;
+  final List<BibleCanonGroup> groups;
   final List<BibleBook> books;
-  final int offset;
   final ValueChanged<int> onPick;
 
-  const _TestamentSection({
+  const _CanonTestamentCard({
     required this.title,
+    required this.groups,
     required this.books,
-    required this.offset,
     required this.onPick,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final children = <Widget>[];
+    var bookCount = 0;
+    var firstGroup = true;
+
+    for (final group in groups) {
+      if (group.startIndex >= books.length) continue;
+      final end = group.endIndex.clamp(0, books.length - 1);
+      if (end < group.startIndex) continue;
+
+      children.add(
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.md,
+            firstGroup ? AppSpace.md : AppSpace.section,
+            AppSpace.md,
+            4,
+          ),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              group.title,
+              textAlign: TextAlign.left,
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.2,
+                color: AppColors.cedar.withValues(alpha: 0.9),
+              ),
+            ),
+          ),
+        ),
+      );
+      firstGroup = false;
+
+      for (var i = group.startIndex; i <= end; i++) {
+        bookCount++;
+        children.add(
+          _BookRow(
+            book: books[i],
+            onTap: () => onPick(i),
+            showDivider: true,
+            isFirst: false,
+            isLast: false,
+          ),
+        );
+      }
+    }
+
+    if (children.isEmpty) return const SizedBox.shrink();
+
+    // Última linha sem divisor.
+    final last = children.last;
+    if (last is _BookRow) {
+      children[children.length - 1] = _BookRow(
+        book: last.book,
+        onTap: last.onTap,
+        showDivider: false,
+        isFirst: false,
+        isLast: true,
+      );
+    }
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -995,7 +1110,7 @@ class _TestamentSection extends StatelessWidget {
             const SizedBox(width: AppSpace.sm),
             Expanded(child: SectionLabel(title, color: a.sectionLabel)),
             Text(
-              '${books.length}',
+              '$bookCount',
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w700,
@@ -1009,16 +1124,8 @@ class _TestamentSection extends StatelessWidget {
           padding: EdgeInsets.zero,
           radius: AppRadii.lg,
           child: Column(
-            children: List.generate(books.length, (i) {
-              final isLast = i == books.length - 1;
-              return _BookRow(
-                book: books[i],
-                onTap: () => onPick(offset + i),
-                showDivider: !isLast,
-                isFirst: i == 0,
-                isLast: isLast,
-              );
-            }),
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: children,
           ),
         ),
       ],
@@ -1145,20 +1252,18 @@ class _ChapterPicker extends StatelessWidget {
     final a = Appearance.of(context);
     final progress = context.watch<ProgressService>();
     final readCount = progress.readChaptersInBook(book.abbrev);
-    return ListView(
+    final topPad = topBar == null
+        ? AppSpace.sm
+        : MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
+
+    final body = ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.screen,
-        topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        topBar == null ? topPad : 0,
         AppSpace.screen,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[
-          topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
         if (topBar == null) ...[
           Center(
             child: Text(
@@ -1222,6 +1327,25 @@ class _ChapterPicker extends StatelessWidget {
             );
           }),
         ),
+      ],
+    );
+
+    if (topBar == null) return body;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            topPad,
+            AppSpace.screen,
+            0,
+          ),
+          child: topBar!,
+        ),
+        const SizedBox(height: AppSpace.afterTopBar),
+        Expanded(child: body),
       ],
     );
   }
@@ -1435,21 +1559,18 @@ class BibleReaderView extends StatelessWidget {
     final progress = context.read<ProgressService>();
     final reading = BibleReadingStyle.resolve(a);
     final verses = book.chapters[chapter - 1];
+    final topPad = topBar == null
+        ? AppSpace.sm
+        : MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
 
-    return ListView(
+    final body = ListView(
       padding: EdgeInsets.fromLTRB(
         AppSpace.md,
-        topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+        topBar == null ? topPad : 0,
         AppSpace.md,
         scrollPaddingBelowNav(context),
       ),
       children: [
-        if (topBar != null) ...[
-          topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
         // Página de leitura — contraste adaptado ao horário.
         Container(
           decoration: BoxDecoration(
@@ -1697,6 +1818,20 @@ class BibleReaderView extends StatelessWidget {
             ),
           ),
         ),
+      ],
+    );
+
+    if (topBar == null) return body;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: EdgeInsets.fromLTRB(AppSpace.md, topPad, AppSpace.md, 0),
+          child: topBar!,
+        ),
+        const SizedBox(height: AppSpace.afterTopBar),
+        Expanded(child: body),
       ],
     );
   }

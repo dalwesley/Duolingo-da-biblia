@@ -11,10 +11,24 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 Trabalho em curso (ainda não versionado em release).
 
+---
+
+## [1.0.20] — 2026-08-13
+
+### Added
+- Companhia: Animar parceiro com card empoeirado + mensagem por faixa de atraso (1–3 / 4–6 / 7+ dias)
+- Link https `…/abrir/juntos/` (WhatsApp-clicável) que redireciona para `stway://juntos`
+- Presença na companhia: dias fora, passos semanais à frente/atrás, sync de `lastSeen`
+- Prompt de atualização forçado em debug (`FORCE_UPDATE_PROMPT` também em release de teste)
+- Grupos canônicos da Bíblia + melhorias na tela da Bíblia / progresso de trilhas
+
 ### Changed
-- Perguntas/memória mais game: badge DESAFIO/BÔNUS, sem narrativa itálica, Dica (não Sussurro), tiles 3D, VERIFICAR, feedback Acertou!/Errou!, vidas no HUD
-- Card CTA da home: em risco = poeira + teias + aranha; gelo usado = geada/cristais; em dia = vidro limpo com reflexo e bisel
-- Memória: pontuação do verso (reticências → frases), blank preserva vírgula/ponto, header sem título duplicado
+- Copy do Animar mais próxima (tom de amigo) e card de share em formato story
+- Sheet de update e fluxo de deep link Juntos → Companhia
+- Ajustes de UI em celebração, settings, mapa de trilha e journey path
+
+### Fixed
+- Share do Animar falhava em silêncio (capture/Opacity 0 + modal no Android)
 
 ---
 

@@ -560,6 +560,75 @@ void main() {
       expect(answers.contains('true'), isTrue);
     });
 
+    test('pickDiverseBankQuestions does not repeat VF stem as true and false', () {
+      final pool = [
+        BankQuestion(
+          id: 'vf-noe',
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-06-noe',
+          question: 'Quais eram os três filhos de Noé?',
+          type: ExerciseType.trueFalse,
+          prompt: 'Quais eram os três filhos de Noé: Caim, Abel e Sete.',
+          correctAnswer: 'false',
+          options: const [
+            QuestionOption(id: 'true', text: 'Verdadeiro'),
+            QuestionOption(id: 'false', text: 'Falso'),
+          ],
+          correctOptionId: 'false',
+          feedbackCorrect:
+              'Correto. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.',
+          feedbackWrong: const {},
+        ),
+        BankQuestion(
+          id: 'tap-1',
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-06-noe',
+          question: 'Toque?',
+          type: ExerciseType.tap,
+          prompt: 'Toque',
+          passageText: 'arca',
+          options: const [
+            QuestionOption(id: 'a', text: 'arca'),
+            QuestionOption(id: 'b', text: 'torre'),
+          ],
+          correctOptionId: 'a',
+          correctAnswer: 'a',
+          feedbackCorrect: 'Ok',
+          feedbackWrong: const {},
+        ),
+        BankQuestion(
+          id: 'ch-1',
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-06-noe',
+          question: 'Escolha?',
+          type: ExerciseType.choice,
+          options: const [
+            QuestionOption(id: 'a', text: 'A'),
+            QuestionOption(id: 'b', text: 'B'),
+          ],
+          correctOptionId: 'a',
+          feedbackCorrect: 'Ok',
+          feedbackWrong: const {},
+        ),
+      ];
+
+      for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'mission-x']) {
+        final picked = SessionComposer.pickDiverseBankQuestions(
+          pool: pool,
+          usedIds: {},
+          max: 6,
+          missionSlug: slug,
+        );
+        final vf = picked.where((q) => q.type == ExerciseType.trueFalse).toList();
+        expect(vf.length, lessThanOrEqualTo(1), reason: 'slug=$slug');
+        final stems = vf.map((q) => q.question.trim().toLowerCase()).toSet();
+        expect(stems.length, vf.length, reason: 'slug=$slug');
+      }
+    });
+
     test('fromBankQuestion normalizes VF answer to true/false ids', () {
       final bq = BankQuestion(
         id: 'vf-norm',

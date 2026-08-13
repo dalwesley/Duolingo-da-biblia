@@ -645,6 +645,25 @@ class BackendService extends ChangeNotifier {
   static const hydrateEmpty = 'empty';
   static const hydrateFailed = 'failed';
 
+  /// Re-lê a nuvem (ex.: app voltou ao foreground / abriu a jornada) e, se
+  /// mesclou com sucesso, agenda um save para os aparelhos convergirem.
+  Future<String> pullLatestProgress(
+    ProgressService progress, {
+    LeagueService? league,
+    String? roomCode,
+  }) async {
+    final result = await hydrateProgress(progress, league: league);
+    if (result == hydrateFromCloud || result == hydrateFromLegacy) {
+      scheduleSave(
+        progress,
+        LeagueService.weekKey(),
+        roomCode: roomCode,
+        league: league,
+      );
+    }
+    return result;
+  }
+
   /// Carrega o progresso do Firebase (fonte da verdade) para a memória da sessão.
   /// Se a nuvem estiver vazia, tenta migrar dados legados do aparelho uma vez.
   /// Retorna um dos códigos [hydrateFromCloud]/[hydrateFailed].
@@ -1178,6 +1197,10 @@ class BackendService extends ChangeNotifier {
         : (isHost ? (guestName ?? 'Companheiro') : hostName);
     final hostWalk = data['hostLastWalk'] as String?;
     final guestWalk = data['guestLastWalk'] as String?;
+    final hostSeen = data['hostLastSeen'] as String?;
+    final guestSeen = data['guestLastSeen'] as String?;
+    final hostWeekly = (data['hostWeeklySteps'] as num?)?.toInt() ?? 0;
+    final guestWeekly = (data['guestWeeklySteps'] as num?)?.toInt() ?? 0;
     final iWalked = isHost ? hostWalk == today : guestWalk == today;
     final theyWalked = awaiting
         ? false
@@ -1192,6 +1215,14 @@ class BackendService extends ChangeNotifier {
       theyWalkedToday: theyWalked,
       awaitingPartner: awaiting,
       isHost: isHost,
+      theyLastWalkDate: awaiting
+          ? null
+          : (isHost ? guestWalk : hostWalk),
+      theyLastSeenDate: awaiting
+          ? null
+          : (isHost ? guestSeen : hostSeen),
+      myWeeklySteps: isHost ? hostWeekly : guestWeekly,
+      theirWeeklySteps: awaiting ? 0 : (isHost ? guestWeekly : hostWeekly),
     );
   }
 
@@ -1216,6 +1247,10 @@ class BackendService extends ChangeNotifier {
               'lastSharedDate': null,
               'hostLastWalk': null,
               'guestLastWalk': null,
+              'hostLastSeen': null,
+              'guestLastSeen': null,
+              'hostWeeklySteps': 0,
+              'guestWeeklySteps': 0,
               'createdAt': FieldValue.serverTimestamp(),
             });
           });
@@ -1293,9 +1328,13 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  Future<void> publishCompanionWalks({
+  /// Marca presença (visto hoje) + passos semanais; se [walkedToday], também
+  /// publica o passo e recalcula dias juntos.
+  Future<void> syncCompanionPresence({
     required List<String> codes,
     required String userName,
+    required int weeklySteps,
+    required bool walkedToday,
   }) async {
     if (!isActive || codes.isEmpty) return;
     final today = _todayKey();
@@ -1314,33 +1353,54 @@ class BackendService extends ChangeNotifier {
           if (!isHost && guestId != _uid) return;
 
           final updates = <String, dynamic>{
-            if (isHost) 'hostLastWalk': today else 'guestLastWalk': today,
+            if (isHost) 'hostLastSeen': today else 'guestLastSeen': today,
+            if (isHost)
+              'hostWeeklySteps': weeklySteps
+            else
+              'guestWeeklySteps': weeklySteps,
             if (isHost) 'hostName': userName else 'guestName': userName,
             'updatedAt': FieldValue.serverTimestamp(),
           };
 
-          final hostWalk = isHost ? today : data['hostLastWalk'] as String?;
-          final guestWalk = isHost ? data['guestLastWalk'] as String? : today;
-          final bothToday = hostWalk == today && guestWalk == today;
-          if (bothToday && guestId != null && guestId.isNotEmpty) {
-            final lastShared = data['lastSharedDate'] as String?;
-            if (lastShared != today) {
-              var days = (data['sharedDays'] as num?)?.toInt() ?? 0;
-              if (lastShared == yesterday) {
-                days += 1;
-              } else {
-                days = 1;
+          if (walkedToday) {
+            updates[isHost ? 'hostLastWalk' : 'guestLastWalk'] = today;
+            final hostWalk = isHost ? today : data['hostLastWalk'] as String?;
+            final guestWalk = isHost ? data['guestLastWalk'] as String? : today;
+            final bothToday = hostWalk == today && guestWalk == today;
+            if (bothToday && guestId != null && guestId.isNotEmpty) {
+              final lastShared = data['lastSharedDate'] as String?;
+              if (lastShared != today) {
+                var days = (data['sharedDays'] as num?)?.toInt() ?? 0;
+                if (lastShared == yesterday) {
+                  days += 1;
+                } else {
+                  days = 1;
+                }
+                updates['sharedDays'] = days;
+                updates['lastSharedDate'] = today;
               }
-              updates['sharedDays'] = days;
-              updates['lastSharedDate'] = today;
             }
           }
           tx.set(ref, updates, SetOptions(merge: true));
         });
       } catch (e) {
-        debugPrint('Falha ao publicar caminhada $code: $e');
+        debugPrint('Falha ao sincronizar companhia $code: $e');
       }
     }
+  }
+
+  /// Compat: publica caminhada de hoje (presença + passos zerados se só walk).
+  Future<void> publishCompanionWalks({
+    required List<String> codes,
+    required String userName,
+    int weeklySteps = 0,
+  }) async {
+    await syncCompanionPresence(
+      codes: codes,
+      userName: userName,
+      weeklySteps: weeklySteps,
+      walkedToday: true,
+    );
   }
 
   Future<void> leaveCompanion(String code) async {
@@ -1363,6 +1423,10 @@ class BackendService extends ChangeNotifier {
             'guestName': null,
             'hostLastWalk': data['guestLastWalk'],
             'guestLastWalk': null,
+            'hostLastSeen': data['guestLastSeen'],
+            'guestLastSeen': null,
+            'hostWeeklySteps': data['guestWeeklySteps'] ?? 0,
+            'guestWeeklySteps': 0,
             'updatedAt': FieldValue.serverTimestamp(),
           }, SetOptions(merge: true));
         } else {
@@ -1373,6 +1437,8 @@ class BackendService extends ChangeNotifier {
           'guestId': null,
           'guestName': null,
           'guestLastWalk': null,
+          'guestLastSeen': null,
+          'guestWeeklySteps': 0,
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
       }

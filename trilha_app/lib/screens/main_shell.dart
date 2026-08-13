@@ -49,6 +49,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   DayPhase? _lastClockPhase;
 
   ProgressService? _progressRef;
+  /// Evita fetch duplicado se o SO dispara vários `resumed` em sequência.
+  bool _resumeHydrateInFlight = false;
+  DateTime? _lastResumeHydrateAt;
+  static const _resumeHydrateMinInterval = Duration(seconds: 20);
 
   @override
   void initState() {
@@ -155,7 +159,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       league: context.read<LeagueService>(),
     );
     if (progress.walkedToday) {
-      context.read<CompanionService>().syncWalksIfNeeded(progress);
+      context.read<CompanionService>().syncPresence(progress);
     }
     HomeWidgetService.syncFromProgress(progress);
   }
@@ -176,23 +180,47 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) _handleReminderAction(pending);
       _syncReminders();
-      // Fecha semana da caravana mesmo sem abrir a aba Liga.
-      unawaited(_settleLeagueOnResume());
+      // Outro aparelho pode ter avançado na nuvem enquanto este ficou aberto.
+      unawaited(_syncCloudOnResume());
     }
   }
 
-  Future<void> _settleLeagueOnResume() async {
+  /// Re-lê `users/{uid}` e só depois fecha a semana da liga.
+  Future<void> _syncCloudOnResume() async {
     if (!mounted) return;
     final progress = _progressRef;
-    if (progress == null) return;
-    final backend = context.read<BackendService>();
-    final league = context.read<LeagueService>();
-    final rooms = context.read<RoomService>();
-    await backend.settleAndSyncLeague(
-      progress,
-      league,
-      roomCode: rooms.activeCode,
-    );
+    if (progress == null || !progress.isLoaded) return;
+
+    final now = DateTime.now();
+    final last = _lastResumeHydrateAt;
+    if (_resumeHydrateInFlight ||
+        (last != null && now.difference(last) < _resumeHydrateMinInterval)) {
+      return;
+    }
+
+    _resumeHydrateInFlight = true;
+    try {
+      final backend = context.read<BackendService>();
+      final league = context.read<LeagueService>();
+      final rooms = context.read<RoomService>();
+      if (!backend.isActive) return;
+
+      await backend.pullLatestProgress(
+        progress,
+        league: league,
+        roomCode: rooms.activeCode,
+      );
+      if (!mounted) return;
+      _lastResumeHydrateAt = DateTime.now();
+
+      await backend.settleAndSyncLeague(
+        progress,
+        league,
+        roomCode: rooms.activeCode,
+      );
+    } finally {
+      _resumeHydrateInFlight = false;
+    }
   }
 
   void _handleReminderAction(ReminderAction action) {

@@ -36,7 +36,7 @@ Pasta: `marketing/instagram/semana-1/`
 | Sex | `05-sexta-produto.png` | Chamado | Missão do dia: abrir a Bíblia. |
 | Sáb | `06-sabado-enquete.png` | Enquete | Se a Bíblia sumisse… você sentiria falta? |
 | Dom | `07-domingo-cta.png` | CTA | Um dia. Um passo. Uma Missão. |
-| Extra | `08-constancia.png` | Hábito | Pequenos passos diários. · Josué 1:8 |
+| Extra | `08-constancia.png` | Hábito | Constância não é sentimento. · Josué 1:8 |
 
 ---
 
@@ -280,39 +280,59 @@ Sua próxima missão pode começar em breve.
 ---
 
 ### Extra — Constância / hábito
-**Visual:** jornada + Josué 1:8  
+**Visual:** jornada + confronto + Josué 1:8  
 **Arquivo:** `08-constancia.png`
 
 **Arte:**
 ```
-Pequenos passos diários.
+CONSTÂNCIA NÃO É SENTIMENTO.
 ```
-Sub: `“Medita nele de dia e de noite.”`  
-Citação: `Josué 1:8`
+Sub: `É ritmo. É voltar amanhã.`  
+Citação: `“Medita nele de dia e de noite.”` · `JOSUÉ 1:8`
+
+**Brief da arte (regenerar):**
+- Formato: 1:1 Instagram, mesmo estilo visual da versão atual (caminho luminoso em S entre montanhas navy, sol no horizonte, fundo escuro na metade inferior).
+- Headline dominante, branca, bold condensed, all caps: `CONSTÂNCIA NÃO É SENTIMENTO.`
+- Linha curta laranja abaixo do headline.
+- Subheadline branca, menor: `É ritmo. É voltar amanhã.`
+- Em seguida, citação em serif: `“Medita nele de dia e de noite.”`
+- Referência em laranja: `JOSUÉ 1:8`
+- Rodapé: wordmark `STWAY` — S/T/W/Y brancos; A em chevron (`Λ`) amarelo `#F7BB01` (nunca o logo inteiro amarelo).
+- Tom: confrontador com graça — não poster motivacional genérico. O caminho continua como metáfora visual; o texto carrega a tensão.
 
 **Legenda:**
 ```
-Às vezes parece difícil mudar de hábito.
-Ainda mais quando o hábito é estudar a Bíblia.
+Você não precisa de mais motivação.
+Precisa de ritmo.
 
-Você começa. Para. Promete. Adia.
+A gente começa a Bíblia com fogo.
+Dia 3 some.
+Dia 7 vira “depois eu retomo”.
 E a culpa fica.
 
-“Não se aparte da tua boca o livro desta lei;
-antes medita nele de dia e de noite…”
-— Josué 1:8
+Josué 1:8 não fala de sprint espiritual.
+Fala de meditar de dia e de noite —
+pequenos passos que viram chão.
 
-Por isso o STWAY está sendo desenvolvido.
+O STWAY nasce pra isso:
+uma missão curta por dia.
+Sem plano perfeito. Sem culpa.
+Só o próximo passo.
 
-Não pra te cobrar o plano perfeito.
-Pra te dar pequenos passos diários:
-uma missão curta, clara, que cabe no dia —
-até a Palavra virar ritmo, não esforço.
+Responde com sinceridade:
+quantos dias seguidos você leu a Bíblia essa semana?
 
-Em breve no iOS e Android.
+A) 0
+B) 1–2
+C) 3–5
+D) todos os dias
 
-#Josue18 #Habito #Biblia #STWAY
+Sem filtro. Comenta a letra.
+
+#Josue18 #Constancia #Biblia #STWAY
 ```
+
+**Story (par):** enquete “Quantos dias você leu a Bíblia essa semana?” (0 / 1–2 / 3–5 / todos) + “responde no post também ↓”
 
 ---
 

@@ -175,15 +175,24 @@ class CompanionService extends ChangeNotifier {
     return true;
   }
 
+  /// Publica presença (visto + passos semanais) e, se caminhou hoje, o passo.
+  Future<void> syncPresence(ProgressService progress) async {
+    if (!backend.isActive || companions.isEmpty) return;
+    final codes = companions.map((c) => c.code).toList();
+    await backend.syncCompanionPresence(
+      codes: codes,
+      userName: progress.userName,
+      weeklySteps: progress.weeklySteps,
+      walkedToday: progress.walkedToday,
+    );
+    await refresh();
+  }
+
   /// Publica que o usuário caminhou hoje e recalcula dias juntos.
   Future<void> syncWalksIfNeeded(ProgressService progress) async {
     if (!backend.isActive || companions.isEmpty) return;
     if (!progress.walkedToday) return;
-    await backend.publishCompanionWalks(
-      codes: companions.map((c) => c.code).toList(),
-      userName: progress.userName,
-    );
-    await refresh();
+    await syncPresence(progress);
   }
 
   Future<void> leave(String code, {ProgressService? progress}) async {

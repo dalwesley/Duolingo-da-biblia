@@ -394,293 +394,314 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ),
                 const ConfettiOverlay(active: true, cinematic: true),
                 SafeArea(
-                  child: Padding(
-                    padding: const EdgeInsets.all(AppSpace.xxl),
-                    child: Column(
-                      children: [
-                        const Spacer(flex: 2),
-                        ScaleTransition(
-                          scale: _heroScale,
-                          child: AnimatedBuilder(
-                            animation: _pulse,
-                            builder: (context, child) {
-                              final breath =
-                                  (math.sin(_pulse.value * math.pi * 2) + 1) /
-                                  2;
-                              return _HeroEmblem(
-                                accent: heroAccent,
-                                perfect: widget.perfect,
-                                breath: breath,
-                                child: child!,
-                              );
-                            },
-                            child: CinematicIcon(
-                              glyph: _heroGlyph,
-                              size: 54,
-                              accent: widget.perfect
-                                  ? AppColors.inkOnAccent
-                                  : Colors.white,
-                              framed: false,
-                            ),
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      const pad = AppSpace.xxl;
+                      return SingleChildScrollView(
+                        padding: const EdgeInsets.all(pad),
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            minHeight: math.max(0, constraints.maxHeight - pad * 2),
                           ),
-                        ),
-                        const SizedBox(height: 28),
-                        FadeTransition(
-                          opacity: _titleOpacity,
-                          child: SlideTransition(
-                            position: _titleSlide,
-                            child: Text(
-                              _headline,
-                              textAlign: TextAlign.center,
-                              style: AppTypography.display(
-                                size: 30,
-                                height: 1.05,
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: AppSpace.md),
-                        FadeTransition(
-                          opacity: _bodyOpacity,
-                          child: SlideTransition(
-                            position: _bodySlide,
-                            child: Column(
-                              children: [
-                                MascotBubble(
-                                  message: MascotMessages.celebration(
-                                    isBoss: isBoss,
-                                    pct: pct,
-                                    perfect: widget.perfect,
-                                    leagueRank: _leagueRank > 0
-                                        ? _leagueRank
-                                        : null,
-                                    nearPromote: _nearPromote,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                children: [
+                                  ScaleTransition(
+                                    scale: _heroScale,
+                                    child: AnimatedBuilder(
+                                      animation: _pulse,
+                                      builder: (context, child) {
+                                        final breath =
+                                            (math.sin(_pulse.value * math.pi * 2) + 1) /
+                                            2;
+                                        return _HeroEmblem(
+                                          accent: heroAccent,
+                                          perfect: widget.perfect,
+                                          breath: breath,
+                                          child: child!,
+                                        );
+                                      },
+                                      child: CinematicIcon(
+                                        glyph: _heroGlyph,
+                                        size: 54,
+                                        accent: widget.perfect
+                                            ? AppColors.inkOnAccent
+                                            : Colors.white,
+                                        framed: false,
+                                      ),
+                                    ),
                                   ),
-                                ),
-                                if (widget.perfect ||
-                                    widget.isBoss ||
-                                    _leagueRank > 0) ...[
+                                  const SizedBox(height: 28),
+                                  FadeTransition(
+                                    opacity: _titleOpacity,
+                                    child: SlideTransition(
+                                      position: _titleSlide,
+                                      child: Text(
+                                        _headline,
+                                        textAlign: TextAlign.center,
+                                        style: AppTypography.display(
+                                          size: 30,
+                                          height: 1.05,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                   const SizedBox(height: AppSpace.md),
-                                  Wrap(
-                                    spacing: 8,
-                                    runSpacing: 8,
-                                    alignment: WrapAlignment.center,
-                                    children: [
-                                      if (widget.perfect)
-                                        const _ComboChip(
-                                          label: 'PERFEITA',
-                                          color: AppColors.accent,
-                                        ),
-                                      if (widget.isBoss)
-                                        const _ComboChip(
-                                          label: 'BOSS',
-                                          color: AppColors.sand,
-                                        ),
-                                      if (_nearPromote)
-                                        const _ComboChip(
-                                          label: 'QUASE SOBE',
-                                          color: AppColors.ember,
-                                        )
-                                      else if (_leagueRank > 0)
-                                        _ComboChip(
-                                          label: '$_leagueRankº CARAVANA',
-                                          color: AppColors.teal,
-                                        ),
-                                    ],
+                                  FadeTransition(
+                                    opacity: _bodyOpacity,
+                                    child: SlideTransition(
+                                      position: _bodySlide,
+                                      child: Column(
+                                        children: [
+                                          MascotBubble(
+                                            message: MascotMessages.celebration(
+                                              isBoss: isBoss,
+                                              pct: pct,
+                                              perfect: widget.perfect,
+                                              leagueRank: _leagueRank > 0
+                                                  ? _leagueRank
+                                                  : null,
+                                              nearPromote: _nearPromote,
+                                            ),
+                                          ),
+                                          if (widget.perfect ||
+                                              widget.isBoss ||
+                                              _leagueRank > 0) ...[
+                                            const SizedBox(height: AppSpace.md),
+                                            Wrap(
+                                              spacing: 8,
+                                              runSpacing: 8,
+                                              alignment: WrapAlignment.center,
+                                              children: [
+                                                if (widget.perfect)
+                                                  const _ComboChip(
+                                                    label: 'PERFEITA',
+                                                    color: AppColors.accent,
+                                                  ),
+                                                if (widget.isBoss)
+                                                  const _ComboChip(
+                                                    label: 'BOSS',
+                                                    color: AppColors.sand,
+                                                  ),
+                                                if (_nearPromote)
+                                                  const _ComboChip(
+                                                    label: 'QUASE SOBE',
+                                                    color: AppColors.ember,
+                                                  )
+                                                else if (_leagueRank > 0)
+                                                  _ComboChip(
+                                                    label: '$_leagueRankº CARAVANA',
+                                                    color: AppColors.teal,
+                                                  ),
+                                              ],
+                                            ),
+                                          ],
+                                          if (_showGoalBanner) ...[
+                                            const SizedBox(height: AppSpace.section),
+                                            Container(
+                                              width: double.infinity,
+                                              padding: const EdgeInsets.all(
+                                                AppSpace.section,
+                                              ),
+                                              decoration: BoxDecoration(
+                                                gradient: AppGradients.gold,
+                                                borderRadius: BorderRadius.circular(
+                                                  AppRadii.md,
+                                                ),
+                                                boxShadow: AppTheme.glow(
+                                                  AppColors.accent,
+                                                  blur: 22,
+                                                ),
+                                              ),
+                                              child: Text(
+                                                '✦ Meta do dia · streak protegida · +combo',
+                                                textAlign: TextAlign.center,
+                                                style: AppTypography.body(
+                                                  size: 13,
+                                                  weight: FontWeight.w900,
+                                                  color: AppColors.inkOnAccent,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ],
+                                      ),
+                                    ),
                                   ),
-                                ],
-                                if (_showGoalBanner) ...[
-                                  const SizedBox(height: AppSpace.section),
-                                  Container(
-                                    width: double.infinity,
-                                    padding: const EdgeInsets.all(
-                                      AppSpace.section,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      gradient: AppGradients.gold,
-                                      borderRadius: BorderRadius.circular(
-                                        AppRadii.md,
-                                      ),
-                                      boxShadow: AppTheme.glow(
-                                        AppColors.accent,
-                                        blur: 22,
-                                      ),
-                                    ),
-                                    child: Text(
-                                      '✦ Meta do dia · streak protegida · +combo',
-                                      textAlign: TextAlign.center,
-                                      style: AppTypography.body(
-                                        size: 13,
-                                        weight: FontWeight.w900,
-                                        color: AppColors.inkOnAccent,
+                                  const SizedBox(height: 22),
+                                  FadeTransition(
+                                    opacity: _statsOpacity,
+                                    child: SlideTransition(
+                                      position: _statsSlide,
+                                      child: AnimatedBuilder(
+                                        animation: _countProgress,
+                                        builder: (context, _) {
+                                          final t = _countProgress.value;
+                                          final stepsShown =
+                                              (_awardedSteps * t).round();
+                                          final streakShown =
+                                              (progress.streak * t).round();
+                                          final pctShown = (pct * t).round();
+                                          return Row(
+                                            children: [
+                                              Expanded(
+                                                child: _StatCard(
+                                                  glyph: CinematicGlyph.path,
+                                                  value: '+$stepsShown',
+                                                  label: 'Passos',
+                                                  color: AppColors.accent,
+                                                  delay: 0,
+                                                  pulse: _pulse,
+                                                ),
+                                              ),
+                                              const SizedBox(width: AppSpace.sm),
+                                              Expanded(
+                                                child: _StatCard(
+                                                  glyph: CinematicGlyph.flame,
+                                                  value: '$streakShown',
+                                                  label: 'Dias',
+                                                  color: AppColors.streak,
+                                                  delay: 0.08,
+                                                  pulse: _pulse,
+                                                ),
+                                              ),
+                                              const SizedBox(width: AppSpace.sm),
+                                              Expanded(
+                                                child: _StatCard(
+                                                  glyph: CinematicGlyph.check,
+                                                  value: '$pctShown%',
+                                                  label: 'Clareza',
+                                                  color: AppColors.teal,
+                                                  delay: 0.16,
+                                                  pulse: _pulse,
+                                                ),
+                                              ),
+                                            ],
+                                          );
+                                        },
                                       ),
                                     ),
                                   ),
-                                ],
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: 22),
-                        FadeTransition(
-                          opacity: _statsOpacity,
-                          child: SlideTransition(
-                            position: _statsSlide,
-                            child: AnimatedBuilder(
-                              animation: _countProgress,
-                              builder: (context, _) {
-                                final t = _countProgress.value;
-                                final stepsShown = (_awardedSteps * t).round();
-                                final streakShown = (progress.streak * t)
-                                    .round();
-                                final pctShown = (pct * t).round();
-                                return Row(
-                                  children: [
-                                    Expanded(
-                                      child: _StatCard(
-                                        glyph: CinematicGlyph.path,
-                                        value: '+$stepsShown',
-                                        label: 'Passos',
-                                        color: AppColors.accent,
-                                        delay: 0,
-                                        pulse: _pulse,
-                                      ),
-                                    ),
-                                    const SizedBox(width: AppSpace.sm),
-                                    Expanded(
-                                      child: _StatCard(
-                                        glyph: CinematicGlyph.flame,
-                                        value: '$streakShown',
-                                        label: 'Dias',
-                                        color: AppColors.streak,
-                                        delay: 0.08,
-                                        pulse: _pulse,
-                                      ),
-                                    ),
-                                    const SizedBox(width: AppSpace.sm),
-                                    Expanded(
-                                      child: _StatCard(
-                                        glyph: CinematicGlyph.check,
-                                        value: '$pctShown%',
-                                        label: 'Clareza',
-                                        color: AppColors.teal,
-                                        delay: 0.16,
-                                        pulse: _pulse,
+                                  if (widget.perfect) ...[
+                                    const SizedBox(height: AppSpace.md),
+                                    FadeTransition(
+                                      opacity: _statsOpacity,
+                                      child: LivingSeedCard(
+                                        perfectRecent: true,
+                                        compact: true,
                                       ),
                                     ),
                                   ],
-                                );
-                              },
-                            ),
-                          ),
-                        ),
-                        if (widget.perfect) ...[
-                          const SizedBox(height: AppSpace.md),
-                          FadeTransition(
-                            opacity: _statsOpacity,
-                            child: LivingSeedCard(
-                              perfectRecent: true,
-                              compact: true,
-                            ),
-                          ),
-                        ],
-                        if (showModeUp) ...[
-                          const SizedBox(height: AppSpace.lg),
-                          FadeTransition(
-                            opacity: _statsOpacity,
-                            child: _ModeUpgradeCard(
-                              trailComplete: _trailComplete,
-                              currentLabel: _currentMode?.labelPt ?? 'Semente',
-                              nextLabel: _nextMeta!.label,
-                              nextSubtitle: _nextMeta!.subtitle,
-                              onTryStep: () =>
-                                  _acceptNextMode(replayThisStep: true),
-                              onSwitchTrail: _trailComplete
-                                  ? () => _acceptNextMode(replayThisStep: false)
-                                  : null,
-                            ),
-                          ),
-                        ],
-                        if (progress.showStreakRepairOffer) ...[
-                          const SizedBox(height: AppSpace.lg),
-                          FadeTransition(
-                            opacity: _statsOpacity,
-                            child: const StreakRepairCelebrationCard(),
-                          ),
-                        ],
-                        const Spacer(flex: 3),
-                        FadeTransition(
-                          opacity: _ctaOpacity,
-                          child: SlideTransition(
-                            position: _ctaSlide,
-                            child: Column(
-                              children: [
-                                if (progress.streak > 0) ...[
-                                  ShareStreakButton(
-                                    streak: progress.streak,
-                                    userName: progress.userName,
-                                    steps: progress.steps,
-                                  ),
-                                  const SizedBox(height: AppSpace.md),
-                                ],
-                                AnimatedBuilder(
-                                  animation: _pulse,
-                                  builder: (context, child) {
-                                    final breath =
-                                        (math.sin(_pulse.value * math.pi * 2) +
-                                            1) /
-                                        2;
-                                    return DecoratedBox(
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(
-                                          AppRadii.lg,
-                                        ),
-                                        boxShadow: [
-                                          BoxShadow(
-                                            color: AppColors.accent.withValues(
-                                              alpha: 0.18 + breath * 0.14,
-                                            ),
-                                            blurRadius: 18 + breath * 10,
-                                            spreadRadius: breath * 1.5,
-                                          ),
-                                        ],
+                                  if (showModeUp) ...[
+                                    const SizedBox(height: AppSpace.lg),
+                                    FadeTransition(
+                                      opacity: _statsOpacity,
+                                      child: _ModeUpgradeCard(
+                                        trailComplete: _trailComplete,
+                                        currentLabel:
+                                            _currentMode?.labelPt ?? 'Semente',
+                                        nextLabel: _nextMeta!.label,
+                                        nextSubtitle: _nextMeta!.subtitle,
+                                        onTryStep: () =>
+                                            _acceptNextMode(replayThisStep: true),
+                                        onSwitchTrail: _trailComplete
+                                            ? () => _acceptNextMode(
+                                                  replayThisStep: false,
+                                                )
+                                            : null,
                                       ),
-                                      child: child,
-                                    );
-                                  },
-                                  child: CopperCta(
-                                    label: 'CONTINUAR A CAMINHADA',
-                                    trailing: null,
-                                    onTap: () {
-                                      Navigator.of(context).pushReplacement(
-                                        MaterialPageRoute(
-                                          builder: (_) => TrailMapScreen(
-                                            slug: widget.trailSlug,
+                                    ),
+                                  ],
+                                  if (progress.showStreakRepairOffer) ...[
+                                    const SizedBox(height: AppSpace.lg),
+                                    FadeTransition(
+                                      opacity: _statsOpacity,
+                                      child: const StreakRepairCelebrationCard(),
+                                    ),
+                                  ],
+                                ],
+                              ),
+                              FadeTransition(
+                                opacity: _ctaOpacity,
+                                child: SlideTransition(
+                                  position: _ctaSlide,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(top: AppSpace.lg),
+                                    child: Column(
+                                      children: [
+                                        if (progress.streak > 0) ...[
+                                          ShareStreakButton(
+                                            streak: progress.streak,
+                                            userName: progress.userName,
+                                            steps: progress.steps,
+                                          ),
+                                          const SizedBox(height: AppSpace.md),
+                                        ],
+                                        AnimatedBuilder(
+                                          animation: _pulse,
+                                          builder: (context, child) {
+                                            final breath =
+                                                (math.sin(_pulse.value * math.pi * 2) +
+                                                    1) /
+                                                2;
+                                            return DecoratedBox(
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(
+                                                  AppRadii.lg,
+                                                ),
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: AppColors.accent
+                                                        .withValues(
+                                                      alpha: 0.18 + breath * 0.14,
+                                                    ),
+                                                    blurRadius: 18 + breath * 10,
+                                                    spreadRadius: breath * 1.5,
+                                                  ),
+                                                ],
+                                              ),
+                                              child: child,
+                                            );
+                                          },
+                                          child: CopperCta(
+                                            label: 'CONTINUAR A CAMINHADA',
+                                            trailing: null,
+                                            onTap: () {
+                                              Navigator.of(context).pushReplacement(
+                                                MaterialPageRoute(
+                                                  builder: (_) => TrailMapScreen(
+                                                    slug: widget.trailSlug,
+                                                  ),
+                                                ),
+                                              );
+                                            },
                                           ),
                                         ),
-                                      );
-                                    },
-                                  ),
-                                ),
-                                const SizedBox(height: AppSpace.sm),
-                                TextButton(
-                                  onPressed: () => Navigator.of(
-                                    context,
-                                  ).popUntil((r) => r.isFirst),
-                                  child: Text(
-                                    'Voltar ao início',
-                                    style: AppTypography.body(
-                                      weight: FontWeight.w700,
-                                      color: appearance.textMuted(0.7),
+                                        const SizedBox(height: AppSpace.sm),
+                                        TextButton(
+                                          onPressed: () => Navigator.of(
+                                            context,
+                                          ).popUntil((r) => r.isFirst),
+                                          child: Text(
+                                            'Voltar ao início',
+                                            style: AppTypography.body(
+                                              weight: FontWeight.w700,
+                                              color: appearance.textMuted(0.7),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                      ],
-                    ),
+                      );
+                    },
                   ),
                 ),
               ],

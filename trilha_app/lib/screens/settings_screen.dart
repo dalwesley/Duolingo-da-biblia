@@ -582,50 +582,36 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   Widget _dailyGoalPicker(ProgressService progress, AppearanceStyle a) {
-    return _SegmentTrack(
-      child: Row(
-        children: [1, 2, 3].map((goal) {
-          final selected = progress.settings.dailyGoal == goal;
-          return Expanded(
-            child: _SegmentCell(
-              selected: selected,
+    return Row(
+      children: [
+        for (final goal in [1, 2, 3]) ...[
+          if (goal > 1) const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: _ChoiceTile(
+              selected: progress.settings.dailyGoal == goal,
               onTap: () {
                 HapticFeedback.selectionClick();
                 progress.updateSettings(
                   progress.settings.copyWith(dailyGoal: goal),
                 );
               },
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    '$goal',
-                    style: AppTypography.title(
-                      size: 17,
-                      weight: FontWeight.w900,
-                      height: 1,
-                      color: selected
-                          ? AppColors.inkOnAccent
-                          : a.textMuted(0.85),
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    goal == 1 ? 'passo' : 'passos',
-                    style: AppTypography.label(
-                      size: 10,
-                      letterSpacing: 0.3,
-                      color: selected
-                          ? AppColors.inkOnAccent.withValues(alpha: 0.8)
-                          : a.textMuted(0.55),
-                    ),
-                  ),
-                ],
+              child: Text(
+                goal == 1 ? '1 passo' : '$goal passos',
+                textAlign: TextAlign.center,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w800,
+                  color: progress.settings.dailyGoal == goal
+                      ? AppColors.inkOnAccent
+                      : a.text,
+                ),
               ),
             ),
-          );
-        }).toList(),
-      ),
+          ),
+        ],
+      ],
     );
   }
 
@@ -638,50 +624,56 @@ class _SettingsScreenState extends State<SettingsScreen>
     ];
     final current = progress.settings.fontScale;
 
-    return _SegmentTrack(
-      child: Row(
-        children: [
-          for (final (scale, label) in steps)
-            Expanded(
-              child: _SegmentCell(
-                selected: (current - scale).abs() < 0.01,
-                onTap: () {
-                  HapticFeedback.selectionClick();
-                  progress.updateSettings(
-                    progress.settings.copyWith(fontScale: scale),
-                  );
-                },
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      'A',
-                      style: AppTypography.title(
-                        size: 12 + (scale * 6),
-                        weight: FontWeight.w900,
-                        height: 1,
-                        color: (current - scale).abs() < 0.01
-                            ? AppColors.inkOnAccent
-                            : a.textMuted(0.85),
+    return Row(
+      children: [
+        for (var i = 0; i < steps.length; i++) ...[
+          if (i > 0) const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Builder(
+              builder: (context) {
+                final (scale, label) = steps[i];
+                final selected = (current - scale).abs() < 0.01;
+                return _ChoiceTile(
+                  selected: selected,
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    progress.updateSettings(
+                      progress.settings.copyWith(fontScale: scale),
+                    );
+                  },
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        'A',
+                        style: AppTypography.title(
+                          size: 12 + (scale * 6),
+                          weight: FontWeight.w900,
+                          height: 1,
+                          color: selected
+                              ? AppColors.inkOnAccent
+                              : a.textMuted(0.85),
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      label,
-                      style: AppTypography.label(
-                        size: 9,
-                        letterSpacing: 0.3,
-                        color: (current - scale).abs() < 0.01
-                            ? AppColors.inkOnAccent.withValues(alpha: 0.8)
-                            : a.textMuted(0.55),
+                      const SizedBox(height: 2),
+                      Text(
+                        label,
+                        style: AppTypography.label(
+                          size: 9,
+                          letterSpacing: 0.3,
+                          color: selected
+                              ? AppColors.inkOnAccent.withValues(alpha: 0.8)
+                              : a.textMuted(0.55),
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
+                    ],
+                  ),
+                );
+              },
             ),
+          ),
         ],
-      ),
+      ],
     );
   }
 
@@ -717,125 +709,126 @@ class _SettingsScreenState extends State<SettingsScreen>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        _SegmentTrack(
-          child: Row(
-            children: [
-              for (final meta in items)
-                Expanded(
-                  child: Builder(
-                    builder: (context) {
-                      final locked = !progress.isDifficultyUnlocked(
-                        _genesisTrailSlug,
-                        meta.difficulty,
-                      );
-                      final selected = selectedId == meta.difficulty.id;
-                      final cleared = progress.hasClearedMode(
-                        _genesisTrailSlug,
-                        meta.difficulty.id,
-                      );
-                      return _SegmentCell(
-                        selected: selected && !locked,
-                        onTap: () {
-                          if (locked) {
-                            HapticFeedback.selectionClick();
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  'Conclua o modo anterior para liberar ${meta.label}.',
-                                  style: AppTypography.body(
-                                    color: AppColors.textOnDark,
-                                  ),
-                                ),
-                                backgroundColor: AppColors.nightElevated,
-                              ),
-                            );
-                            return;
-                          }
+        Row(
+          children: [
+            for (var i = 0; i < items.length; i++) ...[
+              if (i > 0) const SizedBox(width: AppSpace.sm),
+              Expanded(
+                child: Builder(
+                  builder: (context) {
+                    final meta = items[i];
+                    final locked = !progress.isDifficultyUnlocked(
+                      _genesisTrailSlug,
+                      meta.difficulty,
+                    );
+                    final selected = selectedId == meta.difficulty.id && !locked;
+                    final cleared = progress.hasClearedMode(
+                      _genesisTrailSlug,
+                      meta.difficulty.id,
+                    );
+                    return _ChoiceTile(
+                      selected: selected,
+                      onTap: () {
+                        if (locked) {
                           HapticFeedback.selectionClick();
-                          final prev = progress.difficultyForTrail(
-                            _genesisTrailSlug,
-                          );
-                          progress.setTrailDifficulty(
-                            _genesisTrailSlug,
-                            meta.difficulty.id,
-                            missionSlugs: _genesisMissionSlugs,
-                          );
-                          if (prev != null &&
-                              prev != meta.difficulty.id &&
-                              _genesisMissionSlugs.isNotEmpty) {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  'Progresso da trilha reiniciado neste modo.',
-                                  style: AppTypography.body(
-                                    color: AppColors.textOnDark,
-                                  ),
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'Conclua o modo anterior para liberar ${meta.label}.',
+                                style: AppTypography.body(
+                                  color: AppColors.textOnDark,
                                 ),
-                                backgroundColor: AppColors.nightElevated,
                               ),
-                            );
-                          }
-                        },
-                        child: Opacity(
-                          opacity: locked ? 0.45 : 1,
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              CinematicIcon(
-                                glyph: locked
-                                    ? CinematicGlyph.lock
-                                    : DifficultyVisuals.glyphFor(
-                                        meta.difficulty,
-                                      ),
-                                size: 18,
-                                accent: selected && !locked
+                              backgroundColor: AppColors.nightElevated,
+                            ),
+                          );
+                          return;
+                        }
+                        HapticFeedback.selectionClick();
+                        final prev = progress.difficultyForTrail(
+                          _genesisTrailSlug,
+                        );
+                        progress.setTrailDifficulty(
+                          _genesisTrailSlug,
+                          meta.difficulty.id,
+                          missionSlugs: _genesisMissionSlugs,
+                        );
+                        if (prev != null &&
+                            prev != meta.difficulty.id &&
+                            _genesisMissionSlugs.isNotEmpty) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(
+                              content: Text(
+                                'Progresso da trilha reiniciado neste modo.',
+                                style: AppTypography.body(
+                                  color: AppColors.textOnDark,
+                                ),
+                              ),
+                              backgroundColor: AppColors.nightElevated,
+                            ),
+                          );
+                        }
+                      },
+                      child: Opacity(
+                        opacity: locked ? 0.45 : 1,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            CinematicIcon(
+                              glyph: locked
+                                  ? CinematicGlyph.lock
+                                  : DifficultyVisuals.glyphFor(
+                                      meta.difficulty,
+                                    ),
+                              size: 18,
+                              accent: selected
+                                  ? AppColors.inkOnAccent
+                                  : a.textMuted(0.8),
+                              framed: false,
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              meta.label,
+                              textAlign: TextAlign.center,
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.body(
+                                size: 11,
+                                weight: FontWeight.w800,
+                                color: selected
                                     ? AppColors.inkOnAccent
-                                    : a.textMuted(0.75),
-                                framed: false,
+                                    : a.text,
                               ),
-                              const SizedBox(height: 4),
+                            ),
+                            if (cleared && !locked) ...[
+                              const SizedBox(height: 2),
                               Text(
-                                meta.label,
-                                textAlign: TextAlign.center,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
+                                'OK',
                                 style: AppTypography.label(
-                                  size: 11,
-                                  letterSpacing: 0.2,
-                                  color: selected && !locked
-                                      ? AppColors.inkOnAccent
-                                      : a.textMuted(0.85),
+                                  size: 9,
+                                  letterSpacing: 0.4,
+                                  color: selected
+                                      ? AppColors.inkOnAccent.withValues(
+                                          alpha: 0.75,
+                                        )
+                                      : AppColors.accent.withValues(
+                                          alpha: 0.8,
+                                        ),
                                 ),
                               ),
-                              if (cleared && !locked) ...[
-                                const SizedBox(height: 2),
-                                Text(
-                                  'OK',
-                                  style: AppTypography.label(
-                                    size: 9,
-                                    letterSpacing: 0.4,
-                                    color: selected
-                                        ? AppColors.inkOnAccent.withValues(
-                                            alpha: 0.75,
-                                          )
-                                        : AppColors.accent.withValues(
-                                            alpha: 0.8,
-                                          ),
-                                  ),
-                                ),
-                              ],
                             ],
-                          ),
+                          ],
                         ),
-                      );
-                    },
-                  ),
+                      ),
+                    );
+                  },
                 ),
+              ),
             ],
-          ),
+          ],
         ),
         if (selectedMeta != null) ...[
-          const SizedBox(height: AppSpace.sm),
+          const SizedBox(height: AppSpace.md),
           Text(
             selectedMeta.subtitle,
             textAlign: TextAlign.center,
@@ -859,60 +852,40 @@ class _SettingsScreenState extends State<SettingsScreen>
             final isSelected = selected == mode;
             return SizedBox(
               width: cellW,
-              child: Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () {
-                    HapticFeedback.selectionClick();
-                    progress.updateSettings(
-                      progress.settings.copyWith(appearanceMode: mode),
-                    );
-                  },
-                  borderRadius: BorderRadius.circular(AppRadii.sm),
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 200),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 12,
+              child: _ChoiceTile(
+                selected: isSelected,
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  progress.updateSettings(
+                    progress.settings.copyWith(appearanceMode: mode),
+                  );
+                },
+                child: Row(
+                  children: [
+                    CinematicIcon(
+                      glyph: mode.glyph,
+                      size: 18,
+                      accent: isSelected
+                          ? AppColors.inkOnAccent
+                          : a.textMuted(0.8),
+                      framed: false,
                     ),
-                    decoration: BoxDecoration(
-                      gradient: isSelected ? AppGradients.gold : null,
-                      color: isSelected ? null : a.cardFillSoft,
-                      borderRadius: BorderRadius.circular(AppRadii.sm),
-                      border: Border.all(
-                        color: isSelected
-                            ? Colors.transparent
-                            : a.cardBorder.withValues(alpha: 0.55),
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: Text(
+                        mode.label,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w800,
+                          color: isSelected
+                              ? AppColors.inkOnAccent
+                              : a.text,
+                        ),
                       ),
                     ),
-                    child: Row(
-                      children: [
-                        CinematicIcon(
-                          glyph: mode.glyph,
-                          size: 18,
-                          accent: isSelected
-                              ? AppColors.inkOnAccent
-                              : a.textMuted(0.8),
-                          framed: false,
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          child: Text(
-                            mode.label,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.body(
-                              size: 12,
-                              weight: FontWeight.w800,
-                              color: isSelected
-                                  ? AppColors.inkOnAccent
-                                  : a.text,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  ],
                 ),
               ),
             );
@@ -1132,33 +1105,13 @@ class _SettingsDivider extends StatelessWidget {
   }
 }
 
-/// Trilho dos segmentos — mesmo padrão da Liga (Companhia / Caravana).
-class _SegmentTrack extends StatelessWidget {
-  final Widget child;
-
-  const _SegmentTrack({required this.child});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(4),
-      decoration: BoxDecoration(
-        color: a.cardFillSoft,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: a.cardBorder.withValues(alpha: 0.65)),
-      ),
-      child: child,
-    );
-  }
-}
-
-class _SegmentCell extends StatelessWidget {
+/// Chip de escolha — mesmo padrão de Aparência (tile com borda / ouro).
+class _ChoiceTile extends StatelessWidget {
   final bool selected;
   final VoidCallback onTap;
   final Widget child;
 
-  const _SegmentCell({
+  const _ChoiceTile({
     required this.selected,
     required this.onTap,
     required this.child,
@@ -1166,17 +1119,28 @@ class _SegmentCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
-        curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.symmetric(vertical: 12),
-        decoration: BoxDecoration(
-          gradient: selected ? AppGradients.gold : null,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
+    final a = Appearance.of(context);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+          decoration: BoxDecoration(
+            gradient: selected ? AppGradients.gold : null,
+            color: selected ? null : a.cardFillSoft,
+            borderRadius: BorderRadius.circular(AppRadii.sm),
+            border: Border.all(
+              color: selected
+                  ? Colors.transparent
+                  : a.cardBorder.withValues(alpha: 0.55),
+            ),
+          ),
+          child: child,
         ),
-        child: child,
       ),
     );
   }

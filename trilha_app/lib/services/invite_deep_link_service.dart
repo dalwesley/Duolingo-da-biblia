@@ -3,26 +3,46 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 
-/// Deep links de convite: `stway://companhia/CODIGO`
+/// Deep links: `stway://companhia/CODIGO` · `stway://juntos`
+/// Link https (WhatsApp): [juntosHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
   static final InviteDeepLinkService instance = InviteDeepLinkService._();
 
   static const scheme = 'stway';
   static const companionHost = 'companhia';
+  static const juntosHost = 'juntos';
 
   final _appLinks = AppLinks();
   StreamSubscription<Uri>? _sub;
 
   String? _pendingCompanionCode;
   bool _wantJuntosTab = false;
+  bool _wantCompanhiaTab = false;
 
   String? get pendingCompanionCode => _pendingCompanionCode;
   bool get wantJuntosTab => _wantJuntosTab;
+  bool get wantCompanhiaTab => _wantCompanhiaTab;
 
-  /// Link tocável no WhatsApp / QR.
+  /// Link tocável no WhatsApp / QR — convite.
   static String companionUri(String code) =>
       '$scheme://$companionHost/${code.trim().toUpperCase()}';
+
+  /// Abre o app na aba Juntos → Companhia (animar / voltar à caminhada).
+  static String juntosUri() => '$scheme://$juntosHost';
+
+  /// Link https clicável no WhatsApp — redireciona para [juntosUri].
+  /// Hosting: `admin/public/abrir/juntos/` → Firebase Hosting.
+  static const juntosHttpsUrl =
+      'https://trilha-biblia.web.app/abrir/juntos/';
+
+  /// Bloco padrão pro fim das mensagens de Animar.
+  static String openAppFooter() {
+    return '''
+Abre o Stway:
+$juntosHttpsUrl
+'''.trim();
+  }
 
   /// Extrai código de URI ou texto solto.
   static String? extractCompanionCode(String? raw) {
@@ -71,6 +91,19 @@ class InviteDeepLinkService extends ChangeNotifier {
   }
 
   void _ingestUri(Uri uri) {
+    if (uri.scheme != scheme) return;
+    final host = uri.host.toLowerCase();
+    // stway://juntos  ou  stway:///juntos
+    final pathSegs =
+        uri.pathSegments.where((s) => s.isNotEmpty).toList(growable: false);
+    final pathFirst =
+        pathSegs.isEmpty ? null : pathSegs.first.toLowerCase();
+    if (host == juntosHost || pathFirst == juntosHost) {
+      _wantJuntosTab = true;
+      _wantCompanhiaTab = true;
+      notifyListeners();
+      return;
+    }
     final code = extractCompanionCode(uri.toString());
     if (code == null) return;
     offerCompanionCode(code);
@@ -81,6 +114,7 @@ class InviteDeepLinkService extends ChangeNotifier {
     if (normalized == null) return;
     _pendingCompanionCode = normalized;
     _wantJuntosTab = true;
+    _wantCompanhiaTab = true;
     notifyListeners();
   }
 
@@ -88,6 +122,13 @@ class InviteDeepLinkService extends ChangeNotifier {
   bool takeWantJuntosTab() {
     if (!_wantJuntosTab) return false;
     _wantJuntosTab = false;
+    return true;
+  }
+
+  /// LeagueScreen consome o pedido de ir em Companhia.
+  bool takeWantCompanhiaTab() {
+    if (!_wantCompanhiaTab) return false;
+    _wantCompanhiaTab = false;
     return true;
   }
 

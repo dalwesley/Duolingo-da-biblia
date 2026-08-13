@@ -18,6 +18,9 @@ class JourneyPathItem {
   final int total;
   final int chapterIndex;
 
+  /// Ex.: "Semente concluída" — diferencia modo limpo de progresso zerado.
+  final String? statusLabel;
+
   const JourneyPathItem({
     required this.trail,
     required this.state,
@@ -25,6 +28,7 @@ class JourneyPathItem {
     this.done = 0,
     this.total = 0,
     this.chapterIndex = 1,
+    this.statusLabel,
   });
 }
 
@@ -77,6 +81,7 @@ class JourneyPath extends StatelessWidget {
         done: item.done,
         total: item.total,
         chapterIndex: chapter,
+        statusLabel: item.statusLabel,
       );
 
       children.add(
@@ -475,7 +480,8 @@ class _HeroStation extends StatelessWidget {
                   children: [
                     if (item.total > 0)
                       Text(
-                        '${item.done} de ${item.total} passos',
+                        item.statusLabel ??
+                            '${item.done} de ${item.total} passos',
                         style: AppTypography.body(
                           size: 12,
                           weight: FontWeight.w600,
@@ -630,15 +636,16 @@ class _QuietStation extends StatelessWidget {
                         ),
                         const SizedBox(height: AppSpace.xs),
                         Text(
-                          isDone
-                              ? 'Concluída'
-                              : isSoon
-                              ? 'Em breve neste caminho'
-                              : isLocked
-                              ? 'Ainda além do horizonte'
-                              : item.total > 0
-                              ? '${item.done}/${item.total} passos'
-                              : item.trail.description,
+                          item.statusLabel ??
+                              (isDone
+                                  ? 'Concluída'
+                                  : isSoon
+                                  ? 'Em breve neste caminho'
+                                  : isLocked
+                                  ? 'Ainda além do horizonte'
+                                  : item.total > 0
+                                  ? '${item.done}/${item.total} passos'
+                                  : item.trail.description),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.body(

@@ -183,7 +183,11 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         .length;
     final completed = realmTrails
         .where(
-          (t) => TrailProgress.isTrailCompleted(t, progress.completedMissions),
+          (t) => TrailProgress.isTrailCompleted(
+            t,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+          ),
         )
         .length;
 

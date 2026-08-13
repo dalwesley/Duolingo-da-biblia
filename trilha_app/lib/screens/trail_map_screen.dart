@@ -69,12 +69,13 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     if (mounted) setState(() => _checkingDifficulty = false);
   }
 
-  bool get _useThematicMap =>
-      widget.slug == 'genesis-1-11' ||
-      widget.slug == 'exodo' ||
-      widget.slug == 'evangelhos' ||
-      widget.slug == 'atos' ||
-      widget.slug == 'apocalipse';
+  /// Mapa temático sempre que a trilha tem módulos/missões.
+  bool get _useThematicMap {
+    final trail = _trail;
+    return trail != null &&
+        trail.modules.isNotEmpty &&
+        trail.missionSlugs.isNotEmpty;
+  }
 
   int _activeModuleIndex(Trail trail, List<String> completed) {
     for (var i = 0; i < trail.modules.length; i++) {
@@ -148,8 +149,23 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
 
     final trail = _trail!;
     final allSlugs = trail.missionSlugs;
-    final prog = TrailProgress.getProgress(trail, progress.completedMissions);
+    final live = TrailProgress.getLiveProgress(trail, progress.completedMissions);
+    final prog = live; // mapa da trilha = modo ativo
     final difficultyId = progress.difficultyForTrail(widget.slug);
+    final cleared = progress.clearedModesFor(widget.slug);
+    final replaying = TrailProgress.isReplayingUnclearedMode(
+      clearedModes: cleared,
+      activeDifficultyId: difficultyId,
+      liveDone: live.done,
+      total: live.total,
+    );
+    final replayHint = replaying
+        ? TrailProgress.modeReplayHint(
+            clearedModes: cleared,
+            activeDifficultyId: difficultyId,
+          )
+        : null;
+    final modeName = TrailProgress.modeLabel(difficultyId);
 
     if (allSlugs.isEmpty) {
       final mode = progress.settings.appearanceMode;
@@ -261,47 +277,48 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       immersive: true,
                       dark: true,
                       title: headerTitle,
-                      subtitle:
-                          eyebrow ?? '${prog.done}/${prog.total} missões',
+                      subtitle: eyebrow ??
+                          (trailUsesDifficultyBank(widget.slug)
+                              ? '$modeName · ${prog.done}/${prog.total} missões'
+                              : '${prog.done}/${prog.total} missões'),
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: headerGlyph,
                       chromeAccent: TrailVisuals.forTrail(trail).accent,
                     ),
                   ),
-                  if (_useThematicMap)
+                  if (replayHint != null)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(
                         AppSpace.screen,
-                        AppSpace.md,
+                        AppSpace.sm,
                         AppSpace.screen,
-                        AppSpace.md,
+                        0,
                       ),
-                      child: _TrailJourneyIntro(
-                        trailTitle: trail.title,
-                        done: prog.done,
-                        total: prog.total,
-                        difficultyLabel: trailUsesDifficultyBank(widget.slug)
-                            ? _difficultyLabel(difficultyId ?? 'semente')
-                            : null,
-                        onDifficultyTap:
-                            trailUsesDifficultyBank(widget.slug) &&
-                                    progress.hasDifficultyChoice(widget.slug)
-                                ? _changeDifficulty
-                                : null,
-                      ),
-                    )
-                  else
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpace.screen,
-                      ),
-                      child: _GenericTrailHero(
-                        slug: trail.slug,
-                        color: AppTheme.parseHex(trail.color),
-                        done: prog.done,
-                        total: prog.total,
-                      ),
+                      child: _ModeReplayBanner(text: replayHint),
                     ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.md,
+                      AppSpace.screen,
+                      AppSpace.md,
+                    ),
+                    child: _TrailJourneyIntro(
+                      trailTitle: trail.title,
+                      done: prog.done,
+                      total: prog.total,
+                      difficultyLabel: trailUsesDifficultyBank(widget.slug)
+                          ? _difficultyLabel(difficultyId ?? 'semente')
+                          : null,
+                      progressCaption:
+                          '$modeName · ${prog.done} de ${prog.total} passos',
+                      onDifficultyTap:
+                          trailUsesDifficultyBank(widget.slug) &&
+                                  progress.hasDifficultyChoice(widget.slug)
+                              ? _changeDifficulty
+                              : null,
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(
                       AppSpace.screen,
@@ -321,13 +338,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     final start = trail.modules
                         .take(mi)
                         .fold(0, (sum, m) => sum + m.missions.length);
-                    final moduleTheme = _useThematicMap
-                        ? GenesisModuleTheme.forModule(
-                            mod.title,
-                            realm: _realm,
-                            trailSlug: trail.slug,
-                          )
-                        : null;
+                    final moduleTheme = GenesisModuleTheme.forModule(
+                      mod.title,
+                      realm: _realm,
+                      trailSlug: trail.slug,
+                    );
                     final isActive = mi == activeModule;
                     final modDone = mod.missions
                         .where(
@@ -347,33 +362,14 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       ).pushNamed('/lesson', arguments: slug),
                     );
 
-                    if (_useThematicMap && moduleTheme != null) {
-                      return GenesisModuleScenery(
-                        theme: moduleTheme,
-                        moduleTitle: mod.title,
-                        sectionIndex: mi + 1,
-                        isActiveChapter: isActive,
-                        missionsDone: modDone,
-                        missionsTotal: mod.missions.length,
-                        child: path,
-                      );
-                    }
-
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpace.section,
-                      ),
-                      child: Column(
-                        children: [
-                          _GenericModuleHeader(
-                            index: mi + 1,
-                            title: mod.title,
-                            glyph: CinematicGlyphResolver.forModule(mod.title),
-                          ),
-                          path,
-                          const SizedBox(height: AppSpace.section),
-                        ],
-                      ),
+                    return GenesisModuleScenery(
+                      theme: moduleTheme,
+                      moduleTitle: mod.title,
+                      sectionIndex: mi + 1,
+                      isActiveChapter: isActive,
+                      missionsDone: modDone,
+                      missionsTotal: mod.missions.length,
+                      child: path,
                     );
                   }),
                 ],
@@ -400,11 +396,57 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   }
 }
 
+class _ModeReplayBanner extends StatelessWidget {
+  final String text;
+
+  const _ModeReplayBanner({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.md,
+        vertical: AppSpace.sm + 2,
+      ),
+      decoration: BoxDecoration(
+        color: AppColors.accent.withValues(alpha: 0.1),
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: AppMetrics.accentBorder(alpha: 0.45)),
+      ),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.path,
+            size: 18,
+            accent: AppColors.accent,
+            framed: false,
+          ),
+          const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Text(
+              text,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.text,
+                height: 1.25,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 class _TrailJourneyIntro extends StatelessWidget {
   final String trailTitle;
   final int done;
   final int total;
   final String? difficultyLabel;
+  final String? progressCaption;
   final VoidCallback? onDifficultyTap;
 
   const _TrailJourneyIntro({
@@ -412,136 +454,73 @@ class _TrailJourneyIntro extends StatelessWidget {
     required this.done,
     required this.total,
     this.difficultyLabel,
+    this.progressCaption,
     this.onDifficultyTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    if (difficultyLabel == null) return const SizedBox.shrink();
+    if (difficultyLabel == null && progressCaption == null) {
+      return const SizedBox.shrink();
+    }
     final a = Appearance.of(context);
 
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: GestureDetector(
-        onTap: onDifficultyTap,
-        child: Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: AppSpace.md,
-            vertical: AppSpace.sm - 1,
-          ),
-          decoration: BoxDecoration(
-            color: a.cardFill,
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(color: AppMetrics.accentBorder(alpha: 0.4)),
-            boxShadow: AppMetrics.cardShadow(),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                difficultyLabel!,
-                style: AppTypography.label(
-                  size: 12,
-                  color: a.text,
-                  letterSpacing: 0.4,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        if (difficultyLabel != null)
+          Align(
+            alignment: Alignment.centerLeft,
+            child: GestureDetector(
+              onTap: onDifficultyTap,
+              child: Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.md,
+                  vertical: AppSpace.sm - 1,
+                ),
+                decoration: BoxDecoration(
+                  color: a.cardFill,
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                  border: Border.all(color: AppMetrics.accentBorder(alpha: 0.4)),
+                  boxShadow: AppMetrics.cardShadow(),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      difficultyLabel!,
+                      style: AppTypography.label(
+                        size: 12,
+                        color: a.text,
+                        letterSpacing: 0.4,
+                      ),
+                    ),
+                    if (onDifficultyTap != null)
+                      Text(
+                        '  ·  mudar',
+                        style: AppTypography.label(
+                          size: 11,
+                          color: AppColors.accent,
+                          letterSpacing: 0.3,
+                        ),
+                      ),
+                  ],
                 ),
               ),
-              if (onDifficultyTap != null)
-                Text(
-                  '  ·  mudar',
-                  style: AppTypography.label(
-                    size: 11,
-                    color: AppColors.accent,
-                    letterSpacing: 0.3,
-                  ),
-                ),
-            ],
+            ),
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _GenericTrailHero extends StatelessWidget {
-  final String slug;
-  final Color color;
-  final int done;
-  final int total;
-
-  const _GenericTrailHero({
-    required this.slug,
-    required this.color,
-    required this.done,
-    required this.total,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final pct = total > 0 ? done / total : 0.0;
-    final a = Appearance.of(context);
-    return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpace.xl),
-      child: GlassCard(
-        child: Row(
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyphResolver.forTrail(slug),
-              size: 56,
-              accent: color,
-            ),
-            const SizedBox(width: AppSpace.section),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    '$done de $total missões',
-                    style: AppTypography.title(size: 18, color: color),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  AppProgressBar(
-                    value: pct,
-                    color: color,
-                    trackColor: a.progressTrack,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _GenericModuleHeader extends StatelessWidget {
-  final int index;
-  final CinematicGlyph glyph;
-  final String title;
-
-  const _GenericModuleHeader({
-    required this.index,
-    required this.glyph,
-    required this.title,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          CinematicIcon(glyph: glyph, size: 28, glowing: false),
-          const SizedBox(width: AppSpace.sm),
+        if (progressCaption != null) ...[
+          if (difficultyLabel != null) const SizedBox(height: AppSpace.sm),
           Text(
-            'Cena $index · $title',
-            style: AppTypography.title(size: 14, color: a.text),
+            progressCaption!,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              color: a.textMuted(0.55),
+            ),
           ),
         ],
-      ),
+      ],
     );
   }
 }

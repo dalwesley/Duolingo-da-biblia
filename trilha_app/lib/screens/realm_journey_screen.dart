@@ -1,9 +1,14 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../services/backend_service.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
@@ -38,7 +43,22 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _scheduleJumpToCurrent();
+      // Mesma conta noutro aparelho pode ter avançado — puxa antes de pintar.
+      unawaited(_pullCloudProgress());
+    });
+  }
+
+  Future<void> _pullCloudProgress() async {
+    if (!mounted) return;
+    final backend = context.read<BackendService>();
+    if (!backend.isActive) return;
+    await backend.pullLatestProgress(
+      context.read<ProgressService>(),
+      league: context.read<LeagueService>(),
+      roomCode: context.read<RoomService>().activeCode,
+    );
   }
 
   @override
@@ -50,6 +70,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   List<JourneyPathItem> _buildItems(
     List<String> completed, {
     Map<String, List<String>> clearedTrailModes = const {},
+    Map<String, String> trailDifficulties = const {},
   }) {
     final realmTrails = widget.allTrails
         .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
@@ -71,9 +92,35 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
         completed,
         clearedTrailModes: clearedTrailModes,
       );
-      final done = TrailProgress.isTrailCompleted(trail, completed);
-      final prog = TrailProgress.getProgress(trail, completed);
+      final done = TrailProgress.isTrailCompleted(
+        trail,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+      );
+      final prog = TrailProgress.getProgress(
+        trail,
+        completed,
+        clearedTrailModes: clearedTrailModes,
+      );
       final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
+      final cleared = clearedTrailModes[trail.slug] ?? const <String>[];
+      final live = TrailProgress.getLiveProgress(trail, completed);
+      final activeId = trailDifficulties[trail.slug];
+      final replaying = TrailProgress.isReplayingUnclearedMode(
+        clearedModes: cleared,
+        activeDifficultyId: activeId,
+        liveDone: live.done,
+        total: live.total,
+      );
+      final clearedLabel = TrailProgress.clearedModeStatusLabel(cleared);
+      final String? statusLabel;
+      if (done && clearedLabel != null) {
+        statusLabel = replaying
+            ? '$clearedLabel · ${TrailProgress.modeLabel(activeId)} ${live.done}/${live.total}'
+            : clearedLabel;
+      } else {
+        statusLabel = null;
+      }
 
       final JourneyNodeState state;
       if (!unlocked) {
@@ -96,6 +143,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
           category: TrailCategory.fromId(trail.categoryId),
           done: prog.done,
           total: prog.total,
+          statusLabel: statusLabel,
         ),
       );
     }
@@ -219,6 +267,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     final items = _buildItems(
       progress.completedMissions,
       clearedTrailModes: progress.clearedTrailModes,
+      trailDifficulties: progress.trailDifficulties,
     );
     final bottom = MediaQuery.of(context).padding.bottom;
     final mode = progress.settings.appearanceMode;

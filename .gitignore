@@ -38,3 +38,6 @@ admin/dist/
 # Misc
 *.tsbuildinfo
 .vercel/
+
+# Firebase CLI local cache
+.firebase/
