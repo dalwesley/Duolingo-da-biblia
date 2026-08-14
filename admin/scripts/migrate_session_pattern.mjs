@@ -611,7 +611,7 @@ function assignTypes(questions, studyBySection, bibleByName) {
     const authored = [];
     const free = [];
     for (const q of list) {
-      if (q.type && q.type !== 'choice' && q.prompt && q.correctAnswer) {
+      if (isAuthoredGesture(q)) {
         authored.push(q);
         counts[q.type] = (counts[q.type] || 0) + 1;
       } else {
@@ -785,10 +785,17 @@ function orderPiecesFromPassage(passage) {
 }
 
 function isAuthoredGesture(q) {
+  const skill = String(q.skill || '').toLowerCase();
+  if (['interpret', 'connect', 'synthesize', 'transfer'].includes(skill)) {
+    return true;
+  }
   if (q.type === 'order' && Array.isArray(q.correctOrder) && q.correctOrder.length >= 3) {
     return true;
   }
   if (q.type === 'connect' && q.passageA && q.passageB) return true;
+  if (q.type && q.type !== 'choice' && (q.prompt || '').trim() && (q.correctAnswer || q.correctOptionId)) {
+    return true;
+  }
   const id = String(q.id || '');
   return /-(e0[0-9]|e[0-9]{2})$/i.test(id);
 }

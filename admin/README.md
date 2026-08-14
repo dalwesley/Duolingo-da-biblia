@@ -49,17 +49,55 @@ firebase deploy --only firestore:rules
 ```
 
 3. Entre no painel com esse e-mail/senha.
-4. Normaliza banks/estudos e publica tudo:
-
-```bash
-npm run prepare:content   # opcional (já roda dentro do seed)
-npm run seed              # sobe trails + genesis/exodo/ot/nt + studies
-```
+4. Publique conteúdo (ver secção **Seed** abaixo).
 
 Ou no painel **Importar**, envie:
    - `trails.json`
    - `genesis_questions.json`, `exodo_questions.json`, `ot_questions.json`, `nt_questions.json`
    - `mission_studies.json`
+
+## Seed (publicar JSON → Firestore)
+
+O app lê o currículo da nuvem. Seed = copiar `trilha_app/assets/data/*.json` para Firestore (`trilha-biblia`).
+
+### Comandos (como fizemos)
+
+```bash
+cd admin
+
+# Só publicar o que já está no JSON local (não reescreve gestos/Profundezas)
+SEED_ONLY=sermao npm run seed
+# equivalente / lote:
+SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 node scripts/seed_content.mjs
+
+# Re-normalizar assets + migrar gestos + enriquecer + subir tudo
+# (cuidado: migrate/enrich podem mexer em Profundezas editoriais)
+npm run seed:refresh
+```
+
+`npm run seed` = **só** `node scripts/seed_content.mjs`.  
+`npm run seed:refresh` = `prepare` + `migrate` + `enrich` + seed.
+
+### Auth — o que NÃO fazer
+
+As contas donas do projeto (`stway.app@gmail.com`, `contato.wocto@gmail.com`, `dalwesley@gmail.com`) entram com **Google**. No Authentication elas **não têm** senha de E-mail/senha (`passwordHash` ausente).
+
+Por isso:
+
+- **Não** use “Reset password” no Console como fluxo padrão do seed — isso não é como publicamos conteúdo.
+- `SEED_EMAIL` / `SEED_PASSWORD` no `.env` **só** funcionam se existir um user **Email/Password** cujo `uid` está em `admin_users` com role `admin`/`editor`.
+- Conta Google no `.env` → `INVALID_LOGIN_CREDENTIALS` / “conta existe, senha não é E-mail/senha”.
+
+`admin_users` conhecidos (ago/2026): `contato.wocto@gmail.com`, `dalwesley@email.com` (Apple). Bootstrap está **locked** (`content_meta/bootstrap_locked`) — novos admins só via Console / admin existente.
+
+### Quando o `.env` email/senha falhar (caminho real)
+
+1. Confirme CLI logado no projeto: `firebase login` / `firebase projects:list` (conta `stway.app@gmail.com`).
+2. Esse login OAuth do Firebase CLI **pode escrever** no Firestore via API REST (mesmo owner do projeto) — foi assim que o Sermão (470 Qs) subiu em 14/ago/2026 quando o client SDK recusou e-mail/senha.
+3. Alternativa estável: no Console, **Add user** com e-mail/senha **só para seed**, documente em `admin_users/{uid}`, e use esse par no `.env`.
+4. Ou: `npm run dev` no painel, entre autenticado, use **Importar**.
+
+Não inventar senha para conta Google-only e colar no `.env` — não vai autenticar o `seed_content.mjs`.
 
 ## Deploy do painel
 

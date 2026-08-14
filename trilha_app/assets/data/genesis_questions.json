@@ -442,7 +442,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Que imagem antecede a primeira palavra criadora?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Que imagem antecede a primeira palavra criadora?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--pro-gen-01-criador-03",
@@ -1084,7 +1084,7 @@
       "correctAnswer": "a",
       "passageText": "Disse também Deus: Façamos o homem à nossa imagem, conforme a nossa semelhança; domine ele sobre os peixes do mar, sobre as aves do céu, sobre os animais domésticos, sobre toda a terra e sobre todo réptil que se arrasta…",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Que ligação sustenta a vocação representativa da humanidade?",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--sem-gen-04-descanso-01",
@@ -1808,15 +1808,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Muito bom"
+          "text": "muito bom"
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "princípio"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "criou"
+        },
+        {
+          "id": "d",
+          "text": "quanto"
         }
       ],
       "correctOptionId": "a",
@@ -1842,15 +1846,23 @@
       "question": "Qual aplicação justa de “Desafio: A Criação”?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "muito bom"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "princípio"
+        },
+        {
+          "id": "c",
+          "text": "criou"
+        },
+        {
+          "id": "d",
+          "text": "quanto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Boa — a aplicação nasce do texto e do caráter de Deus.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Levar a sério: Hora de provar o que aprendeu sobre a Criação. Respire fundo — você consegue!.”.",
@@ -1859,11 +1871,12 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "true_false",
-      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
-      "correctAnswer": "true",
+      "type": "tap",
+      "prompt": "Qual aplicação justa de “Desafio: A Criação”?",
+      "correctAnswer": "a",
       "passageText": "No princípio, Deus criou… E viu Deus tudo quanto fizera, e eis que era muito bom. … E abençoou Deus o dia sétimo e o santificou.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "Qual aplicação justa de “Desafio: A Criação”?"
     },
     {
       "id": "genesis-1--cam-gen-boss-01-04",
@@ -1890,7 +1903,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Ignorar o contexto e inventar o significado.",
+      "prompt": "Como “Desafio: A Criação” se liga à cena “A Criação”.",
       "correctAnswer": "false",
       "skill": "understand"
     },
@@ -1919,7 +1932,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Como “Desafio: A Criação” se liga à cena “A Criação”.",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
       "correctAnswer": "true",
       "skill": "understand"
     },
@@ -1970,15 +1983,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Muito bom"
+          "text": "muito bom"
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "princípio"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "criou"
+        },
+        {
+          "id": "d",
+          "text": "quanto"
         }
       ],
       "correctOptionId": "a",
@@ -2004,15 +2021,23 @@
       "question": "Em “Desafio: A Criação”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "muito bom"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "princípio"
+        },
+        {
+          "id": "c",
+          "text": "criou"
+        },
+        {
+          "id": "d",
+          "text": "quanto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -2021,11 +2046,12 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "true_false",
-      "prompt": "O pecado nunca tem custo.",
-      "correctAnswer": "false",
+      "type": "tap",
+      "prompt": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio: A Criação”, qual tensão teológica aparece?",
+      "correctAnswer": "a",
       "passageText": "No princípio, Deus criou… E viu Deus tudo quanto fizera, e eis que era muito bom. … E abençoou Deus o dia sétimo e o santificou.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio: A Criação”, qual tensão teológica aparece?"
     },
     {
       "id": "genesis-1--pro-gen-boss-01-04",
@@ -2052,7 +2078,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Soberania de Deus e responsabilidade humana caminham juntas.",
+      "prompt": "Qual pergunta profunda “Desafio: A Criação” deixa ao leitor.",
       "correctAnswer": "true",
       "skill": "interpret"
     },
@@ -2081,7 +2107,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Como confiar e obedecer a Deus neste tipo de história?",
+      "prompt": "O pecado nunca tem custo.",
       "correctAnswer": "false",
       "skill": "interpret"
     },
@@ -3146,7 +3172,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Que ironia existe na promessa de ser “como Deus”?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Que ironia existe na promessa de ser “como Deus”?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--pro-gen-06-queda-05",
@@ -3622,7 +3648,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Que assimetria aparece no conflito de Gênesis 3:15?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Que assimetria aparece no conflito de Gênesis 3:15?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--pro-gen-07-consequencias-03",
@@ -3936,7 +3962,7 @@
       "verseRef": "Gênesis 3:15",
       "reveal": "fall",
       "trail": "genesis-1-11",
-      "type": "tap",
+      "type": "choice",
       "passageText": "Porei inimizade entre ti e a mulher, e entre a tua semente e a sua semente; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.",
       "prompt": "Que conflito é anunciado em Gênesis 3:15?",
       "cue": "Que conflito é anunciado em Gênesis 3:15?",
@@ -3990,15 +4016,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Queda e promessa"
+          "text": "queda e promessa"
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "expulsão"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "comunhão"
+        },
+        {
+          "id": "d",
+          "text": "tentação"
         }
       ],
       "correctOptionId": "a",
@@ -4010,7 +4040,7 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "choice",
+      "type": "tap",
       "prompt": "Qual aplicação justa de “Desafio: A Queda”?",
       "correctAnswer": "a",
       "passageText": "Do Éden à expulsão: comunhão, tentação, queda e promessa. “Porei inimizade… este te ferirá a cabeça.”",
@@ -4032,7 +4062,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “Desafio: A Queda”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -4042,8 +4072,8 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Não tem ligação com a cena.",
-      "correctAnswer": "false",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
+      "correctAnswer": "true",
       "passageText": "Do Éden à expulsão: comunhão, tentação, queda e promessa. “Porei inimizade… este te ferirá a cabeça.”",
       "skill": "understand"
     },
@@ -4062,7 +4092,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — o passo pertence à cena O Jardim.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Gênesis 1–11.”.",
@@ -4072,8 +4102,8 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
-      "correctAnswer": "true",
+      "prompt": "Não tem ligação com a cena.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -4124,15 +4154,19 @@
       "options": [
         {
           "id": "a",
-          "text": "Queda e promessa"
+          "text": "queda e promessa"
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "expulsão"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "comunhão"
+        },
+        {
+          "id": "d",
+          "text": "tentação"
         }
       ],
       "correctOptionId": "a",
@@ -4158,15 +4192,23 @@
       "question": "Em “Desafio: A Queda”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "queda e promessa"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "expulsão"
+        },
+        {
+          "id": "c",
+          "text": "comunhão"
+        },
+        {
+          "id": "d",
+          "text": "tentação"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -4175,11 +4217,12 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "true_false",
-      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
-      "correctAnswer": "true",
+      "type": "tap",
+      "prompt": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio: A Queda”, qual tensão teológica aparece?",
+      "correctAnswer": "a",
       "passageText": "Do Éden à expulsão: comunhão, tentação, queda e promessa. “Porei inimizade… este te ferirá a cabeça.”",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio: A Queda”, qual tensão teológica aparece?"
     },
     {
       "id": "genesis-1--pro-gen-boss-02-04",
@@ -4206,7 +4249,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Apenas acaso histórico.",
+      "prompt": "Qual pergunta profunda “Desafio: A Queda” deixa ao leitor.",
       "correctAnswer": "false",
       "skill": "interpret"
     },
@@ -4235,7 +4278,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Qual pergunta profunda “Desafio: A Queda” deixa ao leitor.",
+      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
       "correctAnswer": "true",
       "skill": "interpret"
     },
@@ -4792,7 +4835,7 @@
       "correctAnswer": "a",
       "passageText": "Viu Jeová que era grande a maldade do homem na terra e que toda a imaginação dos pensamentos do seu coração era má continuamente.",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Que diagnóstico interior antecede o dilúvio?",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--sem-gen-09-diluvio-01",
@@ -5278,7 +5321,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: O que durou cento e cinquenta dias?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: O que durou cento e cinquenta dias?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--pro-gen-09-diluvio-04",
@@ -5838,7 +5881,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Sobre quem Noé pronuncia diretamente a maldição?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Sobre quem Noé pronuncia diretamente a maldição?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis--pro-gen-10-babel-04",
@@ -6333,7 +6376,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Como a promessa a Abrão responde às nações dispersas?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Como a promessa a Abrão responde às nações dispersas?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "genesis-1--pro-gen-11-abraao-03",
@@ -6662,7 +6705,7 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "tap",
+      "type": "choice",
       "passageText": "Criação → Queda → Juízo → Promessa. Do “No princípio” ao chamado de Abrão: Deus não desiste da humanidade.",
       "prompt": "O que “Desafio Final: Gênesis 1–11” revela sobre a aliança?",
       "cue": "O que “Desafio Final: Gênesis 1–11” revela sobre a aliança?",
@@ -6681,11 +6724,15 @@
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "Criação"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "Queda"
+        },
+        {
+          "id": "d",
+          "text": "Juízo"
         }
       ],
       "correctOptionId": "a",
@@ -6697,7 +6744,7 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "choice",
+      "type": "tap",
       "prompt": "Qual aplicação justa de “Desafio Final: Gênesis 1–11”?",
       "correctAnswer": "a",
       "passageText": "Criação → Queda → Juízo → Promessa. Do “No princípio” ao chamado de Abrão: Deus não desiste da humanidade.",
@@ -6719,7 +6766,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “Desafio Final: Gênesis 1–11”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -6729,8 +6776,8 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Não tem ligação com a cena.",
-      "correctAnswer": "false",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
+      "correctAnswer": "true",
       "passageText": "Criação → Queda → Juízo → Promessa. Do “No princípio” ao chamado de Abrão: Deus não desiste da humanidade.",
       "skill": "understand"
     },
@@ -6749,7 +6796,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — o passo pertence à cena Depois do Éden.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Gênesis 1–11.”.",
@@ -6759,8 +6806,8 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
-      "correctAnswer": "true",
+      "prompt": "Não tem ligação com a cena.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -6814,11 +6861,15 @@
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "Criação"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "Queda"
+        },
+        {
+          "id": "d",
+          "text": "Juízo"
         }
       ],
       "correctOptionId": "a",
@@ -6844,15 +6895,23 @@
       "question": "Em “Desafio Final: Gênesis 1–11”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Promessa"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Criação"
+        },
+        {
+          "id": "c",
+          "text": "Queda"
+        },
+        {
+          "id": "d",
+          "text": "Juízo"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -6861,11 +6920,12 @@
       },
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
-      "type": "true_false",
-      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
-      "correctAnswer": "true",
+      "type": "tap",
+      "prompt": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio Final: Gênesis 1–11”, qual tensão teológica apar",
+      "correctAnswer": "a",
       "passageText": "Criação → Queda → Juízo → Promessa. Do “No princípio” ao chamado de Abrão: Deus não desiste da humanidade.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Toque o trecho que decide a leitura — não a tradição: Em “Desafio Final: Gênesis 1–11”, qual tensão teológica apar"
     },
     {
       "id": "genesis-1--pro-gen-boss-final-04",
@@ -6892,7 +6952,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Apenas acaso histórico.",
+      "prompt": "Qual pergunta profunda “Desafio Final: Gênesis 1–11” deixa ao leitor.",
       "correctAnswer": "false",
       "skill": "interpret"
     },
@@ -6921,7 +6981,7 @@
       "verseRef": "Referência: Gênesis 1–11",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Qual pergunta profunda “Desafio Final: Gênesis 1–11” deixa ao leitor.",
+      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
       "correctAnswer": "true",
       "skill": "interpret"
     },
@@ -7240,7 +7300,7 @@
       "verseRef": "Gênesis 1:27",
       "reveal": "humanity",
       "trail": "genesis-1-11",
-      "type": "tap",
+      "type": "choice",
       "passageText": "Criou, pois, Deus o homem à sua imagem, à imagem de Deus o criou; homem e mulher os criou.",
       "prompt": "Como Deus criou a humanidade segundo Gênesis 1?",
       "cue": "Como Deus criou a humanidade segundo Gênesis 1?",
@@ -7360,22 +7420,22 @@
       "options": [
         {
           "id": "a",
-          "text": "Criou os mares"
+          "text": "de toda a obra"
         },
         {
           "id": "b",
-          "text": "Fez o homem"
+          "text": "sétimo"
         },
         {
           "id": "c",
-          "text": "Descansou de toda a obra"
+          "text": "acabou"
         },
         {
           "id": "d",
-          "text": "Plantou a primeira árvore"
+          "text": "tinha"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 2:2 sustenta a resposta: “Descansou de toda a obra”.",
@@ -7385,11 +7445,12 @@
       "verseRef": "Gênesis 2:2",
       "reveal": "cosmos",
       "trail": "genesis-1-11",
-      "type": "choice",
+      "type": "tap",
       "prompt": "O que Deus fez no sétimo dia?",
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "passageText": "No sétimo dia, acabou Deus a obra que tinha feito; e cessou, no sétimo dia, de toda a obra que fizera.",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "O que Deus fez no sétimo dia?"
     },
     {
       "id": "genesis--cam-gen-03-imagem-01",
@@ -7439,22 +7500,18 @@
       "options": [
         {
           "id": "a",
-          "text": "Que Deus abandonou uma obra incompleta"
-        },
-        {
-          "id": "b",
           "text": "Que a obra criadora estava concluída"
         },
         {
-          "id": "c",
-          "text": "Que as criaturas pararam de existir"
+          "id": "b",
+          "text": "Outra leitura do trecho"
         },
         {
-          "id": "d",
-          "text": "Que o sexto dia foi cancelado"
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 2:1-2 sustenta a resposta: “Que a obra criadora estava concluída”.",
@@ -7466,9 +7523,10 @@
       "trail": "genesis-1-11",
       "type": "choice",
       "prompt": "O que o descanso do sétimo dia indica sobre a obra?",
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "passageText": "Assim foram acabados o céu e a terra, com todo o seu exército. No sétimo dia, acabou Deus a obra que tinha feito; e cessou, no sétimo dia, de toda a obra que fizera.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "O que o descanso do sétimo dia indica sobre a obra?"
     },
     {
       "id": "genesis--cam-gen-03-imagem-03",
@@ -7477,23 +7535,15 @@
       "question": "O que torna o sétimo dia distinto dos seis anteriores?",
       "options": [
         {
-          "id": "a",
-          "text": "Ele recebe duas tardes"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Nele surgem todos os animais"
-        },
-        {
-          "id": "c",
-          "text": "Deus o abençoa e santifica"
-        },
-        {
-          "id": "d",
-          "text": "Ele não pertence à criação"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 2:3 sustenta a resposta: “Deus o abençoa e santifica”.",
@@ -7503,9 +7553,9 @@
       "verseRef": "Gênesis 2:3",
       "reveal": "cosmos",
       "trail": "genesis-1-11",
-      "type": "choice",
-      "prompt": "O que torna o sétimo dia distinto dos seis anteriores?",
-      "correctAnswer": "c",
+      "type": "true_false",
+      "prompt": "O que a repetição “segundo as suas espécies” enfatiza: A origem humana nos animais.",
+      "correctAnswer": "false",
       "passageText": "Abençoou Deus o dia sétimo e o santificou; porque nele cessou de toda a obra que fizera como Criador.",
       "skill": "understand"
     },
@@ -7524,7 +7574,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 1:11-12; 1:21; 1:24-25 sustenta a resposta: “A diversidade ordenada dos seres vivos”.",
@@ -7535,8 +7585,8 @@
       "reveal": "cosmos",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "O que a repetição “segundo as suas espécies” enfatiza: A origem humana nos animais.",
-      "correctAnswer": "false",
+      "prompt": "O que torna o sétimo dia distinto dos seis anteriores: Deus o abençoa e santifica.",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -7626,23 +7676,15 @@
       "question": "Que detalhe limita um domínio humano absoluto?",
       "options": [
         {
-          "id": "a",
-          "text": "O homem também cria os céus"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Humanos governam Deus"
-        },
-        {
-          "id": "c",
-          "text": "Animais deixam de pertencer a Deus"
-        },
-        {
-          "id": "d",
-          "text": "A autoridade é recebida do Criador sobre sua criação boa"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "d",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 1:25-28 sustenta a resposta: “A autoridade é recebida do Criador sobre sua criação boa”.",
@@ -7654,9 +7696,10 @@
       "trail": "genesis-1-11",
       "type": "choice",
       "prompt": "Que detalhe limita um domínio humano absoluto?",
-      "correctAnswer": "d",
+      "correctAnswer": "false",
       "passageText": "Deus fez, pois, os animais selvagens segundo as suas espécies, e os animais domésticos segundo as suas espécies, e todos os répteis da terra segundo as suas espécies; e viu Deus que isso era bom. Disse também Deus: Façamos o…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Que detalhe limita um domínio humano absoluto?"
     },
     {
       "id": "genesis--pro-gen-03-imagem-03",
@@ -7665,23 +7708,15 @@
       "question": "Como o contexto apresenta o descanso divino?",
       "options": [
         {
-          "id": "a",
-          "text": "Cessação de uma obra concluída"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Recuperação de fraqueza"
-        },
-        {
-          "id": "c",
-          "text": "Abandono de uma obra fracassada"
-        },
-        {
-          "id": "d",
-          "text": "Sono até o dilúvio"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”.",
       "feedbackWrong": {
         "b": "Não. Gênesis 2:1-3 sustenta a resposta: “Cessação de uma obra concluída”.",
@@ -7691,9 +7726,9 @@
       "verseRef": "Gênesis 2:1-3",
       "reveal": "cosmos",
       "trail": "genesis-1-11",
-      "type": "choice",
-      "prompt": "Como o contexto apresenta o descanso divino?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Não recebe a fórmula de tarde e manhã",
+      "correctAnswer": "true",
       "passageText": "Assim foram acabados o céu e a terra, com todo o seu exército. No sétimo dia, acabou Deus a obra que tinha feito; e cessou, no sétimo dia, de toda a obra que fizera. Abençoou Deus o dia sétimo e…",
       "skill": "interpret"
     },
@@ -7712,7 +7747,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 2:2-3 sustenta a resposta: “Não recebe a fórmula de tarde e manhã”.",
@@ -7723,8 +7758,8 @@
       "reveal": "cosmos",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Não recebe a fórmula de tarde e manhã",
-      "correctAnswer": "true",
+      "prompt": "Como o contexto apresenta o descanso divino: Recuperação de fraqueza.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -7742,7 +7777,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”.",
       "feedbackWrong": {
         "a": "Não. Gênesis 1:1; 2:1 sustenta a resposta: “Céus e terra”.",
@@ -7753,8 +7788,8 @@
       "reveal": "cosmos",
       "trail": "genesis-1-11",
       "type": "true_false",
-      "prompt": "Que expressão enquadra toda a narrativa da criação: Arca e altar.",
-      "correctAnswer": "false",
+      "prompt": "Que expressão enquadra toda a narrativa da criação: Céus e terra.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {

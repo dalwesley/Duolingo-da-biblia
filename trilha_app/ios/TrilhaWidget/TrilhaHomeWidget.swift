@@ -1,7 +1,7 @@
 import SwiftUI
 import WidgetKit
 
-private let widgetGroupId = "group.com.dalwesley.stway"
+private let widgetGroupId = "group.ZS7LYV9Y7U.stway"
 
 struct TrilhaEntry: TimelineEntry {
   let date: Date
@@ -142,7 +142,7 @@ struct TrilhaHomeWidgetEntryView: View {
       }
       .padding(14)
     }
-    .widgetURL(URL(string: "trilha://home"))
+    .widgetURL(URL(string: "stway://hoje"))
   }
 }
 

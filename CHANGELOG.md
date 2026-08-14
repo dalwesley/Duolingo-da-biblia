@@ -9,7 +9,25 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
-Trabalho em curso (ainda não versionado em release).
+---
+
+## [1.0.21] — 2026-08-14
+
+### Added
+- Widget iOS ligado (App Group `group.ZS7LYV9Y7U.stway`) — streak e meta na tela inicial; toque abre `stway://hoje`
+- Protocolo D7 com planilha `docs/D7_TESTERS.csv` (Sermão do Monte)
+- Onboarding em 5 beats: origem → hábito → caminhada → ritmo → primeira trilha
+
+### Changed
+- Sermão do Monte e trilhas do Novo Testamento abertos sem exigir o caminho do AT (vitrine D7 / teste interno)
+- Copy de produto: unidade curta é **missão** (não “treino”)
+- Profundezas da vitrine do Sermão (cena 1, sm-01…05): operações de interpretar / conectar, não clone de Semente
+- Settings: conta Apple ou Google (splash e sync não tratam só Google)
+- Docs de seed: contas Google-only não usam `SEED_PASSWORD`; fluxo em `admin/README.md` (CLI / Email-Password admin / Importar)
+
+### Fixed
+- Extensão do widget voltou a ser embutida no Runner após troca de Development Team
+- Deep link do widget (`stway://hoje`) não é tratado como convite de Companhia
 
 ---
 

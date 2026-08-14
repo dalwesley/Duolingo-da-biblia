@@ -11,16 +11,24 @@ class HomeWidgetService {
 
   static const _androidProvider = 'TrilhaHomeWidgetProvider';
   static const _iosKind = 'TrilhaHomeWidget';
-  static const _appGroupId = 'group.com.dalwesley.stway';
+  static const iosAppGroupId = 'group.ZS7LYV9Y7U.stway';
   static const _debounce = Duration(seconds: 2);
 
   static Timer? _timer;
   static ProgressService? _pending;
+  static bool _iosGroupReady = false;
+
+  static bool get _enabled => Platform.isAndroid || Platform.isIOS;
 
   static Future<void> init() async {
-    if (!Platform.isIOS && !Platform.isAndroid) return;
+    if (!_enabled) return;
     if (Platform.isIOS) {
-      await HomeWidget.setAppGroupId(_appGroupId);
+      try {
+        await HomeWidget.setAppGroupId(iosAppGroupId);
+        _iosGroupReady = true;
+      } catch (_) {
+        _iosGroupReady = false;
+      }
     }
   }
 
@@ -29,7 +37,8 @@ class HomeWidgetService {
     ProgressService progress, {
     bool immediate = false,
   }) {
-    if (!Platform.isIOS && !Platform.isAndroid) return;
+    if (!_enabled) return;
+    if (Platform.isIOS && !_iosGroupReady) return;
     _pending = progress;
     if (immediate) {
       _timer?.cancel();
@@ -48,6 +57,7 @@ class HomeWidgetService {
     _pending = null;
     _timer = null;
     if (progress == null || !progress.isLoaded) return;
+    if (Platform.isIOS && !_iosGroupReady) return;
 
     final goal = progress.settings.dailyGoal.clamp(1, 99);
     final done = progress.walkedToday ? progress.missionsToday : 0;
@@ -96,7 +106,7 @@ class HomeWidgetService {
     }
     final left = (goal - done).clamp(1, goal);
     return left == 1
-        ? 'Falta 1 passo hoje'
-        : 'Faltam $left passos hoje';
+        ? 'Falta 1 missão hoje'
+        : 'Faltam $left missões hoje';
   }
 }

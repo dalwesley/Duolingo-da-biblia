@@ -1,7 +1,7 @@
 # STWAY — Documentação de produto
 
 **Atualizado:** ago/2026  
-**Versão do app:** 1.0.19  
+**Versão do app:** 1.0.20  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
@@ -17,7 +17,7 @@
 | **Conteúdo no Firebase** | Alinhado ao local (~6.5k perguntas, 84 trilhas) |
 | **UI / UX** | Tema escuro cinemático, 5 tabs, painéis de jogo — polish ainda abaixo de YouVersion/Hallow |
 | **Escola no conteúdo** | Gestos + skills no banco; profundezas ainda pedem edição humana |
-| Strong | Offline na aba Bíblia **e** no treino (toque na referência do ato → Estudar) |
+| Strong | Offline na aba Bíblia **e** na missão (toque na referência do ato → Estudar) |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); falta execução com 10–20 testers |
 | **Monetização** | Sem IAP |
 
@@ -25,9 +25,9 @@
 
 ## Em uma frase
 
-STWAY é a **academia da Palavra**: treino diário em português que desenvolve competência para ler, compreender, conectar e interpretar as Escrituras — em poucos minutos por dia, ao longo de uma jornada.
+STWAY é a **academia da Palavra**: missões diárias em português que desenvolvem competência para ler, compreender, conectar e interpretar as Escrituras — em poucos minutos por dia, ao longo de uma jornada.
 
-**Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te treina nela.”*
+**Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
 Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem escola), nem trivia vazia.  
 **Sensação:** Duolingo no loop · formação bíblica no conteúdo.
@@ -38,7 +38,7 @@ Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/h
 
 Cristãos de língua portuguesa que querem:
 
-- Formar **hábito** de estudo bíblico (streak, treinos curtos ~2–4 min)
+- Formar **hábito** de estudo bíblico (streak, missões curtas ~2–4 min)
 - **Aprender de verdade** (exercícios com feedback, competências, Strong/morfologia)
 - Caminhar um **currículo** coerente (Criação → NT), em rede — não só versículos soltos
 - Ter **accountability** leve (Companhia, Salas, Caravana semanal)
@@ -49,8 +49,8 @@ Cristãos de língua portuguesa que querem:
 
 | O que entrega | Como |
 |---------------|------|
-| Formação progressiva | Jornada → trilhas → cenas → **treinos** → exercícios tipados |
-| Hábito diário | Treino do dia, quests, streak, lembretes locais |
+| Formação progressiva | Jornada → trilhas → cenas → **missões** → exercícios tipados |
+| Hábito diário | Missão do dia, quests, streak, lembretes locais |
 | Profundidade | 3 níveis cognitivos (Semente / Rota / Profundezas) + Strong offline |
 | Social leve | Caravana (liga semanal), Companhia 1:1, Salas de estudo |
 | Conteúdo vivo | CMS admin no Firebase — atualiza sem release na loja |
@@ -63,7 +63,7 @@ Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em 
 
 ### Abas principais
 
-1. **Hoje** — Próximo treino dominante, quests, streak, entrada para prática/memória  
+1. **Hoje** — Próxima missão dominante, quests, streak, entrada para prática/memória  
 2. **Trilhas** — Catálogo por reino (AT / NT / Vida Cristã / Teologia)  
 3. **Bíblia** — Leitor offline + estudo Strong ao tocar no versículo  
 4. **Juntos** — Caravana, Companhia, Salas  
@@ -73,14 +73,14 @@ Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em 
 
 ```
 Splash → Login (Google / Apple no iOS) → Onboarding (1ª vez)
-  → Hoje: continuar treino
-  → Mapa da trilha → Dificuldade → Treino → Celebração
+  → Hoje: continuar missão
+  → Mapa da trilha → Dificuldade → Missão → Celebração
   → (opcional) Bíblia / Prática / Memória / Juntos
 ```
 
-Onboarding em 4 beats: promessa → por quê → ritmo → primeira trilha (Gênesis 1–11).
+Onboarding em 5 beats: origem → hábito → caminhada → ritmo → primeira trilha (Gênesis 1–11).
 
-### Loop de treino
+### Loop da missão
 
 1. Entrada curta (título · verso · contexto/conexão · Começar)  
 2. Atos tipados no mesmo shell (V/F, toque, escolher, ordenar, completar, conectar) — **8** padrão · boss **10**  
@@ -94,7 +94,7 @@ Composer monta a sessão **só do banco** Firestore. Detalhe: [`SESSAO_TREINO.md
 ### Moeda / retenção
 
 - **Passos** — unidade de progresso (legado interno ainda usa `xp` em alguns campos)  
-- **Lâmpadas** — vidas no treino  
+- **Lâmpadas** — vidas na missão  
 - **Streak** — sequência diária (com freeze/repair)  
 - **Quests** diárias e semanais (+ sazonais litúrgicas)  
 - **Caravana** — liga semanal por tier (Semente → Videira → Oliveira → Cedro → Estrela)  
@@ -108,7 +108,7 @@ Gamificação reforça aprendizagem — não recompensa clique vazio.
 ### Hierarquia (v2)
 
 ```text
-JORNADA → TRILHA → CENA → TREINO → EXERCÍCIO
+JORNADA → TRILHA → CENA → MISSÃO → EXERCÍCIO
 ```
 
 | Camada | Exemplo |
@@ -116,10 +116,10 @@ JORNADA → TRILHA → CENA → TREINO → EXERCÍCIO
 | Jornada | Criação → Queda → … → Nova Criação |
 | Trilha | Gênesis 1–11 (ou transversais: Como ler a Bíblia) |
 | Cena | A Criação |
-| Treino | Imagem de Deus |
+| Missão | Imagem de Deus |
 | Exercício | escolha, ordene, conexão, evidência… |
 
-Copy curto no app pode manter “missão” = container do treino. Ver glossário abaixo.
+No produto, a unidade curta chama-se **missão**. Ver glossário abaixo.
 
 ### Caminho canônico (unlock)
 
@@ -139,13 +139,13 @@ Não são “fácil / médio / difícil” em obscuridade — são **operações
 
 - Traduções offline (TB, Almeida JFA)  
 - Aba Bíblia: toque no versículo → **Estudar** (Strong, morfologia, concordância)  
-- **No treino:** toque na referência do palco (`Gn 1:27 · ESTUDAR`) → mesmo sheet, sem sair da sessão  
+- **Na missão:** toque na referência do palco (`Gn 1:27 · ESTUDAR`) → mesmo sheet, sem sair da sessão  
 - Fonte: STEPBible / openbible.info (CC BY)  
 - Strong serve interpretação contextual — não “significado secreto”
 
 ### Conteúdo e “pilotos”
 
-Não há mais treino especial embutido. `gen-03-imagem` e o restante usam o mesmo pipeline (`content_bank_questions` + composer).
+Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mesmo pipeline (`content_bank_questions` + composer).
 
 | Item | Status |
 |------|--------|
@@ -184,12 +184,12 @@ Direção e hipóteses: [`MONETIZATION.md`](../MONETIZATION.md).
 
 Antes de “crescer” de verdade (ver Roadmap):
 
-1. Retenção D7 ok no loop de treino  
+1. Retenção D7 ok no loop de missão  
 2. Um caminho Criação → NT terminável, validado com tester  
 3. Usuário explica o app numa frase alinhada ao norte (*“app pra treinar a ler a Bíblia”*)  
-4. Após um treino: lembra, explica e reconhece o conceito em outro texto (transferência)
+4. Após uma missão: lembra, explica e reconhece o conceito em outro texto (transferência)
 
-Regra de feature: *aumenta conclusão de treino, retenção ou retorno em 7 dias — sem sacrificar aprendizagem?*
+Regra de feature: *aumenta conclusão de missão, retenção ou retorno em 7 dias — sem sacrificar aprendizagem?*
 
 ---
 
@@ -208,7 +208,7 @@ Pipeline editorial: [`LEARNING_ENGINE.md` §42–43](LEARNING_ENGINE.md).
 
 | Tipo | Exemplos | STWAY |
 |------|----------|--------|
-| Leitura / plano | YouVersion | Treino + currículo + competências, não só ler |
+| Leitura / plano | YouVersion | Missão + currículo + competências, não só ler |
 | Oração / áudio | Hallow | Foco em formação cognitiva da Palavra |
 | Game bíblico | Ascend / pets | Escola no conteúdo; social leve sem pet |
 | Trivia | Quizzes soltos | Rede de conhecimento + 3 profundidades + Strong |
@@ -219,12 +219,12 @@ Pipeline editorial: [`LEARNING_ENGINE.md` §42–43](LEARNING_ENGINE.md).
 
 | Termo | Significado |
 |-------|-------------|
-| Treino | Unidade pedagógica (~2–4 min, 3–8 exercícios); no código/legado: `Mission` / “missão” |
+| Missão | Unidade pedagógica (~2–4 min, 3–8 exercícios); no código: `Mission` |
 | Exercício | Ação tipada (`choice`, `order`, `connect`…) |
 | Cena | Módulo dentro da trilha |
-| Preparo / estudo | Texto + contexto + conexões do treino (legado: `MissionStudy`) |
-| Passos (moeda) | Progresso ganho nos treinos |
-| Lâmpadas | Vidas no treino |
+| Preparo / estudo | Texto + contexto + conexões da missão (legado: `MissionStudy`) |
+| Passos (moeda) | Progresso ganho nas missões |
+| Lâmpadas | Vidas na missão |
 | Caravana | Liga semanal |
 | Companhia | Par 1:1 |
 | Relato | Report de exercício pelo usuário → fila no admin |

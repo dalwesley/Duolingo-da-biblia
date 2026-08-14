@@ -1,17 +1,18 @@
 # Roadmap STWAY — formação bíblica com hábito
 
-**Atualizado:** ago/2026 (caminho Criação→NT densificado + studies Sermão 25/25).
+**Atualizado:** ago/2026 (D7 no Sermão + Profundezas da vitrine + widget iOS).
 
-**Norte:** treino diário em português para aprender a Bíblia de verdade — missões curtas + estudo original offline.
+**Norte:** missões diárias em português para aprender a Bíblia de verdade — sessões curtas + estudo original offline.
 Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem escola), nem trivia vazia.
 **Sensação:** academia da Palavra (Duolingo no loop · escola no conteúdo).
-**Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te treina nela.”*
+**Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
+**Frase do tester:** *“app de missões pra aprender a ler a Bíblia.”*
 
 ## Critério de pronto para crescer
 
 - [ ] Retenção D7 ok no loop de missão
 - [ ] **1 caminho Criação → NT terminável** — estrutura e qualidade mínima prontas (ver abaixo); falta **prova com tester**
-- [ ] Usuário explica o app numa frase alinhada ao norte (*"app pra treinar e aprender a Bíblia"*)
+- [ ] Usuário explica o app numa frase alinhada ao norte (*"app de missões pra aprender a ler a Bíblia"*)
 
 **Caminho canônico (unlock):**
 `genesis-1-11` → `genesis-12-50` → `exodo` → `evangelhos` → `atos` → `cartas-paulo` → `apocalipse`
@@ -75,8 +76,10 @@ Foco: **publicar no Firebase + usuários reais**. Buracos estruturais do caminho
 - [x] **Seed** trails + studies + banks no Firebase (`seed_content.mjs` — ago/2026)
 - [x] **Catálogo:** default fechado (loja); teste com `--dart-define=OPEN_ALL_TRAILS=true`
 - [x] Protocolo D7 + eventos `retention_pulse` / `first_lesson_complete` — [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md)
+- [x] **Profundezas cena 1** (sm-01…05) reescritas como interpretar/conectar — não clone de Semente
+- [x] Widget iOS: App Group `group.ZS7LYV9Y7U.stway` no Runner + extensão (criar o grupo no Developer)
 - [ ] Medir time-to-value: onboarding → 1ª missão concluída em &lt;2 min
-- [ ] Teste com 10–20 pessoas reais; anotar abandono e frase espontânea do app
+- [ ] **Rodar D7:** 10–20 testers reais no **Sermão do Monte** (cena 1 = vitrine); anotar abandono e frase espontânea
 - [ ] Pipeline semanal no admin: ajustes via Relatos sem release
 - [ ] Strong como momento “uau” na 1ª semana do Sermão (provar com tester)
 - [ ] Caminhar o arco Criação→NT com 1–2 testers (caçar buraco residual de copy/quiz)
@@ -84,11 +87,19 @@ Foco: **publicar no Firebase + usuários reais**. Buracos estruturais do caminho
 
 Critério de sucesso desta fase = conclusão de missão e retorno D7 **no Sermão** (trilha-vitrine).
 
+Protocolo: [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md) · planilha: [`docs/D7_TESTERS.csv`](docs/D7_TESTERS.csv).
+
 ---
 
 ## Depois — fosso visível (4–8 semanas)
 
 Só avançar o que melhora D7. Roubar do mercado **melhorado**, sem virar clone.
+
+**Ordem pós-D7 (não inverter):**
+1. `lifeChallenge` — viver o texto (piloto nas bem-aventuranças)
+2. Trilhas de entrada por dor (ansiedade, recomeço) que desembocam no cânon
+3. Áudio curto da missão (passagem + 1 insight) — commute BR, não hub de oração
+4. Selos de personagem (fato teológico + verso) — sem skin shop
 
 ### Currículo e hábito
 - [ ] Prova do caminho Criação → NT com testers (critério de pronto — conteúdo mínimo já no asset)

@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../cinematic/cinematic_resolver.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/trail_visuals.dart';
+import '../widgets/cinematic_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 
-/// Onboarding STWAY — 4 passos no visual atual do app.
-/// Promessa → motivo → ritmo → primeira trilha.
+/// Onboarding STWAY — primeiro contato cinematográfico.
+/// Origem → hábito → missão → ritmo → primeira trilha.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -21,49 +25,60 @@ class OnboardingScreen extends StatefulWidget {
   State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-enum _Beat { promise, why, rhythm, threshold }
-
-enum _Why {
-  know,
-  depth,
-  habit,
-  grow;
-
-  String get label => switch (this) {
-    _Why.know => 'Conhecer a Bíblia',
-    _Why.depth => 'Estudar com profundidade',
-    _Why.habit => 'Criar um hábito diário',
-    _Why.grow => 'Conhecer melhor a Cristo',
-  };
-
-  String get echo => switch (this) {
-    _Why.know => 'Começamos no princípio — Gênesis.',
-    _Why.depth => 'Quando o versículo pedir, o original está a um toque.',
-    _Why.habit => 'Uma lição por dia basta para manter o ritmo.',
-    _Why.grow => 'Missões curtas. A fé cresce com o que você entende.',
-  };
-
-  CinematicGlyph get glyph => switch (this) {
-    _Why.know => CinematicGlyph.book,
-    _Why.depth => CinematicGlyph.scroll,
-    _Why.habit => CinematicGlyph.flame,
-    _Why.grow => CinematicGlyph.heart,
-  };
-}
+enum _Beat { origin, habit, walk, rhythm, threshold }
 
 class _OnboardingScreenState extends State<OnboardingScreen>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   static const _beats = _Beat.values;
 
   final _nameController = TextEditingController();
   late final AnimationController _enter;
+  late final AnimationController _world;
 
   int _index = 0;
   int _dailyGoal = 1;
-  _Why? _why;
+  bool _askName = false;
   bool _finishing = false;
 
+  CreationWorldState _fromWorld = const CreationWorldState(voidDepth: 1);
+  CreationWorldState _toWorld = _worldFor(_Beat.origin);
+
   _Beat get _beat => _beats[_index];
+
+  static CreationWorldState _worldFor(_Beat beat) => switch (beat) {
+    _Beat.origin => const CreationWorldState(
+      voidDepth: 0.92,
+      spirit: 0.75,
+      waters: 0.5,
+    ),
+    _Beat.habit => const CreationWorldState(
+      voidDepth: 0.28,
+      spirit: 0.35,
+      waters: 0.28,
+      light: 0.88,
+    ),
+    _Beat.walk => const CreationWorldState(
+      voidDepth: 0.18,
+      light: 0.58,
+      waters: 0.36,
+      land: 0.78,
+      plants: 0.55,
+    ),
+    _Beat.rhythm => const CreationWorldState(
+      voidDepth: 0.38,
+      light: 0.4,
+      stars: 0.82,
+      land: 0.28,
+    ),
+    _Beat.threshold => const CreationWorldState(
+      voidDepth: 0.22,
+      light: 0.72,
+      waters: 0.28,
+      land: 0.62,
+      plants: 0.42,
+      humanity: 0.7,
+    ),
+  };
 
   @override
   void initState() {
@@ -71,14 +86,20 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 480),
+      duration: const Duration(milliseconds: 560),
+    )..forward();
+
+    _world = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 900),
     )..forward();
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       final name = context.read<ProgressService>().userName.trim();
-      if (!ProgressService.isPlaceholderUserName(name) &&
-          _nameController.text.isEmpty) {
+      if (ProgressService.isPlaceholderUserName(name)) {
+        setState(() => _askName = true);
+      } else if (_nameController.text.isEmpty) {
         _nameController.text = name.split(' ').first;
       }
     });
@@ -87,6 +108,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   @override
   void dispose() {
     _enter.dispose();
+    _world.dispose();
     _nameController.dispose();
     super.dispose();
   }
@@ -99,16 +121,20 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   }
 
   Future<void> _goNext() async {
-    if (_beat == _Beat.why && _why == null) {
-      HapticFeedback.selectionClick();
-      return;
-    }
     if (_index >= _beats.length - 1) {
       await _finish();
       return;
     }
     HapticFeedback.lightImpact();
-    setState(() => _index += 1);
+    final next = _beats[_index + 1];
+    setState(() {
+      _fromWorld = _toWorld;
+      _toWorld = _worldFor(next);
+      _index += 1;
+    });
+    _world
+      ..stop()
+      ..forward(from: 0);
     await _playEnter();
   }
 
@@ -120,8 +146,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     final progress = context.read<ProgressService>();
     final backend = context.read<BackendService>();
     final league = context.read<LeagueService>();
-    final name = _nameController.text.trim();
-    if (name.isNotEmpty) await progress.setUserName(name);
+    if (_askName) {
+      final name = _nameController.text.trim();
+      if (name.isNotEmpty) await progress.setUserName(name);
+    }
     await progress.updateSettings(
       progress.settings.copyWith(
         dailyGoal: _dailyGoal,
@@ -138,30 +166,58 @@ class _OnboardingScreenState extends State<OnboardingScreen>
             const MainShell(initialTrailSlug: 'genesis-1-11'),
         transitionsBuilder: (context, animation, secondaryAnimation, child) =>
             FadeTransition(opacity: animation, child: child),
-        transitionDuration: const Duration(milliseconds: 520),
+        transitionDuration: const Duration(milliseconds: 640),
       ),
     );
   }
 
   String get _ctaLabel => switch (_beat) {
-    _Beat.promise => 'Começar',
-    _Beat.why => 'Continuar',
+    _Beat.origin => 'Começar',
+    _Beat.habit => 'Continuar',
+    _Beat.walk => 'Continuar',
     _Beat.rhythm => 'Definir ritmo',
     _Beat.threshold => 'Abrir primeira lição',
   };
 
-  bool get _ctaEnabled => _beat != _Beat.why || _why != null;
+  bool get _showSkip => _beat != _Beat.threshold;
 
   @override
   Widget build(BuildContext context) {
-    // Onboarding fixo em Manhã — evita salto de cor ao abrir a 1ª lição
-    // (Automático à noite mudaria o céu no MainShell).
     const mode = AppearanceMode.morning;
     final appearance = AppearanceStyle.resolve(mode);
 
     return ImmersiveScaffold(
       mode: mode,
       style: appearance,
+      background: AnimatedBuilder(
+        animation: _world,
+        builder: (context, _) {
+          return Stack(
+            fit: StackFit.expand,
+            children: [
+              CinematicBackdrop(
+                world: _fromWorld,
+                revealing: _toWorld,
+                revealProgress: _world.value,
+              ),
+              const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0x66040910),
+                      Color(0x33040910),
+                      Color(0x99040910),
+                    ],
+                    stops: [0.0, 0.42, 1.0],
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
+      ),
       body: AnimatedBuilder(
         animation: _enter,
         builder: (context, _) {
@@ -177,17 +233,20 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       Expanded(
                         child: _StepDots(index: _index, total: _beats.length),
                       ),
-                      TextButton(
-                        onPressed: _finishing ? null : _finish,
-                        child: Text(
-                          'Pular',
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w700,
-                            color: Appearance.of(context).textMuted(0.45),
+                      if (_showSkip)
+                        TextButton(
+                          onPressed: _finishing ? null : _finish,
+                          child: Text(
+                            'Pular',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w700,
+                              color: Appearance.of(context).textMuted(0.45),
+                            ),
                           ),
-                        ),
-                      ),
+                        )
+                      else
+                        const SizedBox(height: 48),
                     ],
                   ),
                 ),
@@ -195,9 +254,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                   child: Opacity(
                     opacity: enter,
                     child: Transform.translate(
-                      offset: Offset(0, 16 * (1 - enter)),
+                      offset: Offset(0, 22 * (1 - enter)),
                       child: Transform.scale(
-                        scale: 0.97 + 0.03 * enter,
+                        scale: 0.96 + 0.04 * enter,
                         child: _buildBeat(),
                       ),
                     ),
@@ -211,12 +270,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                     AppSpace.screen,
                   ),
                   child: Opacity(
-                    opacity: _ctaEnabled && !_finishing ? 1 : 0.4,
+                    opacity: _finishing ? 0.55 : 1,
                     child: CopperCta(
                       label: _finishing ? 'Abrindo…' : _ctaLabel,
-                      onTap: _ctaEnabled && !_finishing ? _goNext : null,
-                      showArrow: true,
-                      trailing: null,
+                      onTap: _finishing ? null : _goNext,
                     ),
                   ),
                 ),
@@ -230,16 +287,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   Widget _buildBeat() {
     return switch (_beat) {
-      _Beat.promise => const _PromiseBeat(),
-      _Beat.why => _WhyBeat(
-        selected: _why,
-        onSelect: (w) {
-          HapticFeedback.selectionClick();
-          setState(() => _why = w);
-        },
-      ),
+      _Beat.origin => const _OriginBeat(),
+      _Beat.habit => const _HabitBeat(),
+      _Beat.walk => const _WalkBeat(),
       _Beat.rhythm => _RhythmBeat(
         controller: _nameController,
+        askName: _askName,
         dailyGoal: _dailyGoal,
         onGoal: (g) {
           HapticFeedback.selectionClick();
@@ -247,9 +300,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         },
       ),
       _Beat.threshold => _ThresholdBeat(
-        name: _nameController.text.trim(),
-        why: _why,
-        dailyGoal: _dailyGoal,
+        name: _nameController.text.trim().isNotEmpty
+            ? _nameController.text.trim()
+            : context.read<ProgressService>().userName,
       ),
     };
   }
@@ -259,162 +312,260 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 // Beats
 // ---------------------------------------------------------------------------
 
-class _PromiseBeat extends StatelessWidget {
-  const _PromiseBeat();
+class _OriginBeat extends StatelessWidget {
+  const _OriginBeat();
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return ListView(
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        8,
+        AppSpace.screen,
+        8,
+      ),
+      child: Column(
+        children: [
+          const Center(child: StwayWordmark(fontSize: 20, letterSpacing: 3.2)),
+          const SizedBox(height: 6),
+          const StwayTagline(size: 9),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const CinematicIcon(
+                  glyph: CinematicGlyph.cosmos,
+                  size: 84,
+                  accent: AppColors.accent,
+                  glowing: true,
+                ),
+                const SizedBox(height: 22),
+                Text(
+                  'NO PRINCÍPIO',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.label(
+                    size: 12,
+                    letterSpacing: 2.2,
+                    color: AppColors.accent,
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'Deus falou.\nO mundo começou.',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.display(
+                    size: 34,
+                    height: 1.1,
+                    weight: FontWeight.w900,
+                  ),
+                ),
+                const SizedBox(height: 14),
+                Text(
+                  'A Bíblia não é um livro para terminar.\nÉ o lugar onde você encontra quem te criou.',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(
+                    size: 15,
+                    height: 1.45,
+                    weight: FontWeight.w600,
+                    color: a.text.withValues(alpha: 0.78),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          GlassCard(
+            accent: true,
+            elevated: true,
+            padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
+            child: Column(
+              children: [
+                Text(
+                  'No princípio, Deus criou os céus e a terra.',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.verse(size: 22, height: 1.4),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  'GÊNESIS 1.1',
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 1.8,
+                    color: AppColors.accent,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _HabitBeat extends StatelessWidget {
+  const _HabitBeat();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Padding(
       padding: const EdgeInsets.fromLTRB(
         AppSpace.screen,
         4,
         AppSpace.screen,
         8,
       ),
-      children: [
-        const Center(child: StwayWordmark(fontSize: 22, letterSpacing: 3.5)),
-        const SizedBox(height: 8),
-        const StwayTagline(size: 9),
-        const SizedBox(height: 14),
-        Text(
-          'Missão de 3 minutos.\nLâmpadas. Streak. Bíblia.',
-          textAlign: TextAlign.center,
-          style: AppTypography.display(
-            size: 28,
-            height: 1.12,
-            weight: FontWeight.w900,
-          ),
-        ),
-        const SizedBox(height: 10),
-        Text(
-          'Hábito diário — não trivia, não só leitura',
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            weight: FontWeight.w600,
-            color: a.textMuted(0.55),
-          ),
-        ),
-        const SizedBox(height: 22),
-        GlassCard(
-          accent: true,
-          elevated: true,
-          radius: AppMetrics.heroRadius,
-          padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 5,
-                    ),
-                    decoration: BoxDecoration(
-                      color: a.cardFillSoft,
-                      borderRadius: BorderRadius.circular(AppRadii.pill),
-                      border: Border.all(color: a.cardBorder),
-                    ),
-                    child: Text(
-                      'GÊNESIS 1–11',
-                      style: AppTypography.label(
-                        size: 9,
-                        letterSpacing: 1,
-                        color: a.text.withValues(alpha: 0.85),
-                      ),
-                    ),
-                  ),
-                  const Spacer(),
-                  const CinematicIcon(
-                    glyph: CinematicGlyph.flame,
-                    size: 18,
-                    accent: AppColors.streak,
-                    framed: false,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 14),
-              Text(
-                'MISSÃO PRONTA',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 1.4,
-                  color: AppColors.accent,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                'Quem criou o mundo?',
-                style: AppTypography.display(
-                  size: 22,
-                  weight: FontWeight.w900,
-                  height: 1.15,
-                ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                '5 lâmpadas · +passos · ~3 min',
-                style: AppTypography.body(
-                  size: 13,
-                  weight: FontWeight.w700,
-                  color: AppColors.sand,
-                ),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 22),
-        const _FeatureList(
-          items: [
-            (
-              glyph: CinematicGlyph.flame,
-              title: 'Streak + gelo',
-              subtitle: 'Proteja a sequência — um dia por semana',
+      child: Column(
+        children: [
+          Text(
+            'O HÁBITO',
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 12,
+              letterSpacing: 2.2,
+              color: AppColors.accent,
             ),
-            (
-              glyph: CinematicGlyph.lamp,
-              title: 'Lâmpadas e bosses',
-              subtitle: 'Errar custa. Perfeito vira combo',
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Três minutos.\nTodo dia.',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: 34,
+              height: 1.1,
+              weight: FontWeight.w900,
             ),
-            (
-              glyph: CinematicGlyph.people,
-              title: 'Caravana',
-              subtitle: 'Ranking semanal com quem caminha de verdade',
+          ),
+          const SizedBox(height: 12),
+          Text(
+            'Conhecer a Deus não pede uma maratona.\nPede presença — um passo curto, repetido, até virar caminho.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 15,
+              height: 1.45,
+              weight: FontWeight.w600,
+              color: a.text.withValues(alpha: 0.78),
             ),
-          ],
-        ),
-      ],
+          ),
+          const SizedBox(height: 22),
+          const Expanded(
+            child: _StoryPoints(
+              items: [
+                (
+                  glyph: CinematicGlyph.sun,
+                  title: '3 minutos',
+                  subtitle: 'Cabe entre o café e a porta',
+                ),
+                (
+                  glyph: CinematicGlyph.flame,
+                  title: 'Todo dia',
+                  subtitle: 'O retorno forma o hábito',
+                ),
+                (
+                  glyph: CinematicGlyph.heart,
+                  title: 'A Palavra',
+                  subtitle: 'Presença, não performance',
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
 
-/// Lista informativa — sem card/borda, para não parecer botão.
-class _FeatureList extends StatelessWidget {
-  final List<({CinematicGlyph glyph, String title, String subtitle})> items;
-
-  const _FeatureList({required this.items});
+class _WalkBeat extends StatelessWidget {
+  const _WalkBeat();
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
+      child: Column(
+        children: [
+          Text(
+            'A MISSÃO',
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 12,
+              letterSpacing: 2.2,
+              color: AppColors.accent,
+            ),
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Leia. Responda.\nEntenda.',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: 34,
+              height: 1.1,
+              weight: FontWeight.w900,
+            ),
+          ),
+          const SizedBox(height: 12),
+          Text(
+            'Não é trivia. Não é só leitura.\nÉ a Bíblia na mão, uma pergunta de verdade, e o entendimento que fica.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 15,
+              height: 1.45,
+              weight: FontWeight.w600,
+              color: a.text.withValues(alpha: 0.78),
+            ),
+          ),
+          const SizedBox(height: 22),
+          const Expanded(
+            child: _StoryPoints(
+              items: [
+                (
+                  glyph: CinematicGlyph.book,
+                  title: 'Leia a passagem',
+                  subtitle: 'Contexto curto, Bíblia offline',
+                ),
+                (
+                  glyph: CinematicGlyph.lamp,
+                  title: 'Responda a missão',
+                  subtitle: 'Perguntas + feedback imediato',
+                ),
+                (
+                  glyph: CinematicGlyph.path,
+                  title: 'Volte amanhã',
+                  subtitle: 'A sequência sustenta o hábito',
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StoryPoints extends StatelessWidget {
+  final List<({CinematicGlyph glyph, String title, String subtitle})> items;
+
+  const _StoryPoints({required this.items});
+
+  @override
+  Widget build(BuildContext context) {
     return Column(
       children: [
         for (var i = 0; i < items.length; i++) ...[
-          if (i > 0)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 12),
-              child: Divider(
-                height: 1,
-                thickness: 1,
-                color: a.text.withValues(alpha: 0.08),
-              ),
+          if (i > 0) const SizedBox(height: 10),
+          Expanded(
+            child: _StoryPointCard(
+              glyph: items[i].glyph,
+              title: items[i].title,
+              subtitle: items[i].subtitle,
             ),
-          _FeatureRow(
-            glyph: items[i].glyph,
-            title: items[i].title,
-            subtitle: items[i].subtitle,
           ),
         ],
       ],
@@ -422,12 +573,12 @@ class _FeatureList extends StatelessWidget {
   }
 }
 
-class _FeatureRow extends StatelessWidget {
+class _StoryPointCard extends StatelessWidget {
   final CinematicGlyph glyph;
   final String title;
   final String subtitle;
 
-  const _FeatureRow({
+  const _StoryPointCard({
     required this.glyph,
     required this.title,
     required this.subtitle,
@@ -436,96 +587,28 @@ class _FeatureRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 2),
-          child: CinematicIcon(
-            glyph: glyph,
-            size: 20,
-            accent: AppColors.accent,
-            framed: false,
-          ),
-        ),
-        const SizedBox(width: 14),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(title, style: AppTypography.title(size: 14, color: a.text)),
-              const SizedBox(height: 2),
-              Text(
-                subtitle,
-                style: AppTypography.body(size: 12, color: a.textMuted(0.5)),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _WhyBeat extends StatelessWidget {
-  final _Why? selected;
-  final ValueChanged<_Why> onSelect;
-
-  const _WhyBeat({required this.selected, required this.onSelect});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        4,
-        AppSpace.screen,
-        8,
-      ),
-      child: Column(
+    return GlassCard(
+      elevated: true,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      child: Row(
         children: [
-          Text(
-            'Qual o seu objetivo?',
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 26, height: 1.15),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'Escolha o que você espera dessa jornada.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(size: 13, color: a.textMuted(0.5)),
-          ),
-          const SizedBox(height: 18),
-          ..._Why.values.map((w) {
-            final on = selected == w;
-            return Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: _ChoiceCard(
-                glyph: w.glyph,
-                label: w.label,
-                selected: on,
-                onTap: () => onSelect(w),
-              ),
-            );
-          }),
+          CinematicIcon(glyph: glyph, size: 48, accent: AppColors.accent),
+          const SizedBox(width: 16),
           Expanded(
-            child: AnimatedOpacity(
-              duration: const Duration(milliseconds: 220),
-              opacity: selected == null ? 0 : 1,
-              child: Center(
-                child: GlassCard(
-                  child: Text(
-                    selected?.echo ?? '',
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 14,
-                      weight: FontWeight.w600,
-                      color: AppColors.accent.withValues(alpha: 0.95),
-                    ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(title, style: AppTypography.title(size: 17, color: a.text)),
+                const SizedBox(height: 4),
+                Text(
+                  subtitle,
+                  style: AppTypography.body(
+                    size: 13,
+                    color: a.textMuted(0.62),
                   ),
                 ),
-              ),
+              ],
             ),
           ),
         ],
@@ -534,22 +617,58 @@ class _WhyBeat extends StatelessWidget {
   }
 }
 
+class _GoalOption {
+  final int goal;
+  final String pace;
+  final String echo;
+  final String time;
+
+  const _GoalOption({
+    required this.goal,
+    required this.pace,
+    required this.echo,
+    required this.time,
+  });
+
+  String get unit => goal == 1 ? 'passo' : 'passos';
+}
+
+const _goals = <_GoalOption>[
+  _GoalOption(
+    goal: 1,
+    pace: 'Leve',
+    echo: 'Uma missão. O hábito nasce no retorno.',
+    time: '~3 min',
+  ),
+  _GoalOption(
+    goal: 2,
+    pace: 'Firme',
+    echo: 'Dois passos. A semana muda de cara.',
+    time: '~6 min',
+  ),
+  _GoalOption(
+    goal: 3,
+    pace: 'Intenso',
+    echo: 'Reserve o tempo — o estudo vale a presença.',
+    time: '~9 min',
+  ),
+];
+
 class _RhythmBeat extends StatelessWidget {
   final TextEditingController controller;
+  final bool askName;
   final int dailyGoal;
   final ValueChanged<int> onGoal;
 
   const _RhythmBeat({
     required this.controller,
+    required this.askName,
     required this.dailyGoal,
     required this.onGoal,
   });
 
-  String get _goalEcho => switch (dailyGoal) {
-    1 => 'Leve e constante — o hábito nasce no retorno.',
-    2 => 'Ritmo firme. Duas lições por dia mudam a semana.',
-    _ => 'Intenso. Reserve o tempo — o estudo vale a presença.',
-  };
+  _GoalOption get _selected =>
+      _goals.firstWhere((g) => g.goal == dailyGoal, orElse: () => _goals.first);
 
   @override
   Widget build(BuildContext context) {
@@ -562,406 +681,117 @@ class _RhythmBeat extends StatelessWidget {
         8,
       ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Center(
-            child: Text(
-              'SEU RITMO',
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.8,
-                color: AppColors.accent,
-              ),
-            ),
-          ),
-          const SizedBox(height: 8),
-          Center(
-            child: Text(
-              'Personalize sua jornada',
-              textAlign: TextAlign.center,
-              style: AppTypography.display(size: 26, height: 1.15),
-            ),
-          ),
-          const SizedBox(height: 18),
-          Text(
-            'Nome',
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 1.2,
-              color: a.textMuted(0.45),
-            ),
-          ),
-          const SizedBox(height: 8),
-          GlassCard(
-            padding: EdgeInsets.zero,
-            child: TextField(
-              controller: controller,
-              textCapitalization: TextCapitalization.words,
-              style: AppTypography.title(size: 16, color: a.text),
-              cursorColor: AppColors.accent,
-              decoration: InputDecoration(
-                hintText: 'Como te chamamos?',
-                hintStyle: TextStyle(color: a.textMuted(0.35)),
-                filled: true,
-                fillColor: Colors.transparent,
-                contentPadding: const EdgeInsets.symmetric(
-                  horizontal: 18,
-                  vertical: 16,
-                ),
-                border: InputBorder.none,
-              ),
-            ),
-          ),
-          const SizedBox(height: 20),
-          Text(
-            'Meta diária',
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 1.2,
-              color: a.textMuted(0.45),
-            ),
-          ),
-          const SizedBox(height: 8),
-          Row(
-            children: [1, 2, 3].map((g) {
-              final on = dailyGoal == g;
-              return Expanded(
-                child: Padding(
-                  padding: EdgeInsets.only(right: g < 3 ? 10 : 0),
-                  child: GestureDetector(
-                    onTap: () => onGoal(g),
-                    child: AnimatedContainer(
-                      duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      decoration: BoxDecoration(
-                        color: on
-                            ? AppColors.accent.withValues(alpha: 0.16)
-                            : a.cardFill,
-                        borderRadius: BorderRadius.circular(AppRadii.lg),
-                        border: Border.all(
-                          color: on
-                              ? AppMetrics.accentBorder(alpha: 0.75)
-                              : a.cardBorder,
-                          width: on ? 1.5 : 1,
-                        ),
-                        boxShadow: AppMetrics.cardShadow(accent: on),
-                      ),
-                      child: Column(
-                        children: [
-                          Text(
-                            '$g',
-                            style: AppTypography.display(
-                              size: 28,
-                              weight: FontWeight.w900,
-                              color: on ? AppColors.accent : a.textMuted(0.7),
-                              height: 1,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            g == 1 ? 'lição' : 'lições',
-                            style: AppTypography.body(
-                              size: 11,
-                              weight: FontWeight.w700,
-                              color: on
-                                  ? AppColors.accent.withValues(alpha: 0.95)
-                                  : a.textMuted(0.54),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              );
-            }).toList(),
-          ),
-          Expanded(
-            child: Center(
-              child: GlassCard(
-                child: Text(
-                  _goalEcho,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w600,
-                    color: AppColors.accent.withValues(alpha: 0.9),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _ThresholdBeat extends StatelessWidget {
-  final String name;
-  final _Why? why;
-  final int dailyGoal;
-
-  const _ThresholdBeat({
-    required this.name,
-    required this.why,
-    required this.dailyGoal,
-  });
-
-  String get _goalLabel =>
-      dailyGoal == 1 ? '1 lição/dia' : '$dailyGoal lições/dia';
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final greeting = name.isEmpty ? 'Aprendiz' : name;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        4,
-        AppSpace.screen,
-        8,
-      ),
-      child: Column(
         children: [
           Text(
-            'TUDO PRONTO',
+            'SEU RITMO',
             textAlign: TextAlign.center,
             style: AppTypography.label(
-              size: 11,
-              letterSpacing: 1.8,
+              size: 12,
+              letterSpacing: 2.2,
               color: AppColors.accent,
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 10),
           Text(
-            '$greeting, a jornada\ncomeça agora',
+            'Quanto você caminha\npor dia?',
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 28, height: 1.12),
+            style: AppTypography.display(size: 30, height: 1.12),
           ),
-          const SizedBox(height: 8),
-          Text(
-            why?.echo ?? 'Sua primeira trilha já está preparada.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.55),
+          if (askName) ...[
+            const SizedBox(height: 16),
+            GlassCard(
+              padding: EdgeInsets.zero,
+              child: TextField(
+                controller: controller,
+                textCapitalization: TextCapitalization.words,
+                style: AppTypography.title(size: 16, color: a.text),
+                cursorColor: AppColors.accent,
+                decoration: InputDecoration(
+                  hintText: 'Como te chamamos?',
+                  hintStyle: TextStyle(color: a.textMuted(0.35)),
+                  filled: true,
+                  fillColor: Colors.transparent,
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 18,
+                    vertical: 16,
+                  ),
+                  border: InputBorder.none,
+                ),
+              ),
             ),
-          ),
-          const SizedBox(height: 22),
-          GlassCard(
-            accent: true,
-            elevated: true,
-            radius: AppMetrics.heroRadius,
-            padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+          ],
+          const SizedBox(height: 18),
+          Expanded(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                Row(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 6,
-                      ),
-                      decoration: BoxDecoration(
-                        color: a.cardFillSoft,
-                        borderRadius: BorderRadius.circular(AppRadii.pill),
-                        border: Border.all(color: a.cardBorder),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          const CinematicIcon(
-                            glyph: CinematicGlyph.path,
-                            size: 16,
-                            accent: AppColors.accent,
-                            framed: false,
-                          ),
-                          const SizedBox(width: 6),
-                          Text(
-                            'GÊNESIS 1–11',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 1.1,
-                              color: a.text.withValues(alpha: 0.9),
-                            ),
-                          ),
-                        ],
-                      ),
+                for (var i = 0; i < _goals.length; i++) ...[
+                  if (i > 0) const SizedBox(width: 10),
+                  Expanded(
+                    child: _GoalCard(
+                      option: _goals[i],
+                      selected: dailyGoal == _goals[i].goal,
+                      onTap: () => onGoal(_goals[i].goal),
                     ),
-                    const Spacer(),
-                    const CinematicIcon(
-                      glyph: CinematicGlyph.book,
-                      size: 34,
-                      accent: AppColors.accent,
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'PRIMEIRA LIÇÃO',
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 1.4,
-                    color: AppColors.accent,
                   ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  'Quem criou o mundo?',
-                  style: AppTypography.display(
-                    size: 24,
-                    weight: FontWeight.w900,
-                    height: 1.15,
-                  ),
-                ),
-                const SizedBox(height: 6),
-                Text(
-                  'Do começo — no princípio de tudo',
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w600,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    _Chip(
-                      label: why?.label ?? 'Jornada',
-                      glyph: why?.glyph ?? CinematicGlyph.path,
-                    ),
-                    _Chip(label: _goalLabel, glyph: CinematicGlyph.flame),
-                  ],
-                ),
+                ],
               ],
             ),
           ),
-          Expanded(
-            child: Center(
-              child: _JourneySteps(
-                steps: const [
-                  (
-                    number: '1',
-                    title: 'Leia a passagem',
-                    subtitle: 'Contexto curto, Bíblia offline',
-                  ),
-                  (
-                    number: '2',
-                    title: 'Responda as missões',
-                    subtitle: 'Perguntas + feedback imediato',
-                  ),
-                  (
-                    number: '3',
-                    title: 'Volte amanhã',
-                    subtitle: 'A sequência sustenta o hábito',
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _JourneySteps extends StatelessWidget {
-  final List<({String number, String title, String subtitle})> steps;
-
-  const _JourneySteps({required this.steps});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        for (var i = 0; i < steps.length; i++) ...[
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width: 28,
-                child: Column(
-                  children: [
-                    Container(
-                      width: 28,
-                      height: 28,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.accent.withValues(alpha: 0.16),
-                        border: Border.all(
-                          color: AppMetrics.accentBorder(alpha: 0.65),
-                        ),
-                      ),
-                      child: Text(
-                        steps[i].number,
-                        style: AppTypography.label(
-                          size: 12,
-                          color: AppColors.accent,
-                        ),
-                      ),
-                    ),
-                    if (i < steps.length - 1)
-                      Container(
-                        width: 1.5,
-                        height: 22,
-                        margin: const EdgeInsets.symmetric(vertical: 4),
-                        color: AppColors.accent.withValues(alpha: 0.28),
-                      ),
-                  ],
+          const SizedBox(height: 16),
+          GlassCard(
+            accent: true,
+            elevated: true,
+            padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
+            child: Row(
+              children: [
+                const CinematicIcon(
+                  glyph: CinematicGlyph.flame,
+                  size: 40,
+                  accent: AppColors.accent,
                 ),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.only(
-                    bottom: i < steps.length - 1 ? 4 : 0,
-                    top: 3,
-                  ),
+                const SizedBox(width: 14),
+                Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        steps[i].title,
-                        style: AppTypography.title(size: 14, color: a.text),
+                        '${_selected.pace.toUpperCase()}  ·  ${_selected.time}',
+                        style: AppTypography.label(
+                          size: 11,
+                          letterSpacing: 1.4,
+                          color: AppColors.accent,
+                        ),
                       ),
-                      const SizedBox(height: 2),
+                      const SizedBox(height: 6),
                       Text(
-                        steps[i].subtitle,
+                        _selected.echo,
                         style: AppTypography.body(
-                          size: 12,
-                          color: a.textMuted(0.5),
+                          size: 14,
+                          weight: FontWeight.w700,
+                          height: 1.35,
+                          color: a.text.withValues(alpha: 0.92),
                         ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
-      ],
+      ),
     );
   }
 }
 
-class _ChoiceCard extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String label;
+class _GoalCard extends StatelessWidget {
+  final _GoalOption option;
   final bool selected;
   final VoidCallback onTap;
 
-  const _ChoiceCard({
-    required this.glyph,
-    required this.label,
+  const _GoalCard({
+    required this.option,
     required this.selected,
     required this.onTap,
   });
@@ -969,6 +799,7 @@ class _ChoiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final ink = selected ? AppColors.inkOnAccent : a.text;
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -976,44 +807,65 @@ class _ChoiceCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadii.lg),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 18),
           decoration: BoxDecoration(
-            color: selected
-                ? AppColors.accent.withValues(alpha: 0.14)
-                : a.cardFill,
+            gradient: selected ? AppGradients.gold : null,
+            color: selected ? null : a.cardFill,
             borderRadius: BorderRadius.circular(AppRadii.lg),
             border: Border.all(
               color: selected
-                  ? AppMetrics.accentBorder(alpha: 0.7)
-                  : a.cardBorder,
-              width: selected ? 1.5 : 1,
+                  ? Colors.transparent
+                  : a.cardBorder.withValues(alpha: 0.55),
+              width: selected ? 0 : 1.5,
             ),
-            boxShadow: AppMetrics.cardShadow(accent: selected),
+            boxShadow: selected
+                ? AppMetrics.accentGlow()
+                : AppMetrics.cardShadow(),
           ),
-          child: Row(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              CinematicIcon(
-                glyph: glyph,
-                size: 32,
-                accent: selected ? AppColors.accent : AppColors.primaryLight,
-                glowing: false,
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Text(
-                  label,
-                  style: AppTypography.title(
-                    size: 15,
-                    color: a.text.withValues(alpha: selected ? 0.98 : 0.8),
-                  ),
+              Text(
+                '${option.goal}',
+                style: AppTypography.display(
+                  size: 42,
+                  weight: FontWeight.w900,
+                  color: ink,
+                  height: 1,
                 ),
               ),
-              Icon(
-                selected ? Icons.check_circle_rounded : Icons.circle_outlined,
-                size: 22,
-                color: selected
-                    ? AppColors.accent
-                    : a.text.withValues(alpha: 0.25),
+              const SizedBox(height: 6),
+              Text(
+                option.unit,
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w800,
+                  color: selected
+                      ? AppColors.inkOnAccent.withValues(alpha: 0.85)
+                      : a.textMuted(0.6),
+                ),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                option.pace,
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 1.2,
+                  color: selected
+                      ? AppColors.inkOnAccent
+                      : AppColors.accent.withValues(alpha: 0.85),
+                ),
+              ),
+              const SizedBox(height: 4),
+              Text(
+                option.time,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
+                  color: selected
+                      ? AppColors.inkOnAccent.withValues(alpha: 0.72)
+                      : a.textMuted(0.5),
+                ),
               ),
             ],
           ),
@@ -1023,17 +875,200 @@ class _ChoiceCard extends StatelessWidget {
   }
 }
 
-class _Chip extends StatelessWidget {
-  final String label;
-  final CinematicGlyph glyph;
+class _ThresholdBeat extends StatelessWidget {
+  final String name;
 
-  const _Chip({required this.label, required this.glyph});
+  const _ThresholdBeat({required this.name});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final greeting = ProgressService.isPlaceholderUserName(name)
+        ? null
+        : name.split(' ').first;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        4,
+        AppSpace.screen,
+        8,
+      ),
+      child: Column(
+        children: [
+          Text(
+            'A JORNADA COMEÇA',
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 12,
+              letterSpacing: 2.2,
+              color: AppColors.accent,
+            ),
+          ),
+          const SizedBox(height: 10),
+          Text(
+            greeting == null
+                ? 'O primeiro passo\nestá pronto.'
+                : '$greeting, o primeiro passo\nestá pronto.',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 30, height: 1.12),
+          ),
+          const SizedBox(height: 10),
+          Text(
+            'Começamos no princípio — Gênesis.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 14,
+              weight: FontWeight.w600,
+              color: a.text.withValues(alpha: 0.7),
+            ),
+          ),
+          const SizedBox(height: 18),
+          const Expanded(child: _FirstMissionHero()),
+        ],
+      ),
+    );
+  }
+}
+
+class _FirstMissionHero extends StatelessWidget {
+  const _FirstMissionHero();
+
+  static const _slug = 'genesis-1-11';
+  static const _title = 'Quem criou o mundo?';
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final visuals = TrailVisuals.forSlug(_slug);
+    final world = CinematicResolver.ambientForHome(
+      trailSlug: _slug,
+      missionTitle: _title,
+    );
+    final style = HeroCardMoodStyle.of(
+      HeroCardMood.alive,
+      trailAccent: visuals.accent,
+    );
+
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+        border: Border.all(color: style.border, width: style.borderWidth),
+        boxShadow: [
+          ...AppMetrics.cardShadow(elevated: true),
+          BoxShadow(
+            color: style.glow,
+            blurRadius: 28,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: HeroCardColorGrade(
+                mood: HeroCardMood.alive,
+                child: CinematicBackdrop(world: world),
+              ),
+            ),
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.black.withValues(alpha: 0.06),
+                      Colors.black.withValues(alpha: 0.28),
+                      Color.lerp(
+                        a.cardFill,
+                        Colors.black,
+                        0.22,
+                      )!.withValues(alpha: 0.82),
+                    ],
+                    stops: const [0.0, 0.4, 1.0],
+                  ),
+                ),
+              ),
+            ),
+            const Positioned.fill(
+              child: HeroCardAtmosphere(mood: HeroCardMood.alive),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(22, 20, 22, 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      _HeroChip(
+                        glyph: visuals.glyph,
+                        accent: visuals.accent,
+                        label: 'GÊNESIS 1–11',
+                      ),
+                      const SizedBox(width: 8),
+                      const _HeroChip(
+                        glyph: CinematicGlyph.lamp,
+                        accent: AppColors.accent,
+                        label: '5 LÂMPADAS',
+                      ),
+                    ],
+                  ),
+                  const Spacer(),
+                  Text(
+                    'MISSÃO PRONTA',
+                    style: AppTypography.label(
+                      size: 12,
+                      letterSpacing: 1.8,
+                      color: style.label,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    _title,
+                    style: AppTypography.display(
+                      size: 32,
+                      height: 1.1,
+                      weight: FontWeight.w900,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Do começo — no princípio de tudo',
+                    style: AppTypography.body(
+                      size: 14,
+                      weight: FontWeight.w600,
+                      color: a.text.withValues(alpha: 0.74),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _HeroChip extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final Color accent;
+  final String label;
+
+  const _HeroChip({
+    required this.glyph,
+    required this.accent,
+    required this.label,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
         color: a.cardFillSoft,
         borderRadius: BorderRadius.circular(AppRadii.pill),
@@ -1044,17 +1079,17 @@ class _Chip extends StatelessWidget {
         children: [
           CinematicIcon(
             glyph: glyph,
-            size: 16,
-            accent: AppColors.accent,
+            size: 14,
+            accent: accent,
             framed: false,
           ),
           const SizedBox(width: 6),
           Text(
             label,
-            style: AppTypography.body(
-              size: 11,
-              weight: FontWeight.w700,
-              color: a.text.withValues(alpha: 0.8),
+            style: AppTypography.label(
+              size: 9,
+              letterSpacing: 1,
+              color: a.text.withValues(alpha: 0.88),
             ),
           ),
         ],

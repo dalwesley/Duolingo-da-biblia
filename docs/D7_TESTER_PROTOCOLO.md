@@ -1,7 +1,10 @@
 # Protocolo D7 — fase “Agora” (Sermão do Monte)
 
 **Objetivo:** provar o loop com 10–20 pessoas reais. Critério da fase = conclusão de missão + retorno D7 **no Sermão** (trilha-vitrine).  
-**Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)
+**Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
+**Planilha:** [`D7_TESTERS.csv`](D7_TESTERS.csv)
+
+**Frase para o tester (só isto):** *“é uma missão curta pra aprender a ler a Bíblia.”*
 
 ---
 
@@ -14,8 +17,9 @@ flutter run --dart-define=OPEN_ALL_TRAILS=true
 ```
 
 - Pedir login Google **ou** Apple (iOS).
-- Orientar: começar / continuar no **Sermão do Monte** (ou onboarding → Gênesis e depois pular para Sermão se o catálogo estiver aberto).
-- Não explicar o app além de: *“é um treino curto pra aprender a ler a Bíblia.”*
+- Orientar: ir em **Trilhas → Sermão do Monte → cena 1** (Bem-aventuranças). Se o onboarding abrir Gênesis, pular e abrir o Sermão.
+- Não explicar o app além da frase acima.
+- Vitrine de profundidade: se o tester escolher **Profundezas**, a cena 1 (sm-01…05) já passou por edição humana (ago/2026).
 
 ---
 
@@ -29,7 +33,7 @@ flutter run --dart-define=OPEN_ALL_TRAILS=true
 | 4. Frase espontânea | *“O que é este app?”* sem induzir | 1 frase |
 | 5. Abandono | Em qual tela / gesto saiu? | tela + motivo |
 
-**Frases alinhadas ao norte:** “treino pra ler a Bíblia”, “academia”, “estudo curto”.  
+**Frases alinhadas ao norte:** “missão pra ler a Bíblia”, “academia”, “estudo curto”.  
 **Frases de alerta:** “quiz”, “jogo de Bíblia”, “Duolingo de versículos” *sem* menção a aprender a ler.
 
 ---
@@ -38,7 +42,7 @@ flutter run --dart-define=OPEN_ALL_TRAILS=true
 
 | Dia | Ação | Sucesso |
 |-----|------|---------|
-| D1 | Mensagem leve: “conseguiu treinar de novo?” | Abriu o app + ≥1 missão |
+| D1 | Mensagem leve: “conseguiu fazer a missão de novo?” | Abriu o app + ≥1 missão |
 | D7 | “Voltou esta semana?” | `app_open` / missão ≥1 no dia 7±1 |
 
 **Analytics no app (automático):**
@@ -56,9 +60,7 @@ No GA4: funil `first_lesson_complete` (Sermão) → usuários com `retention_pul
 
 ## 4. Planilha mínima (10–20 linhas)
 
-| id | canal | D0 TTV | frase | Strong | D1 voltou | D7 voltou | notas |
-|----|-------|--------|-------|--------|-----------|-----------|-------|
-| T01 | … | … | … | … | … | … | … |
+Ver [`D7_TESTERS.csv`](D7_TESTERS.csv). Uma linha por tester (T01–T20).
 
 Meta qualitativa: ≥50% das frases espontâneas alinhadas ao norte; D7 ≥ retorno útil no Sermão (não só abrir e fechar).
 
@@ -68,7 +70,7 @@ Meta qualitativa: ≥50% das frases espontâneas alinhadas ao norte; D7 ≥ reto
 
 1. Testers usam Relato na lição quando a pergunta falha.
 2. Admin → Relatos → corrigir banco / seed sem release.
-3. Priorizar **Profundezas** que ainda “cheiram” a Semente (ver enrich + revisão editorial).
+3. Priorizar **Profundezas** fora da cena 1 (sm-06+) que ainda “cheiram” a Semente.
 
 ---
 
@@ -79,4 +81,4 @@ Meta qualitativa: ≥50% das frases espontâneas alinhadas ao norte; D7 ≥ reto
 - [ ] D7 medido (GA4 + planilha) no Sermão
 - [ ] Frase espontânea majoritariamente alinhada ao norte
 
-Só então: lifeChallenge, áudio, Pro ([`ROADMAP.md`](../ROADMAP.md) “Depois”).
+Só então, nesta ordem: `lifeChallenge` → trilhas por dor → áudio de commute ([`ROADMAP.md`](../ROADMAP.md) “Depois”).

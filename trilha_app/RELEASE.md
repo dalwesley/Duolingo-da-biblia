@@ -82,6 +82,7 @@ O AAB estará em `build/app/outputs/bundle/release/app-release.aab`.
 - [ ] Firebase Console → Authentication → Sign-in method → **Apple** habilitado
 - [x] Entitlement `com.apple.developer.applesignin` em `Runner.entitlements`
 - [ ] Apple Developer → App ID `com.dalwesley.stway` com capability Sign In with Apple
+- [ ] **Widget iOS:** App Group `group.ZS7LYV9Y7U.stway` no portal (App ID do Runner **e** `com.dalwesley.stway.homewidget`). Sem isso o widget não recebe streak.
 - Build loja: **não** passar `OPEN_ALL_TRAILS=true` (default já é fechado)
 
 ## Telemetria (funil D1/D7)

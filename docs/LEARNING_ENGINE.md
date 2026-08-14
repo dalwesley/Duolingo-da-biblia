@@ -274,14 +274,16 @@ Exemplo:
 
 A ação concreta realizada pelo usuário.
 
-### Glossário de transição (app atual → motor v2)
+### Glossário de produto
 
-| Termo legado (UX / código) | Termo pedagógico (v2) | Nota |
-|----------------------------|------------------------|------|
-| Missão / Passo (`Mission`) | **Treino** | Mesmo `slug` de progresso; “missão” pode permanecer no copy curto |
-| Pergunta (`Question` / bank) | **Exercício** | Tipado (`choice`, `order`, `connect`…) |
-| Preparo (`MissionStudy`) | Contexto + texto + conexões do treino | Pode fundir no documento do treino |
-| Boss | Treino de revisão / interleaving | Mesmos componentes, skills misturadas |
+A unidade curta no app chama-se **missão**. Não usar “treino” na copy.
+
+| Termo no produto | No código | Nota |
+|------------------|-----------|------|
+| **Missão** | `Mission` | ~2–4 min; mesmo `slug` de progresso |
+| Exercício | `Question` / bank | Tipado (`choice`, `order`, `connect`…) |
+| Preparo | `MissionStudy` | Contexto + texto + conexões da missão |
+| Boss | missão de revisão | Interleaving; mesmos componentes |
 
 ---
 

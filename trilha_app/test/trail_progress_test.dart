@@ -125,6 +125,37 @@ void main() {
     expect(active?.slug, 't2');
   });
 
+  test('Sermão and NT trails are open without OT prerequisite', () {
+    final nt = Trail(
+      slug: 'evangelhos',
+      title: 'Evangelhos',
+      description: '',
+      icon: '📖',
+      order: 40,
+      unlockAfter: 'exodo',
+      comingSoon: false,
+      color: '#E17055',
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+      modules: [],
+    );
+    final sermao = Trail(
+      slug: 'sermao-do-monte',
+      title: 'Sermão',
+      description: '',
+      icon: '⛰️',
+      order: 199,
+      unlockAfter: 'evangelhos',
+      comingSoon: false,
+      color: '#3F6E45',
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+      modules: [],
+    );
+    expect(TrailProgress.isTrailUnlocked(nt, [trail, nt], []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(sermao, [trail, sermao], []), isTrue);
+  });
+
   test('trail unlock requires prerequisite when catalog gated', () {
     final trails = [
       trail,

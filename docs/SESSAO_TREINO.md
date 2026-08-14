@@ -11,7 +11,7 @@
 Não existem dois players (legado vs v2).
 
 ```text
-TODO TREINO = UMA SESSÃO
+TODO MISSÃO = UMA SESSÃO
   entrada → atos (vários gestos) → insight → saída
 ```
 
@@ -55,7 +55,7 @@ O “uau” (= insight) só **depois** de ter evidência — nunca no preparo.
 ### 3.0 Entrada (1×, ≤ 5 s)
 
 ```text
-Título do treino
+Título da missão
 Verso âncora (ref + texto curto)
 Contexto OU conexão (1 bloco, ≤2 linhas)
 [ Começar ]

@@ -12,10 +12,10 @@ Tom: direto, bíblico, confrontador com graça — sem coach espiritual genéric
 ```
 A Bíblia em missões diárias.
 
-Ler. Memorizar. Avançar.
-Um passo por dia na Palavra.
+Ler. Compreender. Avançar.
+Uma missão por dia na Palavra.
 
-Em breve no iOS e Android
+iOS e Android
 ```
 
 **Link na bio:** landing / waitlist / App Store quando tiver  

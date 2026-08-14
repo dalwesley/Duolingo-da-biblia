@@ -96,7 +96,7 @@ class _SplashScreenState extends State<SplashScreen>
     }
 
     final Widget next;
-    if (!backend.isGoogleSignedIn) {
+    if (!backend.isSignedIn) {
       next = const LoginScreen();
     } else {
       final league = context.read<LeagueService>();

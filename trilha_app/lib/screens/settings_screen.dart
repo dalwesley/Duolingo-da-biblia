@@ -897,7 +897,12 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Widget _cloudCard(AppearanceStyle a) {
     final backend = context.watch<BackendService>();
-    final google = backend.isGoogleSignedIn;
+    final signedIn = backend.isSignedIn;
+    final providerLabel = backend.isAppleSignedIn
+        ? 'Conta Apple conectada'
+        : backend.isGoogleSignedIn
+            ? 'Conta Google conectada'
+            : 'Conta desconectada';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -909,13 +914,13 @@ class _SettingsScreenState extends State<SettingsScreen>
               height: 8,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: google ? AppColors.teal : a.textMuted(0.4),
+                color: signedIn ? AppColors.teal : a.textMuted(0.4),
               ),
             ),
             const SizedBox(width: 8),
             Expanded(
               child: Text(
-                google ? 'Conta Google conectada' : 'Conta desconectada',
+                providerLabel,
                 style: AppTypography.title(size: 14, color: a.text),
               ),
             ),
@@ -923,7 +928,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         ),
         const SizedBox(height: AppSpace.xs),
         Text(
-          google
+          signedIn
               ? (backend.userEmail ??
                     'Progresso sincronizado automaticamente com a nuvem.')
               : 'Faça login novamente para sincronizar a nuvem.',
@@ -933,7 +938,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             color: a.textMuted(0.78),
           ),
         ),
-        if (google && backend.userDisplayName != null) ...[
+        if (signedIn && backend.userDisplayName != null) ...[
           const SizedBox(height: AppSpace.xs),
           Text(
             backend.userDisplayName!,
@@ -944,7 +949,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             ),
           ),
         ],
-        if (google) ...[
+        if (signedIn) ...[
           const SizedBox(height: AppSpace.md),
           _GhostAction(
             label: 'Sair da conta',

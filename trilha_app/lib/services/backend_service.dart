@@ -490,7 +490,11 @@ class BackendService extends ChangeNotifier {
       if (league != null) ...league.toCloudMap(),
       'email': user?.email,
       'photoUrl': user?.photoURL,
-      'authProvider': isGoogleSignedIn ? 'google' : 'unknown',
+      'authProvider': isAppleSignedIn
+          ? 'apple'
+          : isGoogleSignedIn
+              ? 'google'
+              : 'unknown',
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }

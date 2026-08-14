@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 
-/// Deep links: `stway://companhia/CODIGO` · `stway://juntos`
+/// Deep links: `stway://companhia/CODIGO` · `stway://juntos` · `stway://hoje` (widget)
 /// Link https (WhatsApp): [juntosHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
@@ -102,6 +102,10 @@ $juntosHttpsUrl
       _wantJuntosTab = true;
       _wantCompanhiaTab = true;
       notifyListeners();
+      return;
+    }
+    // Widget da home: só abre o app (não é convite).
+    if (host == 'hoje' || host == 'home' || pathFirst == 'hoje') {
       return;
     }
     final code = extractCompanionCode(uri.toString());

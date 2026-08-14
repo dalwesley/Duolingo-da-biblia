@@ -90,7 +90,7 @@ lib/
 | `AnalyticsService` | Funil de eventos |
 | `QuestionReportService` | Relatos de pergunta |
 | `InviteDeepLinkService` | `stway://companhia/…` |
-| `HomeWidgetService` | Widget da home |
+| `HomeWidgetService` | Widget da home (Android + iOS; App Group `group.ZS7LYV9Y7U.stway`) |
 
 ### Fluxo de bootstrap
 
@@ -224,7 +224,7 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 | Analytics `exercise_*` + skill | feito |
 | CMS bank (type/skill/palco) + trails (objective/insight/hook) | feito |
 | `skill` tagueado no banco | feito (heurística + seed) |
-| Strong / morfologia | feito **na aba Bíblia** e **no treino** (toque na ref do palco → sheet Strong) |
+| Strong / morfologia | feito **na aba Bíblia** e **na missão** (toque na ref do palco → sheet Strong) |
 | `content_exercises` / `skillEstimates` | **não** — fases futuras |
 | Monetização / IAP | **não** |
 | Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
@@ -241,7 +241,7 @@ JORNADA (progressão narrativa — doc / roadmap)
 
 Runtime atual: atos vêm de **`content_bank_questions`** filtrados por `section` = slug da missão. `missions[].exercises` **não** alimenta o composer.
 
-`missions[].slug` permanece a chave de progresso (`ProgressService`). “Missão” no código = **treino** no produto.
+`missions[].slug` permanece a chave de progresso (`ProgressService`). A unidade no produto é **missão**.
 
 ### Documento de treino (campos novos em `missions[]` ou `content_trainings/{slug}`)
 
@@ -392,11 +392,14 @@ flutter build ipa --release
 
 # Admin
 cd admin && cp .env.example .env && npm install && npm run dev
-npm run seed                  # prepare + migrate + enrich + seed Firestore
+npm run seed                  # só sobe JSON → Firestore (sem migrate)
+npm run seed:refresh          # prepare + migrate + enrich + seed
 # Lotes / cota Spark:
-SEED_ONLY=bank SEED_BANKS=genesis SEED_CHUNK=80 node scripts/seed_content.mjs
+SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 node scripts/seed_content.mjs
 npm run build && cd .. && firebase deploy --only hosting
 ```
+
+Seed / auth (não perder): donos do projeto são **Google-only** — `SEED_EMAIL`/`SEED_PASSWORD` falham nessas contas. Fluxo documentado em [`admin/README.md`](../admin/README.md#seed-publicar-json--firestore) (CLI `stway.app@gmail.com` ou user Email/Password em `admin_users`).
 
 ---
 
@@ -405,7 +408,7 @@ npm run build && cd .. && firebase deploy --only hosting
 - Conteúdo: **read** público; **write** `admin`/`editor`  
 - Relatos: authenticated create; editors read/update  
 - `admin_users`: self-read; bootstrap controlado por `content_meta/bootstrap_locked`  
-- App end-user e admin usam **identidades distintas** (Google vs email admin)  
+- App end-user (Google/Apple) ≠ credencial de seed (precisa Email/Password em `admin_users`, ou write via Firebase CLI owner)  
 
 Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA Google Sign-In.
 

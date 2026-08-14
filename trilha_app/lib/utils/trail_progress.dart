@@ -1,5 +1,6 @@
 import '../models/difficulty.dart';
 import '../models/trail.dart';
+import '../models/trail_catalog.dart';
 import 'catalog_access.dart';
 
 class TrailProgress {
@@ -103,6 +104,9 @@ class TrailProgress {
     Map<String, List<String>> clearedTrailModes = const {},
   }) {
     if (CatalogAccess.openAllForTesting) return true;
+    // Vitrine D7 + NT: abertos sem exigir o caminho do AT.
+    if (trail.slug == 'sermao-do-monte') return true;
+    if (trail.realmId == TrailRealm.novoTestamento.id) return true;
     if (trail.unlockAfter == null) return true;
     final prereq =
         allTrails.where((t) => t.slug == trail.unlockAfter).firstOrNull;

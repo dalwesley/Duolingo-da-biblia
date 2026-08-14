@@ -1,9 +1,16 @@
 /**
  * Seed Firestore from local JSON assets.
  * Usage (from admin/):
+ *   SEED_ONLY=sermao npm run seed          — sobe o JSON local (sem migrate)
+ *   npm run seed:refresh                   — prepare + migrate + enrich + seed
  *   SEED_EMAIL=voce@email.com SEED_PASSWORD='…' npm run seed
  *
- * Ou defina SEED_EMAIL / SEED_PASSWORD em admin/.env
+ * Auth (importante — ago/2026):
+ *   SEED_EMAIL/SEED_PASSWORD precisam ser Email/Password + admin_users/{uid}.
+ *   Contas Google-only (stway.app, contato.wocto, dalwesley@gmail) NÃO autenticam
+ *   este script. Não use "Reset password" no Console como fluxo padrão.
+ *   Fallback: Firebase CLI logado (owner) escrevendo via REST, ou painel Importar.
+ *   Detalhes: admin/README.md → "Seed".
  *
  * Spark (free) = ~20k writes/dia (reset ~00:00 Pacific / ~04:00 BRT).
  * Full seed (~6.5k Qs + trails + studies) ≈ 7–8k writes — 2–3 seeds/dia
@@ -18,7 +25,6 @@
  *   SEED_CHUNK=80           — docs por batch (default 80; máx 400)
  *   SEED_PAUSE_MS=400       — pausa entre batches
  *
- * Rode antes: npm run prepare:content
  * Preferir o painel "Importar" quando já logado como admin.
  */
 import { readFileSync, existsSync } from 'fs';
@@ -184,12 +190,50 @@ async function deleteOrphanStudies(db, keepSlugs, env = {}) {
   return removed;
 }
 
+async function emailExists(apiKey, email, password) {
+  try {
+    const res = await fetch(
+      `https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password, returnSecureToken: false }),
+      },
+    );
+    const json = await res.json();
+    return json?.error?.message === 'EMAIL_EXISTS';
+  } catch {
+    return false;
+  }
+}
+
 async function authenticate(auth, env) {
   const email = env.SEED_EMAIL?.trim();
   const password = env.SEED_PASSWORD;
   if (email && password) {
     console.log(`Auth e-mail (${email})…`);
-    await signInWithEmailAndPassword(auth, email, password);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (err) {
+      const code = err.code || err.message;
+      const exists = await emailExists(env.VITE_FIREBASE_API_KEY, email, password);
+      if (exists) {
+        throw new Error(
+          `A conta ${email} existe, mas não autentica com SEED_PASSWORD (provável Google-only).\n` +
+            '  Não use Reset password no Console como fluxo padrão do seed.\n' +
+            '  Ver admin/README.md → secção "Seed":\n' +
+            '    • Add user Email/Password + admin_users/{uid}, ou\n' +
+            '    • firebase login (owner) + write via CLI/REST, ou\n' +
+            '    • painel Importar (npm run dev).',
+        );
+      }
+      throw new Error(
+        `Firebase recusou o login (${code}).\n` +
+          '  1. Firebase Console → Authentication: o e-mail existe neste projeto (trilha-biblia)?\n' +
+          '  2. Senha em admin/.env (SEED_PASSWORD) é a mesma do Console?\n' +
+          '  3. Authentication → Sign-in method → Email/Password está habilitado?',
+      );
+    }
     return;
   }
 

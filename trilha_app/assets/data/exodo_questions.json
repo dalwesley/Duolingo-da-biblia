@@ -86,15 +86,19 @@
       "question": "Que ordem cruel o Faraó deu sobre os meninos hebreus?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Clamor"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "O Faraó mandou lançar no Nilo todo menino hebreu.",
       "feedbackWrong": {
         "a": "Revise Êxodo 1:22 — a resposta correta é: “Lançá-los no Nilo”.",
@@ -102,11 +106,12 @@
         "d": "Revise Êxodo 1:22 — a resposta correta é: “Lançá-los no Nilo”."
       },
       "verseRef": "Êxodo 1:22",
-      "type": "true_false",
-      "prompt": "Que ordem cruel o Faraó deu sobre os meninos hebreus: Enviá-los a Madiã.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Que ordem cruel o Faraó deu sobre os meninos hebreus?",
+      "correctAnswer": "a",
       "passageText": "Ordenou Faraó a todo o seu povo, dizendo: A todos os filhos que nascerem, lançá-los-eis no rio; mas a todas as filhas, deixá-las-eis viver.",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "Que ordem cruel o Faraó deu sobre os meninos hebreus?"
     },
     {
       "id": "exodo-sem-exo-01-opressao-04",
@@ -116,23 +121,15 @@
       "question": "Quem salvou Moisés bebê?",
       "options": [
         {
-          "id": "a",
-          "text": "Sua mãe e irmã, e a filha do Faraó"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Aarón sozinho"
-        },
-        {
-          "id": "c",
-          "text": "José do Egito"
-        },
-        {
-          "id": "d",
-          "text": "Um sacerdote egípcio"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "A mãe o escondeu; a filha do Faraó o adotou.",
       "feedbackWrong": {
         "b": "Revise Êxodo 2:1–10 — a resposta correta é: “Sua mãe e irmã, e a filha do Faraó”.",
@@ -140,9 +137,9 @@
         "d": "Revise Êxodo 2:1–10 — a resposta correta é: “Sua mãe e irmã, e a filha do Faraó”."
       },
       "verseRef": "Êxodo 2:1–10",
-      "type": "choice",
-      "prompt": "Quem salvou Moisés bebê?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Onde Moisés fugiu após matar um egípcio: Madiã.",
+      "correctAnswer": "true",
       "passageText": "Foi-se um homem da casa de Levi e casou com uma filha de Levi. A mulher concebeu e deu à luz um filho; e, vendo que ele era formoso, escondeu-o três meses. Não podendo escondê-lo por mais tempo, tomou para…",
       "skill": "observe"
     },
@@ -162,7 +159,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Moisés fugiu para a terra de Madiã.",
       "feedbackWrong": {
         "a": "Revise Êxodo 2:15 — a resposta correta é: “Madiã”.",
@@ -171,8 +168,8 @@
       },
       "verseRef": "Êxodo 2:15",
       "type": "true_false",
-      "prompt": "Onde Moisés fugiu após matar um egípcio: Madiã.",
-      "correctAnswer": "true",
+      "prompt": "Quem salvou Moisés bebê: Aarón sozinho.",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -399,15 +396,19 @@
       "question": "O que o “não conhecer a José” revela sobre o Egito?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Clamor"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "O novo regime apaga a memória do salvador estrangeiro.",
       "feedbackWrong": {
         "a": "Revise Êxodo 1:8 — a resposta correta é: “Memória política se apaga; o poder esquece a graça passada”.",
@@ -415,11 +416,12 @@
         "d": "Revise Êxodo 1:8 — a resposta correta é: “Memória política se apaga; o poder esquece a graça passada”."
       },
       "verseRef": "Êxodo 1:8",
-      "type": "true_false",
-      "prompt": "O que o “não conhecer a José” revela sobre o Egito: Amizade eterna.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "O que o “não conhecer a José” revela sobre o Egito?",
+      "correctAnswer": "a",
       "passageText": "Entretanto, se levantou sobre o Egito um novo rei que não conhecia a José.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "O que o “não conhecer a José” revela sobre o Egito?"
     },
     {
       "id": "exodo-pro-exo-01-opressao-03",
@@ -429,23 +431,15 @@
       "question": "Por que as parteiras recebem casas (famílias)?",
       "options": [
         {
-          "id": "a",
-          "text": "Porque mentiram bem"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Porque Deus honra quem preserva a vida"
-        },
-        {
-          "id": "c",
-          "text": "Por ordem do Faraó"
-        },
-        {
-          "id": "d",
-          "text": "Por casamento com egípcios"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "true",
       "feedbackCorrect": "Deus recompensa a resistência fiel.",
       "feedbackWrong": {
         "a": "Revise Êxodo 1:20–21 — a resposta correta é: “Porque Deus honra quem preserva a vida”.",
@@ -453,9 +447,9 @@
         "d": "Revise Êxodo 1:20–21 — a resposta correta é: “Porque Deus honra quem preserva a vida”."
       },
       "verseRef": "Êxodo 1:20–21",
-      "type": "choice",
-      "prompt": "Por que as parteiras recebem casas (famílias)?",
-      "correctAnswer": "b",
+      "type": "true_false",
+      "prompt": "Justiça sem mandato divino ainda não liberta o povo",
+      "correctAnswer": "true",
       "passageText": "Fez Deus bem às parteiras; e o povo aumentou-se e tornou-se extraordinariamente forte. Porque as parteiras temeram a Deus, ele lhes estabeleceu as casas.",
       "skill": "interpret"
     },
@@ -475,7 +469,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "O zelo humano não substitui o tempo e o chamado de Deus.",
       "feedbackWrong": {
         "b": "Revise Êxodo 2:11–15 — a resposta correta é: “Justiça sem mandato divino ainda não liberta o povo”.",
@@ -484,8 +478,8 @@
       },
       "verseRef": "Êxodo 2:11–15",
       "type": "true_false",
-      "prompt": "Justiça sem mandato divino ainda não liberta o povo",
-      "correctAnswer": "true",
+      "prompt": "Por que as parteiras recebem casas (famílias): Porque mentiram bem.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -504,7 +498,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "O nome revela fidelidade à história de Abraão.",
       "feedbackWrong": {
         "a": "Revise Êxodo 3:15 — a resposta correta é: “Ao Deus dos pais — continuidade da aliança”.",
@@ -513,8 +507,8 @@
       },
       "verseRef": "Êxodo 3:15",
       "type": "true_false",
-      "prompt": "O “EU SOU” liga-se a que promessa: Ao Dilúvio.",
-      "correctAnswer": "false",
+      "prompt": "O “EU SOU” liga-se a que promessa.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -921,15 +915,19 @@
       "question": "Qual tensão Êxodo 5 introduz na narrativa?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "EU SOU"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "A fé enfrenta o agravamento antes do êxodo.",
       "feedbackWrong": {
         "a": "Revise Êxodo 5 — a resposta correta é: “Obediência a Deus piora a situação antes de melhorar”.",
@@ -937,11 +935,12 @@
         "d": "Revise Êxodo 5 — a resposta correta é: “Obediência a Deus piora a situação antes de melhorar”."
       },
       "verseRef": "Êxodo 5",
-      "type": "true_false",
-      "prompt": "Obediência a Deus piora a situação antes de melhorar",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Qual tensão Êxodo 5 introduz na narrativa?",
+      "correctAnswer": "a",
       "passageText": "Depois, foram Moisés e Arão e disseram a Faraó: Assim diz Jeová, o Deus de Israel: Deixa ir o meu povo, para que me celebre uma festa no deserto. Respondeu Faraó: Quem é Jeová para que eu ouça a sua…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Qual tensão Êxodo 5 introduz na narrativa?"
     },
     {
       "id": "exodo-pro-exo-02-moises-03",
@@ -951,23 +950,15 @@
       "question": "Como o chamado de Moisés reflete vocação e fraqueza?",
       "options": [
         {
-          "id": "a",
-          "text": "Deus chama o fraco e basta a presença dEle"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Só heróis perfeitos são chamados"
-        },
-        {
-          "id": "c",
-          "text": "Moisés não tinha fraqueza"
-        },
-        {
-          "id": "d",
-          "text": "Arão substitui Moisés por completo"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "A suficiência está em “Eu serei contigo”.",
       "feedbackWrong": {
         "b": "Revise Êxodo 3–4 — a resposta correta é: “Deus chama o fraco e basta a presença dEle”.",
@@ -975,9 +966,9 @@
         "d": "Revise Êxodo 3–4 — a resposta correta é: “Deus chama o fraco e basta a presença dEle”."
       },
       "verseRef": "Êxodo 3–4",
-      "type": "choice",
-      "prompt": "Como o chamado de Moisés reflete vocação e fraqueza?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Por que a vara importa teologicamente: É magia egípcia superior.",
+      "correctAnswer": "false",
       "passageText": "Ora, Moisés, apascentando o rebanho de Jetro, seu sogro, sacerdote de Midiã, levou-o para trás do deserto e veio a Horebe, monte de Deus. Apareceu-lhe o Anjo de Jeová numa chama de fogo do meio duma sarça; Moisés olhou, e…",
       "skill": "interpret"
     },
@@ -1018,7 +1009,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: O que o “gemido” de Israel ensina sobre oração?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: O que o “gemido” de Israel ensina sobre oração?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "exodo-pro-exo-02-moises-05",
@@ -1036,7 +1027,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "O instrumento aponta para o Senhor.",
       "feedbackWrong": {
         "a": "Revise Êxodo 4:1–5 — a resposta correta é: “Sinal de que o poder vem de Deus, não de Moisés”.",
@@ -1045,8 +1036,8 @@
       },
       "verseRef": "Êxodo 4:1–5",
       "type": "true_false",
-      "prompt": "Por que a vara importa teologicamente: É magia egípcia superior.",
-      "correctAnswer": "false",
+      "prompt": "Deus chama o fraco e basta a presença dEle",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -1276,15 +1267,19 @@
       "question": "Por que o sangue na porta importa?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Juízo e sinal"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Salvação pela marca do sangue.",
       "feedbackWrong": {
         "a": "Revise Êxodo 12:13 — a resposta correta é: “Sinal de fé e proteção pela substituição do cordeiro”.",
@@ -1292,11 +1287,12 @@
         "d": "Revise Êxodo 12:13 — a resposta correta é: “Sinal de fé e proteção pela substituição do cordeiro”."
       },
       "verseRef": "Êxodo 12:13",
-      "type": "true_false",
-      "prompt": "Sinal de fé e proteção pela substituição do cordeiro",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Por que o sangue na porta importa?",
+      "correctAnswer": "a",
       "passageText": "O sangue vos será por sinal nas casas em que estiverdes; quando eu vir o sangue, passarei por vós, e não haverá entre vós praga para vos destruir, quando eu ferir a terra do Egito.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "Por que o sangue na porta importa?"
     },
     {
       "id": "exodo-cam-exo-03-pragas-03",
@@ -1345,23 +1341,15 @@
       "question": "Por que o pão ázimo?",
       "options": [
         {
-          "id": "a",
-          "text": "Saída apressada — sem tempo de fermentar"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Preferência culinária"
-        },
-        {
-          "id": "c",
-          "text": "Proibição de trigo"
-        },
-        {
-          "id": "d",
-          "text": "Ordem de José"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "A pressa da saída.",
       "feedbackWrong": {
         "b": "Revise Êxodo 12:39 — a resposta correta é: “Saída apressada — sem tempo de fermentar”.",
@@ -1369,9 +1357,9 @@
         "d": "Revise Êxodo 12:39 — a resposta correta é: “Saída apressada — sem tempo de fermentar”."
       },
       "verseRef": "Êxodo 12:39",
-      "type": "choice",
-      "prompt": "Por que o pão ázimo?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Como Deus endurece e o Faraó endurece convivem no texto: Só Deus age.",
+      "correctAnswer": "false",
       "passageText": "Cozeram bolos asmos da massa que levaram do Egito; pois ela não se tinha levedado, porque foram lançados fora do Egito. Não puderam deter-se, nem haviam preparado para si alguma comida.",
       "skill": "understand"
     },
@@ -1391,7 +1379,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "O texto afirma ambos os lados do mistério.",
       "feedbackWrong": {
         "a": "Revise Êxodo 8–11 — a resposta correta é: “Responsabilidade humana e soberania divina aparecem juntas”.",
@@ -1400,8 +1388,8 @@
       },
       "verseRef": "Êxodo 8–11",
       "type": "true_false",
-      "prompt": "Como Deus endurece e o Faraó endurece convivem no texto: Só Deus age.",
-      "correctAnswer": "false",
+      "prompt": "Saída apressada — sem tempo de fermentar",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -1771,15 +1759,19 @@
       "options": [
         {
           "id": "a",
-          "text": "O Senhor pelejará por vós."
+          "text": "pelejará por vós"
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "Respondeu"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "temais"
+        },
+        {
+          "id": "d",
+          "text": "estai"
         }
       ],
       "correctOptionId": "a",
@@ -1925,7 +1917,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Memória da promessa patriarcal.",
       "feedbackWrong": {
         "b": "Revise Êxodo 13:19 — a resposta correta é: “Fidelidade à promessa de ser sepultado na terra”.",
@@ -1934,8 +1926,8 @@
       },
       "verseRef": "Êxodo 13:19",
       "type": "true_false",
-      "prompt": "Trevas no Egito e luz nas casas de Israel",
-      "correctAnswer": "false",
+      "prompt": "Por que levar os ossos de José.",
+      "correctAnswer": "true",
       "passageText": "Levou também Moisés consigo os ossos de José, por ter este rigorosamente ajuramentado os filhos de Israel, dizendo: Sem dúvida, Deus vos há de visitar; levai daqui convosco os meus ossos.",
       "skill": "understand"
     },
@@ -1986,15 +1978,19 @@
       "question": "A coluna nuvem/fogo une quais temas?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Cordeiro"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Shekiná em marcha.",
       "feedbackWrong": {
         "b": "Revise Êxodo 13:21–22 — a resposta correta é: “Presença, guia e proteção”.",
@@ -2002,11 +1998,12 @@
         "d": "Revise Êxodo 13:21–22 — a resposta correta é: “Presença, guia e proteção”."
       },
       "verseRef": "Êxodo 13:21–22",
-      "type": "true_false",
-      "prompt": "A coluna nuvem/fogo une quais temas: Apenas clima.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "A coluna nuvem/fogo une quais temas?",
+      "correctAnswer": "a",
       "passageText": "Jeová ia adiante deles, de dia numa coluna de nuvem, para os guiar pelo caminho, e de noite numa coluna de fogo, para os alumiar, a fim de que caminhassem de dia e de noite. Nunca a coluna de nuvem…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "A coluna nuvem/fogo une quais temas?"
     },
     {
       "id": "exodo-pro-exo-04-pascoa-03",
@@ -2045,7 +2042,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Como Êxodo 12 prepara a identidade de Israel?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Como Êxodo 12 prepara a identidade de Israel?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "exodo-pro-exo-04-pascoa-04",
@@ -2055,23 +2052,15 @@
       "question": "O despojo do Egito antecipa o quê?",
       "options": [
         {
-          "id": "a",
-          "text": "Pobreza"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Provisão para o culto e a jornada (e ironia do poder revertido)"
-        },
-        {
-          "id": "c",
-          "text": "Idolatração obrigatória"
-        },
-        {
-          "id": "d",
-          "text": "Imposto a Moisés"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "true",
       "feedbackCorrect": "Os bens do opressor servem ao povo de Deus.",
       "feedbackWrong": {
         "a": "Revise Êxodo 12:35–36 — a resposta correta é: “Provisão para o culto e a jornada (e ironia do poder revertido)”.",
@@ -2079,9 +2068,9 @@
         "d": "Revise Êxodo 12:35–36 — a resposta correta é: “Provisão para o culto e a jornada (e ironia do poder revertido)”."
       },
       "verseRef": "Êxodo 12:35–36",
-      "type": "choice",
-      "prompt": "O despojo do Egito antecipa o quê?",
-      "correctAnswer": "b",
+      "type": "true_false",
+      "prompt": "Deus domina as águas caóticas e abre caminho de vida",
+      "correctAnswer": "true",
       "passageText": "Fizeram também os filhos de Israel segundo as palavras de Moisés: pediram aos egípcios joias de prata, e joias de ouro, e vestidos. Jeová deu ao povo graça aos olhos dos egípcios, de maneira que estes deram ao povo o…",
       "skill": "interpret"
     },
@@ -2101,7 +2090,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "O Criador reina sobre o caos.",
       "feedbackWrong": {
         "b": "Revise Êxodo 14–15 — a resposta correta é: “Deus domina as águas caóticas e abre caminho de vida”.",
@@ -2110,8 +2099,8 @@
       },
       "verseRef": "Êxodo 14–15",
       "type": "true_false",
-      "prompt": "Deus domina as águas caóticas e abre caminho de vida",
-      "correctAnswer": "true",
+      "prompt": "O despojo do Egito antecipa o quê: Pobreza.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -2377,15 +2366,19 @@
       "question": "Qual aplicação justa de “O Mar Vermelho”?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Salvação"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Boa — a aplicação nasce do texto e do caráter de Deus.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Levar a sério: O faraó persegue Israel. Deus abre o mar, o povo passa em terra seca e os egípcios são vencidos.”.",
@@ -2393,11 +2386,12 @@
         "d": "Revise o texto — a resposta correta é: “Levar a sério: O faraó persegue Israel. Deus abre o mar, o povo passa em terra seca e os egípcios são vencidos.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Levar a sério: O faraó persegue Israel. Deus abre o mar, o povo passa em terra seca e os egípcios são vencidos.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Qual aplicação justa de “O Mar Vermelho”?",
+      "correctAnswer": "a",
       "passageText": "Não temais; permanecei firmes e vede o livramento do Senhor… o Senhor pelejará por vós.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "Qual aplicação justa de “O Mar Vermelho”?"
     },
     {
       "id": "exodo-cam-exo-05-mar-04",
@@ -2407,23 +2401,15 @@
       "question": "Em “O Mar Vermelho”, o povo (ou a personagem) é desafiado(a) a:",
       "options": [
         {
-          "id": "a",
-          "text": "Confiar em Deus no meio da prova ou da decisão."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Abandonar completamente a fé."
-        },
-        {
-          "id": "c",
-          "text": "Confiar só em ídolos."
-        },
-        {
-          "id": "d",
-          "text": "Negar a história passada."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “O Mar Vermelho”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -2431,9 +2417,9 @@
         "d": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “O Mar Vermelho”, o povo (ou a personagem) é desafiado(a) a:",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Não tem ligação com a cena.",
+      "correctAnswer": "false",
       "passageText": "Não temais; permanecei firmes e vede o livramento do Senhor… o Senhor pelejará por vós.",
       "skill": "understand"
     },
@@ -2453,7 +2439,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o passo pertence à cena A Libertação.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Êxodo.”.",
@@ -2462,8 +2448,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Não tem ligação com a cena.",
-      "correctAnswer": "false",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -2513,15 +2499,19 @@
       "question": "Como a Páscoa se torna chave na narrativa bíblica maior?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Salvação"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Arquétipo da salvação.",
       "feedbackWrong": {
         "a": "Revise Êxodo 12; cf. tradição posterior — a resposta correta é: “Padrão de redenção por sangue e libertação reaparece na Escritura”.",
@@ -2529,11 +2519,12 @@
         "d": "Revise Êxodo 12; cf. tradição posterior — a resposta correta é: “Padrão de redenção por sangue e libertação reaparece na Escritura”."
       },
       "verseRef": "Êxodo 12; cf. tradição posterior",
-      "type": "true_false",
-      "prompt": "Como a Páscoa se torna chave na narrativa bíblica maior: Some depois de Êxodo.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Como a Páscoa se torna chave na narrativa bíblica maior?",
+      "correctAnswer": "a",
       "passageText": "Disse Jeová a Moisés e a Arão na terra do Egito: Este mês será para vós o princípio dos meses; este vos será o primeiro dos meses do ano. Falai a toda a congregação de Israel: Ao décimo dia deste…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Como a Páscoa se torna chave na narrativa bíblica maior?"
     },
     {
       "id": "exodo-pro-exo-05-mar-03",
@@ -2543,23 +2534,15 @@
       "question": "Em “O Mar Vermelho”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Apenas acaso histórico."
-        },
-        {
-          "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -2567,9 +2550,9 @@
         "d": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “O Mar Vermelho”, qual tensão teológica aparece?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
+      "correctAnswer": "true",
       "passageText": "Não temais; permanecei firmes e vede o livramento do Senhor… o Senhor pelejará por vós.",
       "skill": "interpret"
     },
@@ -2589,7 +2572,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — juízo e graça aparecem com seriedade no texto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.”.",
@@ -2598,8 +2581,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
-      "correctAnswer": "true",
+      "prompt": "Apenas acaso histórico.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -2618,7 +2601,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o texto forma discípulos que perguntam e respondem com fé.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Como confiar e obedecer a Deus neste tipo de história?”.",
@@ -2627,8 +2610,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Como apagar o texto do cânon?",
-      "correctAnswer": "false",
+      "prompt": "Qual pergunta profunda “O Mar Vermelho” deixa ao leitor.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -2678,15 +2661,19 @@
       "question": "Em “Desafio: A saída do Egito” (A Libertação), qual afirmação é verdadeira?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Desafio: A saída do Egito"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — “Desafio: A saída do Egito” pertence ao testemunho de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.”.",
@@ -2694,11 +2681,12 @@
         "d": "Revise o texto — a resposta correta é: “O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Em “Desafio: A saída do Egito” (A Libertação), qual afirmação é verdadeira?",
+      "correctAnswer": "a",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "Em “Desafio: A saída do Egito” (A Libertação), qual afirmação é verdadeira?"
     },
     {
       "id": "exodo-sem-exo-boss-01-03",
@@ -2708,23 +2696,15 @@
       "question": "Qual opção resume melhor o passo “Desafio: A saída do Egito”?",
       "options": [
         {
-          "id": "a",
-          "text": "Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Um detalhe irrelevante."
-        },
-        {
-          "id": "c",
-          "text": "Uma contradição sem propósito."
-        },
-        {
-          "id": "d",
-          "text": "Um acréscimo medieval."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Isso mesmo — “Desafio: A saída do Egito” importa na leitura de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.”.",
@@ -2732,9 +2712,9 @@
         "d": "Revise o texto — a resposta correta é: “Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Qual opção resume melhor o passo “Desafio: A saída do Egito”?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "“Desafio: A saída do Egito” acontece no contexto de:: Somente o Apocalipse.",
+      "correctAnswer": "false",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
       "skill": "observe"
     },
@@ -2754,7 +2734,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o contexto é A Libertação.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “A Libertação”.",
@@ -2763,8 +2743,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "“Desafio: A saída do Egito” acontece no contexto de:: Somente o Apocalipse.",
-      "correctAnswer": "false",
+      "prompt": "Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.",
+      "correctAnswer": "true",
       "skill": "observe"
     },
     {
@@ -2783,7 +2763,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — o estudo forma fé e memória bíblica.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Para conhecer a ação de Deus e a resposta do povo em Êxodo.”.",
@@ -2793,7 +2773,7 @@
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
       "prompt": "Para conhecer a ação de Deus e a resposta do povo em Êxodo.",
-      "correctAnswer": "true",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -2882,15 +2862,19 @@
       "question": "Qual aplicação justa de “Desafio: A saída do Egito”?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Libertação"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Boa — a aplicação nasce do texto e do caráter de Deus.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Levar a sério: Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.”.",
@@ -2898,11 +2882,12 @@
         "d": "Revise o texto — a resposta correta é: “Levar a sério: Hora de provar que você entendeu a grande narrativa da libertação. Este desafio cobre opressão, Moisés, pragas e o Mar Vermelho.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Ignorar o contexto e inventar o significado.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Qual aplicação justa de “Desafio: A saída do Egito”?",
+      "correctAnswer": "a",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "Qual aplicação justa de “Desafio: A saída do Egito”?"
     },
     {
       "id": "exodo-cam-exo-boss-01-04",
@@ -2912,23 +2897,15 @@
       "question": "Em “Desafio: A saída do Egito”, o povo (ou a personagem) é desafiado(a) a:",
       "options": [
         {
-          "id": "a",
-          "text": "Confiar em Deus no meio da prova ou da decisão."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Abandonar completamente a fé."
-        },
-        {
-          "id": "c",
-          "text": "Confiar só em ídolos."
-        },
-        {
-          "id": "d",
-          "text": "Negar a história passada."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “Desafio: A saída do Egito”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -2936,9 +2913,9 @@
         "d": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “Desafio: A saída do Egito”, o povo (ou a personagem) é desafiado(a) a:",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "É um passo dessa cena na jornada de Êxodo.",
+      "correctAnswer": "true",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
       "skill": "understand"
     },
@@ -2958,7 +2935,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — o passo pertence à cena A Libertação.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Êxodo.”.",
@@ -2967,8 +2944,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "É um passo dessa cena na jornada de Êxodo.",
-      "correctAnswer": "true",
+      "prompt": "Abandonar completamente a fé.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -3018,15 +2995,19 @@
       "question": "Qual leitura madura de “Desafio: A saída do Egito” evita?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Libertação"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — profundidade honra o texto além do moralismo raso.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”.",
@@ -3034,11 +3015,12 @@
         "d": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Reduzir o texto a moralismo raso, ignorando aliança e graça.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Qual leitura madura de “Desafio: A saída do Egito” evita?",
+      "correctAnswer": "a",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Qual leitura madura de “Desafio: A saída do Egito” evita?"
     },
     {
       "id": "exodo-pro-exo-boss-01-03",
@@ -3048,23 +3030,15 @@
       "question": "Em “Desafio: A saída do Egito”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Apenas acaso histórico."
-        },
-        {
-          "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -3072,9 +3046,9 @@
         "d": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “Desafio: A saída do Egito”, qual tensão teológica aparece?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "O pecado nunca tem custo.",
+      "correctAnswer": "false",
       "passageText": "Do clamor à canção: Deus ouve, chama, julga, protege e liberta — e o povo responde com louvor.",
       "skill": "interpret"
     },
@@ -3094,7 +3068,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — juízo e graça aparecem com seriedade no texto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.”.",
@@ -3103,8 +3077,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "O pecado nunca tem custo.",
-      "correctAnswer": "false",
+      "prompt": "Soberania de Deus e responsabilidade humana caminham juntas.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -3123,7 +3097,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o texto forma discípulos que perguntam e respondem com fé.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Como confiar e obedecer a Deus neste tipo de história?”.",
@@ -3133,7 +3107,7 @@
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
       "prompt": "Como confiar e obedecer a Deus neste tipo de história?",
-      "correctAnswer": "true",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -3183,15 +3157,19 @@
       "question": "Onde Israel recebeu a Lei?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Maná"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "No Sinai.",
       "feedbackWrong": {
         "a": "Revise Êxodo 19–20 — a resposta correta é: “No monte Sinai”.",
@@ -3199,11 +3177,12 @@
         "d": "Revise Êxodo 19–20 — a resposta correta é: “No monte Sinai”."
       },
       "verseRef": "Êxodo 19–20",
-      "type": "true_false",
-      "prompt": "Onde Israel recebeu a Lei: No Egito.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Onde Israel recebeu a Lei?",
+      "correctAnswer": "a",
       "passageText": "No terceiro mês, depois que os filhos de Israel haviam saído da terra do Egito, no mesmo dia entraram no deserto de Sinai. Tendo, pois, partido de Refidim, chegaram ao deserto de Sinai, em que se acamparam; ali, se acampou…",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "Onde Israel recebeu a Lei?"
     },
     {
       "id": "exodo-sem-exo-06-mana-03",
@@ -3213,23 +3192,15 @@
       "question": "Quantos mandamentos estão no Decálogo?",
       "options": [
         {
-          "id": "a",
-          "text": "Dez"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Cinco"
-        },
-        {
-          "id": "c",
-          "text": "Doze"
-        },
-        {
-          "id": "d",
-          "text": "Sete"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Os Dez Mandamentos.",
       "feedbackWrong": {
         "b": "Revise Êxodo 20:1–17 — a resposta correta é: “Dez”.",
@@ -3237,9 +3208,9 @@
         "d": "Revise Êxodo 20:1–17 — a resposta correta é: “Dez”."
       },
       "verseRef": "Êxodo 20:1–17",
-      "type": "choice",
-      "prompt": "Quantos mandamentos estão no Decálogo?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "O que Israel fez enquanto Moisés estava no monte: Fez o bezerro de ouro.",
+      "correctAnswer": "true",
       "passageText": "Então, falou Deus todas estas palavras, dizendo: Eu sou Jeová, teu Deus, que te tirei da terra do Egito, da casa de servidão. Não terás outros deuses diante de mim. Não farás para ti imagem de escultura, nem figura alguma…",
       "skill": "observe"
     },
@@ -3298,7 +3269,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Idolatração do bezerro.",
       "feedbackWrong": {
         "a": "Revise Êxodo 32:1–4 — a resposta correta é: “Fez o bezerro de ouro”.",
@@ -3307,8 +3278,8 @@
       },
       "verseRef": "Êxodo 32:1–4",
       "type": "true_false",
-      "prompt": "O que Israel fez enquanto Moisés estava no monte: Fez o bezerro de ouro.",
-      "correctAnswer": "true",
+      "prompt": "Quantos mandamentos estão no Decálogo: Cinco.",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -3358,15 +3329,19 @@
       "question": "O que o Sinai revela sobre aliança?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Maná"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Reino de sacerdotes / nação santa.",
       "feedbackWrong": {
         "a": "Revise Êxodo 19:5–6 — a resposta correta é: “Deus reivindica um povo santo para si”.",
@@ -3374,11 +3349,12 @@
         "d": "Revise Êxodo 19:5–6 — a resposta correta é: “Deus reivindica um povo santo para si”."
       },
       "verseRef": "Êxodo 19:5–6",
-      "type": "true_false",
-      "prompt": "Deus reivindica um povo santo para si",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "O que o Sinai revela sobre aliança?",
+      "correctAnswer": "a",
       "passageText": "Agora, pois, se atentamente ouvirdes a minha voz e guardardes a minha aliança, sereis a minha possessão peculiar dentre todos os povos (pois minha é toda a terra) e vós me sereis reino de sacerdotes e nação santa. Estas são…",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "O que o Sinai revela sobre aliança?"
     },
     {
       "id": "exodo-cam-exo-06-mana-03",
@@ -3388,23 +3364,15 @@
       "question": "Como os mandamentos se estruturam?",
       "options": [
         {
-          "id": "a",
-          "text": "Só deveres civis"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Só rituais"
-        },
-        {
-          "id": "c",
-          "text": "Amor a Deus e amor ao próximo"
-        },
-        {
-          "id": "d",
-          "text": "Só economia"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "c",
+      "correctOptionId": "false",
       "feedbackCorrect": "Duas tábuas da relação.",
       "feedbackWrong": {
         "a": "Revise Êxodo 20 — a resposta correta é: “Amor a Deus e amor ao próximo”.",
@@ -3412,9 +3380,9 @@
         "d": "Revise Êxodo 20 — a resposta correta é: “Amor a Deus e amor ao próximo”."
       },
       "verseRef": "Êxodo 20",
-      "type": "choice",
-      "prompt": "Como os mandamentos se estruturam?",
-      "correctAnswer": "c",
+      "type": "true_false",
+      "prompt": "Por que o bezerro é tão grave: É arte inocente.",
+      "correctAnswer": "false",
       "passageText": "Então, falou Deus todas estas palavras, dizendo: Eu sou Jeová, teu Deus, que te tirei da terra do Egito, da casa de servidão. Não terás outros deuses diante de mim.",
       "skill": "understand"
     },
@@ -3434,7 +3402,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Idolatração da própria obra.",
       "feedbackWrong": {
         "b": "Revise Êxodo 32:4 — a resposta correta é: “Troca o Deus libertador por imagem feita pelo povo”.",
@@ -3443,8 +3411,8 @@
       },
       "verseRef": "Êxodo 32:4",
       "type": "true_false",
-      "prompt": "Por que o bezerro é tão grave: É arte inocente.",
-      "correctAnswer": "false",
+      "prompt": "Amor a Deus e amor ao próximo",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -3463,7 +3431,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Mediação e intercessão.",
       "feedbackWrong": {
         "a": "Revise Êxodo 32:11–14, 30–32 — a resposta correta é: “Intercede pedindo perdão”.",
@@ -3473,7 +3441,7 @@
       "verseRef": "Êxodo 32:11–14, 30–32",
       "type": "true_false",
       "prompt": "O que Moisés faz em favor do povo após o bezerro: Intercede pedindo perdão.",
-      "correctAnswer": "true",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -3513,7 +3481,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Como o maná critica a nostalgia do Egito?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Como o maná critica a nostalgia do Egito?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "exodo-pro-exo-06-mana-02",
@@ -4015,15 +3983,19 @@
       "question": "Por que o tabernáculo está no centro do acampamento (visão do livro)?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Aliança"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Geografia teológica.",
       "feedbackWrong": {
         "a": "Revise Êxodo 25:8; 40 — a resposta correta é: “Deus no meio — a vida de Israel orbitando a presença”.",
@@ -4031,10 +4003,12 @@
         "d": "Revise Êxodo 25:8; 40 — a resposta correta é: “Deus no meio — a vida de Israel orbitando a presença”."
       },
       "verseRef": "Êxodo 25:8; 40",
-      "type": "true_false",
-      "prompt": "Por que o tabernáculo está no centro do acampamento (visão do livro): Acaso.",
-      "correctAnswer": "false",
-      "skill": "interpret"
+      "type": "choice",
+      "prompt": "Por que o tabernáculo está no centro do acampamento (visão do livro)?",
+      "correctAnswer": "a",
+      "skill": "interpret",
+      "passageText": "Far-me-ão um santuário para que eu habite no meio deles.",
+      "cue": "Por que o tabernáculo está no centro do acampamento (visão do livro)?"
     },
     {
       "id": "exodo-pro-exo-07-sinai-02",
@@ -4103,7 +4077,7 @@
       "prompt": "Toque o trecho que decide a leitura — não a tradição: Como Êxodo 34:6–7 resume o caráter de Deus?",
       "cue": "Toque o trecho que decide a leitura — não a tradição: Como Êxodo 34:6–7 resume o caráter de Deus?",
       "correctAnswer": "a",
-      "skill": "observe"
+      "skill": "interpret"
     },
     {
       "id": "exodo-pro-exo-07-sinai-04",
@@ -4113,23 +4087,15 @@
       "question": "Por que Moisés pede “mostra-me a tua glória”?",
       "options": [
         {
-          "id": "a",
-          "text": "Curiosidade vã"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Desejo de conhecer a Deus após a ruptura do bezerro"
-        },
-        {
-          "id": "c",
-          "text": "Pedido do Faraó"
-        },
-        {
-          "id": "d",
-          "text": "Ritual egípcio"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "b",
+      "correctOptionId": "false",
       "feedbackCorrect": "Busca de presença restaurada.",
       "feedbackWrong": {
         "a": "Revise Êxodo 33:18 — a resposta correta é: “Desejo de conhecer a Deus após a ruptura do bezerro”.",
@@ -4137,9 +4103,9 @@
         "d": "Revise Êxodo 33:18 — a resposta correta é: “Desejo de conhecer a Deus após a ruptura do bezerro”."
       },
       "verseRef": "Êxodo 33:18",
-      "type": "choice",
-      "prompt": "Por que Moisés pede “mostra-me a tua glória”?",
-      "correctAnswer": "b",
+      "type": "true_false",
+      "prompt": "Por que Moisés pede “mostra-me a tua glória”: Curiosidade vã.",
+      "correctAnswer": "false",
       "passageText": "Prosseguiu Moisés: Mostra-me a tua glória.",
       "skill": "interpret"
     },
@@ -4159,7 +4125,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Duplo fundamento.",
       "feedbackWrong": {
         "b": "Revise Êxodo 20:8–11; Dt 5:15 — a resposta correta é: “Descanso do Criador e libertação da escravidão do trabalho sem fim”.",
@@ -4168,8 +4134,8 @@
       },
       "verseRef": "Êxodo 20:8–11; Dt 5:15",
       "type": "true_false",
-      "prompt": "O ouro do bezerro vs ouro do tabernáculo ensina: Ouro é sempre santo.",
-      "correctAnswer": "false",
+      "prompt": "O sábado no Deserto liga criação e êxodo como.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -4258,15 +4224,19 @@
       "question": "Qual opção resume melhor o passo “Os Dez Mandamentos”?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Os Dez Mandamentos"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Isso mesmo — “Os Dez Mandamentos” importa na leitura de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “No Sinai, Deus fala. Os mandamentos não são peso vazio — são o caminho da aliança.”.",
@@ -4274,11 +4244,12 @@
         "d": "Revise o texto — a resposta correta é: “No Sinai, Deus fala. Os mandamentos não são peso vazio — são o caminho da aliança.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Um detalhe irrelevante.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Qual opção resume melhor o passo “Os Dez Mandamentos”?",
+      "correctAnswer": "a",
       "passageText": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de mim.",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "Qual opção resume melhor o passo “Os Dez Mandamentos”?"
     },
     {
       "id": "exodo-sem-exo-08-mandamentos-04",
@@ -4288,23 +4259,15 @@
       "question": "“Os Dez Mandamentos” acontece no contexto de:",
       "options": [
         {
-          "id": "a",
-          "text": "No deserto"
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Somente o Apocalipse"
-        },
-        {
-          "id": "c",
-          "text": "Somente as cartas de Paulo"
-        },
-        {
-          "id": "d",
-          "text": "Mitos egípcios isolados"
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o contexto é No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “No deserto”.",
@@ -4312,9 +4275,9 @@
         "d": "Revise o texto — a resposta correta é: “No deserto”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "“Os Dez Mandamentos” acontece no contexto de:",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Para conhecer a ação de Deus e a resposta do povo em Êxodo.",
+      "correctAnswer": "true",
       "passageText": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de mim.",
       "skill": "observe"
     },
@@ -4334,7 +4297,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — o estudo forma fé e memória bíblica.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Para conhecer a ação de Deus e a resposta do povo em Êxodo.”.",
@@ -4343,8 +4306,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Para conhecer a ação de Deus e a resposta do povo em Êxodo.",
-      "correctAnswer": "true",
+      "prompt": "“Os Dez Mandamentos” acontece no contexto de:: Somente o Apocalipse.",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -4445,11 +4408,15 @@
         },
         {
           "id": "b",
-          "text": "Outra leitura do trecho"
+          "text": "tirei"
         },
         {
           "id": "c",
-          "text": "Não aparece no texto"
+          "text": "Egito"
+        },
+        {
+          "id": "d",
+          "text": "servidão"
         }
       ],
       "correctOptionId": "a",
@@ -4460,7 +4427,7 @@
         "d": "Revise o texto — a resposta correta é: “Levar a sério: No Sinai, Deus fala. Os mandamentos não são peso vazio — são o caminho da aliança.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
+      "type": "tap",
       "prompt": "Qual aplicação justa de “Os Dez Mandamentos”?",
       "correctAnswer": "a",
       "passageText": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de mim.",
@@ -4475,15 +4442,19 @@
       "question": "Em “Os Dez Mandamentos”, o povo (ou a personagem) é desafiado(a) a:",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Os Dez Mandamentos"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “Os Dez Mandamentos”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -4491,10 +4462,12 @@
         "d": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Abandonar completamente a fé.",
-      "correctAnswer": "false",
-      "skill": "understand"
+      "type": "choice",
+      "prompt": "Em “Os Dez Mandamentos”, o povo (ou a personagem) é desafiado(a) a:",
+      "correctAnswer": "a",
+      "skill": "understand",
+      "passageText": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de mim.",
+      "cue": "Em “Os Dez Mandamentos”, o povo (ou a personagem) é desafiado(a) a:"
     },
     {
       "id": "exodo-cam-exo-08-mandamentos-05",
@@ -4512,7 +4485,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — o passo pertence à cena No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Êxodo.”.",
@@ -4521,8 +4494,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "É um passo dessa cena na jornada de Êxodo.",
-      "correctAnswer": "true",
+      "prompt": "Abandonar completamente a fé.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -4572,15 +4545,19 @@
       "question": "Como o livro fecha com a glória no tabernáculo?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Eu sou o Senhor"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Presença — meta do êxodo.",
       "feedbackWrong": {
         "a": "Revise Êxodo 40:34–38 — a resposta correta é: “Objetivo alcançado: Deus habita com o povo redimido”.",
@@ -4588,11 +4565,12 @@
         "d": "Revise Êxodo 40:34–38 — a resposta correta é: “Objetivo alcançado: Deus habita com o povo redimido”."
       },
       "verseRef": "Êxodo 40:34–38",
-      "type": "true_false",
-      "prompt": "Como o livro fecha com a glória no tabernáculo: Derrota.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "Como o livro fecha com a glória no tabernáculo?",
+      "correctAnswer": "a",
       "passageText": "Então, a nuvem cobriu a tenda da revelação, e a glória de Jeová encheu o tabernáculo. Moisés não podia entrar na tenda da revelação, porque a nuvem permanecia sobre ela, e a glória de Jeová enchia o tabernáculo. Quando de…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Como o livro fecha com a glória no tabernáculo?"
     },
     {
       "id": "exodo-pro-exo-08-mandamentos-03",
@@ -4602,23 +4580,15 @@
       "question": "Em “Os Dez Mandamentos”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Apenas acaso histórico."
-        },
-        {
-          "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -4626,9 +4596,9 @@
         "d": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “Os Dez Mandamentos”, qual tensão teológica aparece?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
+      "correctAnswer": "true",
       "passageText": "Eu sou o Senhor teu Deus, que te tirei da terra do Egito, da casa da servidão. Não terás outros deuses diante de mim.",
       "skill": "interpret"
     },
@@ -4648,7 +4618,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Correto — juízo e graça aparecem com seriedade no texto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.”.",
@@ -4657,8 +4627,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.",
-      "correctAnswer": "true",
+      "prompt": "Apenas acaso histórico.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -4677,7 +4647,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o texto forma discípulos que perguntam e respondem com fé.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Como confiar e obedecer a Deus neste tipo de história?”.",
@@ -4686,8 +4656,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Como apagar o texto do cânon?",
-      "correctAnswer": "false",
+      "prompt": "Qual pergunta profunda “Os Dez Mandamentos” deixa ao leitor.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -4737,15 +4707,19 @@
       "question": "Em “O bezerro de ouro” (No deserto), qual afirmação é verdadeira?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "O bezerro de ouro"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — “O bezerro de ouro” pertence ao testemunho de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.”.",
@@ -4753,11 +4727,12 @@
         "d": "Revise o texto — a resposta correta é: “O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "O relato de Êxodo inclui esse tema/passo na jornada do povo de Deus.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Em “O bezerro de ouro” (No deserto), qual afirmação é verdadeira?",
+      "correctAnswer": "a",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
-      "skill": "observe"
+      "skill": "observe",
+      "cue": "Em “O bezerro de ouro” (No deserto), qual afirmação é verdadeira?"
     },
     {
       "id": "exodo-sem-exo-09-bezerro-03",
@@ -4767,23 +4742,15 @@
       "question": "Qual opção resume melhor o passo “O bezerro de ouro”?",
       "options": [
         {
-          "id": "a",
-          "text": "Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Um detalhe irrelevante."
-        },
-        {
-          "id": "c",
-          "text": "Uma contradição sem propósito."
-        },
-        {
-          "id": "d",
-          "text": "Um acréscimo medieval."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Isso mesmo — “O bezerro de ouro” importa na leitura de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.”.",
@@ -4791,9 +4758,9 @@
         "d": "Revise o texto — a resposta correta é: “Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Qual opção resume melhor o passo “O bezerro de ouro”?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "“O bezerro de ouro” acontece no contexto de:: Somente o Apocalipse.",
+      "correctAnswer": "false",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
       "skill": "observe"
     },
@@ -4813,7 +4780,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o contexto é No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “No deserto”.",
@@ -4822,8 +4789,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "“O bezerro de ouro” acontece no contexto de:: Somente o Apocalipse.",
-      "correctAnswer": "false",
+      "prompt": "Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.",
+      "correctAnswer": "true",
       "skill": "observe"
     },
     {
@@ -4842,7 +4809,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — o estudo forma fé e memória bíblica.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Para conhecer a ação de Deus e a resposta do povo em Êxodo.”.",
@@ -4852,7 +4819,7 @@
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
       "prompt": "Para conhecer a ação de Deus e a resposta do povo em Êxodo.",
-      "correctAnswer": "true",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -4902,15 +4869,19 @@
       "question": "O que “O bezerro de ouro” revela sobre a aliança?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Idolatria"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto — fidelidade divina e resposta humana caminham juntas.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Deus permanece fiel e o povo é chamado a responder.”.",
@@ -4918,11 +4889,12 @@
         "d": "Revise o texto — a resposta correta é: “Deus permanece fiel e o povo é chamado a responder.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "A aliança foi cancelada nesse ponto.",
-      "correctAnswer": "false",
+      "type": "choice",
+      "prompt": "O que “O bezerro de ouro” revela sobre a aliança?",
+      "correctAnswer": "a",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "O que “O bezerro de ouro” revela sobre a aliança?"
     },
     {
       "id": "exodo-cam-exo-09-bezerro-03",
@@ -4932,23 +4904,15 @@
       "question": "Qual aplicação justa de “O bezerro de ouro”?",
       "options": [
         {
-          "id": "a",
-          "text": "Levar a sério: Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Ignorar o contexto e inventar o significado."
-        },
-        {
-          "id": "c",
-          "text": "Tratar o relato como ficção inútil."
-        },
-        {
-          "id": "d",
-          "text": "Usar o texto só para vencer debates."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Boa — a aplicação nasce do texto e do caráter de Deus.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Levar a sério: Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.”.",
@@ -4956,9 +4920,9 @@
         "d": "Revise o texto — a resposta correta é: “Levar a sério: Enquanto Moisés está no monte, o povo pede um deus visível. A aliança quase se quebra — e Moisés intercede.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Qual aplicação justa de “O bezerro de ouro”?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
+      "correctAnswer": "true",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
       "skill": "understand"
     },
@@ -4978,7 +4942,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “O bezerro de ouro”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -4987,8 +4951,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
-      "correctAnswer": "true",
+      "prompt": "Ignorar o contexto e inventar o significado.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -5007,7 +4971,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o passo pertence à cena No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Êxodo.”.",
@@ -5016,8 +4980,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Não tem ligação com a cena.",
-      "correctAnswer": "false",
+      "prompt": "Como “O bezerro de ouro” se liga à cena “No deserto”.",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -5067,15 +5031,19 @@
       "question": "Qual leitura madura de “O bezerro de ouro” evita?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "Idolatria"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — profundidade honra o texto além do moralismo raso.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”.",
@@ -5083,11 +5051,12 @@
         "d": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Reduzir o texto a moralismo raso, ignorando aliança e graça.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "Qual leitura madura de “O bezerro de ouro” evita?",
+      "correctAnswer": "a",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Qual leitura madura de “O bezerro de ouro” evita?"
     },
     {
       "id": "exodo-pro-exo-09-bezerro-03",
@@ -5097,23 +5066,15 @@
       "question": "Em “O bezerro de ouro”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Apenas acaso histórico."
-        },
-        {
-          "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -5121,9 +5082,9 @@
         "d": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “O bezerro de ouro”, qual tensão teológica aparece?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "O pecado nunca tem custo.",
+      "correctAnswer": "false",
       "passageText": "Mas, vendo o povo que Moisés tardava em descer do monte, acercou-se de Arão e disse-lhe: Levanta-te, faze-nos deuses que vão adiante de nós…",
       "skill": "interpret"
     },
@@ -5143,7 +5104,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — juízo e graça aparecem com seriedade no texto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.”.",
@@ -5152,8 +5113,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "O pecado nunca tem custo.",
-      "correctAnswer": "false",
+      "prompt": "Soberania de Deus e responsabilidade humana caminham juntas.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -5172,7 +5133,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o texto forma discípulos que perguntam e respondem com fé.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Como confiar e obedecer a Deus neste tipo de história?”.",
@@ -5182,7 +5143,7 @@
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
       "prompt": "Como confiar e obedecer a Deus neste tipo de história?",
-      "correctAnswer": "true",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -5193,15 +5154,19 @@
       "question": "Sobre “O tabernáculo”, o que a Escritura ensina?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "O tabernáculo"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto — “O tabernáculo” está na história de Êxodo.",
       "feedbackWrong": {
         "b": "Revise Êxodo: “O tabernáculo” está no texto.",
@@ -5209,10 +5174,12 @@
         "d": "A origem é canônica."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Isso não aparece na Bíblia.",
-      "correctAnswer": "false",
-      "skill": "observe"
+      "type": "choice",
+      "prompt": "Sobre “O tabernáculo”, o que a Escritura ensina?",
+      "correctAnswer": "a",
+      "skill": "observe",
+      "passageText": "E me farão um santuário, e habitarei no meio deles.",
+      "cue": "Sobre “O tabernáculo”, o que a Escritura ensina?"
     },
     {
       "id": "exodo-sem-exo-10-tabernaculo-02",
@@ -5252,23 +5219,15 @@
       "question": "Qual opção resume melhor o passo “O tabernáculo”?",
       "options": [
         {
-          "id": "a",
-          "text": "Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Um detalhe irrelevante."
-        },
-        {
-          "id": "c",
-          "text": "Uma contradição sem propósito."
-        },
-        {
-          "id": "d",
-          "text": "Um acréscimo medieval."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Isso mesmo — “O tabernáculo” importa na leitura de Êxodo.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.”.",
@@ -5276,9 +5235,9 @@
         "d": "Revise o texto — a resposta correta é: “Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Qual opção resume melhor o passo “O tabernáculo”?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Um detalhe irrelevante.",
+      "correctAnswer": "false",
       "passageText": "E me farão um santuário, e habitarei no meio deles.",
       "skill": "observe"
     },
@@ -5298,7 +5257,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o contexto é No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “No deserto”.",
@@ -5307,8 +5266,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "O tema é exclusivamente romano.",
-      "correctAnswer": "false",
+      "prompt": "Por que estudar “O tabernáculo”.",
+      "correctAnswer": "true",
       "skill": "observe"
     },
     {
@@ -5327,7 +5286,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — o estudo forma fé e memória bíblica.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Para conhecer a ação de Deus e a resposta do povo em Êxodo.”.",
@@ -5336,8 +5295,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Por que estudar “O tabernáculo”.",
-      "correctAnswer": "true",
+      "prompt": "O tema é exclusivamente romano.",
+      "correctAnswer": "false",
       "skill": "observe"
     },
     {
@@ -5348,15 +5307,19 @@
       "question": "Em “O tabernáculo”, qual é o sentido principal para a fé?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "O tabernáculo"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — “O tabernáculo” aponta para a ação de Deus e a resposta humana.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Deus age na história e chama o povo a confiar e obedecer.”.",
@@ -5364,10 +5327,12 @@
         "d": "Revise o texto — a resposta correta é: “Deus age na história e chama o povo a confiar e obedecer.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Deus age na história e chama o povo a confiar e obedecer.",
-      "correctAnswer": "true",
-      "skill": "understand"
+      "type": "choice",
+      "prompt": "Em “O tabernáculo”, qual é o sentido principal para a fé?",
+      "correctAnswer": "a",
+      "skill": "understand",
+      "passageText": "E me farão um santuário, e habitarei no meio deles.",
+      "cue": "Em “O tabernáculo”, qual é o sentido principal para a fé?"
     },
     {
       "id": "exodo-cam-exo-10-tabernaculo-02",
@@ -5407,23 +5372,15 @@
       "question": "Qual aplicação justa de “O tabernáculo”?",
       "options": [
         {
-          "id": "a",
-          "text": "Levar a sério: Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Ignorar o contexto e inventar o significado."
-        },
-        {
-          "id": "c",
-          "text": "Tratar o relato como ficção inútil."
-        },
-        {
-          "id": "d",
-          "text": "Usar o texto só para vencer debates."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Boa — a aplicação nasce do texto e do caráter de Deus.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Levar a sério: Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.”.",
@@ -5431,9 +5388,9 @@
         "d": "Revise o texto — a resposta correta é: “Levar a sério: Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Qual aplicação justa de “O tabernáculo”?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Levar a sério: Deus não só liberta — deseja habitar no meio do povo. O tabernáculo é presença no caminho.",
+      "correctAnswer": "true",
       "passageText": "E me farão um santuário, e habitarei no meio deles.",
       "skill": "understand"
     },
@@ -5453,7 +5410,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “O tabernáculo”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -5462,8 +5419,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Deus permanece fiel e o povo é chamado a responder.",
-      "correctAnswer": "true",
+      "prompt": "Ignorar o contexto e inventar o significado.",
+      "correctAnswer": "false",
       "skill": "understand"
     },
     {
@@ -5482,7 +5439,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — o passo pertence à cena No deserto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “É um passo dessa cena na jornada de Êxodo.”.",
@@ -5491,8 +5448,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Ignorar o contexto e inventar o significado.",
-      "correctAnswer": "false",
+      "prompt": "Deus permanece fiel e o povo é chamado a responder.",
+      "correctAnswer": "true",
       "skill": "understand"
     },
     {
@@ -5503,15 +5460,19 @@
       "question": "Como “O tabernáculo” revela o caráter de Deus?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "O tabernáculo"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Outra leitura do trecho"
+        },
+        {
+          "id": "c",
+          "text": "Não aparece no texto"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto — o caráter de Deus brilha em “O tabernáculo”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Santidade, fidelidade e misericórdia aparecem mesmo na crise humana.”.",
@@ -5519,10 +5480,12 @@
         "d": "Revise o texto — a resposta correta é: “Santidade, fidelidade e misericórdia aparecem mesmo na crise humana.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Deus muda de essência a cada capítulo.",
-      "correctAnswer": "false",
-      "skill": "interpret"
+      "type": "choice",
+      "prompt": "Como “O tabernáculo” revela o caráter de Deus?",
+      "correctAnswer": "a",
+      "skill": "interpret",
+      "passageText": "E me farão um santuário, e habitarei no meio deles.",
+      "cue": "Como “O tabernáculo” revela o caráter de Deus?"
     },
     {
       "id": "exodo-pro-exo-10-tabernaculo-02",
@@ -5562,23 +5525,15 @@
       "question": "Em “O tabernáculo”, qual tensão teológica aparece?",
       "options": [
         {
-          "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Apenas acaso histórico."
-        },
-        {
-          "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "false",
       "feedbackCorrect": "Exato — soberania e responsabilidade se encontram no relato.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”.",
@@ -5586,9 +5541,9 @@
         "d": "Revise o texto — a resposta correta é: “Soberania de Deus e responsabilidade humana caminham juntas.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “O tabernáculo”, qual tensão teológica aparece?",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Apenas acaso histórico.",
+      "correctAnswer": "false",
       "passageText": "E me farão um santuário, e habitarei no meio deles.",
       "skill": "interpret"
     },
@@ -5608,7 +5563,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "true",
       "feedbackCorrect": "Correto — juízo e graça aparecem com seriedade no texto.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “O pecado tem consequências, e Deus ainda preserva propósito e misericórdia.”.",
@@ -5617,8 +5572,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Ler com oração e contexto.",
-      "correctAnswer": "false",
+      "prompt": "Qual pergunta profunda “O tabernáculo” deixa ao leitor.",
+      "correctAnswer": "true",
       "skill": "interpret"
     },
     {
@@ -5637,7 +5592,7 @@
           "text": "Falso"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "false",
       "feedbackCorrect": "Sim — o texto forma discípulos que perguntam e respondem com fé.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Como confiar e obedecer a Deus neste tipo de história?”.",
@@ -5646,8 +5601,8 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Qual pergunta profunda “O tabernáculo” deixa ao leitor.",
-      "correctAnswer": "true",
+      "prompt": "Ler com oração e contexto.",
+      "correctAnswer": "false",
       "skill": "interpret"
     },
     {
@@ -5874,15 +5829,23 @@
       "question": "O que “Desafio: Aliança no deserto” revela sobre a aliança?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "glória"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "nuvem"
+        },
+        {
+          "id": "d",
+          "text": "cobriu"
         }
       ],
-      "correctOptionId": "true",
+      "correctOptionId": "a",
       "feedbackCorrect": "Correto — fidelidade divina e resposta humana caminham juntas.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Deus permanece fiel e o povo é chamado a responder.”.",
@@ -5890,11 +5853,12 @@
         "d": "Revise o texto — a resposta correta é: “Deus permanece fiel e o povo é chamado a responder.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Deus permanece fiel e o povo é chamado a responder.",
-      "correctAnswer": "true",
+      "type": "choice",
+      "prompt": "O que “Desafio: Aliança no deserto” revela sobre a aliança?",
+      "correctAnswer": "a",
       "passageText": "Então a nuvem cobriu a tenda da congregação, e a glória do Senhor encheu o tabernáculo.",
-      "skill": "understand"
+      "skill": "understand",
+      "cue": "O que “Desafio: Aliança no deserto” revela sobre a aliança?"
     },
     {
       "id": "exodo-cam-exo-boss-02-03",
@@ -5943,23 +5907,15 @@
       "question": "Em “Desafio: Aliança no deserto”, o povo (ou a personagem) é desafiado(a) a:",
       "options": [
         {
-          "id": "a",
-          "text": "Confiar em Deus no meio da prova ou da decisão."
+          "id": "true",
+          "text": "Verdadeiro"
         },
         {
-          "id": "b",
-          "text": "Abandonar completamente a fé."
-        },
-        {
-          "id": "c",
-          "text": "Confiar só em ídolos."
-        },
-        {
-          "id": "d",
-          "text": "Negar a história passada."
+          "id": "false",
+          "text": "Falso"
         }
       ],
-      "correctOptionId": "a",
+      "correctOptionId": "true",
       "feedbackCorrect": "Sim — o desafio da fé atravessa “Desafio: Aliança no deserto”.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”.",
@@ -5967,9 +5923,9 @@
         "d": "Revise o texto — a resposta correta é: “Confiar em Deus no meio da prova ou da decisão.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "choice",
-      "prompt": "Em “Desafio: Aliança no deserto”, o povo (ou a personagem) é desafiado(a) a:",
-      "correctAnswer": "a",
+      "type": "true_false",
+      "prompt": "Confiar em Deus no meio da prova ou da decisão.",
+      "correctAnswer": "true",
       "passageText": "Então a nuvem cobriu a tenda da congregação, e a glória do Senhor encheu o tabernáculo.",
       "skill": "understand"
     },
@@ -6049,15 +6005,23 @@
       "question": "Qual leitura madura de “Desafio: Aliança no deserto” evita?",
       "options": [
         {
-          "id": "true",
-          "text": "Verdadeiro"
+          "id": "a",
+          "text": "glória"
         },
         {
-          "id": "false",
-          "text": "Falso"
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "nuvem"
+        },
+        {
+          "id": "d",
+          "text": "cobriu"
         }
       ],
-      "correctOptionId": "false",
+      "correctOptionId": "a",
       "feedbackCorrect": "Sim — profundidade honra o texto além do moralismo raso.",
       "feedbackWrong": {
         "b": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”.",
@@ -6065,11 +6029,12 @@
         "d": "Revise o texto — a resposta correta é: “Reduzir o texto a moralismo raso, ignorando aliança e graça.”."
       },
       "verseRef": "Referência: Êxodo",
-      "type": "true_false",
-      "prompt": "Ler com oração e contexto.",
-      "correctAnswer": "false",
+      "type": "tap",
+      "prompt": "Toque o trecho que decide a leitura — não a tradição: Qual leitura madura de “Desafio: Aliança no deserto” evita?",
+      "correctAnswer": "a",
       "passageText": "Então a nuvem cobriu a tenda da congregação, e a glória do Senhor encheu o tabernáculo.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Toque o trecho que decide a leitura — não a tradição: Qual leitura madura de “Desafio: Aliança no deserto” evita?"
     },
     {
       "id": "exodo-pro-exo-boss-02-03",
@@ -6080,19 +6045,15 @@
       "options": [
         {
           "id": "a",
-          "text": "Soberania de Deus e responsabilidade humana caminham juntas."
+          "text": "Glória"
         },
         {
           "id": "b",
-          "text": "Apenas acaso histórico."
+          "text": "Outra leitura do trecho"
         },
         {
           "id": "c",
-          "text": "Negação total de qualquer escolha humana."
-        },
-        {
-          "id": "d",
-          "text": "Ausência completa de propósito."
+          "text": "Não aparece no texto"
         }
       ],
       "correctOptionId": "a",
@@ -6107,7 +6068,8 @@
       "prompt": "Em “Desafio: Aliança no deserto”, qual tensão teológica aparece?",
       "correctAnswer": "a",
       "passageText": "Então a nuvem cobriu a tenda da congregação, e a glória do Senhor encheu o tabernáculo.",
-      "skill": "interpret"
+      "skill": "interpret",
+      "cue": "Em “Desafio: Aliança no deserto”, qual tensão teológica aparece?"
     },
     {
       "id": "exodo-pro-exo-boss-02-04",
@@ -6163,7 +6125,7 @@
       },
       "verseRef": "Referência: Êxodo",
       "type": "true_false",
-      "prompt": "Como apagar o texto do cânon?",
+      "prompt": "Qual pergunta profunda “Desafio: Aliança no deserto” deixa ao leitor.",
       "correctAnswer": "false",
       "skill": "interpret"
     },

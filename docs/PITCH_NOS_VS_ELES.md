@@ -1,8 +1,8 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** ago/2026 · app v1.0.19  
-**Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te treina nela.”*
+**Atualizado:** ago/2026 · app v1.0.20  
+**Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
 ---
 
@@ -14,7 +14,7 @@
 | **Hallow** | Oração, áudio, hábito espiritual |
 | **Games / Ascend** | Jogo com a Bíblia de tema |
 | **Trivia bíblica** | Quiz de memória |
-| **STWAY** | **Academia da Palavra** — treino diário para *aprender a ler* as Escrituras |
+| **STWAY** | **Academia da Palavra** — missões diárias para *aprender a ler* as Escrituras |
 
 Sensação-alvo: **Duolingo no loop · formação bíblica no conteúdo.**
 
@@ -28,7 +28,7 @@ Sensação-alvo: **Duolingo no loop · formação bíblica no conteúdo.**
 | Ensina a *ler* o texto | ○ | ○ | ○ | ○ | **●** *(shell pronto)* |
 | Currículo progressivo (Criação→NT) | ○ | ○ | ○ | ○ | **●** |
 | Gestos variados (não só MCQ) | ○ | ○ | ◐ | ○ | **●** |
-| Profundidade (níveis + Strong) | ○ | ○ | ○ | ○ | **●** *(Strong no treino + Bíblia)* |
+| Profundidade (níveis + Strong) | ○ | ○ | ○ | ○ | **●** *(Strong na missão + Bíblia)* |
 | Social / accountability | ● | ◐ | ○ | ○ | **◐** |
 | Escala / marca / polish | ● | ● | ◐ | ◐ | **○** |
 | Monetização madura | ● | ● | ● | ◐ | **○** *(plano Pro no papel)* |
@@ -46,7 +46,7 @@ SESSÃO (2–4 min) — implementada
 ```
 
 - **3 profundidades** — Semente / Rota / Profundezas (operações cognitivas; conteúdo ainda precisa de edição)  
-- **Bíblia + Strong offline** — estudar no treino (ref do palco) e na aba Bíblia  
+- **Bíblia + Strong offline** — estudar na missão (ref do palco) e na aba Bíblia  
 - **Jornada coerente** — trilhas em rede no Firebase  
 - **Social leve** — Caravana, Companhia, Salas  
 
@@ -78,7 +78,7 @@ Competimos em: *depois de 3 minutos, a pessoa leu melhor.*
 
 ## Pedido desta conversa
 
-1. **Tester:** fazer 1 treino e dizer numa frase o que o app é.  
+1. **Tester:** fazer 1 missão e dizer numa frase o que o app é.  
 2. **Igreja:** 1 célula piloto (Companhia / Sala) por 2 semanas.  
 3. **Produto:** validar se a sessão “treina” — não se parece com YouVersion ou trivia.
 
