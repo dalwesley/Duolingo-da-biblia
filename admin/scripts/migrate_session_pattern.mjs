@@ -17,6 +17,18 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import {
+  TAP_STOP,
+  clipPhrase,
+  extractQuotedAnswer,
+  findTapTarget,
+  foldKey,
+  optionPoolFromQuestions,
+  passagePhrases,
+  repairQuestion,
+  vfClaim,
+  vfClaimFromParts,
+} from './_answer_phrase.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const dataRoot = join(__dirname, '..', '..', 'trilha_app', 'assets', 'data');
@@ -58,14 +70,6 @@ function inText(hay, needle) {
   return n.length >= 3 && h.includes(n);
 }
 
-function foldKey(s) {
-  return (s || '')
-    .normalize('NFD')
-    .replace(/\p{M}/gu, '')
-    .toLowerCase()
-    .replace(/\s+/g, ' ')
-    .trim();
-}
 
 function inTextWord(hay, needle) {
   const n = foldKey(needle);
@@ -75,27 +79,6 @@ function inTextWord(hay, needle) {
   return new RegExp(`(?:^|[^a-z0-9])${escaped}(?:$|[^a-z0-9])`).test(h);
 }
 
-/** Grafia do trecho como está no palco (para o toque achar o alvo). */
-function passageForm(passage, needle) {
-  if (!passage || !needle) return '';
-  const parts = foldKey(needle).split(' ').filter(Boolean);
-  if (!parts.length) return '';
-  const accent = (ch) => {
-    const map = {
-      a: '[aáàâãä]',
-      e: '[eéêèë]',
-      i: '[iíìîï]',
-      o: '[oóôõòö]',
-      u: '[uúùûü]',
-      c: '[cç]',
-    };
-    if (map[ch]) return map[ch];
-    return /[.*+?^${}()|[\]\\]/.test(ch) ? `\\${ch}` : ch;
-  };
-  const body = parts.map((w) => [...w].map(accent).join('')).join('\\s+');
-  const m = passage.match(new RegExp(body, 'i'));
-  return m ? m[0] : '';
-}
 
 function buildBibleIndex() {
   const path = join(dataRoot, 'bible_tb.json');
@@ -187,84 +170,6 @@ function lookupPassage(byName, ref) {
   return null;
 }
 
-const TAP_STOP = new Set([
-  'porque',
-  'quando',
-  'onde',
-  'como',
-  'qual',
-  'deus',
-  'senhor',
-  'povo',
-  'terra',
-  'israel',
-  'texto',
-  'passo',
-  'sobre',
-  'depois',
-  'antes',
-  'jeova',
-  'moises',
-  'falou',
-  'disse',
-]);
-
-/** Trecho da resposta que realmente aparece no palco — senão o tap vira chute. */
-function findTapTarget(correctText, passage) {
-  const c = (correctText || '').trim();
-  if (!passage || !c) return '';
-  const hit = (raw) => passageForm(passage, raw);
-
-  if (c.length >= 3 && c.length <= 40 && inTextWord(passage, c)) {
-    const s = hit(c);
-    if (s) return s;
-  }
-
-  const parts = c
-    .split(/[/—–()]/)
-    .map((s) => s.trim())
-    .filter(Boolean);
-  for (const part of parts) {
-    if (
-      part.length >= 8 &&
-      part.length <= 40 &&
-      part.includes(' ') &&
-      inTextWord(passage, part)
-    ) {
-      const s = hit(part);
-      if (s) return s;
-    }
-  }
-
-  const words = c.split(/\s+/).filter(Boolean);
-  for (let n = Math.min(5, words.length); n >= 2; n--) {
-    for (let i = 0; i <= words.length - n; i++) {
-      const phrase = words.slice(i, i + n).join(' ');
-      const clean = phrase.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, '');
-      if (
-        clean.length >= 8 &&
-        clean.length <= 40 &&
-        inTextWord(passage, clean)
-      ) {
-        const s = hit(clean);
-        if (s) return s;
-      }
-    }
-  }
-
-  const candidates = (c.match(/\p{L}{6,}/gu) || []).sort(
-    (a, b) => b.length - a.length,
-  );
-  for (const w of candidates) {
-    if (TAP_STOP.has(foldKey(w))) continue;
-    if (inTextWord(passage, w)) {
-      const s = hit(w);
-      if (s) return s;
-    }
-  }
-  return '';
-}
-
 function resolvePassage(q, study, bibleByName) {
   const fromBible = lookupPassage(bibleByName, q.verseRef);
   if (fromBible) return clipWords(fromBible, 40);
@@ -288,37 +193,13 @@ function distractors(q) {
   return (q.options || []).filter((o) => o.id !== q.correctOptionId);
 }
 
-function passagePhrases(passage, exclude) {
-  const ex = (exclude || '').toLowerCase();
-  const words = (passage || '')
-    .replace(/[“”"']/g, '')
-    .split(/[\s,;:!?—–]+/)
-    .map((w) => w.replace(/^[^\p{L}]+|[^\p{L}]+$/gu, ''))
-    .filter(
-      (w) =>
-        w.length >= 5 &&
-        w.toLowerCase() !== ex &&
-        !TAP_STOP.has(foldKey(w)),
-    );
-  const uniq = [];
-  for (const w of words) {
-    if (uniq.some((u) => u.toLowerCase() === w.toLowerCase())) continue;
-    uniq.push(w);
-    if (uniq.length >= 3) break;
-  }
-  return uniq;
-}
-
 function vfPrompt(q, asTrue) {
   const correct = optionById(q, q.correctOptionId);
   const wrong = distractors(q)[0];
   const piece = asTrue ? correct?.text : wrong?.text;
   const text = (piece || '').trim();
-  if (!text) return q.question;
-  if (/[.!?]$/.test(text) || text.length > 28) return text;
-  const stem = (q.question || '').replace(/\?\s*$/, '').trim();
-  if (stem.length > 12 && stem.length < 90) return `${stem}: ${text}.`;
-  return `${text}.`;
+  if (!text) return vfClaim(q.question || '');
+  return vfClaimFromParts(q.question || '', text);
 }
 
 function capabilities(q, study, bibleByName) {
@@ -331,10 +212,10 @@ function capabilities(q, study, bibleByName) {
     passage &&
       tapTarget &&
       tapTarget.length >= 3 &&
-      tapTarget.length <= 40,
+      tapTarget.length <= 72,
   );
   const canComplete = Boolean(
-    canTap && tapTarget.length <= 32 && !tapTarget.includes('…'),
+    canTap && tapTarget.length <= 56 && !tapTarget.includes('…'),
   );
   return { passage, keyword, correctText, tapTarget, canTap, canComplete };
 }
@@ -354,24 +235,13 @@ function hasMcqOptions(q) {
   return (q.options || []).some((o) => ['a', 'b', 'c', 'd'].includes(o.id));
 }
 
-function extractQuotedAnswer(feedback) {
-  const m = (feedback || '').match(/[“"]([^”"]+)[”"]/);
-  return m ? m[1].trim() : '';
-}
-
 /** Afirmação verdadeira a partir do feedback / pergunta (quando options já são V/F). */
 function trueClaimFromVf(q) {
   const quoted = extractQuotedAnswer(q.feedbackCorrect);
-  if (quoted) {
-    const stem = (q.question || '').replace(/\?\s*$/, '').trim();
-    if (stem.length > 12 && stem.length < 90 && quoted.length <= 28 && !/[.!?]$/.test(quoted)) {
-      return `${stem}: ${quoted}.`;
-    }
-    return /[.!?]$/.test(quoted) || quoted.length > 28 ? quoted : `${quoted}.`;
-  }
+  if (quoted) return vfClaimFromParts(q.question || '', quoted);
   const ask = (q.question || '').trim();
-  if (ask) return ask.replace(/\?\s*$/, '.');
-  return (q.prompt || '').trim();
+  if (ask) return vfClaim(ask);
+  return vfClaim((q.prompt || '').trim());
 }
 
 function setVfAnswer(q, asTrue, distractorText) {
@@ -385,12 +255,7 @@ function setVfAnswer(q, asTrue, distractorText) {
   } else {
     const wrong = (distractorText || '').trim();
     if (wrong) {
-      const stem = (q.question || '').replace(/\?\s*$/, '').trim();
-      if (stem.length > 12 && stem.length < 90 && wrong.length <= 40 && !/[.!?]$/.test(wrong)) {
-        q.prompt = `${stem}: ${wrong}.`;
-      } else {
-        q.prompt = /[.!?]$/.test(wrong) || wrong.length > 28 ? wrong : `${wrong}.`;
-      }
+      q.prompt = vfClaimFromParts(q.question || '', wrong);
     }
     // Se não há distrator, mantém o prompt atual (assume já ser afirmação falsa)
     // ou marca falso mesmo — caller deve preferir trocar pares.
@@ -568,17 +433,18 @@ function applyComplete(q, caps) {
   q.type = 'complete';
   const re = new RegExp(tapTarget.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i');
   q.template = passage.replace(re, '___');
-  q.prompt = 'Complete a lacuna.';
+  q.prompt = (q.question || '').trim() || 'Qual palavra completa o trecho?';
   q.correctAnswer = 'a';
   q.correctOptionId = 'a';
   const wrongs = distractors(q)
     .map((o) => o.text)
-    .filter((t) => t && t !== tapTarget);
+    .filter((t) => t && t !== tapTarget && t.length >= 4);
+  const extras = passagePhrases(passage, tapTarget);
   q.options = [
     { id: 'a', text: tapTarget },
-    { id: 'b', text: wrongs[0] || passagePhrases(passage, tapTarget)[0] || 'povo' },
-    { id: 'c', text: wrongs[1] || passagePhrases(passage, tapTarget)[1] || 'terra' },
-  ];
+    { id: 'b', text: wrongs[0] || extras[0] || clipPhrase(passage.split(/\s+/).slice(0, 3).join(' '), 24) },
+    { id: 'c', text: wrongs[1] || extras[1] || clipPhrase(passage.split(/\s+/).slice(3, 6).join(' '), 24) },
+  ].filter((o, i, arr) => o.text && arr.findIndex((x) => x.text === o.text) === i);
 }
 
 function applyChoice(q, study, passage) {
@@ -665,18 +531,35 @@ function assignTypes(questions, studyBySection, bibleByName) {
     const restIdx = meta.map((_, i) => i).filter((i) => !used.has(i));
     const maxChoice = Math.max(1, Math.ceil(free.length * 0.4));
     let choiceLeft = maxChoice;
+    let vfCount = authored.filter((q) => q.type === 'true_false').length + (vf ? 1 : 0);
     for (const i of restIdx) {
       const { q, study } = meta[i];
+      const caps = meta[i].caps;
       used.add(i);
       if (choiceLeft > 0) {
-        applyChoice(q, study, meta[i].caps.passage);
+        applyChoice(q, study, caps.passage);
         counts.choice += 1;
         choiceLeft -= 1;
-      } else {
+      } else if (caps.canComplete) {
+        applyComplete(q, caps);
+        counts.complete += 1;
+      } else if (caps.canTap) {
+        applyTap(q, caps);
+        counts.tap += 1;
+      } else if (vfCount < 2) {
         applyVf(q, vfNext);
         vfNext = !vfNext;
+        vfCount += 1;
         if (study?.passageRef && !q.verseRef) q.verseRef = study.passageRef;
         counts.true_false += 1;
+      } else {
+        const pieces = orderPiecesFromPassage(caps.passage);
+        if (pieces) {
+          applyOrder(q, pieces);
+        } else {
+          applyChoice(q, study, caps.passage);
+          counts.choice += 1;
+        }
       }
     }
   }
@@ -687,10 +570,11 @@ function assignTypes(questions, studyBySection, bibleByName) {
 function applyOrder(q, pieces) {
   const opts = pieces.slice(0, 4).map((t, i) => ({
     id: String.fromCharCode(97 + i),
-    text: clip(t, 48),
+    text: clipPhrase(t, 56),
   }));
   q.type = 'order';
-  q.prompt = 'Monte a sequência do trecho.';
+  const ask = (q.question || '').trim();
+  q.prompt = ask || 'Ordene as frases na ordem do texto.';
   q.cue = q.prompt;
   q.options = opts;
   q.correctOrder = opts.map((o) => o.id);
@@ -761,23 +645,23 @@ function orderPiecesFromPassage(passage) {
     .split(/[;.…]+/)
     .map((s) => s.trim())
     .filter((s) => s.length >= 10)
-    .map((s) => clip(s, 42));
+    .map((s) => clipPhrase(s, 56));
   if (clauses.length >= 3) return clauses.slice(0, 3);
 
   const commas = text
     .split(/,/)
     .map((s) => s.trim())
     .filter((s) => s.length >= 8)
-    .map((s) => clip(s, 42));
+    .map((s) => clipPhrase(s, 56));
   if (commas.length >= 3) return commas.slice(0, 3);
 
   const words = text.split(/\s+/).filter(Boolean);
   if (words.length >= 12) {
     const third = Math.max(4, Math.floor(words.length / 3));
     const pieces = [
-      clip(words.slice(0, third).join(' '), 42),
-      clip(words.slice(third, third * 2).join(' '), 42),
-      clip(words.slice(third * 2).join(' '), 42),
+      clipPhrase(words.slice(0, third).join(' '), 56),
+      clipPhrase(words.slice(third, third * 2).join(' '), 56),
+      clipPhrase(words.slice(third * 2).join(' '), 56),
     ].filter((s) => s.length >= 8);
     if (pieces.length >= 3) return pieces.slice(0, 3);
   }
@@ -920,34 +804,26 @@ function ensureGestures(questions, studyBySection, bibleByName) {
       }
 
       if (need === 'choice') {
-        const donor = pool[0];
+        const donor = pool.find((q) => {
+          const opts = q.options || [];
+          const onlyVf =
+            opts.length === 2 &&
+            opts.every((o) =>
+              ['true', 'false', 'verdadeiro', 'falso'].includes(
+                String(o.id || o.text).toLowerCase(),
+              ),
+            );
+          return (
+            !onlyVf &&
+            opts.some((o) => o.id === 'a' && (o.text || '').trim().length >= 2)
+          );
+        });
         if (!donor) continue;
         applyChoice(donor, study, passageFor(donor));
         const ask = (donor.question || '').trim();
         if (ask) {
           donor.prompt = ask;
           donor.cue = ask;
-        }
-        const opts = donor.options || [];
-        const onlyVf =
-          opts.length === 2 &&
-          opts.every((o) =>
-            ['true', 'false', 'verdadeiro', 'falso'].includes(
-              String(o.id || o.text).toLowerCase(),
-            ),
-          );
-        if (onlyVf || !opts.some((o) => o.id === 'a')) {
-          const correct =
-            extractQuotedAnswer(donor.feedbackCorrect) ||
-            ((study?.keyword || '').split(/[/(]/)[0] || '').trim();
-          if (!correct || correct.length > 48) continue;
-          donor.options = [
-            { id: 'a', text: correct },
-            { id: 'b', text: 'Outra leitura do trecho' },
-            { id: 'c', text: 'Não aparece no texto' },
-          ];
-          donor.correctOptionId = 'a';
-          donor.correctAnswer = 'a';
         }
         converted += 1;
       }
@@ -1103,6 +979,12 @@ function main() {
       repaired = repairTapSpoilers(questions);
       vfChanged = rebalanceVf(questions);
       ensured = ensureGestures(questions, studyBySection, bibleByName);
+    }
+
+    const poolMap = optionPoolFromQuestions(questions);
+    for (const q of questions) {
+      const key = `${q.section || ''}::${q.difficulty || ''}`;
+      repairQuestion(q, poolMap.get(key) || []);
     }
 
     if (wrapped) writeJson(file, questions);

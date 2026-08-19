@@ -1,7 +1,7 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** ago/2026 · app v1.0.20  
+**Atualizado:** 18 ago/2026 · app v1.0.21  
 **Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
 ---
@@ -45,7 +45,7 @@ SESSÃO (2–4 min) — implementada
   → insight “Hoje: …” → passos / streak
 ```
 
-- **3 profundidades** — Semente / Rota / Profundezas (operações cognitivas; conteúdo ainda precisa de edição)  
+- **3 profundidades** — Semente / Rota / Profundezas (operações cognitivas; P5 zerou stems clone; Profundezas ainda pedem edição humana)  
 - **Bíblia + Strong offline** — estudar na missão (ref do palco) e na aba Bíblia  
 - **Jornada coerente** — trilhas em rede no Firebase  
 - **Social leve** — Caravana, Companhia, Salas  
@@ -57,7 +57,7 @@ SESSÃO (2–4 min) — implementada
 | Gap | Honestidade |
 |-----|-------------|
 | Retenção medida (D7) | Protocolo + eventos prontos; falta rodada com 10–20 testers |
-| Escola no *conteúdo* | Shell + gestos ok; profundezas ainda podem clonar Semente |
+| Escola no *conteúdo* | Shell + gestos ok; banco P0–P6 (10.368) na nuvem; 89 V/F ainda soam pergunta; mix ainda ~44% Escolher |
 | Aquisição / marca / polish UI | Gigantes ganham por confiança e acabamento |
 | Assinatura no app | Pro desenhado; IAP ainda não ligado |
 

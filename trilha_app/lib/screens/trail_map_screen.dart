@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
+import '../services/content_catalog_service.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -49,12 +51,17 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     super.dispose();
   }
 
+  bool get _fromBank =>
+      trailUsesDifficultyBank(widget.slug) ||
+      QuestionBank.instance.hasBankForTrail(widget.slug);
+
   Future<void> _bootstrap() async {
+    await ContentCatalogService.instance.ensureLoaded();
     final trail = await _repo.getTrailBySlug(widget.slug);
     if (!mounted) return;
     setState(() => _trail = trail);
 
-    if (trailUsesDifficultyBank(widget.slug)) {
+    if (_fromBank) {
       final ok = await DifficultyPickerScreen.ensureSelected(
         context,
         trailSlug: widget.slug,
@@ -177,53 +184,70 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
-            child: ListView(
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-              AppSpace.screen,
-              32,
-            ),
-            children: [
-              TopBar(
-                inline: true,
-                immersive: true,
-                dark: true,
-                title: trail.title,
-                subtitle: 'Em breve',
-                onBack: () => Navigator.pop(context),
-                leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
-                chromeAccent: TrailVisuals.forTrail(trail).accent,
-              ),
-              const SizedBox(height: AppSpace.xxxl),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(AppSpace.xxxl),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    AppSpace.screen,
+                    MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                    AppSpace.screen,
+                    0,
+                  ),
+                  child: TopBar(
+                    inline: true,
+                    immersive: true,
+                    dark: true,
+                    title: trail.title,
+                    subtitle: 'Em breve',
+                    onBack: () => Navigator.pop(context),
+                    leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
+                    chromeAccent: TrailVisuals.forTrail(trail).accent,
+                  ),
+                ),
+                Expanded(
+                  child: ListView(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.xxxl,
+                      AppSpace.screen,
+                      32,
+                    ),
                     children: [
-                      CinematicIcon(
-                        glyph: CinematicGlyphResolver.forTrail(trail.slug),
-                        size: 72,
-                        accent: AppTheme.parseHex(trail.color),
-                      ),
-                      const SizedBox(height: AppSpace.section),
-                      Text(
-                        'Em breve',
-                        style: AppTypography.title(size: 24),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        trail.description,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(color: AppColors.textMuted),
+                      Center(
+                        child: Padding(
+                          padding: const EdgeInsets.all(AppSpace.xxxl),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              CinematicIcon(
+                                glyph: CinematicGlyphResolver.forTrail(
+                                  trail.slug,
+                                ),
+                                size: 72,
+                                accent: AppTheme.parseHex(trail.color),
+                              ),
+                              const SizedBox(height: AppSpace.section),
+                              Text(
+                                'Em breve',
+                                style: AppTypography.title(size: 24),
+                              ),
+                              const SizedBox(height: AppSpace.sm),
+                              Text(
+                                trail.description,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  color: AppColors.textMuted,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
           ),
         ),
       );
@@ -259,120 +283,125 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
-            child: ListView(
-                controller: _scrollController,
-                padding: EdgeInsets.fromLTRB(
-                  0,
-                  MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-                  0,
-                  64,
+            child: Column(
+              children: [
+                Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    AppSpace.screen,
+                    MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                    AppSpace.screen,
+                    0,
+                  ),
+                  child: TopBar(
+                    inline: true,
+                    immersive: true,
+                    dark: true,
+                    title: headerTitle,
+                    subtitle: eyebrow ??
+                        (_fromBank
+                            ? '$modeName · ${prog.done}/${prog.total} missões'
+                            : '${prog.done}/${prog.total} missões'),
+                    onBack: () => Navigator.pop(context),
+                    leadingGlyph: headerGlyph,
+                    chromeAccent: TrailVisuals.forTrail(trail).accent,
+                  ),
                 ),
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppSpace.screen,
-                    ),
-                    child: TopBar(
-                      inline: true,
-                      immersive: true,
-                      dark: true,
-                      title: headerTitle,
-                      subtitle: eyebrow ??
-                          (trailUsesDifficultyBank(widget.slug)
-                              ? '$modeName · ${prog.done}/${prog.total} missões'
-                              : '${prog.done}/${prog.total} missões'),
-                      onBack: () => Navigator.pop(context),
-                      leadingGlyph: headerGlyph,
-                      chromeAccent: TrailVisuals.forTrail(trail).accent,
-                    ),
-                  ),
-                  if (replayHint != null)
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        AppSpace.screen,
-                        AppSpace.sm,
-                        AppSpace.screen,
-                        0,
-                      ),
-                      child: _ModeReplayBanner(text: replayHint),
-                    ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpace.screen,
-                      AppSpace.md,
-                      AppSpace.screen,
-                      AppSpace.md,
-                    ),
-                    child: _TrailJourneyIntro(
-                      trailTitle: trail.title,
-                      done: prog.done,
-                      total: prog.total,
-                      difficultyLabel: trailUsesDifficultyBank(widget.slug)
-                          ? _difficultyLabel(difficultyId ?? 'semente')
-                          : null,
-                      progressCaption:
-                          '$modeName · ${prog.done} de ${prog.total} passos',
-                      onDifficultyTap:
-                          trailUsesDifficultyBank(widget.slug) &&
-                                  progress.hasDifficultyChoice(widget.slug)
-                              ? _changeDifficulty
+                Expanded(
+                  child: ListView(
+                    controller: _scrollController,
+                    padding: const EdgeInsets.fromLTRB(0, AppSpace.md, 0, 64),
+                    children: [
+                      if (replayHint != null)
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            AppSpace.screen,
+                            0,
+                            AppSpace.screen,
+                            0,
+                          ),
+                          child: _ModeReplayBanner(text: replayHint),
+                        ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpace.screen,
+                          AppSpace.md,
+                          AppSpace.screen,
+                          AppSpace.md,
+                        ),
+                        child: _TrailJourneyIntro(
+                          trailTitle: trail.title,
+                          done: prog.done,
+                          total: prog.total,
+                          difficultyLabel: _fromBank
+                              ? _difficultyLabel(difficultyId ?? 'semente')
                               : null,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpace.screen,
-                      AppSpace.xs,
-                      AppSpace.screen,
-                      AppSpace.sm,
-                    ),
-                    child: MilestoneChestsCard(
-                      trailSlug: trail.slug,
-                      done: prog.done,
-                      total: prog.total,
-                    ),
-                  ),
-                  ...trail.modules.asMap().entries.map((entry) {
-                    final mi = entry.key;
-                    final mod = entry.value;
-                    final start = trail.modules
-                        .take(mi)
-                        .fold(0, (sum, m) => sum + m.missions.length);
-                    final moduleTheme = GenesisModuleTheme.forModule(
-                      mod.title,
-                      realm: _realm,
-                      trailSlug: trail.slug,
-                    );
-                    final isActive = mi == activeModule;
-                    final modDone = mod.missions
-                        .where(
-                          (m) =>
-                              progress.completedMissions.contains(m.slug),
-                        )
-                        .length;
+                          progressCaption:
+                              '$modeName · ${prog.done} de ${prog.total} passos',
+                          onDifficultyTap:
+                              _fromBank &&
+                                      progress.hasDifficultyChoice(widget.slug)
+                                  ? _changeDifficulty
+                                  : null,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpace.screen,
+                          AppSpace.xs,
+                          AppSpace.screen,
+                          AppSpace.sm,
+                        ),
+                        child: MilestoneChestsCard(
+                          trailSlug: trail.slug,
+                          done: prog.done,
+                          total: prog.total,
+                        ),
+                      ),
+                      ...trail.modules.asMap().entries.map((entry) {
+                        final mi = entry.key;
+                        final mod = entry.value;
+                        final start = trail.modules
+                            .take(mi)
+                            .fold(0, (sum, m) => sum + m.missions.length);
+                        final moduleTheme = GenesisModuleTheme.forModule(
+                          mod.title,
+                          realm: _realm,
+                          trailSlug: trail.slug,
+                        );
+                        final isActive = mi == activeModule;
+                        final modDone = mod.missions
+                            .where(
+                              (m) => progress.completedMissions.contains(
+                                m.slug,
+                              ),
+                            )
+                            .length;
 
-                    final path = TrailMapPath(
-                      missions: mod.missions,
-                      startGlobalIndex: start,
-                      allSlugs: allSlugs,
-                      completedMissions: progress.completedMissions,
-                      theme: moduleTheme,
-                      onMissionTap: (slug) => Navigator.of(
-                        context,
-                      ).pushNamed('/lesson', arguments: slug),
-                    );
+                        final path = TrailMapPath(
+                          missions: mod.missions,
+                          startGlobalIndex: start,
+                          allSlugs: allSlugs,
+                          completedMissions: progress.completedMissions,
+                          theme: moduleTheme,
+                          onMissionTap: (slug) => Navigator.of(
+                            context,
+                          ).pushNamed('/lesson', arguments: slug),
+                        );
 
-                    return GenesisModuleScenery(
-                      theme: moduleTheme,
-                      moduleTitle: mod.title,
-                      sectionIndex: mi + 1,
-                      isActiveChapter: isActive,
-                      missionsDone: modDone,
-                      missionsTotal: mod.missions.length,
-                      child: path,
-                    );
-                  }),
-                ],
+                        return GenesisModuleScenery(
+                          theme: moduleTheme,
+                          moduleTitle: mod.title,
+                          sectionIndex: mi + 1,
+                          isActiveChapter: isActive,
+                          missionsDone: modDone,
+                          missionsTotal: mod.missions.length,
+                          child: path,
+                        );
+                      }),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ),
         ),

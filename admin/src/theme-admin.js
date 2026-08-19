@@ -2,9 +2,10 @@ const KEY = 'trilha-admin-theme';
 
 export function initTheme() {
   const saved = localStorage.getItem(KEY);
-  const dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const dark = saved !== 'light';
   document.documentElement.classList.toggle('theme-dark', dark);
   document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', dark ? 'dark' : 'light');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#070B14' : '#E8ECF2');
   return dark;
 }
 
@@ -17,6 +18,7 @@ export function toggleTheme() {
   document.documentElement.classList.toggle('theme-dark', dark);
   localStorage.setItem(KEY, dark ? 'dark' : 'light');
   document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', dark ? 'dark' : 'light');
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', dark ? '#070B14' : '#E8ECF2');
   return dark;
 }
 

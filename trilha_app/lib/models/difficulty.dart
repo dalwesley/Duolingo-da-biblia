@@ -181,6 +181,35 @@ class BankQuestion {
     );
   }
 
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'trail': trailSlug,
+      'difficulty': difficulty.id,
+      'section': section,
+      'question': question,
+      'options': options.map((o) => {'id': o.id, 'text': o.text}).toList(),
+      'correctOptionId': correctOptionId,
+      'feedbackCorrect': feedbackCorrect,
+      'feedbackWrong': feedbackWrong,
+      if (verseRef != null) 'verseRef': verseRef,
+      if (reveal != null) 'reveal': reveal,
+      'type': type.wireId,
+      if (prompt != null) 'prompt': prompt,
+      if (cue != null) 'cue': cue,
+      if (correctAnswer != null) 'correctAnswer': correctAnswer,
+      if (passageText != null) 'passageText': passageText,
+      if (template != null) 'template': template,
+      if (passageA != null) 'passageA': passageA!.toJson(),
+      if (passageB != null) 'passageB': passageB!.toJson(),
+      if (correctOrder.isNotEmpty) 'correctOrder': correctOrder,
+      if (note != null) 'note': note,
+      if (noteLabel != null) 'noteLabel': noteLabel,
+      if (beat != null) 'beat': beat,
+      if (skill != null) 'skill': skill,
+    };
+  }
+
   Question toQuestion({bool shuffleOptions = false, Random? rng}) {
     var opts = List<QuestionOption>.from(options);
     if (shuffleOptions) {

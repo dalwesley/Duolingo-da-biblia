@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
+import '../utils/lexicon_pt_overrides.dart';
 import '../utils/morphology.dart';
 
 class StudyToken {
@@ -80,6 +81,34 @@ class ConcordanceHit {
   });
 }
 
+class BookOccurrence {
+  final int bookIndex;
+  final int count;
+
+  const BookOccurrence({required this.bookIndex, required this.count});
+}
+
+/// Léxico + mapa de usos para uma entrada Strong.
+class StrongStudy {
+  final StrongEntry? entry;
+  final int occurrences;
+  final ConcordanceHit? first;
+  final ConcordanceHit? last;
+  final List<BookOccurrence> byBook;
+  final List<ConcordanceHit> nearby;
+  final List<ConcordanceHit> spread;
+
+  const StrongStudy({
+    required this.entry,
+    required this.occurrences,
+    required this.first,
+    required this.last,
+    required this.byBook,
+    required this.nearby,
+    required this.spread,
+  });
+}
+
 class VerseStudy {
   final List<StudyToken> tokens;
   final List<CrossRef> crossRefs;
@@ -135,16 +164,7 @@ class BibleStudyService {
       orderBy: 'pos ASC',
     );
     final tokens = [
-      for (final r in tokenRows)
-        StudyToken(
-          pos: r['pos'] as int,
-          surface: (r['surface'] as String?) ?? '',
-          translit: (r['translit'] as String?) ?? '',
-          gloss: (r['gloss'] as String?) ?? '',
-          strong: (r['strong'] as String?) ?? '',
-          morph: (r['morph'] as String?) ?? '',
-          morphLabel: expandMorphology(r['morph'] as String?),
-        ),
+      for (final r in tokenRows) _tokenFrom(r),
     ];
 
     final xrefRows = await db.query(
@@ -179,14 +199,16 @@ class BibleStudyService {
     );
     if (rows.isEmpty) return null;
     final r = rows.first;
+    final gloss = (r['gloss'] as String?) ?? '';
+    final definition = (r['definition'] as String?) ?? '';
     return StrongEntry(
       id: r['id'] as String,
       lang: (r['lang'] as String?) ?? key[0],
       lemma: (r['lemma'] as String?) ?? '',
       translit: (r['translit'] as String?) ?? '',
       morph: (r['morph'] as String?) ?? '',
-      gloss: (r['gloss'] as String?) ?? '',
-      definition: (r['definition'] as String?) ?? '',
+      gloss: overlayLexiconGloss(key, gloss),
+      definition: overlayLexiconDefinition(key, definition),
     );
   }
 
@@ -194,29 +216,40 @@ class BibleStudyService {
     String strongId, {
     int limit = 40,
   }) async {
+    return concordanceInBook(strongId, null, limit: limit);
+  }
+
+  Future<List<ConcordanceHit>> concordanceInBook(
+    String strongId,
+    int? bookIndex, {
+    int limit = 40,
+  }) async {
     final db = await _database();
     final key = _normalizeStrong(strongId);
-    final rows = await db.rawQuery(
-      '''
-      SELECT book, chapter, verse, gloss, surface
-      FROM tokens
-      WHERE strong = ?
-      GROUP BY book, chapter, verse
-      ORDER BY book, chapter, verse
-      LIMIT ?
-      ''',
-      [key, limit],
-    );
-    return [
-      for (final r in rows)
-        ConcordanceHit(
-          bookIndex: r['book'] as int,
-          chapter: r['chapter'] as int,
-          verse: r['verse'] as int,
-          gloss: (r['gloss'] as String?) ?? '',
-          surface: (r['surface'] as String?) ?? '',
-        ),
-    ];
+    final rows = bookIndex == null
+        ? await db.rawQuery(
+            '''
+            SELECT book, chapter, verse, gloss, surface
+            FROM tokens
+            WHERE strong = ?
+            GROUP BY book, chapter, verse
+            ORDER BY book, chapter, verse
+            LIMIT ?
+            ''',
+            [key, limit],
+          )
+        : await db.rawQuery(
+            '''
+            SELECT book, chapter, verse, gloss, surface
+            FROM tokens
+            WHERE strong = ? AND book = ?
+            GROUP BY book, chapter, verse
+            ORDER BY chapter, verse
+            LIMIT ?
+            ''',
+            [key, bookIndex, limit],
+          );
+    return _hitsFrom(key, rows);
   }
 
   Future<int> occurrenceCount(String strongId) async {
@@ -227,6 +260,134 @@ class BibleStudyService {
       [key],
     );
     return (rows.first['c'] as int?) ?? 0;
+  }
+
+  Future<List<BookOccurrence>> occurrenceByBook(String strongId) async {
+    final db = await _database();
+    final key = _normalizeStrong(strongId);
+    final rows = await db.rawQuery(
+      '''
+      SELECT book, COUNT(DISTINCT chapter || ':' || verse) AS c
+      FROM tokens WHERE strong = ?
+      GROUP BY book ORDER BY book
+      ''',
+      [key],
+    );
+    return [
+      for (final r in rows)
+        BookOccurrence(
+          bookIndex: r['book'] as int,
+          count: (r['c'] as int?) ?? 0,
+        ),
+    ];
+  }
+
+  Future<ConcordanceHit?> _edgeOccurrence(String key, {required bool last}) async {
+    final db = await _database();
+    final dir = last ? 'DESC' : 'ASC';
+    final rows = await db.rawQuery(
+      '''
+      SELECT book, chapter, verse, gloss, surface
+      FROM tokens WHERE strong = ?
+      GROUP BY book, chapter, verse
+      ORDER BY book $dir, chapter $dir, verse $dir
+      LIMIT 1
+      ''',
+      [key],
+    );
+    if (rows.isEmpty) return null;
+    return _hitsFrom(key, rows).first;
+  }
+
+  Future<ConcordanceHit?> _firstInBook(String key, int bookIndex) async {
+    final rows = await (await _database()).rawQuery(
+      '''
+      SELECT book, chapter, verse, gloss, surface
+      FROM tokens WHERE strong = ? AND book = ?
+      GROUP BY book, chapter, verse
+      ORDER BY chapter, verse
+      LIMIT 1
+      ''',
+      [key, bookIndex],
+    );
+    if (rows.isEmpty) return null;
+    return _hitsFrom(key, rows).first;
+  }
+
+  /// Léxico + concordância em torno do versículo, não só o prefixo da Bíblia.
+  Future<StrongStudy> studyStrong(
+    String strongId, {
+    required int bookIndex,
+    required int chapter,
+    required int verse,
+  }) async {
+    assert(chapter >= 1 && verse >= 1);
+    final key = _normalizeStrong(strongId);
+    final packed = await Future.wait([
+      strong(key),
+      occurrenceByBook(key),
+      concordanceInBook(key, bookIndex, limit: 48),
+      _edgeOccurrence(key, last: false),
+      _edgeOccurrence(key, last: true),
+    ]);
+    final entry = packed[0] as StrongEntry?;
+    final byBook = packed[1] as List<BookOccurrence>;
+    final nearby = packed[2] as List<ConcordanceHit>;
+    final first = packed[3] as ConcordanceHit?;
+    final last = packed[4] as ConcordanceHit?;
+    final occ = byBook.fold<int>(0, (s, b) => s + b.count);
+
+    final others = [
+      ...byBook.where((b) => b.bookIndex != bookIndex),
+    ]..sort((a, b) => b.count.compareTo(a.count));
+    final spread = <ConcordanceHit>[];
+    final samples = await Future.wait([
+      for (final b in others.take(8)) _firstInBook(key, b.bookIndex),
+    ]);
+    for (final h in samples) {
+      if (h != null) spread.add(h);
+    }
+
+    return StrongStudy(
+      entry: entry,
+      occurrences: occ,
+      first: first,
+      last: last,
+      byBook: byBook,
+      nearby: nearby,
+      spread: spread,
+    );
+  }
+
+  static StudyToken _tokenFrom(Map<String, Object?> r) {
+    final strong = (r['strong'] as String?) ?? '';
+    final key = _normalizeStrong(strong);
+    final morph = r['morph'] as String?;
+    return StudyToken(
+      pos: r['pos'] as int,
+      surface: (r['surface'] as String?) ?? '',
+      translit: (r['translit'] as String?) ?? '',
+      gloss: overlayLexiconGloss(key, (r['gloss'] as String?) ?? ''),
+      strong: strong,
+      morph: morph ?? '',
+      morphLabel: expandMorphology(morph),
+    );
+  }
+
+  static List<ConcordanceHit> _hitsFrom(
+    String strongId,
+    List<Map<String, Object?>> rows,
+  ) {
+    return [
+      for (final r in rows)
+        ConcordanceHit(
+          bookIndex: r['book'] as int,
+          chapter: r['chapter'] as int,
+          verse: r['verse'] as int,
+          gloss: overlayLexiconGloss(strongId, (r['gloss'] as String?) ?? ''),
+          surface: (r['surface'] as String?) ?? '',
+        ),
+    ];
   }
 
   static String _normalizeStrong(String raw) {

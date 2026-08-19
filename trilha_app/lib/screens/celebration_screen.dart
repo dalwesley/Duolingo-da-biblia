@@ -62,7 +62,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _trailComplete = false;
   int _awardedSteps = 0;
   int _leagueRank = 0;
-  bool _nearPromote = false;
+  bool _inPromotionZone = false;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -202,7 +202,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 roomCode: room,
                 league: league,
               );
-              // Placar da caravana no fim da missão.
+              // Posição na caravana no fim da missão.
               try {
                 final peers = await backend.fetchWeekPlayers(
                   LeagueService.weekKey(),
@@ -220,7 +220,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 if (mounted) {
                   setState(() {
                     _leagueRank = rank;
-                    _nearPromote = rank > 0 &&
+                    _inPromotionZone = rank > 0 &&
                         rank <= LeagueService.promoteCount &&
                         league.tierIndex < LeagueTier.values.length - 1;
                   });
@@ -340,12 +340,17 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     return AppColors.primary;
   }
 
-  String get _headline {
-    if (widget.perfect) return 'COMBO PERFEITO';
-    if (widget.isReplay) return 'Revisão no placar';
-    if (widget.isBoss) return 'BOSS DERROTADO';
-    return 'MISSÃO NO PLACAR';
-  }
+  String get _kicker => CelebrationCopy.kicker(
+        perfect: widget.perfect,
+        isReplay: widget.isReplay,
+        isBoss: widget.isBoss,
+      );
+
+  String get _headline => CelebrationCopy.headline(
+        perfect: widget.perfect,
+        isReplay: widget.isReplay,
+        isBoss: widget.isBoss,
+      );
 
   @override
   Widget build(BuildContext context) {
@@ -438,13 +443,27 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     opacity: _titleOpacity,
                                     child: SlideTransition(
                                       position: _titleSlide,
-                                      child: Text(
-                                        _headline,
-                                        textAlign: TextAlign.center,
-                                        style: AppTypography.display(
-                                          size: 30,
-                                          height: 1.05,
-                                        ),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            _kicker,
+                                            textAlign: TextAlign.center,
+                                            style: AppTypography.label(
+                                              size: 11,
+                                              letterSpacing: 2.4,
+                                              color: AppColors.accent,
+                                            ),
+                                          ),
+                                          const SizedBox(height: 8),
+                                          Text(
+                                            _headline,
+                                            textAlign: TextAlign.center,
+                                            style: AppTypography.display(
+                                              size: 34,
+                                              height: 1.08,
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
                                   ),
@@ -456,19 +475,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       child: Column(
                                         children: [
                                           MascotBubble(
+                                            glowing: true,
                                             message: MascotMessages.celebration(
                                               isBoss: isBoss,
                                               pct: pct,
                                               perfect: widget.perfect,
-                                              leagueRank: _leagueRank > 0
-                                                  ? _leagueRank
-                                                  : null,
-                                              nearPromote: _nearPromote,
+                                              isReplay: widget.isReplay,
                                             ),
                                           ),
-                                          if (widget.perfect ||
-                                              widget.isBoss ||
-                                              _leagueRank > 0) ...[
+                                          if (widget.perfect || widget.isBoss) ...[
                                             const SizedBox(height: AppSpace.md),
                                             Wrap(
                                               spacing: 8,
@@ -485,17 +500,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                     label: 'BOSS',
                                                     color: AppColors.sand,
                                                   ),
-                                                if (_nearPromote)
-                                                  const _ComboChip(
-                                                    label: 'QUASE SOBE',
-                                                    color: AppColors.ember,
-                                                  )
-                                                else if (_leagueRank > 0)
-                                                  _ComboChip(
-                                                    label: '$_leagueRankº CARAVANA',
-                                                    color: AppColors.teal,
-                                                  ),
                                               ],
+                                            ),
+                                          ],
+                                          if (_leagueRank > 0) ...[
+                                            const SizedBox(height: AppSpace.lg),
+                                            _CaravanaMoment(
+                                              rank: _leagueRank,
+                                              inPromotionZone: _inPromotionZone,
                                             ),
                                           ],
                                           if (_showGoalBanner) ...[
@@ -554,6 +566,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                   color: AppColors.accent,
                                                   delay: 0,
                                                   pulse: _pulse,
+                                                  featured: true,
                                                 ),
                                               ),
                                               const SizedBox(width: AppSpace.sm),
@@ -561,7 +574,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                 child: _StatCard(
                                                   glyph: CinematicGlyph.flame,
                                                   value: '$streakShown',
-                                                  label: 'Dias',
+                                                  label: streakShown == 1 ? 'Dia' : 'Dias',
                                                   color: AppColors.streak,
                                                   delay: 0.08,
                                                   pulse: _pulse,
@@ -987,6 +1000,7 @@ class _StatCard extends StatelessWidget {
   final Color color;
   final double delay;
   final AnimationController pulse;
+  final bool featured;
 
   const _StatCard({
     required this.glyph,
@@ -995,6 +1009,7 @@ class _StatCard extends StatelessWidget {
     required this.color,
     required this.delay,
     required this.pulse,
+    this.featured = false,
   });
 
   @override
@@ -1025,6 +1040,8 @@ class _StatCard extends StatelessWidget {
           horizontal: AppSpace.sm,
         ),
         radius: AppRadii.md,
+        accent: featured,
+        tint: featured ? color : null,
         child: Column(
           children: [
             CinematicIcon(
@@ -1035,7 +1052,13 @@ class _StatCard extends StatelessWidget {
               glowing: false,
             ),
             const SizedBox(height: AppSpace.xs),
-            Text(value, style: AppTypography.title(size: 16, color: a.text)),
+            Text(
+              value,
+              style: AppTypography.title(
+                size: featured ? 18 : 16,
+                color: featured ? color : a.text,
+              ),
+            ),
             Text(
               label,
               style: AppTypography.label(
@@ -1047,6 +1070,74 @@ class _StatCard extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _CaravanaMoment extends StatelessWidget {
+  final int rank;
+  final bool inPromotionZone;
+
+  const _CaravanaMoment({
+    required this.rank,
+    required this.inPromotionZone,
+  });
+
+  String get _title => CelebrationCopy.caravanaTitle(
+        rank: rank,
+        inPromotionZone: inPromotionZone,
+      );
+
+  String get _detail => CelebrationCopy.caravanaDetail(
+        rank: rank,
+        inPromotionZone: inPromotionZone,
+      );
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final accent = inPromotionZone ? AppColors.accent : AppColors.teal;
+    return GlassCard(
+      accent: inPromotionZone,
+      tint: inPromotionZone ? AppColors.accent : AppColors.teal,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        AppSpace.md,
+        AppSpace.lg,
+        AppSpace.md,
+      ),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: inPromotionZone ? CinematicGlyph.rise : CinematicGlyph.people,
+            size: 40,
+            accent: accent,
+            glowing: inPromotionZone,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  _title,
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  _detail,
+                  style: AppTypography.body(
+                    size: 12,
+                    height: 1.35,
+                    weight: FontWeight.w600,
+                    color: a.textMuted(0.72),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

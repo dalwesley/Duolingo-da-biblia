@@ -62,21 +62,24 @@ O app lê o currículo da nuvem. Seed = copiar `trilha_app/assets/data/*.json` p
 
 ### Comandos (como fizemos)
 
+Caminho real com conta Google-only (`stway.app@gmail.com`): **Firebase CLI**, não Email/Password.
+
 ```bash
-cd admin
+# Da raiz do monorepo — trilhas + banco + estudos + catalog.version
+make seed_full
+# equivalente:
+cd admin && npm run seed:cli
 
-# Só publicar o que já está no JSON local (não reescreve gestos/Profundezas)
-SEED_ONLY=sermao npm run seed
-# equivalente / lote:
-SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 node scripts/seed_content.mjs
-
-# Re-normalizar assets + migrar gestos + enriquecer + subir tudo
-# (cuidado: migrate/enrich podem mexer em Profundezas editoriais)
-npm run seed:refresh
+# Só o banco (SEED_ONLY=bank por default no Makefile)
+make seed
+make seed SEED_ONLY=ot
 ```
 
-`npm run seed` = **só** `node scripts/seed_content.mjs`.  
-`npm run seed:refresh` = `prepare` + `migrate` + `enrich` + seed.
+`npm run seed:cli` = `node scripts/seed_content_cli.mjs` (OAuth do `firebase login`).  
+`npm run seed` = client SDK Email/Password (`seed_content.mjs`) — falha em contas Google-only.  
+`npm run seed:refresh` = `prepare` + `migrate` + `enrich` + seed — **não** rerodar após o reparo P0–P6 (reescreve o banco editorial).
+
+Último seed completo: **18 ago 2026** · 10.368 atos · 84 trilhas · 431 estudos · `catalog.version` 1787096847621.
 
 ### Auth — o que NÃO fazer
 
@@ -97,7 +100,7 @@ Por isso:
 3. Alternativa estável: no Console, **Add user** com e-mail/senha **só para seed**, documente em `admin_users/{uid}`, e use esse par no `.env`.
 4. Ou: `npm run dev` no painel, entre autenticado, use **Importar**.
 
-Não inventar senha para conta Google-only e colar no `.env` — não vai autenticar o `seed_content.mjs`.
+Não inventar senha para conta Google-only e colar no `.env` — não vai autenticar o `seed_content.mjs`. Use `make seed_full`.
 
 ## Deploy do painel
 
@@ -111,4 +114,4 @@ firebase deploy --only hosting
 
 ## App Flutter
 
-`ContentCatalogService` lê o Firestore, cacheia em `SharedPreferences` e cai nos assets locais se offline / vazio.
+`ContentCatalogService` lê o Firestore, cacheia JSON em disco (`content_catalog/`) e compara `content_meta/catalog.version`. Currículo **não** vem empacotado no APK (só Bíblia + Strong). Question Studio: `admin/src/question-studio.js`.

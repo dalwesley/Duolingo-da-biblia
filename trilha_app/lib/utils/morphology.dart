@@ -5,9 +5,14 @@ String expandMorphology(String? code) {
   if (code == null || code.trim().isEmpty) return '';
   final raw = code.trim();
   if (raw.contains('/')) {
-    return raw
-        .split('/')
-        .map((p) => expandMorphology(p))
+    final segs = raw.split('/');
+    final hebrewCompound = raw.startsWith('H') || raw.startsWith('A');
+    return segs
+        .map((p) {
+          if (p.startsWith('H') || p.startsWith('A')) return expandMorphology(p);
+          if (hebrewCompound) return _hebrew(p);
+          return expandMorphology(p);
+        })
         .where((s) => s.isNotEmpty)
         .join(' · ');
   }
@@ -16,6 +21,18 @@ String expandMorphology(String? code) {
   }
   // Grego Robinson / STEP (N-NSF, V-PAI-3S, …)
   return _greek(raw);
+}
+
+/// Partes gramaticais para chips — sem a língua (já visível no léxico).
+List<String> morphologyChips(String? code) {
+  final expanded = expandMorphology(code);
+  if (expanded.isEmpty) return const [];
+  const langs = {'hebraico', 'aramaico', 'grego'};
+  return expanded
+      .split(RegExp(r'\s*[·,]\s*'))
+      .map((s) => s.trim())
+      .where((s) => s.isNotEmpty && !langs.contains(s.toLowerCase()))
+      .toList();
 }
 
 String _hebrew(String code) {
@@ -95,6 +112,41 @@ String _hebrew(String code) {
   if (rest.startsWith('N')) {
     parts.add('substantivo');
     var j = 1;
+    if (j < rest.length) {
+      final cls = rest[j];
+      final next = j + 1 < rest.length ? rest[j + 1] : '';
+      const nounClass = {
+        'c': 'comum',
+        'g': 'gentílico',
+        'p': 'próprio',
+        't': 'título',
+      };
+      var takeClass = false;
+      if (cls == 'p') {
+        // HNpm / HNpl / HNpt — `p` é próprio, não plural.
+        takeClass = next.isEmpty || 'mflt'.contains(next);
+      } else if (nounClass.containsKey(cls)) {
+        takeClass = next.isEmpty || 'mfbcsdpa'.contains(next);
+      }
+      if (takeClass) {
+        if (cls != 'c') {
+          parts.add(nounClass[cls]!);
+        }
+        j++;
+        if (cls == 'p') {
+          const proper = {
+            'm': 'masc.',
+            'f': 'fem.',
+            'l': 'lugar',
+            't': 'nome divino',
+          };
+          if (j < rest.length && proper.containsKey(rest[j])) {
+            parts.add(proper[rest[j]]!);
+          }
+          return parts.join(', ');
+        }
+      }
+    }
     if (j < rest.length) {
       const gender = {'m': 'masc.', 'f': 'fem.', 'c': 'comum', 'b': 'ambos'};
       if (gender.containsKey(rest[j])) {

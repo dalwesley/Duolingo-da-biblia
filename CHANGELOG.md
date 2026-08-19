@@ -9,6 +9,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+### Content
+- Banco P0–P6 no Firestore: **10.368** atos, 84 trilhas, 431 estudos (`make seed_full`, 18 ago 2026, `catalog.version` 1787096847621)
+
 ---
 
 ## [1.0.21] — 2026-08-14

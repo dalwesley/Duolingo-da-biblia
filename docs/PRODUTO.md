@@ -1,7 +1,7 @@
 # STWAY — Documentação de produto
 
-**Atualizado:** ago/2026  
-**Versão do app:** 1.0.20  
+**Atualizado:** 18 ago/2026  
+**Versão do app:** 1.0.21  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
@@ -14,9 +14,9 @@
 | Camada | Situação |
 |--------|----------|
 | **Shell de sessão** | Pronto — entrada → gestos mistos → insight → saída |
-| **Conteúdo no Firebase** | Alinhado ao local (~6.5k perguntas, 84 trilhas) |
+| **Conteúdo no Firebase** | Alinhado ao local (**10.368** perguntas, 84 trilhas, 431 estudos) — seed CLI 18 ago 2026 |
 | **UI / UX** | Tema escuro cinemático, 5 tabs, painéis de jogo — polish ainda abaixo de YouVersion/Hallow |
-| **Escola no conteúdo** | Gestos + skills no banco; profundezas ainda pedem edição humana |
+| **Escola no conteúdo** | Gestos + skills no banco; fábrica (iscas dummy) zerada; mix ainda privilegia Escolher (~44%); Profundezas ainda pedem edição humana |
 | Strong | Offline na aba Bíblia **e** na missão (toque na referência do ato → Estudar) |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); falta execução com 10–20 testers |
 | **Monetização** | Sem IAP |
@@ -53,7 +53,7 @@ Cristãos de língua portuguesa que querem:
 | Hábito diário | Missão do dia, quests, streak, lembretes locais |
 | Profundidade | 3 níveis cognitivos (Semente / Rota / Profundezas) + Strong offline |
 | Social leve | Caravana (liga semanal), Companhia 1:1, Salas de estudo |
-| Conteúdo vivo | CMS admin no Firebase — atualiza sem release na loja |
+| Conteúdo vivo | CMS admin no Firebase (studio com preview do ato) — atualiza sem release na loja |
 
 Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em ler, compreender, conectar, interpretar, lembrar ou viver a Palavra?*
 
@@ -149,10 +149,10 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 
 | Item | Status |
 |------|--------|
-| Banco tipado + skills | Seedado; gestos mistos no player |
+| Banco tipado + skills | **10.368** atos no Firestore; 1.296 pools com 8 atos; gestos mistos no player |
 | Objective / insight / hooks nas missões | Presentes no catálogo |
 | Spec histórica Imagem de Deus | [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) |
-| Sermão do Monte e demais trilhas | No Firebase; qualidade editorial varia |
+| Sermão do Monte e demais trilhas | No Firebase (71 live / 13 coming soon); qualidade editorial ainda varia |
 
 ### UI / UX (resumo)
 
@@ -198,7 +198,7 @@ Regra de feature: *aumenta conclusão de missão, retenção ou retorno em 7 dia
 | Superfície | Quem | Função |
 |------------|------|--------|
 | App Flutter (`trilha_app`) | Aprendiz | Treino diário |
-| Admin (`admin`) | Editor / admin | Publicar currículo, banco, estudos, moderar relatos, release remoto |
+| Admin (`admin`) | Editor / admin | Publicar currículo, banco, estudos, Question Studio + preview, moderar relatos, release remoto |
 
 Pipeline editorial: [`LEARNING_ENGINE.md` §42–43](LEARNING_ENGINE.md).
 

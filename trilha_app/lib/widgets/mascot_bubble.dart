@@ -5,19 +5,25 @@ import 'trilha_mascot.dart';
 class MascotBubble extends StatelessWidget {
   final String message;
   final bool dark;
+  final bool glowing;
 
-  const MascotBubble({super.key, required this.message, this.dark = true});
+  const MascotBubble({
+    super.key,
+    required this.message,
+    this.dark = true,
+    this.glowing = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        const TrilhaMascot(size: 48, glowing: false),
+        TrilhaMascot(size: glowing ? 56 : 48, glowing: glowing),
         const SizedBox(width: 12),
         Expanded(
           child: Container(
-            padding: const EdgeInsets.all(14),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
               color: dark ? Colors.black.withValues(alpha: 0.35) : AppColors.card,
               borderRadius: const BorderRadius.only(
@@ -27,9 +33,17 @@ class MascotBubble extends StatelessWidget {
               ),
               border: Border.all(
                 color: dark
-                    ? AppColors.accent.withValues(alpha: 0.65)
+                    ? AppColors.accent.withValues(alpha: glowing ? 0.85 : 0.65)
                     : Colors.black.withValues(alpha: 0.08),
               ),
+              boxShadow: glowing
+                  ? [
+                      BoxShadow(
+                        color: AppColors.accent.withValues(alpha: 0.22),
+                        blurRadius: 18,
+                      ),
+                    ]
+                  : null,
             ),
             child: Text(
               message,

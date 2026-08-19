@@ -1,6 +1,6 @@
 # Roadmap STWAY — formação bíblica com hábito
 
-**Atualizado:** ago/2026 (D7 no Sermão + Profundezas da vitrine + widget iOS).
+**Atualizado:** 18 ago/2026 (banco P0–P6 no Firestore + D7 no Sermão + widget iOS).
 
 **Norte:** missões diárias em português para aprender a Bíblia de verdade — sessões curtas + estudo original offline.
 Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem escola), nem trivia vazia.
@@ -33,7 +33,7 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 ## Feito (base)
 
 - [x] Congelar frase-mãe / filtro de features (este doc)
-- [x] **Publicar conteúdo no Firebase** (trails + studies + bank) — app já lê da nuvem
+- [x] **Publicar conteúdo no Firebase** (trails + studies + bank) — **10.368** atos, 84 trilhas, 431 estudos; `catalog.version` 1787096847621 (seed CLI 18 ago 2026)
 - [x] Instrumentar loop: abertura → missão iniciada → concluída → D1/D7 (+ analytics de pergunta)
 - [x] Currículo amplo no catálogo (AT panorâmico + Evangelhos + Epístolas + Atos/Apocalipse densos)
 - [x] **Gênesis 12–50** jogável (Abraão → José)
@@ -71,9 +71,9 @@ Mapa real (fonte: `trails.json` / Firebase):
 
 ## Agora — provar o loop (1–4 semanas)
 
-Foco: **publicar no Firebase + usuários reais**. Buracos estruturais do caminho e studies do Sermão fechados no asset local.
+Foco: **usuários reais no Sermão**. Banco P0–P6 já está no Firestore (local ≈ nuvem).
 
-- [x] **Seed** trails + studies + banks no Firebase (`seed_content.mjs` — ago/2026)
+- [x] **Seed** trails + studies + banks no Firebase (`make seed_full` / `seed_content_cli.mjs` — 18 ago 2026, **10.368** atos)
 - [x] **Catálogo:** default fechado (loja); teste com `--dart-define=OPEN_ALL_TRAILS=true`
 - [x] Protocolo D7 + eventos `retention_pulse` / `first_lesson_complete` — [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md)
 - [x] **Profundezas cena 1** (sm-01…05) reescritas como interpretar/conectar — não clone de Semente
@@ -206,7 +206,7 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 
 ### Ordem de execução (resumo)
 
-1. **Seed Firebase** — publicar assets (trails, studies, nt/sermao banks)
+1. ~~**Seed Firebase**~~ — **feito** 18 ago 2026 (10.368 atos · P0–P6)
 2. **Prova** — 10–20 testers + D7 no Sermão e 1 volta no caminho Criação→NT
 3. **Prática** — `lifeChallenge` leve + check-in + follow-up
 4. **Motor** — steps configuráveis só se D7 / conclusão pedirem

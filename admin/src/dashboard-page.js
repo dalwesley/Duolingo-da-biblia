@@ -7,7 +7,7 @@ import {
 } from './db.js';
 import { escapeHtml, showToast } from './ui.js';
 
-export async function renderDashboard(root) {
+export async function renderDashboard(root, navigate) {
   root.innerHTML = `<div class="ez-page"><div class="ez-skeleton">Carregando…</div></div>`;
 
   const [trails, bank, studies, meta, release] = await Promise.all([
@@ -30,23 +30,52 @@ export async function renderDashboard(root) {
       <header class="ez-hero">
         <div>
           <p class="ez-kicker">Painel STWAY</p>
-          <h1>Olá — o que vamos publicar hoje?</h1>
-          <p class="ez-lead">Tudo que você salva aqui chega no app sem precisar de nova versão na loja.</p>
+          <h1>Cadastre perguntas em minutos</h1>
+          <p class="ez-lead">Trilha → passo com verso → pergunta. Tudo chega no app sem nova versão na loja.</p>
         </div>
+        <button type="button" class="btn btn-primary btn-lg" data-route="bank">+ Nova pergunta</button>
       </header>
+
+      <div class="ez-flow-card">
+        <ol class="ez-flow-steps">
+          <li>
+            <span class="ez-flow-n">1</span>
+            <div>
+              <strong>Abra a trilha</strong>
+              <p>Crie ou escolha uma trilha e escreva o passo com título e verso.</p>
+              <button type="button" class="btn btn-secondary btn-sm" data-route="trails">Ir para trilhas</button>
+            </div>
+          </li>
+          <li>
+            <span class="ez-flow-n">2</span>
+            <div>
+              <strong>Adicione a pergunta</strong>
+              <p>Toque no tipo (Quiz, V/F, Complete) ou use “Gerar do verso”.</p>
+              <button type="button" class="btn btn-primary btn-sm" data-route="bank">Cadastrar pergunta</button>
+            </div>
+          </li>
+          <li>
+            <span class="ez-flow-n">3</span>
+            <div>
+              <strong>Revise e salve</strong>
+              <p>A miniatura mostra como fica no celular. Ajuste e publique.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
 
       <div class="ez-actions-grid">
         <button type="button" class="ez-action primary" data-route="trails">
           <span class="ez-action-icon">🗺️</span>
-          <strong>Editar trilhas</strong>
-          <span>Passos e perguntas</span>
+          <strong>Trilhas</strong>
+          <span>Passos e versos âncora</span>
           <em>${trails} trilhas</em>
         </button>
         <button type="button" class="ez-action" data-route="bank">
           <span class="ez-action-icon">❓</span>
-          <strong>Banco de perguntas</strong>
-          <span>Questões reutilizáveis</span>
-          <em>${bank} itens</em>
+          <strong>Perguntas</strong>
+          <span>Quiz, V/F, complete…</span>
+          <em>${bank} cadastradas</em>
         </button>
         <button type="button" class="ez-action" data-route="studies">
           <span class="ez-action-icon">📖</span>
@@ -57,30 +86,22 @@ export async function renderDashboard(root) {
         <button type="button" class="ez-action" data-route="reports">
           <span class="ez-action-icon">⚑</span>
           <strong>Relatos</strong>
-          <span>Erros teológicos e de conteúdo</span>
-          <em>Revisão da comunidade</em>
+          <span>Revisão da comunidade</span>
+          <em>Erros reportados</em>
         </button>
         <button type="button" class="ez-action" data-route="import">
-          <span class="ez-action-icon">⬆️</span>
+          <span class="ez-action-icon">↕️</span>
           <strong>Importar</strong>
-          <span>Enviar JSON local de uma vez</span>
+          <span>Backup em lote</span>
           <em>Catálogo v${meta?.version ?? 0}</em>
         </button>
       </div>
 
-      <div class="ez-panel soft">
-        <h2>Como publicar</h2>
-        <ol class="ez-howto">
-          <li><strong>Crie a trilha</strong> — só o nome (ex.: Êxodo)</li>
-          <li><strong>Escreva os passos</strong> — título, texto e versículo</li>
-          <li><strong>Adicione as perguntas</strong> — e salve</li>
-        </ol>
-        <p class="ez-hint">Última atualização do catálogo: ${escapeHtml(updated)}</p>
-      </div>
+      <p class="ez-foot-hint">Última atualização do catálogo: ${escapeHtml(updated)}</p>
 
-      <div class="ez-panel">
-        <h2>Versão do app (lojas)</h2>
-        <p class="ez-hint">Quando subir um build novo, aumente <code>latestBuild</code>. Use <code>minBuild</code> só para forçar update.</p>
+      <details class="ez-panel soft ez-advanced-panel">
+        <summary>Versão do app (lojas)</summary>
+        <p class="ez-hint">Quando subir build novo, aumente <code>latestBuild</code>. Use <code>minBuild</code> só para forçar update.</p>
         <form id="app-release-form" class="ez-form" style="margin-top:12px;display:grid;gap:10px;max-width:520px">
           <label>
             <span>Ativo</span>
@@ -112,8 +133,15 @@ export async function renderDashboard(root) {
           </label>
           <button type="submit" class="btn btn-primary">Salvar versão</button>
         </form>
-      </div>
+      </details>
     </div>`;
+
+  root.querySelectorAll('[data-route]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      navigate?.(a.dataset.route);
+    });
+  });
 
   root.querySelector('#app-release-form')?.addEventListener('submit', async (e) => {
     e.preventDefault();

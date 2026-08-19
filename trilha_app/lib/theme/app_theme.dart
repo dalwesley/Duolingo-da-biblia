@@ -57,6 +57,30 @@ class AppTypography {
     fontStyle: fontStyle,
   );
 
+  /// Lema hebraico / grego — léxico Strong e palavras originais.
+  static TextStyle original({
+    required bool hebrew,
+    double size = 28,
+    FontWeight weight = FontWeight.w600,
+    Color color = AppColors.textOnDark,
+    double height = 1.35,
+  }) {
+    if (hebrew) {
+      return GoogleFonts.notoSerifHebrew(
+        fontSize: size,
+        fontWeight: weight,
+        color: color,
+        height: height,
+      );
+    }
+    return GoogleFonts.ebGaramond(
+      fontSize: size,
+      fontWeight: weight,
+      color: color,
+      height: height,
+    );
+  }
+
   static TextStyle title({
     double size = 18,
     FontWeight weight = FontWeight.w800,

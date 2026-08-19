@@ -1,8 +1,9 @@
 # STWAY — Documentação técnica
 
-**Atualizado:** ago/2026  
+**Atualizado:** 18 ago/2026  
 **Monorepo:** `trilha_app/` (Flutter) + `admin/` (Vite)  
-**Firebase project:** `trilha-biblia`
+**Firebase project:** `trilha-biblia`  
+**App:** 1.0.21+21
 
 ---
 
@@ -27,7 +28,7 @@ Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`
 
 JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
-**Estado ago/2026:** catálogo local ≈ remoto (~6538 perguntas, 84 trilhas, 431 estudos). `OPEN_ALL_TRAILS` default `false` (loja); testers: `--dart-define=OPEN_ALL_TRAILS=true`. Login: Google + Apple (iOS).
+**Estado 18 ago/2026:** catálogo local ≈ remoto (**10.368** perguntas, 84 trilhas, 431 estudos). `content_meta/catalog.version` = `1787096847621` (seed CLI, P0–P6). `OPEN_ALL_TRAILS` default `false` (loja); testers: `--dart-define=OPEN_ALL_TRAILS=true`. Login: Google + Apple (iOS).
 
 ---
 
@@ -151,8 +152,8 @@ Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 | Rota | Função |
 |------|--------|
 | `dashboard` | Contagens, versão do catálogo, `app_release` |
-| `trails` / `trail:{slug}` | CRUD de trilhas e editor aninhado |
-| `bank` | Banco reutilizável de perguntas |
+| `trails` / `trail:{slug}` | CRUD de trilhas e editor aninhado (+ preview intro/insight/card) |
+| `bank` | Banco reutilizável + Question Studio (gesto, profundidade, miniatura do ato) |
 | `studies` | Preparos por slug de passo |
 | `reports` | Moderação de relatos |
 | `import` | Upload JSON em lote |
@@ -165,7 +166,7 @@ Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 
 ### Módulos chave
 
-`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, scripts em `admin/scripts/` (`seed`, `prepare:content`).
+`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, `question-studio.js` / `content-preview.js`, scripts em `admin/scripts/` (`seed:cli`, `seed`, `prepare:content`).
 
 ---
 
@@ -339,10 +340,11 @@ Contrato: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.1 — **modo único**, vári
 | Script / superfície | Papel |
 |---------------------|------|
 | `prepare_content.mjs` | normaliza assets locais |
-| `migrate_session_pattern.mjs` | tipa gestos, stamp hooks/insight/objective |
-| `enrich_content.mjs` | skills + profundezas heurísticas |
-| `seed_content.mjs` | sobe Firestore (`SEED_ONLY`, `SEED_BANKS`, chunk) |
-| `trails-page.js` / `bank-page.js` | editores CMS |
+| `migrate_session_pattern.mjs` | tipa gestos, stamp hooks/insight/objective — **não** rerodar após P0–P6 |
+| `enrich_content.mjs` | skills + profundezas heurísticas — **não** rerodar após P0–P6 |
+| `seed_content_cli.mjs` | sobe Firestore via Firebase CLI OAuth (`make seed_full`) — caminho que funciona em contas Google-only |
+| `seed_content.mjs` | sobe via client SDK Email/Password (`SEED_EMAIL` / `SEED_PASSWORD`) |
+| `trails-page.js` / `bank-page.js` / `question-studio.js` | editores CMS + preview do ato |
 
 ### Fases de implementação
 
@@ -392,10 +394,12 @@ flutter build ipa --release
 
 # Admin
 cd admin && cp .env.example .env && npm install && npm run dev
-npm run seed                  # só sobe JSON → Firestore (sem migrate)
-npm run seed:refresh          # prepare + migrate + enrich + seed
-# Lotes / cota Spark:
-SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 node scripts/seed_content.mjs
+# Publicar (contas Google-only — caminho real):
+make seed_full                 # da raiz: trails + bank + studies + catalog.version
+# ou: cd admin && npm run seed:cli
+# Não usar seed:refresh após P0–P6 (migrate/enrich reescrevem o banco editorial).
+# Lotes / cota Spark (CLI):
+SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 npm run seed:cli
 npm run build && cd .. && firebase deploy --only hosting
 ```
 
@@ -425,6 +429,7 @@ Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA
 | Modelos de trilha | `trilha_app/lib/models/trail.dart` |
 | Persistência admin | `admin/src/db.js` |
 | Editor de trilhas | `admin/src/trails-page.js` |
+| Question Studio | `admin/src/question-studio.js` · `content-preview.js` |
 | Regras | `firestore.rules` |
 
 ---

@@ -115,6 +115,31 @@ void main() {
       expect(ex.displayCue.toLowerCase().contains('sem forma'), isFalse);
     });
 
+    test('fromBankQuestion complete uses the real question, not Complete a lacuna', () {
+      final bq = BankQuestion(
+        id: 'g-complete',
+        trailSlug: 'genesis-1-11',
+        difficulty: TrailDifficulty.semente,
+        section: 'gen-01-criador',
+        question: 'Como a terra é descrita antes das ordens criadoras?',
+        prompt: 'Complete a lacuna.',
+        type: ExerciseType.complete,
+        template: 'A terra, porém, era ___.',
+        options: const [
+          QuestionOption(id: 'a', text: 'sem forma e vazia'),
+          QuestionOption(id: 'b', text: 'cheia de animais'),
+        ],
+        correctOptionId: 'a',
+        correctAnswer: 'a',
+        feedbackCorrect: 'Sim.',
+        feedbackWrong: const {'b': 'Não.'},
+      );
+      final ex = SessionComposer.fromBankQuestion(bq);
+      expect(ex.type, ExerciseType.complete);
+      expect(ex.displayCue, 'Como a terra é descrita antes das ordens criadoras?');
+      expect(ex.displayCue.toLowerCase().contains('lacuna'), isFalse);
+    });
+
     test('fromBankQuestion preserves tagged skill', () {
       final bq = BankQuestion(
         id: 'g-skill',
@@ -144,6 +169,20 @@ void main() {
       final clipped = SessionComposer.clipEntranceVerse(long);
       expect(clipped.endsWith('…'), isTrue);
       expect(clipped.split(' ').length, 40);
+    });
+
+    test('clipFeedbackPassage windows around the question keyword', () {
+      const start = 'O Senhor disse a Abrão: Saia da sua terra e da sua parentela.';
+      const egypt =
+          'Houve fome na terra. Então Abrão desceu ao Egito para peregrinar ali.';
+      final long = ('$start ${List.filled(80, 'palavra').join(' ')} $egypt');
+      final clipped = SessionComposer.clipFeedbackPassage(
+        long,
+        hint: 'Abrão desce ao Egito para guerrear.',
+      );
+      expect(clipped.contains('Egito'), isTrue);
+      expect(clipped.contains('Saia da sua terra'), isFalse);
+      expect(clipped.split(' ').length, lessThanOrEqualTo(43));
     });
 
     test('arrangeActs keeps contract order and allows a second choice', () {

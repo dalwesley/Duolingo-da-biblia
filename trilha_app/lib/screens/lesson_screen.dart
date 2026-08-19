@@ -17,7 +17,6 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
-import '../utils/difficulty_trails.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_panel.dart';
@@ -177,9 +176,7 @@ class _LessonScreenState extends State<LessonScreen>
       }
     }
 
-    final usesBank =
-        trailUsesDifficultyBank(trailSlug) &&
-        QuestionBank.instance.hasBankForTrail(trailSlug);
+    final usesBank = QuestionBank.instance.hasBankForTrail(trailSlug);
 
     if (usesBank &&
         trailSlug != null &&
@@ -1091,15 +1088,26 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
 
   Future<void> _loadVerse() async {
     final existing = (widget.exercise.passageText ?? '').trim();
+    final hint = [
+      widget.exercise.prompt,
+      widget.exercise.displayCue,
+      widget.selected,
+    ].whereType<String>().join(' ');
     if (existing.isNotEmpty) {
-      setState(() => _verseText = existing);
+      setState(() => _verseText = SessionComposer.clipFeedbackPassage(
+            existing,
+            hint: hint,
+          ));
       return;
     }
     final ref = (widget.exercise.reference ?? '').trim();
     if (ref.isEmpty) return;
     final full = await BibleService.instance.passageText(ref);
     if (!mounted || full == null || full.trim().isEmpty) return;
-    setState(() => _verseText = full.trim());
+    setState(() => _verseText = SessionComposer.clipFeedbackPassage(
+          full.trim(),
+          hint: hint,
+        ));
   }
 
   @override
@@ -1213,7 +1221,7 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
                     const SizedBox(height: AppSpace.md),
                     ConstrainedBox(
                       constraints: BoxConstraints(
-                        maxHeight: MediaQuery.of(context).size.height * 0.34,
+                        maxHeight: MediaQuery.of(context).size.height * 0.28,
                       ),
                       child: SingleChildScrollView(
                         physics: const BouncingScrollPhysics(),
@@ -1256,44 +1264,62 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
                               Container(
                                 width: double.infinity,
                                 padding: const EdgeInsets.fromLTRB(
-                                  16,
                                   14,
-                                  16,
+                                  12,
+                                  14,
                                   14,
                                 ),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
-                                  color: Colors.white.withValues(alpha: 0.08),
+                                  color: Colors.white.withValues(alpha: 0.06),
                                   border: Border.all(
                                     color: color.withValues(alpha: 0.28),
                                   ),
                                 ),
-                                child: Column(
+                                child: Row(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    if (ref.isNotEmpty)
-                                      Text(
-                                        ref,
-                                        style: AppTypography.label(
-                                          size: 12,
-                                          letterSpacing: 1.1,
-                                          color: color,
-                                        ),
+                                    Container(
+                                      width: 3,
+                                      height: 52,
+                                      margin: const EdgeInsets.only(top: 2),
+                                      decoration: BoxDecoration(
+                                        color: color,
+                                        borderRadius: BorderRadius.circular(2),
                                       ),
-                                    if (verse.isNotEmpty) ...[
-                                      if (ref.isNotEmpty)
-                                        const SizedBox(height: 8),
-                                      Text(
-                                        verse,
-                                        style: AppTypography.verse(
-                                          size: 16,
-                                          weight: FontWeight.w600,
-                                          height: 1.4,
-                                          color: AppColors.textOnDark
-                                              .withValues(alpha: 0.92),
-                                        ),
+                                    ),
+                                    const SizedBox(width: 12),
+                                    Expanded(
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          if (ref.isNotEmpty)
+                                            Text(
+                                              ref,
+                                              style: AppTypography.label(
+                                                size: 11,
+                                                letterSpacing: 1.1,
+                                                color: color,
+                                              ),
+                                            ),
+                                          if (verse.isNotEmpty) ...[
+                                            if (ref.isNotEmpty)
+                                              const SizedBox(height: 8),
+                                            Text(
+                                              verse,
+                                              style: AppTypography.verse(
+                                                size: 19,
+                                                weight: FontWeight.w600,
+                                                height: 1.55,
+                                                color: AppColors.textOnDark
+                                                    .withValues(alpha: 0.94),
+                                              ),
+                                            ),
+                                          ],
+                                        ],
                                       ),
-                                    ],
+                                    ),
                                   ],
                                 ),
                               ),

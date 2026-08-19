@@ -24,11 +24,11 @@ initTheme();
 
 const NAV = [
   { route: 'dashboard', label: 'Início', icon: '🏠', hint: 'Visão geral' },
-  { route: 'trails', label: 'Trilhas', icon: '🗺️', hint: 'Conteúdo principal' },
-  { route: 'bank', label: 'Perguntas', icon: '❓', hint: 'Banco' },
-  { route: 'studies', label: 'Estudos', icon: '📖', hint: 'Preparo' },
+  { route: 'trails', label: 'Trilhas', icon: '🗺️', hint: 'Passos e versos' },
+  { route: 'bank', label: 'Perguntas', icon: '❓', hint: 'Quiz, V/F, complete' },
+  { route: 'studies', label: 'Estudos', icon: '📖', hint: 'Preparo (opcional)' },
   { route: 'reports', label: 'Relatos', icon: '⚑', hint: 'Erros reportados' },
-  { route: 'import', label: 'Importar', icon: '⬆️', hint: 'JSON' },
+  { route: 'import', label: 'Importar', icon: '↕️', hint: 'Backup em lote' },
 ];
 
 function navigate(next) {
@@ -63,9 +63,9 @@ function shell(content) {
       <aside class="sidebar ${sidebarOpen ? 'open' : ''}" id="sidebar">
         <div class="sidebar-brand">
           <div class="brand-lockup">
-            <div class="brand-mark">📖</div>
+            <div class="brand-mark"><img src="/icon.png" alt="" width="44" height="44" /></div>
             <div>
-              <h1>STWAY</h1>
+              <h1 class="stway-wordmark">STW<span class="stway-a">A</span>Y</h1>
               <p>Painel de conteúdo</p>
             </div>
           </div>
@@ -133,8 +133,8 @@ function loginScreen(error = '') {
     <div class="login-page">
       <div class="login-hero">
         <div class="login-hero-inner">
-          <div class="login-hero-mark">📖</div>
-          <h1>STWAY Admin</h1>
+          <div class="login-hero-mark"><img src="/icon.png" alt="STWAY" width="88" height="88" /></div>
+          <h1 class="stway-wordmark">STW<span class="stway-a">A</span>Y</h1>
           <p>Trilhas, perguntas e estudos no Firebase — sem republicar o app.</p>
         </div>
       </div>
@@ -174,10 +174,10 @@ async function renderPage() {
     return;
   }
 
-  if (route === 'dashboard') return renderDashboard(page);
+  if (route === 'dashboard') return renderDashboard(page, navigate);
   if (route === 'trails') return renderTrailsList(page, navigate);
   if (route.startsWith('trail:')) return renderTrailEditor(page, route.slice(6), navigate);
-  if (route === 'bank') return renderBankPage(page);
+  if (route === 'bank') return renderBankPage(page, navigate);
   if (route === 'studies') return renderStudiesPage(page);
   if (route === 'reports') return renderReportsPage(page);
   if (route === 'import') return renderImportPage(page);

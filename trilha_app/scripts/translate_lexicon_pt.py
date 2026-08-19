@@ -26,6 +26,88 @@ SLEEP = 0.25
 BATCH_GLOSS = 40  # textos curtos por request
 BATCH_DEF = 8
 
+# Nomes próprios que o Google Translate trata como substantivo comum.
+# Chave = Strong normalizado. Ganha de qualquer cache/tradução.
+OVERRIDES: dict[str, dict[str, str]] = {
+    "H2526": {
+        "gloss": "Cam",
+        "definition": (
+            'Cam = "quente"\n'
+            "Nome próprio: segundo filho de Noé, pai de Canaã e de povos das terras do sul.\n"
+            "Em uso posterior, nome coletivo para os egípcios.\n"
+            "Também as terras dos descendentes de Cam."
+        ),
+    },
+    "H1990": {
+        "gloss": "Hã",
+        "definition": (
+            'Hã = "quente" ou "queimado de sol"\n'
+            "Lugar onde Quedorlaomer e seus aliados derrotaram os zuzins, "
+            "provavelmente no território dos amonitas, a leste do Jordão."
+        ),
+    },
+    "H2540": {
+        "gloss": "Hamom",
+        "definition": (
+            'Hamom = "fontes quentes"\n'
+            "Cidade em Naftali atribuída aos levitas; também chamada Hamate e Hamote-Dor."
+        ),
+    },
+    "H0347": {"gloss": "Jó"},
+    "H3876": {"gloss": "Ló"},
+    "G3091": {"gloss": "Ló"},
+    "G3138": {"gloss": "Marcos"},
+}
+
+# Gloss inglês → PT bíblico, usado só quando a entrada é nome próprio.
+NAME_EN_PT = {
+    "Ham": "Cam",
+    "Hammon": "Hamom",
+    "Shem": "Sem",
+    "Japheth": "Jafé",
+    "Noah": "Noé",
+    "Job": "Jó",
+    "Lot": "Ló",
+    "Mark": "Marcos",
+    "James": "Tiago",
+    "Mary": "Maria",
+    "John": "João",
+    "Moses": "Moisés",
+    "Aaron": "Arão",
+    "David": "Davi",
+    "Solomon": "Salomão",
+    "Ruth": "Rute",
+    "Esther": "Ester",
+}
+
+FALSE_FRIEND_PT = {
+    "presunto",
+    "trabalho",
+    "lote",
+    "marca",
+    "emprego",
+    "toucinho",
+    "bacon",
+}
+
+
+def is_proper_morph(morph: str) -> bool:
+    m = (morph or "").upper()
+    return "-P" in m or m.endswith("P") or "--L" in m
+
+
+def proper_gloss(sid: str, en_gloss: str, morph: str, translated: str) -> str:
+    if sid in OVERRIDES:
+        return OVERRIDES[sid]["gloss"]
+    if not is_proper_morph(morph):
+        return translated
+    key = en_gloss.strip()
+    if key in NAME_EN_PT:
+        return NAME_EN_PT[key]
+    if translated.strip().lower() in FALSE_FRIEND_PT:
+        return NAME_EN_PT.get(key, key)
+    return translated
+
 
 def load_cache() -> dict[str, str]:
     if not CACHE.exists():
@@ -120,7 +202,7 @@ def main() -> None:
 
     con = sqlite3.connect(DB)
     cur = con.cursor()
-    rows = cur.execute("SELECT id, gloss, definition FROM lexicon").fetchall()
+    rows = cur.execute("SELECT id, gloss, definition, morph FROM lexicon").fetchall()
     used = {
         r[0]
         for r in cur.execute("SELECT DISTINCT strong FROM tokens").fetchall()
@@ -133,14 +215,16 @@ def main() -> None:
     # Prioriza entradas usadas no cânon
     glosses: set[str] = set()
     defs: set[str] = set()
-    for sid, g, d in rows:
+    for sid, g, d, morph in rows:
         if sid not in used:
             continue
         g = (g or "").strip()
         d = clean_def_for_display((d or "").strip())
-        if g:
+        if g and sid not in OVERRIDES and not (
+            is_proper_morph(morph) and g in NAME_EN_PT
+        ):
             glosses.add(g)
-        if d:
+        if d and sid not in OVERRIDES:
             defs.add(d)
 
     translator = GoogleTranslator(source="en", target="pt")
@@ -156,14 +240,16 @@ def main() -> None:
     # glosses curtos ajudam busca futura
     other_g = set()
     other_d = set()
-    for sid, g, d in rows:
+    for sid, g, d, morph in rows:
         if sid in used:
             continue
         g = (g or "").strip()
         d = clean_def_for_display((d or "").strip())
-        if g and g not in cache:
+        if g and g not in cache and sid not in OVERRIDES and not (
+            is_proper_morph(morph) and g in NAME_EN_PT
+        ):
             other_g.add(g)
-        if d and d not in cache:
+        if d and d not in cache and sid not in OVERRIDES:
             other_d.add(d)
     if other_g or other_d:
         print("4) Resto do léxico…")
@@ -177,12 +263,13 @@ def main() -> None:
     print("5) Aplicando no SQLite…")
     updates = []
     missing = 0
-    for sid, g, d in rows:
+    for sid, g, d, morph in rows:
         g = (g or "").strip()
         d0 = (d or "").strip()
         d = clean_def_for_display(d0)
-        g_pt = cache.get(g, g)
-        d_pt = cache.get(d, d0)
+        g_pt = proper_gloss(sid, g, morph, cache.get(g, g))
+        ov = OVERRIDES.get(sid)
+        d_pt = ov["definition"] if ov and "definition" in ov else cache.get(d, d0)
         if g and g_pt == g and looks_english(g):
             missing += 1
         updates.append((g_pt, d_pt, sid))
@@ -233,7 +320,7 @@ def main() -> None:
 
     # Amostra
     con = sqlite3.connect(DB)
-    for sid in ("H5175", "H0430", "G0025", "G0026"):
+    for sid in ("H5175", "H0430", "G0025", "G0026", "H2526", "H0347"):
         r = con.execute(
             "SELECT gloss, substr(definition,1,80) FROM lexicon WHERE id=?", (sid,)
         ).fetchone()

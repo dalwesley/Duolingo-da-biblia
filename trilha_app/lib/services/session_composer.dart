@@ -4,6 +4,8 @@ import '../data/question_bank.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
+import '../utils/answer_phrase.dart';
+import '../utils/vf_claim.dart';
 
 /// Resultado do composer — sempre uma sessão única ([docs/SESSAO_TREINO.md]).
 class SessionPlan {
@@ -33,7 +35,30 @@ class SessionComposer {
 
   static Exercise fromBankQuestion(BankQuestion bq, {Random? rng}) {
     final type = bq.type;
-    final opts = List<QuestionOption>.from(bq.options);
+    final cid = (bq.correctAnswer ?? '').trim().isNotEmpty
+        ? bq.correctAnswer!.trim()
+        : bq.correctOptionId;
+    final quote = extractQuotedAnswer(bq.feedbackCorrect);
+    final skipRepair =
+        type == ExerciseType.trueFalse ||
+        type == ExerciseType.order ||
+        type == ExerciseType.connect ||
+        type == ExerciseType.match ||
+        ((type == ExerciseType.choice ||
+                type == ExerciseType.textSupported ||
+                type == ExerciseType.bestInterpretation) &&
+            isNamingAsk(bq.question));
+    final repaired = skipRepair
+        ? (options: bq.options, template: bq.template)
+        : repairActOptions(
+            options: List<QuestionOption>.from(bq.options),
+            correctId: bq.correctOptionId,
+            passage: (bq.passageText ?? bq.template ?? '').trim(),
+            quote: quote,
+            question: bq.question,
+            template: bq.template,
+          );
+    final opts = List<QuestionOption>.from(repaired.options);
     if (type == ExerciseType.choice ||
         type == ExerciseType.textSupported ||
         type == ExerciseType.bestInterpretation ||
@@ -41,16 +66,17 @@ class SessionComposer {
       opts.shuffle(rng);
     }
 
-    final prompt = (bq.prompt ?? '').trim().isNotEmpty
+    var prompt = (bq.prompt ?? '').trim().isNotEmpty
         ? bq.prompt!.trim()
         : bq.question;
-    var answer = (bq.correctAnswer ?? '').trim().isNotEmpty
-        ? bq.correctAnswer!.trim()
-        : bq.correctOptionId;
+    var answer = cid;
     if (type == ExerciseType.trueFalse) {
       answer = _normalizeVfAnswer(answer, fallback: bq.correctOptionId);
+      prompt = vfClaim(prompt);
     }
-    final cue = _tapCueWithoutSpoiler(bq, prompt);
+    final cue = type == ExerciseType.trueFalse
+        ? prompt
+        : _actCue(bq, prompt);
 
     return Exercise(
       id: bq.id,
@@ -71,7 +97,7 @@ class SessionComposer {
       feedbackWrong: bq.feedbackWrong,
       reference: bq.verseRef,
       passageText: bq.passageText,
-      template: bq.template,
+      template: repaired.template,
       passageA: bq.passageA,
       passageB: bq.passageB,
       correctOrder: bq.correctOrder,
@@ -116,13 +142,8 @@ class SessionComposer {
     final quoted = (m?.group(1) ?? '').trim();
     final stem = q.question.replaceAll(RegExp(r'\?\s*$'), '').trim();
     final prompt = quoted.isEmpty
-        ? (stem.isNotEmpty ? '$stem.' : (q.prompt ?? q.question))
-        : (stem.length > 12 &&
-                stem.length < 90 &&
-                quoted.length <= 40 &&
-                !RegExp(r'[.!?]$').hasMatch(quoted))
-            ? '$stem: $quoted.'
-            : (RegExp(r'[.!?]$').hasMatch(quoted) ? quoted : '$quoted.');
+        ? vfClaim(stem.isNotEmpty ? stem : (q.prompt ?? q.question))
+        : vfClaimFromParts(stem, quoted);
     return BankQuestion(
       id: '${_vfBaseId(q.id)}__vftrue',
       trailSlug: q.trailSlug,
@@ -176,6 +197,84 @@ class SessionComposer {
     return '${words.take(maxWords).join(' ')}…';
   }
 
+  static const _feedbackStops = {
+    'para', 'porque', 'por', 'com', 'uma', 'uns', 'pelo', 'pela', 'depois',
+    'antes', 'quando', 'onde', 'quem', 'como', 'isso', 'este', 'esta',
+    'esse', 'essa', 'aquele', 'aquela', 'abre', 'desce', 'sobe', 'vai',
+    'disse', 'deus', 'senhor',
+  };
+
+  /// Trecho curto para o overlay de erro: janela em torno da palavra da pergunta,
+  /// não o capítulo inteiro a partir do v. 1.
+  static String clipFeedbackPassage(
+    String text, {
+    String hint = '',
+    int maxWords = 42,
+  }) {
+    final t = text.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (t.isEmpty) return t;
+    final words = t.split(' ').where((w) => w.isNotEmpty).toList();
+    if (words.length <= maxWords) return t;
+
+    final needles = hint
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^\p{L}\s]', unicode: true), ' ')
+        .split(RegExp(r'\s+'))
+        .where((w) => w.length >= 4 && !_feedbackStops.contains(w))
+        .map(foldKey)
+        .toList();
+    final folded = [for (final w in words) foldKey(w.replaceAll(RegExp(r'[^\p{L}]', unicode: true), ''))];
+
+    var anchor = -1;
+    for (final n in needles) {
+      if (n.isEmpty) continue;
+      for (var i = 0; i < folded.length; i++) {
+        final w = folded[i];
+        if (w.length >= 4 && (w.contains(n) || n.contains(w))) {
+          if (i > anchor) anchor = i;
+          break;
+        }
+      }
+    }
+
+    var start = 0;
+    if (anchor >= 0) {
+      start = (anchor - maxWords ~/ 5).clamp(0, words.length - maxWords);
+    }
+    final slice = words.sublist(start, start + maxWords).join(' ');
+    final prefix = start > 0 ? '…' : '';
+    return '$prefix$slice…';
+  }
+
+  static bool _genericCompleteCue(String text) {
+    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
+    return t.isEmpty ||
+        t == 'complete' ||
+        t == 'complete a lacuna' ||
+        t.startsWith('complete a lacuna');
+  }
+
+  /// Enunciado do ato: pergunta real, nunca “Complete a lacuna” repetindo o verbo.
+  static String _actCue(BankQuestion bq, String prompt) {
+    final type = bq.type;
+    final raw = _tapCueWithoutSpoiler(bq, prompt);
+    if (type == ExerciseType.complete) {
+      final q = bq.question.trim();
+      if (_genericCompleteCue(raw) &&
+          q.isNotEmpty &&
+          !_genericCompleteCue(q)) {
+        return q;
+      }
+    }
+    if (type == ExerciseType.order && raw.trim().isEmpty) {
+      return 'Monte a sequência.';
+    }
+    if (type == ExerciseType.match && raw.trim().isEmpty) {
+      return 'Ligue cada par.';
+    }
+    return raw;
+  }
+
   /// Tap: enunciado não pode ser o próprio trecho-alvo (`Toque no texto: X`).
   static String _tapCueWithoutSpoiler(BankQuestion bq, String prompt) {
     final rawCue = (bq.cue ?? '').trim().isNotEmpty ? bq.cue!.trim() : prompt;
@@ -226,6 +325,20 @@ class SessionComposer {
   /// Teto de Escolher na sessão mista ([docs/SESSAO_TREINO.md] §4).
   static int maxChoiceActs(int sessionMax) =>
       (sessionMax * 0.4).floor().clamp(1, sessionMax);
+
+  /// Escolha factual nunca leva o começo do versículo como alternativa.
+  static bool choiceServeable(BankQuestion q) {
+    if (q.type != ExerciseType.choice &&
+        q.type != ExerciseType.textSupported &&
+        q.type != ExerciseType.bestInterpretation) {
+      return true;
+    }
+    final passage = (q.passageText ?? '').trim();
+    if (passage.isEmpty) return true;
+    final ask = q.question.trim().isNotEmpty ? q.question : (q.prompt ?? '');
+    if (!isNamingAsk(ask)) return true;
+    return !q.options.any((o) => isVerseFragmentOption(o.text, passage));
+  }
 
   /// Ordena atos: V/F → toque → escolha → ordenar → completar → conectar.
   /// Permite 2º Escolher no meio (≤ 40%). V/F no máx. 2. Sem o mesmo gesto 4× seguidas.
@@ -379,6 +492,9 @@ class SessionComposer {
         }
         if (type == ExerciseType.connect) {
           return q.type == ExerciseType.connect || q.type == ExerciseType.match;
+        }
+        if (type == ExerciseType.choice) {
+          return q.type == type && choiceServeable(q);
         }
         return q.type == type;
       }).toList();

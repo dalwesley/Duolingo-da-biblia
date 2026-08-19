@@ -8,7 +8,7 @@ export function setLoading(show) {
   el.setAttribute('aria-hidden', show ? 'false' : 'true');
 }
 
-export function showToast(message, type = 'success') {
+export function showToast(message, type = 'success', opts = {}) {
   const root = toastRoot();
   if (!root) return;
 
@@ -18,13 +18,27 @@ export function showToast(message, type = 'success') {
   toast.innerHTML = `
     <span class="toast-icon">${type === 'success' ? '✓' : type === 'error' ? '!' : 'i'}</span>
     <span class="toast-msg">${escapeHtml(message)}</span>`;
+
+  if (opts.action && opts.onAction) {
+    const btn = document.createElement('button');
+    btn.className = 'toast-action';
+    btn.textContent = opts.action;
+    btn.addEventListener('click', () => {
+      opts.onAction();
+      toast.classList.remove('show');
+      setTimeout(() => toast.remove(), 300);
+    });
+    toast.appendChild(btn);
+  }
+
   root.appendChild(toast);
 
   requestAnimationFrame(() => toast.classList.add('show'));
+  const delay = opts.action ? 6000 : 3200;
   setTimeout(() => {
     toast.classList.remove('show');
     setTimeout(() => toast.remove(), 300);
-  }, 3200);
+  }, delay);
 }
 
 export function confirmAction(message, { confirmLabel = 'Excluir', danger = true } = {}) {

@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -10,10 +8,7 @@ import 'lamps_bar.dart';
 import 'ui_primitives.dart';
 import 'verse_study_sheet.dart';
 
-/// Player dos micro-atos.
-///
-/// Palco = mesmo do bônus ([VerseFillPanel]): card nightElevated,
-/// verso centralizado, palavra interativa em amarelo, chips embaixo.
+/// Player dos micro-atos — palco direto no fundo, sem card.
 class _ActSkin {
   static const radius = AppRadii.lg;
   static const gap = AppSpace.sm;
@@ -22,7 +17,7 @@ class _ActSkin {
   static const cueSize = 24.0;
   static const verseSize = 22.0;
   static const noteSize = 16.0;
-  static const badge = 32.0;
+  static const badge = 34.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
 
@@ -242,17 +237,20 @@ class _ExercisePanelState extends State<ExercisePanel>
         : _picked != null && !_locked;
     final options = ex.effectiveOptions;
     final cue = ex.displayCue;
-    // V/F: prompt é o palco — não repetir como pergunta.
-    final showQuestion = cue.isNotEmpty &&
-        !(ex.type == ExerciseType.trueFalse && cue == ex.prompt.trim());
-    final questionIsLongChoice = showQuestion &&
-        (ex.type == ExerciseType.choice ||
-            ex.type == ExerciseType.textSupported ||
-            ex.type == ExerciseType.bestInterpretation) &&
-        cue.length > 72;
+    final showQuestion = cue.isNotEmpty;
+    final questionIsLong = showQuestion && cue.length > 72;
 
     final hero = _fieldHero(ex);
     final response = _responseSurface(ex, options);
+    Widget? palco = hero;
+    var below = hero != null ? response : const <Widget>[];
+    if (palco == null && response.isNotEmpty) {
+      palco = Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: response,
+      );
+    }
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(
@@ -284,7 +282,7 @@ class _ExercisePanelState extends State<ExercisePanel>
               Text(
                 cue,
                 textAlign: TextAlign.left,
-                style: questionIsLongChoice
+                style: questionIsLong
                     ? AppTypography.body(
                         size: 18,
                         height: 1.28,
@@ -311,29 +309,18 @@ class _ExercisePanelState extends State<ExercisePanel>
             ),
           ],
           const SizedBox(height: _ActSkin.afterChrome),
-          if (hero != null)
-            Expanded(child: _in(0.18, 0.62, hero))
-          else if (response.isNotEmpty)
-            Expanded(
-              child: _in(
-                0.28,
-                0.78,
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [const Spacer(), ...response, const Spacer()],
-                ),
-              ),
-            )
+          if (palco != null)
+            Expanded(child: _in(0.18, 0.62, palco))
           else
             const Spacer(),
-          if (hero != null && response.isNotEmpty) ...[
+          if (below.isNotEmpty) ...[
             const SizedBox(height: _ActSkin.afterHero),
             _in(
               0.4,
               0.88,
               Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: response,
+                children: below,
               ),
             ),
           ],
@@ -357,14 +344,7 @@ class _ExercisePanelState extends State<ExercisePanel>
   Widget? _fieldHero(Exercise ex) {
     switch (ex.type) {
       case ExerciseType.trueFalse:
-        return _Manuscript(
-          accent: widget.accent,
-          child: Text(
-            ex.prompt,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, height: 1.35),
-          ),
-        );
+        return null;
       case ExerciseType.complete:
         final tpl = (ex.template ?? '').trim();
         if (tpl.isEmpty && ex.prompt.trim().isEmpty) return null;
@@ -387,52 +367,35 @@ class _ExercisePanelState extends State<ExercisePanel>
         return _BridgePassages(
           passageA: ex.passageA,
           passageB: ex.passageB,
-          options: ex.effectiveOptions,
-          stateFor: _state,
           accent: widget.accent,
-          locked: _locked,
-          eliminatedIds: widget.eliminatedIds,
-          onTapOption: _pickChoice,
-          highlightId: widget.showFeedback ? ex.resolvedCorrectAnswer : _picked,
         );
       case ExerciseType.tap:
       case ExerciseType.findInText:
         final text = (ex.passageText ?? '').trim();
-        if (text.isEmpty) {
-          if (ex.prompt.trim().isEmpty) return null;
-          return _Manuscript(
-            accent: widget.accent,
-            child: Text(
-              ex.prompt,
-              style: AppTypography.display(size: 22, height: 1.28),
-            ),
-          );
-        }
-        return _TapPassageBlock(
+        if (text.isEmpty) return null;
+        return _PassageBlock(
           text: text,
-          reference: ex.reference,
-          options: ex.effectiveOptions,
-          stateFor: _state,
           accent: widget.accent,
-          locked: _locked,
-          eliminatedIds: widget.eliminatedIds,
-          onTapOption: _pickChoice,
+          reference: ex.reference,
         );
       case ExerciseType.choice:
       case ExerciseType.textSupported:
       case ExerciseType.bestInterpretation:
-        final passage = (ex.passageText ?? '').trim();
-        if (passage.isNotEmpty) {
-          return _PassageBlock(
-            text: passage,
-            accent: widget.accent,
-            reference: ex.reference,
-          );
-        }
         return null;
       case ExerciseType.order:
+        return Align(
+          alignment: Alignment.center,
+          child: _orderList(),
+        );
       case ExerciseType.match:
-        return null;
+        return _Manuscript(
+          accent: widget.accent,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: _matchBody(ex),
+          ),
+        );
       default:
         return null;
     }
@@ -442,42 +405,35 @@ class _ExercisePanelState extends State<ExercisePanel>
     switch (ex.type) {
       case ExerciseType.trueFalse:
         return [
-          Row(
-            children: [
-              Expanded(
-                child: _OptionTile(
-                  letter: 'V',
-                  text: 'Verdadeiro',
-                  state: _state('true'),
-                  accent: widget.accent,
-                  onTap: _locked ? null : () => _pickChoice('true'),
-                ),
-              ),
-              const SizedBox(width: _ActSkin.gap),
-              Expanded(
-                child: _OptionTile(
-                  letter: 'F',
-                  text: 'Falso',
-                  state: _state('false'),
-                  accent: widget.accent,
-                  onTap: _locked ? null : () => _pickChoice('false'),
-                ),
-              ),
-            ],
+          _OptionTile(
+            letter: 'V',
+            text: 'Verdadeiro',
+            state: _state('true'),
+            accent: widget.accent,
+            prominent: true,
+            onTap: _locked ? null : () => _pickChoice('true'),
+          ),
+          const SizedBox(height: 10),
+          _OptionTile(
+            letter: 'F',
+            text: 'Falso',
+            state: _state('false'),
+            accent: widget.accent,
+            prominent: true,
+            onTap: _locked ? null : () => _pickChoice('false'),
           ),
         ];
       case ExerciseType.tap:
       case ExerciseType.findInText:
       case ExerciseType.connect:
-        return _tapChipsFallback(ex);
+        return _optionBank(ex.effectiveOptions, stacked: true);
       case ExerciseType.order:
-        return _orderBody(options);
       case ExerciseType.match:
-        return _matchBody(ex);
+        return const [];
       case ExerciseType.complete:
-        return _optionBank(options);
+        return _optionBank(options, stacked: !_allShort(options));
       default:
-        return _optionBank(options, stacked: !_hasVerseStage(ex));
+        return _optionBank(options, stacked: true);
     }
   }
 
@@ -496,11 +452,9 @@ class _ExercisePanelState extends State<ExercisePanel>
     );
   }
 
-  bool _hasVerseStage(Exercise ex) {
-    return (ex.passageText ?? '').trim().isNotEmpty ||
-        (ex.template ?? '').trim().isNotEmpty ||
-        ex.passageA != null ||
-        ex.passageB != null;
+  bool _allShort(List<QuestionOption> options) {
+    if (options.isEmpty) return false;
+    return options.every((o) => o.text.trim().length <= 18);
   }
 
   List<Widget> _optionBank(List<QuestionOption> options, {bool stacked = false}) {
@@ -536,96 +490,66 @@ class _ExercisePanelState extends State<ExercisePanel>
     ];
   }
 
-  /// Chips só para opções que não entram no versículo (distratores).
-  List<Widget> _tapChipsFallback(Exercise ex) {
-    final corpus = [
-      ex.passageA?.text ?? '',
-      ex.passageB?.text ?? '',
-      ex.passageText ?? '',
-    ].join(' ');
-    final hasInText =
-        corpus.trim().isNotEmpty && ex.optionsEmbeddedIn(corpus).isNotEmpty;
-    // Toque = resposta no texto. Distrator fora do trecho quebra o gesto.
-    if (hasInText) return const [];
-    final chips = ex.effectiveOptions;
-    if (chips.isEmpty) return const [];
-    return _optionBank(chips);
-  }
-
-  List<Widget> _orderBody(List<QuestionOption> options) {
+  Widget _orderList() {
     final pool = _shuffledOrderItems;
-    return [
-      ReorderableListView(
-        shrinkWrap: true,
-        physics: const NeverScrollableScrollPhysics(),
-        buildDefaultDragHandles: false,
-        onReorderItem: (oldIndex, newIndex) {
-          if (_locked) return;
-          setState(() {
-            final item = _shuffledOrderItems.removeAt(oldIndex);
-            _shuffledOrderItems.insert(newIndex, item);
-          });
-          HapticFeedback.selectionClick();
-        },
-        proxyDecorator: (child, index, animation) {
-          return AnimatedBuilder(
-            animation: animation,
-            builder: (context, _) {
-              final t = Curves.easeOut.transform(animation.value);
-              return Transform.scale(
-                scale: 1.03 + 0.02 * t,
-                child: Material(
-                  color: Colors.transparent,
-                  elevation: 10 * t,
-                  shadowColor: widget.accent.withValues(alpha: 0.45),
-                  borderRadius: BorderRadius.circular(_ActSkin.radius),
-                  child: child,
-                ),
-              );
-            },
-          );
-        },
-        children: [
-          for (var i = 0; i < pool.length; i++)
-            Padding(
-              key: ValueKey(pool[i].id),
-              padding: const EdgeInsets.only(bottom: 10),
-              child: ReorderableDragStartListener(
-                index: i,
-                enabled: !_locked,
-                child: _OptionTile(
-                  letter: '${i + 1}',
-                  text: pool[i].text,
-                  state: _locked ? _state(pool[i].id) : _OptState.idle,
-                  accent: widget.accent,
-                  textAlign: TextAlign.center,
-                  trailing: Icon(
-                    Icons.drag_handle_rounded,
-                    size: 22,
-                    color: AppColors.textOnDark.withValues(alpha: 0.42),
-                  ),
-                ),
+    return ReorderableListView.builder(
+      itemCount: pool.length,
+      shrinkWrap: true,
+      physics: const ClampingScrollPhysics(),
+      buildDefaultDragHandles: false,
+      padding: EdgeInsets.zero,
+      proxyDecorator: (child, index, animation) {
+        return AnimatedBuilder(
+          animation: animation,
+          builder: (context, _) {
+            final t = Curves.easeOut.transform(animation.value);
+            return Transform.scale(
+              scale: 1.02 + 0.03 * t,
+              child: Material(
+                color: Colors.transparent,
+                elevation: 12 * t,
+                shadowColor: widget.accent.withValues(alpha: 0.4),
+                borderRadius: BorderRadius.circular(_ActSkin.radius),
+                child: child,
               ),
+            );
+          },
+        );
+      },
+      onReorderItem: (oldIndex, newIndex) {
+        if (_locked) return;
+        setState(() {
+          final item = _shuffledOrderItems.removeAt(oldIndex);
+          _shuffledOrderItems.insert(newIndex, item);
+        });
+        HapticFeedback.mediumImpact();
+      },
+      itemBuilder: (context, i) {
+        return Padding(
+          key: ValueKey(pool[i].id),
+          padding: EdgeInsets.only(bottom: i == pool.length - 1 ? 0 : 10),
+          child: ReorderableDragStartListener(
+            index: i,
+            enabled: !_locked,
+            child: _OrderPiece(
+              index: i,
+              text: pool[i].text,
+              accent: widget.accent,
+              locked: _locked,
+              state: _locked ? _state(pool[i].id) : _OptState.idle,
             ),
-        ],
-      ),
-    ];
+          ),
+        );
+      },
+    );
   }
 
   List<Widget> _matchBody(Exercise ex) {
     final left = ex.matchLeft.isNotEmpty ? ex.matchLeft : ex.effectiveOptions;
     final right = ex.matchRight;
     return [
-      Text(
-        _matchLeft == null
-            ? 'Toque um item à esquerda'
-            : 'Agora o par à direita',
-        style: AppTypography.body(
-          size: 12,
-          color: AppColors.textOnDark.withValues(alpha: 0.55),
-        ),
-      ),
-      const SizedBox(height: AppSpace.sm),
+      _MatchStepper(pickingLeft: _matchLeft == null, accent: widget.accent),
+      const SizedBox(height: AppSpace.md),
       Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -765,12 +689,6 @@ class _ExercisePanelState extends State<ExercisePanel>
 
 // ─── Passage / tap helpers ───────────────────────────────────────────────────
 
-class _TapSpan {
-  final String text;
-  final String? optionId;
-  const _TapSpan(this.text, [this.optionId]);
-}
-
 TextStyle _verseWordStyle({
   Color? color,
   FontWeight weight = FontWeight.w600,
@@ -786,45 +704,6 @@ List<Widget> _verseWords(String text) {
     for (final w in text.split(RegExp(r'\s+')).where((s) => s.isNotEmpty))
       Text(w, style: _verseWordStyle()),
   ];
-}
-
-List<_TapSpan> _buildTapSpans(String passage, List<QuestionOption> options) {
-  if (passage.isEmpty) return const [];
-  final sorted = List<QuestionOption>.from(
-    options.where((o) => o.text.trim().isNotEmpty),
-  )..sort((a, b) => b.text.length.compareTo(a.text.length));
-
-  final lower = passage.toLowerCase();
-  final hits = <({int start, int end, String id})>[];
-  for (final o in sorted) {
-    final needle = o.text.toLowerCase();
-    var from = 0;
-    while (true) {
-      final i = lower.indexOf(needle, from);
-      if (i < 0) break;
-      final end = i + needle.length;
-      final overlaps = hits.any((h) => i < h.end && end > h.start);
-      if (!overlaps) {
-        hits.add((start: i, end: end, id: o.id));
-      }
-      from = i + 1;
-    }
-  }
-  hits.sort((a, b) => a.start.compareTo(b.start));
-
-  final spans = <_TapSpan>[];
-  var cursor = 0;
-  for (final h in hits) {
-    if (h.start > cursor) {
-      spans.add(_TapSpan(passage.substring(cursor, h.start)));
-    }
-    spans.add(_TapSpan(passage.substring(h.start, h.end), h.id));
-    cursor = h.end;
-  }
-  if (cursor < passage.length) {
-    spans.add(_TapSpan(passage.substring(cursor)));
-  }
-  return spans;
 }
 
 class _ContextNote extends StatelessWidget {
@@ -954,65 +833,29 @@ class _Manuscript extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ref = (reference ?? '').trim();
-    return Container(
-      width: double.infinity,
-      height: double.infinity,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(18),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.55),
-            blurRadius: 0,
-            offset: const Offset(0, 6),
-          ),
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(18),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              color: AppColors.nightElevated.withValues(alpha: 0.72),
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.08),
-                width: 1,
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(18, 16, 18, 18),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Center(
-                    child: Container(
-                      width: 36,
-                      height: 3,
-                      decoration: BoxDecoration(
-                        color: accent,
-                        borderRadius: BorderRadius.circular(99),
-                      ),
-                    ),
-                  ),
-                  if (ref.isNotEmpty) ...[
-                    const SizedBox(height: 14),
-                    _StudyRefChip(reference: ref, accent: accent),
-                  ],
-                  const SizedBox(height: 14),
-                  Expanded(
-                    child: Center(
-                      child: SingleChildScrollView(
-                        physics: const BouncingScrollPhysics(),
-                        child: SizedBox(width: double.infinity, child: child),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+    final stage = LayoutBuilder(
+      builder: (context, constraints) {
+        return SingleChildScrollView(
+          physics: const BouncingScrollPhysics(),
+          child: ConstrainedBox(
+            constraints: BoxConstraints(minHeight: constraints.maxHeight),
+            child: Center(
+              child: SizedBox(width: double.infinity, child: child),
             ),
           ),
-        ),
-      ),
+        );
+      },
+    );
+
+    if (ref.isEmpty) return stage;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        _StudyRefChip(reference: ref, accent: accent),
+        const SizedBox(height: 14),
+        Expanded(child: stage),
+      ],
     );
   }
 }
@@ -1066,66 +909,15 @@ class _CompleteVerse extends StatelessWidget {
   }
 }
 
-class _TapPassageBlock extends StatelessWidget {
-  final String text;
-  final String? reference;
-  final List<QuestionOption> options;
-  final _OptState Function(String id) stateFor;
-  final Color accent;
-  final bool locked;
-  final Set<String> eliminatedIds;
-  final ValueChanged<String> onTapOption;
-
-  const _TapPassageBlock({
-    required this.text,
-    required this.options,
-    required this.stateFor,
-    required this.accent,
-    required this.locked,
-    required this.eliminatedIds,
-    required this.onTapOption,
-    this.reference,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return _Manuscript(
-      accent: accent,
-      reference: reference,
-      child: _TappableVerse(
-        text: text,
-        options: options,
-        stateFor: stateFor,
-        accent: accent,
-        locked: locked,
-        eliminatedIds: eliminatedIds,
-        onTapOption: onTapOption,
-      ),
-    );
-  }
-}
-
 class _BridgePassages extends StatelessWidget {
   final ExercisePassage? passageA;
   final ExercisePassage? passageB;
-  final List<QuestionOption> options;
-  final _OptState Function(String id) stateFor;
   final Color accent;
-  final bool locked;
-  final Set<String> eliminatedIds;
-  final ValueChanged<String> onTapOption;
-  final String? highlightId;
 
   const _BridgePassages({
-    required this.options,
-    required this.stateFor,
     required this.accent,
-    required this.locked,
-    required this.eliminatedIds,
-    required this.onTapOption,
     this.passageA,
     this.passageB,
-    this.highlightId,
   });
 
   Widget _verse(ExercisePassage passage) {
@@ -1136,15 +928,12 @@ class _BridgePassages extends StatelessWidget {
           _StudyRefChip(reference: ref, accent: accent, compact: true),
           const SizedBox(height: 12),
         ],
-        _TappableVerse(
-          text: passage.text,
-          options: options,
-          stateFor: stateFor,
-          accent: accent,
-          locked: locked,
-          eliminatedIds: eliminatedIds,
-          onTapOption: onTapOption,
-          highlightId: highlightId,
+        Wrap(
+          spacing: 5,
+          runSpacing: 12,
+          alignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: _verseWords(passage.text),
         ),
       ],
     );
@@ -1195,75 +984,16 @@ class _BridgePassages extends StatelessWidget {
   }
 }
 
-class _TappableVerse extends StatelessWidget {
-  final String text;
-  final List<QuestionOption> options;
-  final _OptState Function(String id) stateFor;
-  final Color accent;
-  final bool locked;
-  final Set<String> eliminatedIds;
-  final ValueChanged<String> onTapOption;
-  final String? highlightId;
-
-  const _TappableVerse({
-    required this.text,
-    required this.options,
-    required this.stateFor,
-    required this.accent,
-    required this.locked,
-    required this.eliminatedIds,
-    required this.onTapOption,
-    this.highlightId,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final spans = _buildTapSpans(text, options);
-    final children = <Widget>[];
-    for (final s in spans) {
-      if (s.optionId == null) {
-        children.addAll(_verseWords(s.text));
-      } else {
-        children.add(
-          _VerseMark(
-            text: s.text,
-            state: eliminatedIds.contains(s.optionId)
-                ? _OptState.dimmed
-                : highlightId == s.optionId
-                    ? _OptState.picked
-                    : stateFor(s.optionId!),
-            accent: accent,
-            enabled: !locked && !eliminatedIds.contains(s.optionId),
-            onTap: () => onTapOption(s.optionId!),
-          ),
-        );
-      }
-    }
-
-    return Wrap(
-      spacing: 5,
-      runSpacing: 12,
-      alignment: WrapAlignment.center,
-      crossAxisAlignment: WrapCrossAlignment.center,
-      children: children.isEmpty ? _verseWords(text) : children,
-    );
-  }
-}
-
 class _VerseMark extends StatelessWidget {
   final String text;
   final _OptState state;
   final Color accent;
-  final bool enabled;
-  final VoidCallback? onTap;
   final bool placeholder;
 
   const _VerseMark({
     required this.text,
     required this.state,
     required this.accent,
-    this.enabled = true,
-    this.onTap,
     this.placeholder = false,
   });
 
@@ -1279,29 +1009,53 @@ class _VerseMark extends StatelessWidget {
 
     if (placeholder && !filled) {
       return SizedBox(
-        width: 96,
-        height: _ActSkin.verseSize * 1.5,
+        width: 120,
+        height: _ActSkin.verseSize * 1.65,
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
-            height: 3,
-            margin: const EdgeInsets.only(bottom: 3),
+            height: 4,
+            margin: const EdgeInsets.only(bottom: 4),
             decoration: BoxDecoration(
               color: accent,
               borderRadius: BorderRadius.circular(AppRadii.pill),
+              boxShadow: [
+                BoxShadow(
+                  color: accent.withValues(alpha: 0.35),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
             ),
           ),
         ),
       );
     }
 
-    final child = Text(
-      text,
-      style: _verseWordStyle(color: color, weight: FontWeight.w700),
+    final wash = switch (state) {
+      _OptState.wrong => color.withValues(alpha: 0.18),
+      _OptState.dimmed => Colors.white.withValues(alpha: 0.06),
+      _OptState.correct || _OptState.picked => color.withValues(alpha: 0.28),
+      _OptState.idle => color.withValues(alpha: 0.16),
+    };
+
+    final marked = DecoratedBox(
+      decoration: BoxDecoration(
+        color: wash,
+        borderRadius: BorderRadius.circular(AppRadii.xs),
+        border: Border(bottom: BorderSide(color: color, width: 2)),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(7, 3, 7, 4),
+        child: Text(
+          text,
+          textAlign: TextAlign.center,
+          style: _verseWordStyle(color: color, weight: FontWeight.w700),
+        ),
+      ),
     );
 
-    if (onTap == null) return child;
-    return _PressScale(onTap: enabled ? onTap : null, child: child);
+    return marked;
   }
 }
 
@@ -1438,9 +1192,8 @@ class _OptionTile extends StatelessWidget {
   final _OptState state;
   final Color accent;
   final VoidCallback? onTap;
-  final Widget? trailing;
-  final TextAlign textAlign;
   final bool struck;
+  final bool prominent;
 
   const _OptionTile({
     required this.letter,
@@ -1448,9 +1201,8 @@ class _OptionTile extends StatelessWidget {
     required this.state,
     required this.accent,
     this.onTap,
-    this.trailing,
-    this.textAlign = TextAlign.start,
     this.struck = false,
+    this.prominent = false,
   });
 
   @override
@@ -1462,17 +1214,20 @@ class _OptionTile extends StatelessWidget {
         duration: _ActSkin.anim,
         curve: Curves.easeOutCubic,
         width: double.infinity,
+        constraints: BoxConstraints(minHeight: prominent ? 64 : 54),
         alignment: Alignment.centerLeft,
-        padding: _ActSkin.pad,
+        padding: prominent
+            ? const EdgeInsets.fromLTRB(14, 16, 16, 16)
+            : _ActSkin.pad,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(_ActSkin.radius),
           color: skin.fill,
-          border: Border.all(color: skin.border, width: skin.hot ? 1.6 : 1),
+          border: Border.all(color: skin.border, width: skin.hot ? 1.8 : 1),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withValues(alpha: 0.45),
+              color: Colors.black.withValues(alpha: skin.hot ? 0.5 : 0.4),
               blurRadius: 0,
-              offset: const Offset(0, 4),
+              offset: Offset(0, skin.hot ? 5 : 4),
             ),
           ],
         ),
@@ -1488,16 +1243,19 @@ class _OptionTile extends StatelessWidget {
               ),
               child: Text(
                 letter,
-                style: AppTypography.title(size: 13, color: skin.badgeFg),
+                style: AppTypography.title(
+                  size: prominent ? 15 : 13,
+                  color: skin.badgeFg,
+                ),
               ),
             ),
             const SizedBox(width: 12),
             Expanded(
               child: Text(
                 text,
-                textAlign: textAlign,
+                textAlign: TextAlign.start,
                 style: AppTypography.body(
-                  size: 15,
+                  size: prominent ? 16 : 15,
                   height: 1.3,
                   weight: FontWeight.w700,
                   color: skin.text,
@@ -1509,11 +1267,144 @@ class _OptionTile extends StatelessWidget {
                 ),
               ),
             ),
-            if (trailing != null)
-              SizedBox(width: _ActSkin.badge, child: trailing),
           ],
         ),
       ),
+    );
+  }
+}
+
+class _OrderPiece extends StatelessWidget {
+  final int index;
+  final String text;
+  final Color accent;
+  final bool locked;
+  final _OptState state;
+
+  const _OrderPiece({
+    required this.index,
+    required this.text,
+    required this.accent,
+    required this.locked,
+    required this.state,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final skin = _ActSkin.paint(state, accent);
+    return AnimatedContainer(
+      duration: _ActSkin.anim,
+      curve: Curves.easeOutCubic,
+      width: double.infinity,
+      constraints: const BoxConstraints(minHeight: 58),
+      padding: const EdgeInsets.fromLTRB(12, 12, 10, 12),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(_ActSkin.radius),
+        color: skin.fill,
+        border: Border.all(color: skin.border, width: skin.hot ? 1.8 : 1),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.4),
+            blurRadius: 0,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 36,
+            height: 36,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: skin.badge,
+            ),
+            child: Text(
+              '${index + 1}',
+              style: AppTypography.title(size: 15, color: skin.badgeFg),
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              text,
+              style: AppTypography.body(
+                size: 15,
+                height: 1.3,
+                weight: FontWeight.w700,
+                color: skin.text,
+              ),
+            ),
+          ),
+          Icon(
+            Icons.drag_indicator_rounded,
+            size: 22,
+            color: locked
+                ? AppColors.textOnDark.withValues(alpha: 0.18)
+                : accent.withValues(alpha: 0.85),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MatchStepper extends StatelessWidget {
+  final bool pickingLeft;
+  final Color accent;
+
+  const _MatchStepper({required this.pickingLeft, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget step(int n, String label, bool on) {
+      return Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: 22,
+            height: 22,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: on ? accent : Colors.white.withValues(alpha: 0.08),
+            ),
+            child: Text(
+              '$n',
+              style: AppTypography.title(
+                size: 11,
+                color: on ? AppColors.inkOnAccent : AppColors.textOnDark.withValues(alpha: 0.45),
+              ),
+            ),
+          ),
+          const SizedBox(width: 6),
+          Text(
+            label,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.8,
+              color: on ? accent : AppColors.textOnDark.withValues(alpha: 0.4),
+            ),
+          ),
+        ],
+      );
+    }
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        step(1, 'Escolha', pickingLeft),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Container(
+            width: 18,
+            height: 1,
+            color: Colors.white.withValues(alpha: 0.16),
+          ),
+        ),
+        step(2, 'Pareie', !pickingLeft),
+      ],
     );
   }
 }

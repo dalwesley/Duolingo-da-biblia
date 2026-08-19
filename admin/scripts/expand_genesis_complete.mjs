@@ -7,7 +7,7 @@
  * Usage: node scripts/expand_genesis_complete.mjs
  */
 import { readFileSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
+import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -42,7 +42,7 @@ const MODULES = [
         focus: 'O que Abrão deixa para trás — e o que Deus promete à frente?',
         facts: [
           ['Para onde Deus manda Abrão ir?', 'Para a terra que Ele mostraria', 'De volta a Ur', 'Só ao Egito', 'Para Babel'],
-          ['Quem viaja com Abrão?', 'Sarai e Ló', 'Só Isaque', 'Faraó', 'Melquisedeque'],
+          ['Quem parte com Abrão quando ele deixa a sua terra?', 'Sarai e Ló', 'Só Isaque', 'Faraó', 'Melquisedeque'],
           ['O que Deus promete tornar Abrão?', 'Uma grande nação', 'Um rei do Egito', 'Um juiz em Canaã', 'Um sacerdote em Ur'],
         ],
       },
@@ -58,7 +58,7 @@ const MODULES = [
         focus: 'O que a escolha de Ló revela sobre o que valorizamos?',
         facts: [
           ['Por que Abrão desce ao Egito?', 'Por causa da fome', 'Para guerrear', 'Para comprar terra', 'Para achar Isaque'],
-          ['O que Ló escolhe?', 'A planície do Jordão', 'As montanhas de Ur', 'O deserto de Sur', 'Hebrom somente'],
+          ['Que região Ló escolhe ao se separar de Abrão?', 'A planície do Jordão', 'As montanhas de Ur', 'O deserto de Sur', 'Hebrom somente'],
           ['Depois da separação, o que Deus mostra a Abrão?', 'A terra em todas as direções', 'Um trono no Egito', 'A torre de Babel', 'O dilúvio'],
         ],
       },
@@ -73,9 +73,9 @@ const MODULES = [
           'Rei-sacerdote que abençoa Abrão: antecipação de um sacerdócio maior que o de Levi.',
         focus: 'Por que Abrão recusa os bens de Sodoma?',
         facts: [
-          ['Quem Abrão resgata?', 'Ló', 'Sarai', 'Isaque', 'Ismael'],
-          ['Quem é Melquisedeque?', 'Rei de Salém e sacerdote', 'Rei de Sodoma', 'Faraó', 'Um anjo'],
-          ['O que Abrão dá a Melquisedeque?', 'O dízimo', 'Toda a terra', 'Seu filho', 'As ovelhas de Ló'],
+          ['Quem Abrão resgata na guerra dos reis?', 'Ló', 'Sarai', 'Isaque', 'Ismael'],
+          ['Quem é Melquisedeque no encontro com Abrão?', 'Rei de Salém e sacerdote', 'Rei de Sodoma', 'Faraó', 'Um anjo'],
+          ['O que Abrão oferece a Melquisedeque depois da bênção?', 'O dízimo', 'Toda a terra', 'Seu filho', 'As ovelhas de Ló'],
         ],
       },
       {
@@ -89,9 +89,9 @@ const MODULES = [
           'Crer na promessa de Deus é o coração da aliança — justiça pela fé, antes da Lei.',
         focus: 'O que significa “creu Abrão no Senhor”?',
         facts: [
-          ['O que Deus conta a Abrão no céu?', 'As estrelas — sua descendência', 'Os dias do dilúvio', 'Os reis de Canaã', 'Os anjos caídos'],
+          ['O que Deus compara à descendência de Abrão ao apontar as estrelas?', 'As estrelas — sua descendência', 'Os dias do dilúvio', 'Os reis de Canaã', 'Os anjos caídos'],
           ['Como Abrão é declarado justo?', 'Pela fé', 'Pelas obras da Lei', 'Pelo dízimo', 'Pela circuncisão só'],
-          ['O que passa entre os pedaços na aliança?', 'Um forno fumegante e uma tocha', 'Um anjo com espada', 'A arca', 'O Jordão'],
+          ['O que passa entre os animais partidos na aliança com Abrão?', 'Um forno fumegante e uma tocha', 'Um anjo com espada', 'A arca', 'O Jordão'],
         ],
       },
       {
@@ -122,7 +122,7 @@ const MODULES = [
         focus: 'Por que Deus muda os nomes de Abrão e Sarai?',
         facts: [
           ['Qual o novo nome de Abrão?', 'Abraão', 'Israel', 'Isaque', 'Efraim'],
-          ['O sinal da aliança neste capítulo é:', 'A circuncisão', 'O arco-íris', 'O batismo', 'O dízimo'],
+          ['Qual é o sinal da aliança neste capítulo?', 'A circuncisão', 'O arco-íris', 'O batismo', 'O dízimo'],
           ['Que filho é prometido a Sara?', 'Isaque', 'Ismael', 'Jacó', 'José'],
         ],
       },
@@ -290,9 +290,9 @@ const MODULES = [
         focus: 'Como Deus transforma Jacó ao longo da jornada?',
         type: 'boss',
         facts: [
-          ['O conflito inicial é entre:', 'Esaú e Jacó', 'José e Benjamim', 'Abraão e Ló', 'Moisés e Faraó'],
-          ['Em Betel, Jacó encontra:', 'A presença de Deus', 'O trono do Egito', 'A arca', 'O mar Vermelho'],
-          ['Em Peniel, Jacó recebe:', 'Um novo nome', 'A Lei', 'O sacerdócio levítico', 'O dilúvio'],
+          ['Entre quem começa o conflito neste passo?', 'Esaú e Jacó', 'José e Benjamim', 'Abraão e Ló', 'Moisés e Faraó'],
+          ['O que Jacó encontra em Betel?', 'A presença de Deus', 'O trono do Egito', 'A arca', 'O mar Vermelho'],
+          ['O que Jacó recebe em Peniel?', 'Um novo nome', 'A Lei', 'O sacerdócio levítico', 'O dilúvio'],
         ],
       },
     ],
@@ -672,4 +672,42 @@ function main() {
   console.log('Pronto. Rode: npm run prepare:content && npm run seed');
 }
 
-main();
+export { MODULES };
+
+export function loadGenesisBook() {
+  return loadGenesis();
+}
+
+export function generateGenesis1250Questions(book) {
+  return MODULES.flatMap((mod) =>
+    mod.missions.flatMap((m) => makeQuestions(m, book)),
+  );
+}
+
+export function authoredFacts() {
+  const out = [];
+  for (const mod of MODULES) {
+    for (const m of mod.missions) {
+      for (const row of m.facts || []) {
+        const [question, correct, ...wrongs] = row;
+        out.push({
+          section: m.slug,
+          question,
+          correct,
+          wrongs: wrongs.filter(Boolean),
+        });
+      }
+    }
+  }
+  return out;
+}
+
+function isLaunchedDirectly() {
+  try {
+    return fileURLToPath(import.meta.url) === resolve(process.argv[1] || '');
+  } catch {
+    return true;
+  }
+}
+
+if (isLaunchedDirectly()) main();

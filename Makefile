@@ -4,6 +4,7 @@
 # ==========================================
 
 APP := trilha_app
+ADMIN := admin
 
 .PHONY: help clean get reset reset_hard \
         run run_release run_profile \
@@ -11,7 +12,8 @@ APP := trilha_app
         analyze test test_coverage \
         android_clean android_fix_gradle android_build deep_clean_android \
         ios_pods ios_update ios_clean ios_reset ios_run ios_build open_ios deep_clean_ios \
-        doctor upgrade clean_cache fix_permissions
+        doctor upgrade clean_cache fix_permissions \
+        seed seed_cli seed_full
 
 # ==========================================
 # CORES
@@ -192,6 +194,21 @@ fix_permissions:
 	chmod +x $(APP)/ios/**/*.sh || true
 
 # ==========================================
+# CONTEÚDO / FIRESTORE
+# (usa firebase login — contas Google-only não autenticam npm run seed)
+# ==========================================
+
+# Banco de questões → Firestore. Override: make seed SEED_ONLY=genesis
+seed seed_cli:
+	@echo "$(GREEN)☁️  Publicando banco no Firestore (Firebase CLI)…$(NC)"
+	cd $(ADMIN) && SEED_ONLY=$(or $(SEED_ONLY),bank) npm run seed:cli
+
+# Trilhas + banco + estudos + catálogo
+seed_full:
+	@echo "$(GREEN)☁️  Publicando conteúdo completo no Firestore…$(NC)"
+	cd $(ADMIN) && npm run seed:cli
+
+# ==========================================
 # HELP
 # ==========================================
 
@@ -225,6 +242,11 @@ help:
 	@echo "  make ios_build"
 	@echo "  make open_ios"
 	@echo "  make deep_clean_ios"
+	@echo ""
+	@echo "Conteúdo (Firestore):"
+	@echo "  make seed            # banco de questões (SEED_ONLY=bank)"
+	@echo "  make seed_full       # trilhas + banco + estudos"
+	@echo "  make seed SEED_ONLY=ot"
 	@echo ""
 	@echo "Utilitários:"
 	@echo "  make doctor"

@@ -1,3 +1,4 @@
+import '../utils/vf_claim.dart';
 import 'trail.dart';
 
 /// Tipos / gestos do contrato de sessão ([docs/SESSAO_TREINO.md]).
@@ -114,6 +115,8 @@ class ExercisePassage {
       text: (json['text'] as String?) ?? '',
     );
   }
+
+  Map<String, dynamic> toJson() => {'ref': ref, 'text': text};
 }
 
 /// Exercício tipado — um micro-ato da sessão.
@@ -186,7 +189,7 @@ class Exercise {
   bool get hasFieldHero {
     switch (type) {
       case ExerciseType.trueFalse:
-        return prompt.trim().isNotEmpty;
+        return false;
       case ExerciseType.complete:
         return (template ?? '').trim().isNotEmpty;
       case ExerciseType.tap:
@@ -211,16 +214,29 @@ class Exercise {
     }
   }
 
-  /// Cue exibido (nunca o beat pedagógico).
+  /// Cue exibido (nunca o beat pedagógico, nunca o verbo repetido).
   String get displayCue {
-    final c = (cue ?? '').trim();
-    if (c.isNotEmpty) return c;
-    if (type == ExerciseType.trueFalse) return '';
-    if (type == ExerciseType.complete && (template ?? '').trim().isNotEmpty) {
-      return '';
+    final candidates = <String>[
+      if ((cue ?? '').trim().isNotEmpty) (cue ?? '').trim(),
+      if (prompt.trim().isNotEmpty) prompt.trim(),
+    ];
+    for (final c in candidates) {
+      if (_isGenericTaskCue(c)) continue;
+      return type == ExerciseType.trueFalse ? vfClaim(c) : c;
     }
-    if (hasFieldHero) return prompt.trim();
-    return '';
+    return switch (type) {
+      ExerciseType.order => 'Monte a sequência.',
+      ExerciseType.match => 'Ligue cada par.',
+      _ => '',
+    };
+  }
+
+  bool _isGenericTaskCue(String text) {
+    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
+    if (type != ExerciseType.complete) return false;
+    return t == 'complete' ||
+        t == 'complete a lacuna' ||
+        t.startsWith('complete a lacuna');
   }
 
   /// O que o usuário deve fazer neste ato.
@@ -231,7 +247,7 @@ class Exercise {
       ExerciseType.trueFalse =>
         'Leia a afirmação e diga se é verdadeira ou falsa.',
       ExerciseType.tap || ExerciseType.findInText =>
-        'Leia o trecho e toque a resposta certa no texto.',
+        'Toque o trecho que responde.',
       ExerciseType.choice ||
       ExerciseType.textSupported ||
       ExerciseType.bestInterpretation =>
@@ -245,9 +261,9 @@ class Exercise {
   }
 
   String get instructionVerb => switch (type) {
-    ExerciseType.trueFalse => 'Decida',
+    ExerciseType.trueFalse => 'Julgue',
     ExerciseType.tap || ExerciseType.findInText =>
-      (passageA != null && passageB != null) ? 'Conecte' : 'Observe',
+      (passageA != null && passageB != null) ? 'Conecte' : 'Toque',
     ExerciseType.order => 'Ordene',
     ExerciseType.complete => 'Complete',
     ExerciseType.connect || ExerciseType.match => 'Conecte',
@@ -259,13 +275,11 @@ class Exercise {
 
   /// Opções cujo texto aparece no trecho (toque no versículo).
   List<QuestionOption> optionsEmbeddedIn(String passage) {
-    final lower = passage.toLowerCase();
-    return effectiveOptions
-        .where(
-          (o) =>
-              o.text.trim().isNotEmpty && lower.contains(o.text.toLowerCase()),
-        )
-        .toList()
+    final ids = buildTapSpans(passage, effectiveOptions)
+        .map((s) => s.optionId)
+        .whereType<String>()
+        .toSet();
+    return effectiveOptions.where((o) => ids.contains(o.id)).toList()
       ..sort((a, b) => b.text.length.compareTo(a.text.length));
   }
 
@@ -280,6 +294,7 @@ class Exercise {
           type == ExerciseType.textSupported ||
           type == ExerciseType.connect ||
           type == ExerciseType.tap ||
+          type == ExerciseType.findInText ||
           type == ExerciseType.complete);
 
   /// Conteúdo suficiente para entrar no player (prompt vazio ok se há campo).
@@ -517,4 +532,60 @@ class Exercise {
         .where((s) => s.length >= 12)
         .toList();
   }
+}
+
+/// Trecho do versículo: texto corrido ou alvo tocável (`optionId`).
+class TapSpan {
+  final String text;
+  final String? optionId;
+  const TapSpan(this.text, [this.optionId]);
+}
+
+final _letter = RegExp(r'\p{L}', unicode: true);
+
+bool _isLetterAt(String text, int i) {
+  if (i < 0 || i >= text.length) return false;
+  return _letter.hasMatch(text[i]);
+}
+
+/// Casa opções no trecho por frase inteira, sem cortar no meio da palavra.
+List<TapSpan> buildTapSpans(String passage, List<QuestionOption> options) {
+  if (passage.isEmpty) return const [];
+  final sorted = List<QuestionOption>.from(
+    options.where((o) => o.text.trim().isNotEmpty),
+  )..sort((a, b) => b.text.length.compareTo(a.text.length));
+
+  final lower = passage.toLowerCase();
+  final hits = <({int start, int end, String id})>[];
+  for (final o in sorted) {
+    final needle = o.text.trim().toLowerCase();
+    if (needle.isEmpty) continue;
+    var from = 0;
+    while (true) {
+      final i = lower.indexOf(needle, from);
+      if (i < 0) break;
+      final end = i + needle.length;
+      final bounded = !_isLetterAt(passage, i - 1) && !_isLetterAt(passage, end);
+      final overlaps = hits.any((h) => i < h.end && end > h.start);
+      if (bounded && !overlaps) {
+        hits.add((start: i, end: end, id: o.id));
+      }
+      from = i + 1;
+    }
+  }
+  hits.sort((a, b) => a.start.compareTo(b.start));
+
+  final spans = <TapSpan>[];
+  var cursor = 0;
+  for (final h in hits) {
+    if (h.start > cursor) {
+      spans.add(TapSpan(passage.substring(cursor, h.start)));
+    }
+    spans.add(TapSpan(passage.substring(h.start, h.end), h.id));
+    cursor = h.end;
+  }
+  if (cursor < passage.length) {
+    spans.add(TapSpan(passage.substring(cursor)));
+  }
+  return spans;
 }
