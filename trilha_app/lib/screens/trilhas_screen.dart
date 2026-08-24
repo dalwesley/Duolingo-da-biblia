@@ -11,6 +11,8 @@ import '../utils/layout_utils.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/immersive_background.dart';
+import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/ui_primitives.dart';
 import 'realm_journey_screen.dart';
 
@@ -39,6 +41,8 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     with SingleTickerProviderStateMixin {
   List<Trail>? _trails;
   late final AnimationController _enter;
+  bool _retryingCatalog = false;
+  bool _offlineDialogShown = false;
 
   @override
   void initState() {
@@ -56,9 +60,48 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     super.dispose();
   }
 
-  Future<void> _load() async {
-    final trails = await widget.repo.getTrails();
-    if (mounted) setState(() => _trails = trails);
+  Future<void> _load({bool forceRefresh = false}) async {
+    if (forceRefresh) {
+      setState(() {
+        _retryingCatalog = true;
+        _trails = null;
+      });
+    }
+    final trails = await widget.repo.getTrails(forceRefresh: forceRefresh);
+    if (mounted) {
+      setState(() {
+        _trails = trails;
+        _retryingCatalog = false;
+      });
+      if (trails.isEmpty) {
+        _maybeShowOfflineDialog();
+      } else {
+        _offlineDialogShown = false;
+      }
+    }
+  }
+
+  void _maybeShowOfflineDialog() {
+    if (_offlineDialogShown || !mounted) return;
+    _offlineDialogShown = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted || (_trails?.isNotEmpty ?? false)) return;
+      final ok = await showOfflineCurriculumDialog(
+        context,
+        onRetry: () async {
+          final trails = await widget.repo.getTrails(forceRefresh: true);
+          if (mounted) {
+            setState(() {
+              _trails = trails;
+              _retryingCatalog = false;
+            });
+          }
+          return trails.isNotEmpty;
+        },
+      );
+      if (!mounted) return;
+      if (!ok) _offlineDialogShown = false;
+    });
   }
 
   Widget _reveal(int index, Widget child) {
@@ -216,6 +259,45 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     if (_trails == null) {
       return const Center(
         child: CircularProgressIndicator(color: AppColors.accent),
+      );
+    }
+
+    if (_trails!.isEmpty) {
+      final a = Appearance.of(context);
+      return ListView(
+        padding: EdgeInsets.fromLTRB(
+          AppSpace.screen,
+          topInset + AppSpace.xxl,
+          AppSpace.screen,
+          scrollPaddingBelowNav(context),
+        ),
+        children: [
+          GlassCard(
+            padding: const EdgeInsets.all(AppSpace.xxl),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Text(
+                  'Missões ainda não chegaram',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.title(size: 18, color: a.text),
+                ),
+                const SizedBox(height: AppSpace.md),
+                Text(
+                  'O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(size: 14, color: a.textMuted(0.7)),
+                ),
+                const SizedBox(height: AppSpace.xxl),
+                CopperCta(
+                  label: _retryingCatalog ? 'Baixando…' : 'Tentar de novo',
+                  onTap: _retryingCatalog ? null : _maybeShowOfflineDialog,
+                  showArrow: false,
+                ),
+              ],
+            ),
+          ),
+        ],
       );
     }
 

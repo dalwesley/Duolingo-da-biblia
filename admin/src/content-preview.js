@@ -58,9 +58,9 @@ export const GESTURES = [
 ];
 
 export const DIFFS = [
-  { id: 'semente', label: 'Semente', hint: 'Primeiro contato' },
-  { id: 'caminhada', label: 'Caminhada', hint: 'Quem já treina' },
-  { id: 'profundezas', label: 'Profundezas', hint: 'Leitura atenta' },
+  { id: 'semente', label: 'Observação', hint: 'Observar o que o texto diz' },
+  { id: 'caminhada', label: 'Compreensão', hint: 'Compreender o que comunica' },
+  { id: 'profundezas', label: 'Interpretação', hint: 'Interpretar o que significa' },
 ];
 
 export function gestureMeta(type) {

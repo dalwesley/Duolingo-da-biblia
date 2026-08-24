@@ -3,7 +3,7 @@ import { confirmAction, escapeHtml, setLoading, showToast } from './ui.js';
 
 export async function renderStudiesPage(root) {
   root.innerHTML = `<div class="page-header"><h1>Estudos</h1></div><div class="card"><p>Carregando…</p></div>`;
-  let items = await listCollection(COL.studies);
+  let items = await listCollection(COL.studies, 'slug');
   let search = '';
 
   function filtered() {

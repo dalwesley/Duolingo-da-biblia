@@ -362,6 +362,23 @@ class _ExercisePanelState extends State<ExercisePanel>
           accent: widget.accent,
           reference: ex.reference,
         );
+      case ExerciseType.tap when ex.usesCompletePalco:
+        final tpl = (ex.palcoTemplate ?? '').trim();
+        if (tpl.isEmpty) return null;
+        final pickedId = widget.selected ?? _picked;
+        final filled = pickedId == null
+            ? null
+            : ex.effectiveOptions
+                  .where((o) => o.id == pickedId)
+                  .map((o) => o.text)
+                  .firstOrNull;
+        return _CompleteVerse(
+          template: tpl,
+          filled: filled,
+          state: pickedId == null ? _OptState.idle : _state(pickedId),
+          accent: widget.accent,
+          reference: ex.reference,
+        );
       case ExerciseType.connect:
       case ExerciseType.tap when ex.passageA != null || ex.passageB != null:
         return _BridgePassages(
@@ -377,6 +394,10 @@ class _ExercisePanelState extends State<ExercisePanel>
           text: text,
           accent: widget.accent,
           reference: ex.reference,
+          exercise: ex,
+          locked: _locked,
+          onPick: _locked ? null : _pickChoice,
+          stateFor: _state,
         );
       case ExerciseType.choice:
       case ExerciseType.textSupported:
@@ -425,6 +446,17 @@ class _ExercisePanelState extends State<ExercisePanel>
         ];
       case ExerciseType.tap:
       case ExerciseType.findInText:
+        if (ex.type == ExerciseType.tap && ex.usesCompletePalco) {
+          return _optionBank(
+            ex.effectiveOptions,
+            stacked: !_allShort(ex.effectiveOptions),
+          );
+        }
+        final text = (ex.passageText ?? '').trim();
+        final embedded = text.isNotEmpty &&
+            ex.optionsEmbeddedIn(text).isNotEmpty;
+        if (embedded) return const [];
+        return _optionBank(ex.effectiveOptions, stacked: true);
       case ExerciseType.connect:
         return _optionBank(ex.effectiveOptions, stacked: true);
       case ExerciseType.order:
@@ -1128,14 +1160,29 @@ class _PassageBlock extends StatelessWidget {
   final String text;
   final Color accent;
   final String? reference;
+  final Exercise? exercise;
+  final bool locked;
+  final ValueChanged<String>? onPick;
+  final _OptState Function(String id)? stateFor;
+
   const _PassageBlock({
     required this.text,
     required this.accent,
     this.reference,
+    this.exercise,
+    this.locked = false,
+    this.onPick,
+    this.stateFor,
   });
 
   @override
   Widget build(BuildContext context) {
+    final ex = exercise;
+    final spans = ex == null
+        ? const <TapSpan>[]
+        : buildTapSpans(text, ex.effectiveOptions);
+    final tappable = spans.any((s) => s.optionId != null);
+
     return _Manuscript(
       accent: accent,
       reference: reference,
@@ -1144,7 +1191,24 @@ class _PassageBlock extends StatelessWidget {
         runSpacing: 12,
         alignment: WrapAlignment.center,
         crossAxisAlignment: WrapCrossAlignment.center,
-        children: _verseWords(text),
+        children: tappable
+            ? [
+                for (final span in spans)
+                  if (span.optionId != null)
+                    _PressScale(
+                      onTap: locked || onPick == null
+                          ? null
+                          : () => onPick!(span.optionId!),
+                      child: _VerseMark(
+                        text: span.text,
+                        state: stateFor?.call(span.optionId!) ?? _OptState.idle,
+                        accent: accent,
+                      ),
+                    )
+                  else
+                    ..._verseWords(span.text),
+              ]
+            : _verseWords(text),
       ),
     );
   }

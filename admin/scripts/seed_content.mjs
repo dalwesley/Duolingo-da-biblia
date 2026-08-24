@@ -1,8 +1,8 @@
 /**
  * Seed Firestore from local JSON assets.
  * Usage (from admin/):
- *   SEED_ONLY=sermao npm run seed          — sobe o JSON local (sem migrate)
- *   npm run seed:refresh                   — prepare + migrate + enrich + seed
+ *   SEED_ONLY=sermao npm run seed          — sobe o JSON local
+ *   npm run seed:cli                       — OAuth Firebase CLI (preferido)
  *   SEED_EMAIL=voce@email.com SEED_PASSWORD='…' npm run seed
  *
  * Auth (importante — ago/2026):

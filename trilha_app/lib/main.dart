@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -5,6 +6,7 @@ import 'screens/lesson_screen.dart';
 import 'screens/splash_screen.dart';
 import 'services/backend_service.dart';
 import 'services/companion_service.dart';
+import 'services/content_catalog_service.dart';
 import 'services/league_service.dart';
 import 'services/home_widget_service.dart';
 import 'services/invite_deep_link_service.dart';
@@ -15,16 +17,18 @@ import 'services/sound_service.dart';
 import 'services/sync_service.dart';
 import 'theme/app_theme.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
 
-  await SoundService.instance.init();
-  await NotificationService.instance.init();
-  await HomeWidgetService.init();
-  await InviteDeepLinkService.instance.init();
-
   runApp(const TrilhaApp());
+
+  // Não bloqueia o 1º frame (splash). Som, avisos e widget podem subir atrás.
+  unawaited(SoundService.instance.init());
+  unawaited(NotificationService.instance.init());
+  unawaited(HomeWidgetService.init());
+  unawaited(InviteDeepLinkService.instance.init());
+  unawaited(ContentCatalogService.instance.ensureLoaded());
 }
 
 class TrilhaApp extends StatelessWidget {

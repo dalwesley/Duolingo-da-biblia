@@ -8,7 +8,7 @@ enum TrailDifficulty {
 
   String get id => name;
 
-  /// Próximo modo (Semente → Rota → Profundezas).
+  /// Próximo modo (Observação → Compreensão → Interpretação).
   TrailDifficulty? get next {
     return switch (this) {
       TrailDifficulty.semente => TrailDifficulty.caminhada,
@@ -19,9 +19,9 @@ enum TrailDifficulty {
 
   String get labelPt {
     return switch (this) {
-      TrailDifficulty.semente => 'Semente',
-      TrailDifficulty.caminhada => 'Rota',
-      TrailDifficulty.profundezas => 'Profundezas',
+      TrailDifficulty.semente => 'Observação',
+      TrailDifficulty.caminhada => 'Compreensão',
+      TrailDifficulty.profundezas => 'Interpretação',
     };
   }
 
@@ -54,14 +54,23 @@ class DifficultyMeta {
   });
 
   factory DifficultyMeta.fromJson(Map<String, dynamic> json) {
+    final difficulty =
+        TrailDifficulty.fromId(json['id'] as String) ?? TrailDifficulty.semente;
+    final rawLabel = (json['label'] as String?)?.trim();
+    const legacy = {'Semente', 'Rota', 'Caminhada', 'Profundezas'};
+    final label =
+        rawLabel == null || rawLabel.isEmpty || legacy.contains(rawLabel)
+            ? difficulty.labelPt
+            : rawLabel;
     return DifficultyMeta(
-      difficulty: TrailDifficulty.fromId(json['id'] as String) ?? TrailDifficulty.semente,
-      label: json['label'] as String,
-      subtitle: json['subtitle'] as String,
-      description: json['description'] as String,
-      stepsMultiplier: ((json['stepsMultiplier'] ?? json['xpMultiplier']) as num).toDouble(),
-      accent: json['accent'] as String,
-      icon: json['icon'] as String,
+      difficulty: difficulty,
+      label: label,
+      subtitle: json['subtitle'] as String? ?? '',
+      description: json['description'] as String? ?? '',
+      stepsMultiplier: ((json['stepsMultiplier'] ?? json['xpMultiplier']) as num)
+          .toDouble(),
+      accent: json['accent'] as String? ?? '#D4A84B',
+      icon: json['icon'] as String? ?? 'seed',
     );
   }
 }
@@ -91,6 +100,8 @@ class BankQuestion {
   final String? noteLabel;
   final String? beat;
   final String? skill;
+  final String? learningObjective;
+  final List<String> evidence;
 
   const BankQuestion({
     required this.id,
@@ -117,15 +128,27 @@ class BankQuestion {
     this.noteLabel,
     this.beat,
     this.skill,
+    this.learningObjective,
+    this.evidence = const [],
   });
 
   factory BankQuestion.fromJson(Map<String, dynamic> json) {
     final id = json['id'] as String;
-    final inferredTrail = id.startsWith('e-')
-        ? 'exodo'
-        : id.startsWith('g-')
-            ? 'genesis-1-11'
-            : 'genesis-1-11';
+    final inferredTrail = () {
+      if (id.startsWith('e-') || id.startsWith('exodo-')) return 'exodo';
+      if (id.startsWith('g-') ||
+          id.startsWith('genesis--') ||
+          id.startsWith('genesis-1-11-')) {
+        return 'genesis-1-11';
+      }
+      if (id.startsWith('genesis-12') || id.startsWith('g1250-')) {
+        return 'genesis-12-50';
+      }
+      if (id.startsWith('sm-') || id.startsWith('sermao-')) {
+        return 'sermao-do-monte';
+      }
+      return 'genesis-1-11';
+    }();
     final options = (json['options'] as List? ?? [])
         .whereType<Map>()
         .map((e) => QuestionOption.fromJson(Map<String, dynamic>.from(e)))
@@ -178,6 +201,12 @@ class BankQuestion {
       noteLabel: json['noteLabel'] as String?,
       beat: json['beat'] as String?,
       skill: json['skill'] as String?,
+      learningObjective: json['learningObjective'] as String?,
+      evidence: (json['evidence'] as List?)
+              ?.map((e) => e.toString())
+              .where((s) => s.trim().isNotEmpty)
+              .toList() ??
+          const [],
     );
   }
 
@@ -207,6 +236,9 @@ class BankQuestion {
       if (noteLabel != null) 'noteLabel': noteLabel,
       if (beat != null) 'beat': beat,
       if (skill != null) 'skill': skill,
+      if (learningObjective != null && learningObjective!.isNotEmpty)
+        'learningObjective': learningObjective,
+      if (evidence.isNotEmpty) 'evidence': evidence,
     };
   }
 

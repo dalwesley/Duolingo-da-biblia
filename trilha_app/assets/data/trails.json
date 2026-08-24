@@ -79,7 +79,8 @@
             "objective": "Qual é o centro da narrativa da criação?"
           }
         ],
-        "section": "criacao"
+        "section": "criacao",
+        "genre": "narrative"
       },
       {
         "title": "O Jardim",
@@ -138,7 +139,8 @@
             "objective": "Como a queda prepara a história da salvação?"
           }
         ],
-        "section": "jardim"
+        "section": "jardim",
+        "genre": "narrative"
       },
       {
         "title": "Depois do Éden",
@@ -210,11 +212,13 @@
             "objective": "Qual é o fio que liga Criação, Queda e Abraão?"
           }
         ],
-        "section": "depois"
+        "section": "depois",
+        "genre": "narrative"
       }
     ],
     "realm": "antigo-testamento",
-    "category": "pentateuco"
+    "category": "pentateuco",
+    "genre": "narrative"
   },
   {
     "slug": "genesis-12-50",
@@ -230,6 +234,7 @@
         "title": "Abraão",
         "section": "abraao",
         "icon": "🌟",
+        "genre": "narrative",
         "missions": [
           {
             "slug": "gen12-01-chamado",
@@ -377,6 +382,7 @@
         "title": "Isaque e Jacó",
         "section": "jaco",
         "icon": "⛺",
+        "genre": "narrative",
         "missions": [
           {
             "slug": "gen12-10-rebeca",
@@ -468,6 +474,7 @@
         "title": "José",
         "section": "jose",
         "icon": "👑",
+        "genre": "narrative",
         "missions": [
           {
             "slug": "gen12-15-sonhos",
@@ -572,6 +579,7 @@
     ],
     "realm": "antigo-testamento",
     "category": "pentateuco",
+    "genre": "narrative",
     "isActive": true
   },
   {

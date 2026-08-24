@@ -7,7 +7,7 @@ APP := trilha_app
 ADMIN := admin
 
 .PHONY: help clean get reset reset_hard \
-        run run_release run_profile \
+        run run_release run_profile d7_run \
         apk aab build_apk build_aab \
         analyze test test_coverage \
         android_clean android_fix_gradle android_build deep_clean_android \
@@ -48,6 +48,12 @@ reset_hard: clean_cache clean get
 run:
 	@echo "$(GREEN)🚀 Rodando app (debug)...$(NC)"
 	cd $(APP) && flutter run
+
+# Build de teste D7 — catálogo aberto (não usar em release de loja).
+d7_run:
+	@echo "$(GREEN)🧪 D7 — OPEN_ALL_TRAILS=true$(NC)"
+	@echo "Protocolo: docs/D7_TESTER_PROTOCOLO.md · Convite: docs/D7_CONVITE.md"
+	cd $(APP) && flutter run --dart-define=OPEN_ALL_TRAILS=true
 
 run_release:
 	@echo "$(GREEN)🚀 Rodando app (release)...$(NC)"

@@ -186,7 +186,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                   ),
                                   const SizedBox(height: AppSpace.md),
                                   Text(
-                                    'Semente, Rota ou Profundezas —\noperações diferentes sobre o mesmo texto.\nConclua um modo para liberar o próximo.',
+                                    'Observação, Compreensão ou Interpretação —\noperações diferentes sobre o mesmo texto.\nConclua um modo para liberar o próximo.',
                                     textAlign: TextAlign.center,
                                     style: AppTypography.body(
                                       size: 13,
@@ -213,6 +213,9 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                     widget.trailSlug,
                                     meta.difficulty.id,
                                   );
+                                  final currentId = progress.difficultyForTrail(
+                                    widget.trailSlug,
+                                  );
                                   final start = 0.15 + i * 0.12;
                                   final curve = CurvedAnimation(
                                     parent: _enter,
@@ -227,6 +230,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
                                         child: _DifficultyCard(
                                           meta: meta,
                                           selected: _hover == meta.difficulty,
+                                          current: currentId == meta.difficulty.id,
                                           locked: !unlocked,
                                           cleared: cleared,
                                           onTap: () => _choose(meta),
@@ -256,6 +260,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen> with Si
 class _DifficultyCard extends StatelessWidget {
   final DifficultyMeta meta;
   final bool selected;
+  final bool current;
   final bool locked;
   final bool cleared;
   final VoidCallback onTap;
@@ -264,6 +269,7 @@ class _DifficultyCard extends StatelessWidget {
   const _DifficultyCard({
     required this.meta,
     required this.selected,
+    required this.current,
     required this.locked,
     required this.cleared,
     required this.onTap,
@@ -274,9 +280,13 @@ class _DifficultyCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final color = DifficultyVisuals.accentFor(meta.difficulty);
+    final ink = DifficultyVisuals.inkOn(meta.difficulty);
+    final lit = (current || selected) && !locked;
     final xpLabel = meta.stepsMultiplier == 1
         ? 'Passos padrão'
         : '+${((meta.stepsMultiplier - 1) * 100).round()}% passos';
+    final titleColor = locked ? a.textMuted(0.62) : color;
+    final railColor = locked ? color.withValues(alpha: 0.35) : color;
 
     return Material(
       color: Colors.transparent,
@@ -288,123 +298,178 @@ class _DifficultyCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadii.xl),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 220),
-          padding: const EdgeInsets.all(AppSpace.xl),
+          clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.xl),
             gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-                color.withValues(alpha: selected ? 0.28 : 0.16),
-                Colors.white.withValues(alpha: 0.05),
-              ],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+              colors: locked
+                  ? [
+                      color.withValues(alpha: 0.08),
+                      Colors.white.withValues(alpha: 0.03),
+                    ]
+                  : [
+                      color.withValues(alpha: lit ? 0.46 : 0.32),
+                      color.withValues(alpha: lit ? 0.18 : 0.12),
+                      Colors.white.withValues(alpha: 0.04),
+                    ],
+              stops: locked ? null : const [0, 0.42, 1],
             ),
             border: Border.all(
-              color: color.withValues(alpha: selected ? 0.7 : 0.35),
-              width: selected ? 2 : 1.2,
+              color: color.withValues(alpha: locked ? 0.28 : (lit ? 1 : 0.78)),
+              width: lit ? 2.4 : 1.8,
             ),
-            boxShadow: [
-              BoxShadow(
-                color: color.withValues(alpha: 0.22),
-                blurRadius: selected ? 24 : 14,
-                offset: const Offset(0, 8),
-              ),
-            ],
+            boxShadow: locked
+                ? const []
+                : [
+                    BoxShadow(
+                      color: color.withValues(alpha: lit ? 0.48 : 0.32),
+                      blurRadius: lit ? 28 : 18,
+                      offset: const Offset(0, 8),
+                    ),
+                  ],
           ),
-          child: Row(
+          child: Stack(
             children: [
-              CinematicIcon(
-                glyph: locked
-                    ? CinematicGlyph.lock
-                    : DifficultyVisuals.glyphFor(meta.difficulty),
-                size: 52,
-                accent: color,
-                glowing: selected && !locked,
+              Positioned(
+                left: 0,
+                top: 0,
+                bottom: 0,
+                width: 8,
+                child: ColoredBox(color: railColor),
               ),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+              Padding(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.xl + 6,
+                  AppSpace.xl,
+                  AppSpace.xl,
+                  AppSpace.xl,
+                ),
+                child: Row(
                   children: [
-                    Wrap(
-                      spacing: AppSpace.sm,
-                      runSpacing: 4,
-                      crossAxisAlignment: WrapCrossAlignment.center,
-                      children: [
-                        Text(
-                          meta.label,
-                          style: AppTypography.title(
-                            size: 20,
-                            color: a.text,
-                          ),
-                        ),
-                        if (cleared)
-                          Text(
-                            'Concluído',
-                            style: AppTypography.label(
-                              size: 10,
-                              color: AppColors.teal,
-                              letterSpacing: 0.4,
-                            ),
-                          ),
-                        if (locked)
-                          Text(
-                            'Bloqueado',
-                            style: AppTypography.label(
-                              size: 10,
-                              color: a.textMuted(0.54),
-                              letterSpacing: 0.4,
-                            ),
-                          )
-                        else
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: AppSpace.sm,
-                              vertical: 3,
-                            ),
-                            decoration: BoxDecoration(
-                              color: color.withValues(alpha: 0.2),
-                              borderRadius: BorderRadius.circular(AppRadii.pill),
-                            ),
-                            child: Text(
-                              xpLabel,
-                              style: AppTypography.label(
-                                size: 10,
-                                color: color,
-                                letterSpacing: 0.4,
+                    CinematicIcon(
+                      glyph: locked
+                          ? CinematicGlyph.lock
+                          : DifficultyVisuals.glyphFor(meta.difficulty),
+                      size: 52,
+                      accent: color,
+                      glowing: lit,
+                    ),
+                    const SizedBox(width: AppSpace.md),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Wrap(
+                            spacing: AppSpace.sm,
+                            runSpacing: 4,
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Text(
+                                meta.label,
+                                style: AppTypography.title(
+                                  size: 20,
+                                  color: titleColor,
+                                ),
                               ),
+                              if (current && !locked)
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: AppSpace.sm + 2,
+                                    vertical: 3,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: color,
+                                    borderRadius: BorderRadius.circular(
+                                      AppRadii.pill,
+                                    ),
+                                  ),
+                                  child: Text(
+                                    'Modo atual',
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      color: ink,
+                                      letterSpacing: 0.4,
+                                    ),
+                                  ),
+                                )
+                              else if (cleared)
+                                Text(
+                                  'Concluído',
+                                  style: AppTypography.label(
+                                    size: 10,
+                                    color: AppColors.teal,
+                                    letterSpacing: 0.4,
+                                  ),
+                                ),
+                              if (locked)
+                                Text(
+                                  'Bloqueado',
+                                  style: AppTypography.label(
+                                    size: 10,
+                                    color: a.textMuted(0.54),
+                                    letterSpacing: 0.4,
+                                  ),
+                                )
+                              else
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: AppSpace.sm,
+                                    vertical: 3,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: color.withValues(alpha: 0.28),
+                                    borderRadius: BorderRadius.circular(
+                                      AppRadii.pill,
+                                    ),
+                                  ),
+                                  child: Text(
+                                    xpLabel,
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      color: color,
+                                      letterSpacing: 0.4,
+                                    ),
+                                  ),
+                                ),
+                            ],
+                          ),
+                          const SizedBox(height: AppSpace.xs),
+                          Text(
+                            locked ? 'Conclua o modo anterior' : meta.subtitle,
+                            style: AppTypography.title(
+                              size: 12,
+                              color: locked
+                                  ? a.textMuted(0.55)
+                                  : color,
                             ),
                           ),
-                      ],
-                    ),
-                    const SizedBox(height: AppSpace.xs),
-                    Text(
-                      locked ? 'Conclua o modo anterior' : meta.subtitle,
-                      style: AppTypography.title(
-                        size: 12,
-                        color: color.withValues(alpha: 0.95),
+                          const SizedBox(height: AppSpace.xs),
+                          Text(
+                            locked
+                                ? 'Termine a trilha no modo atual para liberar.'
+                                : meta.description,
+                            style: AppTypography.body(
+                              size: 13,
+                              height: 1.35,
+                              color: locked
+                                  ? a.textMuted(0.5)
+                                  : a.text.withValues(alpha: 0.88),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: AppSpace.xs),
-                    Text(
-                      locked
-                          ? 'Termine a trilha no modo atual para liberar.'
-                          : meta.description,
-                      style: AppTypography.body(
-                        size: 13,
-                        height: 1.35,
-                        color: a.textMuted(0.72),
-                      ),
+                    const SizedBox(width: AppSpace.sm),
+                    CinematicIcon(
+                      glyph: locked ? CinematicGlyph.lock : CinematicGlyph.rise,
+                      size: 20,
+                      accent: color,
+                      framed: false,
                     ),
                   ],
                 ),
-              ),
-              const SizedBox(width: AppSpace.sm),
-              CinematicIcon(
-                glyph: locked ? CinematicGlyph.lock : CinematicGlyph.rise,
-                size: 20,
-                accent: color,
-                framed: false,
               ),
             ],
           ),

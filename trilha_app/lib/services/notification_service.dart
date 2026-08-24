@@ -54,6 +54,7 @@ class NotificationService {
       FlutterLocalNotificationsPlugin();
   bool _initialized = false;
   bool _available = true;
+  bool _permissionAsked = false;
 
   /// Última ação pendente (lida pelo MainShell ao abrir).
   ReminderAction? pendingAction;
@@ -84,7 +85,7 @@ class NotificationService {
     _idLost2,
   ];
 
-  Future<void> init() async {
+  Future<void> init({bool requestPermission = false}) async {
     if (_initialized || !_available) return;
     tz_data.initializeTimeZones();
     await _configureLocalTimezone();
@@ -92,19 +93,14 @@ class NotificationService {
     try {
       const android = AndroidInitializationSettings('@mipmap/ic_launcher');
       const ios = DarwinInitializationSettings(
-        requestAlertPermission: true,
-        requestBadgePermission: true,
-        requestSoundPermission: true,
+        requestAlertPermission: false,
+        requestBadgePermission: false,
+        requestSoundPermission: false,
       );
       await _plugin.initialize(
         const InitializationSettings(android: android, iOS: ios),
         onDidReceiveNotificationResponse: _onTap,
       );
-
-      final androidPlugin = _plugin
-          .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin>();
-      await androidPlugin?.requestNotificationsPermission();
 
       final launch = await _plugin.getNotificationAppLaunchDetails();
       if (launch?.didNotificationLaunchApp == true) {
@@ -113,11 +109,27 @@ class NotificationService {
       }
 
       _initialized = true;
+      if (requestPermission) await _askPermission();
     } on MissingPluginException {
       _available = false;
     } catch (_) {
       _available = false;
     }
+  }
+
+  Future<void> _askPermission() async {
+    if (_permissionAsked || !_available || !_initialized) return;
+    _permissionAsked = true;
+    try {
+      final androidPlugin = _plugin
+          .resolvePlatformSpecificImplementation<
+              AndroidFlutterLocalNotificationsPlugin>();
+      await androidPlugin?.requestNotificationsPermission();
+      final iosPlugin = _plugin
+          .resolvePlatformSpecificImplementation<
+              IOSFlutterLocalNotificationsPlugin>();
+      await iosPlugin?.requestPermissions(alert: true, badge: true, sound: true);
+    } catch (_) {}
   }
 
   void _onTap(NotificationResponse response) {
@@ -136,6 +148,7 @@ class NotificationService {
   /// Reagenda lembretes conforme o progresso atual.
   Future<void> syncFromProgress(ProgressService progress) async {
     await init();
+    await _askPermission();
     if (!_available || !_initialized) return;
 
     final enabled = progress.settings.notifications;

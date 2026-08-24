@@ -1,14 +1,21 @@
-# STWAY — formação bíblica com hábito
+# STWAY — hábito de ler e estudar a Bíblia
 
-App Flutter para aprender a Bíblia em missões diárias + painel admin no Firebase.
+App Flutter para missões diárias + painel admin no Firebase.
 
-**Academia da Palavra:** Duolingo no loop · escola no conteúdo.
+**Norte:** criar hábito de ler e estudar a Bíblia — Duolingo no loop · Palavra no conteúdo.  
+**Frase:** *Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.*
 
 | Doc | Conteúdo |
 |-----|----------|
-| [`docs/PRODUTO.md`](docs/PRODUTO.md) | Visão, usuários, features, glossário |
+| [`docs/PRODUTO.md`](docs/PRODUTO.md) | Visão, usuários, posicionamento vs mercado |
+| [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) | Pitch 1 página · concorrência |
 | [`docs/TECNICA.md`](docs/TECNICA.md) | Arquitetura, stack, Firestore, sync |
 | [`ROADMAP.md`](ROADMAP.md) | Norte, checklist e prioridades |
+| [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (sem IAP ainda) |
+
+**Estado (24 ago/2026):** 8.370 atos V2 na nuvem · validador verde · app 1.0.21 · D7 aberto.
+
+Canvas mestre de posicionamento: `~/.cursor/projects/.../canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
 
 ## Projetos
 
@@ -36,4 +43,5 @@ npm install
 npm run dev            # http://localhost:5174
 ```
 
+Pipeline conteúdo: `npm run pipeline:v2` · publicar: `npm run seed:cli`  
 Detalhes em [`admin/README.md`](admin/README.md).

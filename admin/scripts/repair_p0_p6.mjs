@@ -44,6 +44,10 @@ const BANK_FILES = [
   'buracos_questions.json',
 ];
 
+/** V2: sessões densas (5–7 atos), sem clones artificiais. */
+const SESSION_TARGET = 6;
+const ENABLE_CLONES = false;
+
 const META =
   /por que estudar|pergunta profunda|tens[aã]o teol|aplica[cç][aã]o justa|povo \(ou a personagem\)|olhando para o tema|em profundidade/i;
 const GENERIC_COMPLETE = /^(complete( a lacuna)?!?\.?)$/i;
@@ -754,6 +758,7 @@ function expandGroup(list, all, used, study, bible) {
   };
 
   const tryClone = (need) => {
+    if (!ENABLE_CLONES) return false;
     if (list.length >= 10) return false;
     const base =
       list.find((q) => slot(q.type) === 'choice') ||
@@ -815,6 +820,7 @@ function expandGroup(list, all, used, study, bible) {
   if (count('true_false') === 0) ensure('true_false');
 
   const forceChoice = () => {
+    if (!ENABLE_CLONES) return false;
     const base =
       list.find((q) => (q.passageText || '').length >= 20) ||
       list.find((q) => slot(q.type) === 'choice') ||
@@ -870,12 +876,12 @@ function expandGroup(list, all, used, study, bible) {
 
   const fillOrder = ['tap', 'complete', 'order', 'choice', 'connect'];
   let guard = 0;
-  while (list.length < 8 && guard < 14) {
+  while (ENABLE_CLONES && list.length < SESSION_TARGET && guard < 14) {
     guard += 1;
     const missing = fillOrder.filter((t) => count(t) < 1);
     let added = false;
     for (const need of missing) {
-      if (list.length >= 8) break;
+      if (list.length >= SESSION_TARGET) break;
       if (tryClone(need)) {
         added = true;
         break;
@@ -1154,7 +1160,7 @@ function main() {
         }
       }
       let guard = 0;
-      while (list.length < 8 && guard < 4) {
+      while (ENABLE_CLONES && list.length < SESSION_TARGET && guard < 4) {
         guard += 1;
         const base = list.find((q) => (q.passageText || '').length >= 12) || list[0];
         const donor = cloneQ(base, 'fill', used);

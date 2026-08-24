@@ -106,8 +106,8 @@ class ProgressService extends ChangeNotifier {
   static const maxLamps = 5;
   /// Boss: menos margem de erro.
   static const bossMaxLamps = 3;
-  static const normalQuestionCount = 8;
-  static const bossQuestionCount = 10;
+  static const normalQuestionCount = 6;
+  static const bossQuestionCount = 8;
 
   static int lampsForMission({required bool isBoss}) =>
       isBoss ? bossMaxLamps : maxLamps;
@@ -1034,12 +1034,6 @@ class ProgressService extends ChangeNotifier {
     if (streak <= 0) return false;
     if (walkedToday) return false;
     return lastPlayedDate == _yesterdayKey();
-  }
-
-  /// Banner de urgência (a partir das 17h).
-  bool get showStreakRiskBanner {
-    if (!isStreakAtRisk) return false;
-    return DateTime.now().hour >= 17;
   }
 
   /// Tempo restante até a sequência quebrar (meia-noite local).

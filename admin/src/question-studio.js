@@ -1,4 +1,5 @@
 import { COL, listCollection, saveDoc } from './db.js';
+import { validateQuestion } from './bank-validator.js';
 import { GESTURES, DIFFS, gestureMeta, renderActPreview, renderFeedbackPreview } from './content-preview.js';
 import {
   escapeHtml,
@@ -71,16 +72,23 @@ export function nextQuestionId(section, type, items) {
   return id;
 }
 
+const SKILL_BY_DIFF = {
+  semente: 'observe',
+  caminhada: 'understand',
+  profundezas: 'interpret',
+};
+
 export function emptyBankQuestion(partial = {}) {
   const type = partial.type || 'choice';
   const vf = type === 'true_false';
+  const diff = partial.difficulty || 'semente';
   return {
     id: partial.id || '',
     trail: partial.trail || '',
-    difficulty: partial.difficulty || 'semente',
+    difficulty: diff,
     section: partial.section || '',
     type,
-    skill: partial.skill || SKILL_BY_TYPE[type] || 'observe',
+    skill: partial.skill || SKILL_BY_DIFF[diff] || SKILL_BY_TYPE[type] || 'observe',
     question: '',
     prompt: '',
     cue: '',
@@ -102,6 +110,8 @@ export function emptyBankQuestion(partial = {}) {
     feedbackWrong: {},
     verseRef: '',
     reveal: '',
+    learningObjective: '',
+    evidence: [],
     passageA: { ref: '', text: '' },
     passageB: { ref: '', text: '' },
     correctOrder: ['a', 'b', 'c'],
@@ -641,7 +651,9 @@ function payloadFrom(draft, existing, items) {
     difficulty: draft.difficulty || 'semente',
     section: draft.section,
     type,
-    skill: draft.skill || SKILL_BY_TYPE[type] || existing?.skill || 'observe',
+    skill: draft.skill || SKILL_BY_DIFF[draft.difficulty] || SKILL_BY_TYPE[type] || existing?.skill || 'observe',
+    learningObjective: (draft.learningObjective || '').trim() || undefined,
+    evidence: (draft.evidence || []).filter((e) => String(e).trim()),
     question: draft.question,
     prompt: draft.prompt,
     cue: draft.cue,
@@ -682,6 +694,8 @@ function validate(draft) {
   if ((draft.type === 'choice' || draft.type === 'tap' || draft.type === 'complete') && !stem && draft.type !== 'complete') {
     return 'Escreva a pergunta';
   }
+  const v2 = validateQuestion(draft);
+  if (v2.errors.length) return v2.errors[0];
   return '';
 }
 

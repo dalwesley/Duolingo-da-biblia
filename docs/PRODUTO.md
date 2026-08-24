@@ -1,6 +1,6 @@
 # STWAY — Documentação de produto
 
-**Atualizado:** 18 ago/2026  
+**Atualizado:** 24 ago/2026  
 **Versão do app:** 1.0.21  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
@@ -13,11 +13,12 @@
 
 | Camada | Situação |
 |--------|----------|
-| **Shell de sessão** | Pronto — entrada → gestos mistos → insight → saída |
-| **Conteúdo no Firebase** | Alinhado ao local (**10.368** perguntas, 84 trilhas, 431 estudos) — seed CLI 18 ago 2026 |
-| **UI / UX** | Tema escuro cinemático, 5 tabs, painéis de jogo — polish ainda abaixo de YouVersion/Hallow |
-| **Escola no conteúdo** | Gestos + skills no banco; fábrica (iscas dummy) zerada; mix ainda privilegia Escolher (~44%); Profundezas ainda pedem edição humana |
-| Strong | Offline na aba Bíblia **e** na missão (toque na referência do ato → Estudar) |
+| **Shell de sessão** | Pronto — entrada → 6 gestos (V/F · toque no verso · escolher · ordenar · completar · conectar) → insight → saída |
+| **Conteúdo no Firebase** | Seed CLI **24 ago** — **8.370** perguntas, validador **verde**, palco TB, 6 gestos. `catalog.version` `1787584947461`. |
+| **UI / UX** | Tema escuro cinemático, 5 tabs; Toque responde no versículo (`buildTapSpans`) |
+| **Distribuição no app** | Cache por trilha no boot; limpa banco antigo quando `catalog.version` muda; atos baixados ao abrir missão |
+| **Escola no conteúdo** | 6 gestos ~equilibrados; palco TB; Gn 1–11 editorial; Êxodo/Sermão pack; resto gerado — próximo salto = handcraft vitrine |
+| **Strong** | Offline na aba Bíblia **e** na missão (toque na referência do ato → Estudar) |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); falta execução com 10–20 testers |
 | **Monetização** | Sem IAP |
 
@@ -25,12 +26,12 @@
 
 ## Em uma frase
 
-STWAY é a **academia da Palavra**: missões diárias em português que desenvolvem competência para ler, compreender, conectar e interpretar as Escrituras — em poucos minutos por dia, ao longo de uma jornada.
+STWAY são **missões diárias em português** para criar **hábito de ler e estudar a Bíblia** — em poucos minutos por dia, com currículo, exercícios e Strong quando o versículo pede.
 
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
-Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem escola), nem trivia vazia.  
-**Sensação:** Duolingo no loop · formação bíblica no conteúdo.
+Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem estudo), nem trivia vazia.  
+**Sensação:** Duolingo no loop · **ler e estudar a Palavra de verdade**.
 
 ---
 
@@ -149,10 +150,10 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 
 | Item | Status |
 |------|--------|
-| Banco tipado + skills | **10.368** atos no Firestore; 1.296 pools com 8 atos; gestos mistos no player |
+| Banco tipado + skills | **8.370** atos V2 no Firestore (seed 24 ago); 6 gestos; palco TB; validador verde |
 | Objective / insight / hooks nas missões | Presentes no catálogo |
 | Spec histórica Imagem de Deus | [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) |
-| Sermão do Monte e demais trilhas | No Firebase (71 live / 13 coming soon); qualidade editorial ainda varia |
+| Sermão do Monte e Êxodo | Packs congelados (`_sermao_v2_data` / `_exodo_v2_data`) + gerador verso-primeiro |
 
 ### UI / UX (resumo)
 
@@ -186,7 +187,7 @@ Antes de “crescer” de verdade (ver Roadmap):
 
 1. Retenção D7 ok no loop de missão  
 2. Um caminho Criação → NT terminável, validado com tester  
-3. Usuário explica o app numa frase alinhada ao norte (*“app pra treinar a ler a Bíblia”*)  
+3. Usuário explica o app numa frase alinhada ao norte (*“app de missões pra criar hábito de ler a Bíblia”*)  
 4. Após uma missão: lembra, explica e reconhece o conceito em outro texto (transferência)
 
 Regra de feature: *aumenta conclusão de missão, retenção ou retorno em 7 dias — sem sacrificar aprendizagem?*
@@ -206,12 +207,50 @@ Pipeline editorial: [`LEARNING_ENGINE.md` §42–43](LEARNING_ENGINE.md).
 
 ## Posicionamento vs. concorrentes
 
-| Tipo | Exemplos | STWAY |
-|------|----------|--------|
-| Leitura / plano | YouVersion | Missão + currículo + competências, não só ler |
-| Oração / áudio | Hallow | Foco em formação cognitiva da Palavra |
-| Game bíblico | Ascend / pets | Escola no conteúdo; social leve sem pet |
-| Trivia | Quizzes soltos | Rede de conhecimento + 3 profundidades + Strong |
+**Canvas mestre (24 ago):** `canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
+
+### Mapa em duas dimensões
+
+| | **Consumo passivo** (ler · orar · ouvir) | **Prática ativa** (exercícios · competência) |
+|---|------------------------------------------|-----------------------------------------------|
+| **Escala / marca** | YouVersion · Hallow · Glorify | — |
+| **Formação / currículo** | Planos YouVersion | **STWAY** · (parcial) Bible Way |
+
+STWAY ocupa **formação ativa em PT-BR** — nicho que gigantes não priorizam.
+
+### Diretos (mesmo job: “Bíblia no bolso”)
+
+| Player | O que faz | STWAY vs |
+|--------|-----------|----------|
+| **YouVersion** | Ler + planos + áudio + social igreja | Não competimos em catálogo. Competimos em *hábito de ler e estudar*. |
+| **Bible Way / Ascend / Manna** | Game + streak + pet/herói | Gamificam *tema*. STWAY gamifica *competência* (6 gestos, 3 modos). |
+| **Show do Biblião / trivia** | Quiz de memória | Sem currículo nem Strong. STWAY = trilha + profundidade. |
+
+### Indiretos (mesmo bolso: tempo / hábito espiritual)
+
+| Player | O que faz | STWAY vs |
+|--------|-----------|----------|
+| **Hallow** | Oração guiada + áudio | Complementar. **Não** virar app de oração. |
+| **Glorify** | Adoração + devocional + polish | **Não** competir em biblioteca sonora. |
+| **Duolingo** | Loop de hábito | Copiamos o *loop*; rejeitamos tom punitivo e conteúdo genérico. |
+| **Apps de igreja** | CMS pastoral | STWAY = produto do *aprendiz*; igreja = canal futuro (Salas). |
+
+### O que só STWAY junta (hoje)
+
+- Sessão 2–4 min com **6 gestos** + insight (não só MCQ)
+- **3 profundidades** cognitivas (Observação / Compreensão / Interpretação)
+- **Currículo** Criação → NT no Firebase
+- **Strong offline** na missão (ref do palco) e na aba Bíblia
+- **CMS + validador pedagógico** — conteúdo vivo sem release
+- **Social leve** — Caravana, Companhia, Salas (accountability, não feed de XP)
+
+### Onde não competimos
+
+- MAU / downloads / marca global
+- Maior catálogo de áudio ou oração ambient
+- Game MMO / pet / skin shop
+
+**Competimos em:** *depois de 3 minutos, a pessoa leu e estudou um trecho — e quer voltar amanhã.*
 
 ---
 

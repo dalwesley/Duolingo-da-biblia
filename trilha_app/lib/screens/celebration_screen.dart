@@ -614,7 +614,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       child: _ModeUpgradeCard(
                                         trailComplete: _trailComplete,
                                         currentLabel:
-                                            _currentMode?.labelPt ?? 'Semente',
+                                            _currentMode?.labelPt ?? 'Observação',
                                         nextLabel: _nextMeta!.label,
                                         nextSubtitle: _nextMeta!.subtitle,
                                         onTryStep: () =>

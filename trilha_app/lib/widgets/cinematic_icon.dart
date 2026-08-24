@@ -293,7 +293,7 @@ class CinematicIcon extends StatelessWidget {
     final well = IconWell(
       size: size,
       accent: color,
-      glowing: false,
+      glowing: glowing,
       child: child,
     );
 

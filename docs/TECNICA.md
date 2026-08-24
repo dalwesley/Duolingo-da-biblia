@@ -1,6 +1,6 @@
 # STWAY — Documentação técnica
 
-**Atualizado:** 18 ago/2026  
+**Atualizado:** 24 ago/2026  
 **Monorepo:** `trilha_app/` (Flutter) + `admin/` (Vite)  
 **Firebase project:** `trilha-biblia`  
 **App:** 1.0.21+21
@@ -28,7 +28,7 @@ Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`
 
 JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
-**Estado 18 ago/2026:** catálogo local ≈ remoto (**10.368** perguntas, 84 trilhas, 431 estudos). `content_meta/catalog.version` = `1787096847621` (seed CLI, P0–P6). `OPEN_ALL_TRAILS` default `false` (loja); testers: `--dart-define=OPEN_ALL_TRAILS=true`. Login: Google + Apple (iOS).
+**Estado 24 ago/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Ver [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) para posicionamento.
 
 ---
 
@@ -166,7 +166,7 @@ Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 
 ### Módulos chave
 
-`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, `question-studio.js` / `content-preview.js`, scripts em `admin/scripts/` (`seed:cli`, `seed`, `prepare:content`).
+`firebase.js`, `auth.js`, `roles.js`, `db.js` (mapa `COL` + `bumpCatalogVersion`), páginas `*-page.js`, `question-studio.js` / `content-preview.js`, scripts em `admin/scripts/` (`seed:cli`, `pipeline:v2`, `validate:bank`).
 
 ---
 
@@ -205,8 +205,12 @@ Regras: `firestore.rules` (`isAdmin`, `isContentEditor`).
 
 1. Lê cache em `content_catalog/` (app support)  
 2. Compara `content_meta/catalog.version`  
-3. Se desatualizado/ausente → baixa collections e persiste JSON  
-4. Primeira abertura sem rede e sem cache: currículo indisponível até sync  
+3. Se versão mudou → **limpa** banco/estudos/versos locais (não mistura currículo velho)  
+4. No boot: trilhas + dificuldades + estudos (shell leve)  
+5. Ao abrir missão: `ensureTrailBank(slug)` — baixa só os atos da trilha (evita OOM no Firestore)  
+6. Persiste JSON em disco após pull bem-sucedido  
+
+**Não** faz mais `.get()` de 8.370 docs no cold start.  
 
 ---
 
@@ -221,7 +225,7 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 |------|--------|
 | `SessionComposer` só banco | feito — 8 atos / boss 10; gestos diversos; skill do banco |
 | `LessonScreen` modo único | feito — entrada → atos → micro opcional → insight → celebração |
-| `ExercisePanel` gestos MVP | feito — V/F, toque, choice, order, complete, connect |
+| `ExercisePanel` gestos MVP | feito — V/F, toque **no verso**, choice, order, complete, connect |
 | Analytics `exercise_*` + skill | feito |
 | CMS bank (type/skill/palco) + trails (objective/insight/hook) | feito |
 | `skill` tagueado no banco | feito (heurística + seed) |
@@ -397,7 +401,7 @@ cd admin && cp .env.example .env && npm install && npm run dev
 # Publicar (contas Google-only — caminho real):
 make seed_full                 # da raiz: trails + bank + studies + catalog.version
 # ou: cd admin && npm run seed:cli
-# Não usar seed:refresh após P0–P6 (migrate/enrich reescrevem o banco editorial).
+# Não re-rodar pipelines legados de migrate/enrich — use `pipeline:v2` + `seed:cli`.
 # Lotes / cota Spark (CLI):
 SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 npm run seed:cli
 npm run build && cd .. && firebase deploy --only hosting

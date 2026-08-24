@@ -193,6 +193,9 @@ class Exercise {
       case ExerciseType.complete:
         return (template ?? '').trim().isNotEmpty;
       case ExerciseType.tap:
+        if (passageA != null || passageB != null) return true;
+        return (palcoTemplate ?? '').contains('___') ||
+            (passageText ?? '').trim().isNotEmpty;
       case ExerciseType.findInText:
         return (passageText ?? '').trim().isNotEmpty ||
             passageA != null ||
@@ -214,6 +217,24 @@ class Exercise {
     }
   }
 
+  /// Versículo com lacuna no palco (Complete e Toque com palavra).
+  String? get palcoTemplate {
+    if (type == ExerciseType.complete) {
+      final t = (template ?? '').trim();
+      return t.isNotEmpty ? t : null;
+    }
+    if (type != ExerciseType.tap || passageA != null || passageB != null) {
+      return null;
+    }
+    final stored = (template ?? '').trim();
+    if (stored.contains('___')) return stored;
+    return _tapTemplateFromPassage();
+  }
+
+  bool get usesCompletePalco =>
+      type == ExerciseType.complete ||
+      (type == ExerciseType.tap && (palcoTemplate ?? '').contains('___'));
+
   /// Cue exibido (nunca o beat pedagógico, nunca o verbo repetido).
   String get displayCue {
     final candidates = <String>[
@@ -222,7 +243,11 @@ class Exercise {
     ];
     for (final c in candidates) {
       if (_isGenericTaskCue(c)) continue;
-      return type == ExerciseType.trueFalse ? vfClaim(c) : c;
+      var text = type == ExerciseType.trueFalse ? vfClaim(c) : c;
+      if (usesCompletePalco && type == ExerciseType.tap) {
+        text = _stripQuotedCloze(text);
+      }
+      return text;
     }
     return switch (type) {
       ExerciseType.order => 'Monte a sequência.',
@@ -246,8 +271,11 @@ class Exercise {
     return switch (type) {
       ExerciseType.trueFalse =>
         'Leia a afirmação e diga se é verdadeira ou falsa.',
-      ExerciseType.tap || ExerciseType.findInText =>
-        'Toque o trecho que responde.',
+      ExerciseType.tap =>
+        usesCompletePalco
+            ? 'Toque a palavra que completa o trecho.'
+            : 'Toque o trecho que responde.',
+      ExerciseType.findInText => 'Toque o trecho que responde.',
       ExerciseType.choice ||
       ExerciseType.textSupported ||
       ExerciseType.bestInterpretation =>
@@ -532,6 +560,32 @@ class Exercise {
         .where((s) => s.length >= 12)
         .toList();
   }
+
+  String? _tapTemplateFromPassage() {
+    final passage = (passageText ?? '').trim();
+    if (passage.isEmpty) return null;
+    final correct = effectiveOptions
+        .where((o) => o.id == resolvedCorrectAnswer)
+        .map((o) => o.text.trim())
+        .firstWhere((t) => t.isNotEmpty, orElse: () => '');
+    if (correct.isEmpty) return null;
+    final re = RegExp('\\b${RegExp.escape(correct)}\\b', caseSensitive: false);
+    if (!re.hasMatch(passage)) return null;
+    return passage.replaceFirst(re, '___');
+  }
+}
+
+String _stripQuotedCloze(String text) {
+  var t = text.trim();
+  t = t.replaceAll(
+    RegExp(
+      r'\s+em\s+[“"\u201c][^”"\u201d]*___[^”"\u201d]*[”"\u201d]\s*[?.!]?$',
+      caseSensitive: false,
+    ),
+    '',
+  );
+  t = t.replaceAll(RegExp(r'[?.!…]+$'), '').trim();
+  return t.isEmpty ? text.trim() : t;
 }
 
 /// Trecho do versículo: texto corrido ou alvo tocável (`optionId`).

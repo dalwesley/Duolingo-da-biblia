@@ -43,7 +43,8 @@ class QuestionBank {
   static bool matchesMissionSection(BankQuestion q, String section) {
     if (section.isEmpty) return false;
     if (q.section == section) return true;
-    // IDs no formato genesis--sem-gen-01-criador-01 / exodo-sem-exo-01-opressao-01
+    // IDs no formato genesis--sem-gen-01-criador-01 (seed atual)
+    // ou genesis-1-11-sem-… / exodo-sem-exo-01-opressao-01
     return q.id.contains('-$section-') || q.id.endsWith('-$section');
   }
 

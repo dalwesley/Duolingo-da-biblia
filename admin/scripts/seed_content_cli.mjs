@@ -8,6 +8,7 @@ import { readFileSync, existsSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { Firestore } from '@google-cloud/firestore';
+import { validateBank, formatReport } from './_bank_validator.mjs';
 
 const require = createRequire(import.meta.url);
 const { getGlobalDefaultAccount } = require('firebase-tools/lib/auth');
@@ -127,7 +128,7 @@ async function main() {
   if (doBank) {
     const genesis = readJson('genesis_questions.json');
     const difficulties = genesis.difficulties || [];
-    if ((!only || only === 'full' || only === 'bank') && difficulties.length && !env.SEED_TRAIL) {
+    if ((!only || only === 'full' || only === 'bank') && difficulties.length && !env.SEED_TRAIL && env.SEED_ORPHANS_ONLY !== '1') {
       console.log(`Dificuldades: ${difficulties.length}`);
       await batchWrite(
         db,
@@ -187,54 +188,83 @@ async function main() {
       console.log(`  ${file}: +${added}`);
     }
     console.log(`Perguntas do banco: ${questions.length}`);
-    await batchWrite(
-      db,
-      'content_bank_questions',
-      questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
-      'id',
-      env,
-    );
+    if (questions.length && env.SEED_SKIP_VALIDATE !== '1') {
+      const check = validateBank(questions);
+      if (!check.ok) {
+        console.error('\nSeed abortado: banco não passa no validador pedagógico.\n');
+        console.error(formatReport(check));
+        console.error('\nCorrija com `npm run pipeline:v2` ou SEED_SKIP_VALIDATE=1 (não usar em prod).');
+        process.exit(1);
+      }
+      console.log(`Validador: OK (${questions.length} atos)`);
+    }
+    const orphansOnly = env.SEED_ORPHANS_ONLY === '1';
+    if (!orphansOnly) {
+      await batchWrite(
+        db,
+        'content_bank_questions',
+        questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
+        'id',
+        env,
+      );
+    } else {
+      console.log('SEED_ORPHANS_ONLY=1 — pulando escrita do banco');
+    }
 
-    const seededTrails = new Set(
-      questions.map((q) => q.trail || q.trailSlug).filter(Boolean),
-    );
-    if (seededTrails.size) {
+    if (questions.length && env.SEED_SKIP_ORPHANS !== '1') {
       const keep = new Set(questions.map((q) => String(q.id)));
-      const orphans = [];
-      for (const trail of seededTrails) {
-        const snap = await db
+      const pageSize = Math.min(
+        500,
+        Math.max(50, Number(env.SEED_ORPHAN_PAGE || 100) || 100),
+      );
+      const delChunk = Math.min(
+        400,
+        Math.max(10, Number(env.SEED_DELETE_CHUNK || 40) || 40),
+      );
+      const pauseMs = Math.max(0, Number(env.SEED_PAUSE_MS || 800) || 800);
+      let lastDoc = null;
+      let scanned = 0;
+      let removed = 0;
+      let pending = [];
+
+      console.log('Varrendo content_bank_questions para órfãos…');
+      while (true) {
+        let q = db
           .collection('content_bank_questions')
           .orderBy('__name__')
-          .startAt(`${trail}-`)
-          .endAt(`${trail}-\uf8ff`)
-          .get();
+          .limit(pageSize);
+        if (lastDoc) q = q.startAfter(lastDoc);
+        const snap = await q.get();
+        if (snap.empty) break;
         for (const d of snap.docs) {
-          if (!keep.has(d.id)) orphans.push(d);
-        }
-        // IDs nem sempre começam com o slug da trilha — cai no campo trail.
-        try {
-          const byField = await db
-            .collection('content_bank_questions')
-            .where('trail', '==', trail)
-            .get();
-          for (const d of byField.docs) {
-            if (!keep.has(d.id) && !orphans.some((o) => o.id === d.id)) {
-              orphans.push(d);
-            }
+          scanned += 1;
+          if (!keep.has(d.id)) pending.push(d);
+          if (pending.length >= delChunk) {
+            const batch = db.batch();
+            for (const doc of pending.splice(0, delChunk)) batch.delete(doc.ref);
+            await batch.commit();
+            removed += delChunk;
+            console.log(`  órfãos removidos: ${removed} (lidos ${scanned})`);
+            if (pauseMs) await sleep(pauseMs);
           }
-        } catch {
-          // índice ausente: o range por id já cobre genesis-12-50-*
         }
+        lastDoc = snap.docs[snap.docs.length - 1];
+        if (snap.size < pageSize) break;
+        if (pauseMs) await sleep(pauseMs);
       }
-      if (orphans.length) {
-        console.log(`Removendo ${orphans.length} atos órfãos no Firestore…`);
-        const delChunk = 400;
-        for (let i = 0; i < orphans.length; i += delChunk) {
-          const batch = db.batch();
-          for (const d of orphans.slice(i, i + delChunk)) batch.delete(d.ref);
-          await batch.commit();
-        }
+      if (pending.length) {
+        const batch = db.batch();
+        for (const doc of pending) batch.delete(doc.ref);
+        await batch.commit();
+        removed += pending.length;
       }
+      console.log(
+        removed
+          ? `Órfãos removidos: ${removed} (${scanned} docs lidos)`
+          : `Nenhum órfão (${scanned} docs lidos)`,
+      );
+    } else if (questions.length && env.SEED_SKIP_ORPHANS === '1') {
+      console.log('SEED_SKIP_ORPHANS=1 — limpeza de órfãos ignorada');
     }
   }
 

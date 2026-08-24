@@ -21,6 +21,7 @@ import '../widgets/home_word_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/league_outcome_card.dart';
 import '../widgets/league_risk_card.dart';
+import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/streak_week.dart';
 import '../widgets/top_bar.dart';
@@ -57,6 +58,8 @@ class _HomeScreenState extends State<HomeScreen>
   List<Trail>? _trails;
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
+  bool _retryingCatalog = false;
+  bool _offlineDialogShown = false;
 
   @override
   void initState() {
@@ -74,12 +77,52 @@ class _HomeScreenState extends State<HomeScreen>
     super.dispose();
   }
 
-  Future<void> _load() async {
-    final trails = await widget.repo.getTrails();
-    if (mounted) {
-      setState(() => _trails = trails);
-      AnalyticsService.instance.logHomeView();
+  Future<void> _load({bool forceRefresh = false}) async {
+    if (forceRefresh) {
+      setState(() {
+        _retryingCatalog = true;
+        _trails = null;
+      });
     }
+    final trails = await widget.repo.getTrails(forceRefresh: forceRefresh);
+    if (mounted) {
+      setState(() {
+        _trails = trails;
+        _retryingCatalog = false;
+      });
+      AnalyticsService.instance.logHomeView();
+      if (trails.isEmpty) {
+        _maybeShowOfflineDialog();
+      } else {
+        _offlineDialogShown = false;
+      }
+    }
+  }
+
+  void _maybeShowOfflineDialog() {
+    if (_offlineDialogShown || !mounted) return;
+    _offlineDialogShown = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted || (_trails?.isNotEmpty ?? false)) return;
+      final ok = await showOfflineCurriculumDialog(
+        context,
+        onRetry: () async {
+          final trails = await widget.repo.getTrails(forceRefresh: true);
+          if (mounted) {
+            setState(() {
+              _trails = trails;
+              _retryingCatalog = false;
+            });
+          }
+          return trails.isNotEmpty;
+        },
+      );
+      if (!mounted) return;
+      if (!ok) {
+        // Permite reabrir o diálogo no próximo retry da card.
+        _offlineDialogShown = false;
+      }
+    });
   }
 
   void _maybeShowComeback(ProgressService progress, {String? missionSlug}) {
@@ -203,6 +246,13 @@ class _HomeScreenState extends State<HomeScreen>
 
     if (_trails == null) {
       return const _HomeSkeleton();
+    }
+
+    if (_trails!.isEmpty) {
+      return _CatalogUnavailable(
+        retrying: _retryingCatalog,
+        onShowDialog: _maybeShowOfflineDialog,
+      );
     }
 
     final trails = _trails!;
@@ -479,6 +529,57 @@ class _DayPulse extends StatelessWidget {
           const StreakWeek(),
         ],
       ),
+    );
+  }
+}
+
+/// Catálogo vazio (sem cache + falha de rede) — comum no 1º boot offline.
+class _CatalogUnavailable extends StatelessWidget {
+  final bool retrying;
+  final VoidCallback onShowDialog;
+
+  const _CatalogUnavailable({
+    required this.retrying,
+    required this.onShowDialog,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return ListView(
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        MediaQuery.viewPaddingOf(context).top + AppSpace.xxl,
+        AppSpace.screen,
+        scrollPaddingBelowNav(context),
+      ),
+      children: [
+        GlassCard(
+          padding: const EdgeInsets.all(AppSpace.xxl),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                'Missões ainda não chegaram',
+                textAlign: TextAlign.center,
+                style: AppTypography.title(size: 18, color: a.text),
+              ),
+              const SizedBox(height: AppSpace.md),
+              Text(
+                'O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.',
+                textAlign: TextAlign.center,
+                style: AppTypography.body(size: 14, color: a.textMuted(0.7)),
+              ),
+              const SizedBox(height: AppSpace.xxl),
+              CopperCta(
+                label: retrying ? 'Baixando…' : 'Tentar de novo',
+                onTap: retrying ? null : onShowDialog,
+                showArrow: false,
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

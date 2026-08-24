@@ -28,8 +28,8 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
-  static const _firstDuration = Duration(milliseconds: 4000);
-  static const _returnDuration = Duration(milliseconds: 4000);
+  static const _firstDuration = Duration(milliseconds: 1800);
+  static const _returnDuration = Duration(milliseconds: 1100);
 
   late final AnimationController _master;
 
@@ -56,8 +56,10 @@ class _SplashScreenState extends State<SplashScreen>
 
   Future<void> _boot() async {
     final progress = context.read<ProgressService>();
-    final load = progress.isLoaded ? Future<void>.value() : progress.load();
+    final backend = context.read<BackendService>();
+    unawaited(ContentCatalogService.instance.ensureLoaded());
 
+    final load = progress.isLoaded ? Future<void>.value() : progress.load();
     await load;
     if (!mounted) return;
 
@@ -67,13 +69,39 @@ class _SplashScreenState extends State<SplashScreen>
     }
 
     _master.addListener(_onMasterTick);
-    await _master.forward();
+
+    // Hidrata durante a animação — não empilha 4s de splash + rede.
+    String? hydrateResult;
+    final hydrateJob = () async {
+      final deadline = DateTime.now().add(const Duration(seconds: 6));
+      while (backend.isInitializing && DateTime.now().isBefore(deadline)) {
+        await Future<void>.delayed(const Duration(milliseconds: 40));
+        if (!mounted) return;
+      }
+      if (!mounted || !backend.isSignedIn) return;
+      try {
+        hydrateResult = await backend
+            .hydrateProgress(
+              progress,
+              league: context.read<LeagueService>(),
+            )
+            .timeout(
+              const Duration(seconds: 10),
+              onTimeout: () => BackendService.hydrateFailed,
+            );
+      } catch (e) {
+        debugPrint('Splash hydrate failed: $e');
+        hydrateResult = BackendService.hydrateFailed;
+      }
+    }();
+
+    await Future.wait<void>([_master.forward(), hydrateJob]);
 
     if (!mounted) return;
     if (!progress.hasSeenSplash) await progress.setHasSeenSplash(true);
     if (!mounted) return;
 
-    await _exit(progress);
+    await _exit(progress, hydrateResult: hydrateResult);
   }
 
   void _onMasterTick() {
@@ -84,12 +112,15 @@ class _SplashScreenState extends State<SplashScreen>
     }
   }
 
-  Future<void> _exit(ProgressService progress) async {
+  Future<void> _exit(
+    ProgressService progress, {
+    required String? hydrateResult,
+  }) async {
     if (_exiting) return;
     _exiting = true;
 
     final backend = context.read<BackendService>();
-    final deadline = DateTime.now().add(const Duration(seconds: 8));
+    final deadline = DateTime.now().add(const Duration(seconds: 2));
     while (backend.isInitializing && DateTime.now().isBefore(deadline)) {
       await Future<void>.delayed(const Duration(milliseconds: 40));
       if (!mounted) return;
@@ -99,17 +130,16 @@ class _SplashScreenState extends State<SplashScreen>
     if (!backend.isSignedIn) {
       next = const LoginScreen();
     } else {
+      final hydrate = hydrateResult;
       final league = context.read<LeagueService>();
-      final hydrate = await backend.hydrateProgress(progress, league: league);
-      if (!mounted) return;
 
-      if (hydrate != BackendService.hydrateFailed) {
-        if (!mounted) return;
+      if (hydrate != null && hydrate != BackendService.hydrateFailed) {
         final companions = context.read<CompanionService>();
-        await companions.applyCloudCodes(progress.companionCodes, progress);
-        if (!mounted) return;
         final rooms = context.read<RoomService>();
-        await rooms.applyCloudCode(progress.activeRoomCode, progress: progress);
+        unawaited(companions.applyCloudCodes(progress.companionCodes, progress));
+        unawaited(
+          rooms.applyCloudCode(progress.activeRoomCode, progress: progress),
+        );
       }
 
       if (!mounted) return;
@@ -122,6 +152,7 @@ class _SplashScreenState extends State<SplashScreen>
       // depois do finish() e reabrir a intro no próximo boot.
       // Também não grava se o hydrate falhou (evita zerar a nuvem).
       if (progress.hasSeenOnboarding &&
+          hydrate != null &&
           hydrate != BackendService.hydrateFailed) {
         unawaited(() async {
           await backend.settleAndSyncLeague(progress, league);

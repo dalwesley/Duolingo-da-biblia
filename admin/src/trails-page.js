@@ -430,7 +430,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
   loadBible();
   const [trails, studies, bankStart] = await Promise.all([
     listCollection(COL.trails),
-    listCollection(COL.studies),
+    listCollection(COL.studies, 'slug'),
     listCollection(COL.bank),
   ]);
   const trail = trails.find((t) => t.id === trailId);

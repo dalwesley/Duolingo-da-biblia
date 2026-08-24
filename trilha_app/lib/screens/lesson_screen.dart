@@ -5,6 +5,7 @@ import '../data/mission_study.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
+import '../models/question_report.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../services/analytics_service.dart';
@@ -20,6 +21,7 @@ import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_panel.dart';
+import '../widgets/question_report_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -140,6 +142,12 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
+    // Após seed, o pull completo de 8k pode demorar — baixa só a trilha.
+    if (trailSlug != null && trailSlug.isNotEmpty) {
+      await ContentCatalogService.instance.ensureTrailBank(trailSlug);
+      if (!mounted) return;
+    }
+
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
     if (!widget.practiceMode &&
         widget.missionOverride == null &&
@@ -212,7 +220,7 @@ class _LessonScreenState extends State<LessonScreen>
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Este treino ainda não tem atos.',
+            'Não encontramos atos para esta missão. Verifique a conexão e tente de novo.',
             style: AppTypography.body(color: AppColors.textOnDark),
           ),
           backgroundColor: AppColors.nightElevated,
@@ -571,7 +579,7 @@ class _LessonScreenState extends State<LessonScreen>
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Este treino ainda não tem atos.',
+            'Não encontramos atos para esta missão. Verifique a conexão e tente de novo.',
             style: AppTypography.body(color: AppColors.textOnDark),
           ),
           backgroundColor: AppColors.nightElevated,
@@ -900,6 +908,10 @@ class _LessonScreenState extends State<LessonScreen>
                   accent: accent,
                   outOfLamps: _outOfLamps,
                   onContinue: _continue,
+                  missionSlug: widget.missionSlug,
+                  trailSlug: _trailSlug,
+                  difficulty: _difficultyMeta?.difficulty.id,
+                  practiceMode: widget.practiceMode,
                 ),
             ],
           ),
@@ -1061,6 +1073,10 @@ class _ExerciseFeedbackOverlay extends StatefulWidget {
   final Color accent;
   final bool outOfLamps;
   final VoidCallback onContinue;
+  final String missionSlug;
+  final String? trailSlug;
+  final String? difficulty;
+  final bool practiceMode;
 
   const _ExerciseFeedbackOverlay({
     required this.exercise,
@@ -1069,7 +1085,11 @@ class _ExerciseFeedbackOverlay extends StatefulWidget {
     required this.isLast,
     required this.accent,
     required this.onContinue,
+    required this.missionSlug,
     this.outOfLamps = false,
+    this.trailSlug,
+    this.difficulty,
+    this.practiceMode = false,
   });
 
   @override
@@ -1329,7 +1349,58 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
                       ),
                     ),
                   ],
-                  const SizedBox(height: AppSpace.lg),
+                  const SizedBox(height: AppSpace.md),
+                  TextButton(
+                    onPressed: () async {
+                      final exercise = widget.exercise;
+                      String? optText(String id) {
+                        for (final o in exercise.options) {
+                          if (o.id == id) return o.text;
+                        }
+                        return null;
+                      }
+
+                      final ok = await showQuestionReportSheet(
+                        context,
+                        buildDraft: (category, comment) => QuestionReportDraft(
+                          questionId: exercise.id,
+                          questionText: exercise.prompt,
+                          verseRef: exercise.reference,
+                          selectedOptionId: widget.selected,
+                          selectedOptionText: optText(widget.selected),
+                          correctOptionId: exercise.correctAnswer,
+                          correctOptionText: optText(exercise.correctAnswer),
+                          userWasCorrect: widget.isCorrect,
+                          missionSlug: widget.missionSlug,
+                          trailSlug: widget.trailSlug,
+                          difficulty: widget.difficulty,
+                          practiceMode: widget.practiceMode,
+                          category: category,
+                          comment: comment,
+                        ),
+                      );
+                      if (!context.mounted || !ok) return;
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content: Text(
+                            'Relato enviado. Obrigado.',
+                            style: AppTypography.body(
+                              color: AppColors.textOnDark,
+                            ),
+                          ),
+                          backgroundColor: AppColors.nightElevated,
+                        ),
+                      );
+                    },
+                    child: Text(
+                      'Relatar problema nesta pergunta',
+                      style: AppTypography.label(
+                        size: 12,
+                        color: AppColors.textOnDark.withValues(alpha: 0.55),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.sm),
                   CopperCta(label: cta, onTap: widget.onContinue),
                 ],
               ),

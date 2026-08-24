@@ -7,6 +7,7 @@ import 'dart:async';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
+import '../services/content_catalog_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
@@ -36,6 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
   void initState() {
     super.initState();
     _loadVersionLabel();
+    unawaited(ContentCatalogService.instance.ensureLoaded());
   }
 
   Future<void> _loadVersionLabel() async {
@@ -50,7 +52,12 @@ class _LoginScreenState extends State<LoginScreen> {
     AuthSignInResult result,
   ) async {
     final league = context.read<LeagueService>();
-    final hydrate = await backend.hydrateProgress(progress, league: league);
+    final hydrate = await backend
+        .hydrateProgress(progress, league: league)
+        .timeout(
+          const Duration(seconds: 10),
+          onTimeout: () => BackendService.hydrateFailed,
+        );
 
     // hydrate já tenta o displayName da sessão; reforça com o do login.
     await progress.ensureUserNameFromAuth(
@@ -67,15 +74,15 @@ class _LoginScreenState extends State<LoginScreen> {
       return;
     }
 
-    await backend.settleAndSyncLeague(progress, league);
-    await progress.clearLegacyLocalPrefs();
+    unawaited(backend.settleAndSyncLeague(progress, league));
+    unawaited(progress.clearLegacyLocalPrefs());
 
     if (!mounted) return;
     final companions = context.read<CompanionService>();
-    await companions.applyCloudCodes(progress.companionCodes, progress);
-    if (!mounted) return;
     final rooms = context.read<RoomService>();
-    await rooms.applyCloudCode(progress.activeRoomCode, progress: progress);
+    unawaited(companions.applyCloudCodes(progress.companionCodes, progress));
+    unawaited(rooms.applyCloudCode(progress.activeRoomCode, progress: progress));
+    unawaited(ContentCatalogService.instance.ensureLoaded());
 
     if (!mounted) return;
 
@@ -98,19 +105,16 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => _error = null);
     HapticFeedback.lightImpact();
 
-    // ignore: avoid_print — acompanha login em flutter run --release
-    print('[STWAY:Auth] LoginScreen: tap Continuar com Google');
+    debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Google');
     final result = await backend.signInWithGoogle();
     if (!mounted) return;
     if (!result.ok) {
-      // ignore: avoid_print
-      print('[STWAY:Auth] LoginScreen: fail → ${result.error}');
+      debugPrint('[STWAY:Auth] LoginScreen: fail → ${result.error}');
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() => _error = result.error ?? 'Falha no login com Google');
       return;
     }
-    // ignore: avoid_print
-    print('[STWAY:Auth] LoginScreen: ok → ${result.email}');
+    debugPrint('[STWAY:Auth] LoginScreen: ok → ${result.email}');
     unawaited(AnalyticsService.instance.logLogin(method: 'google'));
     unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);
@@ -122,19 +126,16 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => _error = null);
     HapticFeedback.lightImpact();
 
-    // ignore: avoid_print
-    print('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
+    debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
     final result = await backend.signInWithApple();
     if (!mounted) return;
     if (!result.ok) {
-      // ignore: avoid_print
-      print('[STWAY:Auth] LoginScreen: Apple fail → ${result.error}');
+      debugPrint('[STWAY:Auth] LoginScreen: Apple fail → ${result.error}');
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() => _error = result.error ?? 'Falha no login com Apple');
       return;
     }
-    // ignore: avoid_print
-    print('[STWAY:Auth] LoginScreen: Apple ok → ${result.email}');
+    debugPrint('[STWAY:Auth] LoginScreen: Apple ok → ${result.email}');
     unawaited(AnalyticsService.instance.logLogin(method: 'apple'));
     unawaited(AnalyticsService.instance.setUserId(backend.uid));
     await _continueAfterLogin(progress, backend, result);

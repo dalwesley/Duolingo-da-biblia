@@ -13,6 +13,7 @@ class TrailMapPath extends StatelessWidget {
   final List<String> allSlugs;
   final List<String> completedMissions;
   final GenesisModuleTheme? theme;
+  final Color? modeAccent;
   final void Function(String slug)? onMissionTap;
 
   const TrailMapPath({
@@ -22,6 +23,7 @@ class TrailMapPath extends StatelessWidget {
     required this.allSlugs,
     required this.completedMissions,
     this.theme,
+    this.modeAccent,
     this.onMissionTap,
   });
 
@@ -34,7 +36,7 @@ class TrailMapPath extends StatelessWidget {
   Widget build(BuildContext context) {
     if (missions.isEmpty) return const SizedBox.shrink();
 
-    final gold = theme?.pathActive ?? AppColors.accent;
+    final accent = modeAccent ?? theme?.pathActive ?? AppColors.accent;
     final inactive =
         theme?.pathInactive ?? Colors.white.withValues(alpha: 0.15);
 
@@ -58,7 +60,7 @@ class TrailMapPath extends StatelessWidget {
                       activeBelow: _completed(missions[i].slug),
                       completed: _completed(missions[i].slug),
                       unlocked: _unlocked(missions[i].slug),
-                      activeColor: gold,
+                      activeColor: accent,
                       inactiveColor: inactive,
                       showTop: i > 0,
                       showBottom: i < missions.length - 1,
@@ -72,6 +74,7 @@ class TrailMapPath extends StatelessWidget {
                       completed: _completed(missions[i].slug),
                       unlocked: _unlocked(missions[i].slug),
                       theme: theme,
+                      modeAccent: accent,
                       onTap: _unlocked(missions[i].slug)
                           ? () => onMissionTap?.call(missions[i].slug)
                           : null,
@@ -240,6 +243,7 @@ class _MissionSceneCard extends StatelessWidget {
   final bool completed;
   final bool unlocked;
   final GenesisModuleTheme? theme;
+  final Color modeAccent;
   final VoidCallback? onTap;
 
   const _MissionSceneCard({
@@ -248,6 +252,7 @@ class _MissionSceneCard extends StatelessWidget {
     required this.completed,
     required this.unlocked,
     required this.theme,
+    required this.modeAccent,
     this.onTap,
   });
 
@@ -258,9 +263,7 @@ class _MissionSceneCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    // Chrome de UI = mesmo amarelo do CTA Continuar (pathActive / accent).
-    final gold = theme?.pathActive ?? AppColors.accent;
-    final accent = gold;
+    final accent = modeAccent;
 
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
@@ -273,9 +276,9 @@ class _MissionSceneCard extends StatelessWidget {
             : a.cardFill.withValues(alpha: 0.55),
         border: Border.all(
           color: _current
-              ? AppColors.accent
+              ? accent
               : completed
-              ? gold.withValues(alpha: 0.28)
+              ? accent.withValues(alpha: 0.28)
               : a.cardBorder,
           width: _current ? 1.5 : 1,
         ),
@@ -295,7 +298,7 @@ class _MissionSceneCard extends StatelessWidget {
                   ),
                 ),
                 color: _current
-                    ? AppColors.accent.withValues(alpha: 0.12)
+                    ? accent.withValues(alpha: 0.12)
                     : null,
               ),
               child: Column(
@@ -308,7 +311,7 @@ class _MissionSceneCard extends StatelessWidget {
                       height: 1,
                       color: unlocked
                           ? (_current
-                                ? AppColors.accent
+                                ? accent
                                 : a.text.withValues(
                                     alpha: completed ? 0.35 : 0.75,
                                   ))
@@ -317,7 +320,7 @@ class _MissionSceneCard extends StatelessWidget {
                   ),
                   if (_current) ...[
                     const SizedBox(height: 8),
-                    Container(width: 18, height: 1.5, color: AppColors.accent),
+                    Container(width: 18, height: 1.5, color: accent),
                   ],
                 ],
               ),
@@ -348,9 +351,9 @@ class _MissionSceneCard extends StatelessWidget {
                             weight: FontWeight.w700,
                             letterSpacing: 1.6,
                             color: _current
-                                ? AppColors.accent
+                                ? accent
                                 : completed
-                                ? gold.withValues(alpha: 0.55)
+                                ? accent.withValues(alpha: 0.55)
                                 : a.textMuted(unlocked ? 0.45 : 0.28),
                           ),
                         ),
@@ -377,7 +380,7 @@ class _MissionSceneCard extends StatelessWidget {
                             mission.title,
                             isBoss: mission.isBoss,
                             size: _current ? 42 : 34,
-                            accent: AppColors.accent,
+                            accent: accent,
                             glowing: false,
                           ),
                         ),
@@ -440,7 +443,7 @@ class _MissionSceneCard extends StatelessWidget {
                         'Continuar →',
                         style: AppTypography.cta(
                           size: 14,
-                          color: gold,
+                          color: accent,
                         ).copyWith(letterSpacing: 0.2),
                       ),
                     ] else if (_current) ...[
@@ -449,7 +452,7 @@ class _MissionSceneCard extends StatelessWidget {
                         'Continuar →',
                         style: AppTypography.cta(
                           size: 14,
-                          color: gold,
+                          color: accent,
                         ).copyWith(letterSpacing: 0.2),
                       ),
                     ],

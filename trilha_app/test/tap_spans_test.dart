@@ -81,6 +81,41 @@ void main() {
     expect(ex.hasFieldHero, isFalse);
   });
 
+  test('single-word tap options stay distinct marks in the verse', () {
+    final spans = buildTapSpans(
+      'No princípio, Deus criou os céus e a terra.',
+      const [
+        QuestionOption(id: 'a', text: 'criou'),
+        QuestionOption(id: 'b', text: 'princípio'),
+        QuestionOption(id: 'c', text: 'céus'),
+      ],
+    );
+    expect(
+      spans.where((s) => s.optionId != null).map((s) => '${s.optionId}:${s.text}'),
+      ['b:princípio', 'a:criou', 'c:céus'],
+    );
+  });
+
+  test('tap with word options uses complete-style palco template', () {
+    const ex = Exercise(
+      id: 't',
+      type: ExerciseType.tap,
+      prompt:
+          'Em Gênesis 1:1–2, toque a palavra que falta em “No ___, Deus criou os céus”?',
+      correctAnswer: 'a',
+      passageText:
+          'No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia.',
+      options: [
+        QuestionOption(id: 'a', text: 'princípio'),
+        QuestionOption(id: 'b', text: 'terra'),
+        QuestionOption(id: 'c', text: 'estava'),
+      ],
+    );
+    expect(ex.usesCompletePalco, isTrue);
+    expect(ex.palcoTemplate, 'No ___, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia.');
+    expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');
+  });
+
   test('complete hides generic cue and order has a sequence prompt', () {
     const fill = Exercise(
       id: 'c',

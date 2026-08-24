@@ -38,7 +38,7 @@ Insight sem ato curto = sermão.
 ```text
 SESSÃO = 1 objetivo observável + 5–12 atos + 1 insight (no fim) + saída
 Duração alvo: 2–3 min (teto 4)
-Padrão: 7–9 atos · simples 5–6 · denso 10–12
+Padrão: 5–7 atos · simples 4–5 · denso 7–8 · boss 8
 ```
 
 - **Não é** mini-aula → quiz.  
@@ -118,7 +118,7 @@ Mínimo **3 gestos distintos** por sessão (quando houver conteúdo autorado). M
 **Regra:** se a ideia cabe num gesto existente, usar. Novo gesto só se for recorrente em muitas trilhas.
 
 MCQ clássico (`Escolher`) ≤ **40%** dos atos quando a sessão tem gestos mistos.  
-O banco (`*_questions.json`) carrega `type` por pergunta. O composer monta 1 de cada gesto e preenche até 7–9 atos (2º Escolher no meio, ≤ 40%).
+O banco (`*_questions.json`) carrega `type` por pergunta. O composer monta diversidade de gestos e preenche **6 atos** (8 boss) com **1 de cada gesto** no pool (V/F · tap · choice · order · complete · connect); 2º Escolher no meio se couber (≤ 40%).
 
 ---
 
@@ -233,7 +233,7 @@ Repetir a mesma MCQ ≠ review.
 
 ## 8. Dificuldade e vidas
 
-Semente / Rota / Profundezas = **perfil de operações** sobre o mesmo shell — não players diferentes.
+Observação / Compreensão / Interpretação = **perfil de operações** sobre o mesmo shell — não players diferentes.
 
 - Alvo: **~80%** de acertos na 1ª tentativa.  
 - Lâmpadas = continuar treinando.  
@@ -255,7 +255,7 @@ Fonte canônica: **banco** (`content_bank_questions`), tipado. Sem prioridade de
 
 Política da sessão (código: `ProgressService` + `SessionComposer`):
 
-- Normal **8** atos · boss **10** · clamp 5–12
+- Normal **6** atos · boss **8** · clamp 5–12
 - 1 de cada gesto primeiro; **2º Escolher** se o pool tiver (≤ **40%**)
 - V/F ≤ 2 · nunca o mesmo gesto 4× seguidas
 - Entrada: verso ≤ ~40 palavras + contexto **ou** conexão (um bloco)
@@ -292,7 +292,7 @@ V/F ou Toque → misturar gestos → Escolher no meio
 
 ## 12. Exemplo — `gen-03-imagem`
 
-Treino **padrão** da trilha (não conteúdo especial). O composer monta ~8 atos a partir do banco da seção `gen-03-imagem`.
+Treino **padrão** da trilha (não conteúdo especial). O composer monta **6 atos** a partir do banco da seção `gen-03-imagem`.
 
 | Fase | O quê |
 |------|--------|

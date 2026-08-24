@@ -115,6 +115,37 @@ void main() {
       expect(ex.displayCue.toLowerCase().contains('sem forma'), isFalse);
     });
 
+    test('fromBankQuestion keeps tap options as complete-style words', () {
+      final bq = BankQuestion(
+        id: 'g-tap-word',
+        trailSlug: 'genesis-1-11',
+        difficulty: TrailDifficulty.caminhada,
+        section: 'gen-01-criador',
+        question:
+            'Em Gênesis 1:1–2, toque a palavra que falta em “No ___, Deus criou os céus”?',
+        prompt:
+            'Em Gênesis 1:1–2, toque a palavra que falta em “No ___, Deus criou os céus”?',
+        type: ExerciseType.tap,
+        passageText:
+            'No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia.',
+        options: const [
+          QuestionOption(id: 'a', text: 'princípio'),
+          QuestionOption(id: 'b', text: 'terra'),
+          QuestionOption(id: 'c', text: 'estava'),
+        ],
+        correctOptionId: 'a',
+        correctAnswer: 'a',
+        feedbackCorrect: 'Sim.',
+        feedbackWrong: const {'b': 'Não.', 'c': 'Não.'},
+      );
+      final ex = SessionComposer.fromBankQuestion(bq);
+      expect(ex.options.map((o) => o.text), ['princípio', 'terra', 'estava']);
+      expect(ex.usesCompletePalco, isTrue);
+      expect(ex.palcoTemplate, contains('___'));
+      expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');
+      expect(ex.displayCue.toLowerCase().contains('princípio criou'), isFalse);
+    });
+
     test('fromBankQuestion complete uses the real question, not Complete a lacuna', () {
       final bq = BankQuestion(
         id: 'g-complete',

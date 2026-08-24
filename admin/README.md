@@ -77,9 +77,9 @@ make seed SEED_ONLY=ot
 
 `npm run seed:cli` = `node scripts/seed_content_cli.mjs` (OAuth do `firebase login`).  
 `npm run seed` = client SDK Email/Password (`seed_content.mjs`) — falha em contas Google-only.  
-`npm run seed:refresh` = `prepare` + `migrate` + `enrich` + seed — **não** rerodar após o reparo P0–P6 (reescreve o banco editorial).
+Pipeline de conteúdo: `npm run pipeline:v2` (purge → author handcraft Êxodo/Sermão → build → repair → validate). Seed recusa banco inválido.
 
-Último seed completo: **18 ago 2026** · 10.368 atos · 84 trilhas · 431 estudos · `catalog.version` 1787096847621.
+Disco local + Firestore **24 ago 2026:** 8.370 atos, validador verde, palco TB · `catalog.version` 1787584947461.
 
 ### Auth — o que NÃO fazer
 

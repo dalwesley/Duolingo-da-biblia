@@ -15,7 +15,7 @@ Docs relacionadas: [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md) · c
 | Sessão única com atos tipados + insight | **Sim** (`LessonScreen` + composer) |
 | Gestos além de MCQ | **Sim** (V/F, toque, order, complete, connect…) |
 | Competências (`skill`) | Tag + analytics; **sem** modelo adaptativo |
-| 3 profundidades como operações | UI + banco; **conteúdo** ainda uneven |
+| 3 profundidades como operações | UI + banco V2 (8.370 · validador verde); handcraft vitrine = próximo salto |
 | Strong / morfologia no estudo | **Sim** — aba Bíblia + ref tocável no palco do treino |
 | Currículo progressivo | Catálogo Firebase; unlock bypass em builds de teste |
 | Revisão espaçada / banco de exercícios tipados | Micro-review in-session; sem `content_exercises` |
@@ -26,21 +26,21 @@ Este arquivo continua sendo o **norte pedagógico**. O que já foi construído n
 
 # 1. A tese educacional do STWAY
 
-## STWAY é uma academia da Palavra.
+## STWAY existe para criar hábito de ler e estudar a Bíblia.
 
 O STWAY não existe para transformar a Bíblia em um jogo.
 
-Também não existe para transformar uma aula de teologia em pequenas telas.
+Também não existe para substituir seminário ou curso de teologia.
 
 O objetivo é construir uma experiência diária que faça o usuário:
 
-> **ler → pensar → compreender → conectar → lembrar → interpretar → aplicar**
+> **abrir a Palavra → ler com atenção → pensar no texto → voltar amanhã**
 
 ao longo de uma jornada progressiva.
 
-A pessoa começa com conhecimento básico.
+A pessoa começa com poucos minutos por dia.
 
-Mas, conforme avança, passa a desenvolver **competência para estudar a própria Bíblia**.
+Mas, conforme avança, desenvolve **hábito e confiança para ler e estudar a própria Bíblia**.
 
 ---
 
@@ -1491,11 +1491,11 @@ O objetivo é muito mais interessante:
 
 É isso que significa:
 
-# Academia da Palavra.
+# Hábito de ler e estudar a Palavra.
 
 Não uma aula por dia.
 
-**Treino contínuo.**
+**Treino contínuo no texto.**
 
 ---
 
@@ -1515,11 +1515,11 @@ Se não:
 
 Use esta instrução como base para qualquer IA responsável por criar conteúdo STWAY:
 
-> Você é um designer instrucional bíblico responsável pelo currículo do STWAY, uma academia da Palavra.
+> Você é um designer instrucional bíblico responsável pelo currículo do STWAY — missões diárias para criar hábito de ler e estudar a Bíblia (não seminário, não trivia).
 >
 > O objetivo não é criar quizzes divertidos nem resumir conteúdo bíblico.
 >
-> O objetivo é desenvolver progressivamente a capacidade do usuário de observar, compreender, contextualizar, interpretar, conectar, sintetizar, memorizar e aplicar as Escrituras.
+> O objetivo é fazer o usuário **voltar amanhã** e, ao longo do tempo, ler e pensar no texto com mais confiança — observar, compreender, conectar e interpretar quando o trecho pede.
 >
 > Ao criar qualquer trilha, cena, treino ou exercício:
 >

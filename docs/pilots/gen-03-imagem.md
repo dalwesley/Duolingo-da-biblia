@@ -1,17 +1,17 @@
 # Piloto — Imagem de Deus (`gen-03-imagem`)
 
-**Status:** referência histórica do contrato de sessão — **não** é mais conteúdo especial.  
-**Slug:** `gen-03-imagem` · mesmo pipeline das demais missões de Gênesis.
+**Status:** missão V2 — banco editorial reescrito (ago/2026)  
+**Slug:** `gen-03-imagem` · trilha `genesis-1-11`
 
 ---
 
 ## O que é hoje
 
-Treino normal da trilha `genesis-1-11`:
+Parte do piloto **Gênesis 1–11 V2** ([`genesis-v2.md`](genesis-v2.md)):
 
-- Banco: `content_bank_questions` (seção `gen-03-imagem`) — IDs `genesis--{sem|cam|pro}-gen-03-imagem-0N`
-- Composer monta a sessão a partir do banco (como `gen-01-criador`, `gen-04-descanso`…)
-- Missão em `content_trails`: `hook*` + `centralInsight` + `objective` — sem `exercises[]` embutidos nem `entrance` especial
+- **6 perguntas** (2 Semente + 2 Rota + 2 Profundezas) — IDs `genesis--{sem|cam|pro}-gen-03-imagem-0N`
+- Campos V2: `learningObjective`, `evidence[]`, `skill`, feedback explicativo
+- Composer monta sessão de ~6 atos a partir do banco
 
 Contrato de sessão: [`SESSAO_TREINO.md`](../SESSAO_TREINO.md).
 
@@ -29,6 +29,10 @@ Contrato de sessão: [`SESSAO_TREINO.md`](../SESSAO_TREINO.md).
 
 ---
 
-## Nota editorial
+## Exemplo V2 (Profundezas)
 
-Profundezas no catálogo geral ainda pode espelhar Semente/Rota quando o conteúdo foi migrado automaticamente. Diferenciar operações cognitivas é trabalho editorial contínuo — não um script de piloto.
+**Objetivo:** Relacionar imagem de Deus à dignidade de homem e mulher.
+
+**Pergunta:** Por que é importante que Gênesis 1 apresente tanto homem quanto mulher como portadores da imagem de Deus?
+
+Progressão da missão: **identificar → compreender domínio → interpretar dignidade**.

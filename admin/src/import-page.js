@@ -1,4 +1,6 @@
 import { COL, batchSet, bumpCatalogVersion, listCollection } from './db.js';
+import { validateBank, formatReport, CLONE_ID } from './bank-validator.js';
+import { questionsForPasso } from './question-studio.js';
 import { escapeHtml, setLoading, showToast } from './ui.js';
 
 const ACCEPT = '.pdf,.docx,.doc,.txt,.md,.json,.zip';
@@ -159,12 +161,27 @@ async function importBank(data, filename, log) {
     log(`• ${filename}: nenhuma pergunta encontrada`);
     return;
   }
+
+  const clones = questions.filter((q) => CLONE_ID.test(String(q.id || '')));
+  if (clones.length) {
+    log(`⚠ ${clones.length} clone(s) ignorado(s) (-xch/-xfill)`);
+  }
+  const clean = questions.filter((q) => !CLONE_ID.test(String(q.id || '')));
+  const report = validateBank(clean);
+  for (const w of report.warnings.slice(0, 12)) log(`⚠ ${w}`);
+  if (report.errors.length) {
+    for (const e of report.errors.slice(0, 20)) log(`✗ ${e}`);
+    throw new Error(
+      `${report.errors.length} erro(s) pedagógico(s). Corrija antes de publicar.\n${formatReport(report)}`,
+    );
+  }
+
   await batchSet(
     COL.bank,
-    questions.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
+    clean.map((q, i) => ({ ...q, id: q.id, order: i + 1 })),
     'id',
   );
-  log(`✓ ${questions.length} perguntas publicadas (${filename})`);
+  log(`✓ ${clean.length} perguntas publicadas (${filename})`);
 }
 
 async function importStudies(data, log) {
@@ -276,6 +293,429 @@ async function downloadPdf(title, lines, filename) {
   doc.save(filename);
 }
 
+const TYPE_LABEL = {
+  choice: 'escolher',
+  true_false: 'V/F',
+  complete: 'completar',
+  order: 'ordenar',
+  tap: 'toque',
+  connect: 'conectar',
+};
+
+const DIFF_LABEL = {
+  semente: 'Observação',
+  caminhada: 'Compreensão',
+  profundezas: 'Interpretação',
+};
+
+const DIFF_ORDER = [
+  { id: 'semente', label: 'Observação' },
+  { id: 'caminhada', label: 'Compreensão' },
+  { id: 'profundezas', label: 'Interpretação' },
+];
+
+function questionStem(q) {
+  return (q.cue || q.prompt || q.question || q.enunciado || '').trim();
+}
+
+function correctId(q) {
+  return String(q.correctOptionId || q.correctAnswer || '');
+}
+
+function normalizeOptions(q) {
+  const type = q.type || 'choice';
+  const correct = correctId(q);
+
+  if (type === 'true_false') {
+    return [
+      { id: 'true', label: 'a', text: 'Verdadeiro', correct: correct === 'true' },
+      { id: 'false', label: 'b', text: 'Falso', correct: correct === 'false' },
+    ];
+  }
+
+  const opts = q.options || [];
+  if (!opts.length) return [];
+
+  return opts.map((o, i) => {
+    if (typeof o === 'string') {
+      const id = String.fromCharCode(97 + i);
+      return { id, label: id, text: o, correct: correct === id };
+    }
+    if (Array.isArray(o) && o.length >= 2) {
+      const id = String(o[0] || String.fromCharCode(97 + i));
+      return {
+        id,
+        label: id,
+        text: String(o[1] || '').trim(),
+        correct: correct === id,
+      };
+    }
+    const id = o?.id || String.fromCharCode(97 + i);
+    return {
+      id,
+      label: id,
+      text: String(o?.text ?? o?.label ?? '').trim(),
+      correct: correct === id,
+    };
+  });
+}
+
+function questionTag(q, { showDifficulty = true } = {}) {
+  const type = TYPE_LABEL[q.type] || q.type || 'quiz';
+  if (!showDifficulty) return `[${type}]`;
+  const diff = DIFF_LABEL[q.difficulty] || q.difficulty || '';
+  return diff ? `[${type} · ${diff}]` : `[${type}]`;
+}
+
+function orderLabels(q) {
+  const order = q.correctOrder || q.order || [];
+  if (!Array.isArray(order) || !order.length) return '';
+  const byId = new Map((q.options || []).map((o) => [String(o.id), o.text || '']));
+  return order
+    .map((id) => {
+      const text = byId.get(String(id));
+      return text ? stripExportQuotes(text) : String(id);
+    })
+    .join(' → ');
+}
+
+function stripExportQuotes(s) {
+  return String(s || '')
+    .replace(/^[“”"«»'\s]+|[“”"«»'\s]+$/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extraQuestionLines(q) {
+  const type = q.type || 'choice';
+  const lines = [];
+  if (type === 'complete' && q.template) lines.push(`Lacuna: ${q.template}`);
+  if (type === 'tap' && q.passageText) lines.push(`Trecho: ${q.passageText}`);
+  if (type === 'order') {
+    const labels = orderLabels(q);
+    if (labels) lines.push(`Ordem correta: ${labels}`);
+  }
+  if (type === 'connect') {
+    if (q.passageA?.text) {
+      lines.push(`Trecho A: ${[q.passageA.ref, q.passageA.text].filter(Boolean).join(' — ')}`);
+    }
+    if (q.passageB?.text) {
+      lines.push(`Trecho B: ${[q.passageB.ref, q.passageB.text].filter(Boolean).join(' — ')}`);
+    }
+  }
+  if (q.verseRef) lines.push(`Ref.: ${q.verseRef}`);
+  return lines;
+}
+
+function formatQuestionText(q, index, { showDifficulty = true } = {}) {
+  const stem = questionStem(q);
+  const tag = questionTag(q, { showDifficulty });
+  const lines = [`${index}. ${tag} ${stem}`.trim()];
+  for (const extra of extraQuestionLines(q)) {
+    lines.push(`   ${extra}`);
+  }
+  for (const opt of normalizeOptions(q)) {
+    const letter = String(opt.label || opt.id || '').toUpperCase();
+    const mark = opt.correct ? ' ✓' : '';
+    lines.push(`   ${letter}. ${stripExportQuotes(opt.text)}${mark}`);
+  }
+  if (!normalizeOptions(q).length && !extraQuestionLines(q).length && !stem) {
+    lines.push('   (sem enunciado)');
+  }
+  lines.push('');
+  return lines;
+}
+
+function formatQuestionHtml(q, index, { showDifficulty = true } = {}) {
+  const stem = questionStem(q);
+  const opts = normalizeOptions(q);
+  const extras = extraQuestionLines(q)
+    .map((line) => `<p class="ie-q-extra">${escapeHtml(line)}</p>`)
+    .join('');
+  return `
+    <div class="ie-q">
+      <p><strong>${index}.</strong> <em>${escapeHtml(questionTag(q, { showDifficulty }))}</em> ${escapeHtml(stem)}</p>
+      ${extras}
+      ${
+        opts.length
+          ? `<ul>${opts
+              .map(
+                (o) =>
+                  `<li><strong>${escapeHtml(String(o.label || o.id).toUpperCase())}.</strong> ${escapeHtml(stripExportQuotes(o.text))}${o.correct ? ' ✓' : ''}</li>`,
+              )
+              .join('')}</ul>`
+          : ''
+      }
+    </div>`;
+}
+
+function groupByDifficulty(questions) {
+  const buckets = new Map();
+  for (const q of questions || []) {
+    const id = q.difficulty || 'semente';
+    if (!buckets.has(id)) buckets.set(id, []);
+    buckets.get(id).push(q);
+  }
+
+  const groups = [];
+  for (const d of DIFF_ORDER) {
+    const items = sortQuestions(buckets.get(d.id) || []);
+    if (items.length) groups.push({ id: d.id, label: d.label, questions: items });
+    buckets.delete(d.id);
+  }
+  for (const [id, items] of buckets) {
+    const sorted = sortQuestions(items);
+    if (sorted.length) {
+      groups.push({ id, label: DIFF_LABEL[id] || id, questions: sorted });
+    }
+  }
+  return groups;
+}
+
+function formatMissionQuestionsText(questions) {
+  const groups = groupByDifficulty(questions);
+  if (!groups.length) return ['(sem perguntas no banco)', ''];
+
+  const lines = [];
+  for (const group of groups) {
+    lines.push(group.label);
+    lines.push('');
+    group.questions.forEach((q, i) => {
+      lines.push(...formatQuestionText(q, i + 1, { showDifficulty: false }));
+    });
+  }
+  return lines;
+}
+
+function formatMissionQuestionsHtml(questions) {
+  const groups = groupByDifficulty(questions);
+  if (!groups.length) return '<p><em>(sem perguntas no banco)</em></p>';
+
+  return groups
+    .map(
+      (group) => `
+        <div class="ie-diff">
+          <h5>${escapeHtml(group.label)}</h5>
+          ${group.questions.map((q, i) => formatQuestionHtml(q, i + 1, { showDifficulty: false })).join('')}
+        </div>`,
+    )
+    .join('');
+}
+
+function mapQuestionForExport(q) {
+  return {
+    id: q.id,
+    type: q.type || 'choice',
+    difficulty: q.difficulty || '',
+    stem: questionStem(q),
+    verseRef: q.verseRef || '',
+    options: normalizeOptions(q).map((o) => ({
+      id: o.id,
+      text: o.text,
+      correct: o.correct,
+    })),
+  };
+}
+
+function missionSlugs(trails) {
+  const slugs = new Set();
+  for (const t of trails || []) {
+    for (const mod of t.modules || []) {
+      for (const m of mod.missions || []) {
+        if (m.slug) slugs.add(m.slug);
+      }
+    }
+  }
+  return slugs;
+}
+
+function sortQuestions(items) {
+  return [...items].sort((a, b) => {
+    const ao = a.order ?? Number.MAX_SAFE_INTEGER;
+    const bo = b.order ?? Number.MAX_SAFE_INTEGER;
+    if (ao !== bo) return ao - bo;
+    return String(a.id || '').localeCompare(String(b.id || ''));
+  });
+}
+
+function curriculumToText(trails, bank) {
+  const lines = [];
+  const sortedTrails = [...(trails || [])].sort(
+    (a, b) => (a.order ?? 999) - (b.order ?? 999) || String(a.title || '').localeCompare(String(b.title || '')),
+  );
+
+  for (const t of sortedTrails) {
+    const trailSlug = t.slug || t.id;
+    lines.push(`TRILHA: ${t.title || trailSlug}`);
+    if (t.description) lines.push(t.description);
+    lines.push('');
+
+    for (const mod of t.modules || []) {
+      lines.push(`Módulo: ${mod.title || 'Sem título'}`);
+      for (const m of mod.missions || []) {
+        lines.push(`• ${m.title || m.slug}`);
+        if (m.intro) lines.push(m.intro);
+        lines.push('');
+
+        const questions = questionsForPasso(bank, { trail: trailSlug, section: m.slug });
+        lines.push(...formatMissionQuestionsText(questions));
+      }
+      lines.push('');
+    }
+    lines.push('');
+  }
+
+  const linked = missionSlugs(trails);
+  const orphans = sortQuestions(
+    (bank || []).filter((q) => !q.section || !linked.has(q.section)),
+  );
+  if (orphans.length) {
+    lines.push('PERGUNTAS SEM PASSO (órfãs)');
+    lines.push('');
+    for (const group of groupByDifficulty(orphans)) {
+      lines.push(group.label);
+      lines.push('');
+      group.questions.forEach((q, i) => {
+        lines.push(...formatQuestionText(q, i + 1, { showDifficulty: false }));
+      });
+    }
+  }
+
+  return lines;
+}
+
+function curriculumToHtml(trails, bank) {
+  const sortedTrails = [...(trails || [])].sort(
+    (a, b) => (a.order ?? 999) - (b.order ?? 999) || String(a.title || '').localeCompare(String(b.title || '')),
+  );
+
+  const trailHtml = sortedTrails
+    .map((t) => {
+      const trailSlug = t.slug || t.id;
+      const modulesHtml = (t.modules || [])
+        .map(
+          (mod) => `
+        <h3>Módulo: ${escapeHtml(mod.title || 'Sem título')}</h3>
+        ${(mod.missions || [])
+          .map((m) => {
+            const questions = questionsForPasso(bank, { trail: trailSlug, section: m.slug });
+            const qHtml = formatMissionQuestionsHtml(questions);
+            return `
+          <div class="ie-mission">
+            <h4>• ${escapeHtml(m.title || m.slug)}</h4>
+            ${m.intro ? `<p>${escapeHtml(m.intro)}</p>` : ''}
+            ${qHtml}
+          </div>`;
+          })
+          .join('')}`,
+        )
+        .join('');
+
+      return `
+      <section class="ie-trail">
+        <h2>TRILHA: ${escapeHtml(t.title || trailSlug)}</h2>
+        ${t.description ? `<p>${escapeHtml(t.description)}</p>` : ''}
+        ${modulesHtml}
+      </section>`;
+    })
+    .join('<hr>');
+
+  const linked = missionSlugs(trails);
+  const orphans = sortQuestions(
+    (bank || []).filter((q) => !q.section || !linked.has(q.section)),
+  );
+  const orphanHtml = orphans.length
+    ? `<hr><h2>Perguntas sem passo (órfãs)</h2>${groupByDifficulty(orphans)
+        .map(
+          (group) => `
+        <div class="ie-diff">
+          <h3>${escapeHtml(group.label)}</h3>
+          ${group.questions.map((q, i) => formatQuestionHtml(q, i + 1, { showDifficulty: false })).join('')}
+        </div>`,
+        )
+        .join('')}`
+    : '';
+
+  return `${trailHtml}${orphanHtml}`;
+}
+
+function buildCurriculumTree(trails, bank, difficultyLevels = []) {
+  const sortedTrails = [...(trails || [])].sort(
+    (a, b) => (a.order ?? 999) - (b.order ?? 999) || String(a.title || '').localeCompare(String(b.title || '')),
+  );
+
+  const tree = sortedTrails.map((t) => {
+    const trailSlug = t.slug || t.id;
+    return {
+      slug: trailSlug,
+      title: t.title || trailSlug,
+      description: t.description || '',
+      modules: (t.modules || []).map((mod) => ({
+        title: mod.title || '',
+        missions: (mod.missions || []).map((m) => ({
+          slug: m.slug || '',
+          title: m.title || m.slug || '',
+          intro: m.intro || '',
+          difficulties: groupByDifficulty(
+            questionsForPasso(bank, { trail: trailSlug, section: m.slug }),
+          ).map((group) => ({
+            id: group.id,
+            label: group.label,
+            questions: group.questions.map(mapQuestionForExport),
+          })),
+        })),
+      })),
+    };
+  });
+
+  const linked = missionSlugs(trails);
+  const orphans = sortQuestions(
+    (bank || []).filter((q) => !q.section || !linked.has(q.section)),
+  );
+
+  return {
+    exportedAt: new Date().toISOString(),
+    difficultyLevels: (difficultyLevels.length ? difficultyLevels : DIFF_ORDER.map((d) => ({ id: d.id, label: d.label }))),
+    trails: tree,
+    orphans: groupByDifficulty(orphans).map((group) => ({
+      id: group.id,
+      label: group.label,
+      questions: group.questions.map((q) => ({
+        ...mapQuestionForExport(q),
+        section: q.section || '',
+        trail: q.trail || q.trailSlug || '',
+      })),
+    })),
+  };
+}
+
+async function exportCurriculum(format) {
+  const [trails, bank, difficultyLevels] = await Promise.all([
+    listCollection(COL.trails),
+    listCollection(COL.bank),
+    listCollection(COL.difficulties),
+  ]);
+
+  const stamp = dateStamp();
+
+  if (format === 'json') {
+    const tree = buildCurriculumTree(trails, bank, difficultyLevels);
+    downloadBlob(
+      new Blob([`${JSON.stringify(tree, null, 2)}\n`], { type: 'application/json' }),
+      `curriculo-${stamp}.json`,
+    );
+    return bank.length;
+  }
+
+  if (format === 'word') {
+    downloadWord('Currículo STWAY', curriculumToHtml(trails, bank), `curriculo-${stamp}.doc`);
+    return bank.length;
+  }
+
+  await downloadPdf('STWAY — Currículo', curriculumToText(trails, bank), `curriculo-${stamp}.pdf`);
+  return bank.length;
+}
+
 function trailsToText(trails) {
   const lines = [];
   for (const t of trails) {
@@ -313,19 +753,44 @@ function trailsToHtml(trails) {
 }
 
 function bankToText(questions) {
-  return questions.map((q, i) => {
-    const opts = (q.options || []).map((o, j) => `    ${String.fromCharCode(65 + j)}. ${o}`).join('\n');
-    return [`${i + 1}. [${q.type || 'quiz'}] ${q.enunciado || q.prompt || ''}`, opts, ''].join('\n');
+  return questions.flatMap((q, i) => {
+    const stem = questionStem(q) || q.enunciado || '';
+    const lines = [`${i + 1}. ${questionTag(q)} ${stem}`];
+    lines.push(...extraQuestionLines(q).map((line) => line.replace(/^ {6}/, '    ')));
+    for (const opt of normalizeOptions(q)) {
+      const letter = String(opt.label || opt.id || '').toUpperCase();
+      lines.push(`    ${letter}. ${opt.text}${opt.correct ? ' ✓' : ''}`);
+    }
+    if (!normalizeOptions(q).length && q.type === 'order' && Array.isArray(q.correctOrder)) {
+      lines.push(`    Ordem: ${q.correctOrder.join(' → ')}`);
+    }
+    lines.push('');
+    return lines;
   });
 }
 
 function bankToHtml(questions) {
   return questions
-    .map(
-      (q, i) => `
-    <p><strong>${i + 1}. [${escapeHtml(q.type || 'quiz')}]</strong> ${escapeHtml(q.enunciado || q.prompt || '')}</p>
-    <ul>${(q.options || []).map((o) => `<li>${escapeHtml(o)}</li>`).join('')}</ul>`,
-    )
+    .map((q, i) => {
+      const stem = questionStem(q) || q.enunciado || '';
+      const opts = normalizeOptions(q);
+      const extras = extraQuestionLines(q)
+        .map((line) => `<p class="ie-q-extra">${escapeHtml(line.trim())}</p>`)
+        .join('');
+      return `
+    <p><strong>${i + 1}. ${escapeHtml(questionTag(q))}</strong> ${escapeHtml(stem)}</p>
+    ${extras}
+    ${
+      opts.length
+        ? `<ul>${opts
+            .map(
+              (o) =>
+                `<li><strong>${escapeHtml(String(o.label || o.id).toUpperCase())}.</strong> ${escapeHtml(o.text)}${o.correct ? ' ✓' : ''}</li>`,
+            )
+            .join('')}</ul>`
+        : ''
+    }`;
+    })
     .join('');
 }
 
@@ -377,7 +842,7 @@ async function exportAll(format) {
   const [trails, bank, studies] = await Promise.all([
     listCollection(COL.trails),
     listCollection(COL.bank),
-    listCollection(COL.studies),
+    listCollection(COL.studies, 'slug'),
   ]);
 
   if (format === 'word') {
@@ -450,13 +915,14 @@ export async function renderImportPage(root) {
 
     <div class="card" style="margin-top:var(--space-5)">
       <h2>📤 Exportar</h2>
-      <p class="page-sub">Baixe o conteúdo publicado em Word ou PDF.</p>
+      <p class="page-sub">Baixe o conteúdo publicado em Word, PDF ou JSON. Use <strong>Currículo</strong> para trilha → passo → pergunta → opções.</p>
 
       <div class="ie-export-grid">
+        ${exportCard('curriculum', 'Currículo', 'Trilhas com perguntas aninhadas', ['word', 'pdf', 'json'])}
         ${exportCard('trails', 'Trilhas', 'Mapas e passos do app')}
         ${exportCard('bank', 'Perguntas', 'Banco de ações do treino')}
         ${exportCard('studies', 'Estudos', 'Textos de preparo')}
-        ${exportCard('all', 'Tudo', 'Pacote completo')}
+        ${exportCard('all', 'Tudo', 'Pacote completo (separado)')}
       </div>
     </div>`;
 
@@ -585,7 +1051,12 @@ export async function renderImportPage(root) {
       const format = btn.dataset.format;
       setLoading(true);
       try {
-        const count = key === 'all' ? await exportAll(format) : await exportCollection(key, format);
+        const count =
+          key === 'curriculum'
+            ? await exportCurriculum(format)
+            : key === 'all'
+              ? await exportAll(format)
+              : await exportCollection(key, format);
         showToast(`${count} itens exportados`);
       } catch (e) {
         console.error(e);
@@ -597,14 +1068,20 @@ export async function renderImportPage(root) {
   });
 }
 
-function exportCard(key, title, desc) {
+function exportCard(key, title, desc, formats = ['word', 'pdf']) {
+  const labels = { word: 'Word', pdf: 'PDF', json: 'JSON' };
+  const buttons = formats
+    .map(
+      (format) =>
+        `<button type="button" class="btn btn-outline btn-sm" data-export="${key}" data-format="${format}">${labels[format] || format}</button>`,
+    )
+    .join('');
   return `
     <div class="ie-export-card">
       <strong>${escapeHtml(title)}</strong>
       <span>${escapeHtml(desc)}</span>
       <div class="ie-export-actions">
-        <button type="button" class="btn btn-outline btn-sm" data-export="${key}" data-format="word">Word</button>
-        <button type="button" class="btn btn-outline btn-sm" data-export="${key}" data-format="pdf">PDF</button>
+        ${buttons}
       </div>
     </div>`;
 }

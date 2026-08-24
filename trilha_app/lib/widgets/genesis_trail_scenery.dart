@@ -12,6 +12,7 @@ class GenesisModuleScenery extends StatelessWidget {
   final bool isActiveChapter;
   final int? missionsDone;
   final int? missionsTotal;
+  final Color? modeAccent;
 
   const GenesisModuleScenery({
     super.key,
@@ -22,10 +23,12 @@ class GenesisModuleScenery extends StatelessWidget {
     this.isActiveChapter = false,
     this.missionsDone,
     this.missionsTotal,
+    this.modeAccent,
   });
 
   @override
   Widget build(BuildContext context) {
+    final accent = modeAccent ?? AppColors.accent;
     return Padding(
       padding: const EdgeInsets.fromLTRB(18, 8, 18, 36),
       child: Column(
@@ -38,6 +41,7 @@ class GenesisModuleScenery extends StatelessWidget {
             highlighted: isActiveChapter,
             missionsDone: missionsDone,
             missionsTotal: missionsTotal,
+            accent: accent,
           ),
           SizedBox(height: isActiveChapter ? 28 : 18),
           child,
@@ -55,6 +59,7 @@ class _ChapterTitleCard extends StatelessWidget {
   final bool highlighted;
   final int? missionsDone;
   final int? missionsTotal;
+  final Color accent;
 
   const _ChapterTitleCard({
     required this.title,
@@ -63,6 +68,7 @@ class _ChapterTitleCard extends StatelessWidget {
     required this.highlighted,
     this.missionsDone,
     this.missionsTotal,
+    required this.accent,
   });
 
   @override
@@ -100,7 +106,7 @@ class _ChapterTitleCard extends StatelessWidget {
         ),
         border: Border.all(
           color: highlighted
-              ? AppColors.accent
+              ? accent
               : Colors.white.withValues(alpha: 0.12),
           width: highlighted ? 1.4 : 1,
         ),
@@ -122,7 +128,7 @@ class _ChapterTitleCard extends StatelessWidget {
                           size: 10,
                           weight: FontWeight.w700,
                           letterSpacing: 2.6,
-                          color: AppColors.accent.withValues(alpha: 0.85),
+                          color: accent.withValues(alpha: 0.85),
                         ),
                       ),
                       const SizedBox(height: AppSpace.sm),
@@ -149,7 +155,7 @@ class _ChapterTitleCard extends StatelessWidget {
                           style: AppTypography.display(
                             size: 16,
                             weight: FontWeight.w600,
-                            color: AppColors.accent.withValues(alpha: 0.9),
+                            color: accent.withValues(alpha: 0.9),
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -183,14 +189,14 @@ class _ChapterTitleCard extends StatelessWidget {
                 size: 12,
                 weight: FontWeight.w700,
                 letterSpacing: 0.3,
-                color: AppColors.accent,
+                color: accent,
               ),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
               AppProgressBar(
                 value: pct,
-                color: AppColors.accent,
+                color: accent,
                 trackColor: Colors.white.withValues(alpha: 0.1),
               ),
               const SizedBox(height: 8),

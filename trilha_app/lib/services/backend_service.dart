@@ -130,7 +130,7 @@ class BackendService extends ChangeNotifier {
       await AnalyticsService.instance.setUserId(
         FirebaseAuth.instance.currentUser?.uid,
       );
-      await _ensureGoogleSignInInitialized();
+      // Google Sign-In só na hora do botão — não bloqueia cold start autenticado.
 
       final auth = FirebaseAuth.instance;
       User? user = auth.currentUser;
@@ -182,10 +182,12 @@ class BackendService extends ChangeNotifier {
     _authLog('GoogleSignIn initialized ok');
   }
 
-  /// Logs visíveis em release via `adb logcat | grep STWAY:Auth`.
+  /// Logs de auth — só em debug (evitar ruído em release).
   static void _authLog(String message) {
-    // ignore: avoid_print — intencional para depurar login em --release
-    print('[STWAY:Auth] $message');
+    assert(() {
+      debugPrint('[STWAY:Auth] $message');
+      return true;
+    }());
   }
 
   /// Login nativo com Google + Firebase (idToken).
@@ -970,11 +972,17 @@ class BackendService extends ChangeNotifier {
       return const UserBackupResult.error('backend inactive');
     }
     try {
-      final doc = await _db.doc('users/$_uid').get();
+      final doc = await _db
+          .doc('users/$_uid')
+          .get()
+          .timeout(const Duration(seconds: 10));
       if (!doc.exists || doc.data() == null) {
         return const UserBackupResult.missing();
       }
       return UserBackupResult.found(doc.data()!);
+    } on TimeoutException catch (e) {
+      debugPrint('Timeout ao restaurar da nuvem: $e');
+      return const UserBackupResult.error('timeout');
     } catch (e) {
       debugPrint('Falha ao restaurar da nuvem: $e');
       return UserBackupResult.error(e.toString());

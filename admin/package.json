@@ -7,17 +7,19 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "expand:genesis": "node scripts/expand_genesis_complete.mjs",
-    "rebuild:genesis1250": "node scripts/rebuild_genesis_1250.mjs",
-    "repair:answers": "node scripts/repair_broken_answers.mjs",
-    "prepare:content": "node scripts/prepare_content.mjs",
-    "migrate:session": "node scripts/migrate_session_pattern.mjs",
-    "enrich:content": "node scripts/enrich_content.mjs",
     "seed": "node scripts/seed_content.mjs",
     "seed:cli": "node scripts/seed_content_cli.mjs",
-    "seed:refresh": "npm run prepare:content && npm run migrate:session && npm run enrich:content && node scripts/seed_content.mjs",
-    "seed:genesis": "npm run expand:genesis && npm run seed",
-    "extract:studies": "node scripts/extract_mission_studies.mjs"
+    "extract:studies": "node scripts/extract_mission_studies.mjs",
+    "purge:clones": "node scripts/purge_clones.mjs",
+    "validate:bank": "node scripts/validate_bank.mjs",
+    "build:genesis111": "node scripts/build_genesis_111_v2.mjs",
+    "build:genesis1250": "node scripts/build_genesis_1250_v2.mjs",
+    "build:genesis": "node scripts/build_genesis_v2.mjs",
+    "build:alltrails": "node scripts/build_all_trails_v2.mjs",
+    "author:handcraft": "node scripts/author_handcraft_trails.mjs",
+    "repair:v2meta": "node scripts/repair_v2_metadata.mjs",
+    "adapt:verbs": "node scripts/adapt_difficulty_verbs.mjs",
+    "pipeline:v2": "node scripts/run_v2_pipeline.mjs"
   },
   "dependencies": {
     "firebase": "^11.10.0"

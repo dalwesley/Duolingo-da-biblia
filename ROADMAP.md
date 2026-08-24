@@ -1,25 +1,29 @@
-# Roadmap STWAY — formação bíblica com hábito
+# Roadmap STWAY — hábito de ler e estudar a Bíblia
 
-**Atualizado:** 18 ago/2026 (banco P0–P6 no Firestore + D7 no Sermão + widget iOS).
+**Atualizado:** 24 ago/2026 (banco local + Firebase 8.370, validador verde, palco TB, seed 1787584947461).
 
-**Norte:** missões diárias em português para aprender a Bíblia de verdade — sessões curtas + estudo original offline.
-Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem escola), nem trivia vazia.
-**Sensação:** academia da Palavra (Duolingo no loop · escola no conteúdo).
+**Norte:** missões diárias em português para **criar hábito de ler e estudar a Bíblia** — sessões curtas + estudo offline quando o versículo pede.
+Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem trivia vazia.
+**Sensação:** Duolingo no loop · **ler e estudar a Palavra** (não formação teológica — hábito + estudo no texto).
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
-**Frase do tester:** *“app de missões pra aprender a ler a Bíblia.”*
+**Frase do tester:** *“app de missões pra criar hábito de ler a Bíblia.”*
+
+**Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-posicionamento-mercado-24ago2026`
 
 ## Critério de pronto para crescer
 
 - [ ] Retenção D7 ok no loop de missão
 - [ ] **1 caminho Criação → NT terminável** — estrutura e qualidade mínima prontas (ver abaixo); falta **prova com tester**
-- [ ] Usuário explica o app numa frase alinhada ao norte (*"app de missões pra aprender a ler a Bíblia"*)
+- [ ] Usuário explica o app numa frase alinhada ao norte (*"app de missões pra criar hábito de ler a Bíblia"*)
 
 **Caminho canônico (unlock):**
 `genesis-1-11` → `genesis-12-50` → `exodo` → `evangelhos` → `atos` → `cartas-paulo` → `apocalipse`
 
 | Elo | Estado |
 |-----|--------|
-| Gênesis 1–11 / 12–50 / Êxodo / Evangelhos | denso + studies |
+| **Gênesis 1–11 / 12–50** | **V2 editorial + fill** — 270 + 432 perguntas, validador ok |
+| **Êxodo / Sermão** | Packs V2 congelados (palco TB) + gerador verso-primeiro |
+| **Catálogo completo (84 trilhas)** | **8.370** no disco + Firebase (seed 24 ago), validador verde |
 | Atos | **10 missões** (2 módulos) + studies + banco 3 níveis |
 | Cartas de Paulo (entrada) | panorama 3 passos + studies enriquecidos |
 | Apocalipse | **8 missões** (2 módulos) + studies + banco 3 níveis |
@@ -33,21 +37,21 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 ## Feito (base)
 
 - [x] Congelar frase-mãe / filtro de features (este doc)
-- [x] **Publicar conteúdo no Firebase** (trails + studies + bank) — **10.368** atos, 84 trilhas, 431 estudos; `catalog.version` 1787096847621 (seed CLI 18 ago 2026)
+- [x] **Publicar conteúdo no Firebase** — seed V2 **8.370** atos (**24 ago**, `catalog.version` `1787584947461`)
 - [x] Instrumentar loop: abertura → missão iniciada → concluída → D1/D7 (+ analytics de pergunta)
 - [x] Currículo amplo no catálogo (AT panorâmico + Evangelhos + Epístolas + Atos/Apocalipse densos)
-- [x] **Gênesis 12–50** jogável (Abraão → José)
+- [x] **Gênesis 12–50** jogável (Abraão → José) — **V2 editorial** (146 perguntas, ago/2026)
 - [x] **Atos** arco jogável (Jerusalém → confins) · **Apocalipse** arco jogável (cartas/trono → nova criação)
 - [x] Unlock narrativo Êxodo ← Gênesis 12–50; Apocalipse ← Cartas de Paulo
-- [x] Strong / estudo no caminho da missão (`StudyPanel` na lição, não só aba Bíblia)
+- [x] Strong / estudo no caminho da missão (referência do ato → estudo; não só aba Bíblia)
 - [x] Onboarding → Gênesis 1–11 (deep-link pós-login)
 - [x] Home: um trabalho dominante = próxima missão (+ card da Palavra)
-- [x] Identidade **Academia da Palavra** (copy + tipografia + loop estudo→quiz→reflexão opcional)
+- [x] Identidade visual + loop missão (estudo → quiz → reflexão opcional)
 - [x] Social base: Caravana · Companhia · Salas (+ convite deep link `stway://companhia`)
 - [x] Calendário litúrgico (quests sazonais)
 - [x] Feedback pedagógico no erro + modo boss real
 - [x] Sync por conta endurecido (sem misturar progresso entre usuários)
-- [x] **Relato de pergunta** (sheet na lição → `content_question_reports` → admin Relatos)
+- [x] **Relato de pergunta** (feedback da lição → `content_question_reports` → admin Relatos)
 - [x] Análise competitiva profunda (ago/2026) → prioridades abaixo
 
 ### Piloto Sermão do Monte — estrutura
@@ -71,23 +75,26 @@ Mapa real (fonte: `trails.json` / Firebase):
 
 ## Agora — provar o loop (1–4 semanas)
 
-Foco: **usuários reais no Sermão**. Banco P0–P6 já está no Firestore (local ≈ nuvem).
+Foco: **usuários reais no arco Criação (Gênesis V2) e Sermão**. Banco **V2 já na nuvem** — falta prova D7.
 
-- [x] **Seed** trails + studies + banks no Firebase (`make seed_full` / `seed_content_cli.mjs` — 18 ago 2026, **10.368** atos)
+- [x] **Motor V2:** validador pedagógico + pipeline (`npm run pipeline:v2`) — purge clones, Gênesis 1–11 + 12–50 reescritos
+- [x] Sessão **6 atos** (8 boss) — pools do banco batem com o app
+- [x] **Seed V2** completo no Firebase (**24 ago** — 8.370 atos · cache app por trilha)
+- [x] **Catálogo expandido:** 6 perguntas/missão×modo (lição) · 8 (boss)
 - [x] **Catálogo:** default fechado (loja); teste com `--dart-define=OPEN_ALL_TRAILS=true`
 - [x] Protocolo D7 + eventos `retention_pulse` / `first_lesson_complete` — [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md)
 - [x] **Profundezas cena 1** (sm-01…05) reescritas como interpretar/conectar — não clone de Semente
 - [x] Widget iOS: App Group `group.ZS7LYV9Y7U.stway` no Runner + extensão (criar o grupo no Developer)
 - [ ] Medir time-to-value: onboarding → 1ª missão concluída em &lt;2 min
-- [ ] **Rodar D7:** 10–20 testers reais no **Sermão do Monte** (cena 1 = vitrine); anotar abandono e frase espontânea
+- [ ] **Rodar D7:** 10–20 testers — [`docs/D7_CONVITE.md`](docs/D7_CONVITE.md) + `make d7_run` · vitrine Sermão e/ou Gênesis 1–11 V2
 - [ ] Pipeline semanal no admin: ajustes via Relatos sem release
 - [ ] Strong como momento “uau” na 1ª semana do Sermão (provar com tester)
 - [ ] Caminhar o arco Criação→NT com 1–2 testers (caçar buraco residual de copy/quiz)
 - [ ] Não expandir plano de leitura / paridade YouVersion
 
-Critério de sucesso desta fase = conclusão de missão e retorno D7 **no Sermão** (trilha-vitrine).
+Critério de sucesso desta fase = conclusão de missão e retorno D7 **no Sermão** (e/ou Gênesis V2).
 
-Protocolo: [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md) · planilha: [`docs/D7_TESTERS.csv`](docs/D7_TESTERS.csv).
+Protocolo: [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md) · convite: [`docs/D7_CONVITE.md`](docs/D7_CONVITE.md) · planilha: [`docs/D7_TESTERS.csv`](docs/D7_TESTERS.csv).
 
 ---
 
@@ -206,7 +213,7 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 
 ### Ordem de execução (resumo)
 
-1. ~~**Seed Firebase**~~ — **feito** 18 ago 2026 (10.368 atos · P0–P6)
+1. ~~**Seed Firebase**~~ — **feito** 24 ago 2026 (**8.370** atos V2 · `catalog.version` `1787584947461`)
 2. **Prova** — 10–20 testers + D7 no Sermão e 1 volta no caminho Criação→NT
 3. **Prática** — `lifeChallenge` leve + check-in + follow-up
 4. **Motor** — steps configuráveis só se D7 / conclusão pedirem

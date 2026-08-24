@@ -44,6 +44,9 @@ class SessionComposer {
         type == ExerciseType.order ||
         type == ExerciseType.connect ||
         type == ExerciseType.match ||
+        type == ExerciseType.tap ||
+        type == ExerciseType.findInText ||
+        type == ExerciseType.complete ||
         ((type == ExerciseType.choice ||
                 type == ExerciseType.textSupported ||
                 type == ExerciseType.bestInterpretation) &&
@@ -342,7 +345,7 @@ class SessionComposer {
 
   /// Ordena atos: V/F → toque → escolha → ordenar → completar → conectar.
   /// Permite 2º Escolher no meio (≤ 40%). V/F no máx. 2. Sem o mesmo gesto 4× seguidas.
-  static List<Exercise> arrangeActs(List<Exercise> raw, {int max = 8}) {
+  static List<Exercise> arrangeActs(List<Exercise> raw, {int max = 6}) {
     final playable = raw
         .where((e) => e.hasPlayableContent && e.type != ExerciseType.insight)
         .where((e) => (e.beat ?? '').toLowerCase() != 'revisão')
